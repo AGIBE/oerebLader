@@ -1,0 +1,9 @@
+*.pyc
+*.pydevproject
+*.project
+.settings/*
+build/*
+dist/*
+docs/_build/*
+iLader.egg-info/*
+*.pyt.xml
