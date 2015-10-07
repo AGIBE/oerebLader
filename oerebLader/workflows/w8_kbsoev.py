@@ -10,7 +10,7 @@ import oerebLader.scripts.s12_finish
 import oerebLader.helpers.config
 
 config = oerebLader.helpers.config.get_config()
-print(repr(config))
+print(config)
 
 oerebLader.scripts.s26_initialize.run(config)
 oerebLader.scripts.s4_delete_transfer.run(config)
