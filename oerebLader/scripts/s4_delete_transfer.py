@@ -1,9 +1,11 @@
 # -*- coding: utf-8 -*-
 from __future__ import absolute_import, division, print_function, unicode_literals
-
+import logging
+import os
+import cx_Oracle
 
 def run(config):
-    
+    logging.info("Script " +  os.path.basename(__file__) + " wird ausgeführt.")
     schema = 'OEREB'
     liefereinheit = config['liefereinheit']
     tables = [
@@ -21,7 +23,13 @@ def run(config):
         {'tablename': 'PUNKT', 'liefereinheit_field': 'PUN_LIEFEREINHEIT'},
         {'tablename': 'VORSCHRIFT', 'liefereinheit_field': 'VOR_LIEFEREINHEIT'}
     ]
-
-    for table in tables:
-        sql = "DELETE FROM %s.%s WHERE %s=%s" % (schema, table['tablename'], table['liefereinheit_field'], liefereinheit)
-        print(sql)
+    
+    with cx_Oracle.connect(config['OEREB_WORK']['connection_string']) as conn:
+        cursor = conn.cursor()
+        for table in tables:
+            logging.info("Lösche aus Tabelle " + table['tablename'])
+            sql = "DELETE FROM %s.%s WHERE %s=%s" % (schema, table['tablename'], table['liefereinheit_field'], liefereinheit)
+            logging.info(sql)
+            cursor.execute(sql)
+        
+    logging.info("Script " +  os.path.basename(__file__) + " ist beendet.")
