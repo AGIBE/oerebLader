@@ -7,7 +7,7 @@ import cx_Oracle
 def run(config):
     logging.info("Script " +  os.path.basename(__file__) + " wird ausgeführt.")
     schema = 'OEREB'
-    liefereinheit = config['liefereinheit']
+    liefereinheit = config['LIEFEREINHEIT']['id']
     tables = [
         {'tablename': 'AMT', 'liefereinheit_field': 'AMT_LIEFEREINHEIT'},
         {'tablename': 'ARTIKEL', 'liefereinheit_field': 'ART_LIEFEREINHEIT'},

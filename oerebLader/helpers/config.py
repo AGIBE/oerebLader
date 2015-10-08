@@ -58,6 +58,7 @@ def create_connection_string(config, key):
     
 def init_logging(ticketnr, config):
     log_directory = os.path.join(config['LOGGING']['basedir'], unicode(ticketnr))
+    config['LOGGING']['log_directory'] = log_directory
     if not os.path.exists(log_directory):
         os.makedirs(log_directory)
     logfile = os.path.join(log_directory, unicode(ticketnr) + ".log")

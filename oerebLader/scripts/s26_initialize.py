@@ -15,6 +15,7 @@ def readSQL(connection_string, sql_statement):
 
 def run(config, ticketnr):
     logging.info("Script " +  os.path.basename(__file__) + " wird ausgeführt.")
+    config['LIEFEREINHEIT'] = {}
 
     # Ticket-Infos holen
     logging.info("Ticket-Information holen und validieren.")
@@ -24,7 +25,7 @@ def run(config, ticketnr):
         ticket_status = ticket_result[0][2]
         if ticket_status == 1:
             config['ticketname'] = ticket_result[0][1]
-            config['liefereinheit'] = ticket_result[0][0]
+            config['LIEFEREINHEIT']['id'] = ticket_result[0][0]
         else:
             logging.error("Falscher Ticket-Status (" + unicode(ticket_status) + ")")
             logging.error("Import wird abgebrochen!")
@@ -34,13 +35,13 @@ def run(config, ticketnr):
         #TODO: Abbruch des Scripts (keines oder mehrere Tickets mit dieser ID)
 
     logging.info("Ticket-Name: " + config['ticketname'])
-    logging.info("Liefereinheit: " + unicode(config['liefereinheit']))
+    logging.info("Liefereinheit: " + unicode(config['LIEFEREINHEIT']['id']))
         
     # Liefereinheiten-Infos holen
     logging.info("Liefereinheiten-Informationen werden geholt.")
-    liefereinheit_sql = "SELECT name, bfsnr, gpr_source, ts_source, md5, gprcode FROM liefereinheit WHERE id=" + unicode(config['liefereinheit'])
+    liefereinheit_sql = "SELECT name, bfsnr, gpr_source, ts_source, md5, gprcode FROM liefereinheit WHERE id=" + unicode(config['LIEFEREINHEIT']['id'])
     liefereinheit_result = readSQL(config['OEREB_WORK']['connection_string'], liefereinheit_sql)
-    config['LIEFEREINHEIT'] = {}
+    
     if len(liefereinheit_result) == 1:
         config['LIEFEREINHEIT']['name'] = liefereinheit_result[0][0]
         config['LIEFEREINHEIT']['bfsnr'] = liefereinheit_result[0][1]
