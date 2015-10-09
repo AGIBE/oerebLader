@@ -1,26 +1,19 @@
 # -*- coding: utf-8 -*-
 from __future__ import absolute_import, division, print_function, unicode_literals
-import cx_Oracle
+import oerebLader.helpers.sql_helper
 import logging
 import os
 import sys
-
-def readSQL(connection_string, sql_statement):
-    with cx_Oracle.connect(connection_string) as conn:
-        cur = conn.cursor()
-        cur.execute(sql_statement)
-        result_list = cur.fetchall()
-    
-    return result_list
 
 def run(config, ticketnr):
     logging.info("Script " +  os.path.basename(__file__) + " wird ausgeführt.")
     config['LIEFEREINHEIT'] = {}
 
     # Ticket-Infos holen
+    config['ticketnr'] = ticketnr
     logging.info("Ticket-Information holen und validieren.")
     ticket_name_sql = "SELECT liefereinheit, name, status FROM ticket WHERE id=" + unicode(ticketnr)
-    ticket_result = readSQL(config['OEREB_WORK']['connection_string'], ticket_name_sql)
+    ticket_result = oerebLader.helpers.sql_helper.readSQL(config['OEREB_WORK']['connection_string'], ticket_name_sql)
     if len(ticket_result) == 1:
         ticket_status = ticket_result[0][2]
         if ticket_status == 1:
@@ -40,7 +33,7 @@ def run(config, ticketnr):
     # Liefereinheiten-Infos holen
     logging.info("Liefereinheiten-Informationen werden geholt.")
     liefereinheit_sql = "SELECT name, bfsnr, gpr_source, ts_source, md5, gprcode FROM liefereinheit WHERE id=" + unicode(config['LIEFEREINHEIT']['id'])
-    liefereinheit_result = readSQL(config['OEREB_WORK']['connection_string'], liefereinheit_sql)
+    liefereinheit_result = oerebLader.helpers.sql_helper.readSQL(config['OEREB_WORK']['connection_string'], liefereinheit_sql)
     
     if len(liefereinheit_result) == 1:
         config['LIEFEREINHEIT']['name'] = liefereinheit_result[0][0]
