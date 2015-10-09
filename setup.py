@@ -6,7 +6,7 @@ ez_setup.use_setuptools()
 
 from setuptools import setup, find_packages
 setup(
-      name = "iLader",
+      name = "oerebLader",
       packages = find_packages(),
       version = __version__,
       # .fmw-Files werden von Python nicht erkannt. Deshalb müssen sie explizit als Package-Inhalt aufgelistet werden.
