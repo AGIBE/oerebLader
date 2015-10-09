@@ -1,11 +1,32 @@
 # -*- coding: utf-8 -*-
 from __future__ import absolute_import, division, print_function, unicode_literals
+import oerebLader.helpers.crypto_helper
 import configobj
 import os
 import tempfile
 import arcpy
 import logging
 import datetime
+
+def decrypt_passwords(section, key):
+    '''
+    Entschlüsselt sämtliche Passworte in der zentralen
+    Konfigurationsdatei. Wird aus der ConfigObj.walk-Funktion
+    aus aufgerufen. Deshalb sind section und key als
+    Parameter obligatorisch.
+    :param section: ConfigObj.Section-Objekt
+    :param key: aktueller Schlüssel im ConfigObj-Objekt
+    '''
+    # Hilfsklasse für die Entschlüsselung
+    
+    # Annahme: alle Keys, die "password" heissen, enthalten zu entschlüsselnde Passwörter
+    crypter = oerebLader.helpers.crypto_helper.Crypter()
+    if key == "password":
+        encrypted_password = section[key]
+        decrypted_password = crypter.decrypt(encrypted_password)
+        # Wert in der Config ersetzen
+        section[key] = decrypted_password
+
 
 def get_general_configfile_from_envvar():
     '''
@@ -32,7 +53,7 @@ def init_generalconfig():
     # Sections und Untersections der Config und 
     # ruft für jeden Key die angegebene Funktion
     # auf
-    # config_file.walk(decrypt_passwords)
+    config_file.walk(decrypt_passwords)
     
     return config_file.dict()
 

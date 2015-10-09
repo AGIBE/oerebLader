@@ -11,7 +11,7 @@ import oerebLader.scripts.s12_finish
 import oerebLader.helpers.config
 import logging
 
-ticketnr = 2
+ticketnr = 1
 
 config = oerebLader.helpers.config.get_config(ticketnr)
 logging.info("Import wird gestartet.")
