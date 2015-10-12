@@ -5,5 +5,5 @@
 build/*
 dist/*
 docs/_build/*
-iLader.egg-info/*
+oerebLader.egg-info/*
 *.pyt.xml
