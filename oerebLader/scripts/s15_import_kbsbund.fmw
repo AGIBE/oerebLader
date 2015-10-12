@@ -8,7 +8,7 @@
 #    "C:\Program Files (x86)\FME\fme.exe" D:\Daten\repos\oerebLader\oerebLader\scripts\s15_import_kbsbund.fmw
 #          --XTF_FILE ""
 #          --USERNAME ""
-#          --PASSWORD ""
+#          --PASSWORD ********
 #          --GPRCODE ""
 #          --DATABASE ""
 #          --LOGFILE ""
@@ -35,13 +35,13 @@
 #! USAGE=""
 #! END_PYTHON=""
 #! HISTORY=""
-#! FME_DOCUMENT_PRIORGUID="a3e40621-e887-43b4-b138-07569a31c96d,858097f2-f1e2-4415-9a1b-f8b178b7bc53,e628029b-185e-4830-b4a3-0c8f682f978e,45c61655-09ab-4c8c-b2bf-1157ed668cdd,f4fb1b4c-8c0c-4942-bf34-2b5dbb0cb69a,e0bb3b12-4f7b-4080-aa97-7a9e6b48556f,43a16399-1ec6-4f24-9953-6a160077cf93,7165de78-0e81-4d5b-8405-81cad3c16bc9,21cfe63b-c26c-43a6-a93f-972946d50b85,ab1b2c9c-5f48-4fdc-8260-0a4f9035e188,9b246169-460b-478a-9f23-5fb7b1a40e70,d3cf68d6-4844-48df-bcf5-e465334c20a4,c4f1bdf2-fbf7-40fd-96ae-8535c44c64f4,1418a602-4c08-408e-a863-a4018bcaeaf3,a397e7ae-08e6-486a-9651-d48d714e9209,384864cc-82a3-4f47-86a4-b428c4ee576e,25e2c634-d9fa-4b93-bdcb-f62f7a4e5f26"
+#! FME_DOCUMENT_PRIORGUID="a3e40621-e887-43b4-b138-07569a31c96d,858097f2-f1e2-4415-9a1b-f8b178b7bc53,e628029b-185e-4830-b4a3-0c8f682f978e,45c61655-09ab-4c8c-b2bf-1157ed668cdd,f4fb1b4c-8c0c-4942-bf34-2b5dbb0cb69a,e0bb3b12-4f7b-4080-aa97-7a9e6b48556f,43a16399-1ec6-4f24-9953-6a160077cf93,7165de78-0e81-4d5b-8405-81cad3c16bc9,21cfe63b-c26c-43a6-a93f-972946d50b85,ab1b2c9c-5f48-4fdc-8260-0a4f9035e188,9b246169-460b-478a-9f23-5fb7b1a40e70,d3cf68d6-4844-48df-bcf5-e465334c20a4,c4f1bdf2-fbf7-40fd-96ae-8535c44c64f4,1418a602-4c08-408e-a863-a4018bcaeaf3,a397e7ae-08e6-486a-9651-d48d714e9209,384864cc-82a3-4f47-86a4-b428c4ee576e,25e2c634-d9fa-4b93-bdcb-f62f7a4e5f26,2e8cf80a-fb6a-45f3-ae18-d5d3d368782c"
 #! DOC_TOP_LEFT="-207 -4343"
 #! REQUIREMENTS_KEYWORD=""
 #! SOURCE_ROUTING_FILE=""
 #! DESTINATION_ROUTING_FILE=""
 #! DESTINATION="NONE"
-#! LAST_SAVE_DATE="2015-10-12T08:08:31"
+#! LAST_SAVE_DATE="2015-10-12T09:04:36"
 #! FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
 #! WORKSPACE_VERSION="1"
 #! SOURCE="NONE"
@@ -52,7 +52,7 @@
 #! REQUIREMENTS=""
 #! BEGIN_TCL=""
 #! DOC_EXTENTS="4051 4294"
-#! FME_DOCUMENT_GUID="2e8cf80a-fb6a-45f3-ae18-d5d3d368782c"
+#! FME_DOCUMENT_GUID="e913a168-cff8-4ed1-935e-8acb0aff45f0"
 #! SHOW_ANNOTATIONS="true"
 #! IGNORE_READER_FAILURE="No"
 #! WARN_INVALID_XFORM_PARAM="Yes"
@@ -1020,7 +1020,7 @@
 #! IS_STAND_ALONE="false"
 #! />
 #! <GLOBAL_PARAMETER
-#! GUI_LINE="GUI TEXT PASSWORD Passwort:"
+#! GUI_LINE="GUI PASSWORD PASSWORD Passwort:"
 #! DEFAULT_VALUE=""
 #! IS_STAND_ALONE="false"
 #! />
@@ -1426,7 +1426,7 @@
 #! INFO_NODE="false"
 #! TOP_LEFT="2779 -547"
 #! BOTTOM_RIGHT="2779 -547"
-#! COLOUR="1,1,0.784314,0.196078"
+#! COLOUR="1,1,0.784314,0.192157"
 #! SIZE_POLICY="8"
 #! COMMENT_TYPE="REGULAR"
 #! ANCHORED_NODE="118"
@@ -1440,7 +1440,7 @@
 #! INFO_NODE="false"
 #! TOP_LEFT="3226 -1003"
 #! BOTTOM_RIGHT="3226 -1003"
-#! COLOUR="1,1,0.784314,0.196078"
+#! COLOUR="1,1,0.784314,0.192157"
 #! SIZE_POLICY="8"
 #! COMMENT_TYPE="REGULAR"
 #! ANCHORED_NODE="121"
@@ -1457,7 +1457,7 @@
 #! BOTTOM_RIGHT="3665 -4479"
 #! STICKY="true"
 #! COLOUR="0.211765,0.729412,0.611765"
-#! CONTENTS="10 9 23 12 29 25 15 17 "
+#! CONTENTS="12 29 25 15 10 23 17 9 "
 #! />
 #! <BOOKMARK
 #! IDENTIFIER="31"
@@ -1467,7 +1467,7 @@
 #! BOTTOM_RIGHT="1785 -4239"
 #! STICKY="true"
 #! COLOUR="0.0666667,0.556863,0.592157"
-#! CONTENTS="7 20 "
+#! CONTENTS="20 7 "
 #! />
 #! <BOOKMARK
 #! IDENTIFIER="116"
@@ -1477,7 +1477,7 @@
 #! BOTTOM_RIGHT="2875 -2299"
 #! STICKY="true"
 #! COLOUR="0.247059,0.501961,0.686275"
-#! CONTENTS="88 94 85 93 90 89 92 86 87 84 79 "
+#! CONTENTS="94 89 86 92 93 87 85 84 79 90 88 "
 #! />
 #! <BOOKMARK
 #! IDENTIFIER="117"
@@ -1487,7 +1487,7 @@
 #! BOTTOM_RIGHT="3102 -3191"
 #! STICKY="true"
 #! COLOUR="0.764706,0.564706,0.658824"
-#! CONTENTS="109 107 108 105 101 111 100 103 99 110 102 "
+#! CONTENTS="100 99 108 111 103 109 107 110 105 102 101 "
 #! />
 #! </BOOKMARKS>
 #! <TRANSFORMERS>
@@ -3090,7 +3090,7 @@ GUI MULTIFILE XTF_FILE INTERLIS_Files(*.xtf;*.xml;*.itf;*.ili)|*.xtf;*.xml;*.itf
 DEFAULT_MACRO USERNAME 
 GUI TEXT USERNAME Username:
 DEFAULT_MACRO PASSWORD 
-GUI TEXT PASSWORD Passwort:
+GUI PASSWORD PASSWORD Passwort:
 DEFAULT_MACRO GPRCODE 
 GUI TEXT GPRCODE Gprcode:
 DEFAULT_MACRO DATABASE 
@@ -3570,6 +3570,7 @@ LOG_TIMINGS YES
 LOG_FILTER_MASK -1
 DEFAULT_MACRO DATASET_KEYWORD_ch.ehi.fme.Main_1 ch.ehi.fme.Main_1
 DEFAULT_MACRO DATASET_KEYWORD_GEODATABASE_SDE_1 GEODATABASE_SDE_1
+FME_PASSWORD_PARAMETER_LIST PASSWORD
 # -------------------------------------------------------------------------
 
 ch.ehi.fme.Main_1_READER_META_ATTRIBUTES fme_feature_type
@@ -3686,39 +3687,6 @@ FACTORY_DEF * TeeFactory    FACTORY_NAME DateFormatter    INPUT  FEATURE_TYPE At
 
 FACTORY_DEF * TeeFactory   FACTORY_NAME "DateFormatter OUTPUT Splitter"   INPUT FEATURE_TYPE DateFormatter_OUTPUT   OUTPUT FEATURE_TYPE DateFormatter_OUTPUT_0_6PQpV4wJb0k=   OUTPUT FEATURE_TYPE DateFormatter_OUTPUT_1_6PQpV4wJb0k=   OUTPUT FEATURE_TYPE DateFormatter_OUTPUT_2_6PQpV4wJb0k=
 # -------------------------------------------------------------------------
-
-INCLUDE [    set macroLine "MACRO AttributeRemover_2_LIST_EXP ";    foreach attr [split "Parzellenverweis<opencurly><closecurly> Parzellenverweis<opencurly><closecurly>.xtf_class Untersuchungsmassnahmen<opencurly><closecurly> Parzellenverweis<opencurly><closecurly>.NBIdent Untersuchungsmassnahmen<opencurly><closecurly>.value Untersuchungsmassnahmen<opencurly><closecurly>.xtf_class Bemerkung<opencurly><closecurly>.LocalisedText<opencurly><closecurly>.Language Bemerkung<opencurly><closecurly>.LocalisedText<opencurly><closecurly>.xtf_class EGRID<opencurly><closecurly>.xtf_class EGRID<opencurly><closecurly> Parzellenverweis<opencurly><closecurly>.Parzellennummer Bemerkung<opencurly><closecurly>.LocalisedText<opencurly><closecurly> Bemerkung<opencurly><closecurly> EGRID<opencurly><closecurly>.value Bemerkung<opencurly><closecurly>.LocalisedText<opencurly><closecurly>.Text Bemerkung<opencurly><closecurly>.xtf_class"] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "{\[0-9\]+}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
-FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRemover_2    INPUT  FEATURE_TYPE DateFormatter_OUTPUT_1_6PQpV4wJb0k=    OUTPUT FEATURE_TYPE AttributeRemover_2_OUTPUT        @RemoveAttributes(xtf_id,URL_Standort,Geo_Lage_Punkt,Standorttyp,InBetrieb,Nachsorge,StatusAltlV,ERSTEINTR,LETZTEANP,URLAUSZUG,ZustaendigkeitKataster,fme_type,STAOTYP,STATUS,NACHSORGE,INBETRIEB,multilangfields,BEMERK_DE,BEMERK_FR)        @RemoveAttributes(fme_regexp_match"$(AttributeRemover_2_LIST_EXP)")
-
-# -------------------------------------------------------------------------
-
-FACTORY_DEF * ElementFactory    FACTORY_NAME ListExploder_2    INPUT  FEATURE_TYPE AttributeRemover_2_OUTPUT    LIST_NAME "Deponietyp{}"    ELEMENT_NUMBER_FIELD "_element_index"    CLONE_GEOMETRY    MODE LEAN    OUTPUT ELEMENT FEATURE_TYPE ListExploder_2_LIST_FOUND         @RemoveAttributes(ElementFactory.baseCloned)
-# -------------------------------------------------------------------------
-
-INCLUDE [    set macroLine "MACRO AttributeRemover_LIST_EXP ";    foreach attr [split "Parzellenverweis<opencurly><closecurly> Parzellenverweis<opencurly><closecurly>.xtf_class Deponietyp<opencurly><closecurly>.value Parzellenverweis<opencurly><closecurly>.NBIdent Deponietyp<opencurly><closecurly>.xtf_class Bemerkung<opencurly><closecurly>.LocalisedText<opencurly><closecurly>.Language Bemerkung<opencurly><closecurly>.LocalisedText<opencurly><closecurly>.xtf_class EGRID<opencurly><closecurly>.xtf_class EGRID<opencurly><closecurly> Parzellenverweis<opencurly><closecurly>.Parzellennummer Bemerkung<opencurly><closecurly>.LocalisedText<opencurly><closecurly> Bemerkung<opencurly><closecurly> EGRID<opencurly><closecurly>.value Bemerkung<opencurly><closecurly>.LocalisedText<opencurly><closecurly>.Text Deponietyp<opencurly><closecurly> Bemerkung<opencurly><closecurly>.xtf_class"] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "{\[0-9\]+}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
-FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRemover    INPUT  FEATURE_TYPE DateFormatter_OUTPUT_0_6PQpV4wJb0k=    OUTPUT FEATURE_TYPE AttributeRemover_OUTPUT        @RemoveAttributes(xtf_id,URL_Standort,Geo_Lage_Punkt,Standorttyp,InBetrieb,Nachsorge,StatusAltlV,ERSTEINTR,LETZTEANP,URLAUSZUG,ZustaendigkeitKataster,fme_type,STAOTYP,STATUS,NACHSORGE,INBETRIEB,multilangfields,BEMERK_DE,BEMERK_FR)        @RemoveAttributes(fme_regexp_match"$(AttributeRemover_LIST_EXP)")
-
-# -------------------------------------------------------------------------
-
-FACTORY_DEF * ElementFactory    FACTORY_NAME ListExploder    INPUT  FEATURE_TYPE AttributeRemover_OUTPUT    LIST_NAME "Untersuchungsmassnahmen{}"    ELEMENT_NUMBER_FIELD "_element_index"    CLONE_GEOMETRY    MODE LEAN    OUTPUT ELEMENT FEATURE_TYPE ListExploder_LIST_FOUND         @RemoveAttributes(ElementFactory.baseCloned)
-# -------------------------------------------------------------------------
-
-INCLUDE [if { {ATTRIBUTES} == {ATTRIBUTES} } {                puts "MACRO FeatureMerger_REFERENCE_INFO ATTRIBUTES";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} && {<Unused>} == {POLYGONS}} {                puts "MACRO FeatureMerger_REFERENCE_INFO GEOM_BUILD_POLYS";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} && {<Unused>} == {AGGREGATES}} {                puts "MACRO FeatureMerger_REFERENCE_INFO GEOM_BUILD_AGGREGATES";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} && {<Unused>} == {LINESFROMPOINTS}} {                puts "MACRO FeatureMerger_REFERENCE_INFO GEOM_BUILD_LINES_FROM_POINTS";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} && {<Unused>} == {POLYGONS}} {                puts "MACRO FeatureMerger_REFERENCE_INFO GEOM_AND_ATTR_BUILD_POLYS";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} && {<Unused>} == {AGGREGATES}} {                puts "MACRO FeatureMerger_REFERENCE_INFO GEOM_AND_ATTR_BUILD_AGGREGATES";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} && {<Unused>} == {LINESFROMPOINTS}} {                puts "MACRO FeatureMerger_REFERENCE_INFO GEOM_AND_ATTR_BUILD_LINES_FROM_POINTS";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} } {                puts "MACRO FeatureMerger_REFERENCE_INFO GEOM_BUILD_AGGREGATES";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} } {                puts "MACRO FeatureMerger_REFERENCE_INFO GEOM_AND_ATTR_BUILD_AGGREGATES";             }          else {}; ]
-
-FACTORY_DEF * ReferenceFactory    FACTORY_NAME FeatureMerger    INPUT REFERENCER FEATURE_TYPE ListExploder_LIST_FOUND    INPUT REFERENCEE FEATURE_TYPE AttributeRenamer_3_OUTPUT    REFERENCE_INFO $(FeatureMerger_REFERENCE_INFO)    REFERENCE_TABLE @EvaluateExpression(STRING_ENCODED,<at>Value<openparen>value<closeparen>,FeatureMerger) @EvaluateExpression(STRING_ENCODED,<at>Value<openparen>Code<closeparen>,FeatureMerger) AUTO    MERGE_ATTRIBUTES Yes    MANAGE_FME_TYPE Yes    MODE COMPLETE    PROCESS_DUPLICATE_REFERENCEES No    REFERENCEES_FIRST No    OUTPUT COMPLETE FEATURE_TYPE FeatureMerger_MERGED    OUTPUT INCOMPLETE FEATURE_TYPE FeatureMerger_NOT_MERGED
-
-# -------------------------------------------------------------------------
-
-# The default behaviour is to abort on any feature entering the transformer.
-# If Workbench has set the _WB_BYPASS_TERMINATION macro to a value of "Yes",
-# then the features will instead be passed through with a feature type of
-# __WB_BYPASS_TERMINATOR__, which Workbench will send to a visualizer or
-# somesuch.
-
-DEFAULT_MACRO _WB_BYPASS_TERMINATION No
-FACTORY_DEF * TestFactory    FACTORY_NAME Terminator_2    INPUT  FEATURE_TYPE FeatureMerger_NOT_MERGED    TEST "$(_WB_BYPASS_TERMINATION)" == Yes    OUTPUT PASSED FEATURE_TYPE __WB_BYPASS_TERMINATOR__       @SupplyAttributes(_wb_termination_feature_type,@FeatureType())       @SupplyAttributes(ENCODED,_wb_termination_message,Nicht<space>gematchte<space>Untersuchungsmassnahme:<space>)       @SupplyAttributes(_wb_termination_xformer,"Terminator_2")       @SupplyAttributes(_wb_termination_feature,Yes)    OUTPUT FAILED FEATURE_TYPE * @Abort(ENCODED,Nicht<space>gematchte<space>Untersuchungsmassnahme:<space>)
-
-# -------------------------------------------------------------------------
 MACRO OUTPUT_AREA_FTYPE not_selected
 MACRO OUTPUT_AREA_FTYPE GeometryFilter_AREA
 MACRO OUTPUT_INSTANCE_FTYPE not_selected
@@ -3728,12 +3696,12 @@ Lookup GeometryFilter_RouterTable   ""  "not_selected"   fme_area $(OUTPUT_AREA_
 MACRO COLLECTION_HANDLING NOT_THIS_TIME
 MACRO INSTANCE_FILTERING *
 INCLUDE [    if 0 {       puts "MACRO COLLECTION_HANDLING *";       if <Unused> {          puts "MACRO INSTANCE_FILTERING NOT_THIS_TIME";       };    };    if {"$(OUTPUT_INSTANCE_FTYPE)" == "not_selected"} {       puts "MACRO INSTANCE_FILTERING NOT_THIS_TIME";    }; ]
-FACTORY_DEF * TeeFactory    FACTORY_NAME GeometryFilter_InputPassThrough    INPUT  FEATURE_TYPE DateFormatter_OUTPUT_2_6PQpV4wJb0k=    OUTPUT FEATURE_TYPE GeometryFilter___Input___       @Geometry(FIX_FMETYPE_FMEGEOMETRY)
+FACTORY_DEF * TeeFactory    FACTORY_NAME GeometryFilter_InputPassThrough    INPUT  FEATURE_TYPE DateFormatter_OUTPUT_0_6PQpV4wJb0k=    OUTPUT FEATURE_TYPE GeometryFilter___Input___       @Geometry(FIX_FMETYPE_FMEGEOMETRY)
 FACTORY_DEF $(INSTANCE_FILTERING) TestFactory    FACTORY_NAME GeometryFilter_InstanceTest    INPUT FEATURE_TYPE GeometryFilter___Input___    TEST @Geometry(IS_GEOMETRY_INSTANCE) == 1    OUTPUT PASSED FEATURE_TYPE $(OUTPUT_INSTANCE_FTYPE)    OUTPUT FAILED FEATURE_TYPE GeometryFilter___Input___
 FACTORY_DEF $(COLLECTION_HANDLING) TestFactory    FACTORY_NAME GeometryFilter_CollectionTest    INPUT FEATURE_TYPE GeometryFilter___Input___    TEST &fme_type == "fme_collection"    OUTPUT FAILED FEATURE_TYPE GeometryFilter___Not_Collection___    OUTPUT PASSED FEATURE_TYPE GeometryFilter___Collection___
 FACTORY_DEF $(COLLECTION_HANDLING) DeaggregateFactory    FACTORY_NAME GeometryFilter_Deagg    INPUT FEATURE_TYPE GeometryFilter___Collection___    HOMOGENIZE_COLLECTIONS YES    RECURSIVE YES    SET_FME_TYPE YES    INSTANTIATE_GEOMETRY_INSTANCES_NEW <Unused>    OUTPUT POINT FEATURE_TYPE GeometryFilter___HomogeneousAggregate___    OUTPUT LINE FEATURE_TYPE GeometryFilter___HomogeneousAggregate___    OUTPUT POLYGON FEATURE_TYPE GeometryFilter___HomogeneousAggregate___    OUTPUT DONUT FEATURE_TYPE GeometryFilter___HomogeneousAggregate___    OUTPUT AGGREGATE FEATURE_TYPE GeometryFilter___HomogeneousAggregate___
-FACTORY_DEF * TeeFactory    FACTORY_NAME GeometryFilter_RouterPrepper    INPUT FEATURE_TYPE GeometryFilter___HomogeneousAggregate___    INPUT FEATURE_TYPE GeometryFilter___Not_Collection___    INPUT FEATURE_TYPE GeometryFilter___Input___    OUTPUT FEATURE_TYPE GeometryFilter___Prepped___        GeometryFilter_e76f40fd_9816_4de8_ab00_027a45c6fa870_targetFeatureType @Lookup(GeometryFilter_RouterTable,&fme_type)
-FACTORY_DEF * TestFactory    FACTORY_NAME GeometryFilter_Router    INPUT FEATURE_TYPE GeometryFilter___Prepped___    TEST @Value(GeometryFilter_e76f40fd_9816_4de8_ab00_027a45c6fa870_targetFeatureType) != "not_selected"    OUTPUT PASSED FEATURE_TYPE * @FeatureType(@Value(GeometryFilter_e76f40fd_9816_4de8_ab00_027a45c6fa870_targetFeatureType))                                 @RemoveAttributes(GeometryFilter_e76f40fd_9816_4de8_ab00_027a45c6fa870_targetFeatureType)    OUTPUT FAILED FEATURE_TYPE GeometryFilter_<UNFILTERED>        @RemoveAttributes(GeometryFilter_e76f40fd_9816_4de8_ab00_027a45c6fa870_targetFeatureType)
+FACTORY_DEF * TeeFactory    FACTORY_NAME GeometryFilter_RouterPrepper    INPUT FEATURE_TYPE GeometryFilter___HomogeneousAggregate___    INPUT FEATURE_TYPE GeometryFilter___Not_Collection___    INPUT FEATURE_TYPE GeometryFilter___Input___    OUTPUT FEATURE_TYPE GeometryFilter___Prepped___        GeometryFilter_4063b5c2_c60b_4258_852f_5146db8562cb0_targetFeatureType @Lookup(GeometryFilter_RouterTable,&fme_type)
+FACTORY_DEF * TestFactory    FACTORY_NAME GeometryFilter_Router    INPUT FEATURE_TYPE GeometryFilter___Prepped___    TEST @Value(GeometryFilter_4063b5c2_c60b_4258_852f_5146db8562cb0_targetFeatureType) != "not_selected"    OUTPUT PASSED FEATURE_TYPE * @FeatureType(@Value(GeometryFilter_4063b5c2_c60b_4258_852f_5146db8562cb0_targetFeatureType))                                 @RemoveAttributes(GeometryFilter_4063b5c2_c60b_4258_852f_5146db8562cb0_targetFeatureType)    OUTPUT FAILED FEATURE_TYPE GeometryFilter_<UNFILTERED>        @RemoveAttributes(GeometryFilter_4063b5c2_c60b_4258_852f_5146db8562cb0_targetFeatureType)
 
 # -------------------------------------------------------------------------
 
@@ -3761,8 +3729,8 @@ FACTORY_DEF * TeeFactory    FACTORY_NAME GeometryFilter_2_InputPassThrough    IN
 FACTORY_DEF $(INSTANCE_FILTERING) TestFactory    FACTORY_NAME GeometryFilter_2_InstanceTest    INPUT FEATURE_TYPE GeometryFilter_2___Input___    TEST @Geometry(IS_GEOMETRY_INSTANCE) == 1    OUTPUT PASSED FEATURE_TYPE $(OUTPUT_INSTANCE_FTYPE)    OUTPUT FAILED FEATURE_TYPE GeometryFilter_2___Input___
 FACTORY_DEF $(COLLECTION_HANDLING) TestFactory    FACTORY_NAME GeometryFilter_2_CollectionTest    INPUT FEATURE_TYPE GeometryFilter_2___Input___    TEST &fme_type == "fme_collection"    OUTPUT FAILED FEATURE_TYPE GeometryFilter_2___Not_Collection___    OUTPUT PASSED FEATURE_TYPE GeometryFilter_2___Collection___
 FACTORY_DEF $(COLLECTION_HANDLING) DeaggregateFactory    FACTORY_NAME GeometryFilter_2_Deagg    INPUT FEATURE_TYPE GeometryFilter_2___Collection___    HOMOGENIZE_COLLECTIONS YES    RECURSIVE YES    SET_FME_TYPE YES    INSTANTIATE_GEOMETRY_INSTANCES_NEW <Unused>    OUTPUT POINT FEATURE_TYPE GeometryFilter_2___HomogeneousAggregate___    OUTPUT LINE FEATURE_TYPE GeometryFilter_2___HomogeneousAggregate___    OUTPUT POLYGON FEATURE_TYPE GeometryFilter_2___HomogeneousAggregate___    OUTPUT DONUT FEATURE_TYPE GeometryFilter_2___HomogeneousAggregate___    OUTPUT AGGREGATE FEATURE_TYPE GeometryFilter_2___HomogeneousAggregate___
-FACTORY_DEF * TeeFactory    FACTORY_NAME GeometryFilter_2_RouterPrepper    INPUT FEATURE_TYPE GeometryFilter_2___HomogeneousAggregate___    INPUT FEATURE_TYPE GeometryFilter_2___Not_Collection___    INPUT FEATURE_TYPE GeometryFilter_2___Input___    OUTPUT FEATURE_TYPE GeometryFilter_2___Prepped___        GeometryFilter_2_e9bf0ba3_6c73_4e3c_9f88_389928f597380_targetFeatureType @Lookup(GeometryFilter_2_RouterTable,&fme_type)
-FACTORY_DEF * TestFactory    FACTORY_NAME GeometryFilter_2_Router    INPUT FEATURE_TYPE GeometryFilter_2___Prepped___    TEST @Value(GeometryFilter_2_e9bf0ba3_6c73_4e3c_9f88_389928f597380_targetFeatureType) != "not_selected"    OUTPUT PASSED FEATURE_TYPE * @FeatureType(@Value(GeometryFilter_2_e9bf0ba3_6c73_4e3c_9f88_389928f597380_targetFeatureType))                                 @RemoveAttributes(GeometryFilter_2_e9bf0ba3_6c73_4e3c_9f88_389928f597380_targetFeatureType)    OUTPUT FAILED FEATURE_TYPE GeometryFilter_2_<UNFILTERED>        @RemoveAttributes(GeometryFilter_2_e9bf0ba3_6c73_4e3c_9f88_389928f597380_targetFeatureType)
+FACTORY_DEF * TeeFactory    FACTORY_NAME GeometryFilter_2_RouterPrepper    INPUT FEATURE_TYPE GeometryFilter_2___HomogeneousAggregate___    INPUT FEATURE_TYPE GeometryFilter_2___Not_Collection___    INPUT FEATURE_TYPE GeometryFilter_2___Input___    OUTPUT FEATURE_TYPE GeometryFilter_2___Prepped___        GeometryFilter_2_0aab33bf_189e_4887_b159_9542bd4dc4c90_targetFeatureType @Lookup(GeometryFilter_2_RouterTable,&fme_type)
+FACTORY_DEF * TestFactory    FACTORY_NAME GeometryFilter_2_Router    INPUT FEATURE_TYPE GeometryFilter_2___Prepped___    TEST @Value(GeometryFilter_2_0aab33bf_189e_4887_b159_9542bd4dc4c90_targetFeatureType) != "not_selected"    OUTPUT PASSED FEATURE_TYPE * @FeatureType(@Value(GeometryFilter_2_0aab33bf_189e_4887_b159_9542bd4dc4c90_targetFeatureType))                                 @RemoveAttributes(GeometryFilter_2_0aab33bf_189e_4887_b159_9542bd4dc4c90_targetFeatureType)    OUTPUT FAILED FEATURE_TYPE GeometryFilter_2_<UNFILTERED>        @RemoveAttributes(GeometryFilter_2_0aab33bf_189e_4887_b159_9542bd4dc4c90_targetFeatureType)
 
 # -------------------------------------------------------------------------
 
@@ -3782,6 +3750,39 @@ FACTORY_DEF * TeeFactory    FACTORY_NAME TransintReprojectorBE_2    INPUT  FEATU
 # -------------------------------------------------------------------------
 
 FACTORY_DEF * TeeFactory    FACTORY_NAME TransintReprojectorBE    INPUT  FEATURE_TYPE GeometryFilter_AREA    OUTPUT FEATURE_TYPE TransintReprojectorBE_REPROJECTED         @Reproject(TRANSINTREPROJECT,,,BEENyx15.bin+|CH1903.LV03_swisstopo->CH1903Plus_1.LV95/01,,--,NearestNeighbor,PreserveCells)
+
+# -------------------------------------------------------------------------
+
+INCLUDE [    set macroLine "MACRO AttributeRemover_2_LIST_EXP ";    foreach attr [split "Parzellenverweis<opencurly><closecurly> Parzellenverweis<opencurly><closecurly>.xtf_class Untersuchungsmassnahmen<opencurly><closecurly> Parzellenverweis<opencurly><closecurly>.NBIdent Untersuchungsmassnahmen<opencurly><closecurly>.value Untersuchungsmassnahmen<opencurly><closecurly>.xtf_class Bemerkung<opencurly><closecurly>.LocalisedText<opencurly><closecurly>.Language Bemerkung<opencurly><closecurly>.LocalisedText<opencurly><closecurly>.xtf_class EGRID<opencurly><closecurly>.xtf_class EGRID<opencurly><closecurly> Parzellenverweis<opencurly><closecurly>.Parzellennummer Bemerkung<opencurly><closecurly>.LocalisedText<opencurly><closecurly> Bemerkung<opencurly><closecurly> EGRID<opencurly><closecurly>.value Bemerkung<opencurly><closecurly>.LocalisedText<opencurly><closecurly>.Text Bemerkung<opencurly><closecurly>.xtf_class"] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "{\[0-9\]+}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
+FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRemover_2    INPUT  FEATURE_TYPE DateFormatter_OUTPUT_1_6PQpV4wJb0k=    OUTPUT FEATURE_TYPE AttributeRemover_2_OUTPUT        @RemoveAttributes(xtf_id,URL_Standort,Geo_Lage_Punkt,Standorttyp,InBetrieb,Nachsorge,StatusAltlV,ERSTEINTR,LETZTEANP,URLAUSZUG,ZustaendigkeitKataster,fme_type,STAOTYP,STATUS,NACHSORGE,INBETRIEB,multilangfields,BEMERK_DE,BEMERK_FR)        @RemoveAttributes(fme_regexp_match"$(AttributeRemover_2_LIST_EXP)")
+
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * ElementFactory    FACTORY_NAME ListExploder_2    INPUT  FEATURE_TYPE AttributeRemover_2_OUTPUT    LIST_NAME "Deponietyp{}"    ELEMENT_NUMBER_FIELD "_element_index"    CLONE_GEOMETRY    MODE LEAN    OUTPUT ELEMENT FEATURE_TYPE ListExploder_2_LIST_FOUND         @RemoveAttributes(ElementFactory.baseCloned)
+# -------------------------------------------------------------------------
+
+INCLUDE [    set macroLine "MACRO AttributeRemover_LIST_EXP ";    foreach attr [split "Parzellenverweis<opencurly><closecurly> Parzellenverweis<opencurly><closecurly>.xtf_class Deponietyp<opencurly><closecurly>.value Parzellenverweis<opencurly><closecurly>.NBIdent Deponietyp<opencurly><closecurly>.xtf_class Bemerkung<opencurly><closecurly>.LocalisedText<opencurly><closecurly>.Language Bemerkung<opencurly><closecurly>.LocalisedText<opencurly><closecurly>.xtf_class EGRID<opencurly><closecurly>.xtf_class EGRID<opencurly><closecurly> Parzellenverweis<opencurly><closecurly>.Parzellennummer Bemerkung<opencurly><closecurly>.LocalisedText<opencurly><closecurly> Bemerkung<opencurly><closecurly> EGRID<opencurly><closecurly>.value Bemerkung<opencurly><closecurly>.LocalisedText<opencurly><closecurly>.Text Deponietyp<opencurly><closecurly> Bemerkung<opencurly><closecurly>.xtf_class"] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "{\[0-9\]+}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
+FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRemover    INPUT  FEATURE_TYPE DateFormatter_OUTPUT_2_6PQpV4wJb0k=    OUTPUT FEATURE_TYPE AttributeRemover_OUTPUT        @RemoveAttributes(xtf_id,URL_Standort,Geo_Lage_Punkt,Standorttyp,InBetrieb,Nachsorge,StatusAltlV,ERSTEINTR,LETZTEANP,URLAUSZUG,ZustaendigkeitKataster,fme_type,STAOTYP,STATUS,NACHSORGE,INBETRIEB,multilangfields,BEMERK_DE,BEMERK_FR)        @RemoveAttributes(fme_regexp_match"$(AttributeRemover_LIST_EXP)")
+
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * ElementFactory    FACTORY_NAME ListExploder    INPUT  FEATURE_TYPE AttributeRemover_OUTPUT    LIST_NAME "Untersuchungsmassnahmen{}"    ELEMENT_NUMBER_FIELD "_element_index"    CLONE_GEOMETRY    MODE LEAN    OUTPUT ELEMENT FEATURE_TYPE ListExploder_LIST_FOUND         @RemoveAttributes(ElementFactory.baseCloned)
+# -------------------------------------------------------------------------
+
+INCLUDE [if { {ATTRIBUTES} == {ATTRIBUTES} } {                puts "MACRO FeatureMerger_REFERENCE_INFO ATTRIBUTES";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} && {<Unused>} == {POLYGONS}} {                puts "MACRO FeatureMerger_REFERENCE_INFO GEOM_BUILD_POLYS";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} && {<Unused>} == {AGGREGATES}} {                puts "MACRO FeatureMerger_REFERENCE_INFO GEOM_BUILD_AGGREGATES";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} && {<Unused>} == {LINESFROMPOINTS}} {                puts "MACRO FeatureMerger_REFERENCE_INFO GEOM_BUILD_LINES_FROM_POINTS";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} && {<Unused>} == {POLYGONS}} {                puts "MACRO FeatureMerger_REFERENCE_INFO GEOM_AND_ATTR_BUILD_POLYS";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} && {<Unused>} == {AGGREGATES}} {                puts "MACRO FeatureMerger_REFERENCE_INFO GEOM_AND_ATTR_BUILD_AGGREGATES";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} && {<Unused>} == {LINESFROMPOINTS}} {                puts "MACRO FeatureMerger_REFERENCE_INFO GEOM_AND_ATTR_BUILD_LINES_FROM_POINTS";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} } {                puts "MACRO FeatureMerger_REFERENCE_INFO GEOM_BUILD_AGGREGATES";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} } {                puts "MACRO FeatureMerger_REFERENCE_INFO GEOM_AND_ATTR_BUILD_AGGREGATES";             }          else {}; ]
+
+FACTORY_DEF * ReferenceFactory    FACTORY_NAME FeatureMerger    INPUT REFERENCER FEATURE_TYPE ListExploder_LIST_FOUND    INPUT REFERENCEE FEATURE_TYPE AttributeRenamer_3_OUTPUT    REFERENCE_INFO $(FeatureMerger_REFERENCE_INFO)    REFERENCE_TABLE @EvaluateExpression(STRING_ENCODED,<at>Value<openparen>value<closeparen>,FeatureMerger) @EvaluateExpression(STRING_ENCODED,<at>Value<openparen>Code<closeparen>,FeatureMerger) AUTO    MERGE_ATTRIBUTES Yes    MANAGE_FME_TYPE Yes    MODE COMPLETE    PROCESS_DUPLICATE_REFERENCEES No    REFERENCEES_FIRST No    OUTPUT COMPLETE FEATURE_TYPE FeatureMerger_MERGED    OUTPUT INCOMPLETE FEATURE_TYPE FeatureMerger_NOT_MERGED
+
+# -------------------------------------------------------------------------
+
+# The default behaviour is to abort on any feature entering the transformer.
+# If Workbench has set the _WB_BYPASS_TERMINATION macro to a value of "Yes",
+# then the features will instead be passed through with a feature type of
+# __WB_BYPASS_TERMINATOR__, which Workbench will send to a visualizer or
+# somesuch.
+
+DEFAULT_MACRO _WB_BYPASS_TERMINATION No
+FACTORY_DEF * TestFactory    FACTORY_NAME Terminator_2    INPUT  FEATURE_TYPE FeatureMerger_NOT_MERGED    TEST "$(_WB_BYPASS_TERMINATION)" == Yes    OUTPUT PASSED FEATURE_TYPE __WB_BYPASS_TERMINATOR__       @SupplyAttributes(_wb_termination_feature_type,@FeatureType())       @SupplyAttributes(ENCODED,_wb_termination_message,Nicht<space>gematchte<space>Untersuchungsmassnahme:<space>)       @SupplyAttributes(_wb_termination_xformer,"Terminator_2")       @SupplyAttributes(_wb_termination_feature,Yes)    OUTPUT FAILED FEATURE_TYPE * @Abort(ENCODED,Nicht<space>gematchte<space>Untersuchungsmassnahme:<space>)
 
 # -------------------------------------------------------------------------
 FACTORY_DEF * AttrSetFactory FACTORY_NAME AttributeCreator_3 ATTRSET_PROPAGATE_MISSING YES INPUT  FEATURE_TYPE KbS_LV03_V1_2.Codelisten.Deponietyp_Definition ATTR multilangfields Definition    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_3_OUTPUT 
