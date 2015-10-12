@@ -7,3 +7,4 @@ dist/*
 docs/_build/*
 oerebLader.egg-info/*
 *.pyt.xml
+*.recover
