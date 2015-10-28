@@ -12,7 +12,7 @@ import oerebLader.helpers.config
 
 ticketnr = 5
 
-config = oerebLader.helpers.config.get_config(ticketnr)
+config = oerebLader.helpers.config.get_config()
 
 oerebLader.scripts.s26_initialize.run(config, ticketnr)
 oerebLader.scripts.s4_delete_transfer.run(config)

@@ -53,6 +53,6 @@ def init_generalconfig():
     
     return config_file.dict()
 
-def get_config(ticketnr):
+def get_config():
     config = init_generalconfig()
     return config
