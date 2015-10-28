@@ -53,6 +53,19 @@ def init_generalconfig():
     
     return config_file.dict()
 
+def create_connection_string(config, key):
+    username = config[key]['username']
+    password = config[key]['password']
+    database = config[key]['database']
+    
+    connection_string = username + "/" + password + "@" + database
+    config[key]['connection_string'] = connection_string
+
 def get_config():
     config = init_generalconfig()
+
+    # Connection-Strings zusammensetzen
+    create_connection_string(config, 'GEODB_WORK')
+    create_connection_string(config, 'OEREB_WORK')
+
     return config

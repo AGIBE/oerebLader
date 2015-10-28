@@ -33,14 +33,6 @@ def create_connection_files(config, key):
     arcpy.CreateDatabaseConnection_management(temp_directory, sde_filename, "ORACLE", database, "DATABASE_AUTH", username, password ) 
     config[key]['connection_file'] = connection_file
     
-def create_connection_string(config, key):
-    username = config[key]['username']
-    password = config[key]['password']
-    database = config[key]['database']
-    
-    connection_string = username + "/" + password + "@" + database
-    config[key]['connection_string'] = connection_string
-
 def run(config, ticketnr):
     config['ticketnr'] = ticketnr
     
@@ -52,10 +44,6 @@ def run(config, ticketnr):
     logging.info("Konfiguration: " + unicode(config))
     logging.info("Script " +  os.path.basename(__file__) + " wird ausgeführt.")
     
-    # Connection-Strings zusammensetzen
-    create_connection_string(config, 'GEODB_WORK')
-    create_connection_string(config, 'OEREB_WORK')
-
     # Temporäre ArcGIS-Connectionfiles erstellen
     # Die Files werden am Schluss durch s12_finish
     # wieder gelöscht.
