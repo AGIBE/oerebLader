@@ -19,12 +19,9 @@ setup(
       description = "Import-Modul ÖREB-Kataster des Kantons Bern",
       url = "http://www.be.ch/oerebk",
       # https://pythonhosted.org/setuptools/setuptools.html#automatic-script-creation
-#       entry_points={
-#            'console_scripts': [
-#                 'iLader = iLader.helpers.CommandLine:main'
-#             ],
-#             'gui_scripts': [
-#                 'iLaderGUI = iLader.helpers.GUI:main'
-#             ]         
-#       }
+    entry_points={
+         'console_scripts': [
+              'checkBundesthemen = oerebLader.helpers.bundesthemen_helper:check_bundesthemen'
+          ]
+    }
 )

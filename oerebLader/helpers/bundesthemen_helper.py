@@ -78,5 +78,3 @@ def check_bundesthemen():
             logging.info("Prüfsummen sind identisch. Keine Aktualisierung notwendig!")
         
     print("Check fertig!")
-    
-check_bundesthemen()
