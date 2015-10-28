@@ -4,13 +4,67 @@ import oerebLader.helpers.sql_helper
 import logging
 import os
 import sys
+import tempfile
+import arcpy
+import datetime
+
+def init_logging(ticketnr, config):
+    log_directory = os.path.join(config['LOGGING']['basedir'], unicode(ticketnr))
+    config['LOGGING']['log_directory'] = log_directory
+    if not os.path.exists(log_directory):
+        os.makedirs(log_directory)
+    logfile = os.path.join(log_directory, unicode(ticketnr) + ".log")
+    # Wenn schon ein Logfile existiert, wird es umbenannt
+    if os.path.exists(logfile):
+        archive_logfile = unicode(ticketnr) + datetime.datetime.now().strftime("_%Y_%m_%d_%H_%M_%S") + ".log"
+        archive_logfile = os.path.join(log_directory, archive_logfile)
+        os.rename(logfile, archive_logfile)
+    logging.basicConfig(filename=logfile, level=logging.DEBUG, format='%(asctime)s.%(msecs)d|%(levelname)s|%(message)s', datefmt='%Y-%m-%d %H:%M:%S')
+
+def create_connection_files(config, key):
+    username = config[key]['username']
+    password = config[key]['password']
+    database = config[key]['database']
+    
+    temp_directory = tempfile.mkdtemp()
+    sde_filename = key + ".sde"
+    connection_file = os.path.join(temp_directory, sde_filename)
+    logging.info("Erzeuge Connectionfile " + connection_file)
+    arcpy.CreateDatabaseConnection_management(temp_directory, sde_filename, "ORACLE", database, "DATABASE_AUTH", username, password ) 
+    config[key]['connection_file'] = connection_file
+    
+def create_connection_string(config, key):
+    username = config[key]['username']
+    password = config[key]['password']
+    database = config[key]['database']
+    
+    connection_string = username + "/" + password + "@" + database
+    config[key]['connection_string'] = connection_string
 
 def run(config, ticketnr):
+    config['ticketnr'] = ticketnr
+    
+    # Logging initialisieren
+    init_logging(ticketnr, config)
+    
+    logging.info("Import wird initialisiert.")
+    logging.info("Ticket-Nr: " + unicode(config['ticketnr']))
+    logging.info("Konfiguration: " + unicode(config))
     logging.info("Script " +  os.path.basename(__file__) + " wird ausgeführt.")
+    
+    # Connection-Strings zusammensetzen
+    create_connection_string(config, 'GEODB_WORK')
+    create_connection_string(config, 'OEREB_WORK')
+
+    # Temporäre ArcGIS-Connectionfiles erstellen
+    # Die Files werden am Schluss durch s12_finish
+    # wieder gelöscht.
+    create_connection_files(config, 'GEODB_WORK')
+    create_connection_files(config, 'OEREB_WORK')    
+    
     config['LIEFEREINHEIT'] = {}
 
     # Ticket-Infos holen
-    config['ticketnr'] = ticketnr
     logging.info("Ticket-Information holen und validieren.")
     ticket_name_sql = "SELECT liefereinheit, name, status FROM ticket WHERE id=" + unicode(ticketnr)
     ticket_result = oerebLader.helpers.sql_helper.readSQL(config['OEREB_WORK']['connection_string'], ticket_name_sql)

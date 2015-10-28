@@ -9,14 +9,10 @@ import oerebLader.scripts.s38_qa_transfer
 import oerebLader.scripts.s12_finish
 
 import oerebLader.helpers.config
-import logging
 
 ticketnr = 1
 
 config = oerebLader.helpers.config.get_config(ticketnr)
-logging.info("Import wird gestartet.")
-logging.info("Ticket-Nr: " + unicode(ticketnr))
-logging.info("Konfiguration: " + unicode(config))
 
 oerebLader.scripts.s26_initialize.run(config, ticketnr)
 oerebLader.scripts.s4_delete_transfer.run(config)
