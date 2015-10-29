@@ -7,6 +7,7 @@ import oerebLader.workflows.workflow
 
 def run_ticket(args):
     oerebLader.workflows.workflow.run_workflow(args.TICKET)
+    print("Workflow SUCCESSFUL!")
 
 def list_tickets(args):
     ticket_list = oerebLader.helpers.ticket_helper.get_open_tickets()

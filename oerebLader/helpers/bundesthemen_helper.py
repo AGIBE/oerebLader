@@ -77,4 +77,4 @@ def check_bundesthemen():
         else:
             logging.info("Prüfsummen sind identisch. Keine Aktualisierung notwendig!")
         
-    print("Check fertig!")
+    print("CheckBundesthemen SUCCESSFUL!")
