@@ -2,6 +2,7 @@
 # übernommen aus: https://pythonhosted.org/setuptools/setuptools.html#id24
 import ez_setup
 from oerebLader import __version__
+import oerebLader
 ez_setup.use_setuptools()
 
 from setuptools import setup, find_packages
@@ -21,7 +22,8 @@ setup(
       # https://pythonhosted.org/setuptools/setuptools.html#automatic-script-creation
     entry_points={
          'console_scripts': [
-              'checkBundesthemen = oerebLader.helpers.bundesthemen_helper:check_bundesthemen'
+              'checkBundesthemen = oerebLader.helpers.bundesthemen_helper:check_bundesthemen',
+              'oerebLader = oerebLader.helpers.commandline_helper:main'
           ]
     }
 )

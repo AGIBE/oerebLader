@@ -10,16 +10,14 @@ import oerebLader.scripts.s12_finish
 
 import oerebLader.helpers.config
 
-ticketnr = 5
+def run(ticketnr):
 
-config = oerebLader.helpers.config.get_config()
-
-oerebLader.scripts.s26_initialize.run(config, ticketnr)
-oerebLader.scripts.s4_delete_transfer.run(config)
-oerebLader.scripts.s23_import_sizoplan.run(config)
-oerebLader.scripts.s24_import_transfer_xtf.run(config)
-oerebLader.scripts.s37_qa_sizoplan.run(config)
-oerebLader.scripts.s38_qa_transfer.run(config)
-oerebLader.scripts.s12_finish.run(config)
-
-print("Workflow fertig!")
+    config = oerebLader.helpers.config.get_config()
+    
+    oerebLader.scripts.s26_initialize.run(config, ticketnr)
+    oerebLader.scripts.s4_delete_transfer.run(config)
+    oerebLader.scripts.s23_import_sizoplan.run(config)
+    oerebLader.scripts.s24_import_transfer_xtf.run(config)
+    oerebLader.scripts.s37_qa_sizoplan.run(config)
+    oerebLader.scripts.s38_qa_transfer.run(config)
+    oerebLader.scripts.s12_finish.run(config)
