@@ -3,6 +3,8 @@ from __future__ import absolute_import, division, print_function, unicode_litera
 import logging
 import os
 
+logger = logging.getLogger('oerebLaderLogger')
+
 def run(config):
-    logging.info("Script " +  os.path.basename(__file__) + " wird ausgeführt.")
-    logging.info("Script " +  os.path.basename(__file__) + " ist beendet.")
+    logger.info("Script " +  os.path.basename(__file__) + " wird ausgeführt.")
+    logger.info("Script " +  os.path.basename(__file__) + " ist beendet.")

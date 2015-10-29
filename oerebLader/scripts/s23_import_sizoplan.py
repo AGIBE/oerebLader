@@ -6,12 +6,14 @@ import logging
 import os
 import fmeobjects
 
+logger = logging.getLogger('oerebLaderLogger')
+
 def run(config):
-    logging.info("Script " +  os.path.basename(__file__) + " wird ausgeführt.")
+    logger.info("Script " +  os.path.basename(__file__) + " wird ausgeführt.")
     fme_script = os.path.splitext(__file__)[0] + ".fmw"
     fme_logfile = oerebLader.helpers.fme_helper.prepare_fme_log(fme_script, config['LOGGING']['log_directory']) 
-    logging.info("Script " +  fme_script + " wird ausgeführt.")
-    logging.info("Das FME-Logfile heisst: " + fme_logfile)
+    logger.info("Script " +  fme_script + " wird ausgeführt.")
+    logger.info("Das FME-Logfile heisst: " + fme_logfile)
     runner = fmeobjects.FMEWorkspaceRunner()
     # Der FMEWorkspaceRunner akzeptiert keine Unicode-Strings!
     # Daher müssen workspace und parameters umgewandelt werden!
@@ -24,13 +26,13 @@ def run(config):
         'GPRCODE': str(config['LIEFEREINHEIT']['gprcode']),
         'LOGFILE': str(fme_logfile)
     }
-    logging.info(unicode(parameters))
+    logger.info(unicode(parameters))
     try:
         runner.runWithParameters(str(fme_script), parameters)
     except fmeobjects.FMEException as ex:
-        logging.error("FME-Workbench " + fme_script + " konnte nicht ausgeführt werden!")
-        logging.error(ex)
-        logging.error("Import wird abgebrochen!")
+        logger.error("FME-Workbench " + fme_script + " konnte nicht ausgeführt werden!")
+        logger.error(ex)
+        logger.error("Import wird abgebrochen!")
         sys.exit()
         
-    logging.info("Script " +  os.path.basename(__file__) + " ist beendet.")
+    logger.info("Script " +  os.path.basename(__file__) + " ist beendet.")

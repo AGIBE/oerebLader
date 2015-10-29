@@ -7,6 +7,39 @@ import sys
 import tempfile
 import arcpy
 import datetime
+import chromalog
+
+def create_loghandler_stream():
+    '''
+    Konfiguriert einen Stream-Loghandler. Der Output
+    wird in sys.stdout ausgegeben. In der Regel ist das
+    die Kommandozeile. Falls sys.stdout dies unterstützt,
+    werden Warnungen und Fehler farbig ausgegeben (dank
+    des chromalog-Moduls).
+    '''
+    
+    file_formatter = chromalog.ColorizingFormatter('%(levelname)s|%(message)s')
+    
+    h = chromalog.ColorizingStreamHandler()
+    h.setLevel(logging.DEBUG)
+    h.setFormatter(file_formatter)
+    
+    return h
+    
+def create_loghandler_file(filename):
+    '''
+    Konfiguriert einen File-Loghandler
+    :param filename: Name (inkl. Pfad) des Logfiles 
+    '''
+    
+    file_formatter = logging.Formatter('%(asctime)s.%(msecs)d|%(levelname)s|%(message)s', '%Y-%m-%d %H:%M:%S')
+    
+    h = logging.FileHandler(filename, encoding="UTF-8")
+    h.setLevel(logging.DEBUG)
+    h.setFormatter(file_formatter)
+    
+    return h
+
 
 def init_logging(ticketnr, config):
     log_directory = os.path.join(config['LOGGING']['basedir'], unicode(ticketnr))
@@ -19,9 +52,17 @@ def init_logging(ticketnr, config):
         archive_logfile = unicode(ticketnr) + datetime.datetime.now().strftime("_%Y_%m_%d_%H_%M_%S") + ".log"
         archive_logfile = os.path.join(log_directory, archive_logfile)
         os.rename(logfile, archive_logfile)
-    logging.basicConfig(filename=logfile, level=logging.DEBUG, format='%(asctime)s.%(msecs)d|%(levelname)s|%(message)s', datefmt='%Y-%m-%d %H:%M:%S')
+        
+    logger = logging.getLogger("oerebLaderLogger")
+    logger.setLevel(logging.DEBUG)
+    logger.handlers = []
+    logger.addHandler(create_loghandler_file(logfile))
+    logger.addHandler(create_loghandler_stream())
+    logger.propagate = False
+    
+    return logger
 
-def create_connection_files(config, key):
+def create_connection_files(config, key, logger):
     username = config[key]['username']
     password = config[key]['password']
     database = config[key]['database']
@@ -29,7 +70,7 @@ def create_connection_files(config, key):
     temp_directory = tempfile.mkdtemp()
     sde_filename = key + ".sde"
     connection_file = os.path.join(temp_directory, sde_filename)
-    logging.info("Erzeuge Connectionfile " + connection_file)
+    logger.info("Erzeuge Connectionfile " + connection_file)
     arcpy.CreateDatabaseConnection_management(temp_directory, sde_filename, "ORACLE", database, "DATABASE_AUTH", username, password ) 
     config[key]['connection_file'] = connection_file
     
@@ -37,23 +78,23 @@ def run(config, ticketnr):
     config['ticketnr'] = ticketnr
     
     # Logging initialisieren
-    init_logging(ticketnr, config)
+    logger = init_logging(ticketnr, config)
     
-    logging.info("Import wird initialisiert.")
-    logging.info("Ticket-Nr: " + unicode(config['ticketnr']))
-    logging.info("Konfiguration: " + unicode(config))
-    logging.info("Script " +  os.path.basename(__file__) + " wird ausgeführt.")
+    logger.info("Import wird initialisiert.")
+    logger.info("Ticket-Nr: " + unicode(config['ticketnr']))
+    logger.info("Konfiguration: " + unicode(config))
+    logger.info("Script " +  os.path.basename(__file__) + " wird ausgeführt.")
     
     # Temporäre ArcGIS-Connectionfiles erstellen
     # Die Files werden am Schluss durch s12_finish
     # wieder gelöscht.
-    create_connection_files(config, 'GEODB_WORK')
-    create_connection_files(config, 'OEREB_WORK')    
+    create_connection_files(config, 'GEODB_WORK', logger)
+    create_connection_files(config, 'OEREB_WORK', logger)    
     
     config['LIEFEREINHEIT'] = {}
 
     # Ticket-Infos holen
-    logging.info("Ticket-Information holen und validieren.")
+    logger.info("Ticket-Information holen und validieren.")
     ticket_name_sql = "SELECT liefereinheit, name, status FROM ticket WHERE id=" + unicode(ticketnr)
     ticket_result = oerebLader.helpers.sql_helper.readSQL(config['OEREB_WORK']['connection_string'], ticket_name_sql)
     if len(ticket_result) == 1:
@@ -62,18 +103,18 @@ def run(config, ticketnr):
             config['ticketname'] = ticket_result[0][1]
             config['LIEFEREINHEIT']['id'] = ticket_result[0][0]
         else:
-            logging.error("Falscher Ticket-Status (" + unicode(ticket_status) + ")")
-            logging.error("Import wird abgebrochen!")
+            logger.error("Falscher Ticket-Status (" + unicode(ticket_status) + ")")
+            logger.error("Import wird abgebrochen!")
             sys.exit()
     else:
         pass
         #TODO: Abbruch des Scripts (keines oder mehrere Tickets mit dieser ID)
 
-    logging.info("Ticket-Name: " + config['ticketname'])
-    logging.info("Liefereinheit: " + unicode(config['LIEFEREINHEIT']['id']))
+    logger.info("Ticket-Name: " + config['ticketname'])
+    logger.info("Liefereinheit: " + unicode(config['LIEFEREINHEIT']['id']))
         
     # Liefereinheiten-Infos holen
-    logging.info("Liefereinheiten-Informationen werden geholt.")
+    logger.info("Liefereinheiten-Informationen werden geholt.")
     liefereinheit_sql = "SELECT name, bfsnr, gpr_source, ts_source, md5, gprcode FROM liefereinheit WHERE id=" + unicode(config['LIEFEREINHEIT']['id'])
     liefereinheit_result = oerebLader.helpers.sql_helper.readSQL(config['OEREB_WORK']['connection_string'], liefereinheit_sql)
     
@@ -85,16 +126,16 @@ def run(config, ticketnr):
         config['LIEFEREINHEIT']['md5'] = liefereinheit_result[0][4]
         config['LIEFEREINHEIT']['gprcode'] = liefereinheit_result[0][5]
     else:
-        logging.error("Keine Liefereinheit mit dieser ID gefunden.")
-        logging.error("Import wird abgebrochen!")
+        logger.error("Keine Liefereinheit mit dieser ID gefunden.")
+        logger.error("Import wird abgebrochen!")
         sys.exit()
     
-    logging.info("Name der Liefereinheit: " + unicode(config['LIEFEREINHEIT']['name']))
-    logging.info("BFS-Nummer: " + unicode(config['LIEFEREINHEIT']['bfsnr']))
-    logging.info("Quelle Geoprodukt: " + unicode(config['LIEFEREINHEIT']['gpr_source']))
-    logging.info("Quelle Transferstruktur: " + unicode(config['LIEFEREINHEIT']['ts_source']))
-    logging.info("Prüfsumme: " + unicode(config['LIEFEREINHEIT']['md5']))
-    logging.info("Geoprodukt-Code: " + unicode(config['LIEFEREINHEIT']['gprcode']))
+    logger.info("Name der Liefereinheit: " + unicode(config['LIEFEREINHEIT']['name']))
+    logger.info("BFS-Nummer: " + unicode(config['LIEFEREINHEIT']['bfsnr']))
+    logger.info("Quelle Geoprodukt: " + unicode(config['LIEFEREINHEIT']['gpr_source']))
+    logger.info("Quelle Transferstruktur: " + unicode(config['LIEFEREINHEIT']['ts_source']))
+    logger.info("Prüfsumme: " + unicode(config['LIEFEREINHEIT']['md5']))
+    logger.info("Geoprodukt-Code: " + unicode(config['LIEFEREINHEIT']['gprcode']))
   
-    logging.info("Script " +  os.path.basename(__file__) + " ist beendet.")
+    logger.info("Script " +  os.path.basename(__file__) + " ist beendet.")
     

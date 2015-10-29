@@ -4,8 +4,10 @@ import logging
 import os
 import cx_Oracle
 
+logger = logging.getLogger('oerebLaderLogger')
+
 def run(config):
-    logging.info("Script " +  os.path.basename(__file__) + " wird ausgeführt.")
+    logger.info("Script " +  os.path.basename(__file__) + " wird ausgeführt.")
     schema = 'OEREB'
     liefereinheit = config['LIEFEREINHEIT']['id']
     tables = [
@@ -27,9 +29,9 @@ def run(config):
     with cx_Oracle.connect(config['OEREB_WORK']['connection_string']) as conn:
         cursor = conn.cursor()
         for table in tables:
-            logging.info("Lösche aus Tabelle " + table['tablename'])
+            logger.info("Lösche aus Tabelle " + table['tablename'])
             sql = "DELETE FROM %s.%s WHERE %s=%s" % (schema, table['tablename'], table['liefereinheit_field'], liefereinheit)
-            logging.info(sql)
+            logger.info(sql)
             cursor.execute(sql)
         
-    logging.info("Script " +  os.path.basename(__file__) + " ist beendet.")
+    logger.info("Script " +  os.path.basename(__file__) + " ist beendet.")
