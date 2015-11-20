@@ -7,4 +7,5 @@ import cx_Oracle
 logger = logging.getLogger('oerebLaderLogger')
 
 def run(config):
+    #TODO: QUALIZP updaten (Status und Stand)
     logger.info("Script " +  os.path.basename(__file__) + " wird ausgeführt.")

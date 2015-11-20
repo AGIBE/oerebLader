@@ -121,6 +121,12 @@ def run(config, ticketnr):
     if len(liefereinheit_result) == 1:
         config['LIEFEREINHEIT']['name'] = liefereinheit_result[0][0]
         config['LIEFEREINHEIT']['bfsnr'] = liefereinheit_result[0][1]
+        if config['LIEFEREINHEIT']['bfsnr'] > 0:
+            gemeinde_name_sql = "SELECT bfs_name FROM bfs WHERE bfs_nr=" + unicode(config['LIEFEREINHEIT']['bfsnr'])
+            gemeinde_name_result = oerebLader.helpers.sql_helper.readSQL(config['OEREB_WORK']['connection_string'],gemeinde_name_sql)
+            config['LIEFEREINHEIT']['gemeinde_name'] = gemeinde_name_result[0][0]
+        else:
+            config['LIEFEREINHEIT']['gemeinde_name'] = None
         config['LIEFEREINHEIT']['gpr_source'] = liefereinheit_result[0][2]
         config['LIEFEREINHEIT']['ts_source'] = liefereinheit_result[0][3]
         config['LIEFEREINHEIT']['md5'] = liefereinheit_result[0][4]
@@ -132,6 +138,7 @@ def run(config, ticketnr):
     
     logger.info("Name der Liefereinheit: " + unicode(config['LIEFEREINHEIT']['name']))
     logger.info("BFS-Nummer: " + unicode(config['LIEFEREINHEIT']['bfsnr']))
+    logger.info("Gemeindename: " + unicode(config['LIEFEREINHEIT']['gemeinde_name']))
     logger.info("Quelle Geoprodukt: " + unicode(config['LIEFEREINHEIT']['gpr_source']))
     logger.info("Quelle Transferstruktur: " + unicode(config['LIEFEREINHEIT']['ts_source']))
     logger.info("Prüfsumme: " + unicode(config['LIEFEREINHEIT']['md5']))
