@@ -8,3 +8,4 @@ logger = logging.getLogger('oerebLaderLogger')
 
 def run(config):
     logger.info("Script " +  os.path.basename(__file__) + " wird ausgeführt.")
+    #TODO: QUALIZP updaten (Status und Stand)
