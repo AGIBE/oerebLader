@@ -4,6 +4,7 @@ import argparse
 from oerebLader import __version__
 import oerebLader.helpers.ticket_helper
 import oerebLader.workflows.workflow
+import oerebLader.scripts.release
 
 def import_ticket(args):
     oerebLader.workflows.workflow.run_workflow(args.TICKET)
@@ -16,6 +17,10 @@ def list_tickets(args):
     else:
         for ticket in ticket_list:
             print(ticket)
+            
+def release(args):
+    oerebLader.scripts.release.run_release()
+    print("Release SUCCESSFUL!")
 
 def main():
     version_text = "oerebLader v" + __version__
@@ -27,9 +32,13 @@ def main():
     list_parser.set_defaults(func=list_tickets)
     
     # IMPORT-Befehl
-    run_parser = subparsers.add_parser('import', help='importiert das angegebene Ticket.')
-    run_parser.add_argument("TICKET", type=int, help="auszufuehrendes Ticket.")
-    run_parser.set_defaults(func=import_ticket)
+    import_parser = subparsers.add_parser('import', help='importiert das angegebene Ticket.')
+    import_parser.add_argument("TICKET", type=int, help="auszufuehrendes Ticket.")
+    import_parser.set_defaults(func=import_ticket)
+    
+    # RELEASE-Befehl
+    release_parser = subparsers.add_parser('release', help='gibt alle anerkannten Tickets frei.')
+    release_parser.set_defaults(func=release)
     
     args = parser.parse_args()
     args.func(args)
