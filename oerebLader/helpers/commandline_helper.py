@@ -5,7 +5,7 @@ from oerebLader import __version__
 import oerebLader.helpers.ticket_helper
 import oerebLader.workflows.workflow
 
-def run_ticket(args):
+def import_ticket(args):
     oerebLader.workflows.workflow.run_workflow(args.TICKET)
     print("Workflow SUCCESSFUL!")
 
@@ -26,10 +26,10 @@ def main():
     list_parser = subparsers.add_parser('list', help='zeigt alle importierbaren Tickets an.')
     list_parser.set_defaults(func=list_tickets)
     
-    # RUN-Befehl
-    run_parser = subparsers.add_parser('run', help='importiert das angegebene Ticket.')
+    # IMPORT-Befehl
+    run_parser = subparsers.add_parser('import', help='importiert das angegebene Ticket.')
     run_parser.add_argument("TICKET", type=int, help="auszufuehrendes Ticket.")
-    run_parser.set_defaults(func=run_ticket)
+    run_parser.set_defaults(func=import_ticket)
     
     args = parser.parse_args()
     args.func(args)
