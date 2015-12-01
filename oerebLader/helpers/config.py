@@ -67,5 +67,7 @@ def get_config():
     # Connection-Strings zusammensetzen
     create_connection_string(config, 'GEODB_WORK')
     create_connection_string(config, 'OEREB_WORK')
+    create_connection_string(config, 'OEREB_TEAM')
+    create_connection_string(config, 'NORM_TEAM')
 
     return config

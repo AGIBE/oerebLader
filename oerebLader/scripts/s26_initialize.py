@@ -2,6 +2,7 @@
 from __future__ import absolute_import, division, print_function, unicode_literals
 import oerebLader.helpers.sql_helper
 import oerebLader.helpers.log_helper
+import oerebLader.helpers.connection_helper
 import logging
 import os
 import sys
@@ -31,18 +32,6 @@ def init_logging(ticketnr, config):
     
     return logger
 
-def create_connection_files(config, key, logger):
-    username = config[key]['username']
-    password = config[key]['password']
-    database = config[key]['database']
-    
-    temp_directory = tempfile.mkdtemp()
-    sde_filename = key + ".sde"
-    connection_file = os.path.join(temp_directory, sde_filename)
-    logger.info("Erzeuge Connectionfile " + connection_file)
-    arcpy.CreateDatabaseConnection_management(temp_directory, sde_filename, "ORACLE", database, "DATABASE_AUTH", username, password ) 
-    config[key]['connection_file'] = connection_file
-    
 def run(config, ticketnr):
     config['ticketnr'] = ticketnr
     
@@ -57,8 +46,8 @@ def run(config, ticketnr):
     # Temporäre ArcGIS-Connectionfiles erstellen
     # Die Files werden am Schluss durch s12_finish
     # wieder gelöscht.
-    create_connection_files(config, 'GEODB_WORK', logger)
-    create_connection_files(config, 'OEREB_WORK', logger)    
+    config['GEODB_WORK']['connection_file'] = oerebLader.helpers.connection_helper.create_connection_files(config, 'GEODB_WORK', logger)
+    config['OEREB_WORK']['connection_file'] = oerebLader.helpers.connection_helper.create_connection_files(config, 'OEREB_WORK', logger)    
     
     config['LIEFEREINHEIT'] = {}
 
