@@ -75,6 +75,10 @@ def run_release():
             logger.info("Anzahl Features im Ziel-Layer: " + unicode(target_count))
             if source_count!=target_count:
                 logger.error("Fehler beim Kopieren. Anzahl Features in der Quelle und im Ziel sind nicht identisch!")
+                
+    #TODO: Transferstruktur (enthält reine Oracle-Tabellen)
+    #TODO: Ticket-Status erhöhen
+    #TODO: GeoDB-Tabellen schreiben (Flag, Task)
     
     # Connection-Files löschen
     oerebLader.helpers.connection_helper.delete_connection_files(config['GEODB_WORK']['connection_file'], logger)
