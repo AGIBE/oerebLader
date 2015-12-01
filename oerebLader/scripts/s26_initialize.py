@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 from __future__ import absolute_import, division, print_function, unicode_literals
 import oerebLader.helpers.sql_helper
+import oerebLader.helpers.log_helper
 import logging
 import os
 import sys
@@ -8,38 +9,6 @@ import tempfile
 import arcpy
 import datetime
 import chromalog
-
-def create_loghandler_stream():
-    '''
-    Konfiguriert einen Stream-Loghandler. Der Output
-    wird in sys.stdout ausgegeben. In der Regel ist das
-    die Kommandozeile. Falls sys.stdout dies unterstützt,
-    werden Warnungen und Fehler farbig ausgegeben (dank
-    des chromalog-Moduls).
-    '''
-    
-    file_formatter = chromalog.ColorizingFormatter('%(levelname)s|%(message)s')
-    
-    h = chromalog.ColorizingStreamHandler()
-    h.setLevel(logging.DEBUG)
-    h.setFormatter(file_formatter)
-    
-    return h
-    
-def create_loghandler_file(filename):
-    '''
-    Konfiguriert einen File-Loghandler
-    :param filename: Name (inkl. Pfad) des Logfiles 
-    '''
-    
-    file_formatter = logging.Formatter('%(asctime)s.%(msecs)d|%(levelname)s|%(message)s', '%Y-%m-%d %H:%M:%S')
-    
-    h = logging.FileHandler(filename, encoding="UTF-8")
-    h.setLevel(logging.DEBUG)
-    h.setFormatter(file_formatter)
-    
-    return h
-
 
 def init_logging(ticketnr, config):
     log_directory = os.path.join(config['LOGGING']['basedir'], unicode(ticketnr))
@@ -56,8 +25,8 @@ def init_logging(ticketnr, config):
     logger = logging.getLogger("oerebLaderLogger")
     logger.setLevel(logging.DEBUG)
     logger.handlers = []
-    logger.addHandler(create_loghandler_file(logfile))
-    logger.addHandler(create_loghandler_stream())
+    logger.addHandler(oerebLader.helpers.log_helper.create_loghandler_file(logfile))
+    logger.addHandler(oerebLader.helpers.log_helper.create_loghandler_stream())
     logger.propagate = False
     
     return logger
