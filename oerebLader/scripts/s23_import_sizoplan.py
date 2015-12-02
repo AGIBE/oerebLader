@@ -26,7 +26,6 @@ def run(config):
         'GPRCODE': str(config['LIEFEREINHEIT']['gprcode']),
         'LOGFILE': str(fme_logfile)
     }
-    logger.info(unicode(parameters))
     try:
         runner.runWithParameters(str(fme_script), parameters)
     except fmeobjects.FMEException as ex:

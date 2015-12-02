@@ -39,7 +39,6 @@ def run(config):
         'OUTPUT_RV_URL': str(output_rv_url),
         'LOGFILE': str(fme_logfile)
     }
-    logger.info(unicode(parameters))
     try:
         runner.runWithParameters(str(fme_script), parameters)
     except fmeobjects.FMEException as ex:

@@ -26,7 +26,6 @@ def run(config):
         'LIEFEREINHEIT': str(config['LIEFEREINHEIT']['id']),
         'LOGFILE': str(fme_logfile)
     }
-    logger.info(unicode(parameters))
     try:
         runner.runWithParameters(str(fme_script), parameters)
     except fmeobjects.FMEException as ex:

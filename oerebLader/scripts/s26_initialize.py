@@ -40,7 +40,6 @@ def run(config, ticketnr):
     
     logger.info("Import wird initialisiert.")
     logger.info("Ticket-Nr: " + unicode(config['ticketnr']))
-    logger.info("Konfiguration: " + unicode(config))
     logger.info("Script " +  os.path.basename(__file__) + " wird ausgeführt.")
     
     # Temporäre ArcGIS-Connectionfiles erstellen

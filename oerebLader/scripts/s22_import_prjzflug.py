@@ -25,7 +25,6 @@ def run(config):
         'XTF_FILE': str(config['LIEFEREINHEIT']['gpr_source']),
         'LOGFILE': str(fme_logfile)
     }
-    logger.info(unicode(parameters))
     try:
         runner.runWithParameters(str(fme_script), parameters)
     except fmeobjects.FMEException as ex:
