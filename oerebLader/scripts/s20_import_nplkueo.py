@@ -39,12 +39,9 @@ def run(config):
         'OUTPUT_RV_URL': str(output_rv_url),
         'LOGFILE': str(fme_logfile)
     }
-    logger.info(parameters)
     try:
         runner.runWithParameters(str(fme_script), parameters)
-        runner = None
     except fmeobjects.FMEException as ex:
-        runner = None
         logger.error("FME-Workbench " + fme_script + " konnte nicht ausgeführt werden!")
         logger.error(ex)
         logger.error("Import wird abgebrochen!")
