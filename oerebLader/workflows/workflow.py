@@ -3,6 +3,7 @@ from __future__ import absolute_import, division, print_function, unicode_litera
 import oerebLader.helpers.config
 import oerebLader.helpers.sql_helper
 import oerebLader.workflows.w4_npl
+import oerebLader.workflows.w6_nplkueo
 import oerebLader.workflows.w8_kbsoev
 import oerebLader.workflows.w9_kbsflug
 import oerebLader.workflows.w10_sizoplan
