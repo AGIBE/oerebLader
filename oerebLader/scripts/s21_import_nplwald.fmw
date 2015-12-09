@@ -21,7 +21,7 @@
 #    
 #! PASSWORD=""
 #! ATTR_TYPE_ENCODING="SDF"
-#! VIEW_POSITION="10793 -1701"
+#! VIEW_POSITION="11050 -1227"
 #! SHOW_INFO_NODES="true"
 #! FME_STROKE_MAX_DEVIATION="0"
 #! BEGIN_PYTHON=""
@@ -39,13 +39,13 @@
 #! USAGE=""
 #! END_PYTHON=""
 #! HISTORY=""
-#! FME_DOCUMENT_PRIORGUID="d41f2f4e-2332-447b-8fff-3bd89a8a2a46"
+#! FME_DOCUMENT_PRIORGUID="d41f2f4e-2332-447b-8fff-3bd89a8a2a46,046989c5-6000-4b71-8e78-295f0a049887"
 #! DOC_TOP_LEFT="102 -3043"
 #! REQUIREMENTS_KEYWORD=""
 #! SOURCE_ROUTING_FILE=""
 #! DESTINATION_ROUTING_FILE=""
 #! DESTINATION="NONE"
-#! LAST_SAVE_DATE="2015-12-09T13:56:15"
+#! LAST_SAVE_DATE="2015-12-09T14:25:45"
 #! FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
 #! WORKSPACE_VERSION="1"
 #! SOURCE="NONE"
@@ -56,7 +56,7 @@
 #! REQUIREMENTS=""
 #! BEGIN_TCL=""
 #! DOC_EXTENTS="14907 2950"
-#! FME_DOCUMENT_GUID="046989c5-6000-4b71-8e78-295f0a049887"
+#! FME_DOCUMENT_GUID="f47db930-dacb-4016-be8e-bfe3b3e77230"
 #! SHOW_ANNOTATIONS="true"
 #! IGNORE_READER_FAILURE="No"
 #! WARN_INVALID_XFORM_PARAM="Yes"
@@ -67,7 +67,7 @@
 #! ROLE="READER"
 #! FORMAT="ch.ehi.fme.Main"
 #! DATASET="$(ITF_FILE)"
-#! KEYWORD="ch.ehi.fme.Main_2"
+#! KEYWORD="ch.ehi.fme.Main_1"
 #! MULTI_GEOM_ALLOWED="false"
 #! ATTR_MAX_LENGTH="60"
 #! ATTR_CASE="ANY"
@@ -908,7 +908,7 @@
 #! POSITION="1984 -738"
 #! ORDER="5e+014"
 #! COLLAPSED="true"
-#! KEYWORD="ch.ehi.fme.Main_2"
+#! KEYWORD="ch.ehi.fme.Main_1"
 #! ENABLED="true"
 #! HIDDEN_USER_ATTRS=""
 #! MERGE="false"
@@ -932,7 +932,7 @@
 #! POSITION="4070 -1521"
 #! ORDER="5e+014"
 #! COLLAPSED="true"
-#! KEYWORD="ch.ehi.fme.Main_2"
+#! KEYWORD="ch.ehi.fme.Main_1"
 #! ENABLED="true"
 #! HIDDEN_USER_ATTRS=""
 #! MERGE="false"
@@ -955,7 +955,7 @@
 #! POSITION="119 -330"
 #! ORDER="5e+014"
 #! COLLAPSED="true"
-#! KEYWORD="ch.ehi.fme.Main_2"
+#! KEYWORD="ch.ehi.fme.Main_1"
 #! ENABLED="true"
 #! HIDDEN_USER_ATTRS=""
 #! MERGE="false"
@@ -979,7 +979,7 @@
 #! POSITION="7746 -1977"
 #! ORDER="5e+014"
 #! COLLAPSED="true"
-#! KEYWORD="ch.ehi.fme.Main_2"
+#! KEYWORD="ch.ehi.fme.Main_1"
 #! ENABLED="true"
 #! HIDDEN_USER_ATTRS=""
 #! MERGE="false"
@@ -1007,7 +1007,7 @@
 #! POSITION="7731 -1546"
 #! ORDER="5e+014"
 #! COLLAPSED="true"
-#! KEYWORD="ch.ehi.fme.Main_2"
+#! KEYWORD="ch.ehi.fme.Main_1"
 #! ENABLED="true"
 #! HIDDEN_USER_ATTRS=""
 #! MERGE="false"
@@ -1052,7 +1052,7 @@
 #! IS_STAND_ALONE="true"
 #! />
 #! <GLOBAL_PARAMETER
-#! GUI_LINE="GUI TEXT BFSNR BFS-Nr:"
+#! GUI_LINE="GUI TEXT_OR_ATTR BFSNR BFS-Nr:"
 #! DEFAULT_VALUE=""
 #! IS_STAND_ALONE="true"
 #! />
@@ -1209,7 +1209,7 @@
 #! INFO_NODE="false"
 #! TOP_LEFT="1967 -612"
 #! BOTTOM_RIGHT="1967 -612"
-#! COLOUR="1,1,0.784314,0.196078"
+#! COLOUR="1,1,0.784314,0.192157"
 #! SIZE_POLICY="8"
 #! COMMENT_TYPE="REGULAR"
 #! ANCHORED_NODE="147"
@@ -1223,7 +1223,7 @@
 #! INFO_NODE="false"
 #! TOP_LEFT="4053 -1395"
 #! BOTTOM_RIGHT="4053 -1395"
-#! COLOUR="1,1,0.784314,0.196078"
+#! COLOUR="1,1,0.784314,0.192157"
 #! SIZE_POLICY="8"
 #! COMMENT_TYPE="REGULAR"
 #! ANCHORED_NODE="169"
@@ -1237,7 +1237,7 @@
 #! INFO_NODE="false"
 #! TOP_LEFT="102 -204"
 #! BOTTOM_RIGHT="102 -204"
-#! COLOUR="1,1,0.784314,0.196078"
+#! COLOUR="1,1,0.784314,0.192157"
 #! SIZE_POLICY="8"
 #! COMMENT_TYPE="REGULAR"
 #! ANCHORED_NODE="172"
@@ -1251,7 +1251,7 @@
 #! INFO_NODE="false"
 #! TOP_LEFT="7714 -1419"
 #! BOTTOM_RIGHT="7714 -1419"
-#! COLOUR="1,1,0.784314,0.196078"
+#! COLOUR="1,1,0.784314,0.192157"
 #! SIZE_POLICY="8"
 #! COMMENT_TYPE="REGULAR"
 #! ANCHORED_NODE="99"
@@ -1265,7 +1265,7 @@
 #! INFO_NODE="false"
 #! TOP_LEFT="7729 -1850"
 #! BOTTOM_RIGHT="7729 -1850"
-#! COLOUR="1,1,0.784314,0.196078"
+#! COLOUR="1,1,0.784314,0.192157"
 #! SIZE_POLICY="8"
 #! COMMENT_TYPE="REGULAR"
 #! ANCHORED_NODE="98"
@@ -1282,7 +1282,7 @@
 #! BOTTOM_RIGHT="15009 -3385"
 #! STICKY="true"
 #! COLOUR="0.286275,0.329412,0.0666667"
-#! CONTENTS="89 102 105 93 111 116 127 119 143 135 86 97 90 98 94 101 128 109 104 83 107 110 130 115 99 118 87 123 136 79 95 112 84 139 100 103 88 106 114 117 113 77 92 142 126 82 96 85 91 140 "
+#! CONTENTS="90 128 95 102 83 123 105 110 140 115 118 87 99 143 108 92 135 96 84 97 101 104 88 107 114 126 117 136 93 130 109 79 98 112 85 77 89 127 100 103 94 106 111 116 119 82 142 139 91 113 86 "
 #! />
 #! </BOOKMARKS>
 #! <TRANSFORMERS>
@@ -1327,7 +1327,7 @@
 #! <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_VALUE="&lt;Unused&gt;"/>
 #! <XFORM_PARM PARM_NAME="NUM_SUBSEQUENT_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
 #! <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
-#! <XFORM_PARM PARM_NAME="ATTR_LIST" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="ATTR_LIST" PARM_VALUE="BFSNR,$(BFSNR),NAME,$(GEMNAME)"/>
 #! </TRANSFORMER>
 #! <TRANSFORMER
 #! IDENTIFIER="8"
@@ -1916,7 +1916,7 @@
 #! <XFORM_ATTR ATTR_NAME="filecopy_dest_dataset" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_PARM PARM_NAME="LIST_ATTRS" PARM_VALUE=""/>
 #! <XFORM_PARM PARM_NAME="HIDE_ATTRIBUTES" PARM_VALUE=""/>
-#! <XFORM_PARM PARM_NAME="PYTHONSOURCE" PARM_VALUE="#&lt;space&gt;-*-&lt;space&gt;coding:&lt;space&gt;latin-1&lt;space&gt;-*-&lt;lf&gt;import&lt;space&gt;fmeobjects&lt;lf&gt;import&lt;space&gt;os&lt;lf&gt;&lt;lf&gt;def&lt;space&gt;processFeature&lt;openparen&gt;feature&lt;closeparen&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;vorschriftsart&lt;space&gt;=&lt;space&gt;str&lt;openparen&gt;feature.getAttribute&lt;openparen&gt;&lt;apos&gt;ART&lt;apos&gt;&lt;closeparen&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;#&lt;space&gt;Nur&lt;space&gt;Typ&lt;space&gt;&lt;quote&gt;Rechtsvorschrift&lt;quote&gt;&lt;space&gt;muss&lt;space&gt;ein&lt;space&gt;PDF&lt;space&gt;haben&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;if&lt;space&gt;vorschriftsart&lt;space&gt;==&lt;space&gt;&lt;apos&gt;0&lt;apos&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;filename&lt;space&gt;=&lt;space&gt;feature.getAttribute&lt;openparen&gt;&lt;apos&gt;Dokument&lt;apos&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;outputURL&lt;space&gt;=&lt;space&gt;FME_MacroValues&lt;openbracket&gt;&lt;apos&gt;OUTPUT_RV_URL&lt;apos&gt;&lt;closebracket&gt;&lt;space&gt;+&lt;space&gt;filename&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;inputFile&lt;space&gt;=&lt;space&gt;os.path.join&lt;openparen&gt;FME_MacroValues&lt;openbracket&gt;&lt;apos&gt;INPUT_RV_DIR&lt;apos&gt;&lt;closebracket&gt;&lt;comma&gt;&lt;space&gt;filename&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;inputFile&lt;space&gt;=&lt;space&gt;inputFile.replace&lt;openparen&gt;&lt;apos&gt;&lt;backslash&gt;&lt;backslash&gt;&lt;apos&gt;&lt;comma&gt;&lt;apos&gt;&lt;solidus&gt;&lt;apos&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;outputDir&lt;space&gt;=&lt;space&gt;FME_MacroValues&lt;openbracket&gt;&lt;apos&gt;OUTPUT_RV_DIR&lt;apos&gt;&lt;closebracket&gt;.replace&lt;openparen&gt;&lt;apos&gt;&lt;backslash&gt;&lt;backslash&gt;&lt;apos&gt;&lt;comma&gt;&lt;apos&gt;&lt;solidus&gt;&lt;apos&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;feature.setAttribute&lt;openparen&gt;&lt;apos&gt;TEXTIMWEB&lt;apos&gt;&lt;comma&gt;&lt;space&gt;outputURL&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;feature.setAttribute&lt;openparen&gt;&lt;apos&gt;filecopy_source_dataset&lt;apos&gt;&lt;comma&gt;&lt;space&gt;inputFile&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;feature.setAttribute&lt;openparen&gt;&lt;apos&gt;filecopy_dest_dataset&lt;apos&gt;&lt;comma&gt;&lt;space&gt;outputDir&lt;closeparen&gt;"/>
+#! <XFORM_PARM PARM_NAME="PYTHONSOURCE" PARM_VALUE="#&lt;space&gt;-*-&lt;space&gt;coding:&lt;space&gt;latin-1&lt;space&gt;-*-&lt;lf&gt;import&lt;space&gt;fmeobjects&lt;lf&gt;import&lt;space&gt;os&lt;lf&gt;&lt;lf&gt;def&lt;space&gt;processFeature&lt;openparen&gt;feature&lt;closeparen&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;vorschriftsart&lt;space&gt;=&lt;space&gt;str&lt;openparen&gt;feature.getAttribute&lt;openparen&gt;&lt;apos&gt;Art_Doku&lt;apos&gt;&lt;closeparen&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;#&lt;space&gt;Nur&lt;space&gt;Typ&lt;space&gt;&lt;quote&gt;Rechtsvorschrift&lt;quote&gt;&lt;space&gt;muss&lt;space&gt;ein&lt;space&gt;PDF&lt;space&gt;haben&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;if&lt;space&gt;vorschriftsart&lt;space&gt;==&lt;space&gt;&lt;apos&gt;0&lt;apos&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;filename&lt;space&gt;=&lt;space&gt;feature.getAttribute&lt;openparen&gt;&lt;apos&gt;Dokument&lt;apos&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;outputURL&lt;space&gt;=&lt;space&gt;FME_MacroValues&lt;openbracket&gt;&lt;apos&gt;OUTPUT_RV_URL&lt;apos&gt;&lt;closebracket&gt;&lt;space&gt;+&lt;space&gt;filename&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;inputFile&lt;space&gt;=&lt;space&gt;os.path.join&lt;openparen&gt;FME_MacroValues&lt;openbracket&gt;&lt;apos&gt;INPUT_RV_DIR&lt;apos&gt;&lt;closebracket&gt;&lt;comma&gt;&lt;space&gt;filename&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;inputFile&lt;space&gt;=&lt;space&gt;inputFile.replace&lt;openparen&gt;&lt;apos&gt;&lt;backslash&gt;&lt;backslash&gt;&lt;apos&gt;&lt;comma&gt;&lt;apos&gt;&lt;solidus&gt;&lt;apos&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;outputDir&lt;space&gt;=&lt;space&gt;FME_MacroValues&lt;openbracket&gt;&lt;apos&gt;OUTPUT_RV_DIR&lt;apos&gt;&lt;closebracket&gt;.replace&lt;openparen&gt;&lt;apos&gt;&lt;backslash&gt;&lt;backslash&gt;&lt;apos&gt;&lt;comma&gt;&lt;apos&gt;&lt;solidus&gt;&lt;apos&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;feature.setAttribute&lt;openparen&gt;&lt;apos&gt;TEXTIMWEB&lt;apos&gt;&lt;comma&gt;&lt;space&gt;outputURL&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;feature.setAttribute&lt;openparen&gt;&lt;apos&gt;filecopy_source_dataset&lt;apos&gt;&lt;comma&gt;&lt;space&gt;inputFile&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;feature.setAttribute&lt;openparen&gt;&lt;apos&gt;filecopy_dest_dataset&lt;apos&gt;&lt;comma&gt;&lt;space&gt;outputDir&lt;closeparen&gt;"/>
 #! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="PythonCaller"/>
 #! <XFORM_PARM PARM_NAME="PYTHONSYMBOL" PARM_VALUE="processFeature"/>
 #! <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
@@ -3288,7 +3288,7 @@
 #! </LOOKUP_TABLES>
 #! </WORKSPACE>
 #! 
-GUI IGNORE SourceDataset_ch.ehi.fme.Main_2,ch.ehi.fme.Main_IN_MODELS_ch.ehi.fme.Main_2,ch.ehi.fme.Main_IN_MODEL_DIR_ch.ehi.fme.Main_2,ch.ehi.fme.Main_IN_TOPICS_FILTER_ch.ehi.fme.Main_2,ch.ehi.fme.Main_IN_CHECK_UNIQUEOID_ch.ehi.fme.Main_2,ch.ehi.fme.Main_IN_CHECK_ATTRTYPE_ch.ehi.fme.Main_2,ch.ehi.fme.Main_IN_CHECK_ATTRMULTIPLICITY_ch.ehi.fme.Main_2,ch.ehi.fme.Main_IN_GEOMETRY_ENCODING_ch.ehi.fme.Main_2,ch.ehi.fme.Main_IN_GEOM_ATTR_MAPPING_ch.ehi.fme.Main_2,ch.ehi.fme.Main_IN_CREATE_LINETABLES_ch.ehi.fme.Main_2,ch.ehi.fme.Main_IN_SKIP_POLYGONBUILDING_ch.ehi.fme.Main_2,ch.ehi.fme.Main_IN_INHERITANCE_MAPPING_ch.ehi.fme.Main_2,ch.ehi.fme.Main_IN_TRIM_VALUES_ch.ehi.fme.Main_2,ch.ehi.fme.Main_IN_ILI1_ADDDEFVAL_ch.ehi.fme.Main_2,ch.ehi.fme.Main_IN_ILI1_RENUMBERTID_ch.ehi.fme.Main_2,ch.ehi.fme.Main_IN_ILI1_CONVERTAREA_ch.ehi.fme.Main_2,ch.ehi.fme.Main_IN_ILI1_CONVERTSURFACE_ch.ehi.fme.Main_2,ch.ehi.fme.Main_IN_ILI1_CHECKCONVERT_ch.ehi.fme.Main_2,ch.ehi.fme.Main_IN_ILI1_ENUMASITFCODE_ch.ehi.fme.Main_2,ch.ehi.fme.Main_IN_CREATEFEATURETYPE4ENUM_ch.ehi.fme.Main_2,ch.ehi.fme.Main_IN_HTTP_PROXYHOST_ch.ehi.fme.Main_2,ch.ehi.fme.Main_IN_HTTP_PROXYPORT_ch.ehi.fme.Main_2,ch.ehi.fme.Main_IN_TRACEMSGS_ch.ehi.fme.Main_2,ch.ehi.fme.Main_IN_NETWORK_AUTHENTICATION_ch.ehi.fme.Main_2,ch.ehi.fme.Main_IN_NETWORK_PROXY_ch.ehi.fme.Main_2,DestDataset_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_SERVER_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_USERID_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_PASSWORD_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_INSTANCE_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_VERSION_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_TRANSACTION_TYPE_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_TEMPLATEFILE_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_SIMPLIFY_GEOM_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_ORIGIN_X_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_ORIGIN_Y_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_XY_SCALE_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_HAS_Z_VALUES_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_Z_ORIGIN_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_Z_SCALE_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_GRID_1_GEODATABASE_SDE_1,_GEODBOutDefaultZValue_GEODATABASE_SDE_1,_GEODBOutWriterMode_GEODATABASE_SDE_1,_GEODBOutTransaction_GEODATABASE_SDE_1,_GEODBOutTransactionInterval_GEODATABASE_SDE_1,_GEODBOutIgnoreFailedFeatureEntry_GEODATABASE_SDE_1,_GEODBOutMaxNumberFailedFeatures_GEODATABASE_SDE_1,_GEODBOutDumpFailedFeatures_GEODATABASE_SDE_1,_GEODBOutFFSDumpFile_GEODATABASE_SDE_1,_GEODBOutAnnotationUnits_GEODATABASE_SDE_1,_GEODBOutMeasures_GEODATABASE_SDE_1,_GEODBOutMeasureOrigin_GEODATABASE_SDE_1,_GEODBOutMeasureScale_GEODATABASE_SDE_1,_GEODBOutReconcileAndPost_GEODATABASE_SDE_1,_GEODBOutDeleteChildAfterReconcileAndPost_GEODATABASE_SDE_1,_GEODBOutValidateFeatures_GEODATABASE_SDE_1,_GEODBOutSimplifyNetworkFeatures_GEODATABASE_SDE_1,_GEODBOutPersistentConnection_GEODATABASE_SDE_1,_GEODBOutCommitTransactionsAfterWrite_GEODATABASE_SDE_1,_GEODBOutBeginSql_GEODATABASE_SDE_1,_GEODBOutEndSql_GEODATABASE_SDE_1,DestDataset_FILECOPY_1,FILECOPY_OUT_FILE_OPERATION_FILECOPY_1,FILECOPY_OUT_OVERWRITE_FILE_FILECOPY_1,FILECOPY_OUT_COPY_SOURCE_DIRECTORY_FILECOPY_1,FILECOPY_OUT_COPY_SUBDIRECTORIES_FILECOPY_1,FILECOPY_OUT_FAIL_NONEXISTENT_SOURCE_FILECOPY_1
+GUI IGNORE SourceDataset_ch.ehi.fme.Main_1,ch.ehi.fme.Main_IN_MODELS_ch.ehi.fme.Main_1,ch.ehi.fme.Main_IN_MODEL_DIR_ch.ehi.fme.Main_1,ch.ehi.fme.Main_IN_TOPICS_FILTER_ch.ehi.fme.Main_1,ch.ehi.fme.Main_IN_CHECK_UNIQUEOID_ch.ehi.fme.Main_1,ch.ehi.fme.Main_IN_CHECK_ATTRTYPE_ch.ehi.fme.Main_1,ch.ehi.fme.Main_IN_CHECK_ATTRMULTIPLICITY_ch.ehi.fme.Main_1,ch.ehi.fme.Main_IN_GEOMETRY_ENCODING_ch.ehi.fme.Main_1,ch.ehi.fme.Main_IN_GEOM_ATTR_MAPPING_ch.ehi.fme.Main_1,ch.ehi.fme.Main_IN_CREATE_LINETABLES_ch.ehi.fme.Main_1,ch.ehi.fme.Main_IN_SKIP_POLYGONBUILDING_ch.ehi.fme.Main_1,ch.ehi.fme.Main_IN_INHERITANCE_MAPPING_ch.ehi.fme.Main_1,ch.ehi.fme.Main_IN_TRIM_VALUES_ch.ehi.fme.Main_1,ch.ehi.fme.Main_IN_ILI1_ADDDEFVAL_ch.ehi.fme.Main_1,ch.ehi.fme.Main_IN_ILI1_RENUMBERTID_ch.ehi.fme.Main_1,ch.ehi.fme.Main_IN_ILI1_CONVERTAREA_ch.ehi.fme.Main_1,ch.ehi.fme.Main_IN_ILI1_CONVERTSURFACE_ch.ehi.fme.Main_1,ch.ehi.fme.Main_IN_ILI1_CHECKCONVERT_ch.ehi.fme.Main_1,ch.ehi.fme.Main_IN_ILI1_ENUMASITFCODE_ch.ehi.fme.Main_1,ch.ehi.fme.Main_IN_CREATEFEATURETYPE4ENUM_ch.ehi.fme.Main_1,ch.ehi.fme.Main_IN_HTTP_PROXYHOST_ch.ehi.fme.Main_1,ch.ehi.fme.Main_IN_HTTP_PROXYPORT_ch.ehi.fme.Main_1,ch.ehi.fme.Main_IN_TRACEMSGS_ch.ehi.fme.Main_1,ch.ehi.fme.Main_IN_NETWORK_AUTHENTICATION_ch.ehi.fme.Main_1,ch.ehi.fme.Main_IN_NETWORK_PROXY_ch.ehi.fme.Main_1,DestDataset_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_SERVER_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_USERID_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_PASSWORD_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_INSTANCE_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_VERSION_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_TRANSACTION_TYPE_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_TEMPLATEFILE_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_SIMPLIFY_GEOM_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_ORIGIN_X_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_ORIGIN_Y_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_XY_SCALE_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_HAS_Z_VALUES_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_Z_ORIGIN_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_Z_SCALE_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_GRID_1_GEODATABASE_SDE_1,_GEODBOutDefaultZValue_GEODATABASE_SDE_1,_GEODBOutWriterMode_GEODATABASE_SDE_1,_GEODBOutTransaction_GEODATABASE_SDE_1,_GEODBOutTransactionInterval_GEODATABASE_SDE_1,_GEODBOutIgnoreFailedFeatureEntry_GEODATABASE_SDE_1,_GEODBOutMaxNumberFailedFeatures_GEODATABASE_SDE_1,_GEODBOutDumpFailedFeatures_GEODATABASE_SDE_1,_GEODBOutFFSDumpFile_GEODATABASE_SDE_1,_GEODBOutAnnotationUnits_GEODATABASE_SDE_1,_GEODBOutMeasures_GEODATABASE_SDE_1,_GEODBOutMeasureOrigin_GEODATABASE_SDE_1,_GEODBOutMeasureScale_GEODATABASE_SDE_1,_GEODBOutReconcileAndPost_GEODATABASE_SDE_1,_GEODBOutDeleteChildAfterReconcileAndPost_GEODATABASE_SDE_1,_GEODBOutValidateFeatures_GEODATABASE_SDE_1,_GEODBOutSimplifyNetworkFeatures_GEODATABASE_SDE_1,_GEODBOutPersistentConnection_GEODATABASE_SDE_1,_GEODBOutCommitTransactionsAfterWrite_GEODATABASE_SDE_1,_GEODBOutBeginSql_GEODATABASE_SDE_1,_GEODBOutEndSql_GEODATABASE_SDE_1,DestDataset_FILECOPY_1,FILECOPY_OUT_FILE_OPERATION_FILECOPY_1,FILECOPY_OUT_OVERWRITE_FILE_FILECOPY_1,FILECOPY_OUT_COPY_SOURCE_DIRECTORY_FILECOPY_1,FILECOPY_OUT_COPY_SUBDIRECTORIES_FILECOPY_1,FILECOPY_OUT_FAIL_NONEXISTENT_SOURCE_FILECOPY_1
 DEFAULT_MACRO MODELLABLAGE 
 GUI TEXT MODELLABLAGE Pfad zur Modellablage:
 DEFAULT_MACRO DATABASE 
@@ -3336,8 +3336,7 @@ INCLUDE [ if {{$(INSTANCE)} == {}} { puts_real {Parameter 'INSTANCE' must be giv
 #! START_HEADER
 #! START_WB_HEADER
 READER_TYPE ch.ehi.fme.Main
-READER_KEYWORD ch.ehi.fme.Main_2
-READER_GEN_DIRECTIVES CHECK_ATTRMULTIPLICITY,Yes,TRACEMSGS,No,ILI1_CONVERTAREA,,ILI1_RENUMBERTID,No,SKIP_POLYGONBUILDING,No,MODELS,%DATA,ILI1_CONVERTSURFACE,,TRIM_VALUES,Yes,TOPICS_FILTER,,ILI1_CHECKCONVERT,Yes,_MERGE_SCHEMAS,YES,CHECK_UNIQUEOID,No,INHERITANCE_MAPPING,SuperClass,GEOM_ATTR_MAPPING,EncodeAsFmeAttribute,ILI1_ADDDEFVAL,No,GEOMETRY_ENCODING,FMEBIN,HTTP_PROXYHOST,,MODEL_DIR,%XTF_DIR<semicolon>http:<solidus><solidus>models.interlis.ch<solidus><semicolon>C:<backslash>Program<space>Files<space><openparen>x86<closeparen><backslash>FME<solidus>plugins<solidus>interlis2<solidus>ilimodels<semicolon>C:<backslash>Program<space>Files<space><openparen>x86<closeparen><backslash>FME<solidus>plugins<solidus>interlis2<solidus>ili22models,CREATEFEATURETYPE4ENUM,No,CHECK_ATTRTYPE,Yes,HTTP_PROXYPORT,,CREATE_LINETABLES,No,ILI1_ENUMASITFCODE,No
+READER_KEYWORD ch.ehi.fme.Main_1
 WRITER_TYPE MULTI_WRITER
 MULTI_WRITER_DATASET_ORDER BY_ID
 MULTI_WRITER_FIRST_WRITER_ID 0
@@ -3347,100 +3346,100 @@ MULTI_WRITER_TYPE{1} FILECOPY
 MULTI_WRITER_KEYWORD{1} FILECOPY_1
 #! END_WB_HEADER
 #! START_WB_HEADER
-MACRO WB_KEYWORD "ch.ehi.fme.Main_2"
+MACRO WB_KEYWORD "ch.ehi.fme.Main_1"
 #! END_WB_HEADER
-#! START_SOURCE_HEADER ch.ehi.fme.Main ch.ehi.fme.Main_2
+#! START_SOURCE_HEADER ch.ehi.fme.Main ch.ehi.fme.Main_1
 # ============================================================================
 # The following GUI line prompts for a file to be used as the
 # source of the input data.
 # The user input is stored in a macro, which is then used to define
 # the dataset to be read.
 # The dataset this mapping file was generated from was:
-GUI FILENAME SourceDataset_ch.ehi.fme.Main_2 INTERLIS_Files(*.xtf;*.xml;*.itf;*.ili)|*.xtf;*.xml;*.itf;*.ili|INTERLIS_2_Files(*.xtf;*.xml)|*.xtf;*.xml|INTERLIS_1_FILES(*.itf)|*.itf|INTERLIS_MODELS(*.ili)|*.ili|All_Files|*.* Original INTERLIS 2 File:
-DEFAULT_MACRO ch.ehi.fme.Main_IN_MODELS_ch.ehi.fme.Main_2 %DATA
-ch.ehi.fme.Main_2_MODELS "$(ch.ehi.fme.Main_IN_MODELS_ch.ehi.fme.Main_2)"
-GUI TEXT ch.ehi.fme.Main_IN_MODELS_ch.ehi.fme.Main_2 Models:
-DEFAULT_MACRO ch.ehi.fme.Main_IN_MODEL_DIR_ch.ehi.fme.Main_2 $(MODELLABLAGE)
-ch.ehi.fme.Main_2_MODEL_DIR "$(ch.ehi.fme.Main_IN_MODEL_DIR_ch.ehi.fme.Main_2)"
-GUI TEXT ch.ehi.fme.Main_IN_MODEL_DIR_ch.ehi.fme.Main_2 Models Directory:
-DEFAULT_MACRO ch.ehi.fme.Main_IN_TOPICS_FILTER_ch.ehi.fme.Main_2 
-ch.ehi.fme.Main_2_TOPICS_FILTER "$(ch.ehi.fme.Main_IN_TOPICS_FILTER_ch.ehi.fme.Main_2)"
-GUI OPTIONAL TEXT ch.ehi.fme.Main_IN_TOPICS_FILTER_ch.ehi.fme.Main_2 Topics filter:
-DEFAULT_MACRO ch.ehi.fme.Main_IN_CHECK_UNIQUEOID_ch.ehi.fme.Main_2 No
-ch.ehi.fme.Main_2_CHECK_UNIQUEOID "$(ch.ehi.fme.Main_IN_CHECK_UNIQUEOID_ch.ehi.fme.Main_2)"
-GUI CHOICE ch.ehi.fme.Main_IN_CHECK_UNIQUEOID_ch.ehi.fme.Main_2 Yes%No Check TID/OID Uniqueness:
-DEFAULT_MACRO ch.ehi.fme.Main_IN_CHECK_ATTRTYPE_ch.ehi.fme.Main_2 Yes
-ch.ehi.fme.Main_2_CHECK_ATTRTYPE "$(ch.ehi.fme.Main_IN_CHECK_ATTRTYPE_ch.ehi.fme.Main_2)"
-GUI CHOICE ch.ehi.fme.Main_IN_CHECK_ATTRTYPE_ch.ehi.fme.Main_2 Yes%No Check Attribute Type:
-DEFAULT_MACRO ch.ehi.fme.Main_IN_CHECK_ATTRMULTIPLICITY_ch.ehi.fme.Main_2 Yes
-ch.ehi.fme.Main_2_CHECK_ATTRMULTIPLICITY "$(ch.ehi.fme.Main_IN_CHECK_ATTRMULTIPLICITY_ch.ehi.fme.Main_2)"
-GUI CHOICE ch.ehi.fme.Main_IN_CHECK_ATTRMULTIPLICITY_ch.ehi.fme.Main_2 Yes%No Check Attribute Multiplicity:
-DEFAULT_MACRO ch.ehi.fme.Main_IN_GEOMETRY_ENCODING_ch.ehi.fme.Main_2 FMEBIN
-ch.ehi.fme.Main_2_GEOMETRY_ENCODING "$(ch.ehi.fme.Main_IN_GEOMETRY_ENCODING_ch.ehi.fme.Main_2)"
-GUI CHOICE ch.ehi.fme.Main_IN_GEOMETRY_ENCODING_ch.ehi.fme.Main_2 FMEXML%FMEBIN%FMEHEXBIN%OGCHEXBIN Geometry Encoding:
-DEFAULT_MACRO ch.ehi.fme.Main_IN_GEOM_ATTR_MAPPING_ch.ehi.fme.Main_2 EncodeAsFmeAttribute
-ch.ehi.fme.Main_2_GEOM_ATTR_MAPPING "$(ch.ehi.fme.Main_IN_GEOM_ATTR_MAPPING_ch.ehi.fme.Main_2)"
-GUI CHOICE ch.ehi.fme.Main_IN_GEOM_ATTR_MAPPING_ch.ehi.fme.Main_2 EncodeAsFmeAttribute%RepeatFeature Mapping of multiple Geometry Attributes:
-DEFAULT_MACRO ch.ehi.fme.Main_IN_CREATE_LINETABLES_ch.ehi.fme.Main_2 No
-ch.ehi.fme.Main_2_CREATE_LINETABLES "$(ch.ehi.fme.Main_IN_CREATE_LINETABLES_ch.ehi.fme.Main_2)"
-GUI CHOICE ch.ehi.fme.Main_IN_CREATE_LINETABLES_ch.ehi.fme.Main_2 Yes%No Create Linetables:
-DEFAULT_MACRO ch.ehi.fme.Main_IN_SKIP_POLYGONBUILDING_ch.ehi.fme.Main_2 No
-ch.ehi.fme.Main_2_SKIP_POLYGONBUILDING "$(ch.ehi.fme.Main_IN_SKIP_POLYGONBUILDING_ch.ehi.fme.Main_2)"
-GUI CHOICE ch.ehi.fme.Main_IN_SKIP_POLYGONBUILDING_ch.ehi.fme.Main_2 Yes%No Skip Polygon Building:
-DEFAULT_MACRO ch.ehi.fme.Main_IN_INHERITANCE_MAPPING_ch.ehi.fme.Main_2 SuperClass
-ch.ehi.fme.Main_2_INHERITANCE_MAPPING "$(ch.ehi.fme.Main_IN_INHERITANCE_MAPPING_ch.ehi.fme.Main_2)"
-GUI CHOICE ch.ehi.fme.Main_IN_INHERITANCE_MAPPING_ch.ehi.fme.Main_2 SuperClass%SubClass Inheritance Mapping Strategy:
-DEFAULT_MACRO ch.ehi.fme.Main_IN_TRIM_VALUES_ch.ehi.fme.Main_2 Yes
-ch.ehi.fme.Main_2_TRIM_VALUES "$(ch.ehi.fme.Main_IN_TRIM_VALUES_ch.ehi.fme.Main_2)"
-GUI CHOICE ch.ehi.fme.Main_IN_TRIM_VALUES_ch.ehi.fme.Main_2 Yes%No Trim Values:
-DEFAULT_MACRO ch.ehi.fme.Main_IN_ILI1_ADDDEFVAL_ch.ehi.fme.Main_2 No
-ch.ehi.fme.Main_2_ILI1_ADDDEFVAL "$(ch.ehi.fme.Main_IN_ILI1_ADDDEFVAL_ch.ehi.fme.Main_2)"
-GUI CHOICE ch.ehi.fme.Main_IN_ILI1_ADDDEFVAL_ch.ehi.fme.Main_2 Yes%No ITF Add Default Values:
-DEFAULT_MACRO ch.ehi.fme.Main_IN_ILI1_RENUMBERTID_ch.ehi.fme.Main_2 No
-ch.ehi.fme.Main_2_ILI1_RENUMBERTID "$(ch.ehi.fme.Main_IN_ILI1_RENUMBERTID_ch.ehi.fme.Main_2)"
-GUI CHOICE ch.ehi.fme.Main_IN_ILI1_RENUMBERTID_ch.ehi.fme.Main_2 Yes%No ITF Renumber TIDs:
-DEFAULT_MACRO ch.ehi.fme.Main_IN_ILI1_CONVERTAREA_ch.ehi.fme.Main_2 
-ch.ehi.fme.Main_2_ILI1_CONVERTAREA "$(ch.ehi.fme.Main_IN_ILI1_CONVERTAREA_ch.ehi.fme.Main_2)"
-GUI OPTIONAL FILENAME ch.ehi.fme.Main_IN_ILI1_CONVERTAREA_ch.ehi.fme.Main_2 FME_Mapping_Files(*.fmi)|*.fmi|All_Files|*.* Convert ILI AREA to FME Donut:
-DEFAULT_MACRO ch.ehi.fme.Main_IN_ILI1_CONVERTSURFACE_ch.ehi.fme.Main_2 
-ch.ehi.fme.Main_2_ILI1_CONVERTSURFACE "$(ch.ehi.fme.Main_IN_ILI1_CONVERTSURFACE_ch.ehi.fme.Main_2)"
-GUI OPTIONAL FILENAME ch.ehi.fme.Main_IN_ILI1_CONVERTSURFACE_ch.ehi.fme.Main_2 FME_Mapping_Files(*.fmi)|*.fmi|All_Files|*.* Convert ILI SURFACE to FME Donut:
-DEFAULT_MACRO ch.ehi.fme.Main_IN_ILI1_CHECKCONVERT_ch.ehi.fme.Main_2 No
-ch.ehi.fme.Main_2_ILI1_CHECKCONVERT "$(ch.ehi.fme.Main_IN_ILI1_CHECKCONVERT_ch.ehi.fme.Main_2)"
-GUI CHOICE ch.ehi.fme.Main_IN_ILI1_CHECKCONVERT_ch.ehi.fme.Main_2 Yes%No ITF Check Polygon Building:
-DEFAULT_MACRO ch.ehi.fme.Main_IN_ILI1_ENUMASITFCODE_ch.ehi.fme.Main_2 Yes
-ch.ehi.fme.Main_2_ILI1_ENUMASITFCODE "$(ch.ehi.fme.Main_IN_ILI1_ENUMASITFCODE_ch.ehi.fme.Main_2)"
-GUI CHOICE ch.ehi.fme.Main_IN_ILI1_ENUMASITFCODE_ch.ehi.fme.Main_2 Yes%No ITF Read enum Values as Code:
-DEFAULT_MACRO ch.ehi.fme.Main_IN_CREATEFEATURETYPE4ENUM_ch.ehi.fme.Main_2 No
-ch.ehi.fme.Main_2_CREATEFEATURETYPE4ENUM "$(ch.ehi.fme.Main_IN_CREATEFEATURETYPE4ENUM_ch.ehi.fme.Main_2)"
-GUI CHOICE ch.ehi.fme.Main_IN_CREATEFEATURETYPE4ENUM_ch.ehi.fme.Main_2 No%SingleType%OneTypePerEnumDef Create Feature Types for Enumerations:
-DEFAULT_MACRO ch.ehi.fme.Main_IN_HTTP_PROXYHOST_ch.ehi.fme.Main_2 
-ch.ehi.fme.Main_2_HTTP_PROXYHOST "$(ch.ehi.fme.Main_IN_HTTP_PROXYHOST_ch.ehi.fme.Main_2)"
-GUI OPTIONAL TEXT ch.ehi.fme.Main_IN_HTTP_PROXYHOST_ch.ehi.fme.Main_2 http Proxy Host:
-DEFAULT_MACRO ch.ehi.fme.Main_IN_HTTP_PROXYPORT_ch.ehi.fme.Main_2 
-ch.ehi.fme.Main_2_HTTP_PROXYPORT "$(ch.ehi.fme.Main_IN_HTTP_PROXYPORT_ch.ehi.fme.Main_2)"
-GUI OPTIONAL TEXT ch.ehi.fme.Main_IN_HTTP_PROXYPORT_ch.ehi.fme.Main_2 http Proxy Port:
-DEFAULT_MACRO ch.ehi.fme.Main_IN_TRACEMSGS_ch.ehi.fme.Main_2 No
-ch.ehi.fme.Main_2_TRACEMSGS "$(ch.ehi.fme.Main_IN_TRACEMSGS_ch.ehi.fme.Main_2)"
-GUI CHOICE ch.ehi.fme.Main_IN_TRACEMSGS_ch.ehi.fme.Main_2 Yes%No Enable Trace Messages:
+GUI FILENAME SourceDataset_ch.ehi.fme.Main_1 INTERLIS_Files(*.xtf;*.xml;*.itf;*.ili)|*.xtf;*.xml;*.itf;*.ili|INTERLIS_2_Files(*.xtf;*.xml)|*.xtf;*.xml|INTERLIS_1_FILES(*.itf)|*.itf|INTERLIS_MODELS(*.ili)|*.ili|All_Files|*.* Original INTERLIS 2 File:
+DEFAULT_MACRO ch.ehi.fme.Main_IN_MODELS_ch.ehi.fme.Main_1 %DATA
+ch.ehi.fme.Main_1_MODELS "$(ch.ehi.fme.Main_IN_MODELS_ch.ehi.fme.Main_1)"
+GUI TEXT ch.ehi.fme.Main_IN_MODELS_ch.ehi.fme.Main_1 Models:
+DEFAULT_MACRO ch.ehi.fme.Main_IN_MODEL_DIR_ch.ehi.fme.Main_1 $(MODELLABLAGE)
+ch.ehi.fme.Main_1_MODEL_DIR "$(ch.ehi.fme.Main_IN_MODEL_DIR_ch.ehi.fme.Main_1)"
+GUI TEXT ch.ehi.fme.Main_IN_MODEL_DIR_ch.ehi.fme.Main_1 Models Directory:
+DEFAULT_MACRO ch.ehi.fme.Main_IN_TOPICS_FILTER_ch.ehi.fme.Main_1 
+ch.ehi.fme.Main_1_TOPICS_FILTER "$(ch.ehi.fme.Main_IN_TOPICS_FILTER_ch.ehi.fme.Main_1)"
+GUI OPTIONAL TEXT ch.ehi.fme.Main_IN_TOPICS_FILTER_ch.ehi.fme.Main_1 Topics filter:
+DEFAULT_MACRO ch.ehi.fme.Main_IN_CHECK_UNIQUEOID_ch.ehi.fme.Main_1 No
+ch.ehi.fme.Main_1_CHECK_UNIQUEOID "$(ch.ehi.fme.Main_IN_CHECK_UNIQUEOID_ch.ehi.fme.Main_1)"
+GUI CHOICE ch.ehi.fme.Main_IN_CHECK_UNIQUEOID_ch.ehi.fme.Main_1 Yes%No Check TID/OID Uniqueness:
+DEFAULT_MACRO ch.ehi.fme.Main_IN_CHECK_ATTRTYPE_ch.ehi.fme.Main_1 Yes
+ch.ehi.fme.Main_1_CHECK_ATTRTYPE "$(ch.ehi.fme.Main_IN_CHECK_ATTRTYPE_ch.ehi.fme.Main_1)"
+GUI CHOICE ch.ehi.fme.Main_IN_CHECK_ATTRTYPE_ch.ehi.fme.Main_1 Yes%No Check Attribute Type:
+DEFAULT_MACRO ch.ehi.fme.Main_IN_CHECK_ATTRMULTIPLICITY_ch.ehi.fme.Main_1 Yes
+ch.ehi.fme.Main_1_CHECK_ATTRMULTIPLICITY "$(ch.ehi.fme.Main_IN_CHECK_ATTRMULTIPLICITY_ch.ehi.fme.Main_1)"
+GUI CHOICE ch.ehi.fme.Main_IN_CHECK_ATTRMULTIPLICITY_ch.ehi.fme.Main_1 Yes%No Check Attribute Multiplicity:
+DEFAULT_MACRO ch.ehi.fme.Main_IN_GEOMETRY_ENCODING_ch.ehi.fme.Main_1 FMEBIN
+ch.ehi.fme.Main_1_GEOMETRY_ENCODING "$(ch.ehi.fme.Main_IN_GEOMETRY_ENCODING_ch.ehi.fme.Main_1)"
+GUI CHOICE ch.ehi.fme.Main_IN_GEOMETRY_ENCODING_ch.ehi.fme.Main_1 FMEXML%FMEBIN%FMEHEXBIN%OGCHEXBIN Geometry Encoding:
+DEFAULT_MACRO ch.ehi.fme.Main_IN_GEOM_ATTR_MAPPING_ch.ehi.fme.Main_1 EncodeAsFmeAttribute
+ch.ehi.fme.Main_1_GEOM_ATTR_MAPPING "$(ch.ehi.fme.Main_IN_GEOM_ATTR_MAPPING_ch.ehi.fme.Main_1)"
+GUI CHOICE ch.ehi.fme.Main_IN_GEOM_ATTR_MAPPING_ch.ehi.fme.Main_1 EncodeAsFmeAttribute%RepeatFeature Mapping of multiple Geometry Attributes:
+DEFAULT_MACRO ch.ehi.fme.Main_IN_CREATE_LINETABLES_ch.ehi.fme.Main_1 No
+ch.ehi.fme.Main_1_CREATE_LINETABLES "$(ch.ehi.fme.Main_IN_CREATE_LINETABLES_ch.ehi.fme.Main_1)"
+GUI CHOICE ch.ehi.fme.Main_IN_CREATE_LINETABLES_ch.ehi.fme.Main_1 Yes%No Create Linetables:
+DEFAULT_MACRO ch.ehi.fme.Main_IN_SKIP_POLYGONBUILDING_ch.ehi.fme.Main_1 No
+ch.ehi.fme.Main_1_SKIP_POLYGONBUILDING "$(ch.ehi.fme.Main_IN_SKIP_POLYGONBUILDING_ch.ehi.fme.Main_1)"
+GUI CHOICE ch.ehi.fme.Main_IN_SKIP_POLYGONBUILDING_ch.ehi.fme.Main_1 Yes%No Skip Polygon Building:
+DEFAULT_MACRO ch.ehi.fme.Main_IN_INHERITANCE_MAPPING_ch.ehi.fme.Main_1 SuperClass
+ch.ehi.fme.Main_1_INHERITANCE_MAPPING "$(ch.ehi.fme.Main_IN_INHERITANCE_MAPPING_ch.ehi.fme.Main_1)"
+GUI CHOICE ch.ehi.fme.Main_IN_INHERITANCE_MAPPING_ch.ehi.fme.Main_1 SuperClass%SubClass Inheritance Mapping Strategy:
+DEFAULT_MACRO ch.ehi.fme.Main_IN_TRIM_VALUES_ch.ehi.fme.Main_1 Yes
+ch.ehi.fme.Main_1_TRIM_VALUES "$(ch.ehi.fme.Main_IN_TRIM_VALUES_ch.ehi.fme.Main_1)"
+GUI CHOICE ch.ehi.fme.Main_IN_TRIM_VALUES_ch.ehi.fme.Main_1 Yes%No Trim Values:
+DEFAULT_MACRO ch.ehi.fme.Main_IN_ILI1_ADDDEFVAL_ch.ehi.fme.Main_1 No
+ch.ehi.fme.Main_1_ILI1_ADDDEFVAL "$(ch.ehi.fme.Main_IN_ILI1_ADDDEFVAL_ch.ehi.fme.Main_1)"
+GUI CHOICE ch.ehi.fme.Main_IN_ILI1_ADDDEFVAL_ch.ehi.fme.Main_1 Yes%No ITF Add Default Values:
+DEFAULT_MACRO ch.ehi.fme.Main_IN_ILI1_RENUMBERTID_ch.ehi.fme.Main_1 No
+ch.ehi.fme.Main_1_ILI1_RENUMBERTID "$(ch.ehi.fme.Main_IN_ILI1_RENUMBERTID_ch.ehi.fme.Main_1)"
+GUI CHOICE ch.ehi.fme.Main_IN_ILI1_RENUMBERTID_ch.ehi.fme.Main_1 Yes%No ITF Renumber TIDs:
+DEFAULT_MACRO ch.ehi.fme.Main_IN_ILI1_CONVERTAREA_ch.ehi.fme.Main_1 
+ch.ehi.fme.Main_1_ILI1_CONVERTAREA "$(ch.ehi.fme.Main_IN_ILI1_CONVERTAREA_ch.ehi.fme.Main_1)"
+GUI OPTIONAL FILENAME ch.ehi.fme.Main_IN_ILI1_CONVERTAREA_ch.ehi.fme.Main_1 FME_Mapping_Files(*.fmi)|*.fmi|All_Files|*.* Convert ILI AREA to FME Donut:
+DEFAULT_MACRO ch.ehi.fme.Main_IN_ILI1_CONVERTSURFACE_ch.ehi.fme.Main_1 
+ch.ehi.fme.Main_1_ILI1_CONVERTSURFACE "$(ch.ehi.fme.Main_IN_ILI1_CONVERTSURFACE_ch.ehi.fme.Main_1)"
+GUI OPTIONAL FILENAME ch.ehi.fme.Main_IN_ILI1_CONVERTSURFACE_ch.ehi.fme.Main_1 FME_Mapping_Files(*.fmi)|*.fmi|All_Files|*.* Convert ILI SURFACE to FME Donut:
+DEFAULT_MACRO ch.ehi.fme.Main_IN_ILI1_CHECKCONVERT_ch.ehi.fme.Main_1 No
+ch.ehi.fme.Main_1_ILI1_CHECKCONVERT "$(ch.ehi.fme.Main_IN_ILI1_CHECKCONVERT_ch.ehi.fme.Main_1)"
+GUI CHOICE ch.ehi.fme.Main_IN_ILI1_CHECKCONVERT_ch.ehi.fme.Main_1 Yes%No ITF Check Polygon Building:
+DEFAULT_MACRO ch.ehi.fme.Main_IN_ILI1_ENUMASITFCODE_ch.ehi.fme.Main_1 Yes
+ch.ehi.fme.Main_1_ILI1_ENUMASITFCODE "$(ch.ehi.fme.Main_IN_ILI1_ENUMASITFCODE_ch.ehi.fme.Main_1)"
+GUI CHOICE ch.ehi.fme.Main_IN_ILI1_ENUMASITFCODE_ch.ehi.fme.Main_1 Yes%No ITF Read enum Values as Code:
+DEFAULT_MACRO ch.ehi.fme.Main_IN_CREATEFEATURETYPE4ENUM_ch.ehi.fme.Main_1 No
+ch.ehi.fme.Main_1_CREATEFEATURETYPE4ENUM "$(ch.ehi.fme.Main_IN_CREATEFEATURETYPE4ENUM_ch.ehi.fme.Main_1)"
+GUI CHOICE ch.ehi.fme.Main_IN_CREATEFEATURETYPE4ENUM_ch.ehi.fme.Main_1 No%SingleType%OneTypePerEnumDef Create Feature Types for Enumerations:
+DEFAULT_MACRO ch.ehi.fme.Main_IN_HTTP_PROXYHOST_ch.ehi.fme.Main_1 
+ch.ehi.fme.Main_1_HTTP_PROXYHOST "$(ch.ehi.fme.Main_IN_HTTP_PROXYHOST_ch.ehi.fme.Main_1)"
+GUI OPTIONAL TEXT ch.ehi.fme.Main_IN_HTTP_PROXYHOST_ch.ehi.fme.Main_1 http Proxy Host:
+DEFAULT_MACRO ch.ehi.fme.Main_IN_HTTP_PROXYPORT_ch.ehi.fme.Main_1 
+ch.ehi.fme.Main_1_HTTP_PROXYPORT "$(ch.ehi.fme.Main_IN_HTTP_PROXYPORT_ch.ehi.fme.Main_1)"
+GUI OPTIONAL TEXT ch.ehi.fme.Main_IN_HTTP_PROXYPORT_ch.ehi.fme.Main_1 http Proxy Port:
+DEFAULT_MACRO ch.ehi.fme.Main_IN_TRACEMSGS_ch.ehi.fme.Main_1 No
+ch.ehi.fme.Main_1_TRACEMSGS "$(ch.ehi.fme.Main_IN_TRACEMSGS_ch.ehi.fme.Main_1)"
+GUI CHOICE ch.ehi.fme.Main_IN_TRACEMSGS_ch.ehi.fme.Main_1 Yes%No Enable Trace Messages:
 # ===========================================================================
-DEFAULT_MACRO ch.ehi.fme.Main_IN_NETWORK_AUTHENTICATION_ch.ehi.fme.Main_2 
-ch.ehi.fme.Main_2_NETWORK_AUTHENTICATION "$(ch.ehi.fme.Main_IN_NETWORK_AUTHENTICATION_ch.ehi.fme.Main_2)"
-GUI OPTIONAL AUTHENTICATOR ch.ehi.fme.Main_IN_NETWORK_AUTHENTICATION_ch.ehi.fme.Main_2 CONTAINER%GROUP%CONTAINER_TITLE%"Network Authentication"%PROMPT_TYPE%NETWORK Network Authentication
+DEFAULT_MACRO ch.ehi.fme.Main_IN_NETWORK_AUTHENTICATION_ch.ehi.fme.Main_1 
+ch.ehi.fme.Main_1_NETWORK_AUTHENTICATION "$(ch.ehi.fme.Main_IN_NETWORK_AUTHENTICATION_ch.ehi.fme.Main_1)"
+GUI OPTIONAL AUTHENTICATOR ch.ehi.fme.Main_IN_NETWORK_AUTHENTICATION_ch.ehi.fme.Main_1 CONTAINER%GROUP%CONTAINER_TITLE%"Network Authentication"%PROMPT_TYPE%NETWORK Network Authentication
 # ===========================================================================
-DEFAULT_MACRO ch.ehi.fme.Main_IN_NETWORK_PROXY_ch.ehi.fme.Main_2 
-ch.ehi.fme.Main_2_NETWORK_PROXY "$(ch.ehi.fme.Main_IN_NETWORK_PROXY_ch.ehi.fme.Main_2)"
-GUI OPTIONAL AUTHENTICATOR ch.ehi.fme.Main_IN_NETWORK_PROXY_ch.ehi.fme.Main_2 CONTAINER%GROUP%CONTAINER_TITLE%"Network Proxy"%PROMPT_TYPE%PROXY Network Proxy
+DEFAULT_MACRO ch.ehi.fme.Main_IN_NETWORK_PROXY_ch.ehi.fme.Main_1 
+ch.ehi.fme.Main_1_NETWORK_PROXY "$(ch.ehi.fme.Main_IN_NETWORK_PROXY_ch.ehi.fme.Main_1)"
+GUI OPTIONAL AUTHENTICATOR ch.ehi.fme.Main_IN_NETWORK_PROXY_ch.ehi.fme.Main_1 CONTAINER%GROUP%CONTAINER_TITLE%"Network Proxy"%PROMPT_TYPE%PROXY Network Proxy
 #! END_SOURCE_HEADER
 #! START_WB_HEADER
 DEFAULT_MACRO SourceDataset
 INCLUDE [ if {{$(SourceDataset)} != ""} {                        \
- puts {DEFAULT_MACRO SourceDataset_ch.ehi.fme.Main_2 $(SourceDataset)}     \
+ puts {DEFAULT_MACRO SourceDataset_ch.ehi.fme.Main_1 $(SourceDataset)}     \
  } ]
 #! END_WB_HEADER
-#! START_SOURCE_HEADER ch.ehi.fme.Main ch.ehi.fme.Main_2
-DEFAULT_MACRO SourceDataset_ch.ehi.fme.Main_2 $(ITF_FILE)
-ch.ehi.fme.Main_2_DATASET "$(SourceDataset_ch.ehi.fme.Main_2)"
+#! START_SOURCE_HEADER ch.ehi.fme.Main ch.ehi.fme.Main_1
+DEFAULT_MACRO SourceDataset_ch.ehi.fme.Main_1 $(ITF_FILE)
+ch.ehi.fme.Main_1_DATASET "$(SourceDataset_ch.ehi.fme.Main_1)"
 #! END_SOURCE_HEADER
 #! START_WB_HEADER
 MACRO WB_KEYWORD "GEODATABASE_SDE_1"
@@ -3777,13 +3776,13 @@ FME_GEOMETRY_HANDLING Enhanced
 FME_STROKE_MAX_DEVIATION 0
 LOG_TIMINGS YES
 LOG_FILTER_MASK -1
-DEFAULT_MACRO DATASET_KEYWORD_ch.ehi.fme.Main_2 ch.ehi.fme.Main_2
+DEFAULT_MACRO DATASET_KEYWORD_ch.ehi.fme.Main_1 ch.ehi.fme.Main_1
 DEFAULT_MACRO DATASET_KEYWORD_GEODATABASE_SDE_1 GEODATABASE_SDE_1
 DEFAULT_MACRO DATASET_KEYWORD_FILECOPY_1 FILECOPY_1
 FME_PASSWORD_PARAMETER_LIST PASSWORD
 # -------------------------------------------------------------------------
 
-ch.ehi.fme.Main_2_READER_META_ATTRIBUTES fme_feature_type
+ch.ehi.fme.Main_1_READER_META_ATTRIBUTES fme_feature_type
 
 # -------------------------------------------------------------------------
 
@@ -3800,15 +3799,15 @@ MACRO VISUALIZER_FEATURE_FILE $(WORKSPACE_TEMP_DIR)/inspector.ffs
 MACRO VISUALIZER_SCHEMA_FILE $(WORKSPACE_TEMP_DIR)/inspector.fsc
 MACRO VISUALIZER_CREATE_SPATIAL_INDEX YES
 # -------------------------------------------------------------------------
-ch.ehi.fme.Main_2_DEF DM16NplBE.Nutzungsplanung.WF_FeststellungWald   xtf_id                       xtf_char(200)   Verbindlichkeit              xtf_char(255)   Bemerkung                    xtf_char(80)   Datenverwaltungsstelle       xtf_char(200)   ZustaendigeStelle            xtf_char(200)
+ch.ehi.fme.Main_1_DEF DM16NplBE.Nutzungsplanung.WF_FeststellungWald   xtf_id                       xtf_char(200)   Verbindlichkeit              xtf_char(255)   Bemerkung                    xtf_char(80)   Datenverwaltungsstelle       xtf_char(200)   ZustaendigeStelle            xtf_char(200)
 # -------------------------------------------------------------------------
-ch.ehi.fme.Main_2_DEF DM16NplBE.Nutzungsplanung.Dokument   xtf_id                       xtf_char(200)   Art_Doku                     xtf_char(255)   Titel                        xtf_char(200)   OffiziellerTitel             xtf_char(200)   Abkuerzung                   xtf_char(20)   OffizielleNr                 xtf_char(20)   Gemeinde                     xtf_int32   Dokument                     xtf_char(100)   ZustaendigeStelle            xtf_char(200)
+ch.ehi.fme.Main_1_DEF DM16NplBE.Nutzungsplanung.Dokument   xtf_id                       xtf_char(200)   Art_Doku                     xtf_char(255)   Titel                        xtf_char(200)   OffiziellerTitel             xtf_char(200)   Abkuerzung                   xtf_char(20)   OffizielleNr                 xtf_char(20)   Gemeinde                     xtf_int32   Dokument                     xtf_char(100)   ZustaendigeStelle            xtf_char(200)
 # -------------------------------------------------------------------------
-ch.ehi.fme.Main_2_DEF DM16NplBE.Nutzungsplanung.WF_FeststellungWaldRV   xtf_id                       xtf_char(200)   Typ                          xtf_char(200)   Vorschrift                   xtf_char(200)   ArtikelNr                    xtf_char(40)
+ch.ehi.fme.Main_1_DEF DM16NplBE.Nutzungsplanung.WF_FeststellungWaldRV   xtf_id                       xtf_char(200)   Typ                          xtf_char(200)   Vorschrift                   xtf_char(200)   ArtikelNr                    xtf_char(40)
 # -------------------------------------------------------------------------
-ch.ehi.fme.Main_2_DEF DM16NplBE.Nutzungsplanung.HinweisWeitereDokumente   xtf_id                       xtf_char(200)   Ursprung                     xtf_char(200)   Hinweis                      xtf_char(200)   ArtikelNr                    xtf_char(40)   Ordnungsnummer               xtf_int32
+ch.ehi.fme.Main_1_DEF DM16NplBE.Nutzungsplanung.HinweisWeitereDokumente   xtf_id                       xtf_char(200)   Ursprung                     xtf_char(200)   Hinweis                      xtf_char(200)   ArtikelNr                    xtf_char(40)   Ordnungsnummer               xtf_int32
 # -------------------------------------------------------------------------
-ch.ehi.fme.Main_2_DEF DM16NplBE.Nutzungsplanung.WF_LinienelementWald   xtf_id                       xtf_char(200)   Objekt                       xtf_char(200)   Genehmigung                  xtf_date   Inkraftsetzung               xtf_date   Qualitaet                    xtf_char(255)
+ch.ehi.fme.Main_1_DEF DM16NplBE.Nutzungsplanung.WF_LinienelementWald   xtf_id                       xtf_char(200)   Objekt                       xtf_char(200)   Genehmigung                  xtf_date   Inkraftsetzung               xtf_date   Qualitaet                    xtf_char(255)
 
 # -------------------------------------------------------------------------
 
@@ -3864,7 +3863,7 @@ FACTORY_DEF * TestFactory    FACTORY_NAME AttributeFilter_BlankFilter    INPUT F
 FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeFilter <BLANK> Output Nuker"   INPUT FEATURE_TYPE AttributeFilter_<BLANK>
 FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeFilter <UNFILTERED> Output Nuker"   INPUT FEATURE_TYPE AttributeFilter_<UNFILTERED>
 # -------------------------------------------------------------------------
-FACTORY_DEF * AttrSetFactory FACTORY_NAME AttributeCreator_2 INPUT  FEATURE_TYPE AttributeFilter_0    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_2_OUTPUT 
+FACTORY_DEF * AttrSetFactory FACTORY_NAME AttributeCreator_2 INPUT  FEATURE_TYPE AttributeFilter_0 ATTR BFSNR $(BFSNR$encode) ATTR NAME $(GEMNAME$encode)    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_2_OUTPUT 
 # -------------------------------------------------------------------------
 
 INCLUDE [    set macroLine "MACRO AttributeRemover_38_LIST_EXP ";    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "{\[0-9\]+}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
@@ -3880,12 +3879,6 @@ FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRemover_4    INPUT  FEATURE_TY
 FACTORY_DEF * ReferenceFactory    FACTORY_NAME FeatureMerger_2    INPUT REFERENCER FEATURE_TYPE AttributeRemover_4_OUTPUT    INPUT REFERENCEE FEATURE_TYPE AttributeCreator_2_OUTPUT    REFERENCE_INFO ATTRIBUTES    REFERENCEE_FIELDS "xtf_id"    REFERENCER_FIELDS "Objekt"    MERGE_ATTRIBUTES Yes    MANAGE_FME_TYPE Yes    MODE COMPLETE    PROCESS_DUPLICATE_REFERENCEES No    BUILD_INCOMPLETE_REFERENCERS No    OUTPUT COMPLETE FEATURE_TYPE FeatureMerger_2_COMPLETE
 
 FACTORY_DEF * TeeFactory   FACTORY_NAME "FeatureMerger_2 COMPLETE Splitter"   INPUT FEATURE_TYPE FeatureMerger_2_COMPLETE   OUTPUT FEATURE_TYPE FeatureMerger_2_COMPLETE_0_ILzuKAQhjrg=   OUTPUT FEATURE_TYPE FeatureMerger_2_COMPLETE_1_ILzuKAQhjrg=
-# -------------------------------------------------------------------------
-Lookup AttributeValueMapper_3_LOOKUP_TABLE   0               Festlegung<space>Kanton   1               Festlegung<space>Region   2               Festlegung<space>Gemeinde   3               Hinweis   ""              ""   ENCODED_SUPPORTUNICODE
-
-FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeValueMapper_3    INPUT  FEATURE_TYPE FeatureMerger_2_COMPLETE_0_ILzuKAQhjrg=    OUTPUT FEATURE_TYPE AttributeValueMapper_3_OUTPUT         @Lookup(AttributeValueMapper_3_LOOKUP_TABLE,"Verbindlichkeit",FORWARD|ENCODED_ATTR, VERBINDLKT)
-
-
 # -------------------------------------------------------------------------
 
 INCLUDE [    set macroLine "MACRO AttributeRemover_39_LIST_EXP ";    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "{\[0-9\]+}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
@@ -3929,11 +3922,11 @@ MACRO $(HinWeiDok_Iterationen_WORKSPACE_NAME)___COMPOUND_PARAMETERS
 MACRO $(HinWeiDok_Iterationen_WORKSPACE_NAME)_SUB_DOC_NAME HinWeiDok_Iterationen
 DEFAULT_MACRO HinWeiDok_Iterationen_WORKSPACE_NAME ""
 INCLUDE [puts {MACRO WB_OLD_CONTEXT_$(HinWeiDok_Iterationen_WORKSPACE_NAME) $(WB_CURRENT_CONTEXT)};          puts {MACRO WB_CURRENT_CONTEXT $(HinWeiDok_Iterationen_WORKSPACE_NAME)}]
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_FeatureMerger_22_REQUESTOR_6281449665775 Input Splitter"   INPUT FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_FeatureMerger_22_REQUESTOR_628"   OUTPUT FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_FeatureMerger_22_REQUESTOR_628"
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_FeatureMerger_22_SUPPLIER_6281449665775 Input Splitter"   INPUT FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_FeatureMerger_22_SUPPLIER_628"   OUTPUT FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_FeatureMerger_22_SUPPLIER_628_0_/qdQOvrnJU8="   OUTPUT FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_FeatureMerger_22_SUPPLIER_628_1_/qdQOvrnJU8="   OUTPUT FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_FeatureMerger_22_SUPPLIER_628_2_/qdQOvrnJU8="
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_FeatureMerger_22_REQUESTOR_6281449667545 Input Splitter"   INPUT FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_FeatureMerger_22_REQUESTOR_628"   OUTPUT FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_FeatureMerger_22_REQUESTOR_628"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_FeatureMerger_22_SUPPLIER_6281449667545 Input Splitter"   INPUT FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_FeatureMerger_22_SUPPLIER_628"   OUTPUT FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_FeatureMerger_22_SUPPLIER_628_0_/qdQOvrnJU8="   OUTPUT FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_FeatureMerger_22_SUPPLIER_628_1_/qdQOvrnJU8="   OUTPUT FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_FeatureMerger_22_SUPPLIER_628_2_/qdQOvrnJU8="
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * ReferenceFactory    FACTORY_NAME $(HinWeiDok_Iterationen_WORKSPACE_NAME)_FeatureMerger_22    INPUT REFERENCER FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_FeatureMerger_22_REQUESTOR_628"    INPUT REFERENCEE FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_FeatureMerger_22_SUPPLIER_628_0_/qdQOvrnJU8="    REFERENCE_INFO ATTRIBUTES    REFERENCEE_FIELDS "Ursprung"    REFERENCER_FIELDS "xtf_id"    LIST_NAME "duplicates"    MERGE_ATTRIBUTES Yes    MANAGE_FME_TYPE Yes    MODE COMPLETE    PROCESS_DUPLICATE_REFERENCEES No    BUILD_INCOMPLETE_REFERENCERS No    OUTPUT COMPLETE FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_FeatureMerger_22_COMPLETE"
+FACTORY_DEF * ReferenceFactory    FACTORY_NAME $(HinWeiDok_Iterationen_WORKSPACE_NAME)_FeatureMerger_22    INPUT REFERENCER FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_FeatureMerger_22_REQUESTOR_628"    INPUT REFERENCEE FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_FeatureMerger_22_SUPPLIER_628_2_/qdQOvrnJU8="    REFERENCE_INFO ATTRIBUTES    REFERENCEE_FIELDS "Ursprung"    REFERENCER_FIELDS "xtf_id"    LIST_NAME "duplicates"    MERGE_ATTRIBUTES Yes    MANAGE_FME_TYPE Yes    MODE COMPLETE    PROCESS_DUPLICATE_REFERENCEES No    BUILD_INCOMPLETE_REFERENCERS No    OUTPUT COMPLETE FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_FeatureMerger_22_COMPLETE"
 
 # -------------------------------------------------------------------------
 
@@ -3941,7 +3934,7 @@ FACTORY_DEF * ElementFactory    FACTORY_NAME $(HinWeiDok_Iterationen_WORKSPACE_N
 FACTORY_DEF * TeeFactory   FACTORY_NAME "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_ListExploder LIST_FOUND Splitter"   INPUT FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_ListExploder_LIST_FOUND"   OUTPUT FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_ListExploder_LIST_FOUND_0_9wT/dk6tzVU="   OUTPUT FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_ListExploder_LIST_FOUND_1_9wT/dk6tzVU="
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * ReferenceFactory    FACTORY_NAME $(HinWeiDok_Iterationen_WORKSPACE_NAME)_FeatureMerger_23    INPUT REFERENCER FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_ListExploder_LIST_FOUND_1_9wT/dk6tzVU="    INPUT REFERENCEE FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_FeatureMerger_22_SUPPLIER_628_2_/qdQOvrnJU8="    REFERENCE_INFO ATTRIBUTES    REFERENCEE_FIELDS "Ursprung"    REFERENCER_FIELDS "xtf_id"    LIST_NAME "duplicates"    MERGE_ATTRIBUTES Yes    MANAGE_FME_TYPE Yes    MODE COMPLETE    PROCESS_DUPLICATE_REFERENCEES No    BUILD_INCOMPLETE_REFERENCERS No    OUTPUT COMPLETE FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_FeatureMerger_23_COMPLETE"
+FACTORY_DEF * ReferenceFactory    FACTORY_NAME $(HinWeiDok_Iterationen_WORKSPACE_NAME)_FeatureMerger_23    INPUT REFERENCER FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_ListExploder_LIST_FOUND_1_9wT/dk6tzVU="    INPUT REFERENCEE FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_FeatureMerger_22_SUPPLIER_628_1_/qdQOvrnJU8="    REFERENCE_INFO ATTRIBUTES    REFERENCEE_FIELDS "Ursprung"    REFERENCER_FIELDS "xtf_id"    LIST_NAME "duplicates"    MERGE_ATTRIBUTES Yes    MANAGE_FME_TYPE Yes    MODE COMPLETE    PROCESS_DUPLICATE_REFERENCEES No    BUILD_INCOMPLETE_REFERENCERS No    OUTPUT COMPLETE FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_FeatureMerger_23_COMPLETE"
 
 # -------------------------------------------------------------------------
 
@@ -3949,12 +3942,12 @@ FACTORY_DEF * ElementFactory    FACTORY_NAME $(HinWeiDok_Iterationen_WORKSPACE_N
 FACTORY_DEF * TeeFactory   FACTORY_NAME "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_ListExploder_2 LIST_FOUND Splitter"   INPUT FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_ListExploder_2_LIST_FOUND"   OUTPUT FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_ListExploder_2_LIST_FOUND_0_0TeSemTedJg="   OUTPUT FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_ListExploder_2_LIST_FOUND_1_0TeSemTedJg="
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * ReferenceFactory    FACTORY_NAME $(HinWeiDok_Iterationen_WORKSPACE_NAME)_FeatureMerger_24    INPUT REFERENCER FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_ListExploder_2_LIST_FOUND_0_0TeSemTedJg="    INPUT REFERENCEE FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_FeatureMerger_22_SUPPLIER_628_1_/qdQOvrnJU8="    REFERENCE_INFO ATTRIBUTES    REFERENCEE_FIELDS "Ursprung"    REFERENCER_FIELDS "xtf_id"    LIST_NAME "duplicate"    MERGE_ATTRIBUTES Yes    MANAGE_FME_TYPE Yes    MODE COMPLETE    PROCESS_DUPLICATE_REFERENCEES No    BUILD_INCOMPLETE_REFERENCERS No    OUTPUT COMPLETE FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_FeatureMerger_24_COMPLETE"
+FACTORY_DEF * ReferenceFactory    FACTORY_NAME $(HinWeiDok_Iterationen_WORKSPACE_NAME)_FeatureMerger_24    INPUT REFERENCER FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_ListExploder_2_LIST_FOUND_0_0TeSemTedJg="    INPUT REFERENCEE FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_FeatureMerger_22_SUPPLIER_628_0_/qdQOvrnJU8="    REFERENCE_INFO ATTRIBUTES    REFERENCEE_FIELDS "Ursprung"    REFERENCER_FIELDS "xtf_id"    LIST_NAME "duplicate"    MERGE_ATTRIBUTES Yes    MANAGE_FME_TYPE Yes    MODE COMPLETE    PROCESS_DUPLICATE_REFERENCEES No    BUILD_INCOMPLETE_REFERENCERS No    OUTPUT COMPLETE FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_FeatureMerger_24_COMPLETE"
 
 # -------------------------------------------------------------------------
 
 FACTORY_DEF * ElementFactory    FACTORY_NAME $(HinWeiDok_Iterationen_WORKSPACE_NAME)_ListExploder_3    INPUT  FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_FeatureMerger_24_COMPLETE"    LIST_NAME "duplicate{}"    ELEMENT_NUMBER_FIELD "_element_index"    CLONE_GEOMETRY    MODE LEAN    OUTPUT ELEMENT FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_ListExploder_3_LIST_FOUND"         @RemoveAttributes(ElementFactory.baseCloned)
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_ListExploder_3_LIST_FOUND_6491449665775 Output Collector"   INPUT FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_ListExploder_2_LIST_FOUND_1_0TeSemTedJg="   INPUT FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_ListExploder_3_LIST_FOUND"   INPUT FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_ListExploder_LIST_FOUND_0_9wT/dk6tzVU="   OUTPUT FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_ListExploder_3_LIST_FOUND_649"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_ListExploder_3_LIST_FOUND_6491449667545 Output Collector"   INPUT FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_ListExploder_3_LIST_FOUND"   INPUT FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_ListExploder_LIST_FOUND_0_9wT/dk6tzVU="   INPUT FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_ListExploder_2_LIST_FOUND_1_0TeSemTedJg="   OUTPUT FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_ListExploder_3_LIST_FOUND_649"
 INCLUDE [puts {MACRO WB_CURRENT_CONTEXT $(WB_OLD_CONTEXT_$(HinWeiDok_Iterationen_WORKSPACE_NAME))}]
 FACTORY_DEF * TeeFactory   FACTORY_NAME "HinWeiDok_Iterationen ListExploder_3_LIST_FOUND_649 Output Renamer/Nuker"   INPUT FEATURE_TYPE HinWeiDok_Iterationen_ListExploder_3_LIST_FOUND_649   OUTPUT FEATURE_TYPE HinWeiDok_Iterationen_ListExploder_3_LIST_FOUND_649
 # -------------------------------------------------------------------------
@@ -3962,13 +3955,13 @@ FACTORY_DEF * TeeFactory   FACTORY_NAME "HinWeiDok_Iterationen ListExploder_3_LI
 
 FME_PYTHON_PATH "$(FME_MF_DIR)"
 
-FACTORY_DEF * PythonFactory    FACTORY_NAME PythonCaller    INPUT  FEATURE_TYPE HinWeiDok_Iterationen_ListExploder_3_LIST_FOUND_649    INPUT  FEATURE_TYPE FeatureMerger_20_COMPLETE_1_+6LFYDMTLz4=    SYMBOL_NAME processFeature    PYTHON_NAMESPACE FMEOBJECTS    SOURCE_CODE #<space>-*-<space>coding:<space>latin-1<space>-*-<lf>import<space>fmeobjects<lf>import<space>os<lf><lf>def<space>processFeature<openparen>feature<closeparen>:<lf><space><space><space><space>vorschriftsart<space>=<space>str<openparen>feature.getAttribute<openparen><apos>ART<apos><closeparen><closeparen><lf><space><space><space><space><lf><space><space><space><space>#<space>Nur<space>Typ<space><quote>Rechtsvorschrift<quote><space>muss<space>ein<space>PDF<space>haben<lf><space><space><space><space>if<space>vorschriftsart<space>==<space><apos>0<apos>:<lf><space><space><space><space><space><space><space><space>filename<space>=<space>feature.getAttribute<openparen><apos>Dokument<apos><closeparen><lf><space><space><space><space><space><space><space><space><lf><space><space><space><space><space><space><space><space>outputURL<space>=<space>FME_MacroValues<openbracket><apos>OUTPUT_RV_URL<apos><closebracket><space>+<space>filename<lf><space><space><space><space><space><space><space><space><lf><space><space><space><space><space><space><space><space>inputFile<space>=<space>os.path.join<openparen>FME_MacroValues<openbracket><apos>INPUT_RV_DIR<apos><closebracket><comma><space>filename<closeparen><lf><space><space><space><space><space><space><space><space>inputFile<space>=<space>inputFile.replace<openparen><apos><backslash><backslash><apos><comma><apos><solidus><apos><closeparen><lf><space><space><space><space><space><space><space><space><lf><space><space><space><space><space><space><space><space>outputDir<space>=<space>FME_MacroValues<openbracket><apos>OUTPUT_RV_DIR<apos><closebracket>.replace<openparen><apos><backslash><backslash><apos><comma><apos><solidus><apos><closeparen><lf><lf><space><space><space><space><space><space><space><space>feature.setAttribute<openparen><apos>TEXTIMWEB<apos><comma><space>outputURL<closeparen><lf><space><space><space><space><space><space><space><space>feature.setAttribute<openparen><apos>filecopy_source_dataset<apos><comma><space>inputFile<closeparen><lf><space><space><space><space><space><space><space><space>feature.setAttribute<openparen><apos>filecopy_dest_dataset<apos><comma><space>outputDir<closeparen>    OUTPUT PYOUTPUT FEATURE_TYPE PythonCaller_OUTPUT
+FACTORY_DEF * PythonFactory    FACTORY_NAME PythonCaller    INPUT  FEATURE_TYPE HinWeiDok_Iterationen_ListExploder_3_LIST_FOUND_649    INPUT  FEATURE_TYPE FeatureMerger_20_COMPLETE_1_+6LFYDMTLz4=    SYMBOL_NAME processFeature    PYTHON_NAMESPACE FMEOBJECTS    SOURCE_CODE #<space>-*-<space>coding:<space>latin-1<space>-*-<lf>import<space>fmeobjects<lf>import<space>os<lf><lf>def<space>processFeature<openparen>feature<closeparen>:<lf><space><space><space><space>vorschriftsart<space>=<space>str<openparen>feature.getAttribute<openparen><apos>Art_Doku<apos><closeparen><closeparen><lf><space><space><space><space><lf><space><space><space><space>#<space>Nur<space>Typ<space><quote>Rechtsvorschrift<quote><space>muss<space>ein<space>PDF<space>haben<lf><space><space><space><space>if<space>vorschriftsart<space>==<space><apos>0<apos>:<lf><space><space><space><space><space><space><space><space>filename<space>=<space>feature.getAttribute<openparen><apos>Dokument<apos><closeparen><lf><space><space><space><space><space><space><space><space><lf><space><space><space><space><space><space><space><space>outputURL<space>=<space>FME_MacroValues<openbracket><apos>OUTPUT_RV_URL<apos><closebracket><space>+<space>filename<lf><space><space><space><space><space><space><space><space><lf><space><space><space><space><space><space><space><space>inputFile<space>=<space>os.path.join<openparen>FME_MacroValues<openbracket><apos>INPUT_RV_DIR<apos><closebracket><comma><space>filename<closeparen><lf><space><space><space><space><space><space><space><space>inputFile<space>=<space>inputFile.replace<openparen><apos><backslash><backslash><apos><comma><apos><solidus><apos><closeparen><lf><space><space><space><space><space><space><space><space><lf><space><space><space><space><space><space><space><space>outputDir<space>=<space>FME_MacroValues<openbracket><apos>OUTPUT_RV_DIR<apos><closebracket>.replace<openparen><apos><backslash><backslash><apos><comma><apos><solidus><apos><closeparen><lf><lf><space><space><space><space><space><space><space><space>feature.setAttribute<openparen><apos>TEXTIMWEB<apos><comma><space>outputURL<closeparen><lf><space><space><space><space><space><space><space><space>feature.setAttribute<openparen><apos>filecopy_source_dataset<apos><comma><space>inputFile<closeparen><lf><space><space><space><space><space><space><space><space>feature.setAttribute<openparen><apos>filecopy_dest_dataset<apos><comma><space>outputDir<closeparen>    OUTPUT PYOUTPUT FEATURE_TYPE PythonCaller_OUTPUT
 
 FACTORY_DEF * TeeFactory   FACTORY_NAME "PythonCaller OUTPUT Splitter"   INPUT FEATURE_TYPE PythonCaller_OUTPUT   OUTPUT FEATURE_TYPE PythonCaller_OUTPUT_0_oCFN77Xe1JY=   OUTPUT FEATURE_TYPE PythonCaller_OUTPUT_1_oCFN77Xe1JY=
 # -------------------------------------------------------------------------
 Lookup AttributeValueMapper_17_LOOKUP_TABLE   0               Rechtsvorschrift   1               Hinweis   ""              ""   ENCODED_SUPPORTUNICODE
 
-FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeValueMapper_17    INPUT  FEATURE_TYPE PythonCaller_OUTPUT_0_oCFN77Xe1JY=    OUTPUT FEATURE_TYPE AttributeValueMapper_17_OUTPUT         @Lookup(AttributeValueMapper_17_LOOKUP_TABLE,"Art_Doku",FORWARD|ENCODED_ATTR, ART)
+FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeValueMapper_17    INPUT  FEATURE_TYPE PythonCaller_OUTPUT_1_oCFN77Xe1JY=    OUTPUT FEATURE_TYPE AttributeValueMapper_17_OUTPUT         @Lookup(AttributeValueMapper_17_LOOKUP_TABLE,"Art_Doku",FORWARD|ENCODED_ATTR, ART)
 
 
 # -------------------------------------------------------------------------
@@ -3986,7 +3979,7 @@ FACTORY_DEF * AggregateFactory    FACTORY_NAME Aggregator_2    INPUT  FEATURE_TY
 Lookup AttributeFilter_4_AttributeFilterLut   0 ok   "" notok   ENCODED
 
 Tcl2 proc AttributeFilter_4_setFeatType {} {     global FME_FeatureType;     set ft {AttributeFilter_4_};     append ft [FME_EncodeText [FME_GetAttribute {"Art_Doku"}]];     set FME_FeatureType $ft; }
-FACTORY_DEF * TestFactory    FACTORY_NAME AttributeFilter_4    INPUT  FEATURE_TYPE PythonCaller_OUTPUT_1_oCFN77Xe1JY=    TEST @Lookup(AttributeFilter_4_AttributeFilterLut,"Art_Doku",ENCODED_ATTR) == "ok"    OUTPUT PASSED FEATURE_TYPE * @Tcl2(AttributeFilter_4_setFeatType)    OUTPUT FAILED FEATURE_TYPE AttributeFilter_4_<UNFILTERED>
+FACTORY_DEF * TestFactory    FACTORY_NAME AttributeFilter_4    INPUT  FEATURE_TYPE PythonCaller_OUTPUT_0_oCFN77Xe1JY=    TEST @Lookup(AttributeFilter_4_AttributeFilterLut,"Art_Doku",ENCODED_ATTR) == "ok"    OUTPUT PASSED FEATURE_TYPE * @Tcl2(AttributeFilter_4_setFeatType)    OUTPUT FAILED FEATURE_TYPE AttributeFilter_4_<UNFILTERED>
 FACTORY_DEF * TestFactory    FACTORY_NAME AttributeFilter_4_BlankFilter    INPUT FEATURE_TYPE AttributeFilter_4_<UNFILTERED>    TEST @Value("Art_Doku") == ""    OUTPUT PASSED FEATURE_TYPE AttributeFilter_4_<BLANK>    OUTPUT FAILED FEATURE_TYPE AttributeFilter_4_<UNFILTERED>
 
 FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeFilter_4 <BLANK> Output Nuker"   INPUT FEATURE_TYPE AttributeFilter_4_<BLANK>
@@ -4008,6 +4001,12 @@ FACTORY_DEF * TeeFactory   FACTORY_NAME "Aggregator AGGREGATE Splitter"   INPUT 
 FACTORY_DEF * TeeFactory    FACTORY_NAME Aggregator_Aggregate_Logger    INPUT  FEATURE_TYPE Aggregator_AGGREGATE_1_qtKD1R8siTs=    OUTPUT FEATURE_TYPE Aggregator_Aggregate_LOGGED                        @FeatureType("")                  @Log("Aggregator_Aggregate: Feature is:",20,20)
 
 FACTORY_DEF * TeeFactory   FACTORY_NAME "Aggregator_Aggregate LOGGED Output Nuker"   INPUT FEATURE_TYPE Aggregator_Aggregate_LOGGED
+# -------------------------------------------------------------------------
+Lookup AttributeValueMapper_3_LOOKUP_TABLE   0               Festlegung<space>Kanton   1               Festlegung<space>Region   2               Festlegung<space>Gemeinde   3               Hinweis   ""              ""   ENCODED_SUPPORTUNICODE
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeValueMapper_3    INPUT  FEATURE_TYPE FeatureMerger_2_COMPLETE_0_ILzuKAQhjrg=    OUTPUT FEATURE_TYPE AttributeValueMapper_3_OUTPUT         @Lookup(AttributeValueMapper_3_LOOKUP_TABLE,"Verbindlichkeit",FORWARD|ENCODED_ATTR, VERBINDLKT)
+
+
 # -------------------------------------------------------------------------
 
 FACTORY_DEF * TeeFactory    FACTORY_NAME "Aggregator_2_AGGREGATE -> GEODB.NPLWALD_FWRVT Correlator"    INPUT FEATURE_TYPE Aggregator_2_AGGREGATE    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 0       @Transform(FME_GENERIC,GEODATABASE_SDE)       @SupplyAttributes(ENCODED,__wb_out_feat_type__,GEODB.NPLWALD_FWRVT)
