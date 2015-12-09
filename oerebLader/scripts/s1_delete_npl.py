@@ -10,6 +10,7 @@ def run(config):
     logger.info("Script " +  os.path.basename(__file__) + " wird ausgeführt.")
     bfsnr = config['LIEFEREINHEIT']['bfsnr']
     schema = 'GEODB'
+    #TODO: Tabellennamen aus Tabelle GPR auslesen
     tables = [
                 'NPL_ABGRENZ',
                 'NPL_GEFF',
