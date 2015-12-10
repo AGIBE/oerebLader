@@ -39,13 +39,13 @@
 #! USAGE=""
 #! END_PYTHON=""
 #! HISTORY=""
-#! FME_DOCUMENT_PRIORGUID="52fb7e29-52a8-4d64-85d1-8a501ded4ecc,dff2cfd6-b81d-4e1b-a7de-486de5b5650d,a4b7819c-1570-492e-ba3d-ccffb1023b47,780615ca-1923-46eb-a421-1eb8cba43675,270fa96a-d1d9-4ef8-ae80-0dbbd0fb5131,2c264785-8dd1-4f7f-8718-3705a14dba9a"
+#! FME_DOCUMENT_PRIORGUID="52fb7e29-52a8-4d64-85d1-8a501ded4ecc,dff2cfd6-b81d-4e1b-a7de-486de5b5650d,a4b7819c-1570-492e-ba3d-ccffb1023b47,780615ca-1923-46eb-a421-1eb8cba43675,270fa96a-d1d9-4ef8-ae80-0dbbd0fb5131,2c264785-8dd1-4f7f-8718-3705a14dba9a,caf2b647-136a-4e78-a963-9319c552545c"
 #! DOC_TOP_LEFT="0 -19132"
 #! REQUIREMENTS_KEYWORD=""
 #! SOURCE_ROUTING_FILE=""
 #! DESTINATION_ROUTING_FILE=""
 #! DESTINATION="NONE"
-#! LAST_SAVE_DATE="2015-12-09T14:31:00"
+#! LAST_SAVE_DATE="2015-12-09T16:05:29"
 #! FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
 #! WORKSPACE_VERSION="1"
 #! SOURCE="NONE"
@@ -56,7 +56,7 @@
 #! REQUIREMENTS=""
 #! BEGIN_TCL=""
 #! DOC_EXTENTS="16920 19039"
-#! FME_DOCUMENT_GUID="caf2b647-136a-4e78-a963-9319c552545c"
+#! FME_DOCUMENT_GUID="3ec41225-b40b-49a2-9744-72b60b6351c9"
 #! SHOW_ANNOTATIONS="true"
 #! IGNORE_READER_FAILURE="No"
 #! WARN_INVALID_XFORM_PARAM="Yes"
@@ -1062,7 +1062,7 @@
 #! ORDER="489"
 #! COLLAPSED="false"
 #! KEYWORD="FILECOPY_1"
-#! ENABLED="true"
+#! ENABLED="false"
 #! FANOUT="No"
 #! FANOUT_ID_ATTR=""
 #! >
@@ -3862,7 +3862,7 @@
 #! BOTTOM_RIGHT="7462 -4593"
 #! STICKY="true"
 #! COLOUR="0.227451,0.294118,0.764706"
-#! CONTENTS="221 662 820 731 393 884 74 554 819 86 555 99 219 91 822 348 437 57 663 102 888 889 890 85 563 90 352 885 344 763 65 436 821 396 88 92 886 758 892 429 350 346 395 659 570 818 80 66 97 95 98 781 823 438 887 660 347 595 96 93 891 "
+#! CONTENTS="85 90 885 763 97 344 436 563 65 758 892 821 88 92 350 395 886 884 429 346 659 91 570 96 93 221 818 80 66 438 595 891 95 660 98 887 823 393 347 820 662 731 555 554 819 102 74 86 781 396 99 437 219 888 889 890 348 57 822 663 352 "
 #! />
 #! <BOOKMARK
 #! IDENTIFIER="588"
@@ -3872,7 +3872,7 @@
 #! BOTTOM_RIGHT="5856 -6869"
 #! STICKY="true"
 #! COLOUR="0.956863,0.886275,0.384314"
-#! CONTENTS="470 483 625 148 775 571 116 774 138 150 858 443 859 666 771 471 482 489 124 125 222 539 139 151 863 468 149 864 862 441 664 636 140 224 133 142 484 154 144 469 635 538 770 860 667 442 127 143 661 "
+#! CONTENTS="863 539 864 124 125 140 222 224 625 139 468 441 151 862 664 858 149 484 133 142 635 860 667 154 144 469 538 770 442 127 143 483 661 470 636 774 775 571 116 443 148 138 150 859 666 482 471 771 489 "
 #! />
 #! <BOOKMARK
 #! IDENTIFIER="589"
@@ -3882,7 +3882,7 @@
 #! BOTTOM_RIGHT="6225 -9092"
 #! STICKY="true"
 #! COLOUR="0.258824,0.501961,0.239216"
-#! CONTENTS="164 176 498 623 504 180 494 196 867 669 830 665 450 170 668 175 576 824 197 228 865 187 495 500 195 578 597 776 670 173 829 492 190 777 448 825 866 188 499 599 577 779 182 493 191 826 778 831 449 600 226 "
+#! CONTENTS="576 500 824 865 187 600 495 578 776 448 173 670 190 492 777 825 829 866 188 499 779 577 826 778 599 182 493 191 449 831 195 226 498 504 164 176 867 669 623 180 197 196 494 228 450 597 668 665 170 830 175 "
 #! />
 #! <BOOKMARK
 #! IDENTIFIER="590"
@@ -3892,7 +3892,7 @@
 #! BOTTOM_RIGHT="8200 -12193"
 #! STICKY="true"
 #! COLOUR="0.756863,0.729412,0.737255"
-#! CONTENTS="253 883 225 713 456 453 270 817 509 782 674 882 248 672 459 565 780 718 816 262 671 510 246 520 881 254 229 434 564 720 815 250 814 249 879 511 256 516 271 458 232 727 208 581 263 272 764 878 515 257 265 261 455 812 235 580 738 717 673 579 231 514 799 880 268 267 275 457 813 245 759 596 792 716 269 460 454 266 508 "
+#! CONTENTS="261 878 713 812 235 460 738 454 579 880 268 673 275 799 813 565 245 456 453 759 249 782 269 596 792 508 672 459 253 564 272 225 817 520 270 883 509 674 434 265 248 231 816 516 780 718 882 262 671 458 246 510 267 254 581 717 815 229 515 881 720 250 455 814 511 256 580 271 266 716 514 232 879 727 208 263 457 764 257 "
 #! />
 #! <BOOKMARK
 #! IDENTIFIER="591"
@@ -3902,7 +3902,7 @@
 #! BOTTOM_RIGHT="7908 -15007"
 #! STICKY="true"
 #! COLOUR="0.486275,0.847059,0.776471"
-#! CONTENTS="302 479 310 307 317 678 569 531 594 839 333 784 634 584 291 753 677 526 842 630 304 474 478 308 334 637 530 537 299 583 568 527 868 303 840 841 316 473 676 475 331 573 638 313 524 300 332 532 675 306 315 838 318 582 783 633 852 287 525 476 "
+#! CONTENTS="308 530 537 334 637 583 868 840 313 299 569 527 303 473 676 475 316 841 630 638 532 524 300 783 675 310 331 306 315 838 318 582 633 476 479 287 568 852 525 302 531 307 317 784 678 584 753 594 677 573 839 333 634 291 474 526 478 304 842 332 "
 #! />
 #! <BOOKMARK
 #! IDENTIFIER="629"
@@ -3912,7 +3912,7 @@
 #! BOTTOM_RIGHT="16920 -10767"
 #! STICKY="true"
 #! COLOUR="0.286275,0.329412,0.0666667"
-#! CONTENTS="856 574 647 523 845 765 688 601 598 643 614 617 620 844 618 653 642 646 656 631 639 640 622 686 828 628 619 857 615 616 652 632 641 843 645 655 644 506 855 522 572 846 575 624 687 627 613 649 621 833 654 602 626 612 648 827 "
+#! CONTENTS="828 857 640 622 615 616 628 619 632 641 645 655 647 652 843 644 506 846 639 855 522 572 686 627 613 624 621 654 602 687 648 649 626 612 827 856 845 574 598 688 523 765 601 620 618 643 653 642 646 617 656 614 575 844 631 833 "
 #! />
 #! <BOOKMARK
 #! IDENTIFIER="586"
@@ -3922,7 +3922,7 @@
 #! BOTTOM_RIGHT="6269 -1962"
 #! STICKY="true"
 #! COLOUR="0.376471,0.203922,0.501961"
-#! CONTENTS="39 337 683 804 657 336 873 685 15 802 38 773 42 684 341 463 689 430 593 790 650 803 11 651 25 853 836 805 44 869 789 343 611 354 832 36 769 834 837 772 854 806 431 425 41 788 809 861 33 "
+#! CONTENTS="341 853 689 38 651 861 593 790 650 805 11 803 25 836 44 873 354 343 789 834 611 832 837 854 772 36 769 431 425 806 41 788 337 809 869 804 33 39 657 683 42 685 430 336 15 802 684 463 773 "
 #! />
 #! <BOOKMARK
 #! IDENTIFIER="768"
@@ -3932,7 +3932,7 @@
 #! BOTTOM_RIGHT="8650 -17087"
 #! STICKY="true"
 #! COLOUR="0.258824,0.027451,0.94902"
-#! CONTENTS="870 725 722 742 746 749 760 766 736 851 755 737 724 874 733 714 723 750 739 734 745 791 752 762 756 567 850 728 800 875 680 747 741 732 711 715 871 740 797 726 757 743 729 751 761 721 876 744 735 793 566 801 754 877 712 798 719 748 872 730 "
+#! CONTENTS="762 739 850 791 800 756 870 728 711 715 748 680 875 741 732 726 740 743 797 751 761 757 729 721 793 876 801 877 744 712 735 567 754 798 719 722 742 872 746 730 760 725 766 871 851 749 747 736 737 714 755 724 874 733 723 566 734 745 750 752 "
 #! />
 #! <BOOKMARK
 #! IDENTIFIER="710"
@@ -3942,7 +3942,7 @@
 #! BOTTOM_RIGHT="10997 -1547"
 #! STICKY="true"
 #! COLOUR="0.392157,0.639216,0.929412"
-#! CONTENTS="702 808 693 695 807 703 37 704 810 705 696 706 811 692 694 697 690 691 700 698 40 835 701 699 585 "
+#! CONTENTS="694 697 690 691 835 37 700 698 40 585 701 699 702 693 695 703 704 705 706 808 810 696 811 807 692 "
 #! />
 #! <BOOKMARK
 #! IDENTIFIER="905"
@@ -3952,7 +3952,7 @@
 #! BOTTOM_RIGHT="7197 -19428"
 #! STICKY="true"
 #! COLOUR="0.376471,0.866667,0"
-#! CONTENTS="534 548 553 560 708 610 707 540 787 848 893 898 901 551 519 902 513 561 545 786 541 550 542 558 518 895 592 682 785 552 896 521 900 608 546 533 794 512 544 897 536 549 556 557 562 528 679 709 795 894 681 517 547 903 535 847 543 899 559 529 "
+#! CONTENTS="896 900 542 895 517 552 521 608 546 533 536 549 556 794 562 679 544 709 795 897 894 903 557 528 681 547 535 513 847 518 534 548 543 553 560 899 610 707 787 559 848 529 898 901 708 540 893 551 519 902 541 550 561 545 558 512 592 682 785 786 "
 #! />
 #! </BOOKMARKS>
 #! <TRANSFORMERS>
@@ -12219,15 +12219,15 @@
 #! IDENTIFIER="131269"
 #! SOURCE_NODE="188"
 #! TARGET_NODE="195"
-#! SOURCE_PORT_DESC="ao 0 1"
-#! TARGET_PORT_DESC="5"
+#! SOURCE_PORT_DESC="ao 0 5"
+#! TARGET_PORT_DESC="4"
 #! />
 #! <ATTR_LINK
 #! IDENTIFIER="65733"
 #! SOURCE_NODE="188"
 #! TARGET_NODE="195"
-#! SOURCE_PORT_DESC="ao 0 5"
-#! TARGET_PORT_DESC="4"
+#! SOURCE_PORT_DESC="ao 0 1"
+#! TARGET_PORT_DESC="5"
 #! />
 #! </ATTR_LINKS>
 #! <SUBDOCUMENTS>
@@ -13688,18 +13688,18 @@ MACRO $(VOR_SORT_WORKSPACE_NAME)___COMPOUND_PARAMETERS
 MACRO $(VOR_SORT_WORKSPACE_NAME)_SUB_DOC_NAME VOR_SORT
 DEFAULT_MACRO VOR_SORT_WORKSPACE_NAME ""
 INCLUDE [puts {MACRO WB_OLD_CONTEXT_$(VOR_SORT_WORKSPACE_NAME) $(WB_CURRENT_CONTEXT)};          puts {MACRO WB_CURRENT_CONTEXT $(VOR_SORT_WORKSPACE_NAME)}]
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(VOR_SORT_WORKSPACE_NAME)_Sorter_INPUT_7581449667860 Input Splitter"   INPUT FEATURE_TYPE "$(VOR_SORT_WORKSPACE_NAME)_Sorter_INPUT_758"   OUTPUT FEATURE_TYPE "$(VOR_SORT_WORKSPACE_NAME)_Sorter_INPUT_758"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(VOR_SORT_WORKSPACE_NAME)_Sorter_INPUT_7581449673529 Input Splitter"   INPUT FEATURE_TYPE "$(VOR_SORT_WORKSPACE_NAME)_Sorter_INPUT_758"   OUTPUT FEATURE_TYPE "$(VOR_SORT_WORKSPACE_NAME)_Sorter_INPUT_758"
 # -------------------------------------------------------------------------
 
 FACTORY_DEF * SortFactory    FACTORY_NAME $(VOR_SORT_WORKSPACE_NAME)_Sorter    INPUT  FEATURE_TYPE "$(VOR_SORT_WORKSPACE_NAME)_Sorter_INPUT_758"    SORT_BY xtf_id NUMERIC ASCENDING    OUTPUT SORTED FEATURE_TYPE "$(VOR_SORT_WORKSPACE_NAME)_Sorter_SORTED"
 
 # -------------------------------------------------------------------------
 
-Tcl2 proc $(VOR_SORT_WORKSPACE_NAME)_RV_Counter_4b97120b_c15d_42c4_865c_59d1e56c7bb80_createDomain { in_domainName } {    set domainName $in_domainName;    if { {Local} == {Local} }    {       set xFormName [FME_EncodeText {$(VOR_SORT_WORKSPACE_NAME)_RV_Counter_}];       set domainName $xFormName$domainName;    };    return $domainName; }
+Tcl2 proc $(VOR_SORT_WORKSPACE_NAME)_RV_Counter_52fe2e85_abec_4b16_862d_5d684c5bb31b0_createDomain { in_domainName } {    set domainName $in_domainName;    if { {Local} == {Local} }    {       set xFormName [FME_EncodeText {$(VOR_SORT_WORKSPACE_NAME)_RV_Counter_}];       set domainName $xFormName$domainName;    };    return $domainName; }
 
-FACTORY_DEF * TeeFactory    FACTORY_NAME $(VOR_SORT_WORKSPACE_NAME)_RV_Counter    INPUT  FEATURE_TYPE "$(VOR_SORT_WORKSPACE_NAME)_Sorter_SORTED"    OUTPUT FEATURE_TYPE "$(VOR_SORT_WORKSPACE_NAME)_RV_Counter_OUTPUT"         "VOR_SORT" @Count(fme_encoded,@Tcl2("$(VOR_SORT_WORKSPACE_NAME)_RV_Counter_4b97120b_c15d_42c4_865c_59d1e56c7bb80_createDomain {RV}"), 100)
+FACTORY_DEF * TeeFactory    FACTORY_NAME $(VOR_SORT_WORKSPACE_NAME)_RV_Counter    INPUT  FEATURE_TYPE "$(VOR_SORT_WORKSPACE_NAME)_Sorter_SORTED"    OUTPUT FEATURE_TYPE "$(VOR_SORT_WORKSPACE_NAME)_RV_Counter_OUTPUT"         "VOR_SORT" @Count(fme_encoded,@Tcl2("$(VOR_SORT_WORKSPACE_NAME)_RV_Counter_52fe2e85_abec_4b16_862d_5d684c5bb31b0_createDomain {RV}"), 100)
 
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(VOR_SORT_WORKSPACE_NAME)_ZonentypRV_Counter_OUTPUT_7311449667860 Output Collector"   INPUT FEATURE_TYPE "$(VOR_SORT_WORKSPACE_NAME)_RV_Counter_OUTPUT"   OUTPUT FEATURE_TYPE "$(VOR_SORT_WORKSPACE_NAME)_ZonentypRV_Counter_OUTPUT_731"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(VOR_SORT_WORKSPACE_NAME)_ZonentypRV_Counter_OUTPUT_7311449673529 Output Collector"   INPUT FEATURE_TYPE "$(VOR_SORT_WORKSPACE_NAME)_RV_Counter_OUTPUT"   OUTPUT FEATURE_TYPE "$(VOR_SORT_WORKSPACE_NAME)_ZonentypRV_Counter_OUTPUT_731"
 INCLUDE [puts {MACRO WB_CURRENT_CONTEXT $(WB_OLD_CONTEXT_$(VOR_SORT_WORKSPACE_NAME))}]
 FACTORY_DEF * TeeFactory   FACTORY_NAME "VOR_SORT_7 ZonentypRV_Counter_OUTPUT_731 Output Renamer/Nuker"   INPUT FEATURE_TYPE VOR_SORT_7_ZonentypRV_Counter_OUTPUT_731   OUTPUT FEATURE_TYPE VOR_SORT_7_ZonentypRV_Counter_OUTPUT_731
 # -------------------------------------------------------------------------
@@ -13742,7 +13742,7 @@ FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeValueMapper_14 OUTPUT Splitter
 # -------------------------------------------------------------------------
 
 INCLUDE [    set macroLine "MACRO AttributeRemover_38_LIST_EXP ";    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "{\[0-9\]+}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
-FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRemover_38    INPUT  FEATURE_TYPE AttributeValueMapper_14_OUTPUT_1_TMo7nG5Mdf8=    OUTPUT FEATURE_TYPE AttributeRemover_38_OUTPUT        @RemoveAttributes(Verbindlichkeit,PLANBESCHR,BESCHRIEB,VERBINDLKT)        @RemoveAttributes(fme_regexp_match"$(AttributeRemover_38_LIST_EXP)")
+FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRemover_38    INPUT  FEATURE_TYPE AttributeValueMapper_14_OUTPUT_2_TMo7nG5Mdf8=    OUTPUT FEATURE_TYPE AttributeRemover_38_OUTPUT        @RemoveAttributes(Verbindlichkeit,PLANBESCHR,BESCHRIEB,VERBINDLKT)        @RemoveAttributes(fme_regexp_match"$(AttributeRemover_38_LIST_EXP)")
 
 # -------------------------------------------------------------------------
 
@@ -13759,7 +13759,7 @@ FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRemover_39    INPUT  FEATURE_T
 
 INCLUDE [if { {ATTRIBUTES} == {ATTRIBUTES} } {                puts "MACRO FeatureMerger_10_REFERENCE_INFO ATTRIBUTES";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} && {<Unused>} == {POLYGONS}} {                puts "MACRO FeatureMerger_10_REFERENCE_INFO GEOM_BUILD_POLYS";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} && {<Unused>} == {AGGREGATES}} {                puts "MACRO FeatureMerger_10_REFERENCE_INFO GEOM_BUILD_AGGREGATES";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} && {<Unused>} == {LINESFROMPOINTS}} {                puts "MACRO FeatureMerger_10_REFERENCE_INFO GEOM_BUILD_LINES_FROM_POINTS";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} && {<Unused>} == {POLYGONS}} {                puts "MACRO FeatureMerger_10_REFERENCE_INFO GEOM_AND_ATTR_BUILD_POLYS";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} && {<Unused>} == {AGGREGATES}} {                puts "MACRO FeatureMerger_10_REFERENCE_INFO GEOM_AND_ATTR_BUILD_AGGREGATES";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} && {<Unused>} == {LINESFROMPOINTS}} {                puts "MACRO FeatureMerger_10_REFERENCE_INFO GEOM_AND_ATTR_BUILD_LINES_FROM_POINTS";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} } {                puts "MACRO FeatureMerger_10_REFERENCE_INFO GEOM_BUILD_AGGREGATES";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} } {                puts "MACRO FeatureMerger_10_REFERENCE_INFO GEOM_AND_ATTR_BUILD_AGGREGATES";             }          else {}; ]
 
-FACTORY_DEF * ReferenceFactory    FACTORY_NAME FeatureMerger_10    INPUT REFERENCER FEATURE_TYPE AttributeRemover_16_OUTPUT    INPUT REFERENCEE FEATURE_TYPE AttributeValueMapper_14_OUTPUT_0_TMo7nG5Mdf8=    REFERENCE_INFO $(FeatureMerger_10_REFERENCE_INFO)    REFERENCE_TABLE @EvaluateExpression(STRING_ENCODED,<at>Value<openparen>Objekt<closeparen>,FeatureMerger_10) @EvaluateExpression(STRING_ENCODED,<at>Value<openparen>xtf_id<closeparen>,FeatureMerger_10) AUTO    MERGE_ATTRIBUTES Yes    MANAGE_FME_TYPE Yes    MODE COMPLETE    PROCESS_DUPLICATE_REFERENCEES No    REFERENCEES_FIRST No    OUTPUT COMPLETE FEATURE_TYPE FeatureMerger_10_MERGED
+FACTORY_DEF * ReferenceFactory    FACTORY_NAME FeatureMerger_10    INPUT REFERENCER FEATURE_TYPE AttributeRemover_16_OUTPUT    INPUT REFERENCEE FEATURE_TYPE AttributeValueMapper_14_OUTPUT_1_TMo7nG5Mdf8=    REFERENCE_INFO $(FeatureMerger_10_REFERENCE_INFO)    REFERENCE_TABLE @EvaluateExpression(STRING_ENCODED,<at>Value<openparen>Objekt<closeparen>,FeatureMerger_10) @EvaluateExpression(STRING_ENCODED,<at>Value<openparen>xtf_id<closeparen>,FeatureMerger_10) AUTO    MERGE_ATTRIBUTES Yes    MANAGE_FME_TYPE Yes    MODE COMPLETE    PROCESS_DUPLICATE_REFERENCEES No    REFERENCEES_FIRST No    OUTPUT COMPLETE FEATURE_TYPE FeatureMerger_10_MERGED
 
 # -------------------------------------------------------------------------
 
@@ -13795,7 +13795,7 @@ FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRemover_17    INPUT  FEATURE_T
 
 INCLUDE [if { {ATTRIBUTES} == {ATTRIBUTES} } {                puts "MACRO FeatureMerger_11_REFERENCE_INFO ATTRIBUTES";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} && {<Unused>} == {POLYGONS}} {                puts "MACRO FeatureMerger_11_REFERENCE_INFO GEOM_BUILD_POLYS";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} && {<Unused>} == {AGGREGATES}} {                puts "MACRO FeatureMerger_11_REFERENCE_INFO GEOM_BUILD_AGGREGATES";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} && {<Unused>} == {LINESFROMPOINTS}} {                puts "MACRO FeatureMerger_11_REFERENCE_INFO GEOM_BUILD_LINES_FROM_POINTS";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} && {<Unused>} == {POLYGONS}} {                puts "MACRO FeatureMerger_11_REFERENCE_INFO GEOM_AND_ATTR_BUILD_POLYS";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} && {<Unused>} == {AGGREGATES}} {                puts "MACRO FeatureMerger_11_REFERENCE_INFO GEOM_AND_ATTR_BUILD_AGGREGATES";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} && {<Unused>} == {LINESFROMPOINTS}} {                puts "MACRO FeatureMerger_11_REFERENCE_INFO GEOM_AND_ATTR_BUILD_LINES_FROM_POINTS";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} } {                puts "MACRO FeatureMerger_11_REFERENCE_INFO GEOM_BUILD_AGGREGATES";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} } {                puts "MACRO FeatureMerger_11_REFERENCE_INFO GEOM_AND_ATTR_BUILD_AGGREGATES";             }          else {}; ]
 
-FACTORY_DEF * ReferenceFactory    FACTORY_NAME FeatureMerger_11    INPUT REFERENCER FEATURE_TYPE AttributeRemover_17_OUTPUT    INPUT REFERENCEE FEATURE_TYPE AttributeValueMapper_14_OUTPUT_2_TMo7nG5Mdf8=    REFERENCE_INFO $(FeatureMerger_11_REFERENCE_INFO)    REFERENCE_TABLE @EvaluateExpression(STRING_ENCODED,<at>Value<openparen>Objekt<closeparen>,FeatureMerger_11) @EvaluateExpression(STRING_ENCODED,<at>Value<openparen>xtf_id<closeparen>,FeatureMerger_11) AUTO    MERGE_ATTRIBUTES Yes    MANAGE_FME_TYPE Yes    MODE COMPLETE    PROCESS_DUPLICATE_REFERENCEES No    REFERENCEES_FIRST No    OUTPUT COMPLETE FEATURE_TYPE FeatureMerger_11_MERGED
+FACTORY_DEF * ReferenceFactory    FACTORY_NAME FeatureMerger_11    INPUT REFERENCER FEATURE_TYPE AttributeRemover_17_OUTPUT    INPUT REFERENCEE FEATURE_TYPE AttributeValueMapper_14_OUTPUT_0_TMo7nG5Mdf8=    REFERENCE_INFO $(FeatureMerger_11_REFERENCE_INFO)    REFERENCE_TABLE @EvaluateExpression(STRING_ENCODED,<at>Value<openparen>Objekt<closeparen>,FeatureMerger_11) @EvaluateExpression(STRING_ENCODED,<at>Value<openparen>xtf_id<closeparen>,FeatureMerger_11) AUTO    MERGE_ATTRIBUTES Yes    MANAGE_FME_TYPE Yes    MODE COMPLETE    PROCESS_DUPLICATE_REFERENCEES No    REFERENCEES_FIRST No    OUTPUT COMPLETE FEATURE_TYPE FeatureMerger_11_MERGED
 
 # -------------------------------------------------------------------------
 FACTORY_DEF * AttrSetFactory FACTORY_NAME AttributeCreator_12 ATTRSET_PROPAGATE_MISSING YES INPUT  FEATURE_TYPE FeatureMerger_11_MERGED ATTR KANTART Gew<u00e4>sserraumfl<u00e4>che    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_12_OUTPUT 
@@ -13831,18 +13831,18 @@ MACRO $(VOR_SORT_WORKSPACE_NAME)___COMPOUND_PARAMETERS
 MACRO $(VOR_SORT_WORKSPACE_NAME)_SUB_DOC_NAME VOR_SORT
 DEFAULT_MACRO VOR_SORT_WORKSPACE_NAME ""
 INCLUDE [puts {MACRO WB_OLD_CONTEXT_$(VOR_SORT_WORKSPACE_NAME) $(WB_CURRENT_CONTEXT)};          puts {MACRO WB_CURRENT_CONTEXT $(VOR_SORT_WORKSPACE_NAME)}]
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(VOR_SORT_WORKSPACE_NAME)_Sorter_INPUT_7581449667860 Input Splitter"   INPUT FEATURE_TYPE "$(VOR_SORT_WORKSPACE_NAME)_Sorter_INPUT_758"   OUTPUT FEATURE_TYPE "$(VOR_SORT_WORKSPACE_NAME)_Sorter_INPUT_758"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(VOR_SORT_WORKSPACE_NAME)_Sorter_INPUT_7581449673529 Input Splitter"   INPUT FEATURE_TYPE "$(VOR_SORT_WORKSPACE_NAME)_Sorter_INPUT_758"   OUTPUT FEATURE_TYPE "$(VOR_SORT_WORKSPACE_NAME)_Sorter_INPUT_758"
 # -------------------------------------------------------------------------
 
 FACTORY_DEF * SortFactory    FACTORY_NAME $(VOR_SORT_WORKSPACE_NAME)_Sorter    INPUT  FEATURE_TYPE "$(VOR_SORT_WORKSPACE_NAME)_Sorter_INPUT_758"    SORT_BY xtf_id NUMERIC ASCENDING    OUTPUT SORTED FEATURE_TYPE "$(VOR_SORT_WORKSPACE_NAME)_Sorter_SORTED"
 
 # -------------------------------------------------------------------------
 
-Tcl2 proc $(VOR_SORT_WORKSPACE_NAME)_RV_Counter_4b97120b_c15d_42c4_865c_59d1e56c7bb81_createDomain { in_domainName } {    set domainName $in_domainName;    if { {Local} == {Local} }    {       set xFormName [FME_EncodeText {$(VOR_SORT_WORKSPACE_NAME)_RV_Counter_}];       set domainName $xFormName$domainName;    };    return $domainName; }
+Tcl2 proc $(VOR_SORT_WORKSPACE_NAME)_RV_Counter_52fe2e85_abec_4b16_862d_5d684c5bb31b1_createDomain { in_domainName } {    set domainName $in_domainName;    if { {Local} == {Local} }    {       set xFormName [FME_EncodeText {$(VOR_SORT_WORKSPACE_NAME)_RV_Counter_}];       set domainName $xFormName$domainName;    };    return $domainName; }
 
-FACTORY_DEF * TeeFactory    FACTORY_NAME $(VOR_SORT_WORKSPACE_NAME)_RV_Counter    INPUT  FEATURE_TYPE "$(VOR_SORT_WORKSPACE_NAME)_Sorter_SORTED"    OUTPUT FEATURE_TYPE "$(VOR_SORT_WORKSPACE_NAME)_RV_Counter_OUTPUT"         "VOR_SORT" @Count(fme_encoded,@Tcl2("$(VOR_SORT_WORKSPACE_NAME)_RV_Counter_4b97120b_c15d_42c4_865c_59d1e56c7bb81_createDomain {RV}"), 100)
+FACTORY_DEF * TeeFactory    FACTORY_NAME $(VOR_SORT_WORKSPACE_NAME)_RV_Counter    INPUT  FEATURE_TYPE "$(VOR_SORT_WORKSPACE_NAME)_Sorter_SORTED"    OUTPUT FEATURE_TYPE "$(VOR_SORT_WORKSPACE_NAME)_RV_Counter_OUTPUT"         "VOR_SORT" @Count(fme_encoded,@Tcl2("$(VOR_SORT_WORKSPACE_NAME)_RV_Counter_52fe2e85_abec_4b16_862d_5d684c5bb31b1_createDomain {RV}"), 100)
 
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(VOR_SORT_WORKSPACE_NAME)_ZonentypRV_Counter_OUTPUT_7311449667860 Output Collector"   INPUT FEATURE_TYPE "$(VOR_SORT_WORKSPACE_NAME)_RV_Counter_OUTPUT"   OUTPUT FEATURE_TYPE "$(VOR_SORT_WORKSPACE_NAME)_ZonentypRV_Counter_OUTPUT_731"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(VOR_SORT_WORKSPACE_NAME)_ZonentypRV_Counter_OUTPUT_7311449673529 Output Collector"   INPUT FEATURE_TYPE "$(VOR_SORT_WORKSPACE_NAME)_RV_Counter_OUTPUT"   OUTPUT FEATURE_TYPE "$(VOR_SORT_WORKSPACE_NAME)_ZonentypRV_Counter_OUTPUT_731"
 INCLUDE [puts {MACRO WB_CURRENT_CONTEXT $(WB_OLD_CONTEXT_$(VOR_SORT_WORKSPACE_NAME))}]
 FACTORY_DEF * TeeFactory   FACTORY_NAME "VOR_SORT_2 ZonentypRV_Counter_OUTPUT_731 Output Renamer/Nuker"   INPUT FEATURE_TYPE VOR_SORT_2_ZonentypRV_Counter_OUTPUT_731   OUTPUT FEATURE_TYPE VOR_SORT_2_ZonentypRV_Counter_OUTPUT_731
 # -------------------------------------------------------------------------
@@ -13871,6 +13871,20 @@ FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeFilter_6 <UNFILTERED> Output N
 # -------------------------------------------------------------------------
 FACTORY_DEF * AttrSetFactory FACTORY_NAME AttributeCreator_2 INPUT  FEATURE_TYPE AttributeFilter_6_2 ATTR BFSNR $(BFSNR$encode) ATTR NAME $(GEMNAME$encode)    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_2_OUTPUT 
 FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeCreator_2 OUTPUT Splitter"   INPUT FEATURE_TYPE AttributeCreator_2_OUTPUT   OUTPUT FEATURE_TYPE AttributeCreator_2_OUTPUT_0_KpUyI6tMDVI=   OUTPUT FEATURE_TYPE AttributeCreator_2_OUTPUT_1_KpUyI6tMDVI=
+# -------------------------------------------------------------------------
+
+INCLUDE [    set macroLine "MACRO AttributeRemover_24_LIST_EXP ";    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "{\[0-9\]+}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
+FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRemover_24    INPUT  FEATURE_TYPE AttributeCreator_2_OUTPUT_1_KpUyI6tMDVI=    OUTPUT FEATURE_TYPE AttributeRemover_24_OUTPUT        @RemoveAttributes(Verbindlichkeit,KantArt,Abkuerzung)        @RemoveAttributes(fme_regexp_match"$(AttributeRemover_24_LIST_EXP)")
+
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * ReferenceFactory    FACTORY_NAME FeatureMerger_13    INPUT REFERENCER FEATURE_TYPE AttributeRemover_23_OUTPUT    INPUT REFERENCEE FEATURE_TYPE AttributeRemover_24_OUTPUT    REFERENCE_INFO ATTRIBUTES    REFERENCEE_FIELDS "xtf_id"    REFERENCER_FIELDS "Typ"    MERGE_ATTRIBUTES Yes    MANAGE_FME_TYPE Yes    MODE COMPLETE    PROCESS_DUPLICATE_REFERENCEES No    BUILD_INCOMPLETE_REFERENCERS No    OUTPUT COMPLETE FEATURE_TYPE FeatureMerger_13_COMPLETE
+
+# -------------------------------------------------------------------------
+
+INCLUDE [    set macroLine "MACRO AttributeRemover_25_LIST_EXP ";    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "{\[0-9\]+}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
+FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRemover_25    INPUT  FEATURE_TYPE FeatureMerger_13_COMPLETE    OUTPUT FEATURE_TYPE AttributeRemover_25_OUTPUT        @RemoveAttributes(Typ,xtf_id)        @RemoveAttributes(fme_regexp_match"$(AttributeRemover_25_LIST_EXP)")
+
 # -------------------------------------------------------------------------
 
 FACTORY_DEF * ReferenceFactory    FACTORY_NAME FeatureMerger_2    INPUT REFERENCER FEATURE_TYPE AttributeRemover_4_OUTPUT    INPUT REFERENCEE FEATURE_TYPE AttributeCreator_2_OUTPUT_0_KpUyI6tMDVI=    REFERENCE_INFO ATTRIBUTES    REFERENCEE_FIELDS "xtf_id"    REFERENCER_FIELDS "Objekt"    MERGE_ATTRIBUTES Yes    MANAGE_FME_TYPE Yes    MODE COMPLETE    PROCESS_DUPLICATE_REFERENCEES No    BUILD_INCOMPLETE_REFERENCERS No    OUTPUT COMPLETE FEATURE_TYPE FeatureMerger_2_COMPLETE
@@ -13905,20 +13919,6 @@ FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRenamer_17    INPUT  FEATURE_T
 # -------------------------------------------------------------------------
 FACTORY_DEF * AttrSetFactory FACTORY_NAME AttributeCreator ATTRSET_PROPAGATE_MISSING YES INPUT  FEATURE_TYPE AttributeRenamer_17_OUTPUT ATTR ART Synoptische<space>Gefahren    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_OUTPUT 
 # -------------------------------------------------------------------------
-
-INCLUDE [    set macroLine "MACRO AttributeRemover_24_LIST_EXP ";    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "{\[0-9\]+}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
-FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRemover_24    INPUT  FEATURE_TYPE AttributeCreator_2_OUTPUT_1_KpUyI6tMDVI=    OUTPUT FEATURE_TYPE AttributeRemover_24_OUTPUT        @RemoveAttributes(Verbindlichkeit,KantArt,Abkuerzung)        @RemoveAttributes(fme_regexp_match"$(AttributeRemover_24_LIST_EXP)")
-
-# -------------------------------------------------------------------------
-
-FACTORY_DEF * ReferenceFactory    FACTORY_NAME FeatureMerger_13    INPUT REFERENCER FEATURE_TYPE AttributeRemover_23_OUTPUT    INPUT REFERENCEE FEATURE_TYPE AttributeRemover_24_OUTPUT    REFERENCE_INFO ATTRIBUTES    REFERENCEE_FIELDS "xtf_id"    REFERENCER_FIELDS "Typ"    MERGE_ATTRIBUTES Yes    MANAGE_FME_TYPE Yes    MODE COMPLETE    PROCESS_DUPLICATE_REFERENCEES No    BUILD_INCOMPLETE_REFERENCERS No    OUTPUT COMPLETE FEATURE_TYPE FeatureMerger_13_COMPLETE
-
-# -------------------------------------------------------------------------
-
-INCLUDE [    set macroLine "MACRO AttributeRemover_25_LIST_EXP ";    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "{\[0-9\]+}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
-FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRemover_25    INPUT  FEATURE_TYPE FeatureMerger_13_COMPLETE    OUTPUT FEATURE_TYPE AttributeRemover_25_OUTPUT        @RemoveAttributes(Typ,xtf_id)        @RemoveAttributes(fme_regexp_match"$(AttributeRemover_25_LIST_EXP)")
-
-# -------------------------------------------------------------------------
 FACTORY_DEF * TeeFactory   FACTORY_NAME "VOR_SORT_5 Sorter_INPUT_758 Input Collector"   INPUT FEATURE_TYPE DM16NplBE.Nutzungsplanung.NH_NHSchutzRV   OUTPUT FEATURE_TYPE VOR_SORT_5_Sorter_INPUT_758
 MACRO VOR_SORT_WORKSPACE_NAME VOR_SORT_5
 MACRO $(VOR_SORT_WORKSPACE_NAME)_XFORMER_NAME VOR_SORT_5
@@ -13927,18 +13927,18 @@ MACRO $(VOR_SORT_WORKSPACE_NAME)___COMPOUND_PARAMETERS
 MACRO $(VOR_SORT_WORKSPACE_NAME)_SUB_DOC_NAME VOR_SORT
 DEFAULT_MACRO VOR_SORT_WORKSPACE_NAME ""
 INCLUDE [puts {MACRO WB_OLD_CONTEXT_$(VOR_SORT_WORKSPACE_NAME) $(WB_CURRENT_CONTEXT)};          puts {MACRO WB_CURRENT_CONTEXT $(VOR_SORT_WORKSPACE_NAME)}]
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(VOR_SORT_WORKSPACE_NAME)_Sorter_INPUT_7581449667860 Input Splitter"   INPUT FEATURE_TYPE "$(VOR_SORT_WORKSPACE_NAME)_Sorter_INPUT_758"   OUTPUT FEATURE_TYPE "$(VOR_SORT_WORKSPACE_NAME)_Sorter_INPUT_758"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(VOR_SORT_WORKSPACE_NAME)_Sorter_INPUT_7581449673529 Input Splitter"   INPUT FEATURE_TYPE "$(VOR_SORT_WORKSPACE_NAME)_Sorter_INPUT_758"   OUTPUT FEATURE_TYPE "$(VOR_SORT_WORKSPACE_NAME)_Sorter_INPUT_758"
 # -------------------------------------------------------------------------
 
 FACTORY_DEF * SortFactory    FACTORY_NAME $(VOR_SORT_WORKSPACE_NAME)_Sorter    INPUT  FEATURE_TYPE "$(VOR_SORT_WORKSPACE_NAME)_Sorter_INPUT_758"    SORT_BY xtf_id NUMERIC ASCENDING    OUTPUT SORTED FEATURE_TYPE "$(VOR_SORT_WORKSPACE_NAME)_Sorter_SORTED"
 
 # -------------------------------------------------------------------------
 
-Tcl2 proc $(VOR_SORT_WORKSPACE_NAME)_RV_Counter_4b97120b_c15d_42c4_865c_59d1e56c7bb82_createDomain { in_domainName } {    set domainName $in_domainName;    if { {Local} == {Local} }    {       set xFormName [FME_EncodeText {$(VOR_SORT_WORKSPACE_NAME)_RV_Counter_}];       set domainName $xFormName$domainName;    };    return $domainName; }
+Tcl2 proc $(VOR_SORT_WORKSPACE_NAME)_RV_Counter_52fe2e85_abec_4b16_862d_5d684c5bb31b2_createDomain { in_domainName } {    set domainName $in_domainName;    if { {Local} == {Local} }    {       set xFormName [FME_EncodeText {$(VOR_SORT_WORKSPACE_NAME)_RV_Counter_}];       set domainName $xFormName$domainName;    };    return $domainName; }
 
-FACTORY_DEF * TeeFactory    FACTORY_NAME $(VOR_SORT_WORKSPACE_NAME)_RV_Counter    INPUT  FEATURE_TYPE "$(VOR_SORT_WORKSPACE_NAME)_Sorter_SORTED"    OUTPUT FEATURE_TYPE "$(VOR_SORT_WORKSPACE_NAME)_RV_Counter_OUTPUT"         "VOR_SORT" @Count(fme_encoded,@Tcl2("$(VOR_SORT_WORKSPACE_NAME)_RV_Counter_4b97120b_c15d_42c4_865c_59d1e56c7bb82_createDomain {RV}"), 100)
+FACTORY_DEF * TeeFactory    FACTORY_NAME $(VOR_SORT_WORKSPACE_NAME)_RV_Counter    INPUT  FEATURE_TYPE "$(VOR_SORT_WORKSPACE_NAME)_Sorter_SORTED"    OUTPUT FEATURE_TYPE "$(VOR_SORT_WORKSPACE_NAME)_RV_Counter_OUTPUT"         "VOR_SORT" @Count(fme_encoded,@Tcl2("$(VOR_SORT_WORKSPACE_NAME)_RV_Counter_52fe2e85_abec_4b16_862d_5d684c5bb31b2_createDomain {RV}"), 100)
 
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(VOR_SORT_WORKSPACE_NAME)_ZonentypRV_Counter_OUTPUT_7311449667860 Output Collector"   INPUT FEATURE_TYPE "$(VOR_SORT_WORKSPACE_NAME)_RV_Counter_OUTPUT"   OUTPUT FEATURE_TYPE "$(VOR_SORT_WORKSPACE_NAME)_ZonentypRV_Counter_OUTPUT_731"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(VOR_SORT_WORKSPACE_NAME)_ZonentypRV_Counter_OUTPUT_7311449673529 Output Collector"   INPUT FEATURE_TYPE "$(VOR_SORT_WORKSPACE_NAME)_RV_Counter_OUTPUT"   OUTPUT FEATURE_TYPE "$(VOR_SORT_WORKSPACE_NAME)_ZonentypRV_Counter_OUTPUT_731"
 INCLUDE [puts {MACRO WB_CURRENT_CONTEXT $(WB_OLD_CONTEXT_$(VOR_SORT_WORKSPACE_NAME))}]
 FACTORY_DEF * TeeFactory   FACTORY_NAME "VOR_SORT_5 ZonentypRV_Counter_OUTPUT_731 Output Renamer/Nuker"   INPUT FEATURE_TYPE VOR_SORT_5_ZonentypRV_Counter_OUTPUT_731   OUTPUT FEATURE_TYPE VOR_SORT_5_ZonentypRV_Counter_OUTPUT_731
 # -------------------------------------------------------------------------
@@ -14002,12 +14002,12 @@ FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeValueMapper_11    INPUT  FEATU
 FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeValueMapper_11 OUTPUT Splitter"   INPUT FEATURE_TYPE AttributeValueMapper_11_OUTPUT   OUTPUT FEATURE_TYPE AttributeValueMapper_11_OUTPUT_0_dkt7gU5bRCg=   OUTPUT FEATURE_TYPE AttributeValueMapper_11_OUTPUT_1_dkt7gU5bRCg=   OUTPUT FEATURE_TYPE AttributeValueMapper_11_OUTPUT_2_dkt7gU5bRCg=   OUTPUT FEATURE_TYPE AttributeValueMapper_11_OUTPUT_3_dkt7gU5bRCg=
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * ReferenceFactory    FACTORY_NAME FeatureMerger_6    INPUT REFERENCER FEATURE_TYPE AttributeRemover_11_OUTPUT    INPUT REFERENCEE FEATURE_TYPE AttributeValueMapper_11_OUTPUT_2_dkt7gU5bRCg=    REFERENCE_INFO ATTRIBUTES    REFERENCEE_FIELDS "xtf_id"    REFERENCER_FIELDS "Objekt"    MERGE_ATTRIBUTES Yes    MANAGE_FME_TYPE Yes    MODE COMPLETE    PROCESS_DUPLICATE_REFERENCEES No    BUILD_INCOMPLETE_REFERENCERS No    OUTPUT COMPLETE FEATURE_TYPE FeatureMerger_6_COMPLETE
+FACTORY_DEF * ReferenceFactory    FACTORY_NAME FeatureMerger_6    INPUT REFERENCER FEATURE_TYPE AttributeRemover_11_OUTPUT    INPUT REFERENCEE FEATURE_TYPE AttributeValueMapper_11_OUTPUT_1_dkt7gU5bRCg=    REFERENCE_INFO ATTRIBUTES    REFERENCEE_FIELDS "xtf_id"    REFERENCER_FIELDS "Objekt"    MERGE_ATTRIBUTES Yes    MANAGE_FME_TYPE Yes    MODE COMPLETE    PROCESS_DUPLICATE_REFERENCEES No    BUILD_INCOMPLETE_REFERENCERS No    OUTPUT COMPLETE FEATURE_TYPE FeatureMerger_6_COMPLETE
 
 # -------------------------------------------------------------------------
 
 INCLUDE [    set macroLine "MACRO AttributeRemover_33_LIST_EXP ";    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "{\[0-9\]+}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
-FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRemover_33    INPUT  FEATURE_TYPE AttributeValueMapper_11_OUTPUT_0_dkt7gU5bRCg=    OUTPUT FEATURE_TYPE AttributeRemover_33_OUTPUT        @RemoveAttributes(Verbindlichkeit,_kantart,Abkuerzung,Bezeichnung,_schutzgrad,VERBINDLKT,KANTART,SCHUTZGRAD)        @RemoveAttributes(fme_regexp_match"$(AttributeRemover_33_LIST_EXP)")
+FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRemover_33    INPUT  FEATURE_TYPE AttributeValueMapper_11_OUTPUT_3_dkt7gU5bRCg=    OUTPUT FEATURE_TYPE AttributeRemover_33_OUTPUT        @RemoveAttributes(Verbindlichkeit,_kantart,Abkuerzung,Bezeichnung,_schutzgrad,VERBINDLKT,KANTART,SCHUTZGRAD)        @RemoveAttributes(fme_regexp_match"$(AttributeRemover_33_LIST_EXP)")
 
 # -------------------------------------------------------------------------
 
@@ -14048,7 +14048,7 @@ FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRemover_9    INPUT  FEATURE_TY
 
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * ReferenceFactory    FACTORY_NAME FeatureMerger_5    INPUT REFERENCER FEATURE_TYPE AttributeRemover_9_OUTPUT    INPUT REFERENCEE FEATURE_TYPE AttributeValueMapper_11_OUTPUT_1_dkt7gU5bRCg=    REFERENCE_INFO ATTRIBUTES    REFERENCEE_FIELDS "xtf_id"    REFERENCER_FIELDS "Objekt"    MERGE_ATTRIBUTES Yes    MANAGE_FME_TYPE Yes    MODE COMPLETE    PROCESS_DUPLICATE_REFERENCEES No    BUILD_INCOMPLETE_REFERENCERS No    OUTPUT COMPLETE FEATURE_TYPE FeatureMerger_5_COMPLETE
+FACTORY_DEF * ReferenceFactory    FACTORY_NAME FeatureMerger_5    INPUT REFERENCER FEATURE_TYPE AttributeRemover_9_OUTPUT    INPUT REFERENCEE FEATURE_TYPE AttributeValueMapper_11_OUTPUT_0_dkt7gU5bRCg=    REFERENCE_INFO ATTRIBUTES    REFERENCEE_FIELDS "xtf_id"    REFERENCER_FIELDS "Objekt"    MERGE_ATTRIBUTES Yes    MANAGE_FME_TYPE Yes    MODE COMPLETE    PROCESS_DUPLICATE_REFERENCEES No    BUILD_INCOMPLETE_REFERENCERS No    OUTPUT COMPLETE FEATURE_TYPE FeatureMerger_5_COMPLETE
 
 # -------------------------------------------------------------------------
 
@@ -14062,7 +14062,7 @@ FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRemover_12    INPUT  FEATURE_T
 
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * ReferenceFactory    FACTORY_NAME FeatureMerger_7    INPUT REFERENCER FEATURE_TYPE AttributeRemover_12_OUTPUT    INPUT REFERENCEE FEATURE_TYPE AttributeValueMapper_11_OUTPUT_3_dkt7gU5bRCg=    REFERENCE_INFO ATTRIBUTES    REFERENCEE_FIELDS "xtf_id"    REFERENCER_FIELDS "Objekt"    MERGE_ATTRIBUTES Yes    MANAGE_FME_TYPE Yes    MODE COMPLETE    PROCESS_DUPLICATE_REFERENCEES No    BUILD_INCOMPLETE_REFERENCERS No    OUTPUT COMPLETE FEATURE_TYPE FeatureMerger_7_COMPLETE
+FACTORY_DEF * ReferenceFactory    FACTORY_NAME FeatureMerger_7    INPUT REFERENCER FEATURE_TYPE AttributeRemover_12_OUTPUT    INPUT REFERENCEE FEATURE_TYPE AttributeValueMapper_11_OUTPUT_2_dkt7gU5bRCg=    REFERENCE_INFO ATTRIBUTES    REFERENCEE_FIELDS "xtf_id"    REFERENCER_FIELDS "Objekt"    MERGE_ATTRIBUTES Yes    MANAGE_FME_TYPE Yes    MODE COMPLETE    PROCESS_DUPLICATE_REFERENCEES No    BUILD_INCOMPLETE_REFERENCERS No    OUTPUT COMPLETE FEATURE_TYPE FeatureMerger_7_COMPLETE
 
 # -------------------------------------------------------------------------
 
@@ -14116,18 +14116,18 @@ MACRO $(VOR_SORT_WORKSPACE_NAME)___COMPOUND_PARAMETERS
 MACRO $(VOR_SORT_WORKSPACE_NAME)_SUB_DOC_NAME VOR_SORT
 DEFAULT_MACRO VOR_SORT_WORKSPACE_NAME ""
 INCLUDE [puts {MACRO WB_OLD_CONTEXT_$(VOR_SORT_WORKSPACE_NAME) $(WB_CURRENT_CONTEXT)};          puts {MACRO WB_CURRENT_CONTEXT $(VOR_SORT_WORKSPACE_NAME)}]
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(VOR_SORT_WORKSPACE_NAME)_Sorter_INPUT_7581449667860 Input Splitter"   INPUT FEATURE_TYPE "$(VOR_SORT_WORKSPACE_NAME)_Sorter_INPUT_758"   OUTPUT FEATURE_TYPE "$(VOR_SORT_WORKSPACE_NAME)_Sorter_INPUT_758"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(VOR_SORT_WORKSPACE_NAME)_Sorter_INPUT_7581449673529 Input Splitter"   INPUT FEATURE_TYPE "$(VOR_SORT_WORKSPACE_NAME)_Sorter_INPUT_758"   OUTPUT FEATURE_TYPE "$(VOR_SORT_WORKSPACE_NAME)_Sorter_INPUT_758"
 # -------------------------------------------------------------------------
 
 FACTORY_DEF * SortFactory    FACTORY_NAME $(VOR_SORT_WORKSPACE_NAME)_Sorter    INPUT  FEATURE_TYPE "$(VOR_SORT_WORKSPACE_NAME)_Sorter_INPUT_758"    SORT_BY xtf_id NUMERIC ASCENDING    OUTPUT SORTED FEATURE_TYPE "$(VOR_SORT_WORKSPACE_NAME)_Sorter_SORTED"
 
 # -------------------------------------------------------------------------
 
-Tcl2 proc $(VOR_SORT_WORKSPACE_NAME)_RV_Counter_4b97120b_c15d_42c4_865c_59d1e56c7bb83_createDomain { in_domainName } {    set domainName $in_domainName;    if { {Local} == {Local} }    {       set xFormName [FME_EncodeText {$(VOR_SORT_WORKSPACE_NAME)_RV_Counter_}];       set domainName $xFormName$domainName;    };    return $domainName; }
+Tcl2 proc $(VOR_SORT_WORKSPACE_NAME)_RV_Counter_52fe2e85_abec_4b16_862d_5d684c5bb31b3_createDomain { in_domainName } {    set domainName $in_domainName;    if { {Local} == {Local} }    {       set xFormName [FME_EncodeText {$(VOR_SORT_WORKSPACE_NAME)_RV_Counter_}];       set domainName $xFormName$domainName;    };    return $domainName; }
 
-FACTORY_DEF * TeeFactory    FACTORY_NAME $(VOR_SORT_WORKSPACE_NAME)_RV_Counter    INPUT  FEATURE_TYPE "$(VOR_SORT_WORKSPACE_NAME)_Sorter_SORTED"    OUTPUT FEATURE_TYPE "$(VOR_SORT_WORKSPACE_NAME)_RV_Counter_OUTPUT"         "VOR_SORT" @Count(fme_encoded,@Tcl2("$(VOR_SORT_WORKSPACE_NAME)_RV_Counter_4b97120b_c15d_42c4_865c_59d1e56c7bb83_createDomain {RV}"), 100)
+FACTORY_DEF * TeeFactory    FACTORY_NAME $(VOR_SORT_WORKSPACE_NAME)_RV_Counter    INPUT  FEATURE_TYPE "$(VOR_SORT_WORKSPACE_NAME)_Sorter_SORTED"    OUTPUT FEATURE_TYPE "$(VOR_SORT_WORKSPACE_NAME)_RV_Counter_OUTPUT"         "VOR_SORT" @Count(fme_encoded,@Tcl2("$(VOR_SORT_WORKSPACE_NAME)_RV_Counter_52fe2e85_abec_4b16_862d_5d684c5bb31b3_createDomain {RV}"), 100)
 
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(VOR_SORT_WORKSPACE_NAME)_ZonentypRV_Counter_OUTPUT_7311449667860 Output Collector"   INPUT FEATURE_TYPE "$(VOR_SORT_WORKSPACE_NAME)_RV_Counter_OUTPUT"   OUTPUT FEATURE_TYPE "$(VOR_SORT_WORKSPACE_NAME)_ZonentypRV_Counter_OUTPUT_731"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(VOR_SORT_WORKSPACE_NAME)_ZonentypRV_Counter_OUTPUT_7311449673529 Output Collector"   INPUT FEATURE_TYPE "$(VOR_SORT_WORKSPACE_NAME)_RV_Counter_OUTPUT"   OUTPUT FEATURE_TYPE "$(VOR_SORT_WORKSPACE_NAME)_ZonentypRV_Counter_OUTPUT_731"
 INCLUDE [puts {MACRO WB_CURRENT_CONTEXT $(WB_OLD_CONTEXT_$(VOR_SORT_WORKSPACE_NAME))}]
 FACTORY_DEF * TeeFactory   FACTORY_NAME "VOR_SORT_9 ZonentypRV_Counter_OUTPUT_731 Output Renamer/Nuker"   INPUT FEATURE_TYPE VOR_SORT_9_ZonentypRV_Counter_OUTPUT_731   OUTPUT FEATURE_TYPE VOR_SORT_9_ZonentypRV_Counter_OUTPUT_731
 # -------------------------------------------------------------------------
@@ -14193,18 +14193,18 @@ MACRO $(VOR_SORT_WORKSPACE_NAME)___COMPOUND_PARAMETERS
 MACRO $(VOR_SORT_WORKSPACE_NAME)_SUB_DOC_NAME VOR_SORT
 DEFAULT_MACRO VOR_SORT_WORKSPACE_NAME ""
 INCLUDE [puts {MACRO WB_OLD_CONTEXT_$(VOR_SORT_WORKSPACE_NAME) $(WB_CURRENT_CONTEXT)};          puts {MACRO WB_CURRENT_CONTEXT $(VOR_SORT_WORKSPACE_NAME)}]
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(VOR_SORT_WORKSPACE_NAME)_Sorter_INPUT_7581449667860 Input Splitter"   INPUT FEATURE_TYPE "$(VOR_SORT_WORKSPACE_NAME)_Sorter_INPUT_758"   OUTPUT FEATURE_TYPE "$(VOR_SORT_WORKSPACE_NAME)_Sorter_INPUT_758"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(VOR_SORT_WORKSPACE_NAME)_Sorter_INPUT_7581449673529 Input Splitter"   INPUT FEATURE_TYPE "$(VOR_SORT_WORKSPACE_NAME)_Sorter_INPUT_758"   OUTPUT FEATURE_TYPE "$(VOR_SORT_WORKSPACE_NAME)_Sorter_INPUT_758"
 # -------------------------------------------------------------------------
 
 FACTORY_DEF * SortFactory    FACTORY_NAME $(VOR_SORT_WORKSPACE_NAME)_Sorter    INPUT  FEATURE_TYPE "$(VOR_SORT_WORKSPACE_NAME)_Sorter_INPUT_758"    SORT_BY xtf_id NUMERIC ASCENDING    OUTPUT SORTED FEATURE_TYPE "$(VOR_SORT_WORKSPACE_NAME)_Sorter_SORTED"
 
 # -------------------------------------------------------------------------
 
-Tcl2 proc $(VOR_SORT_WORKSPACE_NAME)_RV_Counter_4b97120b_c15d_42c4_865c_59d1e56c7bb84_createDomain { in_domainName } {    set domainName $in_domainName;    if { {Local} == {Local} }    {       set xFormName [FME_EncodeText {$(VOR_SORT_WORKSPACE_NAME)_RV_Counter_}];       set domainName $xFormName$domainName;    };    return $domainName; }
+Tcl2 proc $(VOR_SORT_WORKSPACE_NAME)_RV_Counter_52fe2e85_abec_4b16_862d_5d684c5bb31b4_createDomain { in_domainName } {    set domainName $in_domainName;    if { {Local} == {Local} }    {       set xFormName [FME_EncodeText {$(VOR_SORT_WORKSPACE_NAME)_RV_Counter_}];       set domainName $xFormName$domainName;    };    return $domainName; }
 
-FACTORY_DEF * TeeFactory    FACTORY_NAME $(VOR_SORT_WORKSPACE_NAME)_RV_Counter    INPUT  FEATURE_TYPE "$(VOR_SORT_WORKSPACE_NAME)_Sorter_SORTED"    OUTPUT FEATURE_TYPE "$(VOR_SORT_WORKSPACE_NAME)_RV_Counter_OUTPUT"         "VOR_SORT" @Count(fme_encoded,@Tcl2("$(VOR_SORT_WORKSPACE_NAME)_RV_Counter_4b97120b_c15d_42c4_865c_59d1e56c7bb84_createDomain {RV}"), 100)
+FACTORY_DEF * TeeFactory    FACTORY_NAME $(VOR_SORT_WORKSPACE_NAME)_RV_Counter    INPUT  FEATURE_TYPE "$(VOR_SORT_WORKSPACE_NAME)_Sorter_SORTED"    OUTPUT FEATURE_TYPE "$(VOR_SORT_WORKSPACE_NAME)_RV_Counter_OUTPUT"         "VOR_SORT" @Count(fme_encoded,@Tcl2("$(VOR_SORT_WORKSPACE_NAME)_RV_Counter_52fe2e85_abec_4b16_862d_5d684c5bb31b4_createDomain {RV}"), 100)
 
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(VOR_SORT_WORKSPACE_NAME)_ZonentypRV_Counter_OUTPUT_7311449667860 Output Collector"   INPUT FEATURE_TYPE "$(VOR_SORT_WORKSPACE_NAME)_RV_Counter_OUTPUT"   OUTPUT FEATURE_TYPE "$(VOR_SORT_WORKSPACE_NAME)_ZonentypRV_Counter_OUTPUT_731"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(VOR_SORT_WORKSPACE_NAME)_ZonentypRV_Counter_OUTPUT_7311449673529 Output Collector"   INPUT FEATURE_TYPE "$(VOR_SORT_WORKSPACE_NAME)_RV_Counter_OUTPUT"   OUTPUT FEATURE_TYPE "$(VOR_SORT_WORKSPACE_NAME)_ZonentypRV_Counter_OUTPUT_731"
 INCLUDE [puts {MACRO WB_CURRENT_CONTEXT $(WB_OLD_CONTEXT_$(VOR_SORT_WORKSPACE_NAME))}]
 FACTORY_DEF * TeeFactory   FACTORY_NAME "VOR_SORT_6 ZonentypRV_Counter_OUTPUT_731 Output Renamer/Nuker"   INPUT FEATURE_TYPE VOR_SORT_6_ZonentypRV_Counter_OUTPUT_731   OUTPUT FEATURE_TYPE VOR_SORT_6_ZonentypRV_Counter_OUTPUT_731
 # -------------------------------------------------------------------------
@@ -14257,6 +14257,10 @@ FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeValueMapper_13    INPUT  FEATU
 FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeValueMapper_13 OUTPUT Splitter"   INPUT FEATURE_TYPE AttributeValueMapper_13_OUTPUT   OUTPUT FEATURE_TYPE AttributeValueMapper_13_OUTPUT_0_ibu6ZqGrb8U=   OUTPUT FEATURE_TYPE AttributeValueMapper_13_OUTPUT_1_ibu6ZqGrb8U=   OUTPUT FEATURE_TYPE AttributeValueMapper_13_OUTPUT_2_ibu6ZqGrb8U=
 # -------------------------------------------------------------------------
 
+FACTORY_DEF * ReferenceFactory    FACTORY_NAME FeatureMerger_9    INPUT REFERENCER FEATURE_TYPE AttributeRemover_14_OUTPUT    INPUT REFERENCEE FEATURE_TYPE AttributeValueMapper_13_OUTPUT_0_ibu6ZqGrb8U=    REFERENCE_INFO ATTRIBUTES    REFERENCEE_FIELDS "xtf_id"    REFERENCER_FIELDS "Objekt"    MERGE_ATTRIBUTES Yes    MANAGE_FME_TYPE Yes    MODE COMPLETE    PROCESS_DUPLICATE_REFERENCEES No    BUILD_INCOMPLETE_REFERENCERS No    OUTPUT COMPLETE FEATURE_TYPE FeatureMerger_9_COMPLETE
+
+# -------------------------------------------------------------------------
+
 INCLUDE [    set macroLine "MACRO AttributeRemover_36_LIST_EXP ";    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "{\[0-9\]+}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
 FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRemover_36    INPUT  FEATURE_TYPE AttributeValueMapper_13_OUTPUT_1_ibu6ZqGrb8U=    OUTPUT FEATURE_TYPE AttributeRemover_36_OUTPUT        @RemoveAttributes(Name,Art,Verbindlichkeit,VERBINDLKT,ART)        @RemoveAttributes(fme_regexp_match"$(AttributeRemover_36_LIST_EXP)")
 
@@ -14268,10 +14272,6 @@ FACTORY_DEF * ReferenceFactory    FACTORY_NAME FeatureMerger_17    INPUT REFEREN
 
 INCLUDE [    set macroLine "MACRO AttributeRemover_37_LIST_EXP ";    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "{\[0-9\]+}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
 FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRemover_37    INPUT  FEATURE_TYPE FeatureMerger_17_COMPLETE    OUTPUT FEATURE_TYPE AttributeRemover_37_OUTPUT        @RemoveAttributes(Typ,xtf_id,NAMEWEG,_art,BESCHRIEB)        @RemoveAttributes(fme_regexp_match"$(AttributeRemover_37_LIST_EXP)")
-
-# -------------------------------------------------------------------------
-
-FACTORY_DEF * ReferenceFactory    FACTORY_NAME FeatureMerger_9    INPUT REFERENCER FEATURE_TYPE AttributeRemover_14_OUTPUT    INPUT REFERENCEE FEATURE_TYPE AttributeValueMapper_13_OUTPUT_0_ibu6ZqGrb8U=    REFERENCE_INFO ATTRIBUTES    REFERENCEE_FIELDS "xtf_id"    REFERENCER_FIELDS "Objekt"    MERGE_ATTRIBUTES Yes    MANAGE_FME_TYPE Yes    MODE COMPLETE    PROCESS_DUPLICATE_REFERENCEES No    BUILD_INCOMPLETE_REFERENCERS No    OUTPUT COMPLETE FEATURE_TYPE FeatureMerger_9_COMPLETE
 
 # -------------------------------------------------------------------------
 
@@ -14294,7 +14294,7 @@ FACTORY_DEF * TestFactory    FACTORY_NAME Terminator_26    INPUT  FEATURE_TYPE G
 # -------------------------------------------------------------------------
 
 INCLUDE [    set macroLine "MACRO AttributeRemover_13_LIST_EXP ";    foreach attr [split "_issues<opencurly><closecurly>"] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "{\[0-9\]+}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
-FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRemover_13    INPUT  FEATURE_TYPE GeometryValidator_9_REPAIRED    INPUT  FEATURE_TYPE GeometryValidator_9_PASSED    OUTPUT FEATURE_TYPE AttributeRemover_13_OUTPUT        @RemoveAttributes(xtf_id,Genehmigung,Inkraftsetzung,Qualitaet)        @RemoveAttributes(fme_regexp_match"$(AttributeRemover_13_LIST_EXP)")
+FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRemover_13    INPUT  FEATURE_TYPE GeometryValidator_9_PASSED    INPUT  FEATURE_TYPE GeometryValidator_9_REPAIRED    OUTPUT FEATURE_TYPE AttributeRemover_13_OUTPUT        @RemoveAttributes(xtf_id,Genehmigung,Inkraftsetzung,Qualitaet)        @RemoveAttributes(fme_regexp_match"$(AttributeRemover_13_LIST_EXP)")
 
 # -------------------------------------------------------------------------
 
@@ -14332,18 +14332,18 @@ MACRO $(VOR_SORT_WORKSPACE_NAME)___COMPOUND_PARAMETERS
 MACRO $(VOR_SORT_WORKSPACE_NAME)_SUB_DOC_NAME VOR_SORT
 DEFAULT_MACRO VOR_SORT_WORKSPACE_NAME ""
 INCLUDE [puts {MACRO WB_OLD_CONTEXT_$(VOR_SORT_WORKSPACE_NAME) $(WB_CURRENT_CONTEXT)};          puts {MACRO WB_CURRENT_CONTEXT $(VOR_SORT_WORKSPACE_NAME)}]
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(VOR_SORT_WORKSPACE_NAME)_Sorter_INPUT_7581449667860 Input Splitter"   INPUT FEATURE_TYPE "$(VOR_SORT_WORKSPACE_NAME)_Sorter_INPUT_758"   OUTPUT FEATURE_TYPE "$(VOR_SORT_WORKSPACE_NAME)_Sorter_INPUT_758"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(VOR_SORT_WORKSPACE_NAME)_Sorter_INPUT_7581449673529 Input Splitter"   INPUT FEATURE_TYPE "$(VOR_SORT_WORKSPACE_NAME)_Sorter_INPUT_758"   OUTPUT FEATURE_TYPE "$(VOR_SORT_WORKSPACE_NAME)_Sorter_INPUT_758"
 # -------------------------------------------------------------------------
 
 FACTORY_DEF * SortFactory    FACTORY_NAME $(VOR_SORT_WORKSPACE_NAME)_Sorter    INPUT  FEATURE_TYPE "$(VOR_SORT_WORKSPACE_NAME)_Sorter_INPUT_758"    SORT_BY xtf_id NUMERIC ASCENDING    OUTPUT SORTED FEATURE_TYPE "$(VOR_SORT_WORKSPACE_NAME)_Sorter_SORTED"
 
 # -------------------------------------------------------------------------
 
-Tcl2 proc $(VOR_SORT_WORKSPACE_NAME)_RV_Counter_4b97120b_c15d_42c4_865c_59d1e56c7bb85_createDomain { in_domainName } {    set domainName $in_domainName;    if { {Local} == {Local} }    {       set xFormName [FME_EncodeText {$(VOR_SORT_WORKSPACE_NAME)_RV_Counter_}];       set domainName $xFormName$domainName;    };    return $domainName; }
+Tcl2 proc $(VOR_SORT_WORKSPACE_NAME)_RV_Counter_52fe2e85_abec_4b16_862d_5d684c5bb31b5_createDomain { in_domainName } {    set domainName $in_domainName;    if { {Local} == {Local} }    {       set xFormName [FME_EncodeText {$(VOR_SORT_WORKSPACE_NAME)_RV_Counter_}];       set domainName $xFormName$domainName;    };    return $domainName; }
 
-FACTORY_DEF * TeeFactory    FACTORY_NAME $(VOR_SORT_WORKSPACE_NAME)_RV_Counter    INPUT  FEATURE_TYPE "$(VOR_SORT_WORKSPACE_NAME)_Sorter_SORTED"    OUTPUT FEATURE_TYPE "$(VOR_SORT_WORKSPACE_NAME)_RV_Counter_OUTPUT"         "VOR_SORT" @Count(fme_encoded,@Tcl2("$(VOR_SORT_WORKSPACE_NAME)_RV_Counter_4b97120b_c15d_42c4_865c_59d1e56c7bb85_createDomain {RV}"), 100)
+FACTORY_DEF * TeeFactory    FACTORY_NAME $(VOR_SORT_WORKSPACE_NAME)_RV_Counter    INPUT  FEATURE_TYPE "$(VOR_SORT_WORKSPACE_NAME)_Sorter_SORTED"    OUTPUT FEATURE_TYPE "$(VOR_SORT_WORKSPACE_NAME)_RV_Counter_OUTPUT"         "VOR_SORT" @Count(fme_encoded,@Tcl2("$(VOR_SORT_WORKSPACE_NAME)_RV_Counter_52fe2e85_abec_4b16_862d_5d684c5bb31b5_createDomain {RV}"), 100)
 
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(VOR_SORT_WORKSPACE_NAME)_ZonentypRV_Counter_OUTPUT_7311449667860 Output Collector"   INPUT FEATURE_TYPE "$(VOR_SORT_WORKSPACE_NAME)_RV_Counter_OUTPUT"   OUTPUT FEATURE_TYPE "$(VOR_SORT_WORKSPACE_NAME)_ZonentypRV_Counter_OUTPUT_731"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(VOR_SORT_WORKSPACE_NAME)_ZonentypRV_Counter_OUTPUT_7311449673529 Output Collector"   INPUT FEATURE_TYPE "$(VOR_SORT_WORKSPACE_NAME)_RV_Counter_OUTPUT"   OUTPUT FEATURE_TYPE "$(VOR_SORT_WORKSPACE_NAME)_ZonentypRV_Counter_OUTPUT_731"
 INCLUDE [puts {MACRO WB_CURRENT_CONTEXT $(WB_OLD_CONTEXT_$(VOR_SORT_WORKSPACE_NAME))}]
 FACTORY_DEF * TeeFactory   FACTORY_NAME "VOR_SORT_4 ZonentypRV_Counter_OUTPUT_731 Output Renamer/Nuker"   INPUT FEATURE_TYPE VOR_SORT_4_ZonentypRV_Counter_OUTPUT_731   OUTPUT FEATURE_TYPE VOR_SORT_4_ZonentypRV_Counter_OUTPUT_731
 # -------------------------------------------------------------------------
@@ -14383,20 +14383,6 @@ FACTORY_DEF * AttrSetFactory FACTORY_NAME AttributeCreator_4 INPUT  FEATURE_TYPE
 FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeCreator_4 OUTPUT Splitter"   INPUT FEATURE_TYPE AttributeCreator_4_OUTPUT   OUTPUT FEATURE_TYPE AttributeCreator_4_OUTPUT_0_E4SXNhkeM5E=   OUTPUT FEATURE_TYPE AttributeCreator_4_OUTPUT_1_E4SXNhkeM5E=
 # -------------------------------------------------------------------------
 
-INCLUDE [    set macroLine "MACRO AttributeRemover_30_LIST_EXP ";    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "{\[0-9\]+}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
-FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRemover_30    INPUT  FEATURE_TYPE AttributeCreator_4_OUTPUT_1_E4SXNhkeM5E=    OUTPUT FEATURE_TYPE AttributeRemover_30_OUTPUT        @RemoveAttributes(Verbindlichkeit,KantArt,Gueltig_bis,Abkuerzung,Bezeichnung,Bemerkung)        @RemoveAttributes(fme_regexp_match"$(AttributeRemover_30_LIST_EXP)")
-
-# -------------------------------------------------------------------------
-
-FACTORY_DEF * ReferenceFactory    FACTORY_NAME FeatureMerger_15    INPUT REFERENCER FEATURE_TYPE AttributeRemover_29_OUTPUT    INPUT REFERENCEE FEATURE_TYPE AttributeRemover_30_OUTPUT    REFERENCE_INFO ATTRIBUTES    REFERENCEE_FIELDS "xtf_id"    REFERENCER_FIELDS "Typ"    MERGE_ATTRIBUTES Yes    MANAGE_FME_TYPE Yes    MODE COMPLETE    PROCESS_DUPLICATE_REFERENCEES No    BUILD_INCOMPLETE_REFERENCERS No    OUTPUT COMPLETE FEATURE_TYPE FeatureMerger_15_COMPLETE
-
-# -------------------------------------------------------------------------
-
-INCLUDE [    set macroLine "MACRO AttributeRemover_31_LIST_EXP ";    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "{\[0-9\]+}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
-FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRemover_31    INPUT  FEATURE_TYPE FeatureMerger_15_COMPLETE    OUTPUT FEATURE_TYPE AttributeRemover_31_OUTPUT        @RemoveAttributes(Typ,xtf_id,Abkuerzung,Bezeichnung,Bemerkung)        @RemoveAttributes(fme_regexp_match"$(AttributeRemover_31_LIST_EXP)")
-
-# -------------------------------------------------------------------------
-
 FACTORY_DEF * ReferenceFactory    FACTORY_NAME FeatureMerger_4    INPUT REFERENCER FEATURE_TYPE AttributeRemover_7_OUTPUT    INPUT REFERENCEE FEATURE_TYPE AttributeCreator_4_OUTPUT_0_E4SXNhkeM5E=    REFERENCE_INFO ATTRIBUTES    REFERENCEE_FIELDS "xtf_id"    REFERENCER_FIELDS "Objekt"    MERGE_ATTRIBUTES Yes    MANAGE_FME_TYPE Yes    MODE COMPLETE    PROCESS_DUPLICATE_REFERENCEES No    BUILD_INCOMPLETE_REFERENCERS No    OUTPUT COMPLETE FEATURE_TYPE FeatureMerger_4_COMPLETE
 
 # -------------------------------------------------------------------------
@@ -14415,6 +14401,20 @@ Lookup AttributeValueMapper_8_LOOKUP_TABLE   0               Beschwerde   1     
 
 FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeValueMapper_8    INPUT  FEATURE_TYPE AttributeRenamer_3_OUTPUT    OUTPUT FEATURE_TYPE AttributeValueMapper_8_OUTPUT         @Lookup(AttributeValueMapper_8_LOOKUP_TABLE,"_kantart",FORWARD|ENCODED_ATTR, KANTART)
 
+
+# -------------------------------------------------------------------------
+
+INCLUDE [    set macroLine "MACRO AttributeRemover_30_LIST_EXP ";    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "{\[0-9\]+}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
+FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRemover_30    INPUT  FEATURE_TYPE AttributeCreator_4_OUTPUT_1_E4SXNhkeM5E=    OUTPUT FEATURE_TYPE AttributeRemover_30_OUTPUT        @RemoveAttributes(Verbindlichkeit,KantArt,Gueltig_bis,Abkuerzung,Bezeichnung,Bemerkung)        @RemoveAttributes(fme_regexp_match"$(AttributeRemover_30_LIST_EXP)")
+
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * ReferenceFactory    FACTORY_NAME FeatureMerger_15    INPUT REFERENCER FEATURE_TYPE AttributeRemover_29_OUTPUT    INPUT REFERENCEE FEATURE_TYPE AttributeRemover_30_OUTPUT    REFERENCE_INFO ATTRIBUTES    REFERENCEE_FIELDS "xtf_id"    REFERENCER_FIELDS "Typ"    MERGE_ATTRIBUTES Yes    MANAGE_FME_TYPE Yes    MODE COMPLETE    PROCESS_DUPLICATE_REFERENCEES No    BUILD_INCOMPLETE_REFERENCERS No    OUTPUT COMPLETE FEATURE_TYPE FeatureMerger_15_COMPLETE
+
+# -------------------------------------------------------------------------
+
+INCLUDE [    set macroLine "MACRO AttributeRemover_31_LIST_EXP ";    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "{\[0-9\]+}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
+FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRemover_31    INPUT  FEATURE_TYPE FeatureMerger_15_COMPLETE    OUTPUT FEATURE_TYPE AttributeRemover_31_OUTPUT        @RemoveAttributes(Typ,xtf_id,Abkuerzung,Bezeichnung,Bemerkung)        @RemoveAttributes(fme_regexp_match"$(AttributeRemover_31_LIST_EXP)")
 
 # -------------------------------------------------------------------------
 
@@ -14451,18 +14451,18 @@ MACRO $(VOR_SORT_WORKSPACE_NAME)___COMPOUND_PARAMETERS
 MACRO $(VOR_SORT_WORKSPACE_NAME)_SUB_DOC_NAME VOR_SORT
 DEFAULT_MACRO VOR_SORT_WORKSPACE_NAME ""
 INCLUDE [puts {MACRO WB_OLD_CONTEXT_$(VOR_SORT_WORKSPACE_NAME) $(WB_CURRENT_CONTEXT)};          puts {MACRO WB_CURRENT_CONTEXT $(VOR_SORT_WORKSPACE_NAME)}]
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(VOR_SORT_WORKSPACE_NAME)_Sorter_INPUT_7581449667860 Input Splitter"   INPUT FEATURE_TYPE "$(VOR_SORT_WORKSPACE_NAME)_Sorter_INPUT_758"   OUTPUT FEATURE_TYPE "$(VOR_SORT_WORKSPACE_NAME)_Sorter_INPUT_758"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(VOR_SORT_WORKSPACE_NAME)_Sorter_INPUT_7581449673529 Input Splitter"   INPUT FEATURE_TYPE "$(VOR_SORT_WORKSPACE_NAME)_Sorter_INPUT_758"   OUTPUT FEATURE_TYPE "$(VOR_SORT_WORKSPACE_NAME)_Sorter_INPUT_758"
 # -------------------------------------------------------------------------
 
 FACTORY_DEF * SortFactory    FACTORY_NAME $(VOR_SORT_WORKSPACE_NAME)_Sorter    INPUT  FEATURE_TYPE "$(VOR_SORT_WORKSPACE_NAME)_Sorter_INPUT_758"    SORT_BY xtf_id NUMERIC ASCENDING    OUTPUT SORTED FEATURE_TYPE "$(VOR_SORT_WORKSPACE_NAME)_Sorter_SORTED"
 
 # -------------------------------------------------------------------------
 
-Tcl2 proc $(VOR_SORT_WORKSPACE_NAME)_RV_Counter_4b97120b_c15d_42c4_865c_59d1e56c7bb86_createDomain { in_domainName } {    set domainName $in_domainName;    if { {Local} == {Local} }    {       set xFormName [FME_EncodeText {$(VOR_SORT_WORKSPACE_NAME)_RV_Counter_}];       set domainName $xFormName$domainName;    };    return $domainName; }
+Tcl2 proc $(VOR_SORT_WORKSPACE_NAME)_RV_Counter_52fe2e85_abec_4b16_862d_5d684c5bb31b6_createDomain { in_domainName } {    set domainName $in_domainName;    if { {Local} == {Local} }    {       set xFormName [FME_EncodeText {$(VOR_SORT_WORKSPACE_NAME)_RV_Counter_}];       set domainName $xFormName$domainName;    };    return $domainName; }
 
-FACTORY_DEF * TeeFactory    FACTORY_NAME $(VOR_SORT_WORKSPACE_NAME)_RV_Counter    INPUT  FEATURE_TYPE "$(VOR_SORT_WORKSPACE_NAME)_Sorter_SORTED"    OUTPUT FEATURE_TYPE "$(VOR_SORT_WORKSPACE_NAME)_RV_Counter_OUTPUT"         "VOR_SORT" @Count(fme_encoded,@Tcl2("$(VOR_SORT_WORKSPACE_NAME)_RV_Counter_4b97120b_c15d_42c4_865c_59d1e56c7bb86_createDomain {RV}"), 100)
+FACTORY_DEF * TeeFactory    FACTORY_NAME $(VOR_SORT_WORKSPACE_NAME)_RV_Counter    INPUT  FEATURE_TYPE "$(VOR_SORT_WORKSPACE_NAME)_Sorter_SORTED"    OUTPUT FEATURE_TYPE "$(VOR_SORT_WORKSPACE_NAME)_RV_Counter_OUTPUT"         "VOR_SORT" @Count(fme_encoded,@Tcl2("$(VOR_SORT_WORKSPACE_NAME)_RV_Counter_52fe2e85_abec_4b16_862d_5d684c5bb31b6_createDomain {RV}"), 100)
 
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(VOR_SORT_WORKSPACE_NAME)_ZonentypRV_Counter_OUTPUT_7311449667860 Output Collector"   INPUT FEATURE_TYPE "$(VOR_SORT_WORKSPACE_NAME)_RV_Counter_OUTPUT"   OUTPUT FEATURE_TYPE "$(VOR_SORT_WORKSPACE_NAME)_ZonentypRV_Counter_OUTPUT_731"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(VOR_SORT_WORKSPACE_NAME)_ZonentypRV_Counter_OUTPUT_7311449673529 Output Collector"   INPUT FEATURE_TYPE "$(VOR_SORT_WORKSPACE_NAME)_RV_Counter_OUTPUT"   OUTPUT FEATURE_TYPE "$(VOR_SORT_WORKSPACE_NAME)_ZonentypRV_Counter_OUTPUT_731"
 INCLUDE [puts {MACRO WB_CURRENT_CONTEXT $(WB_OLD_CONTEXT_$(VOR_SORT_WORKSPACE_NAME))}]
 FACTORY_DEF * TeeFactory   FACTORY_NAME "VOR_SORT_3 ZonentypRV_Counter_OUTPUT_731 Output Renamer/Nuker"   INPUT FEATURE_TYPE VOR_SORT_3_ZonentypRV_Counter_OUTPUT_731   OUTPUT FEATURE_TYPE VOR_SORT_3_ZonentypRV_Counter_OUTPUT_731
 # -------------------------------------------------------------------------
@@ -14536,7 +14536,7 @@ FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRenamer_6    INPUT  FEATURE_TY
 FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeRenamer_6 OUTPUT Splitter"   INPUT FEATURE_TYPE AttributeRenamer_6_OUTPUT   OUTPUT FEATURE_TYPE AttributeRenamer_6_OUTPUT_0_oaHXXNCeFcA=   OUTPUT FEATURE_TYPE AttributeRenamer_6_OUTPUT_1_oaHXXNCeFcA=
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * ReferenceFactory    FACTORY_NAME FeatureMerger_21    INPUT REFERENCER FEATURE_TYPE AttributeRenamer_8_OUTPUT    INPUT REFERENCEE FEATURE_TYPE AttributeRenamer_6_OUTPUT_1_oaHXXNCeFcA=    REFERENCE_INFO ATTRIBUTES    REFERENCEE_FIELDS "xtf_id"    REFERENCER_FIELDS "Hinweis"    MERGE_ATTRIBUTES Yes    MANAGE_FME_TYPE Yes    MODE COMPLETE    PROCESS_DUPLICATE_REFERENCEES No    BUILD_INCOMPLETE_REFERENCERS No    OUTPUT COMPLETE FEATURE_TYPE FeatureMerger_21_COMPLETE
+FACTORY_DEF * ReferenceFactory    FACTORY_NAME FeatureMerger_21    INPUT REFERENCER FEATURE_TYPE AttributeRenamer_8_OUTPUT    INPUT REFERENCEE FEATURE_TYPE AttributeRenamer_6_OUTPUT_0_oaHXXNCeFcA=    REFERENCE_INFO ATTRIBUTES    REFERENCEE_FIELDS "xtf_id"    REFERENCER_FIELDS "Hinweis"    MERGE_ATTRIBUTES Yes    MANAGE_FME_TYPE Yes    MODE COMPLETE    PROCESS_DUPLICATE_REFERENCEES No    BUILD_INCOMPLETE_REFERENCERS No    OUTPUT COMPLETE FEATURE_TYPE FeatureMerger_21_COMPLETE
 
 # -------------------------------------------------------------------------
 
@@ -14559,7 +14559,7 @@ FACTORY_DEF * TestFactory    FACTORY_NAME Terminator_21    INPUT  FEATURE_TYPE G
 # -------------------------------------------------------------------------
 
 INCLUDE [    set macroLine "MACRO AttributeRemover_48_LIST_EXP ";    foreach attr [split "_issues<opencurly><closecurly>"] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "{\[0-9\]+}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
-FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRemover_48    INPUT  FEATURE_TYPE GeometryValidator_4_REPAIRED    INPUT  FEATURE_TYPE GeometryValidator_4_PASSED    OUTPUT FEATURE_TYPE AttributeRemover_48_OUTPUT        @RemoveAttributes(xtf_id,Genehmigung,Inkraftsetzung,Laermempfindlichkeit,Beschrieb,Planbeschriftung,Qualitaet,Bemerkung,Flaechenmass)        @RemoveAttributes(fme_regexp_match"$(AttributeRemover_48_LIST_EXP)")
+FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRemover_48    INPUT  FEATURE_TYPE GeometryValidator_4_PASSED    INPUT  FEATURE_TYPE GeometryValidator_4_REPAIRED    OUTPUT FEATURE_TYPE AttributeRemover_48_OUTPUT        @RemoveAttributes(xtf_id,Genehmigung,Inkraftsetzung,Laermempfindlichkeit,Beschrieb,Planbeschriftung,Qualitaet,Bemerkung,Flaechenmass)        @RemoveAttributes(fme_regexp_match"$(AttributeRemover_48_LIST_EXP)")
 
 # -------------------------------------------------------------------------
 FACTORY_DEF * TeeFactory   FACTORY_NAME "VOR_SORT Sorter_INPUT_758 Input Collector"   INPUT FEATURE_TYPE DM16NplBE.Nutzungsplanung.GN_ZonentypRV   OUTPUT FEATURE_TYPE VOR_SORT_Sorter_INPUT_758
@@ -14570,18 +14570,18 @@ MACRO $(VOR_SORT_WORKSPACE_NAME)___COMPOUND_PARAMETERS
 MACRO $(VOR_SORT_WORKSPACE_NAME)_SUB_DOC_NAME VOR_SORT
 DEFAULT_MACRO VOR_SORT_WORKSPACE_NAME ""
 INCLUDE [puts {MACRO WB_OLD_CONTEXT_$(VOR_SORT_WORKSPACE_NAME) $(WB_CURRENT_CONTEXT)};          puts {MACRO WB_CURRENT_CONTEXT $(VOR_SORT_WORKSPACE_NAME)}]
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(VOR_SORT_WORKSPACE_NAME)_Sorter_INPUT_7581449667860 Input Splitter"   INPUT FEATURE_TYPE "$(VOR_SORT_WORKSPACE_NAME)_Sorter_INPUT_758"   OUTPUT FEATURE_TYPE "$(VOR_SORT_WORKSPACE_NAME)_Sorter_INPUT_758"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(VOR_SORT_WORKSPACE_NAME)_Sorter_INPUT_7581449673529 Input Splitter"   INPUT FEATURE_TYPE "$(VOR_SORT_WORKSPACE_NAME)_Sorter_INPUT_758"   OUTPUT FEATURE_TYPE "$(VOR_SORT_WORKSPACE_NAME)_Sorter_INPUT_758"
 # -------------------------------------------------------------------------
 
 FACTORY_DEF * SortFactory    FACTORY_NAME $(VOR_SORT_WORKSPACE_NAME)_Sorter    INPUT  FEATURE_TYPE "$(VOR_SORT_WORKSPACE_NAME)_Sorter_INPUT_758"    SORT_BY xtf_id NUMERIC ASCENDING    OUTPUT SORTED FEATURE_TYPE "$(VOR_SORT_WORKSPACE_NAME)_Sorter_SORTED"
 
 # -------------------------------------------------------------------------
 
-Tcl2 proc $(VOR_SORT_WORKSPACE_NAME)_RV_Counter_4b97120b_c15d_42c4_865c_59d1e56c7bb87_createDomain { in_domainName } {    set domainName $in_domainName;    if { {Local} == {Local} }    {       set xFormName [FME_EncodeText {$(VOR_SORT_WORKSPACE_NAME)_RV_Counter_}];       set domainName $xFormName$domainName;    };    return $domainName; }
+Tcl2 proc $(VOR_SORT_WORKSPACE_NAME)_RV_Counter_52fe2e85_abec_4b16_862d_5d684c5bb31b7_createDomain { in_domainName } {    set domainName $in_domainName;    if { {Local} == {Local} }    {       set xFormName [FME_EncodeText {$(VOR_SORT_WORKSPACE_NAME)_RV_Counter_}];       set domainName $xFormName$domainName;    };    return $domainName; }
 
-FACTORY_DEF * TeeFactory    FACTORY_NAME $(VOR_SORT_WORKSPACE_NAME)_RV_Counter    INPUT  FEATURE_TYPE "$(VOR_SORT_WORKSPACE_NAME)_Sorter_SORTED"    OUTPUT FEATURE_TYPE "$(VOR_SORT_WORKSPACE_NAME)_RV_Counter_OUTPUT"         "VOR_SORT" @Count(fme_encoded,@Tcl2("$(VOR_SORT_WORKSPACE_NAME)_RV_Counter_4b97120b_c15d_42c4_865c_59d1e56c7bb87_createDomain {RV}"), 100)
+FACTORY_DEF * TeeFactory    FACTORY_NAME $(VOR_SORT_WORKSPACE_NAME)_RV_Counter    INPUT  FEATURE_TYPE "$(VOR_SORT_WORKSPACE_NAME)_Sorter_SORTED"    OUTPUT FEATURE_TYPE "$(VOR_SORT_WORKSPACE_NAME)_RV_Counter_OUTPUT"         "VOR_SORT" @Count(fme_encoded,@Tcl2("$(VOR_SORT_WORKSPACE_NAME)_RV_Counter_52fe2e85_abec_4b16_862d_5d684c5bb31b7_createDomain {RV}"), 100)
 
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(VOR_SORT_WORKSPACE_NAME)_ZonentypRV_Counter_OUTPUT_7311449667860 Output Collector"   INPUT FEATURE_TYPE "$(VOR_SORT_WORKSPACE_NAME)_RV_Counter_OUTPUT"   OUTPUT FEATURE_TYPE "$(VOR_SORT_WORKSPACE_NAME)_ZonentypRV_Counter_OUTPUT_731"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(VOR_SORT_WORKSPACE_NAME)_ZonentypRV_Counter_OUTPUT_7311449673529 Output Collector"   INPUT FEATURE_TYPE "$(VOR_SORT_WORKSPACE_NAME)_RV_Counter_OUTPUT"   OUTPUT FEATURE_TYPE "$(VOR_SORT_WORKSPACE_NAME)_ZonentypRV_Counter_OUTPUT_731"
 INCLUDE [puts {MACRO WB_CURRENT_CONTEXT $(WB_OLD_CONTEXT_$(VOR_SORT_WORKSPACE_NAME))}]
 FACTORY_DEF * TeeFactory   FACTORY_NAME "VOR_SORT ZonentypRV_Counter_OUTPUT_731 Output Renamer/Nuker"   INPUT FEATURE_TYPE VOR_SORT_ZonentypRV_Counter_OUTPUT_731   OUTPUT FEATURE_TYPE VOR_SORT_ZonentypRV_Counter_OUTPUT_731
 # -------------------------------------------------------------------------
@@ -14610,7 +14610,7 @@ FACTORY_DEF * TestFactory    FACTORY_NAME Terminator_20    INPUT  FEATURE_TYPE G
 # -------------------------------------------------------------------------
 
 INCLUDE [    set macroLine "MACRO AttributeRemover_2_LIST_EXP ";    foreach attr [split "_issues<opencurly><closecurly>"] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "{\[0-9\]+}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
-FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRemover_2    INPUT  FEATURE_TYPE GeometryValidator_3_PASSED    INPUT  FEATURE_TYPE GeometryValidator_3_REPAIRED    OUTPUT FEATURE_TYPE AttributeRemover_2_OUTPUT        @RemoveAttributes(xtf_id,Identifikator,Genehmigung,Inkraftsetzung,Laermempfindlichkeit,Beschrieb,Planbeschriftung,Qualitaet,Datenverwaltungsstelle,Bemerkung,Flaechenmass)        @RemoveAttributes(fme_regexp_match"$(AttributeRemover_2_LIST_EXP)")
+FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRemover_2    INPUT  FEATURE_TYPE GeometryValidator_3_REPAIRED    INPUT  FEATURE_TYPE GeometryValidator_3_PASSED    OUTPUT FEATURE_TYPE AttributeRemover_2_OUTPUT        @RemoveAttributes(xtf_id,Identifikator,Genehmigung,Inkraftsetzung,Laermempfindlichkeit,Beschrieb,Planbeschriftung,Qualitaet,Datenverwaltungsstelle,Bemerkung,Flaechenmass)        @RemoveAttributes(fme_regexp_match"$(AttributeRemover_2_LIST_EXP)")
 
 # -------------------------------------------------------------------------
 
@@ -14624,159 +14624,6 @@ INCLUDE [    set macroLine "MACRO AttributeRemover_18_LIST_EXP ";    foreach att
 FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRemover_18    INPUT  FEATURE_TYPE AttributeCreator_8_OUTPUT    OUTPUT FEATURE_TYPE AttributeRemover_18_OUTPUT        @RemoveAttributes(BR_Nutzungsart,BR_Nutzungsmass,Gruenflaechenziffer,Bemerkung,DarstellungCode,Datenverwaltungsstelle,ZustaendigeStelle)        @RemoveAttributes(fme_regexp_match"$(AttributeRemover_18_LIST_EXP)")
 
 FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeRemover_18 OUTPUT Splitter"   INPUT FEATURE_TYPE AttributeRemover_18_OUTPUT   OUTPUT FEATURE_TYPE AttributeRemover_18_OUTPUT_0_dTz2+RxJBOE=   OUTPUT FEATURE_TYPE AttributeRemover_18_OUTPUT_1_dTz2+RxJBOE=
-# -------------------------------------------------------------------------
-Lookup AttributeFilter_5_AttributeFilterLut   2 ok   "" notok   ENCODED
-
-Tcl2 proc AttributeFilter_5_setFeatType {} {     global FME_FeatureType;     set ft {AttributeFilter_5_};     append ft [FME_EncodeText [FME_GetAttribute {"Verbindlichkeit"}]];     set FME_FeatureType $ft; }
-FACTORY_DEF * TestFactory    FACTORY_NAME AttributeFilter_5    INPUT  FEATURE_TYPE AttributeRemover_18_OUTPUT_0_dTz2+RxJBOE=    TEST @Lookup(AttributeFilter_5_AttributeFilterLut,"Verbindlichkeit",ENCODED_ATTR) == "ok"    OUTPUT PASSED FEATURE_TYPE * @Tcl2(AttributeFilter_5_setFeatType)    OUTPUT FAILED FEATURE_TYPE AttributeFilter_5_<UNFILTERED>
-FACTORY_DEF * TestFactory    FACTORY_NAME AttributeFilter_5_BlankFilter    INPUT FEATURE_TYPE AttributeFilter_5_<UNFILTERED>    TEST @Value("Verbindlichkeit") == ""    OUTPUT PASSED FEATURE_TYPE AttributeFilter_5_<BLANK>    OUTPUT FAILED FEATURE_TYPE AttributeFilter_5_<UNFILTERED>
-
-FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeFilter_5 <BLANK> Output Nuker"   INPUT FEATURE_TYPE AttributeFilter_5_<BLANK>
-FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeFilter_5 <UNFILTERED> Output Nuker"   INPUT FEATURE_TYPE AttributeFilter_5_<UNFILTERED>
-FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeFilter_5 2 Splitter"   INPUT FEATURE_TYPE AttributeFilter_5_2   OUTPUT FEATURE_TYPE AttributeFilter_5_2_0_zNIlUk0L/Bg=   OUTPUT FEATURE_TYPE AttributeFilter_5_2_1_zNIlUk0L/Bg=
-# -------------------------------------------------------------------------
-
-INCLUDE [    set macroLine "MACRO AttributeRemover_20_LIST_EXP ";    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "{\[0-9\]+}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
-FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRemover_20    INPUT  FEATURE_TYPE AttributeFilter_5_2_1_zNIlUk0L/Bg=    OUTPUT FEATURE_TYPE AttributeRemover_20_OUTPUT        @RemoveAttributes(Identifikator,Verbindlichkeit,ZonenAbk,ZonenCode,Zonenname,KantZonentyp)        @RemoveAttributes(fme_regexp_match"$(AttributeRemover_20_LIST_EXP)")
-
-# -------------------------------------------------------------------------
-
-FACTORY_DEF * ReferenceFactory    FACTORY_NAME FeatureMerger_12    INPUT REFERENCER FEATURE_TYPE AttributeRemover_21_OUTPUT    INPUT REFERENCEE FEATURE_TYPE AttributeRemover_20_OUTPUT    REFERENCE_INFO ATTRIBUTES    REFERENCEE_FIELDS "xtf_id"    REFERENCER_FIELDS "Typ"    MERGE_ATTRIBUTES Yes    MANAGE_FME_TYPE Yes    MODE COMPLETE    PROCESS_DUPLICATE_REFERENCEES No    BUILD_INCOMPLETE_REFERENCERS No    OUTPUT COMPLETE FEATURE_TYPE FeatureMerger_12_COMPLETE
-
-# -------------------------------------------------------------------------
-
-INCLUDE [    set macroLine "MACRO AttributeRemover_22_LIST_EXP ";    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "{\[0-9\]+}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
-FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRemover_22    INPUT  FEATURE_TYPE FeatureMerger_12_COMPLETE    OUTPUT FEATURE_TYPE AttributeRemover_22_OUTPUT        @RemoveAttributes(Typ,xtf_id,KantArt,Abkuerzung,Bezeichnung,Nutzungsziffer,Nutzungsziffer_Art)        @RemoveAttributes(fme_regexp_match"$(AttributeRemover_22_LIST_EXP)")
-
-# -------------------------------------------------------------------------
-
-FACTORY_DEF * SortFactory    FACTORY_NAME FeatureHolder    INPUT  FEATURE_TYPE AttributeRemover_37_OUTPUT    INPUT  FEATURE_TYPE AttributeRemover_22_OUTPUT    INPUT  FEATURE_TYPE AttributeRemover_28_OUTPUT    INPUT  FEATURE_TYPE AttributeRemover_34_OUTPUT    INPUT  FEATURE_TYPE AttributeRemover_39_OUTPUT    INPUT  FEATURE_TYPE AttributeRemover_25_OUTPUT    INPUT  FEATURE_TYPE AttributeRemover_31_OUTPUT    INPUT  FEATURE_TYPE AttributeRemover_54_OUTPUT    OUTPUT SORTED FEATURE_TYPE FeatureHolder_OUTPUT
-
-# -------------------------------------------------------------------------
-
-FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRenamer_7    INPUT  FEATURE_TYPE FeatureHolder_OUTPUT    OUTPUT FEATURE_TYPE AttributeRenamer_7_OUTPUT         @RenameAttributes(ATTR_LIST_DEF_VAL, REL_ID,RELID,"",ArtikelNr,ARTIKELNR,"")
-
-
-# -------------------------------------------------------------------------
-
-FACTORY_DEF * ReferenceFactory    FACTORY_NAME FeatureMerger_20    INPUT REFERENCER FEATURE_TYPE AttributeRenamer_7_OUTPUT    INPUT REFERENCEE FEATURE_TYPE AttributeRenamer_6_OUTPUT_0_oaHXXNCeFcA=    REFERENCE_INFO ATTRIBUTES    REFERENCEE_FIELDS "xtf_id"    REFERENCER_FIELDS "Vorschrift"    MERGE_ATTRIBUTES Yes    MANAGE_FME_TYPE Yes    MODE COMPLETE    PROCESS_DUPLICATE_REFERENCEES No    BUILD_INCOMPLETE_REFERENCERS No    OUTPUT COMPLETE FEATURE_TYPE FeatureMerger_20_COMPLETE
-
-FACTORY_DEF * TeeFactory   FACTORY_NAME "FeatureMerger_20 COMPLETE Splitter"   INPUT FEATURE_TYPE FeatureMerger_20_COMPLETE   OUTPUT FEATURE_TYPE FeatureMerger_20_COMPLETE_0_+6LFYDMTLz4=   OUTPUT FEATURE_TYPE FeatureMerger_20_COMPLETE_1_+6LFYDMTLz4=
-# -------------------------------------------------------------------------
-
-INCLUDE [    set macroLine "MACRO AttributeRemover_46_LIST_EXP ";    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "{\[0-9\]+}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
-FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRemover_46    INPUT  FEATURE_TYPE FeatureMerger_20_COMPLETE_1_+6LFYDMTLz4=    OUTPUT FEATURE_TYPE AttributeRemover_46_OUTPUT        @RemoveAttributes(Vorschrift,ARTIKELNR,VOR_SORT,Identifikator,ART,TEXTIMWEB,TITEL,OFFIZTITEL,ABKUERZUNG,OFFIZNR,Dokument)        @RemoveAttributes(fme_regexp_match"$(AttributeRemover_46_LIST_EXP)")
-
-# -------------------------------------------------------------------------
-FACTORY_DEF * TeeFactory   FACTORY_NAME "HinWeiDok_Iterationen FeatureMerger_22_REQUESTOR_628 Input Collector"   INPUT FEATURE_TYPE AttributeRemover_46_OUTPUT   OUTPUT FEATURE_TYPE HinWeiDok_Iterationen_FeatureMerger_22_REQUESTOR_628
-FACTORY_DEF * TeeFactory   FACTORY_NAME "HinWeiDok_Iterationen FeatureMerger_22_SUPPLIER_628 Input Collector"   INPUT FEATURE_TYPE FeatureMerger_21_COMPLETE   OUTPUT FEATURE_TYPE HinWeiDok_Iterationen_FeatureMerger_22_SUPPLIER_628
-MACRO HinWeiDok_Iterationen_WORKSPACE_NAME HinWeiDok_Iterationen
-MACRO $(HinWeiDok_Iterationen_WORKSPACE_NAME)_XFORMER_NAME HinWeiDok_Iterationen
-MACRO $(HinWeiDok_Iterationen_WORKSPACE_NAME)_TRANSFORMER_GROUP 
-MACRO $(HinWeiDok_Iterationen_WORKSPACE_NAME)___COMPOUND_PARAMETERS 
-MACRO $(HinWeiDok_Iterationen_WORKSPACE_NAME)_SUB_DOC_NAME HinWeiDok_Iterationen
-DEFAULT_MACRO HinWeiDok_Iterationen_WORKSPACE_NAME ""
-INCLUDE [puts {MACRO WB_OLD_CONTEXT_$(HinWeiDok_Iterationen_WORKSPACE_NAME) $(WB_CURRENT_CONTEXT)};          puts {MACRO WB_CURRENT_CONTEXT $(HinWeiDok_Iterationen_WORKSPACE_NAME)}]
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_FeatureMerger_22_REQUESTOR_6281449667860 Input Splitter"   INPUT FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_FeatureMerger_22_REQUESTOR_628"   OUTPUT FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_FeatureMerger_22_REQUESTOR_628"
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_FeatureMerger_22_SUPPLIER_6281449667860 Input Splitter"   INPUT FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_FeatureMerger_22_SUPPLIER_628"   OUTPUT FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_FeatureMerger_22_SUPPLIER_628_0_/qdQOvrnJU8="   OUTPUT FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_FeatureMerger_22_SUPPLIER_628_1_/qdQOvrnJU8="   OUTPUT FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_FeatureMerger_22_SUPPLIER_628_2_/qdQOvrnJU8="
-# -------------------------------------------------------------------------
-
-FACTORY_DEF * ReferenceFactory    FACTORY_NAME $(HinWeiDok_Iterationen_WORKSPACE_NAME)_FeatureMerger_22    INPUT REFERENCER FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_FeatureMerger_22_REQUESTOR_628"    INPUT REFERENCEE FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_FeatureMerger_22_SUPPLIER_628_2_/qdQOvrnJU8="    REFERENCE_INFO ATTRIBUTES    REFERENCEE_FIELDS "Ursprung"    REFERENCER_FIELDS "xtf_id"    LIST_NAME "duplicates"    MERGE_ATTRIBUTES Yes    MANAGE_FME_TYPE Yes    MODE COMPLETE    PROCESS_DUPLICATE_REFERENCEES No    BUILD_INCOMPLETE_REFERENCERS No    OUTPUT COMPLETE FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_FeatureMerger_22_COMPLETE"
-
-# -------------------------------------------------------------------------
-
-FACTORY_DEF * ElementFactory    FACTORY_NAME $(HinWeiDok_Iterationen_WORKSPACE_NAME)_ListExploder    INPUT  FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_FeatureMerger_22_COMPLETE"    LIST_NAME "duplicates{}"    ELEMENT_NUMBER_FIELD "_element_index"    CLONE_GEOMETRY    MODE LEAN    OUTPUT ELEMENT FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_ListExploder_LIST_FOUND"         @RemoveAttributes(ElementFactory.baseCloned)
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_ListExploder LIST_FOUND Splitter"   INPUT FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_ListExploder_LIST_FOUND"   OUTPUT FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_ListExploder_LIST_FOUND_0_9wT/dk6tzVU="   OUTPUT FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_ListExploder_LIST_FOUND_1_9wT/dk6tzVU="
-# -------------------------------------------------------------------------
-
-FACTORY_DEF * ReferenceFactory    FACTORY_NAME $(HinWeiDok_Iterationen_WORKSPACE_NAME)_FeatureMerger_23    INPUT REFERENCER FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_ListExploder_LIST_FOUND_1_9wT/dk6tzVU="    INPUT REFERENCEE FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_FeatureMerger_22_SUPPLIER_628_1_/qdQOvrnJU8="    REFERENCE_INFO ATTRIBUTES    REFERENCEE_FIELDS "Ursprung"    REFERENCER_FIELDS "xtf_id"    LIST_NAME "duplicates"    MERGE_ATTRIBUTES Yes    MANAGE_FME_TYPE Yes    MODE COMPLETE    PROCESS_DUPLICATE_REFERENCEES No    BUILD_INCOMPLETE_REFERENCERS No    OUTPUT COMPLETE FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_FeatureMerger_23_COMPLETE"
-
-# -------------------------------------------------------------------------
-
-FACTORY_DEF * ElementFactory    FACTORY_NAME $(HinWeiDok_Iterationen_WORKSPACE_NAME)_ListExploder_2    INPUT  FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_FeatureMerger_23_COMPLETE"    LIST_NAME "duplicates{}"    ELEMENT_NUMBER_FIELD "_element_index"    CLONE_GEOMETRY    MODE LEAN    OUTPUT ELEMENT FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_ListExploder_2_LIST_FOUND"         @RemoveAttributes(ElementFactory.baseCloned)
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_ListExploder_2 LIST_FOUND Splitter"   INPUT FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_ListExploder_2_LIST_FOUND"   OUTPUT FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_ListExploder_2_LIST_FOUND_0_0TeSemTedJg="   OUTPUT FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_ListExploder_2_LIST_FOUND_1_0TeSemTedJg="
-# -------------------------------------------------------------------------
-
-FACTORY_DEF * ReferenceFactory    FACTORY_NAME $(HinWeiDok_Iterationen_WORKSPACE_NAME)_FeatureMerger_24    INPUT REFERENCER FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_ListExploder_2_LIST_FOUND_0_0TeSemTedJg="    INPUT REFERENCEE FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_FeatureMerger_22_SUPPLIER_628_0_/qdQOvrnJU8="    REFERENCE_INFO ATTRIBUTES    REFERENCEE_FIELDS "Ursprung"    REFERENCER_FIELDS "xtf_id"    LIST_NAME "duplicate"    MERGE_ATTRIBUTES Yes    MANAGE_FME_TYPE Yes    MODE COMPLETE    PROCESS_DUPLICATE_REFERENCEES No    BUILD_INCOMPLETE_REFERENCERS No    OUTPUT COMPLETE FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_FeatureMerger_24_COMPLETE"
-
-# -------------------------------------------------------------------------
-
-FACTORY_DEF * ElementFactory    FACTORY_NAME $(HinWeiDok_Iterationen_WORKSPACE_NAME)_ListExploder_3    INPUT  FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_FeatureMerger_24_COMPLETE"    LIST_NAME "duplicate{}"    ELEMENT_NUMBER_FIELD "_element_index"    CLONE_GEOMETRY    MODE LEAN    OUTPUT ELEMENT FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_ListExploder_3_LIST_FOUND"         @RemoveAttributes(ElementFactory.baseCloned)
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_ListExploder_3_LIST_FOUND_6491449667860 Output Collector"   INPUT FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_ListExploder_LIST_FOUND_0_9wT/dk6tzVU="   INPUT FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_ListExploder_2_LIST_FOUND_1_0TeSemTedJg="   INPUT FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_ListExploder_3_LIST_FOUND"   OUTPUT FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_ListExploder_3_LIST_FOUND_649"
-INCLUDE [puts {MACRO WB_CURRENT_CONTEXT $(WB_OLD_CONTEXT_$(HinWeiDok_Iterationen_WORKSPACE_NAME))}]
-FACTORY_DEF * TeeFactory   FACTORY_NAME "HinWeiDok_Iterationen ListExploder_3_LIST_FOUND_649 Output Renamer/Nuker"   INPUT FEATURE_TYPE HinWeiDok_Iterationen_ListExploder_3_LIST_FOUND_649   OUTPUT FEATURE_TYPE HinWeiDok_Iterationen_ListExploder_3_LIST_FOUND_649
-# -------------------------------------------------------------------------
-
-
-FME_PYTHON_PATH "$(FME_MF_DIR)"
-
-FACTORY_DEF * PythonFactory    FACTORY_NAME PythonCaller    INPUT  FEATURE_TYPE FeatureMerger_20_COMPLETE_0_+6LFYDMTLz4=    INPUT  FEATURE_TYPE HinWeiDok_Iterationen_ListExploder_3_LIST_FOUND_649    SYMBOL_NAME processFeature    PYTHON_NAMESPACE FMEOBJECTS    SOURCE_CODE #<space>-*-<space>coding:<space>latin-1<space>-*-<lf>import<space>fmeobjects<lf>import<space>os<lf><lf>def<space>processFeature<openparen>feature<closeparen>:<lf><space><space><space><space>filename<space>=<space>feature.getAttribute<openparen><apos>Dokument<apos><closeparen><lf><space><space><space><space><lf><space><space><space><space>outputURL<space>=<space>FME_MacroValues<openbracket><apos>OUTPUT_RV_URL<apos><closebracket><space>+<space>filename<lf><space><space><space><space><lf><space><space><space><space>inputFile<space>=<space>os.path.join<openparen>FME_MacroValues<openbracket><apos>INPUT_RV_DIR<apos><closebracket><comma><space>filename<closeparen><lf><space><space><space><space>inputFile<space>=<space>inputFile.replace<openparen><apos><backslash><backslash><apos><comma><apos><solidus><apos><closeparen><lf><space><space><space><space><lf><space><space><space><space>outputDir<space>=<space>FME_MacroValues<openbracket><apos>OUTPUT_RV_DIR<apos><closebracket>.replace<openparen><apos><backslash><backslash><apos><comma><apos><solidus><apos><closeparen><lf><lf><space><space><space><space>feature.setAttribute<openparen><apos>TEXTIMWEB<apos><comma><space>outputURL<closeparen><lf><space><space><space><space>feature.setAttribute<openparen><apos>filecopy_source_dataset<apos><comma><space>inputFile<closeparen><lf><space><space><space><space>feature.setAttribute<openparen><apos>filecopy_dest_dataset<apos><comma><space>outputDir<closeparen>    OUTPUT PYOUTPUT FEATURE_TYPE PythonCaller_OUTPUT
-
-FACTORY_DEF * TeeFactory   FACTORY_NAME "PythonCaller OUTPUT Splitter"   INPUT FEATURE_TYPE PythonCaller_OUTPUT   OUTPUT FEATURE_TYPE PythonCaller_OUTPUT_0_oCFN77Xe1JY=   OUTPUT FEATURE_TYPE PythonCaller_OUTPUT_1_oCFN77Xe1JY=
-# -------------------------------------------------------------------------
-Lookup AttributeFilter_4_AttributeFilterLut   0 ok   "" notok   ENCODED
-
-Tcl2 proc AttributeFilter_4_setFeatType {} {     global FME_FeatureType;     set ft {AttributeFilter_4_};     append ft [FME_EncodeText [FME_GetAttribute {"ART"}]];     set FME_FeatureType $ft; }
-FACTORY_DEF * TestFactory    FACTORY_NAME AttributeFilter_4    INPUT  FEATURE_TYPE PythonCaller_OUTPUT_1_oCFN77Xe1JY=    TEST @Lookup(AttributeFilter_4_AttributeFilterLut,"ART",ENCODED_ATTR) == "ok"    OUTPUT PASSED FEATURE_TYPE * @Tcl2(AttributeFilter_4_setFeatType)    OUTPUT FAILED FEATURE_TYPE AttributeFilter_4_<UNFILTERED>
-FACTORY_DEF * TestFactory    FACTORY_NAME AttributeFilter_4_BlankFilter    INPUT FEATURE_TYPE AttributeFilter_4_<UNFILTERED>    TEST @Value("ART") == ""    OUTPUT PASSED FEATURE_TYPE AttributeFilter_4_<BLANK>    OUTPUT FAILED FEATURE_TYPE AttributeFilter_4_<UNFILTERED>
-
-FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeFilter_4 <BLANK> Output Nuker"   INPUT FEATURE_TYPE AttributeFilter_4_<BLANK>
-FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeFilter_4 <UNFILTERED> Output Nuker"   INPUT FEATURE_TYPE AttributeFilter_4_<UNFILTERED>
-# -------------------------------------------------------------------------
-
-INCLUDE [    set macroLine "MACRO AttributeRemover_47_LIST_EXP ";    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "{\[0-9\]+}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
-FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRemover_47    INPUT  FEATURE_TYPE AttributeFilter_4_0    OUTPUT FEATURE_TYPE AttributeRemover_47_OUTPUT        @RemoveAttributes(RELID,BFSNR,NAME,Genehmigung,Planbeschriftung,BESCHRIEB,xtf_id,Ursprung,Hinweis,ARTIKELNR,Identifikator,ART,TEXTIMWEB,TITEL,OFFIZTITEL,ABKUERZUNG,OFFIZNR,Dokument,_element_index,Vorschrift)        @RemoveAttributes(fme_regexp_match"$(AttributeRemover_47_LIST_EXP)")
-
-# -------------------------------------------------------------------------
-
-DEFAULT_MACRO Aggregator_BREAK_ATTR
-INCLUDE [if {"No" == "Yes"} {puts {MACRO Aggregator_BREAK_ATTR BREAK_BEFORE_FIELD_CHANGE filecopy_source_dataset filecopy_dest_dataset} }]
-FACTORY_DEF * AggregateFactory    FACTORY_NAME Aggregator    INPUT  FEATURE_TYPE AttributeRemover_47_OUTPUT    MODE ONE_LEVEL    GROUP_BY filecopy_source_dataset filecopy_dest_dataset    $(Aggregator_BREAK_ATTR)    ACCUMULATE_ATTRIBUTES Never    SEPARATOR <comma>    PRODUCE_MULTIS YES    OUTPUT AGGREGATE FEATURE_TYPE Aggregator_AGGREGATE         @Geometry(SET_TO_CONTAIN_INDIVIDUAL_GEOMS, NO)
-
-# -------------------------------------------------------------------------
-
-FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRenamer_9    INPUT  FEATURE_TYPE PythonCaller_OUTPUT_0_oCFN77Xe1JY=    OUTPUT FEATURE_TYPE AttributeRenamer_9_OUTPUT         @RenameAttributes(ATTR_LIST_DEF_VAL, ART,_art,"")
-
-
-# -------------------------------------------------------------------------
-Lookup AttributeValueMapper_17_LOOKUP_TABLE   0               Rechtsvorschrift   1               Hinweis   ""              ""   ENCODED_SUPPORTUNICODE
-
-FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeValueMapper_17    INPUT  FEATURE_TYPE AttributeRenamer_9_OUTPUT    OUTPUT FEATURE_TYPE AttributeValueMapper_17_OUTPUT         @Lookup(AttributeValueMapper_17_LOOKUP_TABLE,"_art",FORWARD|ENCODED_ATTR, ART)
-
-
-# -------------------------------------------------------------------------
-
-INCLUDE [    set macroLine "MACRO AttributeRemover_60_LIST_EXP ";    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "{\[0-9\]+}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
-FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRemover_60    INPUT  FEATURE_TYPE AttributeValueMapper_17_OUTPUT    OUTPUT FEATURE_TYPE AttributeRemover_60_OUTPUT        @RemoveAttributes(xtf_id,Ursprung,Hinweis,_art,Dokument,_element_index,Vorschrift,filecopy_source_dataset,filecopy_dest_dataset)        @RemoveAttributes(fme_regexp_match"$(AttributeRemover_60_LIST_EXP)")
-
-# -------------------------------------------------------------------------
-
-DEFAULT_MACRO Aggregator_2_BREAK_ATTR
-INCLUDE [if {"No" == "Yes"} {puts {MACRO Aggregator_2_BREAK_ATTR BREAK_BEFORE_FIELD_CHANGE RELID BFSNR NAME ARTIKELNR TEXTIMWEB TITEL OFFIZTITEL ABKUERZUNG OFFIZNR VOR_SORT ART} }]
-FACTORY_DEF * AggregateFactory    FACTORY_NAME Aggregator_2    INPUT  FEATURE_TYPE AttributeRemover_60_OUTPUT    MODE ONE_LEVEL    GROUP_BY RELID BFSNR NAME ARTIKELNR TEXTIMWEB TITEL OFFIZTITEL ABKUERZUNG OFFIZNR VOR_SORT ART    $(Aggregator_2_BREAK_ATTR)    ACCUMULATE_ATTRIBUTES Never    SEPARATOR <comma>    PRODUCE_MULTIS YES    OUTPUT AGGREGATE FEATURE_TYPE Aggregator_2_AGGREGATE         @Geometry(SET_TO_CONTAIN_INDIVIDUAL_GEOMS, NO)
-
-FACTORY_DEF * TeeFactory   FACTORY_NAME "Aggregator_2 AGGREGATE Splitter"   INPUT FEATURE_TYPE Aggregator_2_AGGREGATE   OUTPUT FEATURE_TYPE Aggregator_2_AGGREGATE_0_FzN6sGtVAQE=   OUTPUT FEATURE_TYPE Aggregator_2_AGGREGATE_1_FzN6sGtVAQE=
-# -------------------------------------------------------------------------
-
-FACTORY_DEF * ReferenceFactory    FACTORY_NAME FeatureMerger    INPUT REFERENCER FEATURE_TYPE AttributeRemover_2_OUTPUT    INPUT REFERENCEE FEATURE_TYPE AttributeFilter_5_2_0_zNIlUk0L/Bg=    REFERENCE_INFO ATTRIBUTES    REFERENCEE_FIELDS "xtf_id"    REFERENCER_FIELDS "ZonentypRef"    MERGE_ATTRIBUTES Yes    MANAGE_FME_TYPE Yes    MODE COMPLETE    PROCESS_DUPLICATE_REFERENCEES No    BUILD_INCOMPLETE_REFERENCERS No    OUTPUT COMPLETE FEATURE_TYPE FeatureMerger_COMPLETE
-
-# -------------------------------------------------------------------------
-Lookup AttributeValueMapper_LOOKUP_TABLE   0               Festlegung<space>Kanton   1               Festlegung<space>Region   2               Festlegung<space>Gemeinde   3               Hinweis   ""              ""   ENCODED_SUPPORTUNICODE
-
-FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeValueMapper    INPUT  FEATURE_TYPE FeatureMerger_COMPLETE    OUTPUT FEATURE_TYPE AttributeValueMapper_OUTPUT         @Lookup(AttributeValueMapper_LOOKUP_TABLE,"Verbindlichkeit",FORWARD|ENCODED_ATTR, VERBINDLKT)
-
-
-# -------------------------------------------------------------------------
-Lookup AttributeValueMapper_2_LOOKUP_TABLE   0               Wohnzone<comma><space>1<space>Geschoss   1               Wohnzone<comma><space>2<space>Geschosse   10              Mischzone<comma><space>5<space>Geschosse   11              Mischzone<comma><space>6<space>und<space>mehr<space>Geschosse   12              Kernzone<space>staedtisch   13              Kernzone<space>laendlich   14              Hotelzone   15              Weilerzone   16              Bestandeszone<comma><space>Erhaltungszone   17              Bauernhofzone   18              Arbeitszone   19              Zone<space>fuer<space>oeffentliche<space>Nutzungen   2               Wohnzone<comma><space>3<space>Geschosse   20              Zone<space>fuer<space>Skipisten<space>und<space>Loipen   21              Zone<space>fuer<space>Sport-<space>und<space>Freizeitanlagen   22              Gruenzone   23              Gartenbauzone<space><openparen>kommerziell<closeparen>   24              Landwirtschaftszone   25              Intensivlandwirtschaftszone   26              Abbau-<space>und<solidus>oder<space>Ablagerungszone   27              Zone<space>fuer<space>militaerische<space>Nutzungen   28              Ueberbauungsordnung   29              Zone<space>mit<space>Planungspflicht   3               Wohnzone<comma><space>4<space>Geschosse   30              Zone<space>mit<space>Sonderbauvorschriften   31              Uferschutzplan   32              uebriges<space>Gebiet   4               Wohnzone<comma><space>5<space>Geschosse   5               Wohnzone<comma><space>6<space>und<space>mehr<space>Geschosse   6               Ferienhauszone   7               Mischzone<comma><space>2<space>Geschosse   8               Mischzone<comma><space>3<space>Geschosse   9               Mischzone<comma><space>4<space>Geschosse   ""              ""   ENCODED_SUPPORTUNICODE
-
-FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeValueMapper_2    INPUT  FEATURE_TYPE AttributeValueMapper_OUTPUT    OUTPUT FEATURE_TYPE AttributeValueMapper_2_OUTPUT         @Lookup(AttributeValueMapper_2_LOOKUP_TABLE,"KantArt",FORWARD|ENCODED_ATTR, KANTZONE)
-
-
-# -------------------------------------------------------------------------
-
-FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRenamer_10    INPUT  FEATURE_TYPE AttributeValueMapper_2_OUTPUT    OUTPUT FEATURE_TYPE AttributeRenamer_10_OUTPUT         @RenameAttributes(ATTR_LIST_DEF_VAL, Nutzungsziffer,AZ,"",Nutzungsziffer_Art,AZART,"",Abkuerzung,ZONENABK,"",Bezeichnung,ZONENNAME,"")
-
-
 # -------------------------------------------------------------------------
 FACTORY_DEF * AttrSetFactory FACTORY_NAME AttributeCreator_9 INPUT  FEATURE_TYPE AttributeRemover_18_OUTPUT_1_dTz2+RxJBOE=    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_9_OUTPUT 
 # -------------------------------------------------------------------------
@@ -14803,11 +14650,164 @@ FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRenamer_11    INPUT  FEATURE_T
 
 
 # -------------------------------------------------------------------------
+Lookup AttributeFilter_5_AttributeFilterLut   2 ok   "" notok   ENCODED
 
-FACTORY_DEF * TeeFactory    FACTORY_NAME "AttributeCreator_11_OUTPUT -> GEODB.NPL_UEUL Correlator"    INPUT FEATURE_TYPE AttributeCreator_11_OUTPUT    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 0       @Transform(FME_GENERIC,GEODATABASE_SDE)       @SupplyAttributes(ENCODED,__wb_out_feat_type__,GEODB.NPL_UEUL)
+Tcl2 proc AttributeFilter_5_setFeatType {} {     global FME_FeatureType;     set ft {AttributeFilter_5_};     append ft [FME_EncodeText [FME_GetAttribute {"Verbindlichkeit"}]];     set FME_FeatureType $ft; }
+FACTORY_DEF * TestFactory    FACTORY_NAME AttributeFilter_5    INPUT  FEATURE_TYPE AttributeRemover_18_OUTPUT_0_dTz2+RxJBOE=    TEST @Lookup(AttributeFilter_5_AttributeFilterLut,"Verbindlichkeit",ENCODED_ATTR) == "ok"    OUTPUT PASSED FEATURE_TYPE * @Tcl2(AttributeFilter_5_setFeatType)    OUTPUT FAILED FEATURE_TYPE AttributeFilter_5_<UNFILTERED>
+FACTORY_DEF * TestFactory    FACTORY_NAME AttributeFilter_5_BlankFilter    INPUT FEATURE_TYPE AttributeFilter_5_<UNFILTERED>    TEST @Value("Verbindlichkeit") == ""    OUTPUT PASSED FEATURE_TYPE AttributeFilter_5_<BLANK>    OUTPUT FAILED FEATURE_TYPE AttributeFilter_5_<UNFILTERED>
+
+FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeFilter_5 <BLANK> Output Nuker"   INPUT FEATURE_TYPE AttributeFilter_5_<BLANK>
+FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeFilter_5 <UNFILTERED> Output Nuker"   INPUT FEATURE_TYPE AttributeFilter_5_<UNFILTERED>
+FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeFilter_5 2 Splitter"   INPUT FEATURE_TYPE AttributeFilter_5_2   OUTPUT FEATURE_TYPE AttributeFilter_5_2_0_zNIlUk0L/Bg=   OUTPUT FEATURE_TYPE AttributeFilter_5_2_1_zNIlUk0L/Bg=
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * ReferenceFactory    FACTORY_NAME FeatureMerger    INPUT REFERENCER FEATURE_TYPE AttributeRemover_2_OUTPUT    INPUT REFERENCEE FEATURE_TYPE AttributeFilter_5_2_1_zNIlUk0L/Bg=    REFERENCE_INFO ATTRIBUTES    REFERENCEE_FIELDS "xtf_id"    REFERENCER_FIELDS "ZonentypRef"    MERGE_ATTRIBUTES Yes    MANAGE_FME_TYPE Yes    MODE COMPLETE    PROCESS_DUPLICATE_REFERENCEES No    BUILD_INCOMPLETE_REFERENCERS No    OUTPUT COMPLETE FEATURE_TYPE FeatureMerger_COMPLETE
+
+# -------------------------------------------------------------------------
+Lookup AttributeValueMapper_LOOKUP_TABLE   0               Festlegung<space>Kanton   1               Festlegung<space>Region   2               Festlegung<space>Gemeinde   3               Hinweis   ""              ""   ENCODED_SUPPORTUNICODE
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeValueMapper    INPUT  FEATURE_TYPE FeatureMerger_COMPLETE    OUTPUT FEATURE_TYPE AttributeValueMapper_OUTPUT         @Lookup(AttributeValueMapper_LOOKUP_TABLE,"Verbindlichkeit",FORWARD|ENCODED_ATTR, VERBINDLKT)
+
+
+# -------------------------------------------------------------------------
+Lookup AttributeValueMapper_2_LOOKUP_TABLE   0               Wohnzone<comma><space>1<space>Geschoss   1               Wohnzone<comma><space>2<space>Geschosse   10              Mischzone<comma><space>5<space>Geschosse   11              Mischzone<comma><space>6<space>und<space>mehr<space>Geschosse   12              Kernzone<space>staedtisch   13              Kernzone<space>laendlich   14              Hotelzone   15              Weilerzone   16              Bestandeszone<comma><space>Erhaltungszone   17              Bauernhofzone   18              Arbeitszone   19              Zone<space>fuer<space>oeffentliche<space>Nutzungen   2               Wohnzone<comma><space>3<space>Geschosse   20              Zone<space>fuer<space>Skipisten<space>und<space>Loipen   21              Zone<space>fuer<space>Sport-<space>und<space>Freizeitanlagen   22              Gruenzone   23              Gartenbauzone<space><openparen>kommerziell<closeparen>   24              Landwirtschaftszone   25              Intensivlandwirtschaftszone   26              Abbau-<space>und<solidus>oder<space>Ablagerungszone   27              Zone<space>fuer<space>militaerische<space>Nutzungen   28              Ueberbauungsordnung   29              Zone<space>mit<space>Planungspflicht   3               Wohnzone<comma><space>4<space>Geschosse   30              Zone<space>mit<space>Sonderbauvorschriften   31              Uferschutzplan   32              uebriges<space>Gebiet   4               Wohnzone<comma><space>5<space>Geschosse   5               Wohnzone<comma><space>6<space>und<space>mehr<space>Geschosse   6               Ferienhauszone   7               Mischzone<comma><space>2<space>Geschosse   8               Mischzone<comma><space>3<space>Geschosse   9               Mischzone<comma><space>4<space>Geschosse   ""              ""   ENCODED_SUPPORTUNICODE
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeValueMapper_2    INPUT  FEATURE_TYPE AttributeValueMapper_OUTPUT    OUTPUT FEATURE_TYPE AttributeValueMapper_2_OUTPUT         @Lookup(AttributeValueMapper_2_LOOKUP_TABLE,"KantArt",FORWARD|ENCODED_ATTR, KANTZONE)
+
+
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRenamer_10    INPUT  FEATURE_TYPE AttributeValueMapper_2_OUTPUT    OUTPUT FEATURE_TYPE AttributeRenamer_10_OUTPUT         @RenameAttributes(ATTR_LIST_DEF_VAL, Nutzungsziffer,AZ,"",Nutzungsziffer_Art,AZART,"",Abkuerzung,ZONENABK,"",Bezeichnung,ZONENNAME,"")
+
+
+# -------------------------------------------------------------------------
+
+INCLUDE [    set macroLine "MACRO AttributeRemover_20_LIST_EXP ";    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "{\[0-9\]+}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
+FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRemover_20    INPUT  FEATURE_TYPE AttributeFilter_5_2_0_zNIlUk0L/Bg=    OUTPUT FEATURE_TYPE AttributeRemover_20_OUTPUT        @RemoveAttributes(Identifikator,Verbindlichkeit,ZonenAbk,ZonenCode,Zonenname,KantZonentyp)        @RemoveAttributes(fme_regexp_match"$(AttributeRemover_20_LIST_EXP)")
+
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * ReferenceFactory    FACTORY_NAME FeatureMerger_12    INPUT REFERENCER FEATURE_TYPE AttributeRemover_21_OUTPUT    INPUT REFERENCEE FEATURE_TYPE AttributeRemover_20_OUTPUT    REFERENCE_INFO ATTRIBUTES    REFERENCEE_FIELDS "xtf_id"    REFERENCER_FIELDS "Typ"    MERGE_ATTRIBUTES Yes    MANAGE_FME_TYPE Yes    MODE COMPLETE    PROCESS_DUPLICATE_REFERENCEES No    BUILD_INCOMPLETE_REFERENCERS No    OUTPUT COMPLETE FEATURE_TYPE FeatureMerger_12_COMPLETE
+
+# -------------------------------------------------------------------------
+
+INCLUDE [    set macroLine "MACRO AttributeRemover_22_LIST_EXP ";    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "{\[0-9\]+}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
+FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRemover_22    INPUT  FEATURE_TYPE FeatureMerger_12_COMPLETE    OUTPUT FEATURE_TYPE AttributeRemover_22_OUTPUT        @RemoveAttributes(Typ,xtf_id,KantArt,Abkuerzung,Bezeichnung,Nutzungsziffer,Nutzungsziffer_Art)        @RemoveAttributes(fme_regexp_match"$(AttributeRemover_22_LIST_EXP)")
+
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * SortFactory    FACTORY_NAME FeatureHolder    INPUT  FEATURE_TYPE AttributeRemover_34_OUTPUT    INPUT  FEATURE_TYPE AttributeRemover_25_OUTPUT    INPUT  FEATURE_TYPE AttributeRemover_31_OUTPUT    INPUT  FEATURE_TYPE AttributeRemover_54_OUTPUT    INPUT  FEATURE_TYPE AttributeRemover_37_OUTPUT    INPUT  FEATURE_TYPE AttributeRemover_22_OUTPUT    INPUT  FEATURE_TYPE AttributeRemover_39_OUTPUT    INPUT  FEATURE_TYPE AttributeRemover_28_OUTPUT    OUTPUT SORTED FEATURE_TYPE FeatureHolder_OUTPUT
+
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRenamer_7    INPUT  FEATURE_TYPE FeatureHolder_OUTPUT    OUTPUT FEATURE_TYPE AttributeRenamer_7_OUTPUT         @RenameAttributes(ATTR_LIST_DEF_VAL, REL_ID,RELID,"",ArtikelNr,ARTIKELNR,"")
+
+
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * ReferenceFactory    FACTORY_NAME FeatureMerger_20    INPUT REFERENCER FEATURE_TYPE AttributeRenamer_7_OUTPUT    INPUT REFERENCEE FEATURE_TYPE AttributeRenamer_6_OUTPUT_1_oaHXXNCeFcA=    REFERENCE_INFO ATTRIBUTES    REFERENCEE_FIELDS "xtf_id"    REFERENCER_FIELDS "Vorschrift"    MERGE_ATTRIBUTES Yes    MANAGE_FME_TYPE Yes    MODE COMPLETE    PROCESS_DUPLICATE_REFERENCEES No    BUILD_INCOMPLETE_REFERENCERS No    OUTPUT COMPLETE FEATURE_TYPE FeatureMerger_20_COMPLETE
+
+FACTORY_DEF * TeeFactory   FACTORY_NAME "FeatureMerger_20 COMPLETE Splitter"   INPUT FEATURE_TYPE FeatureMerger_20_COMPLETE   OUTPUT FEATURE_TYPE FeatureMerger_20_COMPLETE_0_+6LFYDMTLz4=   OUTPUT FEATURE_TYPE FeatureMerger_20_COMPLETE_1_+6LFYDMTLz4=
+# -------------------------------------------------------------------------
+
+INCLUDE [    set macroLine "MACRO AttributeRemover_46_LIST_EXP ";    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "{\[0-9\]+}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
+FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRemover_46    INPUT  FEATURE_TYPE FeatureMerger_20_COMPLETE_0_+6LFYDMTLz4=    OUTPUT FEATURE_TYPE AttributeRemover_46_OUTPUT        @RemoveAttributes(Vorschrift,ARTIKELNR,VOR_SORT,Identifikator,ART,TEXTIMWEB,TITEL,OFFIZTITEL,ABKUERZUNG,OFFIZNR,Dokument)        @RemoveAttributes(fme_regexp_match"$(AttributeRemover_46_LIST_EXP)")
+
+# -------------------------------------------------------------------------
+FACTORY_DEF * TeeFactory   FACTORY_NAME "HinWeiDok_Iterationen FeatureMerger_22_REQUESTOR_628 Input Collector"   INPUT FEATURE_TYPE AttributeRemover_46_OUTPUT   OUTPUT FEATURE_TYPE HinWeiDok_Iterationen_FeatureMerger_22_REQUESTOR_628
+FACTORY_DEF * TeeFactory   FACTORY_NAME "HinWeiDok_Iterationen FeatureMerger_22_SUPPLIER_628 Input Collector"   INPUT FEATURE_TYPE FeatureMerger_21_COMPLETE   OUTPUT FEATURE_TYPE HinWeiDok_Iterationen_FeatureMerger_22_SUPPLIER_628
+MACRO HinWeiDok_Iterationen_WORKSPACE_NAME HinWeiDok_Iterationen
+MACRO $(HinWeiDok_Iterationen_WORKSPACE_NAME)_XFORMER_NAME HinWeiDok_Iterationen
+MACRO $(HinWeiDok_Iterationen_WORKSPACE_NAME)_TRANSFORMER_GROUP 
+MACRO $(HinWeiDok_Iterationen_WORKSPACE_NAME)___COMPOUND_PARAMETERS 
+MACRO $(HinWeiDok_Iterationen_WORKSPACE_NAME)_SUB_DOC_NAME HinWeiDok_Iterationen
+DEFAULT_MACRO HinWeiDok_Iterationen_WORKSPACE_NAME ""
+INCLUDE [puts {MACRO WB_OLD_CONTEXT_$(HinWeiDok_Iterationen_WORKSPACE_NAME) $(WB_CURRENT_CONTEXT)};          puts {MACRO WB_CURRENT_CONTEXT $(HinWeiDok_Iterationen_WORKSPACE_NAME)}]
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_FeatureMerger_22_REQUESTOR_6281449673529 Input Splitter"   INPUT FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_FeatureMerger_22_REQUESTOR_628"   OUTPUT FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_FeatureMerger_22_REQUESTOR_628"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_FeatureMerger_22_SUPPLIER_6281449673529 Input Splitter"   INPUT FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_FeatureMerger_22_SUPPLIER_628"   OUTPUT FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_FeatureMerger_22_SUPPLIER_628_0_/qdQOvrnJU8="   OUTPUT FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_FeatureMerger_22_SUPPLIER_628_1_/qdQOvrnJU8="   OUTPUT FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_FeatureMerger_22_SUPPLIER_628_2_/qdQOvrnJU8="
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * ReferenceFactory    FACTORY_NAME $(HinWeiDok_Iterationen_WORKSPACE_NAME)_FeatureMerger_22    INPUT REFERENCER FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_FeatureMerger_22_REQUESTOR_628"    INPUT REFERENCEE FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_FeatureMerger_22_SUPPLIER_628_2_/qdQOvrnJU8="    REFERENCE_INFO ATTRIBUTES    REFERENCEE_FIELDS "Ursprung"    REFERENCER_FIELDS "xtf_id"    LIST_NAME "duplicates"    MERGE_ATTRIBUTES Yes    MANAGE_FME_TYPE Yes    MODE COMPLETE    PROCESS_DUPLICATE_REFERENCEES No    BUILD_INCOMPLETE_REFERENCERS No    OUTPUT COMPLETE FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_FeatureMerger_22_COMPLETE"
+
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * ElementFactory    FACTORY_NAME $(HinWeiDok_Iterationen_WORKSPACE_NAME)_ListExploder    INPUT  FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_FeatureMerger_22_COMPLETE"    LIST_NAME "duplicates{}"    ELEMENT_NUMBER_FIELD "_element_index"    CLONE_GEOMETRY    MODE LEAN    OUTPUT ELEMENT FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_ListExploder_LIST_FOUND"         @RemoveAttributes(ElementFactory.baseCloned)
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_ListExploder LIST_FOUND Splitter"   INPUT FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_ListExploder_LIST_FOUND"   OUTPUT FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_ListExploder_LIST_FOUND_0_9wT/dk6tzVU="   OUTPUT FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_ListExploder_LIST_FOUND_1_9wT/dk6tzVU="
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * ReferenceFactory    FACTORY_NAME $(HinWeiDok_Iterationen_WORKSPACE_NAME)_FeatureMerger_23    INPUT REFERENCER FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_ListExploder_LIST_FOUND_1_9wT/dk6tzVU="    INPUT REFERENCEE FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_FeatureMerger_22_SUPPLIER_628_1_/qdQOvrnJU8="    REFERENCE_INFO ATTRIBUTES    REFERENCEE_FIELDS "Ursprung"    REFERENCER_FIELDS "xtf_id"    LIST_NAME "duplicates"    MERGE_ATTRIBUTES Yes    MANAGE_FME_TYPE Yes    MODE COMPLETE    PROCESS_DUPLICATE_REFERENCEES No    BUILD_INCOMPLETE_REFERENCERS No    OUTPUT COMPLETE FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_FeatureMerger_23_COMPLETE"
+
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * ElementFactory    FACTORY_NAME $(HinWeiDok_Iterationen_WORKSPACE_NAME)_ListExploder_2    INPUT  FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_FeatureMerger_23_COMPLETE"    LIST_NAME "duplicates{}"    ELEMENT_NUMBER_FIELD "_element_index"    CLONE_GEOMETRY    MODE LEAN    OUTPUT ELEMENT FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_ListExploder_2_LIST_FOUND"         @RemoveAttributes(ElementFactory.baseCloned)
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_ListExploder_2 LIST_FOUND Splitter"   INPUT FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_ListExploder_2_LIST_FOUND"   OUTPUT FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_ListExploder_2_LIST_FOUND_0_0TeSemTedJg="   OUTPUT FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_ListExploder_2_LIST_FOUND_1_0TeSemTedJg="
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * ReferenceFactory    FACTORY_NAME $(HinWeiDok_Iterationen_WORKSPACE_NAME)_FeatureMerger_24    INPUT REFERENCER FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_ListExploder_2_LIST_FOUND_0_0TeSemTedJg="    INPUT REFERENCEE FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_FeatureMerger_22_SUPPLIER_628_0_/qdQOvrnJU8="    REFERENCE_INFO ATTRIBUTES    REFERENCEE_FIELDS "Ursprung"    REFERENCER_FIELDS "xtf_id"    LIST_NAME "duplicate"    MERGE_ATTRIBUTES Yes    MANAGE_FME_TYPE Yes    MODE COMPLETE    PROCESS_DUPLICATE_REFERENCEES No    BUILD_INCOMPLETE_REFERENCERS No    OUTPUT COMPLETE FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_FeatureMerger_24_COMPLETE"
+
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * ElementFactory    FACTORY_NAME $(HinWeiDok_Iterationen_WORKSPACE_NAME)_ListExploder_3    INPUT  FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_FeatureMerger_24_COMPLETE"    LIST_NAME "duplicate{}"    ELEMENT_NUMBER_FIELD "_element_index"    CLONE_GEOMETRY    MODE LEAN    OUTPUT ELEMENT FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_ListExploder_3_LIST_FOUND"         @RemoveAttributes(ElementFactory.baseCloned)
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_ListExploder_3_LIST_FOUND_6491449673529 Output Collector"   INPUT FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_ListExploder_LIST_FOUND_0_9wT/dk6tzVU="   INPUT FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_ListExploder_2_LIST_FOUND_1_0TeSemTedJg="   INPUT FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_ListExploder_3_LIST_FOUND"   OUTPUT FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_ListExploder_3_LIST_FOUND_649"
+INCLUDE [puts {MACRO WB_CURRENT_CONTEXT $(WB_OLD_CONTEXT_$(HinWeiDok_Iterationen_WORKSPACE_NAME))}]
+FACTORY_DEF * TeeFactory   FACTORY_NAME "HinWeiDok_Iterationen ListExploder_3_LIST_FOUND_649 Output Renamer/Nuker"   INPUT FEATURE_TYPE HinWeiDok_Iterationen_ListExploder_3_LIST_FOUND_649   OUTPUT FEATURE_TYPE HinWeiDok_Iterationen_ListExploder_3_LIST_FOUND_649
+# -------------------------------------------------------------------------
+
+
+FME_PYTHON_PATH "$(FME_MF_DIR)"
+
+FACTORY_DEF * PythonFactory    FACTORY_NAME PythonCaller    INPUT  FEATURE_TYPE HinWeiDok_Iterationen_ListExploder_3_LIST_FOUND_649    INPUT  FEATURE_TYPE FeatureMerger_20_COMPLETE_1_+6LFYDMTLz4=    SYMBOL_NAME processFeature    PYTHON_NAMESPACE FMEOBJECTS    SOURCE_CODE #<space>-*-<space>coding:<space>latin-1<space>-*-<lf>import<space>fmeobjects<lf>import<space>os<lf><lf>def<space>processFeature<openparen>feature<closeparen>:<lf><space><space><space><space>filename<space>=<space>feature.getAttribute<openparen><apos>Dokument<apos><closeparen><lf><space><space><space><space><lf><space><space><space><space>outputURL<space>=<space>FME_MacroValues<openbracket><apos>OUTPUT_RV_URL<apos><closebracket><space>+<space>filename<lf><space><space><space><space><lf><space><space><space><space>inputFile<space>=<space>os.path.join<openparen>FME_MacroValues<openbracket><apos>INPUT_RV_DIR<apos><closebracket><comma><space>filename<closeparen><lf><space><space><space><space>inputFile<space>=<space>inputFile.replace<openparen><apos><backslash><backslash><apos><comma><apos><solidus><apos><closeparen><lf><space><space><space><space><lf><space><space><space><space>outputDir<space>=<space>FME_MacroValues<openbracket><apos>OUTPUT_RV_DIR<apos><closebracket>.replace<openparen><apos><backslash><backslash><apos><comma><apos><solidus><apos><closeparen><lf><lf><space><space><space><space>feature.setAttribute<openparen><apos>TEXTIMWEB<apos><comma><space>outputURL<closeparen><lf><space><space><space><space>feature.setAttribute<openparen><apos>filecopy_source_dataset<apos><comma><space>inputFile<closeparen><lf><space><space><space><space>feature.setAttribute<openparen><apos>filecopy_dest_dataset<apos><comma><space>outputDir<closeparen>    OUTPUT PYOUTPUT FEATURE_TYPE PythonCaller_OUTPUT
+
+FACTORY_DEF * TeeFactory   FACTORY_NAME "PythonCaller OUTPUT Splitter"   INPUT FEATURE_TYPE PythonCaller_OUTPUT   OUTPUT FEATURE_TYPE PythonCaller_OUTPUT_0_oCFN77Xe1JY=   OUTPUT FEATURE_TYPE PythonCaller_OUTPUT_1_oCFN77Xe1JY=
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRenamer_9    INPUT  FEATURE_TYPE PythonCaller_OUTPUT_1_oCFN77Xe1JY=    OUTPUT FEATURE_TYPE AttributeRenamer_9_OUTPUT         @RenameAttributes(ATTR_LIST_DEF_VAL, ART,_art,"")
+
+
+# -------------------------------------------------------------------------
+Lookup AttributeValueMapper_17_LOOKUP_TABLE   0               Rechtsvorschrift   1               Hinweis   ""              ""   ENCODED_SUPPORTUNICODE
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeValueMapper_17    INPUT  FEATURE_TYPE AttributeRenamer_9_OUTPUT    OUTPUT FEATURE_TYPE AttributeValueMapper_17_OUTPUT         @Lookup(AttributeValueMapper_17_LOOKUP_TABLE,"_art",FORWARD|ENCODED_ATTR, ART)
+
+
+# -------------------------------------------------------------------------
+
+INCLUDE [    set macroLine "MACRO AttributeRemover_60_LIST_EXP ";    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "{\[0-9\]+}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
+FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRemover_60    INPUT  FEATURE_TYPE AttributeValueMapper_17_OUTPUT    OUTPUT FEATURE_TYPE AttributeRemover_60_OUTPUT        @RemoveAttributes(xtf_id,Ursprung,Hinweis,_art,Dokument,_element_index,Vorschrift,filecopy_source_dataset,filecopy_dest_dataset)        @RemoveAttributes(fme_regexp_match"$(AttributeRemover_60_LIST_EXP)")
+
+# -------------------------------------------------------------------------
+
+DEFAULT_MACRO Aggregator_2_BREAK_ATTR
+INCLUDE [if {"No" == "Yes"} {puts {MACRO Aggregator_2_BREAK_ATTR BREAK_BEFORE_FIELD_CHANGE RELID BFSNR NAME ARTIKELNR TEXTIMWEB TITEL OFFIZTITEL ABKUERZUNG OFFIZNR VOR_SORT ART} }]
+FACTORY_DEF * AggregateFactory    FACTORY_NAME Aggregator_2    INPUT  FEATURE_TYPE AttributeRemover_60_OUTPUT    MODE ONE_LEVEL    GROUP_BY RELID BFSNR NAME ARTIKELNR TEXTIMWEB TITEL OFFIZTITEL ABKUERZUNG OFFIZNR VOR_SORT ART    $(Aggregator_2_BREAK_ATTR)    ACCUMULATE_ATTRIBUTES Never    SEPARATOR <comma>    PRODUCE_MULTIS YES    OUTPUT AGGREGATE FEATURE_TYPE Aggregator_2_AGGREGATE         @Geometry(SET_TO_CONTAIN_INDIVIDUAL_GEOMS, NO)
+
+FACTORY_DEF * TeeFactory   FACTORY_NAME "Aggregator_2 AGGREGATE Splitter"   INPUT FEATURE_TYPE Aggregator_2_AGGREGATE   OUTPUT FEATURE_TYPE Aggregator_2_AGGREGATE_0_FzN6sGtVAQE=   OUTPUT FEATURE_TYPE Aggregator_2_AGGREGATE_1_FzN6sGtVAQE=
+# -------------------------------------------------------------------------
+Lookup AttributeFilter_4_AttributeFilterLut   0 ok   "" notok   ENCODED
+
+Tcl2 proc AttributeFilter_4_setFeatType {} {     global FME_FeatureType;     set ft {AttributeFilter_4_};     append ft [FME_EncodeText [FME_GetAttribute {"ART"}]];     set FME_FeatureType $ft; }
+FACTORY_DEF * TestFactory    FACTORY_NAME AttributeFilter_4    INPUT  FEATURE_TYPE PythonCaller_OUTPUT_0_oCFN77Xe1JY=    TEST @Lookup(AttributeFilter_4_AttributeFilterLut,"ART",ENCODED_ATTR) == "ok"    OUTPUT PASSED FEATURE_TYPE * @Tcl2(AttributeFilter_4_setFeatType)    OUTPUT FAILED FEATURE_TYPE AttributeFilter_4_<UNFILTERED>
+FACTORY_DEF * TestFactory    FACTORY_NAME AttributeFilter_4_BlankFilter    INPUT FEATURE_TYPE AttributeFilter_4_<UNFILTERED>    TEST @Value("ART") == ""    OUTPUT PASSED FEATURE_TYPE AttributeFilter_4_<BLANK>    OUTPUT FAILED FEATURE_TYPE AttributeFilter_4_<UNFILTERED>
+
+FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeFilter_4 <BLANK> Output Nuker"   INPUT FEATURE_TYPE AttributeFilter_4_<BLANK>
+FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeFilter_4 <UNFILTERED> Output Nuker"   INPUT FEATURE_TYPE AttributeFilter_4_<UNFILTERED>
+# -------------------------------------------------------------------------
+
+INCLUDE [    set macroLine "MACRO AttributeRemover_47_LIST_EXP ";    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "{\[0-9\]+}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
+FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRemover_47    INPUT  FEATURE_TYPE AttributeFilter_4_0    OUTPUT FEATURE_TYPE AttributeRemover_47_OUTPUT        @RemoveAttributes(RELID,BFSNR,NAME,Genehmigung,Planbeschriftung,BESCHRIEB,xtf_id,Ursprung,Hinweis,ARTIKELNR,Identifikator,ART,TEXTIMWEB,TITEL,OFFIZTITEL,ABKUERZUNG,OFFIZNR,Dokument,_element_index,Vorschrift)        @RemoveAttributes(fme_regexp_match"$(AttributeRemover_47_LIST_EXP)")
+
+# -------------------------------------------------------------------------
+
+DEFAULT_MACRO Aggregator_BREAK_ATTR
+INCLUDE [if {"No" == "Yes"} {puts {MACRO Aggregator_BREAK_ATTR BREAK_BEFORE_FIELD_CHANGE filecopy_source_dataset filecopy_dest_dataset} }]
+FACTORY_DEF * AggregateFactory    FACTORY_NAME Aggregator    INPUT  FEATURE_TYPE AttributeRemover_47_OUTPUT    MODE ONE_LEVEL    GROUP_BY filecopy_source_dataset filecopy_dest_dataset    $(Aggregator_BREAK_ATTR)    ACCUMULATE_ATTRIBUTES Never    SEPARATOR <comma>    PRODUCE_MULTIS YES    OUTPUT AGGREGATE FEATURE_TYPE Aggregator_AGGREGATE         @Geometry(SET_TO_CONTAIN_INDIVIDUAL_GEOMS, NO)
+
 # -------------------------------------------------------------------------
 
 FACTORY_DEF * TeeFactory    FACTORY_NAME "AttributeFilter_<UNFILTERED> -> GEODB.NPL_UEUL Correlator"    INPUT FEATURE_TYPE AttributeFilter_<UNFILTERED>    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 0       @Transform(FME_GENERIC,GEODATABASE_SDE)       @SupplyAttributes(ENCODED,__wb_out_feat_type__,GEODB.NPL_UEUL)
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME "AttributeCreator_11_OUTPUT -> GEODB.NPL_UEUL Correlator"    INPUT FEATURE_TYPE AttributeCreator_11_OUTPUT    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 0       @Transform(FME_GENERIC,GEODATABASE_SDE)       @SupplyAttributes(ENCODED,__wb_out_feat_type__,GEODB.NPL_UEUL)
 # -------------------------------------------------------------------------
 
 FACTORY_DEF * TeeFactory    FACTORY_NAME "FeatureMerger_23_MERGED -> GEODB.NPL_GEGEWF Correlator"    INPUT FEATURE_TYPE FeatureMerger_23_MERGED    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 0       @Transform(FME_GENERIC,GEODATABASE_SDE)       @SupplyAttributes(ENCODED,__wb_out_feat_type__,GEODB.NPL_GEGEWF)
@@ -14861,7 +14861,7 @@ FACTORY_DEF * TeeFactory    FACTORY_NAME "AttributeRangeFilter_3_<UNFILTERED> ->
 FACTORY_DEF * TeeFactory    FACTORY_NAME "AttributeCreator_12_OUTPUT -> GEODB.NPL_UEUZ Correlator"    INPUT FEATURE_TYPE AttributeCreator_12_OUTPUT    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 0       @Transform(FME_GENERIC,GEODATABASE_SDE)       @SupplyAttributes(ENCODED,__wb_out_feat_type__,GEODB.NPL_UEUZ)
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * TeeFactory    FACTORY_NAME "Aggregator_AGGREGATE -> filecopy Correlator"    INPUT FEATURE_TYPE Aggregator_AGGREGATE    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 1       @Transform(FME_GENERIC,FILECOPY)       @SupplyAttributes(ENCODED,__wb_out_feat_type__,filecopy)
+FACTORY_DEF * TeeFactory    FACTORY_NAME "Aggregator_AGGREGATE -> filecopy Correlator"    INPUT FEATURE_TYPE Aggregator_AGGREGATE
 # -------------------------------------------------------------------------
 
 FACTORY_DEF * TestFactory   FACTORY_NAME "Final Output Feature Type Router"   INPUT FEATURE_TYPE __WB_BYPASS_TERMINATOR__     @SupplyAttributes(__wb_out_feat_type__,__WB_BYPASS_TERMINATOR__)     @Tcl2("FME_StatMessage 818062 {@Value(_wb_termination_message) (@Value(_wb_termination_xformer))} 818063")   INPUT FEATURE_TYPE *   TEST @Value(__wb_out_feat_type__) != ""   OUTPUT PASSED FEATURE_TYPE *     @FeatureType(@Value(__wb_out_feat_type__))   OUTPUT FAILED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")
