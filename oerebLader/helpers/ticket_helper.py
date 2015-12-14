@@ -5,7 +5,7 @@ import oerebLader.helpers.sql_helper
 
 def get_open_tickets():
     config = oerebLader.helpers.config.get_config()
-    open_tickets_sql = "select ticket.id, ticket.name, ticket.LIEFEREINHEIT, liefereinheit.name from ticket left join liefereinheit on ticket.LIEFEREINHEIT=liefereinheit.ID where ticket.STATUS=1"
+    open_tickets_sql = "select ticket.id, ticket.name, ticket.LIEFEREINHEIT, liefereinheit.name from ticket left join liefereinheit on ticket.LIEFEREINHEIT=liefereinheit.ID where ticket.STATUS=1 order by ticket.id"
     open_tickets = oerebLader.helpers.sql_helper.readSQL(config['OEREB_WORK']['connection_string'], open_tickets_sql)
     
     ticket_list = []
