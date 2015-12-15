@@ -21,7 +21,7 @@
 #    
 #! PASSWORD=""
 #! ATTR_TYPE_ENCODING="SDF"
-#! VIEW_POSITION="10599 -2190"
+#! VIEW_POSITION="2652 -1266"
 #! SHOW_INFO_NODES="true"
 #! FME_STROKE_MAX_DEVIATION="0"
 #! BEGIN_PYTHON=""
@@ -39,13 +39,13 @@
 #! USAGE=""
 #! END_PYTHON=""
 #! HISTORY=""
-#! FME_DOCUMENT_PRIORGUID="b147431e-d84e-46a0-a29a-ddb412521219,eb0ac03c-c4c8-4b50-a9c2-b50b9978d213,edfffede-34f0-4b7e-b818-3681a5d1d936,27768d21-6846-40ac-9342-787d50f3f3e1,77fe33b5-445b-4242-9e1e-7d620a735e60,c770128b-78ab-42bc-83fe-f7e1a2464f0a,00ae505b-241d-4b2f-889b-f188540ae075,f97c350f-d84a-474f-a5ff-5730e4717176,efa91d66-b75c-42e1-83eb-88e4aa1c34bd"
+#! FME_DOCUMENT_PRIORGUID="b147431e-d84e-46a0-a29a-ddb412521219,eb0ac03c-c4c8-4b50-a9c2-b50b9978d213,edfffede-34f0-4b7e-b818-3681a5d1d936,27768d21-6846-40ac-9342-787d50f3f3e1,77fe33b5-445b-4242-9e1e-7d620a735e60,c770128b-78ab-42bc-83fe-f7e1a2464f0a,00ae505b-241d-4b2f-889b-f188540ae075,f97c350f-d84a-474f-a5ff-5730e4717176,efa91d66-b75c-42e1-83eb-88e4aa1c34bd,3214b251-6a3d-42a8-8b4c-3093af652d75"
 #! DOC_TOP_LEFT="-63 -3368"
 #! REQUIREMENTS_KEYWORD=""
 #! SOURCE_ROUTING_FILE=""
 #! DESTINATION_ROUTING_FILE=""
 #! DESTINATION="NONE"
-#! LAST_SAVE_DATE="2015-12-14T15:14:12"
+#! LAST_SAVE_DATE="2015-12-15T08:07:08"
 #! FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
 #! WORKSPACE_VERSION="1"
 #! SOURCE="NONE"
@@ -56,7 +56,7 @@
 #! REQUIREMENTS=""
 #! BEGIN_TCL=""
 #! DOC_EXTENTS="14504 3216"
-#! FME_DOCUMENT_GUID="3214b251-6a3d-42a8-8b4c-3093af652d75"
+#! FME_DOCUMENT_GUID="979085ab-7dbb-49e3-babf-5aeb9e400ded"
 #! SHOW_ANNOTATIONS="true"
 #! IGNORE_READER_FAILURE="No"
 #! WARN_INVALID_XFORM_PARAM="Yes"
@@ -1327,12 +1327,12 @@
 #! <COMMENT
 #! IDENTIFIER="185"
 #! COMMENT_VALUE="&lt;html&gt;&lt;body&gt;KantZonentyp in sprechenden&#13;&lt;br&gt;Text umwandeln&lt;/body&gt;&lt;/html&gt;"
-#! POSITION="4125 -2151"
+#! POSITION="4740 -2178"
 #! ORDER="136"
 #! FOLLOW_ANCHOR="true"
 #! INFO_NODE="false"
-#! TOP_LEFT="4125 -2151"
-#! BOTTOM_RIGHT="4125 -2151"
+#! TOP_LEFT="4740 -2178"
+#! BOTTOM_RIGHT="4740 -2178"
 #! COLOUR="1,1,0.784314,0.192157"
 #! SIZE_POLICY="8"
 #! COMMENT_TYPE="REGULAR"
@@ -1490,14 +1490,14 @@
 #! BOTTOM_RIGHT="14441 -3676"
 #! STICKY="true"
 #! COLOUR="0.286275,0.329412,0.0666667"
-#! CONTENTS="75 214 79 84 203 108 211 181 72 135 94 97 100 184 76 105 55 213 81 120 85 212 183 73 107 124 110 77 93 96 197 99 104 195 82 68 121 215 74 78 109 83 95 98 71 193 103 122 106 "
+#! CONTENTS="93 55 96 68 99 121 104 107 110 74 195 78 124 215 83 71 122 95 75 98 103 106 109 79 193 203 84 211 181 214 72 135 76 94 97 100 81 105 108 120 85 184 212 183 73 213 77 197 82 "
 #! />
 #! <BOOKMARK
 #! IDENTIFIER="157"
 #! NAME="GRUNDZONE"
 #! DESCRIPTION="&lt;html&gt;&lt;body&gt;&lt;/body&gt;&lt;/html&gt;"
 #! TOP_LEFT="-43 -1799"
-#! BOTTOM_RIGHT="5304 -3606"
+#! BOTTOM_RIGHT="5841 -3606"
 #! STICKY="false"
 #! COLOUR="0.509804,0.847059,0.866667"
 #! CONTENTS=""
@@ -2224,21 +2224,21 @@
 #! >
 #! <OUTPUT_FEAT NAME="OUTPUT"/>
 #! <FEAT_COLLAPSED COLLAPSED="0"/>
+#! <XFORM_ATTR ATTR_NAME="Vorschrift" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="ARTIKELNR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="RELID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="BFSNR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="NAME" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="xtf_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="Art_Doku" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="Ursprung" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="Hinweis" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="ARTIKELNR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="TITEL" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="OFFIZTITEL" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="ABKUERZUNG" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="OFFIZNR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="Dokument" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="Ursprung" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="Hinweis" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="_element_index" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="Vorschrift" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="TEXTIMWEB" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="filecopy_source_dataset" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="filecopy_dest_dataset" IS_USER_CREATED="false" FEAT_INDEX="0" />
@@ -2263,61 +2263,61 @@
 #! >
 #! <OUTPUT_FEAT NAME="&lt;BLANK&gt;"/>
 #! <FEAT_COLLAPSED COLLAPSED="0"/>
+#! <XFORM_ATTR ATTR_NAME="Vorschrift" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="ARTIKELNR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="RELID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="BFSNR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="NAME" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="xtf_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="Art_Doku" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="Ursprung" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="Hinweis" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="ARTIKELNR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="TITEL" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="OFFIZTITEL" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="ABKUERZUNG" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="OFFIZNR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="Dokument" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="Ursprung" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="Hinweis" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="_element_index" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="Vorschrift" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="TEXTIMWEB" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="filecopy_source_dataset" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="filecopy_dest_dataset" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <OUTPUT_FEAT NAME="&lt;UNFILTERED&gt;"/>
 #! <FEAT_COLLAPSED COLLAPSED="1"/>
+#! <XFORM_ATTR ATTR_NAME="Vorschrift" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="ARTIKELNR" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #! <XFORM_ATTR ATTR_NAME="RELID" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #! <XFORM_ATTR ATTR_NAME="BFSNR" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #! <XFORM_ATTR ATTR_NAME="NAME" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #! <XFORM_ATTR ATTR_NAME="xtf_id" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #! <XFORM_ATTR ATTR_NAME="Art_Doku" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#! <XFORM_ATTR ATTR_NAME="Ursprung" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#! <XFORM_ATTR ATTR_NAME="Hinweis" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#! <XFORM_ATTR ATTR_NAME="ARTIKELNR" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #! <XFORM_ATTR ATTR_NAME="TITEL" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #! <XFORM_ATTR ATTR_NAME="OFFIZTITEL" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #! <XFORM_ATTR ATTR_NAME="ABKUERZUNG" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #! <XFORM_ATTR ATTR_NAME="OFFIZNR" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #! <XFORM_ATTR ATTR_NAME="Dokument" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="Ursprung" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="Hinweis" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #! <XFORM_ATTR ATTR_NAME="_element_index" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#! <XFORM_ATTR ATTR_NAME="Vorschrift" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #! <XFORM_ATTR ATTR_NAME="TEXTIMWEB" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #! <XFORM_ATTR ATTR_NAME="filecopy_source_dataset" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #! <XFORM_ATTR ATTR_NAME="filecopy_dest_dataset" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #! <OUTPUT_FEAT NAME="0"/>
 #! <FEAT_COLLAPSED COLLAPSED="2"/>
+#! <XFORM_ATTR ATTR_NAME="Vorschrift" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#! <XFORM_ATTR ATTR_NAME="ARTIKELNR" IS_USER_CREATED="false" FEAT_INDEX="2" />
 #! <XFORM_ATTR ATTR_NAME="RELID" IS_USER_CREATED="false" FEAT_INDEX="2" />
 #! <XFORM_ATTR ATTR_NAME="BFSNR" IS_USER_CREATED="false" FEAT_INDEX="2" />
 #! <XFORM_ATTR ATTR_NAME="NAME" IS_USER_CREATED="false" FEAT_INDEX="2" />
 #! <XFORM_ATTR ATTR_NAME="xtf_id" IS_USER_CREATED="false" FEAT_INDEX="2" />
 #! <XFORM_ATTR ATTR_NAME="Art_Doku" IS_USER_CREATED="false" FEAT_INDEX="2" />
-#! <XFORM_ATTR ATTR_NAME="Ursprung" IS_USER_CREATED="false" FEAT_INDEX="2" />
-#! <XFORM_ATTR ATTR_NAME="Hinweis" IS_USER_CREATED="false" FEAT_INDEX="2" />
-#! <XFORM_ATTR ATTR_NAME="ARTIKELNR" IS_USER_CREATED="false" FEAT_INDEX="2" />
 #! <XFORM_ATTR ATTR_NAME="TITEL" IS_USER_CREATED="false" FEAT_INDEX="2" />
 #! <XFORM_ATTR ATTR_NAME="OFFIZTITEL" IS_USER_CREATED="false" FEAT_INDEX="2" />
 #! <XFORM_ATTR ATTR_NAME="ABKUERZUNG" IS_USER_CREATED="false" FEAT_INDEX="2" />
 #! <XFORM_ATTR ATTR_NAME="OFFIZNR" IS_USER_CREATED="false" FEAT_INDEX="2" />
 #! <XFORM_ATTR ATTR_NAME="Dokument" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#! <XFORM_ATTR ATTR_NAME="Ursprung" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#! <XFORM_ATTR ATTR_NAME="Hinweis" IS_USER_CREATED="false" FEAT_INDEX="2" />
 #! <XFORM_ATTR ATTR_NAME="_element_index" IS_USER_CREATED="false" FEAT_INDEX="2" />
-#! <XFORM_ATTR ATTR_NAME="Vorschrift" IS_USER_CREATED="false" FEAT_INDEX="2" />
 #! <XFORM_ATTR ATTR_NAME="TEXTIMWEB" IS_USER_CREATED="false" FEAT_INDEX="2" />
 #! <XFORM_ATTR ATTR_NAME="filecopy_source_dataset" IS_USER_CREATED="false" FEAT_INDEX="2" />
 #! <XFORM_ATTR ATTR_NAME="filecopy_dest_dataset" IS_USER_CREATED="false" FEAT_INDEX="2" />
@@ -2393,21 +2393,21 @@
 #! >
 #! <OUTPUT_FEAT NAME="OUTPUT"/>
 #! <FEAT_COLLAPSED COLLAPSED="0"/>
+#! <XFORM_ATTR ATTR_NAME="Vorschrift" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="ARTIKELNR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="RELID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="BFSNR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="NAME" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="xtf_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="Art_Doku" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="Ursprung" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="Hinweis" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="ARTIKELNR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="TITEL" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="OFFIZTITEL" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="ABKUERZUNG" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="OFFIZNR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="Dokument" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="Ursprung" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="Hinweis" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="_element_index" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="Vorschrift" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="TEXTIMWEB" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="filecopy_source_dataset" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="filecopy_dest_dataset" IS_USER_CREATED="false" FEAT_INDEX="0" />
@@ -2562,7 +2562,7 @@
 #! IDENTIFIER="149"
 #! TYPE="AttributeValueMapper"
 #! VERSION="4"
-#! POSITION="4140 -2314"
+#! POSITION="4755 -2341"
 #! ORDER="152"
 #! PARMS_EDITED="true"
 #! ENABLED="true"
@@ -2572,7 +2572,7 @@
 #! <XFORM_ATTR ATTR_NAME="ZonentypRef" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="xtf_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="Verbindlichkeit" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="KantArt" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_kantart" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="Abkuerzung" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="Bezeichnung" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="REL_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
@@ -2587,7 +2587,7 @@
 #! <XFORM_PARM PARM_NAME="ATTR_GROUP" PARM_VALUE=""/>
 #! <XFORM_PARM PARM_NAME="DEFAULT_VALUE" PARM_VALUE=""/>
 #! <XFORM_PARM PARM_NAME="LUT" PARM_VALUE="28,&lt;u00dc&gt;berbauungsordnung"/>
-#! <XFORM_PARM PARM_NAME="SRC" PARM_VALUE="KantArt"/>
+#! <XFORM_PARM PARM_NAME="SRC" PARM_VALUE="_kantart"/>
 #! </TRANSFORMER>
 #! <TRANSFORMER
 #! IDENTIFIER="150"
@@ -2815,7 +2815,7 @@
 #! IDENTIFIER="194"
 #! TYPE="AttributeRenamer"
 #! VERSION="2"
-#! POSITION="4711 -2334"
+#! POSITION="5317 -2343"
 #! ORDER="159"
 #! PARMS_EDITED="true"
 #! ENABLED="true"
@@ -2825,7 +2825,7 @@
 #! <XFORM_ATTR ATTR_NAME="ZonentypRef" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="xtf_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="Verbindlichkeit" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="KantArt" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_kantart" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="ZONENABK" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="ZONENCODE" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="Bezeichnung" IS_USER_CREATED="false" FEAT_INDEX="0" />
@@ -2848,10 +2848,10 @@
 #! >
 #! <OUTPUT_FEAT NAME="OUTPUT"/>
 #! <FEAT_COLLAPSED COLLAPSED="0"/>
+#! <XFORM_ATTR ATTR_NAME="ARTIKELNR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="RELID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="BFSNR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="NAME" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="ARTIKELNR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="TITEL" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="OFFIZTITEL" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="ABKUERZUNG" IS_USER_CREATED="false" FEAT_INDEX="0" />
@@ -2875,10 +2875,10 @@
 #! >
 #! <OUTPUT_FEAT NAME="AGGREGATE"/>
 #! <FEAT_COLLAPSED COLLAPSED="0"/>
+#! <XFORM_ATTR ATTR_NAME="ARTIKELNR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="RELID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="BFSNR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="NAME" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="ARTIKELNR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="TITEL" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="OFFIZTITEL" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="ABKUERZUNG" IS_USER_CREATED="false" FEAT_INDEX="0" />
@@ -3116,6 +3116,30 @@
 #! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeRemover_40"/>
 #! <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
 #! <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#! IDENTIFIER="147"
+#! TYPE="AttributeRenamer"
+#! VERSION="2"
+#! POSITION="4182 -2326"
+#! ORDER="5e+014"
+#! PARMS_EDITED="true"
+#! ENABLED="true"
+#! >
+#! <OUTPUT_FEAT NAME="OUTPUT"/>
+#! <FEAT_COLLAPSED COLLAPSED="0"/>
+#! <XFORM_ATTR ATTR_NAME="ZonentypRef" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="xtf_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="Verbindlichkeit" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_kantart" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="Abkuerzung" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="Bezeichnung" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="REL_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="BFSNR" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="NAME" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="VERBINDLKT" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeRenamer_3"/>
+#! <XFORM_PARM PARM_NAME="ATTR_LIST" PARM_VALUE="KantArt,_kantart,&quot;&quot;"/>
 #! </TRANSFORMER>
 #! </TRANSFORMERS>
 #! <FEAT_LINKS>
@@ -3366,15 +3390,6 @@
 #! IDENTIFIER="128"
 #! SOURCE_NODE="11"
 #! TARGET_NODE="64"
-#! SOURCE_PORT_DESC="fo 0"
-#! TARGET_PORT_DESC="fi 0"
-#! ENABLED="true"
-#! EXTRA_POINTS=""
-#! />
-#! <FEAT_LINK
-#! IDENTIFIER="161"
-#! SOURCE_NODE="148"
-#! TARGET_NODE="149"
 #! SOURCE_PORT_DESC="fo 0"
 #! TARGET_PORT_DESC="fi 0"
 #! ENABLED="true"
@@ -3681,6 +3696,24 @@
 #! IDENTIFIER="215"
 #! SOURCE_NODE="81"
 #! TARGET_NODE="85"
+#! SOURCE_PORT_DESC="fo 0"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="216"
+#! SOURCE_NODE="148"
+#! TARGET_NODE="147"
+#! SOURCE_PORT_DESC="fo 0"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="217"
+#! SOURCE_NODE="147"
+#! TARGET_NODE="149"
 #! SOURCE_PORT_DESC="fo 0"
 #! TARGET_PORT_DESC="fi 0"
 #! ENABLED="true"
@@ -4973,7 +5006,7 @@ FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRenamer_6    INPUT  FEATURE_TY
 FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeRenamer_6 OUTPUT Splitter"   INPUT FEATURE_TYPE AttributeRenamer_6_OUTPUT   OUTPUT FEATURE_TYPE AttributeRenamer_6_OUTPUT_0_oaHXXNCeFcA=   OUTPUT FEATURE_TYPE AttributeRenamer_6_OUTPUT_1_oaHXXNCeFcA=
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * ReferenceFactory    FACTORY_NAME FeatureMerger_21    INPUT REFERENCER FEATURE_TYPE AttributeRenamer_8_OUTPUT    INPUT REFERENCEE FEATURE_TYPE AttributeRenamer_6_OUTPUT_0_oaHXXNCeFcA=    REFERENCE_INFO ATTRIBUTES    REFERENCEE_FIELDS "xtf_id"    REFERENCER_FIELDS "Hinweis"    MERGE_ATTRIBUTES Yes    MANAGE_FME_TYPE Yes    MODE COMPLETE    PROCESS_DUPLICATE_REFERENCEES No    BUILD_INCOMPLETE_REFERENCERS No    OUTPUT COMPLETE FEATURE_TYPE FeatureMerger_21_COMPLETE
+FACTORY_DEF * ReferenceFactory    FACTORY_NAME FeatureMerger_21    INPUT REFERENCER FEATURE_TYPE AttributeRenamer_8_OUTPUT    INPUT REFERENCEE FEATURE_TYPE AttributeRenamer_6_OUTPUT_1_oaHXXNCeFcA=    REFERENCE_INFO ATTRIBUTES    REFERENCEE_FIELDS "xtf_id"    REFERENCER_FIELDS "Hinweis"    MERGE_ATTRIBUTES Yes    MANAGE_FME_TYPE Yes    MODE COMPLETE    PROCESS_DUPLICATE_REFERENCEES No    BUILD_INCOMPLETE_REFERENCERS No    OUTPUT COMPLETE FEATURE_TYPE FeatureMerger_21_COMPLETE
 
 # -------------------------------------------------------------------------
 
@@ -5121,7 +5154,7 @@ FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRemover_22    INPUT  FEATURE_T
 
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * SortFactory    FACTORY_NAME FeatureHolder    INPUT  FEATURE_TYPE AttributeRemover_40_OUTPUT    INPUT  FEATURE_TYPE AttributeRemover_22_OUTPUT    OUTPUT SORTED FEATURE_TYPE FeatureHolder_OUTPUT
+FACTORY_DEF * SortFactory    FACTORY_NAME FeatureHolder    INPUT  FEATURE_TYPE AttributeRemover_22_OUTPUT    INPUT  FEATURE_TYPE AttributeRemover_40_OUTPUT    OUTPUT SORTED FEATURE_TYPE FeatureHolder_OUTPUT
 
 # -------------------------------------------------------------------------
 
@@ -5130,13 +5163,13 @@ FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRenamer_7    INPUT  FEATURE_TY
 
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * ReferenceFactory    FACTORY_NAME FeatureMerger_20    INPUT REFERENCER FEATURE_TYPE AttributeRenamer_7_OUTPUT    INPUT REFERENCEE FEATURE_TYPE AttributeRenamer_6_OUTPUT_1_oaHXXNCeFcA=    REFERENCE_INFO ATTRIBUTES    REFERENCEE_FIELDS "xtf_id"    REFERENCER_FIELDS "Vorschrift"    MERGE_ATTRIBUTES Yes    MANAGE_FME_TYPE Yes    MODE COMPLETE    PROCESS_DUPLICATE_REFERENCEES No    BUILD_INCOMPLETE_REFERENCERS No    OUTPUT COMPLETE FEATURE_TYPE FeatureMerger_20_COMPLETE
+FACTORY_DEF * ReferenceFactory    FACTORY_NAME FeatureMerger_20    INPUT REFERENCER FEATURE_TYPE AttributeRenamer_7_OUTPUT    INPUT REFERENCEE FEATURE_TYPE AttributeRenamer_6_OUTPUT_0_oaHXXNCeFcA=    REFERENCE_INFO ATTRIBUTES    REFERENCEE_FIELDS "xtf_id"    REFERENCER_FIELDS "Vorschrift"    MERGE_ATTRIBUTES Yes    MANAGE_FME_TYPE Yes    MODE COMPLETE    PROCESS_DUPLICATE_REFERENCEES No    BUILD_INCOMPLETE_REFERENCERS No    OUTPUT COMPLETE FEATURE_TYPE FeatureMerger_20_COMPLETE
 
 FACTORY_DEF * TeeFactory   FACTORY_NAME "FeatureMerger_20 COMPLETE Splitter"   INPUT FEATURE_TYPE FeatureMerger_20_COMPLETE   OUTPUT FEATURE_TYPE FeatureMerger_20_COMPLETE_0_+6LFYDMTLz4=   OUTPUT FEATURE_TYPE FeatureMerger_20_COMPLETE_1_+6LFYDMTLz4=
 # -------------------------------------------------------------------------
 
 INCLUDE [    set macroLine "MACRO AttributeRemover_46_LIST_EXP ";    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "{\[0-9\]+}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
-FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRemover_46    INPUT  FEATURE_TYPE FeatureMerger_20_COMPLETE_0_+6LFYDMTLz4=    OUTPUT FEATURE_TYPE AttributeRemover_46_OUTPUT        @RemoveAttributes(Vorschrift,ARTIKELNR,Identifikator,ART,TEXTIMWEB,TITEL,OFFIZTITEL,ABKUERZUNG,OFFIZNR,Dokument)        @RemoveAttributes(fme_regexp_match"$(AttributeRemover_46_LIST_EXP)")
+FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRemover_46    INPUT  FEATURE_TYPE FeatureMerger_20_COMPLETE_1_+6LFYDMTLz4=    OUTPUT FEATURE_TYPE AttributeRemover_46_OUTPUT        @RemoveAttributes(Vorschrift,ARTIKELNR,Identifikator,ART,TEXTIMWEB,TITEL,OFFIZTITEL,ABKUERZUNG,OFFIZNR,Dokument)        @RemoveAttributes(fme_regexp_match"$(AttributeRemover_46_LIST_EXP)")
 
 # -------------------------------------------------------------------------
 FACTORY_DEF * TeeFactory   FACTORY_NAME "HinWeiDok_Iterationen FeatureMerger_22_REQUESTOR_628 Input Collector"   INPUT FEATURE_TYPE AttributeRemover_46_OUTPUT   OUTPUT FEATURE_TYPE HinWeiDok_Iterationen_FeatureMerger_22_REQUESTOR_628
@@ -5148,11 +5181,11 @@ MACRO $(HinWeiDok_Iterationen_WORKSPACE_NAME)___COMPOUND_PARAMETERS
 MACRO $(HinWeiDok_Iterationen_WORKSPACE_NAME)_SUB_DOC_NAME HinWeiDok_Iterationen
 DEFAULT_MACRO HinWeiDok_Iterationen_WORKSPACE_NAME ""
 INCLUDE [puts {MACRO WB_OLD_CONTEXT_$(HinWeiDok_Iterationen_WORKSPACE_NAME) $(WB_CURRENT_CONTEXT)};          puts {MACRO WB_CURRENT_CONTEXT $(HinWeiDok_Iterationen_WORKSPACE_NAME)}]
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_FeatureMerger_22_REQUESTOR_6281450102452 Input Splitter"   INPUT FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_FeatureMerger_22_REQUESTOR_628"   OUTPUT FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_FeatureMerger_22_REQUESTOR_628"
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_FeatureMerger_22_SUPPLIER_6281450102452 Input Splitter"   INPUT FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_FeatureMerger_22_SUPPLIER_628"   OUTPUT FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_FeatureMerger_22_SUPPLIER_628_0_/qdQOvrnJU8="   OUTPUT FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_FeatureMerger_22_SUPPLIER_628_1_/qdQOvrnJU8="   OUTPUT FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_FeatureMerger_22_SUPPLIER_628_2_/qdQOvrnJU8="
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_FeatureMerger_22_REQUESTOR_6281450163228 Input Splitter"   INPUT FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_FeatureMerger_22_REQUESTOR_628"   OUTPUT FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_FeatureMerger_22_REQUESTOR_628"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_FeatureMerger_22_SUPPLIER_6281450163228 Input Splitter"   INPUT FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_FeatureMerger_22_SUPPLIER_628"   OUTPUT FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_FeatureMerger_22_SUPPLIER_628_0_/qdQOvrnJU8="   OUTPUT FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_FeatureMerger_22_SUPPLIER_628_1_/qdQOvrnJU8="   OUTPUT FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_FeatureMerger_22_SUPPLIER_628_2_/qdQOvrnJU8="
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * ReferenceFactory    FACTORY_NAME $(HinWeiDok_Iterationen_WORKSPACE_NAME)_FeatureMerger_22    INPUT REFERENCER FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_FeatureMerger_22_REQUESTOR_628"    INPUT REFERENCEE FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_FeatureMerger_22_SUPPLIER_628_0_/qdQOvrnJU8="    REFERENCE_INFO ATTRIBUTES    REFERENCEE_FIELDS "Ursprung"    REFERENCER_FIELDS "xtf_id"    LIST_NAME "duplicates"    MERGE_ATTRIBUTES Yes    MANAGE_FME_TYPE Yes    MODE COMPLETE    PROCESS_DUPLICATE_REFERENCEES No    BUILD_INCOMPLETE_REFERENCERS No    OUTPUT COMPLETE FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_FeatureMerger_22_COMPLETE"
+FACTORY_DEF * ReferenceFactory    FACTORY_NAME $(HinWeiDok_Iterationen_WORKSPACE_NAME)_FeatureMerger_22    INPUT REFERENCER FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_FeatureMerger_22_REQUESTOR_628"    INPUT REFERENCEE FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_FeatureMerger_22_SUPPLIER_628_1_/qdQOvrnJU8="    REFERENCE_INFO ATTRIBUTES    REFERENCEE_FIELDS "Ursprung"    REFERENCER_FIELDS "xtf_id"    LIST_NAME "duplicates"    MERGE_ATTRIBUTES Yes    MANAGE_FME_TYPE Yes    MODE COMPLETE    PROCESS_DUPLICATE_REFERENCEES No    BUILD_INCOMPLETE_REFERENCERS No    OUTPUT COMPLETE FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_FeatureMerger_22_COMPLETE"
 
 # -------------------------------------------------------------------------
 
@@ -5160,7 +5193,7 @@ FACTORY_DEF * ElementFactory    FACTORY_NAME $(HinWeiDok_Iterationen_WORKSPACE_N
 FACTORY_DEF * TeeFactory   FACTORY_NAME "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_ListExploder LIST_FOUND Splitter"   INPUT FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_ListExploder_LIST_FOUND"   OUTPUT FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_ListExploder_LIST_FOUND_0_9wT/dk6tzVU="   OUTPUT FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_ListExploder_LIST_FOUND_1_9wT/dk6tzVU="
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * ReferenceFactory    FACTORY_NAME $(HinWeiDok_Iterationen_WORKSPACE_NAME)_FeatureMerger_23    INPUT REFERENCER FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_ListExploder_LIST_FOUND_1_9wT/dk6tzVU="    INPUT REFERENCEE FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_FeatureMerger_22_SUPPLIER_628_1_/qdQOvrnJU8="    REFERENCE_INFO ATTRIBUTES    REFERENCEE_FIELDS "Ursprung"    REFERENCER_FIELDS "xtf_id"    LIST_NAME "duplicates"    MERGE_ATTRIBUTES Yes    MANAGE_FME_TYPE Yes    MODE COMPLETE    PROCESS_DUPLICATE_REFERENCEES No    BUILD_INCOMPLETE_REFERENCERS No    OUTPUT COMPLETE FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_FeatureMerger_23_COMPLETE"
+FACTORY_DEF * ReferenceFactory    FACTORY_NAME $(HinWeiDok_Iterationen_WORKSPACE_NAME)_FeatureMerger_23    INPUT REFERENCER FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_ListExploder_LIST_FOUND_1_9wT/dk6tzVU="    INPUT REFERENCEE FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_FeatureMerger_22_SUPPLIER_628_0_/qdQOvrnJU8="    REFERENCE_INFO ATTRIBUTES    REFERENCEE_FIELDS "Ursprung"    REFERENCER_FIELDS "xtf_id"    LIST_NAME "duplicates"    MERGE_ATTRIBUTES Yes    MANAGE_FME_TYPE Yes    MODE COMPLETE    PROCESS_DUPLICATE_REFERENCEES No    BUILD_INCOMPLETE_REFERENCERS No    OUTPUT COMPLETE FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_FeatureMerger_23_COMPLETE"
 
 # -------------------------------------------------------------------------
 
@@ -5168,12 +5201,12 @@ FACTORY_DEF * ElementFactory    FACTORY_NAME $(HinWeiDok_Iterationen_WORKSPACE_N
 FACTORY_DEF * TeeFactory   FACTORY_NAME "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_ListExploder_2 LIST_FOUND Splitter"   INPUT FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_ListExploder_2_LIST_FOUND"   OUTPUT FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_ListExploder_2_LIST_FOUND_0_0TeSemTedJg="   OUTPUT FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_ListExploder_2_LIST_FOUND_1_0TeSemTedJg="
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * ReferenceFactory    FACTORY_NAME $(HinWeiDok_Iterationen_WORKSPACE_NAME)_FeatureMerger_24    INPUT REFERENCER FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_ListExploder_2_LIST_FOUND_1_0TeSemTedJg="    INPUT REFERENCEE FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_FeatureMerger_22_SUPPLIER_628_2_/qdQOvrnJU8="    REFERENCE_INFO ATTRIBUTES    REFERENCEE_FIELDS "Ursprung"    REFERENCER_FIELDS "xtf_id"    LIST_NAME "duplicate"    MERGE_ATTRIBUTES Yes    MANAGE_FME_TYPE Yes    MODE COMPLETE    PROCESS_DUPLICATE_REFERENCEES No    BUILD_INCOMPLETE_REFERENCERS No    OUTPUT COMPLETE FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_FeatureMerger_24_COMPLETE"
+FACTORY_DEF * ReferenceFactory    FACTORY_NAME $(HinWeiDok_Iterationen_WORKSPACE_NAME)_FeatureMerger_24    INPUT REFERENCER FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_ListExploder_2_LIST_FOUND_0_0TeSemTedJg="    INPUT REFERENCEE FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_FeatureMerger_22_SUPPLIER_628_2_/qdQOvrnJU8="    REFERENCE_INFO ATTRIBUTES    REFERENCEE_FIELDS "Ursprung"    REFERENCER_FIELDS "xtf_id"    LIST_NAME "duplicate"    MERGE_ATTRIBUTES Yes    MANAGE_FME_TYPE Yes    MODE COMPLETE    PROCESS_DUPLICATE_REFERENCEES No    BUILD_INCOMPLETE_REFERENCERS No    OUTPUT COMPLETE FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_FeatureMerger_24_COMPLETE"
 
 # -------------------------------------------------------------------------
 
 FACTORY_DEF * ElementFactory    FACTORY_NAME $(HinWeiDok_Iterationen_WORKSPACE_NAME)_ListExploder_3    INPUT  FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_FeatureMerger_24_COMPLETE"    LIST_NAME "duplicate{}"    ELEMENT_NUMBER_FIELD "_element_index"    CLONE_GEOMETRY    MODE LEAN    OUTPUT ELEMENT FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_ListExploder_3_LIST_FOUND"         @RemoveAttributes(ElementFactory.baseCloned)
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_ListExploder_3_LIST_FOUND_6491450102452 Output Collector"   INPUT FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_ListExploder_3_LIST_FOUND"   INPUT FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_ListExploder_2_LIST_FOUND_0_0TeSemTedJg="   INPUT FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_ListExploder_LIST_FOUND_0_9wT/dk6tzVU="   OUTPUT FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_ListExploder_3_LIST_FOUND_649"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_ListExploder_3_LIST_FOUND_6491450163228 Output Collector"   INPUT FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_ListExploder_2_LIST_FOUND_1_0TeSemTedJg="   INPUT FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_ListExploder_3_LIST_FOUND"   INPUT FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_ListExploder_LIST_FOUND_0_9wT/dk6tzVU="   OUTPUT FEATURE_TYPE "$(HinWeiDok_Iterationen_WORKSPACE_NAME)_ListExploder_3_LIST_FOUND_649"
 INCLUDE [puts {MACRO WB_CURRENT_CONTEXT $(WB_OLD_CONTEXT_$(HinWeiDok_Iterationen_WORKSPACE_NAME))}]
 FACTORY_DEF * TeeFactory   FACTORY_NAME "HinWeiDok_Iterationen ListExploder_3_LIST_FOUND_649 Output Renamer/Nuker"   INPUT FEATURE_TYPE HinWeiDok_Iterationen_ListExploder_3_LIST_FOUND_649   OUTPUT FEATURE_TYPE HinWeiDok_Iterationen_ListExploder_3_LIST_FOUND_649
 # -------------------------------------------------------------------------
@@ -5181,26 +5214,9 @@ FACTORY_DEF * TeeFactory   FACTORY_NAME "HinWeiDok_Iterationen ListExploder_3_LI
 
 FME_PYTHON_PATH "$(FME_MF_DIR)"
 
-FACTORY_DEF * PythonFactory    FACTORY_NAME PythonCaller    INPUT  FEATURE_TYPE HinWeiDok_Iterationen_ListExploder_3_LIST_FOUND_649    INPUT  FEATURE_TYPE FeatureMerger_20_COMPLETE_1_+6LFYDMTLz4=    SYMBOL_NAME processFeature    PYTHON_NAMESPACE FMEOBJECTS    SOURCE_CODE #<space>-*-<space>coding:<space>latin-1<space>-*-<lf>import<space>fmeobjects<lf>import<space>os<lf><lf>def<space>processFeature<openparen>feature<closeparen>:<lf><space><space><space><space>vorschriftsart<space>=<space>str<openparen>feature.getAttribute<openparen><apos>Art_Doku<apos><closeparen><closeparen><lf><space><space><space><space><lf><space><space><space><space>#<space>Nur<space>Typ<space><quote>Rechtsvorschrift<quote><space>muss<space>ein<space>PDF<space>haben<lf><space><space><space><space>if<space>vorschriftsart<space>==<space><apos>0<apos>:<lf><space><space><space><space><space><space><space><space>filename<space>=<space>feature.getAttribute<openparen><apos>Dokument<apos><closeparen><lf><space><space><space><space><space><space><space><space><lf><space><space><space><space><space><space><space><space>outputURL<space>=<space>FME_MacroValues<openbracket><apos>OUTPUT_RV_URL<apos><closebracket><space>+<space>filename<lf><space><space><space><space><space><space><space><space><lf><space><space><space><space><space><space><space><space>inputFile<space>=<space>os.path.join<openparen>FME_MacroValues<openbracket><apos>INPUT_RV_DIR<apos><closebracket><comma><space>filename<closeparen><lf><space><space><space><space><space><space><space><space>inputFile<space>=<space>inputFile.replace<openparen><apos><backslash><backslash><apos><comma><apos><solidus><apos><closeparen><lf><space><space><space><space><space><space><space><space><lf><space><space><space><space><space><space><space><space>outputDir<space>=<space>FME_MacroValues<openbracket><apos>OUTPUT_RV_DIR<apos><closebracket>.replace<openparen><apos><backslash><backslash><apos><comma><apos><solidus><apos><closeparen><lf><lf><space><space><space><space><space><space><space><space>feature.setAttribute<openparen><apos>TEXTIMWEB<apos><comma><space>outputURL<closeparen><lf><space><space><space><space><space><space><space><space>feature.setAttribute<openparen><apos>filecopy_source_dataset<apos><comma><space>inputFile<closeparen><lf><space><space><space><space><space><space><space><space>feature.setAttribute<openparen><apos>filecopy_dest_dataset<apos><comma><space>outputDir<closeparen>    OUTPUT PYOUTPUT FEATURE_TYPE PythonCaller_OUTPUT
+FACTORY_DEF * PythonFactory    FACTORY_NAME PythonCaller    INPUT  FEATURE_TYPE FeatureMerger_20_COMPLETE_0_+6LFYDMTLz4=    INPUT  FEATURE_TYPE HinWeiDok_Iterationen_ListExploder_3_LIST_FOUND_649    SYMBOL_NAME processFeature    PYTHON_NAMESPACE FMEOBJECTS    SOURCE_CODE #<space>-*-<space>coding:<space>latin-1<space>-*-<lf>import<space>fmeobjects<lf>import<space>os<lf><lf>def<space>processFeature<openparen>feature<closeparen>:<lf><space><space><space><space>vorschriftsart<space>=<space>str<openparen>feature.getAttribute<openparen><apos>Art_Doku<apos><closeparen><closeparen><lf><space><space><space><space><lf><space><space><space><space>#<space>Nur<space>Typ<space><quote>Rechtsvorschrift<quote><space>muss<space>ein<space>PDF<space>haben<lf><space><space><space><space>if<space>vorschriftsart<space>==<space><apos>0<apos>:<lf><space><space><space><space><space><space><space><space>filename<space>=<space>feature.getAttribute<openparen><apos>Dokument<apos><closeparen><lf><space><space><space><space><space><space><space><space><lf><space><space><space><space><space><space><space><space>outputURL<space>=<space>FME_MacroValues<openbracket><apos>OUTPUT_RV_URL<apos><closebracket><space>+<space>filename<lf><space><space><space><space><space><space><space><space><lf><space><space><space><space><space><space><space><space>inputFile<space>=<space>os.path.join<openparen>FME_MacroValues<openbracket><apos>INPUT_RV_DIR<apos><closebracket><comma><space>filename<closeparen><lf><space><space><space><space><space><space><space><space>inputFile<space>=<space>inputFile.replace<openparen><apos><backslash><backslash><apos><comma><apos><solidus><apos><closeparen><lf><space><space><space><space><space><space><space><space><lf><space><space><space><space><space><space><space><space>outputDir<space>=<space>FME_MacroValues<openbracket><apos>OUTPUT_RV_DIR<apos><closebracket>.replace<openparen><apos><backslash><backslash><apos><comma><apos><solidus><apos><closeparen><lf><lf><space><space><space><space><space><space><space><space>feature.setAttribute<openparen><apos>TEXTIMWEB<apos><comma><space>outputURL<closeparen><lf><space><space><space><space><space><space><space><space>feature.setAttribute<openparen><apos>filecopy_source_dataset<apos><comma><space>inputFile<closeparen><lf><space><space><space><space><space><space><space><space>feature.setAttribute<openparen><apos>filecopy_dest_dataset<apos><comma><space>outputDir<closeparen>    OUTPUT PYOUTPUT FEATURE_TYPE PythonCaller_OUTPUT
 
 FACTORY_DEF * TeeFactory   FACTORY_NAME "PythonCaller OUTPUT Splitter"   INPUT FEATURE_TYPE PythonCaller_OUTPUT   OUTPUT FEATURE_TYPE PythonCaller_OUTPUT_0_oCFN77Xe1JY=   OUTPUT FEATURE_TYPE PythonCaller_OUTPUT_1_oCFN77Xe1JY=
-# -------------------------------------------------------------------------
-Lookup AttributeValueMapper_17_LOOKUP_TABLE   0               Rechtsvorschrift   1               Hinweis   ""              ""   ENCODED_SUPPORTUNICODE
-
-FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeValueMapper_17    INPUT  FEATURE_TYPE PythonCaller_OUTPUT_0_oCFN77Xe1JY=    OUTPUT FEATURE_TYPE AttributeValueMapper_17_OUTPUT         @Lookup(AttributeValueMapper_17_LOOKUP_TABLE,"Art_Doku",FORWARD|ENCODED_ATTR, ART)
-
-
-# -------------------------------------------------------------------------
-
-INCLUDE [    set macroLine "MACRO AttributeRemover_5_LIST_EXP ";    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "{\[0-9\]+}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
-FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRemover_5    INPUT  FEATURE_TYPE AttributeValueMapper_17_OUTPUT    OUTPUT FEATURE_TYPE AttributeRemover_5_OUTPUT        @RemoveAttributes(Vorschrift,xtf_id,Art_Doku,Dokument,Ursprung,Hinweis,_element_index,filecopy_source_dataset,filecopy_dest_dataset)        @RemoveAttributes(fme_regexp_match"$(AttributeRemover_5_LIST_EXP)")
-
-# -------------------------------------------------------------------------
-
-DEFAULT_MACRO Aggregator_2_BREAK_ATTR
-INCLUDE [if {"No" == "Yes"} {puts {MACRO Aggregator_2_BREAK_ATTR BREAK_BEFORE_FIELD_CHANGE ARTIKELNR RELID BFSNR NAME TITEL OFFIZTITEL ABKUERZUNG OFFIZNR TEXTIMWEB ART} }]
-FACTORY_DEF * AggregateFactory    FACTORY_NAME Aggregator_2    INPUT  FEATURE_TYPE AttributeRemover_5_OUTPUT    MODE ONE_LEVEL    GROUP_BY ARTIKELNR RELID BFSNR NAME TITEL OFFIZTITEL ABKUERZUNG OFFIZNR TEXTIMWEB ART    $(Aggregator_2_BREAK_ATTR)    ACCUMULATE_ATTRIBUTES Never    SEPARATOR <comma>    PRODUCE_MULTIS YES    OUTPUT AGGREGATE FEATURE_TYPE Aggregator_2_AGGREGATE         @Geometry(SET_TO_CONTAIN_INDIVIDUAL_GEOMS, NO)
-
 # -------------------------------------------------------------------------
 Lookup AttributeFilter_4_AttributeFilterLut   0 ok   "" notok   ENCODED
 
@@ -5222,6 +5238,23 @@ INCLUDE [if {"No" == "Yes"} {puts {MACRO Aggregator_BREAK_ATTR BREAK_BEFORE_FIEL
 FACTORY_DEF * AggregateFactory    FACTORY_NAME Aggregator    INPUT  FEATURE_TYPE AttributeRemover_47_OUTPUT    MODE ONE_LEVEL    GROUP_BY filecopy_source_dataset filecopy_dest_dataset    $(Aggregator_BREAK_ATTR)    ACCUMULATE_ATTRIBUTES Never    SEPARATOR <comma>    PRODUCE_MULTIS YES    OUTPUT AGGREGATE FEATURE_TYPE Aggregator_AGGREGATE         @Geometry(SET_TO_CONTAIN_INDIVIDUAL_GEOMS, NO)
 
 # -------------------------------------------------------------------------
+Lookup AttributeValueMapper_17_LOOKUP_TABLE   0               Rechtsvorschrift   1               Hinweis   ""              ""   ENCODED_SUPPORTUNICODE
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeValueMapper_17    INPUT  FEATURE_TYPE PythonCaller_OUTPUT_0_oCFN77Xe1JY=    OUTPUT FEATURE_TYPE AttributeValueMapper_17_OUTPUT         @Lookup(AttributeValueMapper_17_LOOKUP_TABLE,"Art_Doku",FORWARD|ENCODED_ATTR, ART)
+
+
+# -------------------------------------------------------------------------
+
+INCLUDE [    set macroLine "MACRO AttributeRemover_5_LIST_EXP ";    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "{\[0-9\]+}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
+FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRemover_5    INPUT  FEATURE_TYPE AttributeValueMapper_17_OUTPUT    OUTPUT FEATURE_TYPE AttributeRemover_5_OUTPUT        @RemoveAttributes(Vorschrift,xtf_id,Art_Doku,Dokument,Ursprung,Hinweis,_element_index,filecopy_source_dataset,filecopy_dest_dataset)        @RemoveAttributes(fme_regexp_match"$(AttributeRemover_5_LIST_EXP)")
+
+# -------------------------------------------------------------------------
+
+DEFAULT_MACRO Aggregator_2_BREAK_ATTR
+INCLUDE [if {"No" == "Yes"} {puts {MACRO Aggregator_2_BREAK_ATTR BREAK_BEFORE_FIELD_CHANGE ARTIKELNR RELID BFSNR NAME TITEL OFFIZTITEL ABKUERZUNG OFFIZNR TEXTIMWEB ART} }]
+FACTORY_DEF * AggregateFactory    FACTORY_NAME Aggregator_2    INPUT  FEATURE_TYPE AttributeRemover_5_OUTPUT    MODE ONE_LEVEL    GROUP_BY ARTIKELNR RELID BFSNR NAME TITEL OFFIZTITEL ABKUERZUNG OFFIZNR TEXTIMWEB ART    $(Aggregator_2_BREAK_ATTR)    ACCUMULATE_ATTRIBUTES Never    SEPARATOR <comma>    PRODUCE_MULTIS YES    OUTPUT AGGREGATE FEATURE_TYPE Aggregator_2_AGGREGATE         @Geometry(SET_TO_CONTAIN_INDIVIDUAL_GEOMS, NO)
+
+# -------------------------------------------------------------------------
 
 FACTORY_DEF * ReferenceFactory    FACTORY_NAME FeatureMerger    INPUT REFERENCER FEATURE_TYPE AttributeRemover_2_OUTPUT    INPUT REFERENCEE FEATURE_TYPE AttributeCreator_OUTPUT_1_olPiq+C1D00=    REFERENCE_INFO ATTRIBUTES    REFERENCEE_FIELDS "xtf_id"    REFERENCER_FIELDS "ZonentypRef"    MERGE_ATTRIBUTES Yes    MANAGE_FME_TYPE Yes    MODE COMPLETE    PROCESS_DUPLICATE_REFERENCEES No    BUILD_INCOMPLETE_REFERENCERS No    OUTPUT COMPLETE FEATURE_TYPE FeatureMerger_COMPLETE
 
@@ -5232,9 +5265,14 @@ FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeValueMapper    INPUT  FEATURE_
 
 
 # -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRenamer_3    INPUT  FEATURE_TYPE AttributeValueMapper_OUTPUT    OUTPUT FEATURE_TYPE AttributeRenamer_3_OUTPUT         @RenameAttributes(ATTR_LIST_DEF_VAL, KantArt,_kantart,"")
+
+
+# -------------------------------------------------------------------------
 Lookup AttributeValueMapper_2_LOOKUP_TABLE   28              <u00dc>berbauungsordnung   ""              ""   ENCODED_SUPPORTUNICODE
 
-FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeValueMapper_2    INPUT  FEATURE_TYPE AttributeValueMapper_OUTPUT    OUTPUT FEATURE_TYPE AttributeValueMapper_2_OUTPUT         @Lookup(AttributeValueMapper_2_LOOKUP_TABLE,"KantArt",FORWARD|ENCODED_ATTR, KANTART)
+FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeValueMapper_2    INPUT  FEATURE_TYPE AttributeRenamer_3_OUTPUT    OUTPUT FEATURE_TYPE AttributeValueMapper_2_OUTPUT         @Lookup(AttributeValueMapper_2_LOOKUP_TABLE,"_kantart",FORWARD|ENCODED_ATTR, KANTART)
 
 
 # -------------------------------------------------------------------------
