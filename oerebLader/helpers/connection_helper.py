@@ -13,6 +13,7 @@ def create_connection_files(config, key, logger):
     sde_filename = key + ".sde"
     connection_file = os.path.join(temp_directory, sde_filename)
     logger.info("Erzeuge Connectionfile " + connection_file)
+    logger.info("Verwende Datenbank " + database)
     arcpy.CreateDatabaseConnection_management(temp_directory, sde_filename, "ORACLE", database, "DATABASE_AUTH", username, password )
     return connection_file
 
