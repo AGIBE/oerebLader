@@ -12,6 +12,8 @@ import oerebLader.workflows.w10_sizoplan
 import oerebLader.workflows.w11_prjzflug
 import sys
 
+#TODO: Import NPLKSTRA mit THE_ID=20 umsetzen
+
 def run_workflow(ticketnr):
     config = oerebLader.helpers.config.get_config()
     if is_valid_ticket(ticketnr, config):
