@@ -19,7 +19,7 @@
 #    
 #! PASSWORD=""
 #! ATTR_TYPE_ENCODING="SDF"
-#! VIEW_POSITION="-2 -300"
+#! VIEW_POSITION="0 -63"
 #! SHOW_INFO_NODES="true"
 #! FME_STROKE_MAX_DEVIATION="0"
 #! BEGIN_PYTHON=""
@@ -37,13 +37,13 @@
 #! USAGE=""
 #! END_PYTHON=""
 #! HISTORY=""
-#! FME_DOCUMENT_PRIORGUID="270e2a2d-6fa1-4c41-8efc-ba3978f9bf26,09cf54ad-807f-4cf7-99d4-98e17b782a5e,4c763882-3cf6-4ea0-be63-3b7b7797cf20,30205540-57a1-4e37-8dcb-1c588def0faf"
+#! FME_DOCUMENT_PRIORGUID="270e2a2d-6fa1-4c41-8efc-ba3978f9bf26,09cf54ad-807f-4cf7-99d4-98e17b782a5e,4c763882-3cf6-4ea0-be63-3b7b7797cf20,30205540-57a1-4e37-8dcb-1c588def0faf,d7df1ff4-5e25-4587-a415-86b0c8caa616"
 #! DOC_TOP_LEFT="34 -4516"
 #! REQUIREMENTS_KEYWORD=""
 #! SOURCE_ROUTING_FILE=""
 #! DESTINATION_ROUTING_FILE=""
 #! DESTINATION="NONE"
-#! LAST_SAVE_DATE="2015-12-09T14:08:06"
+#! LAST_SAVE_DATE="2015-12-23T07:57:46"
 #! FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
 #! WORKSPACE_VERSION="1"
 #! SOURCE="NONE"
@@ -54,7 +54,7 @@
 #! REQUIREMENTS=""
 #! BEGIN_TCL=""
 #! DOC_EXTENTS="7044 4452"
-#! FME_DOCUMENT_GUID="d7df1ff4-5e25-4587-a415-86b0c8caa616"
+#! FME_DOCUMENT_GUID="2fc189f5-8cb8-4263-be18-421bb785cf89"
 #! SHOW_ANNOTATIONS="true"
 #! IGNORE_READER_FAILURE="No"
 #! WARN_INVALID_XFORM_PARAM="Yes"
@@ -2350,7 +2350,7 @@
 #! <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_VALUE="&lt;Unused&gt;"/>
 #! <XFORM_PARM PARM_NAME="NUM_SUBSEQUENT_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
 #! <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
-#! <XFORM_PARM PARM_NAME="ATTR_LIST" PARM_VALUE="RES_ID,1,DAR_OID,GEODB.NPLKUEO_UEKUEO,THE_ID,1,EIB_SORT,10000"/>
+#! <XFORM_PARM PARM_NAME="ATTR_LIST" PARM_VALUE="RES_ID,1,DAR_OID,GEODB.NPLKUEO_UEKUEO,THE_ID,19,EIB_SORT,10000"/>
 #! </TRANSFORMER>
 #! </TRANSFORMERS>
 #! <FEAT_LINKS>
@@ -3290,7 +3290,7 @@ FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRenamer_15    INPUT  FEATURE_T
 
 
 # -------------------------------------------------------------------------
-FACTORY_DEF * AttrSetFactory FACTORY_NAME AttributeCreator_16 INPUT  FEATURE_TYPE AttributeRenamer_15_OUTPUT ATTR RES_ID 1 ATTR DAR_OID GEODB.NPLKUEO_UEKUEO ATTR THE_ID 1 ATTR EIB_SORT 10000    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_16_OUTPUT 
+FACTORY_DEF * AttrSetFactory FACTORY_NAME AttributeCreator_16 INPUT  FEATURE_TYPE AttributeRenamer_15_OUTPUT ATTR RES_ID 1 ATTR DAR_OID GEODB.NPLKUEO_UEKUEO ATTR THE_ID 19 ATTR EIB_SORT 10000    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_16_OUTPUT 
 # -------------------------------------------------------------------------
 
 FACTORY_DEF * TeeFactory    FACTORY_NAME UUIDGenerator    INPUT  FEATURE_TYPE AttributeCreator_16_OUTPUT    OUTPUT FEATURE_TYPE UUIDGenerator_OUTPUT         "FLA_OID" @UUID()
@@ -3303,6 +3303,23 @@ FACTORY_DEF * TeeFactory    FACTORY_NAME TimeStamper    INPUT  FEATURE_TYPE UUID
 # -------------------------------------------------------------------------
 FACTORY_DEF * AttrSetFactory FACTORY_NAME AttributeCreator INPUT  FEATURE_TYPE TimeStamper_OUTPUT ATTR EIB_AUSSAGE_FR <at>Value<openparen>EIB_AUSSAGE_DE<closeparen> ATTR EIB_PUBLIZIERTAB <at>Value<openparen>FLA_PUBLIZIERTAB<closeparen> ATTR RES_ID 1 ATTR FLA_LIEFEREINHEIT $(LIEFEREINHEIT$encode) ATTR EIB_LIEFEREINHEIT $(LIEFEREINHEIT$encode) ATTR AMT_OID ch.be.jgk.agr ATTR LIN_OID <at>Value<openparen>FLA_OID<closeparen> ATTR LIN_PUBLIZIERTAB <at>Value<openparen>FLA_PUBLIZIERTAB<closeparen> ATTR LIN_LIEFEREINHEIT $(LIEFEREINHEIT$encode) ATTR PUN_OID <at>Value<openparen>FLA_OID<closeparen> ATTR PUN_PUBLIZIERTAB <at>Value<openparen>FLA_PUBLIZIERTAB<closeparen> ATTR PUN_LIEFEREINHEIT $(LIEFEREINHEIT$encode)    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_OUTPUT 
 FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeCreator OUTPUT Splitter"   INPUT FEATURE_TYPE AttributeCreator_OUTPUT   OUTPUT FEATURE_TYPE AttributeCreator_OUTPUT_0_olPiq+C1D00=   OUTPUT FEATURE_TYPE AttributeCreator_OUTPUT_1_olPiq+C1D00=
+# -------------------------------------------------------------------------
+
+INCLUDE [    set macroLine "MACRO AttributeRemover_LIST_EXP ";    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "{\[0-9\]+}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
+FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRemover    INPUT  FEATURE_TYPE AttributeCreator_OUTPUT_0_olPiq+C1D00=    OUTPUT FEATURE_TYPE AttributeRemover_OUTPUT        @RemoveAttributes(BFSNR,FLA_OID,FLA_PUBLIZIERTAB,FLA_LIEFEREINHEIT,LIN_OID,LIN_PUBLIZIERTAB,LIN_LIEFEREINHEIT,PUN_OID,PUN_PUBLIZIERTAB,PUN_LIEFEREINHEIT)        @RemoveAttributes(fme_regexp_match"$(AttributeRemover_LIST_EXP)")
+
+# -------------------------------------------------------------------------
+
+DEFAULT_MACRO Aggregator_BREAK_ATTR
+INCLUDE [if {"No" == "Yes"} {puts {MACRO Aggregator_BREAK_ATTR BREAK_BEFORE_FIELD_CHANGE EIB_OID EIB_AUSSAGE_DE EIB_ARTCODE RES_ID DAR_OID THE_ID EIB_SORT EIB_AUSSAGE_FR EIB_PUBLIZIERTAB EIB_LIEFEREINHEIT AMT_OID} }]
+FACTORY_DEF * AggregateFactory    FACTORY_NAME Aggregator    INPUT  FEATURE_TYPE AttributeRemover_OUTPUT    MODE ONE_LEVEL    GROUP_BY EIB_OID EIB_AUSSAGE_DE EIB_ARTCODE RES_ID DAR_OID THE_ID EIB_SORT EIB_AUSSAGE_FR EIB_PUBLIZIERTAB EIB_LIEFEREINHEIT AMT_OID    $(Aggregator_BREAK_ATTR)    ACCUMULATE_ATTRIBUTES Never    SEPARATOR <comma>    PRODUCE_MULTIS YES    OUTPUT AGGREGATE FEATURE_TYPE Aggregator_AGGREGATE         @Geometry(SET_TO_CONTAIN_INDIVIDUAL_GEOMS, NO)
+
+FACTORY_DEF * TeeFactory   FACTORY_NAME "Aggregator AGGREGATE Splitter"   INPUT FEATURE_TYPE Aggregator_AGGREGATE   OUTPUT FEATURE_TYPE Aggregator_AGGREGATE_0_qtKD1R8siTs=   OUTPUT FEATURE_TYPE Aggregator_AGGREGATE_1_qtKD1R8siTs=
+# -------------------------------------------------------------------------
+
+INCLUDE [    set macroLine "MACRO AttributeRemover_2_LIST_EXP ";    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "{\[0-9\]+}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
+FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRemover_2    INPUT  FEATURE_TYPE Aggregator_AGGREGATE_1_qtKD1R8siTs=    OUTPUT FEATURE_TYPE AttributeRemover_2_OUTPUT        @RemoveAttributes(EIB_AUSSAGE_DE,EIB_ARTCODE,RES_ID,DAR_OID,THE_ID,EIB_SORT,EIB_AUSSAGE_FR,EIB_PUBLIZIERTAB,EIB_LIEFEREINHEIT,AMT_OID)        @RemoveAttributes(fme_regexp_match"$(AttributeRemover_2_LIST_EXP)")
+
 # -------------------------------------------------------------------------
 
 INCLUDE [    if {"No" == "Yes"} {       puts "MACRO COLLECTION_HANDLING *";    } else {       puts "MACRO COLLECTION_HANDLING NOT_THIS_TIME";    } ]
@@ -3336,26 +3353,9 @@ FACTORY_DEF * TeeFactory    FACTORY_NAME GeometryFilter_InputPassThrough    INPU
 FACTORY_DEF * TestFactory    FACTORY_NAME GeometryFilter_InstanceTest    INPUT FEATURE_TYPE GeometryFilter___AllInput___    TEST @Geometry(IS_GEOMETRY_INSTANCE) == 1    OUTPUT FAILED FEATURE_TYPE GeometryFilter___RestInput___
 FACTORY_DEF $(COLLECTION_HANDLING) TestFactory    FACTORY_NAME GeometryFilter_CollectionTest    INPUT FEATURE_TYPE GeometryFilter___RestInput___    TEST &fme_type == "fme_collection"    OUTPUT FAILED FEATURE_TYPE GeometryFilter___Not_Collection___    OUTPUT PASSED FEATURE_TYPE GeometryFilter___Collection___
 FACTORY_DEF $(COLLECTION_HANDLING) DeaggregateFactory    FACTORY_NAME GeometryFilter_Deagg    INPUT FEATURE_TYPE GeometryFilter___Collection___    HOMOGENIZE_COLLECTIONS YES    RECURSIVE YES    SET_FME_TYPE YES    OUTPUT POINT FEATURE_TYPE GeometryFilter___HomogeneousAggregate___    OUTPUT LINE FEATURE_TYPE GeometryFilter___HomogeneousAggregate___    OUTPUT POLYGON FEATURE_TYPE GeometryFilter___HomogeneousAggregate___    OUTPUT DONUT FEATURE_TYPE GeometryFilter___HomogeneousAggregate___    OUTPUT AGGREGATE FEATURE_TYPE GeometryFilter___HomogeneousAggregate___
-FACTORY_DEF * TeeFactory    FACTORY_NAME GeometryFilter_RouterPrepper    INPUT FEATURE_TYPE GeometryFilter___HomogeneousAggregate___    INPUT FEATURE_TYPE GeometryFilter___Not_Collection___    INPUT FEATURE_TYPE GeometryFilter___RestInput___    OUTPUT FEATURE_TYPE GeometryFilter___Prepped___        GeometryFilter_a457facf_f647_49da_9283_d136e58e9b8f0_targetFeatureType @Lookup(GeometryFilter_RouterTable,&fme_type)
+FACTORY_DEF * TeeFactory    FACTORY_NAME GeometryFilter_RouterPrepper    INPUT FEATURE_TYPE GeometryFilter___HomogeneousAggregate___    INPUT FEATURE_TYPE GeometryFilter___Not_Collection___    INPUT FEATURE_TYPE GeometryFilter___RestInput___    OUTPUT FEATURE_TYPE GeometryFilter___Prepped___        GeometryFilter_f2121178_8e05_4699_8e8c_c7328d7620950_targetFeatureType @Lookup(GeometryFilter_RouterTable,&fme_type)
 
-FACTORY_DEF * TestFactory    FACTORY_NAME GeometryFilter_Router    INPUT FEATURE_TYPE GeometryFilter___Prepped___    TEST &GeometryFilter_a457facf_f647_49da_9283_d136e58e9b8f0_targetFeatureType != "x"    OUTPUT PASSED FEATURE_TYPE * @FeatureType(&GeometryFilter_a457facf_f647_49da_9283_d136e58e9b8f0_targetFeatureType)                                 @RemoveAttributes(GeometryFilter_a457facf_f647_49da_9283_d136e58e9b8f0_targetFeatureType)
-
-# -------------------------------------------------------------------------
-
-INCLUDE [    set macroLine "MACRO AttributeRemover_LIST_EXP ";    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "{\[0-9\]+}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
-FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRemover    INPUT  FEATURE_TYPE AttributeCreator_OUTPUT_0_olPiq+C1D00=    OUTPUT FEATURE_TYPE AttributeRemover_OUTPUT        @RemoveAttributes(BFSNR,FLA_OID,FLA_PUBLIZIERTAB,FLA_LIEFEREINHEIT,LIN_OID,LIN_PUBLIZIERTAB,LIN_LIEFEREINHEIT,PUN_OID,PUN_PUBLIZIERTAB,PUN_LIEFEREINHEIT)        @RemoveAttributes(fme_regexp_match"$(AttributeRemover_LIST_EXP)")
-
-# -------------------------------------------------------------------------
-
-DEFAULT_MACRO Aggregator_BREAK_ATTR
-INCLUDE [if {"No" == "Yes"} {puts {MACRO Aggregator_BREAK_ATTR BREAK_BEFORE_FIELD_CHANGE EIB_OID EIB_AUSSAGE_DE EIB_ARTCODE RES_ID DAR_OID THE_ID EIB_SORT EIB_AUSSAGE_FR EIB_PUBLIZIERTAB EIB_LIEFEREINHEIT AMT_OID} }]
-FACTORY_DEF * AggregateFactory    FACTORY_NAME Aggregator    INPUT  FEATURE_TYPE AttributeRemover_OUTPUT    MODE ONE_LEVEL    GROUP_BY EIB_OID EIB_AUSSAGE_DE EIB_ARTCODE RES_ID DAR_OID THE_ID EIB_SORT EIB_AUSSAGE_FR EIB_PUBLIZIERTAB EIB_LIEFEREINHEIT AMT_OID    $(Aggregator_BREAK_ATTR)    ACCUMULATE_ATTRIBUTES Never    SEPARATOR <comma>    PRODUCE_MULTIS YES    OUTPUT AGGREGATE FEATURE_TYPE Aggregator_AGGREGATE         @Geometry(SET_TO_CONTAIN_INDIVIDUAL_GEOMS, NO)
-
-FACTORY_DEF * TeeFactory   FACTORY_NAME "Aggregator AGGREGATE Splitter"   INPUT FEATURE_TYPE Aggregator_AGGREGATE   OUTPUT FEATURE_TYPE Aggregator_AGGREGATE_0_qtKD1R8siTs=   OUTPUT FEATURE_TYPE Aggregator_AGGREGATE_1_qtKD1R8siTs=
-# -------------------------------------------------------------------------
-
-INCLUDE [    set macroLine "MACRO AttributeRemover_2_LIST_EXP ";    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "{\[0-9\]+}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
-FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRemover_2    INPUT  FEATURE_TYPE Aggregator_AGGREGATE_0_qtKD1R8siTs=    OUTPUT FEATURE_TYPE AttributeRemover_2_OUTPUT        @RemoveAttributes(EIB_AUSSAGE_DE,EIB_ARTCODE,RES_ID,DAR_OID,THE_ID,EIB_SORT,EIB_AUSSAGE_FR,EIB_PUBLIZIERTAB,EIB_LIEFEREINHEIT,AMT_OID)        @RemoveAttributes(fme_regexp_match"$(AttributeRemover_2_LIST_EXP)")
+FACTORY_DEF * TestFactory    FACTORY_NAME GeometryFilter_Router    INPUT FEATURE_TYPE GeometryFilter___Prepped___    TEST &GeometryFilter_f2121178_8e05_4699_8e8c_c7328d7620950_targetFeatureType != "x"    OUTPUT PASSED FEATURE_TYPE * @FeatureType(&GeometryFilter_f2121178_8e05_4699_8e8c_c7328d7620950_targetFeatureType)                                 @RemoveAttributes(GeometryFilter_f2121178_8e05_4699_8e8c_c7328d7620950_targetFeatureType)
 
 # -------------------------------------------------------------------------
 
@@ -3392,13 +3392,13 @@ FACTORY_DEF * ReferenceFactory    FACTORY_NAME FeatureMerger    INPUT REFERENCER
 FACTORY_DEF * TeeFactory   FACTORY_NAME "FeatureMerger MERGED Splitter"   INPUT FEATURE_TYPE FeatureMerger_MERGED   OUTPUT FEATURE_TYPE FeatureMerger_MERGED_0_dtOzL5vgfW4=   OUTPUT FEATURE_TYPE FeatureMerger_MERGED_1_dtOzL5vgfW4=
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * TeeFactory    FACTORY_NAME "FeatureMerger_MERGED_1_dtOzL5vgfW4= -> OEREB.HINVOR Correlator"    INPUT FEATURE_TYPE FeatureMerger_MERGED_1_dtOzL5vgfW4=    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 1       @Transform(FME_GENERIC,ORACLE8I_DB)       @SupplyAttributes(ENCODED,__wb_out_feat_type__,OEREB.HINVOR)
+FACTORY_DEF * TeeFactory    FACTORY_NAME "FeatureMerger_MERGED_0_dtOzL5vgfW4= -> OEREB.HINVOR Correlator"    INPUT FEATURE_TYPE FeatureMerger_MERGED_0_dtOzL5vgfW4=    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 1       @Transform(FME_GENERIC,ORACLE8I_DB)       @SupplyAttributes(ENCODED,__wb_out_feat_type__,OEREB.HINVOR)
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * TeeFactory    FACTORY_NAME "Aggregator_AGGREGATE_1_qtKD1R8siTs= -> OEREB.EIGENTUMSBESCHRAENKUNG Correlator"    INPUT FEATURE_TYPE Aggregator_AGGREGATE_1_qtKD1R8siTs=    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 1       @Transform(FME_GENERIC,ORACLE8I_DB)       @SupplyAttributes(ENCODED,__wb_out_feat_type__,OEREB.EIGENTUMSBESCHRAENKUNG)
+FACTORY_DEF * TeeFactory    FACTORY_NAME "Aggregator_AGGREGATE_0_qtKD1R8siTs= -> OEREB.EIGENTUMSBESCHRAENKUNG Correlator"    INPUT FEATURE_TYPE Aggregator_AGGREGATE_0_qtKD1R8siTs=    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 1       @Transform(FME_GENERIC,ORACLE8I_DB)       @SupplyAttributes(ENCODED,__wb_out_feat_type__,OEREB.EIGENTUMSBESCHRAENKUNG)
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * TeeFactory    FACTORY_NAME "FeatureMerger_MERGED_0_dtOzL5vgfW4= -> OEREB.VORSCHRIFT Correlator"    INPUT FEATURE_TYPE FeatureMerger_MERGED_0_dtOzL5vgfW4=    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 1       @Transform(FME_GENERIC,ORACLE8I_DB)       @SupplyAttributes(ENCODED,__wb_out_feat_type__,OEREB.VORSCHRIFT)
+FACTORY_DEF * TeeFactory    FACTORY_NAME "FeatureMerger_MERGED_1_dtOzL5vgfW4= -> OEREB.VORSCHRIFT Correlator"    INPUT FEATURE_TYPE FeatureMerger_MERGED_1_dtOzL5vgfW4=    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 1       @Transform(FME_GENERIC,ORACLE8I_DB)       @SupplyAttributes(ENCODED,__wb_out_feat_type__,OEREB.VORSCHRIFT)
 # -------------------------------------------------------------------------
 
 FACTORY_DEF * TeeFactory    FACTORY_NAME "GeometryFilter_AREA -> OEREB.FLAECHE Correlator"    INPUT FEATURE_TYPE GeometryFilter_AREA    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 0       @Transform(FME_GENERIC,GEODATABASE_SDE)       @SupplyAttributes(ENCODED,__wb_out_feat_type__,OEREB.FLAECHE)
