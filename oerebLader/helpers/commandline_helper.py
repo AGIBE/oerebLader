@@ -4,7 +4,7 @@ import argparse
 from oerebLader import __version__
 import oerebLader.helpers.ticket_helper
 import oerebLader.workflows.workflow
-import oerebLader.release
+import oerebLader.release.release
 
 def import_ticket(args):
     oerebLader.workflows.workflow.run_workflow(args.TICKET)
