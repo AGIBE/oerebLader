@@ -4,10 +4,12 @@ import oerebLader.helpers.config
 import oerebLader.helpers.log_helper
 import oerebLader.helpers.connection_helper
 import oerebLader.helpers.sql_helper
+import oerebLader.helpers.fme_helper
 import os
 import datetime
 import logging
 import arcpy
+import fmeobjects
 
 def init_logging(config):
     log_directory = os.path.join(config['LOGGING']['basedir'], "release") 
