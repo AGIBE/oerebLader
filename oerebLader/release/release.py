@@ -46,9 +46,11 @@ def run_release(dailyMode):
     
     logger.info("Folgende Tickets werden released:")
     if dailyMode:
-        ticket_sql = "select ticket.ID, liefereinheit.ID, liefereinheit.NAME, liefereinheit.BFSNR, liefereinheit.GPRCODE from ticket left join liefereinheit on ticket.LIEFEREINHEIT=liefereinheit.id where ticket.STATUS=3 and ticket.ART=5"
+        valid_art = "=5"
     else:
-        ticket_sql = "select ticket.ID, liefereinheit.ID, liefereinheit.NAME, liefereinheit.BFSNR, liefereinheit.GPRCODE from ticket left join liefereinheit on ticket.LIEFEREINHEIT=liefereinheit.id where ticket.STATUS=3 and ticket.ART!=5"
+        valid_art = "!=5"
+    
+    ticket_sql = "select ticket.ID, liefereinheit.ID, liefereinheit.NAME, liefereinheit.BFSNR, liefereinheit.GPRCODE from ticket left join liefereinheit on ticket.LIEFEREINHEIT=liefereinheit.id where ticket.STATUS=3 and ticket.ART" + valid_art
     tickets = oerebLader.helpers.sql_helper.readSQL(config['OEREB_WORK']['connection_string'], ticket_sql)
     liefereinheiten = []
     #Geoprodukt kopieren
@@ -140,7 +142,32 @@ def run_release(dailyMode):
         logger.error("Import wird abgebrochen!")
         sys.exit()
                 
-    #TODO: GeoDB-Tabellen schreiben (Flag, Task)
+    # GeoDB-Tabellen schreiben (Flag, Task)
+    # sowie GeoDB-Taskid in die TICKET-Tabelle zurückschreiben
+    fme_script = os.path.splitext(__file__)[0] + "_geodb.fmw"
+    fme_logfile = oerebLader.helpers.fme_helper.prepare_fme_log(fme_script, config['LOGGING']['log_directory']) 
+    logger.info("Script " +  fme_script + " wird ausgeführt.")
+    logger.info("Das FME-Logfile heisst: " + fme_logfile)
+    runner = fmeobjects.FMEWorkspaceRunner()
+    # Der FMEWorkspaceRunner akzeptiert keine Unicode-Strings!
+    # Daher müssen workspace und parameters umgewandelt werden!
+    parameters = {
+        'WORK_DB': str(config['OEREB_WORK']['database']),
+        'WORK_USERNAME': str(config['OEREB_WORK']['username']),
+        'WORK_PASSWORD': str(config['OEREB_WORK']['password']),
+        'TEAM_DB': str(config['OEREB_TEAM']['database']),
+        'TEAM_USERNAME': str(config['OEREB_TEAM']['username']),
+        'TEAM_PASSWORD': str(config['OEREB_TEAM']['password']),
+        'ART_CLAUSE': str(valid_art),
+        'LOGFILE': str(fme_logfile)
+    }
+    try:
+        runner.runWithParameters(str(fme_script), parameters)
+    except fmeobjects.FMEException as ex:
+        logger.error("FME-Workbench " + fme_script + " konnte nicht ausgeführt werden!")
+        logger.error(ex)
+        logger.error("Import wird abgebrochen!")
+        sys.exit()
     
     # Connection-Files löschen
     oerebLader.helpers.connection_helper.delete_connection_files(config['GEODB_WORK']['connection_file'], logger)
