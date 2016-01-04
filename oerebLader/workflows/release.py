@@ -38,8 +38,13 @@ def run_release():
     logger.info("Folgende Tickets werden released:")
     ticket_sql = "select ticket.ID, liefereinheit.ID, liefereinheit.NAME, liefereinheit.BFSNR, liefereinheit.GPRCODE from ticket left join liefereinheit on ticket.LIEFEREINHEIT=liefereinheit.id where ticket.STATUS=3"
     tickets = oerebLader.helpers.sql_helper.readSQL(config['OEREB_WORK']['connection_string'], ticket_sql)
+    liefereinheiten = []
+    #Geoprodukt kopieren
+    logger.info("Das Geoprodukt wird freigegeben.")
     for ticket in tickets:
         logger.info("ID: " + unicode(ticket[0]) + "/ Liefereinheit: " + unicode(ticket[1]) + " / GPRCODE: " + ticket[4])
+        liefereinheiten.append(unicode(ticket[1]))
+        #TODO: im Fall NPL noch UZP und OEREBSTA einbauen
         gpr_sql = "SELECT EBECODE, FILTER_FIELD, FILTER_TYPE FROM GPR WHERE GPRCODE='" + ticket[4] + "'"
         ebenen = oerebLader.helpers.sql_helper.readSQL(config['OEREB_WORK']['connection_string'], gpr_sql)
         for ebene in ebenen:
@@ -83,6 +88,19 @@ def run_release():
             logger.info("Anzahl Features im Ziel-Layer: " + unicode(target_count))
             if source_count!=target_count:
                 logger.error("Fehler beim Kopieren. Anzahl Features in der Quelle und im Ziel sind nicht identisch!")
+    
+    # Transferstruktur kopieren
+    liefereinheiten_joined = "(" + ",".join(liefereinheiten) + ")"
+    oereb_sql = "SELECT EBECODE, FILTER_FIELD, FILTER_TYPE FROM GPR WHERE GPRCODE='OEREB'"
+    oereb_ebenen = oerebLader.helpers.sql_helper.readSQL(config['OEREB_WORK']['connection_string'], oereb_sql)
+    for oereb_ebene in oereb_ebenen:
+        oereb_delete_sql = "DELETE FROM %s WHERE %s IN %s" % (oereb_ebene[0], oereb_ebene[1], liefereinheiten_joined)
+        logger.info("Deleteing...")
+        logger.info(oereb_delete_sql)
+        oerebLader.helpers.sql_helper.writeSQL(config['OEREB_TEAM']['connection_string'], oereb_delete_sql)
+    logger.info("Löschen abgeschlossen.")
+    logger.info("Daten werden kopiert.") 
+
                 
     #TODO: Transferstruktur (enthält reine Oracle-Tabellen)
     #TODO: Ticket-Status erhöhen
