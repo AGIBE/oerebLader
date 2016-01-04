@@ -10,6 +10,7 @@ import datetime
 import logging
 import arcpy
 import fmeobjects
+import sys
 
 def init_logging(config):
     log_directory = os.path.join(config['LOGGING']['basedir'], "release") 
@@ -101,10 +102,32 @@ def run_release():
         logger.info(oereb_delete_sql)
         oerebLader.helpers.sql_helper.writeSQL(config['OEREB_TEAM']['connection_string'], oereb_delete_sql)
     logger.info("Löschen abgeschlossen.")
-    logger.info("Daten werden kopiert.") 
-
+    logger.info("Daten werden nun kopiert.")
+    fme_script = os.path.splitext(__file__)[0] + ".fmw"
+    fme_logfile = oerebLader.helpers.fme_helper.prepare_fme_log(fme_script, config['LOGGING']['log_directory']) 
+    logger.info("Script " +  fme_script + " wird ausgeführt.")
+    logger.info("Das FME-Logfile heisst: " + fme_logfile)
+    runner = fmeobjects.FMEWorkspaceRunner()
+    # Der FMEWorkspaceRunner akzeptiert keine Unicode-Strings!
+    # Daher müssen workspace und parameters umgewandelt werden!
+    parameters = {
+        'WORK_DB': str(config['OEREB_WORK']['database']),
+        'WORK_USERNAME': str(config['OEREB_WORK']['username']),
+        'WORK_PASSWORD': str(config['OEREB_WORK']['password']),
+        'TEAM_DB': str(config['OEREB_TEAM']['database']),
+        'TEAM_USERNAME': str(config['OEREB_TEAM']['username']),
+        'TEAM_PASSWORD': str(config['OEREB_TEAM']['password']),
+        'LIEFEREINHEIT': str(liefereinheiten_joined),
+        'LOGFILE': str(fme_logfile)
+    }
+    try:
+        runner.runWithParameters(str(fme_script), parameters)
+    except fmeobjects.FMEException as ex:
+        logger.error("FME-Workbench " + fme_script + " konnte nicht ausgeführt werden!")
+        logger.error(ex)
+        logger.error("Import wird abgebrochen!")
+        sys.exit()
                 
-    #TODO: Transferstruktur (enthält reine Oracle-Tabellen)
     #TODO: Ticket-Status erhöhen
     #TODO: GeoDB-Tabellen schreiben (Flag, Task)
     
