@@ -17,8 +17,13 @@ def init_logging(config):
     config['LOGGING']['log_directory'] = log_directory
     if not os.path.exists(log_directory):
         os.makedirs(log_directory)
-    logfile = os.path.join(log_directory, "release_" + datetime.datetime.now().strftime("_%Y_%m_%d_%H_%M_%S") + ".log")
-    
+    logfile = os.path.join(log_directory, "release_all.log")
+    # Wenn schon ein Logfile existiert, wird es umbenannt
+    if os.path.exists(logfile):
+        archive_logfile = "release" + datetime.datetime.now().strftime("_%Y_%m_%d_%H_%M_%S") + ".log"
+        archive_logfile = os.path.join(log_directory, archive_logfile)
+        os.rename(logfile, archive_logfile)
+        
     logger = logging.getLogger("oerebLaderLogger")
     logger.setLevel(logging.DEBUG)
     logger.handlers = []
@@ -28,7 +33,7 @@ def init_logging(config):
     
     return logger
 
-def run_release():
+def run_release(dailyMode):
     config = oerebLader.helpers.config.get_config()
     logger = init_logging(config)
     logger.info("Der Release wird initialisiert!")
@@ -40,7 +45,10 @@ def run_release():
     config['OEREB_TEAM']['connection_file'] = oerebLader.helpers.connection_helper.create_connection_files(config, 'OEREB_TEAM', logger)    
     
     logger.info("Folgende Tickets werden released:")
-    ticket_sql = "select ticket.ID, liefereinheit.ID, liefereinheit.NAME, liefereinheit.BFSNR, liefereinheit.GPRCODE from ticket left join liefereinheit on ticket.LIEFEREINHEIT=liefereinheit.id where ticket.STATUS=3"
+    if dailyMode:
+        ticket_sql = "select ticket.ID, liefereinheit.ID, liefereinheit.NAME, liefereinheit.BFSNR, liefereinheit.GPRCODE from ticket left join liefereinheit on ticket.LIEFEREINHEIT=liefereinheit.id where ticket.STATUS=3 and ticket.ART=5"
+    else:
+        ticket_sql = "select ticket.ID, liefereinheit.ID, liefereinheit.NAME, liefereinheit.BFSNR, liefereinheit.GPRCODE from ticket left join liefereinheit on ticket.LIEFEREINHEIT=liefereinheit.id where ticket.STATUS=3 and ticket.ART!=5"
     tickets = oerebLader.helpers.sql_helper.readSQL(config['OEREB_WORK']['connection_string'], ticket_sql)
     liefereinheiten = []
     #Geoprodukt kopieren
@@ -94,6 +102,9 @@ def run_release():
                 logger.error("Fehler beim Kopieren. Anzahl Features in der Quelle und im Ziel sind nicht identisch!")
     
     # Transferstruktur kopieren
+    # Doppelte Liefereinheiten entfernen
+    liefereinheiten = list(set(liefereinheiten))
+    # WHERE-Clause bilden
     liefereinheiten_joined = "(" + ",".join(liefereinheiten) + ")"
     oereb_sql = "SELECT EBECODE, FILTER_FIELD, FILTER_TYPE FROM GPR WHERE GPRCODE='OEREB'"
     oereb_ebenen = oerebLader.helpers.sql_helper.readSQL(config['OEREB_WORK']['connection_string'], oereb_sql)
@@ -129,7 +140,6 @@ def run_release():
         logger.error("Import wird abgebrochen!")
         sys.exit()
                 
-    #TODO: Ticket-Status erhöhen
     #TODO: GeoDB-Tabellen schreiben (Flag, Task)
     
     # Connection-Files löschen
@@ -137,3 +147,20 @@ def run_release():
     oerebLader.helpers.connection_helper.delete_connection_files(config['OEREB_WORK']['connection_file'], logger)
     oerebLader.helpers.connection_helper.delete_connection_files(config['NORM_TEAM']['connection_file'], logger)
     oerebLader.helpers.connection_helper.delete_connection_files(config['OEREB_TEAM']['connection_file'], logger)
+    
+    # Ticket-Status aktualisieren
+    logger.info("Ticket-Stati werden aktualisiert.")
+    for ticket in tickets:
+        logger.info("Ticket-Status des Tickets " + unicode(ticket[0]) + " wird auf 4 gesetzt!")
+        sql_update_ticket_status = "UPDATE ticket SET status=4 WHERE id=" + unicode(ticket[0])
+        try:
+            oerebLader.helpers.sql_helper.writeSQL(config['OEREB_WORK']['connection_string'], sql_update_ticket_status)
+        except Exception as ex:
+            logger.error("Fehler beim Updaten des Ticket-Status!")
+            logger.error(unicode(ex))
+            logger.error("Script wird abgebrochen!")
+            sys.exit()
+            
+    logger.info("Alle Ticket-Stati aktualisiert.")
+    logger.info("Release abgeschlossen.")
+    

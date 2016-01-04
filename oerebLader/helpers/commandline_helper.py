@@ -21,6 +21,10 @@ def list_tickets(args):
 def release(args):
     oerebLader.release.release.run_release()
     print("Release SUCCESSFUL!")
+    
+def release_daily(args):
+    oerebLader.release.release.run_release()
+    print("Release Tagesaktuell SUCCESSFUL!")
 
 def main():
     version_text = "oerebLader v" + __version__
@@ -37,8 +41,12 @@ def main():
     import_parser.set_defaults(func=import_ticket)
     
     # RELEASE-Befehl
-    release_parser = subparsers.add_parser('release', help='gibt alle anerkannten Tickets frei.')
+    release_parser = subparsers.add_parser('release', help='gibt alle anerkannten, nicht tagesaktuellen Tickets frei.')
     release_parser.set_defaults(func=release)
+    
+    # RELEASE_DAILY-Befehl
+    release_daily_parser = subparsers.add_parser("release_tagesaktuell", help='gibt alle tagesaktuellen Tickets frei.')
+    release_daily_parser.set_defaults(func=release_daily)
     
     args = parser.parse_args()
     args.func(args)
