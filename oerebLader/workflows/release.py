@@ -57,11 +57,19 @@ def run_release():
                     where_clause = ebene[1] + "=" + unicode(ticket[1])
                 delete_sql = delete_sql + " WHERE " + where_clause
             if arcpy.Describe(source).datasetType=='Table':
-                arcpy.MakeTableView_management(source, source_layer, where_clause)
-                arcpy.MakeTableView_management(target, target_layer, where_clause)
+                if where_clause == "":
+                    arcpy.MakeTableView_management(source, source_layer)
+                    arcpy.MakeTableView_management(target, target_layer)
+                else:
+                    arcpy.MakeTableView_management(source, source_layer, where_clause)
+                    arcpy.MakeTableView_management(target, target_layer, where_clause)
             else:
-                arcpy.MakeFeatureLayer_management(source, source_layer, where_clause)
-                arcpy.MakeFeatureLayer_management(target, target_layer, where_clause)
+                if where_clause == "":
+                    arcpy.MakeFeatureLayer_management(source, source_layer)
+                    arcpy.MakeFeatureLayer_management(target, target_layer)
+                else:
+                    arcpy.MakeFeatureLayer_management(source, source_layer, where_clause)
+                    arcpy.MakeFeatureLayer_management(target, target_layer, where_clause)
 
             logger.info("Deleting...")
             logger.info(delete_sql)
