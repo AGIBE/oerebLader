@@ -13,7 +13,8 @@ import fmeobjects
 import sys
 
 def init_logging(config):
-    log_directory = os.path.join(config['LOGGING']['basedir'], "release") 
+    log_directory = os.path.join(config['LOGGING']['basedir'], "release")
+    config['LOGGING']['log_directory'] = log_directory
     if not os.path.exists(log_directory):
         os.makedirs(log_directory)
     logfile = os.path.join(log_directory, "release_" + datetime.datetime.now().strftime("_%Y_%m_%d_%H_%M_%S") + ".log")
