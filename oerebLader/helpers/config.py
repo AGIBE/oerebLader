@@ -69,5 +69,6 @@ def get_config():
     create_connection_string(config, 'OEREB_WORK')
     create_connection_string(config, 'OEREB_TEAM')
     create_connection_string(config, 'NORM_TEAM')
+    create_connection_string(config, "GEODB_DD_TEAM")
 
     return config

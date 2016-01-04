@@ -19,11 +19,11 @@ def list_tickets(args):
             print(ticket)
             
 def release(args):
-    oerebLader.release.release.run_release()
+    oerebLader.release.release.run_release(False)
     print("Release SUCCESSFUL!")
     
 def release_daily(args):
-    oerebLader.release.release.run_release()
+    oerebLader.release.release.run_release(True)
     print("Release Tagesaktuell SUCCESSFUL!")
 
 def main():

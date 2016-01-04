@@ -155,9 +155,9 @@ def run_release(dailyMode):
         'WORK_DB': str(config['OEREB_WORK']['database']),
         'WORK_USERNAME': str(config['OEREB_WORK']['username']),
         'WORK_PASSWORD': str(config['OEREB_WORK']['password']),
-        'TEAM_DB': str(config['OEREB_TEAM']['database']),
-        'TEAM_USERNAME': str(config['OEREB_TEAM']['username']),
-        'TEAM_PASSWORD': str(config['OEREB_TEAM']['password']),
+        'TEAM_DB': str(config['GEODB_DD_TEAM']['database']),
+        'TEAM_USERNAME': str(config['GEODB_DD_TEAM']['username']),
+        'TEAM_PASSWORD': str(config['GEODB_DD_TEAM']['password']),
         'ART_CLAUSE': str(valid_art),
         'LOGFILE': str(fme_logfile)
     }
