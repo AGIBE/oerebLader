@@ -18,7 +18,7 @@
 #    
 #! PASSWORD=""
 #! ATTR_TYPE_ENCODING="SDF"
-#! VIEW_POSITION="-66 87"
+#! VIEW_POSITION="-444 471"
 #! SHOW_INFO_NODES="true"
 #! FME_STROKE_MAX_DEVIATION="0"
 #! BEGIN_PYTHON=""
@@ -36,13 +36,13 @@
 #! USAGE=""
 #! END_PYTHON=""
 #! HISTORY=""
-#! FME_DOCUMENT_PRIORGUID="70e6bf0c-87be-4e6a-b956-0501008f66db,9e2bdbd4-a09c-484c-98af-fe2ec2bdddf7,4179f80d-9510-4904-8a4c-0fb35661a8b5,2712c31b-0951-4b80-a405-82d29683742f"
-#! DOC_TOP_LEFT="12 -1817"
+#! FME_DOCUMENT_PRIORGUID="70e6bf0c-87be-4e6a-b956-0501008f66db,9e2bdbd4-a09c-484c-98af-fe2ec2bdddf7,4179f80d-9510-4904-8a4c-0fb35661a8b5,2712c31b-0951-4b80-a405-82d29683742f,73eeac10-b79e-45ca-a3d8-7f247d3863eb"
+#! DOC_TOP_LEFT="12 -1822"
 #! REQUIREMENTS_KEYWORD=""
 #! SOURCE_ROUTING_FILE=""
 #! DESTINATION_ROUTING_FILE=""
 #! DESTINATION="NONE"
-#! LAST_SAVE_DATE="2016-01-04T17:12:50"
+#! LAST_SAVE_DATE="2016-01-05T17:42:31"
 #! FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
 #! WORKSPACE_VERSION="1"
 #! SOURCE="NONE"
@@ -52,8 +52,8 @@
 #! LOG_FILE="$(LOGFILE)"
 #! REQUIREMENTS=""
 #! BEGIN_TCL=""
-#! DOC_EXTENTS="6891 1830"
-#! FME_DOCUMENT_GUID="73eeac10-b79e-45ca-a3d8-7f247d3863eb"
+#! DOC_EXTENTS="8851 1936"
+#! FME_DOCUMENT_GUID="a4e14f1f-97e1-4d4c-af8f-f8fe014de539"
 #! SHOW_ANNOTATIONS="true"
 #! IGNORE_READER_FAILURE="No"
 #! WARN_INVALID_XFORM_PARAM="Yes"
@@ -527,7 +527,7 @@
 #! IS_EDITABLE="true"
 #! IDENTIFIER="23"
 #! FEAT_GEOMTYPE="oracle_nil"
-#! POSITION="5097 -887"
+#! POSITION="7057 -892"
 #! ORDER="5e+014"
 #! COLLAPSED="false"
 #! KEYWORD="ORACLE8I_DB_2"
@@ -554,7 +554,7 @@
 #! IS_EDITABLE="true"
 #! IDENTIFIER="57"
 #! FEAT_GEOMTYPE="oracle_nil"
-#! POSITION="6903 -1372"
+#! POSITION="8863 -1377"
 #! ORDER="5e+014"
 #! COLLAPSED="false"
 #! KEYWORD="ORACLE8I_DB_3"
@@ -579,7 +579,7 @@
 #! IS_EDITABLE="true"
 #! IDENTIFIER="60"
 #! FEAT_GEOMTYPE="oracle_nil"
-#! POSITION="5085 -112"
+#! POSITION="7045 -117"
 #! ORDER="5e+014"
 #! COLLAPSED="false"
 #! KEYWORD="ORACLE8I_DB_1"
@@ -667,12 +667,12 @@
 #! <COMMENT
 #! IDENTIFIER="24"
 #! COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:11px; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;GEODB_DD.TB_FLAG_AGI&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
-#! POSITION="5098 -760"
+#! POSITION="7158 -770"
 #! ORDER="5e+014"
 #! FOLLOW_ANCHOR="true"
 #! INFO_NODE="false"
-#! TOP_LEFT="5098 -760"
-#! BOTTOM_RIGHT="5098 -760"
+#! TOP_LEFT="7158 -770"
+#! BOTTOM_RIGHT="7158 -770"
 #! COLOUR="1,1,0.784314,0.192157"
 #! SIZE_POLICY="8"
 #! COMMENT_TYPE="REGULAR"
@@ -681,12 +681,12 @@
 #! <COMMENT
 #! IDENTIFIER="36"
 #! COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:11px; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;TASK_OBJECTID holen&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
-#! POSITION="2638 -420"
+#! POSITION="4598 -425"
 #! ORDER="5e+014"
 #! FOLLOW_ANCHOR="true"
 #! INFO_NODE="false"
-#! TOP_LEFT="2638 -420"
-#! BOTTOM_RIGHT="2638 -420"
+#! TOP_LEFT="4598 -425"
+#! BOTTOM_RIGHT="4598 -425"
 #! COLOUR="1,1,0.784314,0.192157"
 #! SIZE_POLICY="8"
 #! COMMENT_TYPE="REGULAR"
@@ -695,12 +695,12 @@
 #! <COMMENT
 #! IDENTIFIER="37"
 #! COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:11px; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;FLAG_OBJECTID holen&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
-#! POSITION="3298 -32"
+#! POSITION="5258 -37"
 #! ORDER="5e+014"
 #! FOLLOW_ANCHOR="true"
 #! INFO_NODE="false"
-#! TOP_LEFT="3298 -32"
-#! BOTTOM_RIGHT="3298 -32"
+#! TOP_LEFT="5258 -37"
+#! BOTTOM_RIGHT="5258 -37"
 #! COLOUR="1,1,0.784314,0.192157"
 #! SIZE_POLICY="8"
 #! COMMENT_TYPE="REGULAR"
@@ -709,12 +709,12 @@
 #! <COMMENT
 #! IDENTIFIER="38"
 #! COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:11px; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Gruppieren nach GPR und TICKETART&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
-#! POSITION="2593 -42"
+#! POSITION="4553 -47"
 #! ORDER="5e+014"
 #! FOLLOW_ANCHOR="true"
 #! INFO_NODE="false"
-#! TOP_LEFT="2593 -42"
-#! BOTTOM_RIGHT="2593 -42"
+#! TOP_LEFT="4553 -47"
+#! BOTTOM_RIGHT="4553 -47"
 #! COLOUR="1,1,0.784314,0.192157"
 #! SIZE_POLICY="8"
 #! COMMENT_TYPE="REGULAR"
@@ -723,12 +723,12 @@
 #! <COMMENT
 #! IDENTIFIER="35"
 #! COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:11px; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:11px;&quot;&gt;GZS:OBJECTID holen&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
-#! POSITION="3271 -564"
+#! POSITION="5331 -574"
 #! ORDER="5e+014"
 #! FOLLOW_ANCHOR="true"
 #! INFO_NODE="false"
-#! TOP_LEFT="3271 -564"
-#! BOTTOM_RIGHT="3271 -564"
+#! TOP_LEFT="5331 -574"
+#! BOTTOM_RIGHT="5331 -574"
 #! COLOUR="1,1,0.784314,0.192157"
 #! SIZE_POLICY="8"
 #! COMMENT_TYPE="REGULAR"
@@ -737,12 +737,12 @@
 #! <COMMENT
 #! IDENTIFIER="40"
 #! COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:11px; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:11px;&quot;&gt;UC_STARTSTATUS holen&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
-#! POSITION="4047 -47"
+#! POSITION="6107 -57"
 #! ORDER="5e+014"
 #! FOLLOW_ANCHOR="true"
 #! INFO_NODE="false"
-#! TOP_LEFT="4047 -47"
-#! BOTTOM_RIGHT="4047 -47"
+#! TOP_LEFT="6107 -57"
+#! BOTTOM_RIGHT="6107 -57"
 #! COLOUR="1,1,0.784314,0.192157"
 #! SIZE_POLICY="8"
 #! COMMENT_TYPE="REGULAR"
@@ -751,16 +751,30 @@
 #! <COMMENT
 #! IDENTIFIER="62"
 #! COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:11px; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;GEODB_DD.TB_TASK&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
-#! POSITION="5086 13"
+#! POSITION="7146 2"
 #! ORDER="5e+014"
 #! FOLLOW_ANCHOR="true"
 #! INFO_NODE="false"
-#! TOP_LEFT="5086 13"
-#! BOTTOM_RIGHT="5086 13"
+#! TOP_LEFT="7146 2"
+#! BOTTOM_RIGHT="7146 2"
 #! COLOUR="1,1,0.784314,0.192157"
 #! SIZE_POLICY="8"
 #! COMMENT_TYPE="REGULAR"
 #! ANCHORED_NODE="60"
+#! />
+#! <COMMENT
+#! IDENTIFIER="69"
+#! COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:11px; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:11px;&quot;&gt;TICKETART=4 soll hier nicht weiterbearbeitet werden.&lt;/span&gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:11px;&quot;&gt;Es handelt sich um Aktualisierungen mit Zeitstand.&lt;/span&gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:11px;&quot;&gt;Hierbei werden die Einträge in TB_TASK und TB_FLAG_AGI&lt;/span&gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:11px;&quot;&gt;nicht vom oerebLader gemacht, sondern von der iLader-&lt;/span&gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:11px;&quot;&gt;Triggerfunktion.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#! POSITION="667 114"
+#! ORDER="5e+014"
+#! FOLLOW_ANCHOR="true"
+#! INFO_NODE="false"
+#! TOP_LEFT="667 114"
+#! BOTTOM_RIGHT="667 114"
+#! COLOUR="1,1,0.784314,0.196078"
+#! SIZE_POLICY="8"
+#! COMMENT_TYPE="REGULAR"
+#! ANCHORED_NODE="63"
 #! />
 #! </COMMENTS>
 #! <CONSTANTS>
@@ -770,8 +784,8 @@
 #! IDENTIFIER="18"
 #! NAME="Nachführungsdatum"
 #! DESCRIPTION="&lt;html&gt;&lt;body&gt;&lt;/body&gt;&lt;/html&gt;"
-#! TOP_LEFT="663 36"
-#! BOTTOM_RIGHT="2445 -774"
+#! TOP_LEFT="2623 30"
+#! BOTTOM_RIGHT="4405 -780"
 #! STICKY="false"
 #! COLOUR="0.211765,0.976471,0.239216"
 #! CONTENTS=""
@@ -780,8 +794,8 @@
 #! IDENTIFIER="48"
 #! NAME="GeoDB-DD-Informationen holen"
 #! DESCRIPTION="&lt;html&gt;&lt;body&gt;&lt;/body&gt;&lt;/html&gt;"
-#! TOP_LEFT="2490 75"
-#! BOTTOM_RIGHT="4656 -870"
+#! TOP_LEFT="4450 69"
+#! BOTTOM_RIGHT="6616 -876"
 #! STICKY="false"
 #! COLOUR="0.74902,0.054902,0.137255"
 #! CONTENTS=""
@@ -790,8 +804,8 @@
 #! IDENTIFIER="59"
 #! NAME="GeoDB-Taskid zurückschreiben"
 #! DESCRIPTION="&lt;html&gt;&lt;body&gt;&lt;/body&gt;&lt;/html&gt;"
-#! TOP_LEFT="4956 -1311"
-#! BOTTOM_RIGHT="6747 -2007"
+#! TOP_LEFT="6916 -1316"
+#! BOTTOM_RIGHT="8707 -2012"
 #! STICKY="false"
 #! COLOUR="0.301961,0.337255,0.121569"
 #! CONTENTS=""
@@ -833,7 +847,7 @@
 #! IDENTIFIER="2"
 #! TYPE="StatisticsCalculator"
 #! VERSION="6"
-#! POSITION="774 -378"
+#! POSITION="2734 -383"
 #! ORDER="5e+014"
 #! PARMS_EDITED="true"
 #! ENABLED="true"
@@ -908,7 +922,7 @@
 #! IDENTIFIER="8"
 #! TYPE="AttributeRemover"
 #! VERSION="0"
-#! POSITION="1338 -354"
+#! POSITION="3298 -359"
 #! ORDER="5e+014"
 #! PARMS_EDITED="true"
 #! ENABLED="true"
@@ -928,7 +942,7 @@
 #! IDENTIFIER="11"
 #! TYPE="FeatureMerger"
 #! VERSION="11"
-#! POSITION="1884 -159"
+#! POSITION="3844 -164"
 #! ORDER="5e+014"
 #! PARMS_EDITED="true"
 #! ENABLED="true"
@@ -980,7 +994,7 @@
 #! IDENTIFIER="12"
 #! TYPE="AttributeRemover"
 #! VERSION="0"
-#! POSITION="771 -112"
+#! POSITION="2731 -117"
 #! ORDER="5e+014"
 #! PARMS_EDITED="true"
 #! ENABLED="true"
@@ -1001,7 +1015,7 @@
 #! IDENTIFIER="20"
 #! TYPE="Aggregator"
 #! VERSION="11"
-#! POSITION="2640 -150"
+#! POSITION="4600 -155"
 #! ORDER="5e+014"
 #! PARMS_EDITED="true"
 #! ENABLED="true"
@@ -1043,7 +1057,7 @@
 #! IDENTIFIER="26"
 #! TYPE="SQLExecutor"
 #! VERSION="6"
-#! POSITION="2655 -547"
+#! POSITION="4615 -552"
 #! ORDER="5e+014"
 #! PARMS_EDITED="true"
 #! ENABLED="true"
@@ -1085,7 +1099,7 @@
 #! IDENTIFIER="30"
 #! TYPE="AttributeRenamer"
 #! VERSION="2"
-#! POSITION="4107 -633"
+#! POSITION="6067 -638"
 #! ORDER="5e+014"
 #! PARMS_EDITED="true"
 #! ENABLED="true"
@@ -1109,7 +1123,7 @@
 #! IDENTIFIER="28"
 #! TYPE="SQLExecutor"
 #! VERSION="6"
-#! POSITION="3315 -158"
+#! POSITION="5275 -163"
 #! ORDER="5e+014"
 #! PARMS_EDITED="true"
 #! ENABLED="true"
@@ -1153,7 +1167,7 @@
 #! IDENTIFIER="31"
 #! TYPE="Joiner"
 #! VERSION="3"
-#! POSITION="3360 -690"
+#! POSITION="5320 -695"
 #! ORDER="5e+014"
 #! PARMS_EDITED="true"
 #! ENABLED="true"
@@ -1199,7 +1213,7 @@
 #! IDENTIFIER="34"
 #! TYPE="Joiner"
 #! VERSION="3"
-#! POSITION="4136 -173"
+#! POSITION="6096 -178"
 #! ORDER="5e+014"
 #! PARMS_EDITED="true"
 #! ENABLED="true"
@@ -1246,7 +1260,7 @@
 #! IDENTIFIER="44"
 #! TYPE="AttributeRemover"
 #! VERSION="0"
-#! POSITION="5016 -1440"
+#! POSITION="6976 -1445"
 #! ORDER="5e+014"
 #! PARMS_EDITED="true"
 #! ENABLED="true"
@@ -1264,7 +1278,7 @@
 #! IDENTIFIER="46"
 #! TYPE="AttributeSplitter"
 #! VERSION="3"
-#! POSITION="5016 -1809"
+#! POSITION="6976 -1814"
 #! ORDER="5e+014"
 #! PARMS_EDITED="true"
 #! ENABLED="true"
@@ -1287,7 +1301,7 @@
 #! IDENTIFIER="49"
 #! TYPE="ListExploder"
 #! VERSION="3"
-#! POSITION="5603 -1436"
+#! POSITION="7563 -1441"
 #! ORDER="5e+014"
 #! PARMS_EDITED="true"
 #! ENABLED="true"
@@ -1313,7 +1327,7 @@
 #! IDENTIFIER="51"
 #! TYPE="StringConcatenator"
 #! VERSION="6"
-#! POSITION="5604 -1804"
+#! POSITION="7564 -1809"
 #! ORDER="5e+014"
 #! PARMS_EDITED="true"
 #! ENABLED="true"
@@ -1333,7 +1347,7 @@
 #! IDENTIFIER="53"
 #! TYPE="AttributeRemover"
 #! VERSION="0"
-#! POSITION="6174 -1444"
+#! POSITION="8134 -1449"
 #! ORDER="5e+014"
 #! PARMS_EDITED="true"
 #! ENABLED="true"
@@ -1352,7 +1366,7 @@
 #! IDENTIFIER="55"
 #! TYPE="AttributeRenamer"
 #! VERSION="2"
-#! POSITION="6213 -1817"
+#! POSITION="8173 -1822"
 #! ORDER="5e+014"
 #! PARMS_EDITED="true"
 #! ENABLED="true"
@@ -1364,30 +1378,85 @@
 #! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeRenamer_2"/>
 #! <XFORM_PARM PARM_NAME="ATTR_LIST" PARM_VALUE="TASK_OBJECTID,TASK_ID_GEODB,&quot;&quot;"/>
 #! </TRANSFORMER>
+#! <TRANSFORMER
+#! IDENTIFIER="63"
+#! TYPE="AttributeFilter"
+#! VERSION="3"
+#! POSITION="789 -237"
+#! ORDER="5e+014"
+#! PARMS_EDITED="true"
+#! ENABLED="true"
+#! >
+#! <OUTPUT_FEAT NAME="&lt;EMPTY&gt;"/>
+#! <FEAT_COLLAPSED COLLAPSED="0"/>
+#! <XFORM_ATTR ATTR_NAME="ART" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="GEODB_USECASE" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="GPRCODE" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="NACHFUEHRUNG" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <OUTPUT_FEAT NAME="&lt;MISSING&gt;"/>
+#! <FEAT_COLLAPSED COLLAPSED="1"/>
+#! <XFORM_ATTR ATTR_NAME="ART" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="GEODB_USECASE" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="GPRCODE" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="ID" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="NACHFUEHRUNG" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <OUTPUT_FEAT NAME="&lt;NULL&gt;"/>
+#! <FEAT_COLLAPSED COLLAPSED="2"/>
+#! <XFORM_ATTR ATTR_NAME="ART" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#! <XFORM_ATTR ATTR_NAME="GEODB_USECASE" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#! <XFORM_ATTR ATTR_NAME="GPRCODE" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#! <XFORM_ATTR ATTR_NAME="ID" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#! <XFORM_ATTR ATTR_NAME="NACHFUEHRUNG" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#! <OUTPUT_FEAT NAME="&lt;UNFILTERED&gt;"/>
+#! <FEAT_COLLAPSED COLLAPSED="3"/>
+#! <XFORM_ATTR ATTR_NAME="ART" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#! <XFORM_ATTR ATTR_NAME="GEODB_USECASE" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#! <XFORM_ATTR ATTR_NAME="GPRCODE" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#! <XFORM_ATTR ATTR_NAME="ID" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#! <XFORM_ATTR ATTR_NAME="NACHFUEHRUNG" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#! <OUTPUT_FEAT NAME="4"/>
+#! <FEAT_COLLAPSED COLLAPSED="4"/>
+#! <XFORM_ATTR ATTR_NAME="ART" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#! <XFORM_ATTR ATTR_NAME="GEODB_USECASE" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#! <XFORM_ATTR ATTR_NAME="GPRCODE" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#! <XFORM_ATTR ATTR_NAME="ID" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#! <XFORM_ATTR ATTR_NAME="NACHFUEHRUNG" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeFilter"/>
+#! <XFORM_PARM PARM_NAME="ATTR_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="ATTR_NAME" PARM_VALUE="ART"/>
+#! <XFORM_PARM PARM_NAME="ATTR_VALUES" PARM_VALUE="&lt;lt&gt;EMPTY&lt;gt&gt;,&lt;lt&gt;MISSING&lt;gt&gt;,&lt;lt&gt;NULL&lt;gt&gt;,&lt;lt&gt;UNFILTERED&lt;gt&gt;,4"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#! IDENTIFIER="66"
+#! TYPE="Logger"
+#! VERSION="3"
+#! POSITION="1631 -723"
+#! ORDER="5e+014"
+#! PARMS_EDITED="false"
+#! ENABLED="true"
+#! >
+#! <OUTPUT_FEAT NAME="LOGGED"/>
+#! <FEAT_COLLAPSED COLLAPSED="0"/>
+#! <XFORM_ATTR ATTR_NAME="ART" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="GEODB_USECASE" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="GPRCODE" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="NACHFUEHRUNG" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_PARM PARM_NAME="MESSAGE" PARM_VALUE="Feature is:"/>
+#! <XFORM_PARM PARM_NAME="FEATURE_TYPE" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeFilter_4"/>
+#! <XFORM_PARM PARM_NAME="MAXFEATS" PARM_VALUE="20"/>
+#! <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="MAXCOORDS" PARM_VALUE="20"/>
+#! </TRANSFORMER>
 #! </TRANSFORMERS>
 #! <FEAT_LINKS>
-#! <FEAT_LINK
-#! IDENTIFIER="3"
-#! SOURCE_NODE="29"
-#! TARGET_NODE="2"
-#! SOURCE_PORT_DESC="fo 0"
-#! TARGET_PORT_DESC="fi 0"
-#! ENABLED="true"
-#! EXTRA_POINTS=""
-#! />
 #! <FEAT_LINK
 #! IDENTIFIER="9"
 #! SOURCE_NODE="2"
 #! TARGET_NODE="8"
-#! SOURCE_PORT_DESC="fo 0"
-#! TARGET_PORT_DESC="fi 0"
-#! ENABLED="true"
-#! EXTRA_POINTS=""
-#! />
-#! <FEAT_LINK
-#! IDENTIFIER="13"
-#! SOURCE_NODE="29"
-#! TARGET_NODE="12"
 #! SOURCE_PORT_DESC="fo 0"
 #! TARGET_PORT_DESC="fi 0"
 #! ENABLED="true"
@@ -1543,6 +1612,42 @@
 #! TARGET_NODE="60"
 #! SOURCE_PORT_DESC="fo 0"
 #! TARGET_PORT_DESC="-1"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="64"
+#! SOURCE_NODE="29"
+#! TARGET_NODE="63"
+#! SOURCE_PORT_DESC="fo 0"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="67"
+#! SOURCE_NODE="63"
+#! TARGET_NODE="66"
+#! SOURCE_PORT_DESC="fo 4"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="68"
+#! SOURCE_NODE="63"
+#! TARGET_NODE="2"
+#! SOURCE_PORT_DESC="fo 3"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="65"
+#! SOURCE_NODE="63"
+#! TARGET_NODE="12"
+#! SOURCE_PORT_DESC="fo 3"
+#! TARGET_PORT_DESC="fi 0"
 #! ENABLED="true"
 #! EXTRA_POINTS=""
 #! />
@@ -1892,20 +1997,34 @@ MACRO SQLCreator_DIRECTIVES SERVER_TYPE ORACLE8i REMOVE_SCHEMA_QUALIFIER NO PERS
 FACTORY_DEF * CreationFactory    FACTORY_NAME SQLCreator_Creator    OUTPUT FEATURE_TYPE _____CREATED______
 FACTORY_DEF * QueryFactory    FACTORY_NAME SQLCreator    INPUT FEATURE_TYPE _____CREATED______    QUERY_SQL            select<space>t.id<comma><space>t.NACHFUEHRUNG<comma><space>t.ART<comma><space>ta.GEODB_USECASE<comma><space>le.GPRCODE<space>from<space>ticket<space>t<space>left<space>join<space>ticketart<space>ta<space>on<space>t.art=ta.art_id<space>left<space>join<space>liefereinheit<space>le<space>on<space>t.liefereinheit=le.id<space>where<space>t.STATUS=3<space>and<space>t.ART$(ART_CLAUSE$encode)    COMBINE_ATTRIBUTES   RESULT_ONLY    COMBINE_GEOMETRY     RESULT_ONLY    READER_TYPE          ORACLE8I_DB    READER_DATASET       "$(WORK_DB$encode)"    READER_PARAMS        $(SQLCreator_DIRECTIVES)    OUTPUT RESULT FEATURE_TYPE SQLCreator_RESULT        @SupplyAttributes(fme_feature_type,SQLCreator)
 
-FACTORY_DEF * TeeFactory   FACTORY_NAME "SQLCreator RESULT Splitter"   INPUT FEATURE_TYPE SQLCreator_RESULT   OUTPUT FEATURE_TYPE SQLCreator_RESULT_0_Xo1c2GgqDQQ=   OUTPUT FEATURE_TYPE SQLCreator_RESULT_1_Xo1c2GgqDQQ=
+# -------------------------------------------------------------------------
+Lookup AttributeFilter_AttributeFilterLut   4 ok   "" notok   ENCODED
+
+Tcl2 proc AttributeFilter_setFeatType {} {     global FME_FeatureType;     set ft {AttributeFilter_};     append ft [FME_EncodeText [FME_GetAttribute {"ART"}]];     set FME_FeatureType $ft; }
+FACTORY_DEF * TestFactory    FACTORY_NAME AttributeFilter    INPUT  FEATURE_TYPE SQLCreator_RESULT    TEST @Lookup(AttributeFilter_AttributeFilterLut,"ART",ENCODED_ATTR) == "ok"    OUTPUT PASSED FEATURE_TYPE * @Tcl2(AttributeFilter_setFeatType)    OUTPUT FAILED FEATURE_TYPE AttributeFilter_<NULL>
+FACTORY_DEF * TestFactory    FACTORY_NAME AttributeFilter_NullFilter    INPUT FEATURE_TYPE AttributeFilter_<NULL>    TEST "ART" ATTRIBUTE_VALUE_NULL ""    OUTPUT PASSED FEATURE_TYPE AttributeFilter_<NULL>    OUTPUT FAILED FEATURE_TYPE AttributeFilter_<MISSING>
+FACTORY_DEF * TestFactory    FACTORY_NAME AttributeFilter_MissingFilter    INPUT FEATURE_TYPE AttributeFilter_<MISSING>    TEST "ART" ATTRIBUTE_IS_MISSING ""    OUTPUT PASSED FEATURE_TYPE AttributeFilter_<MISSING>    OUTPUT FAILED FEATURE_TYPE AttributeFilter_<UNFILTERED>
+FACTORY_DEF * TestFactory    FACTORY_NAME AttributeFilter_BlankFilter    INPUT FEATURE_TYPE AttributeFilter_<UNFILTERED>    TEST "ART" ATTRIBUTE_IS_EMPTY ""    OUTPUT PASSED FEATURE_TYPE AttributeFilter_<EMPTY>    OUTPUT FAILED FEATURE_TYPE AttributeFilter_<UNFILTERED>
+
+
+
+FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeFilter <EMPTY> Output Nuker"   INPUT FEATURE_TYPE AttributeFilter_<EMPTY>
+FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeFilter <MISSING> Output Nuker"   INPUT FEATURE_TYPE AttributeFilter_<MISSING>
+FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeFilter <NULL> Output Nuker"   INPUT FEATURE_TYPE AttributeFilter_<NULL>
+FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeFilter <UNFILTERED> Splitter"   INPUT FEATURE_TYPE AttributeFilter_<UNFILTERED>   OUTPUT FEATURE_TYPE AttributeFilter_<UNFILTERED>_0_rHqOVYGOJJA=   OUTPUT FEATURE_TYPE AttributeFilter_<UNFILTERED>_1_rHqOVYGOJJA=
 # -------------------------------------------------------------------------
 
-INCLUDE [    set macroLine "MACRO AttributeRemover_2_LIST_EXP ";    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "{\[0-9\]+}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
-FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRemover_2    INPUT  FEATURE_TYPE SQLCreator_RESULT_1_Xo1c2GgqDQQ=    OUTPUT FEATURE_TYPE AttributeRemover_2_OUTPUT        @RemoveAttributes(NACHFUEHRUNG)        @RemoveAttributes(fme_regexp_match"$(AttributeRemover_2_LIST_EXP)")
+FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeFilter_4_Logger    INPUT  FEATURE_TYPE AttributeFilter_4    OUTPUT FEATURE_TYPE AttributeFilter_4_LOGGED                        @FeatureType("")                  @Log("AttributeFilter_4: Feature is:",20,20)
 
+FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeFilter_4 LOGGED Output Nuker"   INPUT FEATURE_TYPE AttributeFilter_4_LOGGED
 # -------------------------------------------------------------------------
 
-DEFAULT_MACRO __StatisticsCalculator_daaf9447_1385_40d6_b983_b2074ed9871a0_GROUP_BY
-MACRO __StatisticsCalculator_daaf9447_1385_40d6_b983_b2074ed9871a0_GROUP_BY ART GPRCODE
+DEFAULT_MACRO __StatisticsCalculator_fda71232_422d_4efe_9d99_e9d0daf808260_GROUP_BY
+MACRO __StatisticsCalculator_fda71232_422d_4efe_9d99_e9d0daf808260_GROUP_BY ART GPRCODE
 DYNAMIC_FUNCTION_CONFIGURATION Python FMEOBJECTS
 DYNAMIC_FUNCTION_CONFIGURATION Python import StatisticsCalculator
-DYNAMIC_FUNCTION_CONFIGURATION Python "StatisticsCalculator.connectTransformer(    'StatisticsCalculator',{     'GROUP_BY_MACRO':'__StatisticsCalculator_daaf9447_1385_40d6_b983_b2074ed9871a0_GROUP_BY',     'GROUP_BY':'ART GPRCODE',     'STATS_ATTRS':'NACHFUEHRUNG',     'MIN_ATTR':'NACHFUEHRUNG',     'MAX_ATTR':'_max',     'COUNT_ATTR':'_count',     'NUMERIC_ATTR':'_numeric_count',     'SUM_ATTR':'_sum',     'RANGE_ATTR':'_range',     'MEAN_ATTR':'_mean',     'MEDIAN_ATTR':'_median',     'STDEV_ATTR':'_stdev',     'MODE_ATTR':'_mode',     'COMPUTE_HISTOGRAM':'NO',     'HISTO_ATTR':'<Unused>',     'PREPEND_ATTR_NAME':'No',     None:None})"
-FACTORY_DEF * TeeFactory    FACTORY_NAME StatisticsCalculator_InputProcessor    INPUT  FEATURE_TYPE SQLCreator_RESULT_0_Xo1c2GgqDQQ=    OUTPUT FEATURE_TYPE __ORIGINAL__       @Python(StatisticsCalculator.recordFeature,StatisticsCalculator)
+DYNAMIC_FUNCTION_CONFIGURATION Python "StatisticsCalculator.connectTransformer(    'StatisticsCalculator',{     'GROUP_BY_MACRO':'__StatisticsCalculator_fda71232_422d_4efe_9d99_e9d0daf808260_GROUP_BY',     'GROUP_BY':'ART GPRCODE',     'STATS_ATTRS':'NACHFUEHRUNG',     'MIN_ATTR':'NACHFUEHRUNG',     'MAX_ATTR':'_max',     'COUNT_ATTR':'_count',     'NUMERIC_ATTR':'_numeric_count',     'SUM_ATTR':'_sum',     'RANGE_ATTR':'_range',     'MEAN_ATTR':'_mean',     'MEDIAN_ATTR':'_median',     'STDEV_ATTR':'_stdev',     'MODE_ATTR':'_mode',     'COMPUTE_HISTOGRAM':'NO',     'HISTO_ATTR':'<Unused>',     'PREPEND_ATTR_NAME':'No',     None:None})"
+FACTORY_DEF * TeeFactory    FACTORY_NAME StatisticsCalculator_InputProcessor    INPUT  FEATURE_TYPE AttributeFilter_<UNFILTERED>_1_rHqOVYGOJJA=    OUTPUT FEATURE_TYPE __ORIGINAL__       @Python(StatisticsCalculator.recordFeature,StatisticsCalculator)
 FACTORY_DEF * TeeFactory    FACTORY_NAME StatisticsCalculator_UnneededInputNuker    INPUT FEATURE_TYPE __ORIGINAL__
 FACTORY_DEF * SortFactory    FACTORY_NAME StatisticsCalculator_CompleteOutputter    INPUT FEATURE_TYPE __UNUSED_INPUT_TO_GUARANTEE_FACTORY_DOESNT_CONSUME_EVERYTHING__
 FACTORY_DEF * CreationFactory    FACTORY_NAME StatisticsCalculator_SummaryCreator    CREATE_AT_END    NUMBER_TO_CREATE 1    OUTPUT FEATURE_TYPE StatisticsCalculator_SUMMARY
@@ -1915,6 +2034,11 @@ FACTORY_DEF * ElementFactory    FACTORY_NAME StatisticsCalculator_SummaryExplode
 
 INCLUDE [    set macroLine "MACRO AttributeRemover_LIST_EXP ";    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "{\[0-9\]+}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
 FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRemover    INPUT  FEATURE_TYPE StatisticsCalculator_SUMMARY    OUTPUT FEATURE_TYPE AttributeRemover_OUTPUT        @RemoveAttributes(_max,_median,_count,_numeric_count,_sum,_range,_mean,_stdev,_mode)        @RemoveAttributes(fme_regexp_match"$(AttributeRemover_LIST_EXP)")
+
+# -------------------------------------------------------------------------
+
+INCLUDE [    set macroLine "MACRO AttributeRemover_2_LIST_EXP ";    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "{\[0-9\]+}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
+FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRemover_2    INPUT  FEATURE_TYPE AttributeFilter_<UNFILTERED>_0_rHqOVYGOJJA=    OUTPUT FEATURE_TYPE AttributeRemover_2_OUTPUT        @RemoveAttributes(NACHFUEHRUNG)        @RemoveAttributes(fme_regexp_match"$(AttributeRemover_2_LIST_EXP)")
 
 # -------------------------------------------------------------------------
 
@@ -1965,7 +2089,7 @@ FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRemover_3    INPUT  FEATURE_TY
 
 # -------------------------------------------------------------------------
 
-Tcl2 set AttributeSplitter_a0dd6ef7_ef0a_4002_9475_5463d53f51e30_splitDelim [FME_DecodeText {<comma>}];      if { [regexp {^([1-9][0-9]*s)+$} [set AttributeSplitter_a0dd6ef7_ef0a_4002_9475_5463d53f51e30_splitDelim]] }      {         set AttributeSplitter_a0dd6ef7_ef0a_4002_9475_5463d53f51e30_splitWidths [split [regsub -all {s$} {<comma>} {}] s];         proc AttributeSplitter_doSplit {}         {            global AttributeSplitter_a0dd6ef7_ef0a_4002_9475_5463d53f51e30_splitWidths;            set source [FME_GetAttribute [FME_DecodeText {ID}]];            set attrNum 0;            set listName [FME_DecodeText {_tickets}];            set attrPos 0;            foreach width [set AttributeSplitter_a0dd6ef7_ef0a_4002_9475_5463d53f51e30_splitWidths]            {               set endPos [expr $attrPos + $width - 1];               set bit [string range $source $attrPos $endPos];               FME_SetAttribute "$listName{$attrNum}" [string trim $bit];               incr attrPos $width;               incr attrNum;            };         };      }      else      {         proc AttributeSplitter_doSplit {}         {            global AttributeSplitter_a0dd6ef7_ef0a_4002_9475_5463d53f51e30_splitDelim;            set delim [set AttributeSplitter_a0dd6ef7_ef0a_4002_9475_5463d53f51e30_splitDelim];            set delimLength [string length $delim];            set source [FME_GetAttribute [FME_DecodeText {ID}]];            set keepEmptyParts [string equal {No} {No}];            set bits {};            set startIndex 0;            set nextIndex [string first $delim $source $startIndex];            while {$nextIndex >= 0} {              set part [string range $source $startIndex [expr $nextIndex-1]];              if { $keepEmptyParts || $part != \"\" } {                 lappend bits $part;              };              set startIndex [expr $nextIndex + $delimLength];              set nextIndex [string first $delim $source $startIndex];            };            set lastPart [string range $source $startIndex end];            if { $keepEmptyParts || $lastPart != \"\" } { lappend bits $lastPart };            set listName [FME_DecodeText {_tickets}];            set attrNum 0;            foreach bit $bits            {               FME_SetAttribute "$listName{$attrNum}" [string trim $bit];               incr attrNum;            }          }       }
+Tcl2 set AttributeSplitter_5fdcd423_b381_41ee_b14e_abf12121e4290_splitDelim [FME_DecodeText {<comma>}];      if { [regexp {^([1-9][0-9]*s)+$} [set AttributeSplitter_5fdcd423_b381_41ee_b14e_abf12121e4290_splitDelim]] }      {         set AttributeSplitter_5fdcd423_b381_41ee_b14e_abf12121e4290_splitWidths [split [regsub -all {s$} {<comma>} {}] s];         proc AttributeSplitter_doSplit {}         {            global AttributeSplitter_5fdcd423_b381_41ee_b14e_abf12121e4290_splitWidths;            set source [FME_GetAttribute [FME_DecodeText {ID}]];            set attrNum 0;            set listName [FME_DecodeText {_tickets}];            set attrPos 0;            foreach width [set AttributeSplitter_5fdcd423_b381_41ee_b14e_abf12121e4290_splitWidths]            {               set endPos [expr $attrPos + $width - 1];               set bit [string range $source $attrPos $endPos];               FME_SetAttribute "$listName{$attrNum}" [string trim $bit];               incr attrPos $width;               incr attrNum;            };         };      }      else      {         proc AttributeSplitter_doSplit {}         {            global AttributeSplitter_5fdcd423_b381_41ee_b14e_abf12121e4290_splitDelim;            set delim [set AttributeSplitter_5fdcd423_b381_41ee_b14e_abf12121e4290_splitDelim];            set delimLength [string length $delim];            set source [FME_GetAttribute [FME_DecodeText {ID}]];            set keepEmptyParts [string equal {No} {No}];            set bits {};            set startIndex 0;            set nextIndex [string first $delim $source $startIndex];            while {$nextIndex >= 0} {              set part [string range $source $startIndex [expr $nextIndex-1]];              if { $keepEmptyParts || $part != \"\" } {                 lappend bits $part;              };              set startIndex [expr $nextIndex + $delimLength];              set nextIndex [string first $delim $source $startIndex];            };            set lastPart [string range $source $startIndex end];            if { $keepEmptyParts || $lastPart != \"\" } { lappend bits $lastPart };            set listName [FME_DecodeText {_tickets}];            set attrNum 0;            foreach bit $bits            {               FME_SetAttribute "$listName{$attrNum}" [string trim $bit];               incr attrNum;            }          }       }
 FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeSplitter    INPUT  FEATURE_TYPE AttributeRemover_3_OUTPUT    OUTPUT FEATURE_TYPE AttributeSplitter_OUTPUT         @Tcl2(AttributeSplitter_doSplit)
 
 # -------------------------------------------------------------------------
@@ -1973,8 +2097,8 @@ FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeSplitter    INPUT  FEATURE_TYP
 FACTORY_DEF * ElementFactory    FACTORY_NAME ListExploder    INPUT  FEATURE_TYPE AttributeSplitter_OUTPUT    LIST_NAME "_tickets{}"    ELEMENT_NUMBER_FIELD "_element_index"    CLONE_GEOMETRY    MODE LEAN    OUTPUT ELEMENT FEATURE_TYPE ListExploder_LIST_FOUND         @RemoveAttributes(ElementFactory.baseCloned)
 # -------------------------------------------------------------------------
 
-Tcl2 proc StringConcatenator_f57db996_79e5_4b0c_8401_1edd2e4d0d570_doSetAttr {attrText} {    FME_SetAttribute [FME_DecodeText {fme_where}] [FME_DecodeText $attrText] }
-FACTORY_DEF * TeeFactory    FACTORY_NAME StringConcatenator    INPUT  FEATURE_TYPE ListExploder_LIST_FOUND    OUTPUT FEATURE_TYPE StringConcatenator_OUTPUT        @Tcl2("StringConcatenator_f57db996_79e5_4b0c_8401_1edd2e4d0d570_doSetAttr {@EvaluateExpression(STRING_ENCODED,ID=<at>Value<openparen>_tickets<closeparen>,StringConcatenator)} ")
+Tcl2 proc StringConcatenator_172b01cf_3553_4c3c_9c07_c563fcb7f9900_doSetAttr {attrText} {    FME_SetAttribute [FME_DecodeText {fme_where}] [FME_DecodeText $attrText] }
+FACTORY_DEF * TeeFactory    FACTORY_NAME StringConcatenator    INPUT  FEATURE_TYPE ListExploder_LIST_FOUND    OUTPUT FEATURE_TYPE StringConcatenator_OUTPUT        @Tcl2("StringConcatenator_172b01cf_3553_4c3c_9c07_c563fcb7f9900_doSetAttr {@EvaluateExpression(STRING_ENCODED,ID=<at>Value<openparen>_tickets<closeparen>,StringConcatenator)} ")
 
 # -------------------------------------------------------------------------
 
