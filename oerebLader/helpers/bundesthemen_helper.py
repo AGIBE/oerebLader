@@ -42,7 +42,7 @@ def get_liefereinheit_info(liefereinheit, config):
 
 def create_ticket(liefereinheit, config):
     name = "Aktualisierung vom " + datetime.datetime.now().strftime("%d.%m.%Y")
-    create_ticket_sql = "INSERT INTO ticket (liefereinheit, status, art, name) VALUES (%s, %s, %s, '%s')" % (liefereinheit, 1, 5, name)
+    create_ticket_sql = "INSERT INTO ticket (liefereinheit, status, art, name, nachfuehrung) VALUES (%s, %s, %s, '%s', SYSDATE)" % (liefereinheit, 1, 5, name)
     logging.info(create_ticket_sql)
     try:
         oerebLader.helpers.sql_helper.writeSQL(config['OEREB_WORK']['connection_string'], create_ticket_sql)
@@ -55,7 +55,8 @@ def create_ticket(liefereinheit, config):
 
 def check_bundesthemen():
     config = oerebLader.helpers.config.get_config()
-    liefereinheiten = [1103, 1108, 1118, 1119]
+    
+    liefereinheiten = config['GENERAL']['bundesthemen'].split(",")
     config['LIEFEREINHEIT'] = {}
     
     init_logging(config)
