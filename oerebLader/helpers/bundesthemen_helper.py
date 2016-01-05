@@ -14,7 +14,7 @@ def init_logging(config):
     config['LOGGING']['log_directory'] = log_directory
     if not os.path.exists(log_directory):
         os.makedirs(log_directory)
-    logfile_name = "bundesthemen_" + datetime.datetime.now().strftime("_%Y_%m_%d_%H_%M_%S") + ".log"
+    logfile_name = "bundesthemen" + datetime.datetime.now().strftime("_%Y_%m_%d_%H_%M_%S") + ".log"
     logfile = os.path.join(log_directory, logfile_name)
     logging.basicConfig(filename=logfile, level=logging.DEBUG, format='%(asctime)s.%(msecs)d|%(levelname)s|%(message)s', datefmt='%Y-%m-%d %H:%M:%S')
     print("Logfile: " + logfile)
