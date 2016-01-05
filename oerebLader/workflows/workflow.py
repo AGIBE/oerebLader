@@ -17,19 +17,19 @@ import sys
 def run_workflow(ticketnr):
     config = oerebLader.helpers.config.get_config()
     if is_valid_ticket(ticketnr, config):
-        print("Führe aus: " + unicode(ticketnr))
+        print("Fuehre aus: " + unicode(ticketnr))
         workflow = get_workflow_for_ticket(ticketnr, config)
         if workflow != "":
-            print("Führe den Workflow " + workflow + " aus.")
+            print("Fuehre den Workflow " + workflow + " aus.")
             modul = "oerebLader.workflows." + workflow
             m = sys.modules["oerebLader.workflows." + workflow]
             m.run(ticketnr)
         else:
-            print("Für das Ticket " + unicode(ticketnr) + " konnte kein Workflow gefunden werden.")
-            print("Der Import wird nicht ausgeführt.")
+            print("Fuer das Ticket " + unicode(ticketnr) + " konnte kein Workflow gefunden werden.")
+            print("Der Import wird nicht ausgefuehrt.")
     else:
-        print("Die angegebene Ticket-Nummer ist ungültig.")
-        print("Der Import wird nicht ausgeführt.")
+        print("Die angegebene Ticket-Nummer ist ungueltig.")
+        print("Der Import wird nicht ausgefuehrt.")
 
 def is_valid_ticket(ticketnr, config):
     
