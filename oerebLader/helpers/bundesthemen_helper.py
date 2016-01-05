@@ -56,7 +56,7 @@ def create_ticket(liefereinheit, config):
 def check_bundesthemen():
     config = oerebLader.helpers.config.get_config()
     
-    liefereinheiten = config['GENERAL']['bundesthemen'].split(",")
+    liefereinheiten = config['GENERAL']['bundesthemen']
     config['LIEFEREINHEIT'] = {}
     
     init_logging(config)
