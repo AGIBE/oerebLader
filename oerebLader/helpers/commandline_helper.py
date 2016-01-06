@@ -6,6 +6,8 @@ import oerebLader.helpers.ticket_helper
 import oerebLader.workflows.workflow
 import oerebLader.release.release
 import oerebLader.refresh_verschnitt.refresh_verschnitt
+import oerebLader.sync_avdate.sync_avdate
+from _ctypes_test import func
 
 def import_ticket(args):
     oerebLader.workflows.workflow.run_workflow(args.TICKET)
@@ -30,6 +32,10 @@ def release_daily(args):
 def refresh_verschnitt(args):
     oerebLader.refresh_verschnitt.refresh_verschnitt.run_refresh_verschnitt()
     print("Refresh_Verschnitt SUCCESSFUL!")
+    
+def sync_avdate(args):
+    oerebLader.sync_avdate.sync_avdate.run_sync_avdate()
+    print("Sync_avdate SUCCESSFUL!")
 
 def main():
     version_text = "oerebLader v" + __version__
@@ -56,6 +62,10 @@ def main():
     # REFRESH_VERSCHNITT-Befehl
     refresh_verschnitt_parser = subparsers.add_parser("refresh_verschnitt", help='Liest die Dictionary Caches sowie die Config der Verschnittfunktion neu ein.')
     refresh_verschnitt_parser.set_defaults(func=refresh_verschnitt)
+    
+    # SYNC_AVDATE-Befehl
+    sync_avdate_parser = subparsers.add_parser("sync_avdate", help="Kopiert das MOPUBE-Nachführungsdatum aus dem GeoDB-DD in die Konfig der ÖREBK-Verschnittfunktion.")
+    sync_avdate_parser.set_defaults(func=sync_avdate)
     
     args = parser.parse_args()
     args.func(args)
