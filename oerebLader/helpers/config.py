@@ -72,5 +72,6 @@ def get_config():
     create_connection_string(config, "GEODB_DD_TEAM")
     create_connection_string(config, "OEREBAPP")
     create_connection_string(config, "OEREBCUGAPP")
+    create_connection_string(config, "GEO_VEK1")
 
     return config
