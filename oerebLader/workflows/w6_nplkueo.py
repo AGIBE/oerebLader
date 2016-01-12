@@ -7,6 +7,7 @@ import oerebLader.scripts.s20_import_nplkueo
 import oerebLader.scripts.s8_derive_nplkueo_transfer
 import oerebLader.scripts.s33_qa_nplkueo
 import oerebLader.scripts.s38_qa_transfer
+import oerebLader.scripts.s44_checkurl_transfer
 import oerebLader.scripts.s12_finish
 
 import oerebLader.helpers.config
@@ -22,4 +23,5 @@ def run(ticketnr):
     oerebLader.scripts.s8_derive_nplkueo_transfer.run(config)
     oerebLader.scripts.s33_qa_nplkueo.run(config)
     oerebLader.scripts.s38_qa_transfer.run(config)
+    oerebLader.scripts.s44_checkurl_transfer.run(config)
     oerebLader.scripts.s12_finish.run(config)

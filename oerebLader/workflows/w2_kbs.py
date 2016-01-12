@@ -20,4 +20,5 @@ def run(ticketnr):
     oerebLader.scripts.s41_derive_kbs_transfer.run(config)
     oerebLader.scripts.s28_qa_kbs.run(config)
     oerebLader.scripts.s38_qa_transfer.run(config)
+    oerebLader.scripts.s44_checkurl_transfer.run(config)
     oerebLader.scripts.s12_finish.run(config)
