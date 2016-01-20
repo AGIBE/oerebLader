@@ -15,7 +15,7 @@ def run(config):
     logger.info("Script " +  fme_script + " wird ausgef�hrt.")
     logger.info("Das FME-Logfile heisst: " + fme_logfile)
     runner = fmeobjects.FMEWorkspaceRunner()
-    #TODO: Liefereinheiten (GSZ und GSA gleichzeitig) übergeben
+    #TODO: im FME jedes physisch vorhandene Dokument (v.a. veraltetes Reglement) nur einmal in VORSCHRIFT schreiben.
     #geht erst, wenn nur eine Liefereinheit definiert.
     # Der FMEWorkspaceRunner akzeptiert keine Unicode-Strings!
     # Daher müssen workspace und parameters umgewandelt werden!
