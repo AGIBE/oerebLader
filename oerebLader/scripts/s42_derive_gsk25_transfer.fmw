@@ -5,7 +5,7 @@
 #    Command-line to run this workspace:
 #    
 #    
-#    "C:\Program Files (x86)\FME\fme.exe" D:\Daten\repos\oerebLader\oerebLader\scripts\s41_derive_gsk25_transfer.fmw
+#    "C:\Program Files (x86)\FME\fme.exe" D:\Daten\repos\oerebLader\oerebLader\scripts\s42_derive_gsk25_transfer.fmw
 #          --GEODB_USERNAME ""
 #          --GEODB_PASSWORD ********
 #          --GEODB_DATABASE ""
@@ -18,7 +18,7 @@
 #    
 #! PASSWORD=""
 #! ATTR_TYPE_ENCODING="SDF"
-#! VIEW_POSITION="-1185 1521"
+#! VIEW_POSITION="-1173 1467"
 #! SHOW_INFO_NODES="true"
 #! FME_STROKE_MAX_DEVIATION="0"
 #! BEGIN_PYTHON=""
@@ -36,13 +36,13 @@
 #! USAGE=""
 #! END_PYTHON=""
 #! HISTORY=""
-#! FME_DOCUMENT_PRIORGUID="352de003-3c2e-4471-bb8d-1302fdc19ba2,c28f0f50-1d1f-4b78-aca7-2678e7dc51dd,8e2cb3b0-7e7c-41a9-8867-4da115812f23"
+#! FME_DOCUMENT_PRIORGUID="352de003-3c2e-4471-bb8d-1302fdc19ba2,c28f0f50-1d1f-4b78-aca7-2678e7dc51dd,8e2cb3b0-7e7c-41a9-8867-4da115812f23,678e1772-bbaa-4327-b1fb-45c701e6de33,60303124-8218-430f-ae1d-1b16aa64ef8f,01832909-8e5c-492a-b2a0-aab160f6263b,8979e61b-53f8-4e61-a75f-384c521df3e9,86e25990-6da7-4394-97c3-a567961770ab"
 #! DOC_TOP_LEFT="-1147 -1985"
 #! REQUIREMENTS_KEYWORD=""
 #! SOURCE_ROUTING_FILE=""
 #! DESTINATION_ROUTING_FILE=""
 #! DESTINATION="NONE"
-#! LAST_SAVE_DATE="2016-01-11T17:06:02"
+#! LAST_SAVE_DATE="2016-01-20T12:59:46"
 #! FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
 #! WORKSPACE_VERSION="1"
 #! SOURCE="NONE"
@@ -53,7 +53,7 @@
 #! REQUIREMENTS=""
 #! BEGIN_TCL=""
 #! DOC_EXTENTS="8326 3453"
-#! FME_DOCUMENT_GUID="678e1772-bbaa-4327-b1fb-45c701e6de33"
+#! FME_DOCUMENT_GUID="6836889d-a080-484a-8d88-611ba8685b07"
 #! SHOW_ANNOTATIONS="true"
 #! IGNORE_READER_FAILURE="No"
 #! WARN_INVALID_XFORM_PARAM="Yes"
@@ -72,7 +72,7 @@
 #! WRITE_DEFS="true"
 #! DEFLINE_TEMPLATE="geodb_type {FME_GEN_GEOMETRY}"
 #! DEFLINE_ATTRS="true"
-#! EXPOSABLE_ATTRS="geodb_text_leader_line_anchor_point char(254) geodb_dim_length double geodb_v_align char(50) geodb_rel_destination_oid integer multi_reader_type char(50) geodb_edge_feature_count integer geodb_feature_dataset char(254) geodb_subtype_name char(254) geodb_text_lc_gap double geodb_raster_compression_quality integer fme_color char(50) geodb_font_name char(254) geodb_from_junction_element_id integer geodb_raster_pyramid_resample_type char(100) geodb_rel_origin_oid integer fme_text_string char(50) geodb_raster_compression_type char(100) fme_type char(50) geodb_text_lc_textbox_y1 double geodb_text_leader_line_color char(50) geodb_text_lc_textbox_y2 double geodb_metadata_string char(254) geodb_text_lc_textbox_y3 double geodb_dim_text_x double geodb_text_lc_textbox_y4 double geodb_dim_text_y double geodb_symbol_id integer geodb_text_lc_margin_left double geodb_dim_text_z double multi_reader_keyword char(50) geodb_text_point_scale_factor double geodb_text_leader_line char(254) geodb_element_id integer geodb_text_lc_accent_bar_width double geodb_font_italic boolean fme_basename char(50) geodb_text_line_spacing double geodb_text_ref_scale double geodb_topological_configuration char(6) geodb_h_align char(50) geodb_start_angle double fme_secondary_axis double geodb_text_lc_accent_bar_color char(50) geodb_anno_class_id integer geodb_sweep_angle double geodb_text_x_offset double fme_feature_type char(50) geodb_dim_text_angle double geodb_ancillary_role char(7) geodb_font_size double fme_text_size double geodb_text_lc_margin_bottom double geodb_text_size double geodb_raster_pyramid_level integer geodb_text_leader_line_width double fme_sweep_angle double geodb_dim_using_custom_length boolean geodb_text_char_spacing double fme_primary_axis double geodb_text_string char(254) geodb_font_strikethrough boolean fme_dataset char(50) geodb_text_character_width double geodb_text_lc_textbox_x1 double geodb_text_lc_textbox_x2 double geodb_rotation double geodb_text_lc_textbox_x3 double fme_fill_color char(50) geodb_secondary_axis double geodb_text_lc_textbox_x4 double geodb_font_underline boolean geodb_font_bold boolean geodb_text_color char(254) geodb_text_y_offset double geodb_dim_style_id integer geodb_text_scale boolean geodb_measures char(254) geodb_text_part_count integer geodb_type char(25) geodb_dim_line_display smallint geodb_text_clip boolean geodb_to_junction_element_id integer fme_geometry fme_char(50) geodb_text_string_with_format_tags char(254) multi_reader_id integer geodb_text_lc_margin_right double geodb_text_lc_style char(20) geodb_text_break_char integer geodb_text_leader_line_tolerance double geodb_dim_extn_line_display smallint geodb_dim_type smallint geodb_dim_custom_length double geodb_dim_begin_dimension_x double geodb_dim_begin_dimension_y double geodb_dim_begin_dimension_z double geodb_feature_is_simple boolean geodb_primary_axis double geodb_dim_line_x double geodb_right_to_left boolean geodb_dim_end_dimension_x double geodb_dim_line_y double geodb_dim_end_dimension_y double geodb_dim_line_z double geodb_feature_has_relationships boolean geodb_junction_feature_count integer geodb_dim_end_dimension_z double geodb_linked_feature_id integer geodb_edge_element_count integer geodb_text_lc_margin_top double geodb_text_word_spacing double geodb_dim_marker_display smallint fme_rotation double multi_reader_full_id integer geodb_junction_element_count integer fme_start_angle double geodb_dim_extn_line_angle double geodb_font_weight smallint geodb_element_index integer geodb_font_charset smallint geodb_color char(50) geodb_text_angle double"
+#! EXPOSABLE_ATTRS="geodb_text_leader_line_anchor_point char(254) geodb_dim_length double geodb_v_align char(50) geodb_rel_destination_oid integer multi_reader_type char(50) geodb_edge_feature_count integer geodb_feature_dataset char(254) geodb_text_lc_gap double geodb_subtype_name char(254) geodb_raster_compression_quality integer fme_color char(50) geodb_font_name char(254) geodb_from_junction_element_id integer geodb_raster_pyramid_resample_type char(100) geodb_rel_origin_oid integer fme_text_string char(50) geodb_raster_compression_type char(100) fme_type char(50) geodb_text_lc_textbox_y1 double geodb_text_leader_line_color char(50) geodb_text_lc_textbox_y2 double geodb_text_lc_textbox_y3 double geodb_metadata_string char(254) geodb_text_lc_textbox_y4 double geodb_dim_text_x double geodb_symbol_id integer geodb_text_lc_margin_left double geodb_dim_text_y double multi_reader_keyword char(50) geodb_dim_text_z double geodb_text_point_scale_factor double geodb_text_leader_line char(254) geodb_element_id integer geodb_text_lc_accent_bar_width double geodb_font_italic boolean geodb_text_line_spacing double fme_basename char(50) geodb_text_ref_scale double geodb_topological_configuration char(6) geodb_start_angle double geodb_h_align char(50) fme_secondary_axis double geodb_text_lc_accent_bar_color char(50) geodb_anno_class_id integer geodb_sweep_angle double geodb_text_x_offset double fme_feature_type char(50) geodb_dim_text_angle double geodb_ancillary_role char(7) geodb_font_size double fme_text_size double geodb_text_lc_margin_bottom double geodb_text_size double geodb_raster_pyramid_level integer geodb_text_leader_line_width double fme_sweep_angle double geodb_dim_using_custom_length boolean geodb_text_char_spacing double fme_primary_axis double geodb_text_string char(254) geodb_font_strikethrough boolean geodb_text_character_width double fme_dataset char(50) geodb_text_lc_textbox_x1 double geodb_text_lc_textbox_x2 double geodb_text_lc_textbox_x3 double geodb_rotation double fme_fill_color char(50) geodb_secondary_axis double geodb_text_lc_textbox_x4 double geodb_font_underline boolean geodb_font_bold boolean geodb_text_color char(254) geodb_text_y_offset double geodb_dim_style_id integer geodb_text_scale boolean geodb_measures char(254) geodb_text_part_count integer geodb_type char(25) geodb_dim_line_display smallint geodb_text_clip boolean geodb_to_junction_element_id integer fme_geometry fme_char(50) geodb_text_string_with_format_tags char(254) multi_reader_id integer geodb_text_lc_margin_right double geodb_text_lc_style char(20) geodb_text_break_char integer geodb_text_leader_line_tolerance double geodb_dim_extn_line_display smallint geodb_dim_type smallint geodb_dim_custom_length double geodb_dim_begin_dimension_x double geodb_dim_begin_dimension_y double geodb_dim_begin_dimension_z double geodb_feature_is_simple boolean geodb_primary_axis double geodb_dim_line_x double geodb_right_to_left boolean geodb_dim_end_dimension_x double geodb_dim_line_y double geodb_dim_end_dimension_y double geodb_dim_line_z double geodb_feature_has_relationships boolean geodb_junction_feature_count integer geodb_dim_end_dimension_z double geodb_linked_feature_id integer geodb_edge_element_count integer geodb_text_lc_margin_top double geodb_text_word_spacing double geodb_dim_marker_display smallint fme_rotation double multi_reader_full_id integer geodb_junction_element_count integer fme_start_angle double geodb_dim_extn_line_angle double geodb_font_weight smallint geodb_element_index integer geodb_font_charset smallint geodb_color char(50) geodb_text_angle double"
 #! DEFLINE_PARMS=""
 #! ATTR_INDEX_TYPES=""
 #! ATTR_NAME_INVALID_CHARS=""
@@ -113,7 +113,7 @@
 #! WRITE_DEFS="true"
 #! DEFLINE_TEMPLATE="geodb_type {FME_GEN_GEOMETRY} GEODB_UPDATE_KEY_COLUMNS &quot;&quot; GEODB_DROP_TABLE NO GEODB_TRUNCATE_TABLE NO GEODB_OBJECT_ID_NAME OBJECTID GEODB_OBJECT_ID_ALIAS OBJECTID GEODB_SHAPE_NAME SHAPE GEODB_SHAPE_ALIAS SHAPE GEODB_CONFIG_KEYWORD DEFAULTS GEODB_FEATURE_DATASET &quot;&quot; GEODB_GRID{1} &quot;&quot; GEODB_AVG_NUM_POINTS &quot;&quot; GEODB_XORIGIN &quot;&quot; GEODB_YORIGIN &quot;&quot; GEODB_XYSCALE &quot;&quot; GEODB_HAS_Z_VALUES &quot;&quot; GEODB_ZORIGIN &quot;&quot; GEODB_ZSCALE &quot;&quot; GEODB_HAS_MEASURES &quot;&quot; GEODB_MEASURES_ORIGIN &quot;&quot; GEODB_MEASURES_SCALE &quot;&quot; GEODB_ANNO_REFERENCE_SCALE &quot;&quot;"
 #! DEFLINE_ATTRS="true"
-#! EXPOSABLE_ATTRS="geodb_dim_length double geodb_v_align char(50) geodb_feature_dataset char(254) fme_where char(254) geodb_subtype_name char(254) geodb_allow_symbol_overrides boolean geodb_text_feat_class_name char(254) geodb_raster_compression_quality integer fme_color char(50) geodb_font_name char(254) geodb_raster_pyramid_resample_type char(100) fme_text_string char(50) geodb_raster_compression_type char(100) fme_type char(50) geodb_metadata_string char(254) geodb_dim_text_x double geodb_symbol_id integer geodb_dim_text_y double geodb_dim_text_z double geodb_font_italic boolean fme_basename char(50) geodb_text_line_spacing double geodb_text_ref_scale double geodb_start_angle double geodb_h_align char(50) fme_secondary_axis double geodb_anno_class_id integer geodb_sweep_angle double geodb_text_x_offset double fme_feature_type char(50) geodb_dim_text_angle double geodb_ancillary_role char(7) geodb_font_size double fme_text_size double geodb_text_size double fme_db_operation char(8) geodb_raster_pyramid_level integer fme_sweep_angle double geodb_dim_using_custom_length boolean geodb_text_char_spacing double fme_primary_axis double geodb_text_string char(254) geodb_font_strikethrough boolean fme_dataset char(50) geodb_text_character_width double geodb_rotation double fme_fill_color char(50) geodb_secondary_axis double geodb_font_underline boolean geodb_font_bold boolean geodb_text_color char(254) geodb_text_y_offset double geodb_dim_style_id integer geodb_text_scale boolean geodb_measures char(254) geodb_type char(25) geodb_dim_line_display smallint geodb_text_clip boolean fme_geometry fme_char(50) geodb_text_string_with_format_tags char(254) geodb_text_break_char integer geodb_dim_extn_line_display smallint geodb_dim_type smallint geodb_dim_custom_length double geodb_dim_begin_dimension_x double geodb_dim_begin_dimension_y double geodb_dim_begin_dimension_z double geodb_primary_axis double geodb_right_to_left boolean geodb_dim_line_x double geodb_dim_end_dimension_x double geodb_dim_line_y double geodb_dim_end_dimension_y double geodb_dim_line_z double geodb_dim_end_dimension_z double geodb_linked_feature_id integer geodb_text_word_spacing double geodb_text_y_coord double geodb_dim_marker_display smallint fme_rotation double fme_start_angle double geodb_dim_extn_line_angle double geodb_text_x_coord double geodb_font_weight smallint geodb_font_charset smallint geodb_color char(50) geodb_text_angle double"
+#! EXPOSABLE_ATTRS="geodb_dim_length double geodb_v_align char(50) geodb_feature_dataset char(254) geodb_text_feat_class_name char(254) fme_where char(254) geodb_subtype_name char(254) geodb_allow_symbol_overrides boolean geodb_raster_compression_quality integer fme_color char(50) geodb_font_name char(254) geodb_raster_pyramid_resample_type char(100) fme_text_string char(50) geodb_raster_compression_type char(100) fme_type char(50) geodb_metadata_string char(254) geodb_dim_text_x double geodb_symbol_id integer geodb_dim_text_y double geodb_dim_text_z double geodb_font_italic boolean geodb_text_line_spacing double fme_basename char(50) geodb_text_ref_scale double geodb_start_angle double geodb_h_align char(50) fme_secondary_axis double geodb_anno_class_id integer geodb_sweep_angle double geodb_text_x_offset double fme_feature_type char(50) geodb_dim_text_angle double geodb_ancillary_role char(7) geodb_font_size double fme_text_size double geodb_text_size double fme_db_operation char(8) geodb_raster_pyramid_level integer fme_sweep_angle double geodb_dim_using_custom_length boolean geodb_text_char_spacing double fme_primary_axis double geodb_text_string char(254) geodb_font_strikethrough boolean geodb_text_character_width double fme_dataset char(50) geodb_rotation double fme_fill_color char(50) geodb_secondary_axis double geodb_text_y_offset double geodb_font_underline boolean geodb_text_color char(254) geodb_font_bold boolean geodb_dim_style_id integer geodb_text_scale boolean geodb_measures char(254) geodb_type char(25) geodb_text_clip boolean geodb_dim_line_display smallint fme_geometry fme_char(50) geodb_text_string_with_format_tags char(254) geodb_text_break_char integer geodb_dim_extn_line_display smallint geodb_dim_type smallint geodb_dim_custom_length double geodb_dim_begin_dimension_x double geodb_dim_begin_dimension_y double geodb_dim_begin_dimension_z double geodb_primary_axis double geodb_right_to_left boolean geodb_dim_line_x double geodb_dim_end_dimension_x double geodb_dim_line_y double geodb_dim_end_dimension_y double geodb_dim_line_z double geodb_dim_end_dimension_z double geodb_linked_feature_id integer geodb_text_word_spacing double geodb_text_y_coord double geodb_dim_marker_display smallint fme_rotation double fme_start_angle double geodb_dim_extn_line_angle double geodb_text_x_coord double geodb_font_weight smallint geodb_font_charset smallint geodb_color char(50) geodb_text_angle double"
 #! DEFLINE_PARMS="&quot;GUI CHOICE GEODB_DROP_TABLE YES%NO Drop Table First&quot; NO &quot;GUI CHOICE GEODB_TRUNCATE_TABLE YES%NO Truncate Table First&quot; NO &quot;GUI OPTIONAL WHOLE_LINE FORCE_DEFS ATTRLIST_COMMAS GEODB_UPDATE_KEY_COLUMNS Update Key Fields&quot; &quot;&quot; &quot;GUI TEXT GEODB_OBJECT_ID_NAME Object ID Field&quot; OBJECTID &quot;GUI TEXT GEODB_OBJECT_ID_ALIAS Object ID Alias&quot; OBJECTID &quot;GUI TEXT GEODB_SHAPE_NAME Shape Field&quot; SHAPE &quot;GUI TEXT GEODB_SHAPE_ALIAS Shape Alias&quot; SHAPE &quot;GUI TEXT GEODB_CONFIG_KEYWORD Configuration Keyword&quot; DEFAULTS &quot;GUI OPTIONAL TEXT GEODB_FEATURE_DATASET Feature Dataset&quot; &quot;&quot; &quot;GUI OPTIONAL FLOAT GEODB_GRID{1} Grid 1&quot; &quot;&quot; &quot;GUI OPTIONAL INTEGER GEODB_AVG_NUM_POINTS Avg Num of Points&quot; &quot;&quot; &quot;GUI OPTIONAL FLOAT GEODB_XORIGIN X Origin&quot; &quot;&quot; &quot;GUI OPTIONAL FLOAT GEODB_YORIGIN Y Origin&quot; &quot;&quot; &quot;GUI OPTIONAL FLOAT GEODB_XYSCALE X,Y Scale&quot; &quot;&quot; &quot;GUI OPTIONAL CHOICE GEODB_HAS_Z_VALUES yes%no Contains Z Values&quot; &quot;&quot; &quot;GUI OPTIONAL FLOAT GEODB_ZORIGIN Z Origin&quot; &quot;&quot; &quot;GUI OPTIONAL FLOAT GEODB_ZSCALE Z Scale&quot; &quot;&quot; &quot;GUI OPTIONAL CHOICE GEODB_HAS_MEASURES yes%no Contains Measures&quot; &quot;&quot; &quot;GUI OPTIONAL FLOAT GEODB_MEASURES_ORIGIN Measure Origin&quot; &quot;&quot; &quot;GUI OPTIONAL FLOAT GEODB_MEASURES_SCALE Measure Scale&quot; &quot;&quot; &quot;GUI OPTIONAL FLOAT GEODB_ANNO_REFERENCE_SCALE Annotation Reference Scale&quot; &quot;&quot; "
 #! ATTR_INDEX_TYPES=""
 #! ATTR_NAME_INVALID_CHARS=":. %-#[]&quot;()!?*&apos;&amp;+\/{}|="
@@ -1390,7 +1390,7 @@
 #! IS_STAND_ALONE="true"
 #! />
 #! <GLOBAL_PARAMETER
-#! GUI_LINE="GUI IGNORE TEXT THEMA_AREALE Thema-Areale:"
+#! GUI_LINE="GUI IGNORE TEXT_OR_ATTR THEMA_AREALE Thema-Areale:"
 #! DEFAULT_VALUE="14"
 #! IS_STAND_ALONE="true"
 #! />
@@ -1420,7 +1420,7 @@
 #! INFO_NODE="false"
 #! TOP_LEFT="-1147 1396"
 #! BOTTOM_RIGHT="-1147 1396"
-#! COLOUR="1,1,0.784314,0.196078"
+#! COLOUR="1,1,0.784314,0.192157"
 #! SIZE_POLICY="8"
 #! COMMENT_TYPE="REGULAR"
 #! ANCHORED_NODE="1"
@@ -1434,7 +1434,7 @@
 #! INFO_NODE="false"
 #! TOP_LEFT="-1129 823"
 #! BOTTOM_RIGHT="-1129 823"
-#! COLOUR="1,1,0.784314,0.196078"
+#! COLOUR="1,1,0.784314,0.192157"
 #! SIZE_POLICY="8"
 #! COMMENT_TYPE="REGULAR"
 #! ANCHORED_NODE="2"
@@ -1448,7 +1448,7 @@
 #! INFO_NODE="false"
 #! TOP_LEFT="2429 1411"
 #! BOTTOM_RIGHT="2429 1411"
-#! COLOUR="1,1,0.784314,0.196078"
+#! COLOUR="1,1,0.784314,0.192157"
 #! SIZE_POLICY="8"
 #! COMMENT_TYPE="REGULAR"
 #! ANCHORED_NODE="12"
@@ -1462,7 +1462,7 @@
 #! INFO_NODE="false"
 #! TOP_LEFT="2462 1021"
 #! BOTTOM_RIGHT="2462 1021"
-#! COLOUR="1,1,0.784314,0.196078"
+#! COLOUR="1,1,0.784314,0.192157"
 #! SIZE_POLICY="8"
 #! COMMENT_TYPE="REGULAR"
 #! ANCHORED_NODE="23"
@@ -1476,7 +1476,7 @@
 #! INFO_NODE="false"
 #! TOP_LEFT="3733 964"
 #! BOTTOM_RIGHT="3733 964"
-#! COLOUR="1,1,0.784314,0.196078"
+#! COLOUR="1,1,0.784314,0.192157"
 #! SIZE_POLICY="8"
 #! COMMENT_TYPE="REGULAR"
 #! ANCHORED_NODE="30"
@@ -1490,7 +1490,7 @@
 #! INFO_NODE="false"
 #! TOP_LEFT="318 1404"
 #! BOTTOM_RIGHT="318 1404"
-#! COLOUR="1,1,0.784314,0.196078"
+#! COLOUR="1,1,0.784314,0.192157"
 #! SIZE_POLICY="8"
 #! COMMENT_TYPE="REGULAR"
 #! ANCHORED_NODE="38"
@@ -1504,7 +1504,7 @@
 #! INFO_NODE="false"
 #! TOP_LEFT="351 1053"
 #! BOTTOM_RIGHT="351 1053"
-#! COLOUR="1,1,0.784314,0.196078"
+#! COLOUR="1,1,0.784314,0.192157"
 #! SIZE_POLICY="8"
 #! COMMENT_TYPE="REGULAR"
 #! ANCHORED_NODE="39"
@@ -1518,7 +1518,7 @@
 #! INFO_NODE="false"
 #! TOP_LEFT="3748 20"
 #! BOTTOM_RIGHT="3748 20"
-#! COLOUR="1,1,0.784314,0.196078"
+#! COLOUR="1,1,0.784314,0.192157"
 #! SIZE_POLICY="8"
 #! COMMENT_TYPE="REGULAR"
 #! ANCHORED_NODE="49"
@@ -1532,7 +1532,7 @@
 #! INFO_NODE="false"
 #! TOP_LEFT="4444 -868"
 #! BOTTOM_RIGHT="4444 -868"
-#! COLOUR="1,1,0.784314,0.196078"
+#! COLOUR="1,1,0.784314,0.192157"
 #! SIZE_POLICY="8"
 #! COMMENT_TYPE="REGULAR"
 #! ANCHORED_NODE="48"
@@ -1546,7 +1546,7 @@
 #! INFO_NODE="false"
 #! TOP_LEFT="2336 697"
 #! BOTTOM_RIGHT="2336 697"
-#! COLOUR="1,1,0.784314,0.196078"
+#! COLOUR="1,1,0.784314,0.192157"
 #! SIZE_POLICY="8"
 #! COMMENT_TYPE="REGULAR"
 #! ANCHORED_NODE="59"
@@ -1560,7 +1560,7 @@
 #! INFO_NODE="false"
 #! TOP_LEFT="3857 -1315"
 #! BOTTOM_RIGHT="3857 -1315"
-#! COLOUR="1,1,0.784314,0.196078"
+#! COLOUR="1,1,0.784314,0.192157"
 #! SIZE_POLICY="8"
 #! COMMENT_TYPE="REGULAR"
 #! ANCHORED_NODE="65"
@@ -1606,6 +1606,34 @@
 #! SIZE_POLICY="8"
 #! COMMENT_TYPE="REGULAR"
 #! ANCHORED_NODE="76"
+#! />
+#! <COMMENT
+#! IDENTIFIER="88"
+#! COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:11px; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Alle PUBLIZIERTAB&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;erstellen (aus KBSEINTRAG)&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#! POSITION="3049 1011"
+#! ORDER="5e+014"
+#! FOLLOW_ANCHOR="true"
+#! INFO_NODE="false"
+#! TOP_LEFT="3049 1011"
+#! BOTTOM_RIGHT="3049 1011"
+#! COLOUR="1,1,0.784314,0.192157"
+#! SIZE_POLICY="8"
+#! COMMENT_TYPE="REGULAR"
+#! ANCHORED_NODE="87"
+#! />
+#! <COMMENT
+#! IDENTIFIER="95"
+#! COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:11px; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;ARTCODE&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#! POSITION="3089 1348"
+#! ORDER="5e+014"
+#! FOLLOW_ANCHOR="true"
+#! INFO_NODE="false"
+#! TOP_LEFT="3089 1348"
+#! BOTTOM_RIGHT="3089 1348"
+#! COLOUR="1,1,0.784314,0.192157"
+#! SIZE_POLICY="8"
+#! COMMENT_TYPE="REGULAR"
+#! ANCHORED_NODE="54"
 #! />
 #! </COMMENTS>
 #! <CONSTANTS>
@@ -1919,77 +1947,6 @@
 #! <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
 #! </TRANSFORMER>
 #! <TRANSFORMER
-#! IDENTIFIER="26"
-#! TYPE="DateFormatter"
-#! VERSION="4"
-#! POSITION="3025 931"
-#! ORDER="5e+014"
-#! PARMS_EDITED="true"
-#! ENABLED="true"
-#! >
-#! <OUTPUT_FEAT NAME="OUTPUT"/>
-#! <FEAT_COLLAPSED COLLAPSED="0"/>
-#! <XFORM_ATTR ATTR_NAME="GSZ_NR" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="EIB_ARTCODE" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="GSZ_NAME" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="BESCHLUSS" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="BESCHL_DOC" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="REGLEM_DOC" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="THE_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="DAR_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="EIB_AUSSAGE_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="EIB_AUSSAGE_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="BEZEICH_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="BEZEICH_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="FLA_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="EIB_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="VOR_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_PARM PARM_NAME="DATE_ATTR" PARM_VALUE="BESCHLUSS"/>
-#! <XFORM_PARM PARM_NAME="FMT" PARM_VALUE="%d.%m.%y"/>
-#! <XFORM_PARM PARM_NAME="SRCFMT" PARM_VALUE="Unknown - Automatic Detection"/>
-#! <XFORM_PARM PARM_NAME="INVALID_DATE_VALUE" PARM_VALUE="_FME_NO_OP_"/>
-#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="DateFormatter"/>
-#! <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
-#! <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
-#! </TRANSFORMER>
-#! <TRANSFORMER
-#! IDENTIFIER="28"
-#! TYPE="AttributeCreator"
-#! VERSION="5"
-#! POSITION="3013 679"
-#! ORDER="5e+014"
-#! PARMS_EDITED="true"
-#! ENABLED="true"
-#! >
-#! <OUTPUT_FEAT NAME="OUTPUT"/>
-#! <FEAT_COLLAPSED COLLAPSED="0"/>
-#! <XFORM_ATTR ATTR_NAME="GSZ_NR" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="EIB_ARTCODE" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="GSZ_NAME" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="BESCHLUSS" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="BESCHL_DOC" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="REGLEM_DOC" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="THE_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="DAR_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="EIB_AUSSAGE_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="EIB_AUSSAGE_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="BEZEICH_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="BEZEICH_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="FLA_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="EIB_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="VOR_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="FLA_PUBLIZIERTAB" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="EIB_PUBLIZIERTAB" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="VOR_PUBLIZIERTAB" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_PARM PARM_NAME="NUM_PRIOR_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
-#! <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
-#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeCreator"/>
-#! <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_VALUE="&lt;Unused&gt;"/>
-#! <XFORM_PARM PARM_NAME="NUM_SUBSEQUENT_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
-#! <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
-#! <XFORM_PARM PARM_NAME="ATTR_LIST" PARM_VALUE="FLA_PUBLIZIERTAB,&lt;at&gt;Value&lt;openparen&gt;BESCHLUSS&lt;closeparen&gt;,EIB_PUBLIZIERTAB,&lt;at&gt;Value&lt;openparen&gt;BESCHLUSS&lt;closeparen&gt;,VOR_PUBLIZIERTAB,&lt;at&gt;Value&lt;openparen&gt;BESCHLUSS&lt;closeparen&gt;"/>
-#! </TRANSFORMER>
-#! <TRANSFORMER
 #! IDENTIFIER="38"
 #! TYPE="AttributeCreator"
 #! VERSION="5"
@@ -2053,33 +2010,7 @@
 #! <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_VALUE="&lt;Unused&gt;"/>
 #! <XFORM_PARM PARM_NAME="NUM_SUBSEQUENT_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
 #! <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
-#! <XFORM_PARM PARM_NAME="ATTR_LIST" PARM_VALUE="THE_ID,1132,DAR_OID,$(DARST_AREALE),EIB_AUSSAGE_DE,Schutzareal&lt;space&gt;&lt;at&gt;Value&lt;openparen&gt;TYP&lt;closeparen&gt;&lt;space&gt;&lt;openparen&gt;&lt;at&gt;Value&lt;openparen&gt;GSZ_NAME&lt;closeparen&gt;&lt;closeparen&gt;,EIB_AUSSAGE_FR,P&lt;u00e9&gt;rim&lt;u00e8&gt;tre&lt;space&gt;de&lt;space&gt;protection&lt;space&gt;&lt;at&gt;Value&lt;openparen&gt;TYP&lt;closeparen&gt;&lt;openparen&gt;&lt;at&gt;Value&lt;openparen&gt;GSZ_NAME&lt;closeparen&gt;&lt;closeparen&gt;"/>
-#! </TRANSFORMER>
-#! <TRANSFORMER
-#! IDENTIFIER="44"
-#! TYPE="Inspector"
-#! VERSION="3"
-#! POSITION="3738 169"
-#! ORDER="5e+014"
-#! PARMS_EDITED="false"
-#! ENABLED="true"
-#! >
-#! <XFORM_PARM PARM_NAME="AREA_COLOR" PARM_VALUE=""/>
-#! <XFORM_PARM PARM_NAME="THINNER_MAX_NUM_POINTS" PARM_VALUE="&lt;Unused&gt;"/>
-#! <XFORM_PARM PARM_NAME="TACKATTRS" PARM_VALUE=""/>
-#! <XFORM_PARM PARM_NAME="VECTOR_GROUP" PARM_VALUE=""/>
-#! <XFORM_PARM PARM_NAME="POINTCLOUD_GROUP" PARM_VALUE=""/>
-#! <XFORM_PARM PARM_NAME="PEN_COLOR" PARM_VALUE=""/>
-#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeCreator_Output"/>
-#! <XFORM_PARM PARM_NAME="RASTER_GROUP" PARM_VALUE=""/>
-#! <XFORM_PARM PARM_NAME="THINNER_INTERVAL" PARM_VALUE="&lt;Unused&gt;"/>
-#! <XFORM_PARM PARM_NAME="RASTER_VISUALIZATION_OPTION" PARM_VALUE="No Reduction"/>
-#! <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
-#! <XFORM_PARM PARM_NAME="RASTER_NUM_ROWS" PARM_VALUE="&lt;Unused&gt;"/>
-#! <XFORM_PARM PARM_NAME="RASTER_START_COL" PARM_VALUE="&lt;Unused&gt;"/>
-#! <XFORM_PARM PARM_NAME="RASTER_NUM_COLS" PARM_VALUE="&lt;Unused&gt;"/>
-#! <XFORM_PARM PARM_NAME="THINNER_TYPE_DISPLAY" PARM_VALUE="No Thinning"/>
-#! <XFORM_PARM PARM_NAME="RASTER_START_ROW" PARM_VALUE="&lt;Unused&gt;"/>
+#! <XFORM_PARM PARM_NAME="ATTR_LIST" PARM_VALUE="THE_ID,$(THEMA_AREALE),DAR_OID,$(DARST_AREALE),EIB_AUSSAGE_DE,Schutzareal&lt;space&gt;&lt;at&gt;Value&lt;openparen&gt;TYP&lt;closeparen&gt;&lt;space&gt;&lt;openparen&gt;&lt;at&gt;Value&lt;openparen&gt;GSZ_NAME&lt;closeparen&gt;&lt;closeparen&gt;,EIB_AUSSAGE_FR,P&lt;u00e9&gt;rim&lt;u00e8&gt;tre&lt;space&gt;de&lt;space&gt;protection&lt;space&gt;&lt;at&gt;Value&lt;openparen&gt;TYP&lt;closeparen&gt;&lt;openparen&gt;&lt;at&gt;Value&lt;openparen&gt;GSZ_NAME&lt;closeparen&gt;&lt;closeparen&gt;"/>
 #! </TRANSFORMER>
 #! <TRANSFORMER
 #! IDENTIFIER="54"
@@ -2211,9 +2142,9 @@
 #! <XFORM_ATTR ATTR_NAME="VOR_TITEL_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_PARM PARM_NAME="LIST_ATTRS" PARM_VALUE=""/>
 #! <XFORM_PARM PARM_NAME="HIDE_ATTRIBUTES" PARM_VALUE=""/>
-#! <XFORM_PARM PARM_NAME="PYTHONSOURCE" PARM_VALUE="import&lt;space&gt;fmeobjects&lt;lf&gt;#&lt;space&gt;Template&lt;space&gt;Function&lt;space&gt;interface:&lt;lf&gt;def&lt;space&gt;processFeature&lt;openparen&gt;feature&lt;closeparen&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;reglement&lt;space&gt;=&lt;space&gt;feature.getAttribute&lt;openparen&gt;&lt;quote&gt;REGLEM_DOC&lt;quote&gt;&lt;closeparen&gt;.lower&lt;openparen&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;title_de&lt;space&gt;=&lt;space&gt;&lt;quote&gt;Reglement&lt;quote&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;title_fr&lt;space&gt;=&lt;space&gt;&lt;quote&gt;R&lt;u00e8&gt;glement&lt;quote&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;if&lt;space&gt;&lt;quote&gt;veraltet&lt;quote&gt;&lt;space&gt;in&lt;space&gt;reglement:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;titel_de&lt;space&gt;=&lt;space&gt;&lt;quote&gt;Rechtsvorschriften&lt;space&gt;veraltet&lt;quote&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;titel_fr&lt;space&gt;=&lt;space&gt;&lt;quote&gt;Prescriptions&lt;space&gt;l&lt;u00e9&gt;gales&lt;space&gt;obsol&lt;u00e8&gt;tes&lt;quote&gt;&lt;lf&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;feature.setAttribute&lt;openparen&gt;&lt;quote&gt;VOR_TITEL_DE&lt;quote&gt;&lt;comma&gt;&lt;space&gt;titel_de&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;feature.setAttribute&lt;openparen&gt;&lt;quote&gt;VOR_TITEL_FR&lt;quote&gt;&lt;comma&gt;&lt;space&gt;titel_fr&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;feature.setAttribute&lt;openparen&gt;&lt;quote&gt;VOR_OFFIZIELLERTITEL_DE&lt;quote&gt;&lt;comma&gt;&lt;space&gt;titel_de&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;feature.setAttribute&lt;openparen&gt;&lt;quote&gt;VOR_OFFIZIELLERTITEL_FR&lt;quote&gt;&lt;comma&gt;&lt;space&gt;titel_fr&lt;closeparen&gt;"/>
+#! <XFORM_PARM PARM_NAME="PYTHONSOURCE" PARM_VALUE="import&lt;space&gt;fmeobjects&lt;lf&gt;#&lt;space&gt;Template&lt;space&gt;Function&lt;space&gt;interface:&lt;lf&gt;def&lt;space&gt;processFeature&lt;openparen&gt;feature&lt;closeparen&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;reglement&lt;space&gt;=&lt;space&gt;feature.getAttribute&lt;openparen&gt;&lt;quote&gt;REGLEM_DOC&lt;quote&gt;&lt;closeparen&gt;.lower&lt;openparen&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;titel_de&lt;space&gt;=&lt;space&gt;&lt;quote&gt;Reglement&lt;quote&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;titel_fr&lt;space&gt;=&lt;space&gt;&lt;quote&gt;R&lt;u00e8&gt;glement&lt;quote&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;if&lt;space&gt;&lt;quote&gt;veraltet&lt;quote&gt;&lt;space&gt;in&lt;space&gt;reglement:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;titel_de&lt;space&gt;=&lt;space&gt;&lt;quote&gt;Rechtsvorschriften&lt;space&gt;veraltet&lt;quote&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;titel_fr&lt;space&gt;=&lt;space&gt;&lt;quote&gt;Prescriptions&lt;space&gt;l&lt;u00e9&gt;gales&lt;space&gt;obsol&lt;u00e8&gt;tes&lt;quote&gt;&lt;lf&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;feature.setAttribute&lt;openparen&gt;&lt;quote&gt;VOR_TITEL_DE&lt;quote&gt;&lt;comma&gt;&lt;space&gt;titel_de&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;feature.setAttribute&lt;openparen&gt;&lt;quote&gt;VOR_TITEL_FR&lt;quote&gt;&lt;comma&gt;&lt;space&gt;titel_fr&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;feature.setAttribute&lt;openparen&gt;&lt;quote&gt;VOR_OFFIZIELLERTITEL_DE&lt;quote&gt;&lt;comma&gt;&lt;space&gt;titel_de&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;feature.setAttribute&lt;openparen&gt;&lt;quote&gt;VOR_OFFIZIELLERTITEL_FR&lt;quote&gt;&lt;comma&gt;&lt;space&gt;titel_fr&lt;closeparen&gt;"/>
 #! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="PythonCaller"/>
-#! <XFORM_PARM PARM_NAME="PYTHONSYMBOL" PARM_VALUE="FeatureProcessor"/>
+#! <XFORM_PARM PARM_NAME="PYTHONSYMBOL" PARM_VALUE="processFeature"/>
 #! <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
 #! <XFORM_PARM PARM_NAME="ADVANCED_GROUP" PARM_VALUE=""/>
 #! <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
@@ -2356,6 +2287,82 @@
 #! <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
 #! <XFORM_PARM PARM_NAME="ATTR_LIST" PARM_VALUE="VOR_TEXTIMWEB_DE,&lt;at&gt;Value&lt;openparen&gt;REGLEM_DOC&lt;closeparen&gt;,VOR_TEXTIMWEB_FR,&lt;at&gt;Value&lt;openparen&gt;REGLEM_DOC&lt;closeparen&gt;"/>
 #! </TRANSFORMER>
+#! <TRANSFORMER
+#! IDENTIFIER="87"
+#! TYPE="PythonCaller"
+#! VERSION="4"
+#! POSITION="3033 803"
+#! ORDER="5e+014"
+#! PARMS_EDITED="true"
+#! ENABLED="false"
+#! >
+#! <OUTPUT_FEAT NAME="OUTPUT"/>
+#! <FEAT_COLLAPSED COLLAPSED="0"/>
+#! <XFORM_ATTR ATTR_NAME="GSZ_NR" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="EIB_ARTCODE" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="GSZ_NAME" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="BESCHLUSS" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="BESCHL_DOC" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="REGLEM_DOC" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="THE_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="DAR_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="EIB_AUSSAGE_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="EIB_AUSSAGE_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="BEZEICH_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="BEZEICH_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="FLA_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="EIB_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="VOR_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="FLA_PUBLIZIERTAB" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="EIB_PUBLIZIERTAB" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="VOR_PUBLIZIERTAB" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_PARM PARM_NAME="LIST_ATTRS" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="HIDE_ATTRIBUTES" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="PYTHONSOURCE" PARM_VALUE="import&lt;space&gt;fmeobjects&lt;lf&gt;import&lt;space&gt;datetime&lt;lf&gt;#&lt;space&gt;Template&lt;space&gt;Function&lt;space&gt;interface:&lt;lf&gt;def&lt;space&gt;processFeature&lt;openparen&gt;feature&lt;closeparen&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;beschluss&lt;space&gt;=&lt;space&gt;feature.getAttribute&lt;openparen&gt;&lt;apos&gt;BESCHLUSS&lt;apos&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;dt&lt;space&gt;=&lt;space&gt;datetime.datetime.strptime&lt;openparen&gt;beschluss&lt;comma&gt;&lt;apos&gt;%d.%m.%Y&lt;apos&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;formatted&lt;space&gt;=&lt;space&gt;dt.strftime&lt;openparen&gt;&lt;apos&gt;%Y%m%d&lt;apos&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;feature.setAttribute&lt;openparen&gt;&lt;apos&gt;FLA_PUBLIZIERTAB&lt;apos&gt;&lt;comma&gt;&lt;space&gt;formatted&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;feature.setAttribute&lt;openparen&gt;&lt;apos&gt;EIB_PUBLIZIERTAB&lt;apos&gt;&lt;comma&gt;&lt;space&gt;formatted&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;feature.setAttribute&lt;openparen&gt;&lt;apos&gt;VOR_PUBLIZIERTAB&lt;apos&gt;&lt;comma&gt;&lt;space&gt;formatted&lt;closeparen&gt;"/>
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="PythonCaller_4"/>
+#! <XFORM_PARM PARM_NAME="PYTHONSYMBOL" PARM_VALUE="processFeature"/>
+#! <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="ADVANCED_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="NEW_ATTRIBUTES" PARM_VALUE="FLA_PUBLIZIERTAB EIB_PUBLIZIERTAB VOR_PUBLIZIERTAB"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#! IDENTIFIER="90"
+#! TYPE="AttributeCreator"
+#! VERSION="5"
+#! POSITION="2988 545"
+#! ORDER="5e+014"
+#! PARMS_EDITED="true"
+#! ENABLED="true"
+#! >
+#! <OUTPUT_FEAT NAME="OUTPUT"/>
+#! <FEAT_COLLAPSED COLLAPSED="0"/>
+#! <XFORM_ATTR ATTR_NAME="GSZ_NR" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="EIB_ARTCODE" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="GSZ_NAME" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="BESCHLUSS" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="BESCHL_DOC" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="REGLEM_DOC" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="THE_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="DAR_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="EIB_AUSSAGE_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="EIB_AUSSAGE_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="BEZEICH_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="BEZEICH_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="FLA_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="EIB_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="VOR_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="FLA_PUBLIZIERTAB" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="EIB_PUBLIZIERTAB" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="VOR_PUBLIZIERTAB" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_PARM PARM_NAME="NUM_PRIOR_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#! <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeCreator"/>
+#! <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_VALUE="&lt;Unused&gt;"/>
+#! <XFORM_PARM PARM_NAME="NUM_SUBSEQUENT_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#! <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
+#! <XFORM_PARM PARM_NAME="ATTR_LIST" PARM_VALUE="FLA_PUBLIZIERTAB,&lt;at&gt;Value&lt;openparen&gt;BESCHLUSS&lt;closeparen&gt;,EIB_PUBLIZIERTAB,&lt;at&gt;Value&lt;openparen&gt;BESCHLUSS&lt;closeparen&gt;,VOR_PUBLIZIERTAB,&lt;at&gt;Value&lt;openparen&gt;BESCHLUSS&lt;closeparen&gt;"/>
+#! </TRANSFORMER>
 #! </TRANSFORMERS>
 #! <FEAT_LINKS>
 #! <FEAT_LINK
@@ -2409,24 +2416,6 @@
 #! TARGET_NODE="23"
 #! SOURCE_PORT_DESC="fo 0"
 #! TARGET_PORT_DESC="fi 0"
-#! ENABLED="true"
-#! EXTRA_POINTS=""
-#! />
-#! <FEAT_LINK
-#! IDENTIFIER="29"
-#! SOURCE_NODE="26"
-#! TARGET_NODE="28"
-#! SOURCE_PORT_DESC="fo 0"
-#! TARGET_PORT_DESC="fi 0"
-#! ENABLED="true"
-#! EXTRA_POINTS=""
-#! />
-#! <FEAT_LINK
-#! IDENTIFIER="37"
-#! SOURCE_NODE="28"
-#! TARGET_NODE="30"
-#! SOURCE_PORT_DESC="fo 0"
-#! TARGET_PORT_DESC="-1"
 #! ENABLED="true"
 #! EXTRA_POINTS=""
 #! />
@@ -2503,33 +2492,6 @@
 #! EXTRA_POINTS=""
 #! />
 #! <FEAT_LINK
-#! IDENTIFIER="45"
-#! SOURCE_NODE="28"
-#! TARGET_NODE="44"
-#! SOURCE_PORT_DESC="fo 0"
-#! TARGET_PORT_DESC="fi 0"
-#! ENABLED="true"
-#! EXTRA_POINTS=""
-#! />
-#! <FEAT_LINK
-#! IDENTIFIER="53"
-#! SOURCE_NODE="28"
-#! TARGET_NODE="49"
-#! SOURCE_PORT_DESC="fo 0"
-#! TARGET_PORT_DESC="-1"
-#! ENABLED="true"
-#! EXTRA_POINTS=""
-#! />
-#! <FEAT_LINK
-#! IDENTIFIER="56"
-#! SOURCE_NODE="54"
-#! TARGET_NODE="26"
-#! SOURCE_PORT_DESC="fo 0"
-#! TARGET_PORT_DESC="fi 0"
-#! ENABLED="true"
-#! EXTRA_POINTS=""
-#! />
-#! <FEAT_LINK
 #! IDENTIFIER="60"
 #! SOURCE_NODE="23"
 #! TARGET_NODE="59"
@@ -2548,29 +2510,11 @@
 #! EXTRA_POINTS=""
 #! />
 #! <FEAT_LINK
-#! IDENTIFIER="63"
-#! SOURCE_NODE="28"
-#! TARGET_NODE="62"
-#! SOURCE_PORT_DESC="fo 0"
-#! TARGET_PORT_DESC="fi 0"
-#! ENABLED="true"
-#! EXTRA_POINTS=""
-#! />
-#! <FEAT_LINK
 #! IDENTIFIER="64"
 #! SOURCE_NODE="62"
 #! TARGET_NODE="48"
 #! SOURCE_PORT_DESC="fo 0"
 #! TARGET_PORT_DESC="-1"
-#! ENABLED="true"
-#! EXTRA_POINTS=""
-#! />
-#! <FEAT_LINK
-#! IDENTIFIER="66"
-#! SOURCE_NODE="28"
-#! TARGET_NODE="65"
-#! SOURCE_PORT_DESC="fo 0"
-#! TARGET_PORT_DESC="fi 0"
 #! ENABLED="true"
 #! EXTRA_POINTS=""
 #! />
@@ -2652,6 +2596,96 @@
 #! TARGET_NODE="46"
 #! SOURCE_PORT_DESC="fo 0"
 #! TARGET_PORT_DESC="-1"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="89"
+#! SOURCE_NODE="54"
+#! TARGET_NODE="87"
+#! SOURCE_PORT_DESC="fo 0"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="91"
+#! SOURCE_NODE="87"
+#! TARGET_NODE="30"
+#! SOURCE_PORT_DESC="fo 0"
+#! TARGET_PORT_DESC="-1"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="92"
+#! SOURCE_NODE="87"
+#! TARGET_NODE="49"
+#! SOURCE_PORT_DESC="fo 0"
+#! TARGET_PORT_DESC="-1"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="93"
+#! SOURCE_NODE="87"
+#! TARGET_NODE="62"
+#! SOURCE_PORT_DESC="fo 0"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="94"
+#! SOURCE_NODE="87"
+#! TARGET_NODE="65"
+#! SOURCE_PORT_DESC="fo 0"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="96"
+#! SOURCE_NODE="54"
+#! TARGET_NODE="90"
+#! SOURCE_PORT_DESC="fo 0"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="97"
+#! SOURCE_NODE="90"
+#! TARGET_NODE="30"
+#! SOURCE_PORT_DESC="fo 0"
+#! TARGET_PORT_DESC="-1"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="98"
+#! SOURCE_NODE="90"
+#! TARGET_NODE="49"
+#! SOURCE_PORT_DESC="fo 0"
+#! TARGET_PORT_DESC="-1"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="99"
+#! SOURCE_NODE="90"
+#! TARGET_NODE="65"
+#! SOURCE_PORT_DESC="fo 0"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="100"
+#! SOURCE_NODE="90"
+#! TARGET_NODE="62"
+#! SOURCE_PORT_DESC="fo 0"
+#! TARGET_PORT_DESC="fi 0"
 #! ENABLED="true"
 #! EXTRA_POINTS=""
 #! />
@@ -3388,7 +3422,7 @@ MULTI_READER_CONTINUE_ON_READER_FAILURE No
 
 # -------------------------------------------------------------------------
 
-MACRO WORKSPACE_NAME s41_derive_gsk25_transfer
+MACRO WORKSPACE_NAME s42_derive_gsk25_transfer
 MACRO FME_VIEWER_APP fmedatainspector
 # -------------------------------------------------------------------------
 
@@ -3432,13 +3466,13 @@ FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeFilter <MISSING> Output Nuker"
 FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeFilter <NULL> Output Nuker"   INPUT FEATURE_TYPE AttributeFilter_<NULL>
 FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeFilter <UNFILTERED> Output Nuker"   INPUT FEATURE_TYPE AttributeFilter_<UNFILTERED>
 # -------------------------------------------------------------------------
-FACTORY_DEF * AttrSetFactory FACTORY_NAME AttributeCreator_2 ATTRSET_PROPAGATE_MISSING YES INPUT  FEATURE_TYPE AttributeFilter_SA2    INPUT  FEATURE_TYPE AttributeFilter_SA1    INPUT  FEATURE_TYPE AttributeFilter_SA3 ATTR THE_ID 1132 ATTR DAR_OID $(DARST_AREALE$encode) ATTR EIB_AUSSAGE_DE Schutzareal<space><at>Value<openparen>TYP<closeparen><space><openparen><at>Value<openparen>GSZ_NAME<closeparen><closeparen> ATTR EIB_AUSSAGE_FR P<u00e9>rim<u00e8>tre<space>de<space>protection<space><at>Value<openparen>TYP<closeparen><openparen><at>Value<openparen>GSZ_NAME<closeparen><closeparen>    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_2_OUTPUT 
+FACTORY_DEF * AttrSetFactory FACTORY_NAME AttributeCreator_2 ATTRSET_PROPAGATE_MISSING YES INPUT  FEATURE_TYPE AttributeFilter_SA1    INPUT  FEATURE_TYPE AttributeFilter_SA2    INPUT  FEATURE_TYPE AttributeFilter_SA3 ATTR THE_ID $(THEMA_AREALE$encode) ATTR DAR_OID $(DARST_AREALE$encode) ATTR EIB_AUSSAGE_DE Schutzareal<space><at>Value<openparen>TYP<closeparen><space><openparen><at>Value<openparen>GSZ_NAME<closeparen><closeparen> ATTR EIB_AUSSAGE_FR P<u00e9>rim<u00e8>tre<space>de<space>protection<space><at>Value<openparen>TYP<closeparen><openparen><at>Value<openparen>GSZ_NAME<closeparen><closeparen>    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_2_OUTPUT 
 # -------------------------------------------------------------------------
-FACTORY_DEF * AttrSetFactory FACTORY_NAME AttributeCreator_3 ATTRSET_PROPAGATE_MISSING YES INPUT  FEATURE_TYPE AttributeFilter_S1    INPUT  FEATURE_TYPE AttributeFilter_S2    INPUT  FEATURE_TYPE AttributeFilter_S3 ATTR THE_ID $(THEMA_ZONEN$encode) ATTR DAR_OID $(DARST_ZONEN$encode) ATTR EIB_AUSSAGE_DE Schutzzone<space><at>Value<openparen>TYP<closeparen><space><openparen><at>Value<openparen>GSZ_NAME<closeparen><closeparen> ATTR EIB_AUSSAGE_FR Zone<space>de<space>protection<space><at>Value<openparen>TYP<closeparen><space><openparen><at>Value<openparen>GSZ_NAME<closeparen><closeparen>    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_3_OUTPUT 
+FACTORY_DEF * AttrSetFactory FACTORY_NAME AttributeCreator_3 ATTRSET_PROPAGATE_MISSING YES INPUT  FEATURE_TYPE AttributeFilter_S2    INPUT  FEATURE_TYPE AttributeFilter_S1    INPUT  FEATURE_TYPE AttributeFilter_S3 ATTR THE_ID $(THEMA_ZONEN$encode) ATTR DAR_OID $(DARST_ZONEN$encode) ATTR EIB_AUSSAGE_DE Schutzzone<space><at>Value<openparen>TYP<closeparen><space><openparen><at>Value<openparen>GSZ_NAME<closeparen><closeparen> ATTR EIB_AUSSAGE_FR Zone<space>de<space>protection<space><at>Value<openparen>TYP<closeparen><space><openparen><at>Value<openparen>GSZ_NAME<closeparen><closeparen>    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_3_OUTPUT 
 # -------------------------------------------------------------------------
 
 INCLUDE [    set macroLine "MACRO AttributeRemover_LIST_EXP ";    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "{\[0-9\]+}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
-FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRemover    INPUT  FEATURE_TYPE AttributeCreator_2_OUTPUT    INPUT  FEATURE_TYPE AttributeCreator_3_OUTPUT    OUTPUT FEATURE_TYPE AttributeRemover_OUTPUT        @RemoveAttributes(geodb_oid,OBJECTID,SHAPE.AREA,SHAPE.LEN)        @RemoveAttributes(fme_regexp_match"$(AttributeRemover_LIST_EXP)")
+FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRemover    INPUT  FEATURE_TYPE AttributeCreator_3_OUTPUT    INPUT  FEATURE_TYPE AttributeCreator_2_OUTPUT    OUTPUT FEATURE_TYPE AttributeRemover_OUTPUT        @RemoveAttributes(geodb_oid,OBJECTID,SHAPE.AREA,SHAPE.LEN)        @RemoveAttributes(fme_regexp_match"$(AttributeRemover_LIST_EXP)")
 
 # -------------------------------------------------------------------------
 
@@ -3463,77 +3497,30 @@ FACTORY_DEF * TeeFactory    FACTORY_NAME UUIDGenerator_3    INPUT  FEATURE_TYPE 
 FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRenamer    INPUT  FEATURE_TYPE UUIDGenerator_3_OUTPUT    OUTPUT FEATURE_TYPE AttributeRenamer_OUTPUT         @RenameAttributes(ATTR_LIST_DEF_VAL, TYP,EIB_ARTCODE,"")
 
 
+FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeRenamer OUTPUT Splitter"   INPUT FEATURE_TYPE AttributeRenamer_OUTPUT   OUTPUT FEATURE_TYPE AttributeRenamer_OUTPUT_0_4N+m7MNBb5s=   OUTPUT FEATURE_TYPE AttributeRenamer_OUTPUT_1_4N+m7MNBb5s=
+# -------------------------------------------------------------------------
+FACTORY_DEF * TeeFactory   FACTORY_NAME "PythonCaller_4 (Disabled) Nuker"   INPUT FEATURE_TYPE AttributeRenamer_OUTPUT_1_4N+m7MNBb5s=
+# -------------------------------------------------------------------------
+FACTORY_DEF * AttrSetFactory FACTORY_NAME AttributeCreator ATTRSET_PROPAGATE_MISSING YES INPUT  FEATURE_TYPE AttributeRenamer_OUTPUT_0_4N+m7MNBb5s= ATTR FLA_PUBLIZIERTAB <at>Value<openparen>BESCHLUSS<closeparen> ATTR EIB_PUBLIZIERTAB <at>Value<openparen>BESCHLUSS<closeparen> ATTR VOR_PUBLIZIERTAB <at>Value<openparen>BESCHLUSS<closeparen>    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_OUTPUT 
+FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeCreator OUTPUT Splitter"   INPUT FEATURE_TYPE AttributeCreator_OUTPUT   OUTPUT FEATURE_TYPE AttributeCreator_OUTPUT_0_olPiq+C1D00=   OUTPUT FEATURE_TYPE AttributeCreator_OUTPUT_1_olPiq+C1D00=   OUTPUT FEATURE_TYPE AttributeCreator_OUTPUT_2_olPiq+C1D00=   OUTPUT FEATURE_TYPE AttributeCreator_OUTPUT_3_olPiq+C1D00=
 # -------------------------------------------------------------------------
 
-Tcl2 proc DateFormatter_formatter {invalidValue} {       set dateFormat {%d.%m.%y};       if { [string compare $dateFormat {FME Date/Time (%Y%m%d%H%M%S)}] == 0 } {          set dateFormat {%Y%m%d%H%M%S};       } elseif { [string compare $dateFormat {FME Date (%Y%m%d)}] == 0} {          set dateFormat {%Y%m%d};       } elseif { [string compare $dateFormat {FME Time (%H%M%S)}] == 0} {          set dateFormat {%H%M%S};       } elseif { [string compare $dateFormat {ISO Date (%Y-%m-%d)}] == 0} {          set dateFormat {%Y-%m-%d};       } elseif { [string compare $dateFormat {ISO DateTime (%Y-%m-%dT%H:%M:%S)}] == 0} {          set dateFormat {%Y-%m-%dT%H:%M:%S};       } elseif { [string compare $dateFormat {ISO Time (%H:%M:%S)}] == 0} {          set dateFormat {%H:%M:%S};       } elseif { [string compare $dateFormat {Locale Date (%c)}] == 0} {          set dateFormat {%c};       };     set attrs [split {BESCHLUSS} {,}];     foreach attr $attrs {        set date [string trim [FME_GetAttribute $attr]];        set dateLen [string length $date];        set srcfmt {};        if {{FME_AUTOMATIC} != {FME_AUTOMATIC}} {            set srcfmt {FME_AUTOMATIC};        };        if {$dateLen > 0} {           if {[string length $srcfmt] == 0} {              set attrFull $attr;              append attrFull .full;              set fullDate [FME_GetAttribute $attrFull];              if { [string compare -length $dateLen $date $fullDate] == 0 } {                 set extra [string range $fullDate $dateLen end]000000;                 set date [string range \"$date$extra\" 0 13];                 set dateLen 14              };              if {($dateLen == 14) && [regexp {^[0-9]*$} $date]} {                 set srcfmt %Y%m%d%H%M%S;              };           };        };        set sourceFormatOpt {};        if {[string length $srcfmt] > 0} {           set sourceFormatOpt \"-format {$srcfmt}\";        };        if { (0 == $dateLen) || [catch {                         set seconds [eval clock scan "{$date}" $sourceFormatOpt];                         FME_SetAttribute $attr [clock format $seconds -format $dateFormat];                          }] } {          if { $invalidValue == {FME_NULL_VALUE} } {             FME_SetAttributeNull $attr;          } elseif { $invalidValue != {_FME_NO_OP_} }  {             FME_SetAttribute $attr [FME_DecodeText $invalidValue];          };        };     }; }
-FACTORY_DEF * TeeFactory    FACTORY_NAME DateFormatter    INPUT  FEATURE_TYPE AttributeRenamer_OUTPUT    OUTPUT FEATURE_TYPE DateFormatter_OUTPUT         @Tcl2("DateFormatter_formatter {_FME_NO_OP_}")
-
-# -------------------------------------------------------------------------
-FACTORY_DEF * AttrSetFactory FACTORY_NAME AttributeCreator ATTRSET_PROPAGATE_MISSING YES INPUT  FEATURE_TYPE DateFormatter_OUTPUT ATTR FLA_PUBLIZIERTAB <at>Value<openparen>BESCHLUSS<closeparen> ATTR EIB_PUBLIZIERTAB <at>Value<openparen>BESCHLUSS<closeparen> ATTR VOR_PUBLIZIERTAB <at>Value<openparen>BESCHLUSS<closeparen>    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_OUTPUT 
-FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeCreator OUTPUT Splitter"   INPUT FEATURE_TYPE AttributeCreator_OUTPUT   OUTPUT FEATURE_TYPE AttributeCreator_OUTPUT_0_olPiq+C1D00=   OUTPUT FEATURE_TYPE AttributeCreator_OUTPUT_1_olPiq+C1D00=   OUTPUT FEATURE_TYPE AttributeCreator_OUTPUT_2_olPiq+C1D00=   OUTPUT FEATURE_TYPE AttributeCreator_OUTPUT_3_olPiq+C1D00=   OUTPUT FEATURE_TYPE AttributeCreator_OUTPUT_4_olPiq+C1D00=
-# -------------------------------------------------------------------------
-
-# Set the directive to add all the meta-attributes to the features.
-# We do this so users see all possible information in the viewed
-# features.
-
-READER_META_ATTRIBUTES fme_feature_type fme_dataset fme_basename
-# Assumption is that the workspace temp dir has been already set and created.  See controldefs.cpp - ControlDefs::writeVisualizerTempDir
-DEFAULT_MACRO WORKSPACE_TEMP_DIR
-INCLUDE [         if { [string length {}] > 0 } {             set catter "" ;             set comma "" ;             foreach attr {} {                 set catter "$catter$comma@Value(\"$attr\")" ;                 set comma ",_," ;             } ;             puts "MACRO CATMAC _@Concatenate($catter)" ;         }         else {             puts "MACRO CATMAC " ;         };         set safeName "[regsub -all {[^a-zA-Z0-9]} {AttributeCreator_Output} _]_[expr round(rand() * 1000000)]_[clock clicks  -milliseconds]";         puts "MACRO SAFE_FFS_NAME $safeName";         ]
-# Make the temporary directory that the FFS files will live in.
-FACTORY_DEF * CreationFactory      FACTORY_NAME AttributeCreator_Output_DirCreator      OUTPUT FEATURE_TYPE __nukeme__          @Tcl2("catch {file mkdir {$(WORKSPACE_TEMP_DIR)}}")
-FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeCreator_Output_DirCreatorCleanerUpper    INPUT FEATURE_TYPE __nukeme__
-# Send raster, point cloud and vector features down different paths to prepare
-# them for viewing
-
-FACTORY_DEF * TestFactory    FACTORY_NAME AttributeCreator_Output_FeatureDirector    INPUT  FEATURE_TYPE AttributeCreator_OUTPUT_3_olPiq+C1D00=    TEST &fme_type == "fme_raster"    OUTPUT FAILED FEATURE_TYPE AttributeCreator_Output___NotRasterFeatures___    OUTPUT PASSED FEATURE_TYPE AttributeCreator_Output___RasterFeatures___
-FACTORY_DEF * TestFactory    FACTORY_NAME AttributeCreator_Output___FeatureDirector1    INPUT FEATURE_TYPE AttributeCreator_Output___NotRasterFeatures___    TEST &fme_type == "fme_point_cloud"    OUTPUT FAILED FEATURE_TYPE AttributeCreator_Output___VectorFeatures___    OUTPUT PASSED FEATURE_TYPE AttributeCreator_Output___PointCloudFeatures___
-# Vector features simply may get their colors overridden
-
-FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeCreator_Output_VectorSetterUpper    INPUT FEATURE_TYPE AttributeCreator_Output___VectorFeatures___    OUTPUT FEATURE_TYPE __viewme__
-# Point Cloud Features Might Need to be thinned
-
-# Note that we don't call the ThinPointCloud function directly, but rather
-# do it through TCL. This should allow this transformer to be used with a
-# Desktop license, even though ThinPointCloud requires Professional.
-
-Tcl2 proc AttributeCreator_Output_8b7a90c3_1884_4ba3_9433_fa4811c714b612_thinPointCloud {} {    if {[string equal {NO_THINNING} {KEEPNPOINT}]}    {       FME_Execute ThinPointCloud NO_THINNING <Unused>;    }    elseif {[string equal {NO_THINNING} {MAXNUMPOINTS}]}    {       FME_Execute ThinPointCloud NO_THINNING <Unused>;    }    elseif {[string equal {NO_THINNING} {FIRSTNPOINTS}]}    {       FME_Execute ThinPointCloud NO_THINNING <Unused>;    }    elseif {[string equal {NO_THINNING} {LASTNPOINTS}]}    {       FME_Execute ThinPointCloud NO_THINNING <Unused>;    }; }
-FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeCreator_Output___PointCloudThinner    INPUT FEATURE_TYPE AttributeCreator_Output___PointCloudFeatures___    OUTPUT FEATURE_TYPE __viewme__       @Tcl2("AttributeCreator_Output_8b7a90c3_1884_4ba3_9433_fa4811c714b612_thinPointCloud")
-Tcl2 proc AttributeCreator_Output_8b7a90c3_1884_4ba3_9433_fa4811c714b612_prepareRaster {subsetStartRow subsetNumRows subsetStartCol subsetNumCols} {    set useDI [string equal -nocase {$(FME_VIEWER_APP)} {fmedatainspector}];    if {!$useDI} {       FME_Execute ApplyRasterRotation BILINEAR;    };    set doResample [string equal {NoReduction} {Resample}];    set doSubset [string equal {NoReduction} {Subset}];    set doBounds [string equal {NoReduction} {BoundingBoxOnly}];    if {$doBounds}  {       FME_Execute GeometryType fme_polygon;    }    elseif {$doResample || $doSubset} {       set comment {          First, we need to prefix all the attributes. This is done because          we are going to call @RasterProperties, and we want to make sure          it doesn't overwrite any existing attributes.       };       set kAttrPrefix ".";       set allNames [FME_AttributeNames];       foreach oldName $allNames {          set newName $kAttrPrefix;          append newName $oldName;          FME_RenameAttribute $newName $oldName;       };       FME_Execute RasterProperties RASTER;       if {$doResample} {          set oldNumCols [FME_GetAttribute _num_columns];          set oldNumRows [FME_GetAttribute _num_rows];          set oldSpacingX [FME_GetAttribute _spacing_x];          set oldSpacingY [FME_GetAttribute _spacing_y];          set kMinNumCells 32;          set kMaxNumCells 512;          set comment {             We will only resample if both dimensions are greater than the             minimum num cells, and at least one is greater than the maximum.          };          if {$oldNumRows > $kMinNumCells && $oldNumCols > $kMinNumCells && ($oldNumRows > $kMaxNumCells || $oldNumCols > $kMaxNumCells)} {             set newSpacingX 1.0;             set newSpacingY 1.0;             if {$oldNumRows > $oldNumCols} {                set comment {                   If we have more rows than columns, we need to choose a spacing                   that reduces the number of rows to the maximum we've chosen.                };                set newSpacingY [expr 1.0 * $oldNumRows * $oldSpacingY / $kMaxNumCells];                set newSpacingX [expr 1.0 * $newSpacingY / $oldSpacingY * $oldSpacingX];                set comment {                   Now we need to check if doing this will result in the columns                   going below the minimum. If so, choose the spacing such that                   we only go down to the minimum (and not past).                };                set newNumCols [expr $oldNumCols * $oldSpacingX / $newSpacingX];                if {$newNumCols < $kMinNumCells}                {                   set newSpacingX [expr 1.0 * $oldNumCols * $oldSpacingX / $kMinNumCells];                   set newSpacingY [expr 1.0 * $newSpacingX / $oldSpacingX * $oldSpacingY];                };             }             else {                set comment {                   This is identical to the above case, except the roles of                   rows and cols are reversed.                };                set newSpacingX [expr 1.0 * $oldNumCols * $oldSpacingX / $kMaxNumCells];                set newSpacingY [expr 1.0 * $newSpacingX / $oldSpacingX * $oldSpacingY];                set newNumRows [expr $oldNumRows * $oldSpacingY / $newSpacingY];                if {$newNumRows < $kMinNumCells}                {                   set newSpacingY [expr 1.0 * $oldNumRows * $oldSpacingY / $kMinNumCells];                   set newSpacingX [expr 1.0 * $newSpacingY / $oldSpacingY * $oldSpacingX];                };             };             FME_Execute ResampleRaster CELL_SIZE $newSpacingX $newSpacingY NearestNeighbor;          };       }       elseif {$doSubset} {          set comment {             Get the value of some strings that may be attributes or constants.             Note that we pass in the attribute prefix we're using, because if             one does turn out to be an attribute, it won't actually be the exact             name in the string (since we renamed all our attributes above).          };          set rasterNumRows [FME_GetAttribute _num_rows];          set rasterNumCols [FME_GetAttribute _num_columns];          set comment {             Only do subsetting if the specified start position is actually             within the raster.          };          if {$subsetStartRow < $rasterNumRows && $subsetStartCol < $rasterNumCols}          {             set comment {                Now bound the subset to the size of the raster, so that                we don't create padding.             };             if {[expr $subsetStartRow + $subsetNumRows] > $rasterNumRows}             {                set subsetNumRows [expr $rasterNumRows - $subsetStartRow];             };             if {[expr $subsetStartCol + $subsetNumCols] > $rasterNumCols}             {                set subsetNumCols [expr $rasterNumCols - $subsetStartCol];             };             FME_Execute SubsetRaster $subsetStartRow $subsetNumRows $subsetStartCol $subsetNumCols;          };       };       set comment {          Remove all the attributes added by @RasterProperties and remove the          prefix from the real attributes. We assume they all start with an          underscore.       };       FME_Execute RemoveAttributes fme_regexp_match {^_};       foreach oldName $allNames {          set newName $kAttrPrefix;          append newName $oldName;          FME_RenameAttribute $oldName $newName;       };    }; }
-FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeCreator_Output_RasterSetterUpper    INPUT FEATURE_TYPE AttributeCreator_Output___RasterFeatures___    OUTPUT FEATURE_TYPE __viewme__       @Tcl2("AttributeCreator_Output_8b7a90c3_1884_4ba3_9433_fa4811c714b612_prepareRaster {<Unused>} {<Unused>} {<Unused>} {<Unused>}")
-# Now route all the features into the recorder, changing their
-# feature type to the transformer name so that they view nicely
-# AttributeCreator_Output_8b7a90c3_1884_4ba3_9433_fa4811c714b612_VIS_FEAT_TYPE changes the feature types
-# of the features being visualized.
-
-DEFAULT_MACRO AttributeCreator_Output_8b7a90c3_1884_4ba3_9433_fa4811c714b612_VIS_FEAT_TYPE AttributeCreator_Output$(CATMAC)
-DEFAULT_MACRO VISUALIZER_FEATURE_FILE $(WORKSPACE_TEMP_DIR)/$(SAFE_FFS_NAME).ffs
-DEFAULT_MACRO VISUALIZER_CREATE_SPATIAL_INDEX NO
-# [PR#45549] The Data Inspector will limit the maximum number of features
-# it reads on WIN32, so we will correspondingly limit the number of
-# features we record here using the MAX_FEATURES_TO_RECORD directive.
-
-FACTORY_DEF * RecorderFactory    FACTORY_NAME AttributeCreator_Output_Recorder    INPUT FEATURE_TYPE __viewme__  _wb_termination_feature Yes @FeatureType(TERMINATOR_@Value(_wb_termination_xformer))    INPUT FEATURE_TYPE __viewme__  @FeatureType($(AttributeCreator_Output_8b7a90c3_1884_4ba3_9433_fa4811c714b612_VIS_FEAT_TYPE))    FEATURE_FILE "$(VISUALIZER_FEATURE_FILE)"    CREATE_SPATIAL_INDEX "$(VISUALIZER_CREATE_SPATIAL_INDEX)"    INSPECTOR "$(VISUALIZER_CREATE_SPATIAL_INDEX)"    FSC_SCHEMA GSZ_NR,varchar<openparen>255<closeparen>,EIB_ARTCODE,varchar<openparen>255<closeparen>,GSZ_NAME,varchar<openparen>255<closeparen>,BESCHLUSS,varchar<openparen>255<closeparen>,BESCHL_DOC,varchar<openparen>255<closeparen>,REGLEM_DOC,varchar<openparen>255<closeparen>,THE_ID,varchar<openparen>255<closeparen>,DAR_OID,varchar<openparen>255<closeparen>,EIB_AUSSAGE_DE,varchar<openparen>255<closeparen>,EIB_AUSSAGE_FR,varchar<openparen>255<closeparen>,BEZEICH_DE,varchar<openparen>255<closeparen>,BEZEICH_FR,varchar<openparen>255<closeparen>,FLA_OID,varchar<openparen>255<closeparen>,EIB_OID,varchar<openparen>255<closeparen>,VOR_OID,varchar<openparen>255<closeparen>,FLA_PUBLIZIERTAB,varchar<openparen>255<closeparen>,EIB_PUBLIZIERTAB,varchar<openparen>255<closeparen>,VOR_PUBLIZIERTAB,varchar<openparen>255<closeparen>    MODE RECORD    RECORD_DIRECTLY_TO_DISK YES    MAX_FEATURES_TO_RECORD WIN32 2000000
-
-# -------------------------------------------------------------------------
-
-FACTORY_DEF * TeeFactory    FACTORY_NAME UUIDGenerator_4    INPUT  FEATURE_TYPE AttributeCreator_OUTPUT_1_olPiq+C1D00=    OUTPUT FEATURE_TYPE UUIDGenerator_4_OUTPUT         "HIV_ID" @UUID()
+FACTORY_DEF * TeeFactory    FACTORY_NAME UUIDGenerator_4    INPUT  FEATURE_TYPE PythonCaller_4_OUTPUT_1_kBV+D6s4Mj0=    INPUT  FEATURE_TYPE AttributeCreator_OUTPUT_1_olPiq+C1D00=    OUTPUT FEATURE_TYPE UUIDGenerator_4_OUTPUT         "HIV_ID" @UUID()
 
 # -------------------------------------------------------------------------
 
 
 FME_PYTHON_PATH "$(FME_MF_DIR)"
 
-FACTORY_DEF * PythonFactory    FACTORY_NAME PythonCaller    INPUT  FEATURE_TYPE AttributeCreator_OUTPUT_0_olPiq+C1D00=    SYMBOL_NAME FeatureProcessor    PYTHON_NAMESPACE FMEOBJECTS    SOURCE_CODE import<space>fmeobjects<lf>#<space>Template<space>Function<space>interface:<lf>def<space>processFeature<openparen>feature<closeparen>:<lf><space><space><space><space>reglement<space>=<space>feature.getAttribute<openparen><quote>REGLEM_DOC<quote><closeparen>.lower<openparen><closeparen><lf><space><space><space><space><lf><space><space><space><space>title_de<space>=<space><quote>Reglement<quote><lf><space><space><space><space>title_fr<space>=<space><quote>R<u00e8>glement<quote><lf><space><space><space><space><lf><space><space><space><space>if<space><quote>veraltet<quote><space>in<space>reglement:<lf><space><space><space><space><space><space><space><space>titel_de<space>=<space><quote>Rechtsvorschriften<space>veraltet<quote><lf><space><space><space><space><space><space><space><space>titel_fr<space>=<space><quote>Prescriptions<space>l<u00e9>gales<space>obsol<u00e8>tes<quote><lf><lf><space><space><space><space>feature.setAttribute<openparen><quote>VOR_TITEL_DE<quote><comma><space>titel_de<closeparen><lf><space><space><space><space>feature.setAttribute<openparen><quote>VOR_TITEL_FR<quote><comma><space>titel_fr<closeparen><lf><space><space><space><space>feature.setAttribute<openparen><quote>VOR_OFFIZIELLERTITEL_DE<quote><comma><space>titel_de<closeparen><lf><space><space><space><space>feature.setAttribute<openparen><quote>VOR_OFFIZIELLERTITEL_FR<quote><comma><space>titel_fr<closeparen>    OUTPUT PYOUTPUT FEATURE_TYPE PythonCaller_OUTPUT
+FACTORY_DEF * PythonFactory    FACTORY_NAME PythonCaller    INPUT  FEATURE_TYPE AttributeCreator_OUTPUT_0_olPiq+C1D00=    INPUT  FEATURE_TYPE PythonCaller_4_OUTPUT_3_kBV+D6s4Mj0=    SYMBOL_NAME processFeature    PYTHON_NAMESPACE FMEOBJECTS    SOURCE_CODE import<space>fmeobjects<lf>#<space>Template<space>Function<space>interface:<lf>def<space>processFeature<openparen>feature<closeparen>:<lf><space><space><space><space>reglement<space>=<space>feature.getAttribute<openparen><quote>REGLEM_DOC<quote><closeparen>.lower<openparen><closeparen><lf><space><space><space><space><lf><space><space><space><space>titel_de<space>=<space><quote>Reglement<quote><lf><space><space><space><space>titel_fr<space>=<space><quote>R<u00e8>glement<quote><lf><space><space><space><space><lf><space><space><space><space>if<space><quote>veraltet<quote><space>in<space>reglement:<lf><space><space><space><space><space><space><space><space>titel_de<space>=<space><quote>Rechtsvorschriften<space>veraltet<quote><lf><space><space><space><space><space><space><space><space>titel_fr<space>=<space><quote>Prescriptions<space>l<u00e9>gales<space>obsol<u00e8>tes<quote><lf><lf><space><space><space><space>feature.setAttribute<openparen><quote>VOR_TITEL_DE<quote><comma><space>titel_de<closeparen><lf><space><space><space><space>feature.setAttribute<openparen><quote>VOR_TITEL_FR<quote><comma><space>titel_fr<closeparen><lf><space><space><space><space>feature.setAttribute<openparen><quote>VOR_OFFIZIELLERTITEL_DE<quote><comma><space>titel_de<closeparen><lf><space><space><space><space>feature.setAttribute<openparen><quote>VOR_OFFIZIELLERTITEL_FR<quote><comma><space>titel_fr<closeparen>    OUTPUT PYOUTPUT FEATURE_TYPE PythonCaller_OUTPUT
 
 FACTORY_DEF * TeeFactory   FACTORY_NAME "PythonCaller OUTPUT Splitter"   INPUT FEATURE_TYPE PythonCaller_OUTPUT   OUTPUT FEATURE_TYPE PythonCaller_OUTPUT_0_oCFN77Xe1JY=   OUTPUT FEATURE_TYPE PythonCaller_OUTPUT_1_oCFN77Xe1JY=
 # -------------------------------------------------------------------------
-FACTORY_DEF * AttrSetFactory FACTORY_NAME AttributeCreator_5 ATTRSET_PROPAGATE_MISSING YES INPUT  FEATURE_TYPE PythonCaller_OUTPUT_0_oCFN77Xe1JY= ATTR VOR_TEXTIMWEB_DE <at>Value<openparen>REGLEM_DOC<closeparen> ATTR VOR_TEXTIMWEB_FR <at>Value<openparen>REGLEM_DOC<closeparen>    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_5_OUTPUT 
+FACTORY_DEF * AttrSetFactory FACTORY_NAME AttributeCreator_5 ATTRSET_PROPAGATE_MISSING YES INPUT  FEATURE_TYPE PythonCaller_OUTPUT_1_oCFN77Xe1JY= ATTR VOR_TEXTIMWEB_DE <at>Value<openparen>REGLEM_DOC<closeparen> ATTR VOR_TEXTIMWEB_FR <at>Value<openparen>REGLEM_DOC<closeparen>    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_5_OUTPUT 
 # -------------------------------------------------------------------------
 
 INCLUDE [    set macroLine "MACRO AttributeRemover_3_LIST_EXP ";    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "{\[0-9\]+}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
-FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRemover_3    INPUT  FEATURE_TYPE PythonCaller_OUTPUT_1_oCFN77Xe1JY=    OUTPUT FEATURE_TYPE AttributeRemover_3_OUTPUT        @RemoveAttributes(GSZ_NR,EIB_ARTCODE,GSZ_NAME,BESCHLUSS,BESCHL_DOC,REGLEM_DOC,EIB_LIEFEREINHEIT,FLA_LIEFEREINHEIT,VOR_LIEFEREINHEIT,HIV_LIEFEREINHEIT,THE_ID,DAR_OID,EIB_AUSSAGE_DE,EIB_AUSSAGE_FR,BEZEICH_DE,BEZEICH_FR,FLA_OID,EIB_OID,FLA_PUBLIZIERTAB,EIB_PUBLIZIERTAB,VOR_PUBLIZIERTAB,VOR_OFFIZIELLERTITEL_DE,VOR_OFFIZIELLERTITEL_FR,VOR_TITEL_DE,VOR_TITEL_FR)        @RemoveAttributes(fme_regexp_match"$(AttributeRemover_3_LIST_EXP)")
+FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRemover_3    INPUT  FEATURE_TYPE PythonCaller_OUTPUT_0_oCFN77Xe1JY=    OUTPUT FEATURE_TYPE AttributeRemover_3_OUTPUT        @RemoveAttributes(GSZ_NR,EIB_ARTCODE,GSZ_NAME,BESCHLUSS,BESCHL_DOC,REGLEM_DOC,EIB_LIEFEREINHEIT,FLA_LIEFEREINHEIT,VOR_LIEFEREINHEIT,HIV_LIEFEREINHEIT,THE_ID,DAR_OID,EIB_AUSSAGE_DE,EIB_AUSSAGE_FR,BEZEICH_DE,BEZEICH_FR,FLA_OID,EIB_OID,FLA_PUBLIZIERTAB,EIB_PUBLIZIERTAB,VOR_PUBLIZIERTAB,VOR_OFFIZIELLERTITEL_DE,VOR_OFFIZIELLERTITEL_FR,VOR_TITEL_DE,VOR_TITEL_FR)        @RemoveAttributes(fme_regexp_match"$(AttributeRemover_3_LIST_EXP)")
 
 # -------------------------------------------------------------------------
 
@@ -3557,13 +3544,19 @@ FACTORY_DEF * TeeFactory    FACTORY_NAME "UUIDGenerator_4_OUTPUT -> OEREB.HINVOR
 FACTORY_DEF * TeeFactory    FACTORY_NAME "AttributeCreator_OUTPUT_2_olPiq+C1D00= -> OEREB.EIGENTUMSBESCHRAENKUNG Correlator"    INPUT FEATURE_TYPE AttributeCreator_OUTPUT_2_olPiq+C1D00=    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 1       @Transform(FME_GENERIC,ORACLE8I_DB) "@EvaluateExpression(ATTR_CREATE_EXPR_PROPAGATE_MISSING,EIB_LIEFEREINHEIT,$(LIEFEREINHEIT$encode),AMT_OID,$(AMT$encode),RES_ID,$(RECHTSSTATUS$encode), ATTR_SET)"       @SupplyAttributes(ENCODED,__wb_out_feat_type__,OEREB.EIGENTUMSBESCHRAENKUNG)
 # -------------------------------------------------------------------------
 
+FACTORY_DEF * TeeFactory    FACTORY_NAME "PythonCaller_4_OUTPUT_2_kBV+D6s4Mj0= -> OEREB.EIGENTUMSBESCHRAENKUNG Correlator"    INPUT FEATURE_TYPE PythonCaller_4_OUTPUT_2_kBV+D6s4Mj0=    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 1       @Transform(FME_GENERIC,ORACLE8I_DB) "@EvaluateExpression(ATTR_CREATE_EXPR_PROPAGATE_MISSING,EIB_LIEFEREINHEIT,$(LIEFEREINHEIT$encode),AMT_OID,$(AMT$encode),RES_ID,$(RECHTSSTATUS$encode), ATTR_SET)"       @SupplyAttributes(ENCODED,__wb_out_feat_type__,OEREB.EIGENTUMSBESCHRAENKUNG)
+# -------------------------------------------------------------------------
+
 FACTORY_DEF * TeeFactory    FACTORY_NAME "AttributeCreator_5_OUTPUT -> OEREB.VORSCHRIFT Correlator"    INPUT FEATURE_TYPE AttributeCreator_5_OUTPUT    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 1       @Transform(FME_GENERIC,ORACLE8I_DB) "@EvaluateExpression(ATTR_CREATE_EXPR_PROPAGATE_MISSING,VOR_LIEFEREINHEIT,$(LIEFEREINHEIT$encode),RES_ID,$(RECHTSSTATUS$encode),VOA_ID,1,AMT_OID,$(AMT$encode), ATTR_SET)"       @SupplyAttributes(ENCODED,__wb_out_feat_type__,OEREB.VORSCHRIFT)
 # -------------------------------------------------------------------------
 
 FACTORY_DEF * TeeFactory    FACTORY_NAME "UUIDGenerator_5_OUTPUT -> OEREB.HINWEIDOK Correlator"    INPUT FEATURE_TYPE UUIDGenerator_5_OUTPUT    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 1       @Transform(FME_GENERIC,ORACLE8I_DB) "@EvaluateExpression(ATTR_CREATE_EXPR_PROPAGATE_MISSING,HWD_LIEFEREINHEIT,$(LIEFEREINHEIT$encode), ATTR_SET)"       @SupplyAttributes(ENCODED,__wb_out_feat_type__,OEREB.HINWEIDOK)
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * TeeFactory    FACTORY_NAME "AttributeCreator_OUTPUT_4_olPiq+C1D00= -> OEREB.FLAECHE Correlator"    INPUT FEATURE_TYPE AttributeCreator_OUTPUT_4_olPiq+C1D00=    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 0       @Transform(FME_GENERIC,GEODATABASE_SDE) "@EvaluateExpression(ATTR_CREATE_EXPR_PROPAGATE_MISSING,FLA_LIEFEREINHEIT,$(LIEFEREINHEIT$encode),AMT_OID,$(AMT$encode),RES_ID,$(RECHTSSTATUS$encode), ATTR_SET)"       @SupplyAttributes(ENCODED,__wb_out_feat_type__,OEREB.FLAECHE)
+FACTORY_DEF * TeeFactory    FACTORY_NAME "PythonCaller_4_OUTPUT_0_kBV+D6s4Mj0= -> OEREB.FLAECHE Correlator"    INPUT FEATURE_TYPE PythonCaller_4_OUTPUT_0_kBV+D6s4Mj0=    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 0       @Transform(FME_GENERIC,GEODATABASE_SDE) "@EvaluateExpression(ATTR_CREATE_EXPR_PROPAGATE_MISSING,FLA_LIEFEREINHEIT,$(LIEFEREINHEIT$encode),AMT_OID,$(AMT$encode),RES_ID,$(RECHTSSTATUS$encode), ATTR_SET)"       @SupplyAttributes(ENCODED,__wb_out_feat_type__,OEREB.FLAECHE)
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME "AttributeCreator_OUTPUT_3_olPiq+C1D00= -> OEREB.FLAECHE Correlator"    INPUT FEATURE_TYPE AttributeCreator_OUTPUT_3_olPiq+C1D00=    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 0       @Transform(FME_GENERIC,GEODATABASE_SDE) "@EvaluateExpression(ATTR_CREATE_EXPR_PROPAGATE_MISSING,FLA_LIEFEREINHEIT,$(LIEFEREINHEIT$encode),AMT_OID,$(AMT$encode),RES_ID,$(RECHTSSTATUS$encode), ATTR_SET)"       @SupplyAttributes(ENCODED,__wb_out_feat_type__,OEREB.FLAECHE)
 # -------------------------------------------------------------------------
 
 FACTORY_DEF * TestFactory   FACTORY_NAME "Final Output Feature Type Router"   INPUT FEATURE_TYPE *   TEST @Value(__wb_out_feat_type__) != ""   OUTPUT PASSED FEATURE_TYPE *     @FeatureType(@Value(__wb_out_feat_type__))   OUTPUT FAILED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")
@@ -3571,10 +3564,6 @@ FACTORY_DEF * TestFactory   FACTORY_NAME "Final Output Feature Type Router"   IN
 
 FACTORY_DEF * TeeFactory   FACTORY_NAME "Final Output Nuker"   INPUT FEATURE_TYPE __nuke_me__
 
-# -------------------------------------------------------------------------
-
-FACTORY_DEF * CreationFactory   CREATE_AT_END   OUTPUT FEATURE_TYPE __NUKEME__   @TCL("if [file exists {$(WORKSPACE_TEMP_DIR)}] {set files [glob -nocomplain -directory  {$(WORKSPACE_TEMP_DIR)} -tails *.ffs];   if {[llength $files] == 1} {    set theFile {$(WORKSPACE_TEMP_DIR)/};   append theFile [lindex $files 0];   eval FME_Execute System \173\042$(FME_HOME_UNIX)/fmedatainspector\042 --visualizer --single-application --delete-on-close --no-source-prompt -f FFS $theFile & \175;  } elseif { [llength $files] == 0 } {  catch { file delete -force {$(WORKSPACE_TEMP_DIR)} };  } else {  set filesNoExt {}; set lastfile {}; foreach {fileName} [lsort $files] { set fileNoExt [string trimright $fileName {.ffs}]; if [regexp {(.*)_[0-9]*$} $fileNoExt wholething fileNoExtBase] {  if { $fileNoExtBase == $lastfile } { continue } }; set lastfile $fileNoExt; lappend filesNoExt $fileNoExt };  eval FME_Execute System \173\042$(FME_HOME_UNIX)/fmedatainspector\042 --visualizer --single-application --delete-on-close --no-source-prompt -d {$(WORKSPACE_TEMP_DIR)} -a ffs -f FFS $filesNoExt & \175; }; }; ")
-FACTORY_DEF * TeeFactory   INPUT FEATURE_TYPE __NUKEME__
 # -------------------------------------------------------------------------
 GEODATABASE_SDE_2_DEF OEREB.FLAECHE   geodb_type                   geodb_polygon   GEODB_DROP_TABLE             NO   GEODB_TRUNCATE_TABLE         NO   GEODB_OBJECT_ID_NAME         OBJECTID   GEODB_OBJECT_ID_ALIAS        OBJECTID   GEODB_SHAPE_NAME             SHAPE   GEODB_SHAPE_ALIAS            SHAPE   GEODB_CONFIG_KEYWORD         DEFAULTS   GEODB_FEATURE_DATASET        ""   GEODB_GRID{1}                ""   GEODB_AVG_NUM_POINTS         ""   GEODB_XORIGIN                ""   GEODB_YORIGIN                ""   GEODB_XYSCALE                ""   GEODB_HAS_Z_VALUES           ""   GEODB_ZORIGIN                ""   GEODB_ZSCALE                 ""   GEODB_HAS_MEASURES           ""   GEODB_MEASURES_ORIGIN        ""   GEODB_MEASURES_SCALE         ""   GEODB_ANNO_REFERENCE_SCALE   ""   FLA_OID                      char(128)   FLA_XTF_ID                   char(128)   FLA_PUBLIZIERTAB             date   FLA_METAGEO_DE               char(1023)   FLA_METAGEO_FR               char(1023)   FLA_LIEFEREINHEIT            integer   EIB_OID                      char(128)   AMT_OID                      char(128)   RES_ID                       integer
 # -------------------------------------------------------------------------
