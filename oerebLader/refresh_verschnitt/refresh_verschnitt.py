@@ -15,7 +15,7 @@ def init_logging(config):
     logfile = os.path.join(log_directory, "refresh_verschnitt.log")
     # Wenn schon ein Logfile existiert, wird es umbenannt
     if os.path.exists(logfile):
-        archive_logfile = "release" + datetime.datetime.now().strftime("_%Y_%m_%d_%H_%M_%S") + ".log"
+        archive_logfile = "refresh_verschnitt" + datetime.datetime.now().strftime("_%Y_%m_%d_%H_%M_%S") + ".log"
         archive_logfile = os.path.join(log_directory, archive_logfile)
         os.rename(logfile, archive_logfile)
         
