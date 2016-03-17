@@ -73,5 +73,7 @@ def get_config():
     create_connection_string(config, "OEREBAPP")
     create_connection_string(config, "OEREBCUGAPP")
     create_connection_string(config, "GEO_VEK1")
+    create_connection_string(config, "OEREB_VEK1")
+    create_connection_string(config, "OEREB_VEK2")
 
     return config

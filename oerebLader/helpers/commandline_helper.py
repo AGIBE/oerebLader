@@ -6,6 +6,7 @@ import oerebLader.helpers.ticket_helper
 import oerebLader.workflows.workflow
 import oerebLader.release.release
 import oerebLader.refresh_verschnitt.refresh_verschnitt
+import oerebLader.refresh_statistics.refresh_statistics
 import oerebLader.sync_avdate.sync_avdate
 from _ctypes_test import func
 
@@ -33,6 +34,10 @@ def refresh_verschnitt(args):
     oerebLader.refresh_verschnitt.refresh_verschnitt.run_refresh_verschnitt()
     print("Refresh_Verschnitt SUCCESSFUL!")
     
+def refresh_statistics(args):
+    oerebLader.refresh_statistics.refresh_statistics.run_refresh_statistics()
+    print("Refresh_Statistics SUCCESSFUL!")
+    
 def sync_avdate(args):
     oerebLader.sync_avdate.sync_avdate.run_sync_avdate()
     print("Sync_avdate SUCCESSFUL!")
@@ -59,6 +64,10 @@ def main():
     release_daily_parser = subparsers.add_parser("release_tagesaktuell", help='gibt alle tagesaktuellen Tickets frei.')
     release_daily_parser.set_defaults(func=release_daily)
     
+    # REFRESH_STATISTICS-Befehl
+    refresh_statistics_parser = subparsers.add_parser("refresh_statistics", help='Aktualisiert die Oracle-Statistiken des OEREB-Schemas in VEK1 und VEK2.')
+    refresh_statistics_parser.set_defaults(func=refresh_statistics)
+
     # REFRESH_VERSCHNITT-Befehl
     refresh_verschnitt_parser = subparsers.add_parser("refresh_verschnitt", help='Liest die Dictionary Caches sowie die Config der Verschnittfunktion neu ein.')
     refresh_verschnitt_parser.set_defaults(func=refresh_verschnitt)
