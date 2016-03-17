@@ -22,6 +22,15 @@ def list_tickets(args):
         for ticket in ticket_list:
             print(ticket)
             
+def list_releaseable_tickets(args):
+    ticket_list = oerebLader.helpers.ticket_helper.get_releasable_tickets()
+    if len(ticket_list) == 0:
+        print("Keine Tickets zum Release bereit!")
+    else:
+        print("Folgende Tickets werden mit 'oerebLader release' freigegeben.")
+        for ticket in ticket_list:
+            print(ticket)
+            
 def release(args):
     oerebLader.release.release.run_release(False)
     print("Release SUCCESSFUL!")
@@ -50,6 +59,10 @@ def main():
     # LIST-Befehl
     list_parser = subparsers.add_parser('list', help='zeigt alle importierbaren Tickets an.')
     list_parser.set_defaults(func=list_tickets)
+
+    # LIST_RELEASE-Befehl
+    list_release_parser = subparsers.add_parser('list_release', help='zeigt alle zum Release bereiten Tickets an.')
+    list_release_parser.set_defaults(func=list_releaseable_tickets)
     
     # IMPORT-Befehl
     import_parser = subparsers.add_parser('import', help='importiert das angegebene Ticket.')
