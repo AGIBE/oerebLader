@@ -14,6 +14,8 @@ def run(config):
     fme_logfile = oerebLader.helpers.fme_helper.prepare_fme_log(fme_script, config['LOGGING']['log_directory']) 
     logger.info("Script " +  fme_script + " wird ausgeführt.")
     logger.info("Das FME-Logfile heisst: " + fme_logfile)
+    bfsnr = config['LIEFEREINHEIT']['bfsnr']
+    excel_file = os.path.join(config['LIEFEREINHEIT']['gpr_source'], unicode(bfsnr), "DARSTELLUNGSDIENST_" + unicode(bfsnr) + ".xlsx")
     runner = fmeobjects.FMEWorkspaceRunner()
     
     # Der FMEWorkspaceRunner akzeptiert keine Unicode-Strings!
@@ -25,6 +27,7 @@ def run(config):
         'OEREB_DATABASE': str(config['OEREB_WORK']['database']),
         'OEREB_USERNAME': str(config['OEREB_WORK']['username']),
         'OEREB_PASSWORD': str(config['OEREB_WORK']['password']),
+        'EXCEL_DARSTELLUNGSDIENST': str(excel_file),
         'BFSNR': str(config['LIEFEREINHEIT']['bfsnr']),
         'LIEFEREINHEIT': str(config['LIEFEREINHEIT']['id']),
         'LOGFILE': str(fme_logfile)

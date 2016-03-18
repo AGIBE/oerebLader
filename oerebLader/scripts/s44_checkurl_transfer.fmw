@@ -15,7 +15,7 @@
 #    
 #! PASSWORD=""
 #! ATTR_TYPE_ENCODING="SDF"
-#! VIEW_POSITION="98 0"
+#! VIEW_POSITION="0 0"
 #! SHOW_INFO_NODES="true"
 #! FME_STROKE_MAX_DEVIATION="0"
 #! BEGIN_PYTHON="#&lt;space&gt;-*-&lt;space&gt;coding:&lt;space&gt;latin-1&lt;space&gt;-*-&lt;lf&gt;import&lt;space&gt;fmeobjects&lt;lf&gt;&lt;lf&gt;def&lt;space&gt;processMultilangFields&lt;openparen&gt;feature&lt;closeparen&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;multilangFields&lt;space&gt;=&lt;space&gt;feature.getAttribute&lt;openparen&gt;&lt;apos&gt;multilangfields&lt;apos&gt;&lt;closeparen&gt;.split&lt;openparen&gt;&lt;quote&gt;&lt;comma&gt;&lt;quote&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;for&lt;space&gt;mlField&lt;space&gt;in&lt;space&gt;multilangFields:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;content_de&lt;space&gt;=&lt;space&gt;&lt;quote&gt;&lt;quote&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;content_fr&lt;space&gt;=&lt;space&gt;&lt;quote&gt;&lt;quote&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;att_Language_list&lt;space&gt;=&lt;space&gt;feature.getAttribute&lt;openparen&gt;mlField&lt;space&gt;+&lt;space&gt;&lt;apos&gt;&lt;opencurly&gt;0&lt;closecurly&gt;.localizedText&lt;opencurly&gt;&lt;closecurly&gt;.Language&lt;apos&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;att_Text_list&lt;space&gt;=&lt;space&gt;feature.getAttribute&lt;openparen&gt;mlField&lt;space&gt;+&lt;space&gt;&lt;apos&gt;&lt;opencurly&gt;0&lt;closecurly&gt;.localizedText&lt;opencurly&gt;&lt;closecurly&gt;.Text&lt;apos&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;#&lt;space&gt;wenn&lt;space&gt;das&lt;space&gt;Multilang-Feld&lt;space&gt;nicht&lt;space&gt;abgef&lt;u00fc&gt;llt&lt;space&gt;ist&lt;comma&gt;&lt;space&gt;soll&lt;space&gt;es&lt;space&gt;nicht&lt;space&gt;bearbeitet&lt;space&gt;werden&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;if&lt;space&gt;att_Language_list&lt;space&gt;is&lt;space&gt;not&lt;space&gt;None:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;for&lt;space&gt;i&lt;space&gt;in&lt;space&gt;range&lt;openparen&gt;len&lt;openparen&gt;att_Language_list&lt;closeparen&gt;&lt;closeparen&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;if&lt;space&gt;att_Language_list&lt;openbracket&gt;i&lt;closebracket&gt;==&lt;quote&gt;de&lt;quote&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;content_de&lt;space&gt;=&lt;space&gt;att_Text_list&lt;openbracket&gt;i&lt;closebracket&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;if&lt;space&gt;att_Language_list&lt;openbracket&gt;i&lt;closebracket&gt;==&lt;quote&gt;fr&lt;quote&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;content_fr&lt;space&gt;=&lt;space&gt;att_Text_list&lt;openbracket&gt;i&lt;closebracket&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;if&lt;space&gt;att_Language_list&lt;openbracket&gt;i&lt;closebracket&gt;==&lt;quote&gt;it&lt;quote&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;content_de&lt;space&gt;=&lt;space&gt;att_Text_list&lt;openbracket&gt;i&lt;closebracket&gt;&lt;lf&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;#&lt;space&gt;Wenn&lt;space&gt;der&lt;space&gt;Text&lt;space&gt;nur&lt;space&gt;in&lt;space&gt;einer&lt;space&gt;Sprache&lt;space&gt;vorhanden&lt;space&gt;ist&lt;comma&gt;&lt;space&gt;wird&lt;space&gt;er&lt;space&gt;auch&lt;space&gt;f&lt;u00fc&gt;r&lt;space&gt;die&lt;space&gt;andere&lt;space&gt;Sprache&lt;space&gt;verwendet&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;if&lt;space&gt;content_de&lt;space&gt;==&lt;space&gt;&lt;quote&gt;&lt;quote&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;content_de&lt;space&gt;=&lt;space&gt;content_fr&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;if&lt;space&gt;content_fr&lt;space&gt;==&lt;space&gt;&lt;quote&gt;&lt;quote&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;content_fr&lt;space&gt;=&lt;space&gt;content_de&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;feature.setAttribute&lt;openparen&gt;mlField&lt;space&gt;+&lt;space&gt;&lt;quote&gt;_DE&lt;quote&gt;&lt;comma&gt;&lt;space&gt;content_de&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;feature.setAttribute&lt;openparen&gt;mlField&lt;space&gt;+&lt;space&gt;&lt;quote&gt;_FR&lt;quote&gt;&lt;comma&gt;&lt;space&gt;content_fr&lt;closeparen&gt;&lt;space&gt;"
@@ -33,13 +33,13 @@
 #! USAGE=""
 #! END_PYTHON=""
 #! HISTORY=""
-#! FME_DOCUMENT_PRIORGUID="081ee97d-038f-4e04-84da-72c381365512,8ed992b9-6214-4d51-b25b-9fbebd3a409d"
-#! DOC_TOP_LEFT="147 -1299"
+#! FME_DOCUMENT_PRIORGUID="081ee97d-038f-4e04-84da-72c381365512,8ed992b9-6214-4d51-b25b-9fbebd3a409d,5449b6bd-a67b-43e4-9871-9ea68d746d6a"
+#! DOC_TOP_LEFT="147 -1518"
 #! REQUIREMENTS_KEYWORD=""
 #! SOURCE_ROUTING_FILE=""
 #! DESTINATION_ROUTING_FILE=""
 #! DESTINATION="NONE"
-#! LAST_SAVE_DATE="2016-01-18T17:59:58"
+#! LAST_SAVE_DATE="2016-03-18T12:36:33"
 #! FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Datum"
 #! WORKSPACE_VERSION="1"
 #! SOURCE="NONE"
@@ -49,8 +49,8 @@
 #! LOG_FILE="$(LOGFILE)"
 #! REQUIREMENTS=""
 #! BEGIN_TCL=""
-#! DOC_EXTENTS="3686 1256"
-#! FME_DOCUMENT_GUID="5449b6bd-a67b-43e4-9871-9ea68d746d6a"
+#! DOC_EXTENTS="3689 1475"
+#! FME_DOCUMENT_GUID="1fee7f9a-6c75-4479-beb4-221fd178f0f1"
 #! SHOW_ANNOTATIONS="true"
 #! IGNORE_READER_FAILURE="No"
 #! WARN_INVALID_XFORM_PARAM="Yes"
@@ -902,7 +902,7 @@
 #! POSITION="2126 -1299"
 #! ORDER="30"
 #! PARMS_EDITED="true"
-#! ENABLED="true"
+#! ENABLED="false"
 #! >
 #! <XFORM_PARM PARM_NAME="MESSAGE" PARM_VALUE="Abbruch:&lt;space&gt;Fehler&lt;space&gt;beim&lt;space&gt;Abrufen&lt;space&gt;der&lt;space&gt;URL!!!"/>
 #! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Terminator_4"/>
@@ -971,10 +971,10 @@
 #! IDENTIFIER="31"
 #! TYPE="Terminator"
 #! VERSION="2"
-#! POSITION="2893 -1289"
+#! POSITION="2896 -1285"
 #! ORDER="33"
 #! PARMS_EDITED="true"
-#! ENABLED="true"
+#! ENABLED="false"
 #! >
 #! <XFORM_PARM PARM_NAME="MESSAGE" PARM_VALUE="Abbruch:&lt;space&gt;Fehler&lt;space&gt;beim&lt;space&gt;Abrufen&lt;space&gt;der&lt;space&gt;URL!!!"/>
 #! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Terminator_5"/>
@@ -1030,15 +1030,104 @@
 #! IDENTIFIER="35"
 #! TYPE="Terminator"
 #! VERSION="2"
-#! POSITION="3833 -906"
+#! POSITION="3836 -905"
 #! ORDER="35"
 #! PARMS_EDITED="true"
-#! ENABLED="true"
+#! ENABLED="false"
 #! >
 #! <XFORM_PARM PARM_NAME="MESSAGE" PARM_VALUE="Abbruch:&lt;space&gt;Fehler&lt;space&gt;beim&lt;space&gt;Abrufen&lt;space&gt;der&lt;space&gt;URL!!!"/>
 #! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Terminator_6"/>
 #! <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
 #! <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#! IDENTIFIER="37"
+#! TYPE="Logger"
+#! VERSION="3"
+#! POSITION="3821 -1168"
+#! ORDER="5e+014"
+#! PARMS_EDITED="true"
+#! ENABLED="true"
+#! >
+#! <OUTPUT_FEAT NAME="LOGGED"/>
+#! <FEAT_COLLAPSED COLLAPSED="0"/>
+#! <XFORM_ATTR ATTR_NAME="DAR_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="DAR_XTF_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="DAR_LEGENDEIMWEB_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="DAR_LEGENDEIMWEB_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_headers_de{}.name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_headers_de{}.value" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_error_de" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_http_status_code_de" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_headers_fr{}.name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_headers_fr{}.value" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_error_fr" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_http_status_code_fr" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_PARM PARM_NAME="MESSAGE" PARM_VALUE="Legendenbildli fehlen:"/>
+#! <XFORM_PARM PARM_NAME="FEATURE_TYPE" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Logger"/>
+#! <XFORM_PARM PARM_NAME="MAXFEATS" PARM_VALUE="50"/>
+#! <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="MAXCOORDS" PARM_VALUE="20"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#! IDENTIFIER="38"
+#! TYPE="Logger"
+#! VERSION="3"
+#! POSITION="2868 -1473"
+#! ORDER="5e+014"
+#! PARMS_EDITED="false"
+#! ENABLED="true"
+#! >
+#! <OUTPUT_FEAT NAME="LOGGED"/>
+#! <FEAT_COLLAPSED COLLAPSED="0"/>
+#! <XFORM_ATTR ATTR_NAME="DAR_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="DAR_XTF_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="DAR_LEGENDEIMWEB_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="DAR_LEGENDEIMWEB_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_headers_de{}.name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_headers_de{}.value" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_error_de" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_http_status_code_de" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_headers_fr{}.name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_headers_fr{}.value" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_error_fr" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_http_status_code_fr" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_PARM PARM_NAME="MESSAGE" PARM_VALUE="Legendenbildli fehlen:"/>
+#! <XFORM_PARM PARM_NAME="FEATURE_TYPE" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Logger_2"/>
+#! <XFORM_PARM PARM_NAME="MAXFEATS" PARM_VALUE="50"/>
+#! <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="MAXCOORDS" PARM_VALUE="20"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#! IDENTIFIER="39"
+#! TYPE="Logger"
+#! VERSION="3"
+#! POSITION="2137 -1518"
+#! ORDER="5e+014"
+#! PARMS_EDITED="false"
+#! ENABLED="true"
+#! >
+#! <OUTPUT_FEAT NAME="LOGGED"/>
+#! <FEAT_COLLAPSED COLLAPSED="0"/>
+#! <XFORM_ATTR ATTR_NAME="DAR_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="DAR_XTF_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="DAR_LEGENDEIMWEB_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="DAR_LEGENDEIMWEB_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_headers_de{}.name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_headers_de{}.value" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_error_de" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_http_status_code_de" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_PARM PARM_NAME="MESSAGE" PARM_VALUE="Legendenbildli fehlen:"/>
+#! <XFORM_PARM PARM_NAME="FEATURE_TYPE" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Logger_3"/>
+#! <XFORM_PARM PARM_NAME="MAXFEATS" PARM_VALUE="50"/>
+#! <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="MAXCOORDS" PARM_VALUE="20"/>
 #! </TRANSFORMER>
 #! </TRANSFORMERS>
 #! <FEAT_LINKS>
@@ -1163,6 +1252,33 @@
 #! IDENTIFIER="36"
 #! SOURCE_NODE="33"
 #! TARGET_NODE="35"
+#! SOURCE_PORT_DESC="fo 1"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="40"
+#! SOURCE_NODE="23"
+#! TARGET_NODE="39"
+#! SOURCE_PORT_DESC="fo 1"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="41"
+#! SOURCE_NODE="28"
+#! TARGET_NODE="38"
+#! SOURCE_PORT_DESC="fo 1"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="42"
+#! SOURCE_NODE="33"
+#! TARGET_NODE="37"
 #! SOURCE_PORT_DESC="fo 1"
 #! TARGET_PORT_DESC="fi 0"
 #! ENABLED="true"
@@ -4684,47 +4800,38 @@ FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRemover_2    INPUT  FEATURE_TY
 FACTORY_DEF * HTTPFactory    FACTORY_NAME HTTPHeader_3       INPUT  FEATURE_TYPE AttributeRemover_2_OUTPUT    TARGET_URL @EvaluateExpression(STRING_ENCODED,<at>Value<openparen>DAR_LEGENDEIMWEB_DE<closeparen>,HTTPHeader_3)    HTTP_METHOD HEAD    AUTH_METHOD Basic    SINGLE_SIGN_ON No    PROXY_AUTH_METHOD Basic    RESPONSE_HEADER_LIST_ATTR "_headers_de"    STATUS_CODE_ATTR "_http_status_code_de"    ERROR_ATTR "_error_de"    USE_COOKIES No    OUTPUT OUTPUT FEATURE_TYPE HTTPHeader_3_OUTPUT    OUTPUT REJECTED FEATURE_TYPE HTTPHeader_3_<REJECTED>
 
 
+FACTORY_DEF * TeeFactory   FACTORY_NAME "HTTPHeader_3 <REJECTED> Splitter"   INPUT FEATURE_TYPE HTTPHeader_3_<REJECTED>   OUTPUT FEATURE_TYPE HTTPHeader_3_<REJECTED>_0_8jx8E4mjDIE=   OUTPUT FEATURE_TYPE HTTPHeader_3_<REJECTED>_1_8jx8E4mjDIE=
+# -------------------------------------------------------------------------
+FACTORY_DEF * TeeFactory   FACTORY_NAME "Terminator_4 (Disabled) Nuker"   INPUT FEATURE_TYPE HTTPHeader_3_<REJECTED>_1_8jx8E4mjDIE=
 # -------------------------------------------------------------------------
 
-# The default behaviour is to abort on any feature entering the transformer.
-# If Workbench has set the _WB_BYPASS_TERMINATION macro to a value of "Yes",
-# then the features will instead be passed through with a feature type of
-# __WB_BYPASS_TERMINATOR__, which Workbench will send to a visualizer or
-# somesuch.
+FACTORY_DEF * TeeFactory    FACTORY_NAME Logger_3_Logger    INPUT  FEATURE_TYPE HTTPHeader_3_<REJECTED>_0_8jx8E4mjDIE=    OUTPUT FEATURE_TYPE Logger_3_LOGGED                        @FeatureType("")                  @Log("Logger_3: Legendenbildli fehlen:",20,50)
 
-DEFAULT_MACRO _WB_BYPASS_TERMINATION No
-FACTORY_DEF * TestFactory    FACTORY_NAME Terminator_4    INPUT  FEATURE_TYPE HTTPHeader_3_<REJECTED>    TEST "$(_WB_BYPASS_TERMINATION)" == Yes    OUTPUT PASSED FEATURE_TYPE __WB_BYPASS_TERMINATOR__       @SupplyAttributes(_wb_termination_feature_type,@FeatureType())       @SupplyAttributes(ENCODED,_wb_termination_message,Abbruch:<space>Fehler<space>beim<space>Abrufen<space>der<space>URL!!!)       @SupplyAttributes(_wb_termination_xformer,"Terminator_4")       @SupplyAttributes(_wb_termination_feature,Yes)    OUTPUT FAILED FEATURE_TYPE * @Abort(ENCODED,Abbruch:<space>Fehler<space>beim<space>Abrufen<space>der<space>URL!!!)
-
+FACTORY_DEF * TeeFactory   FACTORY_NAME "Logger_3 LOGGED Output Nuker"   INPUT FEATURE_TYPE Logger_3_LOGGED
 # -------------------------------------------------------------------------
 
 FACTORY_DEF * HTTPFactory    FACTORY_NAME HTTPHeader_4       INPUT  FEATURE_TYPE HTTPHeader_3_OUTPUT    TARGET_URL @EvaluateExpression(STRING_ENCODED,<at>Value<openparen>DAR_LEGENDEIMWEB_FR<closeparen>,HTTPHeader_4)    HTTP_METHOD HEAD    AUTH_METHOD Basic    SINGLE_SIGN_ON No    PROXY_AUTH_METHOD Basic    RESPONSE_HEADER_LIST_ATTR "_headers_fr"    STATUS_CODE_ATTR "_http_status_code_fr"    ERROR_ATTR "_error_fr"    USE_COOKIES No    OUTPUT OUTPUT FEATURE_TYPE HTTPHeader_4_OUTPUT    OUTPUT REJECTED FEATURE_TYPE HTTPHeader_4_<REJECTED>
 
 
+FACTORY_DEF * TeeFactory   FACTORY_NAME "HTTPHeader_4 <REJECTED> Splitter"   INPUT FEATURE_TYPE HTTPHeader_4_<REJECTED>   OUTPUT FEATURE_TYPE HTTPHeader_4_<REJECTED>_0_ajgXK01e0Ro=   OUTPUT FEATURE_TYPE HTTPHeader_4_<REJECTED>_1_ajgXK01e0Ro=
 # -------------------------------------------------------------------------
 
-# The default behaviour is to abort on any feature entering the transformer.
-# If Workbench has set the _WB_BYPASS_TERMINATION macro to a value of "Yes",
-# then the features will instead be passed through with a feature type of
-# __WB_BYPASS_TERMINATOR__, which Workbench will send to a visualizer or
-# somesuch.
+FACTORY_DEF * TeeFactory    FACTORY_NAME Logger_2_Logger    INPUT  FEATURE_TYPE HTTPHeader_4_<REJECTED>_1_ajgXK01e0Ro=    OUTPUT FEATURE_TYPE Logger_2_LOGGED                        @FeatureType("")                  @Log("Logger_2: Legendenbildli fehlen:",20,50)
 
-DEFAULT_MACRO _WB_BYPASS_TERMINATION No
-FACTORY_DEF * TestFactory    FACTORY_NAME Terminator_5    INPUT  FEATURE_TYPE HTTPHeader_4_<REJECTED>    TEST "$(_WB_BYPASS_TERMINATION)" == Yes    OUTPUT PASSED FEATURE_TYPE __WB_BYPASS_TERMINATOR__       @SupplyAttributes(_wb_termination_feature_type,@FeatureType())       @SupplyAttributes(ENCODED,_wb_termination_message,Abbruch:<space>Fehler<space>beim<space>Abrufen<space>der<space>URL!!!)       @SupplyAttributes(_wb_termination_xformer,"Terminator_5")       @SupplyAttributes(_wb_termination_feature,Yes)    OUTPUT FAILED FEATURE_TYPE * @Abort(ENCODED,Abbruch:<space>Fehler<space>beim<space>Abrufen<space>der<space>URL!!!)
-
+FACTORY_DEF * TeeFactory   FACTORY_NAME "Logger_2 LOGGED Output Nuker"   INPUT FEATURE_TYPE Logger_2_LOGGED
+# -------------------------------------------------------------------------
+FACTORY_DEF * TeeFactory   FACTORY_NAME "Terminator_5 (Disabled) Nuker"   INPUT FEATURE_TYPE HTTPHeader_4_<REJECTED>_0_ajgXK01e0Ro=
 # -------------------------------------------------------------------------
 
 FACTORY_DEF * TestFactory    FACTORY_NAME Tester_2    INPUT  FEATURE_TYPE HTTPHeader_4_OUTPUT    TEST @EvaluateExpression(STRING_ENCODED,<at>Value<openparen>_http_status_code_de<closeparen>,Tester_2) = 200 ENCODED TEST @EvaluateExpression(STRING_ENCODED,<at>Value<openparen>_http_status_code_fr<closeparen>,Tester_2) = 200 ENCODED    BOOLEAN_OPERATOR AND    OUTPUT FAILED FEATURE_TYPE Tester_2_FAILED
+FACTORY_DEF * TeeFactory   FACTORY_NAME "Tester_2 FAILED Splitter"   INPUT FEATURE_TYPE Tester_2_FAILED   OUTPUT FEATURE_TYPE Tester_2_FAILED_0_QOKiTR894Ik=   OUTPUT FEATURE_TYPE Tester_2_FAILED_1_QOKiTR894Ik=
+# -------------------------------------------------------------------------
+FACTORY_DEF * TeeFactory   FACTORY_NAME "Terminator_6 (Disabled) Nuker"   INPUT FEATURE_TYPE Tester_2_FAILED_1_QOKiTR894Ik=
 # -------------------------------------------------------------------------
 
-# The default behaviour is to abort on any feature entering the transformer.
-# If Workbench has set the _WB_BYPASS_TERMINATION macro to a value of "Yes",
-# then the features will instead be passed through with a feature type of
-# __WB_BYPASS_TERMINATOR__, which Workbench will send to a visualizer or
-# somesuch.
+FACTORY_DEF * TeeFactory    FACTORY_NAME Logger_Logger    INPUT  FEATURE_TYPE Tester_2_FAILED_0_QOKiTR894Ik=    OUTPUT FEATURE_TYPE Logger_LOGGED                        @FeatureType("")                  @Log("Logger: Legendenbildli fehlen:",20,50)
 
-DEFAULT_MACRO _WB_BYPASS_TERMINATION No
-FACTORY_DEF * TestFactory    FACTORY_NAME Terminator_6    INPUT  FEATURE_TYPE Tester_2_FAILED    TEST "$(_WB_BYPASS_TERMINATION)" == Yes    OUTPUT PASSED FEATURE_TYPE __WB_BYPASS_TERMINATOR__       @SupplyAttributes(_wb_termination_feature_type,@FeatureType())       @SupplyAttributes(ENCODED,_wb_termination_message,Abbruch:<space>Fehler<space>beim<space>Abrufen<space>der<space>URL!!!)       @SupplyAttributes(_wb_termination_xformer,"Terminator_6")       @SupplyAttributes(_wb_termination_feature,Yes)    OUTPUT FAILED FEATURE_TYPE * @Abort(ENCODED,Abbruch:<space>Fehler<space>beim<space>Abrufen<space>der<space>URL!!!)
-
+FACTORY_DEF * TeeFactory   FACTORY_NAME "Logger LOGGED Output Nuker"   INPUT FEATURE_TYPE Logger_LOGGED
 # -------------------------------------------------------------------------
 
 FACTORY_DEF * TestFactory   FACTORY_NAME "Final Output Feature Type Router"   INPUT FEATURE_TYPE __WB_BYPASS_TERMINATOR__     @SupplyAttributes(__wb_out_feat_type__,__WB_BYPASS_TERMINATOR__)     @Tcl2("FME_StatMessage 818062 {@Value(_wb_termination_message) (@Value(_wb_termination_xformer))} 818063")   INPUT FEATURE_TYPE *   TEST @Value(__wb_out_feat_type__) != ""   OUTPUT PASSED FEATURE_TYPE *     @FeatureType(@Value(__wb_out_feat_type__))   OUTPUT FAILED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")
