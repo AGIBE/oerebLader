@@ -32,7 +32,7 @@ def run(config):
         'PASSWORD': str(config['GEODB_WORK']['password']),
         'MODELLABLAGE': str(config['GENERAL']['models']),
         'BFSNR': str(config['LIEFEREINHEIT']['bfsnr']),
-        'GEMNAME': str(config['LIEFEREINHEIT']['gemeinde_name']),
+        'GEMNAME': config['LIEFEREINHEIT']['gemeinde_name'].encode("latin-1"),
         'ITF_FILE': str(itf_file),
         'INPUT_RV_DIR': str(input_rv_dir),
         'OUTPUT_RV_DIR': str(output_rv_dir),
