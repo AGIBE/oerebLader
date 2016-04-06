@@ -15,7 +15,7 @@ def run(config):
     logger.info("Folgende Toolbox wird verwendet: " + toolbox)
     arcpy.AddToolbox(toolbox)             
                            
-    qa_spec = os.path.join(config['GENERAL']['qa'], "OEREB.qa.xml")
+    qa_spec = os.path.join(config['GENERAL']['qa'], "OEREB", "OEREB_" + unicode(config['LIEFEREINHEIT']['id']) + ".qa.xml")
     logger.info("Die folgende QA-Spez wird verwendet: " + qa_spec)
     
     result_dir_name = unicode("qa_OEREB_" + datetime.datetime.now().strftime("%Y%m%d_%H%M%S"))
