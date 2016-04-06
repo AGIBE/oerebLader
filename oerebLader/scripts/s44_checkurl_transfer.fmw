@@ -15,7 +15,7 @@
 #    
 #! PASSWORD=""
 #! ATTR_TYPE_ENCODING="SDF"
-#! VIEW_POSITION="0 0"
+#! VIEW_POSITION="9 418"
 #! SHOW_INFO_NODES="true"
 #! FME_STROKE_MAX_DEVIATION="0"
 #! BEGIN_PYTHON="#&lt;space&gt;-*-&lt;space&gt;coding:&lt;space&gt;latin-1&lt;space&gt;-*-&lt;lf&gt;import&lt;space&gt;fmeobjects&lt;lf&gt;&lt;lf&gt;def&lt;space&gt;processMultilangFields&lt;openparen&gt;feature&lt;closeparen&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;multilangFields&lt;space&gt;=&lt;space&gt;feature.getAttribute&lt;openparen&gt;&lt;apos&gt;multilangfields&lt;apos&gt;&lt;closeparen&gt;.split&lt;openparen&gt;&lt;quote&gt;&lt;comma&gt;&lt;quote&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;for&lt;space&gt;mlField&lt;space&gt;in&lt;space&gt;multilangFields:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;content_de&lt;space&gt;=&lt;space&gt;&lt;quote&gt;&lt;quote&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;content_fr&lt;space&gt;=&lt;space&gt;&lt;quote&gt;&lt;quote&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;att_Language_list&lt;space&gt;=&lt;space&gt;feature.getAttribute&lt;openparen&gt;mlField&lt;space&gt;+&lt;space&gt;&lt;apos&gt;&lt;opencurly&gt;0&lt;closecurly&gt;.localizedText&lt;opencurly&gt;&lt;closecurly&gt;.Language&lt;apos&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;att_Text_list&lt;space&gt;=&lt;space&gt;feature.getAttribute&lt;openparen&gt;mlField&lt;space&gt;+&lt;space&gt;&lt;apos&gt;&lt;opencurly&gt;0&lt;closecurly&gt;.localizedText&lt;opencurly&gt;&lt;closecurly&gt;.Text&lt;apos&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;#&lt;space&gt;wenn&lt;space&gt;das&lt;space&gt;Multilang-Feld&lt;space&gt;nicht&lt;space&gt;abgef&lt;u00fc&gt;llt&lt;space&gt;ist&lt;comma&gt;&lt;space&gt;soll&lt;space&gt;es&lt;space&gt;nicht&lt;space&gt;bearbeitet&lt;space&gt;werden&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;if&lt;space&gt;att_Language_list&lt;space&gt;is&lt;space&gt;not&lt;space&gt;None:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;for&lt;space&gt;i&lt;space&gt;in&lt;space&gt;range&lt;openparen&gt;len&lt;openparen&gt;att_Language_list&lt;closeparen&gt;&lt;closeparen&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;if&lt;space&gt;att_Language_list&lt;openbracket&gt;i&lt;closebracket&gt;==&lt;quote&gt;de&lt;quote&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;content_de&lt;space&gt;=&lt;space&gt;att_Text_list&lt;openbracket&gt;i&lt;closebracket&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;if&lt;space&gt;att_Language_list&lt;openbracket&gt;i&lt;closebracket&gt;==&lt;quote&gt;fr&lt;quote&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;content_fr&lt;space&gt;=&lt;space&gt;att_Text_list&lt;openbracket&gt;i&lt;closebracket&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;if&lt;space&gt;att_Language_list&lt;openbracket&gt;i&lt;closebracket&gt;==&lt;quote&gt;it&lt;quote&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;content_de&lt;space&gt;=&lt;space&gt;att_Text_list&lt;openbracket&gt;i&lt;closebracket&gt;&lt;lf&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;#&lt;space&gt;Wenn&lt;space&gt;der&lt;space&gt;Text&lt;space&gt;nur&lt;space&gt;in&lt;space&gt;einer&lt;space&gt;Sprache&lt;space&gt;vorhanden&lt;space&gt;ist&lt;comma&gt;&lt;space&gt;wird&lt;space&gt;er&lt;space&gt;auch&lt;space&gt;f&lt;u00fc&gt;r&lt;space&gt;die&lt;space&gt;andere&lt;space&gt;Sprache&lt;space&gt;verwendet&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;if&lt;space&gt;content_de&lt;space&gt;==&lt;space&gt;&lt;quote&gt;&lt;quote&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;content_de&lt;space&gt;=&lt;space&gt;content_fr&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;if&lt;space&gt;content_fr&lt;space&gt;==&lt;space&gt;&lt;quote&gt;&lt;quote&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;content_fr&lt;space&gt;=&lt;space&gt;content_de&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;feature.setAttribute&lt;openparen&gt;mlField&lt;space&gt;+&lt;space&gt;&lt;quote&gt;_DE&lt;quote&gt;&lt;comma&gt;&lt;space&gt;content_de&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;feature.setAttribute&lt;openparen&gt;mlField&lt;space&gt;+&lt;space&gt;&lt;quote&gt;_FR&lt;quote&gt;&lt;comma&gt;&lt;space&gt;content_fr&lt;closeparen&gt;&lt;space&gt;"
@@ -33,13 +33,13 @@
 #! USAGE=""
 #! END_PYTHON=""
 #! HISTORY=""
-#! FME_DOCUMENT_PRIORGUID="081ee97d-038f-4e04-84da-72c381365512,8ed992b9-6214-4d51-b25b-9fbebd3a409d,5449b6bd-a67b-43e4-9871-9ea68d746d6a"
+#! FME_DOCUMENT_PRIORGUID="081ee97d-038f-4e04-84da-72c381365512,8ed992b9-6214-4d51-b25b-9fbebd3a409d,5449b6bd-a67b-43e4-9871-9ea68d746d6a,1fee7f9a-6c75-4479-beb4-221fd178f0f1"
 #! DOC_TOP_LEFT="147 -1518"
 #! REQUIREMENTS_KEYWORD=""
 #! SOURCE_ROUTING_FILE=""
 #! DESTINATION_ROUTING_FILE=""
 #! DESTINATION="NONE"
-#! LAST_SAVE_DATE="2016-03-18T12:36:33"
+#! LAST_SAVE_DATE="2016-04-06T09:54:43"
 #! FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Datum"
 #! WORKSPACE_VERSION="1"
 #! SOURCE="NONE"
@@ -49,8 +49,8 @@
 #! LOG_FILE="$(LOGFILE)"
 #! REQUIREMENTS=""
 #! BEGIN_TCL=""
-#! DOC_EXTENTS="3689 1475"
-#! FME_DOCUMENT_GUID="1fee7f9a-6c75-4479-beb4-221fd178f0f1"
+#! DOC_EXTENTS="4402 1529"
+#! FME_DOCUMENT_GUID="76ddd879-d905-463f-ae33-fae2719865dc"
 #! SHOW_ANNOTATIONS="true"
 #! IGNORE_READER_FAILURE="No"
 #! WARN_INVALID_XFORM_PARAM="Yes"
@@ -535,12 +535,12 @@
 #! <COMMENT
 #! IDENTIFIER="9"
 #! COMMENT_VALUE="&lt;html&gt;&lt;body&gt;Deutsche URLs&lt;/body&gt;&lt;/html&gt;"
-#! POSITION="1335 -116"
+#! POSITION="2215 -48"
 #! ORDER="17"
 #! FOLLOW_ANCHOR="true"
 #! INFO_NODE="false"
-#! TOP_LEFT="1335 -116"
-#! BOTTOM_RIGHT="1335 -116"
+#! TOP_LEFT="2215 -48"
+#! BOTTOM_RIGHT="2215 -48"
 #! COLOUR="1,1,0.784314,0.192157"
 #! SIZE_POLICY="8"
 #! COMMENT_TYPE="REGULAR"
@@ -549,12 +549,12 @@
 #! <COMMENT
 #! IDENTIFIER="12"
 #! COMMENT_VALUE="&lt;html&gt;&lt;body&gt;Französische URLs&lt;/body&gt;&lt;/html&gt;"
-#! POSITION="2106 -43"
+#! POSITION="2977 11"
 #! ORDER="19"
 #! FOLLOW_ANCHOR="true"
 #! INFO_NODE="false"
-#! TOP_LEFT="2106 -43"
-#! BOTTOM_RIGHT="2106 -43"
+#! TOP_LEFT="2977 11"
+#! BOTTOM_RIGHT="2977 11"
 #! COLOUR="1,1,0.784314,0.192157"
 #! SIZE_POLICY="8"
 #! COMMENT_TYPE="REGULAR"
@@ -602,6 +602,20 @@
 #! COMMENT_TYPE="REGULAR"
 #! ANCHORED_NODE="28"
 #! />
+#! <COMMENT
+#! IDENTIFIER="46"
+#! COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:11px; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Umlaute in den URLs ersetzen&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#! POSITION="1315 -47"
+#! ORDER="5e+014"
+#! FOLLOW_ANCHOR="true"
+#! INFO_NODE="false"
+#! TOP_LEFT="1315 -47"
+#! BOTTOM_RIGHT="1315 -47"
+#! COLOUR="1,1,0.784314,0.196078"
+#! SIZE_POLICY="8"
+#! COMMENT_TYPE="REGULAR"
+#! ANCHORED_NODE="43"
+#! />
 #! </COMMENTS>
 #! <CONSTANTS>
 #! </CONSTANTS>
@@ -633,7 +647,7 @@
 #! IDENTIFIER="5"
 #! TYPE="HTTPHeader"
 #! VERSION="0"
-#! POSITION="1335 -196"
+#! POSITION="2199 -199"
 #! ORDER="16"
 #! PARMS_EDITED="true"
 #! ENABLED="true"
@@ -683,7 +697,7 @@
 #! IDENTIFIER="7"
 #! TYPE="Terminator"
 #! VERSION="2"
-#! POSITION="2108 -576"
+#! POSITION="2972 -579"
 #! ORDER="20"
 #! PARMS_EDITED="true"
 #! ENABLED="true"
@@ -697,7 +711,7 @@
 #! IDENTIFIER="10"
 #! TYPE="HTTPHeader"
 #! VERSION="0"
-#! POSITION="2106 -123"
+#! POSITION="2970 -126"
 #! ORDER="18"
 #! PARMS_EDITED="true"
 #! ENABLED="true"
@@ -755,7 +769,7 @@
 #! IDENTIFIER="13"
 #! TYPE="Terminator"
 #! VERSION="2"
-#! POSITION="2788 -589"
+#! POSITION="3652 -592"
 #! ORDER="21"
 #! PARMS_EDITED="true"
 #! ENABLED="true"
@@ -769,7 +783,7 @@
 #! IDENTIFIER="15"
 #! TYPE="Tester"
 #! VERSION="2"
-#! POSITION="3045 -113"
+#! POSITION="3909 -116"
 #! ORDER="22"
 #! PARMS_EDITED="true"
 #! ENABLED="true"
@@ -814,7 +828,7 @@
 #! IDENTIFIER="17"
 #! TYPE="Terminator"
 #! VERSION="2"
-#! POSITION="3685 -351"
+#! POSITION="4549 -354"
 #! ORDER="23"
 #! PARMS_EDITED="true"
 #! ENABLED="true"
@@ -1129,6 +1143,31 @@
 #! <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
 #! <XFORM_PARM PARM_NAME="MAXCOORDS" PARM_VALUE="20"/>
 #! </TRANSFORMER>
+#! <TRANSFORMER
+#! IDENTIFIER="43"
+#! TYPE="PythonCaller"
+#! VERSION="4"
+#! POSITION="1368 -209"
+#! ORDER="5e+014"
+#! PARMS_EDITED="true"
+#! ENABLED="true"
+#! >
+#! <OUTPUT_FEAT NAME="OUTPUT"/>
+#! <FEAT_COLLAPSED COLLAPSED="0"/>
+#! <XFORM_ATTR ATTR_NAME="VOR_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="VOR_XTF_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="VOR_TEXTIMWEB_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="VOR_TEXTIMWEB_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_PARM PARM_NAME="LIST_ATTRS" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="HIDE_ATTRIBUTES" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="PYTHONSOURCE" PARM_VALUE="from&lt;space&gt;__future__&lt;space&gt;import&lt;space&gt;absolute_import&lt;comma&gt;&lt;space&gt;division&lt;comma&gt;&lt;space&gt;print_function&lt;comma&gt;&lt;space&gt;unicode_literals&lt;lf&gt;import&lt;space&gt;fmeobjects&lt;lf&gt;&lt;lf&gt;def&lt;space&gt;processFeature&lt;openparen&gt;feature&lt;closeparen&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;url_de&lt;space&gt;=&lt;space&gt;feature.getAttribute&lt;openparen&gt;&lt;quote&gt;VOR_TEXTIMWEB_DE&lt;quote&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;url_de&lt;space&gt;=&lt;space&gt;url_de.replace&lt;openparen&gt;&lt;quote&gt;&lt;u00e4&gt;&lt;quote&gt;&lt;comma&gt;&lt;space&gt;&lt;quote&gt;%C3%A4&lt;quote&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;url_de&lt;space&gt;=&lt;space&gt;url_de.replace&lt;openparen&gt;&lt;quote&gt;&lt;u00f6&gt;&lt;quote&gt;&lt;comma&gt;&lt;space&gt;&lt;quote&gt;%C3%B6&lt;quote&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;url_de&lt;space&gt;=&lt;space&gt;url_de.replace&lt;openparen&gt;&lt;quote&gt;&lt;u00fc&gt;&lt;quote&gt;&lt;comma&gt;&lt;space&gt;&lt;quote&gt;%C3%BC&lt;quote&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;feature.setAttribute&lt;openparen&gt;&lt;quote&gt;VOR_TEXTIMWEB_DE&lt;quote&gt;&lt;comma&gt;&lt;space&gt;url_de&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;url_fr&lt;space&gt;=&lt;space&gt;feature.getAttribute&lt;openparen&gt;&lt;quote&gt;VOR_TEXTIMWEB_FR&lt;quote&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;url_fr&lt;space&gt;=&lt;space&gt;url_fr.replace&lt;openparen&gt;&lt;quote&gt;&lt;u00e4&gt;&lt;quote&gt;&lt;comma&gt;&lt;space&gt;&lt;quote&gt;%C3%A4&lt;quote&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;url_fr&lt;space&gt;=&lt;space&gt;url_fr.replace&lt;openparen&gt;&lt;quote&gt;&lt;u00f6&gt;&lt;quote&gt;&lt;comma&gt;&lt;space&gt;&lt;quote&gt;%C3%B6&lt;quote&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;url_fr&lt;space&gt;=&lt;space&gt;url_fr.replace&lt;openparen&gt;&lt;quote&gt;&lt;u00fc&gt;&lt;quote&gt;&lt;comma&gt;&lt;space&gt;&lt;quote&gt;%C3%BC&lt;quote&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;feature.setAttribute&lt;openparen&gt;&lt;quote&gt;VOR_TEXTIMWEB_FR&lt;quote&gt;&lt;comma&gt;&lt;space&gt;url_fr&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;lf&gt;"/>
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="PythonCaller"/>
+#! <XFORM_PARM PARM_NAME="PYTHONSYMBOL" PARM_VALUE="processFeature"/>
+#! <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="ADVANCED_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="NEW_ATTRIBUTES" PARM_VALUE=""/>
+#! </TRANSFORMER>
 #! </TRANSFORMERS>
 #! <FEAT_LINKS>
 #! <FEAT_LINK
@@ -1136,15 +1175,6 @@
 #! SOURCE_NODE="176"
 #! TARGET_NODE="3"
 #! SOURCE_PORT_DESC="-1"
-#! TARGET_PORT_DESC="fi 0"
-#! ENABLED="true"
-#! EXTRA_POINTS=""
-#! />
-#! <FEAT_LINK
-#! IDENTIFIER="6"
-#! SOURCE_NODE="3"
-#! TARGET_NODE="5"
-#! SOURCE_PORT_DESC="fo 0"
 #! TARGET_PORT_DESC="fi 0"
 #! ENABLED="true"
 #! EXTRA_POINTS=""
@@ -1280,6 +1310,24 @@
 #! SOURCE_NODE="33"
 #! TARGET_NODE="37"
 #! SOURCE_PORT_DESC="fo 1"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="44"
+#! SOURCE_NODE="3"
+#! TARGET_NODE="43"
+#! SOURCE_PORT_DESC="fo 0"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="45"
+#! SOURCE_NODE="43"
+#! TARGET_NODE="5"
+#! SOURCE_PORT_DESC="fo 0"
 #! TARGET_PORT_DESC="fi 0"
 #! ENABLED="true"
 #! EXTRA_POINTS=""
@@ -4602,6 +4650,7 @@ GUI TITLE ch.ehi.fme.Main to SDE30 Translation
 #! START_WB_HEADER
 READER_TYPE ORACLE8I_DB
 READER_KEYWORD ORACLE8I_DB_1
+READER_GEN_DIRECTIVES SERVER_TYPE,ORACLE8i,PERSISTENT_CONNECTION,YES,REMOVE_SCHEMA_QUALIFIER,NO,EXPOSE_ATTRS_GROUP,,ORACLE8I_DB_EXPOSE_FORMAT_ATTRS,,WORKSPACE,,SHOW_SYSTEM_TABLES,NO,TABLELIST,OEREB.VORSCHRIFT,USER_NAME,sysoem,WHERE_CLAUSE,,_MERGE_SCHEMAS,YES
 WRITER_TYPE NULL
 WRITER_KEYWORD NULL_DEST
 NULL_DEST_DATASET null
@@ -4746,7 +4795,14 @@ FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRemover    INPUT  FEATURE_TYPE
 
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * HTTPFactory    FACTORY_NAME HTTPHeader       INPUT  FEATURE_TYPE AttributeRemover_OUTPUT    TARGET_URL @EvaluateExpression(STRING_ENCODED,<at>Value<openparen>VOR_TEXTIMWEB_DE<closeparen>,HTTPHeader)    HTTP_METHOD HEAD    AUTH_METHOD Basic    SINGLE_SIGN_ON No    PROXY_AUTH_METHOD Basic    RESPONSE_HEADER_LIST_ATTR "_headers_de"    STATUS_CODE_ATTR "_http_status_code_de"    ERROR_ATTR "_error_de"    USE_COOKIES No    OUTPUT OUTPUT FEATURE_TYPE HTTPHeader_OUTPUT    OUTPUT REJECTED FEATURE_TYPE HTTPHeader_<REJECTED>
+
+FME_PYTHON_PATH "$(FME_MF_DIR)"
+
+FACTORY_DEF * PythonFactory    FACTORY_NAME PythonCaller    INPUT  FEATURE_TYPE AttributeRemover_OUTPUT    SYMBOL_NAME processFeature    PYTHON_NAMESPACE FMEOBJECTS    SOURCE_CODE from<space>__future__<space>import<space>absolute_import<comma><space>division<comma><space>print_function<comma><space>unicode_literals<lf>import<space>fmeobjects<lf><lf>def<space>processFeature<openparen>feature<closeparen>:<lf><space><space><space><space>url_de<space>=<space>feature.getAttribute<openparen><quote>VOR_TEXTIMWEB_DE<quote><closeparen><lf><space><space><space><space>url_de<space>=<space>url_de.replace<openparen><quote><u00e4><quote><comma><space><quote>%C3%A4<quote><closeparen><lf><space><space><space><space>url_de<space>=<space>url_de.replace<openparen><quote><u00f6><quote><comma><space><quote>%C3%B6<quote><closeparen><lf><space><space><space><space>url_de<space>=<space>url_de.replace<openparen><quote><u00fc><quote><comma><space><quote>%C3%BC<quote><closeparen><lf><space><space><space><space>feature.setAttribute<openparen><quote>VOR_TEXTIMWEB_DE<quote><comma><space>url_de<closeparen><lf><space><space><space><space><lf><space><space><space><space>url_fr<space>=<space>feature.getAttribute<openparen><quote>VOR_TEXTIMWEB_FR<quote><closeparen><lf><space><space><space><space>url_fr<space>=<space>url_fr.replace<openparen><quote><u00e4><quote><comma><space><quote>%C3%A4<quote><closeparen><lf><space><space><space><space>url_fr<space>=<space>url_fr.replace<openparen><quote><u00f6><quote><comma><space><quote>%C3%B6<quote><closeparen><lf><space><space><space><space>url_fr<space>=<space>url_fr.replace<openparen><quote><u00fc><quote><comma><space><quote>%C3%BC<quote><closeparen><lf><space><space><space><space>feature.setAttribute<openparen><quote>VOR_TEXTIMWEB_FR<quote><comma><space>url_fr<closeparen><lf><space><space><space><space><lf><lf>    OUTPUT PYOUTPUT FEATURE_TYPE PythonCaller_OUTPUT
+
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * HTTPFactory    FACTORY_NAME HTTPHeader       INPUT  FEATURE_TYPE PythonCaller_OUTPUT    TARGET_URL @EvaluateExpression(STRING_ENCODED,<at>Value<openparen>VOR_TEXTIMWEB_DE<closeparen>,HTTPHeader)    HTTP_METHOD HEAD    AUTH_METHOD Basic    SINGLE_SIGN_ON No    PROXY_AUTH_METHOD Basic    RESPONSE_HEADER_LIST_ATTR "_headers_de"    STATUS_CODE_ATTR "_http_status_code_de"    ERROR_ATTR "_error_de"    USE_COOKIES No    OUTPUT OUTPUT FEATURE_TYPE HTTPHeader_OUTPUT    OUTPUT REJECTED FEATURE_TYPE HTTPHeader_<REJECTED>
 
 
 # -------------------------------------------------------------------------
