@@ -8,7 +8,7 @@ import oerebLader.release.release
 import oerebLader.refresh_verschnitt.refresh_verschnitt
 import oerebLader.refresh_statistics.refresh_statistics
 import oerebLader.sync_avdate.sync_avdate
-from _ctypes_test import func
+import oerebLader.create_qaspecs.create_qaspecs
 
 def import_ticket(args):
     oerebLader.workflows.workflow.run_workflow(args.TICKET)
@@ -50,6 +50,10 @@ def refresh_statistics(args):
 def sync_avdate(args):
     oerebLader.sync_avdate.sync_avdate.run_sync_avdate()
     print("Sync_avdate SUCCESSFUL!")
+    
+def create_qaspecs(args):
+    oerebLader.create_qaspecs.create_qaspecs.run_create_qaspecs()
+    print("Create_qaspces SUCCESSFUL!")
 
 def main():
     version_text = "oerebLader v" + __version__
@@ -88,6 +92,10 @@ def main():
     # SYNC_AVDATE-Befehl
     sync_avdate_parser = subparsers.add_parser("sync_avdate", help="Kopiert das MOPUBE-Nachführungsdatum aus dem GeoDB-DD in die Konfig der ÖREBK-Verschnittfunktion.")
     sync_avdate_parser.set_defaults(func=sync_avdate)
+    
+    # CREATE_QASPECS-Befehl
+    create_qaspecs_parser = subparsers.add_parser("create_qaspecs", help="Erstellt pro Liefereinheit ein QA-Spezifikations-XML.")
+    create_qaspecs_parser.set_defaults(func=create_qaspecs)
     
     args = parser.parse_args()
     args.func(args)
