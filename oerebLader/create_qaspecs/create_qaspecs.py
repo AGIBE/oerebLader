@@ -32,13 +32,20 @@ def init_logging(config):
 
 def get_liefereinheiten(config):
     liefereinheiten_sql = "select id from liefereinheit order by id"
-    liefereinheiten = oerebLader.helpers.sql_helper.readSQL(config['OEREB_WORK']['connection_string'], liefereinheiten_sql)
+    liefereinheiten_result = oerebLader.helpers.sql_helper.readSQL(config['OEREB_WORK']['connection_string'], liefereinheiten_sql)
+    liefereinheiten = []
+    for le in liefereinheiten_result:
+        liefereinheiten.append(le[0])
     return liefereinheiten
 
-def run_create_qaspecs():
-    config = oerebLader.helpers.config.get_config()
-    logger = init_logging(config)
-    logger.info("Die QA-Spezifikationen aller Liefereinheiten werden neu erstellt.")
+def run_create_qaspecs(config=None, liefereinheiten=[-1]):
+    if config is not None:
+        logger = logging.getLogger('oerebLaderLogger')
+    else:
+        config = oerebLader.helpers.config.get_config()
+        logger = init_logging(config)
+    
+    logger.info("Die QA-Spezifikationen werden neu erstellt.")
     
     qa_basedir = config['GENERAL']['qa']
     
@@ -52,12 +59,15 @@ def run_create_qaspecs():
     
     qa_dir = os.path.join(qa_basedir, "OEREB")
     logger.info("Die QA-Spezifikation werden gespeichert in: ")
-    logger.info(qa_dir)   
+    logger.info(qa_dir)
     
-    for le in get_liefereinheiten(config):
-        logger.info("Liefereinheit " + unicode(le[0]) + " wird bearbeitet.")
-        liefereinheit_qa_filename = os.path.join(qa_dir, "OEREB_" + unicode(le[0]) + ".qa.xml")
-        template_qa_liefereinheit = template_qa.replace("$$$LIEFEREINHEIT$$$", unicode(le[0]))
+    if liefereinheiten[0] == -1:
+        liefereinheiten = get_liefereinheiten(config)
+        
+    for le in liefereinheiten:
+        logger.info("Liefereinheit " + unicode(le) + " wird bearbeitet.")
+        liefereinheit_qa_filename = os.path.join(qa_dir, "OEREB_" + unicode(le) + ".qa.xml")
+        template_qa_liefereinheit = template_qa.replace("$$$LIEFEREINHEIT$$$", unicode(le))
         logger.info("Datei " + liefereinheit_qa_filename + " wird geschrieben.")
         with codecs.open(liefereinheit_qa_filename, "w", "utf-8") as liefereinheit_qa_file:
             liefereinheit_qa_file.write(template_qa_liefereinheit)

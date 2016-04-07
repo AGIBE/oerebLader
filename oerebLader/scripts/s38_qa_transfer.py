@@ -5,6 +5,7 @@ import os
 import datetime
 import sys
 import arcpy
+import oerebLader.create_qaspecs.create_qaspecs
 
 logger = logging.getLogger('oerebLaderLogger')
 
@@ -13,7 +14,11 @@ def run(config):
     logger.info("Script " +  os.path.basename(__file__) + " ist beendet.")
     toolbox = config['GENERAL']['qa_toolbox']
     logger.info("Folgende Toolbox wird verwendet: " + toolbox)
-    arcpy.AddToolbox(toolbox)             
+    arcpy.AddToolbox(toolbox)
+    
+    logger.info("Die QA-Spez wird neu erstellt.")
+    liefereinheiten = [config['LIEFEREINHEIT']['id']]
+    oerebLader.create_qaspecs.create_qaspecs.run_create_qaspecs(config, liefereinheiten)
                            
     qa_spec = os.path.join(config['GENERAL']['qa'], "OEREB", "OEREB_" + unicode(config['LIEFEREINHEIT']['id']) + ".qa.xml")
     logger.info("Die folgende QA-Spez wird verwendet: " + qa_spec)
