@@ -4,6 +4,7 @@ import oerebLader.helpers.config
 import oerebLader.helpers.sql_helper
 import oerebLader.workflows.w2_kbs
 import oerebLader.workflows.w1_gsk
+import oerebLader.workflows.w3_tba
 import oerebLader.workflows.w4_npl
 import oerebLader.workflows.w5_nplbern
 import oerebLader.workflows.w6_nplkueo
