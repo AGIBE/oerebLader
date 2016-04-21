@@ -18,7 +18,7 @@ def run(config):
     excel_amt_filename = "AMT_" + unicode(config['LIEFEREINHEIT']['id']) + ".xlsx"
     excel_amt_file = os.path.join(tba_path, excel_amt_filename)
     excel_darstellungsdienst_filename = "DARSTELLUNGSDIENST_" + unicode(config['LIEFEREINHEIT']['id']) + ".xlsx"
-    excel_darstellungsdienst_file = os.path(tba_path, excel_darstellungsdienst_filename)
+    excel_darstellungsdienst_file = os.path.join(tba_path, excel_darstellungsdienst_filename)
     runner = fmeobjects.FMEWorkspaceRunner()
     
     # Der FMEWorkspaceRunner akzeptiert keine Unicode-Strings!

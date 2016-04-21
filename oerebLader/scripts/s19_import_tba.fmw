@@ -23,7 +23,7 @@
 #    
 #! PASSWORD=""
 #! ATTR_TYPE_ENCODING="SDF"
-#! VIEW_POSITION="282 363"
+#! VIEW_POSITION="1218 522"
 #! SHOW_INFO_NODES="true"
 #! FME_STROKE_MAX_DEVIATION="0"
 #! BEGIN_PYTHON=""
@@ -41,13 +41,13 @@
 #! USAGE=""
 #! END_PYTHON=""
 #! HISTORY=""
-#! FME_DOCUMENT_PRIORGUID="ff6e377e-572b-4b2b-8945-ccc8c3b5d1ed,57fd5493-aa52-4983-8859-41ca8ecc0804,874b3a81-503e-46dd-8ad3-92f3e2e3f079,f0c6cb55-125e-4398-ac06-654bff072ca4"
+#! FME_DOCUMENT_PRIORGUID="ff6e377e-572b-4b2b-8945-ccc8c3b5d1ed,57fd5493-aa52-4983-8859-41ca8ecc0804,874b3a81-503e-46dd-8ad3-92f3e2e3f079,f0c6cb55-125e-4398-ac06-654bff072ca4,55c6ce34-d17c-41b0-9b1f-4cf433c47353"
 #! DOC_TOP_LEFT="-764 -2084"
 #! REQUIREMENTS_KEYWORD=""
 #! SOURCE_ROUTING_FILE=""
 #! DESTINATION_ROUTING_FILE=""
 #! DESTINATION="NONE"
-#! LAST_SAVE_DATE="2016-04-21T13:21:36"
+#! LAST_SAVE_DATE="2016-04-21T15:56:52"
 #! FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
 #! WORKSPACE_VERSION="1"
 #! SOURCE="NONE"
@@ -58,7 +58,7 @@
 #! REQUIREMENTS=""
 #! BEGIN_TCL=""
 #! DOC_EXTENTS="6186 2549"
-#! FME_DOCUMENT_GUID="55c6ce34-d17c-41b0-9b1f-4cf433c47353"
+#! FME_DOCUMENT_GUID="00c52050-74a3-4d09-94b7-6b084087c820"
 #! SHOW_ANNOTATIONS="true"
 #! IGNORE_READER_FAILURE="No"
 #! WARN_INVALID_XFORM_PARAM="Yes"
@@ -2068,32 +2068,6 @@
 #! </BOOKMARKS>
 #! <TRANSFORMERS>
 #! <TRANSFORMER
-#! IDENTIFIER="2"
-#! TYPE="Inspector"
-#! VERSION="3"
-#! POSITION="1683 -136"
-#! ORDER="5e+014"
-#! PARMS_EDITED="false"
-#! ENABLED="true"
-#! >
-#! <XFORM_PARM PARM_NAME="AREA_COLOR" PARM_VALUE=""/>
-#! <XFORM_PARM PARM_NAME="THINNER_MAX_NUM_POINTS" PARM_VALUE="&lt;Unused&gt;"/>
-#! <XFORM_PARM PARM_NAME="TACKATTRS" PARM_VALUE=""/>
-#! <XFORM_PARM PARM_NAME="VECTOR_GROUP" PARM_VALUE=""/>
-#! <XFORM_PARM PARM_NAME="POINTCLOUD_GROUP" PARM_VALUE=""/>
-#! <XFORM_PARM PARM_NAME="PEN_COLOR" PARM_VALUE=""/>
-#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="TBA.STRA_OREB_STBALI"/>
-#! <XFORM_PARM PARM_NAME="RASTER_GROUP" PARM_VALUE=""/>
-#! <XFORM_PARM PARM_NAME="THINNER_INTERVAL" PARM_VALUE="&lt;Unused&gt;"/>
-#! <XFORM_PARM PARM_NAME="RASTER_VISUALIZATION_OPTION" PARM_VALUE="No Reduction"/>
-#! <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
-#! <XFORM_PARM PARM_NAME="RASTER_NUM_ROWS" PARM_VALUE="&lt;Unused&gt;"/>
-#! <XFORM_PARM PARM_NAME="RASTER_START_COL" PARM_VALUE="&lt;Unused&gt;"/>
-#! <XFORM_PARM PARM_NAME="RASTER_NUM_COLS" PARM_VALUE="&lt;Unused&gt;"/>
-#! <XFORM_PARM PARM_NAME="THINNER_TYPE_DISPLAY" PARM_VALUE="No Thinning"/>
-#! <XFORM_PARM PARM_NAME="RASTER_START_ROW" PARM_VALUE="&lt;Unused&gt;"/>
-#! </TRANSFORMER>
-#! <TRANSFORMER
 #! IDENTIFIER="11"
 #! TYPE="AttributeRemover"
 #! VERSION="0"
@@ -2625,15 +2599,6 @@
 #! IDENTIFIER="18"
 #! SOURCE_NODE="14"
 #! TARGET_NODE="17"
-#! SOURCE_PORT_DESC="fo 0"
-#! TARGET_PORT_DESC="fi 0"
-#! ENABLED="true"
-#! EXTRA_POINTS=""
-#! />
-#! <FEAT_LINK
-#! IDENTIFIER="19"
-#! SOURCE_NODE="17"
-#! TARGET_NODE="2"
 #! SOURCE_PORT_DESC="fo 0"
 #! TARGET_PORT_DESC="fi 0"
 #! ENABLED="true"
@@ -4025,7 +3990,7 @@ FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeCreator_3 OUTPUT Splitter"   I
 # -------------------------------------------------------------------------
 
 INCLUDE [    set macroLine "MACRO AttributeRemover_2_LIST_EXP ";    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "{\[0-9\]+}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
-FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRemover_2    INPUT  FEATURE_TYPE AttributeCreator_3_OUTPUT_0_kOM1Bcf6Tmc=    OUTPUT FEATURE_TYPE AttributeRemover_2_OUTPUT        @RemoveAttributes(AMT_NAME_DE,AMT_NAME_FR,AMT_AMTIMWEB_DE,AMT_AMTIMWEB_FR)        @RemoveAttributes(fme_regexp_match"$(AttributeRemover_2_LIST_EXP)")
+FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRemover_2    INPUT  FEATURE_TYPE AttributeCreator_3_OUTPUT_1_kOM1Bcf6Tmc=    OUTPUT FEATURE_TYPE AttributeRemover_2_OUTPUT        @RemoveAttributes(AMT_NAME_DE,AMT_NAME_FR,AMT_AMTIMWEB_DE,AMT_AMTIMWEB_FR)        @RemoveAttributes(fme_regexp_match"$(AttributeRemover_2_LIST_EXP)")
 
 # -------------------------------------------------------------------------
 Lookup AttributeFilter_AttributeFilterLut   3 ok   4 ok   "" notok   ENCODED
@@ -4053,10 +4018,10 @@ FACTORY_DEF * TeeFactory    FACTORY_NAME UUIDGenerator    INPUT  FEATURE_TYPE At
 
 # -------------------------------------------------------------------------
 FACTORY_DEF * AttrSetFactory FACTORY_NAME AttributeCreator ATTRSET_PROPAGATE_MISSING YES INPUT  FEATURE_TYPE UUIDGenerator_OUTPUT ATTR VERBINDLKT Festlegung<space>Kanton ATTR KANTART Baulinie<space>Kantonsstrasse ATTR BESCHRIEB Alignement<space>de<space>route<space>cantonale    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_OUTPUT 
-FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeCreator OUTPUT Splitter"   INPUT FEATURE_TYPE AttributeCreator_OUTPUT   OUTPUT FEATURE_TYPE AttributeCreator_OUTPUT_0_olPiq+C1D00=   OUTPUT FEATURE_TYPE AttributeCreator_OUTPUT_1_olPiq+C1D00=   OUTPUT FEATURE_TYPE AttributeCreator_OUTPUT_2_olPiq+C1D00=
+FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeCreator OUTPUT Splitter"   INPUT FEATURE_TYPE AttributeCreator_OUTPUT   OUTPUT FEATURE_TYPE AttributeCreator_OUTPUT_0_olPiq+C1D00=   OUTPUT FEATURE_TYPE AttributeCreator_OUTPUT_1_olPiq+C1D00=
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRenamer    INPUT  FEATURE_TYPE AttributeCreator_OUTPUT_1_olPiq+C1D00=    OUTPUT FEATURE_TYPE AttributeRenamer_OUTPUT         @RenameAttributes(ATTR_LIST_DEF_VAL, UUID,EIB_XTF_ID,"",REL_ID,EIB_OID,"",KANTART,EIB_AUSSAGE_DE,"",BESCHRIEB,EIB_AUSSAGE_FR,"")
+FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRenamer    INPUT  FEATURE_TYPE AttributeCreator_OUTPUT_0_olPiq+C1D00=    OUTPUT FEATURE_TYPE AttributeRenamer_OUTPUT         @RenameAttributes(ATTR_LIST_DEF_VAL, UUID,EIB_XTF_ID,"",REL_ID,EIB_OID,"",KANTART,EIB_AUSSAGE_DE,"",BESCHRIEB,EIB_AUSSAGE_FR,"")
 
 
 # -------------------------------------------------------------------------
@@ -4081,7 +4046,7 @@ FACTORY_DEF * ReferenceFactory    FACTORY_NAME FeatureMerger    INPUT REFERENCER
 # somesuch.
 
 DEFAULT_MACRO _WB_BYPASS_TERMINATION No
-FACTORY_DEF * TestFactory    FACTORY_NAME Terminator    INPUT  FEATURE_TYPE FeatureMerger_NOT_MERGED    INPUT  FEATURE_TYPE FeatureMerger_UNREFERENCED    TEST "$(_WB_BYPASS_TERMINATION)" == Yes    OUTPUT PASSED FEATURE_TYPE __WB_BYPASS_TERMINATOR__       @SupplyAttributes(_wb_termination_feature_type,@FeatureType())       @SupplyAttributes(ENCODED,_wb_termination_message,Translation Terminated)       @SupplyAttributes(_wb_termination_xformer,"Terminator")       @SupplyAttributes(_wb_termination_feature,Yes)    OUTPUT FAILED FEATURE_TYPE * @Abort(ENCODED,Translation Terminated)
+FACTORY_DEF * TestFactory    FACTORY_NAME Terminator    INPUT  FEATURE_TYPE FeatureMerger_UNREFERENCED    INPUT  FEATURE_TYPE FeatureMerger_NOT_MERGED    TEST "$(_WB_BYPASS_TERMINATION)" == Yes    OUTPUT PASSED FEATURE_TYPE __WB_BYPASS_TERMINATOR__       @SupplyAttributes(_wb_termination_feature_type,@FeatureType())       @SupplyAttributes(ENCODED,_wb_termination_message,Translation Terminated)       @SupplyAttributes(_wb_termination_xformer,"Terminator")       @SupplyAttributes(_wb_termination_feature,Yes)    OUTPUT FAILED FEATURE_TYPE * @Abort(ENCODED,Translation Terminated)
 
 # -------------------------------------------------------------------------
 
@@ -4103,7 +4068,7 @@ FACTORY_DEF * TestFactory    FACTORY_NAME Terminator_2    INPUT  FEATURE_TYPE Fe
 
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRenamer_2    INPUT  FEATURE_TYPE FeatureMerger_2_MERGED_0_1hKl8RMwgGo=    OUTPUT FEATURE_TYPE AttributeRenamer_2_OUTPUT         @RenameAttributes(ATTR_LIST_DEF_VAL, EIB_LIEFEREINHEIT,LIN_LIEFEREINHEIT,"",EIB_PUBLIZIERTAB,LIN_PUBLIZIERTAB,"")
+FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRenamer_2    INPUT  FEATURE_TYPE FeatureMerger_2_MERGED_1_1hKl8RMwgGo=    OUTPUT FEATURE_TYPE AttributeRenamer_2_OUTPUT         @RenameAttributes(ATTR_LIST_DEF_VAL, EIB_LIEFEREINHEIT,LIN_LIEFEREINHEIT,"",EIB_PUBLIZIERTAB,LIN_PUBLIZIERTAB,"")
 
 
 # -------------------------------------------------------------------------
@@ -4112,61 +4077,16 @@ FACTORY_DEF * TeeFactory    FACTORY_NAME UUIDGenerator_2    INPUT  FEATURE_TYPE 
 
 # -------------------------------------------------------------------------
 
-# Set the directive to add all the meta-attributes to the features.
-# We do this so users see all possible information in the viewed
-# features.
-
-READER_META_ATTRIBUTES fme_feature_type fme_dataset fme_basename
-# Assumption is that the workspace temp dir has been already set and created.  See controldefs.cpp - ControlDefs::writeVisualizerTempDir
-DEFAULT_MACRO WORKSPACE_TEMP_DIR
-INCLUDE [         if { [string length {}] > 0 } {             set catter "" ;             set comma "" ;             foreach attr {} {                 set catter "$catter$comma@Value(\"$attr\")" ;                 set comma ",_," ;             } ;             puts "MACRO CATMAC _@Concatenate($catter)" ;         }         else {             puts "MACRO CATMAC " ;         };         set safeName "[regsub -all {[^a-zA-Z0-9]} {TBA.STRA_OREB_STBALI} _]_[expr round(rand() * 1000000)]_[clock clicks  -milliseconds]";         puts "MACRO SAFE_FFS_NAME $safeName";         ]
-# Make the temporary directory that the FFS files will live in.
-FACTORY_DEF * CreationFactory      FACTORY_NAME TBA.STRA_OREB_STBALI_DirCreator      OUTPUT FEATURE_TYPE __nukeme__          @Tcl2("catch {file mkdir {$(WORKSPACE_TEMP_DIR)}}")
-FACTORY_DEF * TeeFactory    FACTORY_NAME TBA.STRA_OREB_STBALI_DirCreatorCleanerUpper    INPUT FEATURE_TYPE __nukeme__
-# Send raster, point cloud and vector features down different paths to prepare
-# them for viewing
-
-FACTORY_DEF * TestFactory    FACTORY_NAME TBA.STRA_OREB_STBALI_FeatureDirector    INPUT  FEATURE_TYPE AttributeCreator_OUTPUT_2_olPiq+C1D00=    TEST &fme_type == "fme_raster"    OUTPUT FAILED FEATURE_TYPE TBA.STRA_OREB_STBALI___NotRasterFeatures___    OUTPUT PASSED FEATURE_TYPE TBA.STRA_OREB_STBALI___RasterFeatures___
-FACTORY_DEF * TestFactory    FACTORY_NAME TBA.STRA_OREB_STBALI___FeatureDirector1    INPUT FEATURE_TYPE TBA.STRA_OREB_STBALI___NotRasterFeatures___    TEST &fme_type == "fme_point_cloud"    OUTPUT FAILED FEATURE_TYPE TBA.STRA_OREB_STBALI___VectorFeatures___    OUTPUT PASSED FEATURE_TYPE TBA.STRA_OREB_STBALI___PointCloudFeatures___
-# Vector features simply may get their colors overridden
-
-FACTORY_DEF * TeeFactory    FACTORY_NAME TBA.STRA_OREB_STBALI_VectorSetterUpper    INPUT FEATURE_TYPE TBA.STRA_OREB_STBALI___VectorFeatures___    OUTPUT FEATURE_TYPE __viewme__
-# Point Cloud Features Might Need to be thinned
-
-# Note that we don't call the ThinPointCloud function directly, but rather
-# do it through TCL. This should allow this transformer to be used with a
-# Desktop license, even though ThinPointCloud requires Professional.
-
-Tcl2 proc TBA.STRA_OREB_STBALI_5b4b5a85_7381_41d1_b8b3_132f5ddbbcc50_thinPointCloud {} {    if {[string equal {NO_THINNING} {KEEPNPOINT}]}    {       FME_Execute ThinPointCloud NO_THINNING <Unused>;    }    elseif {[string equal {NO_THINNING} {MAXNUMPOINTS}]}    {       FME_Execute ThinPointCloud NO_THINNING <Unused>;    }    elseif {[string equal {NO_THINNING} {FIRSTNPOINTS}]}    {       FME_Execute ThinPointCloud NO_THINNING <Unused>;    }    elseif {[string equal {NO_THINNING} {LASTNPOINTS}]}    {       FME_Execute ThinPointCloud NO_THINNING <Unused>;    }; }
-FACTORY_DEF * TeeFactory    FACTORY_NAME TBA.STRA_OREB_STBALI___PointCloudThinner    INPUT FEATURE_TYPE TBA.STRA_OREB_STBALI___PointCloudFeatures___    OUTPUT FEATURE_TYPE __viewme__       @Tcl2("TBA.STRA_OREB_STBALI_5b4b5a85_7381_41d1_b8b3_132f5ddbbcc50_thinPointCloud")
-Tcl2 proc TBA.STRA_OREB_STBALI_5b4b5a85_7381_41d1_b8b3_132f5ddbbcc50_prepareRaster {subsetStartRow subsetNumRows subsetStartCol subsetNumCols} {    set useDI [string equal -nocase {$(FME_VIEWER_APP)} {fmedatainspector}];    if {!$useDI} {       FME_Execute ApplyRasterRotation BILINEAR;    };    set doResample [string equal {NoReduction} {Resample}];    set doSubset [string equal {NoReduction} {Subset}];    set doBounds [string equal {NoReduction} {BoundingBoxOnly}];    if {$doBounds}  {       FME_Execute GeometryType fme_polygon;    }    elseif {$doResample || $doSubset} {       set comment {          First, we need to prefix all the attributes. This is done because          we are going to call @RasterProperties, and we want to make sure          it doesn't overwrite any existing attributes.       };       set kAttrPrefix ".";       set allNames [FME_AttributeNames];       foreach oldName $allNames {          set newName $kAttrPrefix;          append newName $oldName;          FME_RenameAttribute $newName $oldName;       };       FME_Execute RasterProperties RASTER;       if {$doResample} {          set oldNumCols [FME_GetAttribute _num_columns];          set oldNumRows [FME_GetAttribute _num_rows];          set oldSpacingX [FME_GetAttribute _spacing_x];          set oldSpacingY [FME_GetAttribute _spacing_y];          set kMinNumCells 32;          set kMaxNumCells 512;          set comment {             We will only resample if both dimensions are greater than the             minimum num cells, and at least one is greater than the maximum.          };          if {$oldNumRows > $kMinNumCells && $oldNumCols > $kMinNumCells && ($oldNumRows > $kMaxNumCells || $oldNumCols > $kMaxNumCells)} {             set newSpacingX 1.0;             set newSpacingY 1.0;             if {$oldNumRows > $oldNumCols} {                set comment {                   If we have more rows than columns, we need to choose a spacing                   that reduces the number of rows to the maximum we've chosen.                };                set newSpacingY [expr 1.0 * $oldNumRows * $oldSpacingY / $kMaxNumCells];                set newSpacingX [expr 1.0 * $newSpacingY / $oldSpacingY * $oldSpacingX];                set comment {                   Now we need to check if doing this will result in the columns                   going below the minimum. If so, choose the spacing such that                   we only go down to the minimum (and not past).                };                set newNumCols [expr $oldNumCols * $oldSpacingX / $newSpacingX];                if {$newNumCols < $kMinNumCells}                {                   set newSpacingX [expr 1.0 * $oldNumCols * $oldSpacingX / $kMinNumCells];                   set newSpacingY [expr 1.0 * $newSpacingX / $oldSpacingX * $oldSpacingY];                };             }             else {                set comment {                   This is identical to the above case, except the roles of                   rows and cols are reversed.                };                set newSpacingX [expr 1.0 * $oldNumCols * $oldSpacingX / $kMaxNumCells];                set newSpacingY [expr 1.0 * $newSpacingX / $oldSpacingX * $oldSpacingY];                set newNumRows [expr $oldNumRows * $oldSpacingY / $newSpacingY];                if {$newNumRows < $kMinNumCells}                {                   set newSpacingY [expr 1.0 * $oldNumRows * $oldSpacingY / $kMinNumCells];                   set newSpacingX [expr 1.0 * $newSpacingY / $oldSpacingY * $oldSpacingX];                };             };             FME_Execute ResampleRaster CELL_SIZE $newSpacingX $newSpacingY NearestNeighbor;          };       }       elseif {$doSubset} {          set comment {             Get the value of some strings that may be attributes or constants.             Note that we pass in the attribute prefix we're using, because if             one does turn out to be an attribute, it won't actually be the exact             name in the string (since we renamed all our attributes above).          };          set rasterNumRows [FME_GetAttribute _num_rows];          set rasterNumCols [FME_GetAttribute _num_columns];          set comment {             Only do subsetting if the specified start position is actually             within the raster.          };          if {$subsetStartRow < $rasterNumRows && $subsetStartCol < $rasterNumCols}          {             set comment {                Now bound the subset to the size of the raster, so that                we don't create padding.             };             if {[expr $subsetStartRow + $subsetNumRows] > $rasterNumRows}             {                set subsetNumRows [expr $rasterNumRows - $subsetStartRow];             };             if {[expr $subsetStartCol + $subsetNumCols] > $rasterNumCols}             {                set subsetNumCols [expr $rasterNumCols - $subsetStartCol];             };             FME_Execute SubsetRaster $subsetStartRow $subsetNumRows $subsetStartCol $subsetNumCols;          };       };       set comment {          Remove all the attributes added by @RasterProperties and remove the          prefix from the real attributes. We assume they all start with an          underscore.       };       FME_Execute RemoveAttributes fme_regexp_match {^_};       foreach oldName $allNames {          set newName $kAttrPrefix;          append newName $oldName;          FME_RenameAttribute $oldName $newName;       };    }; }
-FACTORY_DEF * TeeFactory    FACTORY_NAME TBA.STRA_OREB_STBALI_RasterSetterUpper    INPUT FEATURE_TYPE TBA.STRA_OREB_STBALI___RasterFeatures___    OUTPUT FEATURE_TYPE __viewme__       @Tcl2("TBA.STRA_OREB_STBALI_5b4b5a85_7381_41d1_b8b3_132f5ddbbcc50_prepareRaster {<Unused>} {<Unused>} {<Unused>} {<Unused>}")
-# Now route all the features into the recorder, changing their
-# feature type to the transformer name so that they view nicely
-# TBA.STRA_OREB_STBALI_5b4b5a85_7381_41d1_b8b3_132f5ddbbcc50_VIS_FEAT_TYPE changes the feature types
-# of the features being visualized.
-
-DEFAULT_MACRO TBA.STRA_OREB_STBALI_5b4b5a85_7381_41d1_b8b3_132f5ddbbcc50_VIS_FEAT_TYPE TBA.STRA_OREB_STBALI$(CATMAC)
-DEFAULT_MACRO VISUALIZER_FEATURE_FILE $(WORKSPACE_TEMP_DIR)/$(SAFE_FFS_NAME).ffs
-DEFAULT_MACRO VISUALIZER_CREATE_SPATIAL_INDEX NO
-# [PR#45549] The Data Inspector will limit the maximum number of features
-# it reads on WIN32, so we will correspondingly limit the number of
-# features we record here using the MAX_FEATURES_TO_RECORD directive.
-
-FACTORY_DEF * RecorderFactory    FACTORY_NAME TBA.STRA_OREB_STBALI_Recorder    INPUT FEATURE_TYPE __viewme__  _wb_termination_feature Yes @FeatureType(TERMINATOR_@Value(_wb_termination_xformer))    INPUT FEATURE_TYPE __viewme__  @FeatureType($(TBA.STRA_OREB_STBALI_5b4b5a85_7381_41d1_b8b3_132f5ddbbcc50_VIS_FEAT_TYPE))    FEATURE_FILE "$(VISUALIZER_FEATURE_FILE)"    CREATE_SPATIAL_INDEX "$(VISUALIZER_CREATE_SPATIAL_INDEX)"    INSPECTOR "$(VISUALIZER_CREATE_SPATIAL_INDEX)"    FSC_SCHEMA UUID,varchar<openparen>255<closeparen>,REL_ID,varchar<openparen>255<closeparen>,VERBINDLKT,varchar<openparen>255<closeparen>,KANTART,varchar<openparen>255<closeparen>,BESCHRIEB,varchar<openparen>255<closeparen>    MODE RECORD    RECORD_DIRECTLY_TO_DISK YES    MAX_FEATURES_TO_RECORD WIN32 2000000
-
-# -------------------------------------------------------------------------
-
-FACTORY_DEF * TeeFactory    FACTORY_NAME "FeatureMerger_2_MERGED_1_1hKl8RMwgGo= -> OEREB.EIGENTUMSBESCHRAENKUNG Correlator"    INPUT FEATURE_TYPE FeatureMerger_2_MERGED_1_1hKl8RMwgGo=    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 1       @Transform(FME_GENERIC,ORACLE8I_DB)       @SupplyAttributes(ENCODED,__wb_out_feat_type__,OEREB.EIGENTUMSBESCHRAENKUNG)
+FACTORY_DEF * TeeFactory    FACTORY_NAME "FeatureMerger_2_MERGED_0_1hKl8RMwgGo= -> OEREB.EIGENTUMSBESCHRAENKUNG Correlator"    INPUT FEATURE_TYPE FeatureMerger_2_MERGED_0_1hKl8RMwgGo=    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 1       @Transform(FME_GENERIC,ORACLE8I_DB)       @SupplyAttributes(ENCODED,__wb_out_feat_type__,OEREB.EIGENTUMSBESCHRAENKUNG)
 # -------------------------------------------------------------------------
 
 FACTORY_DEF * TeeFactory    FACTORY_NAME "AttributeCreator_4_OUTPUT_0_E4SXNhkeM5E= -> OEREB.DARSTELLUNGSDIENST Correlator"    INPUT FEATURE_TYPE AttributeCreator_4_OUTPUT_0_E4SXNhkeM5E=    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 1       @Transform(FME_GENERIC,ORACLE8I_DB)       @SupplyAttributes(ENCODED,__wb_out_feat_type__,OEREB.DARSTELLUNGSDIENST)
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * TeeFactory    FACTORY_NAME "AttributeCreator_3_OUTPUT_1_kOM1Bcf6Tmc= -> OEREB.AMT Correlator"    INPUT FEATURE_TYPE AttributeCreator_3_OUTPUT_1_kOM1Bcf6Tmc=    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 1       @Transform(FME_GENERIC,ORACLE8I_DB)       @SupplyAttributes(ENCODED,__wb_out_feat_type__,OEREB.AMT)
+FACTORY_DEF * TeeFactory    FACTORY_NAME "AttributeCreator_3_OUTPUT_0_kOM1Bcf6Tmc= -> OEREB.AMT Correlator"    INPUT FEATURE_TYPE AttributeCreator_3_OUTPUT_0_kOM1Bcf6Tmc=    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 1       @Transform(FME_GENERIC,ORACLE8I_DB)       @SupplyAttributes(ENCODED,__wb_out_feat_type__,OEREB.AMT)
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * TeeFactory    FACTORY_NAME "AttributeCreator_OUTPUT_0_olPiq+C1D00= -> GEODB.NPLKSTRA_UEKSTRAB Correlator"    INPUT FEATURE_TYPE AttributeCreator_OUTPUT_0_olPiq+C1D00=    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 0       @Transform(FME_GENERIC,GEODATABASE_SDE)       @SupplyAttributes(ENCODED,__wb_out_feat_type__,GEODB.NPLKSTRA_UEKSTRAB)
+FACTORY_DEF * TeeFactory    FACTORY_NAME "AttributeCreator_OUTPUT_1_olPiq+C1D00= -> GEODB.NPLKSTRA_UEKSTRAB Correlator"    INPUT FEATURE_TYPE AttributeCreator_OUTPUT_1_olPiq+C1D00=    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 0       @Transform(FME_GENERIC,GEODATABASE_SDE)       @SupplyAttributes(ENCODED,__wb_out_feat_type__,GEODB.NPLKSTRA_UEKSTRAB)
 # -------------------------------------------------------------------------
 
 FACTORY_DEF * TeeFactory    FACTORY_NAME "UUIDGenerator_2_OUTPUT -> OEREB.LINIE Correlator"    INPUT FEATURE_TYPE UUIDGenerator_2_OUTPUT    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 2       @Transform(FME_GENERIC,GEODATABASE_SDE)       @SupplyAttributes(ENCODED,__wb_out_feat_type__,OEREB.LINIE)
@@ -4177,10 +4097,6 @@ FACTORY_DEF * TestFactory   FACTORY_NAME "Final Output Feature Type Router"   IN
 
 FACTORY_DEF * TeeFactory   FACTORY_NAME "Final Output Nuker"   INPUT FEATURE_TYPE __nuke_me__
 
-# -------------------------------------------------------------------------
-
-FACTORY_DEF * CreationFactory   CREATE_AT_END   OUTPUT FEATURE_TYPE __NUKEME__   @TCL("if [file exists {$(WORKSPACE_TEMP_DIR)}] {set files [glob -nocomplain -directory  {$(WORKSPACE_TEMP_DIR)} -tails *.ffs];   if {[llength $files] == 1} {    set theFile {$(WORKSPACE_TEMP_DIR)/};   append theFile [lindex $files 0];   eval FME_Execute System \173\042$(FME_HOME_UNIX)/fmedatainspector\042 --visualizer --single-application --delete-on-close --no-source-prompt -f FFS $theFile & \175;  } elseif { [llength $files] == 0 } {  catch { file delete -force {$(WORKSPACE_TEMP_DIR)} };  } else {  set filesNoExt {}; set lastfile {}; foreach {fileName} [lsort $files] { set fileNoExt [string trimright $fileName {.ffs}]; if [regexp {(.*)_[0-9]*$} $fileNoExt wholething fileNoExtBase] {  if { $fileNoExtBase == $lastfile } { continue } }; set lastfile $fileNoExt; lappend filesNoExt $fileNoExt };  eval FME_Execute System \173\042$(FME_HOME_UNIX)/fmedatainspector\042 --visualizer --single-application --delete-on-close --no-source-prompt -d {$(WORKSPACE_TEMP_DIR)} -a ffs -f FFS $filesNoExt & \175; }; }; ")
-FACTORY_DEF * TeeFactory   INPUT FEATURE_TYPE __NUKEME__
 # -------------------------------------------------------------------------
 GEODATABASE_SDE_2_DEF GEODB.NPLKSTRA_UEKSTRAB   geodb_type                   geodb_polyline   GEODB_DROP_TABLE             NO   GEODB_TRUNCATE_TABLE         YES   GEODB_OBJECT_ID_NAME         OBJECTID   GEODB_OBJECT_ID_ALIAS        OBJECTID   GEODB_SHAPE_NAME             SHAPE   GEODB_SHAPE_ALIAS            SHAPE   GEODB_CONFIG_KEYWORD         DEFAULTS   GEODB_FEATURE_DATASET        ""   GEODB_GRID{1}                ""   GEODB_AVG_NUM_POINTS         ""   GEODB_XORIGIN                ""   GEODB_YORIGIN                ""   GEODB_XYSCALE                ""   GEODB_HAS_Z_VALUES           ""   GEODB_ZORIGIN                ""   GEODB_ZSCALE                 ""   GEODB_HAS_MEASURES           ""   GEODB_MEASURES_ORIGIN        ""   GEODB_MEASURES_SCALE         ""   GEODB_ANNO_REFERENCE_SCALE   ""   geodb_oid                    integer   OBJECTID                     integer   BFSNR                        smallint   NAME                         char(31)   REL_ID                       char(100)   VERBINDLKT                   char(100)   KANTART                      char(100)   LINIENABK                    char(12)   LINIENCODE                   char(12)   BESCHRIEB                    char(80)   SHAPE.LEN                    double
 # -------------------------------------------------------------------------
