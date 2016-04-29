@@ -76,5 +76,6 @@ def get_config():
     create_connection_string(config, "OEREB_VEK1")
     create_connection_string(config, "OEREB_VEK2")
     create_connection_string(config, "TBA_WORK")
+    create_connection_string(config, "GDBV_WORK")
 
     return config
