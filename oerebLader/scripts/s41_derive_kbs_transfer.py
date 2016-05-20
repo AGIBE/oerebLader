@@ -14,8 +14,8 @@ def run(config):
     fme_logfile = oerebLader.helpers.fme_helper.prepare_fme_log(fme_script, config['LOGGING']['log_directory']) 
     logger.info("Script " +  fme_script + " wird ausgef�hrt.")
     logger.info("Das FME-Logfile heisst: " + fme_logfile)
-    excel_file_amt = os.path.join(config['LIEFEREINHEIT']['ts_source'], "AMT_1116.xlsx")
-    excel_file_darstellungsdienst = os.path.join(config['LIEFEREINHEIT']['ts_source'], "DARSTELLUNGSDIENST_1116.xlsx")
+    excel_file_amt = os.path.join(config['LIEFEREINHEIT']['ts_source'], "AMT_" + unicode(config['LIEFEREINHEIT']['id']) + ".xlsx")
+    excel_file_darstellungsdienst = os.path.join(config['LIEFEREINHEIT']['ts_source'], "DARSTELLUNGSDIENST_" + unicode(config['LIEFEREINHEIT']['id']) + ".xlsx")
     runner = fmeobjects.FMEWorkspaceRunner()
     
     # Der FMEWorkspaceRunner akzeptiert keine Unicode-Strings!
