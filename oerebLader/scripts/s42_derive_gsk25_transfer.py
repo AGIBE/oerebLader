@@ -14,6 +14,9 @@ def run(config):
     fme_logfile = oerebLader.helpers.fme_helper.prepare_fme_log(fme_script, config['LOGGING']['log_directory']) 
     logger.info("Script " +  fme_script + " wird ausgef�hrt.")
     logger.info("Das FME-Logfile heisst: " + fme_logfile)
+    excel_file_amt = os.path.join(config['LIEFEREINHEIT']['ts_source'], "AMT_" + unicode(config['LIEFEREINHEIT']['id']) + ".xlsx")
+    excel_file_darstellungsdienst = os.path.join(config['LIEFEREINHEIT']['ts_source'], "DARSTELLUNGSDIENST_" + unicode(config['LIEFEREINHEIT']['id']) + ".xlsx")
+
     runner = fmeobjects.FMEWorkspaceRunner()
     #TODO: im FME jedes physisch vorhandene Dokument (v.a. veraltetes Reglement) nur einmal in VORSCHRIFT schreiben.
     #geht erst, wenn nur eine Liefereinheit definiert.
@@ -26,6 +29,8 @@ def run(config):
         'OEREB_DATABASE': str(config['OEREB_WORK']['database']),
         'OEREB_USERNAME': str(config['OEREB_WORK']['username']),
         'OEREB_PASSWORD': str(config['OEREB_WORK']['password']),
+        'EXCEL_DARSTELLUNGSDIENST': str(excel_file_darstellungsdienst),
+        'EXCEL_AMT': str(excel_file_amt),
         'LIEFEREINHEIT': str(config['LIEFEREINHEIT']['id']),
         'LOGFILE': str(fme_logfile)
     }
