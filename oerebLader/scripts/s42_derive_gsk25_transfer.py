@@ -16,6 +16,11 @@ def run(config):
     logger.info("Das FME-Logfile heisst: " + fme_logfile)
     excel_file_amt = os.path.join(config['LIEFEREINHEIT']['ts_source'], "AMT_" + unicode(config['LIEFEREINHEIT']['id']) + ".xlsx")
     excel_file_darstellungsdienst = os.path.join(config['LIEFEREINHEIT']['ts_source'], "DARSTELLUNGSDIENST_" + unicode(config['LIEFEREINHEIT']['id']) + ".xlsx")
+    if config['GENERAL']['files_be_ch_baseurl'].endswith("/"):
+        legend_baseurl = config['GENERAL']['files_be_ch_baseurl'] + unicode(config['LIEFEREINHEIT']['id']) + "/legenden/"
+    else:
+        legend_baseurl = config['GENERAL']['files_be_ch_baseurl'] + "/" + unicode(config['LIEFEREINHEIT']['id']) + "/legenden/"
+
 
     runner = fmeobjects.FMEWorkspaceRunner()
     #TODO: im FME jedes physisch vorhandene Dokument (v.a. veraltetes Reglement) nur einmal in VORSCHRIFT schreiben.
@@ -29,8 +34,12 @@ def run(config):
         'OEREB_DATABASE': str(config['OEREB_WORK']['database']),
         'OEREB_USERNAME': str(config['OEREB_WORK']['username']),
         'OEREB_PASSWORD': str(config['OEREB_WORK']['password']),
+        'OEREB2_DATABASE': str(config['OEREB2_WORK']['database']),
+        'OEREB2_USERNAME': str(config['OEREB2_WORK']['username']),
+        'OEREB2_PASSWORD': str(config['OEREB2_WORK']['password']),
         'EXCEL_DARSTELLUNGSDIENST': str(excel_file_darstellungsdienst),
         'EXCEL_AMT': str(excel_file_amt),
+        'LEGEND_BASEURL': str(legend_baseurl),
         'LIEFEREINHEIT': str(config['LIEFEREINHEIT']['id']),
         'LOGFILE': str(fme_logfile)
     }
