@@ -15,6 +15,7 @@ def run(config):
     # ArcGIS Connection-Files löschen
     oerebLader.helpers.connection_helper.delete_connection_files(config['GEODB_WORK']['connection_file'], logger)
     oerebLader.helpers.connection_helper.delete_connection_files(config['OEREB_WORK']['connection_file'], logger)
+    oerebLader.helpers.connection_helper.delete_connection_files(config['OEREB2_WORK']['connection_file'], logger)
     
     # Ticket-Status aktualisieren
     logger.info("Ticket-Status wird auf 2 gesetzt!")
