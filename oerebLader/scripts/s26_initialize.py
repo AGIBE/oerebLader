@@ -47,6 +47,7 @@ def run(config, ticketnr):
     # wieder gelöscht.
     config['GEODB_WORK']['connection_file'] = oerebLader.helpers.connection_helper.create_connection_files(config, 'GEODB_WORK', logger)
     config['OEREB_WORK']['connection_file'] = oerebLader.helpers.connection_helper.create_connection_files(config, 'OEREB_WORK', logger)    
+    config['OEREB2_WORK']['connection_file'] = oerebLader.helpers.connection_helper.create_connection_files(config, 'OEREB2_WORK', logger)
     
     config['LIEFEREINHEIT'] = {}
 
