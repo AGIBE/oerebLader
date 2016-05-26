@@ -16,8 +16,12 @@ def run(config):
         oereb_table = oereb_ebene[0]
         oereb_liefereinheit_field = oereb_ebene[1]
         oereb_delete_sql = "DELETE FROM %s WHERE %s = %s" % (oereb_table, oereb_liefereinheit_field, liefereinheit)
-        logger.info("Deleting...")
+        logger.info("Deleting Transferstruktur (alt)...")
         logger.info(oereb_delete_sql)
         oerebLader.helpers.sql_helper.writeSQL(config['OEREB_WORK']['connection_string'], oereb_delete_sql)
+        logger.info("Deleting Transferstruktur (neu)...")
+        logger.info(oereb_delete_sql)
+        oerebLader.helpers.sql_helper.writeSQL(config['OEREB2_WORK']['connection_string'], oereb_delete_sql)
+
 
     logger.info("Script " +  os.path.basename(__file__) + " ist beendet.")
