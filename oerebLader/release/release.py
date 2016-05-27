@@ -40,9 +40,11 @@ def run_release(dailyMode):
     
     # Connection-Files erstellen
     config['GEODB_WORK']['connection_file'] = oerebLader.helpers.connection_helper.create_connection_files(config, 'GEODB_WORK', logger)
-    config['OEREB_WORK']['connection_file'] = oerebLader.helpers.connection_helper.create_connection_files(config, 'OEREB_WORK', logger)    
+    config['OEREB_WORK']['connection_file'] = oerebLader.helpers.connection_helper.create_connection_files(config, 'OEREB_WORK', logger)
+    config['OEREB2_WORK']['connection_file'] = oerebLader.helpers.connection_helper.create_connection_files(config, 'OEREB2_WORK', logger)
     config['NORM_TEAM']['connection_file'] = oerebLader.helpers.connection_helper.create_connection_files(config, 'NORM_TEAM', logger)
     config['OEREB_TEAM']['connection_file'] = oerebLader.helpers.connection_helper.create_connection_files(config, 'OEREB_TEAM', logger)    
+    config['OEREB2_TEAM']['connection_file'] = oerebLader.helpers.connection_helper.create_connection_files(config, 'OEREB2_TEAM', logger)
     
     logger.info("Folgende Tickets werden released:")
     if dailyMode:
@@ -117,10 +119,14 @@ def run_release(dailyMode):
             oereb_table = oereb_ebene[0]
             oereb_liefereinheit_field = oereb_ebene[1]
             oereb_delete_sql = "DELETE FROM %s WHERE %s IN %s" % (oereb_table, oereb_liefereinheit_field, liefereinheiten_joined)
-            logger.info("Deleting...")
+            logger.info("Deleting Transferstruktur alt...")
             logger.info(oereb_delete_sql)
             oerebLader.helpers.sql_helper.writeSQL(config['OEREB_TEAM']['connection_string'], oereb_delete_sql)
+            logger.info("Deleting Transferstruktur neu...")
+            logger.info(oereb_delete_sql)
+            oerebLader.helpers.sql_helper.writeSQL(config['OEREB2_TEAM']['connection_string'], oereb_delete_sql)
             
+            # Truncate/Append für Transferstruktur alt
             source = os.path.join(config['OEREB_WORK']['connection_file'], config['OEREB_WORK']['username'] + "." + oereb_table)
             source_layer = oereb_table + "_source_layer"
             target = os.path.join(config['OEREB_TEAM']['connection_file'], config['OEREB_TEAM']['username'] + "." + oereb_table)
@@ -150,6 +156,40 @@ def run_release(dailyMode):
             target_count = int(arcpy.GetCount_management(target_layer)[0])
             logger.info("Anzahl Features im Ziel-Layer: " + unicode(target_count))
             if source_count!=target_count:
+                logger.error("Fehler beim Kopieren. Anzahl Features in der Quelle und im Ziel sind nicht identisch!")
+                logger.error("Release wird abgebrochen!")
+                sys.exit()
+                
+            # Truncate/Append für Transferstruktur neu
+            source2 = os.path.join(config['OEREB2_WORK']['connection_file'], config['OEREB2_WORK']['username'] + "." + oereb_table)
+            source2_layer = oereb_table + "2_source_layer"
+            target2 = os.path.join(config['OEREB2_TEAM']['connection_file'], config['OEREB2_TEAM']['username'] + "." + oereb_table)
+            target2_layer = oereb_table + "2_target_layer"
+            where_clause = oereb_liefereinheit_field + " IN " + liefereinheiten_joined
+            logger.info("WHERE-Clause: " + where_clause)
+            if arcpy.Describe(source2).datasetType=='Table':
+                # MakeTableView funktioniert nicht, da mangels OID-Feld keine Selektionen gemacht werden können
+                # MakeQueryTable funktioniert, da hier ein virtuelles OID-Feld erstellt wird. Im Gegenzug wird die
+                # Tabelle temporär zwischengespeichert.
+                arcpy.MakeQueryTable_management(source2, source2_layer, 'ADD_VIRTUAL_KEY_FIELD', '#', '#',  where_clause)
+            else:
+                arcpy.MakeFeatureLayer_management(source2, source2_layer, where_clause)
+                
+            logger.info("Appending...")
+            arcpy.Append_management(source2_layer, target2, "TEST")
+            # Die QueryTables/FeatureLayers müssen nach dem Append gemacht werden,
+            # da der QueryTable nicht mehr live auf die Daten zugreift, sondern
+            # auf der Festplatte zwischengespeichert ist.
+            if arcpy.Describe(source2).datasetType=='Table':
+                arcpy.MakeQueryTable_management(target2, target2_layer, 'ADD_VIRTUAL_KEY_FIELD', '#', '#',  where_clause)
+            else:
+                arcpy.MakeFeatureLayer_management(target2, target2_layer, where_clause)
+            logger.info("Counting..")
+            source2_count = int(arcpy.GetCount_management(source2_layer)[0])
+            logger.info("Anzahl Features im Quell-Layer: " + unicode(source2_count))
+            target2_count = int(arcpy.GetCount_management(target2_layer)[0])
+            logger.info("Anzahl Features im Ziel-Layer: " + unicode(target2_count))
+            if source2_count!=target2_count:
                 logger.error("Fehler beim Kopieren. Anzahl Features in der Quelle und im Ziel sind nicht identisch!")
                 logger.error("Release wird abgebrochen!")
                 sys.exit()
@@ -197,8 +237,10 @@ def run_release(dailyMode):
     # Connection-Files löschen
     oerebLader.helpers.connection_helper.delete_connection_files(config['GEODB_WORK']['connection_file'], logger)
     oerebLader.helpers.connection_helper.delete_connection_files(config['OEREB_WORK']['connection_file'], logger)
+    oerebLader.helpers.connection_helper.delete_connection_files(config['OEREB2_WORK']['connection_file'], logger)
     oerebLader.helpers.connection_helper.delete_connection_files(config['NORM_TEAM']['connection_file'], logger)
     oerebLader.helpers.connection_helper.delete_connection_files(config['OEREB_TEAM']['connection_file'], logger)
+    oerebLader.helpers.connection_helper.delete_connection_files(config['OEREB2_TEAM']['connection_file'], logger)
             
     logger.info("Alle Ticket-Stati aktualisiert.")
     logger.info("Release abgeschlossen.")
