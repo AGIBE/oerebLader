@@ -19,6 +19,11 @@ def run(config):
     excel_amt_file = os.path.join(tba_path, excel_amt_filename)
     excel_darstellungsdienst_filename = "DARSTELLUNGSDIENST_" + unicode(config['LIEFEREINHEIT']['id']) + ".xlsx"
     excel_darstellungsdienst_file = os.path.join(tba_path, excel_darstellungsdienst_filename)
+    if config['GENERAL']['files_be_ch_baseurl'].endswith("/"):
+        legend_baseurl = config['GENERAL']['files_be_ch_baseurl'] + unicode(config['LIEFEREINHEIT']['id']) + "/legenden/"
+    else:
+        legend_baseurl = config['GENERAL']['files_be_ch_baseurl'] + "/" + unicode(config['LIEFEREINHEIT']['id']) + "/legenden/"
+
     runner = fmeobjects.FMEWorkspaceRunner()
     
     # Der FMEWorkspaceRunner akzeptiert keine Unicode-Strings!
@@ -30,11 +35,15 @@ def run(config):
         'OEREB_DATABASE': str(config['OEREB_WORK']['database']),
         'OEREB_USERNAME': str(config['OEREB_WORK']['username']),
         'OEREB_PASSWORD': str(config['OEREB_WORK']['password']),
+        'OEREB2_DATABASE': str(config['OEREB2_WORK']['database']),
+        'OEREB2_USERNAME': str(config['OEREB2_WORK']['username']),
+        'OEREB2_PASSWORD': str(config['OEREB2_WORK']['password']),
         'TBA_DATABASE': str(config['TBA_WORK']['database']),
         'TBA_USERNAME': str(config['TBA_WORK']['username']),
         'TBA_PASSWORD': str(config['TBA_WORK']['password']),
         'EXCEL_AMT': str(excel_amt_file),
         'EXCEL_DARSTELLUNGSDIENST': str(excel_darstellungsdienst_file),
+        'LEGEND_BASEURL': str(legend_baseurl),
         'LIEFEREINHEIT': str(config['LIEFEREINHEIT']['id']),
         'LOGFILE': str(fme_logfile)
     }
