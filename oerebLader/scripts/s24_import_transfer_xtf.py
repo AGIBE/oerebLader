@@ -14,6 +14,11 @@ def run(config):
     fme_logfile = oerebLader.helpers.fme_helper.prepare_fme_log(fme_script, config['LOGGING']['log_directory']) 
     logger.info("Script " +  fme_script + " wird ausgeführt.")
     logger.info("Das FME-Logfile heisst: " + fme_logfile)
+    if config['GENERAL']['files_be_ch_baseurl'].endswith("/"):
+        legend_baseurl = config['GENERAL']['files_be_ch_baseurl'] + unicode(config['LIEFEREINHEIT']['id']) + "/legenden/"
+    else:
+        legend_baseurl = config['GENERAL']['files_be_ch_baseurl'] + "/" + unicode(config['LIEFEREINHEIT']['id']) + "/legenden/"
+
     runner = fmeobjects.FMEWorkspaceRunner()
     # Der FMEWorkspaceRunner akzeptiert keine Unicode-Strings!
     # Daher müssen workspace und parameters umgewandelt werden!
@@ -21,8 +26,12 @@ def run(config):
         'DATABASE': str(config['OEREB_WORK']['database']),
         'USERNAME': str(config['OEREB_WORK']['username']),
         'PASSWORD': str(config['OEREB_WORK']['password']),
+        'OEREB2_DATABASE': str(config['OEREB2_WORK']['database']),
+        'OEREB2_USERNAME': str(config['OEREB2_WORK']['username']),
+        'OEREB2_PASSWORD': str(config['OEREB2_WORK']['password']),
         'MODELLABLAGE': str(config['GENERAL']['models']),
         'XTF_FILE': str(config['LIEFEREINHEIT']['ts_source']),
+        'LEGEND_BASEURL': str(legend_baseurl),
         'LIEFEREINHEIT': str(config['LIEFEREINHEIT']['id']),
         'LOGFILE': str(fme_logfile)
     }
