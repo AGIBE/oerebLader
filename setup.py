@@ -23,7 +23,8 @@ setup(
     entry_points={
          'console_scripts': [
               'checkBundesthemen = oerebLader.helpers.bundesthemen_helper:check_bundesthemen',
-              'oerebLader = oerebLader.helpers.commandline_helper:main'
+              'oerebLader = oerebLader.helpers.commandline_helper:main',
+              'ol = oerebLader.helpers.commandline_helper:main'
           ]
     }
 )
