@@ -10,10 +10,13 @@ def run(config):
     logger.info("Script " +  os.path.basename(__file__) + " wird ausgeführt.")
     bfsnr = config['LIEFEREINHEIT']['bfsnr']
     schema = 'GEODB'
-    #TODO: Tabellennamen aus Tabelle GPR auslesen
+    #TODO: Tabellennamen aus Tabelle GPR auslesen (ohne Wertetabellen!)
     tables = [
                 'NPLWALD_WAFW',
-                'NPLWALD_FWRVT'
+                'NPLWALD_FWRVT',
+                'NUPLWALD_WALDAMTT',
+                'NUPLWALD_WFWAEP',
+                'NUPLWALD_WFWAGRZ'
              ]
     
     with cx_Oracle.connect(config['GEODB_WORK']['connection_string']) as conn:
