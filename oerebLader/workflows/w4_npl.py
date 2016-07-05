@@ -8,6 +8,7 @@ import oerebLader.scripts.s17_import_npl
 import oerebLader.scripts.s25_import_uzp
 import oerebLader.scripts.s40_update_oerebsta
 import oerebLader.scripts.s9_derive_npl_transfer
+import oerebLader.scripts.s48_import_nupla
 import oerebLader.scripts.s43_checkLegend_npl
 import oerebLader.scripts.s31_qa_npl
 import oerebLader.scripts.s39_qa_uzp
@@ -30,6 +31,7 @@ def run(ticketnr):
     # oerebLader.scripts.s25_import_uzp.run(config)
     # oerebLader.scripts.s40_update_oerebsta.run(config)
     oerebLader.scripts.s9_derive_npl_transfer.run(config)
+    oerebLader.scripts.s48_import_nupla.run(config)
     oerebLader.scripts.s43_checkLegend_npl.run(config)
     oerebLader.scripts.s31_qa_npl.run(config)
     # oerebLader.scripts.s39_qa_uzp.run(config)
