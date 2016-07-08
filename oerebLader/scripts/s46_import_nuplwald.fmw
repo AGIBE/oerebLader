@@ -23,7 +23,7 @@
 #    
 #! PASSWORD=""
 #! ATTR_TYPE_ENCODING="SDF"
-#! VIEW_POSITION="-462 -904"
+#! VIEW_POSITION="1504 -895"
 #! SHOW_INFO_NODES="true"
 #! FME_STROKE_MAX_DEVIATION="0"
 #! BEGIN_PYTHON=""
@@ -41,13 +41,13 @@
 #! USAGE=""
 #! END_PYTHON=""
 #! HISTORY=""
-#! FME_DOCUMENT_PRIORGUID="570e2da0-f8f8-4e60-bd50-7fae8ca2bbea,c83439e6-2eab-4963-b880-8034ee427339,c3d31f8a-4855-4db0-ac29-5df4fe89c3f2,76304f21-1c5f-4b89-a82a-d38b1d42c482,6ce16359-e474-4bcd-9574-3aee9a059150,e7574669-4461-4e14-a85b-05c2cfdca0cf"
+#! FME_DOCUMENT_PRIORGUID="570e2da0-f8f8-4e60-bd50-7fae8ca2bbea,c83439e6-2eab-4963-b880-8034ee427339,c3d31f8a-4855-4db0-ac29-5df4fe89c3f2,76304f21-1c5f-4b89-a82a-d38b1d42c482,6ce16359-e474-4bcd-9574-3aee9a059150,e7574669-4461-4e14-a85b-05c2cfdca0cf,0aca8287-54aa-4054-880c-b4a579d4dc6f"
 #! DOC_TOP_LEFT="-319 -4509"
 #! REQUIREMENTS_KEYWORD=""
 #! SOURCE_ROUTING_FILE=""
 #! DESTINATION_ROUTING_FILE=""
 #! DESTINATION="NONE"
-#! LAST_SAVE_DATE="2016-07-01T11:03:22"
+#! LAST_SAVE_DATE="2016-07-08T16:10:40"
 #! FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
 #! WORKSPACE_VERSION="1"
 #! SOURCE="NONE"
@@ -57,8 +57,8 @@
 #! LOG_FILE="$(LOGFILE)"
 #! REQUIREMENTS=""
 #! BEGIN_TCL=""
-#! DOC_EXTENTS="8079 4325"
-#! FME_DOCUMENT_GUID="0aca8287-54aa-4054-880c-b4a579d4dc6f"
+#! DOC_EXTENTS="7711 4325"
+#! FME_DOCUMENT_GUID="d57be020-f735-42ef-9fab-71caa062d93c"
 #! SHOW_ANNOTATIONS="true"
 #! IGNORE_READER_FAILURE="No"
 #! WARN_INVALID_XFORM_PARAM="Yes"
@@ -189,7 +189,7 @@
 #! WRITE_DEFS="true"
 #! DEFLINE_TEMPLATE="geodb_type {FME_GEN_GEOMETRY} GEODB_UPDATE_KEY_COLUMNS &quot;&quot; GEODB_DROP_TABLE NO GEODB_TRUNCATE_TABLE NO GEODB_OBJECT_ID_NAME OBJECTID GEODB_OBJECT_ID_ALIAS OBJECTID GEODB_SHAPE_NAME SHAPE GEODB_SHAPE_ALIAS SHAPE GEODB_CONFIG_KEYWORD DEFAULTS GEODB_FEATURE_DATASET &quot;&quot; GEODB_GRID{1} &quot;&quot; GEODB_AVG_NUM_POINTS &quot;&quot; GEODB_XORIGIN &quot;&quot; GEODB_YORIGIN &quot;&quot; GEODB_XYSCALE &quot;&quot; GEODB_HAS_Z_VALUES &quot;&quot; GEODB_ZORIGIN &quot;&quot; GEODB_ZSCALE &quot;&quot; GEODB_HAS_MEASURES &quot;&quot; GEODB_MEASURES_ORIGIN &quot;&quot; GEODB_MEASURES_SCALE &quot;&quot; GEODB_ANNO_REFERENCE_SCALE &quot;&quot;"
 #! DEFLINE_ATTRS="true"
-#! EXPOSABLE_ATTRS="geodb_dim_length double geodb_v_align char(50) geodb_feature_dataset char(254) fme_where char(254) geodb_subtype_name char(254) geodb_allow_symbol_overrides boolean geodb_text_feat_class_name char(254) geodb_raster_compression_quality integer fme_color char(50) geodb_font_name char(254) geodb_raster_pyramid_resample_type char(100) fme_text_string char(50) geodb_raster_compression_type char(100) fme_type char(50) geodb_metadata_string char(254) geodb_dim_text_x double geodb_symbol_id integer geodb_dim_text_y double geodb_dim_text_z double geodb_font_italic boolean fme_basename char(50) geodb_text_line_spacing double geodb_text_ref_scale double geodb_start_angle double geodb_h_align char(50) fme_secondary_axis double geodb_anno_class_id integer geodb_sweep_angle double geodb_text_x_offset double fme_feature_type char(50) geodb_dim_text_angle double geodb_ancillary_role char(7) geodb_font_size double fme_text_size double geodb_text_size double fme_db_operation char(8) geodb_raster_pyramid_level integer fme_sweep_angle double geodb_dim_using_custom_length boolean geodb_text_char_spacing double fme_primary_axis double geodb_text_string char(254) geodb_font_strikethrough boolean fme_dataset char(50) geodb_text_character_width double geodb_rotation double fme_fill_color char(50) geodb_secondary_axis double geodb_font_underline boolean geodb_font_bold boolean geodb_text_color char(254) geodb_text_y_offset double geodb_dim_style_id integer geodb_text_scale boolean geodb_measures char(254) geodb_type char(25) geodb_dim_line_display smallint geodb_text_clip boolean fme_geometry fme_char(50) geodb_text_string_with_format_tags char(254) geodb_text_break_char integer geodb_dim_extn_line_display smallint geodb_dim_type smallint geodb_dim_custom_length double geodb_dim_begin_dimension_x double geodb_dim_begin_dimension_y double geodb_dim_begin_dimension_z double geodb_primary_axis double geodb_right_to_left boolean geodb_dim_line_x double geodb_dim_end_dimension_x double geodb_dim_line_y double geodb_dim_end_dimension_y double geodb_dim_line_z double geodb_dim_end_dimension_z double geodb_linked_feature_id integer geodb_text_word_spacing double geodb_text_y_coord double geodb_dim_marker_display smallint fme_rotation double fme_start_angle double geodb_dim_extn_line_angle double geodb_text_x_coord double geodb_font_weight smallint geodb_font_charset smallint geodb_color char(50) geodb_text_angle double"
+#! EXPOSABLE_ATTRS="geodb_dim_length double geodb_v_align char(50) geodb_feature_dataset char(254) geodb_text_feat_class_name char(254) fme_where char(254) geodb_subtype_name char(254) geodb_allow_symbol_overrides boolean geodb_raster_compression_quality integer fme_color char(50) geodb_font_name char(254) geodb_raster_pyramid_resample_type char(100) fme_text_string char(50) geodb_raster_compression_type char(100) fme_type char(50) geodb_metadata_string char(254) geodb_dim_text_x double geodb_symbol_id integer geodb_dim_text_y double geodb_dim_text_z double geodb_font_italic boolean geodb_text_line_spacing double fme_basename char(50) geodb_text_ref_scale double geodb_start_angle double geodb_h_align char(50) fme_secondary_axis double geodb_anno_class_id integer geodb_sweep_angle double geodb_text_x_offset double fme_feature_type char(50) geodb_dim_text_angle double geodb_ancillary_role char(7) geodb_font_size double fme_text_size double geodb_text_size double fme_db_operation char(8) geodb_raster_pyramid_level integer fme_sweep_angle double geodb_dim_using_custom_length boolean geodb_text_char_spacing double fme_primary_axis double geodb_text_string char(254) geodb_font_strikethrough boolean geodb_text_character_width double fme_dataset char(50) geodb_rotation double fme_fill_color char(50) geodb_secondary_axis double geodb_text_y_offset double geodb_font_underline boolean geodb_text_color char(254) geodb_font_bold boolean geodb_dim_style_id integer geodb_text_scale boolean geodb_measures char(254) geodb_type char(25) geodb_text_clip boolean geodb_dim_line_display smallint fme_geometry fme_char(50) geodb_text_string_with_format_tags char(254) geodb_text_break_char integer geodb_dim_extn_line_display smallint geodb_dim_type smallint geodb_dim_custom_length double geodb_dim_begin_dimension_x double geodb_dim_begin_dimension_y double geodb_dim_begin_dimension_z double geodb_primary_axis double geodb_right_to_left boolean geodb_dim_line_x double geodb_dim_end_dimension_x double geodb_dim_line_y double geodb_dim_end_dimension_y double geodb_dim_line_z double geodb_dim_end_dimension_z double geodb_linked_feature_id integer geodb_text_word_spacing double geodb_text_y_coord double geodb_dim_marker_display smallint fme_rotation double fme_start_angle double geodb_dim_extn_line_angle double geodb_text_x_coord double geodb_font_weight smallint geodb_font_charset smallint geodb_color char(50) geodb_text_angle double"
 #! DEFLINE_PARMS="&quot;GUI CHOICE GEODB_DROP_TABLE YES%NO Drop Table First&quot; NO &quot;GUI CHOICE GEODB_TRUNCATE_TABLE YES%NO Truncate Table First&quot; NO &quot;GUI OPTIONAL WHOLE_LINE FORCE_DEFS ATTRLIST_COMMAS GEODB_UPDATE_KEY_COLUMNS Update Key Fields&quot; &quot;&quot; &quot;GUI TEXT GEODB_OBJECT_ID_NAME Object ID Field&quot; OBJECTID &quot;GUI TEXT GEODB_OBJECT_ID_ALIAS Object ID Alias&quot; OBJECTID &quot;GUI TEXT GEODB_SHAPE_NAME Shape Field&quot; SHAPE &quot;GUI TEXT GEODB_SHAPE_ALIAS Shape Alias&quot; SHAPE &quot;GUI TEXT GEODB_CONFIG_KEYWORD Configuration Keyword&quot; DEFAULTS &quot;GUI OPTIONAL TEXT GEODB_FEATURE_DATASET Feature Dataset&quot; &quot;&quot; &quot;GUI OPTIONAL FLOAT GEODB_GRID{1} Grid 1&quot; &quot;&quot; &quot;GUI OPTIONAL INTEGER GEODB_AVG_NUM_POINTS Avg Num of Points&quot; &quot;&quot; &quot;GUI OPTIONAL FLOAT GEODB_XORIGIN X Origin&quot; &quot;&quot; &quot;GUI OPTIONAL FLOAT GEODB_YORIGIN Y Origin&quot; &quot;&quot; &quot;GUI OPTIONAL FLOAT GEODB_XYSCALE X,Y Scale&quot; &quot;&quot; &quot;GUI OPTIONAL CHOICE GEODB_HAS_Z_VALUES yes%no Contains Z Values&quot; &quot;&quot; &quot;GUI OPTIONAL FLOAT GEODB_ZORIGIN Z Origin&quot; &quot;&quot; &quot;GUI OPTIONAL FLOAT GEODB_ZSCALE Z Scale&quot; &quot;&quot; &quot;GUI OPTIONAL CHOICE GEODB_HAS_MEASURES yes%no Contains Measures&quot; &quot;&quot; &quot;GUI OPTIONAL FLOAT GEODB_MEASURES_ORIGIN Measure Origin&quot; &quot;&quot; &quot;GUI OPTIONAL FLOAT GEODB_MEASURES_SCALE Measure Scale&quot; &quot;&quot; &quot;GUI OPTIONAL FLOAT GEODB_ANNO_REFERENCE_SCALE Annotation Reference Scale&quot; &quot;&quot; "
 #! ATTR_INDEX_TYPES=""
 #! ATTR_NAME_INVALID_CHARS=":. %-#[]&quot;()!?*&apos;&amp;+\/{}|="
@@ -1395,6 +1395,7 @@
 #! <FEAT_ATTRIBUTE ATTR_NAME="AMTNAME" ATTR_TYPE="char(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #! <FEAT_ATTRIBUTE ATTR_NAME="UID_AMT" ATTR_TYPE="char(15)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #! <FEAT_ATTRIBUTE ATTR_NAME="AMTIMWEB" ATTR_TYPE="char(100)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="AMT_ID" ATTR_TYPE="char(36)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #! <DEFLINE_PARM PARM_NAME="GEODB_MEASURES_ORIGIN" PARM_VALUE=""/>
 #! <DEFLINE_PARM PARM_NAME="GEODB_DROP_TABLE" PARM_VALUE="NO"/>
 #! <DEFLINE_PARM PARM_NAME="GEODB_AVG_NUM_POINTS" PARM_VALUE=""/>
@@ -1500,8 +1501,8 @@
 #! NODE_NAME="GEODB.NUPLWALD_WFWAEP"
 #! IS_EDITABLE="true"
 #! IDENTIFIER="86"
-#! FEAT_GEOMTYPE="geodb_polygon"
-#! POSITION="1814 -1712"
+#! FEAT_GEOMTYPE="geodb_point"
+#! POSITION="1226 -1724"
 #! ORDER="5e+014"
 #! COLLAPSED="false"
 #! KEYWORD="GEODATABASE_SDE_2"
@@ -1541,8 +1542,8 @@
 #! NODE_NAME="GEODB.NUPLWALD_WFWAGRZ"
 #! IS_EDITABLE="true"
 #! IDENTIFIER="90"
-#! FEAT_GEOMTYPE="geodb_polygon"
-#! POSITION="7191 -3647"
+#! FEAT_GEOMTYPE="geodb_polyline"
+#! POSITION="6522 -3612"
 #! ORDER="5e+014"
 #! COLLAPSED="false"
 #! KEYWORD="GEODATABASE_SDE_2"
@@ -1557,8 +1558,47 @@
 #! <FEAT_ATTRIBUTE ATTR_NAME="QUALITAET" ATTR_TYPE="smallint" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #! <FEAT_ATTRIBUTE ATTR_NAME="VERBINDLKT" ATTR_TYPE="smallint" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #! <FEAT_ATTRIBUTE ATTR_NAME="BEMERK" ATTR_TYPE="char(80)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#! <FEAT_ATTRIBUTE ATTR_NAME="DATENVERW" ATTR_TYPE="char(15)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#! <FEAT_ATTRIBUTE ATTR_NAME="ZUSTAENDIG" ATTR_TYPE="char(15)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="DATENVERW" ATTR_TYPE="char(36)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="ZUSTAENDIG" ATTR_TYPE="char(36)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <DEFLINE_PARM PARM_NAME="GEODB_MEASURES_ORIGIN" PARM_VALUE=""/>
+#! <DEFLINE_PARM PARM_NAME="GEODB_DROP_TABLE" PARM_VALUE="NO"/>
+#! <DEFLINE_PARM PARM_NAME="GEODB_AVG_NUM_POINTS" PARM_VALUE=""/>
+#! <DEFLINE_PARM PARM_NAME="GEODB_UPDATE_KEY_COLUMNS" PARM_VALUE=""/>
+#! <DEFLINE_PARM PARM_NAME="GEODB_MEASURES_SCALE" PARM_VALUE=""/>
+#! <DEFLINE_PARM PARM_NAME="GEODB_YORIGIN" PARM_VALUE=""/>
+#! <DEFLINE_PARM PARM_NAME="GEODB_OBJECT_ID_NAME" PARM_VALUE="OBJECTID"/>
+#! <DEFLINE_PARM PARM_NAME="GEODB_CONFIG_KEYWORD" PARM_VALUE="DEFAULTS"/>
+#! <DEFLINE_PARM PARM_NAME="GEODB_GRID{1}" PARM_VALUE=""/>
+#! <DEFLINE_PARM PARM_NAME="GEODB_XORIGIN" PARM_VALUE=""/>
+#! <DEFLINE_PARM PARM_NAME="GEODB_XYSCALE" PARM_VALUE=""/>
+#! <DEFLINE_PARM PARM_NAME="GEODB_ZSCALE" PARM_VALUE=""/>
+#! <DEFLINE_PARM PARM_NAME="GEODB_OBJECT_ID_ALIAS" PARM_VALUE="OBJECTID"/>
+#! <DEFLINE_PARM PARM_NAME="GEODB_ZORIGIN" PARM_VALUE=""/>
+#! <DEFLINE_PARM PARM_NAME="GEODB_SHAPE_NAME" PARM_VALUE="SHAPE"/>
+#! <DEFLINE_PARM PARM_NAME="GEODB_FEATURE_DATASET" PARM_VALUE=""/>
+#! <DEFLINE_PARM PARM_NAME="GEODB_HAS_MEASURES" PARM_VALUE=""/>
+#! <DEFLINE_PARM PARM_NAME="GEODB_ANNO_REFERENCE_SCALE" PARM_VALUE=""/>
+#! <DEFLINE_PARM PARM_NAME="GEODB_SHAPE_ALIAS" PARM_VALUE="SHAPE"/>
+#! <DEFLINE_PARM PARM_NAME="GEODB_HAS_Z_VALUES" PARM_VALUE=""/>
+#! <DEFLINE_PARM PARM_NAME="GEODB_TRUNCATE_TABLE" PARM_VALUE="NO"/>
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#! IS_SOURCE="false"
+#! NODE_NAME="GEODB.NUPLWALD_LAGEZUVT"
+#! IS_EDITABLE="true"
+#! IDENTIFIER="155"
+#! FEAT_GEOMTYPE="geodb_table"
+#! POSITION="1862 -3487"
+#! ORDER="5e+014"
+#! COLLAPSED="false"
+#! KEYWORD="GEODATABASE_SDE_2"
+#! ENABLED="false"
+#! FANOUT="No"
+#! FANOUT_ID_ATTR=""
+#! >
+#! <FEAT_ATTRIBUTE ATTR_NAME="CODE" ATTR_TYPE="smallint" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="BEZ_DE" ATTR_TYPE="char(100)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="BEZ_FR" ATTR_TYPE="char(100)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #! <DEFLINE_PARM PARM_NAME="GEODB_MEASURES_ORIGIN" PARM_VALUE=""/>
 #! <DEFLINE_PARM PARM_NAME="GEODB_DROP_TABLE" PARM_VALUE="NO"/>
 #! <DEFLINE_PARM PARM_NAME="GEODB_AVG_NUM_POINTS" PARM_VALUE=""/>
@@ -1955,14 +1995,14 @@
 #! />
 #! <COMMENT
 #! IDENTIFIER="91"
-#! COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:11px; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:11px;&quot;&gt;GEODB.NUPLWALD_WALDAMTT&lt;/span&gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:11px;&quot;&gt;TODO: AMT_ID einfügen&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
-#! POSITION="2420 -2389"
+#! COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:11px; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:11px;&quot;&gt;GEODB.NUPLWALD_WALDAMTT&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#! POSITION="2420 -2428"
 #! ORDER="5e+014"
 #! FOLLOW_ANCHOR="true"
 #! INFO_NODE="false"
-#! TOP_LEFT="2420 -2389"
-#! BOTTOM_RIGHT="2420 -2389"
-#! COLOUR="1,1,0.784314,0.196078"
+#! TOP_LEFT="2420 -2428"
+#! BOTTOM_RIGHT="2420 -2428"
+#! COLOUR="1,1,0.784314,0.192157"
 #! SIZE_POLICY="8"
 #! COMMENT_TYPE="REGULAR"
 #! ANCHORED_NODE="81"
@@ -1976,7 +2016,7 @@
 #! INFO_NODE="false"
 #! TOP_LEFT="1217 -3349"
 #! BOTTOM_RIGHT="1217 -3349"
-#! COLOUR="1,1,0.784314,0.196078"
+#! COLOUR="1,1,0.784314,0.192157"
 #! SIZE_POLICY="8"
 #! COMMENT_TYPE="REGULAR"
 #! ANCHORED_NODE="82"
@@ -1990,7 +2030,7 @@
 #! INFO_NODE="false"
 #! TOP_LEFT="630 -3343"
 #! BOTTOM_RIGHT="630 -3343"
-#! COLOUR="1,1,0.784314,0.196078"
+#! COLOUR="1,1,0.784314,0.192157"
 #! SIZE_POLICY="8"
 #! COMMENT_TYPE="REGULAR"
 #! ANCHORED_NODE="83"
@@ -1998,13 +2038,13 @@
 #! <COMMENT
 #! IDENTIFIER="96"
 #! COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:11px; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;GEODB.NUPLWALD_WFWAEP&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
-#! POSITION="1742 -1566"
+#! POSITION="1154 -1578"
 #! ORDER="5e+014"
 #! FOLLOW_ANCHOR="true"
 #! INFO_NODE="false"
-#! TOP_LEFT="1742 -1566"
-#! BOTTOM_RIGHT="1742 -1566"
-#! COLOUR="1,1,0.784314,0.196078"
+#! TOP_LEFT="1154 -1578"
+#! BOTTOM_RIGHT="1154 -1578"
+#! COLOUR="1,1,0.784314,0.192157"
 #! SIZE_POLICY="8"
 #! COMMENT_TYPE="REGULAR"
 #! ANCHORED_NODE="86"
@@ -2012,30 +2052,16 @@
 #! <COMMENT
 #! IDENTIFIER="101"
 #! COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:11px; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;GEODB.NUPLWALD_WFWAGRZ&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
-#! POSITION="7192 -3521"
+#! POSITION="6523 -3486"
 #! ORDER="5e+014"
 #! FOLLOW_ANCHOR="true"
 #! INFO_NODE="false"
-#! TOP_LEFT="7192 -3521"
-#! BOTTOM_RIGHT="7192 -3521"
-#! COLOUR="1,1,0.784314,0.196078"
+#! TOP_LEFT="6523 -3486"
+#! BOTTOM_RIGHT="6523 -3486"
+#! COLOUR="1,1,0.784314,0.192157"
 #! SIZE_POLICY="8"
 #! COMMENT_TYPE="REGULAR"
 #! ANCHORED_NODE="90"
-#! />
-#! <COMMENT
-#! IDENTIFIER="99"
-#! COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:11px; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:11px;&quot;&gt;TODO: Bufferer entfernen, sobald FC&lt;/span&gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:11px;&quot;&gt;auf Punkt umgestellt ist.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
-#! POSITION="1042 -1582"
-#! ORDER="5e+014"
-#! FOLLOW_ANCHOR="true"
-#! INFO_NODE="false"
-#! TOP_LEFT="1042 -1582"
-#! BOTTOM_RIGHT="1042 -1582"
-#! COLOUR="1,1,0.784314,0.196078"
-#! SIZE_POLICY="8"
-#! COMMENT_TYPE="REGULAR"
-#! ANCHORED_NODE="102"
 #! />
 #! <COMMENT
 #! IDENTIFIER="112"
@@ -2060,7 +2086,7 @@
 #! INFO_NODE="false"
 #! TOP_LEFT="3265 -3455"
 #! BOTTOM_RIGHT="3265 -3455"
-#! COLOUR="1,1,0.784314,0.196078"
+#! COLOUR="1,1,0.784314,0.192157"
 #! SIZE_POLICY="8"
 #! COMMENT_TYPE="REGULAR"
 #! ANCHORED_NODE="120"
@@ -2074,7 +2100,7 @@
 #! INFO_NODE="false"
 #! TOP_LEFT="4479 -3471"
 #! BOTTOM_RIGHT="4479 -3471"
-#! COLOUR="1,1,0.784314,0.196078"
+#! COLOUR="1,1,0.784314,0.192157"
 #! SIZE_POLICY="8"
 #! COMMENT_TYPE="REGULAR"
 #! ANCHORED_NODE="126"
@@ -2088,7 +2114,7 @@
 #! INFO_NODE="false"
 #! TOP_LEFT="5714 -3412"
 #! BOTTOM_RIGHT="5714 -3412"
-#! COLOUR="1,1,0.784314,0.196078"
+#! COLOUR="1,1,0.784314,0.192157"
 #! SIZE_POLICY="8"
 #! COMMENT_TYPE="REGULAR"
 #! ANCHORED_NODE="132"
@@ -2102,24 +2128,24 @@
 #! INFO_NODE="false"
 #! TOP_LEFT="5756 -3852"
 #! BOTTOM_RIGHT="5756 -3852"
-#! COLOUR="1,1,0.784314,0.196078"
+#! COLOUR="1,1,0.784314,0.192157"
 #! SIZE_POLICY="8"
 #! COMMENT_TYPE="REGULAR"
 #! ANCHORED_NODE="138"
 #! />
 #! <COMMENT
-#! IDENTIFIER="140"
-#! COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:11px; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:11px;&quot;&gt;TODO: Bufferer entfernen, sobald FC&lt;/span&gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:11px;&quot;&gt;auf Linie umgestellt ist.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
-#! POSITION="6526 -3701"
+#! IDENTIFIER="156"
+#! COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:11px; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;GEODB.NUPLWALD_LAGEZUVT&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#! POSITION="1863 -3360"
 #! ORDER="5e+014"
 #! FOLLOW_ANCHOR="true"
 #! INFO_NODE="false"
-#! TOP_LEFT="6526 -3701"
-#! BOTTOM_RIGHT="6526 -3701"
+#! TOP_LEFT="1863 -3360"
+#! BOTTOM_RIGHT="1863 -3360"
 #! COLOUR="1,1,0.784314,0.196078"
 #! SIZE_POLICY="8"
 #! COMMENT_TYPE="REGULAR"
-#! ANCHORED_NODE="142"
+#! ANCHORED_NODE="155"
 #! />
 #! </COMMENTS>
 #! <CONSTANTS>
@@ -2148,51 +2174,51 @@
 #! <BOOKMARK
 #! IDENTIFIER="100"
 #! NAME="WF_Einzelpunkt / WFWAEP"
-#! DESCRIPTION=""
+#! DESCRIPTION="&lt;html&gt;&lt;body&gt;&lt;/body&gt;&lt;/html&gt;"
 #! TOP_LEFT="-261 -1434"
-#! BOTTOM_RIGHT="2325 -2175"
+#! BOTTOM_RIGHT="1864 -2175"
 #! STICKY="false"
-#! COLOUR="0.258824,0.803922,0.317647"
+#! COLOUR="0.258824,0.803922,0.313725"
 #! CONTENTS=""
 #! />
 #! <BOOKMARK
 #! IDENTIFIER="110"
 #! NAME="Amt / WALDAMTT"
-#! DESCRIPTION=""
+#! DESCRIPTION="&lt;html&gt;&lt;body&gt;&lt;/body&gt;&lt;/html&gt;"
 #! TOP_LEFT="-238 -2282"
 #! BOTTOM_RIGHT="2966 -3184"
 #! STICKY="false"
-#! COLOUR="0.87451,0.945098,0.792157"
+#! COLOUR="0.87451,0.941176,0.792157"
 #! CONTENTS=""
 #! />
 #! <BOOKMARK
 #! IDENTIFIER="116"
 #! NAME="New Bookmark"
-#! DESCRIPTION=""
+#! DESCRIPTION="&lt;html&gt;&lt;body&gt;&lt;/body&gt;&lt;/html&gt;"
 #! TOP_LEFT="2987 -98"
 #! BOTTOM_RIGHT="7392 -2858"
 #! STICKY="false"
-#! COLOUR="0.329412,0.533333,0.278431"
+#! COLOUR="0.329412,0.529412,0.27451"
 #! CONTENTS=""
 #! />
 #! <BOOKMARK
 #! IDENTIFIER="117"
 #! NAME="Wertetabellen (Werte sind vorabgefüllt)"
-#! DESCRIPTION=""
+#! DESCRIPTION="&lt;html&gt;&lt;body&gt;&lt;/body&gt;&lt;/html&gt;"
 #! TOP_LEFT="574 -3227"
-#! BOTTOM_RIGHT="1838 -3827"
+#! BOTTOM_RIGHT="2421 -3827"
 #! STICKY="false"
-#! COLOUR="0.435294,0.756863,0.129412"
+#! COLOUR="0.431373,0.756863,0.129412"
 #! CONTENTS=""
 #! />
 #! <BOOKMARK
 #! IDENTIFIER="141"
 #! NAME="WFWAGRZ"
-#! DESCRIPTION=""
+#! DESCRIPTION="&lt;html&gt;&lt;body&gt;&lt;/body&gt;&lt;/html&gt;"
 #! TOP_LEFT="2545 -3317"
-#! BOTTOM_RIGHT="7760 -4324"
+#! BOTTOM_RIGHT="7144 -4324"
 #! STICKY="false"
-#! COLOUR="0.223529,0.431373,0.854902"
+#! COLOUR="0.219608,0.431373,0.854902"
 #! CONTENTS=""
 #! />
 #! </BOOKMARKS>
@@ -2607,7 +2633,7 @@
 #! <XFORM_PARM PARM_NAME="MAPPING_GRP" PARM_VALUE=""/>
 #! <XFORM_PARM PARM_NAME="ATTR_GROUP" PARM_VALUE=""/>
 #! <XFORM_PARM PARM_NAME="DEFAULT_VALUE" PARM_VALUE=""/>
-#! <XFORM_PARM PARM_NAME="LUT" PARM_VALUE="0,0,1,1"/>
+#! <XFORM_PARM PARM_NAME="LUT" PARM_VALUE="0,1,1,2,2,3"/>
 #! <XFORM_PARM PARM_NAME="SRC" PARM_VALUE="LageZuv"/>
 #! </TRANSFORMER>
 #! <TRANSFORMER
@@ -2628,33 +2654,6 @@
 #! <XFORM_ATTR ATTR_NAME="LAGEZUV" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeRenamer_2"/>
 #! <XFORM_PARM PARM_NAME="ATTR_LIST" PARM_VALUE="LageGen,LAGEGEN,&quot;&quot;,Identifikator,AV_IDENT,&quot;&quot;"/>
-#! </TRANSFORMER>
-#! <TRANSFORMER
-#! IDENTIFIER="102"
-#! TYPE="Bufferer"
-#! VERSION="11"
-#! POSITION="1172 -1794"
-#! ORDER="5e+014"
-#! PARMS_EDITED="true"
-#! ENABLED="true"
-#! >
-#! <OUTPUT_FEAT NAME="BUFFERED"/>
-#! <FEAT_COLLAPSED COLLAPSED="0"/>
-#! <XFORM_ATTR ATTR_NAME="xtf_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="AV_IDENT" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="LAGEGEN" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="LageZuv" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="LAGEZUV" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_PARM PARM_NAME="GROUP_BY" PARM_VALUE=""/>
-#! <XFORM_PARM PARM_NAME="INTERP_SEGMENTS" PARM_VALUE="8"/>
-#! <XFORM_PARM PARM_NAME="FME_PROCESS_COUNTDISP" PARM_VALUE="No Parallelism"/>
-#! <XFORM_PARM PARM_NAME="LIST_NAME" PARM_VALUE=""/>
-#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Bufferer"/>
-#! <XFORM_PARM PARM_NAME="FME_PROCESS_GROUPS_ORDERED" PARM_VALUE="No"/>
-#! <XFORM_PARM PARM_NAME="OFFSET" PARM_VALUE="2"/>
-#! <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
-#! <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
-#! <XFORM_PARM PARM_NAME="CAP_STYLE" PARM_VALUE="Round"/>
 #! </TRANSFORMER>
 #! <TRANSFORMER
 #! IDENTIFIER="105"
@@ -3098,45 +3097,6 @@
 #! <XFORM_PARM PARM_NAME="SRC" PARM_VALUE="Verbindlichkeit"/>
 #! </TRANSFORMER>
 #! <TRANSFORMER
-#! IDENTIFIER="142"
-#! TYPE="Bufferer"
-#! VERSION="11"
-#! POSITION="6525 -3848"
-#! ORDER="5e+014"
-#! PARMS_EDITED="true"
-#! ENABLED="true"
-#! >
-#! <OUTPUT_FEAT NAME="BUFFERED"/>
-#! <FEAT_COLLAPSED COLLAPSED="0"/>
-#! <XFORM_ATTR ATTR_NAME="xtf_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="Objekt" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="GENEHM" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="INKRAFT" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="Qualitaet" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="LIN_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="EIB_XTF_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="Verbindlichkeit" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="BEMERK" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="Datenverwaltungsstelle" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="ZustaendigeStelle" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="EIB_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="amt_xtf_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="ZUSTAENDIG" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="DATENVERW" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="QUALITAET" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="VERBINDLKT" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_PARM PARM_NAME="GROUP_BY" PARM_VALUE=""/>
-#! <XFORM_PARM PARM_NAME="INTERP_SEGMENTS" PARM_VALUE="8"/>
-#! <XFORM_PARM PARM_NAME="FME_PROCESS_COUNTDISP" PARM_VALUE="No Parallelism"/>
-#! <XFORM_PARM PARM_NAME="LIST_NAME" PARM_VALUE=""/>
-#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Bufferer_2"/>
-#! <XFORM_PARM PARM_NAME="FME_PROCESS_GROUPS_ORDERED" PARM_VALUE="No"/>
-#! <XFORM_PARM PARM_NAME="OFFSET" PARM_VALUE="2"/>
-#! <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
-#! <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
-#! <XFORM_PARM PARM_NAME="CAP_STYLE" PARM_VALUE="Round"/>
-#! </TRANSFORMER>
-#! <TRANSFORMER
 #! IDENTIFIER="145"
 #! TYPE="FeatureMerger"
 #! VERSION="11"
@@ -3442,24 +3402,6 @@
 #! EXTRA_POINTS=""
 #! />
 #! <FEAT_LINK
-#! IDENTIFIER="103"
-#! SOURCE_NODE="97"
-#! TARGET_NODE="102"
-#! SOURCE_PORT_DESC="fo 0"
-#! TARGET_PORT_DESC="fi 0"
-#! ENABLED="true"
-#! EXTRA_POINTS=""
-#! />
-#! <FEAT_LINK
-#! IDENTIFIER="104"
-#! SOURCE_NODE="102"
-#! TARGET_NODE="86"
-#! SOURCE_PORT_DESC="fo 0"
-#! TARGET_PORT_DESC="-1"
-#! ENABLED="true"
-#! EXTRA_POINTS=""
-#! />
-#! <FEAT_LINK
 #! IDENTIFIER="106"
 #! SOURCE_NODE="18"
 #! TARGET_NODE="105"
@@ -3595,24 +3537,6 @@
 #! EXTRA_POINTS=""
 #! />
 #! <FEAT_LINK
-#! IDENTIFIER="143"
-#! SOURCE_NODE="138"
-#! TARGET_NODE="142"
-#! SOURCE_PORT_DESC="fo 0"
-#! TARGET_PORT_DESC="fi 0"
-#! ENABLED="true"
-#! EXTRA_POINTS=""
-#! />
-#! <FEAT_LINK
-#! IDENTIFIER="144"
-#! SOURCE_NODE="142"
-#! TARGET_NODE="90"
-#! SOURCE_PORT_DESC="fo 0"
-#! TARGET_PORT_DESC="-1"
-#! ENABLED="true"
-#! EXTRA_POINTS=""
-#! />
-#! <FEAT_LINK
 #! IDENTIFIER="146"
 #! SOURCE_NODE="107"
 #! TARGET_NODE="145"
@@ -3670,6 +3594,24 @@
 #! IDENTIFIER="154"
 #! SOURCE_NODE="151"
 #! TARGET_NODE="81"
+#! SOURCE_PORT_DESC="fo 0"
+#! TARGET_PORT_DESC="-1"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="157"
+#! SOURCE_NODE="97"
+#! TARGET_NODE="86"
+#! SOURCE_PORT_DESC="fo 0"
+#! TARGET_PORT_DESC="-1"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="158"
+#! SOURCE_NODE="138"
+#! TARGET_NODE="90"
 #! SOURCE_PORT_DESC="fo 0"
 #! TARGET_PORT_DESC="-1"
 #! ENABLED="true"
@@ -4562,12 +4504,12 @@ DEFAULT_MACRO WB_CURRENT_CONTEXT
 # -------------------------------------------------------------------------
 
 INCLUDE [    set macroLine "MACRO AttributeRemover_5_LIST_EXP ";    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "{\[0-9\]+}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
-FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRemover_5    INPUT  FEATURE_TYPE DM16NplBE.Nutzungsplanung.WF_FeststellungWald_0_g+BG5Pp3ntk=    OUTPUT FEATURE_TYPE AttributeRemover_5_OUTPUT        @RemoveAttributes(xtf_id,Verbindlichkeit,Bemerkung)        @RemoveAttributes(fme_regexp_match"$(AttributeRemover_5_LIST_EXP)")
+FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRemover_5    INPUT  FEATURE_TYPE DM16NplBE.Nutzungsplanung.WF_FeststellungWald_1_g+BG5Pp3ntk=    OUTPUT FEATURE_TYPE AttributeRemover_5_OUTPUT        @RemoveAttributes(xtf_id,Verbindlichkeit,Bemerkung)        @RemoveAttributes(fme_regexp_match"$(AttributeRemover_5_LIST_EXP)")
 
 FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeRemover_5 OUTPUT Splitter"   INPUT FEATURE_TYPE AttributeRemover_5_OUTPUT   OUTPUT FEATURE_TYPE AttributeRemover_5_OUTPUT_0_JvRf0Rb7Rbw=   OUTPUT FEATURE_TYPE AttributeRemover_5_OUTPUT_1_JvRf0Rb7Rbw=
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * TeeFactory    FACTORY_NAME UUIDGenerator_2    INPUT  FEATURE_TYPE DM16NplBE.Nutzungsplanung.WF_FeststellungWald_1_g+BG5Pp3ntk=    OUTPUT FEATURE_TYPE UUIDGenerator_2_OUTPUT         "EIB_OID" @UUID()
+FACTORY_DEF * TeeFactory    FACTORY_NAME UUIDGenerator_2    INPUT  FEATURE_TYPE DM16NplBE.Nutzungsplanung.WF_FeststellungWald_0_g+BG5Pp3ntk=    OUTPUT FEATURE_TYPE UUIDGenerator_2_OUTPUT         "EIB_OID" @UUID()
 
 # -------------------------------------------------------------------------
 
@@ -4575,7 +4517,7 @@ FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRenamer    INPUT  FEATURE_TYPE
 
 
 # -------------------------------------------------------------------------
-Lookup AttributeValueMapper_LOOKUP_TABLE   0               0   1               1   ""              ""   ENCODED_SUPPORTUNICODE
+Lookup AttributeValueMapper_LOOKUP_TABLE   0               1   1               2   2               3   ""              ""   ENCODED_SUPPORTUNICODE
 
 FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeValueMapper    INPUT  FEATURE_TYPE DM16NplBE.Nutzungsplanung.WF_Einzelpunkt    OUTPUT FEATURE_TYPE AttributeValueMapper_OUTPUT         @Lookup(AttributeValueMapper_LOOKUP_TABLE,"LageZuv",FORWARD|ENCODED_ATTR|REAL_NULL_SUPPORT, LAGEZUV)
 
@@ -4585,9 +4527,6 @@ FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeValueMapper    INPUT  FEATURE_
 FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRenamer_2    INPUT  FEATURE_TYPE AttributeValueMapper_OUTPUT    OUTPUT FEATURE_TYPE AttributeRenamer_2_OUTPUT         @RenameAttributes(ATTR_LIST_DEF_VAL, LageGen,LAGEGEN,"",Identifikator,AV_IDENT,"")
 
 
-# -------------------------------------------------------------------------
-
-FACTORY_DEF * PolygonDissolveFactory    INPUT  FEATURE_TYPE AttributeRenamer_2_OUTPUT    FACTORY_NAME Bufferer    PRE_BUFFER "2" "8" CAP_ROUND FULL    DISSOLVE_MODE GEOS    OUTPUT POLYGON FEATURE_TYPE Bufferer_BUFFERED    OUTPUT NON_POLYGON FEATURE_TYPE Bufferer_BUFFERED
 # -------------------------------------------------------------------------
 
 FACTORY_DEF * TeeFactory    FACTORY_NAME UUIDGenerator_4    INPUT  FEATURE_TYPE DM16NplBE.Nutzungsplanung.Amt    OUTPUT FEATURE_TYPE UUIDGenerator_4_OUTPUT         "AMT_ID" @UUID()
@@ -4600,10 +4539,10 @@ FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRenamer_3    INPUT  FEATURE_TY
 FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeRenamer_3 OUTPUT Splitter"   INPUT FEATURE_TYPE AttributeRenamer_3_OUTPUT   OUTPUT FEATURE_TYPE AttributeRenamer_3_OUTPUT_0_yKWDRz2uARM=   OUTPUT FEATURE_TYPE AttributeRenamer_3_OUTPUT_1_yKWDRz2uARM=   OUTPUT FEATURE_TYPE AttributeRenamer_3_OUTPUT_2_yKWDRz2uARM=
 # -------------------------------------------------------------------------
 
-INCLUDE [    set macroLine "MACRO AttributeRemover_4_LIST_EXP ";    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "{\[0-9\]+}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
-FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRemover_4    INPUT  FEATURE_TYPE AttributeRenamer_3_OUTPUT_0_yKWDRz2uARM=    OUTPUT FEATURE_TYPE AttributeRemover_4_OUTPUT        @RemoveAttributes(AMTNAME,UID_AMT,AMTIMWEB)        @RemoveAttributes(fme_regexp_match"$(AttributeRemover_4_LIST_EXP)")
+INCLUDE [if { {ATTRIBUTES} == {ATTRIBUTES} } {                puts "MACRO FeatureMerger_5_REFERENCE_INFO ATTRIBUTES";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} && {<Unused>} == {POLYGONS}} {                puts "MACRO FeatureMerger_5_REFERENCE_INFO GEOM_BUILD_POLYS";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} && {<Unused>} == {AGGREGATES}} {                puts "MACRO FeatureMerger_5_REFERENCE_INFO GEOM_BUILD_AGGREGATES";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} && {<Unused>} == {LINESFROMPOINTS}} {                puts "MACRO FeatureMerger_5_REFERENCE_INFO GEOM_BUILD_LINES_FROM_POINTS";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} && {<Unused>} == {POLYGONS}} {                puts "MACRO FeatureMerger_5_REFERENCE_INFO GEOM_AND_ATTR_BUILD_POLYS";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} && {<Unused>} == {AGGREGATES}} {                puts "MACRO FeatureMerger_5_REFERENCE_INFO GEOM_AND_ATTR_BUILD_AGGREGATES";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} && {<Unused>} == {LINESFROMPOINTS}} {                puts "MACRO FeatureMerger_5_REFERENCE_INFO GEOM_AND_ATTR_BUILD_LINES_FROM_POINTS";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} } {                puts "MACRO FeatureMerger_5_REFERENCE_INFO GEOM_BUILD_AGGREGATES";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} } {                puts "MACRO FeatureMerger_5_REFERENCE_INFO GEOM_AND_ATTR_BUILD_AGGREGATES";             }          else {}; ]
 
-FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeRemover_4 OUTPUT Splitter"   INPUT FEATURE_TYPE AttributeRemover_4_OUTPUT   OUTPUT FEATURE_TYPE AttributeRemover_4_OUTPUT_0_qMCX59OFq2s=   OUTPUT FEATURE_TYPE AttributeRemover_4_OUTPUT_1_qMCX59OFq2s=
+FACTORY_DEF * ReferenceFactory    FACTORY_NAME FeatureMerger_5    INPUT REFERENCER FEATURE_TYPE AttributeRenamer_3_OUTPUT_0_yKWDRz2uARM=    INPUT REFERENCEE FEATURE_TYPE AttributeRemover_5_OUTPUT_1_JvRf0Rb7Rbw=    REFERENCE_INFO $(FeatureMerger_5_REFERENCE_INFO)    REFERENCE_TABLE @EvaluateExpression(STRING_ENCODED,<at>Value<openparen>amt_xtf_id<closeparen>,FeatureMerger_5) @EvaluateExpression(STRING_ENCODED,<at>Value<openparen>Datenverwaltungsstelle<closeparen>,FeatureMerger_5) AUTO    MERGE_ATTRIBUTES Yes    MANAGE_FME_TYPE Yes    MODE COMPLETE    PROCESS_DUPLICATE_REFERENCEES No    REFERENCEES_FIRST No    OUTPUT COMPLETE FEATURE_TYPE FeatureMerger_5_MERGED
+
 # -------------------------------------------------------------------------
 
 INCLUDE [if { {ATTRIBUTES} == {ATTRIBUTES} } {                puts "MACRO FeatureMerger_4_REFERENCE_INFO ATTRIBUTES";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} && {<Unused>} == {POLYGONS}} {                puts "MACRO FeatureMerger_4_REFERENCE_INFO GEOM_BUILD_POLYS";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} && {<Unused>} == {AGGREGATES}} {                puts "MACRO FeatureMerger_4_REFERENCE_INFO GEOM_BUILD_AGGREGATES";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} && {<Unused>} == {LINESFROMPOINTS}} {                puts "MACRO FeatureMerger_4_REFERENCE_INFO GEOM_BUILD_LINES_FROM_POINTS";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} && {<Unused>} == {POLYGONS}} {                puts "MACRO FeatureMerger_4_REFERENCE_INFO GEOM_AND_ATTR_BUILD_POLYS";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} && {<Unused>} == {AGGREGATES}} {                puts "MACRO FeatureMerger_4_REFERENCE_INFO GEOM_AND_ATTR_BUILD_AGGREGATES";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} && {<Unused>} == {LINESFROMPOINTS}} {                puts "MACRO FeatureMerger_4_REFERENCE_INFO GEOM_AND_ATTR_BUILD_LINES_FROM_POINTS";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} } {                puts "MACRO FeatureMerger_4_REFERENCE_INFO GEOM_BUILD_AGGREGATES";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} } {                puts "MACRO FeatureMerger_4_REFERENCE_INFO GEOM_AND_ATTR_BUILD_AGGREGATES";             }          else {}; ]
@@ -4612,10 +4551,10 @@ FACTORY_DEF * ReferenceFactory    FACTORY_NAME FeatureMerger_4    INPUT REFERENC
 
 # -------------------------------------------------------------------------
 
-INCLUDE [if { {ATTRIBUTES} == {ATTRIBUTES} } {                puts "MACRO FeatureMerger_5_REFERENCE_INFO ATTRIBUTES";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} && {<Unused>} == {POLYGONS}} {                puts "MACRO FeatureMerger_5_REFERENCE_INFO GEOM_BUILD_POLYS";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} && {<Unused>} == {AGGREGATES}} {                puts "MACRO FeatureMerger_5_REFERENCE_INFO GEOM_BUILD_AGGREGATES";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} && {<Unused>} == {LINESFROMPOINTS}} {                puts "MACRO FeatureMerger_5_REFERENCE_INFO GEOM_BUILD_LINES_FROM_POINTS";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} && {<Unused>} == {POLYGONS}} {                puts "MACRO FeatureMerger_5_REFERENCE_INFO GEOM_AND_ATTR_BUILD_POLYS";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} && {<Unused>} == {AGGREGATES}} {                puts "MACRO FeatureMerger_5_REFERENCE_INFO GEOM_AND_ATTR_BUILD_AGGREGATES";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} && {<Unused>} == {LINESFROMPOINTS}} {                puts "MACRO FeatureMerger_5_REFERENCE_INFO GEOM_AND_ATTR_BUILD_LINES_FROM_POINTS";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} } {                puts "MACRO FeatureMerger_5_REFERENCE_INFO GEOM_BUILD_AGGREGATES";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} } {                puts "MACRO FeatureMerger_5_REFERENCE_INFO GEOM_AND_ATTR_BUILD_AGGREGATES";             }          else {}; ]
+INCLUDE [    set macroLine "MACRO AttributeRemover_4_LIST_EXP ";    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "{\[0-9\]+}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
+FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRemover_4    INPUT  FEATURE_TYPE AttributeRenamer_3_OUTPUT_2_yKWDRz2uARM=    OUTPUT FEATURE_TYPE AttributeRemover_4_OUTPUT        @RemoveAttributes(AMTNAME,UID_AMT,AMTIMWEB)        @RemoveAttributes(fme_regexp_match"$(AttributeRemover_4_LIST_EXP)")
 
-FACTORY_DEF * ReferenceFactory    FACTORY_NAME FeatureMerger_5    INPUT REFERENCER FEATURE_TYPE AttributeRenamer_3_OUTPUT_2_yKWDRz2uARM=    INPUT REFERENCEE FEATURE_TYPE AttributeRemover_5_OUTPUT_1_JvRf0Rb7Rbw=    REFERENCE_INFO $(FeatureMerger_5_REFERENCE_INFO)    REFERENCE_TABLE @EvaluateExpression(STRING_ENCODED,<at>Value<openparen>amt_xtf_id<closeparen>,FeatureMerger_5) @EvaluateExpression(STRING_ENCODED,<at>Value<openparen>Datenverwaltungsstelle<closeparen>,FeatureMerger_5) AUTO    MERGE_ATTRIBUTES Yes    MANAGE_FME_TYPE Yes    MODE COMPLETE    PROCESS_DUPLICATE_REFERENCEES No    REFERENCEES_FIRST No    OUTPUT COMPLETE FEATURE_TYPE FeatureMerger_5_MERGED
-
+FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeRemover_4 OUTPUT Splitter"   INPUT FEATURE_TYPE AttributeRemover_4_OUTPUT   OUTPUT FEATURE_TYPE AttributeRemover_4_OUTPUT_0_qMCX59OFq2s=   OUTPUT FEATURE_TYPE AttributeRemover_4_OUTPUT_1_qMCX59OFq2s=
 # -------------------------------------------------------------------------
 
 FACTORY_DEF * TeeFactory    FACTORY_NAME UUIDGenerator    INPUT  FEATURE_TYPE DM16NplBE.Nutzungsplanung.WF_LinienelementWald    OUTPUT FEATURE_TYPE UUIDGenerator_OUTPUT         "LIN_OID" @UUID()
@@ -4627,62 +4566,6 @@ INCLUDE [if { {ATTRIBUTES} == {ATTRIBUTES} } {                puts "MACRO Featur
 FACTORY_DEF * ReferenceFactory    FACTORY_NAME FeatureMerger    INPUT REFERENCER FEATURE_TYPE UUIDGenerator_OUTPUT    INPUT REFERENCEE FEATURE_TYPE AttributeRenamer_OUTPUT    REFERENCE_INFO $(FeatureMerger_REFERENCE_INFO)    REFERENCE_TABLE @EvaluateExpression(STRING_ENCODED,<at>Value<openparen>Objekt<closeparen>,FeatureMerger) @EvaluateExpression(STRING_ENCODED,<at>Value<openparen>EIB_XTF_ID<closeparen>,FeatureMerger) AUTO    MERGE_ATTRIBUTES Yes    MANAGE_FME_TYPE Yes    MODE COMPLETE    PROCESS_DUPLICATE_REFERENCEES No    REFERENCEES_FIRST No    OUTPUT COMPLETE FEATURE_TYPE FeatureMerger_MERGED
 
 FACTORY_DEF * TeeFactory   FACTORY_NAME "FeatureMerger MERGED Splitter"   INPUT FEATURE_TYPE FeatureMerger_MERGED   OUTPUT FEATURE_TYPE FeatureMerger_MERGED_0_dtOzL5vgfW4=   OUTPUT FEATURE_TYPE FeatureMerger_MERGED_1_dtOzL5vgfW4=
-# -------------------------------------------------------------------------
-Lookup AttributeFilter_2_AttributeFilterLut   0 ok   "" notok   ENCODED
-
-Tcl2 proc AttributeFilter_2_setFeatType {} {     global FME_FeatureType;     set ft {AttributeFilter_2_};     append ft [FME_EncodeText [FME_GetAttribute {"Verbindlichkeit"}]];     set FME_FeatureType $ft; }
-FACTORY_DEF * TestFactory    FACTORY_NAME AttributeFilter_2    INPUT  FEATURE_TYPE FeatureMerger_MERGED_1_dtOzL5vgfW4=    TEST @Lookup(AttributeFilter_2_AttributeFilterLut,"Verbindlichkeit",ENCODED_ATTR) == "ok"    OUTPUT PASSED FEATURE_TYPE * @Tcl2(AttributeFilter_2_setFeatType)    OUTPUT FAILED FEATURE_TYPE AttributeFilter_2_<NULL>
-FACTORY_DEF * TestFactory    FACTORY_NAME AttributeFilter_2_NullFilter    INPUT FEATURE_TYPE AttributeFilter_2_<NULL>    TEST "Verbindlichkeit" ATTRIBUTE_VALUE_NULL ""    OUTPUT PASSED FEATURE_TYPE AttributeFilter_2_<NULL>    OUTPUT FAILED FEATURE_TYPE AttributeFilter_2_<MISSING>
-FACTORY_DEF * TestFactory    FACTORY_NAME AttributeFilter_2_MissingFilter    INPUT FEATURE_TYPE AttributeFilter_2_<MISSING>    TEST "Verbindlichkeit" ATTRIBUTE_IS_MISSING ""    OUTPUT PASSED FEATURE_TYPE AttributeFilter_2_<MISSING>    OUTPUT FAILED FEATURE_TYPE AttributeFilter_2_<UNFILTERED>
-FACTORY_DEF * TestFactory    FACTORY_NAME AttributeFilter_2_BlankFilter    INPUT FEATURE_TYPE AttributeFilter_2_<UNFILTERED>    TEST "Verbindlichkeit" ATTRIBUTE_IS_EMPTY ""    OUTPUT PASSED FEATURE_TYPE AttributeFilter_2_<EMPTY>    OUTPUT FAILED FEATURE_TYPE AttributeFilter_2_<UNFILTERED>
-
-
-
-FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeFilter_2 <EMPTY> Output Nuker"   INPUT FEATURE_TYPE AttributeFilter_2_<EMPTY>
-FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeFilter_2 <MISSING> Output Nuker"   INPUT FEATURE_TYPE AttributeFilter_2_<MISSING>
-FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeFilter_2 <NULL> Output Nuker"   INPUT FEATURE_TYPE AttributeFilter_2_<NULL>
-FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeFilter_2 <UNFILTERED> Output Nuker"   INPUT FEATURE_TYPE AttributeFilter_2_<UNFILTERED>
-# -------------------------------------------------------------------------
-
-INCLUDE [    set macroLine "MACRO AttributeRemover_LIST_EXP ";    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "{\[0-9\]+}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
-FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRemover    INPUT  FEATURE_TYPE AttributeFilter_2_0    OUTPUT FEATURE_TYPE AttributeRemover_OUTPUT        @RemoveAttributes(xtf_id,Objekt)        @RemoveAttributes(fme_regexp_match"$(AttributeRemover_LIST_EXP)")
-
-# -------------------------------------------------------------------------
-
-Tcl2 proc TimeStamper_formatGetter { inVal } {    if { [string compare $inVal {FME Date/Time (^Y^m^d^H^M^S)}] == 0 } {       return {^Y^m^d^H^M^S};    } elseif { [string compare $inVal {FME Date (^Y^m^d)}] == 0} {       return {^Y^m^d};    } elseif { [string compare $inVal {FME Time (^H^M^S)}] == 0} {       return {^H^M^S};    } elseif { [string compare $inVal {XML Date (^Y-^m-^d)}] == 0} {       return {^Y-^m-^d};    } elseif { [string compare $inVal {XML DateTime (^Y-^m-^dT^H:^M:^S)}] == 0} {       return {^Y-^m-^dT^H:^M:^S};    } elseif { [string compare $inVal {XML Time (^H:^M:^S)}] == 0} {       return {^H:^M:^S};    } elseif { [string compare $inVal {Locale Date (^c)}] == 0} {       return {^c};    };    return $inVal; }
-FACTORY_DEF * TeeFactory    FACTORY_NAME TimeStamper    INPUT  FEATURE_TYPE AttributeRemover_OUTPUT    OUTPUT FEATURE_TYPE TimeStamper_OUTPUT         @SupplyAttributes(ENCODED, _timestamp, @Timestamp(@Tcl2("TimeStamper_formatGetter {FME Date (^Y^m^d)} ")))
-
-# -------------------------------------------------------------------------
-FACTORY_DEF * AttrSetFactory FACTORY_NAME AttributeCreator ATTRSET_PROPAGATE_MISSING YES INPUT  FEATURE_TYPE TimeStamper_OUTPUT ATTR EIB_AUSSAGE_DE Rechtskr<u00e4>ftig<space>festgestellte<space>Waldgrenze ATTR EIB_AUSSAGE_FR Limite<space>de<space>la<space>for<u00ea>t<comma><space>l<u00e9>galement<space>fix<u00e9>e ATTR LIN_PUBLIZIERTAB <at>Value<openparen>_timestamp<closeparen> ATTR EIB_PUBLIZIERTAB <at>Value<openparen>_timestamp<closeparen> ATTR VOR_PUBLIZIERTAB <at>Value<openparen>_timestamp<closeparen>    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_OUTPUT 
-FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeCreator OUTPUT Splitter"   INPUT FEATURE_TYPE AttributeCreator_OUTPUT   OUTPUT FEATURE_TYPE AttributeCreator_OUTPUT_0_olPiq+C1D00=   OUTPUT FEATURE_TYPE AttributeCreator_OUTPUT_1_olPiq+C1D00=
-# -------------------------------------------------------------------------
-
-INCLUDE [    set macroLine "MACRO AttributeRemover_2_LIST_EXP ";    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "{\[0-9\]+}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
-FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRemover_2    INPUT  FEATURE_TYPE AttributeCreator_OUTPUT_0_olPiq+C1D00=    OUTPUT FEATURE_TYPE AttributeRemover_2_OUTPUT        @RemoveAttributes(Genehmigung,Inkraftsetzung,Qualitaet,LIN_OID,Verbindlichkeit,Bemerkung,Datenverwaltungsstelle,ZustaendigeStelle,_timestamp,LIN_PUBLIZIERTAB,VOR_PUBLIZIERTAB)        @RemoveAttributes(fme_regexp_match"$(AttributeRemover_2_LIST_EXP)")
-
-# -------------------------------------------------------------------------
-
-DEFAULT_MACRO Aggregator_BREAK_ATTR
-INCLUDE [if {"No" == "Yes"} {puts {MACRO Aggregator_BREAK_ATTR BREAK_BEFORE_FIELD_CHANGE EIB_XTF_ID EIB_OID EIB_AUSSAGE_DE EIB_AUSSAGE_FR EIB_PUBLIZIERTAB} }]
-FACTORY_DEF * AggregateFactory    FACTORY_NAME Aggregator    INPUT  FEATURE_TYPE AttributeRemover_2_OUTPUT    MODE ONE_LEVEL    GROUP_BY EIB_XTF_ID EIB_OID EIB_AUSSAGE_DE EIB_AUSSAGE_FR EIB_PUBLIZIERTAB    $(Aggregator_BREAK_ATTR)    REMOVE_GEOMETRY YES    ACCUMULATE_ATTRIBUTES Yes    SEPARATOR <comma>    OUTPUT AGGREGATE FEATURE_TYPE Aggregator_AGGREGATE
-
-FACTORY_DEF * TeeFactory   FACTORY_NAME "Aggregator AGGREGATE Splitter"   INPUT FEATURE_TYPE Aggregator_AGGREGATE   OUTPUT FEATURE_TYPE Aggregator_AGGREGATE_0_qtKD1R8siTs=   OUTPUT FEATURE_TYPE Aggregator_AGGREGATE_1_qtKD1R8siTs=
-# -------------------------------------------------------------------------
-
-INCLUDE [    set macroLine "MACRO AttributeRemover_3_LIST_EXP ";    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "{\[0-9\]+}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
-FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRemover_3    INPUT  FEATURE_TYPE Aggregator_AGGREGATE_1_qtKD1R8siTs=    OUTPUT FEATURE_TYPE AttributeRemover_3_OUTPUT        @RemoveAttributes(EIB_XTF_ID,EIB_AUSSAGE_DE,EIB_AUSSAGE_FR,EIB_PUBLIZIERTAB)        @RemoveAttributes(fme_regexp_match"$(AttributeRemover_3_LIST_EXP)")
-
-FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeRemover_3 OUTPUT Splitter"   INPUT FEATURE_TYPE AttributeRemover_3_OUTPUT   OUTPUT FEATURE_TYPE AttributeRemover_3_OUTPUT_0_PU5POLcQj9M=   OUTPUT FEATURE_TYPE AttributeRemover_3_OUTPUT_1_PU5POLcQj9M=   OUTPUT FEATURE_TYPE AttributeRemover_3_OUTPUT_2_PU5POLcQj9M=
-# -------------------------------------------------------------------------
-FACTORY_DEF * AttrSetFactory FACTORY_NAME AttributeCreator_2 ATTRSET_PROPAGATE_MISSING YES INPUT  FEATURE_TYPE AttributeRemover_3_OUTPUT_1_PU5POLcQj9M= ATTR VOR_OID ch.admin.bk.sr.921.0    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_2_OUTPUT 
-# -------------------------------------------------------------------------
-FACTORY_DEF * AttrSetFactory FACTORY_NAME AttributeCreator_3 ATTRSET_PROPAGATE_MISSING YES INPUT  FEATURE_TYPE AttributeRemover_3_OUTPUT_0_PU5POLcQj9M= ATTR VOR_OID ch.be.sk.bsg.921.11    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_3_OUTPUT 
-# -------------------------------------------------------------------------
-FACTORY_DEF * AttrSetFactory FACTORY_NAME AttributeCreator_4 ATTRSET_PROPAGATE_MISSING YES INPUT  FEATURE_TYPE AttributeRemover_3_OUTPUT_2_PU5POLcQj9M= ATTR VOR_OID ch.be.sk.bsg.921.111    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_4_OUTPUT 
-# -------------------------------------------------------------------------
-
-FACTORY_DEF * TeeFactory    FACTORY_NAME UUIDGenerator_3    INPUT  FEATURE_TYPE AttributeCreator_2_OUTPUT    INPUT  FEATURE_TYPE AttributeCreator_3_OUTPUT    INPUT  FEATURE_TYPE AttributeCreator_4_OUTPUT    OUTPUT FEATURE_TYPE UUIDGenerator_3_OUTPUT         "HIV_ID" @UUID()
-
 # -------------------------------------------------------------------------
 
 INCLUDE [if { {ATTRIBUTES} == {ATTRIBUTES} } {                puts "MACRO FeatureMerger_2_REFERENCE_INFO ATTRIBUTES";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} && {<Unused>} == {POLYGONS}} {                puts "MACRO FeatureMerger_2_REFERENCE_INFO GEOM_BUILD_POLYS";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} && {<Unused>} == {AGGREGATES}} {                puts "MACRO FeatureMerger_2_REFERENCE_INFO GEOM_BUILD_AGGREGATES";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} && {<Unused>} == {LINESFROMPOINTS}} {                puts "MACRO FeatureMerger_2_REFERENCE_INFO GEOM_BUILD_LINES_FROM_POINTS";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} && {<Unused>} == {POLYGONS}} {                puts "MACRO FeatureMerger_2_REFERENCE_INFO GEOM_AND_ATTR_BUILD_POLYS";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} && {<Unused>} == {AGGREGATES}} {                puts "MACRO FeatureMerger_2_REFERENCE_INFO GEOM_AND_ATTR_BUILD_AGGREGATES";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} && {<Unused>} == {LINESFROMPOINTS}} {                puts "MACRO FeatureMerger_2_REFERENCE_INFO GEOM_AND_ATTR_BUILD_LINES_FROM_POINTS";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} } {                puts "MACRO FeatureMerger_2_REFERENCE_INFO GEOM_BUILD_AGGREGATES";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} } {                puts "MACRO FeatureMerger_2_REFERENCE_INFO GEOM_AND_ATTR_BUILD_AGGREGATES";             }          else {}; ]
@@ -4723,8 +4606,61 @@ FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeValueMapper_3    INPUT  FEATUR
 
 
 # -------------------------------------------------------------------------
+Lookup AttributeFilter_2_AttributeFilterLut   0 ok   "" notok   ENCODED
 
-FACTORY_DEF * PolygonDissolveFactory    INPUT  FEATURE_TYPE AttributeValueMapper_3_OUTPUT    FACTORY_NAME Bufferer_2    PRE_BUFFER "2" "8" CAP_ROUND FULL    DISSOLVE_MODE GEOS    OUTPUT POLYGON FEATURE_TYPE Bufferer_2_BUFFERED    OUTPUT NON_POLYGON FEATURE_TYPE Bufferer_2_BUFFERED
+Tcl2 proc AttributeFilter_2_setFeatType {} {     global FME_FeatureType;     set ft {AttributeFilter_2_};     append ft [FME_EncodeText [FME_GetAttribute {"Verbindlichkeit"}]];     set FME_FeatureType $ft; }
+FACTORY_DEF * TestFactory    FACTORY_NAME AttributeFilter_2    INPUT  FEATURE_TYPE FeatureMerger_MERGED_1_dtOzL5vgfW4=    TEST @Lookup(AttributeFilter_2_AttributeFilterLut,"Verbindlichkeit",ENCODED_ATTR) == "ok"    OUTPUT PASSED FEATURE_TYPE * @Tcl2(AttributeFilter_2_setFeatType)    OUTPUT FAILED FEATURE_TYPE AttributeFilter_2_<NULL>
+FACTORY_DEF * TestFactory    FACTORY_NAME AttributeFilter_2_NullFilter    INPUT FEATURE_TYPE AttributeFilter_2_<NULL>    TEST "Verbindlichkeit" ATTRIBUTE_VALUE_NULL ""    OUTPUT PASSED FEATURE_TYPE AttributeFilter_2_<NULL>    OUTPUT FAILED FEATURE_TYPE AttributeFilter_2_<MISSING>
+FACTORY_DEF * TestFactory    FACTORY_NAME AttributeFilter_2_MissingFilter    INPUT FEATURE_TYPE AttributeFilter_2_<MISSING>    TEST "Verbindlichkeit" ATTRIBUTE_IS_MISSING ""    OUTPUT PASSED FEATURE_TYPE AttributeFilter_2_<MISSING>    OUTPUT FAILED FEATURE_TYPE AttributeFilter_2_<UNFILTERED>
+FACTORY_DEF * TestFactory    FACTORY_NAME AttributeFilter_2_BlankFilter    INPUT FEATURE_TYPE AttributeFilter_2_<UNFILTERED>    TEST "Verbindlichkeit" ATTRIBUTE_IS_EMPTY ""    OUTPUT PASSED FEATURE_TYPE AttributeFilter_2_<EMPTY>    OUTPUT FAILED FEATURE_TYPE AttributeFilter_2_<UNFILTERED>
+
+
+
+FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeFilter_2 <EMPTY> Output Nuker"   INPUT FEATURE_TYPE AttributeFilter_2_<EMPTY>
+FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeFilter_2 <MISSING> Output Nuker"   INPUT FEATURE_TYPE AttributeFilter_2_<MISSING>
+FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeFilter_2 <NULL> Output Nuker"   INPUT FEATURE_TYPE AttributeFilter_2_<NULL>
+FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeFilter_2 <UNFILTERED> Output Nuker"   INPUT FEATURE_TYPE AttributeFilter_2_<UNFILTERED>
+# -------------------------------------------------------------------------
+
+INCLUDE [    set macroLine "MACRO AttributeRemover_LIST_EXP ";    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "{\[0-9\]+}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
+FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRemover    INPUT  FEATURE_TYPE AttributeFilter_2_0    OUTPUT FEATURE_TYPE AttributeRemover_OUTPUT        @RemoveAttributes(xtf_id,Objekt)        @RemoveAttributes(fme_regexp_match"$(AttributeRemover_LIST_EXP)")
+
+# -------------------------------------------------------------------------
+
+Tcl2 proc TimeStamper_formatGetter { inVal } {    if { [string compare $inVal {FME Date/Time (^Y^m^d^H^M^S)}] == 0 } {       return {^Y^m^d^H^M^S};    } elseif { [string compare $inVal {FME Date (^Y^m^d)}] == 0} {       return {^Y^m^d};    } elseif { [string compare $inVal {FME Time (^H^M^S)}] == 0} {       return {^H^M^S};    } elseif { [string compare $inVal {XML Date (^Y-^m-^d)}] == 0} {       return {^Y-^m-^d};    } elseif { [string compare $inVal {XML DateTime (^Y-^m-^dT^H:^M:^S)}] == 0} {       return {^Y-^m-^dT^H:^M:^S};    } elseif { [string compare $inVal {XML Time (^H:^M:^S)}] == 0} {       return {^H:^M:^S};    } elseif { [string compare $inVal {Locale Date (^c)}] == 0} {       return {^c};    };    return $inVal; }
+FACTORY_DEF * TeeFactory    FACTORY_NAME TimeStamper    INPUT  FEATURE_TYPE AttributeRemover_OUTPUT    OUTPUT FEATURE_TYPE TimeStamper_OUTPUT         @SupplyAttributes(ENCODED, _timestamp, @Timestamp(@Tcl2("TimeStamper_formatGetter {FME Date (^Y^m^d)} ")))
+
+# -------------------------------------------------------------------------
+FACTORY_DEF * AttrSetFactory FACTORY_NAME AttributeCreator ATTRSET_PROPAGATE_MISSING YES INPUT  FEATURE_TYPE TimeStamper_OUTPUT ATTR EIB_AUSSAGE_DE Rechtskr<u00e4>ftig<space>festgestellte<space>Waldgrenze ATTR EIB_AUSSAGE_FR Limite<space>de<space>la<space>for<u00ea>t<comma><space>l<u00e9>galement<space>fix<u00e9>e ATTR LIN_PUBLIZIERTAB <at>Value<openparen>_timestamp<closeparen> ATTR EIB_PUBLIZIERTAB <at>Value<openparen>_timestamp<closeparen> ATTR VOR_PUBLIZIERTAB <at>Value<openparen>_timestamp<closeparen>    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_OUTPUT 
+FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeCreator OUTPUT Splitter"   INPUT FEATURE_TYPE AttributeCreator_OUTPUT   OUTPUT FEATURE_TYPE AttributeCreator_OUTPUT_0_olPiq+C1D00=   OUTPUT FEATURE_TYPE AttributeCreator_OUTPUT_1_olPiq+C1D00=
+# -------------------------------------------------------------------------
+
+INCLUDE [    set macroLine "MACRO AttributeRemover_2_LIST_EXP ";    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "{\[0-9\]+}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
+FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRemover_2    INPUT  FEATURE_TYPE AttributeCreator_OUTPUT_1_olPiq+C1D00=    OUTPUT FEATURE_TYPE AttributeRemover_2_OUTPUT        @RemoveAttributes(Genehmigung,Inkraftsetzung,Qualitaet,LIN_OID,Verbindlichkeit,Bemerkung,Datenverwaltungsstelle,ZustaendigeStelle,_timestamp,LIN_PUBLIZIERTAB,VOR_PUBLIZIERTAB)        @RemoveAttributes(fme_regexp_match"$(AttributeRemover_2_LIST_EXP)")
+
+# -------------------------------------------------------------------------
+
+DEFAULT_MACRO Aggregator_BREAK_ATTR
+INCLUDE [if {"No" == "Yes"} {puts {MACRO Aggregator_BREAK_ATTR BREAK_BEFORE_FIELD_CHANGE EIB_XTF_ID EIB_OID EIB_AUSSAGE_DE EIB_AUSSAGE_FR EIB_PUBLIZIERTAB} }]
+FACTORY_DEF * AggregateFactory    FACTORY_NAME Aggregator    INPUT  FEATURE_TYPE AttributeRemover_2_OUTPUT    MODE ONE_LEVEL    GROUP_BY EIB_XTF_ID EIB_OID EIB_AUSSAGE_DE EIB_AUSSAGE_FR EIB_PUBLIZIERTAB    $(Aggregator_BREAK_ATTR)    REMOVE_GEOMETRY YES    ACCUMULATE_ATTRIBUTES Yes    SEPARATOR <comma>    OUTPUT AGGREGATE FEATURE_TYPE Aggregator_AGGREGATE
+
+FACTORY_DEF * TeeFactory   FACTORY_NAME "Aggregator AGGREGATE Splitter"   INPUT FEATURE_TYPE Aggregator_AGGREGATE   OUTPUT FEATURE_TYPE Aggregator_AGGREGATE_0_qtKD1R8siTs=   OUTPUT FEATURE_TYPE Aggregator_AGGREGATE_1_qtKD1R8siTs=
+# -------------------------------------------------------------------------
+
+INCLUDE [    set macroLine "MACRO AttributeRemover_3_LIST_EXP ";    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "{\[0-9\]+}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
+FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRemover_3    INPUT  FEATURE_TYPE Aggregator_AGGREGATE_1_qtKD1R8siTs=    OUTPUT FEATURE_TYPE AttributeRemover_3_OUTPUT        @RemoveAttributes(EIB_XTF_ID,EIB_AUSSAGE_DE,EIB_AUSSAGE_FR,EIB_PUBLIZIERTAB)        @RemoveAttributes(fme_regexp_match"$(AttributeRemover_3_LIST_EXP)")
+
+FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeRemover_3 OUTPUT Splitter"   INPUT FEATURE_TYPE AttributeRemover_3_OUTPUT   OUTPUT FEATURE_TYPE AttributeRemover_3_OUTPUT_0_PU5POLcQj9M=   OUTPUT FEATURE_TYPE AttributeRemover_3_OUTPUT_1_PU5POLcQj9M=   OUTPUT FEATURE_TYPE AttributeRemover_3_OUTPUT_2_PU5POLcQj9M=
+# -------------------------------------------------------------------------
+FACTORY_DEF * AttrSetFactory FACTORY_NAME AttributeCreator_2 ATTRSET_PROPAGATE_MISSING YES INPUT  FEATURE_TYPE AttributeRemover_3_OUTPUT_2_PU5POLcQj9M= ATTR VOR_OID ch.admin.bk.sr.921.0    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_2_OUTPUT 
+# -------------------------------------------------------------------------
+FACTORY_DEF * AttrSetFactory FACTORY_NAME AttributeCreator_3 ATTRSET_PROPAGATE_MISSING YES INPUT  FEATURE_TYPE AttributeRemover_3_OUTPUT_1_PU5POLcQj9M= ATTR VOR_OID ch.be.sk.bsg.921.11    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_3_OUTPUT 
+# -------------------------------------------------------------------------
+FACTORY_DEF * AttrSetFactory FACTORY_NAME AttributeCreator_4 ATTRSET_PROPAGATE_MISSING YES INPUT  FEATURE_TYPE AttributeRemover_3_OUTPUT_0_PU5POLcQj9M= ATTR VOR_OID ch.be.sk.bsg.921.111    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_4_OUTPUT 
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME UUIDGenerator_3    INPUT  FEATURE_TYPE AttributeCreator_4_OUTPUT    INPUT  FEATURE_TYPE AttributeCreator_2_OUTPUT    INPUT  FEATURE_TYPE AttributeCreator_3_OUTPUT    OUTPUT FEATURE_TYPE UUIDGenerator_3_OUTPUT         "HIV_ID" @UUID()
+
 # -------------------------------------------------------------------------
 
 FACTORY_DEF * TeeFactory    FACTORY_NAME "UUIDGenerator_3_OUTPUT -> OEREB2.HINVOR Correlator"    INPUT FEATURE_TYPE UUIDGenerator_3_OUTPUT    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 0       @Transform(FME_GENERIC,ORACLE8I_DB) "@EvaluateExpression(ATTR_CREATE_EXPR_PROPAGATE_MISSING,HIV_LIEFEREINHEIT,$(LIEFEREINHEIT$encode), ATTR_SET)"       @SupplyAttributes(ENCODED,__wb_out_feat_type__,OEREB2.HINVOR)
@@ -4733,19 +4669,19 @@ FACTORY_DEF * TeeFactory    FACTORY_NAME "UUIDGenerator_3_OUTPUT -> OEREB2.HINVO
 FACTORY_DEF * TeeFactory    FACTORY_NAME "Aggregator_AGGREGATE_0_qtKD1R8siTs= -> OEREB2.EIGENTUMSBESCHRAENKUNG Correlator"    INPUT FEATURE_TYPE Aggregator_AGGREGATE_0_qtKD1R8siTs=    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 0       @Transform(FME_GENERIC,ORACLE8I_DB) "@EvaluateExpression(ATTR_CREATE_EXPR_PROPAGATE_MISSING,EIB_LIEFEREINHEIT,$(LIEFEREINHEIT$encode),AMT_OID,$(AMT_OID$encode),DAR_OID,$(DAR_OID$encode),RES_ID,$(RES_ID$encode),STH_ID,$(STH_ID$encode),EIB_LEGENDESYMBOL_DE,$(LEGEND_BASEURL$encode),EIB_LEGENDESYMBOL_FR,$(LEGEND_BASEURL$encode), ATTR_SET)"       @SupplyAttributes(ENCODED,__wb_out_feat_type__,OEREB2.EIGENTUMSBESCHRAENKUNG)
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * TeeFactory    FACTORY_NAME "AttributeCreator_OUTPUT_1_olPiq+C1D00= -> OEREB2.LINIE Correlator"    INPUT FEATURE_TYPE AttributeCreator_OUTPUT_1_olPiq+C1D00=    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 1       @Transform(FME_GENERIC,GEODATABASE_SDE) "@EvaluateExpression(ATTR_CREATE_EXPR_PROPAGATE_MISSING,LIN_LIEFEREINHEIT,$(LIEFEREINHEIT$encode),AMT_OID,$(AMT_OID$encode),RES_ID,$(RES_ID$encode), ATTR_SET)"       @SupplyAttributes(ENCODED,__wb_out_feat_type__,OEREB2.LINIE)
+FACTORY_DEF * TeeFactory    FACTORY_NAME "AttributeCreator_OUTPUT_0_olPiq+C1D00= -> OEREB2.LINIE Correlator"    INPUT FEATURE_TYPE AttributeCreator_OUTPUT_0_olPiq+C1D00=    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 1       @Transform(FME_GENERIC,GEODATABASE_SDE) "@EvaluateExpression(ATTR_CREATE_EXPR_PROPAGATE_MISSING,LIN_LIEFEREINHEIT,$(LIEFEREINHEIT$encode),AMT_OID,$(AMT_OID$encode),RES_ID,$(RES_ID$encode), ATTR_SET)"       @SupplyAttributes(ENCODED,__wb_out_feat_type__,OEREB2.LINIE)
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * TeeFactory    FACTORY_NAME "Bufferer_BUFFERED -> GEODB.NUPLWALD_WFWAEP Correlator"    INPUT FEATURE_TYPE Bufferer_BUFFERED    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 2       @Transform(FME_GENERIC,GEODATABASE_SDE) "@EvaluateExpression(ATTR_CREATE_EXPR_PROPAGATE_MISSING,BFSNR,$(BFSNR$encode),NAME,$(GEMNAME$encode), ATTR_SET)"       @SupplyAttributes(ENCODED,__wb_out_feat_type__,GEODB.NUPLWALD_WFWAEP)
+FACTORY_DEF * TeeFactory    FACTORY_NAME "AttributeRenamer_2_OUTPUT -> GEODB.NUPLWALD_WFWAEP Correlator"    INPUT FEATURE_TYPE AttributeRenamer_2_OUTPUT    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 2       @Transform(FME_GENERIC,GEODATABASE_SDE) "@EvaluateExpression(ATTR_CREATE_EXPR_PROPAGATE_MISSING,BFSNR,$(BFSNR$encode),NAME,$(GEMNAME$encode), ATTR_SET)"       @SupplyAttributes(ENCODED,__wb_out_feat_type__,GEODB.NUPLWALD_WFWAEP)
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * TeeFactory    FACTORY_NAME "Bufferer_2_BUFFERED -> GEODB.NUPLWALD_WFWAGRZ Correlator"    INPUT FEATURE_TYPE Bufferer_2_BUFFERED    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 2       @Transform(FME_GENERIC,GEODATABASE_SDE) "@EvaluateExpression(ATTR_CREATE_EXPR_PROPAGATE_MISSING,BFSNR,$(BFSNR$encode),NAME,$(GEMNAME$encode), ATTR_SET)"       @SupplyAttributes(ENCODED,__wb_out_feat_type__,GEODB.NUPLWALD_WFWAGRZ)
-# -------------------------------------------------------------------------
-
-FACTORY_DEF * TeeFactory    FACTORY_NAME "FeatureMerger_5_MERGED -> GEODB.NUPLWALD_WALDAMTT Correlator"    INPUT FEATURE_TYPE FeatureMerger_5_MERGED    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 2       @Transform(FME_GENERIC,GEODATABASE_SDE) "@EvaluateExpression(ATTR_CREATE_EXPR_PROPAGATE_MISSING,BFSNR,$(BFSNR$encode),NAME,$(GEMNAME$encode), ATTR_SET)"       @SupplyAttributes(ENCODED,__wb_out_feat_type__,GEODB.NUPLWALD_WALDAMTT)
+FACTORY_DEF * TeeFactory    FACTORY_NAME "AttributeValueMapper_3_OUTPUT -> GEODB.NUPLWALD_WFWAGRZ Correlator"    INPUT FEATURE_TYPE AttributeValueMapper_3_OUTPUT    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 2       @Transform(FME_GENERIC,GEODATABASE_SDE) "@EvaluateExpression(ATTR_CREATE_EXPR_PROPAGATE_MISSING,BFSNR,$(BFSNR$encode),NAME,$(GEMNAME$encode), ATTR_SET)"       @SupplyAttributes(ENCODED,__wb_out_feat_type__,GEODB.NUPLWALD_WFWAGRZ)
 # -------------------------------------------------------------------------
 
 FACTORY_DEF * TeeFactory    FACTORY_NAME "FeatureMerger_4_MERGED -> GEODB.NUPLWALD_WALDAMTT Correlator"    INPUT FEATURE_TYPE FeatureMerger_4_MERGED    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 2       @Transform(FME_GENERIC,GEODATABASE_SDE) "@EvaluateExpression(ATTR_CREATE_EXPR_PROPAGATE_MISSING,BFSNR,$(BFSNR$encode),NAME,$(GEMNAME$encode), ATTR_SET)"       @SupplyAttributes(ENCODED,__wb_out_feat_type__,GEODB.NUPLWALD_WALDAMTT)
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME "FeatureMerger_5_MERGED -> GEODB.NUPLWALD_WALDAMTT Correlator"    INPUT FEATURE_TYPE FeatureMerger_5_MERGED    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 2       @Transform(FME_GENERIC,GEODATABASE_SDE) "@EvaluateExpression(ATTR_CREATE_EXPR_PROPAGATE_MISSING,BFSNR,$(BFSNR$encode),NAME,$(GEMNAME$encode), ATTR_SET)"       @SupplyAttributes(ENCODED,__wb_out_feat_type__,GEODB.NUPLWALD_WALDAMTT)
 # -------------------------------------------------------------------------
 
 FACTORY_DEF * TestFactory   FACTORY_NAME "Final Output Feature Type Router"   INPUT FEATURE_TYPE *   TEST @Value(__wb_out_feat_type__) != ""   OUTPUT PASSED FEATURE_TYPE *     @FeatureType(@Value(__wb_out_feat_type__))   OUTPUT FAILED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")
@@ -4762,10 +4698,11 @@ ORACLE8I_DB_1_DEF OEREB2.EIGENTUMSBESCHRAENKUNG   oracle_create_table          N
 # -------------------------------------------------------------------------
 GEODATABASE_SDE_1_DEF OEREB2.LINIE   geodb_type                   geodb_polyline   GEODB_DROP_TABLE             NO   GEODB_TRUNCATE_TABLE         NO   GEODB_OBJECT_ID_NAME         OBJECTID   GEODB_OBJECT_ID_ALIAS        OBJECTID   GEODB_SHAPE_NAME             SHAPE   GEODB_SHAPE_ALIAS            SHAPE   GEODB_CONFIG_KEYWORD         DEFAULTS   GEODB_FEATURE_DATASET        ""   GEODB_GRID{1}                ""   GEODB_AVG_NUM_POINTS         ""   GEODB_XORIGIN                ""   GEODB_YORIGIN                ""   GEODB_XYSCALE                ""   GEODB_HAS_Z_VALUES           ""   GEODB_ZORIGIN                ""   GEODB_ZSCALE                 ""   GEODB_HAS_MEASURES           ""   GEODB_MEASURES_ORIGIN        ""   GEODB_MEASURES_SCALE         ""   GEODB_ANNO_REFERENCE_SCALE   ""   LIN_OID                      char(128)   LIN_XTF_ID                   char(128)   LIN_PUBLIZIERTAB             date   LIN_METAGEO_DE               char(1023)   LIN_METAGEO_FR               char(1023)   LIN_LIEFEREINHEIT            integer   EIB_OID                      char(128)   AMT_OID                      char(128)   RES_ID                       integer
 # -------------------------------------------------------------------------
-GEODATABASE_SDE_2_DEF GEODB.NUPLWALD_WFWAEP   geodb_type                   geodb_polygon   GEODB_DROP_TABLE             NO   GEODB_TRUNCATE_TABLE         NO   GEODB_OBJECT_ID_NAME         OBJECTID   GEODB_OBJECT_ID_ALIAS        OBJECTID   GEODB_SHAPE_NAME             SHAPE   GEODB_SHAPE_ALIAS            SHAPE   GEODB_CONFIG_KEYWORD         DEFAULTS   GEODB_FEATURE_DATASET        ""   GEODB_GRID{1}                ""   GEODB_AVG_NUM_POINTS         ""   GEODB_XORIGIN                ""   GEODB_YORIGIN                ""   GEODB_XYSCALE                ""   GEODB_HAS_Z_VALUES           ""   GEODB_ZORIGIN                ""   GEODB_ZSCALE                 ""   GEODB_HAS_MEASURES           ""   GEODB_MEASURES_ORIGIN        ""   GEODB_MEASURES_SCALE         ""   GEODB_ANNO_REFERENCE_SCALE   ""   BFSNR                        smallint   NAME                         char(50)   AV_IDENT                     char(12)   LAGEGEN                      float   LAGEZUV                      smallint
+GEODATABASE_SDE_2_DEF GEODB.NUPLWALD_WFWAEP   geodb_type                   geodb_point   GEODB_DROP_TABLE             NO   GEODB_TRUNCATE_TABLE         NO   GEODB_OBJECT_ID_NAME         OBJECTID   GEODB_OBJECT_ID_ALIAS        OBJECTID   GEODB_SHAPE_NAME             SHAPE   GEODB_SHAPE_ALIAS            SHAPE   GEODB_CONFIG_KEYWORD         DEFAULTS   GEODB_FEATURE_DATASET        ""   GEODB_GRID{1}                ""   GEODB_AVG_NUM_POINTS         ""   GEODB_XORIGIN                ""   GEODB_YORIGIN                ""   GEODB_XYSCALE                ""   GEODB_HAS_Z_VALUES           ""   GEODB_ZORIGIN                ""   GEODB_ZSCALE                 ""   GEODB_HAS_MEASURES           ""   GEODB_MEASURES_ORIGIN        ""   GEODB_MEASURES_SCALE         ""   GEODB_ANNO_REFERENCE_SCALE   ""   BFSNR                        smallint   NAME                         char(50)   AV_IDENT                     char(12)   LAGEGEN                      float   LAGEZUV                      smallint
 # -------------------------------------------------------------------------
-GEODATABASE_SDE_2_DEF GEODB.NUPLWALD_WFWAGRZ   geodb_type                   geodb_polygon   GEODB_DROP_TABLE             NO   GEODB_TRUNCATE_TABLE         NO   GEODB_OBJECT_ID_NAME         OBJECTID   GEODB_OBJECT_ID_ALIAS        OBJECTID   GEODB_SHAPE_NAME             SHAPE   GEODB_SHAPE_ALIAS            SHAPE   GEODB_CONFIG_KEYWORD         DEFAULTS   GEODB_FEATURE_DATASET        ""   GEODB_GRID{1}                ""   GEODB_AVG_NUM_POINTS         ""   GEODB_XORIGIN                ""   GEODB_YORIGIN                ""   GEODB_XYSCALE                ""   GEODB_HAS_Z_VALUES           ""   GEODB_ZORIGIN                ""   GEODB_ZSCALE                 ""   GEODB_HAS_MEASURES           ""   GEODB_MEASURES_ORIGIN        ""   GEODB_MEASURES_SCALE         ""   GEODB_ANNO_REFERENCE_SCALE   ""   BFSNR                        smallint   NAME                         char(50)   GENEHM                       date   INKRAFT                      date   QUALITAET                    smallint   VERBINDLKT                   smallint   BEMERK                       char(80)   DATENVERW                    char(15)   ZUSTAENDIG                   char(15)
+GEODATABASE_SDE_2_DEF GEODB.NUPLWALD_WFWAGRZ   geodb_type                   geodb_polyline   GEODB_DROP_TABLE             NO   GEODB_TRUNCATE_TABLE         NO   GEODB_OBJECT_ID_NAME         OBJECTID   GEODB_OBJECT_ID_ALIAS        OBJECTID   GEODB_SHAPE_NAME             SHAPE   GEODB_SHAPE_ALIAS            SHAPE   GEODB_CONFIG_KEYWORD         DEFAULTS   GEODB_FEATURE_DATASET        ""   GEODB_GRID{1}                ""   GEODB_AVG_NUM_POINTS         ""   GEODB_XORIGIN                ""   GEODB_YORIGIN                ""   GEODB_XYSCALE                ""   GEODB_HAS_Z_VALUES           ""   GEODB_ZORIGIN                ""   GEODB_ZSCALE                 ""   GEODB_HAS_MEASURES           ""   GEODB_MEASURES_ORIGIN        ""   GEODB_MEASURES_SCALE         ""   GEODB_ANNO_REFERENCE_SCALE   ""   BFSNR                        smallint   NAME                         char(50)   GENEHM                       date   INKRAFT                      date   QUALITAET                    smallint   VERBINDLKT                   smallint   BEMERK                       char(80)   DATENVERW                    char(36)   ZUSTAENDIG                   char(36)
 # -------------------------------------------------------------------------
 # -------------------------------------------------------------------------
 # -------------------------------------------------------------------------
-GEODATABASE_SDE_2_DEF GEODB.NUPLWALD_WALDAMTT   geodb_type                   geodb_table   GEODB_DROP_TABLE             NO   GEODB_TRUNCATE_TABLE         NO   GEODB_OBJECT_ID_NAME         OBJECTID   GEODB_OBJECT_ID_ALIAS        OBJECTID   GEODB_SHAPE_NAME             SHAPE   GEODB_SHAPE_ALIAS            SHAPE   GEODB_CONFIG_KEYWORD         DEFAULTS   GEODB_FEATURE_DATASET        ""   GEODB_GRID{1}                ""   GEODB_AVG_NUM_POINTS         ""   GEODB_XORIGIN                ""   GEODB_YORIGIN                ""   GEODB_XYSCALE                ""   GEODB_HAS_Z_VALUES           ""   GEODB_ZORIGIN                ""   GEODB_ZSCALE                 ""   GEODB_HAS_MEASURES           ""   GEODB_MEASURES_ORIGIN        ""   GEODB_MEASURES_SCALE         ""   GEODB_ANNO_REFERENCE_SCALE   ""   BFSNR                        smallint   NAME                         char(50)   AMTNAME                      char(200)   UID_AMT                      char(15)   AMTIMWEB                     char(100)
+# -------------------------------------------------------------------------
+GEODATABASE_SDE_2_DEF GEODB.NUPLWALD_WALDAMTT   geodb_type                   geodb_table   GEODB_DROP_TABLE             NO   GEODB_TRUNCATE_TABLE         NO   GEODB_OBJECT_ID_NAME         OBJECTID   GEODB_OBJECT_ID_ALIAS        OBJECTID   GEODB_SHAPE_NAME             SHAPE   GEODB_SHAPE_ALIAS            SHAPE   GEODB_CONFIG_KEYWORD         DEFAULTS   GEODB_FEATURE_DATASET        ""   GEODB_GRID{1}                ""   GEODB_AVG_NUM_POINTS         ""   GEODB_XORIGIN                ""   GEODB_YORIGIN                ""   GEODB_XYSCALE                ""   GEODB_HAS_Z_VALUES           ""   GEODB_ZORIGIN                ""   GEODB_ZSCALE                 ""   GEODB_HAS_MEASURES           ""   GEODB_MEASURES_ORIGIN        ""   GEODB_MEASURES_SCALE         ""   GEODB_ANNO_REFERENCE_SCALE   ""   BFSNR                        smallint   NAME                         char(50)   AMTNAME                      char(200)   UID_AMT                      char(15)   AMTIMWEB                     char(100)   AMT_ID                       char(36)
