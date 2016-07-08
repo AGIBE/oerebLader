@@ -17,6 +17,8 @@ def run(config):
     runner = fmeobjects.FMEWorkspaceRunner()
     bfsnr = config['LIEFEREINHEIT']['bfsnr']
     itf_file = os.path.join(config['LIEFEREINHEIT']['gpr_source'], unicode(bfsnr), unicode(bfsnr) + ".itf")
+    excel_file_amt = os.path.join(config['LIEFEREINHEIT']['gpr_source'], unicode(bfsnr), "AMT_" + unicode(bfsnr) + ".xlsx")
+    excel_file_darstellungsdienst = os.path.join(config['LIEFEREINHEIT']['gpr_source'], unicode(bfsnr), "DARSTELLUNGSDIENST2_" + unicode(bfsnr) + ".xlsx")
     input_rv_dir = os.path.join(config['LIEFEREINHEIT']['gpr_source'], unicode(bfsnr), "rv")
     output_rv_dir = os.path.join(config['GENERAL']['files_be_ch_baseunc'], unicode(config['LIEFEREINHEIT']['id']), unicode(config['ticketnr']))
     if config['GENERAL']['files_be_ch_baseurl'].endswith("/"):
@@ -36,6 +38,9 @@ def run(config):
         'GEODB_USERNAME': str(config['GEODB_WORK']['username']),
         'GEODB_PASSWORD': str(config['GEODB_WORK']['password']),
         'MODELLABLAGE': str(config['GENERAL']['models']),
+        'EXCEL_AMT': str(excel_file_amt),
+        'EXCEL_DARSTELLUNGSDIENST': str(excel_file_darstellungsdienst),
+        'NPL_WMS_BASE': str(config['GENERAL']['npl_wms_base']),
         'BFSNR': str(bfsnr),
         'GEMNAME': config['LIEFEREINHEIT']['gemeinde_name'].encode("latin-1"),
         'ITF_FILE': str(itf_file),

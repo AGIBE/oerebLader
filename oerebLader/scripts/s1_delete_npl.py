@@ -33,7 +33,16 @@ def run(config):
                 'NPL_WEWRF',
                 'NPL_WEWRL',
                 'NPL_GEGEWF',
-                'NPL_GEGEWL' 
+                'NPL_GEGEWL',
+                'NUPLA_AMTT',
+                'NUPLA_GNGRUZO',
+                'NUPLA_GNZPPUEO',
+                'NUPLA_RVST',
+                'NUPLA_UEFL',
+                'NUPLA_UELARMES',
+                'NUPLA_UELN',
+                'NUPLA_UEPT',
+                'NUPLA_UEWAABL'
              ]
     
     with cx_Oracle.connect(config['GEODB_WORK']['connection_string']) as conn:
