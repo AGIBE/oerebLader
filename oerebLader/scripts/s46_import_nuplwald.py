@@ -17,14 +17,19 @@ def run(config):
     runner = fmeobjects.FMEWorkspaceRunner()
     bfsnr = config['LIEFEREINHEIT']['bfsnr']
     itf_file = os.path.join(config['LIEFEREINHEIT']['gpr_source'], unicode(bfsnr), unicode(bfsnr) + ".itf")
+    input_rv_dir = os.path.join(config['LIEFEREINHEIT']['gpr_source'], unicode(bfsnr), "rv")
+    output_rv_dir = os.path.join(config['GENERAL']['files_be_ch_baseunc'], unicode(config['LIEFEREINHEIT']['id']), unicode(config['ticketnr']))
     if config['GENERAL']['files_be_ch_baseurl'].endswith("/"):
+        output_rv_url = config['GENERAL']['files_be_ch_baseurl'] + unicode(config['LIEFEREINHEIT']['id']) + "/" + unicode(config['ticketnr']) + "/"
         legend_baseurl = config['GENERAL']['files_be_ch_baseurl'] + "legenden/Waldgrenzen/Waldgrenzen.png"
     else:
         legend_baseurl = config['GENERAL']['files_be_ch_baseurl'] + "/legenden/Waldgrenzen/Waldgrenzen.png"
+        output_rv_url = config['GENERAL']['files_be_ch_baseurl'] + "/" + unicode(config['LIEFEREINHEIT']['id']) + "/" + unicode(config['ticketnr']) + "/"
         
     
     # Der FMEWorkspaceRunner akzeptiert keine Unicode-Strings!
     # Daher müssen workspace und parameters umgewandelt werden!
+    #TODO: Parameter für Sprache der Gemeinde einbauen und GEGR entsprechend abfüllen
     parameters = {
         'OEREB2_DATABASE': str(config['OEREB2_WORK']['database']),
         'OEREB2_USERNAME': str(config['OEREB2_WORK']['username']),
@@ -38,6 +43,9 @@ def run(config):
         'ITF_FILE': str(itf_file),
         'LEGEND_BASEURL': str(legend_baseurl),
         'LIEFEREINHEIT': str(config['LIEFEREINHEIT']['id']),
+        'INPUT_RV_DIR': str(input_rv_dir),
+        'OUTPUT_RV_DIR': str(output_rv_dir),
+        'OUTPUT_RV_URL': str(output_rv_url),
         'LOGFILE': str(fme_logfile)
     }
     try:

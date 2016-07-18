@@ -30,6 +30,7 @@ def run(config):
     
     # Der FMEWorkspaceRunner akzeptiert keine Unicode-Strings!
     # Daher müssen workspace und parameters umgewandelt werden!
+    #TODO: Parameter für Sprache der Gemeinde einbauen und GEGR entsprechend abfüllen
     parameters = {
         'OEREB2_DATABASE': str(config['OEREB2_WORK']['database']),
         'OEREB2_USERNAME': str(config['OEREB2_WORK']['username']),
