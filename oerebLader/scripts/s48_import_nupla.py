@@ -23,9 +23,7 @@ def run(config):
     output_rv_dir = os.path.join(config['GENERAL']['files_be_ch_baseunc'], unicode(config['LIEFEREINHEIT']['id']), unicode(config['ticketnr']))
     if config['GENERAL']['files_be_ch_baseurl'].endswith("/"):
         output_rv_url = config['GENERAL']['files_be_ch_baseurl'] + unicode(config['LIEFEREINHEIT']['id']) + "/" + unicode(config['ticketnr']) + "/"
-        legend_baseurl = config['GENERAL']['files_be_ch_baseurl'] + "legenden/KantUeO/KantUeO.png"
     else:
-        legend_baseurl = config['GENERAL']['files_be_ch_baseurl'] + "/legenden/KantUeO/KantUeO.png"
         output_rv_url = config['GENERAL']['files_be_ch_baseurl'] + "/" + unicode(config['LIEFEREINHEIT']['id']) + "/" + unicode(config['ticketnr']) + "/"
     
     # Der FMEWorkspaceRunner akzeptiert keine Unicode-Strings!
@@ -45,7 +43,6 @@ def run(config):
         'BFSNR': str(bfsnr),
         'GEMNAME': config['LIEFEREINHEIT']['gemeinde_name'].encode("latin-1"),
         'ITF_FILE': str(itf_file),
-        'LEGEND_BASEURL': str(legend_baseurl),
         'LIEFEREINHEIT': str(config['LIEFEREINHEIT']['id']),
         'INPUT_RV_DIR': str(input_rv_dir),
         'OUTPUT_RV_DIR': str(output_rv_dir),
