@@ -14,23 +14,17 @@ def run(config):
     fme_logfile = oerebLader.helpers.fme_helper.prepare_fme_log(fme_script, config['LOGGING']['log_directory']) 
     logger.info("Script " +  fme_script + " wird ausgeführt.")
     logger.info("Das FME-Logfile heisst: " + fme_logfile)
-    bfsnr = config['LIEFEREINHEIT']['bfsnr']
-    excel_file_darstellungsdienst = os.path.join(config['LIEFEREINHEIT']['gpr_source'], unicode(bfsnr), "DARSTELLUNGSDIENST_" + unicode(bfsnr) + ".xlsx")
-    excel_file_amt = os.path.join(config['LIEFEREINHEIT']['gpr_source'], unicode(bfsnr), "AMT_" + unicode(bfsnr) + ".xlsx")
     runner = fmeobjects.FMEWorkspaceRunner()
     
     # Der FMEWorkspaceRunner akzeptiert keine Unicode-Strings!
     # Daher müssen workspace und parameters umgewandelt werden!
     parameters = {
-        'GEODB_DATABASE': str(config['GEODB_WORK']['database']),
-        'GEODB_USERNAME': str(config['GEODB_WORK']['username']),
-        'GEODB_PASSWORD': str(config['GEODB_WORK']['password']),
         'OEREB_DATABASE': str(config['OEREB_WORK']['database']),
         'OEREB_USERNAME': str(config['OEREB_WORK']['username']),
         'OEREB_PASSWORD': str(config['OEREB_WORK']['password']),
-        'EXCEL_DARSTELLUNGSDIENST': str(excel_file_darstellungsdienst),
-        'EXCEL_AMT': str(excel_file_amt),
-        'BFSNR': str(config['LIEFEREINHEIT']['bfsnr']),
+        'OEREB2_DATABASE': str(config['OEREB2_WORK']['database']),
+        'OEREB2_USERNAME': str(config['OEREB2_WORK']['username']),
+        'OEREB2_PASSWORD': str(config['OEREB2_WORK']['password']),
         'LIEFEREINHEIT': str(config['LIEFEREINHEIT']['id']),
         'LOGFILE': str(fme_logfile)
     }
