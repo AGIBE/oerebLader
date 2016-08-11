@@ -29,23 +29,25 @@ def init_logging(config):
     
     return logger
 
-def execute_procedure(connection_string, proc):
+def refresh_stats(connection_string, ownername):
     with cx_Oracle.connect(connection_string) as conn:
         cur = conn.cursor()
-        cur.callproc()
+        cur.callproc(name="dbms_stats.gather_schema_stats", keywordParameters={'options': 'GATHER AUTO', 'ownname': ownername})
 
 def run_refresh_statistics():
     config = oerebLader.helpers.config.get_config()
     logger = init_logging(config)
     
     logger.info("Statistiken des ÖREB-Schemas in VEK2 werden aktualisiert.")
-    with cx_Oracle.connect(config['OEREB_VEK2']['connection_string']) as conn:
-        cur = conn.cursor()
-        cur.callproc(name="dbms_stats.gather_schema_stats", keywordParameters={'options': 'GATHER AUTO', 'ownname':'oereb'})
+    refresh_stats(config['OEREB_VEK2']['connection_string'], config['OEREB_VEK2']['username'])
+
+    logger.info("Statistiken des ÖREB2-Schemas in VEK2 werden aktualisiert.")
+    refresh_stats(config['OEREB2_VEK2']['connection_string'], config['OEREB2_VEK2']['username'])
 
     logger.info("Statistiken des ÖREB-Schemas in VEK1 werden aktualisiert.")
-    with cx_Oracle.connect(config['OEREB_VEK1']['connection_string']) as conn:
-        cur = conn.cursor()
-        cur.callproc(name="dbms_stats.gather_schema_stats", keywordParameters={'options': 'GATHER AUTO', 'ownname':'oereb'})
+    refresh_stats(config['OEREB_VEK1']['connection_string'], config['OEREB_VEK1']['username'])
+
+    logger.info("Statistiken des ÖREB2-Schemas in VEK1 werden aktualisiert.")
+    refresh_stats(config['OEREB2_VEK1']['connection_string'], config['OEREB2_VEK1']['username'])
     
     logger.info("Statistiken wurden aktualisiert.")
