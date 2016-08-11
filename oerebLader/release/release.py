@@ -61,10 +61,22 @@ def run_release(dailyMode):
         logger.info("ID: " + unicode(ticket[0]) + "/ Liefereinheit: " + unicode(ticket[1]) + " / GPRCODE: " + ticket[4])
         liefereinheiten.append(unicode(ticket[1]))
         #TODO: im Fall NPL noch UZP und OEREBSTA einbauen
-        gpr_sql = "SELECT EBECODE, FILTER_FIELD, FILTER_TYPE FROM GPR WHERE GPRCODE='" + ticket[4] + "'"
+        #TODO: Rückbau auf nur noch je ein GPR
+        gprcode = ticket[4]
+        if gprcode == 'NPL':
+            gpr_where_clause = "GPRCODE IN ('NPL', 'NUPLA')"
+        elif gprcode == 'NPLWALD':
+            gpr_where_clause = "GPRCODE IN ('NPLWALD', 'NUPLWALD')"
+        elif gprcode == 'NPLKUEO':
+            gpr_where_clause = "GPRCODE IN ('NPLKUEO', 'NUPLKUEO')"
+        elif gprcode == 'NPLKSTRA':
+            gpr_where_clause = "GPRCODE IN ('NPLKSTRA', 'NUPLKAST')"
+        else:
+            gpr_where_clause = "GPRCODE='" + gprcode + "'"
+        gpr_sql = "SELECT EBECODE, FILTER_FIELD, FILTER_TYPE FROM GPR WHERE " + gpr_where_clause
         ebenen = oerebLader.helpers.sql_helper.readSQL(config['OEREB_WORK']['connection_string'], gpr_sql)
         for ebene in ebenen:
-            ebene_name = ticket[4] + "_" + ebene[0]
+            ebene_name = gprcode + "_" + ebene[0]
             source = os.path.join(config['GEODB_WORK']['connection_file'], config['GEODB_WORK']['username'] + "." + ebene_name)
             source_layer = ebene_name + "_" + unicode(ticket[3])
             target = os.path.join(config['NORM_TEAM']['connection_file'], config['NORM_TEAM']['username'] + "." + ebene_name)
