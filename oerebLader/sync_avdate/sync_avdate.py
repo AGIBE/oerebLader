@@ -42,16 +42,32 @@ def run_sync_avdate():
         sys.exit()
     else:
         # Datum muss umformatiert werden. Die Verschnittfunktion
-        # erwartet YYYY,MM,DD
+        # erwartet YYYY,MM,DD bei OEVParcelAvEffectiveDate
         avdate_formatted = result[0][0].strftime("%Y,%m,%d")
         logger.info(avdate_formatted)
-        sql_oerebapp = "update APPCONFIGURATION set ACO_VALUE='" + avdate_formatted + "' where ACO_KEY='OEVParcelAvEffectiveDate'"
-        logger.info(sql_oerebapp)
+        sql_avdate = "update APPCONFIGURATION set ACO_VALUE='" + avdate_formatted + "' where ACO_KEY='OEVParcelAvEffectiveDate'"
+        logger.info(sql_avdate)
+
+        # bei BaseData muss anders formatiert und im vorgegebenen
+        # Text (aus Config) ersetzt werden.
+        basedate_formatted = result[0][0].strftime("%d.%m.%Y")
+        basedata_text_de = config['GENERAL']['basedata_template_de'].replace("$$$", basedate_formatted)
+        basedata_text_fr = config['GENERAL']['basedata_template_fr'].replace("$$$", basedate_formatted)
+        logger.info(basedate_formatted)
+        sql_basedata_de = "update APPCONFIGURATION set ACO_VALUE='" + basedata_text_de + "' where ACO_KEY='OEVGlobalBaseDataDe'"
+        sql_basedata_fr = "update APPCONFIGURATION set ACO_VALUE='" + basedata_text_fr + "' where ACO_KEY='OEVGlobalBaseDataFr'"
+        logger.info(sql_basedata_de)
+        logger.info(sql_basedata_fr)
+
         try:
             logger.info("Aktualisiere Verschnittfunktion public.")
-            oerebLader.helpers.sql_helper.writeSQL(config['OEREBAPP']['connection_string'], sql_oerebapp)
+            oerebLader.helpers.sql_helper.writeSQL(config['OEREBAPP']['connection_string'], sql_avdate)
             logger.info("Aktualisiere Verschnittfunktion CUG.")
-            oerebLader.helpers.sql_helper.writeSQL(config['OEREBCUGAPP']['connection_string'], sql_oerebapp)
+            oerebLader.helpers.sql_helper.writeSQL(config['OEREBCUGAPP']['connection_string'], sql_avdate)
+            logger.info("Aktualisiere Verschnittfunktion public 2.")
+            oerebLader.helpers.sql_helper.writeSQL(config['OEREB2APP']['connection_string'], sql_avdate)
+            oerebLader.helpers.sql_helper.writeSQL(config['OEREB2APP']['connection_string'], sql_basedata_de)
+            oerebLader.helpers.sql_helper.writeSQL(config['OEREB2APP']['connection_string'], sql_basedata_fr)
         except Exception as ex:
             logger.error("Fehler beim Updaten des AV-Datums!")
             logger.error(unicode(ex))
