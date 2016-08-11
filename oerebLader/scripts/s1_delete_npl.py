@@ -3,55 +3,22 @@ from __future__ import absolute_import, division, print_function, unicode_litera
 import logging
 import os
 import cx_Oracle
+import oerebLader.helpers.sql_helper
 
 logger = logging.getLogger('oerebLaderLogger')
 
 def run(config):
     logger.info("Script " +  os.path.basename(__file__) + " wird ausgeführt.")
     bfsnr = config['LIEFEREINHEIT']['bfsnr']
-    schema = 'GEODB'
-    #TODO: Tabellennamen aus Tabelle GPR auslesen
-    tables = [
-                'NPL_ABGRENZ',
-                'NPL_GEFF',
-                'NPL_GNBAUW',
-                'NPL_GNGU',
-                'NPL_GNGZ',
-                'NPL_GNNUTZZO',
-                'NPL_NHSF',
-                'NPL_NHSL',
-                'NPL_NHSP',
-                'NPL_RVT',
-                'NPL_RVT_VORSORT',
-                'NPL_UELAERM',
-                'NPL_UEPROJ',
-                'NPL_UEUL',
-                'NPL_UEUZ',
-                'NPL_UEWAAB',
-                'NPL_VEFE',
-                'NPL_WAABPER',
-                'NPL_WEWRF',
-                'NPL_WEWRL',
-                'NPL_GEGEWF',
-                'NPL_GEGEWL',
-                'NUPLA_AMTT',
-                'NUPLA_GNGRUZO',
-                'NUPLA_GNZPPUEO',
-                'NUPLA_RVST',
-                'NUPLA_UEFL',
-                'NUPLA_UELARMES',
-                'NUPLA_UELN',
-                'NUPLA_UEPT',
-                'NUPLA_UEWAABL'
-             ]
-    
-    with cx_Oracle.connect(config['GEODB_WORK']['connection_string']) as conn:
-        cursor = conn.cursor()
-        for table in tables:
-            tablename = schema + "." + table
-            logger.info("Lösche aus Tabelle " + tablename)
-            sql = "DELETE FROM %s WHERE BFSNR=%s" % (tablename, bfsnr)
-            logger.info(sql)
-            cursor.execute(sql)
+    #TODO: Rückbau auf nur noch ein Geoprodukt
+    npl_sql = "SELECT EBECODE, FILTER_FIELD, FILTER_TYPE, GPRCODE FROM GPR WHERE GPRCODE IN ('NPL', 'NUPLA')"
+    npl_ebenen = oerebLader.helpers.sql_helper.readSQL(config['OEREB_WORK']['connection_string'], npl_sql)
+    for npl_ebene in npl_ebenen:
+        npl_table = npl_ebene[3] + "_" + npl_ebene[0]
+        npl_bfsnr_field = npl_ebene[1]
+        npl_delete_sql = "DELETE FROM %s WHERE %s = %s" % (npl_table, npl_bfsnr_field, bfsnr)
+        logger.info("Lösche aus " + npl_table)
+        logger.info(npl_delete_sql)
+        oerebLader.helpers.sql_helper.writeSQL(config['GEODB_WORK']['connection_string'], npl_delete_sql)
         
     logger.info("Script " +  os.path.basename(__file__) + " ist beendet.")
