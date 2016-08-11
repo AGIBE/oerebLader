@@ -2,7 +2,6 @@
 from __future__ import absolute_import, division, print_function, unicode_literals
 import logging
 import os
-import cx_Oracle
 import oerebLader.helpers.sql_helper
 
 logger = logging.getLogger('oerebLaderLogger')
