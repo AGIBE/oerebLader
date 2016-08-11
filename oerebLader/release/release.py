@@ -73,10 +73,10 @@ def run_release(dailyMode):
             gpr_where_clause = "GPRCODE IN ('NPLKSTRA', 'NUPLKAST')"
         else:
             gpr_where_clause = "GPRCODE='" + gprcode + "'"
-        gpr_sql = "SELECT EBECODE, FILTER_FIELD, FILTER_TYPE FROM GPR WHERE " + gpr_where_clause
+        gpr_sql = "SELECT EBECODE, FILTER_FIELD, FILTER_TYPE, GPRCODE FROM GPR WHERE " + gpr_where_clause
         ebenen = oerebLader.helpers.sql_helper.readSQL(config['OEREB_WORK']['connection_string'], gpr_sql)
         for ebene in ebenen:
-            ebene_name = gprcode + "_" + ebene[0]
+            ebene_name = ebene[3] + "_" + ebene[0]
             source = os.path.join(config['GEODB_WORK']['connection_file'], config['GEODB_WORK']['username'] + "." + ebene_name)
             source_layer = ebene_name + "_" + unicode(ticket[3])
             target = os.path.join(config['NORM_TEAM']['connection_file'], config['NORM_TEAM']['username'] + "." + ebene_name)
