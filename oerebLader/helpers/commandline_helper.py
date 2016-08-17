@@ -9,7 +9,6 @@ import oerebLader.refresh_verschnitt.refresh_verschnitt
 import oerebLader.refresh_statistics.refresh_statistics
 import oerebLader.sync_avdate.sync_avdate
 import oerebLader.create_qaspecs.create_qaspecs
-import oerebLader.create_legend.create_legend
 
 def import_ticket(args):
     oerebLader.workflows.workflow.run_workflow(args.TICKET)
@@ -56,10 +55,6 @@ def create_qaspecs(args):
     oerebLader.create_qaspecs.create_qaspecs.run_create_qaspecs()
     print("Create_qaspces SUCCESSFUL!")
     
-def create_legend(args):
-    oerebLader.create_legend.create_legend.run_create_legend(bfsnr=args.BFSNR)
-    print("Create_legend SUCCESSFUL!")
-
 def main():
     version_text = "oerebLader v" + __version__
     parser = argparse.ArgumentParser(description="Kommandozeile fuer den oerebLader. Importiert Tickets und zeigt offene Tickets an.", prog="oerebLader.exe", version=version_text)
@@ -101,11 +96,6 @@ def main():
     # CREATE_QASPECS-Befehl
     create_qaspecs_parser = subparsers.add_parser("create_qaspecs", help="Erstellt pro Liefereinheit ein QA-Spezifikations-XML.")
     create_qaspecs_parser.set_defaults(func=create_qaspecs)
-    
-    # CREATE_LEGEND-Befehl
-    create_legend_parser = subparsers.add_parser("create_legend", help="Erstellt für die gewählte Gemeinde eine Legende.")
-    create_legend_parser.add_argument("BFSNR", type=int, help="Gemeinde für die die Legende erstellt wird.")
-    create_legend_parser.set_defaults(func=create_legend)
     
     args = parser.parse_args()
     args.func(args)
