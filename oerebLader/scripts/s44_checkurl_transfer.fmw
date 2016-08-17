@@ -6,16 +6,19 @@
 #    
 #    
 #    "C:\Program Files (x86)\FME\fme.exe" D:\Daten\repos\oerebLader\oerebLader\scripts\s44_checkurl_transfer.fmw
-#          --DATABASE ""
-#          --USERNAME ""
-#          --PASSWORD ********
+#          --OEREB_DATABASE ""
+#          --OEREB_USERNAME ""
+#          --OEREB_PASSWORD ********
 #          --LIEFEREINHEIT ""
 #          --LOGFILE ""
+#          --OEREB2_DATABASE ""
+#          --OEREB2_USERNAME ""
+#          --OEREB2_PASSWORD ""
 #    
 #    
 #! PASSWORD=""
 #! ATTR_TYPE_ENCODING="SDF"
-#! VIEW_POSITION="9 418"
+#! VIEW_POSITION="-41 682"
 #! SHOW_INFO_NODES="true"
 #! FME_STROKE_MAX_DEVIATION="0"
 #! BEGIN_PYTHON="#&lt;space&gt;-*-&lt;space&gt;coding:&lt;space&gt;latin-1&lt;space&gt;-*-&lt;lf&gt;import&lt;space&gt;fmeobjects&lt;lf&gt;&lt;lf&gt;def&lt;space&gt;processMultilangFields&lt;openparen&gt;feature&lt;closeparen&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;multilangFields&lt;space&gt;=&lt;space&gt;feature.getAttribute&lt;openparen&gt;&lt;apos&gt;multilangfields&lt;apos&gt;&lt;closeparen&gt;.split&lt;openparen&gt;&lt;quote&gt;&lt;comma&gt;&lt;quote&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;for&lt;space&gt;mlField&lt;space&gt;in&lt;space&gt;multilangFields:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;content_de&lt;space&gt;=&lt;space&gt;&lt;quote&gt;&lt;quote&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;content_fr&lt;space&gt;=&lt;space&gt;&lt;quote&gt;&lt;quote&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;att_Language_list&lt;space&gt;=&lt;space&gt;feature.getAttribute&lt;openparen&gt;mlField&lt;space&gt;+&lt;space&gt;&lt;apos&gt;&lt;opencurly&gt;0&lt;closecurly&gt;.localizedText&lt;opencurly&gt;&lt;closecurly&gt;.Language&lt;apos&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;att_Text_list&lt;space&gt;=&lt;space&gt;feature.getAttribute&lt;openparen&gt;mlField&lt;space&gt;+&lt;space&gt;&lt;apos&gt;&lt;opencurly&gt;0&lt;closecurly&gt;.localizedText&lt;opencurly&gt;&lt;closecurly&gt;.Text&lt;apos&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;#&lt;space&gt;wenn&lt;space&gt;das&lt;space&gt;Multilang-Feld&lt;space&gt;nicht&lt;space&gt;abgef&lt;u00fc&gt;llt&lt;space&gt;ist&lt;comma&gt;&lt;space&gt;soll&lt;space&gt;es&lt;space&gt;nicht&lt;space&gt;bearbeitet&lt;space&gt;werden&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;if&lt;space&gt;att_Language_list&lt;space&gt;is&lt;space&gt;not&lt;space&gt;None:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;for&lt;space&gt;i&lt;space&gt;in&lt;space&gt;range&lt;openparen&gt;len&lt;openparen&gt;att_Language_list&lt;closeparen&gt;&lt;closeparen&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;if&lt;space&gt;att_Language_list&lt;openbracket&gt;i&lt;closebracket&gt;==&lt;quote&gt;de&lt;quote&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;content_de&lt;space&gt;=&lt;space&gt;att_Text_list&lt;openbracket&gt;i&lt;closebracket&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;if&lt;space&gt;att_Language_list&lt;openbracket&gt;i&lt;closebracket&gt;==&lt;quote&gt;fr&lt;quote&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;content_fr&lt;space&gt;=&lt;space&gt;att_Text_list&lt;openbracket&gt;i&lt;closebracket&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;if&lt;space&gt;att_Language_list&lt;openbracket&gt;i&lt;closebracket&gt;==&lt;quote&gt;it&lt;quote&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;content_de&lt;space&gt;=&lt;space&gt;att_Text_list&lt;openbracket&gt;i&lt;closebracket&gt;&lt;lf&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;#&lt;space&gt;Wenn&lt;space&gt;der&lt;space&gt;Text&lt;space&gt;nur&lt;space&gt;in&lt;space&gt;einer&lt;space&gt;Sprache&lt;space&gt;vorhanden&lt;space&gt;ist&lt;comma&gt;&lt;space&gt;wird&lt;space&gt;er&lt;space&gt;auch&lt;space&gt;f&lt;u00fc&gt;r&lt;space&gt;die&lt;space&gt;andere&lt;space&gt;Sprache&lt;space&gt;verwendet&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;if&lt;space&gt;content_de&lt;space&gt;==&lt;space&gt;&lt;quote&gt;&lt;quote&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;content_de&lt;space&gt;=&lt;space&gt;content_fr&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;if&lt;space&gt;content_fr&lt;space&gt;==&lt;space&gt;&lt;quote&gt;&lt;quote&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;content_fr&lt;space&gt;=&lt;space&gt;content_de&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;feature.setAttribute&lt;openparen&gt;mlField&lt;space&gt;+&lt;space&gt;&lt;quote&gt;_DE&lt;quote&gt;&lt;comma&gt;&lt;space&gt;content_de&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;feature.setAttribute&lt;openparen&gt;mlField&lt;space&gt;+&lt;space&gt;&lt;quote&gt;_FR&lt;quote&gt;&lt;comma&gt;&lt;space&gt;content_fr&lt;closeparen&gt;&lt;space&gt;"
@@ -33,13 +36,13 @@
 #! USAGE=""
 #! END_PYTHON=""
 #! HISTORY=""
-#! FME_DOCUMENT_PRIORGUID="081ee97d-038f-4e04-84da-72c381365512,8ed992b9-6214-4d51-b25b-9fbebd3a409d,5449b6bd-a67b-43e4-9871-9ea68d746d6a,1fee7f9a-6c75-4479-beb4-221fd178f0f1,76ddd879-d905-463f-ae33-fae2719865dc"
-#! DOC_TOP_LEFT="147 -1518"
+#! FME_DOCUMENT_PRIORGUID="081ee97d-038f-4e04-84da-72c381365512,8ed992b9-6214-4d51-b25b-9fbebd3a409d,5449b6bd-a67b-43e4-9871-9ea68d746d6a,1fee7f9a-6c75-4479-beb4-221fd178f0f1,76ddd879-d905-463f-ae33-fae2719865dc,25772c2b-b9e2-452a-be67-9808f9de98cf,6cc0726f-fd24-49cd-a952-cab15d95c363"
+#! DOC_TOP_LEFT="86 -789"
 #! REQUIREMENTS_KEYWORD=""
 #! SOURCE_ROUTING_FILE=""
 #! DESTINATION_ROUTING_FILE=""
 #! DESTINATION="NONE"
-#! LAST_SAVE_DATE="2016-04-25T11:21:16"
+#! LAST_SAVE_DATE="2016-08-17T14:05:51"
 #! FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Datum"
 #! WORKSPACE_VERSION="1"
 #! SOURCE="NONE"
@@ -49,8 +52,8 @@
 #! LOG_FILE="$(LOGFILE)"
 #! REQUIREMENTS=""
 #! BEGIN_TCL=""
-#! DOC_EXTENTS="4402 1529"
-#! FME_DOCUMENT_GUID="25772c2b-b9e2-452a-be67-9808f9de98cf"
+#! DOC_EXTENTS="3673 1393"
+#! FME_DOCUMENT_GUID="9f82967a-5f02-405b-9e55-1d0d2ce02c00"
 #! SHOW_ANNOTATIONS="true"
 #! IGNORE_READER_FAILURE="No"
 #! WARN_INVALID_XFORM_PARAM="Yes"
@@ -60,7 +63,7 @@
 #! IS_SOURCE="true"
 #! ROLE="READER"
 #! FORMAT="ORACLE8I_DB"
-#! DATASET="$(DATABASE)"
+#! DATASET="$(OEREB_DATABASE)"
 #! KEYWORD="ORACLE8I_DB_1"
 #! MULTI_GEOM_ALLOWED="false"
 #! ATTR_MAX_LENGTH="60"
@@ -71,7 +74,7 @@
 #! DEFLINE_ATTRS="true"
 #! EXPOSABLE_ATTRS="fme_text_size float fme_rotation float fme_feature_type char(50) multi_reader_keyword char(50) multi_reader_id integer fme_dataset char(50) multi_reader_full_id integer fme_geometry fme_char(50) multi_reader_type char(50) fme_fill_color char(50) fme_where char(254) fme_basename char(50) fme_text_string char(50) fme_secondary_axis float fme_primary_axis float fme_sweep_angle float fme_start_angle float fme_type char(50) fme_db_operation char(8) oracle_type char(50) fme_color char(50)"
 #! DEFLINE_PARMS="&quot;GUI OPTIONAL WHOLE_LINE TEXT_EDIT_SQL oracle_sql_encoded SQL SELECT Statement&quot; &quot;&quot; &quot;GUI OPTIONAL WHOLE_LINE TEXT_EDIT_SQL oracle_where_clause_encoded SQL WHERE Clause&quot; &quot;&quot; "
-#! ATTR_INDEX_TYPES=""
+#! ATTR_INDEX_TYPES="BTree Bitmap PrimaryKey Unique"
 #! ATTR_NAME_INVALID_CHARS=""
 #! SUPPORTS_FEATURE_TYPE_FANOUT="true"
 #! ENABLED="true"
@@ -84,6 +87,47 @@
 #! FEATURE_TYPES=""
 #! START_FEATURE=""
 #! >
+#! <METAFILE_PARAMETER
+#! NAME="ADVANCED_PARMS"
+#! VALUE="ORACLE8I_DB_IN_CHUNK_SIZE ORACLE8I_DB_OUT_START_TRANSACTION ORACLE8I_DB_OUT_CHUNK_SIZE ORACLE8I_DB_OUT_TRANSACTION_INTERVAL _ORACLE8I_DB_IN_BEGIN_SQL _ORACLE8I_DB_IN_END_SQL ORACLE8I_DB_OUT_BEGIN_SQL ORACLE8I_DB_OUT_END_SQL ORACLE8I_DB_IN_WHERE_CLAUSE ORACLE8I_DB_IN_PERSISTENT_CONNECTION ORACLE8I_DB_OUT_PERSISTENT_CONNECTION ORACLE8I_DB_IN_REMOVE_SCHEMA_QUALIFIER _STRICT_ATTR_CONVERSION"
+#! />
+#! </DATASET>
+#! <DATASET
+#! IS_SOURCE="true"
+#! ROLE="READER"
+#! FORMAT="ORACLE8I_DB"
+#! DATASET="$(OEREB2_DATABASE)"
+#! KEYWORD="ORACLE8I_DB_2"
+#! MULTI_GEOM_ALLOWED="false"
+#! ATTR_MAX_LENGTH="60"
+#! ATTR_CASE="ANY"
+#! ALLOWED_FEAT_TYPES=""
+#! WRITE_DEFS="true"
+#! DEFLINE_TEMPLATE="oracle_sql_encoded &quot;&quot; oracle_where_clause_encoded &quot;&quot;"
+#! DEFLINE_ATTRS="true"
+#! EXPOSABLE_ATTRS="fme_text_size float fme_rotation float fme_feature_type char(50) multi_reader_keyword char(50) multi_reader_id integer fme_dataset char(50) multi_reader_full_id integer fme_geometry fme_char(50) multi_reader_type char(50) fme_fill_color char(50) fme_where char(254) fme_basename char(50) fme_text_string char(50) fme_secondary_axis float fme_primary_axis float fme_sweep_angle float fme_start_angle float fme_type char(50) fme_db_operation char(8) oracle_type char(50) fme_color char(50)"
+#! DEFLINE_PARMS="&quot;GUI OPTIONAL WHOLE_LINE TEXT_EDIT_SQL oracle_sql_encoded SQL SELECT Statement&quot; &quot;&quot; &quot;GUI OPTIONAL WHOLE_LINE TEXT_EDIT_SQL oracle_where_clause_encoded SQL WHERE Clause&quot; &quot;&quot; "
+#! ATTR_INDEX_TYPES="BTree Bitmap PrimaryKey Unique"
+#! ATTR_NAME_INVALID_CHARS=""
+#! SUPPORTS_FEATURE_TYPE_FANOUT="true"
+#! ENABLED="true"
+#! DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
+#! GENERATE_FME_BUILD_NUM="14433"
+#! NAME="OEREB2_WORK"
+#! MAX_FEATURES=""
+#! COORDSYS=""
+#! MIN_FEATURES=""
+#! FEATURE_TYPES=""
+#! START_FEATURE=""
+#! >
+#! <METAFILE_PARAMETER
+#! NAME="NETWORK_PROXY"
+#! VALUE="NO"
+#! />
+#! <METAFILE_PARAMETER
+#! NAME="NETWORK_AUTHENTICATION"
+#! VALUE="NO"
+#! />
 #! <METAFILE_PARAMETER
 #! NAME="ADVANCED_PARMS"
 #! VALUE="ORACLE8I_DB_IN_CHUNK_SIZE ORACLE8I_DB_OUT_START_TRANSACTION ORACLE8I_DB_OUT_CHUNK_SIZE ORACLE8I_DB_OUT_TRANSACTION_INTERVAL _ORACLE8I_DB_IN_BEGIN_SQL _ORACLE8I_DB_IN_END_SQL ORACLE8I_DB_OUT_BEGIN_SQL ORACLE8I_DB_OUT_END_SQL ORACLE8I_DB_IN_WHERE_CLAUSE ORACLE8I_DB_IN_PERSISTENT_CONNECTION ORACLE8I_DB_OUT_PERSISTENT_CONNECTION ORACLE8I_DB_IN_REMOVE_SCHEMA_QUALIFIER _STRICT_ATTR_CONVERSION"
@@ -245,6 +289,12 @@
 #! IS_SOURCE="true"
 #! FORMAT_TYPE="number(20,0)"
 #! FME_TYPE="fme_uint64"
+#! FORMAT="ORACLE8I_DB"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="xmltype"
+#! FME_TYPE="fme_buffer"
 #! FORMAT="ORACLE8I_DB"
 #! />
 #! </DATA_TYPES>
@@ -421,39 +471,11 @@
 #! <FEATURE_TYPES>
 #! <FEATURE_TYPE
 #! IS_SOURCE="true"
-#! NODE_NAME="OEREB.DARSTELLUNGSDIENST"
-#! IS_EDITABLE="true"
-#! IDENTIFIER="19"
-#! FEAT_GEOMTYPE="oracle_nil"
-#! POSITION="148 -945"
-#! ORDER="25"
-#! COLLAPSED="true"
-#! KEYWORD="ORACLE8I_DB_1"
-#! ENABLED="true"
-#! HIDDEN_USER_ATTRS=""
-#! MERGE="false"
-#! MERGE_FILTER=""
-#! MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
-#! MERGE_FILTER_CASE_SENSITIVE="false"
-#! DYNAMIC_SCHEMA="false"
-#! >
-#! <FEAT_ATTRIBUTE ATTR_NAME="DAR_OID" ATTR_TYPE="nvarchar(128)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#! <FEAT_ATTRIBUTE ATTR_NAME="DAR_XTF_ID" ATTR_TYPE="nvarchar(128)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#! <FEAT_ATTRIBUTE ATTR_NAME="DAR_VERWEISWMS_DE" ATTR_TYPE="nvarchar(1023)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#! <FEAT_ATTRIBUTE ATTR_NAME="DAR_VERWEISWMS_FR" ATTR_TYPE="nvarchar(1023)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#! <FEAT_ATTRIBUTE ATTR_NAME="DAR_LEGENDEIMWEB_DE" ATTR_TYPE="nvarchar(1023)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#! <FEAT_ATTRIBUTE ATTR_NAME="DAR_LEGENDEIMWEB_FR" ATTR_TYPE="nvarchar(1023)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#! <FEAT_ATTRIBUTE ATTR_NAME="DAR_LIEFEREINHEIT" ATTR_TYPE="number(6,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#! <DEFLINE_PARM PARM_NAME="oracle_sql_encoded" PARM_VALUE=""/>
-#! <DEFLINE_PARM PARM_NAME="oracle_where_clause_encoded" PARM_VALUE="DAR_LIEFEREINHEIT=$(LIEFEREINHEIT)"/>
-#! </FEATURE_TYPE>
-#! <FEATURE_TYPE
-#! IS_SOURCE="true"
 #! NODE_NAME="OEREB.VORSCHRIFT"
 #! IS_EDITABLE="false"
 #! IDENTIFIER="176"
 #! FEAT_GEOMTYPE="oracle_nil"
-#! POSITION="147 -233"
+#! POSITION="105 459"
 #! ORDER="5e+014"
 #! COLLAPSED="true"
 #! KEYWORD="ORACLE8I_DB_1"
@@ -487,22 +509,99 @@
 #! <DEFLINE_PARM PARM_NAME="oracle_sql_encoded" PARM_VALUE=""/>
 #! <DEFLINE_PARM PARM_NAME="oracle_where_clause_encoded" PARM_VALUE="VOR_LIEFEREINHEIT=$(LIEFEREINHEIT)&lt;space&gt;AND&lt;space&gt;VOA_ID=1&lt;space&gt;AND&lt;space&gt;VOR_TEXTIMWEB_DE&lt;space&gt;is&lt;space&gt;not&lt;space&gt;null"/>
 #! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#! IS_SOURCE="true"
+#! NODE_NAME="OEREB2.VORSCHRIFT"
+#! IS_EDITABLE="false"
+#! IDENTIFIER="22"
+#! FEAT_GEOMTYPE="oracle_nil"
+#! POSITION="109 149"
+#! ORDER="5e+014"
+#! COLLAPSED="true"
+#! KEYWORD="ORACLE8I_DB_2"
+#! ENABLED="true"
+#! HIDDEN_USER_ATTRS=""
+#! MERGE="false"
+#! MERGE_FILTER=""
+#! MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
+#! MERGE_FILTER_CASE_SENSITIVE="false"
+#! DYNAMIC_SCHEMA="false"
+#! >
+#! <FEAT_ATTRIBUTE ATTR_NAME="VOR_OID" ATTR_TYPE="nvarchar(128)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="VOR_XTF_ID" ATTR_TYPE="nvarchar(128)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="VOR_TEXTIMWEB_DE" ATTR_TYPE="nvarchar(1023)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="VOR_TEXTIMWEB_FR" ATTR_TYPE="nvarchar(1023)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="VOR_PUBLIZIERTAB" ATTR_TYPE="date" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="VOR_TITEL_DE" ATTR_TYPE="nvarchar(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="VOR_TITEL_FR" ATTR_TYPE="nvarchar(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="VOR_OFFIZIELLERTITEL_DE" ATTR_TYPE="nvarchar(255)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="VOR_OFFIZIELLERTITEL_FR" ATTR_TYPE="nvarchar(255)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="VOR_ABKUERZUNG_DE" ATTR_TYPE="nvarchar(255)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="VOR_ABKUERZUNG_FR" ATTR_TYPE="nvarchar(255)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="VOR_OFFIZIELLENR" ATTR_TYPE="nvarchar(20)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="VOR_KANTON" ATTR_TYPE="nvarchar(2)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="VOR_LIEFEREINHEIT" ATTR_TYPE="number(6,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="RES_ID" ATTR_TYPE="number(10,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="BFS_NR" ATTR_TYPE="number(5,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="VOA_ID" ATTR_TYPE="number(10,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="AMT_OID" ATTR_TYPE="nvarchar(128)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="DOKUMENT" ATTR_TYPE="blob" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="VOR_SORT" ATTR_TYPE="number(10,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <DEFLINE_PARM PARM_NAME="oracle_sql_encoded" PARM_VALUE=""/>
+#! <DEFLINE_PARM PARM_NAME="oracle_where_clause_encoded" PARM_VALUE="VOR_LIEFEREINHEIT=$(LIEFEREINHEIT)&lt;space&gt;AND&lt;space&gt;VOA_ID=1&lt;space&gt;AND&lt;space&gt;VOR_TEXTIMWEB_DE&lt;space&gt;is&lt;space&gt;not&lt;space&gt;null"/>
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#! IS_SOURCE="true"
+#! NODE_NAME="OEREB2.EIGENTUMSBESCHRAENKUNG"
+#! IS_EDITABLE="false"
+#! IDENTIFIER="23"
+#! FEAT_GEOMTYPE="oracle_nil"
+#! POSITION="115 -400"
+#! ORDER="5e+014"
+#! COLLAPSED="true"
+#! KEYWORD="ORACLE8I_DB_2"
+#! ENABLED="true"
+#! HIDDEN_USER_ATTRS=""
+#! MERGE="false"
+#! MERGE_FILTER=""
+#! MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
+#! MERGE_FILTER_CASE_SENSITIVE="false"
+#! DYNAMIC_SCHEMA="false"
+#! >
+#! <FEAT_ATTRIBUTE ATTR_NAME="EIB_OID" ATTR_TYPE="nvarchar(128)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="EIB_XTF_ID" ATTR_TYPE="nvarchar(128)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="EIB_AUSSAGE_DE" ATTR_TYPE="nclob" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="EIB_AUSSAGE_FR" ATTR_TYPE="nclob" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="EIB_ARTCODE" ATTR_TYPE="nvarchar(40)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="EIB_ARTCODELISTE" ATTR_TYPE="nvarchar(1023)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="EIB_PUBLIZIERTAB" ATTR_TYPE="date" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="EIB_LIEFEREINHEIT" ATTR_TYPE="number(6,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="AMT_OID" ATTR_TYPE="nvarchar(128)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="DAR_OID" ATTR_TYPE="nvarchar(128)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="RES_ID" ATTR_TYPE="number(10,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="STH_ID" ATTR_TYPE="number(10,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="EIB_SORT" ATTR_TYPE="number(10,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="EIB_LEGENDESYMBOL_DE" ATTR_TYPE="nvarchar(1023)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="EIB_LEGENDESYMBOL_FR" ATTR_TYPE="nvarchar(1023)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <DEFLINE_PARM PARM_NAME="oracle_sql_encoded" PARM_VALUE=""/>
+#! <DEFLINE_PARM PARM_NAME="oracle_where_clause_encoded" PARM_VALUE="EIB_LIEFEREINHEIT=$(LIEFEREINHEIT)&lt;space&gt;and&lt;space&gt;eib_legendesymbol_de&lt;space&gt;is&lt;space&gt;not&lt;space&gt;null"/>
+#! </FEATURE_TYPE>
 #! </FEATURE_TYPES>
 #! <FMESERVER>
 #! </FMESERVER>
 #! <GLOBAL_PARAMETERS>
 #! <GLOBAL_PARAMETER
-#! GUI_LINE="GUI TEXT_OR_ATTR DATABASE Database:"
+#! GUI_LINE="GUI TEXT_OR_ATTR OEREB_DATABASE Database:"
 #! DEFAULT_VALUE=""
 #! IS_STAND_ALONE="false"
 #! />
 #! <GLOBAL_PARAMETER
-#! GUI_LINE="GUI TEXT_OR_ATTR USERNAME Username:"
+#! GUI_LINE="GUI TEXT_OR_ATTR OEREB_USERNAME Username:"
 #! DEFAULT_VALUE=""
 #! IS_STAND_ALONE="false"
 #! />
 #! <GLOBAL_PARAMETER
-#! GUI_LINE="GUI PASSWORD_OR_ATTR PASSWORD Passwort:"
+#! GUI_LINE="GUI PASSWORD_OR_ATTR OEREB_PASSWORD Passwort:"
 #! DEFAULT_VALUE=""
 #! IS_STAND_ALONE="false"
 #! />
@@ -516,17 +615,32 @@
 #! DEFAULT_VALUE=""
 #! IS_STAND_ALONE="true"
 #! />
+#! <GLOBAL_PARAMETER
+#! GUI_LINE="GUI TEXT OEREB2_DATABASE OEREB2-Database:"
+#! DEFAULT_VALUE=""
+#! IS_STAND_ALONE="true"
+#! />
+#! <GLOBAL_PARAMETER
+#! GUI_LINE="GUI TEXT OEREB2_USERNAME OEREB2-Username:"
+#! DEFAULT_VALUE=""
+#! IS_STAND_ALONE="true"
+#! />
+#! <GLOBAL_PARAMETER
+#! GUI_LINE="GUI TEXT OEREB2_PASSWORD OEREB2-Passwort:"
+#! DEFAULT_VALUE=""
+#! IS_STAND_ALONE="true"
+#! />
 #! </GLOBAL_PARAMETERS>
 #! <COMMENTS>
 #! <COMMENT
 #! IDENTIFIER="2"
 #! COMMENT_VALUE="&lt;html&gt;&lt;body&gt;OEREB.VORSCHRIFT&lt;/body&gt;&lt;/html&gt;"
-#! POSITION="147 -133"
+#! POSITION="86 594"
 #! ORDER="14"
 #! FOLLOW_ANCHOR="true"
 #! INFO_NODE="false"
-#! TOP_LEFT="147 -133"
-#! BOTTOM_RIGHT="147 -133"
+#! TOP_LEFT="86 594"
+#! BOTTOM_RIGHT="86 594"
 #! COLOUR="1,1,0.784314,0.192157"
 #! SIZE_POLICY="8"
 #! COMMENT_TYPE="REGULAR"
@@ -535,12 +649,12 @@
 #! <COMMENT
 #! IDENTIFIER="9"
 #! COMMENT_VALUE="&lt;html&gt;&lt;body&gt;Deutsche URLs&lt;/body&gt;&lt;/html&gt;"
-#! POSITION="2215 -48"
+#! POSITION="1854 564"
 #! ORDER="17"
 #! FOLLOW_ANCHOR="true"
 #! INFO_NODE="false"
-#! TOP_LEFT="2215 -48"
-#! BOTTOM_RIGHT="2215 -48"
+#! TOP_LEFT="1854 564"
+#! BOTTOM_RIGHT="1854 564"
 #! COLOUR="1,1,0.784314,0.192157"
 #! SIZE_POLICY="8"
 #! COMMENT_TYPE="REGULAR"
@@ -549,72 +663,86 @@
 #! <COMMENT
 #! IDENTIFIER="12"
 #! COMMENT_VALUE="&lt;html&gt;&lt;body&gt;Französische URLs&lt;/body&gt;&lt;/html&gt;"
-#! POSITION="2977 11"
+#! POSITION="2459 521"
 #! ORDER="19"
 #! FOLLOW_ANCHOR="true"
 #! INFO_NODE="false"
-#! TOP_LEFT="2977 11"
-#! BOTTOM_RIGHT="2977 11"
+#! TOP_LEFT="2459 521"
+#! BOTTOM_RIGHT="2459 521"
 #! COLOUR="1,1,0.784314,0.192157"
 #! SIZE_POLICY="8"
 #! COMMENT_TYPE="REGULAR"
 #! ANCHORED_NODE="10"
 #! />
 #! <COMMENT
-#! IDENTIFIER="20"
-#! COMMENT_VALUE="&lt;html&gt;&lt;body&gt;OEREB.DARSTELLUNGSDIENST&lt;/body&gt;&lt;/html&gt;"
-#! POSITION="148 -845"
-#! ORDER="24"
+#! IDENTIFIER="46"
+#! COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:11px; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Umlaute in den URLs ersetzen&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#! POSITION="1168 604"
+#! ORDER="5e+014"
 #! FOLLOW_ANCHOR="true"
 #! INFO_NODE="false"
-#! TOP_LEFT="148 -845"
-#! BOTTOM_RIGHT="148 -845"
+#! TOP_LEFT="1168 604"
+#! BOTTOM_RIGHT="1168 604"
 #! COLOUR="1,1,0.784314,0.192157"
 #! SIZE_POLICY="8"
 #! COMMENT_TYPE="REGULAR"
-#! ANCHORED_NODE="19"
+#! ANCHORED_NODE="43"
 #! />
 #! <COMMENT
-#! IDENTIFIER="25"
-#! COMMENT_VALUE="&lt;html&gt;&lt;body&gt;Deutsche URLs&lt;/body&gt;&lt;/html&gt;"
-#! POSITION="1390 -829"
-#! ORDER="28"
+#! IDENTIFIER="24"
+#! COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:11px; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:11px;&quot;&gt;OEREB2.VORSCHRIFT&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#! POSITION="92 275"
+#! ORDER="5e+014"
 #! FOLLOW_ANCHOR="true"
 #! INFO_NODE="false"
-#! TOP_LEFT="1390 -829"
-#! BOTTOM_RIGHT="1390 -829"
-#! COLOUR="1,1,0.784314,0.192157"
+#! TOP_LEFT="92 275"
+#! BOTTOM_RIGHT="92 275"
+#! COLOUR="1,1,0.784314,0.196078"
+#! SIZE_POLICY="8"
+#! COMMENT_TYPE="REGULAR"
+#! ANCHORED_NODE="22"
+#! />
+#! <COMMENT
+#! IDENTIFIER="26"
+#! COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:11px; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:11px;&quot;&gt;OEREB2.EIGENTUMSBESCHRAENKUNG&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#! POSITION="98 -274"
+#! ORDER="5e+014"
+#! FOLLOW_ANCHOR="true"
+#! INFO_NODE="false"
+#! TOP_LEFT="98 -274"
+#! BOTTOM_RIGHT="98 -274"
+#! COLOUR="1,1,0.784314,0.196078"
 #! SIZE_POLICY="8"
 #! COMMENT_TYPE="REGULAR"
 #! ANCHORED_NODE="23"
 #! />
 #! <COMMENT
-#! IDENTIFIER="29"
-#! COMMENT_VALUE="&lt;html&gt;&lt;body&gt;Französische URLs&lt;/body&gt;&lt;/html&gt;"
-#! POSITION="2127 -814"
-#! ORDER="31"
-#! FOLLOW_ANCHOR="true"
-#! INFO_NODE="false"
-#! TOP_LEFT="2127 -814"
-#! BOTTOM_RIGHT="2127 -814"
-#! COLOUR="1,1,0.784314,0.192157"
-#! SIZE_POLICY="8"
-#! COMMENT_TYPE="REGULAR"
-#! ANCHORED_NODE="28"
-#! />
-#! <COMMENT
-#! IDENTIFIER="46"
-#! COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:11px; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Umlaute in den URLs ersetzen&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
-#! POSITION="1315 -47"
+#! IDENTIFIER="30"
+#! COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:11px; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Deutsche Legendenbilder&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#! POSITION="1460 -267"
 #! ORDER="5e+014"
 #! FOLLOW_ANCHOR="true"
 #! INFO_NODE="false"
-#! TOP_LEFT="1315 -47"
-#! BOTTOM_RIGHT="1315 -47"
-#! COLOUR="1,1,0.784314,0.192157"
+#! TOP_LEFT="1460 -267"
+#! BOTTOM_RIGHT="1460 -267"
+#! COLOUR="1,1,0.784314,0.196078"
 #! SIZE_POLICY="8"
 #! COMMENT_TYPE="REGULAR"
-#! ANCHORED_NODE="43"
+#! ANCHORED_NODE="29"
+#! />
+#! <COMMENT
+#! IDENTIFIER="32"
+#! COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:11px; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Französische Legendenbilder&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#! POSITION="2192 -305"
+#! ORDER="5e+014"
+#! FOLLOW_ANCHOR="true"
+#! INFO_NODE="false"
+#! TOP_LEFT="2192 -305"
+#! BOTTOM_RIGHT="2192 -305"
+#! COLOUR="1,1,0.784314,0.196078"
+#! SIZE_POLICY="8"
+#! COMMENT_TYPE="REGULAR"
+#! ANCHORED_NODE="31"
 #! />
 #! </COMMENTS>
 #! <CONSTANTS>
@@ -626,7 +754,7 @@
 #! IDENTIFIER="3"
 #! TYPE="AttributeRemover"
 #! VERSION="0"
-#! POSITION="679 -206"
+#! POSITION="682 454"
 #! ORDER="15"
 #! PARMS_EDITED="true"
 #! ENABLED="true"
@@ -637,6 +765,7 @@
 #! <XFORM_ATTR ATTR_NAME="VOR_XTF_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="VOR_TEXTIMWEB_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="VOR_TEXTIMWEB_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="VOR_SORT" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_PARM PARM_NAME="LIST_ATTRS" PARM_VALUE=""/>
 #! <XFORM_PARM PARM_NAME="REMOVE_ATTRS" PARM_VALUE="VOR_PUBLIZIERTAB,VOR_TITEL_DE,VOR_TITEL_FR,VOR_OFFIZIELLERTITEL_DE,VOR_OFFIZIELLERTITEL_FR,VOR_ABKUERZUNG_DE,VOR_ABKUERZUNG_FR,VOR_OFFIZIELLENR,VOR_KANTON,VOR_LIEFEREINHEIT,RES_ID,BFS_NR,VOA_ID,AMT_OID,DOKUMENT"/>
 #! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeRemover"/>
@@ -647,7 +776,7 @@
 #! IDENTIFIER="5"
 #! TYPE="HTTPHeader"
 #! VERSION="0"
-#! POSITION="2199 -199"
+#! POSITION="1838 413"
 #! ORDER="16"
 #! PARMS_EDITED="true"
 #! ENABLED="true"
@@ -658,6 +787,7 @@
 #! <XFORM_ATTR ATTR_NAME="VOR_XTF_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="VOR_TEXTIMWEB_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="VOR_TEXTIMWEB_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="VOR_SORT" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="_headers_de{}.name" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="_headers_de{}.value" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="_error_de" IS_USER_CREATED="false" FEAT_INDEX="0" />
@@ -668,6 +798,7 @@
 #! <XFORM_ATTR ATTR_NAME="VOR_XTF_ID" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #! <XFORM_ATTR ATTR_NAME="VOR_TEXTIMWEB_DE" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #! <XFORM_ATTR ATTR_NAME="VOR_TEXTIMWEB_FR" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="VOR_SORT" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #! <XFORM_ATTR ATTR_NAME="_headers_de{}.name" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #! <XFORM_ATTR ATTR_NAME="_headers_de{}.value" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #! <XFORM_ATTR ATTR_NAME="_error_de" IS_USER_CREATED="false" FEAT_INDEX="1" />
@@ -697,7 +828,7 @@
 #! IDENTIFIER="7"
 #! TYPE="Terminator"
 #! VERSION="2"
-#! POSITION="2972 -579"
+#! POSITION="2426 36"
 #! ORDER="20"
 #! PARMS_EDITED="true"
 #! ENABLED="true"
@@ -711,7 +842,7 @@
 #! IDENTIFIER="10"
 #! TYPE="HTTPHeader"
 #! VERSION="0"
-#! POSITION="2970 -126"
+#! POSITION="2452 384"
 #! ORDER="18"
 #! PARMS_EDITED="true"
 #! ENABLED="true"
@@ -722,6 +853,7 @@
 #! <XFORM_ATTR ATTR_NAME="VOR_XTF_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="VOR_TEXTIMWEB_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="VOR_TEXTIMWEB_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="VOR_SORT" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="_headers_de{}.name" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="_headers_de{}.value" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="_error_de" IS_USER_CREATED="false" FEAT_INDEX="0" />
@@ -736,6 +868,7 @@
 #! <XFORM_ATTR ATTR_NAME="VOR_XTF_ID" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #! <XFORM_ATTR ATTR_NAME="VOR_TEXTIMWEB_DE" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #! <XFORM_ATTR ATTR_NAME="VOR_TEXTIMWEB_FR" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="VOR_SORT" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #! <XFORM_ATTR ATTR_NAME="_headers_de{}.name" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #! <XFORM_ATTR ATTR_NAME="_headers_de{}.value" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #! <XFORM_ATTR ATTR_NAME="_error_de" IS_USER_CREATED="false" FEAT_INDEX="1" />
@@ -769,7 +902,7 @@
 #! IDENTIFIER="13"
 #! TYPE="Terminator"
 #! VERSION="2"
-#! POSITION="3652 -592"
+#! POSITION="3087 27"
 #! ORDER="21"
 #! PARMS_EDITED="true"
 #! ENABLED="true"
@@ -783,7 +916,7 @@
 #! IDENTIFIER="15"
 #! TYPE="Tester"
 #! VERSION="2"
-#! POSITION="3909 -116"
+#! POSITION="3066 381"
 #! ORDER="22"
 #! PARMS_EDITED="true"
 #! ENABLED="true"
@@ -794,6 +927,7 @@
 #! <XFORM_ATTR ATTR_NAME="VOR_XTF_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="VOR_TEXTIMWEB_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="VOR_TEXTIMWEB_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="VOR_SORT" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="_headers_de{}.name" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="_headers_de{}.value" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="_error_de" IS_USER_CREATED="false" FEAT_INDEX="0" />
@@ -808,6 +942,7 @@
 #! <XFORM_ATTR ATTR_NAME="VOR_XTF_ID" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #! <XFORM_ATTR ATTR_NAME="VOR_TEXTIMWEB_DE" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #! <XFORM_ATTR ATTR_NAME="VOR_TEXTIMWEB_FR" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="VOR_SORT" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #! <XFORM_ATTR ATTR_NAME="_headers_de{}.name" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #! <XFORM_ATTR ATTR_NAME="_headers_de{}.value" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #! <XFORM_ATTR ATTR_NAME="_error_de" IS_USER_CREATED="false" FEAT_INDEX="1" />
@@ -828,7 +963,7 @@
 #! IDENTIFIER="17"
 #! TYPE="Terminator"
 #! VERSION="2"
-#! POSITION="4549 -354"
+#! POSITION="3664 274"
 #! ORDER="23"
 #! PARMS_EDITED="true"
 #! ENABLED="true"
@@ -839,60 +974,83 @@
 #! <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
 #! </TRANSFORMER>
 #! <TRANSFORMER
-#! IDENTIFIER="21"
-#! TYPE="AttributeRemover"
-#! VERSION="0"
-#! POSITION="808 -916"
-#! ORDER="27"
+#! IDENTIFIER="43"
+#! TYPE="PythonCaller"
+#! VERSION="4"
+#! POSITION="1221 442"
+#! ORDER="5e+014"
 #! PARMS_EDITED="true"
 #! ENABLED="true"
 #! >
 #! <OUTPUT_FEAT NAME="OUTPUT"/>
 #! <FEAT_COLLAPSED COLLAPSED="0"/>
-#! <XFORM_ATTR ATTR_NAME="DAR_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="DAR_XTF_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="DAR_LEGENDEIMWEB_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="DAR_LEGENDEIMWEB_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="VOR_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="VOR_XTF_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="VOR_TEXTIMWEB_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="VOR_TEXTIMWEB_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="VOR_SORT" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_PARM PARM_NAME="LIST_ATTRS" PARM_VALUE=""/>
-#! <XFORM_PARM PARM_NAME="REMOVE_ATTRS" PARM_VALUE="DAR_VERWEISWMS_DE,DAR_VERWEISWMS_FR,DAR_LIEFEREINHEIT"/>
+#! <XFORM_PARM PARM_NAME="HIDE_ATTRIBUTES" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="PYTHONSOURCE" PARM_VALUE="from&lt;space&gt;__future__&lt;space&gt;import&lt;space&gt;absolute_import&lt;comma&gt;&lt;space&gt;division&lt;comma&gt;&lt;space&gt;print_function&lt;comma&gt;&lt;space&gt;unicode_literals&lt;lf&gt;import&lt;space&gt;fmeobjects&lt;lf&gt;&lt;lf&gt;def&lt;space&gt;processFeature&lt;openparen&gt;feature&lt;closeparen&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;url_de&lt;space&gt;=&lt;space&gt;feature.getAttribute&lt;openparen&gt;&lt;quote&gt;VOR_TEXTIMWEB_DE&lt;quote&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;url_de&lt;space&gt;=&lt;space&gt;url_de.replace&lt;openparen&gt;&lt;quote&gt;&lt;u00e4&gt;&lt;quote&gt;&lt;comma&gt;&lt;space&gt;&lt;quote&gt;%C3%A4&lt;quote&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;url_de&lt;space&gt;=&lt;space&gt;url_de.replace&lt;openparen&gt;&lt;quote&gt;&lt;u00f6&gt;&lt;quote&gt;&lt;comma&gt;&lt;space&gt;&lt;quote&gt;%C3%B6&lt;quote&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;url_de&lt;space&gt;=&lt;space&gt;url_de.replace&lt;openparen&gt;&lt;quote&gt;&lt;u00fc&gt;&lt;quote&gt;&lt;comma&gt;&lt;space&gt;&lt;quote&gt;%C3%BC&lt;quote&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;url_de&lt;space&gt;=&lt;space&gt;url_de.replace&lt;openparen&gt;&lt;quote&gt;&lt;u00c4&gt;&lt;quote&gt;&lt;comma&gt;&lt;space&gt;&lt;quote&gt;%C3%84&lt;quote&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;url_de&lt;space&gt;=&lt;space&gt;url_de.replace&lt;openparen&gt;&lt;quote&gt;&lt;u00d6&gt;&lt;quote&gt;&lt;comma&gt;&lt;space&gt;&lt;quote&gt;%C3%96&lt;quote&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;url_de&lt;space&gt;=&lt;space&gt;url_de.replace&lt;openparen&gt;&lt;quote&gt;&lt;u00dc&gt;&lt;quote&gt;&lt;comma&gt;&lt;space&gt;&lt;quote&gt;%C3%9C&lt;quote&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;feature.setAttribute&lt;openparen&gt;&lt;quote&gt;VOR_TEXTIMWEB_DE&lt;quote&gt;&lt;comma&gt;&lt;space&gt;url_de&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;url_fr&lt;space&gt;=&lt;space&gt;feature.getAttribute&lt;openparen&gt;&lt;quote&gt;VOR_TEXTIMWEB_FR&lt;quote&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;url_fr&lt;space&gt;=&lt;space&gt;url_fr.replace&lt;openparen&gt;&lt;quote&gt;&lt;u00e4&gt;&lt;quote&gt;&lt;comma&gt;&lt;space&gt;&lt;quote&gt;%C3%A4&lt;quote&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;url_fr&lt;space&gt;=&lt;space&gt;url_fr.replace&lt;openparen&gt;&lt;quote&gt;&lt;u00f6&gt;&lt;quote&gt;&lt;comma&gt;&lt;space&gt;&lt;quote&gt;%C3%B6&lt;quote&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;url_fr&lt;space&gt;=&lt;space&gt;url_fr.replace&lt;openparen&gt;&lt;quote&gt;&lt;u00fc&gt;&lt;quote&gt;&lt;comma&gt;&lt;space&gt;&lt;quote&gt;%C3%BC&lt;quote&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;url_fr&lt;space&gt;=&lt;space&gt;url_fr.replace&lt;openparen&gt;&lt;quote&gt;&lt;u00c4&gt;&lt;quote&gt;&lt;comma&gt;&lt;space&gt;&lt;quote&gt;%C3%84&lt;quote&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;url_fr&lt;space&gt;=&lt;space&gt;url_fr.replace&lt;openparen&gt;&lt;quote&gt;&lt;u00d6&gt;&lt;quote&gt;&lt;comma&gt;&lt;space&gt;&lt;quote&gt;%C3%96&lt;quote&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;url_fr&lt;space&gt;=&lt;space&gt;url_fr.replace&lt;openparen&gt;&lt;quote&gt;&lt;u00dc&gt;&lt;quote&gt;&lt;comma&gt;&lt;space&gt;&lt;quote&gt;%C3%9C&lt;quote&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;feature.setAttribute&lt;openparen&gt;&lt;quote&gt;VOR_TEXTIMWEB_FR&lt;quote&gt;&lt;comma&gt;&lt;space&gt;url_fr&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;lf&gt;"/>
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="PythonCaller"/>
+#! <XFORM_PARM PARM_NAME="PYTHONSYMBOL" PARM_VALUE="processFeature"/>
+#! <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="ADVANCED_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="NEW_ATTRIBUTES" PARM_VALUE=""/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#! IDENTIFIER="27"
+#! TYPE="AttributeRemover"
+#! VERSION="0"
+#! POSITION="833 -381"
+#! ORDER="5e+014"
+#! PARMS_EDITED="true"
+#! ENABLED="true"
+#! >
+#! <OUTPUT_FEAT NAME="OUTPUT"/>
+#! <FEAT_COLLAPSED COLLAPSED="0"/>
+#! <XFORM_ATTR ATTR_NAME="EIB_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="EIB_LEGENDESYMBOL_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="EIB_LEGENDESYMBOL_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_PARM PARM_NAME="LIST_ATTRS" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="REMOVE_ATTRS" PARM_VALUE="EIB_XTF_ID,EIB_AUSSAGE_DE,EIB_AUSSAGE_FR,EIB_ARTCODE,EIB_ARTCODELISTE,EIB_PUBLIZIERTAB,EIB_LIEFEREINHEIT,AMT_OID,DAR_OID,RES_ID,STH_ID,EIB_SORT"/>
 #! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeRemover_2"/>
 #! <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
 #! <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
 #! </TRANSFORMER>
 #! <TRANSFORMER
-#! IDENTIFIER="23"
+#! IDENTIFIER="29"
 #! TYPE="HTTPHeader"
 #! VERSION="0"
-#! POSITION="1390 -910"
-#! ORDER="29"
+#! POSITION="1519 -393"
+#! ORDER="5e+014"
 #! PARMS_EDITED="true"
 #! ENABLED="true"
 #! >
 #! <OUTPUT_FEAT NAME="OUTPUT"/>
 #! <FEAT_COLLAPSED COLLAPSED="0"/>
-#! <XFORM_ATTR ATTR_NAME="DAR_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="DAR_XTF_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="DAR_LEGENDEIMWEB_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="DAR_LEGENDEIMWEB_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="_headers_de{}.name" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="_headers_de{}.value" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="_error_de" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="EIB_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="EIB_LEGENDESYMBOL_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="EIB_LEGENDESYMBOL_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_headers{}.name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_headers{}.value" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_error" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="_http_status_code_de" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <OUTPUT_FEAT NAME="&lt;REJECTED&gt;"/>
 #! <FEAT_COLLAPSED COLLAPSED="1"/>
-#! <XFORM_ATTR ATTR_NAME="DAR_OID" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#! <XFORM_ATTR ATTR_NAME="DAR_XTF_ID" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#! <XFORM_ATTR ATTR_NAME="DAR_LEGENDEIMWEB_DE" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#! <XFORM_ATTR ATTR_NAME="DAR_LEGENDEIMWEB_FR" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#! <XFORM_ATTR ATTR_NAME="_headers_de{}.name" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#! <XFORM_ATTR ATTR_NAME="_headers_de{}.value" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#! <XFORM_ATTR ATTR_NAME="_error_de" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="EIB_OID" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="EIB_LEGENDESYMBOL_DE" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="EIB_LEGENDESYMBOL_FR" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="_headers{}.name" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="_headers{}.value" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="_error" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #! <XFORM_ATTR ATTR_NAME="_http_status_code_de" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #! <XFORM_PARM PARM_NAME="HTTP_AUTH_GROUP" PARM_VALUE=""/>
 #! <XFORM_PARM PARM_NAME="PROXY_URL" PARM_VALUE=""/>
-#! <XFORM_PARM PARM_NAME="RESPONSE_HEADER_LIST_ATTR" PARM_VALUE="_headers_de"/>
-#! <XFORM_PARM PARM_NAME="TARGET_URL" PARM_VALUE="&lt;at&gt;Value&lt;openparen&gt;DAR_LEGENDEIMWEB_DE&lt;closeparen&gt;"/>
-#! <XFORM_PARM PARM_NAME="ERROR_ATTR" PARM_VALUE="_error_de"/>
+#! <XFORM_PARM PARM_NAME="RESPONSE_HEADER_LIST_ATTR" PARM_VALUE="_headers"/>
+#! <XFORM_PARM PARM_NAME="TARGET_URL" PARM_VALUE="&lt;at&gt;Value&lt;openparen&gt;EIB_LEGENDESYMBOL_DE&lt;closeparen&gt;"/>
+#! <XFORM_PARM PARM_NAME="ERROR_ATTR" PARM_VALUE="_error"/>
 #! <XFORM_PARM PARM_NAME="REQUEST_HEADER" PARM_VALUE=""/>
 #! <XFORM_PARM PARM_NAME="HTTP_RESPONSE_GROUP" PARM_VALUE=""/>
 #! <XFORM_PARM PARM_NAME="AUTH_PASSWORD" PARM_VALUE=""/>
@@ -910,61 +1068,39 @@
 #! <XFORM_PARM PARM_NAME="PROXY_GROUP" PARM_VALUE=""/>
 #! </TRANSFORMER>
 #! <TRANSFORMER
-#! IDENTIFIER="26"
-#! TYPE="Terminator"
-#! VERSION="2"
-#! POSITION="2126 -1299"
-#! ORDER="30"
-#! PARMS_EDITED="true"
-#! ENABLED="false"
-#! >
-#! <XFORM_PARM PARM_NAME="MESSAGE" PARM_VALUE="Abbruch:&lt;space&gt;Fehler&lt;space&gt;beim&lt;space&gt;Abrufen&lt;space&gt;der&lt;space&gt;URL!!!"/>
-#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Terminator_4"/>
-#! <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
-#! <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
-#! </TRANSFORMER>
-#! <TRANSFORMER
-#! IDENTIFIER="28"
+#! IDENTIFIER="31"
 #! TYPE="HTTPHeader"
 #! VERSION="0"
-#! POSITION="2127 -894"
-#! ORDER="32"
+#! POSITION="2263 -431"
+#! ORDER="5e+014"
 #! PARMS_EDITED="true"
 #! ENABLED="true"
 #! >
 #! <OUTPUT_FEAT NAME="OUTPUT"/>
 #! <FEAT_COLLAPSED COLLAPSED="0"/>
-#! <XFORM_ATTR ATTR_NAME="DAR_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="DAR_XTF_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="DAR_LEGENDEIMWEB_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="DAR_LEGENDEIMWEB_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="_headers_de{}.name" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="_headers_de{}.value" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="_error_de" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="EIB_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="EIB_LEGENDESYMBOL_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="EIB_LEGENDESYMBOL_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_headers{}.name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_headers{}.value" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_error" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="_http_status_code_de" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="_headers_fr{}.name" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="_headers_fr{}.value" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="_error_fr" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="_http_status_code_fr" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <OUTPUT_FEAT NAME="&lt;REJECTED&gt;"/>
 #! <FEAT_COLLAPSED COLLAPSED="1"/>
-#! <XFORM_ATTR ATTR_NAME="DAR_OID" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#! <XFORM_ATTR ATTR_NAME="DAR_XTF_ID" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#! <XFORM_ATTR ATTR_NAME="DAR_LEGENDEIMWEB_DE" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#! <XFORM_ATTR ATTR_NAME="DAR_LEGENDEIMWEB_FR" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#! <XFORM_ATTR ATTR_NAME="_headers_de{}.name" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#! <XFORM_ATTR ATTR_NAME="_headers_de{}.value" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#! <XFORM_ATTR ATTR_NAME="_error_de" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="EIB_OID" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="EIB_LEGENDESYMBOL_DE" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="EIB_LEGENDESYMBOL_FR" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="_headers{}.name" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="_headers{}.value" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="_error" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #! <XFORM_ATTR ATTR_NAME="_http_status_code_de" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#! <XFORM_ATTR ATTR_NAME="_headers_fr{}.name" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#! <XFORM_ATTR ATTR_NAME="_headers_fr{}.value" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#! <XFORM_ATTR ATTR_NAME="_error_fr" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #! <XFORM_ATTR ATTR_NAME="_http_status_code_fr" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #! <XFORM_PARM PARM_NAME="HTTP_AUTH_GROUP" PARM_VALUE=""/>
 #! <XFORM_PARM PARM_NAME="PROXY_URL" PARM_VALUE=""/>
-#! <XFORM_PARM PARM_NAME="RESPONSE_HEADER_LIST_ATTR" PARM_VALUE="_headers_fr"/>
-#! <XFORM_PARM PARM_NAME="TARGET_URL" PARM_VALUE="&lt;at&gt;Value&lt;openparen&gt;DAR_LEGENDEIMWEB_FR&lt;closeparen&gt;"/>
-#! <XFORM_PARM PARM_NAME="ERROR_ATTR" PARM_VALUE="_error_fr"/>
+#! <XFORM_PARM PARM_NAME="RESPONSE_HEADER_LIST_ATTR" PARM_VALUE="_headers"/>
+#! <XFORM_PARM PARM_NAME="TARGET_URL" PARM_VALUE="&lt;at&gt;Value&lt;openparen&gt;EIB_LEGENDESYMBOL_FR&lt;closeparen&gt;"/>
+#! <XFORM_PARM PARM_NAME="ERROR_ATTR" PARM_VALUE="_error"/>
 #! <XFORM_PARM PARM_NAME="REQUEST_HEADER" PARM_VALUE=""/>
 #! <XFORM_PARM PARM_NAME="HTTP_RESPONSE_GROUP" PARM_VALUE=""/>
 #! <XFORM_PARM PARM_NAME="AUTH_PASSWORD" PARM_VALUE=""/>
@@ -982,55 +1118,61 @@
 #! <XFORM_PARM PARM_NAME="PROXY_GROUP" PARM_VALUE=""/>
 #! </TRANSFORMER>
 #! <TRANSFORMER
-#! IDENTIFIER="31"
+#! IDENTIFIER="34"
 #! TYPE="Terminator"
 #! VERSION="2"
-#! POSITION="2896 -1285"
-#! ORDER="33"
+#! POSITION="2234 -789"
+#! ORDER="5e+014"
 #! PARMS_EDITED="true"
-#! ENABLED="false"
+#! ENABLED="true"
 #! >
-#! <XFORM_PARM PARM_NAME="MESSAGE" PARM_VALUE="Abbruch:&lt;space&gt;Fehler&lt;space&gt;beim&lt;space&gt;Abrufen&lt;space&gt;der&lt;space&gt;URL!!!"/>
+#! <XFORM_PARM PARM_NAME="MESSAGE" PARM_VALUE="Fehler&lt;space&gt;beim&lt;space&gt;Aufrufen&lt;space&gt;der&lt;space&gt;Legendenbildli!!!"/>
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Terminator_4"/>
+#! <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#! IDENTIFIER="37"
+#! TYPE="Terminator"
+#! VERSION="2"
+#! POSITION="3092 -756"
+#! ORDER="5e+014"
+#! PARMS_EDITED="true"
+#! ENABLED="true"
+#! >
+#! <XFORM_PARM PARM_NAME="MESSAGE" PARM_VALUE="Fehler&lt;space&gt;beim&lt;space&gt;Aufrufen&lt;space&gt;der&lt;space&gt;Legendenbildli!!!"/>
 #! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Terminator_5"/>
 #! <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
 #! <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
 #! </TRANSFORMER>
 #! <TRANSFORMER
-#! IDENTIFIER="33"
+#! IDENTIFIER="39"
 #! TYPE="Tester"
 #! VERSION="2"
-#! POSITION="3062 -927"
-#! ORDER="34"
-#! PARMS_EDITED="true"
+#! POSITION="3041 -443"
+#! ORDER="22"
+#! PARMS_EDITED="false"
 #! ENABLED="true"
 #! >
 #! <OUTPUT_FEAT NAME="PASSED"/>
 #! <FEAT_COLLAPSED COLLAPSED="0"/>
-#! <XFORM_ATTR ATTR_NAME="DAR_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="DAR_XTF_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="DAR_LEGENDEIMWEB_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="DAR_LEGENDEIMWEB_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="_headers_de{}.name" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="_headers_de{}.value" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="_error_de" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="EIB_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="EIB_LEGENDESYMBOL_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="EIB_LEGENDESYMBOL_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_headers{}.name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_headers{}.value" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_error" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="_http_status_code_de" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="_headers_fr{}.name" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="_headers_fr{}.value" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="_error_fr" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="_http_status_code_fr" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <OUTPUT_FEAT NAME="FAILED"/>
 #! <FEAT_COLLAPSED COLLAPSED="1"/>
-#! <XFORM_ATTR ATTR_NAME="DAR_OID" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#! <XFORM_ATTR ATTR_NAME="DAR_XTF_ID" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#! <XFORM_ATTR ATTR_NAME="DAR_LEGENDEIMWEB_DE" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#! <XFORM_ATTR ATTR_NAME="DAR_LEGENDEIMWEB_FR" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#! <XFORM_ATTR ATTR_NAME="_headers_de{}.name" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#! <XFORM_ATTR ATTR_NAME="_headers_de{}.value" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#! <XFORM_ATTR ATTR_NAME="_error_de" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="EIB_OID" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="EIB_LEGENDESYMBOL_DE" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="EIB_LEGENDESYMBOL_FR" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="_headers{}.name" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="_headers{}.value" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="_error" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #! <XFORM_ATTR ATTR_NAME="_http_status_code_de" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#! <XFORM_ATTR ATTR_NAME="_headers_fr{}.name" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#! <XFORM_ATTR ATTR_NAME="_headers_fr{}.value" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#! <XFORM_ATTR ATTR_NAME="_error_fr" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #! <XFORM_ATTR ATTR_NAME="_http_status_code_fr" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #! <XFORM_PARM PARM_NAME="TEST_MODE" PARM_VALUE="Automatic"/>
 #! <XFORM_PARM PARM_NAME="TEST_DESCRIPTION" PARM_VALUE="&quot;&quot;"/>
@@ -1041,132 +1183,18 @@
 #! <XFORM_PARM PARM_NAME="TEST_CLAUSE" PARM_VALUE="TEST &lt;at&gt;Value&lt;openparen&gt;_http_status_code_de&lt;closeparen&gt; = 200&#10;TEST &lt;at&gt;Value&lt;openparen&gt;_http_status_code_fr&lt;closeparen&gt; = 200"/>
 #! </TRANSFORMER>
 #! <TRANSFORMER
-#! IDENTIFIER="35"
+#! IDENTIFIER="41"
 #! TYPE="Terminator"
 #! VERSION="2"
-#! POSITION="3836 -905"
-#! ORDER="35"
-#! PARMS_EDITED="true"
-#! ENABLED="false"
+#! POSITION="3759 -545"
+#! ORDER="5e+014"
+#! PARMS_EDITED="false"
+#! ENABLED="true"
 #! >
-#! <XFORM_PARM PARM_NAME="MESSAGE" PARM_VALUE="Abbruch:&lt;space&gt;Fehler&lt;space&gt;beim&lt;space&gt;Abrufen&lt;space&gt;der&lt;space&gt;URL!!!"/>
+#! <XFORM_PARM PARM_NAME="MESSAGE" PARM_VALUE="Fehler&lt;space&gt;beim&lt;space&gt;Aufrufen&lt;space&gt;der&lt;space&gt;Legendenbildli!!!"/>
 #! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Terminator_6"/>
 #! <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
 #! <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
-#! </TRANSFORMER>
-#! <TRANSFORMER
-#! IDENTIFIER="37"
-#! TYPE="Logger"
-#! VERSION="3"
-#! POSITION="3821 -1168"
-#! ORDER="5e+014"
-#! PARMS_EDITED="true"
-#! ENABLED="true"
-#! >
-#! <OUTPUT_FEAT NAME="LOGGED"/>
-#! <FEAT_COLLAPSED COLLAPSED="0"/>
-#! <XFORM_ATTR ATTR_NAME="DAR_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="DAR_XTF_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="DAR_LEGENDEIMWEB_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="DAR_LEGENDEIMWEB_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="_headers_de{}.name" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="_headers_de{}.value" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="_error_de" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="_http_status_code_de" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="_headers_fr{}.name" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="_headers_fr{}.value" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="_error_fr" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="_http_status_code_fr" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_PARM PARM_NAME="MESSAGE" PARM_VALUE="Legendenbildli fehlen:"/>
-#! <XFORM_PARM PARM_NAME="FEATURE_TYPE" PARM_VALUE=""/>
-#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Logger"/>
-#! <XFORM_PARM PARM_NAME="MAXFEATS" PARM_VALUE="50"/>
-#! <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
-#! <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
-#! <XFORM_PARM PARM_NAME="MAXCOORDS" PARM_VALUE="20"/>
-#! </TRANSFORMER>
-#! <TRANSFORMER
-#! IDENTIFIER="38"
-#! TYPE="Logger"
-#! VERSION="3"
-#! POSITION="2868 -1473"
-#! ORDER="5e+014"
-#! PARMS_EDITED="false"
-#! ENABLED="true"
-#! >
-#! <OUTPUT_FEAT NAME="LOGGED"/>
-#! <FEAT_COLLAPSED COLLAPSED="0"/>
-#! <XFORM_ATTR ATTR_NAME="DAR_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="DAR_XTF_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="DAR_LEGENDEIMWEB_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="DAR_LEGENDEIMWEB_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="_headers_de{}.name" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="_headers_de{}.value" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="_error_de" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="_http_status_code_de" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="_headers_fr{}.name" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="_headers_fr{}.value" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="_error_fr" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="_http_status_code_fr" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_PARM PARM_NAME="MESSAGE" PARM_VALUE="Legendenbildli fehlen:"/>
-#! <XFORM_PARM PARM_NAME="FEATURE_TYPE" PARM_VALUE=""/>
-#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Logger_2"/>
-#! <XFORM_PARM PARM_NAME="MAXFEATS" PARM_VALUE="50"/>
-#! <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
-#! <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
-#! <XFORM_PARM PARM_NAME="MAXCOORDS" PARM_VALUE="20"/>
-#! </TRANSFORMER>
-#! <TRANSFORMER
-#! IDENTIFIER="39"
-#! TYPE="Logger"
-#! VERSION="3"
-#! POSITION="2137 -1518"
-#! ORDER="5e+014"
-#! PARMS_EDITED="false"
-#! ENABLED="true"
-#! >
-#! <OUTPUT_FEAT NAME="LOGGED"/>
-#! <FEAT_COLLAPSED COLLAPSED="0"/>
-#! <XFORM_ATTR ATTR_NAME="DAR_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="DAR_XTF_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="DAR_LEGENDEIMWEB_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="DAR_LEGENDEIMWEB_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="_headers_de{}.name" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="_headers_de{}.value" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="_error_de" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="_http_status_code_de" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_PARM PARM_NAME="MESSAGE" PARM_VALUE="Legendenbildli fehlen:"/>
-#! <XFORM_PARM PARM_NAME="FEATURE_TYPE" PARM_VALUE=""/>
-#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Logger_3"/>
-#! <XFORM_PARM PARM_NAME="MAXFEATS" PARM_VALUE="50"/>
-#! <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
-#! <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
-#! <XFORM_PARM PARM_NAME="MAXCOORDS" PARM_VALUE="20"/>
-#! </TRANSFORMER>
-#! <TRANSFORMER
-#! IDENTIFIER="43"
-#! TYPE="PythonCaller"
-#! VERSION="4"
-#! POSITION="1368 -209"
-#! ORDER="5e+014"
-#! PARMS_EDITED="true"
-#! ENABLED="true"
-#! >
-#! <OUTPUT_FEAT NAME="OUTPUT"/>
-#! <FEAT_COLLAPSED COLLAPSED="0"/>
-#! <XFORM_ATTR ATTR_NAME="VOR_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="VOR_XTF_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="VOR_TEXTIMWEB_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="VOR_TEXTIMWEB_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_PARM PARM_NAME="LIST_ATTRS" PARM_VALUE=""/>
-#! <XFORM_PARM PARM_NAME="HIDE_ATTRIBUTES" PARM_VALUE=""/>
-#! <XFORM_PARM PARM_NAME="PYTHONSOURCE" PARM_VALUE="from&lt;space&gt;__future__&lt;space&gt;import&lt;space&gt;absolute_import&lt;comma&gt;&lt;space&gt;division&lt;comma&gt;&lt;space&gt;print_function&lt;comma&gt;&lt;space&gt;unicode_literals&lt;lf&gt;import&lt;space&gt;fmeobjects&lt;lf&gt;&lt;lf&gt;def&lt;space&gt;processFeature&lt;openparen&gt;feature&lt;closeparen&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;url_de&lt;space&gt;=&lt;space&gt;feature.getAttribute&lt;openparen&gt;&lt;quote&gt;VOR_TEXTIMWEB_DE&lt;quote&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;url_de&lt;space&gt;=&lt;space&gt;url_de.replace&lt;openparen&gt;&lt;quote&gt;&lt;u00e4&gt;&lt;quote&gt;&lt;comma&gt;&lt;space&gt;&lt;quote&gt;%C3%A4&lt;quote&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;url_de&lt;space&gt;=&lt;space&gt;url_de.replace&lt;openparen&gt;&lt;quote&gt;&lt;u00f6&gt;&lt;quote&gt;&lt;comma&gt;&lt;space&gt;&lt;quote&gt;%C3%B6&lt;quote&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;url_de&lt;space&gt;=&lt;space&gt;url_de.replace&lt;openparen&gt;&lt;quote&gt;&lt;u00fc&gt;&lt;quote&gt;&lt;comma&gt;&lt;space&gt;&lt;quote&gt;%C3%BC&lt;quote&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;url_de&lt;space&gt;=&lt;space&gt;url_de.replace&lt;openparen&gt;&lt;quote&gt;&lt;u00c4&gt;&lt;quote&gt;&lt;comma&gt;&lt;space&gt;&lt;quote&gt;%C3%84&lt;quote&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;url_de&lt;space&gt;=&lt;space&gt;url_de.replace&lt;openparen&gt;&lt;quote&gt;&lt;u00d6&gt;&lt;quote&gt;&lt;comma&gt;&lt;space&gt;&lt;quote&gt;%C3%96&lt;quote&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;url_de&lt;space&gt;=&lt;space&gt;url_de.replace&lt;openparen&gt;&lt;quote&gt;&lt;u00dc&gt;&lt;quote&gt;&lt;comma&gt;&lt;space&gt;&lt;quote&gt;%C3%9C&lt;quote&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;feature.setAttribute&lt;openparen&gt;&lt;quote&gt;VOR_TEXTIMWEB_DE&lt;quote&gt;&lt;comma&gt;&lt;space&gt;url_de&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;url_fr&lt;space&gt;=&lt;space&gt;feature.getAttribute&lt;openparen&gt;&lt;quote&gt;VOR_TEXTIMWEB_FR&lt;quote&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;url_fr&lt;space&gt;=&lt;space&gt;url_fr.replace&lt;openparen&gt;&lt;quote&gt;&lt;u00e4&gt;&lt;quote&gt;&lt;comma&gt;&lt;space&gt;&lt;quote&gt;%C3%A4&lt;quote&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;url_fr&lt;space&gt;=&lt;space&gt;url_fr.replace&lt;openparen&gt;&lt;quote&gt;&lt;u00f6&gt;&lt;quote&gt;&lt;comma&gt;&lt;space&gt;&lt;quote&gt;%C3%B6&lt;quote&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;url_fr&lt;space&gt;=&lt;space&gt;url_fr.replace&lt;openparen&gt;&lt;quote&gt;&lt;u00fc&gt;&lt;quote&gt;&lt;comma&gt;&lt;space&gt;&lt;quote&gt;%C3%BC&lt;quote&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;url_fr&lt;space&gt;=&lt;space&gt;url_fr.replace&lt;openparen&gt;&lt;quote&gt;&lt;u00c4&gt;&lt;quote&gt;&lt;comma&gt;&lt;space&gt;&lt;quote&gt;%C3%84&lt;quote&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;url_fr&lt;space&gt;=&lt;space&gt;url_fr.replace&lt;openparen&gt;&lt;quote&gt;&lt;u00d6&gt;&lt;quote&gt;&lt;comma&gt;&lt;space&gt;&lt;quote&gt;%C3%96&lt;quote&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;url_fr&lt;space&gt;=&lt;space&gt;url_fr.replace&lt;openparen&gt;&lt;quote&gt;&lt;u00dc&gt;&lt;quote&gt;&lt;comma&gt;&lt;space&gt;&lt;quote&gt;%C3%9C&lt;quote&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;feature.setAttribute&lt;openparen&gt;&lt;quote&gt;VOR_TEXTIMWEB_FR&lt;quote&gt;&lt;comma&gt;&lt;space&gt;url_fr&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;lf&gt;"/>
-#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="PythonCaller"/>
-#! <XFORM_PARM PARM_NAME="PYTHONSYMBOL" PARM_VALUE="processFeature"/>
-#! <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
-#! <XFORM_PARM PARM_NAME="ADVANCED_GROUP" PARM_VALUE=""/>
-#! <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
-#! <XFORM_PARM PARM_NAME="NEW_ATTRIBUTES" PARM_VALUE=""/>
 #! </TRANSFORMER>
 #! </TRANSFORMERS>
 #! <FEAT_LINKS>
@@ -1225,96 +1253,6 @@
 #! EXTRA_POINTS=""
 #! />
 #! <FEAT_LINK
-#! IDENTIFIER="22"
-#! SOURCE_NODE="19"
-#! TARGET_NODE="21"
-#! SOURCE_PORT_DESC="-1"
-#! TARGET_PORT_DESC="fi 0"
-#! ENABLED="true"
-#! EXTRA_POINTS=""
-#! />
-#! <FEAT_LINK
-#! IDENTIFIER="24"
-#! SOURCE_NODE="21"
-#! TARGET_NODE="23"
-#! SOURCE_PORT_DESC="fo 0"
-#! TARGET_PORT_DESC="fi 0"
-#! ENABLED="true"
-#! EXTRA_POINTS=""
-#! />
-#! <FEAT_LINK
-#! IDENTIFIER="27"
-#! SOURCE_NODE="23"
-#! TARGET_NODE="26"
-#! SOURCE_PORT_DESC="fo 1"
-#! TARGET_PORT_DESC="fi 0"
-#! ENABLED="true"
-#! EXTRA_POINTS=""
-#! />
-#! <FEAT_LINK
-#! IDENTIFIER="30"
-#! SOURCE_NODE="23"
-#! TARGET_NODE="28"
-#! SOURCE_PORT_DESC="fo 0"
-#! TARGET_PORT_DESC="fi 0"
-#! ENABLED="true"
-#! EXTRA_POINTS=""
-#! />
-#! <FEAT_LINK
-#! IDENTIFIER="32"
-#! SOURCE_NODE="28"
-#! TARGET_NODE="31"
-#! SOURCE_PORT_DESC="fo 1"
-#! TARGET_PORT_DESC="fi 0"
-#! ENABLED="true"
-#! EXTRA_POINTS=""
-#! />
-#! <FEAT_LINK
-#! IDENTIFIER="34"
-#! SOURCE_NODE="28"
-#! TARGET_NODE="33"
-#! SOURCE_PORT_DESC="fo 0"
-#! TARGET_PORT_DESC="fi 0"
-#! ENABLED="true"
-#! EXTRA_POINTS=""
-#! />
-#! <FEAT_LINK
-#! IDENTIFIER="36"
-#! SOURCE_NODE="33"
-#! TARGET_NODE="35"
-#! SOURCE_PORT_DESC="fo 1"
-#! TARGET_PORT_DESC="fi 0"
-#! ENABLED="true"
-#! EXTRA_POINTS=""
-#! />
-#! <FEAT_LINK
-#! IDENTIFIER="40"
-#! SOURCE_NODE="23"
-#! TARGET_NODE="39"
-#! SOURCE_PORT_DESC="fo 1"
-#! TARGET_PORT_DESC="fi 0"
-#! ENABLED="true"
-#! EXTRA_POINTS=""
-#! />
-#! <FEAT_LINK
-#! IDENTIFIER="41"
-#! SOURCE_NODE="28"
-#! TARGET_NODE="38"
-#! SOURCE_PORT_DESC="fo 1"
-#! TARGET_PORT_DESC="fi 0"
-#! ENABLED="true"
-#! EXTRA_POINTS=""
-#! />
-#! <FEAT_LINK
-#! IDENTIFIER="42"
-#! SOURCE_NODE="33"
-#! TARGET_NODE="37"
-#! SOURCE_PORT_DESC="fo 1"
-#! TARGET_PORT_DESC="fi 0"
-#! ENABLED="true"
-#! EXTRA_POINTS=""
-#! />
-#! <FEAT_LINK
 #! IDENTIFIER="44"
 #! SOURCE_NODE="3"
 #! TARGET_NODE="43"
@@ -1328,6 +1266,78 @@
 #! SOURCE_NODE="43"
 #! TARGET_NODE="5"
 #! SOURCE_PORT_DESC="fo 0"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="25"
+#! SOURCE_NODE="22"
+#! TARGET_NODE="3"
+#! SOURCE_PORT_DESC="-1"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="28"
+#! SOURCE_NODE="23"
+#! TARGET_NODE="27"
+#! SOURCE_PORT_DESC="-1"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="33"
+#! SOURCE_NODE="29"
+#! TARGET_NODE="31"
+#! SOURCE_PORT_DESC="fo 0"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="35"
+#! SOURCE_NODE="29"
+#! TARGET_NODE="34"
+#! SOURCE_PORT_DESC="fo 1"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="36"
+#! SOURCE_NODE="27"
+#! TARGET_NODE="29"
+#! SOURCE_PORT_DESC="fo 0"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="38"
+#! SOURCE_NODE="31"
+#! TARGET_NODE="37"
+#! SOURCE_PORT_DESC="fo 1"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="40"
+#! SOURCE_NODE="31"
+#! TARGET_NODE="39"
+#! SOURCE_PORT_DESC="fo 0"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="42"
+#! SOURCE_NODE="39"
+#! TARGET_NODE="41"
+#! SOURCE_PORT_DESC="fo 1"
 #! TARGET_PORT_DESC="fi 0"
 #! ENABLED="true"
 #! EXTRA_POINTS=""
@@ -4582,22 +4592,31 @@
 #! </LOOKUP_TABLES>
 #! </WORKSPACE>
 #! 
-GUI IGNORE SourceDataset_ORACLE8I_DB_1,ORACLE8I_DB_IN_USER_NAME_ORACLE8I_DB_1,ORACLE8I_DB_IN_PASSWORD_ORACLE8I_DB_1,ORACLE8I_DB_IN_PERSISTENT_CONNECTION_ORACLE8I_DB_1,ORACLE8I_DB_IN_REMOVE_SCHEMA_QUALIFIER_ORACLE8I_DB_1,ORACLE8I_DB_IN_WHERE_CLAUSE_ORACLE8I_DB_1,ORACLE8I_DB_IN_CHUNK_SIZE_ORACLE8I_DB_1,_ORACLE8I_DB_IN_BEGIN_SQL_ORACLE8I_DB_1,_ORACLE8I_DB_IN_END_SQL_ORACLE8I_DB_1,ORACLE8I_DB_IN_WORKSPACE_ORACLE8I_DB_1
-DEFAULT_MACRO DATABASE 
-GUI TEXT DATABASE Database:
-DEFAULT_MACRO USERNAME 
-GUI TEXT USERNAME Username:
-DEFAULT_MACRO PASSWORD 
-GUI PASSWORD PASSWORD Passwort:
+GUI IGNORE SourceDataset_ORACLE8I_DB_1,ORACLE8I_DB_IN_USER_NAME_ORACLE8I_DB_1,ORACLE8I_DB_IN_PASSWORD_ORACLE8I_DB_1,ORACLE8I_DB_IN_PERSISTENT_CONNECTION_ORACLE8I_DB_1,ORACLE8I_DB_IN_REMOVE_SCHEMA_QUALIFIER_ORACLE8I_DB_1,ORACLE8I_DB_IN_WHERE_CLAUSE_ORACLE8I_DB_1,ORACLE8I_DB_IN_CHUNK_SIZE_ORACLE8I_DB_1,_ORACLE8I_DB_IN_BEGIN_SQL_ORACLE8I_DB_1,_ORACLE8I_DB_IN_END_SQL_ORACLE8I_DB_1,ORACLE8I_DB_IN_WORKSPACE_ORACLE8I_DB_1,SourceDataset_ORACLE8I_DB_2,ORACLE8I_DB_IN_USER_NAME_ORACLE8I_DB_2,ORACLE8I_DB_IN_PASSWORD_ORACLE8I_DB_2,ORACLE8I_DB_IN_PERSISTENT_CONNECTION_ORACLE8I_DB_2,ORACLE8I_DB_IN_REMOVE_SCHEMA_QUALIFIER_ORACLE8I_DB_2,ORACLE8I_DB_IN_WHERE_CLAUSE_ORACLE8I_DB_2,ORACLE8I_DB_IN_EXPOSE_ATTRS_GROUP_ORACLE8I_DB_2,ORACLE8I_DB_IN_CHUNK_SIZE_ORACLE8I_DB_2,_ORACLE8I_DB_IN_BEGIN_SQL_ORACLE8I_DB_2,_ORACLE8I_DB_IN_END_SQL_ORACLE8I_DB_2,ORACLE8I_DB_IN_WORKSPACE_ORACLE8I_DB_2
+DEFAULT_MACRO OEREB_DATABASE 
+GUI TEXT OEREB_DATABASE Database:
+DEFAULT_MACRO OEREB_USERNAME 
+GUI TEXT OEREB_USERNAME Username:
+DEFAULT_MACRO OEREB_PASSWORD 
+GUI PASSWORD OEREB_PASSWORD Passwort:
 DEFAULT_MACRO LIEFEREINHEIT 
 GUI TEXT LIEFEREINHEIT Liefereinheit:
 DEFAULT_MACRO LOGFILE 
 GUI TEXT LOGFILE Logfile:
-INCLUDE [ if {{$(DATABASE)} == {}} { puts_real {Parameter 'DATABASE' must be given a value.}; exit 1; }; ]
-INCLUDE [ if {{$(USERNAME)} == {}} { puts_real {Parameter 'USERNAME' must be given a value.}; exit 1; }; ]
-INCLUDE [ if {{$(PASSWORD)} == {}} { puts_real {Parameter 'PASSWORD' must be given a value.}; exit 1; }; ]
+DEFAULT_MACRO OEREB2_DATABASE 
+GUI TEXT OEREB2_DATABASE OEREB2-Database:
+DEFAULT_MACRO OEREB2_USERNAME 
+GUI TEXT OEREB2_USERNAME OEREB2-Username:
+DEFAULT_MACRO OEREB2_PASSWORD 
+GUI TEXT OEREB2_PASSWORD OEREB2-Passwort:
+INCLUDE [ if {{$(OEREB_DATABASE)} == {}} { puts_real {Parameter 'OEREB_DATABASE' must be given a value.}; exit 1; }; ]
+INCLUDE [ if {{$(OEREB_USERNAME)} == {}} { puts_real {Parameter 'OEREB_USERNAME' must be given a value.}; exit 1; }; ]
+INCLUDE [ if {{$(OEREB_PASSWORD)} == {}} { puts_real {Parameter 'OEREB_PASSWORD' must be given a value.}; exit 1; }; ]
 INCLUDE [ if {{$(LIEFEREINHEIT)} == {}} { puts_real {Parameter 'LIEFEREINHEIT' must be given a value.}; exit 1; }; ]
 INCLUDE [ if {{$(LOGFILE)} == {}} { puts_real {Parameter 'LOGFILE' must be given a value.}; exit 1; }; ]
+INCLUDE [ if {{$(OEREB2_DATABASE)} == {}} { puts_real {Parameter 'OEREB2_DATABASE' must be given a value.}; exit 1; }; ]
+INCLUDE [ if {{$(OEREB2_USERNAME)} == {}} { puts_real {Parameter 'OEREB2_USERNAME' must be given a value.}; exit 1; }; ]
+INCLUDE [ if {{$(OEREB2_PASSWORD)} == {}} { puts_real {Parameter 'OEREB2_PASSWORD' must be given a value.}; exit 1; }; ]
 #! START_HEADER
 #! WORKSPACE_VERSION 1
 # ============================================================================ 
@@ -4648,9 +4667,13 @@ GUI TITLE ch.ehi.fme.Main to SDE30 Translation
 # bi-directional (for example, GIF can only be used as a WRITER)
 # so a reverse translation may not always be possible.
 #! START_WB_HEADER
-READER_TYPE ORACLE8I_DB
-READER_KEYWORD ORACLE8I_DB_1
-READER_GEN_DIRECTIVES SERVER_TYPE,ORACLE8i,PERSISTENT_CONNECTION,YES,REMOVE_SCHEMA_QUALIFIER,NO,EXPOSE_ATTRS_GROUP,,ORACLE8I_DB_EXPOSE_FORMAT_ATTRS,,WORKSPACE,,SHOW_SYSTEM_TABLES,NO,TABLELIST,OEREB.VORSCHRIFT,USER_NAME,sysoem,WHERE_CLAUSE,,_MERGE_SCHEMAS,YES
+READER_TYPE MULTI_READER
+MULTI_READER_TYPE{0} ORACLE8I_DB
+MULTI_READER_KEYWORD{0} ORACLE8I_DB_1
+MULTI_READER_GEN_DIRECTIVES{0} SERVER_TYPE,ORACLE8i,PERSISTENT_CONNECTION,YES,REMOVE_SCHEMA_QUALIFIER,NO,EXPOSE_ATTRS_GROUP,,ORACLE8I_DB_EXPOSE_FORMAT_ATTRS,,WORKSPACE,,SHOW_SYSTEM_TABLES,NO,TABLELIST,OEREB.VORSCHRIFT,USER_NAME,sysoem,WHERE_CLAUSE,,_MERGE_SCHEMAS,YES
+MULTI_READER_TYPE{1} ORACLE8I_DB
+MULTI_READER_KEYWORD{1} ORACLE8I_DB_2
+MULTI_READER_GEN_DIRECTIVES{1} SERVER_TYPE,ORACLE8i,PERSISTENT_CONNECTION,YES,REMOVE_SCHEMA_QUALIFIER,NO,EXPOSE_ATTRS_GROUP,,ORACLE8I_DB_EXPOSE_FORMAT_ATTRS,,WORKSPACE,,SHOW_SYSTEM_TABLES,NO,TABLELIST,OEREB2.EIGENTUMSBESCHRAENKUNG<space>OEREB2.VORSCHRIFT,USER_NAME,oereb2,WHERE_CLAUSE,,_MERGE_SCHEMAS,YES
 WRITER_TYPE NULL
 WRITER_KEYWORD NULL_DEST
 NULL_DEST_DATASET null
@@ -4671,16 +4694,16 @@ INCLUDE [ if {{$(SourceDataset)} != ""} {                        \
  } ]
 #! END_WB_HEADER
 #! START_SOURCE_HEADER ORACLE8I_DB ORACLE8I_DB_1
-DEFAULT_MACRO SourceDataset_ORACLE8I_DB_1 $(DATABASE)
+DEFAULT_MACRO SourceDataset_ORACLE8I_DB_1 $(OEREB_DATABASE)
 GUI OPTIONAL TEXT SourceDataset_ORACLE8I_DB_1 Source Oracle Non-spatial Service:
 ORACLE8I_DB_1_SERVER_TYPE ORACLE8i
 # ===========================================================================
 # ===========================================================================
-DEFAULT_MACRO ORACLE8I_DB_IN_USER_NAME_ORACLE8I_DB_1 $(USERNAME)
+DEFAULT_MACRO ORACLE8I_DB_IN_USER_NAME_ORACLE8I_DB_1 $(OEREB_USERNAME)
 ORACLE8I_DB_1_USER_NAME "$(ORACLE8I_DB_IN_USER_NAME_ORACLE8I_DB_1)"
 GUI OPTIONAL TEXT ORACLE8I_DB_IN_USER_NAME_ORACLE8I_DB_1 Username:
 # ===========================================================================
-DEFAULT_MACRO ORACLE8I_DB_IN_PASSWORD_ORACLE8I_DB_1 $(PASSWORD)
+DEFAULT_MACRO ORACLE8I_DB_IN_PASSWORD_ORACLE8I_DB_1 $(OEREB_PASSWORD)
 ORACLE8I_DB_1_PASSWORD "$(ORACLE8I_DB_IN_PASSWORD_ORACLE8I_DB_1)"
 GUI OPTIONAL PASSWORD ORACLE8I_DB_IN_PASSWORD_ORACLE8I_DB_1 Password:
 # ==============================================================================
@@ -4740,6 +4763,86 @@ ORACLE8I_DB_1_USE_UNIFIED_DATE_ATTRS $(ORACLE8I_DB_IN_USE_UNIFIED_DATE_ATTRS_ORA
 GUI OPTIONAL TEXT ORACLE8I_DB_IN_WORKSPACE_ORACLE8I_DB_1 Oracle Workspace:
 ORACLE8I_DB_1_DATASET "$(SourceDataset_ORACLE8I_DB_1)"
 #! END_SOURCE_HEADER
+#! START_WB_HEADER
+MACRO WB_KEYWORD "ORACLE8I_DB_2"
+#! END_WB_HEADER
+#! START_SOURCE_HEADER ORACLE8I_DB ORACLE8I_DB_2
+# ========================================================================
+# The following GUI line prompts for the name of the Oracle Service
+# from which data will be extracted.
+# The dataset this mapping file was generated from was:
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+DEFAULT_MACRO SourceDataset
+INCLUDE [ if {{$(SourceDataset)} != ""} {                        \
+ puts {DEFAULT_MACRO SourceDataset_ORACLE8I_DB_2 $(SourceDataset)}     \
+ } ]
+#! END_WB_HEADER
+#! START_SOURCE_HEADER ORACLE8I_DB ORACLE8I_DB_2
+DEFAULT_MACRO SourceDataset_ORACLE8I_DB_2 $(OEREB2_DATABASE)
+GUI OPTIONAL TEXT SourceDataset_ORACLE8I_DB_2 Source Oracle Non-spatial Service:
+ORACLE8I_DB_2_SERVER_TYPE ORACLE8i
+# ===========================================================================
+# ===========================================================================
+DEFAULT_MACRO ORACLE8I_DB_IN_USER_NAME_ORACLE8I_DB_2 $(OEREB2_USERNAME)
+ORACLE8I_DB_2_USER_NAME "$(ORACLE8I_DB_IN_USER_NAME_ORACLE8I_DB_2)"
+GUI OPTIONAL TEXT ORACLE8I_DB_IN_USER_NAME_ORACLE8I_DB_2 Username:
+# ===========================================================================
+DEFAULT_MACRO ORACLE8I_DB_IN_PASSWORD_ORACLE8I_DB_2 $(OEREB2_PASSWORD)
+ORACLE8I_DB_2_PASSWORD "$(ORACLE8I_DB_IN_PASSWORD_ORACLE8I_DB_2)"
+GUI OPTIONAL PASSWORD ORACLE8I_DB_IN_PASSWORD_ORACLE8I_DB_2 Password:
+# ==============================================================================
+DEFAULT_MACRO ORACLE8I_DB_IN_WORKSPACE_ORACLE8I_DB_2 
+ORACLE8I_DB_2_WORKSPACE "$(ORACLE8I_DB_IN_WORKSPACE_ORACLE8I_DB_2)"
+DEFAULT_MACRO ORACLE8I_DB_IN_PERSISTENT_CONNECTION_ORACLE8I_DB_2 YES
+ORACLE8I_DB_2_PERSISTENT_CONNECTION "$(ORACLE8I_DB_IN_PERSISTENT_CONNECTION_ORACLE8I_DB_2)"
+GUI CHECKBOX ORACLE8I_DB_IN_PERSISTENT_CONNECTION_ORACLE8I_DB_2 YES%NO Persistent Connection
+# ===========================================================================
+# ===========================================================================
+DEFAULT_MACRO ORACLE8I_DB_IN_REMOVE_SCHEMA_QUALIFIER_ORACLE8I_DB_2 NO
+ORACLE8I_DB_2_REMOVE_SCHEMA_QUALIFIER "$(ORACLE8I_DB_IN_REMOVE_SCHEMA_QUALIFIER_ORACLE8I_DB_2)"
+GUI CHECKBOX ORACLE8I_DB_IN_REMOVE_SCHEMA_QUALIFIER_ORACLE8I_DB_2 YES%NO Remove Schema Qualifier
+DEFAULT_MACRO ORACLE8I_DB_IN_WHERE_CLAUSE_ORACLE8I_DB_2 
+ORACLE8I_DB_2_WHERE_CLAUSE "$(ORACLE8I_DB_IN_WHERE_CLAUSE_ORACLE8I_DB_2)"
+GUI OPTIONAL TEXT ORACLE8I_DB_IN_WHERE_CLAUSE_ORACLE8I_DB_2 WHERE Clause:
+DEFAULT_MACRO ORACLE8I_DB_IN_EXPOSE_ATTRS_GROUP_ORACLE8I_DB_2 
+ORACLE8I_DB_2_EXPOSE_ATTRS_GROUP "$(ORACLE8I_DB_IN_EXPOSE_ATTRS_GROUP_ORACLE8I_DB_2)"
+GUI DISCLOSUREGROUP ORACLE8I_DB_IN_EXPOSE_ATTRS_GROUP_ORACLE8I_DB_2 ORACLE8I_DB_EXPOSE_FORMAT_ATTRS Schema Attributes
+# ========================================================================
+# The following defines how many rows of data are read from the database
+# at a time. You could prompt for it by uncommenting the relevant GUI
+# lines.
+DEFAULT_MACRO ORACLE8I_DB_IN_CHUNK_SIZE_ORACLE8I_DB_2 1000
+GUI INTEGER ORACLE8I_DB_IN_CHUNK_SIZE_ORACLE8I_DB_2 Rows To Read At A Time:
+ORACLE8I_DB_2_CHUNK_SIZE $(ORACLE8I_DB_IN_CHUNK_SIZE_ORACLE8I_DB_2)
+# ============================================================================
+# The following specifies an SQL command to execute before opening the first
+# ORACLE table.
+DEFAULT_MACRO _ORACLE8I_DB_IN_BEGIN_SQL_ORACLE8I_DB_2 
+GUI OPTIONAL TEXT_EDIT_SQL _ORACLE8I_DB_IN_BEGIN_SQL_ORACLE8I_DB_2 SQL Statement To Execute Before Translation:
+ORACLE8I_DB_2_BEGIN_SQL{0} "$(_ORACLE8I_DB_IN_BEGIN_SQL_ORACLE8I_DB_2)"
+# ============================================================================
+# The following specifies an SQL command to execute after closing all the
+# ORACLE tables.
+DEFAULT_MACRO _ORACLE8I_DB_IN_END_SQL_ORACLE8I_DB_2 
+GUI OPTIONAL TEXT_EDIT_SQL _ORACLE8I_DB_IN_END_SQL_ORACLE8I_DB_2 SQL Statement To Execute After Translation:
+ORACLE8I_DB_2_END_SQL{0} "$(_ORACLE8I_DB_IN_END_SQL_ORACLE8I_DB_2)"
+# ========================================================================
+# The following specifies whether we want to use unified date attributes,
+# where the date and time are read into one attribute, or whether we want
+# to use split date attributes, where two attributes are produced, one with
+# only the date, and another with both the date and time.
+#
+# The default value of yes should not be changed.
+DEFAULT_MACRO ORACLE8I_DB_IN_USE_UNIFIED_DATE_ATTRS_ORACLE8I_DB_2 yes
+ORACLE8I_DB_2_USE_UNIFIED_DATE_ATTRS $(ORACLE8I_DB_IN_USE_UNIFIED_DATE_ATTRS_ORACLE8I_DB_2)
+# ==============================================================================
+# The following specifies the name of the Oracle Workspace that we should go
+# to when reading tables. Redefining just the GUI line as we can't bring up the
+# Oracle workspace picker in non-Settings box contexts.
+GUI OPTIONAL TEXT ORACLE8I_DB_IN_WORKSPACE_ORACLE8I_DB_2 Oracle Workspace:
+ORACLE8I_DB_2_DATASET "$(SourceDataset_ORACLE8I_DB_2)"
+#! END_SOURCE_HEADER
 #! END_HEADER
 
 LOG_FILENAME "$(LOGFILE)"
@@ -4753,10 +4856,15 @@ FME_STROKE_MAX_DEVIATION 0
 LOG_TIMINGS YES
 LOG_FILTER_MASK -1
 DEFAULT_MACRO DATASET_KEYWORD_ORACLE8I_DB_1 ORACLE8I_DB_1
-FME_PASSWORD_PARAMETER_LIST PASSWORD
+DEFAULT_MACRO DATASET_KEYWORD_ORACLE8I_DB_2 ORACLE8I_DB_2
+FME_PASSWORD_PARAMETER_LIST OEREB_PASSWORD
 # -------------------------------------------------------------------------
 
 ORACLE8I_DB_1_READER_META_ATTRIBUTES fme_feature_type
+
+# -------------------------------------------------------------------------
+
+ORACLE8I_DB_2_READER_META_ATTRIBUTES fme_feature_type
 
 # -------------------------------------------------------------------------
 
@@ -4774,24 +4882,77 @@ MACRO VISUALIZER_FEATURE_FILE $(WORKSPACE_TEMP_DIR)/inspector.ffs
 MACRO VISUALIZER_SCHEMA_FILE $(WORKSPACE_TEMP_DIR)/inspector.fsc
 MACRO VISUALIZER_CREATE_SPATIAL_INDEX YES
 # -------------------------------------------------------------------------
-ORACLE8I_DB_1_DEF OEREB.DARSTELLUNGSDIENST   oracle_where_clause_encoded  "DAR_LIEFEREINHEIT=$(LIEFEREINHEIT)"   DAR_OID                      nvarchar(128)   DAR_XTF_ID                   nvarchar(128)   DAR_VERWEISWMS_DE            nvarchar(1023)   DAR_VERWEISWMS_FR            nvarchar(1023)   DAR_LEGENDEIMWEB_DE          nvarchar(1023)   DAR_LEGENDEIMWEB_FR          nvarchar(1023)   DAR_LIEFEREINHEIT            number(6,0)
-# -------------------------------------------------------------------------
 ORACLE8I_DB_1_DEF OEREB.VORSCHRIFT   oracle_where_clause_encoded  "VOR_LIEFEREINHEIT=$(LIEFEREINHEIT)<space>AND<space>VOA_ID=1<space>AND<space>VOR_TEXTIMWEB_DE<space>is<space>not<space>null"   VOR_OID                      nvarchar(128)   VOR_XTF_ID                   nvarchar(128)   VOR_TEXTIMWEB_DE             nvarchar(1023)   VOR_TEXTIMWEB_FR             nvarchar(1023)   VOR_PUBLIZIERTAB             date   VOR_TITEL_DE                 nvarchar(200)   VOR_TITEL_FR                 nvarchar(200)   VOR_OFFIZIELLERTITEL_DE      nvarchar(255)   VOR_OFFIZIELLERTITEL_FR      nvarchar(255)   VOR_ABKUERZUNG_DE            nvarchar(255)   VOR_ABKUERZUNG_FR            nvarchar(255)   VOR_OFFIZIELLENR             nvarchar(20)   VOR_KANTON                   nvarchar(2)   VOR_LIEFEREINHEIT            number(6,0)   RES_ID                       number(10,0)   BFS_NR                       number(5,0)   VOA_ID                       number(10,0)   AMT_OID                      nvarchar(128)   DOKUMENT                     blob
+# -------------------------------------------------------------------------
+ORACLE8I_DB_2_DEF OEREB2.EIGENTUMSBESCHRAENKUNG   oracle_where_clause_encoded  "EIB_LIEFEREINHEIT=$(LIEFEREINHEIT)<space>and<space>eib_legendesymbol_de<space>is<space>not<space>null"   EIB_OID                      nvarchar(128)   EIB_XTF_ID                   nvarchar(128)   EIB_AUSSAGE_DE               nclob   EIB_AUSSAGE_FR               nclob   EIB_ARTCODE                  nvarchar(40)   EIB_ARTCODELISTE             nvarchar(1023)   EIB_PUBLIZIERTAB             date   EIB_LIEFEREINHEIT            number(6,0)   AMT_OID                      nvarchar(128)   DAR_OID                      nvarchar(128)   RES_ID                       number(10,0)   STH_ID                       number(10,0)   EIB_SORT                     number(10,0)   EIB_LEGENDESYMBOL_DE         nvarchar(1023)   EIB_LEGENDESYMBOL_FR         nvarchar(1023)
+# -------------------------------------------------------------------------
+ORACLE8I_DB_2_DEF OEREB2.VORSCHRIFT   oracle_where_clause_encoded  "VOR_LIEFEREINHEIT=$(LIEFEREINHEIT)<space>AND<space>VOA_ID=1<space>AND<space>VOR_TEXTIMWEB_DE<space>is<space>not<space>null"   VOR_OID                      nvarchar(128)   VOR_XTF_ID                   nvarchar(128)   VOR_TEXTIMWEB_DE             nvarchar(1023)   VOR_TEXTIMWEB_FR             nvarchar(1023)   VOR_PUBLIZIERTAB             date   VOR_TITEL_DE                 nvarchar(200)   VOR_TITEL_FR                 nvarchar(200)   VOR_OFFIZIELLERTITEL_DE      nvarchar(255)   VOR_OFFIZIELLERTITEL_FR      nvarchar(255)   VOR_ABKUERZUNG_DE            nvarchar(255)   VOR_ABKUERZUNG_FR            nvarchar(255)   VOR_OFFIZIELLENR             nvarchar(20)   VOR_KANTON                   nvarchar(2)   VOR_LIEFEREINHEIT            number(6,0)   RES_ID                       number(10,0)   BFS_NR                       number(5,0)   VOA_ID                       number(10,0)   AMT_OID                      nvarchar(128)   DOKUMENT                     blob   VOR_SORT                     number(10,0)
 
 # -------------------------------------------------------------------------
 
-Lookup ___KnownFeatureTypes___   OEREB.VORSCHRIFT yes   OEREB.DARSTELLUNGSDIENST yes   "" no
+Lookup ___KnownFeatureTypes___   "$(DATASET_KEYWORD_ORACLE8I_DB_2)_OEREB2.EIGENTUMSBESCHRAENKUNG" yes   "$(DATASET_KEYWORD_ORACLE8I_DB_1)_OEREB.VORSCHRIFT" yes   "$(DATASET_KEYWORD_ORACLE8I_DB_2)_OEREB2.VORSCHRIFT" yes   "" no
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * TestFactory   FACTORY_NAME "Unexpected Input Remover"   INPUT FEATURE_TYPE *   TEST @Lookup(___KnownFeatureTypes___,@FeatureType()) == yes   OUTPUT PASSED FEATURE_TYPE *
+FACTORY_DEF * TestFactory   FACTORY_NAME "Unexpected Input Remover"   INPUT FEATURE_TYPE *   TEST @Lookup(___KnownFeatureTypes___,@Concatenate(&multi_reader_keyword,"_",@FeatureType())) == yes   OUTPUT PASSED FEATURE_TYPE *
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * TeeFactory    FACTORY_NAME "Source -> Generic"    INPUT FEATURE_TYPE *    OUTPUT FEATURE_TYPE *       @Transform(ORACLE8I_DB,FME_GENERIC,PRESERVE_GEOMETRY)
+FACTORY_DEF * TeeFactory    FACTORY_NAME "Source -> Generic"    INPUT FEATURE_TYPE *    OUTPUT FEATURE_TYPE *       @Transform(&multi_reader_type,FME_GENERIC,PRESERVE_GEOMETRY)
 DEFAULT_MACRO WB_CURRENT_CONTEXT
 # -------------------------------------------------------------------------
 
+INCLUDE [    set macroLine "MACRO AttributeRemover_2_LIST_EXP ";    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "{\[0-9\]+}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
+FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRemover_2    INPUT  FEATURE_TYPE OEREB2.EIGENTUMSBESCHRAENKUNG    OUTPUT FEATURE_TYPE AttributeRemover_2_OUTPUT        @RemoveAttributes(EIB_XTF_ID,EIB_AUSSAGE_DE,EIB_AUSSAGE_FR,EIB_ARTCODE,EIB_ARTCODELISTE,EIB_PUBLIZIERTAB,EIB_LIEFEREINHEIT,AMT_OID,DAR_OID,RES_ID,STH_ID,EIB_SORT)        @RemoveAttributes(fme_regexp_match"$(AttributeRemover_2_LIST_EXP)")
+
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * HTTPFactory    FACTORY_NAME HTTPHeader_3       INPUT  FEATURE_TYPE AttributeRemover_2_OUTPUT    TARGET_URL @EvaluateExpression(STRING_ENCODED,<at>Value<openparen>EIB_LEGENDESYMBOL_DE<closeparen>,HTTPHeader_3)    HTTP_METHOD HEAD    AUTH_METHOD Basic    SINGLE_SIGN_ON No    PROXY_AUTH_METHOD Basic    RESPONSE_HEADER_LIST_ATTR "_headers"    STATUS_CODE_ATTR "_http_status_code_de"    ERROR_ATTR "_error"    USE_COOKIES No    OUTPUT OUTPUT FEATURE_TYPE HTTPHeader_3_OUTPUT    OUTPUT REJECTED FEATURE_TYPE HTTPHeader_3_<REJECTED>
+
+
+# -------------------------------------------------------------------------
+
+# The default behaviour is to abort on any feature entering the transformer.
+# If Workbench has set the _WB_BYPASS_TERMINATION macro to a value of "Yes",
+# then the features will instead be passed through with a feature type of
+# __WB_BYPASS_TERMINATOR__, which Workbench will send to a visualizer or
+# somesuch.
+
+DEFAULT_MACRO _WB_BYPASS_TERMINATION No
+FACTORY_DEF * TestFactory    FACTORY_NAME Terminator_4    INPUT  FEATURE_TYPE HTTPHeader_3_<REJECTED>    TEST "$(_WB_BYPASS_TERMINATION)" == Yes    OUTPUT PASSED FEATURE_TYPE __WB_BYPASS_TERMINATOR__       @SupplyAttributes(_wb_termination_feature_type,@FeatureType())       @SupplyAttributes(ENCODED,_wb_termination_message,Fehler<space>beim<space>Aufrufen<space>der<space>Legendenbildli!!!)       @SupplyAttributes(_wb_termination_xformer,"Terminator_4")       @SupplyAttributes(_wb_termination_feature,Yes)    OUTPUT FAILED FEATURE_TYPE * @Abort(ENCODED,Fehler<space>beim<space>Aufrufen<space>der<space>Legendenbildli!!!)
+
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * HTTPFactory    FACTORY_NAME HTTPHeader_4       INPUT  FEATURE_TYPE HTTPHeader_3_OUTPUT    TARGET_URL @EvaluateExpression(STRING_ENCODED,<at>Value<openparen>EIB_LEGENDESYMBOL_FR<closeparen>,HTTPHeader_4)    HTTP_METHOD HEAD    AUTH_METHOD Basic    SINGLE_SIGN_ON No    PROXY_AUTH_METHOD Basic    RESPONSE_HEADER_LIST_ATTR "_headers"    STATUS_CODE_ATTR "_http_status_code_fr"    ERROR_ATTR "_error"    USE_COOKIES No    OUTPUT OUTPUT FEATURE_TYPE HTTPHeader_4_OUTPUT    OUTPUT REJECTED FEATURE_TYPE HTTPHeader_4_<REJECTED>
+
+
+# -------------------------------------------------------------------------
+
+# The default behaviour is to abort on any feature entering the transformer.
+# If Workbench has set the _WB_BYPASS_TERMINATION macro to a value of "Yes",
+# then the features will instead be passed through with a feature type of
+# __WB_BYPASS_TERMINATOR__, which Workbench will send to a visualizer or
+# somesuch.
+
+DEFAULT_MACRO _WB_BYPASS_TERMINATION No
+FACTORY_DEF * TestFactory    FACTORY_NAME Terminator_5    INPUT  FEATURE_TYPE HTTPHeader_4_<REJECTED>    TEST "$(_WB_BYPASS_TERMINATION)" == Yes    OUTPUT PASSED FEATURE_TYPE __WB_BYPASS_TERMINATOR__       @SupplyAttributes(_wb_termination_feature_type,@FeatureType())       @SupplyAttributes(ENCODED,_wb_termination_message,Fehler<space>beim<space>Aufrufen<space>der<space>Legendenbildli!!!)       @SupplyAttributes(_wb_termination_xformer,"Terminator_5")       @SupplyAttributes(_wb_termination_feature,Yes)    OUTPUT FAILED FEATURE_TYPE * @Abort(ENCODED,Fehler<space>beim<space>Aufrufen<space>der<space>Legendenbildli!!!)
+
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TestFactory    FACTORY_NAME Tester_2    INPUT  FEATURE_TYPE HTTPHeader_4_OUTPUT    TEST @EvaluateExpression(STRING_ENCODED,<at>Value<openparen>_http_status_code_de<closeparen>,Tester_2) = 200 ENCODED TEST @EvaluateExpression(STRING_ENCODED,<at>Value<openparen>_http_status_code_fr<closeparen>,Tester_2) = 200 ENCODED    BOOLEAN_OPERATOR AND    OUTPUT FAILED FEATURE_TYPE Tester_2_FAILED
+# -------------------------------------------------------------------------
+
+# The default behaviour is to abort on any feature entering the transformer.
+# If Workbench has set the _WB_BYPASS_TERMINATION macro to a value of "Yes",
+# then the features will instead be passed through with a feature type of
+# __WB_BYPASS_TERMINATOR__, which Workbench will send to a visualizer or
+# somesuch.
+
+DEFAULT_MACRO _WB_BYPASS_TERMINATION No
+FACTORY_DEF * TestFactory    FACTORY_NAME Terminator_6    INPUT  FEATURE_TYPE Tester_2_FAILED    TEST "$(_WB_BYPASS_TERMINATION)" == Yes    OUTPUT PASSED FEATURE_TYPE __WB_BYPASS_TERMINATOR__       @SupplyAttributes(_wb_termination_feature_type,@FeatureType())       @SupplyAttributes(ENCODED,_wb_termination_message,Fehler<space>beim<space>Aufrufen<space>der<space>Legendenbildli!!!)       @SupplyAttributes(_wb_termination_xformer,"Terminator_6")       @SupplyAttributes(_wb_termination_feature,Yes)    OUTPUT FAILED FEATURE_TYPE * @Abort(ENCODED,Fehler<space>beim<space>Aufrufen<space>der<space>Legendenbildli!!!)
+
+# -------------------------------------------------------------------------
+
 INCLUDE [    set macroLine "MACRO AttributeRemover_LIST_EXP ";    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "{\[0-9\]+}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
-FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRemover    INPUT  FEATURE_TYPE OEREB.VORSCHRIFT    OUTPUT FEATURE_TYPE AttributeRemover_OUTPUT        @RemoveAttributes(VOR_PUBLIZIERTAB,VOR_TITEL_DE,VOR_TITEL_FR,VOR_OFFIZIELLERTITEL_DE,VOR_OFFIZIELLERTITEL_FR,VOR_ABKUERZUNG_DE,VOR_ABKUERZUNG_FR,VOR_OFFIZIELLENR,VOR_KANTON,VOR_LIEFEREINHEIT,RES_ID,BFS_NR,VOA_ID,AMT_OID,DOKUMENT)        @RemoveAttributes(fme_regexp_match"$(AttributeRemover_LIST_EXP)")
+FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRemover    INPUT  FEATURE_TYPE OEREB.VORSCHRIFT    INPUT  FEATURE_TYPE OEREB2.VORSCHRIFT    OUTPUT FEATURE_TYPE AttributeRemover_OUTPUT        @RemoveAttributes(VOR_PUBLIZIERTAB,VOR_TITEL_DE,VOR_TITEL_FR,VOR_OFFIZIELLERTITEL_DE,VOR_OFFIZIELLERTITEL_FR,VOR_ABKUERZUNG_DE,VOR_ABKUERZUNG_FR,VOR_OFFIZIELLENR,VOR_KANTON,VOR_LIEFEREINHEIT,RES_ID,BFS_NR,VOA_ID,AMT_OID,DOKUMENT)        @RemoveAttributes(fme_regexp_match"$(AttributeRemover_LIST_EXP)")
 
 # -------------------------------------------------------------------------
 
@@ -4846,48 +5007,6 @@ FACTORY_DEF * TestFactory    FACTORY_NAME Tester    INPUT  FEATURE_TYPE HTTPHead
 DEFAULT_MACRO _WB_BYPASS_TERMINATION No
 FACTORY_DEF * TestFactory    FACTORY_NAME Terminator_3    INPUT  FEATURE_TYPE Tester_FAILED    TEST "$(_WB_BYPASS_TERMINATION)" == Yes    OUTPUT PASSED FEATURE_TYPE __WB_BYPASS_TERMINATOR__       @SupplyAttributes(_wb_termination_feature_type,@FeatureType())       @SupplyAttributes(ENCODED,_wb_termination_message,Abbruch:<space>Fehler<space>beim<space>Abrufen<space>der<space>URL!!!)       @SupplyAttributes(_wb_termination_xformer,"Terminator_3")       @SupplyAttributes(_wb_termination_feature,Yes)    OUTPUT FAILED FEATURE_TYPE * @Abort(ENCODED,Abbruch:<space>Fehler<space>beim<space>Abrufen<space>der<space>URL!!!)
 
-# -------------------------------------------------------------------------
-
-INCLUDE [    set macroLine "MACRO AttributeRemover_2_LIST_EXP ";    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "{\[0-9\]+}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
-FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRemover_2    INPUT  FEATURE_TYPE OEREB.DARSTELLUNGSDIENST    OUTPUT FEATURE_TYPE AttributeRemover_2_OUTPUT        @RemoveAttributes(DAR_VERWEISWMS_DE,DAR_VERWEISWMS_FR,DAR_LIEFEREINHEIT)        @RemoveAttributes(fme_regexp_match"$(AttributeRemover_2_LIST_EXP)")
-
-# -------------------------------------------------------------------------
-
-FACTORY_DEF * HTTPFactory    FACTORY_NAME HTTPHeader_3       INPUT  FEATURE_TYPE AttributeRemover_2_OUTPUT    TARGET_URL @EvaluateExpression(STRING_ENCODED,<at>Value<openparen>DAR_LEGENDEIMWEB_DE<closeparen>,HTTPHeader_3)    HTTP_METHOD HEAD    AUTH_METHOD Basic    SINGLE_SIGN_ON No    PROXY_AUTH_METHOD Basic    RESPONSE_HEADER_LIST_ATTR "_headers_de"    STATUS_CODE_ATTR "_http_status_code_de"    ERROR_ATTR "_error_de"    USE_COOKIES No    OUTPUT OUTPUT FEATURE_TYPE HTTPHeader_3_OUTPUT    OUTPUT REJECTED FEATURE_TYPE HTTPHeader_3_<REJECTED>
-
-
-FACTORY_DEF * TeeFactory   FACTORY_NAME "HTTPHeader_3 <REJECTED> Splitter"   INPUT FEATURE_TYPE HTTPHeader_3_<REJECTED>   OUTPUT FEATURE_TYPE HTTPHeader_3_<REJECTED>_0_8jx8E4mjDIE=   OUTPUT FEATURE_TYPE HTTPHeader_3_<REJECTED>_1_8jx8E4mjDIE=
-# -------------------------------------------------------------------------
-
-FACTORY_DEF * TeeFactory    FACTORY_NAME Logger_3_Logger    INPUT  FEATURE_TYPE HTTPHeader_3_<REJECTED>_0_8jx8E4mjDIE=    OUTPUT FEATURE_TYPE Logger_3_LOGGED                        @FeatureType("")                  @Log("Logger_3: Legendenbildli fehlen:",20,50)
-
-FACTORY_DEF * TeeFactory   FACTORY_NAME "Logger_3 LOGGED Output Nuker"   INPUT FEATURE_TYPE Logger_3_LOGGED
-# -------------------------------------------------------------------------
-FACTORY_DEF * TeeFactory   FACTORY_NAME "Terminator_4 (Disabled) Nuker"   INPUT FEATURE_TYPE HTTPHeader_3_<REJECTED>_1_8jx8E4mjDIE=
-# -------------------------------------------------------------------------
-
-FACTORY_DEF * HTTPFactory    FACTORY_NAME HTTPHeader_4       INPUT  FEATURE_TYPE HTTPHeader_3_OUTPUT    TARGET_URL @EvaluateExpression(STRING_ENCODED,<at>Value<openparen>DAR_LEGENDEIMWEB_FR<closeparen>,HTTPHeader_4)    HTTP_METHOD HEAD    AUTH_METHOD Basic    SINGLE_SIGN_ON No    PROXY_AUTH_METHOD Basic    RESPONSE_HEADER_LIST_ATTR "_headers_fr"    STATUS_CODE_ATTR "_http_status_code_fr"    ERROR_ATTR "_error_fr"    USE_COOKIES No    OUTPUT OUTPUT FEATURE_TYPE HTTPHeader_4_OUTPUT    OUTPUT REJECTED FEATURE_TYPE HTTPHeader_4_<REJECTED>
-
-
-FACTORY_DEF * TeeFactory   FACTORY_NAME "HTTPHeader_4 <REJECTED> Splitter"   INPUT FEATURE_TYPE HTTPHeader_4_<REJECTED>   OUTPUT FEATURE_TYPE HTTPHeader_4_<REJECTED>_0_ajgXK01e0Ro=   OUTPUT FEATURE_TYPE HTTPHeader_4_<REJECTED>_1_ajgXK01e0Ro=
-# -------------------------------------------------------------------------
-
-FACTORY_DEF * TeeFactory    FACTORY_NAME Logger_2_Logger    INPUT  FEATURE_TYPE HTTPHeader_4_<REJECTED>_1_ajgXK01e0Ro=    OUTPUT FEATURE_TYPE Logger_2_LOGGED                        @FeatureType("")                  @Log("Logger_2: Legendenbildli fehlen:",20,50)
-
-FACTORY_DEF * TeeFactory   FACTORY_NAME "Logger_2 LOGGED Output Nuker"   INPUT FEATURE_TYPE Logger_2_LOGGED
-# -------------------------------------------------------------------------
-FACTORY_DEF * TeeFactory   FACTORY_NAME "Terminator_5 (Disabled) Nuker"   INPUT FEATURE_TYPE HTTPHeader_4_<REJECTED>_0_ajgXK01e0Ro=
-# -------------------------------------------------------------------------
-
-FACTORY_DEF * TestFactory    FACTORY_NAME Tester_2    INPUT  FEATURE_TYPE HTTPHeader_4_OUTPUT    TEST @EvaluateExpression(STRING_ENCODED,<at>Value<openparen>_http_status_code_de<closeparen>,Tester_2) = 200 ENCODED TEST @EvaluateExpression(STRING_ENCODED,<at>Value<openparen>_http_status_code_fr<closeparen>,Tester_2) = 200 ENCODED    BOOLEAN_OPERATOR AND    OUTPUT FAILED FEATURE_TYPE Tester_2_FAILED
-FACTORY_DEF * TeeFactory   FACTORY_NAME "Tester_2 FAILED Splitter"   INPUT FEATURE_TYPE Tester_2_FAILED   OUTPUT FEATURE_TYPE Tester_2_FAILED_0_QOKiTR894Ik=   OUTPUT FEATURE_TYPE Tester_2_FAILED_1_QOKiTR894Ik=
-# -------------------------------------------------------------------------
-FACTORY_DEF * TeeFactory   FACTORY_NAME "Terminator_6 (Disabled) Nuker"   INPUT FEATURE_TYPE Tester_2_FAILED_1_QOKiTR894Ik=
-# -------------------------------------------------------------------------
-
-FACTORY_DEF * TeeFactory    FACTORY_NAME Logger_Logger    INPUT  FEATURE_TYPE Tester_2_FAILED_0_QOKiTR894Ik=    OUTPUT FEATURE_TYPE Logger_LOGGED                        @FeatureType("")                  @Log("Logger: Legendenbildli fehlen:",20,50)
-
-FACTORY_DEF * TeeFactory   FACTORY_NAME "Logger LOGGED Output Nuker"   INPUT FEATURE_TYPE Logger_LOGGED
 # -------------------------------------------------------------------------
 
 FACTORY_DEF * TestFactory   FACTORY_NAME "Final Output Feature Type Router"   INPUT FEATURE_TYPE __WB_BYPASS_TERMINATOR__     @SupplyAttributes(__wb_out_feat_type__,__WB_BYPASS_TERMINATOR__)     @Tcl2("FME_StatMessage 818062 {@Value(_wb_termination_message) (@Value(_wb_termination_xformer))} 818063")   INPUT FEATURE_TYPE *   TEST @Value(__wb_out_feat_type__) != ""   OUTPUT PASSED FEATURE_TYPE *     @FeatureType(@Value(__wb_out_feat_type__))   OUTPUT FAILED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")
