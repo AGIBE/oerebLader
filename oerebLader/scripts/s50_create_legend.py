@@ -60,3 +60,5 @@ def run(config):
     
     logger.info("Legende wurde in " + html_filename + " geschrieben.")
     
+    logger.info("Script " +  os.path.basename(__file__) + " ist beendet.")
+    
