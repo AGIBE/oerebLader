@@ -15,9 +15,9 @@ def run(config):
     logger.info("Script " +  fme_script + " wird ausgeführt.")
     logger.info("Das FME-Logfile heisst: " + fme_logfile)
     if config['GENERAL']['files_be_ch_baseurl'].endswith("/"):
-        legend_baseurl = config['GENERAL']['files_be_ch_baseurl'] + unicode(config['LIEFEREINHEIT']['id']) + "/legenden/"
+        legend_baseurl = config['GENERAL']['files_be_ch_baseurl'] + "legenden/" + unicode(config['LIEFEREINHEIT']['id']) + "/"
     else:
-        legend_baseurl = config['GENERAL']['files_be_ch_baseurl'] + "/" + unicode(config['LIEFEREINHEIT']['id']) + "/legenden/"
+        legend_baseurl = config['GENERAL']['files_be_ch_baseurl'] + "/legenden/" + unicode(config['LIEFEREINHEIT']['id']) + "/"
 
     runner = fmeobjects.FMEWorkspaceRunner()
     # Der FMEWorkspaceRunner akzeptiert keine Unicode-Strings!
