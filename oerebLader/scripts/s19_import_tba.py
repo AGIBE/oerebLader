@@ -20,9 +20,9 @@ def run(config):
     excel_darstellungsdienst_filename = "DARSTELLUNGSDIENST_" + unicode(config['LIEFEREINHEIT']['id']) + ".xlsx"
     excel_darstellungsdienst_file = os.path.join(tba_path, excel_darstellungsdienst_filename)
     if config['GENERAL']['files_be_ch_baseurl'].endswith("/"):
-        legend_baseurl = config['GENERAL']['files_be_ch_baseurl'] + unicode(config['LIEFEREINHEIT']['id']) + "/legenden/"
+        legend_baseurl = config['GENERAL']['files_be_ch_baseurl'] + "legenden/TBA/baulinie_kantonsstrasse.png"
     else:
-        legend_baseurl = config['GENERAL']['files_be_ch_baseurl'] + "/" + unicode(config['LIEFEREINHEIT']['id']) + "/legenden/"
+        legend_baseurl = config['GENERAL']['files_be_ch_baseurl'] + "/legenden/TBA/baulinie_kantonsstrasse.png"
 
     runner = fmeobjects.FMEWorkspaceRunner()
     
