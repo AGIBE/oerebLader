@@ -18,7 +18,7 @@
 #    
 #! PASSWORD=""
 #! ATTR_TYPE_ENCODING="SDF"
-#! VIEW_POSITION="-41 682"
+#! VIEW_POSITION="-41 679"
 #! SHOW_INFO_NODES="true"
 #! FME_STROKE_MAX_DEVIATION="0"
 #! BEGIN_PYTHON="#&lt;space&gt;-*-&lt;space&gt;coding:&lt;space&gt;latin-1&lt;space&gt;-*-&lt;lf&gt;import&lt;space&gt;fmeobjects&lt;lf&gt;&lt;lf&gt;def&lt;space&gt;processMultilangFields&lt;openparen&gt;feature&lt;closeparen&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;multilangFields&lt;space&gt;=&lt;space&gt;feature.getAttribute&lt;openparen&gt;&lt;apos&gt;multilangfields&lt;apos&gt;&lt;closeparen&gt;.split&lt;openparen&gt;&lt;quote&gt;&lt;comma&gt;&lt;quote&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;for&lt;space&gt;mlField&lt;space&gt;in&lt;space&gt;multilangFields:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;content_de&lt;space&gt;=&lt;space&gt;&lt;quote&gt;&lt;quote&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;content_fr&lt;space&gt;=&lt;space&gt;&lt;quote&gt;&lt;quote&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;att_Language_list&lt;space&gt;=&lt;space&gt;feature.getAttribute&lt;openparen&gt;mlField&lt;space&gt;+&lt;space&gt;&lt;apos&gt;&lt;opencurly&gt;0&lt;closecurly&gt;.localizedText&lt;opencurly&gt;&lt;closecurly&gt;.Language&lt;apos&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;att_Text_list&lt;space&gt;=&lt;space&gt;feature.getAttribute&lt;openparen&gt;mlField&lt;space&gt;+&lt;space&gt;&lt;apos&gt;&lt;opencurly&gt;0&lt;closecurly&gt;.localizedText&lt;opencurly&gt;&lt;closecurly&gt;.Text&lt;apos&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;#&lt;space&gt;wenn&lt;space&gt;das&lt;space&gt;Multilang-Feld&lt;space&gt;nicht&lt;space&gt;abgef&lt;u00fc&gt;llt&lt;space&gt;ist&lt;comma&gt;&lt;space&gt;soll&lt;space&gt;es&lt;space&gt;nicht&lt;space&gt;bearbeitet&lt;space&gt;werden&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;if&lt;space&gt;att_Language_list&lt;space&gt;is&lt;space&gt;not&lt;space&gt;None:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;for&lt;space&gt;i&lt;space&gt;in&lt;space&gt;range&lt;openparen&gt;len&lt;openparen&gt;att_Language_list&lt;closeparen&gt;&lt;closeparen&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;if&lt;space&gt;att_Language_list&lt;openbracket&gt;i&lt;closebracket&gt;==&lt;quote&gt;de&lt;quote&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;content_de&lt;space&gt;=&lt;space&gt;att_Text_list&lt;openbracket&gt;i&lt;closebracket&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;if&lt;space&gt;att_Language_list&lt;openbracket&gt;i&lt;closebracket&gt;==&lt;quote&gt;fr&lt;quote&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;content_fr&lt;space&gt;=&lt;space&gt;att_Text_list&lt;openbracket&gt;i&lt;closebracket&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;if&lt;space&gt;att_Language_list&lt;openbracket&gt;i&lt;closebracket&gt;==&lt;quote&gt;it&lt;quote&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;content_de&lt;space&gt;=&lt;space&gt;att_Text_list&lt;openbracket&gt;i&lt;closebracket&gt;&lt;lf&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;#&lt;space&gt;Wenn&lt;space&gt;der&lt;space&gt;Text&lt;space&gt;nur&lt;space&gt;in&lt;space&gt;einer&lt;space&gt;Sprache&lt;space&gt;vorhanden&lt;space&gt;ist&lt;comma&gt;&lt;space&gt;wird&lt;space&gt;er&lt;space&gt;auch&lt;space&gt;f&lt;u00fc&gt;r&lt;space&gt;die&lt;space&gt;andere&lt;space&gt;Sprache&lt;space&gt;verwendet&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;if&lt;space&gt;content_de&lt;space&gt;==&lt;space&gt;&lt;quote&gt;&lt;quote&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;content_de&lt;space&gt;=&lt;space&gt;content_fr&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;if&lt;space&gt;content_fr&lt;space&gt;==&lt;space&gt;&lt;quote&gt;&lt;quote&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;content_fr&lt;space&gt;=&lt;space&gt;content_de&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;feature.setAttribute&lt;openparen&gt;mlField&lt;space&gt;+&lt;space&gt;&lt;quote&gt;_DE&lt;quote&gt;&lt;comma&gt;&lt;space&gt;content_de&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;feature.setAttribute&lt;openparen&gt;mlField&lt;space&gt;+&lt;space&gt;&lt;quote&gt;_FR&lt;quote&gt;&lt;comma&gt;&lt;space&gt;content_fr&lt;closeparen&gt;&lt;space&gt;"
@@ -36,13 +36,13 @@
 #! USAGE=""
 #! END_PYTHON=""
 #! HISTORY=""
-#! FME_DOCUMENT_PRIORGUID="081ee97d-038f-4e04-84da-72c381365512,8ed992b9-6214-4d51-b25b-9fbebd3a409d,5449b6bd-a67b-43e4-9871-9ea68d746d6a,1fee7f9a-6c75-4479-beb4-221fd178f0f1,76ddd879-d905-463f-ae33-fae2719865dc,25772c2b-b9e2-452a-be67-9808f9de98cf,6cc0726f-fd24-49cd-a952-cab15d95c363"
-#! DOC_TOP_LEFT="86 -789"
+#! FME_DOCUMENT_PRIORGUID="081ee97d-038f-4e04-84da-72c381365512,8ed992b9-6214-4d51-b25b-9fbebd3a409d,5449b6bd-a67b-43e4-9871-9ea68d746d6a,1fee7f9a-6c75-4479-beb4-221fd178f0f1,76ddd879-d905-463f-ae33-fae2719865dc,25772c2b-b9e2-452a-be67-9808f9de98cf,6cc0726f-fd24-49cd-a952-cab15d95c363,9f82967a-5f02-405b-9e55-1d0d2ce02c00"
+#! DOC_TOP_LEFT="86 -814"
 #! REQUIREMENTS_KEYWORD=""
 #! SOURCE_ROUTING_FILE=""
 #! DESTINATION_ROUTING_FILE=""
 #! DESTINATION="NONE"
-#! LAST_SAVE_DATE="2016-08-17T14:05:51"
+#! LAST_SAVE_DATE="2016-08-29T10:35:49"
 #! FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Datum"
 #! WORKSPACE_VERSION="1"
 #! SOURCE="NONE"
@@ -52,8 +52,8 @@
 #! LOG_FILE="$(LOGFILE)"
 #! REQUIREMENTS=""
 #! BEGIN_TCL=""
-#! DOC_EXTENTS="3673 1393"
-#! FME_DOCUMENT_GUID="9f82967a-5f02-405b-9e55-1d0d2ce02c00"
+#! DOC_EXTENTS="4490 1408"
+#! FME_DOCUMENT_GUID="4f0c59e4-9edd-47ac-ae92-e10fdcca3f90"
 #! SHOW_ANNOTATIONS="true"
 #! IGNORE_READER_FAILURE="No"
 #! WARN_INVALID_XFORM_PARAM="Yes"
@@ -649,12 +649,12 @@
 #! <COMMENT
 #! IDENTIFIER="9"
 #! COMMENT_VALUE="&lt;html&gt;&lt;body&gt;Deutsche URLs&lt;/body&gt;&lt;/html&gt;"
-#! POSITION="1854 564"
+#! POSITION="2651 548"
 #! ORDER="17"
 #! FOLLOW_ANCHOR="true"
 #! INFO_NODE="false"
-#! TOP_LEFT="1854 564"
-#! BOTTOM_RIGHT="1854 564"
+#! TOP_LEFT="2651 548"
+#! BOTTOM_RIGHT="2651 548"
 #! COLOUR="1,1,0.784314,0.192157"
 #! SIZE_POLICY="8"
 #! COMMENT_TYPE="REGULAR"
@@ -663,12 +663,12 @@
 #! <COMMENT
 #! IDENTIFIER="12"
 #! COMMENT_VALUE="&lt;html&gt;&lt;body&gt;Französische URLs&lt;/body&gt;&lt;/html&gt;"
-#! POSITION="2459 521"
+#! POSITION="3256 505"
 #! ORDER="19"
 #! FOLLOW_ANCHOR="true"
 #! INFO_NODE="false"
-#! TOP_LEFT="2459 521"
-#! BOTTOM_RIGHT="2459 521"
+#! TOP_LEFT="3256 505"
+#! BOTTOM_RIGHT="3256 505"
 #! COLOUR="1,1,0.784314,0.192157"
 #! SIZE_POLICY="8"
 #! COMMENT_TYPE="REGULAR"
@@ -677,12 +677,12 @@
 #! <COMMENT
 #! IDENTIFIER="46"
 #! COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:11px; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Umlaute in den URLs ersetzen&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
-#! POSITION="1168 604"
+#! POSITION="1988 588"
 #! ORDER="5e+014"
 #! FOLLOW_ANCHOR="true"
 #! INFO_NODE="false"
-#! TOP_LEFT="1168 604"
-#! BOTTOM_RIGHT="1168 604"
+#! TOP_LEFT="1988 588"
+#! BOTTOM_RIGHT="1988 588"
 #! COLOUR="1,1,0.784314,0.192157"
 #! SIZE_POLICY="8"
 #! COMMENT_TYPE="REGULAR"
@@ -697,7 +697,7 @@
 #! INFO_NODE="false"
 #! TOP_LEFT="92 275"
 #! BOTTOM_RIGHT="92 275"
-#! COLOUR="1,1,0.784314,0.196078"
+#! COLOUR="1,1,0.784314,0.192157"
 #! SIZE_POLICY="8"
 #! COMMENT_TYPE="REGULAR"
 #! ANCHORED_NODE="22"
@@ -711,7 +711,7 @@
 #! INFO_NODE="false"
 #! TOP_LEFT="98 -274"
 #! BOTTOM_RIGHT="98 -274"
-#! COLOUR="1,1,0.784314,0.196078"
+#! COLOUR="1,1,0.784314,0.192157"
 #! SIZE_POLICY="8"
 #! COMMENT_TYPE="REGULAR"
 #! ANCHORED_NODE="23"
@@ -719,13 +719,13 @@
 #! <COMMENT
 #! IDENTIFIER="30"
 #! COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:11px; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Deutsche Legendenbilder&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
-#! POSITION="1460 -267"
+#! POSITION="2277 -292"
 #! ORDER="5e+014"
 #! FOLLOW_ANCHOR="true"
 #! INFO_NODE="false"
-#! TOP_LEFT="1460 -267"
-#! BOTTOM_RIGHT="1460 -267"
-#! COLOUR="1,1,0.784314,0.196078"
+#! TOP_LEFT="2277 -292"
+#! BOTTOM_RIGHT="2277 -292"
+#! COLOUR="1,1,0.784314,0.192157"
 #! SIZE_POLICY="8"
 #! COMMENT_TYPE="REGULAR"
 #! ANCHORED_NODE="29"
@@ -733,13 +733,13 @@
 #! <COMMENT
 #! IDENTIFIER="32"
 #! COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:11px; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Französische Legendenbilder&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
-#! POSITION="2192 -305"
+#! POSITION="3009 -330"
 #! ORDER="5e+014"
 #! FOLLOW_ANCHOR="true"
 #! INFO_NODE="false"
-#! TOP_LEFT="2192 -305"
-#! BOTTOM_RIGHT="2192 -305"
-#! COLOUR="1,1,0.784314,0.196078"
+#! TOP_LEFT="3009 -330"
+#! BOTTOM_RIGHT="3009 -330"
+#! COLOUR="1,1,0.784314,0.192157"
 #! SIZE_POLICY="8"
 #! COMMENT_TYPE="REGULAR"
 #! ANCHORED_NODE="31"
@@ -761,13 +761,10 @@
 #! >
 #! <OUTPUT_FEAT NAME="OUTPUT"/>
 #! <FEAT_COLLAPSED COLLAPSED="0"/>
-#! <XFORM_ATTR ATTR_NAME="VOR_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="VOR_XTF_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="VOR_TEXTIMWEB_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="VOR_TEXTIMWEB_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="VOR_SORT" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_PARM PARM_NAME="LIST_ATTRS" PARM_VALUE=""/>
-#! <XFORM_PARM PARM_NAME="REMOVE_ATTRS" PARM_VALUE="VOR_PUBLIZIERTAB,VOR_TITEL_DE,VOR_TITEL_FR,VOR_OFFIZIELLERTITEL_DE,VOR_OFFIZIELLERTITEL_FR,VOR_ABKUERZUNG_DE,VOR_ABKUERZUNG_FR,VOR_OFFIZIELLENR,VOR_KANTON,VOR_LIEFEREINHEIT,RES_ID,BFS_NR,VOA_ID,AMT_OID,DOKUMENT"/>
+#! <XFORM_PARM PARM_NAME="REMOVE_ATTRS" PARM_VALUE="VOR_OID,VOR_XTF_ID,VOR_PUBLIZIERTAB,VOR_TITEL_DE,VOR_TITEL_FR,VOR_OFFIZIELLERTITEL_DE,VOR_OFFIZIELLERTITEL_FR,VOR_ABKUERZUNG_DE,VOR_ABKUERZUNG_FR,VOR_OFFIZIELLENR,VOR_KANTON,VOR_LIEFEREINHEIT,RES_ID,BFS_NR,VOA_ID,AMT_OID,DOKUMENT,VOR_SORT"/>
 #! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeRemover"/>
 #! <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
 #! <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
@@ -776,29 +773,23 @@
 #! IDENTIFIER="5"
 #! TYPE="HTTPHeader"
 #! VERSION="0"
-#! POSITION="1838 413"
+#! POSITION="2635 397"
 #! ORDER="16"
 #! PARMS_EDITED="true"
 #! ENABLED="true"
 #! >
 #! <OUTPUT_FEAT NAME="OUTPUT"/>
 #! <FEAT_COLLAPSED COLLAPSED="0"/>
-#! <XFORM_ATTR ATTR_NAME="VOR_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="VOR_XTF_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="VOR_TEXTIMWEB_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="VOR_TEXTIMWEB_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="VOR_SORT" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="_headers_de{}.name" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="_headers_de{}.value" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="_error_de" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="_http_status_code_de" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <OUTPUT_FEAT NAME="&lt;REJECTED&gt;"/>
 #! <FEAT_COLLAPSED COLLAPSED="1"/>
-#! <XFORM_ATTR ATTR_NAME="VOR_OID" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#! <XFORM_ATTR ATTR_NAME="VOR_XTF_ID" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #! <XFORM_ATTR ATTR_NAME="VOR_TEXTIMWEB_DE" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #! <XFORM_ATTR ATTR_NAME="VOR_TEXTIMWEB_FR" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#! <XFORM_ATTR ATTR_NAME="VOR_SORT" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #! <XFORM_ATTR ATTR_NAME="_headers_de{}.name" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #! <XFORM_ATTR ATTR_NAME="_headers_de{}.value" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #! <XFORM_ATTR ATTR_NAME="_error_de" IS_USER_CREATED="false" FEAT_INDEX="1" />
@@ -828,7 +819,7 @@
 #! IDENTIFIER="7"
 #! TYPE="Terminator"
 #! VERSION="2"
-#! POSITION="2426 36"
+#! POSITION="3223 20"
 #! ORDER="20"
 #! PARMS_EDITED="true"
 #! ENABLED="true"
@@ -842,18 +833,15 @@
 #! IDENTIFIER="10"
 #! TYPE="HTTPHeader"
 #! VERSION="0"
-#! POSITION="2452 384"
+#! POSITION="3249 368"
 #! ORDER="18"
 #! PARMS_EDITED="true"
 #! ENABLED="true"
 #! >
 #! <OUTPUT_FEAT NAME="OUTPUT"/>
 #! <FEAT_COLLAPSED COLLAPSED="0"/>
-#! <XFORM_ATTR ATTR_NAME="VOR_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="VOR_XTF_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="VOR_TEXTIMWEB_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="VOR_TEXTIMWEB_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="VOR_SORT" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="_headers_de{}.name" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="_headers_de{}.value" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="_error_de" IS_USER_CREATED="false" FEAT_INDEX="0" />
@@ -864,11 +852,8 @@
 #! <XFORM_ATTR ATTR_NAME="_http_status_code_fr" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <OUTPUT_FEAT NAME="&lt;REJECTED&gt;"/>
 #! <FEAT_COLLAPSED COLLAPSED="1"/>
-#! <XFORM_ATTR ATTR_NAME="VOR_OID" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#! <XFORM_ATTR ATTR_NAME="VOR_XTF_ID" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #! <XFORM_ATTR ATTR_NAME="VOR_TEXTIMWEB_DE" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #! <XFORM_ATTR ATTR_NAME="VOR_TEXTIMWEB_FR" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#! <XFORM_ATTR ATTR_NAME="VOR_SORT" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #! <XFORM_ATTR ATTR_NAME="_headers_de{}.name" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #! <XFORM_ATTR ATTR_NAME="_headers_de{}.value" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #! <XFORM_ATTR ATTR_NAME="_error_de" IS_USER_CREATED="false" FEAT_INDEX="1" />
@@ -902,7 +887,7 @@
 #! IDENTIFIER="13"
 #! TYPE="Terminator"
 #! VERSION="2"
-#! POSITION="3087 27"
+#! POSITION="3884 11"
 #! ORDER="21"
 #! PARMS_EDITED="true"
 #! ENABLED="true"
@@ -916,18 +901,15 @@
 #! IDENTIFIER="15"
 #! TYPE="Tester"
 #! VERSION="2"
-#! POSITION="3066 381"
+#! POSITION="3863 365"
 #! ORDER="22"
 #! PARMS_EDITED="true"
 #! ENABLED="true"
 #! >
 #! <OUTPUT_FEAT NAME="PASSED"/>
 #! <FEAT_COLLAPSED COLLAPSED="0"/>
-#! <XFORM_ATTR ATTR_NAME="VOR_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="VOR_XTF_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="VOR_TEXTIMWEB_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="VOR_TEXTIMWEB_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="VOR_SORT" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="_headers_de{}.name" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="_headers_de{}.value" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="_error_de" IS_USER_CREATED="false" FEAT_INDEX="0" />
@@ -938,11 +920,8 @@
 #! <XFORM_ATTR ATTR_NAME="_http_status_code_fr" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <OUTPUT_FEAT NAME="FAILED"/>
 #! <FEAT_COLLAPSED COLLAPSED="1"/>
-#! <XFORM_ATTR ATTR_NAME="VOR_OID" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#! <XFORM_ATTR ATTR_NAME="VOR_XTF_ID" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #! <XFORM_ATTR ATTR_NAME="VOR_TEXTIMWEB_DE" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #! <XFORM_ATTR ATTR_NAME="VOR_TEXTIMWEB_FR" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#! <XFORM_ATTR ATTR_NAME="VOR_SORT" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #! <XFORM_ATTR ATTR_NAME="_headers_de{}.name" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #! <XFORM_ATTR ATTR_NAME="_headers_de{}.value" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #! <XFORM_ATTR ATTR_NAME="_error_de" IS_USER_CREATED="false" FEAT_INDEX="1" />
@@ -963,7 +942,7 @@
 #! IDENTIFIER="17"
 #! TYPE="Terminator"
 #! VERSION="2"
-#! POSITION="3664 274"
+#! POSITION="4461 258"
 #! ORDER="23"
 #! PARMS_EDITED="true"
 #! ENABLED="true"
@@ -977,18 +956,15 @@
 #! IDENTIFIER="43"
 #! TYPE="PythonCaller"
 #! VERSION="4"
-#! POSITION="1221 442"
+#! POSITION="2018 426"
 #! ORDER="5e+014"
 #! PARMS_EDITED="true"
 #! ENABLED="true"
 #! >
 #! <OUTPUT_FEAT NAME="OUTPUT"/>
 #! <FEAT_COLLAPSED COLLAPSED="0"/>
-#! <XFORM_ATTR ATTR_NAME="VOR_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="VOR_XTF_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="VOR_TEXTIMWEB_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="VOR_TEXTIMWEB_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="VOR_SORT" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_PARM PARM_NAME="LIST_ATTRS" PARM_VALUE=""/>
 #! <XFORM_PARM PARM_NAME="HIDE_ATTRIBUTES" PARM_VALUE=""/>
 #! <XFORM_PARM PARM_NAME="PYTHONSOURCE" PARM_VALUE="from&lt;space&gt;__future__&lt;space&gt;import&lt;space&gt;absolute_import&lt;comma&gt;&lt;space&gt;division&lt;comma&gt;&lt;space&gt;print_function&lt;comma&gt;&lt;space&gt;unicode_literals&lt;lf&gt;import&lt;space&gt;fmeobjects&lt;lf&gt;&lt;lf&gt;def&lt;space&gt;processFeature&lt;openparen&gt;feature&lt;closeparen&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;url_de&lt;space&gt;=&lt;space&gt;feature.getAttribute&lt;openparen&gt;&lt;quote&gt;VOR_TEXTIMWEB_DE&lt;quote&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;url_de&lt;space&gt;=&lt;space&gt;url_de.replace&lt;openparen&gt;&lt;quote&gt;&lt;u00e4&gt;&lt;quote&gt;&lt;comma&gt;&lt;space&gt;&lt;quote&gt;%C3%A4&lt;quote&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;url_de&lt;space&gt;=&lt;space&gt;url_de.replace&lt;openparen&gt;&lt;quote&gt;&lt;u00f6&gt;&lt;quote&gt;&lt;comma&gt;&lt;space&gt;&lt;quote&gt;%C3%B6&lt;quote&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;url_de&lt;space&gt;=&lt;space&gt;url_de.replace&lt;openparen&gt;&lt;quote&gt;&lt;u00fc&gt;&lt;quote&gt;&lt;comma&gt;&lt;space&gt;&lt;quote&gt;%C3%BC&lt;quote&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;url_de&lt;space&gt;=&lt;space&gt;url_de.replace&lt;openparen&gt;&lt;quote&gt;&lt;u00c4&gt;&lt;quote&gt;&lt;comma&gt;&lt;space&gt;&lt;quote&gt;%C3%84&lt;quote&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;url_de&lt;space&gt;=&lt;space&gt;url_de.replace&lt;openparen&gt;&lt;quote&gt;&lt;u00d6&gt;&lt;quote&gt;&lt;comma&gt;&lt;space&gt;&lt;quote&gt;%C3%96&lt;quote&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;url_de&lt;space&gt;=&lt;space&gt;url_de.replace&lt;openparen&gt;&lt;quote&gt;&lt;u00dc&gt;&lt;quote&gt;&lt;comma&gt;&lt;space&gt;&lt;quote&gt;%C3%9C&lt;quote&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;feature.setAttribute&lt;openparen&gt;&lt;quote&gt;VOR_TEXTIMWEB_DE&lt;quote&gt;&lt;comma&gt;&lt;space&gt;url_de&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;url_fr&lt;space&gt;=&lt;space&gt;feature.getAttribute&lt;openparen&gt;&lt;quote&gt;VOR_TEXTIMWEB_FR&lt;quote&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;url_fr&lt;space&gt;=&lt;space&gt;url_fr.replace&lt;openparen&gt;&lt;quote&gt;&lt;u00e4&gt;&lt;quote&gt;&lt;comma&gt;&lt;space&gt;&lt;quote&gt;%C3%A4&lt;quote&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;url_fr&lt;space&gt;=&lt;space&gt;url_fr.replace&lt;openparen&gt;&lt;quote&gt;&lt;u00f6&gt;&lt;quote&gt;&lt;comma&gt;&lt;space&gt;&lt;quote&gt;%C3%B6&lt;quote&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;url_fr&lt;space&gt;=&lt;space&gt;url_fr.replace&lt;openparen&gt;&lt;quote&gt;&lt;u00fc&gt;&lt;quote&gt;&lt;comma&gt;&lt;space&gt;&lt;quote&gt;%C3%BC&lt;quote&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;url_fr&lt;space&gt;=&lt;space&gt;url_fr.replace&lt;openparen&gt;&lt;quote&gt;&lt;u00c4&gt;&lt;quote&gt;&lt;comma&gt;&lt;space&gt;&lt;quote&gt;%C3%84&lt;quote&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;url_fr&lt;space&gt;=&lt;space&gt;url_fr.replace&lt;openparen&gt;&lt;quote&gt;&lt;u00d6&gt;&lt;quote&gt;&lt;comma&gt;&lt;space&gt;&lt;quote&gt;%C3%96&lt;quote&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;url_fr&lt;space&gt;=&lt;space&gt;url_fr.replace&lt;openparen&gt;&lt;quote&gt;&lt;u00dc&gt;&lt;quote&gt;&lt;comma&gt;&lt;space&gt;&lt;quote&gt;%C3%9C&lt;quote&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;feature.setAttribute&lt;openparen&gt;&lt;quote&gt;VOR_TEXTIMWEB_FR&lt;quote&gt;&lt;comma&gt;&lt;space&gt;url_fr&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;lf&gt;"/>
@@ -1010,11 +986,10 @@
 #! >
 #! <OUTPUT_FEAT NAME="OUTPUT"/>
 #! <FEAT_COLLAPSED COLLAPSED="0"/>
-#! <XFORM_ATTR ATTR_NAME="EIB_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="EIB_LEGENDESYMBOL_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="EIB_LEGENDESYMBOL_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_PARM PARM_NAME="LIST_ATTRS" PARM_VALUE=""/>
-#! <XFORM_PARM PARM_NAME="REMOVE_ATTRS" PARM_VALUE="EIB_XTF_ID,EIB_AUSSAGE_DE,EIB_AUSSAGE_FR,EIB_ARTCODE,EIB_ARTCODELISTE,EIB_PUBLIZIERTAB,EIB_LIEFEREINHEIT,AMT_OID,DAR_OID,RES_ID,STH_ID,EIB_SORT"/>
+#! <XFORM_PARM PARM_NAME="REMOVE_ATTRS" PARM_VALUE="EIB_OID,EIB_XTF_ID,EIB_AUSSAGE_DE,EIB_AUSSAGE_FR,EIB_ARTCODE,EIB_ARTCODELISTE,EIB_PUBLIZIERTAB,EIB_LIEFEREINHEIT,AMT_OID,DAR_OID,RES_ID,STH_ID,EIB_SORT"/>
 #! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeRemover_2"/>
 #! <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
 #! <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
@@ -1023,14 +998,13 @@
 #! IDENTIFIER="29"
 #! TYPE="HTTPHeader"
 #! VERSION="0"
-#! POSITION="1519 -393"
+#! POSITION="2336 -418"
 #! ORDER="5e+014"
 #! PARMS_EDITED="true"
 #! ENABLED="true"
 #! >
 #! <OUTPUT_FEAT NAME="OUTPUT"/>
 #! <FEAT_COLLAPSED COLLAPSED="0"/>
-#! <XFORM_ATTR ATTR_NAME="EIB_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="EIB_LEGENDESYMBOL_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="EIB_LEGENDESYMBOL_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="_headers{}.name" IS_USER_CREATED="false" FEAT_INDEX="0" />
@@ -1039,7 +1013,6 @@
 #! <XFORM_ATTR ATTR_NAME="_http_status_code_de" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <OUTPUT_FEAT NAME="&lt;REJECTED&gt;"/>
 #! <FEAT_COLLAPSED COLLAPSED="1"/>
-#! <XFORM_ATTR ATTR_NAME="EIB_OID" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #! <XFORM_ATTR ATTR_NAME="EIB_LEGENDESYMBOL_DE" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #! <XFORM_ATTR ATTR_NAME="EIB_LEGENDESYMBOL_FR" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #! <XFORM_ATTR ATTR_NAME="_headers{}.name" IS_USER_CREATED="false" FEAT_INDEX="1" />
@@ -1071,14 +1044,13 @@
 #! IDENTIFIER="31"
 #! TYPE="HTTPHeader"
 #! VERSION="0"
-#! POSITION="2263 -431"
+#! POSITION="3080 -456"
 #! ORDER="5e+014"
 #! PARMS_EDITED="true"
 #! ENABLED="true"
 #! >
 #! <OUTPUT_FEAT NAME="OUTPUT"/>
 #! <FEAT_COLLAPSED COLLAPSED="0"/>
-#! <XFORM_ATTR ATTR_NAME="EIB_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="EIB_LEGENDESYMBOL_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="EIB_LEGENDESYMBOL_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="_headers{}.name" IS_USER_CREATED="false" FEAT_INDEX="0" />
@@ -1088,7 +1060,6 @@
 #! <XFORM_ATTR ATTR_NAME="_http_status_code_fr" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <OUTPUT_FEAT NAME="&lt;REJECTED&gt;"/>
 #! <FEAT_COLLAPSED COLLAPSED="1"/>
-#! <XFORM_ATTR ATTR_NAME="EIB_OID" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #! <XFORM_ATTR ATTR_NAME="EIB_LEGENDESYMBOL_DE" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #! <XFORM_ATTR ATTR_NAME="EIB_LEGENDESYMBOL_FR" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #! <XFORM_ATTR ATTR_NAME="_headers{}.name" IS_USER_CREATED="false" FEAT_INDEX="1" />
@@ -1121,7 +1092,7 @@
 #! IDENTIFIER="34"
 #! TYPE="Terminator"
 #! VERSION="2"
-#! POSITION="2234 -789"
+#! POSITION="3051 -814"
 #! ORDER="5e+014"
 #! PARMS_EDITED="true"
 #! ENABLED="true"
@@ -1135,7 +1106,7 @@
 #! IDENTIFIER="37"
 #! TYPE="Terminator"
 #! VERSION="2"
-#! POSITION="3092 -756"
+#! POSITION="3909 -781"
 #! ORDER="5e+014"
 #! PARMS_EDITED="true"
 #! ENABLED="true"
@@ -1149,14 +1120,13 @@
 #! IDENTIFIER="39"
 #! TYPE="Tester"
 #! VERSION="2"
-#! POSITION="3041 -443"
+#! POSITION="3858 -468"
 #! ORDER="22"
 #! PARMS_EDITED="false"
 #! ENABLED="true"
 #! >
 #! <OUTPUT_FEAT NAME="PASSED"/>
 #! <FEAT_COLLAPSED COLLAPSED="0"/>
-#! <XFORM_ATTR ATTR_NAME="EIB_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="EIB_LEGENDESYMBOL_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="EIB_LEGENDESYMBOL_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="_headers{}.name" IS_USER_CREATED="false" FEAT_INDEX="0" />
@@ -1166,7 +1136,6 @@
 #! <XFORM_ATTR ATTR_NAME="_http_status_code_fr" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <OUTPUT_FEAT NAME="FAILED"/>
 #! <FEAT_COLLAPSED COLLAPSED="1"/>
-#! <XFORM_ATTR ATTR_NAME="EIB_OID" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #! <XFORM_ATTR ATTR_NAME="EIB_LEGENDESYMBOL_DE" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #! <XFORM_ATTR ATTR_NAME="EIB_LEGENDESYMBOL_FR" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #! <XFORM_ATTR ATTR_NAME="_headers{}.name" IS_USER_CREATED="false" FEAT_INDEX="1" />
@@ -1186,7 +1155,7 @@
 #! IDENTIFIER="41"
 #! TYPE="Terminator"
 #! VERSION="2"
-#! POSITION="3759 -545"
+#! POSITION="4576 -570"
 #! ORDER="5e+014"
 #! PARMS_EDITED="false"
 #! ENABLED="true"
@@ -1195,6 +1164,84 @@
 #! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Terminator_6"/>
 #! <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
 #! <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#! IDENTIFIER="47"
+#! TYPE="Aggregator"
+#! VERSION="11"
+#! POSITION="1589 -406"
+#! ORDER="5e+014"
+#! PARMS_EDITED="true"
+#! ENABLED="true"
+#! >
+#! <OUTPUT_FEAT NAME="AGGREGATE"/>
+#! <FEAT_COLLAPSED COLLAPSED="0"/>
+#! <XFORM_ATTR ATTR_NAME="EIB_LEGENDESYMBOL_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="EIB_LEGENDESYMBOL_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_PARM PARM_NAME="GROUP_BY" PARM_VALUE="EIB_LEGENDESYMBOL_DE EIB_LEGENDESYMBOL_FR"/>
+#! <XFORM_PARM PARM_NAME="MODE" PARM_VALUE="Attributes Only"/>
+#! <XFORM_PARM PARM_NAME="PARENT_ID_ATTR" PARM_VALUE="&lt;Unused&gt;"/>
+#! <XFORM_PARM PARM_NAME="COUNT_ATTR" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="ASSEMBLE_HIERARCHY_GROUP" PARM_VALUE="FME_DISCLOSURE_CLOSED"/>
+#! <XFORM_PARM PARM_NAME="ACCUM_ATTRS_NAME" PARM_VALUE="Yes"/>
+#! <XFORM_PARM PARM_NAME="GEOM_NAME_FIELD" PARM_VALUE="&lt;Unused&gt;"/>
+#! <XFORM_PARM PARM_NAME="CHILD_ID_ATTR" PARM_VALUE="&lt;Unused&gt;"/>
+#! <XFORM_PARM PARM_NAME="LIST_NAME" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="SEP" PARM_VALUE="&lt;comma&gt;"/>
+#! <XFORM_PARM PARM_NAME="SUM" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="AGGREGATE_TYPE" PARM_VALUE="&lt;Unused&gt;"/>
+#! <XFORM_PARM PARM_NAME="ATTR_TO_TRAIT" PARM_VALUE="&lt;Unused&gt;"/>
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Aggregator"/>
+#! <XFORM_PARM PARM_NAME="PRESERVE_ID" PARM_VALUE="&lt;Unused&gt;"/>
+#! <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="AV" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="ATTR_ACCUM_GROUP" PARM_VALUE="FME_DISCLOSURE_OPEN"/>
+#! <XFORM_PARM PARM_NAME="WEIGHT" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="CONCAT_ATTRS" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="ID_SELECTION" PARM_VALUE="&lt;Unused&gt;"/>
+#! <XFORM_PARM PARM_NAME="ID_ATTR" PARM_VALUE="&lt;Unused&gt;"/>
+#! <XFORM_PARM PARM_NAME="ASSEMBLE_ONE_LEVEL_GROUP" PARM_VALUE="FME_DISCLOSURE_CLOSED"/>
+#! <XFORM_PARM PARM_NAME="ORDERED" PARM_VALUE="No"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#! IDENTIFIER="50"
+#! TYPE="Aggregator"
+#! VERSION="11"
+#! POSITION="1314 432"
+#! ORDER="5e+014"
+#! PARMS_EDITED="true"
+#! ENABLED="true"
+#! >
+#! <OUTPUT_FEAT NAME="AGGREGATE"/>
+#! <FEAT_COLLAPSED COLLAPSED="0"/>
+#! <XFORM_ATTR ATTR_NAME="VOR_TEXTIMWEB_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="VOR_TEXTIMWEB_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_PARM PARM_NAME="GROUP_BY" PARM_VALUE="VOR_TEXTIMWEB_DE VOR_TEXTIMWEB_FR"/>
+#! <XFORM_PARM PARM_NAME="MODE" PARM_VALUE="Attributes Only"/>
+#! <XFORM_PARM PARM_NAME="PARENT_ID_ATTR" PARM_VALUE="&lt;Unused&gt;"/>
+#! <XFORM_PARM PARM_NAME="COUNT_ATTR" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="ASSEMBLE_HIERARCHY_GROUP" PARM_VALUE="FME_DISCLOSURE_CLOSED"/>
+#! <XFORM_PARM PARM_NAME="ACCUM_ATTRS_NAME" PARM_VALUE="Yes"/>
+#! <XFORM_PARM PARM_NAME="GEOM_NAME_FIELD" PARM_VALUE="&lt;Unused&gt;"/>
+#! <XFORM_PARM PARM_NAME="CHILD_ID_ATTR" PARM_VALUE="&lt;Unused&gt;"/>
+#! <XFORM_PARM PARM_NAME="LIST_NAME" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="SEP" PARM_VALUE="&lt;comma&gt;"/>
+#! <XFORM_PARM PARM_NAME="SUM" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="AGGREGATE_TYPE" PARM_VALUE="&lt;Unused&gt;"/>
+#! <XFORM_PARM PARM_NAME="ATTR_TO_TRAIT" PARM_VALUE="&lt;Unused&gt;"/>
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Aggregator_2"/>
+#! <XFORM_PARM PARM_NAME="PRESERVE_ID" PARM_VALUE="&lt;Unused&gt;"/>
+#! <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="AV" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="ATTR_ACCUM_GROUP" PARM_VALUE="FME_DISCLOSURE_OPEN"/>
+#! <XFORM_PARM PARM_NAME="WEIGHT" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="CONCAT_ATTRS" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="ID_SELECTION" PARM_VALUE="&lt;Unused&gt;"/>
+#! <XFORM_PARM PARM_NAME="ID_ATTR" PARM_VALUE="&lt;Unused&gt;"/>
+#! <XFORM_PARM PARM_NAME="ASSEMBLE_ONE_LEVEL_GROUP" PARM_VALUE="FME_DISCLOSURE_CLOSED"/>
+#! <XFORM_PARM PARM_NAME="ORDERED" PARM_VALUE="No"/>
 #! </TRANSFORMER>
 #! </TRANSFORMERS>
 #! <FEAT_LINKS>
@@ -1253,15 +1300,6 @@
 #! EXTRA_POINTS=""
 #! />
 #! <FEAT_LINK
-#! IDENTIFIER="44"
-#! SOURCE_NODE="3"
-#! TARGET_NODE="43"
-#! SOURCE_PORT_DESC="fo 0"
-#! TARGET_PORT_DESC="fi 0"
-#! ENABLED="true"
-#! EXTRA_POINTS=""
-#! />
-#! <FEAT_LINK
 #! IDENTIFIER="45"
 #! SOURCE_NODE="43"
 #! TARGET_NODE="5"
@@ -1307,15 +1345,6 @@
 #! EXTRA_POINTS=""
 #! />
 #! <FEAT_LINK
-#! IDENTIFIER="36"
-#! SOURCE_NODE="27"
-#! TARGET_NODE="29"
-#! SOURCE_PORT_DESC="fo 0"
-#! TARGET_PORT_DESC="fi 0"
-#! ENABLED="true"
-#! EXTRA_POINTS=""
-#! />
-#! <FEAT_LINK
 #! IDENTIFIER="38"
 #! SOURCE_NODE="31"
 #! TARGET_NODE="37"
@@ -1338,6 +1367,42 @@
 #! SOURCE_NODE="39"
 #! TARGET_NODE="41"
 #! SOURCE_PORT_DESC="fo 1"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="48"
+#! SOURCE_NODE="27"
+#! TARGET_NODE="47"
+#! SOURCE_PORT_DESC="fo 0"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="49"
+#! SOURCE_NODE="47"
+#! TARGET_NODE="29"
+#! SOURCE_PORT_DESC="fo 0"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="51"
+#! SOURCE_NODE="3"
+#! TARGET_NODE="50"
+#! SOURCE_PORT_DESC="fo 0"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="52"
+#! SOURCE_NODE="50"
+#! TARGET_NODE="43"
+#! SOURCE_PORT_DESC="fo 0"
 #! TARGET_PORT_DESC="fi 0"
 #! ENABLED="true"
 #! EXTRA_POINTS=""
@@ -4901,11 +4966,17 @@ DEFAULT_MACRO WB_CURRENT_CONTEXT
 # -------------------------------------------------------------------------
 
 INCLUDE [    set macroLine "MACRO AttributeRemover_2_LIST_EXP ";    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "{\[0-9\]+}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
-FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRemover_2    INPUT  FEATURE_TYPE OEREB2.EIGENTUMSBESCHRAENKUNG    OUTPUT FEATURE_TYPE AttributeRemover_2_OUTPUT        @RemoveAttributes(EIB_XTF_ID,EIB_AUSSAGE_DE,EIB_AUSSAGE_FR,EIB_ARTCODE,EIB_ARTCODELISTE,EIB_PUBLIZIERTAB,EIB_LIEFEREINHEIT,AMT_OID,DAR_OID,RES_ID,STH_ID,EIB_SORT)        @RemoveAttributes(fme_regexp_match"$(AttributeRemover_2_LIST_EXP)")
+FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRemover_2    INPUT  FEATURE_TYPE OEREB2.EIGENTUMSBESCHRAENKUNG    OUTPUT FEATURE_TYPE AttributeRemover_2_OUTPUT        @RemoveAttributes(EIB_OID,EIB_XTF_ID,EIB_AUSSAGE_DE,EIB_AUSSAGE_FR,EIB_ARTCODE,EIB_ARTCODELISTE,EIB_PUBLIZIERTAB,EIB_LIEFEREINHEIT,AMT_OID,DAR_OID,RES_ID,STH_ID,EIB_SORT)        @RemoveAttributes(fme_regexp_match"$(AttributeRemover_2_LIST_EXP)")
 
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * HTTPFactory    FACTORY_NAME HTTPHeader_3       INPUT  FEATURE_TYPE AttributeRemover_2_OUTPUT    TARGET_URL @EvaluateExpression(STRING_ENCODED,<at>Value<openparen>EIB_LEGENDESYMBOL_DE<closeparen>,HTTPHeader_3)    HTTP_METHOD HEAD    AUTH_METHOD Basic    SINGLE_SIGN_ON No    PROXY_AUTH_METHOD Basic    RESPONSE_HEADER_LIST_ATTR "_headers"    STATUS_CODE_ATTR "_http_status_code_de"    ERROR_ATTR "_error"    USE_COOKIES No    OUTPUT OUTPUT FEATURE_TYPE HTTPHeader_3_OUTPUT    OUTPUT REJECTED FEATURE_TYPE HTTPHeader_3_<REJECTED>
+DEFAULT_MACRO Aggregator_BREAK_ATTR
+INCLUDE [if {"No" == "Yes"} {puts {MACRO Aggregator_BREAK_ATTR BREAK_BEFORE_FIELD_CHANGE EIB_LEGENDESYMBOL_DE EIB_LEGENDESYMBOL_FR} }]
+FACTORY_DEF * AggregateFactory    FACTORY_NAME Aggregator    INPUT  FEATURE_TYPE AttributeRemover_2_OUTPUT    MODE ONE_LEVEL    GROUP_BY EIB_LEGENDESYMBOL_DE EIB_LEGENDESYMBOL_FR    $(Aggregator_BREAK_ATTR)    REMOVE_GEOMETRY YES    ACCUMULATE_ATTRIBUTES Yes    SEPARATOR <comma>    OUTPUT AGGREGATE FEATURE_TYPE Aggregator_AGGREGATE
+
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * HTTPFactory    FACTORY_NAME HTTPHeader_3       INPUT  FEATURE_TYPE Aggregator_AGGREGATE    TARGET_URL @EvaluateExpression(STRING_ENCODED,<at>Value<openparen>EIB_LEGENDESYMBOL_DE<closeparen>,HTTPHeader_3)    HTTP_METHOD HEAD    AUTH_METHOD Basic    SINGLE_SIGN_ON No    PROXY_AUTH_METHOD Basic    RESPONSE_HEADER_LIST_ATTR "_headers"    STATUS_CODE_ATTR "_http_status_code_de"    ERROR_ATTR "_error"    USE_COOKIES No    OUTPUT OUTPUT FEATURE_TYPE HTTPHeader_3_OUTPUT    OUTPUT REJECTED FEATURE_TYPE HTTPHeader_3_<REJECTED>
 
 
 # -------------------------------------------------------------------------
@@ -4952,14 +5023,20 @@ FACTORY_DEF * TestFactory    FACTORY_NAME Terminator_6    INPUT  FEATURE_TYPE Te
 # -------------------------------------------------------------------------
 
 INCLUDE [    set macroLine "MACRO AttributeRemover_LIST_EXP ";    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "{\[0-9\]+}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
-FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRemover    INPUT  FEATURE_TYPE OEREB.VORSCHRIFT    INPUT  FEATURE_TYPE OEREB2.VORSCHRIFT    OUTPUT FEATURE_TYPE AttributeRemover_OUTPUT        @RemoveAttributes(VOR_PUBLIZIERTAB,VOR_TITEL_DE,VOR_TITEL_FR,VOR_OFFIZIELLERTITEL_DE,VOR_OFFIZIELLERTITEL_FR,VOR_ABKUERZUNG_DE,VOR_ABKUERZUNG_FR,VOR_OFFIZIELLENR,VOR_KANTON,VOR_LIEFEREINHEIT,RES_ID,BFS_NR,VOA_ID,AMT_OID,DOKUMENT)        @RemoveAttributes(fme_regexp_match"$(AttributeRemover_LIST_EXP)")
+FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRemover    INPUT  FEATURE_TYPE OEREB.VORSCHRIFT    INPUT  FEATURE_TYPE OEREB2.VORSCHRIFT    OUTPUT FEATURE_TYPE AttributeRemover_OUTPUT        @RemoveAttributes(VOR_OID,VOR_XTF_ID,VOR_PUBLIZIERTAB,VOR_TITEL_DE,VOR_TITEL_FR,VOR_OFFIZIELLERTITEL_DE,VOR_OFFIZIELLERTITEL_FR,VOR_ABKUERZUNG_DE,VOR_ABKUERZUNG_FR,VOR_OFFIZIELLENR,VOR_KANTON,VOR_LIEFEREINHEIT,RES_ID,BFS_NR,VOA_ID,AMT_OID,DOKUMENT,VOR_SORT)        @RemoveAttributes(fme_regexp_match"$(AttributeRemover_LIST_EXP)")
+
+# -------------------------------------------------------------------------
+
+DEFAULT_MACRO Aggregator_2_BREAK_ATTR
+INCLUDE [if {"No" == "Yes"} {puts {MACRO Aggregator_2_BREAK_ATTR BREAK_BEFORE_FIELD_CHANGE VOR_TEXTIMWEB_DE VOR_TEXTIMWEB_FR} }]
+FACTORY_DEF * AggregateFactory    FACTORY_NAME Aggregator_2    INPUT  FEATURE_TYPE AttributeRemover_OUTPUT    MODE ONE_LEVEL    GROUP_BY VOR_TEXTIMWEB_DE VOR_TEXTIMWEB_FR    $(Aggregator_2_BREAK_ATTR)    REMOVE_GEOMETRY YES    ACCUMULATE_ATTRIBUTES Yes    SEPARATOR <comma>    OUTPUT AGGREGATE FEATURE_TYPE Aggregator_2_AGGREGATE
 
 # -------------------------------------------------------------------------
 
 
 FME_PYTHON_PATH "$(FME_MF_DIR)"
 
-FACTORY_DEF * PythonFactory    FACTORY_NAME PythonCaller    INPUT  FEATURE_TYPE AttributeRemover_OUTPUT    SYMBOL_NAME processFeature    PYTHON_NAMESPACE FMEOBJECTS    SOURCE_CODE from<space>__future__<space>import<space>absolute_import<comma><space>division<comma><space>print_function<comma><space>unicode_literals<lf>import<space>fmeobjects<lf><lf>def<space>processFeature<openparen>feature<closeparen>:<lf><space><space><space><space>url_de<space>=<space>feature.getAttribute<openparen><quote>VOR_TEXTIMWEB_DE<quote><closeparen><lf><space><space><space><space>url_de<space>=<space>url_de.replace<openparen><quote><u00e4><quote><comma><space><quote>%C3%A4<quote><closeparen><lf><space><space><space><space>url_de<space>=<space>url_de.replace<openparen><quote><u00f6><quote><comma><space><quote>%C3%B6<quote><closeparen><lf><space><space><space><space>url_de<space>=<space>url_de.replace<openparen><quote><u00fc><quote><comma><space><quote>%C3%BC<quote><closeparen><lf><space><space><space><space>url_de<space>=<space>url_de.replace<openparen><quote><u00c4><quote><comma><space><quote>%C3%84<quote><closeparen><lf><space><space><space><space>url_de<space>=<space>url_de.replace<openparen><quote><u00d6><quote><comma><space><quote>%C3%96<quote><closeparen><lf><space><space><space><space>url_de<space>=<space>url_de.replace<openparen><quote><u00dc><quote><comma><space><quote>%C3%9C<quote><closeparen><lf><space><space><space><space>feature.setAttribute<openparen><quote>VOR_TEXTIMWEB_DE<quote><comma><space>url_de<closeparen><lf><space><space><space><space><lf><space><space><space><space>url_fr<space>=<space>feature.getAttribute<openparen><quote>VOR_TEXTIMWEB_FR<quote><closeparen><lf><space><space><space><space>url_fr<space>=<space>url_fr.replace<openparen><quote><u00e4><quote><comma><space><quote>%C3%A4<quote><closeparen><lf><space><space><space><space>url_fr<space>=<space>url_fr.replace<openparen><quote><u00f6><quote><comma><space><quote>%C3%B6<quote><closeparen><lf><space><space><space><space>url_fr<space>=<space>url_fr.replace<openparen><quote><u00fc><quote><comma><space><quote>%C3%BC<quote><closeparen><lf><space><space><space><space>url_fr<space>=<space>url_fr.replace<openparen><quote><u00c4><quote><comma><space><quote>%C3%84<quote><closeparen><lf><space><space><space><space>url_fr<space>=<space>url_fr.replace<openparen><quote><u00d6><quote><comma><space><quote>%C3%96<quote><closeparen><lf><space><space><space><space>url_fr<space>=<space>url_fr.replace<openparen><quote><u00dc><quote><comma><space><quote>%C3%9C<quote><closeparen><lf><space><space><space><space>feature.setAttribute<openparen><quote>VOR_TEXTIMWEB_FR<quote><comma><space>url_fr<closeparen><lf><space><space><space><space><lf><lf>    OUTPUT PYOUTPUT FEATURE_TYPE PythonCaller_OUTPUT
+FACTORY_DEF * PythonFactory    FACTORY_NAME PythonCaller    INPUT  FEATURE_TYPE Aggregator_2_AGGREGATE    SYMBOL_NAME processFeature    PYTHON_NAMESPACE FMEOBJECTS    SOURCE_CODE from<space>__future__<space>import<space>absolute_import<comma><space>division<comma><space>print_function<comma><space>unicode_literals<lf>import<space>fmeobjects<lf><lf>def<space>processFeature<openparen>feature<closeparen>:<lf><space><space><space><space>url_de<space>=<space>feature.getAttribute<openparen><quote>VOR_TEXTIMWEB_DE<quote><closeparen><lf><space><space><space><space>url_de<space>=<space>url_de.replace<openparen><quote><u00e4><quote><comma><space><quote>%C3%A4<quote><closeparen><lf><space><space><space><space>url_de<space>=<space>url_de.replace<openparen><quote><u00f6><quote><comma><space><quote>%C3%B6<quote><closeparen><lf><space><space><space><space>url_de<space>=<space>url_de.replace<openparen><quote><u00fc><quote><comma><space><quote>%C3%BC<quote><closeparen><lf><space><space><space><space>url_de<space>=<space>url_de.replace<openparen><quote><u00c4><quote><comma><space><quote>%C3%84<quote><closeparen><lf><space><space><space><space>url_de<space>=<space>url_de.replace<openparen><quote><u00d6><quote><comma><space><quote>%C3%96<quote><closeparen><lf><space><space><space><space>url_de<space>=<space>url_de.replace<openparen><quote><u00dc><quote><comma><space><quote>%C3%9C<quote><closeparen><lf><space><space><space><space>feature.setAttribute<openparen><quote>VOR_TEXTIMWEB_DE<quote><comma><space>url_de<closeparen><lf><space><space><space><space><lf><space><space><space><space>url_fr<space>=<space>feature.getAttribute<openparen><quote>VOR_TEXTIMWEB_FR<quote><closeparen><lf><space><space><space><space>url_fr<space>=<space>url_fr.replace<openparen><quote><u00e4><quote><comma><space><quote>%C3%A4<quote><closeparen><lf><space><space><space><space>url_fr<space>=<space>url_fr.replace<openparen><quote><u00f6><quote><comma><space><quote>%C3%B6<quote><closeparen><lf><space><space><space><space>url_fr<space>=<space>url_fr.replace<openparen><quote><u00fc><quote><comma><space><quote>%C3%BC<quote><closeparen><lf><space><space><space><space>url_fr<space>=<space>url_fr.replace<openparen><quote><u00c4><quote><comma><space><quote>%C3%84<quote><closeparen><lf><space><space><space><space>url_fr<space>=<space>url_fr.replace<openparen><quote><u00d6><quote><comma><space><quote>%C3%96<quote><closeparen><lf><space><space><space><space>url_fr<space>=<space>url_fr.replace<openparen><quote><u00dc><quote><comma><space><quote>%C3%9C<quote><closeparen><lf><space><space><space><space>feature.setAttribute<openparen><quote>VOR_TEXTIMWEB_FR<quote><comma><space>url_fr<closeparen><lf><space><space><space><space><lf><lf>    OUTPUT PYOUTPUT FEATURE_TYPE PythonCaller_OUTPUT
 
 # -------------------------------------------------------------------------
 
