@@ -17,9 +17,9 @@ def run(config):
     excel_file_amt = os.path.join(config['LIEFEREINHEIT']['ts_source'], "AMT_" + unicode(config['LIEFEREINHEIT']['id']) + ".xlsx")
     excel_file_darstellungsdienst = os.path.join(config['LIEFEREINHEIT']['ts_source'], "DARSTELLUNGSDIENST_" + unicode(config['LIEFEREINHEIT']['id']) + ".xlsx")
     if config['GENERAL']['files_be_ch_baseurl'].endswith("/"):
-        legend_baseurl = config['GENERAL']['files_be_ch_baseurl'] + unicode(config['LIEFEREINHEIT']['id']) + "/legenden/"
+        legend_baseurl = config['GENERAL']['files_be_ch_baseurl'] + "legenden/GSK/"
     else:
-        legend_baseurl = config['GENERAL']['files_be_ch_baseurl'] + "/" + unicode(config['LIEFEREINHEIT']['id']) + "/legenden/"
+        legend_baseurl = config['GENERAL']['files_be_ch_baseurl'] + "/legenden/GSK/"
 
 
     runner = fmeobjects.FMEWorkspaceRunner()
