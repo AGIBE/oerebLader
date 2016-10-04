@@ -235,7 +235,17 @@ def run_release(dailyMode):
         
         # Ticket-Status aktualisieren
         logger.info("Ticket-Stati werden aktualisiert.")
+        ilader_tasks = set()
         for ticket in tickets:
+            # iLader-Task ermitteln (sofern vorhanden)
+            sql_iLader_task = "SELECT task_id_geodb FROM ticket where id=" + unicode(ticket[0])
+            taskid = oerebLader.helpers.sql_helper.readSQL(config['OEREB_WORK']['connection_string'], sql_iLader_task)[0][0]
+            if taskid is not None:
+                ilader_tasks.add(unicode(taskid))
+            else:
+                logger.warn("Für das Ticket Nr. " + unicode(ticket[0]) + " wurde kein iLader-Task angelegt.")
+                logger.warn("Dieses Ticket bzw. dessen Geoprodukt muss über die reguläre Triggerfunktion importiert werden.")
+                
             logger.info("Ticket-Status des Tickets " + unicode(ticket[0]) + " wird auf 4 gesetzt!")
             sql_update_ticket_status = "UPDATE ticket SET status=4 WHERE id=" + unicode(ticket[0])
             try:
@@ -245,6 +255,10 @@ def run_release(dailyMode):
                 logger.error(unicode(ex))
                 logger.error("Script wird abgebrochen!")
                 sys.exit()
+        
+        logger.warn("Folgende iLader-Tasks müssen nun importiert werden:")
+        for iLader_task in ilader_tasks:
+            logger.warn("iLader run " + iLader_task)
 
     # Connection-Files löschen
     oerebLader.helpers.connection_helper.delete_connection_files(config['GEODB_WORK']['connection_file'], logger)
