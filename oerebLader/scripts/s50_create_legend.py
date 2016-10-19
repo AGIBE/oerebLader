@@ -59,7 +59,7 @@ def get_subthemes(config):
     return subthemes_list
 
 def render_template(config, template_file, templateVars, html_filename):
-    templateLoader = jinja2.FileSystemLoader(searchpath=config['GENERAL']['legend_template_dir'])
+    templateLoader = jinja2.FileSystemLoader(searchpath=config['LEGENDS']['legend_template_dir'])
     templateEnv = jinja2.Environment( loader=templateLoader )
     template = templateEnv.get_template(template_file)
 

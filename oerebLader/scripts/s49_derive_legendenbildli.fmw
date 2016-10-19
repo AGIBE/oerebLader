@@ -23,11 +23,12 @@
 #          --MAPSERVICE_NAME ""
 #          --MAPSERVICE_LEGEND_URL ""
 #          --LOGFILE ""
+#          --TOKEN ""
 #    
 #    
 #! PASSWORD=""
 #! ATTR_TYPE_ENCODING="SDF"
-#! VIEW_POSITION="7692 -219"
+#! VIEW_POSITION="6462 -858"
 #! SHOW_INFO_NODES="true"
 #! FME_STROKE_MAX_DEVIATION="0"
 #! BEGIN_PYTHON=""
@@ -45,13 +46,13 @@
 #! USAGE=""
 #! END_PYTHON=""
 #! HISTORY=""
-#! FME_DOCUMENT_PRIORGUID="60e1c9c9-64b7-4866-8089-6981d57f99ed,5b539848-9201-4664-9c74-ac4d90a8b638,3725a94a-e66a-4efa-9fe0-370645744512,bf2b89f7-a2b5-4d39-ba9b-9fcf11025a34,3668c029-b6d9-48a5-82d0-c2505db36772,572071c6-fa58-464b-9fa6-519774efadb7,ea8cabf7-59ab-452e-8e2c-c89bbe5a59f5,c6ca2556-fe2f-4a64-a5be-17f68b6da15b,30a45984-ddb7-4f4c-8e92-60a23e03b76a,a4450c99-aa0b-4e61-9af3-262f63e510fe"
+#! FME_DOCUMENT_PRIORGUID="60e1c9c9-64b7-4866-8089-6981d57f99ed,5b539848-9201-4664-9c74-ac4d90a8b638,3725a94a-e66a-4efa-9fe0-370645744512,bf2b89f7-a2b5-4d39-ba9b-9fcf11025a34,3668c029-b6d9-48a5-82d0-c2505db36772,572071c6-fa58-464b-9fa6-519774efadb7,ea8cabf7-59ab-452e-8e2c-c89bbe5a59f5,c6ca2556-fe2f-4a64-a5be-17f68b6da15b,30a45984-ddb7-4f4c-8e92-60a23e03b76a,a4450c99-aa0b-4e61-9af3-262f63e510fe,1a5e8e97-f3a2-42de-b867-88c8047c4062"
 #! DOC_TOP_LEFT="9 -4190"
 #! REQUIREMENTS_KEYWORD=""
 #! SOURCE_ROUTING_FILE=""
 #! DESTINATION_ROUTING_FILE=""
 #! DESTINATION="NONE"
-#! LAST_SAVE_DATE="2016-08-17T14:26:43"
+#! LAST_SAVE_DATE="2016-10-19T13:31:09"
 #! FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
 #! WORKSPACE_VERSION="1"
 #! SOURCE="NONE"
@@ -62,7 +63,7 @@
 #! REQUIREMENTS=""
 #! BEGIN_TCL=""
 #! DOC_EXTENTS="10984 4065"
-#! FME_DOCUMENT_GUID="1a5e8e97-f3a2-42de-b867-88c8047c4062"
+#! FME_DOCUMENT_GUID="2438e10f-38d5-4b03-b262-925b187dda1f"
 #! SHOW_ANNOTATIONS="true"
 #! IGNORE_READER_FAILURE="No"
 #! WARN_INVALID_XFORM_PARAM="Yes"
@@ -1563,6 +1564,11 @@
 #! DEFAULT_VALUE=""
 #! IS_STAND_ALONE="true"
 #! />
+#! <GLOBAL_PARAMETER
+#! GUI_LINE="GUI TEXT TOKEN Token:"
+#! DEFAULT_VALUE=""
+#! IS_STAND_ALONE="true"
+#! />
 #! </GLOBAL_PARAMETERS>
 #! <COMMENTS>
 #! <COMMENT
@@ -1574,7 +1580,7 @@
 #! INFO_NODE="false"
 #! TOP_LEFT="2800 -1734"
 #! BOTTOM_RIGHT="2800 -1734"
-#! COLOUR="1,1,0.784314,0.196078"
+#! COLOUR="1,1,0.784314,0.192157"
 #! SIZE_POLICY="8"
 #! COMMENT_TYPE="REGULAR"
 #! ANCHORED_NODE="106"
@@ -1588,7 +1594,7 @@
 #! INFO_NODE="false"
 #! TOP_LEFT="701 -1382"
 #! BOTTOM_RIGHT="701 -1382"
-#! COLOUR="1,1,0.784314,0.196078"
+#! COLOUR="1,1,0.784314,0.192157"
 #! SIZE_POLICY="8"
 #! COMMENT_TYPE="REGULAR"
 #! ANCHORED_NODE="145"
@@ -1602,7 +1608,7 @@
 #! INFO_NODE="false"
 #! TOP_LEFT="3554 -1713"
 #! BOTTOM_RIGHT="3554 -1713"
-#! COLOUR="1,1,0.784314,0.196078"
+#! COLOUR="1,1,0.784314,0.192157"
 #! SIZE_POLICY="8"
 #! COMMENT_TYPE="REGULAR"
 #! ANCHORED_NODE="150"
@@ -1639,7 +1645,7 @@
 #! BOTTOM_RIGHT="2109 -4329"
 #! STICKY="true"
 #! COLOUR="0.521569,0.521569,0.647059"
-#! CONTENTS="27 42 34 137 29 44 103 39 97 91 23 86 92 73 68 31 33 99 93 28 43 87 90 76 69 38 30 45 138 40 112 26 41 101 95 32 67 89 88 77 71 "
+#! CONTENTS="138 99 42 27 34 43 29 89 88 77 71 39 101 95 45 31 112 41 26 33 91 86 92 73 68 28 103 97 38 44 30 137 40 93 23 87 90 67 76 69 32 "
 #! />
 #! <BOOKMARK
 #! IDENTIFIER="143"
@@ -2534,7 +2540,7 @@
 #! <XFORM_ATTR ATTR_NAME="URL_ORI" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_PARM PARM_NAME="LIST_ATTRS" PARM_VALUE=""/>
 #! <XFORM_PARM PARM_NAME="HIDE_ATTRIBUTES" PARM_VALUE=""/>
-#! <XFORM_PARM PARM_NAME="PYTHONSOURCE" PARM_VALUE="import&lt;space&gt;fmeobjects&lt;lf&gt;import&lt;space&gt;os&lt;lf&gt;&lt;lf&gt;def&lt;space&gt;processFeature&lt;openparen&gt;feature&lt;closeparen&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;symbol_url&lt;space&gt;=&lt;space&gt;feature.getAttribute&lt;openparen&gt;&lt;quote&gt;EIB_LEGENDESYMBOL_DE&lt;quote&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;unc_base&lt;space&gt;=&lt;space&gt;FME_MacroValues&lt;openbracket&gt;&lt;apos&gt;LEGEND_BASEDIR&lt;apos&gt;&lt;closebracket&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;url_base&lt;space&gt;=&lt;space&gt;FME_MacroValues&lt;openbracket&gt;&lt;apos&gt;LEGEND_BASEURL&lt;apos&gt;&lt;closebracket&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;imagename&lt;space&gt;=&lt;space&gt;symbol_url.split&lt;openparen&gt;&lt;quote&gt;&lt;solidus&gt;images&lt;solidus&gt;&lt;quote&gt;&lt;closeparen&gt;&lt;openbracket&gt;1&lt;closebracket&gt;&lt;space&gt;+&lt;space&gt;&lt;quote&gt;.png&lt;quote&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;imagename_prefix&lt;space&gt;=&lt;space&gt;symbol_url.split&lt;openparen&gt;&lt;quote&gt;&lt;solidus&gt;images&lt;solidus&gt;&lt;quote&gt;&lt;closeparen&gt;&lt;openbracket&gt;0&lt;closebracket&gt;.split&lt;openparen&gt;&lt;quote&gt;&lt;solidus&gt;MapServer&lt;solidus&gt;&lt;quote&gt;&lt;closeparen&gt;&lt;openbracket&gt;1&lt;closebracket&gt;&lt;space&gt;+&lt;space&gt;&lt;quote&gt;_&lt;quote&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;filename&lt;space&gt;=&lt;space&gt;imagename_prefix&lt;space&gt;+&lt;space&gt;imagename&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;url_file&lt;space&gt;=&lt;space&gt;url_base&lt;space&gt;+&lt;space&gt;filename&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;unc_file&lt;space&gt;=&lt;space&gt;os.path.join&lt;openparen&gt;unc_base&lt;comma&gt;&lt;space&gt;filename&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;feature.setAttribute&lt;openparen&gt;&lt;quote&gt;EIB_LEGENDESYMBOL_DE&lt;quote&gt;&lt;comma&gt;&lt;space&gt;url_file&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;feature.setAttribute&lt;openparen&gt;&lt;quote&gt;FILENAME&lt;quote&gt;&lt;comma&gt;&lt;space&gt;unc_file&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;feature.setAttribute&lt;openparen&gt;&lt;quote&gt;URL_ORI&lt;quote&gt;&lt;comma&gt;&lt;space&gt;symbol_url&lt;closeparen&gt;&lt;lf&gt;&lt;lf&gt;"/>
+#! <XFORM_PARM PARM_NAME="PYTHONSOURCE" PARM_VALUE="import&lt;space&gt;fmeobjects&lt;lf&gt;import&lt;space&gt;os&lt;lf&gt;&lt;lf&gt;def&lt;space&gt;processFeature&lt;openparen&gt;feature&lt;closeparen&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;token&lt;space&gt;=&lt;space&gt;FME_MacroValues&lt;openbracket&gt;&lt;apos&gt;TOKEN&lt;apos&gt;&lt;closebracket&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;symbol_url&lt;space&gt;=&lt;space&gt;feature.getAttribute&lt;openparen&gt;&lt;quote&gt;EIB_LEGENDESYMBOL_DE&lt;quote&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;unc_base&lt;space&gt;=&lt;space&gt;FME_MacroValues&lt;openbracket&gt;&lt;apos&gt;LEGEND_BASEDIR&lt;apos&gt;&lt;closebracket&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;url_base&lt;space&gt;=&lt;space&gt;FME_MacroValues&lt;openbracket&gt;&lt;apos&gt;LEGEND_BASEURL&lt;apos&gt;&lt;closebracket&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;imagename&lt;space&gt;=&lt;space&gt;symbol_url.split&lt;openparen&gt;&lt;quote&gt;&lt;solidus&gt;images&lt;solidus&gt;&lt;quote&gt;&lt;closeparen&gt;&lt;openbracket&gt;1&lt;closebracket&gt;&lt;space&gt;+&lt;space&gt;&lt;quote&gt;.png&lt;quote&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;imagename_prefix&lt;space&gt;=&lt;space&gt;symbol_url.split&lt;openparen&gt;&lt;quote&gt;&lt;solidus&gt;images&lt;solidus&gt;&lt;quote&gt;&lt;closeparen&gt;&lt;openbracket&gt;0&lt;closebracket&gt;.split&lt;openparen&gt;&lt;quote&gt;&lt;solidus&gt;MapServer&lt;solidus&gt;&lt;quote&gt;&lt;closeparen&gt;&lt;openbracket&gt;1&lt;closebracket&gt;&lt;space&gt;+&lt;space&gt;&lt;quote&gt;_&lt;quote&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;filename&lt;space&gt;=&lt;space&gt;imagename_prefix&lt;space&gt;+&lt;space&gt;imagename&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;url_file&lt;space&gt;=&lt;space&gt;url_base&lt;space&gt;+&lt;space&gt;filename&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;unc_file&lt;space&gt;=&lt;space&gt;os.path.join&lt;openparen&gt;unc_base&lt;comma&gt;&lt;space&gt;filename&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;feature.setAttribute&lt;openparen&gt;&lt;quote&gt;EIB_LEGENDESYMBOL_DE&lt;quote&gt;&lt;comma&gt;&lt;space&gt;url_file&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;feature.setAttribute&lt;openparen&gt;&lt;quote&gt;FILENAME&lt;quote&gt;&lt;comma&gt;&lt;space&gt;unc_file&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;if&lt;space&gt;token&lt;space&gt;!=&lt;space&gt;&lt;apos&gt;&lt;apos&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;symbol_url&lt;space&gt;=&lt;space&gt;symbol_url&lt;space&gt;+&lt;space&gt;&lt;quote&gt;?token=&lt;quote&gt;&lt;space&gt;+&lt;space&gt;token&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;feature.setAttribute&lt;openparen&gt;&lt;quote&gt;URL_ORI&lt;quote&gt;&lt;comma&gt;&lt;space&gt;symbol_url&lt;closeparen&gt;&lt;lf&gt;&lt;lf&gt;"/>
 #! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="PythonCaller_5"/>
 #! <XFORM_PARM PARM_NAME="PYTHONSYMBOL" PARM_VALUE="processFeature"/>
 #! <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
@@ -3471,7 +3477,7 @@
 #! BOTTOM_RIGHT="2617 -1064"
 #! STICKY="true"
 #! COLOUR="0.619608,0.47451,0.364706"
-#! CONTENTS="4 2 20 15 9 8 19 "
+#! CONTENTS="20 9 15 8 4 2 19 "
 #! />
 #! <BOOKMARK
 #! IDENTIFIER="28"
@@ -3481,7 +3487,7 @@
 #! BOTTOM_RIGHT="3099 -1610"
 #! STICKY="true"
 #! COLOUR="0.792157,0.2,0.882353"
-#! CONTENTS="16 1 22 17 10 7 6 5 21 "
+#! CONTENTS="21 16 10 7 22 6 17 5 1 "
 #! />
 #! </BOOKMARKS>
 #! <TRANSFORMERS>
@@ -3942,7 +3948,7 @@
 #! BOTTOM_RIGHT="2026 -957"
 #! STICKY="true"
 #! COLOUR="0.74902,0.254902,0.231373"
-#! CONTENTS="6 20 5 21 7 "
+#! CONTENTS="20 21 7 6 5 "
 #! />
 #! <BOOKMARK
 #! IDENTIFIER="39"
@@ -3952,7 +3958,7 @@
 #! BOTTOM_RIGHT="1779 -1430"
 #! STICKY="true"
 #! COLOUR="0.776471,0.976471,0.286275"
-#! CONTENTS="3 11 25 "
+#! CONTENTS="25 11 3 "
 #! />
 #! <BOOKMARK
 #! IDENTIFIER="40"
@@ -3962,7 +3968,7 @@
 #! BOTTOM_RIGHT="4172 -1492"
 #! STICKY="true"
 #! COLOUR="0.976471,0.447059,0.886275"
-#! CONTENTS="4 22 27 10 23 9 8 "
+#! CONTENTS="22 10 9 8 27 4 23 "
 #! />
 #! <BOOKMARK
 #! IDENTIFIER="41"
@@ -3972,7 +3978,7 @@
 #! BOTTOM_RIGHT="4181 -2131"
 #! STICKY="true"
 #! COLOUR="0.00784314,0.686275,0.431373"
-#! CONTENTS="28 2 12 "
+#! CONTENTS="28 12 2 "
 #! />
 #! <BOOKMARK
 #! IDENTIFIER="42"
@@ -4645,6 +4651,8 @@ DEFAULT_MACRO MAPSERVICE_LEGEND_URL
 GUI TEXT MAPSERVICE_LEGEND_URL Mapservice-Legenden-URL:
 DEFAULT_MACRO LOGFILE 
 GUI TEXT LOGFILE Logfile:
+DEFAULT_MACRO TOKEN 
+GUI TEXT TOKEN Token:
 INCLUDE [ if {{$(MAPSERVICE_BASE_URL)} == {}} { puts_real {Parameter 'MAPSERVICE_BASE_URL' must be given a value.}; exit 1; }; ]
 INCLUDE [ if {{$(OEREB2_DATABASE)} == {}} { puts_real {Parameter 'OEREB2_DATABASE' must be given a value.}; exit 1; }; ]
 INCLUDE [ if {{$(OEREB2_USERNAME)} == {}} { puts_real {Parameter 'OEREB2_USERNAME' must be given a value.}; exit 1; }; ]
@@ -4662,6 +4670,7 @@ INCLUDE [ if {{$(LEGEND_BASEURL)} == {}} { puts_real {Parameter 'LEGEND_BASEURL'
 INCLUDE [ if {{$(MAPSERVICE_NAME)} == {}} { puts_real {Parameter 'MAPSERVICE_NAME' must be given a value.}; exit 1; }; ]
 INCLUDE [ if {{$(MAPSERVICE_LEGEND_URL)} == {}} { puts_real {Parameter 'MAPSERVICE_LEGEND_URL' must be given a value.}; exit 1; }; ]
 INCLUDE [ if {{$(LOGFILE)} == {}} { puts_real {Parameter 'LOGFILE' must be given a value.}; exit 1; }; ]
+INCLUDE [ if {{$(TOKEN)} == {}} { puts_real {Parameter 'TOKEN' must be given a value.}; exit 1; }; ]
 #! START_HEADER
 #! START_WB_HEADER
 READER_TYPE MULTI_READER
@@ -5024,8 +5033,8 @@ FACTORY_DEF * TeeFactory    FACTORY_NAME BulkAttributeRenamer_5    INPUT  FEATUR
 
 MACRO casemac
 INCLUDE [ if { {NO} == {NO} } { puts {MACRO casemac -nocase}} ]
-Tcl2 proc StringReplacer_577fcf90_b42e_4ee2_9624_d6f327669c9319_replacer { findText replaceText invalidValue} {     set attrs [split \"INFO_SYMB_TYP\" {,}];     set findValue [FME_DecodeText $findText];     set replaceValue [FME_DecodeText $replaceText];     foreach attr $attrs {       set attrVal [FME_GetAttribute $attr];       set length [string length $attrVal];       set noMatch true;       if {$length > 0} {          if {{NO} == {YES}} {             set newAttrVal [regsub $(casemac) -all -- $findValue $attrVal $replaceValue];          } else {             set newAttrVal [string map $(casemac) [list $findValue $replaceValue] $attrVal];          };          if { $newAttrVal ne $attrVal } {             set noMatch false;             FME_SetAttribute $attr $newAttrVal;          };       };       if {$noMatch} {          if { $invalidValue == {FME_NULL_VALUE} } {             FME_SetAttributeNull $attr;          } elseif { $invalidValue != {_FME_NO_OP_} }  {             FME_SetAttribute $attr [FME_DecodeText $invalidValue];          };       };     }; }
-FACTORY_DEF * TeeFactory    FACTORY_NAME StringReplacer    INPUT  FEATURE_TYPE BulkAttributeRenamer_5_OUTPUT    OUTPUT FEATURE_TYPE StringReplacer_OUTPUT         @Tcl2("StringReplacer_577fcf90_b42e_4ee2_9624_d6f327669c9319_replacer {<solidus>} {<space>||<space><apos><comma><space><solidus><solidus><solidus><apos><space>||<space>} {_FME_NO_OP_}")
+Tcl2 proc StringReplacer_bc394024_432c_45e9_898c_b929a93a038b1_replacer { findText replaceText invalidValue} {     set attrs [split \"INFO_SYMB_TYP\" {,}];     set findValue [FME_DecodeText $findText];     set replaceValue [FME_DecodeText $replaceText];     foreach attr $attrs {       set attrVal [FME_GetAttribute $attr];       set length [string length $attrVal];       set noMatch true;       if {$length > 0} {          if {{NO} == {YES}} {             set newAttrVal [regsub $(casemac) -all -- $findValue $attrVal $replaceValue];          } else {             set newAttrVal [string map $(casemac) [list $findValue $replaceValue] $attrVal];          };          if { $newAttrVal ne $attrVal } {             set noMatch false;             FME_SetAttribute $attr $newAttrVal;          };       };       if {$noMatch} {          if { $invalidValue == {FME_NULL_VALUE} } {             FME_SetAttributeNull $attr;          } elseif { $invalidValue != {_FME_NO_OP_} }  {             FME_SetAttribute $attr [FME_DecodeText $invalidValue];          };       };     }; }
+FACTORY_DEF * TeeFactory    FACTORY_NAME StringReplacer    INPUT  FEATURE_TYPE BulkAttributeRenamer_5_OUTPUT    OUTPUT FEATURE_TYPE StringReplacer_OUTPUT         @Tcl2("StringReplacer_bc394024_432c_45e9_898c_b929a93a038b1_replacer {<solidus>} {<space>||<space><apos><comma><space><solidus><solidus><solidus><apos><space>||<space>} {_FME_NO_OP_}")
 
 # -------------------------------------------------------------------------
 
@@ -5076,8 +5085,8 @@ FACTORY_DEF * JSONQueryFactory    FACTORY_NAME JSONFlattener_2    INPUT  FEATURE
 
 # -------------------------------------------------------------------------
 
-Tcl2 proc StringConcatenator_8dc417cd_8ee7_471d_928f_71e0128f72e919_doSetAttr {attrText} {    FME_SetAttribute [FME_DecodeText {image_url}] [FME_DecodeText $attrText] }
-FACTORY_DEF * TeeFactory    FACTORY_NAME StringConcatenator    INPUT  FEATURE_TYPE JSONFlattener_2_OUTPUT    OUTPUT FEATURE_TYPE StringConcatenator_OUTPUT        @Tcl2("StringConcatenator_8dc417cd_8ee7_471d_928f_71e0128f72e919_doSetAttr {@EvaluateExpression(STRING_ENCODED,$(MAPSERVICE_BASE_URL$encode)$(MAPSERVICE_NAME$encode)<solidus>MapServer<solidus><at>Value<openparen>layerId<closeparen><solidus>images<solidus><at>Value<openparen>url<closeparen>,StringConcatenator)} ")
+Tcl2 proc StringConcatenator_f6548b5a_3392_4155_a0e3_16b377d251171_doSetAttr {attrText} {    FME_SetAttribute [FME_DecodeText {image_url}] [FME_DecodeText $attrText] }
+FACTORY_DEF * TeeFactory    FACTORY_NAME StringConcatenator    INPUT  FEATURE_TYPE JSONFlattener_2_OUTPUT    OUTPUT FEATURE_TYPE StringConcatenator_OUTPUT        @Tcl2("StringConcatenator_f6548b5a_3392_4155_a0e3_16b377d251171_doSetAttr {@EvaluateExpression(STRING_ENCODED,$(MAPSERVICE_BASE_URL$encode)$(MAPSERVICE_NAME$encode)<solidus>MapServer<solidus><at>Value<openparen>layerId<closeparen><solidus>images<solidus><at>Value<openparen>url<closeparen>,StringConcatenator)} ")
 
 # -------------------------------------------------------------------------
 
@@ -5099,9 +5108,9 @@ FACTORY_DEF * TeeFactory    FACTORY_NAME BulkAttributeRenamer_2    INPUT  FEATUR
 
 # -------------------------------------------------------------------------
 
-INCLUDE [    set macroLine "MACRO AttributeKeeper_51f7e534_2a48_45cc_916f_9872895a48d719_LIST_EXP ";    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "{\[0-9\]+}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
+INCLUDE [    set macroLine "MACRO AttributeKeeper_b2f62ab4_52da_4e28_a89e_011728c0d1771_LIST_EXP ";    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "{\[0-9\]+}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
 
-FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeKeeper    INPUT  FEATURE_TYPE GEODB.NPL_WEWRF    INPUT  FEATURE_TYPE GEODB.NPL_NHSF    INPUT  FEATURE_TYPE GEODB.NPL_WEWRL    INPUT  FEATURE_TYPE GEODB.NPL_GEGEWL    INPUT  FEATURE_TYPE GEODB.NPL_GNGZ    INPUT  FEATURE_TYPE GEODB.NPL_NHSL    INPUT  FEATURE_TYPE GEODB.NPL_UEUZ    INPUT  FEATURE_TYPE GEODB.NPL_GNNUTZZO    INPUT  FEATURE_TYPE GEODB.NPL_UEPROJ    INPUT  FEATURE_TYPE GEODB.NPL_NHSP    INPUT  FEATURE_TYPE GEODB.NPL_VEFE    INPUT  FEATURE_TYPE GEODB.NPL_UELAERM    INPUT  FEATURE_TYPE GEODB.NPL_UEWAAB    INPUT  FEATURE_TYPE GEODB.NPL_GEFF    INPUT  FEATURE_TYPE GEODB.NPL_GNBAUW    INPUT  FEATURE_TYPE GEODB.NPL_UEUL    INPUT  FEATURE_TYPE GEODB.NPL_WAABPER    INPUT  FEATURE_TYPE GEODB.NPL_GEGEWF    OUTPUT FEATURE_TYPE AttributeKeeper_OUTPUT        @KeepAttributes(REL_ID,fme_feature_type,fme_regexp_match,"^fme_$(AttributeKeeper_51f7e534_2a48_45cc_916f_9872895a48d719_LIST_EXP)")
+FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeKeeper    INPUT  FEATURE_TYPE GEODB.NPL_GEFF    INPUT  FEATURE_TYPE GEODB.NPL_GNBAUW    INPUT  FEATURE_TYPE GEODB.NPL_UEUL    INPUT  FEATURE_TYPE GEODB.NPL_WAABPER    INPUT  FEATURE_TYPE GEODB.NPL_GEGEWF    INPUT  FEATURE_TYPE GEODB.NPL_WEWRF    INPUT  FEATURE_TYPE GEODB.NPL_NHSF    INPUT  FEATURE_TYPE GEODB.NPL_WEWRL    INPUT  FEATURE_TYPE GEODB.NPL_GEGEWL    INPUT  FEATURE_TYPE GEODB.NPL_GNGZ    INPUT  FEATURE_TYPE GEODB.NPL_NHSL    INPUT  FEATURE_TYPE GEODB.NPL_UEUZ    INPUT  FEATURE_TYPE GEODB.NPL_GNNUTZZO    INPUT  FEATURE_TYPE GEODB.NPL_UEPROJ    INPUT  FEATURE_TYPE GEODB.NPL_NHSP    INPUT  FEATURE_TYPE GEODB.NPL_VEFE    INPUT  FEATURE_TYPE GEODB.NPL_UELAERM    INPUT  FEATURE_TYPE GEODB.NPL_UEWAAB    OUTPUT FEATURE_TYPE AttributeKeeper_OUTPUT        @KeepAttributes(REL_ID,fme_feature_type,fme_regexp_match,"^fme_$(AttributeKeeper_b2f62ab4_52da_4e28_a89e_011728c0d1771_LIST_EXP)")
 
 # -------------------------------------------------------------------------
 
@@ -5208,7 +5217,7 @@ FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRenamer_2    INPUT  FEATURE_TY
 
 FME_PYTHON_PATH "$(FME_MF_DIR)"
 
-FACTORY_DEF * PythonFactory    FACTORY_NAME PythonCaller_5    INPUT  FEATURE_TYPE AttributeRenamer_2_OUTPUT    SYMBOL_NAME processFeature    PYTHON_NAMESPACE FMEOBJECTS    SOURCE_CODE import<space>fmeobjects<lf>import<space>os<lf><lf>def<space>processFeature<openparen>feature<closeparen>:<lf><space><space><space><space>symbol_url<space>=<space>feature.getAttribute<openparen><quote>EIB_LEGENDESYMBOL_DE<quote><closeparen><lf><space><space><space><space>unc_base<space>=<space>FME_MacroValues<openbracket><apos>LEGEND_BASEDIR<apos><closebracket><lf><space><space><space><space>url_base<space>=<space>FME_MacroValues<openbracket><apos>LEGEND_BASEURL<apos><closebracket><lf><space><space><space><space><lf><space><space><space><space>imagename<space>=<space>symbol_url.split<openparen><quote><solidus>images<solidus><quote><closeparen><openbracket>1<closebracket><space>+<space><quote>.png<quote><lf><space><space><space><space>imagename_prefix<space>=<space>symbol_url.split<openparen><quote><solidus>images<solidus><quote><closeparen><openbracket>0<closebracket>.split<openparen><quote><solidus>MapServer<solidus><quote><closeparen><openbracket>1<closebracket><space>+<space><quote>_<quote><lf><space><space><space><space>filename<space>=<space>imagename_prefix<space>+<space>imagename<lf><space><space><space><space><lf><space><space><space><space>url_file<space>=<space>url_base<space>+<space>filename<lf><space><space><space><space>unc_file<space>=<space>os.path.join<openparen>unc_base<comma><space>filename<closeparen><lf><space><space><space><space><lf><space><space><space><space>feature.setAttribute<openparen><quote>EIB_LEGENDESYMBOL_DE<quote><comma><space>url_file<closeparen><lf><space><space><space><space>feature.setAttribute<openparen><quote>FILENAME<quote><comma><space>unc_file<closeparen><lf><space><space><space><space>feature.setAttribute<openparen><quote>URL_ORI<quote><comma><space>symbol_url<closeparen><lf><lf>    OUTPUT PYOUTPUT FEATURE_TYPE PythonCaller_5_OUTPUT
+FACTORY_DEF * PythonFactory    FACTORY_NAME PythonCaller_5    INPUT  FEATURE_TYPE AttributeRenamer_2_OUTPUT    SYMBOL_NAME processFeature    PYTHON_NAMESPACE FMEOBJECTS    SOURCE_CODE import<space>fmeobjects<lf>import<space>os<lf><lf>def<space>processFeature<openparen>feature<closeparen>:<lf><space><space><space><space>token<space>=<space>FME_MacroValues<openbracket><apos>TOKEN<apos><closebracket><lf><space><space><space><space>symbol_url<space>=<space>feature.getAttribute<openparen><quote>EIB_LEGENDESYMBOL_DE<quote><closeparen><lf><space><space><space><space>unc_base<space>=<space>FME_MacroValues<openbracket><apos>LEGEND_BASEDIR<apos><closebracket><lf><space><space><space><space>url_base<space>=<space>FME_MacroValues<openbracket><apos>LEGEND_BASEURL<apos><closebracket><lf><space><space><space><space><lf><space><space><space><space>imagename<space>=<space>symbol_url.split<openparen><quote><solidus>images<solidus><quote><closeparen><openbracket>1<closebracket><space>+<space><quote>.png<quote><lf><space><space><space><space>imagename_prefix<space>=<space>symbol_url.split<openparen><quote><solidus>images<solidus><quote><closeparen><openbracket>0<closebracket>.split<openparen><quote><solidus>MapServer<solidus><quote><closeparen><openbracket>1<closebracket><space>+<space><quote>_<quote><lf><space><space><space><space>filename<space>=<space>imagename_prefix<space>+<space>imagename<lf><space><space><space><space><lf><space><space><space><space>url_file<space>=<space>url_base<space>+<space>filename<lf><space><space><space><space>unc_file<space>=<space>os.path.join<openparen>unc_base<comma><space>filename<closeparen><lf><space><space><space><space><lf><space><space><space><space>feature.setAttribute<openparen><quote>EIB_LEGENDESYMBOL_DE<quote><comma><space>url_file<closeparen><lf><space><space><space><space>feature.setAttribute<openparen><quote>FILENAME<quote><comma><space>unc_file<closeparen><lf><space><space><space><space><lf><space><space><space><space>if<space>token<space>!=<space><apos><apos>:<lf><space><space><space><space><space><space><space><space>symbol_url<space>=<space>symbol_url<space>+<space><quote>?token=<quote><space>+<space>token<lf><space><space><space><space>feature.setAttribute<openparen><quote>URL_ORI<quote><comma><space>symbol_url<closeparen><lf><lf>    OUTPUT PYOUTPUT FEATURE_TYPE PythonCaller_5_OUTPUT
 
 FACTORY_DEF * TeeFactory   FACTORY_NAME "PythonCaller_5 OUTPUT Splitter"   INPUT FEATURE_TYPE PythonCaller_5_OUTPUT   OUTPUT FEATURE_TYPE PythonCaller_5_OUTPUT_0_8ceTgL+AxUI=   OUTPUT FEATURE_TYPE PythonCaller_5_OUTPUT_1_8ceTgL+AxUI=
 # -------------------------------------------------------------------------
@@ -5241,8 +5250,8 @@ FACTORY_DEF * TestFactory    FACTORY_NAME Terminator_2    INPUT  FEATURE_TYPE HT
 
 # -------------------------------------------------------------------------
 
-Tcl2 proc StringConcatenator_2_51a17484_dae5_457e_8678_a77de864a26519_doSetAttr {attrText} {    FME_SetAttribute [FME_DecodeText {fme_where}] [FME_DecodeText $attrText] }
-FACTORY_DEF * TeeFactory    FACTORY_NAME StringConcatenator_2    INPUT  FEATURE_TYPE PythonCaller_5_OUTPUT_1_8ceTgL+AxUI=    OUTPUT FEATURE_TYPE StringConcatenator_2_OUTPUT        @Tcl2("StringConcatenator_2_51a17484_dae5_457e_8678_a77de864a26519_doSetAttr {@EvaluateExpression(STRING_ENCODED,EIB_OID=<apos><at>Value<openparen>EIB_OID<closeparen><apos>,StringConcatenator_2)} ")
+Tcl2 proc StringConcatenator_2_0ba68e50_b0a0_4b5e_bb20_d0ea58c8436f1_doSetAttr {attrText} {    FME_SetAttribute [FME_DecodeText {fme_where}] [FME_DecodeText $attrText] }
+FACTORY_DEF * TeeFactory    FACTORY_NAME StringConcatenator_2    INPUT  FEATURE_TYPE PythonCaller_5_OUTPUT_1_8ceTgL+AxUI=    OUTPUT FEATURE_TYPE StringConcatenator_2_OUTPUT        @Tcl2("StringConcatenator_2_0ba68e50_b0a0_4b5e_bb20_d0ea58c8436f1_doSetAttr {@EvaluateExpression(STRING_ENCODED,EIB_OID=<apos><at>Value<openparen>EIB_OID<closeparen><apos>,StringConcatenator_2)} ")
 
 # -------------------------------------------------------------------------
 

@@ -5,8 +5,33 @@ import sys
 import logging
 import os
 import fmeobjects
+import requests
+from __builtin__ import str
 
 logger = logging.getLogger('oerebLaderLogger')
+
+
+def getToken(username, password, tokenURL):
+    token = ""
+
+    params = {'username': username, 'password': password, 'client': 'requestip', 'f': 'json'}
+    headers = {"Content-type": "application/x-www-form-urlencoded", "Accept": "text/plain"}
+    
+    res = requests.post(tokenURL, data=params, headers=headers)
+    
+    if res.status_code == 200:
+        if 'token' in res.json():
+            token = res.json()['token']
+        else:
+            logger.error("Es konnte kein Token erezugt werden!")
+            logger.error("Import wird abgebrochen!")
+            sys.exit()
+    else:
+        logger.error("Es konnte kein Token erezugt werden!")
+        logger.error("Import wird abgebrochen!")
+        sys.exit()
+        
+    return token
 
 def run(config):
     logger.info("Script " +  os.path.basename(__file__) + " wird ausgeführt.")
@@ -17,6 +42,7 @@ def run(config):
     runner = fmeobjects.FMEWorkspaceRunner()
     bfsnr = config['LIEFEREINHEIT']['bfsnr']
     legend_basedir = os.path.join(config['GENERAL']['files_be_ch_baseunc'], unicode(config['LIEFEREINHEIT']['id']), unicode(config['ticketnr']), "legenden")
+    token = ""
     # Das Legendenverzeichnis muss im Voraus vorhanden sein, damit der HTTP-Fetcher
     # im FME dorthin schreiben kann. Er erzeugt keine Directories.
     if not os.path.exists(legend_basedir):
@@ -25,7 +51,13 @@ def run(config):
         legend_baseurl = config['GENERAL']['files_be_ch_baseurl'] + unicode(config['LIEFEREINHEIT']['id']) + "/" + unicode(config['ticketnr']) + "/legenden/"
     else:
         legend_baseurl = config['GENERAL']['files_be_ch_baseurl'] + "/" + unicode(config['LIEFEREINHEIT']['id']) + "/" + unicode(config['ticketnr']) + "/legenden/"
-    mapservice_legend_url = config['GENERAL']['legend_mapservice_base_url'] + config['GENERAL']['legend_mapservice_name'] + "/MapServer/legend?f=json&pretty=true"
+    if config['LEGENDS']['use_token_auth'] == "1":
+        token = getToken(config['LEGENDS']['username'], config['LEGENDS']['password'], config['LEGENDS']['get_token_url'])
+        mapservice_legend_url = config['LEGENDS']['legend_mapservice_base_url'] + config['LEGENDS']['legend_mapservice_name'] + "/MapServer/legend?f=json&pretty=true&token=" + token
+    else:
+        mapservice_legend_url = config['LEGENDS']['legend_mapservice_base_url'] + config['LEGENDS']['legend_mapservice_name'] + "/MapServer/legend?f=json&pretty=true"
+    logger.info("Verwende folgende REST-URL für Legendenbilder:")
+    logger.info(mapservice_legend_url)
     
     # Der FMEWorkspaceRunner akzeptiert keine Unicode-Strings!
     # Daher müssen workspace und parameters umgewandelt werden!
@@ -41,11 +73,12 @@ def run(config):
         'GDBV_USERNAME': str(config['GDBV_WORK']['username']),
         'GDBV_PASSWORD': str(config['GDBV_WORK']['password']),
         'BFSNR': str(bfsnr),
-        'MAPSERVICE_BASE_URL': str(config['GENERAL']['legend_mapservice_base_url']),
+        'MAPSERVICE_BASE_URL': str(config['LEGENDS']['legend_mapservice_base_url']),
         'MAPSERVICE_LEGEND_URL': mapservice_legend_url,
-        'MAPSERVICE_NAME': str(config['GENERAL']['legend_mapservice_name']),
+        'MAPSERVICE_NAME': str(config['LEGENDS']['legend_mapservice_name']),
         'LEGEND_BASEURL': str(legend_baseurl),
         'LEGEND_BASEDIR': str(legend_basedir),
+        'TOKEN': str(token),
         'LIEFEREINHEIT': str(config['LIEFEREINHEIT']['id']),
         'LOGFILE': str(fme_logfile)
     }
