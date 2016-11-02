@@ -29,7 +29,7 @@ def run(config):
         'DATABASE': str(config['GEODB_WORK']['database']),
         'USERNAME': str(config['GEODB_WORK']['username']),
         'PASSWORD': str(config['GEODB_WORK']['password']),
-        'MDB': str(config['LIEFEREINHEIT']['gpr_source']),
+        'FGDB': str(config['LIEFEREINHEIT']['gpr_source']),
         'INPUT_RV_DIR': str(input_rv_dir),
         'OUTPUT_RV_DIR': str(output_rv_dir),
         'OUTPUT_RV_URL': str(output_rv_url),
