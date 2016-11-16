@@ -11,7 +11,7 @@ logger = logging.getLogger('oerebLaderLogger')
 
 def run(config):
     logger.info("Script " +  os.path.basename(__file__) + " wird ausgeführt.")
-    logger.info("Script " +  os.path.basename(__file__) + " ist beendet.")
+    
     toolbox = config['GENERAL']['qa_toolbox']
     logger.info("Folgende Toolbox wird verwendet: " + toolbox)
     arcpy.AddToolbox(toolbox)
@@ -49,3 +49,5 @@ def run(config):
         logger.error("QA-Check Transferstruktur 2 mit Fehlern abgeschlossen.")
         logger.error("Import wird abgebrochen.")
         sys.exit()
+        
+    logger.info("Script " +  os.path.basename(__file__) + " ist beendet.")
