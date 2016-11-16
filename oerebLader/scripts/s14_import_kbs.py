@@ -12,7 +12,7 @@ def run(config):
     gprcode = 'BALISKBS'
     
     table_sql = "select ebecode from gpr where GPRCODE='" + gprcode + "'"
-    ebenen = oerebLader.helpers.sql_helper.readSQL(config['OEREB_WORK']['connection_string'], table_sql)
+    ebenen = oerebLader.helpers.sql_helper.readSQL(config['OEREB2_WORK']['connection_string'], table_sql)
     for ebene in ebenen:
         logger.info("Ebene " + ebene[0])
         ebene_name = gprcode + "_" + ebene[0]

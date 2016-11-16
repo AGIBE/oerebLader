@@ -22,7 +22,7 @@ def init_logging(config):
 def get_liefereinheit_info(liefereinheit, config):
     logging.info("Liefereinheiten-Informationen werden geholt.")
     liefereinheit_sql = "SELECT name, bfsnr, gpr_source, ts_source, md5, gprcode FROM liefereinheit where id=" + unicode(liefereinheit)
-    liefereinheit_result = oerebLader.helpers.sql_helper.readSQL(config['OEREB_WORK']['connection_string'], liefereinheit_sql)
+    liefereinheit_result = oerebLader.helpers.sql_helper.readSQL(config['OEREB2_WORK']['connection_string'], liefereinheit_sql)
     
     liefereinheit_info = {}
 
@@ -45,7 +45,7 @@ def create_ticket(liefereinheit, config):
     create_ticket_sql = "INSERT INTO ticket (liefereinheit, status, art, name, nachfuehrung) VALUES (%s, %s, %s, '%s', SYSDATE)" % (liefereinheit, 1, 5, name)
     logging.info(create_ticket_sql)
     try:
-        oerebLader.helpers.sql_helper.writeSQL(config['OEREB_WORK']['connection_string'], create_ticket_sql)
+        oerebLader.helpers.sql_helper.writeSQL(config['OEREB2_WORK']['connection_string'], create_ticket_sql)
     except Exception as ex:
         logging.error("Fehler beim Einfügen des Tickets!")
         logging.error(unicode(ex))

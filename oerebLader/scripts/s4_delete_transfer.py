@@ -11,7 +11,7 @@ def run(config):
     logger.info("Script " +  os.path.basename(__file__) + " wird ausgeführt.")
     liefereinheit = config['LIEFEREINHEIT']['id']
     oereb_sql = "SELECT EBECODE, FILTER_FIELD, FILTER_TYPE FROM GPR WHERE GPRCODE='OEREB'"
-    oereb_ebenen = oerebLader.helpers.sql_helper.readSQL(config['OEREB_WORK']['connection_string'], oereb_sql)
+    oereb_ebenen = oerebLader.helpers.sql_helper.readSQL(config['OEREB2_WORK']['connection_string'], oereb_sql)
     for oereb_ebene in oereb_ebenen:
         oereb_table = oereb_ebene[0]
         oereb_liefereinheit_field = oereb_ebene[1]

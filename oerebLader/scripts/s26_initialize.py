@@ -54,7 +54,7 @@ def run(config, ticketnr):
     # Ticket-Infos holen
     logger.info("Ticket-Information holen und validieren.")
     ticket_name_sql = "SELECT liefereinheit, name, status FROM ticket WHERE id=" + unicode(ticketnr)
-    ticket_result = oerebLader.helpers.sql_helper.readSQL(config['OEREB_WORK']['connection_string'], ticket_name_sql)
+    ticket_result = oerebLader.helpers.sql_helper.readSQL(config['OEREB2_WORK']['connection_string'], ticket_name_sql)
     if len(ticket_result) == 1:
         ticket_status = ticket_result[0][2]
         if ticket_status == 1:
@@ -65,8 +65,9 @@ def run(config, ticketnr):
             logger.error("Import wird abgebrochen!")
             sys.exit()
     else:
-        pass
-        #TODO: Abbruch des Scripts (keines oder mehrere Tickets mit dieser ID)
+        logger.error("Es gibt kein Ticket mit dieser ID.")
+        logger.error("Import kann nicht ausgeführt werden.")
+        sys.exit()
 
     logger.info("Ticket-Name: " + config['ticketname'])
     logger.info("Liefereinheit: " + unicode(config['LIEFEREINHEIT']['id']))
@@ -74,14 +75,14 @@ def run(config, ticketnr):
     # Liefereinheiten-Infos holen
     logger.info("Liefereinheiten-Informationen werden geholt.")
     liefereinheit_sql = "SELECT name, bfsnr, gpr_source, ts_source, md5, gprcode FROM liefereinheit WHERE id=" + unicode(config['LIEFEREINHEIT']['id'])
-    liefereinheit_result = oerebLader.helpers.sql_helper.readSQL(config['OEREB_WORK']['connection_string'], liefereinheit_sql)
+    liefereinheit_result = oerebLader.helpers.sql_helper.readSQL(config['OEREB2_WORK']['connection_string'], liefereinheit_sql)
     
     if len(liefereinheit_result) == 1:
         config['LIEFEREINHEIT']['name'] = liefereinheit_result[0][0]
         config['LIEFEREINHEIT']['bfsnr'] = liefereinheit_result[0][1]
         if config['LIEFEREINHEIT']['bfsnr'] > 0:
             gemeinde_name_sql = "SELECT bfs_name FROM bfs WHERE bfs_nr=" + unicode(config['LIEFEREINHEIT']['bfsnr'])
-            gemeinde_name_result = oerebLader.helpers.sql_helper.readSQL(config['OEREB_WORK']['connection_string'],gemeinde_name_sql)
+            gemeinde_name_result = oerebLader.helpers.sql_helper.readSQL(config['OEREB2_WORK']['connection_string'],gemeinde_name_sql)
             config['LIEFEREINHEIT']['gemeinde_name'] = gemeinde_name_result[0][0]
         else:
             config['LIEFEREINHEIT']['gemeinde_name'] = None

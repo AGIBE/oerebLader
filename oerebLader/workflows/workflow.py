@@ -39,7 +39,7 @@ def is_valid_ticket(ticketnr, config):
     valid_ticket = False
     
     valid_ticket_sql = "SELECT id, status FROM ticket WHERE id=" + unicode(ticketnr)
-    results = oerebLader.helpers.sql_helper.readSQL(config['OEREB_WORK']['connection_string'], valid_ticket_sql)
+    results = oerebLader.helpers.sql_helper.readSQL(config['OEREB2_WORK']['connection_string'], valid_ticket_sql)
     
     if len(results) == 1:
         status = results[0][1]
@@ -51,7 +51,7 @@ def is_valid_ticket(ticketnr, config):
 def get_workflow_for_ticket(ticketnr, config):
     workflow_ticket_sql = "select ticket.id, liefereinheit.WORKFLOW from ticket left join liefereinheit on ticket.LIEFEREINHEIT=liefereinheit.ID where ticket.ID=" + unicode(ticketnr)
     
-    results = oerebLader.helpers.sql_helper.readSQL(config['OEREB_WORK']['connection_string'], workflow_ticket_sql)
+    results = oerebLader.helpers.sql_helper.readSQL(config['OEREB2_WORK']['connection_string'], workflow_ticket_sql)
     
     workflow = ""
     

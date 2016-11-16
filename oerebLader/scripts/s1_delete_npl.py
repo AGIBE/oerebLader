@@ -11,7 +11,7 @@ def run(config):
     bfsnr = config['LIEFEREINHEIT']['bfsnr']
     #TODO: Rückbau auf nur noch ein Geoprodukt
     npl_sql = "SELECT EBECODE, FILTER_FIELD, FILTER_TYPE, GPRCODE FROM GPR WHERE GPRCODE IN ('NPL', 'NUPLA')"
-    npl_ebenen = oerebLader.helpers.sql_helper.readSQL(config['OEREB_WORK']['connection_string'], npl_sql)
+    npl_ebenen = oerebLader.helpers.sql_helper.readSQL(config['OEREB2_WORK']['connection_string'], npl_sql)
     for npl_ebene in npl_ebenen:
         npl_table = npl_ebene[3] + "_" + npl_ebene[0]
         npl_bfsnr_field = npl_ebene[1]

@@ -32,7 +32,7 @@ def init_logging(config):
 
 def get_liefereinheiten(config):
     liefereinheiten_sql = "select id from liefereinheit order by id"
-    liefereinheiten_result = oerebLader.helpers.sql_helper.readSQL(config['OEREB_WORK']['connection_string'], liefereinheiten_sql)
+    liefereinheiten_result = oerebLader.helpers.sql_helper.readSQL(config['OEREB2_WORK']['connection_string'], liefereinheiten_sql)
     liefereinheiten = []
     for le in liefereinheiten_result:
         liefereinheiten.append(le[0])

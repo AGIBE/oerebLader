@@ -53,7 +53,7 @@ def run_release(dailyMode):
         valid_art = "!=5"
     
     ticket_sql = "select ticket.ID, liefereinheit.ID, liefereinheit.NAME, liefereinheit.BFSNR, liefereinheit.GPRCODE from ticket left join liefereinheit on ticket.LIEFEREINHEIT=liefereinheit.id where ticket.STATUS=3 and ticket.ART" + valid_art
-    tickets = oerebLader.helpers.sql_helper.readSQL(config['OEREB_WORK']['connection_string'], ticket_sql)
+    tickets = oerebLader.helpers.sql_helper.readSQL(config['OEREB2_WORK']['connection_string'], ticket_sql)
     liefereinheiten = []
     #Geoprodukt kopieren
     logger.info("Das Geoprodukt wird freigegeben.")
@@ -74,7 +74,7 @@ def run_release(dailyMode):
         else:
             gpr_where_clause = "GPRCODE='" + gprcode + "'"
         gpr_sql = "SELECT EBECODE, FILTER_FIELD, FILTER_TYPE, GPRCODE FROM GPR WHERE " + gpr_where_clause
-        ebenen = oerebLader.helpers.sql_helper.readSQL(config['OEREB_WORK']['connection_string'], gpr_sql)
+        ebenen = oerebLader.helpers.sql_helper.readSQL(config['OEREB2_WORK']['connection_string'], gpr_sql)
         for ebene in ebenen:
             ebene_name = ebene[3] + "_" + ebene[0]
             source = os.path.join(config['GEODB_WORK']['connection_file'], config['GEODB_WORK']['username'] + "." + ebene_name)
@@ -126,7 +126,7 @@ def run_release(dailyMode):
         # WHERE-Clause bilden
         liefereinheiten_joined = "(" + ",".join(liefereinheiten) + ")"
         oereb_sql = "SELECT EBECODE, FILTER_FIELD, FILTER_TYPE FROM GPR WHERE GPRCODE='OEREB'"
-        oereb_ebenen = oerebLader.helpers.sql_helper.readSQL(config['OEREB_WORK']['connection_string'], oereb_sql)
+        oereb_ebenen = oerebLader.helpers.sql_helper.readSQL(config['OEREB2_WORK']['connection_string'], oereb_sql)
         for oereb_ebene in oereb_ebenen:
             oereb_table = oereb_ebene[0]
             oereb_liefereinheit_field = oereb_ebene[1]
@@ -216,9 +216,9 @@ def run_release(dailyMode):
         # Der FMEWorkspaceRunner akzeptiert keine Unicode-Strings!
         # Daher müssen workspace und parameters umgewandelt werden!
         parameters = {
-            'WORK_DB': str(config['OEREB_WORK']['database']),
-            'WORK_USERNAME': str(config['OEREB_WORK']['username']),
-            'WORK_PASSWORD': str(config['OEREB_WORK']['password']),
+            'WORK_DB': str(config['OEREB2_WORK']['database']),
+            'WORK_USERNAME': str(config['OEREB2_WORK']['username']),
+            'WORK_PASSWORD': str(config['OEREB2_WORK']['password']),
             'TEAM_DB': str(config['GEODB_DD_TEAM']['database']),
             'TEAM_USERNAME': str(config['GEODB_DD_TEAM']['username']),
             'TEAM_PASSWORD': str(config['GEODB_DD_TEAM']['password']),
@@ -239,7 +239,7 @@ def run_release(dailyMode):
         for ticket in tickets:
             # iLader-Task ermitteln (sofern vorhanden)
             sql_iLader_task = "SELECT task_id_geodb FROM ticket where id=" + unicode(ticket[0])
-            taskid = oerebLader.helpers.sql_helper.readSQL(config['OEREB_WORK']['connection_string'], sql_iLader_task)[0][0]
+            taskid = oerebLader.helpers.sql_helper.readSQL(config['OEREB2_WORK']['connection_string'], sql_iLader_task)[0][0]
             if taskid is not None:
                 ilader_tasks.add(unicode(taskid))
             else:
@@ -249,7 +249,7 @@ def run_release(dailyMode):
             logger.info("Ticket-Status des Tickets " + unicode(ticket[0]) + " wird auf 4 gesetzt!")
             sql_update_ticket_status = "UPDATE ticket SET status=4 WHERE id=" + unicode(ticket[0])
             try:
-                oerebLader.helpers.sql_helper.writeSQL(config['OEREB_WORK']['connection_string'], sql_update_ticket_status)
+                oerebLader.helpers.sql_helper.writeSQL(config['OEREB2_WORK']['connection_string'], sql_update_ticket_status)
             except Exception as ex:
                 logger.error("Fehler beim Updaten des Ticket-Status!")
                 logger.error(unicode(ex))
