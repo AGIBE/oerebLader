@@ -15,7 +15,7 @@
 #    
 #! PASSWORD=""
 #! ATTR_TYPE_ENCODING="SDF"
-#! VIEW_POSITION="-1554 -156"
+#! VIEW_POSITION="-1209 561"
 #! SHOW_INFO_NODES="true"
 #! FME_STROKE_MAX_DEVIATION="0"
 #! BEGIN_PYTHON=""
@@ -33,13 +33,13 @@
 #! USAGE=""
 #! END_PYTHON=""
 #! HISTORY=""
-#! FME_DOCUMENT_PRIORGUID="539d30ee-3141-44d1-aff1-077d27dcf103"
+#! FME_DOCUMENT_PRIORGUID="539d30ee-3141-44d1-aff1-077d27dcf103,eee0f167-b194-4a23-b592-a7ca93510f86,d25f2455-b4a7-4d67-b376-e2f983ac0184"
 #! DOC_TOP_LEFT="-1333 -8316"
 #! REQUIREMENTS_KEYWORD=""
 #! SOURCE_ROUTING_FILE=""
 #! DESTINATION_ROUTING_FILE=""
 #! DESTINATION="NONE"
-#! LAST_SAVE_DATE="2016-08-10T15:54:20"
+#! LAST_SAVE_DATE="2016-11-15T14:58:47"
 #! FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
 #! WORKSPACE_VERSION="1"
 #! SOURCE="NONE"
@@ -49,8 +49,8 @@
 #! LOG_FILE="$(LOGFILE)"
 #! REQUIREMENTS=""
 #! BEGIN_TCL=""
-#! DOC_EXTENTS="3913 8866"
-#! FME_DOCUMENT_GUID="eee0f167-b194-4a23-b592-a7ca93510f86"
+#! DOC_EXTENTS="4831 8864"
+#! FME_DOCUMENT_GUID="ce950cc6-2ee4-4452-a366-1da89ad71b9a"
 #! SHOW_ANNOTATIONS="true"
 #! IGNORE_READER_FAILURE="No"
 #! WARN_INVALID_XFORM_PARAM="Yes"
@@ -1198,7 +1198,7 @@
 #! IS_EDITABLE="true"
 #! IDENTIFIER="13"
 #! FEAT_GEOMTYPE="geodb_polygon"
-#! POSITION="2315 424"
+#! POSITION="3488 336"
 #! ORDER="5e+014"
 #! COLLAPSED="true"
 #! KEYWORD="GEODATABASE_SDE_2"
@@ -1244,7 +1244,7 @@
 #! IS_EDITABLE="true"
 #! IDENTIFIER="14"
 #! FEAT_GEOMTYPE="geodb_polygon"
-#! POSITION="2318 97"
+#! POSITION="3491 9"
 #! ORDER="5e+014"
 #! COLLAPSED="true"
 #! KEYWORD="GEODATABASE_SDE_2"
@@ -1419,7 +1419,7 @@
 #! IS_EDITABLE="true"
 #! IDENTIFIER="18"
 #! FEAT_GEOMTYPE="geodb_polygon"
-#! POSITION="995 -463"
+#! POSITION="1001 -730"
 #! ORDER="5e+014"
 #! COLLAPSED="true"
 #! KEYWORD="GEODATABASE_SDE_2"
@@ -1864,12 +1864,12 @@
 #! <COMMENT
 #! IDENTIFIER="28"
 #! COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:11px; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;GEODB.NPL_GNGZ&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
-#! POSITION="2319 223"
+#! POSITION="3498 132"
 #! ORDER="5e+014"
 #! FOLLOW_ANCHOR="true"
 #! INFO_NODE="false"
-#! TOP_LEFT="2319 223"
-#! BOTTOM_RIGHT="2319 223"
+#! TOP_LEFT="3498 132"
+#! BOTTOM_RIGHT="3498 132"
 #! COLOUR="1,1,0.784314,0.192157"
 #! SIZE_POLICY="8"
 #! COMMENT_TYPE="REGULAR"
@@ -1906,12 +1906,12 @@
 #! <COMMENT
 #! IDENTIFIER="47"
 #! COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:11px; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;AZ_ART mappen&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
-#! POSITION="970 389"
+#! POSITION="2170 307"
 #! ORDER="5e+014"
 #! FOLLOW_ANCHOR="true"
 #! INFO_NODE="false"
-#! TOP_LEFT="970 389"
-#! BOTTOM_RIGHT="970 389"
+#! TOP_LEFT="2170 307"
+#! BOTTOM_RIGHT="2170 307"
 #! COLOUR="1,1,0.784314,0.192157"
 #! SIZE_POLICY="8"
 #! COMMENT_TYPE="REGULAR"
@@ -1934,12 +1934,12 @@
 #! <COMMENT
 #! IDENTIFIER="49"
 #! COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:11px; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;GEODB.NPL_GNGU&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
-#! POSITION="2316 550"
+#! POSITION="3489 462"
 #! ORDER="5e+014"
 #! FOLLOW_ANCHOR="true"
 #! INFO_NODE="false"
-#! TOP_LEFT="2316 550"
-#! BOTTOM_RIGHT="2316 550"
+#! TOP_LEFT="3489 462"
+#! BOTTOM_RIGHT="3489 462"
 #! COLOUR="1,1,0.784314,0.192157"
 #! SIZE_POLICY="8"
 #! COMMENT_TYPE="REGULAR"
@@ -1962,12 +1962,12 @@
 #! <COMMENT
 #! IDENTIFIER="56"
 #! COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:11px; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;GEODB.NPL_UELAERM&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
-#! POSITION="996 -337"
+#! POSITION="1002 -604"
 #! ORDER="5e+014"
 #! FOLLOW_ANCHOR="true"
 #! INFO_NODE="false"
-#! TOP_LEFT="996 -337"
-#! BOTTOM_RIGHT="996 -337"
+#! TOP_LEFT="1002 -604"
+#! BOTTOM_RIGHT="1002 -604"
 #! COLOUR="1,1,0.784314,0.192157"
 #! SIZE_POLICY="8"
 #! COMMENT_TYPE="REGULAR"
@@ -2561,6 +2561,34 @@
 #! COMMENT_TYPE="REGULAR"
 #! ANCHORED_NODE="17"
 #! />
+#! <COMMENT
+#! IDENTIFIER="188"
+#! COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:11px; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Umlaute ersetzen&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#! POSITION="806 496"
+#! ORDER="5e+014"
+#! FOLLOW_ANCHOR="true"
+#! INFO_NODE="false"
+#! TOP_LEFT="806 496"
+#! BOTTOM_RIGHT="806 496"
+#! COLOUR="1,1,0.784314,0.196078"
+#! SIZE_POLICY="8"
+#! COMMENT_TYPE="REGULAR"
+#! ANCHORED_NODE="200"
+#! />
+#! <COMMENT
+#! IDENTIFIER="194"
+#! COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:11px; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Uebriges Gebiet ersetzen&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#! POSITION="842 136"
+#! ORDER="5e+014"
+#! FOLLOW_ANCHOR="true"
+#! INFO_NODE="false"
+#! TOP_LEFT="842 136"
+#! BOTTOM_RIGHT="842 136"
+#! COLOUR="1,1,0.784314,0.196078"
+#! SIZE_POLICY="8"
+#! COMMENT_TYPE="REGULAR"
+#! ANCHORED_NODE="190"
+#! />
 #! </COMMENTS>
 #! <CONSTANTS>
 #! </CONSTANTS>
@@ -2680,7 +2708,7 @@
 #! IDENTIFIER="36"
 #! TYPE="AttributeRenamer"
 #! VERSION="2"
-#! POSITION="168 113"
+#! POSITION="192 119"
 #! ORDER="5e+014"
 #! PARMS_EDITED="true"
 #! ENABLED="true"
@@ -2793,7 +2821,7 @@
 #! IDENTIFIER="44"
 #! TYPE="AttributeValueMapper"
 #! VERSION="6"
-#! POSITION="981 266"
+#! POSITION="2175 187"
 #! ORDER="5e+014"
 #! PARMS_EDITED="true"
 #! ENABLED="true"
@@ -2845,7 +2873,7 @@
 #! IDENTIFIER="50"
 #! TYPE="FeatureTypeFilter"
 #! VERSION="1"
-#! POSITION="1575 266"
+#! POSITION="2748 178"
 #! ORDER="5e+014"
 #! PARMS_EDITED="true"
 #! ENABLED="true"
@@ -5097,6 +5125,111 @@
 #! <XFORM_PARM PARM_NAME="LUT" PARM_VALUE="37,Landschaftsschutzgebiet,38,Landschaftsschongebiet,39,Kulturlandschaftsschutzgebiet,40,Moorlandschaft,41,Naturdenkmal,42,Aussichtspunkt,43,Aussichtslage,44,Aussichtsschutz,45,Naturschutzgebiet,46,Landschaft&lt;space&gt;andere,47,Ortsbildschutzgebiet,48,Ortsbilderhaltungsgebiet,49,Strukturerhaltungsgebiet,50,Altstadtgebiet,51,Umgebungsschutzgebiet,52,Ortsbild&lt;space&gt;andere,53,Einzelbaute,54,Baugruppe,55,Anhangobjekt,56,Arch&lt;u00e4&gt;ologisches&lt;space&gt;Schutzgebiet,57,Arch&lt;u00e4&gt;ologisches&lt;space&gt;Schutzobjekt,58,Geschichtliche&lt;space&gt;St&lt;u00e4&gt;tte&lt;space&gt;andere,59,Kulturobjekt,60,Trockenstandort,61,Feuchtgebiet,62,Amphibienlaichgebiet,63,Wiesenstandort,64,Artenreiche&lt;space&gt;Wiese,65,Hecken&lt;comma&gt;&lt;space&gt;Feldgeh&lt;u00f6&gt;lz,66,Ufervegetation,67,Ufergeh&lt;u00f6&gt;lz,68,Riedgebiet,69,seltene&lt;space&gt;Waldgesellschaft,70,Trockenmauer,71,Hochstammobstgarten,72,Biotop&lt;space&gt;andere,73,Hochmoor,74,Flachmoor,75,Uebergangsmoor,76,Moor&lt;space&gt;anderes,77,Auen,78,Findling,79,Gletscherschliff,80,Gletscherm&lt;u00fc&gt;hle,81,Geologischer&lt;space&gt;Aufschluss,82,Mineralienfundstelle,83,Fundstelle&lt;space&gt;Versteinerung,84,Doline,85,Geologisches&lt;space&gt;Objekt&lt;space&gt;anderes,86,Einzelbaum,87,Baumgruppe,88,Baumreihe&lt;space&gt;Allee,89,Hochstammfeldobstbaum,90,Botanisches&lt;space&gt;Objekt,91,Artenschutzzone,92,Wildschutzgebiet,93,Jagdbannbezirk,94,Vogelreservat,95,Tierschutz&lt;space&gt;andere"/>
 #! <XFORM_PARM PARM_NAME="SRC" PARM_VALUE="_kantart"/>
 #! </TRANSFORMER>
+#! <TRANSFORMER
+#! IDENTIFIER="200"
+#! TYPE="PythonCaller"
+#! VERSION="4"
+#! POSITION="853 388"
+#! ORDER="5e+014"
+#! PARMS_EDITED="true"
+#! ENABLED="true"
+#! >
+#! <OUTPUT_FEAT NAME="OUTPUT"/>
+#! <FEAT_COLLAPSED COLLAPSED="0"/>
+#! <XFORM_ATTR ATTR_NAME="geodb_oid" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="OBJECTID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="BFSNR" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="NAME" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="REL_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="GENEHM" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="INKRAFT" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="BESCHRIEB" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="QUALITAET" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_verbindlkt" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="KANTART" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="ZONENABK" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="ZONENNAME" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="PLANBESCHR" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="BEMERK" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="DARST_C" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="DATENVERW" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="ZUSTAENDIG" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="BUNDESART" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="AZ" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="NZ_ART" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="GRUENFZ" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="LAERMES" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="FLMASS" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="BR_NUTZART" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="BR_NMASS" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="SHAPE.AREA" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="SHAPE.LEN" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="VERBINDLKT" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_matched_records" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="KANTZONE" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_PARM PARM_NAME="LIST_ATTRS" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="HIDE_ATTRIBUTES" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="PYTHONSOURCE" PARM_VALUE="import&lt;space&gt;fmeobjects&lt;lf&gt;&lt;lf&gt;def&lt;space&gt;processFeature&lt;openparen&gt;feature&lt;closeparen&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;kz&lt;space&gt;=&lt;space&gt;feature.getAttribute&lt;openparen&gt;&lt;quote&gt;KANTZONE&lt;quote&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;kz&lt;space&gt;=&lt;space&gt;kz.replace&lt;openparen&gt;u&lt;apos&gt;&lt;u00e4&gt;&lt;apos&gt;&lt;comma&gt;&lt;space&gt;u&lt;apos&gt;ae&lt;apos&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;kz&lt;space&gt;=&lt;space&gt;kz.replace&lt;openparen&gt;u&lt;apos&gt;&lt;u00f6&gt;&lt;apos&gt;&lt;comma&gt;&lt;space&gt;u&lt;apos&gt;oe&lt;apos&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;kz&lt;space&gt;=&lt;space&gt;kz.replace&lt;openparen&gt;u&lt;apos&gt;&lt;u00fc&gt;&lt;apos&gt;&lt;comma&gt;&lt;space&gt;u&lt;apos&gt;ue&lt;apos&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;kz&lt;space&gt;=&lt;space&gt;kz.replace&lt;openparen&gt;u&lt;apos&gt;&lt;u00c4&gt;&lt;apos&gt;&lt;comma&gt;&lt;space&gt;u&lt;apos&gt;Ae&lt;apos&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;kz&lt;space&gt;=&lt;space&gt;kz.replace&lt;openparen&gt;u&lt;apos&gt;&lt;u00d6&gt;&lt;apos&gt;&lt;comma&gt;&lt;space&gt;u&lt;apos&gt;Oe&lt;apos&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;kz&lt;space&gt;=&lt;space&gt;kz.replace&lt;openparen&gt;u&lt;apos&gt;&lt;u00dc&gt;&lt;apos&gt;&lt;comma&gt;&lt;space&gt;u&lt;apos&gt;Ue&lt;apos&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;feature.setAttribute&lt;openparen&gt;&lt;quote&gt;KANTZONE&lt;quote&gt;&lt;comma&gt;kz&lt;closeparen&gt;"/>
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="PythonCaller"/>
+#! <XFORM_PARM PARM_NAME="PYTHONSYMBOL" PARM_VALUE="processFeature"/>
+#! <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="ADVANCED_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="NEW_ATTRIBUTES" PARM_VALUE=""/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#! IDENTIFIER="190"
+#! TYPE="StringReplacer"
+#! VERSION="3"
+#! POSITION="877 28"
+#! ORDER="5e+014"
+#! PARMS_EDITED="true"
+#! ENABLED="true"
+#! >
+#! <OUTPUT_FEAT NAME="OUTPUT"/>
+#! <FEAT_COLLAPSED COLLAPSED="0"/>
+#! <XFORM_ATTR ATTR_NAME="geodb_oid" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="OBJECTID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="BFSNR" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="NAME" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="REL_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="GENEHM" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="INKRAFT" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="BESCHRIEB" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="QUALITAET" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_verbindlkt" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="KANTART" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="ZONENABK" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="ZONENNAME" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="PLANBESCHR" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="BEMERK" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="DARST_C" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="DATENVERW" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="ZUSTAENDIG" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="BUNDESART" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="AZ" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="NZ_ART" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="GRUENFZ" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="LAERMES" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="FLMASS" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="BR_NUTZART" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="BR_NMASS" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="SHAPE.AREA" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="SHAPE.LEN" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="VERBINDLKT" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_matched_records" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="KANTZONE" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_PARM PARM_NAME="SRC_ATTRS" PARM_VALUE="KANTZONE"/>
+#! <XFORM_PARM PARM_NAME="REGEXP" PARM_VALUE="no"/>
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="StringReplacer"/>
+#! <XFORM_PARM PARM_NAME="CASE" PARM_VALUE="yes"/>
+#! <XFORM_PARM PARM_NAME="NO_MATCH_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="REPLACE_TEXT" PARM_VALUE="uebriges&lt;space&gt;Gebiet"/>
+#! <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="NO_MATCH" PARM_VALUE="_FME_NO_OP_"/>
+#! <XFORM_PARM PARM_NAME="FIND_TEXT" PARM_VALUE="Uebriges&lt;space&gt;Gebiet"/>
+#! </TRANSFORMER>
 #! </TRANSFORMERS>
 #! <FEAT_LINKS>
 #! <FEAT_LINK
@@ -5121,24 +5254,6 @@
 #! IDENTIFIER="41"
 #! SOURCE_NODE="33"
 #! TARGET_NODE="40"
-#! SOURCE_PORT_DESC="fo 0"
-#! TARGET_PORT_DESC="fi 0"
-#! ENABLED="true"
-#! EXTRA_POINTS=""
-#! />
-#! <FEAT_LINK
-#! IDENTIFIER="42"
-#! SOURCE_NODE="40"
-#! TARGET_NODE="36"
-#! SOURCE_PORT_DESC="fo 0"
-#! TARGET_PORT_DESC="fi 0"
-#! ENABLED="true"
-#! EXTRA_POINTS=""
-#! />
-#! <FEAT_LINK
-#! IDENTIFIER="45"
-#! SOURCE_NODE="36"
-#! TARGET_NODE="44"
 #! SOURCE_PORT_DESC="fo 0"
 #! TARGET_PORT_DESC="fi 0"
 #! ENABLED="true"
@@ -5617,6 +5732,42 @@
 #! SOURCE_NODE="9"
 #! TARGET_NODE="70"
 #! SOURCE_PORT_DESC="-1"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="192"
+#! SOURCE_NODE="40"
+#! TARGET_NODE="36"
+#! SOURCE_PORT_DESC="fo 0"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="209"
+#! SOURCE_NODE="36"
+#! TARGET_NODE="200"
+#! SOURCE_PORT_DESC="fo 0"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="191"
+#! SOURCE_NODE="200"
+#! TARGET_NODE="190"
+#! SOURCE_PORT_DESC="fo 0"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="193"
+#! SOURCE_NODE="190"
+#! TARGET_NODE="44"
+#! SOURCE_PORT_DESC="fo 0"
 #! TARGET_PORT_DESC="fi 0"
 #! ENABLED="true"
 #! EXTRA_POINTS=""
@@ -6482,9 +6633,23 @@ FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRenamer_2    INPUT  FEATURE_TY
 
 
 # -------------------------------------------------------------------------
+
+
+FME_PYTHON_PATH "$(FME_MF_DIR)"
+
+FACTORY_DEF * PythonFactory    FACTORY_NAME PythonCaller    INPUT  FEATURE_TYPE AttributeRenamer_2_OUTPUT    SYMBOL_NAME processFeature    PYTHON_NAMESPACE FMEOBJECTS    SOURCE_CODE import<space>fmeobjects<lf><lf>def<space>processFeature<openparen>feature<closeparen>:<lf><space><space><space><space>kz<space>=<space>feature.getAttribute<openparen><quote>KANTZONE<quote><closeparen><lf><space><space><space><space><lf><space><space><space><space>kz<space>=<space>kz.replace<openparen>u<apos><u00e4><apos><comma><space>u<apos>ae<apos><closeparen><lf><space><space><space><space>kz<space>=<space>kz.replace<openparen>u<apos><u00f6><apos><comma><space>u<apos>oe<apos><closeparen><lf><space><space><space><space>kz<space>=<space>kz.replace<openparen>u<apos><u00fc><apos><comma><space>u<apos>ue<apos><closeparen><lf><space><space><space><space>kz<space>=<space>kz.replace<openparen>u<apos><u00c4><apos><comma><space>u<apos>Ae<apos><closeparen><lf><space><space><space><space>kz<space>=<space>kz.replace<openparen>u<apos><u00d6><apos><comma><space>u<apos>Oe<apos><closeparen><lf><space><space><space><space>kz<space>=<space>kz.replace<openparen>u<apos><u00dc><apos><comma><space>u<apos>Ue<apos><closeparen><lf><space><space><space><space><lf><space><space><space><space>feature.setAttribute<openparen><quote>KANTZONE<quote><comma>kz<closeparen>    OUTPUT PYOUTPUT FEATURE_TYPE PythonCaller_OUTPUT
+
+# -------------------------------------------------------------------------
+
+MACRO casemac
+INCLUDE [ if { {YES} == {NO} } { puts {MACRO casemac -nocase}} ]
+Tcl2 proc StringReplacer_7c61a00f_9eb5_4309_976f_2de8d880077a1_replacer { findText replaceText invalidValue} {     set attrs [split \"KANTZONE\" {,}];     set findValue [FME_DecodeText $findText];     set replaceValue [FME_DecodeText $replaceText];     foreach attr $attrs {       set attrVal [FME_GetAttribute $attr];       set length [string length $attrVal];       set noMatch true;       if {$length > 0} {          if {{NO} == {YES}} {             set newAttrVal [regsub $(casemac) -all -- $findValue $attrVal $replaceValue];          } else {             set newAttrVal [string map $(casemac) [list $findValue $replaceValue] $attrVal];          };          if { $newAttrVal ne $attrVal } {             set noMatch false;             FME_SetAttribute $attr $newAttrVal;          };       };       if {$noMatch} {          if { $invalidValue == {FME_NULL_VALUE} } {             FME_SetAttributeNull $attr;          } elseif { $invalidValue != {_FME_NO_OP_} }  {             FME_SetAttribute $attr [FME_DecodeText $invalidValue];          };       };     }; }
+FACTORY_DEF * TeeFactory    FACTORY_NAME StringReplacer    INPUT  FEATURE_TYPE PythonCaller_OUTPUT    OUTPUT FEATURE_TYPE StringReplacer_OUTPUT         @Tcl2("StringReplacer_7c61a00f_9eb5_4309_976f_2de8d880077a1_replacer {Uebriges<space>Gebiet} {uebriges<space>Gebiet} {_FME_NO_OP_}")
+
+# -------------------------------------------------------------------------
 Lookup AttributeValueMapper_LOOKUP_TABLE   0               1   1               2   2               3   3               4   4               5   5               6   ""              ""   ENCODED_SUPPORTUNICODE
 
-FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeValueMapper    INPUT  FEATURE_TYPE AttributeRenamer_2_OUTPUT    OUTPUT FEATURE_TYPE AttributeValueMapper_OUTPUT         @Lookup(AttributeValueMapper_LOOKUP_TABLE,"NZ_ART",FORWARD|ENCODED_ATTR|REAL_NULL_SUPPORT, AZART)
+FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeValueMapper    INPUT  FEATURE_TYPE StringReplacer_OUTPUT    OUTPUT FEATURE_TYPE AttributeValueMapper_OUTPUT         @Lookup(AttributeValueMapper_LOOKUP_TABLE,"NZ_ART",FORWARD|ENCODED_ATTR|REAL_NULL_SUPPORT, AZART)
 
 
 # -------------------------------------------------------------------------
