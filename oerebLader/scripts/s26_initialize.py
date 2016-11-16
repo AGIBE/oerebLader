@@ -74,7 +74,7 @@ def run(config, ticketnr):
         
     # Liefereinheiten-Infos holen
     logger.info("Liefereinheiten-Informationen werden geholt.")
-    liefereinheit_sql = "SELECT name, bfsnr, gpr_source, ts_source, md5, gprcode FROM liefereinheit WHERE id=" + unicode(config['LIEFEREINHEIT']['id'])
+    liefereinheit_sql = "SELECT name, bfsnr, gpr_source, ts_source, md5, workflow FROM liefereinheit WHERE id=" + unicode(config['LIEFEREINHEIT']['id'])
     liefereinheit_result = oerebLader.helpers.sql_helper.readSQL(config['OEREB2_WORK']['connection_string'], liefereinheit_sql)
     
     if len(liefereinheit_result) == 1:
@@ -89,10 +89,24 @@ def run(config, ticketnr):
         config['LIEFEREINHEIT']['gpr_source'] = liefereinheit_result[0][2]
         config['LIEFEREINHEIT']['ts_source'] = liefereinheit_result[0][3]
         config['LIEFEREINHEIT']['md5'] = liefereinheit_result[0][4]
-        config['LIEFEREINHEIT']['gprcode'] = liefereinheit_result[0][5]
+        config['LIEFEREINHEIT']['workflow'] = liefereinheit_result[0][5]
     else:
         logger.error("Keine Liefereinheit mit dieser ID gefunden.")
         logger.error("Import wird abgebrochen!")
+        sys.exit()
+        
+    # GPRCODES holen
+    logger.info("GPR-Infos werden geholt.")
+    gpr_sql = "SELECT gprcode FROM workflow_gpr WHERE workflow='" + config['LIEFEREINHEIT']['workflow'] + "'"
+    gpr_result = oerebLader.helpers.sql_helper.readSQL(config['OEREB2_WORK']['connection_string'], gpr_sql)
+    gpr_codes = []
+    if len(gpr_result) > 0:
+        for gpr in gpr_result:
+            gpr_codes.append(gpr[0])
+        config['LIEFEREINHEIT']['gprcodes'] = gpr_codes
+    else:
+        logger.error("Für den Workflow konnte keine Geoprodukt-Definiton gefunden werden.")
+        logger.error("Import wird abgebrochen.")
         sys.exit()
     
     logger.info("Name der Liefereinheit: " + unicode(config['LIEFEREINHEIT']['name']))
@@ -101,7 +115,8 @@ def run(config, ticketnr):
     logger.info("Quelle Geoprodukt: " + unicode(config['LIEFEREINHEIT']['gpr_source']))
     logger.info("Quelle Transferstruktur: " + unicode(config['LIEFEREINHEIT']['ts_source']))
     logger.info("Prüfsumme: " + unicode(config['LIEFEREINHEIT']['md5']))
-    logger.info("Geoprodukt-Code: " + unicode(config['LIEFEREINHEIT']['gprcode']))
+    logger.info("Workflow: " + unicode(config['LIEFEREINHEIT']['workflow']))
+    logger.info("Geoprodukt-Code(s): " + unicode(",".join(config['LIEFEREINHEIT']['gprcodes'])))
   
     logger.info("Script " +  os.path.basename(__file__) + " ist beendet.")
     

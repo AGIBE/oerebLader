@@ -21,7 +21,7 @@ def init_logging(config):
 
 def get_liefereinheit_info(liefereinheit, config):
     logging.info("Liefereinheiten-Informationen werden geholt.")
-    liefereinheit_sql = "SELECT name, bfsnr, gpr_source, ts_source, md5, gprcode FROM liefereinheit where id=" + unicode(liefereinheit)
+    liefereinheit_sql = "SELECT name, bfsnr, gpr_source, ts_source, md5 FROM liefereinheit where id=" + unicode(liefereinheit)
     liefereinheit_result = oerebLader.helpers.sql_helper.readSQL(config['OEREB2_WORK']['connection_string'], liefereinheit_sql)
     
     liefereinheit_info = {}
@@ -32,7 +32,6 @@ def get_liefereinheit_info(liefereinheit, config):
         liefereinheit_info['gpr_source'] = liefereinheit_result[0][2]
         liefereinheit_info['ts_source'] = liefereinheit_result[0][3]
         liefereinheit_info['md5_old'] = liefereinheit_result[0][4]
-        liefereinheit_info['gprcode'] = liefereinheit_result[0][5]
     else:
         logging.error("Keine Liefereinheit mit dieser ID gefunden.")
         logging.error("Import wird abgebrochen!")

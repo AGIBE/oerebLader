@@ -52,27 +52,24 @@ def run_release(dailyMode):
     else:
         valid_art = "!=5"
     
-    ticket_sql = "select ticket.ID, liefereinheit.ID, liefereinheit.NAME, liefereinheit.BFSNR, liefereinheit.GPRCODE from ticket left join liefereinheit on ticket.LIEFEREINHEIT=liefereinheit.id where ticket.STATUS=3 and ticket.ART" + valid_art
+    ticket_sql = "select ticket.ID, liefereinheit.ID, liefereinheit.NAME, liefereinheit.BFSNR, liefereinheit.WORKFLOW from ticket left join liefereinheit on ticket.LIEFEREINHEIT=liefereinheit.id where ticket.STATUS=3 and ticket.ART" + valid_art
     tickets = oerebLader.helpers.sql_helper.readSQL(config['OEREB2_WORK']['connection_string'], ticket_sql)
     liefereinheiten = []
     #Geoprodukt kopieren
     logger.info("Das Geoprodukt wird freigegeben.")
     for ticket in tickets:
-        logger.info("ID: " + unicode(ticket[0]) + "/ Liefereinheit: " + unicode(ticket[1]) + " / GPRCODE: " + ticket[4])
+        logger.info("ID: " + unicode(ticket[0]) + "/ Liefereinheit: " + unicode(ticket[1]) + "/ Workflow: " + unicode(ticket[4]))
+        workflow = unicode(ticket[4])
         liefereinheiten.append(unicode(ticket[1]))
-        #TODO: im Fall NPL noch UZP und OEREBSTA einbauen
-        #TODO: Rückbau auf nur noch je ein GPR
-        gprcode = ticket[4]
-        if gprcode == 'NPL':
-            gpr_where_clause = "GPRCODE IN ('NPL', 'NUPLA')"
-        elif gprcode == 'NPLWALD':
-            gpr_where_clause = "GPRCODE IN ('NPLWALD', 'NUPLWALD')"
-        elif gprcode == 'NPLKUEO':
-            gpr_where_clause = "GPRCODE IN ('NPLKUEO', 'NUPLKUEO')"
-        elif gprcode == 'NPLKSTRA':
-            gpr_where_clause = "GPRCODE IN ('NPLKSTRA', 'NUPLKAST')"
-        else:
-            gpr_where_clause = "GPRCODE='" + gprcode + "'"
+
+        gpr_sql = "SELECT gprcode FROM workflow_gpr WHERE workflow='" + workflow + "'"
+        gpr_result = oerebLader.helpers.sql_helper.readSQL(config['OEREB2_WORK']['connection_string'], gpr_sql)
+        gpr_codes = []
+        if len(gpr_result) > 0:
+            for gpr in gpr_result:
+                gpr_codes.append(gpr[0])
+        gpr_where_clause = "GPRCODE IN ('" + "','".join(gpr_codes) + "')"
+        logger.info("GPR WHERE Clause: " + gpr_where_clause)
         gpr_sql = "SELECT EBECODE, FILTER_FIELD, FILTER_TYPE, GPRCODE FROM GPR WHERE " + gpr_where_clause
         ebenen = oerebLader.helpers.sql_helper.readSQL(config['OEREB2_WORK']['connection_string'], gpr_sql)
         for ebene in ebenen:
@@ -208,6 +205,7 @@ def run_release(dailyMode):
         
         # GeoDB-Tabellen schreiben (Flag, Task)
         # sowie GeoDB-Taskid in die TICKET-Tabelle zurückschreiben
+        #TODO: Workbench so anpassen, dass auch mehrere Geoprodukte pro Ticket korrekt verarbeitet werden. 
         fme_script = os.path.splitext(__file__)[0] + "_geodb.fmw"
         fme_logfile = oerebLader.helpers.fme_helper.prepare_fme_log(fme_script, config['LOGGING']['log_directory']) 
         logger.info("Script " +  fme_script + " wird ausgeführt.")
@@ -238,6 +236,7 @@ def run_release(dailyMode):
         ilader_tasks = set()
         for ticket in tickets:
             # iLader-Task ermitteln (sofern vorhanden)
+            # Anpassen, dass der Fall mit mehreren Geoprodukten pro Ticket auch korrekt verarbeitet wird.
             sql_iLader_task = "SELECT task_id_geodb FROM ticket where id=" + unicode(ticket[0])
             taskid = oerebLader.helpers.sql_helper.readSQL(config['OEREB2_WORK']['connection_string'], sql_iLader_task)[0][0]
             if taskid is not None:

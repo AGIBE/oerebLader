@@ -23,7 +23,7 @@ def run(config):
         'PASSWORD': str(config['GEODB_WORK']['password']),
         'MODELLABLAGE': str(config['GENERAL']['models']),
         'XTF_FILE': str(config['LIEFEREINHEIT']['gpr_source']),
-        'GPRCODE': str(config['LIEFEREINHEIT']['gprcode']),
+        'GPRCODE': str(config['LIEFEREINHEIT']['gprcodes'][0]),
         'LOGFILE': str(fme_logfile)
     }
 
