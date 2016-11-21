@@ -6,7 +6,6 @@ import logging
 import os
 import fmeobjects
 import requests
-from __builtin__ import str
 
 logger = logging.getLogger('oerebLaderLogger')
 
