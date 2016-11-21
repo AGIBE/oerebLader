@@ -1,12 +1,46 @@
 # -*- coding: utf-8 -*-
 from __future__ import absolute_import, division, print_function, unicode_literals
 import oerebLader.helpers.fme_helper
-import sys
 import logging
 import os
 import fmeobjects
+import sys
+import requests
 
 logger = logging.getLogger('oerebLaderLogger')
+
+def getToken(username, password, tokenURL):
+    token = ""
+
+    params = {'username': username, 'password': password, 'client': 'requestip', 'f': 'json'}
+    headers = {"Content-type": "application/x-www-form-urlencoded", "Accept": "text/plain"}
+    
+    res = requests.post(tokenURL, data=params, headers=headers)
+    
+    if res.status_code == 200:
+        if 'token' in res.json():
+            token = res.json()['token']
+        else:
+            logger.error("Es konnte kein Token erezugt werden!")
+            logger.error("Import wird abgebrochen!")
+            sys.exit()
+    else:
+        logger.error("Es konnte kein Token erezugt werden!")
+        logger.error("Import wird abgebrochen!")
+        sys.exit()
+        
+    return token
+
+def getWMSLayers(wms_rest_url, bfsnr):
+    req = requests.get(wms_rest_url)
+    json_result = req.json()
+    layers = []
+    
+    for layer in json_result['layers']:
+        if layer['name'].endswith("_" + unicode(bfsnr)):
+            layers.append(layer['name'])
+            
+    return ",".join(layers)
 
 def run(config):
     logger.info("Script " +  os.path.basename(__file__) + " wird ausgeführt.")
@@ -14,13 +48,22 @@ def run(config):
     fme_logfile = oerebLader.helpers.fme_helper.prepare_fme_log(fme_script, config['LOGGING']['log_directory']) 
     logger.info("Script " +  fme_script + " wird ausgef�hrt.")
     logger.info("Das FME-Logfile heisst: " + fme_logfile)
+    token = ""
     runner = fmeobjects.FMEWorkspaceRunner()
     bfsnr = config['LIEFEREINHEIT']['bfsnr']
-    itf_file = os.path.join(config['LIEFEREINHEIT']['gpr_source'], unicode(bfsnr), unicode(bfsnr) + ".itf")
-    excel_file_amt = os.path.join(config['LIEFEREINHEIT']['gpr_source'], unicode(bfsnr), "AMT_" + unicode(bfsnr) + ".xlsx")
-    excel_file_darstellungsdienst = os.path.join(config['LIEFEREINHEIT']['gpr_source'], unicode(bfsnr), "DARSTELLUNGSDIENST_" + unicode(bfsnr) + ".xlsx")
-    input_rv_dir = os.path.join(config['LIEFEREINHEIT']['gpr_source'], unicode(bfsnr), "rv")
-    output_rv_dir = os.path.join(config['GENERAL']['files_be_ch_baseunc'], unicode(config['LIEFEREINHEIT']['id']), unicode(config['ticketnr']))
+
+    if config['LEGENDS']['use_token_auth'] == "1":
+        token = getToken(config['LEGENDS']['username'], config['LEGENDS']['password'], config['LEGENDS']['get_token_url'])
+        mapservice_layer_url = config['LEGENDS']['legend_mapservice_base_url'] + config['LEGENDS']['legend_mapservice_name'] + "/MapServer?f=json&pretty=true&token=" + token
+    else:
+        mapservice_layer_url = config['LEGENDS']['legend_mapservice_base_url'] + config['LEGENDS']['legend_mapservice_name'] + "/MapServer?f=json&pretty=true"
+    logger.info("Verwende folgende REST-URL für Layerinfos:")
+    logger.info(mapservice_layer_url)
+    
+    wms_layers = getWMSLayers(mapservice_layer_url, bfsnr)
+    logger.info("Folgende WMS-Layer werden berücksichtigt.")
+    logger.info(wms_layers)
+    
     if config['GENERAL']['files_be_ch_baseurl'].endswith("/"):
         output_rv_url = config['GENERAL']['files_be_ch_baseurl'] + unicode(config['LIEFEREINHEIT']['id']) + "/" + unicode(config['ticketnr']) + "/"
     else:
@@ -36,14 +79,10 @@ def run(config):
         'GEODB_DATABASE': str(config['GEODB_WORK']['database']),
         'GEODB_USERNAME': str(config['GEODB_WORK']['username']),
         'GEODB_PASSWORD': str(config['GEODB_WORK']['password']),
-        'MODELLABLAGE': str(config['GENERAL']['models']),
-        'EXCEL_AMT': str(excel_file_amt),
         'BFSNR': str(bfsnr),
-        'GEMNAME': config['LIEFEREINHEIT']['gemeinde_name'].encode("latin-1"),
-        'ITF_FILE': str(itf_file),
-        'LIEFEREINHEIT': str(config['LIEFEREINHEIT']['id']),
-        'INPUT_RV_DIR': str(input_rv_dir),
-        'OUTPUT_RV_DIR': str(output_rv_dir),
+        'LIEFEREINHEIT': str(config['LIEFEREINHEIT']['id']),        
+        'WMS_LAYERS': wms_layers,
+        'NPL_WMS_BASE': str(config['GENERAL']['npl_wms_base']),
         'OUTPUT_RV_URL': str(output_rv_url),
         'LOGFILE': str(fme_logfile)
     }
@@ -56,4 +95,3 @@ def run(config):
         sys.exit()
         
     logger.info("Script " +  os.path.basename(__file__) + " ist beendet.")
-    
