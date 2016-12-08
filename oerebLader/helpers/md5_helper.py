@@ -21,7 +21,8 @@ def get_md5_from_zip(zip_url):
     md5_filename = ""
 
     # aus: http://stackoverflow.com/questions/16694907/how-to-download-large-file-in-python-with-requests-py
-    r = requests.get(zip_url, stream=True)
+    headers = {'User-Agent': 'Mozilla/5.0'} 
+    r = requests.get(zip_url, stream=True, headers=headers)
     with open(tempFile, 'wb') as f:
         for chunk in r.iter_content(chunk_size=1024):
             if chunk:
