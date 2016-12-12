@@ -69,8 +69,8 @@ def render_template(config, template_file, templateVars, html_filename):
 
 def create_legend_npl(config, legend_dir, gemname):
     
-    html_filename_de = os.path.join(legend_dir, "legende_npl_de.html")
-    html_filename_fr = os.path.join(legend_dir, "legende_npl_fr.html")
+    html_filename_de = os.path.join(legend_dir, unicode(config['LIEFEREINHEIT']['bfsnr']) + "_legende_npl_de.html")
+    html_filename_fr = os.path.join(legend_dir, unicode(config['LIEFEREINHEIT']['bfsnr']) + "_legende_npl_fr.html")
     
     template_filename_de = "legend_npl_template_de.txt"
     template_filename_fr = "legend_npl_template_fr.txt"
@@ -89,8 +89,8 @@ def create_legend_npl(config, legend_dir, gemname):
 
 def create_legend_komplett(config, legend_dir, gemname):
     
-    html_filename_de = os.path.join(legend_dir, "legende_komplett_de.html") 
-    html_filename_fr = os.path.join(legend_dir, "legende_komplett_fr.html")
+    html_filename_de = os.path.join(legend_dir, unicode(config['LIEFEREINHEIT']['bfsnr']) + "_legende_komplett_de.html") 
+    html_filename_fr = os.path.join(legend_dir, unicode(config['LIEFEREINHEIT']['bfsnr']) + "_legende_komplett_fr.html")
 
     template_filename_de = "legend_komplett_template_de.txt"
     template_filename_fr = "legend_komplett_template_fr.txt"
