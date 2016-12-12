@@ -24,7 +24,7 @@
 #    
 #! PASSWORD=""
 #! ATTR_TYPE_ENCODING="SDF"
-#! VIEW_POSITION="5764 -879"
+#! VIEW_POSITION="23 -20"
 #! SHOW_INFO_NODES="true"
 #! FME_STROKE_MAX_DEVIATION="0"
 #! BEGIN_PYTHON=""
@@ -42,13 +42,13 @@
 #! USAGE=""
 #! END_PYTHON=""
 #! HISTORY=""
-#! FME_DOCUMENT_PRIORGUID="890cec7f-6108-40bd-9c08-90d1910cf09a,b35b9a05-86df-4b99-b64d-1cb3d20361ab,78f9184d-0094-4dcb-ac11-de1393bc33bc,7cbd0ae7-8b6f-457b-befe-2c44ddec1b5e,a0238ff2-5a9f-4eac-8dac-732589990b41,9c260004-880b-4c03-a21a-efb29c61b6ec,1f865043-a843-497f-84e2-6512b399c9f6,7339b596-d87a-43a9-a622-125f5933b02f,3a90bf2b-1fa1-4880-b526-cb69b57c574d,d4e25ee3-9b98-4553-b71e-36549f6eeaf5,d35c2bb9-cd56-4ec9-92ac-c6c6683f0281,31ab9944-dda0-458e-a0c2-b7bc403a0685,03c63af4-d6d8-44ff-9541-90e39a1c9553,09344580-9cde-4fcc-b8f2-1a49db3357da,2c334dca-02c0-4123-b40e-d6f2603d9829,aec6ba70-252e-44cb-9ca9-7409fe589f7d"
+#! FME_DOCUMENT_PRIORGUID="890cec7f-6108-40bd-9c08-90d1910cf09a,b35b9a05-86df-4b99-b64d-1cb3d20361ab,78f9184d-0094-4dcb-ac11-de1393bc33bc,7cbd0ae7-8b6f-457b-befe-2c44ddec1b5e,a0238ff2-5a9f-4eac-8dac-732589990b41,9c260004-880b-4c03-a21a-efb29c61b6ec,1f865043-a843-497f-84e2-6512b399c9f6,7339b596-d87a-43a9-a622-125f5933b02f,3a90bf2b-1fa1-4880-b526-cb69b57c574d,d4e25ee3-9b98-4553-b71e-36549f6eeaf5,d35c2bb9-cd56-4ec9-92ac-c6c6683f0281,31ab9944-dda0-458e-a0c2-b7bc403a0685,03c63af4-d6d8-44ff-9541-90e39a1c9553,09344580-9cde-4fcc-b8f2-1a49db3357da,2c334dca-02c0-4123-b40e-d6f2603d9829,aec6ba70-252e-44cb-9ca9-7409fe589f7d,830f211e-6f72-455c-9b8d-45f9be6641f6"
 #! DOC_TOP_LEFT="49 -5365"
 #! REQUIREMENTS_KEYWORD=""
 #! SOURCE_ROUTING_FILE=""
 #! DESTINATION_ROUTING_FILE=""
 #! DESTINATION="NONE"
-#! LAST_SAVE_DATE="2016-05-27T10:22:03"
+#! LAST_SAVE_DATE="2016-12-09T14:49:14"
 #! FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Datum"
 #! WORKSPACE_VERSION="1"
 #! SOURCE="NONE"
@@ -59,7 +59,7 @@
 #! REQUIREMENTS=""
 #! BEGIN_TCL=""
 #! DOC_EXTENTS="11116 5362"
-#! FME_DOCUMENT_GUID="830f211e-6f72-455c-9b8d-45f9be6641f6"
+#! FME_DOCUMENT_GUID="f0db51b9-01ca-4fa1-903a-a338580c9394"
 #! SHOW_ANNOTATIONS="true"
 #! IGNORE_READER_FAILURE="No"
 #! WARN_INVALID_XFORM_PARAM="Yes"
@@ -285,7 +285,7 @@
 #! WRITE_DEFS="true"
 #! DEFLINE_TEMPLATE="geodb_type {FME_GEN_GEOMETRY} GEODB_UPDATE_KEY_COLUMNS &quot;&quot; GEODB_DROP_TABLE NO GEODB_TRUNCATE_TABLE NO GEODB_OBJECT_ID_NAME OBJECTID GEODB_OBJECT_ID_ALIAS OBJECTID GEODB_SHAPE_NAME SHAPE GEODB_SHAPE_ALIAS SHAPE GEODB_CONFIG_KEYWORD DEFAULTS GEODB_FEATURE_DATASET &quot;&quot; GEODB_GRID{1} &quot;&quot; GEODB_AVG_NUM_POINTS &quot;&quot; GEODB_XORIGIN &quot;&quot; GEODB_YORIGIN &quot;&quot; GEODB_XYSCALE &quot;&quot; GEODB_HAS_Z_VALUES &quot;&quot; GEODB_ZORIGIN &quot;&quot; GEODB_ZSCALE &quot;&quot; GEODB_HAS_MEASURES &quot;&quot; GEODB_MEASURES_ORIGIN &quot;&quot; GEODB_MEASURES_SCALE &quot;&quot; GEODB_ANNO_REFERENCE_SCALE &quot;&quot;"
 #! DEFLINE_ATTRS="true"
-#! EXPOSABLE_ATTRS="geodb_dim_length double geodb_v_align char(50) geodb_feature_dataset char(254) fme_where char(254) geodb_subtype_name char(254) geodb_allow_symbol_overrides boolean geodb_text_feat_class_name char(254) geodb_raster_compression_quality integer fme_color char(50) geodb_font_name char(254) geodb_raster_pyramid_resample_type char(100) fme_text_string char(50) geodb_raster_compression_type char(100) fme_type char(50) geodb_metadata_string char(254) geodb_dim_text_x double geodb_symbol_id integer geodb_dim_text_y double geodb_dim_text_z double geodb_font_italic boolean fme_basename char(50) geodb_text_line_spacing double geodb_text_ref_scale double geodb_start_angle double geodb_h_align char(50) fme_secondary_axis double geodb_anno_class_id integer geodb_sweep_angle double geodb_text_x_offset double fme_feature_type char(50) geodb_dim_text_angle double geodb_ancillary_role char(7) geodb_font_size double fme_text_size double geodb_text_size double fme_db_operation char(8) geodb_raster_pyramid_level integer fme_sweep_angle double geodb_dim_using_custom_length boolean geodb_text_char_spacing double fme_primary_axis double geodb_text_string char(254) geodb_font_strikethrough boolean fme_dataset char(50) geodb_text_character_width double geodb_rotation double fme_fill_color char(50) geodb_secondary_axis double geodb_font_underline boolean geodb_font_bold boolean geodb_text_color char(254) geodb_text_y_offset double geodb_dim_style_id integer geodb_text_scale boolean geodb_measures char(254) geodb_type char(25) geodb_dim_line_display smallint geodb_text_clip boolean fme_geometry fme_char(50) geodb_text_string_with_format_tags char(254) geodb_text_break_char integer geodb_dim_extn_line_display smallint geodb_dim_type smallint geodb_dim_custom_length double geodb_dim_begin_dimension_x double geodb_dim_begin_dimension_y double geodb_dim_begin_dimension_z double geodb_primary_axis double geodb_right_to_left boolean geodb_dim_line_x double geodb_dim_end_dimension_x double geodb_dim_line_y double geodb_dim_end_dimension_y double geodb_dim_line_z double geodb_dim_end_dimension_z double geodb_linked_feature_id integer geodb_text_word_spacing double geodb_text_y_coord double geodb_dim_marker_display smallint fme_rotation double fme_start_angle double geodb_dim_extn_line_angle double geodb_text_x_coord double geodb_font_weight smallint geodb_font_charset smallint geodb_color char(50) geodb_text_angle double"
+#! EXPOSABLE_ATTRS="geodb_dim_length double geodb_v_align char(50) geodb_feature_dataset char(254) geodb_text_feat_class_name char(254) fme_where char(254) geodb_subtype_name char(254) geodb_allow_symbol_overrides boolean geodb_raster_compression_quality integer fme_color char(50) geodb_font_name char(254) geodb_raster_pyramid_resample_type char(100) fme_text_string char(50) geodb_raster_compression_type char(100) fme_type char(50) geodb_metadata_string char(254) geodb_dim_text_x double geodb_symbol_id integer geodb_dim_text_y double geodb_dim_text_z double geodb_font_italic boolean geodb_text_line_spacing double fme_basename char(50) geodb_text_ref_scale double geodb_start_angle double geodb_h_align char(50) fme_secondary_axis double geodb_anno_class_id integer geodb_sweep_angle double geodb_text_x_offset double fme_feature_type char(50) geodb_dim_text_angle double geodb_ancillary_role char(7) geodb_font_size double fme_text_size double geodb_text_size double fme_db_operation char(8) geodb_raster_pyramid_level integer fme_sweep_angle double geodb_dim_using_custom_length boolean geodb_text_char_spacing double fme_primary_axis double geodb_text_string char(254) geodb_font_strikethrough boolean geodb_text_character_width double fme_dataset char(50) geodb_rotation double fme_fill_color char(50) geodb_secondary_axis double geodb_text_y_offset double geodb_font_underline boolean geodb_text_color char(254) geodb_font_bold boolean geodb_dim_style_id integer geodb_text_scale boolean geodb_measures char(254) geodb_type char(25) geodb_text_clip boolean geodb_dim_line_display smallint fme_geometry fme_char(50) geodb_text_string_with_format_tags char(254) geodb_text_break_char integer geodb_dim_extn_line_display smallint geodb_dim_type smallint geodb_dim_custom_length double geodb_dim_begin_dimension_x double geodb_dim_begin_dimension_y double geodb_dim_begin_dimension_z double geodb_primary_axis double geodb_right_to_left boolean geodb_dim_line_x double geodb_dim_end_dimension_x double geodb_dim_line_y double geodb_dim_end_dimension_y double geodb_dim_line_z double geodb_dim_end_dimension_z double geodb_linked_feature_id integer geodb_text_word_spacing double geodb_text_y_coord double geodb_dim_marker_display smallint fme_rotation double fme_start_angle double geodb_dim_extn_line_angle double geodb_text_x_coord double geodb_font_weight smallint geodb_font_charset smallint geodb_color char(50) geodb_text_angle double"
 #! DEFLINE_PARMS="&quot;GUI CHOICE GEODB_DROP_TABLE YES%NO Drop Table First&quot; NO &quot;GUI CHOICE GEODB_TRUNCATE_TABLE YES%NO Truncate Table First&quot; NO &quot;GUI OPTIONAL WHOLE_LINE FORCE_DEFS ATTRLIST_COMMAS GEODB_UPDATE_KEY_COLUMNS Update Key Fields&quot; &quot;&quot; &quot;GUI TEXT GEODB_OBJECT_ID_NAME Object ID Field&quot; OBJECTID &quot;GUI TEXT GEODB_OBJECT_ID_ALIAS Object ID Alias&quot; OBJECTID &quot;GUI TEXT GEODB_SHAPE_NAME Shape Field&quot; SHAPE &quot;GUI TEXT GEODB_SHAPE_ALIAS Shape Alias&quot; SHAPE &quot;GUI TEXT GEODB_CONFIG_KEYWORD Configuration Keyword&quot; DEFAULTS &quot;GUI OPTIONAL TEXT GEODB_FEATURE_DATASET Feature Dataset&quot; &quot;&quot; &quot;GUI OPTIONAL FLOAT GEODB_GRID{1} Grid 1&quot; &quot;&quot; &quot;GUI OPTIONAL INTEGER GEODB_AVG_NUM_POINTS Avg Num of Points&quot; &quot;&quot; &quot;GUI OPTIONAL FLOAT GEODB_XORIGIN X Origin&quot; &quot;&quot; &quot;GUI OPTIONAL FLOAT GEODB_YORIGIN Y Origin&quot; &quot;&quot; &quot;GUI OPTIONAL FLOAT GEODB_XYSCALE X,Y Scale&quot; &quot;&quot; &quot;GUI OPTIONAL CHOICE GEODB_HAS_Z_VALUES yes%no Contains Z Values&quot; &quot;&quot; &quot;GUI OPTIONAL FLOAT GEODB_ZORIGIN Z Origin&quot; &quot;&quot; &quot;GUI OPTIONAL FLOAT GEODB_ZSCALE Z Scale&quot; &quot;&quot; &quot;GUI OPTIONAL CHOICE GEODB_HAS_MEASURES yes%no Contains Measures&quot; &quot;&quot; &quot;GUI OPTIONAL FLOAT GEODB_MEASURES_ORIGIN Measure Origin&quot; &quot;&quot; &quot;GUI OPTIONAL FLOAT GEODB_MEASURES_SCALE Measure Scale&quot; &quot;&quot; &quot;GUI OPTIONAL FLOAT GEODB_ANNO_REFERENCE_SCALE Annotation Reference Scale&quot; &quot;&quot; "
 #! ATTR_INDEX_TYPES=""
 #! ATTR_NAME_INVALID_CHARS=":. %-#[]&quot;()!?*&apos;&amp;+\/{}|="
@@ -1865,7 +1865,7 @@
 #! COLLAPSED="true"
 #! KEYWORD="XLSXR_2"
 #! ENABLED="true"
-#! HIDDEN_USER_ATTRS=""
+#! HIDDEN_USER_ATTRS="DAR_LEGENDEIMWEB_FR DAR_LEGENDEIMWEB_DE"
 #! MERGE="false"
 #! MERGE_FILTER=""
 #! MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
@@ -1886,7 +1886,7 @@
 #! IS_EDITABLE="true"
 #! IDENTIFIER="133"
 #! FEAT_GEOMTYPE="oracle_nil"
-#! POSITION="2385 -217"
+#! POSITION="4358 -646"
 #! ORDER="5e+014"
 #! COLLAPSED="true"
 #! KEYWORD="ORACLE8I_DB_1"
@@ -2085,7 +2085,7 @@
 #! IS_EDITABLE="true"
 #! IDENTIFIER="221"
 #! FEAT_GEOMTYPE="oracle_nil"
-#! POSITION="3072 -174"
+#! POSITION="4350 -286"
 #! ORDER="5e+014"
 #! COLLAPSED="true"
 #! KEYWORD="ORACLE8I_DB_2"
@@ -2663,12 +2663,12 @@
 #! <COMMENT
 #! IDENTIFIER="140"
 #! COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:11px; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;OEREB.DARSTELLUNGSDIENST&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
-#! POSITION="2367 -75"
+#! POSITION="4340 -504"
 #! ORDER="5e+014"
 #! FOLLOW_ANCHOR="true"
 #! INFO_NODE="false"
-#! TOP_LEFT="2367 -75"
-#! BOTTOM_RIGHT="2367 -75"
+#! TOP_LEFT="4340 -504"
+#! BOTTOM_RIGHT="4340 -504"
 #! COLOUR="1,1,0.784314,0.192157"
 #! SIZE_POLICY="8"
 #! COMMENT_TYPE="REGULAR"
@@ -2711,7 +2711,7 @@
 #! INFO_NODE="false"
 #! TOP_LEFT="1747 -3"
 #! BOTTOM_RIGHT="1747 -3"
-#! COLOUR="1,1,0.784314,0.196078"
+#! COLOUR="1,1,0.784314,0.192157"
 #! SIZE_POLICY="8"
 #! COMMENT_TYPE="REGULAR"
 #! ANCHORED_NODE="228"
@@ -2719,13 +2719,13 @@
 #! <COMMENT
 #! IDENTIFIER="235"
 #! COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:11px; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;OEREB2.DARSTELLUNGSDIENST&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
-#! POSITION="3073 -48"
+#! POSITION="4351 -160"
 #! ORDER="5e+014"
 #! FOLLOW_ANCHOR="true"
 #! INFO_NODE="false"
-#! TOP_LEFT="3073 -48"
-#! BOTTOM_RIGHT="3073 -48"
-#! COLOUR="1,1,0.784314,0.196078"
+#! TOP_LEFT="4351 -160"
+#! BOTTOM_RIGHT="4351 -160"
+#! COLOUR="1,1,0.784314,0.192157"
 #! SIZE_POLICY="8"
 #! COMMENT_TYPE="REGULAR"
 #! ANCHORED_NODE="221"
@@ -2739,7 +2739,7 @@
 #! INFO_NODE="false"
 #! TOP_LEFT="8277 -154"
 #! BOTTOM_RIGHT="8277 -154"
-#! COLOUR="1,1,0.784314,0.196078"
+#! COLOUR="1,1,0.784314,0.192157"
 #! SIZE_POLICY="8"
 #! COMMENT_TYPE="REGULAR"
 #! ANCHORED_NODE="229"
@@ -2753,7 +2753,7 @@
 #! INFO_NODE="false"
 #! TOP_LEFT="9084 -2240"
 #! BOTTOM_RIGHT="9084 -2240"
-#! COLOUR="1,1,0.784314,0.196078"
+#! COLOUR="1,1,0.784314,0.192157"
 #! SIZE_POLICY="8"
 #! COMMENT_TYPE="REGULAR"
 #! ANCHORED_NODE="220"
@@ -2767,7 +2767,7 @@
 #! INFO_NODE="false"
 #! TOP_LEFT="8583 -3295"
 #! BOTTOM_RIGHT="8583 -3295"
-#! COLOUR="1,1,0.784314,0.196078"
+#! COLOUR="1,1,0.784314,0.192157"
 #! SIZE_POLICY="8"
 #! COMMENT_TYPE="REGULAR"
 #! ANCHORED_NODE="218"
@@ -2781,7 +2781,7 @@
 #! INFO_NODE="false"
 #! TOP_LEFT="11150 -4122"
 #! BOTTOM_RIGHT="11150 -4122"
-#! COLOUR="1,1,0.784314,0.196078"
+#! COLOUR="1,1,0.784314,0.192157"
 #! SIZE_POLICY="8"
 #! COMMENT_TYPE="REGULAR"
 #! ANCHORED_NODE="217"
@@ -2795,7 +2795,7 @@
 #! INFO_NODE="false"
 #! TOP_LEFT="10502 -5238"
 #! BOTTOM_RIGHT="10502 -5238"
-#! COLOUR="1,1,0.784314,0.196078"
+#! COLOUR="1,1,0.784314,0.192157"
 #! SIZE_POLICY="8"
 #! COMMENT_TYPE="REGULAR"
 #! ANCHORED_NODE="212"
@@ -2809,7 +2809,7 @@
 #! INFO_NODE="false"
 #! TOP_LEFT="7486 -2406"
 #! BOTTOM_RIGHT="7486 -2406"
-#! COLOUR="1,1,0.784314,0.196078"
+#! COLOUR="1,1,0.784314,0.192157"
 #! SIZE_POLICY="8"
 #! COMMENT_TYPE="REGULAR"
 #! ANCHORED_NODE="249"
@@ -4027,8 +4027,6 @@
 #! <XFORM_ATTR ATTR_NAME="DAR_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="DAR_VERWEISWMS_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="DAR_VERWEISWMS_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="DAR_LEGENDEIMWEB_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="DAR_LEGENDEIMWEB_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="_joinfield" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_PARM PARM_NAME="NUM_PRIOR_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
 #! <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
@@ -4305,6 +4303,45 @@
 #! <XFORM_PARM PARM_NAME="NUM_SUBSEQUENT_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
 #! <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
 #! <XFORM_PARM PARM_NAME="ATTR_LIST" PARM_VALUE="EIB_LEGENDESYMBOL_DE,$(LEGEND_BASEURL)&lt;at&gt;Value&lt;openparen&gt;ART_NR&lt;closeparen&gt;.png,EIB_LEGENDESYMBOL_FR,$(LEGEND_BASEURL)&lt;at&gt;Value&lt;openparen&gt;ART_NR&lt;closeparen&gt;.png"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#! IDENTIFIER="252"
+#! TYPE="StringConcatenator"
+#! VERSION="6"
+#! POSITION="3484 -486"
+#! ORDER="5e+014"
+#! PARMS_EDITED="true"
+#! ENABLED="true"
+#! >
+#! <OUTPUT_FEAT NAME="OUTPUT"/>
+#! <FEAT_COLLAPSED COLLAPSED="0"/>
+#! <XFORM_ATTR ATTR_NAME="DAR_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="DAR_VERWEISWMS_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="DAR_VERWEISWMS_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="DAR_LEGENDEIMWEB_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_PARM PARM_NAME="PARM_LINE" PARM_VALUE="$(LEGEND_BASEURL)BALISKBS_KBS.png"/>
+#! <XFORM_PARM PARM_NAME="VAL_ATTR" PARM_VALUE="DAR_LEGENDEIMWEB_DE"/>
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="StringConcatenator_3"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#! IDENTIFIER="254"
+#! TYPE="StringConcatenator"
+#! VERSION="6"
+#! POSITION="3480 -719"
+#! ORDER="5e+014"
+#! PARMS_EDITED="true"
+#! ENABLED="true"
+#! >
+#! <OUTPUT_FEAT NAME="OUTPUT"/>
+#! <FEAT_COLLAPSED COLLAPSED="0"/>
+#! <XFORM_ATTR ATTR_NAME="DAR_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="DAR_VERWEISWMS_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="DAR_VERWEISWMS_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="DAR_LEGENDEIMWEB_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="DAR_LEGENDEIMWEB_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_PARM PARM_NAME="PARM_LINE" PARM_VALUE="$(LEGEND_BASEURL)BALISKBS_KBS_FR.png"/>
+#! <XFORM_PARM PARM_NAME="VAL_ATTR" PARM_VALUE="DAR_LEGENDEIMWEB_FR"/>
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="StringConcatenator_4"/>
 #! </TRANSFORMER>
 #! </TRANSFORMERS>
 #! <FEAT_LINKS>
@@ -4732,15 +4769,6 @@
 #! EXTRA_POINTS=""
 #! />
 #! <FEAT_LINK
-#! IDENTIFIER="150"
-#! SOURCE_NODE="132"
-#! TARGET_NODE="133"
-#! SOURCE_PORT_DESC="-1"
-#! TARGET_PORT_DESC="-1"
-#! ENABLED="true"
-#! EXTRA_POINTS=""
-#! />
-#! <FEAT_LINK
 #! IDENTIFIER="164"
 #! SOURCE_NODE="160"
 #! TARGET_NODE="144"
@@ -4867,15 +4895,6 @@
 #! EXTRA_POINTS=""
 #! />
 #! <FEAT_LINK
-#! IDENTIFIER="237"
-#! SOURCE_NODE="132"
-#! TARGET_NODE="221"
-#! SOURCE_PORT_DESC="-1"
-#! TARGET_PORT_DESC="-1"
-#! ENABLED="true"
-#! EXTRA_POINTS=""
-#! />
-#! <FEAT_LINK
 #! IDENTIFIER="239"
 #! SOURCE_NODE="168"
 #! TARGET_NODE="229"
@@ -4944,6 +4963,42 @@
 #! TARGET_NODE="181"
 #! SOURCE_PORT_DESC="fo 0"
 #! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="253"
+#! SOURCE_NODE="132"
+#! TARGET_NODE="252"
+#! SOURCE_PORT_DESC="-1"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="255"
+#! SOURCE_NODE="252"
+#! TARGET_NODE="254"
+#! SOURCE_PORT_DESC="fo 0"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="256"
+#! SOURCE_NODE="254"
+#! TARGET_NODE="221"
+#! SOURCE_PORT_DESC="fo 0"
+#! TARGET_PORT_DESC="-1"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="237"
+#! SOURCE_NODE="254"
+#! TARGET_NODE="133"
+#! SOURCE_PORT_DESC="fo 0"
+#! TARGET_PORT_DESC="-1"
 #! ENABLED="true"
 #! EXTRA_POINTS=""
 #! />
@@ -6206,17 +6261,28 @@ FACTORY_DEF * TeeFactory    FACTORY_NAME "Source -> Generic"    INPUT FEATURE_TY
 FACTORY_DEF * TeeFactory    FACTORY_NAME "AMT (XLSXR_1) Splitter"    INPUT FEATURE_TYPE AMT    OUTPUT FEATURE_TYPE AMT_0_qXySqpxJk6s=    OUTPUT FEATURE_TYPE AMT_1_qXySqpxJk6s=    OUTPUT FEATURE_TYPE AMT_2_qXySqpxJk6s=
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * TeeFactory    FACTORY_NAME "DARSTELLUNGSDIENST (XLSXR_2) Splitter"    INPUT FEATURE_TYPE DARSTELLUNGSDIENST    OUTPUT FEATURE_TYPE DARSTELLUNGSDIENST_0_0ie7px+XmBo=    OUTPUT FEATURE_TYPE DARSTELLUNGSDIENST_1_0ie7px+XmBo=    OUTPUT FEATURE_TYPE DARSTELLUNGSDIENST_2_0ie7px+XmBo=
+FACTORY_DEF * TeeFactory    FACTORY_NAME "DARSTELLUNGSDIENST (XLSXR_2) Splitter"    INPUT FEATURE_TYPE DARSTELLUNGSDIENST    OUTPUT FEATURE_TYPE DARSTELLUNGSDIENST_0_0ie7px+XmBo=    OUTPUT FEATURE_TYPE DARSTELLUNGSDIENST_1_0ie7px+XmBo=
 DEFAULT_MACRO WB_CURRENT_CONTEXT
 # -------------------------------------------------------------------------
-FACTORY_DEF * AttrSetFactory FACTORY_NAME AttributeCreator_6 ATTRSET_PROPAGATE_MISSING YES INPUT  FEATURE_TYPE DARSTELLUNGSDIENST_0_0ie7px+XmBo= ATTR _joinfield 666    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_6_OUTPUT 
+
+Tcl2 proc StringConcatenator_3_c5f55b12_0b20_425a_9780_0d94e2332cc81_doSetAttr {attrText} {    FME_SetAttribute [FME_DecodeText {DAR_LEGENDEIMWEB_DE}] [FME_DecodeText $attrText] }
+FACTORY_DEF * TeeFactory    FACTORY_NAME StringConcatenator_3    INPUT  FEATURE_TYPE DARSTELLUNGSDIENST_0_0ie7px+XmBo=    OUTPUT FEATURE_TYPE StringConcatenator_3_OUTPUT        @Tcl2("StringConcatenator_3_c5f55b12_0b20_425a_9780_0d94e2332cc81_doSetAttr {@EvaluateExpression(STRING_ENCODED,$(LEGEND_BASEURL$encode)BALISKBS_KBS.png,StringConcatenator_3)} ")
+
+# -------------------------------------------------------------------------
+
+Tcl2 proc StringConcatenator_4_58af18e0_3588_4fc1_a5e9_7edf7d622f620_doSetAttr {attrText} {    FME_SetAttribute [FME_DecodeText {DAR_LEGENDEIMWEB_FR}] [FME_DecodeText $attrText] }
+FACTORY_DEF * TeeFactory    FACTORY_NAME StringConcatenator_4    INPUT  FEATURE_TYPE StringConcatenator_3_OUTPUT    OUTPUT FEATURE_TYPE StringConcatenator_4_OUTPUT        @Tcl2("StringConcatenator_4_58af18e0_3588_4fc1_a5e9_7edf7d622f620_doSetAttr {@EvaluateExpression(STRING_ENCODED,$(LEGEND_BASEURL$encode)BALISKBS_KBS_FR.png,StringConcatenator_4)} ")
+
+FACTORY_DEF * TeeFactory   FACTORY_NAME "StringConcatenator_4 OUTPUT Splitter"   INPUT FEATURE_TYPE StringConcatenator_4_OUTPUT   OUTPUT FEATURE_TYPE StringConcatenator_4_OUTPUT_0_AQCxNSkKjQs=   OUTPUT FEATURE_TYPE StringConcatenator_4_OUTPUT_1_AQCxNSkKjQs=
+# -------------------------------------------------------------------------
+FACTORY_DEF * AttrSetFactory FACTORY_NAME AttributeCreator_6 ATTRSET_PROPAGATE_MISSING YES INPUT  FEATURE_TYPE DARSTELLUNGSDIENST_1_0ie7px+XmBo= ATTR _joinfield 666    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_6_OUTPUT 
 # -------------------------------------------------------------------------
 
 INCLUDE [    set macroLine "MACRO AttributeRemover_9_LIST_EXP ";    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "{\[0-9\]+}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
 FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRemover_9    INPUT  FEATURE_TYPE AttributeCreator_6_OUTPUT    OUTPUT FEATURE_TYPE AttributeRemover_9_OUTPUT        @RemoveAttributes(DAR_VERWEISWMS_DE,DAR_VERWEISWMS_FR,DAR_LEGENDEIMWEB_DE,DAR_LEGENDEIMWEB_FR)        @RemoveAttributes(fme_regexp_match"$(AttributeRemover_9_LIST_EXP)")
 
 # -------------------------------------------------------------------------
-FACTORY_DEF * AttrSetFactory FACTORY_NAME AttributeCreator_4 ATTRSET_PROPAGATE_MISSING YES INPUT  FEATURE_TYPE AMT_0_qXySqpxJk6s= ATTR _joinfield 666    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_4_OUTPUT 
+FACTORY_DEF * AttrSetFactory FACTORY_NAME AttributeCreator_4 ATTRSET_PROPAGATE_MISSING YES INPUT  FEATURE_TYPE AMT_1_qXySqpxJk6s= ATTR _joinfield 666    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_4_OUTPUT 
 # -------------------------------------------------------------------------
 
 INCLUDE [    set macroLine "MACRO AttributeRemover_8_LIST_EXP ";    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "{\[0-9\]+}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
@@ -6312,7 +6378,7 @@ FACTORY_DEF * ReferenceFactory    FACTORY_NAME FeatureMerger_4    INPUT REFERENC
 # somesuch.
 
 DEFAULT_MACRO _WB_BYPASS_TERMINATION No
-FACTORY_DEF * TestFactory    FACTORY_NAME Terminator_2    INPUT  FEATURE_TYPE FeatureMerger_4_UNREFERENCED    INPUT  FEATURE_TYPE FeatureMerger_2_NOT_MERGED    INPUT  FEATURE_TYPE FeatureMerger_2_UNREFERENCED    INPUT  FEATURE_TYPE FeatureMerger_4_NOT_MERGED    TEST "$(_WB_BYPASS_TERMINATION)" == Yes    OUTPUT PASSED FEATURE_TYPE __WB_BYPASS_TERMINATOR__       @SupplyAttributes(_wb_termination_feature_type,@FeatureType())       @SupplyAttributes(ENCODED,_wb_termination_message,Translation Terminated)       @SupplyAttributes(_wb_termination_xformer,"Terminator_2")       @SupplyAttributes(_wb_termination_feature,Yes)    OUTPUT FAILED FEATURE_TYPE * @Abort(ENCODED,Translation Terminated)
+FACTORY_DEF * TestFactory    FACTORY_NAME Terminator_2    INPUT  FEATURE_TYPE FeatureMerger_4_NOT_MERGED    INPUT  FEATURE_TYPE FeatureMerger_4_UNREFERENCED    INPUT  FEATURE_TYPE FeatureMerger_2_NOT_MERGED    INPUT  FEATURE_TYPE FeatureMerger_2_UNREFERENCED    TEST "$(_WB_BYPASS_TERMINATION)" == Yes    OUTPUT PASSED FEATURE_TYPE __WB_BYPASS_TERMINATOR__       @SupplyAttributes(_wb_termination_feature_type,@FeatureType())       @SupplyAttributes(ENCODED,_wb_termination_message,Translation Terminated)       @SupplyAttributes(_wb_termination_xformer,"Terminator_2")       @SupplyAttributes(_wb_termination_feature,Yes)    OUTPUT FAILED FEATURE_TYPE * @Abort(ENCODED,Translation Terminated)
 
 # -------------------------------------------------------------------------
 
@@ -6360,8 +6426,18 @@ FACTORY_DEF * PythonFactory    FACTORY_NAME PythonCaller_4    INPUT  FEATURE_TYP
 
 FACTORY_DEF * TeeFactory   FACTORY_NAME "PythonCaller_4 OUTPUT Splitter"   INPUT FEATURE_TYPE PythonCaller_4_OUTPUT   OUTPUT FEATURE_TYPE PythonCaller_4_OUTPUT_0_kBV+D6s4Mj0=   OUTPUT FEATURE_TYPE PythonCaller_4_OUTPUT_1_kBV+D6s4Mj0=   OUTPUT FEATURE_TYPE PythonCaller_4_OUTPUT_2_kBV+D6s4Mj0=   OUTPUT FEATURE_TYPE PythonCaller_4_OUTPUT_3_kBV+D6s4Mj0=
 # -------------------------------------------------------------------------
+FACTORY_DEF * AttrSetFactory FACTORY_NAME AttributeCreator_9 ATTRSET_PROPAGATE_MISSING YES INPUT  FEATURE_TYPE PythonCaller_4_OUTPUT_3_kBV+D6s4Mj0= ATTR EIB_LEGENDESYMBOL_DE $(LEGEND_BASEURL$encode)<at>Value<openparen>ART_NR<closeparen>.png ATTR EIB_LEGENDESYMBOL_FR $(LEGEND_BASEURL$encode)<at>Value<openparen>ART_NR<closeparen>.png    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_9_OUTPUT 
+# -------------------------------------------------------------------------
 
-FACTORY_DEF * TeeFactory    FACTORY_NAME UUIDGenerator_3    INPUT  FEATURE_TYPE PythonCaller_4_OUTPUT_2_kBV+D6s4Mj0=    OUTPUT FEATURE_TYPE UUIDGenerator_3_OUTPUT         "VOR_OID" @UUID()
+
+FME_PYTHON_PATH "$(FME_MF_DIR)"
+
+FACTORY_DEF * PythonFactory    FACTORY_NAME PythonCaller_6    INPUT  FEATURE_TYPE AttributeCreator_9_OUTPUT    SYMBOL_NAME CreateAussage    PYTHON_NAMESPACE FMEOBJECTS    SOURCE_CODE from<space>__future__<space>import<space>unicode_literals<lf>import<space>fmeobjects<lf><lf>def<space>CreateAussage<openparen>feature<closeparen>:<lf><space><space><space><space>_Art_Bez<space>=<space>feature.getAttribute<openparen><quote>ART_DE<quote><closeparen><lf><space><space><space><space>_Art_Bez_F<space>=<space>feature.getAttribute<openparen><quote>ART_FR<quote><closeparen><lf><space><space><space><space>_Status_Bez<space>=<space>feature.getAttribute<openparen><quote>STATUS_DE<quote><closeparen><lf><space><space><space><space>_Status_Bez_F<space>=<space>feature.getAttribute<openparen><quote>STATUS_FR<quote><closeparen><lf><space><space><space><space>_Priori_Bez<space>=<space>feature.getAttribute<openparen><quote>PRIORI_DE<quote><closeparen><lf><space><space><space><space>_Priori_Bez_F<space>=<space>feature.getAttribute<openparen><quote>PRIORI_FR<quote><closeparen><lf><space><space><space><space>_STA_NR<space>=<space>feature.getAttribute<openparen><quote>STA_NR<quote><closeparen><lf><space><space><space><space>_Name<space>=<space>feature.getAttribute<openparen><quote>STA_NAME<quote><closeparen><lf><space><space><space><space><lf><space><space><space><space>if<space>_Priori_Bez<space>==<space><quote>dringend<quote>:<lf><space><space><space><space><space><space><space><space>_bezeichner<space>=<space><quote>Untersuchung<space>erforderlich<quote><lf><space><space><space><space><space><space><space><space>_bezeichner_f<space>=<space><quote>investigation<space>n<u00e9>cessaire<quote><lf><space><space><space><space><space><space><space><lf><space><space><space><space><space><space><space><space>#<space><u00d6>REB-Aussage<lf><space><space><space><space><space><space><space><space>if<space>_Status_Bez<space>is<space>not<space>None:<lf><space><space><space><space><space><space><space><space><space><space><space><space>feature.setAttribute<openparen><quote>EIB_AUSSAGE_DE<quote><comma><space>_Art_Bez+<quote><space><openparen>Nr.<space><quote>+_STA_NR+<quote><comma><space><quote>+_Name.strip<openparen><closeparen>+<quote><closeparen><comma><space><quote>+_Status_Bez+<quote><comma><space><quote>+_bezeichner<closeparen><lf><space><space><space><space><space><space><space><space><space><space><space><space>feature.setAttribute<openparen><quote>EIB_AUSSAGE_FR<quote><comma><space>_Art_Bez_F+<quote><space><openparen>No.<space><quote>+_STA_NR+<quote><comma><space><quote>+_Name.strip<openparen><closeparen>+<quote><closeparen><comma><space><quote>+_Status_Bez_F+<quote><comma><space><quote>+_bezeichner_f<closeparen><lf><space><space><space><space><space><space><space><space>else:<lf><space><space><space><space><space><space><space><space><space><space><space><space>feature.setAttribute<openparen><quote>EIB_AUSSAGE_DE<quote><comma><space>_Art_Bez+<quote><space><openparen>Nr.<space><quote>+_STA_NR+<quote><comma><space><quote>+_Name.strip<openparen><closeparen>+<quote><closeparen><comma><space><quote>+_bezeichner<closeparen><lf><space><space><space><space><space><space><space><space><space><space><space><space>feature.setAttribute<openparen><quote>EIB_AUSSAGE_FR<quote><comma><space>_Art_Bez_F+<quote><space><openparen>No.<space><quote>+_STA_NR+<quote><comma><space><quote>+_Name.strip<openparen><closeparen>+<quote><closeparen><comma><space><quote>+_bezeichner_f<closeparen><lf><space><space><space><space><space><space><space><lf><space><space><space><space>elif<space>_Priori_Bez<space>==<space><quote>erforderlich<quote>:<lf><space><space><space><space><space><space><space><space>_bezeichner<space>=<space><quote>Untersuchung<space>erforderlich<quote><lf><space><space><space><space><space><space><space><space>_bezeichner_f<space>=<space><quote>investigation<space>n<u00e9>cessaire<quote><lf><space><space><space><space><space><space><space><lf><space><space><space><space><space><space><space><space>#<space><u00d6>REB-Aussage<lf><space><space><space><space><space><space><space><space>if<space>_Status_Bez<space>is<space>not<space>None:<lf><space><space><space><space><space><space><space><space><space><space><space><space>feature.setAttribute<openparen><quote>EIB_AUSSAGE_DE<quote><comma><space>_Art_Bez+<quote><space><openparen>Nr.<space><quote>+_STA_NR+<quote><comma><space><quote>+_Name.strip<openparen><closeparen>+<quote><closeparen><comma><space><quote>+_Status_Bez+<quote><comma><space><quote>+_bezeichner<closeparen><lf><space><space><space><space><space><space><space><space><space><space><space><space>feature.setAttribute<openparen><quote>EIB_AUSSAGE_FR<quote><comma><space>_Art_Bez_F+<quote><space><openparen>No.<space><quote>+_STA_NR+<quote><comma><space><quote>+_Name.strip<openparen><closeparen>+<quote><closeparen><comma><space><quote>+_Status_Bez_F+<quote><comma><space><quote>+_bezeichner_f<closeparen><lf><space><space><space><space><space><space><space><space>else:<lf><space><space><space><space><space><space><space><space><space><space><space><space>feature.setAttribute<openparen><quote>EIB_AUSSAGE_DE<quote><comma><space>_Art_Bez+<quote><space><openparen>Nr.<space><quote>+_STA_NR+<quote><comma><space><quote>+_Name.strip<openparen><closeparen>+<quote><closeparen><comma><space><quote>+_bezeichner<closeparen><lf><space><space><space><space><space><space><space><space><space><space><space><space>feature.setAttribute<openparen><quote>EIB_AUSSAGE_FR<quote><comma><space>_Art_Bez_F+<quote><space><openparen>No.<space><quote>+_STA_NR+<quote><comma><space><quote>+_Name.strip<openparen><closeparen>+<quote><closeparen><comma><space><quote>+_bezeichner_f<closeparen><lf><space><space><space><space><space><space><space><lf><space><space><space><space>else:<lf><space><space><space><space><space><space><space><space>_bezeichner<space>=<space><quote>projektspezifische<space>Massnahmen<space><quote><lf><space><space><space><space><space><space><space><space>_bezeichner_f<space>=<space>_Priori_Bez_F<lf><space><space><space><space><space><space><space><lf><space><space><space><space><space><space><space><space>#<space><u00d6>REB-Aussage<lf><space><space><space><space><space><space><space><space>if<space>_Status_Bez<space>is<space>not<space>None:<lf><space><space><space><space><space><space><space><space><space><space><space><space>feature.setAttribute<openparen><quote>EIB_AUSSAGE_DE<quote><comma><space>_Art_Bez+<quote><space><openparen>Nr.<space><quote>+_STA_NR+<quote><comma><space><quote>+_Name.strip<openparen><closeparen>+<quote><closeparen><comma><space><quote>+_Status_Bez+<quote><comma><space><quote>+_bezeichner+_Priori_Bez<closeparen><lf><space><space><space><space><space><space><space><space><space><space><space><space>feature.setAttribute<openparen><quote>EIB_AUSSAGE_FR<quote><comma><space>_Art_Bez_F+<quote><space><openparen>No.<space><quote>+_STA_NR+<quote><comma><space><quote>+_Name.strip<openparen><closeparen>+<quote><closeparen><comma><space><quote>+_Status_Bez_F+<quote><comma><space><quote>+_bezeichner_f+<space><quote><space><openparen>sp<u00e9>cifique<space>au<space>projet<closeparen><quote><closeparen><space><lf><space><space><space><space><space><space><space><space>else:<lf><space><space><space><space><space><space><space><space><space><space><space><space>feature.setAttribute<openparen><quote>EIB_AUSSAGE_DE<quote><comma><space>_Art_Bez+<quote><space><openparen>Nr.<space><quote>+_STA_NR+<quote><comma><space><quote>+_Name.strip<openparen><closeparen>+<quote><closeparen><comma><space><quote>+_bezeichner+_Priori_Bez+<quote><space><openparen>projektspezifisch<closeparen><quote><closeparen><lf><space><space><space><space><space><space><space><space><space><space><space><space>feature.setAttribute<openparen><quote>EIB_AUSSAGE_FR<quote><comma><space>_Art_Bez_F+<quote><space><openparen>No.<space><quote>+_STA_NR+<quote><comma><space><quote>+_Name.strip<openparen><closeparen>+<quote><closeparen><comma><space><quote>+_bezeichner_f+<space><quote><space><openparen>sp<u00e9>cifique<space>au<space>projet<closeparen><quote><closeparen><space>    OUTPUT PYOUTPUT FEATURE_TYPE PythonCaller_6_OUTPUT
+
+FACTORY_DEF * TeeFactory   FACTORY_NAME "PythonCaller_6 OUTPUT Splitter"   INPUT FEATURE_TYPE PythonCaller_6_OUTPUT   OUTPUT FEATURE_TYPE PythonCaller_6_OUTPUT_0_+X2ZgWK85CU=   OUTPUT FEATURE_TYPE PythonCaller_6_OUTPUT_1_+X2ZgWK85CU=
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME UUIDGenerator_3    INPUT  FEATURE_TYPE PythonCaller_4_OUTPUT_1_kBV+D6s4Mj0=    OUTPUT FEATURE_TYPE UUIDGenerator_3_OUTPUT         "VOR_OID" @UUID()
 
 FACTORY_DEF * TeeFactory   FACTORY_NAME "UUIDGenerator_3 OUTPUT Splitter"   INPUT FEATURE_TYPE UUIDGenerator_3_OUTPUT   OUTPUT FEATURE_TYPE UUIDGenerator_3_OUTPUT_0_imAloxdiMNw=   OUTPUT FEATURE_TYPE UUIDGenerator_3_OUTPUT_1_imAloxdiMNw=
 # -------------------------------------------------------------------------
@@ -6381,63 +6457,53 @@ FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRenamer    INPUT  FEATURE_TYPE
 
 FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeRenamer OUTPUT Splitter"   INPUT FEATURE_TYPE AttributeRenamer_OUTPUT   OUTPUT FEATURE_TYPE AttributeRenamer_OUTPUT_0_4N+m7MNBb5s=   OUTPUT FEATURE_TYPE AttributeRenamer_OUTPUT_1_4N+m7MNBb5s=   OUTPUT FEATURE_TYPE AttributeRenamer_OUTPUT_2_4N+m7MNBb5s=
 # -------------------------------------------------------------------------
-FACTORY_DEF * AttrSetFactory FACTORY_NAME AttributeCreator_3 ATTRSET_PROPAGATE_MISSING YES INPUT  FEATURE_TYPE AttributeRenamer_OUTPUT_2_4N+m7MNBb5s= ATTR VOR_OIDHINWEIS ch.admin.bk.sr.814.01    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_3_OUTPUT 
+FACTORY_DEF * AttrSetFactory FACTORY_NAME AttributeCreator_8 ATTRSET_PROPAGATE_MISSING YES INPUT  FEATURE_TYPE AttributeRenamer_OUTPUT_1_4N+m7MNBb5s= ATTR VOR_OIDHINWEIS ch.admin.bk.sr.814.680    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_8_OUTPUT 
+# -------------------------------------------------------------------------
+FACTORY_DEF * AttrSetFactory FACTORY_NAME AttributeCreator_3 ATTRSET_PROPAGATE_MISSING YES INPUT  FEATURE_TYPE AttributeRenamer_OUTPUT_0_4N+m7MNBb5s= ATTR VOR_OIDHINWEIS ch.admin.bk.sr.814.01    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_3_OUTPUT 
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRenamer_3    INPUT  FEATURE_TYPE AttributeRenamer_OUTPUT_1_4N+m7MNBb5s=    OUTPUT FEATURE_TYPE AttributeRenamer_3_OUTPUT         @RenameAttributes(ATTR_LIST_DEF_VAL, usg_VOR_OID,VOR_OIDHINWEIS,"")
+FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRenamer_3    INPUT  FEATURE_TYPE AttributeRenamer_OUTPUT_2_4N+m7MNBb5s=    OUTPUT FEATURE_TYPE AttributeRenamer_3_OUTPUT         @RenameAttributes(ATTR_LIST_DEF_VAL, usg_VOR_OID,VOR_OIDHINWEIS,"")
 
 
 # -------------------------------------------------------------------------
-FACTORY_DEF * AttrSetFactory FACTORY_NAME AttributeCreator_8 ATTRSET_PROPAGATE_MISSING YES INPUT  FEATURE_TYPE AttributeRenamer_OUTPUT_0_4N+m7MNBb5s= ATTR VOR_OIDHINWEIS ch.admin.bk.sr.814.680    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_8_OUTPUT 
-# -------------------------------------------------------------------------
 
-FACTORY_DEF * TeeFactory    FACTORY_NAME UUIDGenerator_5    INPUT  FEATURE_TYPE AttributeCreator_3_OUTPUT    INPUT  FEATURE_TYPE AttributeRenamer_3_OUTPUT    INPUT  FEATURE_TYPE AttributeCreator_8_OUTPUT    OUTPUT FEATURE_TYPE UUIDGenerator_5_OUTPUT         "HWD_ID" @UUID()
+FACTORY_DEF * TeeFactory    FACTORY_NAME UUIDGenerator_5    INPUT  FEATURE_TYPE AttributeCreator_8_OUTPUT    INPUT  FEATURE_TYPE AttributeCreator_3_OUTPUT    INPUT  FEATURE_TYPE AttributeRenamer_3_OUTPUT    OUTPUT FEATURE_TYPE UUIDGenerator_5_OUTPUT         "HWD_ID" @UUID()
 
 FACTORY_DEF * TeeFactory   FACTORY_NAME "UUIDGenerator_5 OUTPUT Splitter"   INPUT FEATURE_TYPE UUIDGenerator_5_OUTPUT   OUTPUT FEATURE_TYPE UUIDGenerator_5_OUTPUT_0_tPxX3NkWeU4=   OUTPUT FEATURE_TYPE UUIDGenerator_5_OUTPUT_1_tPxX3NkWeU4=
 # -------------------------------------------------------------------------
 
-Tcl2 proc StringConcatenator_0001778e_399c_4da2_a629_df6c6107be6f6_doSetAttr {attrText} {    FME_SetAttribute [FME_DecodeText {VOR_TITEL_DE}] [FME_DecodeText $attrText] }
-FACTORY_DEF * TeeFactory    FACTORY_NAME StringConcatenator    INPUT  FEATURE_TYPE UUIDGenerator_3_OUTPUT_1_imAloxdiMNw=    OUTPUT FEATURE_TYPE StringConcatenator_OUTPUT        @Tcl2("StringConcatenator_0001778e_399c_4da2_a629_df6c6107be6f6_doSetAttr {@EvaluateExpression(STRING_ENCODED,Gem<u00e4>ss<space>Katastereintrag<space>vom<space><at>Value<openparen>EINTRAGKBS<closeparen>,StringConcatenator)} ")
+Tcl2 proc StringConcatenator_a11599f5_e6d5_47c7_82e1_31f31a8c32af0_doSetAttr {attrText} {    FME_SetAttribute [FME_DecodeText {VOR_TITEL_DE}] [FME_DecodeText $attrText] }
+FACTORY_DEF * TeeFactory    FACTORY_NAME StringConcatenator    INPUT  FEATURE_TYPE UUIDGenerator_3_OUTPUT_1_imAloxdiMNw=    OUTPUT FEATURE_TYPE StringConcatenator_OUTPUT        @Tcl2("StringConcatenator_a11599f5_e6d5_47c7_82e1_31f31a8c32af0_doSetAttr {@EvaluateExpression(STRING_ENCODED,Gem<u00e4>ss<space>Katastereintrag<space>vom<space><at>Value<openparen>EINTRAGKBS<closeparen>,StringConcatenator)} ")
 
 # -------------------------------------------------------------------------
 
-Tcl2 proc StringConcatenator_2_e2fd33a9_4843_47dd_8a64_e1bdee1002426_doSetAttr {attrText} {    FME_SetAttribute [FME_DecodeText {VOR_TITEL_FR}] [FME_DecodeText $attrText] }
-FACTORY_DEF * TeeFactory    FACTORY_NAME StringConcatenator_2    INPUT  FEATURE_TYPE StringConcatenator_OUTPUT    OUTPUT FEATURE_TYPE StringConcatenator_2_OUTPUT        @Tcl2("StringConcatenator_2_e2fd33a9_4843_47dd_8a64_e1bdee1002426_doSetAttr {@EvaluateExpression(STRING_ENCODED,Selon<space>l<apos>inscription<space>au<space>cadastre<space>du<space><at>Value<openparen>EINTRAGKBS<closeparen>,StringConcatenator_2)} ")
+Tcl2 proc StringConcatenator_2_088a0e4b_9085_44ba_92d9_2794dec0b91a0_doSetAttr {attrText} {    FME_SetAttribute [FME_DecodeText {VOR_TITEL_FR}] [FME_DecodeText $attrText] }
+FACTORY_DEF * TeeFactory    FACTORY_NAME StringConcatenator_2    INPUT  FEATURE_TYPE StringConcatenator_OUTPUT    OUTPUT FEATURE_TYPE StringConcatenator_2_OUTPUT        @Tcl2("StringConcatenator_2_088a0e4b_9085_44ba_92d9_2794dec0b91a0_doSetAttr {@EvaluateExpression(STRING_ENCODED,Selon<space>l<apos>inscription<space>au<space>cadastre<space>du<space><at>Value<openparen>EINTRAGKBS<closeparen>,StringConcatenator_2)} ")
 
 # -------------------------------------------------------------------------
 FACTORY_DEF * AttrSetFactory FACTORY_NAME AttributeCreator_2 ATTRSET_PROPAGATE_MISSING YES INPUT  FEATURE_TYPE StringConcatenator_2_OUTPUT ATTR VOA_ID 1    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_2_OUTPUT 
 FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeCreator_2 OUTPUT Splitter"   INPUT FEATURE_TYPE AttributeCreator_2_OUTPUT   OUTPUT FEATURE_TYPE AttributeCreator_2_OUTPUT_0_KpUyI6tMDVI=   OUTPUT FEATURE_TYPE AttributeCreator_2_OUTPUT_1_KpUyI6tMDVI=
 # -------------------------------------------------------------------------
-FACTORY_DEF * AttrSetFactory FACTORY_NAME AttributeCreator_9 ATTRSET_PROPAGATE_MISSING YES INPUT  FEATURE_TYPE PythonCaller_4_OUTPUT_1_kBV+D6s4Mj0= ATTR EIB_LEGENDESYMBOL_DE $(LEGEND_BASEURL$encode)<at>Value<openparen>ART_NR<closeparen>.png ATTR EIB_LEGENDESYMBOL_FR $(LEGEND_BASEURL$encode)<at>Value<openparen>ART_NR<closeparen>.png    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_9_OUTPUT 
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME "UUIDGenerator_4_OUTPUT_1_lgHBjcvsH0I= -> OEREB.HINVOR Correlator"    INPUT FEATURE_TYPE UUIDGenerator_4_OUTPUT_1_lgHBjcvsH0I=    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 1       @Transform(FME_GENERIC,ORACLE8I_DB) "@EvaluateExpression(ATTR_CREATE_EXPR_PROPAGATE_MISSING,HIV_LIEFEREINHEIT,$(LIEFEREINHEIT$encode), ATTR_SET)"       @SupplyAttributes(ENCODED,__wb_out_feat_type__,OEREB.HINVOR)
 # -------------------------------------------------------------------------
 
-
-FME_PYTHON_PATH "$(FME_MF_DIR)"
-
-FACTORY_DEF * PythonFactory    FACTORY_NAME PythonCaller_6    INPUT  FEATURE_TYPE AttributeCreator_9_OUTPUT    SYMBOL_NAME CreateAussage    PYTHON_NAMESPACE FMEOBJECTS    SOURCE_CODE from<space>__future__<space>import<space>unicode_literals<lf>import<space>fmeobjects<lf><lf>def<space>CreateAussage<openparen>feature<closeparen>:<lf><space><space><space><space>_Art_Bez<space>=<space>feature.getAttribute<openparen><quote>ART_DE<quote><closeparen><lf><space><space><space><space>_Art_Bez_F<space>=<space>feature.getAttribute<openparen><quote>ART_FR<quote><closeparen><lf><space><space><space><space>_Status_Bez<space>=<space>feature.getAttribute<openparen><quote>STATUS_DE<quote><closeparen><lf><space><space><space><space>_Status_Bez_F<space>=<space>feature.getAttribute<openparen><quote>STATUS_FR<quote><closeparen><lf><space><space><space><space>_Priori_Bez<space>=<space>feature.getAttribute<openparen><quote>PRIORI_DE<quote><closeparen><lf><space><space><space><space>_Priori_Bez_F<space>=<space>feature.getAttribute<openparen><quote>PRIORI_FR<quote><closeparen><lf><space><space><space><space>_STA_NR<space>=<space>feature.getAttribute<openparen><quote>STA_NR<quote><closeparen><lf><space><space><space><space>_Name<space>=<space>feature.getAttribute<openparen><quote>STA_NAME<quote><closeparen><lf><space><space><space><space><lf><space><space><space><space>if<space>_Priori_Bez<space>==<space><quote>dringend<quote>:<lf><space><space><space><space><space><space><space><space>_bezeichner<space>=<space><quote>Untersuchung<space>erforderlich<quote><lf><space><space><space><space><space><space><space><space>_bezeichner_f<space>=<space><quote>investigation<space>n<u00e9>cessaire<quote><lf><space><space><space><space><space><space><space><lf><space><space><space><space><space><space><space><space>#<space><u00d6>REB-Aussage<lf><space><space><space><space><space><space><space><space>if<space>_Status_Bez<space>is<space>not<space>None:<lf><space><space><space><space><space><space><space><space><space><space><space><space>feature.setAttribute<openparen><quote>EIB_AUSSAGE_DE<quote><comma><space>_Art_Bez+<quote><space><openparen>Nr.<space><quote>+_STA_NR+<quote><comma><space><quote>+_Name.strip<openparen><closeparen>+<quote><closeparen><comma><space><quote>+_Status_Bez+<quote><comma><space><quote>+_bezeichner<closeparen><lf><space><space><space><space><space><space><space><space><space><space><space><space>feature.setAttribute<openparen><quote>EIB_AUSSAGE_FR<quote><comma><space>_Art_Bez_F+<quote><space><openparen>No.<space><quote>+_STA_NR+<quote><comma><space><quote>+_Name.strip<openparen><closeparen>+<quote><closeparen><comma><space><quote>+_Status_Bez_F+<quote><comma><space><quote>+_bezeichner_f<closeparen><lf><space><space><space><space><space><space><space><space>else:<lf><space><space><space><space><space><space><space><space><space><space><space><space>feature.setAttribute<openparen><quote>EIB_AUSSAGE_DE<quote><comma><space>_Art_Bez+<quote><space><openparen>Nr.<space><quote>+_STA_NR+<quote><comma><space><quote>+_Name.strip<openparen><closeparen>+<quote><closeparen><comma><space><quote>+_bezeichner<closeparen><lf><space><space><space><space><space><space><space><space><space><space><space><space>feature.setAttribute<openparen><quote>EIB_AUSSAGE_FR<quote><comma><space>_Art_Bez_F+<quote><space><openparen>No.<space><quote>+_STA_NR+<quote><comma><space><quote>+_Name.strip<openparen><closeparen>+<quote><closeparen><comma><space><quote>+_bezeichner_f<closeparen><lf><space><space><space><space><space><space><space><lf><space><space><space><space>elif<space>_Priori_Bez<space>==<space><quote>erforderlich<quote>:<lf><space><space><space><space><space><space><space><space>_bezeichner<space>=<space><quote>Untersuchung<space>erforderlich<quote><lf><space><space><space><space><space><space><space><space>_bezeichner_f<space>=<space><quote>investigation<space>n<u00e9>cessaire<quote><lf><space><space><space><space><space><space><space><lf><space><space><space><space><space><space><space><space>#<space><u00d6>REB-Aussage<lf><space><space><space><space><space><space><space><space>if<space>_Status_Bez<space>is<space>not<space>None:<lf><space><space><space><space><space><space><space><space><space><space><space><space>feature.setAttribute<openparen><quote>EIB_AUSSAGE_DE<quote><comma><space>_Art_Bez+<quote><space><openparen>Nr.<space><quote>+_STA_NR+<quote><comma><space><quote>+_Name.strip<openparen><closeparen>+<quote><closeparen><comma><space><quote>+_Status_Bez+<quote><comma><space><quote>+_bezeichner<closeparen><lf><space><space><space><space><space><space><space><space><space><space><space><space>feature.setAttribute<openparen><quote>EIB_AUSSAGE_FR<quote><comma><space>_Art_Bez_F+<quote><space><openparen>No.<space><quote>+_STA_NR+<quote><comma><space><quote>+_Name.strip<openparen><closeparen>+<quote><closeparen><comma><space><quote>+_Status_Bez_F+<quote><comma><space><quote>+_bezeichner_f<closeparen><lf><space><space><space><space><space><space><space><space>else:<lf><space><space><space><space><space><space><space><space><space><space><space><space>feature.setAttribute<openparen><quote>EIB_AUSSAGE_DE<quote><comma><space>_Art_Bez+<quote><space><openparen>Nr.<space><quote>+_STA_NR+<quote><comma><space><quote>+_Name.strip<openparen><closeparen>+<quote><closeparen><comma><space><quote>+_bezeichner<closeparen><lf><space><space><space><space><space><space><space><space><space><space><space><space>feature.setAttribute<openparen><quote>EIB_AUSSAGE_FR<quote><comma><space>_Art_Bez_F+<quote><space><openparen>No.<space><quote>+_STA_NR+<quote><comma><space><quote>+_Name.strip<openparen><closeparen>+<quote><closeparen><comma><space><quote>+_bezeichner_f<closeparen><lf><space><space><space><space><space><space><space><lf><space><space><space><space>else:<lf><space><space><space><space><space><space><space><space>_bezeichner<space>=<space><quote>projektspezifische<space>Massnahmen<space><quote><lf><space><space><space><space><space><space><space><space>_bezeichner_f<space>=<space>_Priori_Bez_F<lf><space><space><space><space><space><space><space><lf><space><space><space><space><space><space><space><space>#<space><u00d6>REB-Aussage<lf><space><space><space><space><space><space><space><space>if<space>_Status_Bez<space>is<space>not<space>None:<lf><space><space><space><space><space><space><space><space><space><space><space><space>feature.setAttribute<openparen><quote>EIB_AUSSAGE_DE<quote><comma><space>_Art_Bez+<quote><space><openparen>Nr.<space><quote>+_STA_NR+<quote><comma><space><quote>+_Name.strip<openparen><closeparen>+<quote><closeparen><comma><space><quote>+_Status_Bez+<quote><comma><space><quote>+_bezeichner+_Priori_Bez<closeparen><lf><space><space><space><space><space><space><space><space><space><space><space><space>feature.setAttribute<openparen><quote>EIB_AUSSAGE_FR<quote><comma><space>_Art_Bez_F+<quote><space><openparen>No.<space><quote>+_STA_NR+<quote><comma><space><quote>+_Name.strip<openparen><closeparen>+<quote><closeparen><comma><space><quote>+_Status_Bez_F+<quote><comma><space><quote>+_bezeichner_f+<space><quote><space><openparen>sp<u00e9>cifique<space>au<space>projet<closeparen><quote><closeparen><space><lf><space><space><space><space><space><space><space><space>else:<lf><space><space><space><space><space><space><space><space><space><space><space><space>feature.setAttribute<openparen><quote>EIB_AUSSAGE_DE<quote><comma><space>_Art_Bez+<quote><space><openparen>Nr.<space><quote>+_STA_NR+<quote><comma><space><quote>+_Name.strip<openparen><closeparen>+<quote><closeparen><comma><space><quote>+_bezeichner+_Priori_Bez+<quote><space><openparen>projektspezifisch<closeparen><quote><closeparen><lf><space><space><space><space><space><space><space><space><space><space><space><space>feature.setAttribute<openparen><quote>EIB_AUSSAGE_FR<quote><comma><space>_Art_Bez_F+<quote><space><openparen>No.<space><quote>+_STA_NR+<quote><comma><space><quote>+_Name.strip<openparen><closeparen>+<quote><closeparen><comma><space><quote>+_bezeichner_f+<space><quote><space><openparen>sp<u00e9>cifique<space>au<space>projet<closeparen><quote><closeparen><space>    OUTPUT PYOUTPUT FEATURE_TYPE PythonCaller_6_OUTPUT
-
-FACTORY_DEF * TeeFactory   FACTORY_NAME "PythonCaller_6 OUTPUT Splitter"   INPUT FEATURE_TYPE PythonCaller_6_OUTPUT   OUTPUT FEATURE_TYPE PythonCaller_6_OUTPUT_0_+X2ZgWK85CU=   OUTPUT FEATURE_TYPE PythonCaller_6_OUTPUT_1_+X2ZgWK85CU=
+FACTORY_DEF * TeeFactory    FACTORY_NAME "PythonCaller_6_OUTPUT_0_+X2ZgWK85CU= -> OEREB.EIGENTUMSBESCHRAENKUNG Correlator"    INPUT FEATURE_TYPE PythonCaller_6_OUTPUT_0_+X2ZgWK85CU=    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 1       @Transform(FME_GENERIC,ORACLE8I_DB) "@EvaluateExpression(ATTR_CREATE_EXPR_PROPAGATE_MISSING,EIB_LIEFEREINHEIT,$(LIEFEREINHEIT$encode),RES_ID,$(RECHTSSTATUS$encode),THE_ID,$(THEMA$encode), ATTR_SET)"       @SupplyAttributes(ENCODED,__wb_out_feat_type__,OEREB.EIGENTUMSBESCHRAENKUNG)
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * TeeFactory    FACTORY_NAME "UUIDGenerator_4_OUTPUT_2_lgHBjcvsH0I= -> OEREB.HINVOR Correlator"    INPUT FEATURE_TYPE UUIDGenerator_4_OUTPUT_2_lgHBjcvsH0I=    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 1       @Transform(FME_GENERIC,ORACLE8I_DB) "@EvaluateExpression(ATTR_CREATE_EXPR_PROPAGATE_MISSING,HIV_LIEFEREINHEIT,$(LIEFEREINHEIT$encode), ATTR_SET)"       @SupplyAttributes(ENCODED,__wb_out_feat_type__,OEREB.HINVOR)
-# -------------------------------------------------------------------------
-
-FACTORY_DEF * TeeFactory    FACTORY_NAME "PythonCaller_6_OUTPUT_1_+X2ZgWK85CU= -> OEREB.EIGENTUMSBESCHRAENKUNG Correlator"    INPUT FEATURE_TYPE PythonCaller_6_OUTPUT_1_+X2ZgWK85CU=    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 1       @Transform(FME_GENERIC,ORACLE8I_DB) "@EvaluateExpression(ATTR_CREATE_EXPR_PROPAGATE_MISSING,EIB_LIEFEREINHEIT,$(LIEFEREINHEIT$encode),RES_ID,$(RECHTSSTATUS$encode),THE_ID,$(THEMA$encode), ATTR_SET)"       @SupplyAttributes(ENCODED,__wb_out_feat_type__,OEREB.EIGENTUMSBESCHRAENKUNG)
+FACTORY_DEF * TeeFactory    FACTORY_NAME "TimeStamper_OUTPUT_0_5dlRXe2oKbc= -> OEREB.VORSCHRIFT Correlator"    INPUT FEATURE_TYPE TimeStamper_OUTPUT_0_5dlRXe2oKbc=    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 1       @Transform(FME_GENERIC,ORACLE8I_DB) "@EvaluateExpression(ATTR_CREATE_EXPR_PROPAGATE_MISSING,VOR_LIEFEREINHEIT,$(LIEFEREINHEIT$encode),RES_ID,$(RECHTSSTATUS$encode), ATTR_SET)"       @SupplyAttributes(ENCODED,__wb_out_feat_type__,OEREB.VORSCHRIFT)
 # -------------------------------------------------------------------------
 
 FACTORY_DEF * TeeFactory    FACTORY_NAME "AttributeCreator_2_OUTPUT_0_KpUyI6tMDVI= -> OEREB.VORSCHRIFT Correlator"    INPUT FEATURE_TYPE AttributeCreator_2_OUTPUT_0_KpUyI6tMDVI=    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 1       @Transform(FME_GENERIC,ORACLE8I_DB) "@EvaluateExpression(ATTR_CREATE_EXPR_PROPAGATE_MISSING,VOR_LIEFEREINHEIT,$(LIEFEREINHEIT$encode),RES_ID,$(RECHTSSTATUS$encode), ATTR_SET)"       @SupplyAttributes(ENCODED,__wb_out_feat_type__,OEREB.VORSCHRIFT)
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * TeeFactory    FACTORY_NAME "TimeStamper_OUTPUT_1_5dlRXe2oKbc= -> OEREB.VORSCHRIFT Correlator"    INPUT FEATURE_TYPE TimeStamper_OUTPUT_1_5dlRXe2oKbc=    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 1       @Transform(FME_GENERIC,ORACLE8I_DB) "@EvaluateExpression(ATTR_CREATE_EXPR_PROPAGATE_MISSING,VOR_LIEFEREINHEIT,$(LIEFEREINHEIT$encode),RES_ID,$(RECHTSSTATUS$encode), ATTR_SET)"       @SupplyAttributes(ENCODED,__wb_out_feat_type__,OEREB.VORSCHRIFT)
-# -------------------------------------------------------------------------
-
-FACTORY_DEF * TeeFactory    FACTORY_NAME "DARSTELLUNGSDIENST_2_0ie7px+XmBo= -> OEREB.DARSTELLUNGSDIENST Correlator"    INPUT FEATURE_TYPE DARSTELLUNGSDIENST_2_0ie7px+XmBo=    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 1       @Transform(FME_GENERIC,ORACLE8I_DB) "@EvaluateExpression(ATTR_CREATE_EXPR_PROPAGATE_MISSING,DAR_LIEFEREINHEIT,$(LIEFEREINHEIT$encode), ATTR_SET)"       @SupplyAttributes(ENCODED,__wb_out_feat_type__,OEREB.DARSTELLUNGSDIENST)
+FACTORY_DEF * TeeFactory    FACTORY_NAME "StringConcatenator_4_OUTPUT_1_AQCxNSkKjQs= -> OEREB.DARSTELLUNGSDIENST Correlator"    INPUT FEATURE_TYPE StringConcatenator_4_OUTPUT_1_AQCxNSkKjQs=    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 1       @Transform(FME_GENERIC,ORACLE8I_DB) "@EvaluateExpression(ATTR_CREATE_EXPR_PROPAGATE_MISSING,DAR_LIEFEREINHEIT,$(LIEFEREINHEIT$encode), ATTR_SET)"       @SupplyAttributes(ENCODED,__wb_out_feat_type__,OEREB.DARSTELLUNGSDIENST)
 # -------------------------------------------------------------------------
 
 FACTORY_DEF * TeeFactory    FACTORY_NAME "UUIDGenerator_5_OUTPUT_0_tPxX3NkWeU4= -> OEREB.HINWEIDOK Correlator"    INPUT FEATURE_TYPE UUIDGenerator_5_OUTPUT_0_tPxX3NkWeU4=    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 1       @Transform(FME_GENERIC,ORACLE8I_DB) "@EvaluateExpression(ATTR_CREATE_EXPR_PROPAGATE_MISSING,HWD_LIEFEREINHEIT,$(LIEFEREINHEIT$encode), ATTR_SET)"       @SupplyAttributes(ENCODED,__wb_out_feat_type__,OEREB.HINWEIDOK)
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * TeeFactory    FACTORY_NAME "AMT_1_qXySqpxJk6s= -> OEREB.AMT Correlator"    INPUT FEATURE_TYPE AMT_1_qXySqpxJk6s=    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 1       @Transform(FME_GENERIC,ORACLE8I_DB) "@EvaluateExpression(ATTR_CREATE_EXPR_PROPAGATE_MISSING,AMT_LIEFEREINHEIT,$(LIEFEREINHEIT$encode), ATTR_SET)"       @SupplyAttributes(ENCODED,__wb_out_feat_type__,OEREB.AMT)
+FACTORY_DEF * TeeFactory    FACTORY_NAME "AMT_0_qXySqpxJk6s= -> OEREB.AMT Correlator"    INPUT FEATURE_TYPE AMT_0_qXySqpxJk6s=    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 1       @Transform(FME_GENERIC,ORACLE8I_DB) "@EvaluateExpression(ATTR_CREATE_EXPR_PROPAGATE_MISSING,AMT_LIEFEREINHEIT,$(LIEFEREINHEIT$encode), ATTR_SET)"       @SupplyAttributes(ENCODED,__wb_out_feat_type__,OEREB.AMT)
 # -------------------------------------------------------------------------
 
 FACTORY_DEF * TeeFactory    FACTORY_NAME "UUIDGenerator_5_OUTPUT_1_tPxX3NkWeU4= -> OEREB2.HINWEIDOK Correlator"    INPUT FEATURE_TYPE UUIDGenerator_5_OUTPUT_1_tPxX3NkWeU4=    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 3       @Transform(FME_GENERIC,ORACLE8I_DB) "@EvaluateExpression(ATTR_CREATE_EXPR_PROPAGATE_MISSING,HWD_LIEFEREINHEIT,$(LIEFEREINHEIT$encode), ATTR_SET)"       @SupplyAttributes(ENCODED,__wb_out_feat_type__,OEREB2.HINWEIDOK)
@@ -6446,25 +6512,25 @@ FACTORY_DEF * TeeFactory    FACTORY_NAME "UUIDGenerator_5_OUTPUT_1_tPxX3NkWeU4= 
 FACTORY_DEF * TeeFactory    FACTORY_NAME "AMT_2_qXySqpxJk6s= -> OEREB2.AMT Correlator"    INPUT FEATURE_TYPE AMT_2_qXySqpxJk6s=    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 3       @Transform(FME_GENERIC,ORACLE8I_DB) "@EvaluateExpression(ATTR_CREATE_EXPR_PROPAGATE_MISSING,AMT_LIEFEREINHEIT,$(LIEFEREINHEIT$encode), ATTR_SET)"       @SupplyAttributes(ENCODED,__wb_out_feat_type__,OEREB2.AMT)
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * TeeFactory    FACTORY_NAME "UUIDGenerator_4_OUTPUT_1_lgHBjcvsH0I= -> OEREB2.HINVOR Correlator"    INPUT FEATURE_TYPE UUIDGenerator_4_OUTPUT_1_lgHBjcvsH0I=    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 3       @Transform(FME_GENERIC,ORACLE8I_DB) "@EvaluateExpression(ATTR_CREATE_EXPR_PROPAGATE_MISSING,HIV_LIEFEREINHEIT,$(LIEFEREINHEIT$encode), ATTR_SET)"       @SupplyAttributes(ENCODED,__wb_out_feat_type__,OEREB2.HINVOR)
+FACTORY_DEF * TeeFactory    FACTORY_NAME "UUIDGenerator_4_OUTPUT_2_lgHBjcvsH0I= -> OEREB2.HINVOR Correlator"    INPUT FEATURE_TYPE UUIDGenerator_4_OUTPUT_2_lgHBjcvsH0I=    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 3       @Transform(FME_GENERIC,ORACLE8I_DB) "@EvaluateExpression(ATTR_CREATE_EXPR_PROPAGATE_MISSING,HIV_LIEFEREINHEIT,$(LIEFEREINHEIT$encode), ATTR_SET)"       @SupplyAttributes(ENCODED,__wb_out_feat_type__,OEREB2.HINVOR)
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * TeeFactory    FACTORY_NAME "PythonCaller_6_OUTPUT_0_+X2ZgWK85CU= -> OEREB2.EIGENTUMSBESCHRAENKUNG Correlator"    INPUT FEATURE_TYPE PythonCaller_6_OUTPUT_0_+X2ZgWK85CU=    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 3       @Transform(FME_GENERIC,ORACLE8I_DB) "@EvaluateExpression(ATTR_CREATE_EXPR_PROPAGATE_MISSING,EIB_LIEFEREINHEIT,$(LIEFEREINHEIT$encode),RES_ID,$(RECHTSSTATUS$encode),STH_ID,$(SUBTHEMA$encode), ATTR_SET)"       @SupplyAttributes(ENCODED,__wb_out_feat_type__,OEREB2.EIGENTUMSBESCHRAENKUNG)
+FACTORY_DEF * TeeFactory    FACTORY_NAME "PythonCaller_6_OUTPUT_1_+X2ZgWK85CU= -> OEREB2.EIGENTUMSBESCHRAENKUNG Correlator"    INPUT FEATURE_TYPE PythonCaller_6_OUTPUT_1_+X2ZgWK85CU=    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 3       @Transform(FME_GENERIC,ORACLE8I_DB) "@EvaluateExpression(ATTR_CREATE_EXPR_PROPAGATE_MISSING,EIB_LIEFEREINHEIT,$(LIEFEREINHEIT$encode),RES_ID,$(RECHTSSTATUS$encode),STH_ID,$(SUBTHEMA$encode), ATTR_SET)"       @SupplyAttributes(ENCODED,__wb_out_feat_type__,OEREB2.EIGENTUMSBESCHRAENKUNG)
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * TeeFactory    FACTORY_NAME "DARSTELLUNGSDIENST_1_0ie7px+XmBo= -> OEREB2.DARSTELLUNGSDIENST Correlator"    INPUT FEATURE_TYPE DARSTELLUNGSDIENST_1_0ie7px+XmBo=    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 3       @Transform(FME_GENERIC,ORACLE8I_DB) "@EvaluateExpression(ATTR_CREATE_EXPR_PROPAGATE_MISSING,DAR_LIEFEREINHEIT,$(LIEFEREINHEIT$encode), ATTR_SET)"       @SupplyAttributes(ENCODED,__wb_out_feat_type__,OEREB2.DARSTELLUNGSDIENST)
+FACTORY_DEF * TeeFactory    FACTORY_NAME "StringConcatenator_4_OUTPUT_0_AQCxNSkKjQs= -> OEREB2.DARSTELLUNGSDIENST Correlator"    INPUT FEATURE_TYPE StringConcatenator_4_OUTPUT_0_AQCxNSkKjQs=    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 3       @Transform(FME_GENERIC,ORACLE8I_DB) "@EvaluateExpression(ATTR_CREATE_EXPR_PROPAGATE_MISSING,DAR_LIEFEREINHEIT,$(LIEFEREINHEIT$encode), ATTR_SET)"       @SupplyAttributes(ENCODED,__wb_out_feat_type__,OEREB2.DARSTELLUNGSDIENST)
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME "TimeStamper_OUTPUT_1_5dlRXe2oKbc= -> OEREB2.VORSCHRIFT Correlator"    INPUT FEATURE_TYPE TimeStamper_OUTPUT_1_5dlRXe2oKbc=    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 3       @Transform(FME_GENERIC,ORACLE8I_DB) "@EvaluateExpression(ATTR_CREATE_EXPR_PROPAGATE_MISSING,VOR_LIEFEREINHEIT,$(LIEFEREINHEIT$encode),RES_ID,$(RECHTSSTATUS$encode), ATTR_SET)"       @SupplyAttributes(ENCODED,__wb_out_feat_type__,OEREB2.VORSCHRIFT)
 # -------------------------------------------------------------------------
 
 FACTORY_DEF * TeeFactory    FACTORY_NAME "AttributeCreator_2_OUTPUT_1_KpUyI6tMDVI= -> OEREB2.VORSCHRIFT Correlator"    INPUT FEATURE_TYPE AttributeCreator_2_OUTPUT_1_KpUyI6tMDVI=    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 3       @Transform(FME_GENERIC,ORACLE8I_DB) "@EvaluateExpression(ATTR_CREATE_EXPR_PROPAGATE_MISSING,VOR_LIEFEREINHEIT,$(LIEFEREINHEIT$encode),RES_ID,$(RECHTSSTATUS$encode), ATTR_SET)"       @SupplyAttributes(ENCODED,__wb_out_feat_type__,OEREB2.VORSCHRIFT)
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * TeeFactory    FACTORY_NAME "TimeStamper_OUTPUT_0_5dlRXe2oKbc= -> OEREB2.VORSCHRIFT Correlator"    INPUT FEATURE_TYPE TimeStamper_OUTPUT_0_5dlRXe2oKbc=    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 3       @Transform(FME_GENERIC,ORACLE8I_DB) "@EvaluateExpression(ATTR_CREATE_EXPR_PROPAGATE_MISSING,VOR_LIEFEREINHEIT,$(LIEFEREINHEIT$encode),RES_ID,$(RECHTSSTATUS$encode), ATTR_SET)"       @SupplyAttributes(ENCODED,__wb_out_feat_type__,OEREB2.VORSCHRIFT)
+FACTORY_DEF * TeeFactory    FACTORY_NAME "PythonCaller_4_OUTPUT_2_kBV+D6s4Mj0= -> OEREB.FLAECHE Correlator"    INPUT FEATURE_TYPE PythonCaller_4_OUTPUT_2_kBV+D6s4Mj0=    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 0       @Transform(FME_GENERIC,GEODATABASE_SDE) "@EvaluateExpression(ATTR_CREATE_EXPR_PROPAGATE_MISSING,FLA_LIEFEREINHEIT,$(LIEFEREINHEIT$encode),RES_ID,$(RECHTSSTATUS$encode), ATTR_SET)"       @SupplyAttributes(ENCODED,__wb_out_feat_type__,OEREB.FLAECHE)
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * TeeFactory    FACTORY_NAME "PythonCaller_4_OUTPUT_0_kBV+D6s4Mj0= -> OEREB.FLAECHE Correlator"    INPUT FEATURE_TYPE PythonCaller_4_OUTPUT_0_kBV+D6s4Mj0=    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 0       @Transform(FME_GENERIC,GEODATABASE_SDE) "@EvaluateExpression(ATTR_CREATE_EXPR_PROPAGATE_MISSING,FLA_LIEFEREINHEIT,$(LIEFEREINHEIT$encode),RES_ID,$(RECHTSSTATUS$encode), ATTR_SET)"       @SupplyAttributes(ENCODED,__wb_out_feat_type__,OEREB.FLAECHE)
-# -------------------------------------------------------------------------
-
-FACTORY_DEF * TeeFactory    FACTORY_NAME "PythonCaller_4_OUTPUT_3_kBV+D6s4Mj0= -> OEREB2.FLAECHE Correlator"    INPUT FEATURE_TYPE PythonCaller_4_OUTPUT_3_kBV+D6s4Mj0=    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 2       @Transform(FME_GENERIC,GEODATABASE_SDE) "@EvaluateExpression(ATTR_CREATE_EXPR_PROPAGATE_MISSING,FLA_LIEFEREINHEIT,$(LIEFEREINHEIT$encode),RES_ID,$(RECHTSSTATUS$encode), ATTR_SET)"       @SupplyAttributes(ENCODED,__wb_out_feat_type__,OEREB2.FLAECHE)
+FACTORY_DEF * TeeFactory    FACTORY_NAME "PythonCaller_4_OUTPUT_0_kBV+D6s4Mj0= -> OEREB2.FLAECHE Correlator"    INPUT FEATURE_TYPE PythonCaller_4_OUTPUT_0_kBV+D6s4Mj0=    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 2       @Transform(FME_GENERIC,GEODATABASE_SDE) "@EvaluateExpression(ATTR_CREATE_EXPR_PROPAGATE_MISSING,FLA_LIEFEREINHEIT,$(LIEFEREINHEIT$encode),RES_ID,$(RECHTSSTATUS$encode), ATTR_SET)"       @SupplyAttributes(ENCODED,__wb_out_feat_type__,OEREB2.FLAECHE)
 # -------------------------------------------------------------------------
 
 FACTORY_DEF * TestFactory   FACTORY_NAME "Final Output Feature Type Router"   INPUT FEATURE_TYPE __WB_BYPASS_TERMINATOR__     @SupplyAttributes(__wb_out_feat_type__,__WB_BYPASS_TERMINATOR__)     @Tcl2("FME_StatMessage 818062 {@Value(_wb_termination_message) (@Value(_wb_termination_xformer))} 818063")   INPUT FEATURE_TYPE *   TEST @Value(__wb_out_feat_type__) != ""   OUTPUT PASSED FEATURE_TYPE *     @FeatureType(@Value(__wb_out_feat_type__))   OUTPUT FAILED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")

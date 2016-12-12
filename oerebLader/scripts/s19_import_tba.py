@@ -20,9 +20,11 @@ def run(config):
     excel_darstellungsdienst_filename = "DARSTELLUNGSDIENST_" + unicode(config['LIEFEREINHEIT']['id']) + ".xlsx"
     excel_darstellungsdienst_file = os.path.join(tba_path, excel_darstellungsdienst_filename)
     if config['GENERAL']['files_be_ch_baseurl'].endswith("/"):
-        legend_baseurl = config['GENERAL']['files_be_ch_baseurl'] + "legenden/TBA/baulinie_kantonsstrasse.png"
+        legend_fullurl = config['GENERAL']['files_be_ch_baseurl'] + "legenden/TBA/baulinie_kantonsstrasse.png"
+        legend_baseurl = config['GENERAL']['files_be_ch_baseurl'] + "legenden/TBA/"
     else:
-        legend_baseurl = config['GENERAL']['files_be_ch_baseurl'] + "/legenden/TBA/baulinie_kantonsstrasse.png"
+        legend_fullurl = config['GENERAL']['files_be_ch_baseurl'] + "/legenden/TBA/baulinie_kantonsstrasse.png"
+        legend_baseurl = config['GENERAL']['files_be_ch_baseurl'] + "/legenden/TBA/"
 
     runner = fmeobjects.FMEWorkspaceRunner()
     
@@ -43,6 +45,7 @@ def run(config):
         'TBA_PASSWORD': str(config['TBA_WORK']['password']),
         'EXCEL_AMT': str(excel_amt_file),
         'EXCEL_DARSTELLUNGSDIENST': str(excel_darstellungsdienst_file),
+        'LEGEND_FULLURL': str(legend_fullurl),
         'LEGEND_BASEURL': str(legend_baseurl),
         'LIEFEREINHEIT': str(config['LIEFEREINHEIT']['id']),
         'LOGFILE': str(fme_logfile)
