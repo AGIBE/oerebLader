@@ -32,6 +32,7 @@ def getToken(username, password, tokenURL):
     return token
 
 def getWMSLayers(wms_rest_url, bfsnr):
+    result_layers = "keine Layer mit gemeindespezifischer Darstellung gefunden."
     req = requests.get(wms_rest_url)
     json_result = req.json()
     layers = []
@@ -39,8 +40,11 @@ def getWMSLayers(wms_rest_url, bfsnr):
     for layer in json_result['layers']:
         if layer['name'].endswith("_" + unicode(bfsnr)):
             layers.append(layer['name'])
-            
-    return ",".join(layers)
+    
+    if len(layers) > 0:
+            result_layers = ",".join(layers) 
+    
+    return result_layers
 
 def run(config):
     logger.info("Script " +  os.path.basename(__file__) + " wird ausgeführt.")
