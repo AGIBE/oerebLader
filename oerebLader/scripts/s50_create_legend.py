@@ -13,7 +13,7 @@ import cx_Oracle
 logger = logging.getLogger('oerebLaderLogger')
 
 def get_legend_entries(config):
-    legend_sql = "select distinct CAST(eib_aussage_de AS NVARCHAR2(1000)) aussage_de, eib_legendesymbol_de, CAST(eib_aussage_fr AS NVARCHAR2(1000)) aussage_fr, eib_legendesymbol_fr, eib_liefereinheit, eib_sort from EIGENTUMSBESCHRAENKUNG where eib_liefereinheit=" + unicode(config['LIEFEREINHEIT']['id']) + " order by eib_sort"
+    legend_sql = "select distinct CAST(eib_aussage_de AS NVARCHAR2(1000)) aussage_de, eib_legendesymbol_de, CAST(eib_aussage_fr AS NVARCHAR2(1000)) aussage_fr, eib_legendesymbol_fr, eib_liefereinheit, eib_sort from EIGENTUMSBESCHRAENKUNG where eib_liefereinheit=" + unicode(config['LIEFEREINHEIT']['id']) + " order by eib_sort asc, aussage_de asc"
     legend_list = []
     
     legends = oerebLader.helpers.sql_helper.readSQL(config['OEREB2_WORK']['connection_string'], legend_sql)
