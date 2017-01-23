@@ -21,7 +21,7 @@ def run(ticketnr):
     oerebLader.scripts.s26_initialize.run(config, ticketnr)
     oerebLader.scripts.s1_delete_npl.run(config)
     oerebLader.scripts.s4_delete_transfer.run(config)
-    oerebLader.scripts.s52_import_nupla_bern(config)
+    oerebLader.scripts.s52_import_nupla_bern.run(config)
     oerebLader.scripts.s17_import_npl.run(config)
     oerebLader.scripts.s9_derive_npl_transfer.run(config)
     oerebLader.scripts.s50_create_legend.run(config)
