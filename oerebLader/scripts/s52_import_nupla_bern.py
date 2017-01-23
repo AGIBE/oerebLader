@@ -18,14 +18,21 @@ def run(config):
     bfsnr = config['LIEFEREINHEIT']['bfsnr']
     itf_file = os.path.join(config['LIEFEREINHEIT']['gpr_source'], unicode(bfsnr), unicode(bfsnr) + ".itf")
     excel_file_amt = os.path.join(config['LIEFEREINHEIT']['gpr_source'], unicode(bfsnr), "AMT_" + unicode(bfsnr) + ".xlsx")
-    excel_file_darstellung = os.path.join(config['LIEFEREINHEIT']['gpr_source'], unicode(bfsnr), "DARSTELLUNG_" + unicode(bfsnr) + ".xlsx")
+    excel_file_darstellung = os.path.join(config['LIEFEREINHEIT']['gpr_source'], unicode(bfsnr), "DARSTELLUNGSDIENST_" + unicode(bfsnr) + ".xlsx")
     input_rv_dir = os.path.join(config['LIEFEREINHEIT']['gpr_source'], unicode(bfsnr), "rv")
+    input_legend_dir = os.path.join(config['LIEFEREINHEIT']['gpr_source'], unicode(bfsnr), "legenden")
     output_rv_dir = os.path.join(config['GENERAL']['files_be_ch_baseunc'], unicode(config['LIEFEREINHEIT']['id']), unicode(config['ticketnr']))
     if config['GENERAL']['files_be_ch_baseurl'].endswith("/"):
         output_rv_url = config['GENERAL']['files_be_ch_baseurl'] + unicode(config['LIEFEREINHEIT']['id']) + "/" + unicode(config['ticketnr']) + "/"
     else:
         output_rv_url = config['GENERAL']['files_be_ch_baseurl'] + "/" + unicode(config['LIEFEREINHEIT']['id']) + "/" + unicode(config['ticketnr']) + "/"
-    
+    legend_basedir = os.path.join(config['GENERAL']['files_be_ch_baseunc'], unicode(config['LIEFEREINHEIT']['id']), unicode(config['ticketnr']), "legenden")
+    if not os.path.exists(legend_basedir):
+        os.makedirs(legend_basedir)
+    if config['GENERAL']['files_be_ch_baseurl'].endswith("/"):
+        legend_baseurl = config['GENERAL']['files_be_ch_baseurl'] + unicode(config['LIEFEREINHEIT']['id']) + "/" + unicode(config['ticketnr']) + "/legenden/"
+    else:
+        legend_baseurl = config['GENERAL']['files_be_ch_baseurl'] + "/" + unicode(config['LIEFEREINHEIT']['id']) + "/" + unicode(config['ticketnr']) + "/legenden/"    
     # Der FMEWorkspaceRunner akzeptiert keine Unicode-Strings!
     # Daher müssen workspace und parameters umgewandelt werden!
     #TODO: Parameter für Sprache der Gemeinde einbauen und GEGR entsprechend abfüllen
@@ -44,6 +51,9 @@ def run(config):
         'ITF_FILE': str(itf_file),
         'LIEFEREINHEIT': str(config['LIEFEREINHEIT']['id']),
         'NPL_WMS_BASE': str(config['GENERAL']['npl_wms_base']),
+        'LEGEND_BASEURL': str(legend_baseurl),
+        'LEGEND_BASEDIR': str(legend_basedir),
+        'LEGEND_INPUTDIR': str(input_legend_dir),
         'INPUT_RV_DIR': str(input_rv_dir),
         'OUTPUT_RV_DIR': str(output_rv_dir),
         'OUTPUT_RV_URL': str(output_rv_url),
