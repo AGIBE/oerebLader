@@ -15,7 +15,7 @@
 #    
 #! PASSWORD=""
 #! ATTR_TYPE_ENCODING="SDF"
-#! VIEW_POSITION="-1365 -8595"
+#! VIEW_POSITION="-596 -5010"
 #! SHOW_INFO_NODES="true"
 #! FME_STROKE_MAX_DEVIATION="0"
 #! BEGIN_PYTHON=""
@@ -25,7 +25,7 @@
 #! MAX_LOG_FEATURES="200"
 #! END_TCL=""
 #! FME_BUILD_NUM="14433"
-#! ZOOM_SCALE="100"
+#! ZOOM_SCALE="90"
 #! CATEGORY=""
 #! REDIRECT_TERMINATORS="NONE"
 #! LEGAL_TERMS_CONDITIONS=""
@@ -33,13 +33,13 @@
 #! USAGE=""
 #! END_PYTHON=""
 #! HISTORY=""
-#! FME_DOCUMENT_PRIORGUID="539d30ee-3141-44d1-aff1-077d27dcf103,eee0f167-b194-4a23-b592-a7ca93510f86,d25f2455-b4a7-4d67-b376-e2f983ac0184,ce950cc6-2ee4-4452-a366-1da89ad71b9a,e7a5257c-ab6a-446f-bef9-c4e41a637810,27b51821-0b21-4121-92cd-03a0655bc785,73c58f79-6153-4baa-a87c-bc3273804013"
-#! DOC_TOP_LEFT="-1333 -8932"
+#! FME_DOCUMENT_PRIORGUID="539d30ee-3141-44d1-aff1-077d27dcf103,eee0f167-b194-4a23-b592-a7ca93510f86,d25f2455-b4a7-4d67-b376-e2f983ac0184,ce950cc6-2ee4-4452-a366-1da89ad71b9a,e7a5257c-ab6a-446f-bef9-c4e41a637810,27b51821-0b21-4121-92cd-03a0655bc785,73c58f79-6153-4baa-a87c-bc3273804013,640753fe-c969-4125-b6d7-792a1a65d9b0"
+#! DOC_TOP_LEFT="-1367 -9934"
 #! REQUIREMENTS_KEYWORD=""
 #! SOURCE_ROUTING_FILE=""
 #! DESTINATION_ROUTING_FILE=""
 #! DESTINATION="NONE"
-#! LAST_SAVE_DATE="2017-01-23T16:22:49"
+#! LAST_SAVE_DATE="2017-01-25T15:01:40"
 #! FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
 #! WORKSPACE_VERSION="1"
 #! SOURCE="NONE"
@@ -49,8 +49,8 @@
 #! LOG_FILE="$(LOGFILE)"
 #! REQUIREMENTS=""
 #! BEGIN_TCL=""
-#! DOC_EXTENTS="4831 9480"
-#! FME_DOCUMENT_GUID="640753fe-c969-4125-b6d7-792a1a65d9b0"
+#! DOC_EXTENTS="6110 10482"
+#! FME_DOCUMENT_GUID="42a542f2-fc85-4f81-91de-a3f896c536dd"
 #! SHOW_ANNOTATIONS="true"
 #! IGNORE_READER_FAILURE="No"
 #! WARN_INVALID_XFORM_PARAM="Yes"
@@ -988,7 +988,7 @@
 #! IS_EDITABLE="false"
 #! IDENTIFIER="8"
 #! FEAT_GEOMTYPE="geodb_point"
-#! POSITION="-1265 -7139"
+#! POSITION="-1360 -7844"
 #! ORDER="5e+014"
 #! COLLAPSED="true"
 #! KEYWORD="GEODATABASE_SDE_1"
@@ -1156,7 +1156,7 @@
 #! IS_EDITABLE="true"
 #! IDENTIFIER="12"
 #! FEAT_GEOMTYPE="geodb_polyline"
-#! POSITION="2555 -7352"
+#! POSITION="2575 -8082"
 #! ORDER="5e+014"
 #! COLLAPSED="false"
 #! KEYWORD="GEODATABASE_SDE_2"
@@ -1198,7 +1198,7 @@
 #! IS_EDITABLE="true"
 #! IDENTIFIER="13"
 #! FEAT_GEOMTYPE="geodb_polygon"
-#! POSITION="3488 336"
+#! POSITION="4742 -75"
 #! ORDER="5e+014"
 #! COLLAPSED="true"
 #! KEYWORD="GEODATABASE_SDE_2"
@@ -1244,7 +1244,7 @@
 #! IS_EDITABLE="true"
 #! IDENTIFIER="14"
 #! FEAT_GEOMTYPE="geodb_polygon"
-#! POSITION="3491 9"
+#! POSITION="2776 -336"
 #! ORDER="5e+014"
 #! COLLAPSED="true"
 #! KEYWORD="GEODATABASE_SDE_2"
@@ -1333,7 +1333,7 @@
 #! IS_EDITABLE="true"
 #! IDENTIFIER="16"
 #! FEAT_GEOMTYPE="geodb_polyline"
-#! POSITION="2579 -7976"
+#! POSITION="2599 -8706"
 #! ORDER="5e+014"
 #! COLLAPSED="false"
 #! KEYWORD="GEODATABASE_SDE_2"
@@ -1376,7 +1376,7 @@
 #! IS_EDITABLE="true"
 #! IDENTIFIER="17"
 #! FEAT_GEOMTYPE="geodb_point"
-#! POSITION="890 -7190"
+#! POSITION="794 -7895"
 #! ORDER="5e+014"
 #! COLLAPSED="false"
 #! KEYWORD="GEODATABASE_SDE_2"
@@ -1462,7 +1462,7 @@
 #! IS_EDITABLE="true"
 #! IDENTIFIER="19"
 #! FEAT_GEOMTYPE="geodb_polyline"
-#! POSITION="2525 -5723"
+#! POSITION="3150 -6463"
 #! ORDER="5e+014"
 #! COLLAPSED="false"
 #! KEYWORD="GEODATABASE_SDE_2"
@@ -1508,7 +1508,7 @@
 #! IS_EDITABLE="true"
 #! IDENTIFIER="20"
 #! FEAT_GEOMTYPE="geodb_polygon"
-#! POSITION="2477 -2363"
+#! POSITION="2510 -2359"
 #! ORDER="5e+014"
 #! COLLAPSED="false"
 #! KEYWORD="GEODATABASE_SDE_2"
@@ -1595,16 +1595,14 @@
 #! IS_EDITABLE="true"
 #! IDENTIFIER="22"
 #! FEAT_GEOMTYPE="geodb_polygon"
-#! POSITION="2363 -1021"
+#! POSITION="2501 -1645"
 #! ORDER="5e+014"
-#! COLLAPSED="true"
+#! COLLAPSED="false"
 #! KEYWORD="GEODATABASE_SDE_2"
-#! ENABLED="false"
+#! ENABLED="true"
 #! FANOUT="No"
 #! FANOUT_ID_ATTR=""
 #! >
-#! <FEAT_ATTRIBUTE ATTR_NAME="geodb_oid" ATTR_TYPE="integer" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#! <FEAT_ATTRIBUTE ATTR_NAME="OBJECTID" ATTR_TYPE="integer" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #! <FEAT_ATTRIBUTE ATTR_NAME="BFSNR" ATTR_TYPE="smallint" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #! <FEAT_ATTRIBUTE ATTR_NAME="NAME" ATTR_TYPE="char(31)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #! <FEAT_ATTRIBUTE ATTR_NAME="REL_ID" ATTR_TYPE="char(100)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
@@ -1612,8 +1610,6 @@
 #! <FEAT_ATTRIBUTE ATTR_NAME="KANTART" ATTR_TYPE="char(100)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #! <FEAT_ATTRIBUTE ATTR_NAME="GUELTIGBIS" ATTR_TYPE="date" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #! <FEAT_ATTRIBUTE ATTR_NAME="BESCHRIEB" ATTR_TYPE="char(80)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#! <FEAT_ATTRIBUTE ATTR_NAME="SHAPE.AREA" ATTR_TYPE="double" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#! <FEAT_ATTRIBUTE ATTR_NAME="SHAPE.LEN" ATTR_TYPE="double" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #! <DEFLINE_PARM PARM_NAME="GEODB_MEASURES_ORIGIN" PARM_VALUE=""/>
 #! <DEFLINE_PARM PARM_NAME="GEODB_DROP_TABLE" PARM_VALUE="NO"/>
 #! <DEFLINE_PARM PARM_NAME="GEODB_AVG_NUM_POINTS" PARM_VALUE=""/>
@@ -1728,7 +1724,7 @@
 #! IS_EDITABLE="true"
 #! IDENTIFIER="25"
 #! FEAT_GEOMTYPE="geodb_polyline"
-#! POSITION="2537 -6608"
+#! POSITION="2557 -7338"
 #! ORDER="5e+014"
 #! COLLAPSED="false"
 #! KEYWORD="GEODATABASE_SDE_2"
@@ -1817,7 +1813,7 @@
 #! IS_EDITABLE="true"
 #! IDENTIFIER="195"
 #! FEAT_GEOMTYPE="geodb_polyline"
-#! POSITION="-1223 -8261"
+#! POSITION="-1057 -9086"
 #! ORDER="5e+014"
 #! COLLAPSED="true"
 #! KEYWORD="GEODATABASE_SDE_1"
@@ -1843,7 +1839,7 @@
 #! IS_EDITABLE="true"
 #! IDENTIFIER="196"
 #! FEAT_GEOMTYPE="geodb_polygon"
-#! POSITION="-1226 -8597"
+#! POSITION="-1005 -9417"
 #! ORDER="5e+014"
 #! COLLAPSED="true"
 #! KEYWORD="GEODATABASE_SDE_1"
@@ -1882,7 +1878,7 @@
 #! IS_EDITABLE="true"
 #! IDENTIFIER="197"
 #! FEAT_GEOMTYPE="geodb_polygon"
-#! POSITION="-1211 -8918"
+#! POSITION="-1185 -9920"
 #! ORDER="5e+014"
 #! COLLAPSED="true"
 #! KEYWORD="GEODATABASE_SDE_1"
@@ -1932,7 +1928,7 @@
 #! IS_EDITABLE="true"
 #! IDENTIFIER="198"
 #! FEAT_GEOMTYPE="geodb_polyline"
-#! POSITION="131 -8291"
+#! POSITION="296 -9116"
 #! ORDER="5e+014"
 #! COLLAPSED="true"
 #! KEYWORD="GEODATABASE_SDE_2"
@@ -1971,9 +1967,9 @@
 #! IS_EDITABLE="true"
 #! IDENTIFIER="199"
 #! FEAT_GEOMTYPE="geodb_polygon"
-#! POSITION="146 -8594"
+#! POSITION="1821 -9513"
 #! ORDER="5e+014"
-#! COLLAPSED="true"
+#! COLLAPSED="false"
 #! KEYWORD="GEODATABASE_SDE_2"
 #! ENABLED="true"
 #! FANOUT="No"
@@ -2017,7 +2013,7 @@
 #! IS_EDITABLE="true"
 #! IDENTIFIER="201"
 #! FEAT_GEOMTYPE="geodb_polygon"
-#! POSITION="161 -8932"
+#! POSITION="186 -9934"
 #! ORDER="5e+014"
 #! COLLAPSED="true"
 #! KEYWORD="GEODATABASE_SDE_2"
@@ -2037,6 +2033,52 @@
 #! <FEAT_ATTRIBUTE ATTR_NAME="AZART" ATTR_TYPE="char(40)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #! <FEAT_ATTRIBUTE ATTR_NAME="NZTYP" ATTR_TYPE="char(100)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #! <FEAT_ATTRIBUTE ATTR_NAME="BKTYP" ATTR_TYPE="char(100)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <DEFLINE_PARM PARM_NAME="GEODB_MEASURES_ORIGIN" PARM_VALUE=""/>
+#! <DEFLINE_PARM PARM_NAME="GEODB_DROP_TABLE" PARM_VALUE="NO"/>
+#! <DEFLINE_PARM PARM_NAME="GEODB_AVG_NUM_POINTS" PARM_VALUE=""/>
+#! <DEFLINE_PARM PARM_NAME="GEODB_UPDATE_KEY_COLUMNS" PARM_VALUE=""/>
+#! <DEFLINE_PARM PARM_NAME="GEODB_MEASURES_SCALE" PARM_VALUE=""/>
+#! <DEFLINE_PARM PARM_NAME="GEODB_YORIGIN" PARM_VALUE=""/>
+#! <DEFLINE_PARM PARM_NAME="GEODB_OBJECT_ID_NAME" PARM_VALUE="OBJECTID"/>
+#! <DEFLINE_PARM PARM_NAME="GEODB_CONFIG_KEYWORD" PARM_VALUE="DEFAULTS"/>
+#! <DEFLINE_PARM PARM_NAME="GEODB_GRID{1}" PARM_VALUE=""/>
+#! <DEFLINE_PARM PARM_NAME="GEODB_XORIGIN" PARM_VALUE=""/>
+#! <DEFLINE_PARM PARM_NAME="GEODB_XYSCALE" PARM_VALUE=""/>
+#! <DEFLINE_PARM PARM_NAME="GEODB_ZSCALE" PARM_VALUE=""/>
+#! <DEFLINE_PARM PARM_NAME="GEODB_OBJECT_ID_ALIAS" PARM_VALUE="OBJECTID"/>
+#! <DEFLINE_PARM PARM_NAME="GEODB_ZORIGIN" PARM_VALUE=""/>
+#! <DEFLINE_PARM PARM_NAME="GEODB_SHAPE_NAME" PARM_VALUE="SHAPE"/>
+#! <DEFLINE_PARM PARM_NAME="GEODB_FEATURE_DATASET" PARM_VALUE=""/>
+#! <DEFLINE_PARM PARM_NAME="GEODB_HAS_MEASURES" PARM_VALUE=""/>
+#! <DEFLINE_PARM PARM_NAME="GEODB_ANNO_REFERENCE_SCALE" PARM_VALUE=""/>
+#! <DEFLINE_PARM PARM_NAME="GEODB_SHAPE_ALIAS" PARM_VALUE="SHAPE"/>
+#! <DEFLINE_PARM PARM_NAME="GEODB_HAS_Z_VALUES" PARM_VALUE=""/>
+#! <DEFLINE_PARM PARM_NAME="GEODB_TRUNCATE_TABLE" PARM_VALUE="NO"/>
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#! IS_SOURCE="false"
+#! NODE_NAME="GEODB.NPL_UEPROJ"
+#! IS_EDITABLE="true"
+#! IDENTIFIER="240"
+#! FEAT_GEOMTYPE="geodb_polyline"
+#! POSITION="3147 -5610"
+#! ORDER="5e+014"
+#! COLLAPSED="false"
+#! KEYWORD="GEODATABASE_SDE_2"
+#! ENABLED="true"
+#! FANOUT="No"
+#! FANOUT_ID_ATTR=""
+#! >
+#! <FEAT_ATTRIBUTE ATTR_NAME="BFSNR" ATTR_TYPE="smallint" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="NAME" ATTR_TYPE="char(31)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="REL_ID" ATTR_TYPE="char(100)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="VERBINDLKT" ATTR_TYPE="char(100)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="KANTART" ATTR_TYPE="char(100)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="LINIENABK" ATTR_TYPE="char(12)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="LINIENCODE" ATTR_TYPE="char(12)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="BESCHRIEB" ATTR_TYPE="char(80)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="GENEHMDAT" ATTR_TYPE="date" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="PLANBESCHR" ATTR_TYPE="char(30)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #! <DEFLINE_PARM PARM_NAME="GEODB_MEASURES_ORIGIN" PARM_VALUE=""/>
 #! <DEFLINE_PARM PARM_NAME="GEODB_DROP_TABLE" PARM_VALUE="NO"/>
 #! <DEFLINE_PARM PARM_NAME="GEODB_AVG_NUM_POINTS" PARM_VALUE=""/>
@@ -2112,12 +2154,12 @@
 #! <COMMENT
 #! IDENTIFIER="28"
 #! COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:11px; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;GEODB.NPL_GNGZ&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
-#! POSITION="3498 132"
+#! POSITION="2783 -207"
 #! ORDER="5e+014"
 #! FOLLOW_ANCHOR="true"
 #! INFO_NODE="false"
-#! TOP_LEFT="3498 132"
-#! BOTTOM_RIGHT="3498 132"
+#! TOP_LEFT="2783 -207"
+#! BOTTOM_RIGHT="2783 -207"
 #! COLOUR="1,1,0.784314,0.192157"
 #! SIZE_POLICY="8"
 #! COMMENT_TYPE="REGULAR"
@@ -2154,12 +2196,12 @@
 #! <COMMENT
 #! IDENTIFIER="47"
 #! COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:11px; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;AZ_ART mappen&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
-#! POSITION="2170 307"
+#! POSITION="1497 168"
 #! ORDER="5e+014"
 #! FOLLOW_ANCHOR="true"
 #! INFO_NODE="false"
-#! TOP_LEFT="2170 307"
-#! BOTTOM_RIGHT="2170 307"
+#! TOP_LEFT="1497 168"
+#! BOTTOM_RIGHT="1497 168"
 #! COLOUR="1,1,0.784314,0.192157"
 #! SIZE_POLICY="8"
 #! COMMENT_TYPE="REGULAR"
@@ -2182,12 +2224,12 @@
 #! <COMMENT
 #! IDENTIFIER="49"
 #! COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:11px; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;GEODB.NPL_GNGU&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
-#! POSITION="3489 462"
+#! POSITION="4743 50"
 #! ORDER="5e+014"
 #! FOLLOW_ANCHOR="true"
 #! INFO_NODE="false"
-#! TOP_LEFT="3489 462"
-#! BOTTOM_RIGHT="3489 462"
+#! TOP_LEFT="4743 50"
+#! BOTTOM_RIGHT="4743 50"
 #! COLOUR="1,1,0.784314,0.192157"
 #! SIZE_POLICY="8"
 #! COMMENT_TYPE="REGULAR"
@@ -2364,12 +2406,12 @@
 #! <COMMENT
 #! IDENTIFIER="99"
 #! COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:11px; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;KANTART UEUZ&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
-#! POSITION="1948 -2335"
+#! POSITION="1875 -2422"
 #! ORDER="5e+014"
 #! FOLLOW_ANCHOR="true"
 #! INFO_NODE="false"
-#! TOP_LEFT="1948 -2335"
-#! BOTTOM_RIGHT="1948 -2335"
+#! TOP_LEFT="1875 -2422"
+#! BOTTOM_RIGHT="1875 -2422"
 #! COLOUR="1,1,0.784314,0.192157"
 #! SIZE_POLICY="8"
 #! COMMENT_TYPE="REGULAR"
@@ -2504,12 +2546,12 @@
 #! <COMMENT
 #! IDENTIFIER="131"
 #! COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:11px; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;GEODB.NPL_UEUL&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
-#! POSITION="2526 -5596"
+#! POSITION="3151 -6336"
 #! ORDER="5e+014"
 #! FOLLOW_ANCHOR="true"
 #! INFO_NODE="false"
-#! TOP_LEFT="2526 -5596"
-#! BOTTOM_RIGHT="2526 -5596"
+#! TOP_LEFT="3151 -6336"
+#! BOTTOM_RIGHT="3151 -6336"
 #! COLOUR="1,1,0.784314,0.192157"
 #! SIZE_POLICY="8"
 #! COMMENT_TYPE="REGULAR"
@@ -2546,12 +2588,12 @@
 #! <COMMENT
 #! IDENTIFIER="142"
 #! COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:11px; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;KANTART&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
-#! POSITION="2002 -5784"
+#! POSITION="1838 -6334"
 #! ORDER="5e+014"
 #! FOLLOW_ANCHOR="true"
 #! INFO_NODE="false"
-#! TOP_LEFT="2002 -5784"
-#! BOTTOM_RIGHT="2002 -5784"
+#! TOP_LEFT="1838 -6334"
+#! BOTTOM_RIGHT="1838 -6334"
 #! COLOUR="1,1,0.784314,0.192157"
 #! SIZE_POLICY="8"
 #! COMMENT_TYPE="REGULAR"
@@ -2560,12 +2602,12 @@
 #! <COMMENT
 #! IDENTIFIER="146"
 #! COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:11px; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;GEODB.NPL_UEUZ&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
-#! POSITION="2478 -2236"
+#! POSITION="2511 -2232"
 #! ORDER="5e+014"
 #! FOLLOW_ANCHOR="true"
 #! INFO_NODE="false"
-#! TOP_LEFT="2478 -2236"
-#! BOTTOM_RIGHT="2478 -2236"
+#! TOP_LEFT="2511 -2232"
+#! BOTTOM_RIGHT="2511 -2232"
 #! COLOUR="1,1,0.784314,0.192157"
 #! SIZE_POLICY="8"
 #! COMMENT_TYPE="REGULAR"
@@ -2630,12 +2672,12 @@
 #! <COMMENT
 #! IDENTIFIER="151"
 #! COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:11px; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;GEODB.NPL_WEWRL&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
-#! POSITION="2538 -6481"
+#! POSITION="2548 -7211"
 #! ORDER="5e+014"
 #! FOLLOW_ANCHOR="true"
 #! INFO_NODE="false"
-#! TOP_LEFT="2538 -6481"
-#! BOTTOM_RIGHT="2538 -6481"
+#! TOP_LEFT="2548 -7211"
+#! BOTTOM_RIGHT="2548 -7211"
 #! COLOUR="1,1,0.784314,0.192157"
 #! SIZE_POLICY="8"
 #! COMMENT_TYPE="REGULAR"
@@ -2644,12 +2686,12 @@
 #! <COMMENT
 #! IDENTIFIER="156"
 #! COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:11px; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;ART&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
-#! POSITION="1994 -6511"
+#! POSITION="2014 -7241"
 #! ORDER="5e+014"
 #! FOLLOW_ANCHOR="true"
 #! INFO_NODE="false"
-#! TOP_LEFT="1994 -6511"
-#! BOTTOM_RIGHT="1994 -6511"
+#! TOP_LEFT="2014 -7241"
+#! BOTTOM_RIGHT="2014 -7241"
 #! COLOUR="1,1,0.784314,0.192157"
 #! SIZE_POLICY="8"
 #! COMMENT_TYPE="REGULAR"
@@ -2658,12 +2700,12 @@
 #! <COMMENT
 #! IDENTIFIER="157"
 #! COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:11px; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;NAMEWEG&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
-#! POSITION="1949 -6817"
+#! POSITION="1969 -7547"
 #! ORDER="5e+014"
 #! FOLLOW_ANCHOR="true"
 #! INFO_NODE="false"
-#! TOP_LEFT="1949 -6817"
-#! BOTTOM_RIGHT="1949 -6817"
+#! TOP_LEFT="1969 -7547"
+#! BOTTOM_RIGHT="1969 -7547"
 #! COLOUR="1,1,0.784314,0.192157"
 #! SIZE_POLICY="8"
 #! COMMENT_TYPE="REGULAR"
@@ -2672,12 +2714,12 @@
 #! <COMMENT
 #! IDENTIFIER="159"
 #! COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:11px; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;GEODB.NPL_GEGEWL&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
-#! POSITION="2556 -7225"
+#! POSITION="2576 -7955"
 #! ORDER="5e+014"
 #! FOLLOW_ANCHOR="true"
 #! INFO_NODE="false"
-#! TOP_LEFT="2556 -7225"
-#! BOTTOM_RIGHT="2556 -7225"
+#! TOP_LEFT="2576 -7955"
+#! BOTTOM_RIGHT="2576 -7955"
 #! COLOUR="1,1,0.784314,0.192157"
 #! SIZE_POLICY="8"
 #! COMMENT_TYPE="REGULAR"
@@ -2686,12 +2728,12 @@
 #! <COMMENT
 #! IDENTIFIER="161"
 #! COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:11px; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;ART&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
-#! POSITION="2002 -7266"
+#! POSITION="2012 -7996"
 #! ORDER="5e+014"
 #! FOLLOW_ANCHOR="true"
 #! INFO_NODE="false"
-#! TOP_LEFT="2002 -7266"
-#! BOTTOM_RIGHT="2002 -7266"
+#! TOP_LEFT="2012 -7996"
+#! BOTTOM_RIGHT="2012 -7996"
 #! COLOUR="1,1,0.784314,0.192157"
 #! SIZE_POLICY="8"
 #! COMMENT_TYPE="REGULAR"
@@ -2700,12 +2742,12 @@
 #! <COMMENT
 #! IDENTIFIER="164"
 #! COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:11px; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;GEODB.NPL_NHSL&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
-#! POSITION="2580 -7849"
+#! POSITION="2600 -8579"
 #! ORDER="5e+014"
 #! FOLLOW_ANCHOR="true"
 #! INFO_NODE="false"
-#! TOP_LEFT="2580 -7849"
-#! BOTTOM_RIGHT="2580 -7849"
+#! TOP_LEFT="2600 -8579"
+#! BOTTOM_RIGHT="2600 -8579"
 #! COLOUR="1,1,0.784314,0.192157"
 #! SIZE_POLICY="8"
 #! COMMENT_TYPE="REGULAR"
@@ -2714,12 +2756,12 @@
 #! <COMMENT
 #! IDENTIFIER="168"
 #! COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:11px; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;SCHUTZGRAD&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
-#! POSITION="1996 -7860"
+#! POSITION="2006 -8590"
 #! ORDER="5e+014"
 #! FOLLOW_ANCHOR="true"
 #! INFO_NODE="false"
-#! TOP_LEFT="1996 -7860"
-#! BOTTOM_RIGHT="1996 -7860"
+#! TOP_LEFT="2006 -8590"
+#! BOTTOM_RIGHT="2006 -8590"
 #! COLOUR="1,1,0.784314,0.192157"
 #! SIZE_POLICY="8"
 #! COMMENT_TYPE="REGULAR"
@@ -2728,12 +2770,12 @@
 #! <COMMENT
 #! IDENTIFIER="169"
 #! COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:11px; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;KANTART&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
-#! POSITION="1990 -8181"
+#! POSITION="2010 -8911"
 #! ORDER="5e+014"
 #! FOLLOW_ANCHOR="true"
 #! INFO_NODE="false"
-#! TOP_LEFT="1990 -8181"
-#! BOTTOM_RIGHT="1990 -8181"
+#! TOP_LEFT="2010 -8911"
+#! BOTTOM_RIGHT="2010 -8911"
 #! COLOUR="1,1,0.784314,0.192157"
 #! SIZE_POLICY="8"
 #! COMMENT_TYPE="REGULAR"
@@ -2742,12 +2784,12 @@
 #! <COMMENT
 #! IDENTIFIER="172"
 #! COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:11px; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;GEODB.NUPLA_UEPT&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
-#! POSITION="-1282 -7012"
+#! POSITION="-1367 -7727"
 #! ORDER="5e+014"
 #! FOLLOW_ANCHOR="true"
 #! INFO_NODE="false"
-#! TOP_LEFT="-1282 -7012"
-#! BOTTOM_RIGHT="-1282 -7012"
+#! TOP_LEFT="-1367 -7727"
+#! BOTTOM_RIGHT="-1367 -7727"
 #! COLOUR="1,1,0.784314,0.192157"
 #! SIZE_POLICY="8"
 #! COMMENT_TYPE="REGULAR"
@@ -2756,12 +2798,12 @@
 #! <COMMENT
 #! IDENTIFIER="178"
 #! COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:11px; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:11px;&quot;&gt;VERBINDLKT joinen&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
-#! POSITION="-636 -7406"
+#! POSITION="-721 -8121"
 #! ORDER="5e+014"
 #! FOLLOW_ANCHOR="true"
 #! INFO_NODE="false"
-#! TOP_LEFT="-636 -7406"
-#! BOTTOM_RIGHT="-636 -7406"
+#! TOP_LEFT="-721 -8121"
+#! BOTTOM_RIGHT="-721 -8121"
 #! COLOUR="1,1,0.784314,0.192157"
 #! SIZE_POLICY="8"
 #! COMMENT_TYPE="REGULAR"
@@ -2770,12 +2812,12 @@
 #! <COMMENT
 #! IDENTIFIER="183"
 #! COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:11px; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;SCHUTZGRAD&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
-#! POSITION="162 -7422"
+#! POSITION="66 -8127"
 #! ORDER="5e+014"
 #! FOLLOW_ANCHOR="true"
 #! INFO_NODE="false"
-#! TOP_LEFT="162 -7422"
-#! BOTTOM_RIGHT="162 -7422"
+#! TOP_LEFT="66 -8127"
+#! BOTTOM_RIGHT="66 -8127"
 #! COLOUR="1,1,0.784314,0.192157"
 #! SIZE_POLICY="8"
 #! COMMENT_TYPE="REGULAR"
@@ -2784,12 +2826,12 @@
 #! <COMMENT
 #! IDENTIFIER="184"
 #! COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:11px; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;KANTART&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
-#! POSITION="150 -7740"
+#! POSITION="54 -8445"
 #! ORDER="5e+014"
 #! FOLLOW_ANCHOR="true"
 #! INFO_NODE="false"
-#! TOP_LEFT="150 -7740"
-#! BOTTOM_RIGHT="150 -7740"
+#! TOP_LEFT="54 -8445"
+#! BOTTOM_RIGHT="54 -8445"
 #! COLOUR="1,1,0.784314,0.192157"
 #! SIZE_POLICY="8"
 #! COMMENT_TYPE="REGULAR"
@@ -2798,12 +2840,12 @@
 #! <COMMENT
 #! IDENTIFIER="187"
 #! COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:11px; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;GEODB.NPL_NHSP&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
-#! POSITION="891 -7063"
+#! POSITION="805 -7778"
 #! ORDER="5e+014"
 #! FOLLOW_ANCHOR="true"
 #! INFO_NODE="false"
-#! TOP_LEFT="891 -7063"
-#! BOTTOM_RIGHT="891 -7063"
+#! TOP_LEFT="805 -7778"
+#! BOTTOM_RIGHT="805 -7778"
 #! COLOUR="1,1,0.784314,0.192157"
 #! SIZE_POLICY="8"
 #! COMMENT_TYPE="REGULAR"
@@ -2826,12 +2868,12 @@
 #! <COMMENT
 #! IDENTIFIER="194"
 #! COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:11px; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Uebriges Gebiet ersetzen&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
-#! POSITION="842 136"
+#! POSITION="851 178"
 #! ORDER="5e+014"
 #! FOLLOW_ANCHOR="true"
 #! INFO_NODE="false"
-#! TOP_LEFT="842 136"
-#! BOTTOM_RIGHT="842 136"
+#! TOP_LEFT="851 178"
+#! BOTTOM_RIGHT="851 178"
 #! COLOUR="1,1,0.784314,0.192157"
 #! SIZE_POLICY="8"
 #! COMMENT_TYPE="REGULAR"
@@ -2840,13 +2882,13 @@
 #! <COMMENT
 #! IDENTIFIER="202"
 #! COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:11px; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;GEODB.NPL_ABGRENZ&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
-#! POSITION="132 -8164"
+#! POSITION="277 -8964"
 #! ORDER="5e+014"
 #! FOLLOW_ANCHOR="true"
 #! INFO_NODE="false"
-#! TOP_LEFT="132 -8164"
-#! BOTTOM_RIGHT="132 -8164"
-#! COLOUR="1,1,0.784314,0.196078"
+#! TOP_LEFT="277 -8964"
+#! BOTTOM_RIGHT="277 -8964"
+#! COLOUR="1,1,0.784314,0.192157"
 #! SIZE_POLICY="8"
 #! COMMENT_TYPE="REGULAR"
 #! ANCHORED_NODE="198"
@@ -2854,13 +2896,13 @@
 #! <COMMENT
 #! IDENTIFIER="204"
 #! COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:11px; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;GEODB.NUPLA_ABGRZ&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
-#! POSITION="-1240 -8134"
+#! POSITION="-1074 -8959"
 #! ORDER="5e+014"
 #! FOLLOW_ANCHOR="true"
 #! INFO_NODE="false"
-#! TOP_LEFT="-1240 -8134"
-#! BOTTOM_RIGHT="-1240 -8134"
-#! COLOUR="1,1,0.784314,0.196078"
+#! TOP_LEFT="-1074 -8959"
+#! BOTTOM_RIGHT="-1074 -8959"
+#! COLOUR="1,1,0.784314,0.192157"
 #! SIZE_POLICY="8"
 #! COMMENT_TYPE="REGULAR"
 #! ANCHORED_NODE="195"
@@ -2868,13 +2910,13 @@
 #! <COMMENT
 #! IDENTIFIER="205"
 #! COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:11px; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;GEODB.NUPLA_GNBAUWS&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
-#! POSITION="-1243 -8470"
+#! POSITION="-1037 -9300"
 #! ORDER="5e+014"
 #! FOLLOW_ANCHOR="true"
 #! INFO_NODE="false"
-#! TOP_LEFT="-1243 -8470"
-#! BOTTOM_RIGHT="-1243 -8470"
-#! COLOUR="1,1,0.784314,0.196078"
+#! TOP_LEFT="-1037 -9300"
+#! BOTTOM_RIGHT="-1037 -9300"
+#! COLOUR="1,1,0.784314,0.192157"
 #! SIZE_POLICY="8"
 #! COMMENT_TYPE="REGULAR"
 #! ANCHORED_NODE="196"
@@ -2882,13 +2924,13 @@
 #! <COMMENT
 #! IDENTIFIER="206"
 #! COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:11px; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;GEODB.NPL_GNBAUW&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
-#! POSITION="147 -8467"
+#! POSITION="1822 -9386"
 #! ORDER="5e+014"
 #! FOLLOW_ANCHOR="true"
 #! INFO_NODE="false"
-#! TOP_LEFT="147 -8467"
-#! BOTTOM_RIGHT="147 -8467"
-#! COLOUR="1,1,0.784314,0.196078"
+#! TOP_LEFT="1822 -9386"
+#! BOTTOM_RIGHT="1822 -9386"
+#! COLOUR="1,1,0.784314,0.192157"
 #! SIZE_POLICY="8"
 #! COMMENT_TYPE="REGULAR"
 #! ANCHORED_NODE="199"
@@ -2896,13 +2938,13 @@
 #! <COMMENT
 #! IDENTIFIER="208"
 #! COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:11px; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;GEODB.NUPLA_GNNUTZBK&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
-#! POSITION="-1228 -8791"
+#! POSITION="-1191 -9793"
 #! ORDER="5e+014"
 #! FOLLOW_ANCHOR="true"
 #! INFO_NODE="false"
-#! TOP_LEFT="-1228 -8791"
-#! BOTTOM_RIGHT="-1228 -8791"
-#! COLOUR="1,1,0.784314,0.196078"
+#! TOP_LEFT="-1191 -9793"
+#! BOTTOM_RIGHT="-1191 -9793"
+#! COLOUR="1,1,0.784314,0.192157"
 #! SIZE_POLICY="8"
 #! COMMENT_TYPE="REGULAR"
 #! ANCHORED_NODE="197"
@@ -2910,16 +2952,114 @@
 #! <COMMENT
 #! IDENTIFIER="210"
 #! COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:11px; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;GEODB.NPL_GNNUTZZO&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
-#! POSITION="162 -8806"
+#! POSITION="187 -9808"
 #! ORDER="5e+014"
 #! FOLLOW_ANCHOR="true"
 #! INFO_NODE="false"
-#! TOP_LEFT="162 -8806"
-#! BOTTOM_RIGHT="162 -8806"
-#! COLOUR="1,1,0.784314,0.196078"
+#! TOP_LEFT="187 -9808"
+#! BOTTOM_RIGHT="187 -9808"
+#! COLOUR="1,1,0.784314,0.192157"
 #! SIZE_POLICY="8"
 #! COMMENT_TYPE="REGULAR"
 #! ANCHORED_NODE="201"
+#! />
+#! <COMMENT
+#! IDENTIFIER="216"
+#! COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:11px; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;GEBLANGUNB&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#! POSITION="-388 -9356"
+#! ORDER="5e+014"
+#! FOLLOW_ANCHOR="true"
+#! INFO_NODE="false"
+#! TOP_LEFT="-388 -9356"
+#! BOTTOM_RIGHT="-388 -9356"
+#! COLOUR="1,1,0.784314,0.196078"
+#! SIZE_POLICY="8"
+#! COMMENT_TYPE="REGULAR"
+#! ANCHORED_NODE="212"
+#! />
+#! <COMMENT
+#! IDENTIFIER="219"
+#! COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:11px; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;GEBTIEFUNB&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#! POSITION="232 -9379"
+#! ORDER="5e+014"
+#! FOLLOW_ANCHOR="true"
+#! INFO_NODE="false"
+#! TOP_LEFT="232 -9379"
+#! BOTTOM_RIGHT="232 -9379"
+#! COLOUR="1,1,0.784314,0.196078"
+#! SIZE_POLICY="8"
+#! COMMENT_TYPE="REGULAR"
+#! ANCHORED_NODE="207"
+#! />
+#! <COMMENT
+#! IDENTIFIER="220"
+#! COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:11px; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;BAUWEISTYP&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#! POSITION="998 -9362"
+#! ORDER="5e+014"
+#! FOLLOW_ANCHOR="true"
+#! INFO_NODE="false"
+#! TOP_LEFT="998 -9362"
+#! BOTTOM_RIGHT="998 -9362"
+#! COLOUR="1,1,0.784314,0.196078"
+#! SIZE_POLICY="8"
+#! COMMENT_TYPE="REGULAR"
+#! ANCHORED_NODE="214"
+#! />
+#! <COMMENT
+#! IDENTIFIER="224"
+#! COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:11px; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;ZPP/UEO ZONENCODE&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;mappen (Bern only)&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#! POSITION="2833 274"
+#! ORDER="5e+014"
+#! FOLLOW_ANCHOR="true"
+#! INFO_NODE="false"
+#! TOP_LEFT="2833 274"
+#! BOTTOM_RIGHT="2833 274"
+#! COLOUR="1,1,0.784314,0.196078"
+#! SIZE_POLICY="8"
+#! COMMENT_TYPE="REGULAR"
+#! ANCHORED_NODE="221"
+#! />
+#! <COMMENT
+#! IDENTIFIER="223"
+#! COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:11px; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Altstadtperimeter (nur Stadt Bern)&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;ummappen&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#! POSITION="3430 253"
+#! ORDER="5e+014"
+#! FOLLOW_ANCHOR="true"
+#! INFO_NODE="false"
+#! TOP_LEFT="3430 253"
+#! BOTTOM_RIGHT="3430 253"
+#! COLOUR="1,1,0.784314,0.196078"
+#! SIZE_POLICY="8"
+#! COMMENT_TYPE="REGULAR"
+#! ANCHORED_NODE="225"
+#! />
+#! <COMMENT
+#! IDENTIFIER="241"
+#! COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:11px; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;GEODB.NPL_UEPROJ&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#! POSITION="3148 -5483"
+#! ORDER="5e+014"
+#! FOLLOW_ANCHOR="true"
+#! INFO_NODE="false"
+#! TOP_LEFT="3148 -5483"
+#! BOTTOM_RIGHT="3148 -5483"
+#! COLOUR="1,1,0.784314,0.196078"
+#! SIZE_POLICY="8"
+#! COMMENT_TYPE="REGULAR"
+#! ANCHORED_NODE="240"
+#! />
+#! <COMMENT
+#! IDENTIFIER="243"
+#! COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:11px; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;UEPROJ rausfiltern&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#! POSITION="2363 -6326"
+#! ORDER="5e+014"
+#! FOLLOW_ANCHOR="true"
+#! INFO_NODE="false"
+#! TOP_LEFT="2363 -6326"
+#! BOTTOM_RIGHT="2363 -6326"
+#! COLOUR="1,1,0.784314,0.196078"
+#! SIZE_POLICY="8"
+#! COMMENT_TYPE="REGULAR"
+#! ANCHORED_NODE="235"
 #! />
 #! </COMMENTS>
 #! <CONSTANTS>
@@ -3153,7 +3293,7 @@
 #! IDENTIFIER="44"
 #! TYPE="AttributeValueMapper"
 #! VERSION="6"
-#! POSITION="2175 187"
+#! POSITION="1502 42"
 #! ORDER="5e+014"
 #! PARMS_EDITED="true"
 #! ENABLED="true"
@@ -3205,7 +3345,7 @@
 #! IDENTIFIER="50"
 #! TYPE="FeatureTypeFilter"
 #! VERSION="1"
-#! POSITION="2748 178"
+#! POSITION="2117 30"
 #! ORDER="5e+014"
 #! PARMS_EDITED="true"
 #! ENABLED="true"
@@ -3523,7 +3663,7 @@
 #! <XFORM_PARM PARM_NAME="MAPPING_GRP" PARM_VALUE=""/>
 #! <XFORM_PARM PARM_NAME="ATTR_GROUP" PARM_VALUE=""/>
 #! <XFORM_PARM PARM_NAME="DEFAULT_VALUE" PARM_VALUE=""/>
-#! <XFORM_PARM PARM_NAME="LUT" PARM_VALUE="7,L&lt;u00e4&gt;rmempfindlichkeitsstufe&lt;space&gt;I,8,L&lt;u00e4&gt;rmempfindlichkeitsstufe&lt;space&gt;II,9,L&lt;u00e4&gt;rmempfindlichkeitsstufe&lt;space&gt;II&lt;space&gt;aufgestuft,10,L&lt;u00e4&gt;rmempfindlichkeitsstufe&lt;space&gt;III,11,L&lt;u00e4&gt;rmempfindlichkeitsstufe&lt;space&gt;III&lt;space&gt;aufgestuft,12,L&lt;u00e4&gt;rmempfindlichkeitsstufe&lt;space&gt;IV"/>
+#! <XFORM_PARM PARM_NAME="LUT" PARM_VALUE="7,L&lt;u00e4&gt;rmempfindlichkeitsstufe&lt;space&gt;I,8,L&lt;u00e4&gt;rmempfindlichkeitsstufe&lt;space&gt;II,9,L&lt;u00e4&gt;rmempfindlichkeitsstufe&lt;space&gt;II&lt;space&gt;aufgestuft,10,L&lt;u00e4&gt;rmempfindlichkeitsstufe&lt;space&gt;III,11,L&lt;u00e4&gt;rmempfindlichkeitsstufe&lt;space&gt;III&lt;space&gt;aufgestuft,12,L&lt;u00e4&gt;rmempfindlichkeitsstufe&lt;space&gt;IV,19,ES-Planungsgebiet"/>
 #! <XFORM_PARM PARM_NAME="SRC" PARM_VALUE="_kantart"/>
 #! </TRANSFORMER>
 #! <TRANSFORMER
@@ -3904,7 +4044,7 @@
 #! IDENTIFIER="98"
 #! TYPE="AttributeValueMapper"
 #! VERSION="6"
-#! POSITION="1899 -2458"
+#! POSITION="1826 -2545"
 #! ORDER="5e+014"
 #! PARMS_EDITED="true"
 #! ENABLED="true"
@@ -3963,7 +4103,7 @@
 #! PARMS_EDITED="true"
 #! ENABLED="true"
 #! >
-#! <OUTPUT_FEAT NAME="UEUZ"/>
+#! <OUTPUT_FEAT NAME="VEFE"/>
 #! <FEAT_COLLAPSED COLLAPSED="0"/>
 #! <XFORM_ATTR ATTR_NAME="geodb_oid" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="OBJECTID" IS_USER_CREATED="false" FEAT_INDEX="0" />
@@ -3998,7 +4138,7 @@
 #! <XFORM_ATTR ATTR_NAME="NAME" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="VERBINDLKT" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="_matched_records" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <OUTPUT_FEAT NAME="GEFF"/>
+#! <OUTPUT_FEAT NAME="UEUZ"/>
 #! <FEAT_COLLAPSED COLLAPSED="1"/>
 #! <XFORM_ATTR ATTR_NAME="geodb_oid" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #! <XFORM_ATTR ATTR_NAME="OBJECTID" IS_USER_CREATED="false" FEAT_INDEX="1" />
@@ -4033,7 +4173,7 @@
 #! <XFORM_ATTR ATTR_NAME="NAME" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #! <XFORM_ATTR ATTR_NAME="VERBINDLKT" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #! <XFORM_ATTR ATTR_NAME="_matched_records" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#! <OUTPUT_FEAT NAME="WEWRF"/>
+#! <OUTPUT_FEAT NAME="GEFF"/>
 #! <FEAT_COLLAPSED COLLAPSED="2"/>
 #! <XFORM_ATTR ATTR_NAME="geodb_oid" IS_USER_CREATED="false" FEAT_INDEX="2" />
 #! <XFORM_ATTR ATTR_NAME="OBJECTID" IS_USER_CREATED="false" FEAT_INDEX="2" />
@@ -4068,7 +4208,7 @@
 #! <XFORM_ATTR ATTR_NAME="NAME" IS_USER_CREATED="false" FEAT_INDEX="2" />
 #! <XFORM_ATTR ATTR_NAME="VERBINDLKT" IS_USER_CREATED="false" FEAT_INDEX="2" />
 #! <XFORM_ATTR ATTR_NAME="_matched_records" IS_USER_CREATED="false" FEAT_INDEX="2" />
-#! <OUTPUT_FEAT NAME="GEGEWF"/>
+#! <OUTPUT_FEAT NAME="WEWRF"/>
 #! <FEAT_COLLAPSED COLLAPSED="3"/>
 #! <XFORM_ATTR ATTR_NAME="geodb_oid" IS_USER_CREATED="false" FEAT_INDEX="3" />
 #! <XFORM_ATTR ATTR_NAME="OBJECTID" IS_USER_CREATED="false" FEAT_INDEX="3" />
@@ -4103,7 +4243,7 @@
 #! <XFORM_ATTR ATTR_NAME="NAME" IS_USER_CREATED="false" FEAT_INDEX="3" />
 #! <XFORM_ATTR ATTR_NAME="VERBINDLKT" IS_USER_CREATED="false" FEAT_INDEX="3" />
 #! <XFORM_ATTR ATTR_NAME="_matched_records" IS_USER_CREATED="false" FEAT_INDEX="3" />
-#! <OUTPUT_FEAT NAME="NHSF"/>
+#! <OUTPUT_FEAT NAME="GEGEWF"/>
 #! <FEAT_COLLAPSED COLLAPSED="4"/>
 #! <XFORM_ATTR ATTR_NAME="geodb_oid" IS_USER_CREATED="false" FEAT_INDEX="4" />
 #! <XFORM_ATTR ATTR_NAME="OBJECTID" IS_USER_CREATED="false" FEAT_INDEX="4" />
@@ -4138,7 +4278,7 @@
 #! <XFORM_ATTR ATTR_NAME="NAME" IS_USER_CREATED="false" FEAT_INDEX="4" />
 #! <XFORM_ATTR ATTR_NAME="VERBINDLKT" IS_USER_CREATED="false" FEAT_INDEX="4" />
 #! <XFORM_ATTR ATTR_NAME="_matched_records" IS_USER_CREATED="false" FEAT_INDEX="4" />
-#! <OUTPUT_FEAT NAME="&lt;lt&gt;UNFILTERED&lt;gt&gt;"/>
+#! <OUTPUT_FEAT NAME="NHSF"/>
 #! <FEAT_COLLAPSED COLLAPSED="5"/>
 #! <XFORM_ATTR ATTR_NAME="geodb_oid" IS_USER_CREATED="false" FEAT_INDEX="5" />
 #! <XFORM_ATTR ATTR_NAME="OBJECTID" IS_USER_CREATED="false" FEAT_INDEX="5" />
@@ -4173,7 +4313,42 @@
 #! <XFORM_ATTR ATTR_NAME="NAME" IS_USER_CREATED="false" FEAT_INDEX="5" />
 #! <XFORM_ATTR ATTR_NAME="VERBINDLKT" IS_USER_CREATED="false" FEAT_INDEX="5" />
 #! <XFORM_ATTR ATTR_NAME="_matched_records" IS_USER_CREATED="false" FEAT_INDEX="5" />
-#! <XFORM_PARM PARM_NAME="TEST_LIST" PARM_VALUE="BOOL_OP&lt;comma&gt;OR&lt;comma&gt;COMPOSITE_TEST&lt;comma&gt;&lt;lt&gt;Unused&lt;gt&gt;&lt;comma&gt;TEST_CLAUSE&lt;comma&gt;&lt;quote&gt;TEST&lt;space&gt;&lt;lt&gt;at&lt;gt&gt;Value&lt;lt&gt;openparen&lt;gt&gt;_kantart&lt;lt&gt;closeparen&lt;gt&gt;&lt;space&gt;IN&lt;space&gt;2&lt;lt&gt;comma&lt;gt&gt;3&lt;lt&gt;comma&lt;gt&gt;4&lt;lt&gt;comma&lt;gt&gt;5&lt;lt&gt;comma&lt;gt&gt;6&lt;lt&gt;comma&lt;gt&gt;18&lt;lt&gt;comma&lt;gt&gt;19&lt;lt&gt;comma&lt;gt&gt;108&lt;quote&gt;,UEUZ,BOOL_OP&lt;comma&gt;OR&lt;comma&gt;COMPOSITE_TEST&lt;comma&gt;&lt;lt&gt;Unused&lt;gt&gt;&lt;comma&gt;TEST_CLAUSE&lt;comma&gt;&lt;quote&gt;TEST&lt;space&gt;&lt;lt&gt;at&lt;gt&gt;Value&lt;lt&gt;openparen&lt;gt&gt;_kantart&lt;lt&gt;closeparen&lt;gt&gt;&lt;space&gt;IN&lt;space&gt;13-17&lt;quote&gt;,GEFF,BOOL_OP&lt;comma&gt;OR&lt;comma&gt;COMPOSITE_TEST&lt;comma&gt;&lt;lt&gt;Unused&lt;gt&gt;&lt;comma&gt;TEST_CLAUSE&lt;comma&gt;&lt;quote&gt;TEST&lt;space&gt;&lt;lt&gt;at&lt;gt&gt;Value&lt;lt&gt;openparen&lt;gt&gt;_kantart&lt;lt&gt;closeparen&lt;gt&gt;&lt;space&gt;IN&lt;space&gt;96-103&lt;quote&gt;,WEWRF,BOOL_OP&lt;comma&gt;OR&lt;comma&gt;COMPOSITE_TEST&lt;comma&gt;&lt;lt&gt;Unused&lt;gt&gt;&lt;comma&gt;TEST_CLAUSE&lt;comma&gt;&lt;quote&gt;TEST&lt;space&gt;&lt;lt&gt;at&lt;gt&gt;Value&lt;lt&gt;openparen&lt;gt&gt;_kantart&lt;lt&gt;closeparen&lt;gt&gt;&lt;space&gt;IN&lt;space&gt;0&lt;lt&gt;comma&lt;gt&gt;1&lt;quote&gt;,GEGEWF,BOOL_OP&lt;comma&gt;OR&lt;comma&gt;COMPOSITE_TEST&lt;comma&gt;&lt;lt&gt;Unused&lt;gt&gt;&lt;comma&gt;TEST_CLAUSE&lt;comma&gt;&lt;quote&gt;TEST&lt;space&gt;&lt;lt&gt;at&lt;gt&gt;Value&lt;lt&gt;openparen&lt;gt&gt;_kantart&lt;lt&gt;closeparen&lt;gt&gt;&lt;space&gt;IN&lt;space&gt;37-95&lt;quote&gt;,NHSF"/>
+#! <OUTPUT_FEAT NAME="&lt;lt&gt;UNFILTERED&lt;gt&gt;"/>
+#! <FEAT_COLLAPSED COLLAPSED="6"/>
+#! <XFORM_ATTR ATTR_NAME="geodb_oid" IS_USER_CREATED="false" FEAT_INDEX="6" />
+#! <XFORM_ATTR ATTR_NAME="OBJECTID" IS_USER_CREATED="false" FEAT_INDEX="6" />
+#! <XFORM_ATTR ATTR_NAME="BFSNR" IS_USER_CREATED="false" FEAT_INDEX="6" />
+#! <XFORM_ATTR ATTR_NAME="REL_ID" IS_USER_CREATED="false" FEAT_INDEX="6" />
+#! <XFORM_ATTR ATTR_NAME="GENEHM" IS_USER_CREATED="false" FEAT_INDEX="6" />
+#! <XFORM_ATTR ATTR_NAME="INKRAFT" IS_USER_CREATED="false" FEAT_INDEX="6" />
+#! <XFORM_ATTR ATTR_NAME="_beschrieb" IS_USER_CREATED="false" FEAT_INDEX="6" />
+#! <XFORM_ATTR ATTR_NAME="QUALITAET" IS_USER_CREATED="false" FEAT_INDEX="6" />
+#! <XFORM_ATTR ATTR_NAME="_verbindlkt" IS_USER_CREATED="false" FEAT_INDEX="6" />
+#! <XFORM_ATTR ATTR_NAME="_kantart" IS_USER_CREATED="false" FEAT_INDEX="6" />
+#! <XFORM_ATTR ATTR_NAME="ZONENABK" IS_USER_CREATED="false" FEAT_INDEX="6" />
+#! <XFORM_ATTR ATTR_NAME="BESCHRIEB" IS_USER_CREATED="false" FEAT_INDEX="6" />
+#! <XFORM_ATTR ATTR_NAME="PLANBESCHR" IS_USER_CREATED="false" FEAT_INDEX="6" />
+#! <XFORM_ATTR ATTR_NAME="BEMERK" IS_USER_CREATED="false" FEAT_INDEX="6" />
+#! <XFORM_ATTR ATTR_NAME="DARST_C" IS_USER_CREATED="false" FEAT_INDEX="6" />
+#! <XFORM_ATTR ATTR_NAME="DATENVERW" IS_USER_CREATED="false" FEAT_INDEX="6" />
+#! <XFORM_ATTR ATTR_NAME="ZUSTAENDIG" IS_USER_CREATED="false" FEAT_INDEX="6" />
+#! <XFORM_ATTR ATTR_NAME="BUNDESART" IS_USER_CREATED="false" FEAT_INDEX="6" />
+#! <XFORM_ATTR ATTR_NAME="NZ" IS_USER_CREATED="false" FEAT_INDEX="6" />
+#! <XFORM_ATTR ATTR_NAME="NZ_ART" IS_USER_CREATED="false" FEAT_INDEX="6" />
+#! <XFORM_ATTR ATTR_NAME="GRUENFZ" IS_USER_CREATED="false" FEAT_INDEX="6" />
+#! <XFORM_ATTR ATTR_NAME="BEDEUT" IS_USER_CREATED="false" FEAT_INDEX="6" />
+#! <XFORM_ATTR ATTR_NAME="SCHUTZG" IS_USER_CREATED="false" FEAT_INDEX="6" />
+#! <XFORM_ATTR ATTR_NAME="GW_NAT" IS_USER_CREATED="false" FEAT_INDEX="6" />
+#! <XFORM_ATTR ATTR_NAME="GW_BED" IS_USER_CREATED="false" FEAT_INDEX="6" />
+#! <XFORM_ATTR ATTR_NAME="VE_GUELTIG" IS_USER_CREATED="false" FEAT_INDEX="6" />
+#! <XFORM_ATTR ATTR_NAME="VE_BESCHW" IS_USER_CREATED="false" FEAT_INDEX="6" />
+#! <XFORM_ATTR ATTR_NAME="VE_THEMA" IS_USER_CREATED="false" FEAT_INDEX="6" />
+#! <XFORM_ATTR ATTR_NAME="SHAPE.AREA" IS_USER_CREATED="false" FEAT_INDEX="6" />
+#! <XFORM_ATTR ATTR_NAME="SHAPE.LEN" IS_USER_CREATED="false" FEAT_INDEX="6" />
+#! <XFORM_ATTR ATTR_NAME="NAME" IS_USER_CREATED="false" FEAT_INDEX="6" />
+#! <XFORM_ATTR ATTR_NAME="VERBINDLKT" IS_USER_CREATED="false" FEAT_INDEX="6" />
+#! <XFORM_ATTR ATTR_NAME="_matched_records" IS_USER_CREATED="false" FEAT_INDEX="6" />
+#! <XFORM_PARM PARM_NAME="TEST_LIST" PARM_VALUE="BOOL_OP&lt;comma&gt;OR&lt;comma&gt;COMPOSITE_TEST&lt;comma&gt;&lt;lt&gt;Unused&lt;gt&gt;&lt;comma&gt;TEST_CLAUSE&lt;comma&gt;&lt;quote&gt;TEST&lt;space&gt;&lt;lt&gt;at&lt;gt&gt;Value&lt;lt&gt;openparen&lt;gt&gt;_kantart&lt;lt&gt;closeparen&lt;gt&gt;&lt;space&gt;IN&lt;space&gt;104-107&lt;quote&gt;,VEFE,BOOL_OP&lt;comma&gt;OR&lt;comma&gt;COMPOSITE_TEST&lt;comma&gt;&lt;lt&gt;Unused&lt;gt&gt;&lt;comma&gt;TEST_CLAUSE&lt;comma&gt;&lt;quote&gt;TEST&lt;space&gt;&lt;lt&gt;at&lt;gt&gt;Value&lt;lt&gt;openparen&lt;gt&gt;_kantart&lt;lt&gt;closeparen&lt;gt&gt;&lt;space&gt;IN&lt;space&gt;2&lt;lt&gt;comma&lt;gt&gt;3&lt;lt&gt;comma&lt;gt&gt;4&lt;lt&gt;comma&lt;gt&gt;5&lt;lt&gt;comma&lt;gt&gt;6&lt;lt&gt;comma&lt;gt&gt;18&lt;lt&gt;comma&lt;gt&gt;19&lt;lt&gt;comma&lt;gt&gt;108&lt;quote&gt;,UEUZ,BOOL_OP&lt;comma&gt;OR&lt;comma&gt;COMPOSITE_TEST&lt;comma&gt;&lt;lt&gt;Unused&lt;gt&gt;&lt;comma&gt;TEST_CLAUSE&lt;comma&gt;&lt;quote&gt;TEST&lt;space&gt;&lt;lt&gt;at&lt;gt&gt;Value&lt;lt&gt;openparen&lt;gt&gt;_kantart&lt;lt&gt;closeparen&lt;gt&gt;&lt;space&gt;IN&lt;space&gt;13-17&lt;quote&gt;,GEFF,BOOL_OP&lt;comma&gt;OR&lt;comma&gt;COMPOSITE_TEST&lt;comma&gt;&lt;lt&gt;Unused&lt;gt&gt;&lt;comma&gt;TEST_CLAUSE&lt;comma&gt;&lt;quote&gt;TEST&lt;space&gt;&lt;lt&gt;at&lt;gt&gt;Value&lt;lt&gt;openparen&lt;gt&gt;_kantart&lt;lt&gt;closeparen&lt;gt&gt;&lt;space&gt;IN&lt;space&gt;96-103&lt;quote&gt;,WEWRF,BOOL_OP&lt;comma&gt;OR&lt;comma&gt;COMPOSITE_TEST&lt;comma&gt;&lt;lt&gt;Unused&lt;gt&gt;&lt;comma&gt;TEST_CLAUSE&lt;comma&gt;&lt;quote&gt;TEST&lt;space&gt;&lt;lt&gt;at&lt;gt&gt;Value&lt;lt&gt;openparen&lt;gt&gt;_kantart&lt;lt&gt;closeparen&lt;gt&gt;&lt;space&gt;IN&lt;space&gt;0&lt;lt&gt;comma&lt;gt&gt;1&lt;quote&gt;,GEGEWF,BOOL_OP&lt;comma&gt;OR&lt;comma&gt;COMPOSITE_TEST&lt;comma&gt;&lt;lt&gt;Unused&lt;gt&gt;&lt;comma&gt;TEST_CLAUSE&lt;comma&gt;&lt;quote&gt;TEST&lt;space&gt;&lt;lt&gt;at&lt;gt&gt;Value&lt;lt&gt;openparen&lt;gt&gt;_kantart&lt;lt&gt;closeparen&lt;gt&gt;&lt;space&gt;IN&lt;space&gt;37-95&lt;quote&gt;,NHSF"/>
 #! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="TestFilter"/>
 #! <XFORM_PARM PARM_NAME="DEFAULT_VALUE" PARM_VALUE="&lt;lt&gt;UNFILTERED&lt;gt&gt;"/>
 #! </TRANSFORMER>
@@ -4910,7 +5085,7 @@
 #! IDENTIFIER="143"
 #! TYPE="AttributeValueMapper"
 #! VERSION="6"
-#! POSITION="1926 -5910"
+#! POSITION="1762 -6460"
 #! ORDER="5e+014"
 #! PARMS_EDITED="true"
 #! ENABLED="true"
@@ -4964,7 +5139,7 @@
 #! IDENTIFIER="153"
 #! TYPE="AttributeValueMapper"
 #! VERSION="6"
-#! POSITION="1942 -6628"
+#! POSITION="1962 -7358"
 #! ORDER="5e+014"
 #! PARMS_EDITED="false"
 #! ENABLED="true"
@@ -5018,7 +5193,7 @@
 #! IDENTIFIER="154"
 #! TYPE="AttributeCreator"
 #! VERSION="5"
-#! POSITION="1951 -6934"
+#! POSITION="1971 -7664"
 #! ORDER="5e+014"
 #! PARMS_EDITED="false"
 #! ENABLED="true"
@@ -5072,7 +5247,7 @@
 #! IDENTIFIER="160"
 #! TYPE="AttributeValueMapper"
 #! VERSION="6"
-#! POSITION="1935 -7374"
+#! POSITION="1955 -8104"
 #! ORDER="5e+014"
 #! PARMS_EDITED="false"
 #! ENABLED="true"
@@ -5126,7 +5301,7 @@
 #! IDENTIFIER="165"
 #! TYPE="AttributeValueMapper"
 #! VERSION="6"
-#! POSITION="1968 -7974"
+#! POSITION="1988 -8704"
 #! ORDER="5e+014"
 #! PARMS_EDITED="false"
 #! ENABLED="true"
@@ -5180,7 +5355,7 @@
 #! IDENTIFIER="166"
 #! TYPE="AttributeValueMapper"
 #! VERSION="6"
-#! POSITION="1941 -8316"
+#! POSITION="1961 -9046"
 #! ORDER="5e+014"
 #! PARMS_EDITED="false"
 #! ENABLED="true"
@@ -5235,7 +5410,7 @@
 #! IDENTIFIER="173"
 #! TYPE="AttributeRenamer"
 #! VERSION="2"
-#! POSITION="-643 -7143"
+#! POSITION="-738 -7848"
 #! ORDER="5e+014"
 #! PARMS_EDITED="true"
 #! ENABLED="true"
@@ -5271,7 +5446,7 @@
 #! IDENTIFIER="174"
 #! TYPE="Joiner"
 #! VERSION="3"
-#! POSITION="-598 -7527"
+#! POSITION="-693 -8232"
 #! ORDER="5e+014"
 #! PARMS_EDITED="false"
 #! ENABLED="true"
@@ -5332,7 +5507,7 @@
 #! IDENTIFIER="175"
 #! TYPE="AttributeRenamer"
 #! VERSION="2"
-#! POSITION="65 -7150"
+#! POSITION="-30 -7855"
 #! ORDER="5e+014"
 #! PARMS_EDITED="false"
 #! ENABLED="true"
@@ -5370,7 +5545,7 @@
 #! IDENTIFIER="180"
 #! TYPE="AttributeValueMapper"
 #! VERSION="6"
-#! POSITION="134 -7536"
+#! POSITION="38 -8241"
 #! ORDER="5e+014"
 #! PARMS_EDITED="false"
 #! ENABLED="true"
@@ -5415,7 +5590,7 @@
 #! IDENTIFIER="181"
 #! TYPE="AttributeValueMapper"
 #! VERSION="6"
-#! POSITION="107 -7878"
+#! POSITION="11 -8583"
 #! ORDER="5e+014"
 #! PARMS_EDITED="false"
 #! ENABLED="true"
@@ -5513,7 +5688,7 @@
 #! IDENTIFIER="190"
 #! TYPE="StringReplacer"
 #! VERSION="3"
-#! POSITION="877 28"
+#! POSITION="886 70"
 #! ORDER="5e+014"
 #! PARMS_EDITED="true"
 #! ENABLED="true"
@@ -5561,6 +5736,509 @@
 #! <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
 #! <XFORM_PARM PARM_NAME="NO_MATCH" PARM_VALUE="_FME_NO_OP_"/>
 #! <XFORM_PARM PARM_NAME="FIND_TEXT" PARM_VALUE="Uebriges&lt;space&gt;Gebiet"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#! IDENTIFIER="212"
+#! TYPE="AttributeValueMapper"
+#! VERSION="6"
+#! POSITION="-353 -9464"
+#! ORDER="5e+014"
+#! PARMS_EDITED="true"
+#! ENABLED="true"
+#! >
+#! <OUTPUT_FEAT NAME="OUTPUT"/>
+#! <FEAT_COLLAPSED COLLAPSED="0"/>
+#! <XFORM_ATTR ATTR_NAME="geodb_oid" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="OBJECTID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="BFSNR" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="GEMNAME" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="RVS_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="GENEHM" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="INKRAFT" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="BWTYP" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="QUALITAET" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="GEBL" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="GEBLU" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="GEBT" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="GEBTU" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="GEBLSYM" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="GEBTSYM" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="DARST_C" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="DATENVERW" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="ZUSTAENDIG" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="SHAPE.AREA" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="SHAPE.LEN" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="GEBLANGUNB" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_PARM PARM_NAME="DIRECTION" PARM_VALUE="Forward (Source To Destination)"/>
+#! <XFORM_PARM PARM_NAME="VAL_ATTR" PARM_VALUE="GEBLANGUNB"/>
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeValueMapper_16"/>
+#! <XFORM_PARM PARM_NAME="MAPPING_GRP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="ATTR_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="DEFAULT_VALUE" PARM_VALUE="FME_NULL_VALUE"/>
+#! <XFORM_PARM PARM_NAME="LUT" PARM_VALUE="1,unbeschr&lt;u00e4&gt;nkt"/>
+#! <XFORM_PARM PARM_NAME="SRC" PARM_VALUE="GEBLU"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#! IDENTIFIER="207"
+#! TYPE="AttributeValueMapper"
+#! VERSION="6"
+#! POSITION="267 -9487"
+#! ORDER="5e+014"
+#! PARMS_EDITED="true"
+#! ENABLED="true"
+#! >
+#! <OUTPUT_FEAT NAME="OUTPUT"/>
+#! <FEAT_COLLAPSED COLLAPSED="0"/>
+#! <XFORM_ATTR ATTR_NAME="geodb_oid" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="OBJECTID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="BFSNR" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="GEMNAME" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="RVS_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="GENEHM" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="INKRAFT" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="BWTYP" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="QUALITAET" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="GEBL" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="GEBLU" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="GEBT" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="GEBTU" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="GEBLSYM" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="GEBTSYM" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="DARST_C" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="DATENVERW" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="ZUSTAENDIG" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="SHAPE.AREA" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="SHAPE.LEN" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="GEBLANGUNB" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="GEBTIEFUNB" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_PARM PARM_NAME="DIRECTION" PARM_VALUE="Forward (Source To Destination)"/>
+#! <XFORM_PARM PARM_NAME="VAL_ATTR" PARM_VALUE="GEBTIEFUNB"/>
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeValueMapper_17"/>
+#! <XFORM_PARM PARM_NAME="MAPPING_GRP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="ATTR_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="DEFAULT_VALUE" PARM_VALUE="FME_NULL_VALUE"/>
+#! <XFORM_PARM PARM_NAME="LUT" PARM_VALUE="1,unbeschr&lt;u00e4&gt;nkt"/>
+#! <XFORM_PARM PARM_NAME="SRC" PARM_VALUE="GEBTU"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#! IDENTIFIER="214"
+#! TYPE="AttributeValueMapper"
+#! VERSION="6"
+#! POSITION="910 -9503"
+#! ORDER="5e+014"
+#! PARMS_EDITED="true"
+#! ENABLED="true"
+#! >
+#! <OUTPUT_FEAT NAME="OUTPUT"/>
+#! <FEAT_COLLAPSED COLLAPSED="0"/>
+#! <XFORM_ATTR ATTR_NAME="geodb_oid" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="OBJECTID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="BFSNR" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="GEMNAME" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="RVS_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="GENEHM" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="INKRAFT" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="BWTYP" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="QUALITAET" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="GEBL" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="GEBLU" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="GEBT" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="GEBTU" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="GEBLSYM" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="GEBTSYM" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="DARST_C" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="DATENVERW" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="ZUSTAENDIG" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="SHAPE.AREA" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="SHAPE.LEN" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="GEBLANGUNB" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="GEBTIEFUNB" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="BAUWEISTYP" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_PARM PARM_NAME="DIRECTION" PARM_VALUE="Forward (Source To Destination)"/>
+#! <XFORM_PARM PARM_NAME="VAL_ATTR" PARM_VALUE="BAUWEISTYP"/>
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeValueMapper_18"/>
+#! <XFORM_PARM PARM_NAME="MAPPING_GRP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="ATTR_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="DEFAULT_VALUE" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="LUT" PARM_VALUE="1,unbekannt,2,geschlossen,3,offen"/>
+#! <XFORM_PARM PARM_NAME="SRC" PARM_VALUE="BWTYP"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#! IDENTIFIER="221"
+#! TYPE="AttributeValueMapper"
+#! VERSION="6"
+#! POSITION="2880 127"
+#! ORDER="5e+014"
+#! PARMS_EDITED="true"
+#! ENABLED="true"
+#! >
+#! <OUTPUT_FEAT NAME="OUTPUT"/>
+#! <FEAT_COLLAPSED COLLAPSED="0"/>
+#! <XFORM_ATTR ATTR_NAME="geodb_oid" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="OBJECTID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="BFSNR" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="REL_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="GENEHM" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="INKRAFT" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="BESCHRIEB" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="QUALITAET" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_verbindlkt" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="KANTART" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="ZONENABK" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="ZONENNAME" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="PLANBESCHR" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="BEMERK" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="DARST_C" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="DATENVERW" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="ZUSTAENDIG" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="BUNDESART" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="AZ" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="NZ_ART" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="GRUENFZ" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="LAERMES" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="FLMASS" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="BR_NUTZART" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="BR_NMASS" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="SHAPE.AREA" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="SHAPE.LEN" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="NAME" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="VERBINDLKT" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_matched_records" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="KANTZONE" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="AZART" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="ZONENCODE" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_PARM PARM_NAME="DIRECTION" PARM_VALUE="Forward (Source To Destination)"/>
+#! <XFORM_PARM PARM_NAME="VAL_ATTR" PARM_VALUE="ZONENCODE"/>
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeValueMapper_19"/>
+#! <XFORM_PARM PARM_NAME="MAPPING_GRP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="ATTR_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="DEFAULT_VALUE" PARM_VALUE="FME_NULL_VALUE"/>
+#! <XFORM_PARM PARM_NAME="LUT" PARM_VALUE="UEO,61,ZPP,62"/>
+#! <XFORM_PARM PARM_NAME="SRC" PARM_VALUE="KANTART"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#! IDENTIFIER="225"
+#! TYPE="Tester"
+#! VERSION="2"
+#! POSITION="3435 106"
+#! ORDER="5e+014"
+#! PARMS_EDITED="true"
+#! ENABLED="true"
+#! >
+#! <OUTPUT_FEAT NAME="PASSED"/>
+#! <FEAT_COLLAPSED COLLAPSED="0"/>
+#! <XFORM_ATTR ATTR_NAME="geodb_oid" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="OBJECTID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="BFSNR" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="REL_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="GENEHM" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="INKRAFT" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="BESCHRIEB" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="QUALITAET" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_verbindlkt" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="KANTART" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="ZONENABK" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="ZONENNAME" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="PLANBESCHR" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="BEMERK" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="DARST_C" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="DATENVERW" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="ZUSTAENDIG" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="BUNDESART" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="AZ" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="NZ_ART" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="GRUENFZ" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="LAERMES" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="FLMASS" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="BR_NUTZART" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="BR_NMASS" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="SHAPE.AREA" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="SHAPE.LEN" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="NAME" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="VERBINDLKT" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_matched_records" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="KANTZONE" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="AZART" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="ZONENCODE" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <OUTPUT_FEAT NAME="FAILED"/>
+#! <FEAT_COLLAPSED COLLAPSED="1"/>
+#! <XFORM_ATTR ATTR_NAME="geodb_oid" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="OBJECTID" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="BFSNR" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="REL_ID" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="GENEHM" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="INKRAFT" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="BESCHRIEB" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="QUALITAET" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="_verbindlkt" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="KANTART" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="ZONENABK" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="ZONENNAME" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="PLANBESCHR" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="BEMERK" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="DARST_C" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="DATENVERW" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="ZUSTAENDIG" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="BUNDESART" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="AZ" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="NZ_ART" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="GRUENFZ" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="LAERMES" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="FLMASS" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="BR_NUTZART" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="BR_NMASS" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="SHAPE.AREA" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="SHAPE.LEN" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="NAME" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="VERBINDLKT" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="_matched_records" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="KANTZONE" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="AZART" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="ZONENCODE" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_PARM PARM_NAME="TEST_MODE" PARM_VALUE="Automatic"/>
+#! <XFORM_PARM PARM_NAME="TEST_DESCRIPTION" PARM_VALUE="&quot;&quot;"/>
+#! <XFORM_PARM PARM_NAME="COMPOSITE_TEST" PARM_VALUE="&lt;Unused&gt;"/>
+#! <XFORM_PARM PARM_NAME="BOOL_OP" PARM_VALUE="OR"/>
+#! <XFORM_PARM PARM_NAME="TEST_LIST" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Tester"/>
+#! <XFORM_PARM PARM_NAME="TEST_CLAUSE" PARM_VALUE="TEST &lt;at&gt;Value&lt;openparen&gt;ZONENNAME&lt;closeparen&gt; BEGINS_WITH Altstadtperimeter"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#! IDENTIFIER="227"
+#! TYPE="AttributeCreator"
+#! VERSION="5"
+#! POSITION="4119 142"
+#! ORDER="5e+014"
+#! PARMS_EDITED="true"
+#! ENABLED="true"
+#! >
+#! <OUTPUT_FEAT NAME="OUTPUT"/>
+#! <FEAT_COLLAPSED COLLAPSED="0"/>
+#! <XFORM_ATTR ATTR_NAME="geodb_oid" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="OBJECTID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="BFSNR" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="REL_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="GENEHM" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="INKRAFT" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="BESCHRIEB" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="QUALITAET" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_verbindlkt" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="KANTART" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="ZONENABK" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="ZONENNAME" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="PLANBESCHR" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="BEMERK" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="DARST_C" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="DATENVERW" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="ZUSTAENDIG" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="BUNDESART" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="AZ" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="NZ_ART" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="GRUENFZ" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="LAERMES" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="FLMASS" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="BR_NUTZART" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="BR_NMASS" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="SHAPE.AREA" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="SHAPE.LEN" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="NAME" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="VERBINDLKT" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_matched_records" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="KANTZONE" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="AZART" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="ZONENCODE" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_PARM PARM_NAME="NUM_PRIOR_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#! <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeCreator_5"/>
+#! <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_VALUE="&lt;Unused&gt;"/>
+#! <XFORM_PARM PARM_NAME="NUM_SUBSEQUENT_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#! <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
+#! <XFORM_PARM PARM_NAME="ATTR_LIST" PARM_VALUE="ZONENCODE,69"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#! IDENTIFIER="233"
+#! TYPE="AttributeRenamer"
+#! VERSION="2"
+#! POSITION="1830 -1679"
+#! ORDER="5e+014"
+#! PARMS_EDITED="true"
+#! ENABLED="true"
+#! >
+#! <OUTPUT_FEAT NAME="OUTPUT"/>
+#! <FEAT_COLLAPSED COLLAPSED="0"/>
+#! <XFORM_ATTR ATTR_NAME="geodb_oid" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="OBJECTID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="BFSNR" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="REL_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="GENEHM" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="INKRAFT" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_beschrieb" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="QUALITAET" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_verbindlkt" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_kantart" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="ZONENABK" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="BESCHRIEB" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="PLANBESCHR" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="BEMERK" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="DARST_C" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="DATENVERW" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="ZUSTAENDIG" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="BUNDESART" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="NZ" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="NZ_ART" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="GRUENFZ" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="BEDEUT" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="SCHUTZG" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="GW_NAT" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="GW_BED" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="GUELTIGBIS" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="VE_BESCHW" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="VE_THEMA" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="SHAPE.AREA" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="SHAPE.LEN" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="NAME" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="VERBINDLKT" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_matched_records" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeRenamer_14"/>
+#! <XFORM_PARM PARM_NAME="ATTR_LIST" PARM_VALUE="VE_GUELTIG,GUELTIGBIS,&quot;&quot;"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#! IDENTIFIER="232"
+#! TYPE="AttributeCreator"
+#! VERSION="5"
+#! POSITION="1851 -1954"
+#! ORDER="5e+014"
+#! PARMS_EDITED="true"
+#! ENABLED="true"
+#! >
+#! <OUTPUT_FEAT NAME="OUTPUT"/>
+#! <FEAT_COLLAPSED COLLAPSED="0"/>
+#! <XFORM_ATTR ATTR_NAME="geodb_oid" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="OBJECTID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="BFSNR" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="REL_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="GENEHM" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="INKRAFT" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_beschrieb" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="QUALITAET" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_verbindlkt" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_kantart" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="ZONENABK" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="BESCHRIEB" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="PLANBESCHR" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="BEMERK" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="DARST_C" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="DATENVERW" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="ZUSTAENDIG" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="BUNDESART" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="NZ" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="NZ_ART" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="GRUENFZ" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="BEDEUT" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="SCHUTZG" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="GW_NAT" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="GW_BED" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="GUELTIGBIS" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="VE_BESCHW" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="VE_THEMA" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="SHAPE.AREA" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="SHAPE.LEN" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="NAME" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="VERBINDLKT" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_matched_records" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="KANTART" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_PARM PARM_NAME="NUM_PRIOR_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#! <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeCreator_6"/>
+#! <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_VALUE="&lt;Unused&gt;"/>
+#! <XFORM_PARM PARM_NAME="NUM_SUBSEQUENT_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#! <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
+#! <XFORM_PARM PARM_NAME="ATTR_LIST" PARM_VALUE="KANTART,Laufende&lt;space&gt;&lt;u00c4&gt;nderung"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#! IDENTIFIER="235"
+#! TYPE="TestFilter"
+#! VERSION="1"
+#! POSITION="2380 -6434"
+#! ORDER="5e+014"
+#! PARMS_EDITED="true"
+#! ENABLED="true"
+#! >
+#! <OUTPUT_FEAT NAME="UEPROJ"/>
+#! <FEAT_COLLAPSED COLLAPSED="0"/>
+#! <XFORM_ATTR ATTR_NAME="geodb_oid" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="OBJECTID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="BFSNR" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="REL_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="GENEHMDAT" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="INKRAFT" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_beschrieb" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="QUALITAET" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_verbindlkt" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_kantart" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="LINIENABK" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="BESCHRIEB" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="PLANBESCHR" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="BEMERK" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="DARST_C" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="DATENVERW" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="ZUSTAENDIG" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="BUNDESART" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="NZ" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="NZ_ART" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="GRUENFZ" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="BEDEUT" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="SCHUTZG" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="GW_NAT" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="GW_BED" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="ABSTLINKS" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="ABSTRECHTS" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="ABSTDEF" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="STATUS" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="SHAPE.LEN" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="NAME" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="VERBINDLKT" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_matched_records" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="KANTART" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <OUTPUT_FEAT NAME="UEUL"/>
+#! <FEAT_COLLAPSED COLLAPSED="1"/>
+#! <XFORM_ATTR ATTR_NAME="geodb_oid" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="OBJECTID" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="BFSNR" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="REL_ID" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="GENEHMDAT" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="INKRAFT" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="_beschrieb" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="QUALITAET" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="_verbindlkt" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="_kantart" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="LINIENABK" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="BESCHRIEB" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="PLANBESCHR" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="BEMERK" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="DARST_C" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="DATENVERW" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="ZUSTAENDIG" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="BUNDESART" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="NZ" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="NZ_ART" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="GRUENFZ" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="BEDEUT" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="SCHUTZG" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="GW_NAT" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="GW_BED" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="ABSTLINKS" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="ABSTRECHTS" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="ABSTDEF" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="STATUS" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="SHAPE.LEN" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="NAME" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="VERBINDLKT" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="_matched_records" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="KANTART" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_PARM PARM_NAME="TEST_LIST" PARM_VALUE="BOOL_OP&lt;comma&gt;OR&lt;comma&gt;COMPOSITE_TEST&lt;comma&gt;&lt;lt&gt;Unused&lt;gt&gt;&lt;comma&gt;TEST_CLAUSE&lt;comma&gt;&lt;quote&gt;TEST&lt;space&gt;&lt;lt&gt;at&lt;gt&gt;Value&lt;lt&gt;openparen&lt;gt&gt;STATUS&lt;lt&gt;closeparen&lt;gt&gt;&lt;space&gt;=&lt;space&gt;3&lt;quote&gt;,UEPROJ"/>
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="TestFilter_3"/>
+#! <XFORM_PARM PARM_NAME="DEFAULT_VALUE" PARM_VALUE="UEUL"/>
 #! </TRANSFORMER>
 #! </TRANSFORMERS>
 #! <FEAT_LINKS>
@@ -5614,15 +6292,6 @@
 #! SOURCE_NODE="50"
 #! TARGET_NODE="14"
 #! SOURCE_PORT_DESC="fo 3"
-#! TARGET_PORT_DESC="-1"
-#! ENABLED="true"
-#! EXTRA_POINTS=""
-#! />
-#! <FEAT_LINK
-#! IDENTIFIER="54"
-#! SOURCE_NODE="50"
-#! TARGET_NODE="13"
-#! SOURCE_PORT_DESC="fo 2"
 #! TARGET_PORT_DESC="-1"
 #! ENABLED="true"
 #! EXTRA_POINTS=""
@@ -5766,7 +6435,7 @@
 #! IDENTIFIER="104"
 #! SOURCE_NODE="101"
 #! TARGET_NODE="98"
-#! SOURCE_PORT_DESC="fo 0"
+#! SOURCE_PORT_DESC="fo 1"
 #! TARGET_PORT_DESC="fi 0"
 #! ENABLED="true"
 #! EXTRA_POINTS=""
@@ -5784,7 +6453,7 @@
 #! IDENTIFIER="107"
 #! SOURCE_NODE="101"
 #! TARGET_NODE="106"
-#! SOURCE_PORT_DESC="fo 1"
+#! SOURCE_PORT_DESC="fo 2"
 #! TARGET_PORT_DESC="fi 0"
 #! ENABLED="true"
 #! EXTRA_POINTS=""
@@ -5811,7 +6480,7 @@
 #! IDENTIFIER="114"
 #! SOURCE_NODE="101"
 #! TARGET_NODE="112"
-#! SOURCE_PORT_DESC="fo 2"
+#! SOURCE_PORT_DESC="fo 3"
 #! TARGET_PORT_DESC="fi 0"
 #! ENABLED="true"
 #! EXTRA_POINTS=""
@@ -5838,7 +6507,7 @@
 #! IDENTIFIER="121"
 #! SOURCE_NODE="101"
 #! TARGET_NODE="120"
-#! SOURCE_PORT_DESC="fo 3"
+#! SOURCE_PORT_DESC="fo 4"
 #! TARGET_PORT_DESC="fi 0"
 #! ENABLED="true"
 #! EXTRA_POINTS=""
@@ -5856,7 +6525,7 @@
 #! IDENTIFIER="125"
 #! SOURCE_NODE="101"
 #! TARGET_NODE="124"
-#! SOURCE_PORT_DESC="fo 4"
+#! SOURCE_PORT_DESC="fo 5"
 #! TARGET_PORT_DESC="fi 0"
 #! ENABLED="true"
 #! EXTRA_POINTS=""
@@ -5921,15 +6590,6 @@
 #! TARGET_NODE="143"
 #! SOURCE_PORT_DESC="fo 0"
 #! TARGET_PORT_DESC="fi 0"
-#! ENABLED="true"
-#! EXTRA_POINTS=""
-#! />
-#! <FEAT_LINK
-#! IDENTIFIER="145"
-#! SOURCE_NODE="143"
-#! TARGET_NODE="19"
-#! SOURCE_PORT_DESC="fo 0"
-#! TARGET_PORT_DESC="-1"
 #! ENABLED="true"
 #! EXTRA_POINTS=""
 #! />
@@ -6096,27 +6756,9 @@
 #! EXTRA_POINTS=""
 #! />
 #! <FEAT_LINK
-#! IDENTIFIER="193"
-#! SOURCE_NODE="190"
-#! TARGET_NODE="44"
-#! SOURCE_PORT_DESC="fo 0"
-#! TARGET_PORT_DESC="fi 0"
-#! ENABLED="true"
-#! EXTRA_POINTS=""
-#! />
-#! <FEAT_LINK
 #! IDENTIFIER="203"
 #! SOURCE_NODE="195"
 #! TARGET_NODE="198"
-#! SOURCE_PORT_DESC="-1"
-#! TARGET_PORT_DESC="-1"
-#! ENABLED="true"
-#! EXTRA_POINTS=""
-#! />
-#! <FEAT_LINK
-#! IDENTIFIER="207"
-#! SOURCE_NODE="196"
-#! TARGET_NODE="199"
 #! SOURCE_PORT_DESC="-1"
 #! TARGET_PORT_DESC="-1"
 #! ENABLED="true"
@@ -6127,6 +6769,150 @@
 #! SOURCE_NODE="197"
 #! TARGET_NODE="201"
 #! SOURCE_PORT_DESC="-1"
+#! TARGET_PORT_DESC="-1"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="213"
+#! SOURCE_NODE="196"
+#! TARGET_NODE="212"
+#! SOURCE_PORT_DESC="-1"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="215"
+#! SOURCE_NODE="212"
+#! TARGET_NODE="207"
+#! SOURCE_PORT_DESC="fo 0"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="217"
+#! SOURCE_NODE="207"
+#! TARGET_NODE="214"
+#! SOURCE_PORT_DESC="fo 0"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="218"
+#! SOURCE_NODE="214"
+#! TARGET_NODE="199"
+#! SOURCE_PORT_DESC="fo 0"
+#! TARGET_PORT_DESC="-1"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="226"
+#! SOURCE_NODE="221"
+#! TARGET_NODE="225"
+#! SOURCE_PORT_DESC="fo 0"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="228"
+#! SOURCE_NODE="190"
+#! TARGET_NODE="44"
+#! SOURCE_PORT_DESC="fo 0"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="222"
+#! SOURCE_NODE="50"
+#! TARGET_NODE="221"
+#! SOURCE_PORT_DESC="fo 2"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="229"
+#! SOURCE_NODE="225"
+#! TARGET_NODE="13"
+#! SOURCE_PORT_DESC="fo 1"
+#! TARGET_PORT_DESC="-1"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="230"
+#! SOURCE_NODE="225"
+#! TARGET_NODE="227"
+#! SOURCE_PORT_DESC="fo 0"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="231"
+#! SOURCE_NODE="227"
+#! TARGET_NODE="13"
+#! SOURCE_PORT_DESC="fo 0"
+#! TARGET_PORT_DESC="-1"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="234"
+#! SOURCE_NODE="101"
+#! TARGET_NODE="233"
+#! SOURCE_PORT_DESC="fo 0"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="236"
+#! SOURCE_NODE="233"
+#! TARGET_NODE="232"
+#! SOURCE_PORT_DESC="fo 0"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="237"
+#! SOURCE_NODE="232"
+#! TARGET_NODE="22"
+#! SOURCE_PORT_DESC="fo 0"
+#! TARGET_PORT_DESC="-1"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="238"
+#! SOURCE_NODE="143"
+#! TARGET_NODE="235"
+#! SOURCE_PORT_DESC="fo 0"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="239"
+#! SOURCE_NODE="235"
+#! TARGET_NODE="19"
+#! SOURCE_PORT_DESC="fo 1"
+#! TARGET_PORT_DESC="-1"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="242"
+#! SOURCE_NODE="235"
+#! TARGET_NODE="240"
+#! SOURCE_PORT_DESC="fo 0"
 #! TARGET_PORT_DESC="-1"
 #! ENABLED="true"
 #! EXTRA_POINTS=""
@@ -6143,77 +6929,28 @@
 #! TARGET_PORT_DESC="1"
 #! />
 #! <ATTR_LINK
-#! IDENTIFIER="590031"
-#! SOURCE_NODE="196"
-#! TARGET_NODE="199"
-#! SOURCE_PORT_DESC="12"
-#! TARGET_PORT_DESC="7"
-#! />
-#! <ATTR_LINK
-#! IDENTIFIER="327887"
-#! SOURCE_NODE="196"
-#! TARGET_NODE="199"
-#! SOURCE_PORT_DESC="7"
-#! TARGET_PORT_DESC="9"
-#! />
-#! <ATTR_LINK
-#! IDENTIFIER="458959"
-#! SOURCE_NODE="196"
-#! TARGET_NODE="199"
-#! SOURCE_PORT_DESC="10"
-#! TARGET_PORT_DESC="4"
-#! />
-#! <ATTR_LINK
-#! IDENTIFIER="262351"
-#! SOURCE_NODE="196"
-#! TARGET_NODE="199"
-#! SOURCE_PORT_DESC="14"
+#! IDENTIFIER="196819"
+#! SOURCE_NODE="197"
+#! TARGET_NODE="201"
+#! SOURCE_PORT_DESC="19"
 #! TARGET_PORT_DESC="8"
-#! />
-#! <ATTR_LINK
-#! IDENTIFIER="131279"
-#! SOURCE_NODE="196"
-#! TARGET_NODE="199"
-#! SOURCE_PORT_DESC="4"
-#! TARGET_PORT_DESC="2"
-#! />
-#! <ATTR_LINK
-#! IDENTIFIER="196815"
-#! SOURCE_NODE="196"
-#! TARGET_NODE="199"
-#! SOURCE_PORT_DESC="13"
-#! TARGET_PORT_DESC="5"
-#! />
-#! <ATTR_LINK
-#! IDENTIFIER="393423"
-#! SOURCE_NODE="196"
-#! TARGET_NODE="199"
-#! SOURCE_PORT_DESC="9"
-#! TARGET_PORT_DESC="3"
-#! />
-#! <ATTR_LINK
-#! IDENTIFIER="65743"
-#! SOURCE_NODE="196"
-#! TARGET_NODE="199"
-#! SOURCE_PORT_DESC="3"
-#! TARGET_PORT_DESC="1"
-#! />
-#! <ATTR_LINK
-#! IDENTIFIER="524495"
-#! SOURCE_NODE="196"
-#! TARGET_NODE="199"
-#! SOURCE_PORT_DESC="11"
-#! TARGET_PORT_DESC="6"
 #! />
 #! <ATTR_LINK
 #! IDENTIFIER="524499"
 #! SOURCE_NODE="197"
 #! TARGET_NODE="201"
-#! SOURCE_PORT_DESC="20"
-#! TARGET_PORT_DESC="9"
+#! SOURCE_PORT_DESC="10"
+#! TARGET_PORT_DESC="7"
 #! />
 #! <ATTR_LINK
-#! IDENTIFIER="393427"
+#! IDENTIFIER="327891"
+#! SOURCE_NODE="197"
+#! TARGET_NODE="201"
+#! SOURCE_PORT_DESC="4"
+#! TARGET_PORT_DESC="2"
+#! />
+#! <ATTR_LINK
+#! IDENTIFIER="131283"
 #! SOURCE_NODE="197"
 #! TARGET_NODE="201"
 #! SOURCE_PORT_DESC="27"
@@ -6223,34 +6960,6 @@
 #! IDENTIFIER="458963"
 #! SOURCE_NODE="197"
 #! TARGET_NODE="201"
-#! SOURCE_PORT_DESC="19"
-#! TARGET_PORT_DESC="8"
-#! />
-#! <ATTR_LINK
-#! IDENTIFIER="65747"
-#! SOURCE_NODE="197"
-#! TARGET_NODE="201"
-#! SOURCE_PORT_DESC="3"
-#! TARGET_PORT_DESC="1"
-#! />
-#! <ATTR_LINK
-#! IDENTIFIER="131283"
-#! SOURCE_NODE="197"
-#! TARGET_NODE="201"
-#! SOURCE_PORT_DESC="4"
-#! TARGET_PORT_DESC="2"
-#! />
-#! <ATTR_LINK
-#! IDENTIFIER="196819"
-#! SOURCE_NODE="197"
-#! TARGET_NODE="201"
-#! SOURCE_PORT_DESC="12"
-#! TARGET_PORT_DESC="6"
-#! />
-#! <ATTR_LINK
-#! IDENTIFIER="327891"
-#! SOURCE_NODE="197"
-#! TARGET_NODE="201"
 #! SOURCE_PORT_DESC="26"
 #! TARGET_PORT_DESC="10"
 #! />
@@ -6258,8 +6967,64 @@
 #! IDENTIFIER="262355"
 #! SOURCE_NODE="197"
 #! TARGET_NODE="201"
-#! SOURCE_PORT_DESC="10"
-#! TARGET_PORT_DESC="7"
+#! SOURCE_PORT_DESC="3"
+#! TARGET_PORT_DESC="1"
+#! />
+#! <ATTR_LINK
+#! IDENTIFIER="65747"
+#! SOURCE_NODE="197"
+#! TARGET_NODE="201"
+#! SOURCE_PORT_DESC="20"
+#! TARGET_PORT_DESC="9"
+#! />
+#! <ATTR_LINK
+#! IDENTIFIER="393427"
+#! SOURCE_NODE="197"
+#! TARGET_NODE="201"
+#! SOURCE_PORT_DESC="12"
+#! TARGET_PORT_DESC="6"
+#! />
+#! <ATTR_LINK
+#! IDENTIFIER="65754"
+#! SOURCE_NODE="214"
+#! TARGET_NODE="199"
+#! SOURCE_PORT_DESC="ao 0 13"
+#! TARGET_PORT_DESC="5"
+#! />
+#! <ATTR_LINK
+#! IDENTIFIER="196826"
+#! SOURCE_NODE="214"
+#! TARGET_NODE="199"
+#! SOURCE_PORT_DESC="ao 0 14"
+#! TARGET_PORT_DESC="8"
+#! />
+#! <ATTR_LINK
+#! IDENTIFIER="131290"
+#! SOURCE_NODE="214"
+#! TARGET_NODE="199"
+#! SOURCE_PORT_DESC="ao 0 9"
+#! TARGET_PORT_DESC="3"
+#! />
+#! <ATTR_LINK
+#! IDENTIFIER="393434"
+#! SOURCE_NODE="214"
+#! TARGET_NODE="199"
+#! SOURCE_PORT_DESC="ao 0 11"
+#! TARGET_PORT_DESC="6"
+#! />
+#! <ATTR_LINK
+#! IDENTIFIER="262362"
+#! SOURCE_NODE="214"
+#! TARGET_NODE="199"
+#! SOURCE_PORT_DESC="ao 0 3"
+#! TARGET_PORT_DESC="1"
+#! />
+#! <ATTR_LINK
+#! IDENTIFIER="327898"
+#! SOURCE_NODE="214"
+#! TARGET_NODE="199"
+#! SOURCE_PORT_DESC="ao 0 4"
+#! TARGET_PORT_DESC="2"
 #! />
 #! </ATTR_LINKS>
 #! <SUBDOCUMENTS>
@@ -6904,6 +7669,24 @@ FACTORY_DEF * TestFactory   FACTORY_NAME "Unexpected Input Remover"   INPUT FEAT
 FACTORY_DEF * TeeFactory    FACTORY_NAME "Source -> Generic"    INPUT FEATURE_TYPE *    OUTPUT FEATURE_TYPE *       @Transform(GEODATABASE_SDE,FME_GENERIC,ALIAS_GEOMETRY)
 DEFAULT_MACRO WB_CURRENT_CONTEXT
 # -------------------------------------------------------------------------
+Lookup AttributeValueMapper_16_LOOKUP_TABLE   1               unbeschr<u00e4>nkt   ""              FME_NULL_VALUE   ENCODED_SUPPORTUNICODE
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeValueMapper_16    INPUT  FEATURE_TYPE GEODB.NUPLA_GNBAUWS    OUTPUT FEATURE_TYPE AttributeValueMapper_16_OUTPUT         @Lookup(AttributeValueMapper_16_LOOKUP_TABLE,"GEBLU",FORWARD|ENCODED_ATTR|REAL_NULL_SUPPORT, GEBLANGUNB)
+
+
+# -------------------------------------------------------------------------
+Lookup AttributeValueMapper_17_LOOKUP_TABLE   1               unbeschr<u00e4>nkt   ""              FME_NULL_VALUE   ENCODED_SUPPORTUNICODE
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeValueMapper_17    INPUT  FEATURE_TYPE AttributeValueMapper_16_OUTPUT    OUTPUT FEATURE_TYPE AttributeValueMapper_17_OUTPUT         @Lookup(AttributeValueMapper_17_LOOKUP_TABLE,"GEBTU",FORWARD|ENCODED_ATTR|REAL_NULL_SUPPORT, GEBTIEFUNB)
+
+
+# -------------------------------------------------------------------------
+Lookup AttributeValueMapper_18_LOOKUP_TABLE   1               unbekannt   2               geschlossen   3               offen   ""              ""   ENCODED_SUPPORTUNICODE
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeValueMapper_18    INPUT  FEATURE_TYPE AttributeValueMapper_17_OUTPUT    OUTPUT FEATURE_TYPE AttributeValueMapper_18_OUTPUT         @Lookup(AttributeValueMapper_18_LOOKUP_TABLE,"BWTYP",FORWARD|ENCODED_ATTR|REAL_NULL_SUPPORT, BAUWEISTYP)
+
+
+# -------------------------------------------------------------------------
 
 FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRenamer_5    INPUT  FEATURE_TYPE GEODB.NUPLA_UEWAABL    OUTPUT FEATURE_TYPE AttributeRenamer_5_OUTPUT         @RenameAttributes(ATTR_LIST_DEF_VAL, VERBINDLKT,_verbindlkt,"",KANTART,_kantart,"",RVS_ID,REL_ID,"",GEMNAME,NAME,"")
 
@@ -7009,6 +7792,12 @@ FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeValueMapper_9    INPUT  FEATUR
 
 # -------------------------------------------------------------------------
 
+FACTORY_DEF * TeeFactory    FACTORY_NAME TestFilter_3    INPUT  FEATURE_TYPE AttributeValueMapper_9_OUTPUT    OUTPUT FEATURE_TYPE TestFilter_3_TESTFILTERINPUTLINE_0
+
+FACTORY_DEF * TestFactory FACTORY_NAME TestFilter_3_TestFactory_0 INPUT FEATURE_TYPE TestFilter_3_TESTFILTERINPUTLINE_0 TEST @EvaluateExpression(STRING_ENCODED,<at>Value<openparen>STATUS<closeparen>,TestFilter_3) = 3 ENCODED BOOLEAN_OPERATOR OR COMPOSITE_TEST_EXPR <Unused> OUTPUT PASSED FEATURE_TYPE TestFilter_3_UEPROJ OUTPUT FAILED FEATURE_TYPE TestFilter_3_TESTFILTERINPUTLINE_1
+FACTORY_DEF * TeeFactory FACTORY_NAME TestFilter_3_UEUL INPUT FEATURE_TYPE TestFilter_3_TESTFILTERINPUTLINE_1 OUTPUT FEATURE_TYPE TestFilter_3_UEUL
+# -------------------------------------------------------------------------
+
 FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRenamer_3    INPUT  FEATURE_TYPE GEODB.NUPLA_UELARMES    OUTPUT FEATURE_TYPE AttributeRenamer_3_OUTPUT         @RenameAttributes(ATTR_LIST_DEF_VAL, RVS_ID,REL_ID,"",VERBINDLKT,_verbindlkt,"",KANTART,_kantart,"",GEMNAME,NAME,"")
 
 
@@ -7019,7 +7808,7 @@ INCLUDE [    if { {MUST_MATCH_ONE} == {MATCH_ALL} } {       puts {MACRO Joiner_3
 FACTORY_DEF * JoinFactory    FACTORY_NAME Joiner_3    INPUT  FEATURE_TYPE AttributeRenamer_3_OUTPUT    READER_TYPE             ORACLE8I_DB    READER_DATASET          "$(DATABASE$encode)"    TABLE_ID                "GEODB.NUPLA_VERBINDT"    READER_PARAMS           $(Joiner_3_DIRECTIVES)    JOIN_KEYS               _verbindlkt<space>VERBINDLKT    JOINED_ATTRIBUTE_PREFIX "VERBINDT_"    ADDED_FIELDS            BEZ_DE    COMBINE_ATTRIBUTES      PREFIX_JOINED    MATCH_RULE              MUST_MATCH_ONE    CACHE_SIZE              5000    PREFETCH_EXHAUSTIVE     Yes    ONE_FEATURE_PER_JOIN    $(Joiner_3_ONE_FEATURE_PER_JOIN)    JOIN_ID                 "Joiner_3"    OUTPUT JOINED FEATURE_TYPE Joiner_3_JOINED
 
 # -------------------------------------------------------------------------
-Lookup AttributeValueMapper_2_LOOKUP_TABLE   7               L<u00e4>rmempfindlichkeitsstufe<space>I   8               L<u00e4>rmempfindlichkeitsstufe<space>II   9               L<u00e4>rmempfindlichkeitsstufe<space>II<space>aufgestuft   10              L<u00e4>rmempfindlichkeitsstufe<space>III   11              L<u00e4>rmempfindlichkeitsstufe<space>III<space>aufgestuft   12              L<u00e4>rmempfindlichkeitsstufe<space>IV   ""              ""   ENCODED_SUPPORTUNICODE
+Lookup AttributeValueMapper_2_LOOKUP_TABLE   7               L<u00e4>rmempfindlichkeitsstufe<space>I   8               L<u00e4>rmempfindlichkeitsstufe<space>II   9               L<u00e4>rmempfindlichkeitsstufe<space>II<space>aufgestuft   10              L<u00e4>rmempfindlichkeitsstufe<space>III   11              L<u00e4>rmempfindlichkeitsstufe<space>III<space>aufgestuft   12              L<u00e4>rmempfindlichkeitsstufe<space>IV   19              ES-Planungsgebiet   ""              ""   ENCODED_SUPPORTUNICODE
 
 FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeValueMapper_2    INPUT  FEATURE_TYPE Joiner_3_JOINED    OUTPUT FEATURE_TYPE AttributeValueMapper_2_OUTPUT         @Lookup(AttributeValueMapper_2_LOOKUP_TABLE,"_kantart",FORWARD|ENCODED_ATTR|REAL_NULL_SUPPORT, KANTART)
 
@@ -7049,12 +7838,13 @@ FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRenamer_9    INPUT  FEATURE_TY
 
 FACTORY_DEF * TeeFactory    FACTORY_NAME TestFilter    INPUT  FEATURE_TYPE AttributeRenamer_9_OUTPUT    OUTPUT FEATURE_TYPE TestFilter_TESTFILTERINPUTLINE_0
 
-FACTORY_DEF * TestFactory FACTORY_NAME TestFilter_TestFactory_0 INPUT FEATURE_TYPE TestFilter_TESTFILTERINPUTLINE_0 TEST @EvaluateExpression(STRING_ENCODED,<at>Value<openparen>_kantart<closeparen>,TestFilter) IN 2<comma>3<comma>4<comma>5<comma>6<comma>18<comma>19<comma>108 ENCODED BOOLEAN_OPERATOR OR COMPOSITE_TEST_EXPR <Unused> OUTPUT PASSED FEATURE_TYPE TestFilter_UEUZ OUTPUT FAILED FEATURE_TYPE TestFilter_TESTFILTERINPUTLINE_1
-FACTORY_DEF * TestFactory FACTORY_NAME TestFilter_TestFactory_1 INPUT FEATURE_TYPE TestFilter_TESTFILTERINPUTLINE_1 TEST @EvaluateExpression(STRING_ENCODED,<at>Value<openparen>_kantart<closeparen>,TestFilter) IN 13-17 ENCODED BOOLEAN_OPERATOR OR COMPOSITE_TEST_EXPR <Unused> OUTPUT PASSED FEATURE_TYPE TestFilter_GEFF OUTPUT FAILED FEATURE_TYPE TestFilter_TESTFILTERINPUTLINE_2
-FACTORY_DEF * TestFactory FACTORY_NAME TestFilter_TestFactory_2 INPUT FEATURE_TYPE TestFilter_TESTFILTERINPUTLINE_2 TEST @EvaluateExpression(STRING_ENCODED,<at>Value<openparen>_kantart<closeparen>,TestFilter) IN 96-103 ENCODED BOOLEAN_OPERATOR OR COMPOSITE_TEST_EXPR <Unused> OUTPUT PASSED FEATURE_TYPE TestFilter_WEWRF OUTPUT FAILED FEATURE_TYPE TestFilter_TESTFILTERINPUTLINE_3
-FACTORY_DEF * TestFactory FACTORY_NAME TestFilter_TestFactory_3 INPUT FEATURE_TYPE TestFilter_TESTFILTERINPUTLINE_3 TEST @EvaluateExpression(STRING_ENCODED,<at>Value<openparen>_kantart<closeparen>,TestFilter) IN 0<comma>1 ENCODED BOOLEAN_OPERATOR OR COMPOSITE_TEST_EXPR <Unused> OUTPUT PASSED FEATURE_TYPE TestFilter_GEGEWF OUTPUT FAILED FEATURE_TYPE TestFilter_TESTFILTERINPUTLINE_4
-FACTORY_DEF * TestFactory FACTORY_NAME TestFilter_TestFactory_4 INPUT FEATURE_TYPE TestFilter_TESTFILTERINPUTLINE_4 TEST @EvaluateExpression(STRING_ENCODED,<at>Value<openparen>_kantart<closeparen>,TestFilter) IN 37-95 ENCODED BOOLEAN_OPERATOR OR COMPOSITE_TEST_EXPR <Unused> OUTPUT PASSED FEATURE_TYPE TestFilter_NHSF OUTPUT FAILED FEATURE_TYPE TestFilter_TESTFILTERINPUTLINE_5
-FACTORY_DEF * TeeFactory FACTORY_NAME TestFilter_<lt>UNFILTERED<gt> INPUT FEATURE_TYPE TestFilter_TESTFILTERINPUTLINE_5 OUTPUT FEATURE_TYPE TestFilter_<lt>UNFILTERED<gt>
+FACTORY_DEF * TestFactory FACTORY_NAME TestFilter_TestFactory_0 INPUT FEATURE_TYPE TestFilter_TESTFILTERINPUTLINE_0 TEST @EvaluateExpression(STRING_ENCODED,<at>Value<openparen>_kantart<closeparen>,TestFilter) IN 104-107 ENCODED BOOLEAN_OPERATOR OR COMPOSITE_TEST_EXPR <Unused> OUTPUT PASSED FEATURE_TYPE TestFilter_VEFE OUTPUT FAILED FEATURE_TYPE TestFilter_TESTFILTERINPUTLINE_1
+FACTORY_DEF * TestFactory FACTORY_NAME TestFilter_TestFactory_1 INPUT FEATURE_TYPE TestFilter_TESTFILTERINPUTLINE_1 TEST @EvaluateExpression(STRING_ENCODED,<at>Value<openparen>_kantart<closeparen>,TestFilter) IN 2<comma>3<comma>4<comma>5<comma>6<comma>18<comma>19<comma>108 ENCODED BOOLEAN_OPERATOR OR COMPOSITE_TEST_EXPR <Unused> OUTPUT PASSED FEATURE_TYPE TestFilter_UEUZ OUTPUT FAILED FEATURE_TYPE TestFilter_TESTFILTERINPUTLINE_2
+FACTORY_DEF * TestFactory FACTORY_NAME TestFilter_TestFactory_2 INPUT FEATURE_TYPE TestFilter_TESTFILTERINPUTLINE_2 TEST @EvaluateExpression(STRING_ENCODED,<at>Value<openparen>_kantart<closeparen>,TestFilter) IN 13-17 ENCODED BOOLEAN_OPERATOR OR COMPOSITE_TEST_EXPR <Unused> OUTPUT PASSED FEATURE_TYPE TestFilter_GEFF OUTPUT FAILED FEATURE_TYPE TestFilter_TESTFILTERINPUTLINE_3
+FACTORY_DEF * TestFactory FACTORY_NAME TestFilter_TestFactory_3 INPUT FEATURE_TYPE TestFilter_TESTFILTERINPUTLINE_3 TEST @EvaluateExpression(STRING_ENCODED,<at>Value<openparen>_kantart<closeparen>,TestFilter) IN 96-103 ENCODED BOOLEAN_OPERATOR OR COMPOSITE_TEST_EXPR <Unused> OUTPUT PASSED FEATURE_TYPE TestFilter_WEWRF OUTPUT FAILED FEATURE_TYPE TestFilter_TESTFILTERINPUTLINE_4
+FACTORY_DEF * TestFactory FACTORY_NAME TestFilter_TestFactory_4 INPUT FEATURE_TYPE TestFilter_TESTFILTERINPUTLINE_4 TEST @EvaluateExpression(STRING_ENCODED,<at>Value<openparen>_kantart<closeparen>,TestFilter) IN 0<comma>1 ENCODED BOOLEAN_OPERATOR OR COMPOSITE_TEST_EXPR <Unused> OUTPUT PASSED FEATURE_TYPE TestFilter_GEGEWF OUTPUT FAILED FEATURE_TYPE TestFilter_TESTFILTERINPUTLINE_5
+FACTORY_DEF * TestFactory FACTORY_NAME TestFilter_TestFactory_5 INPUT FEATURE_TYPE TestFilter_TESTFILTERINPUTLINE_5 TEST @EvaluateExpression(STRING_ENCODED,<at>Value<openparen>_kantart<closeparen>,TestFilter) IN 37-95 ENCODED BOOLEAN_OPERATOR OR COMPOSITE_TEST_EXPR <Unused> OUTPUT PASSED FEATURE_TYPE TestFilter_NHSF OUTPUT FAILED FEATURE_TYPE TestFilter_TESTFILTERINPUTLINE_6
+FACTORY_DEF * TeeFactory FACTORY_NAME TestFilter_<lt>UNFILTERED<gt> INPUT FEATURE_TYPE TestFilter_TESTFILTERINPUTLINE_6 OUTPUT FEATURE_TYPE TestFilter_<lt>UNFILTERED<gt>
 FACTORY_DEF * TeeFactory   FACTORY_NAME "TestFilter <lt>UNFILTERED<gt> Output Nuker"   INPUT FEATURE_TYPE TestFilter_<lt>UNFILTERED<gt>
 # -------------------------------------------------------------------------
 Lookup AttributeValueMapper_7_LOOKUP_TABLE   1               gesch<u00fc>tzt   2               sch<u00fc>tzenswert   3               erhaltenswert   4               unbekannt   5               reduziert   ""              ""   ENCODED_SUPPORTUNICODE
@@ -7098,12 +7888,19 @@ FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeValueMapper_3    INPUT  FEATUR
 
 # -------------------------------------------------------------------------
 
+FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRenamer_14    INPUT  FEATURE_TYPE TestFilter_VEFE    OUTPUT FEATURE_TYPE AttributeRenamer_14_OUTPUT         @RenameAttributes(ATTR_LIST_DEF_VAL, VE_GUELTIG,GUELTIGBIS,"")
+
+
+# -------------------------------------------------------------------------
+FACTORY_DEF * AttrSetFactory FACTORY_NAME AttributeCreator_6 ATTRSET_PROPAGATE_MISSING YES INPUT  FEATURE_TYPE AttributeRenamer_14_OUTPUT ATTR KANTART Laufende<space><u00c4>nderung    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_6_OUTPUT 
+# -------------------------------------------------------------------------
+
 FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRenamer_7    INPUT  FEATURE_TYPE GEODB.NUPLA_RVST    OUTPUT FEATURE_TYPE AttributeRenamer_7_OUTPUT         @RenameAttributes(ATTR_LIST_DEF_VAL, RVS_ID,RELID,"",DOKUMENT,TEXTIMWEB,"",GEMNAME,NAME,"")
 
 
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRenamer    INPUT  FEATURE_TYPE GEODB.NUPLA_GNZPPUEO    INPUT  FEATURE_TYPE GEODB.NUPLA_GNGRUZO    OUTPUT FEATURE_TYPE AttributeRenamer_OUTPUT         @RenameAttributes(ATTR_LIST_DEF_VAL, RVS_ID,REL_ID,"",VERBINDLKT,_verbindlkt,"",GEMNAME,NAME,"")
+FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRenamer    INPUT  FEATURE_TYPE GEODB.NUPLA_GNGRUZO    INPUT  FEATURE_TYPE GEODB.NUPLA_GNZPPUEO    OUTPUT FEATURE_TYPE AttributeRenamer_OUTPUT         @RenameAttributes(ATTR_LIST_DEF_VAL, RVS_ID,REL_ID,"",VERBINDLKT,_verbindlkt,"",GEMNAME,NAME,"")
 
 
 # -------------------------------------------------------------------------
@@ -7134,8 +7931,8 @@ FACTORY_DEF * PythonFactory    FACTORY_NAME PythonCaller    INPUT  FEATURE_TYPE 
 
 MACRO casemac
 INCLUDE [ if { {YES} == {NO} } { puts {MACRO casemac -nocase}} ]
-Tcl2 proc StringReplacer_f2c29fb5_792f_4cac_90ef_d1e0ef6a5ce70_replacer { findText replaceText invalidValue} {     set attrs [split \"KANTZONE\" {,}];     set findValue [FME_DecodeText $findText];     set replaceValue [FME_DecodeText $replaceText];     foreach attr $attrs {       set attrVal [FME_GetAttribute $attr];       set length [string length $attrVal];       set noMatch true;       if {$length > 0} {          if {{NO} == {YES}} {             set newAttrVal [regsub $(casemac) -all -- $findValue $attrVal $replaceValue];          } else {             set newAttrVal [string map $(casemac) [list $findValue $replaceValue] $attrVal];          };          if { $newAttrVal ne $attrVal } {             set noMatch false;             FME_SetAttribute $attr $newAttrVal;          };       };       if {$noMatch} {          if { $invalidValue == {FME_NULL_VALUE} } {             FME_SetAttributeNull $attr;          } elseif { $invalidValue != {_FME_NO_OP_} }  {             FME_SetAttribute $attr [FME_DecodeText $invalidValue];          };       };     }; }
-FACTORY_DEF * TeeFactory    FACTORY_NAME StringReplacer    INPUT  FEATURE_TYPE PythonCaller_OUTPUT    OUTPUT FEATURE_TYPE StringReplacer_OUTPUT         @Tcl2("StringReplacer_f2c29fb5_792f_4cac_90ef_d1e0ef6a5ce70_replacer {Uebriges<space>Gebiet} {uebriges<space>Gebiet} {_FME_NO_OP_}")
+Tcl2 proc StringReplacer_5869020d_ddf0_4032_9dc9_5aa8684673b97_replacer { findText replaceText invalidValue} {     set attrs [split \"KANTZONE\" {,}];     set findValue [FME_DecodeText $findText];     set replaceValue [FME_DecodeText $replaceText];     foreach attr $attrs {       set attrVal [FME_GetAttribute $attr];       set length [string length $attrVal];       set noMatch true;       if {$length > 0} {          if {{NO} == {YES}} {             set newAttrVal [regsub $(casemac) -all -- $findValue $attrVal $replaceValue];          } else {             set newAttrVal [string map $(casemac) [list $findValue $replaceValue] $attrVal];          };          if { $newAttrVal ne $attrVal } {             set noMatch false;             FME_SetAttribute $attr $newAttrVal;          };       };       if {$noMatch} {          if { $invalidValue == {FME_NULL_VALUE} } {             FME_SetAttributeNull $attr;          } elseif { $invalidValue != {_FME_NO_OP_} }  {             FME_SetAttribute $attr [FME_DecodeText $invalidValue];          };       };     }; }
+FACTORY_DEF * TeeFactory    FACTORY_NAME StringReplacer    INPUT  FEATURE_TYPE PythonCaller_OUTPUT    OUTPUT FEATURE_TYPE StringReplacer_OUTPUT         @Tcl2("StringReplacer_5869020d_ddf0_4032_9dc9_5aa8684673b97_replacer {Uebriges<space>Gebiet} {uebriges<space>Gebiet} {_FME_NO_OP_}")
 
 # -------------------------------------------------------------------------
 Lookup AttributeValueMapper_LOOKUP_TABLE   0               1   1               2   2               3   3               4   4               5   5               6   ""              ""   ENCODED_SUPPORTUNICODE
@@ -7152,14 +7949,25 @@ FACTORY_DEF * TestFactory    FACTORY_NAME FeatureTypeFilter_BlankFilter    INPUT
 FACTORY_DEF * TeeFactory   FACTORY_NAME "FeatureTypeFilter <BLANK> Output Nuker"   INPUT FEATURE_TYPE FeatureTypeFilter_<BLANK>
 FACTORY_DEF * TeeFactory   FACTORY_NAME "FeatureTypeFilter <UNFILTERED> Output Nuker"   INPUT FEATURE_TYPE FeatureTypeFilter_<UNFILTERED>
 # -------------------------------------------------------------------------
+Lookup AttributeValueMapper_19_LOOKUP_TABLE   UEO             61   ZPP             62   ""              FME_NULL_VALUE   ENCODED_SUPPORTUNICODE
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeValueMapper_19    INPUT  FEATURE_TYPE FeatureTypeFilter_GEODB.NUPLA_GNZPPUEO    OUTPUT FEATURE_TYPE AttributeValueMapper_19_OUTPUT         @Lookup(AttributeValueMapper_19_LOOKUP_TABLE,"KANTART",FORWARD|ENCODED_ATTR|REAL_NULL_SUPPORT, ZONENCODE)
+
+
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TestFactory    FACTORY_NAME Tester    INPUT  FEATURE_TYPE AttributeValueMapper_19_OUTPUT    TEST @EvaluateExpression(STRING_ENCODED,<at>Value<openparen>ZONENNAME<closeparen>,Tester) BEGINS_WITH Altstadtperimeter ENCODED    BOOLEAN_OPERATOR OR    OUTPUT PASSED FEATURE_TYPE Tester_PASSED    OUTPUT FAILED FEATURE_TYPE Tester_FAILED
+# -------------------------------------------------------------------------
+FACTORY_DEF * AttrSetFactory FACTORY_NAME AttributeCreator_5 ATTRSET_PROPAGATE_MISSING YES INPUT  FEATURE_TYPE Tester_PASSED ATTR ZONENCODE 69    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_5_OUTPUT 
+# -------------------------------------------------------------------------
 
 FACTORY_DEF * TeeFactory    FACTORY_NAME "AttributeValueMapper_4_OUTPUT -> GEODB.NPL_GEFF Correlator"    INPUT FEATURE_TYPE AttributeValueMapper_4_OUTPUT    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 0       @Transform(FME_GENERIC,GEODATABASE_SDE)       @SupplyAttributes(ENCODED,__wb_out_feat_type__,GEODB.NPL_GEFF)
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * TeeFactory    FACTORY_NAME "GEODB.NUPLA_GNBAUWS -> GEODB.NPL_GNBAUW Correlator"    INPUT FEATURE_TYPE GEODB.NUPLA_GNBAUWS    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 0       @Transform(FME_GENERIC,GEODATABASE_SDE)       @CopyAttributes(ENCODED,NAME,GEMNAME,REL_ID,RVS_ID,GEBLAENGE,GEBL,GEBLANGUNB,GEBLU,GEBLANGSYM,GEBLSYM,GEBTIEFE,GEBT,GEBTIEFUNB,GEBTU,GEBTIEFSYM,GEBTSYM,BAUWEISTYP,BWTYP)       @SupplyAttributes(ENCODED,__wb_out_feat_type__,GEODB.NPL_GNBAUW)
+FACTORY_DEF * TeeFactory    FACTORY_NAME "AttributeValueMapper_18_OUTPUT -> GEODB.NPL_GNBAUW Correlator"    INPUT FEATURE_TYPE AttributeValueMapper_18_OUTPUT    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 0       @Transform(FME_GENERIC,GEODATABASE_SDE)       @CopyAttributes(ENCODED,NAME,GEMNAME,REL_ID,RVS_ID,GEBLAENGE,GEBL,GEBLANGSYM,GEBLSYM,GEBTIEFE,GEBT,GEBTIEFSYM,GEBTSYM)       @SupplyAttributes(ENCODED,__wb_out_feat_type__,GEODB.NPL_GNBAUW)
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * TeeFactory    FACTORY_NAME "AttributeValueMapper_9_OUTPUT -> GEODB.NPL_UEUL Correlator"    INPUT FEATURE_TYPE AttributeValueMapper_9_OUTPUT    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 0       @Transform(FME_GENERIC,GEODATABASE_SDE)       @SupplyAttributes(ENCODED,__wb_out_feat_type__,GEODB.NPL_UEUL)
+FACTORY_DEF * TeeFactory    FACTORY_NAME "TestFilter_3_UEUL -> GEODB.NPL_UEUL Correlator"    INPUT FEATURE_TYPE TestFilter_3_UEUL    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 0       @Transform(FME_GENERIC,GEODATABASE_SDE)       @SupplyAttributes(ENCODED,__wb_out_feat_type__,GEODB.NPL_UEUL)
 # -------------------------------------------------------------------------
 
 FACTORY_DEF * TeeFactory    FACTORY_NAME "AttributeValueMapper_6_OUTPUT -> GEODB.NPL_GEGEWF Correlator"    INPUT FEATURE_TYPE AttributeValueMapper_6_OUTPUT    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 0       @Transform(FME_GENERIC,GEODATABASE_SDE)       @SupplyAttributes(ENCODED,__wb_out_feat_type__,GEODB.NPL_GEGEWF)
@@ -7168,19 +7976,22 @@ FACTORY_DEF * TeeFactory    FACTORY_NAME "AttributeValueMapper_6_OUTPUT -> GEODB
 FACTORY_DEF * TeeFactory    FACTORY_NAME "AttributeCreator_3_OUTPUT -> GEODB.NPL_WEWRF Correlator"    INPUT FEATURE_TYPE AttributeCreator_3_OUTPUT    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 0       @Transform(FME_GENERIC,GEODATABASE_SDE)       @SupplyAttributes(ENCODED,__wb_out_feat_type__,GEODB.NPL_WEWRF)
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * TeeFactory    FACTORY_NAME "AttributeValueMapper_8_OUTPUT -> GEODB.NPL_NHSF Correlator"    INPUT FEATURE_TYPE AttributeValueMapper_8_OUTPUT    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 0       @Transform(FME_GENERIC,GEODATABASE_SDE)       @SupplyAttributes(ENCODED,__wb_out_feat_type__,GEODB.NPL_NHSF)
+FACTORY_DEF * TeeFactory    FACTORY_NAME "AttributeCreator_5_OUTPUT -> GEODB.NPL_GNGU Correlator"    INPUT FEATURE_TYPE AttributeCreator_5_OUTPUT    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 0       @Transform(FME_GENERIC,GEODATABASE_SDE)       @SupplyAttributes(ENCODED,__wb_out_feat_type__,GEODB.NPL_GNGU)
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * TeeFactory    FACTORY_NAME "FeatureTypeFilter_GEODB.NUPLA_GNZPPUEO -> GEODB.NPL_GNGU Correlator"    INPUT FEATURE_TYPE FeatureTypeFilter_GEODB.NUPLA_GNZPPUEO    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 0       @Transform(FME_GENERIC,GEODATABASE_SDE)       @SupplyAttributes(ENCODED,__wb_out_feat_type__,GEODB.NPL_GNGU)
+FACTORY_DEF * TeeFactory    FACTORY_NAME "Tester_FAILED -> GEODB.NPL_GNGU Correlator"    INPUT FEATURE_TYPE Tester_FAILED    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 0       @Transform(FME_GENERIC,GEODATABASE_SDE)       @SupplyAttributes(ENCODED,__wb_out_feat_type__,GEODB.NPL_GNGU)
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME "AttributeValueMapper_8_OUTPUT -> GEODB.NPL_NHSF Correlator"    INPUT FEATURE_TYPE AttributeValueMapper_8_OUTPUT    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 0       @Transform(FME_GENERIC,GEODATABASE_SDE)       @SupplyAttributes(ENCODED,__wb_out_feat_type__,GEODB.NPL_NHSF)
 # -------------------------------------------------------------------------
 
 FACTORY_DEF * TeeFactory    FACTORY_NAME "GEODB.NUPLA_ABGRZ -> GEODB.NPL_ABGRENZ Correlator"    INPUT FEATURE_TYPE GEODB.NUPLA_ABGRZ    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 0       @Transform(FME_GENERIC,GEODATABASE_SDE)       @CopyAttributes(ENCODED,NAME,GEMNAME)       @SupplyAttributes(ENCODED,__wb_out_feat_type__,GEODB.NPL_ABGRENZ)
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * TeeFactory    FACTORY_NAME "AttributeCreator_4_OUTPUT -> GEODB.NPL_WEWRL Correlator"    INPUT FEATURE_TYPE AttributeCreator_4_OUTPUT    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 0       @Transform(FME_GENERIC,GEODATABASE_SDE)       @SupplyAttributes(ENCODED,__wb_out_feat_type__,GEODB.NPL_WEWRL)
+FACTORY_DEF * TeeFactory    FACTORY_NAME "AttributeValueMapper_11_OUTPUT -> GEODB.NPL_GEGEWL Correlator"    INPUT FEATURE_TYPE AttributeValueMapper_11_OUTPUT    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 0       @Transform(FME_GENERIC,GEODATABASE_SDE)       @SupplyAttributes(ENCODED,__wb_out_feat_type__,GEODB.NPL_GEGEWL)
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * TeeFactory    FACTORY_NAME "AttributeValueMapper_11_OUTPUT -> GEODB.NPL_GEGEWL Correlator"    INPUT FEATURE_TYPE AttributeValueMapper_11_OUTPUT    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 0       @Transform(FME_GENERIC,GEODATABASE_SDE)       @SupplyAttributes(ENCODED,__wb_out_feat_type__,GEODB.NPL_GEGEWL)
+FACTORY_DEF * TeeFactory    FACTORY_NAME "AttributeCreator_4_OUTPUT -> GEODB.NPL_WEWRL Correlator"    INPUT FEATURE_TYPE AttributeCreator_4_OUTPUT    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 0       @Transform(FME_GENERIC,GEODATABASE_SDE)       @SupplyAttributes(ENCODED,__wb_out_feat_type__,GEODB.NPL_WEWRL)
 # -------------------------------------------------------------------------
 
 FACTORY_DEF * TeeFactory    FACTORY_NAME "AttributeRenamer_7_OUTPUT -> GEODB.NPL_RVT Correlator"    INPUT FEATURE_TYPE AttributeRenamer_7_OUTPUT    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 0       @Transform(FME_GENERIC,GEODATABASE_SDE)       @SupplyAttributes(ENCODED,__wb_out_feat_type__,GEODB.NPL_RVT)
@@ -7198,7 +8009,13 @@ FACTORY_DEF * TeeFactory    FACTORY_NAME "AttributeValueMapper_3_OUTPUT -> GEODB
 FACTORY_DEF * TeeFactory    FACTORY_NAME "GEODB.NUPLA_GNNUTZBK -> GEODB.NPL_GNNUTZZO Correlator"    INPUT FEATURE_TYPE GEODB.NUPLA_GNNUTZBK    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 0       @Transform(FME_GENERIC,GEODATABASE_SDE)       @CopyAttributes(ENCODED,NAME,GEMNAME,REL_ID,RVS_ID,ZONENNAME,BEZ,KANTZONE,KANTART,AZ,NZ,AZART,NZ_ART,NZTYP,NZ_TYP,BKTYP,BK_TYP)       @SupplyAttributes(ENCODED,__wb_out_feat_type__,GEODB.NPL_GNNUTZZO)
 # -------------------------------------------------------------------------
 
+FACTORY_DEF * TeeFactory    FACTORY_NAME "TestFilter_3_UEPROJ -> GEODB.NPL_UEPROJ Correlator"    INPUT FEATURE_TYPE TestFilter_3_UEPROJ    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 0       @Transform(FME_GENERIC,GEODATABASE_SDE)       @SupplyAttributes(ENCODED,__wb_out_feat_type__,GEODB.NPL_UEPROJ)
+# -------------------------------------------------------------------------
+
 FACTORY_DEF * TeeFactory    FACTORY_NAME "AttributeValueMapper_15_OUTPUT -> GEODB.NPL_NHSP Correlator"    INPUT FEATURE_TYPE AttributeValueMapper_15_OUTPUT    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 0       @Transform(FME_GENERIC,GEODATABASE_SDE)       @SupplyAttributes(ENCODED,__wb_out_feat_type__,GEODB.NPL_NHSP)
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME "AttributeCreator_6_OUTPUT -> GEODB.NPL_VEFE Correlator"    INPUT FEATURE_TYPE AttributeCreator_6_OUTPUT    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 0       @Transform(FME_GENERIC,GEODATABASE_SDE)       @SupplyAttributes(ENCODED,__wb_out_feat_type__,GEODB.NPL_VEFE)
 # -------------------------------------------------------------------------
 
 FACTORY_DEF * TeeFactory    FACTORY_NAME "AttributeRenamer_4_OUTPUT -> GEODB.NPL_UELAERM Correlator"    INPUT FEATURE_TYPE AttributeRenamer_4_OUTPUT    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 0       @Transform(FME_GENERIC,GEODATABASE_SDE)       @SupplyAttributes(ENCODED,__wb_out_feat_type__,GEODB.NPL_UELAERM)
@@ -7224,15 +8041,15 @@ GEODATABASE_SDE_2_DEF GEODB.NPL_GEGEWF   geodb_type                   geodb_poly
 # -------------------------------------------------------------------------
 GEODATABASE_SDE_2_DEF GEODB.NPL_WEWRF   geodb_type                   geodb_polygon   GEODB_DROP_TABLE             NO   GEODB_TRUNCATE_TABLE         NO   GEODB_OBJECT_ID_NAME         OBJECTID   GEODB_OBJECT_ID_ALIAS        OBJECTID   GEODB_SHAPE_NAME             SHAPE   GEODB_SHAPE_ALIAS            SHAPE   GEODB_CONFIG_KEYWORD         DEFAULTS   GEODB_FEATURE_DATASET        ""   GEODB_GRID{1}                ""   GEODB_AVG_NUM_POINTS         ""   GEODB_XORIGIN                ""   GEODB_YORIGIN                ""   GEODB_XYSCALE                ""   GEODB_HAS_Z_VALUES           ""   GEODB_ZORIGIN                ""   GEODB_ZSCALE                 ""   GEODB_HAS_MEASURES           ""   GEODB_MEASURES_ORIGIN        ""   GEODB_MEASURES_SCALE         ""   GEODB_ANNO_REFERENCE_SCALE   ""   BFSNR                        smallint   NAME                         char(31)   REL_ID                       char(100)   VERBINDLKT                   char(100)   NAMEWEG                      char(80)   ART                          char(100)   BESCHRIEB                    char(80)
 # -------------------------------------------------------------------------
-GEODATABASE_SDE_2_DEF GEODB.NPL_NHSF   geodb_type                   geodb_polygon   GEODB_DROP_TABLE             NO   GEODB_TRUNCATE_TABLE         NO   GEODB_OBJECT_ID_NAME         OBJECTID   GEODB_OBJECT_ID_ALIAS        OBJECTID   GEODB_SHAPE_NAME             SHAPE   GEODB_SHAPE_ALIAS            SHAPE   GEODB_CONFIG_KEYWORD         DEFAULTS   GEODB_FEATURE_DATASET        ""   GEODB_GRID{1}                ""   GEODB_AVG_NUM_POINTS         ""   GEODB_XORIGIN                ""   GEODB_YORIGIN                ""   GEODB_XYSCALE                ""   GEODB_HAS_Z_VALUES           ""   GEODB_ZORIGIN                ""   GEODB_ZSCALE                 ""   GEODB_HAS_MEASURES           ""   GEODB_MEASURES_ORIGIN        ""   GEODB_MEASURES_SCALE         ""   GEODB_ANNO_REFERENCE_SCALE   ""   BFSNR                        smallint   NAME                         char(31)   REL_ID                       char(100)   VERBINDLKT                   char(100)   KANTART                      char(100)   SCHUTZGRAD                   char(100)   BESCHRIEB                    char(80)
-# -------------------------------------------------------------------------
 GEODATABASE_SDE_2_DEF GEODB.NPL_GNGU   geodb_type                   geodb_polygon   GEODB_DROP_TABLE             NO   GEODB_TRUNCATE_TABLE         NO   GEODB_OBJECT_ID_NAME         OBJECTID   GEODB_OBJECT_ID_ALIAS        OBJECTID   GEODB_SHAPE_NAME             SHAPE   GEODB_SHAPE_ALIAS            SHAPE   GEODB_CONFIG_KEYWORD         DEFAULTS   GEODB_FEATURE_DATASET        ""   GEODB_GRID{1}                ""   GEODB_AVG_NUM_POINTS         ""   GEODB_XORIGIN                ""   GEODB_YORIGIN                ""   GEODB_XYSCALE                ""   GEODB_HAS_Z_VALUES           ""   GEODB_ZORIGIN                ""   GEODB_ZSCALE                 ""   GEODB_HAS_MEASURES           ""   GEODB_MEASURES_ORIGIN        ""   GEODB_MEASURES_SCALE         ""   GEODB_ANNO_REFERENCE_SCALE   ""   BFSNR                        smallint   NAME                         char(31)   REL_ID                       char(100)   VERBINDLKT                   char(100)   ZONENABK                     char(12)   ZONENCODE                    char(12)   ZONENNAME                    char(60)   KANTZONE                     char(100)   AZ                           float   AZART                        char(40)
+# -------------------------------------------------------------------------
+GEODATABASE_SDE_2_DEF GEODB.NPL_NHSF   geodb_type                   geodb_polygon   GEODB_DROP_TABLE             NO   GEODB_TRUNCATE_TABLE         NO   GEODB_OBJECT_ID_NAME         OBJECTID   GEODB_OBJECT_ID_ALIAS        OBJECTID   GEODB_SHAPE_NAME             SHAPE   GEODB_SHAPE_ALIAS            SHAPE   GEODB_CONFIG_KEYWORD         DEFAULTS   GEODB_FEATURE_DATASET        ""   GEODB_GRID{1}                ""   GEODB_AVG_NUM_POINTS         ""   GEODB_XORIGIN                ""   GEODB_YORIGIN                ""   GEODB_XYSCALE                ""   GEODB_HAS_Z_VALUES           ""   GEODB_ZORIGIN                ""   GEODB_ZSCALE                 ""   GEODB_HAS_MEASURES           ""   GEODB_MEASURES_ORIGIN        ""   GEODB_MEASURES_SCALE         ""   GEODB_ANNO_REFERENCE_SCALE   ""   BFSNR                        smallint   NAME                         char(31)   REL_ID                       char(100)   VERBINDLKT                   char(100)   KANTART                      char(100)   SCHUTZGRAD                   char(100)   BESCHRIEB                    char(80)
 # -------------------------------------------------------------------------
 GEODATABASE_SDE_2_DEF GEODB.NPL_ABGRENZ   geodb_type                   geodb_polyline   GEODB_DROP_TABLE             NO   GEODB_TRUNCATE_TABLE         NO   GEODB_OBJECT_ID_NAME         OBJECTID   GEODB_OBJECT_ID_ALIAS        OBJECTID   GEODB_SHAPE_NAME             SHAPE   GEODB_SHAPE_ALIAS            SHAPE   GEODB_CONFIG_KEYWORD         DEFAULTS   GEODB_FEATURE_DATASET        ""   GEODB_GRID{1}                ""   GEODB_AVG_NUM_POINTS         ""   GEODB_XORIGIN                ""   GEODB_YORIGIN                ""   GEODB_XYSCALE                ""   GEODB_HAS_Z_VALUES           ""   GEODB_ZORIGIN                ""   GEODB_ZSCALE                 ""   GEODB_HAS_MEASURES           ""   GEODB_MEASURES_ORIGIN        ""   GEODB_MEASURES_SCALE         ""   GEODB_ANNO_REFERENCE_SCALE   ""   BFSNR                        smallint   NAME                         char(31)   ART                          char(30)
 # -------------------------------------------------------------------------
-GEODATABASE_SDE_2_DEF GEODB.NPL_WEWRL   geodb_type                   geodb_polyline   GEODB_DROP_TABLE             NO   GEODB_TRUNCATE_TABLE         NO   GEODB_OBJECT_ID_NAME         OBJECTID   GEODB_OBJECT_ID_ALIAS        OBJECTID   GEODB_SHAPE_NAME             SHAPE   GEODB_SHAPE_ALIAS            SHAPE   GEODB_CONFIG_KEYWORD         DEFAULTS   GEODB_FEATURE_DATASET        ""   GEODB_GRID{1}                ""   GEODB_AVG_NUM_POINTS         ""   GEODB_XORIGIN                ""   GEODB_YORIGIN                ""   GEODB_XYSCALE                ""   GEODB_HAS_Z_VALUES           ""   GEODB_ZORIGIN                ""   GEODB_ZSCALE                 ""   GEODB_HAS_MEASURES           ""   GEODB_MEASURES_ORIGIN        ""   GEODB_MEASURES_SCALE         ""   GEODB_ANNO_REFERENCE_SCALE   ""   BFSNR                        smallint   NAME                         char(31)   REL_ID                       char(100)   VERBINDLKT                   char(100)   NAMEWEG                      char(80)   ART                          char(100)   BESCHRIEB                    char(80)
-# -------------------------------------------------------------------------
 GEODATABASE_SDE_2_DEF GEODB.NPL_GEGEWL   geodb_type                   geodb_polyline   GEODB_DROP_TABLE             NO   GEODB_TRUNCATE_TABLE         NO   GEODB_OBJECT_ID_NAME         OBJECTID   GEODB_OBJECT_ID_ALIAS        OBJECTID   GEODB_SHAPE_NAME             SHAPE   GEODB_SHAPE_ALIAS            SHAPE   GEODB_CONFIG_KEYWORD         DEFAULTS   GEODB_FEATURE_DATASET        ""   GEODB_GRID{1}                ""   GEODB_AVG_NUM_POINTS         ""   GEODB_XORIGIN                ""   GEODB_YORIGIN                ""   GEODB_XYSCALE                ""   GEODB_HAS_Z_VALUES           ""   GEODB_ZORIGIN                ""   GEODB_ZSCALE                 ""   GEODB_HAS_MEASURES           ""   GEODB_MEASURES_ORIGIN        ""   GEODB_MEASURES_SCALE         ""   GEODB_ANNO_REFERENCE_SCALE   ""   BFSNR                        smallint   NAME                         char(31)   REL_ID                       char(100)   VERBINDLKT                   char(100)   ART                          char(100)   BESCHRIEB                    char(80)
+# -------------------------------------------------------------------------
+GEODATABASE_SDE_2_DEF GEODB.NPL_WEWRL   geodb_type                   geodb_polyline   GEODB_DROP_TABLE             NO   GEODB_TRUNCATE_TABLE         NO   GEODB_OBJECT_ID_NAME         OBJECTID   GEODB_OBJECT_ID_ALIAS        OBJECTID   GEODB_SHAPE_NAME             SHAPE   GEODB_SHAPE_ALIAS            SHAPE   GEODB_CONFIG_KEYWORD         DEFAULTS   GEODB_FEATURE_DATASET        ""   GEODB_GRID{1}                ""   GEODB_AVG_NUM_POINTS         ""   GEODB_XORIGIN                ""   GEODB_YORIGIN                ""   GEODB_XYSCALE                ""   GEODB_HAS_Z_VALUES           ""   GEODB_ZORIGIN                ""   GEODB_ZSCALE                 ""   GEODB_HAS_MEASURES           ""   GEODB_MEASURES_ORIGIN        ""   GEODB_MEASURES_SCALE         ""   GEODB_ANNO_REFERENCE_SCALE   ""   BFSNR                        smallint   NAME                         char(31)   REL_ID                       char(100)   VERBINDLKT                   char(100)   NAMEWEG                      char(80)   ART                          char(100)   BESCHRIEB                    char(80)
 # -------------------------------------------------------------------------
 GEODATABASE_SDE_2_DEF GEODB.NPL_RVT   geodb_type                   geodb_table   GEODB_DROP_TABLE             NO   GEODB_TRUNCATE_TABLE         NO   GEODB_OBJECT_ID_NAME         OBJECTID   GEODB_OBJECT_ID_ALIAS        OBJECTID   GEODB_SHAPE_NAME             SHAPE   GEODB_SHAPE_ALIAS            SHAPE   GEODB_CONFIG_KEYWORD         DEFAULTS   GEODB_FEATURE_DATASET        ""   GEODB_GRID{1}                ""   GEODB_AVG_NUM_POINTS         ""   GEODB_XORIGIN                ""   GEODB_YORIGIN                ""   GEODB_XYSCALE                ""   GEODB_HAS_Z_VALUES           ""   GEODB_ZORIGIN                ""   GEODB_ZSCALE                 ""   GEODB_HAS_MEASURES           ""   GEODB_MEASURES_ORIGIN        ""   GEODB_MEASURES_SCALE         ""   GEODB_ANNO_REFERENCE_SCALE   ""   BFSNR                        smallint   NAME                         char(31)   RELID                        char(100)   ARTIKELNR                    char(40)   ART                          char(50)   TEXTIMWEB                    char(200)   TITEL                        char(200)   OFFIZTITEL                   char(200)   ABKUERZUNG                   char(10)   OFFIZNR                      char(20)
 # -------------------------------------------------------------------------
@@ -7244,8 +8061,11 @@ GEODATABASE_SDE_2_DEF GEODB.NPL_UEUZ   geodb_type                   geodb_polygo
 # -------------------------------------------------------------------------
 GEODATABASE_SDE_2_DEF GEODB.NPL_GNNUTZZO   geodb_type                   geodb_polygon   GEODB_DROP_TABLE             NO   GEODB_TRUNCATE_TABLE         NO   GEODB_OBJECT_ID_NAME         OBJECTID   GEODB_OBJECT_ID_ALIAS        OBJECTID   GEODB_SHAPE_NAME             SHAPE   GEODB_SHAPE_ALIAS            SHAPE   GEODB_CONFIG_KEYWORD         DEFAULTS   GEODB_FEATURE_DATASET        ""   GEODB_GRID{1}                ""   GEODB_AVG_NUM_POINTS         ""   GEODB_XORIGIN                ""   GEODB_YORIGIN                ""   GEODB_XYSCALE                ""   GEODB_HAS_Z_VALUES           ""   GEODB_ZORIGIN                ""   GEODB_ZSCALE                 ""   GEODB_HAS_MEASURES           ""   GEODB_MEASURES_ORIGIN        ""   GEODB_MEASURES_SCALE         ""   GEODB_ANNO_REFERENCE_SCALE   ""   BFSNR                        smallint   NAME                         char(31)   REL_ID                       char(100)   VERBINDLKT                   char(100)   ZONENABK                     char(12)   ZONENCODE                    char(12)   ZONENNAME                    char(60)   KANTZONE                     char(100)   AZ                           float   AZART                        char(40)   NZTYP                        char(100)   BKTYP                        char(100)
 # -------------------------------------------------------------------------
+GEODATABASE_SDE_2_DEF GEODB.NPL_UEPROJ   geodb_type                   geodb_polyline   GEODB_DROP_TABLE             NO   GEODB_TRUNCATE_TABLE         NO   GEODB_OBJECT_ID_NAME         OBJECTID   GEODB_OBJECT_ID_ALIAS        OBJECTID   GEODB_SHAPE_NAME             SHAPE   GEODB_SHAPE_ALIAS            SHAPE   GEODB_CONFIG_KEYWORD         DEFAULTS   GEODB_FEATURE_DATASET        ""   GEODB_GRID{1}                ""   GEODB_AVG_NUM_POINTS         ""   GEODB_XORIGIN                ""   GEODB_YORIGIN                ""   GEODB_XYSCALE                ""   GEODB_HAS_Z_VALUES           ""   GEODB_ZORIGIN                ""   GEODB_ZSCALE                 ""   GEODB_HAS_MEASURES           ""   GEODB_MEASURES_ORIGIN        ""   GEODB_MEASURES_SCALE         ""   GEODB_ANNO_REFERENCE_SCALE   ""   BFSNR                        smallint   NAME                         char(31)   REL_ID                       char(100)   VERBINDLKT                   char(100)   KANTART                      char(100)   LINIENABK                    char(12)   LINIENCODE                   char(12)   BESCHRIEB                    char(80)   GENEHMDAT                    date   PLANBESCHR                   char(30)
+# -------------------------------------------------------------------------
 GEODATABASE_SDE_2_DEF GEODB.NPL_NHSP   geodb_type                   geodb_point   GEODB_DROP_TABLE             NO   GEODB_TRUNCATE_TABLE         NO   GEODB_OBJECT_ID_NAME         OBJECTID   GEODB_OBJECT_ID_ALIAS        OBJECTID   GEODB_SHAPE_NAME             SHAPE   GEODB_SHAPE_ALIAS            SHAPE   GEODB_CONFIG_KEYWORD         DEFAULTS   GEODB_FEATURE_DATASET        ""   GEODB_GRID{1}                ""   GEODB_AVG_NUM_POINTS         ""   GEODB_XORIGIN                ""   GEODB_YORIGIN                ""   GEODB_XYSCALE                ""   GEODB_HAS_Z_VALUES           ""   GEODB_ZORIGIN                ""   GEODB_ZSCALE                 ""   GEODB_HAS_MEASURES           ""   GEODB_MEASURES_ORIGIN        ""   GEODB_MEASURES_SCALE         ""   GEODB_ANNO_REFERENCE_SCALE   ""   BFSNR                        smallint   NAME                         char(31)   REL_ID                       char(100)   VERBINDLKT                   char(100)   KANTART                      char(100)   SCHUTZGRAD                   char(100)   BESCHRIEB                    char(80)
 # -------------------------------------------------------------------------
+GEODATABASE_SDE_2_DEF GEODB.NPL_VEFE   geodb_type                   geodb_polygon   GEODB_DROP_TABLE             NO   GEODB_TRUNCATE_TABLE         NO   GEODB_OBJECT_ID_NAME         OBJECTID   GEODB_OBJECT_ID_ALIAS        OBJECTID   GEODB_SHAPE_NAME             SHAPE   GEODB_SHAPE_ALIAS            SHAPE   GEODB_CONFIG_KEYWORD         DEFAULTS   GEODB_FEATURE_DATASET        ""   GEODB_GRID{1}                ""   GEODB_AVG_NUM_POINTS         ""   GEODB_XORIGIN                ""   GEODB_YORIGIN                ""   GEODB_XYSCALE                ""   GEODB_HAS_Z_VALUES           ""   GEODB_ZORIGIN                ""   GEODB_ZSCALE                 ""   GEODB_HAS_MEASURES           ""   GEODB_MEASURES_ORIGIN        ""   GEODB_MEASURES_SCALE         ""   GEODB_ANNO_REFERENCE_SCALE   ""   BFSNR                        smallint   NAME                         char(31)   REL_ID                       char(100)   VERBINDLKT                   char(100)   KANTART                      char(100)   GUELTIGBIS                   date   BESCHRIEB                    char(80)
 # -------------------------------------------------------------------------
 GEODATABASE_SDE_2_DEF GEODB.NPL_UELAERM   geodb_type                   geodb_polygon   GEODB_DROP_TABLE             NO   GEODB_TRUNCATE_TABLE         NO   GEODB_OBJECT_ID_NAME         OBJECTID   GEODB_OBJECT_ID_ALIAS        OBJECTID   GEODB_SHAPE_NAME             SHAPE   GEODB_SHAPE_ALIAS            SHAPE   GEODB_CONFIG_KEYWORD         DEFAULTS   GEODB_FEATURE_DATASET        ""   GEODB_GRID{1}                ""   GEODB_AVG_NUM_POINTS         ""   GEODB_XORIGIN                ""   GEODB_YORIGIN                ""   GEODB_XYSCALE                ""   GEODB_HAS_Z_VALUES           ""   GEODB_ZORIGIN                ""   GEODB_ZSCALE                 ""   GEODB_HAS_MEASURES           ""   GEODB_MEASURES_ORIGIN        ""   GEODB_MEASURES_SCALE         ""   GEODB_ANNO_REFERENCE_SCALE   ""   BFSNR                        smallint   NAME                         char(31)   REL_ID                       char(100)   VERBINDLKT                   char(100)   KANTART                      char(100)   ZONENABK                     char(12)   ZONENCODE                    char(12)
 # -------------------------------------------------------------------------
