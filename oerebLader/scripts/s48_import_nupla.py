@@ -19,6 +19,7 @@ def run(config):
     itf_file = os.path.join(config['LIEFEREINHEIT']['gpr_source'], unicode(bfsnr), unicode(bfsnr) + ".itf")
     excel_file_amt = os.path.join(config['LIEFEREINHEIT']['gpr_source'], unicode(bfsnr), "AMT_" + unicode(bfsnr) + ".xlsx")
     excel_file_darstellungsdienst = os.path.join(config['LIEFEREINHEIT']['gpr_source'], unicode(bfsnr), "DARSTELLUNGSDIENST_" + unicode(bfsnr) + ".xlsx")
+    simplify_geometry = config['GENERAL']['simplify_geometry']
     input_rv_dir = os.path.join(config['LIEFEREINHEIT']['gpr_source'], unicode(bfsnr), "rv")
     output_rv_dir = os.path.join(config['GENERAL']['files_be_ch_baseunc'], unicode(config['LIEFEREINHEIT']['id']), unicode(config['ticketnr']))
     if config['GENERAL']['files_be_ch_baseurl'].endswith("/"):
@@ -45,6 +46,7 @@ def run(config):
         'INPUT_RV_DIR': str(input_rv_dir),
         'OUTPUT_RV_DIR': str(output_rv_dir),
         'OUTPUT_RV_URL': str(output_rv_url),
+        'SIMPLIFY_GEOMETRY': str(simplify_geometry),
         'LOGFILE': str(fme_logfile)
     }
     try:
