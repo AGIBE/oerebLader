@@ -83,10 +83,14 @@ def run(config):
         'GEODB_DATABASE': str(config['GEODB_WORK']['database']),
         'GEODB_USERNAME': str(config['GEODB_WORK']['username']),
         'GEODB_PASSWORD': str(config['GEODB_WORK']['password']),
+        'GDBV_DATABASE': str(config['GDBV_WORK']['database']),
+        'GDBV_USERNAME': str(config['GDBV_WORK']['username']),
+        'GDBV_PASSWORD': str(config['GDBV_WORK']['password']),
         'BFSNR': str(bfsnr),
         'LIEFEREINHEIT': str(config['LIEFEREINHEIT']['id']),        
         'WMS_LAYERS': wms_layers,
         'NPL_WMS_BASE': str(config['GENERAL']['npl_wms_base']),
+        'MAPSERVICE_NAME': str(config['LEGENDS']['legend_mapservice_name']),
         'OUTPUT_RV_URL': str(output_rv_url),
         'LOGFILE': str(fme_logfile)
     }

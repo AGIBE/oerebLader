@@ -18,11 +18,15 @@
 #          --NPL_WMS_BASE ""
 #          --OUTPUT_RV_URL ""
 #          --LOGFILE ""
+#          --GDBV_DATABASE ""
+#          --GDBV_USERNAME ""
+#          --GDBV_PASSWORD ********
+#          --MAPSERVICE_NAME ""
 #    
 #    
 #! PASSWORD=""
 #! ATTR_TYPE_ENCODING="SDF"
-#! VIEW_POSITION="4230 18"
+#! VIEW_POSITION="2445 -306"
 #! SHOW_INFO_NODES="true"
 #! FME_STROKE_MAX_DEVIATION="0"
 #! BEGIN_PYTHON=""
@@ -40,13 +44,13 @@
 #! USAGE=""
 #! END_PYTHON=""
 #! HISTORY=""
-#! FME_DOCUMENT_PRIORGUID="92e4fbfd-f984-46e8-beba-c902205b7808,f85e2a6a-deae-4f2b-8671-eec542851abd,2ff1435b-ae3a-41c4-8458-066c0cec9c42,c411d780-3e19-4901-98f6-b3bf6996bf05"
+#! FME_DOCUMENT_PRIORGUID="92e4fbfd-f984-46e8-beba-c902205b7808,f85e2a6a-deae-4f2b-8671-eec542851abd,2ff1435b-ae3a-41c4-8458-066c0cec9c42,c411d780-3e19-4901-98f6-b3bf6996bf05,68a30f9f-a2d9-45c0-908d-8c557034d524"
 #! DOC_TOP_LEFT="113 -2921"
 #! REQUIREMENTS_KEYWORD=""
 #! SOURCE_ROUTING_FILE=""
 #! DESTINATION_ROUTING_FILE=""
 #! DESTINATION="NONE"
-#! LAST_SAVE_DATE="2016-12-14T11:32:22"
+#! LAST_SAVE_DATE="2017-01-30T12:27:38"
 #! FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
 #! WORKSPACE_VERSION="1"
 #! SOURCE="NONE"
@@ -56,8 +60,8 @@
 #! LOG_FILE="$(LOGFILE)"
 #! REQUIREMENTS=""
 #! BEGIN_TCL=""
-#! DOC_EXTENTS="7826 2740"
-#! FME_DOCUMENT_GUID="68a30f9f-a2d9-45c0-908d-8c557034d524"
+#! DOC_EXTENTS="9140 2740"
+#! FME_DOCUMENT_GUID="52d41e93-615b-4165-9843-3e09cd44e6f8"
 #! SHOW_ANNOTATIONS="true"
 #! IGNORE_READER_FAILURE="No"
 #! WARN_INVALID_XFORM_PARAM="Yes"
@@ -1719,7 +1723,7 @@
 #! IS_EDITABLE="true"
 #! IDENTIFIER="92"
 #! FEAT_GEOMTYPE="oracle_nil"
-#! POSITION="7938 -1088"
+#! POSITION="9252 -1066"
 #! ORDER="5e+014"
 #! COLLAPSED="true"
 #! KEYWORD="ORACLE8I_DB_2"
@@ -1808,6 +1812,26 @@
 #! IS_STAND_ALONE="true"
 #! />
 #! <GLOBAL_PARAMETER
+#! GUI_LINE="GUI TEXT_OR_ATTR GDBV_DATABASE GDBV-Database:"
+#! DEFAULT_VALUE=""
+#! IS_STAND_ALONE="true"
+#! />
+#! <GLOBAL_PARAMETER
+#! GUI_LINE="GUI TEXT GDBV_USERNAME GDBV-Username:"
+#! DEFAULT_VALUE=""
+#! IS_STAND_ALONE="true"
+#! />
+#! <GLOBAL_PARAMETER
+#! GUI_LINE="GUI PASSWORD GDBV_PASSWORD GDBV-Passwort:"
+#! DEFAULT_VALUE=""
+#! IS_STAND_ALONE="true"
+#! />
+#! <GLOBAL_PARAMETER
+#! GUI_LINE="GUI TEXT_OR_ATTR MAPSERVICE_NAME Name des Mapservices:"
+#! DEFAULT_VALUE=""
+#! IS_STAND_ALONE="true"
+#! />
+#! <GLOBAL_PARAMETER
 #! GUI_LINE="GUI IGNORE TEXT_EDIT_PYTHON_PARM GEODB_INSTANCE Python Script:"
 #! DEFAULT_VALUE="return&lt;space&gt;&lt;quote&gt;sde:oracle11g:&lt;quote&gt;&lt;space&gt;+&lt;space&gt;FME_MacroValues&lt;openbracket&gt;&lt;apos&gt;GEODB_DATABASE&lt;apos&gt;&lt;closebracket&gt;"
 #! IS_STAND_ALONE="true"
@@ -1845,12 +1869,12 @@
 #! <COMMENT
 #! IDENTIFIER="80"
 #! COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:11px; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;DAR_OID&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
-#! POSITION="5873 -639"
+#! POSITION="7190 -608"
 #! ORDER="5e+014"
 #! FOLLOW_ANCHOR="true"
 #! INFO_NODE="false"
-#! TOP_LEFT="5873 -639"
-#! BOTTOM_RIGHT="5873 -639"
+#! TOP_LEFT="7190 -608"
+#! BOTTOM_RIGHT="7190 -608"
 #! COLOUR="1,1,0.784314,0.192157"
 #! SIZE_POLICY="8"
 #! COMMENT_TYPE="REGULAR"
@@ -1859,12 +1883,12 @@
 #! <COMMENT
 #! IDENTIFIER="81"
 #! COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:11px; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:11px;&quot;&gt;DAR_VERWEISWMS_DE&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
-#! POSITION="5822 -1023"
+#! POSITION="7139 -992"
 #! ORDER="5e+014"
 #! FOLLOW_ANCHOR="true"
 #! INFO_NODE="false"
-#! TOP_LEFT="5822 -1023"
-#! BOTTOM_RIGHT="5822 -1023"
+#! TOP_LEFT="7139 -992"
+#! BOTTOM_RIGHT="7139 -992"
 #! COLOUR="1,1,0.784314,0.192157"
 #! SIZE_POLICY="8"
 #! COMMENT_TYPE="REGULAR"
@@ -1873,12 +1897,12 @@
 #! <COMMENT
 #! IDENTIFIER="83"
 #! COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:11px; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:11px;&quot;&gt;DAR_VERWEISWMS_FR&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
-#! POSITION="5801 -1349"
+#! POSITION="7115 -1327"
 #! ORDER="5e+014"
 #! FOLLOW_ANCHOR="true"
 #! INFO_NODE="false"
-#! TOP_LEFT="5801 -1349"
-#! BOTTOM_RIGHT="5801 -1349"
+#! TOP_LEFT="7115 -1327"
+#! BOTTOM_RIGHT="7115 -1327"
 #! COLOUR="1,1,0.784314,0.192157"
 #! SIZE_POLICY="8"
 #! COMMENT_TYPE="REGULAR"
@@ -1887,12 +1911,12 @@
 #! <COMMENT
 #! IDENTIFIER="87"
 #! COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:11px; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;DAR_LEGENDEIMWEB_DE&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
-#! POSITION="6491 -673"
+#! POSITION="7805 -651"
 #! ORDER="5e+014"
 #! FOLLOW_ANCHOR="true"
 #! INFO_NODE="false"
-#! TOP_LEFT="6491 -673"
-#! BOTTOM_RIGHT="6491 -673"
+#! TOP_LEFT="7805 -651"
+#! BOTTOM_RIGHT="7805 -651"
 #! COLOUR="1,1,0.784314,0.192157"
 #! SIZE_POLICY="8"
 #! COMMENT_TYPE="REGULAR"
@@ -1901,12 +1925,12 @@
 #! <COMMENT
 #! IDENTIFIER="89"
 #! COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:11px; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:11px;&quot;&gt;DAR_LEGENDEIMWEB_FR&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
-#! POSITION="6550 -1025"
+#! POSITION="7864 -1003"
 #! ORDER="5e+014"
 #! FOLLOW_ANCHOR="true"
 #! INFO_NODE="false"
-#! TOP_LEFT="6550 -1025"
-#! BOTTOM_RIGHT="6550 -1025"
+#! TOP_LEFT="7864 -1003"
+#! BOTTOM_RIGHT="7864 -1003"
 #! COLOUR="1,1,0.784314,0.192157"
 #! SIZE_POLICY="8"
 #! COMMENT_TYPE="REGULAR"
@@ -1915,12 +1939,12 @@
 #! <COMMENT
 #! IDENTIFIER="96"
 #! COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:11px; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;OEREB2.DARSTELLUNGSDIENST&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
-#! POSITION="7939 -961"
+#! POSITION="9253 -939"
 #! ORDER="5e+014"
 #! FOLLOW_ANCHOR="true"
 #! INFO_NODE="false"
-#! TOP_LEFT="7939 -961"
-#! BOTTOM_RIGHT="7939 -961"
+#! TOP_LEFT="9253 -939"
+#! BOTTOM_RIGHT="9253 -939"
 #! COLOUR="1,1,0.784314,0.192157"
 #! SIZE_POLICY="8"
 #! COMMENT_TYPE="REGULAR"
@@ -1929,16 +1953,44 @@
 #! <COMMENT
 #! IDENTIFIER="94"
 #! COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:11px; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;DAR_LIEFEREINHEIT&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
-#! POSITION="6530 -1376"
+#! POSITION="7847 -1345"
 #! ORDER="5e+014"
 #! FOLLOW_ANCHOR="true"
 #! INFO_NODE="false"
-#! TOP_LEFT="6530 -1376"
-#! BOTTOM_RIGHT="6530 -1376"
+#! TOP_LEFT="7847 -1345"
+#! BOTTOM_RIGHT="7847 -1345"
 #! COLOUR="1,1,0.784314,0.192157"
 #! SIZE_POLICY="8"
 #! COMMENT_TYPE="REGULAR"
 #! ANCHORED_NODE="91"
+#! />
+#! <COMMENT
+#! IDENTIFIER="102"
+#! COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:11px; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:11px;&quot;&gt;Prüfen ob alte oder neue&lt;/span&gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:11px;&quot;&gt;kantonale Darstellung&lt;/span&gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:11px;&quot;&gt;(_K oder _K2)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#! POSITION="4429 -1463"
+#! ORDER="5e+014"
+#! FOLLOW_ANCHOR="true"
+#! INFO_NODE="false"
+#! TOP_LEFT="4429 -1463"
+#! BOTTOM_RIGHT="4429 -1463"
+#! COLOUR="1,1,0.784314,0.196078"
+#! SIZE_POLICY="8"
+#! COMMENT_TYPE="REGULAR"
+#! ANCHORED_NODE="99"
+#! />
+#! <COMMENT
+#! IDENTIFIER="100"
+#! COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:11px; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:11px;&quot;&gt;Prüfen ob alte oder neue&lt;/span&gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:11px;&quot;&gt;kantonale Darstellung&lt;/span&gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:11px;&quot;&gt;(_K oder _K2)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#! POSITION="5104 -1330"
+#! ORDER="5e+014"
+#! FOLLOW_ANCHOR="true"
+#! INFO_NODE="false"
+#! TOP_LEFT="5104 -1330"
+#! BOTTOM_RIGHT="5104 -1330"
+#! COLOUR="1,1,0.784314,0.196078"
+#! SIZE_POLICY="8"
+#! COMMENT_TYPE="REGULAR"
+#! ANCHORED_NODE="101"
 #! />
 #! </COMMENTS>
 #! <CONSTANTS>
@@ -2148,7 +2200,7 @@
 #! IDENTIFIER="67"
 #! TYPE="StringConcatenator"
 #! VERSION="6"
-#! POSITION="4420 -1308"
+#! POSITION="5752 -1638"
 #! ORDER="5e+014"
 #! PARMS_EDITED="true"
 #! ENABLED="true"
@@ -2159,6 +2211,8 @@
 #! <XFORM_ATTR ATTR_NAME="STH_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="SORT" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="LAYERNAME_BFS" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="LAYERNAME_K2" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_matched_records" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_PARM PARM_NAME="PARM_LINE" PARM_VALUE="&lt;at&gt;Value&lt;openparen&gt;LAYERNAME&lt;closeparen&gt;_K"/>
 #! <XFORM_PARM PARM_NAME="VAL_ATTR" PARM_VALUE="LAYERNAME_BFS"/>
 #! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="StringConcatenator_2"/>
@@ -2167,7 +2221,7 @@
 #! IDENTIFIER="60"
 #! TYPE="Sorter"
 #! VERSION="2"
-#! POSITION="5077 -777"
+#! POSITION="6391 -755"
 #! ORDER="5e+014"
 #! PARMS_EDITED="true"
 #! ENABLED="true"
@@ -2178,6 +2232,8 @@
 #! <XFORM_ATTR ATTR_NAME="STH_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="SORT" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="LAYERNAME_BFS" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="LAYERNAME_K2" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_matched_records" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_PARM PARM_NAME="SORT_PARM" PARM_VALUE="STH_ID NUMERIC ASCENDING SORT NUMERIC ASCENDING"/>
 #! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Sorter"/>
 #! </TRANSFORMER>
@@ -2185,7 +2241,7 @@
 #! IDENTIFIER="58"
 #! TYPE="Aggregator"
 #! VERSION="11"
-#! POSITION="5119 -1362"
+#! POSITION="6433 -1340"
 #! ORDER="5e+014"
 #! PARMS_EDITED="true"
 #! ENABLED="true"
@@ -2248,7 +2304,7 @@
 #! IDENTIFIER="70"
 #! TYPE="AttributeRemover"
 #! VERSION="0"
-#! POSITION="5101 -1074"
+#! POSITION="6415 -1052"
 #! ORDER="5e+014"
 #! PARMS_EDITED="true"
 #! ENABLED="true"
@@ -2258,7 +2314,7 @@
 #! <XFORM_ATTR ATTR_NAME="STH_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="LAYERNAME_BFS" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_PARM PARM_NAME="LIST_ATTRS" PARM_VALUE=""/>
-#! <XFORM_PARM PARM_NAME="REMOVE_ATTRS" PARM_VALUE="LAYERNAME,SORT"/>
+#! <XFORM_PARM PARM_NAME="REMOVE_ATTRS" PARM_VALUE="LAYERNAME,SORT,LAYERNAME_K2,_matched_records"/>
 #! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeRemover_3"/>
 #! <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
 #! <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
@@ -2267,7 +2323,7 @@
 #! IDENTIFIER="76"
 #! TYPE="StringConcatenator"
 #! VERSION="6"
-#! POSITION="5836 -783"
+#! POSITION="7150 -761"
 #! ORDER="5e+014"
 #! PARMS_EDITED="true"
 #! ENABLED="true"
@@ -2285,7 +2341,7 @@
 #! IDENTIFIER="78"
 #! TYPE="StringConcatenator"
 #! VERSION="6"
-#! POSITION="5863 -1131"
+#! POSITION="7177 -1109"
 #! ORDER="5e+014"
 #! PARMS_EDITED="true"
 #! ENABLED="true"
@@ -2304,7 +2360,7 @@
 #! IDENTIFIER="82"
 #! TYPE="StringConcatenator"
 #! VERSION="6"
-#! POSITION="5839 -1457"
+#! POSITION="7153 -1435"
 #! ORDER="5e+014"
 #! PARMS_EDITED="true"
 #! ENABLED="true"
@@ -2324,7 +2380,7 @@
 #! IDENTIFIER="85"
 #! TYPE="StringConcatenator"
 #! VERSION="6"
-#! POSITION="6532 -781"
+#! POSITION="7846 -759"
 #! ORDER="5e+014"
 #! PARMS_EDITED="true"
 #! ENABLED="true"
@@ -2345,7 +2401,7 @@
 #! IDENTIFIER="88"
 #! TYPE="StringConcatenator"
 #! VERSION="6"
-#! POSITION="6582 -1148"
+#! POSITION="7896 -1126"
 #! ORDER="5e+014"
 #! PARMS_EDITED="true"
 #! ENABLED="true"
@@ -2367,7 +2423,7 @@
 #! IDENTIFIER="93"
 #! TYPE="AttributeRemover"
 #! VERSION="0"
-#! POSITION="7306 -1057"
+#! POSITION="8620 -1035"
 #! ORDER="5e+014"
 #! PARMS_EDITED="true"
 #! ENABLED="true"
@@ -2390,7 +2446,7 @@
 #! IDENTIFIER="91"
 #! TYPE="AttributeCreator"
 #! VERSION="5"
-#! POSITION="6571 -1484"
+#! POSITION="7885 -1462"
 #! ORDER="5e+014"
 #! PARMS_EDITED="true"
 #! ENABLED="true"
@@ -2412,6 +2468,116 @@
 #! <XFORM_PARM PARM_NAME="NUM_SUBSEQUENT_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
 #! <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
 #! <XFORM_PARM PARM_NAME="ATTR_LIST" PARM_VALUE="DAR_LIEFEREINHEIT,$(LIEFEREINHEIT)"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#! IDENTIFIER="99"
+#! TYPE="SQLExecutor"
+#! VERSION="6"
+#! POSITION="4446 -1667"
+#! ORDER="5e+014"
+#! PARMS_EDITED="true"
+#! ENABLED="true"
+#! >
+#! <OUTPUT_FEAT NAME="RESULT"/>
+#! <FEAT_COLLAPSED COLLAPSED="0"/>
+#! <OUTPUT_FEAT NAME="INITIATOR"/>
+#! <FEAT_COLLAPSED COLLAPSED="1"/>
+#! <XFORM_ATTR ATTR_NAME="LAYERNAME" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="STH_ID" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="SORT" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="LAYERNAME_BFS" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="LAYERNAME_K2" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="_matched_records" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_PARM PARM_NAME="ORACLE8I_DB_USER_NAME" PARM_VALUE="$(GDBV_USERNAME)"/>
+#! <XFORM_PARM PARM_NAME="COORDSYS" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="ORACLE8I_DB_SHOW_SYSTEM_TABLES" PARM_VALUE="NO"/>
+#! <XFORM_PARM PARM_NAME="ORACLE8I_DB_PASSWORD" PARM_VALUE="$(GDBV_PASSWORD)"/>
+#! <XFORM_PARM PARM_NAME="SQL_STATEMENT" PARM_VALUE="select&lt;space&gt;mxd.ebene&lt;space&gt;from&lt;space&gt;gdbp.info_dq&lt;space&gt;dq&lt;space&gt;left&lt;space&gt;join&lt;space&gt;gdbp.info_mxd&lt;space&gt;mxd&lt;space&gt;on&lt;space&gt;dq.OBJEKT_IDENT=mxd.OBJEKT_IDENT&lt;space&gt;where&lt;space&gt;mxd.mxd&lt;space&gt;like&lt;space&gt;&lt;apos&gt;%$(MAPSERVICE_NAME)%&lt;apos&gt;&lt;space&gt;and&lt;space&gt;mxd.ebene=&lt;apos&gt;&lt;at&gt;Value&lt;openparen&gt;LAYERNAME_K2&lt;closeparen&gt;&lt;apos&gt;&lt;space&gt;and&lt;space&gt;dq.DEFQUERY&lt;space&gt;like&lt;space&gt;&lt;apos&gt;%$(BFSNR)%&lt;apos&gt;"/>
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="SQLExecutor"/>
+#! <XFORM_PARM PARM_NAME="EXPOSED_ATTRIBUTE_LIST" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="ORACLE8I_DB_SERVER_TYPE" PARM_VALUE="ORACLE8i"/>
+#! <XFORM_PARM PARM_NAME="DATASET" PARM_VALUE="$(GDBV_DATABASE)"/>
+#! <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="ORACLE8I_DB_REMOVE_SCHEMA_QUALIFIER" PARM_VALUE="NO"/>
+#! <XFORM_PARM PARM_NAME="FORMAT_PARAMS" PARM_VALUE="ORACLE8I_DB_SERVER_TYPE,&quot;IGNORE TEXT&quot;,ORACLE8I_DB&lt;space&gt;,ORACLE8I_DB_REMOVE_SCHEMA_QUALIFIER,&quot;OPTIONAL CHECKBOX YES%NO&quot;,ORACLE8I_DB&lt;space&gt;Remove&lt;space&gt;Schema&lt;space&gt;Qualifier,ORACLE8I_DB_PERSISTENT_CONNECTION,&quot;OPTIONAL CHECKBOX YES%NO&quot;,ORACLE8I_DB&lt;space&gt;Persistent&lt;space&gt;Connection,ORACLE8I_DB_SHOW_SYSTEM_TABLES,&quot;OPTIONAL CHECKBOX YES%NO&quot;,ORACLE8I_DB&lt;space&gt;Show&lt;space&gt;System&lt;space&gt;Tables,ORACLE8I_DB_USER_NAME,&quot;OPTIONAL TEXT&quot;,ORACLE8I_DB&lt;space&gt;Username:,ORACLE8I_DB_PASSWORD,&quot;OPTIONAL PASSWORD&quot;,ORACLE8I_DB&lt;space&gt;Password:"/>
+#! <XFORM_PARM PARM_NAME="ORACLE8I_DB_PERSISTENT_CONNECTION" PARM_VALUE="YES"/>
+#! <XFORM_PARM PARM_NAME="COMBINE_GEOM" PARM_VALUE="Initiator Geometry Only"/>
+#! <XFORM_PARM PARM_NAME="COMBINE_ATTRS" PARM_VALUE="Result Attributes Only"/>
+#! <XFORM_PARM PARM_NAME="FORMAT" PARM_VALUE="ORACLE8I_DB"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#! IDENTIFIER="103"
+#! TYPE="AttributeCreator"
+#! VERSION="5"
+#! POSITION="4428 -1261"
+#! ORDER="5e+014"
+#! PARMS_EDITED="true"
+#! ENABLED="true"
+#! >
+#! <OUTPUT_FEAT NAME="OUTPUT"/>
+#! <FEAT_COLLAPSED COLLAPSED="0"/>
+#! <XFORM_ATTR ATTR_NAME="LAYERNAME" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="STH_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="SORT" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="LAYERNAME_BFS" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="LAYERNAME_K2" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_PARM PARM_NAME="NUM_PRIOR_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#! <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeCreator_2"/>
+#! <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_VALUE="&lt;Unused&gt;"/>
+#! <XFORM_PARM PARM_NAME="NUM_SUBSEQUENT_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#! <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
+#! <XFORM_PARM PARM_NAME="ATTR_LIST" PARM_VALUE="LAYERNAME_K2,&lt;at&gt;Value&lt;openparen&gt;LAYERNAME&lt;closeparen&gt;_K2"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#! IDENTIFIER="101"
+#! TYPE="TestFilter"
+#! VERSION="1"
+#! POSITION="5103 -1516"
+#! ORDER="5e+014"
+#! PARMS_EDITED="true"
+#! ENABLED="true"
+#! >
+#! <OUTPUT_FEAT NAME="K2_LEGENDE"/>
+#! <FEAT_COLLAPSED COLLAPSED="0"/>
+#! <XFORM_ATTR ATTR_NAME="LAYERNAME" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="STH_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="SORT" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="LAYERNAME_BFS" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="LAYERNAME_K2" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_matched_records" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <OUTPUT_FEAT NAME="K_LEGENDE"/>
+#! <FEAT_COLLAPSED COLLAPSED="1"/>
+#! <XFORM_ATTR ATTR_NAME="LAYERNAME" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="STH_ID" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="SORT" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="LAYERNAME_BFS" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="LAYERNAME_K2" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="_matched_records" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_PARM PARM_NAME="TEST_LIST" PARM_VALUE="BOOL_OP&lt;comma&gt;OR&lt;comma&gt;COMPOSITE_TEST&lt;comma&gt;&lt;lt&gt;Unused&lt;gt&gt;&lt;comma&gt;TEST_CLAUSE&lt;comma&gt;&lt;quote&gt;TEST&lt;space&gt;&lt;lt&gt;at&lt;gt&gt;Value&lt;lt&gt;openparen&lt;gt&gt;_matched_records&lt;lt&gt;closeparen&lt;gt&gt;&lt;space&gt;&lt;gt&gt;=&lt;space&gt;1&lt;quote&gt;,K2_LEGENDE"/>
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="TestFilter"/>
+#! <XFORM_PARM PARM_NAME="DEFAULT_VALUE" PARM_VALUE="K_LEGENDE"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#! IDENTIFIER="108"
+#! TYPE="StringConcatenator"
+#! VERSION="6"
+#! POSITION="5733 -1404"
+#! ORDER="5e+014"
+#! PARMS_EDITED="true"
+#! ENABLED="true"
+#! >
+#! <OUTPUT_FEAT NAME="OUTPUT"/>
+#! <FEAT_COLLAPSED COLLAPSED="0"/>
+#! <XFORM_ATTR ATTR_NAME="LAYERNAME" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="STH_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="SORT" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="LAYERNAME_BFS" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="LAYERNAME_K2" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_matched_records" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_PARM PARM_NAME="PARM_LINE" PARM_VALUE="&lt;at&gt;Value&lt;openparen&gt;LAYERNAME&lt;closeparen&gt;_K2"/>
+#! <XFORM_PARM PARM_NAME="VAL_ATTR" PARM_VALUE="LAYERNAME_BFS"/>
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="StringConcatenator_8"/>
 #! </TRANSFORMER>
 #! </TRANSFORMERS>
 #! <FEAT_LINKS>
@@ -2632,15 +2798,6 @@
 #! EXTRA_POINTS=""
 #! />
 #! <FEAT_LINK
-#! IDENTIFIER="68"
-#! SOURCE_NODE="55"
-#! TARGET_NODE="67"
-#! SOURCE_PORT_DESC="fo 1"
-#! TARGET_PORT_DESC="fi 0"
-#! ENABLED="true"
-#! EXTRA_POINTS=""
-#! />
-#! <FEAT_LINK
 #! IDENTIFIER="61"
 #! SOURCE_NODE="67"
 #! TARGET_NODE="60"
@@ -2766,6 +2923,60 @@
 #! ENABLED="true"
 #! EXTRA_POINTS=""
 #! />
+#! <FEAT_LINK
+#! IDENTIFIER="104"
+#! SOURCE_NODE="55"
+#! TARGET_NODE="103"
+#! SOURCE_PORT_DESC="fo 1"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="105"
+#! SOURCE_NODE="103"
+#! TARGET_NODE="99"
+#! SOURCE_PORT_DESC="fo 0"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="106"
+#! SOURCE_NODE="99"
+#! TARGET_NODE="101"
+#! SOURCE_PORT_DESC="fo 1"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="107"
+#! SOURCE_NODE="101"
+#! TARGET_NODE="67"
+#! SOURCE_PORT_DESC="fo 1"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="109"
+#! SOURCE_NODE="101"
+#! TARGET_NODE="108"
+#! SOURCE_PORT_DESC="fo 0"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="110"
+#! SOURCE_NODE="108"
+#! TARGET_NODE="60"
+#! SOURCE_PORT_DESC="fo 0"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
 #! </FEAT_LINKS>
 #! <BREAKPOINTS>
 #! </BREAKPOINTS>
@@ -2802,6 +3013,14 @@ DEFAULT_MACRO OUTPUT_RV_URL
 GUI TEXT OUTPUT_RV_URL Output-URL Rechtsvorschriften:
 DEFAULT_MACRO LOGFILE 
 GUI TEXT LOGFILE Logfile:
+DEFAULT_MACRO GDBV_DATABASE 
+GUI TEXT GDBV_DATABASE GDBV-Database:
+DEFAULT_MACRO GDBV_USERNAME 
+GUI TEXT GDBV_USERNAME GDBV-Username:
+DEFAULT_MACRO GDBV_PASSWORD 
+GUI PASSWORD GDBV_PASSWORD GDBV-Passwort:
+DEFAULT_MACRO MAPSERVICE_NAME 
+GUI TEXT MAPSERVICE_NAME Name des Mapservices:
 INCLUDE PYTHON
 def ParamFunc():
   return "sde:oracle11g:" + FME_MacroValues['GEODB_DATABASE']
@@ -2824,6 +3043,10 @@ INCLUDE [ if {{$(WMS_LAYERS)} == {}} { puts_real {Parameter 'WMS_LAYERS' must be
 INCLUDE [ if {{$(NPL_WMS_BASE)} == {}} { puts_real {Parameter 'NPL_WMS_BASE' must be given a value.}; exit 1; }; ]
 INCLUDE [ if {{$(OUTPUT_RV_URL)} == {}} { puts_real {Parameter 'OUTPUT_RV_URL' must be given a value.}; exit 1; }; ]
 INCLUDE [ if {{$(LOGFILE)} == {}} { puts_real {Parameter 'LOGFILE' must be given a value.}; exit 1; }; ]
+INCLUDE [ if {{$(GDBV_DATABASE)} == {}} { puts_real {Parameter 'GDBV_DATABASE' must be given a value.}; exit 1; }; ]
+INCLUDE [ if {{$(GDBV_USERNAME)} == {}} { puts_real {Parameter 'GDBV_USERNAME' must be given a value.}; exit 1; }; ]
+INCLUDE [ if {{$(GDBV_PASSWORD)} == {}} { puts_real {Parameter 'GDBV_PASSWORD' must be given a value.}; exit 1; }; ]
+INCLUDE [ if {{$(MAPSERVICE_NAME)} == {}} { puts_real {Parameter 'MAPSERVICE_NAME' must be given a value.}; exit 1; }; ]
 INCLUDE [ if {{$(GEODB_INSTANCE)} == {}} { puts_real {Parameter 'GEODB_INSTANCE' must be given a value.}; exit 1; }; ]
 #! START_HEADER
 #! START_WB_HEADER
@@ -3290,7 +3513,7 @@ LOG_FILTER_MASK -1
 DEFAULT_MACRO DATASET_KEYWORD_ORACLE8I_DB_1 ORACLE8I_DB_1
 DEFAULT_MACRO DATASET_KEYWORD_GEODATABASE_SDE_1 GEODATABASE_SDE_1
 DEFAULT_MACRO DATASET_KEYWORD_ORACLE8I_DB_2 ORACLE8I_DB_2
-FME_PASSWORD_PARAMETER_LIST OEREB2_PASSWORD GEODB_PASSWORD
+FME_PASSWORD_PARAMETER_LIST OEREB2_PASSWORD GEODB_PASSWORD GDBV_PASSWORD
 # -------------------------------------------------------------------------
 
 ORACLE8I_DB_1_READER_META_ATTRIBUTES fme_feature_type
@@ -3362,9 +3585,9 @@ FACTORY_DEF * TeeFactory    FACTORY_NAME "Source -> Generic"    INPUT FEATURE_TY
 DEFAULT_MACRO WB_CURRENT_CONTEXT
 # -------------------------------------------------------------------------
 
-INCLUDE [    set macroLine "MACRO AttributeKeeper_08861d7a_464b_48ee_980e_eec85ba348c70_LIST_EXP ";    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "{\[0-9\]+}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
+INCLUDE [    set macroLine "MACRO AttributeKeeper_4a950488_983e_4a8f_a942_f2412792093e1_LIST_EXP ";    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "{\[0-9\]+}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
 
-FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeKeeper    INPUT  FEATURE_TYPE GEODB.NPL_UELAERM    INPUT  FEATURE_TYPE GEODB.NPL_NHSL    INPUT  FEATURE_TYPE GEODB.NPL_UEUL    INPUT  FEATURE_TYPE GEODB.NPL_WEWRF    INPUT  FEATURE_TYPE GEODB.NPL_GEFF    INPUT  FEATURE_TYPE GEODB.NPL_GNGZ    INPUT  FEATURE_TYPE GEODB.NPL_UEUZ    INPUT  FEATURE_TYPE GEODB.NPL_NHSP    INPUT  FEATURE_TYPE GEODB.NPL_GEGEWL    INPUT  FEATURE_TYPE GEODB.NPL_GNNUTZZO    INPUT  FEATURE_TYPE GEODB.NPL_UEWAAB    INPUT  FEATURE_TYPE GEODB.NPL_VEFE    INPUT  FEATURE_TYPE GEODB.NPL_WEWRL    INPUT  FEATURE_TYPE GEODB.NPL_GEGEWF    INPUT  FEATURE_TYPE GEODB.NPL_UEPROJ    INPUT  FEATURE_TYPE GEODB.NPL_GNBAUW    INPUT  FEATURE_TYPE GEODB.NPL_NHSF    OUTPUT FEATURE_TYPE AttributeKeeper_OUTPUT        @KeepAttributes(REL_ID,fme_feature_type,fme_regexp_match,"^fme_$(AttributeKeeper_08861d7a_464b_48ee_980e_eec85ba348c70_LIST_EXP)")
+FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeKeeper    INPUT  FEATURE_TYPE GEODB.NPL_UELAERM    INPUT  FEATURE_TYPE GEODB.NPL_NHSL    INPUT  FEATURE_TYPE GEODB.NPL_UEUL    INPUT  FEATURE_TYPE GEODB.NPL_WEWRF    INPUT  FEATURE_TYPE GEODB.NPL_GEFF    INPUT  FEATURE_TYPE GEODB.NPL_GNGZ    INPUT  FEATURE_TYPE GEODB.NPL_UEUZ    INPUT  FEATURE_TYPE GEODB.NPL_NHSP    INPUT  FEATURE_TYPE GEODB.NPL_GEGEWL    INPUT  FEATURE_TYPE GEODB.NPL_GNNUTZZO    INPUT  FEATURE_TYPE GEODB.NPL_UEWAAB    INPUT  FEATURE_TYPE GEODB.NPL_VEFE    INPUT  FEATURE_TYPE GEODB.NPL_WEWRL    INPUT  FEATURE_TYPE GEODB.NPL_GEGEWF    INPUT  FEATURE_TYPE GEODB.NPL_UEPROJ    INPUT  FEATURE_TYPE GEODB.NPL_GNBAUW    INPUT  FEATURE_TYPE GEODB.NPL_NHSF    OUTPUT FEATURE_TYPE AttributeKeeper_OUTPUT        @KeepAttributes(REL_ID,fme_feature_type,fme_regexp_match,"^fme_$(AttributeKeeper_4a950488_983e_4a8f_a942_f2412792093e1_LIST_EXP)")
 
 # -------------------------------------------------------------------------
 
@@ -3396,30 +3619,49 @@ FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRemover_2    INPUT  FEATURE_TY
 
 # -------------------------------------------------------------------------
 
-Tcl2 proc DuplicateRemover_bec86c42_b802_414b_8c1b_b7aad8c1e0f50_dupKeyCount { attrList } {     set attrList [string trim $attrList {()}];     set attrs [split $attrList { } ];     set attrVal {___DuplicateRemover_bec86c42_b802_414b_8c1b_b7aad8c1e0f50___};     foreach {attrName} $attrs {         set attrName [FME_DecodeText $attrName];         append attrVal [FME_GetAttribute $attrName] {_fmebreak_};     };     return [expr [incr ::__DuplicateRemover_bec86c42_b802_414b_8c1b_b7aad8c1e0f50__KeySeenCount($attrVal)] - 1]; };
-FACTORY_DEF * TestFactory    FACTORY_NAME DuplicateRemover    INPUT  FEATURE_TYPE AttributeRemover_2_OUTPUT    TEST @Tcl2("DuplicateRemover_bec86c42_b802_414b_8c1b_b7aad8c1e0f50_dupKeyCount {(LAYERNAME STH_ID SORT)}") > 0    OUTPUT FAILED FEATURE_TYPE DuplicateRemover_UNIQUE
+Tcl2 proc DuplicateRemover_c3e5019e_3c4f_44d2_9d49_d30278a8fecc1_dupKeyCount { attrList } {     set attrList [string trim $attrList {()}];     set attrs [split $attrList { } ];     set attrVal {___DuplicateRemover_c3e5019e_3c4f_44d2_9d49_d30278a8fecc1___};     foreach {attrName} $attrs {         set attrName [FME_DecodeText $attrName];         append attrVal [FME_GetAttribute $attrName] {_fmebreak_};     };     return [expr [incr ::__DuplicateRemover_c3e5019e_3c4f_44d2_9d49_d30278a8fecc1__KeySeenCount($attrVal)] - 1]; };
+FACTORY_DEF * TestFactory    FACTORY_NAME DuplicateRemover    INPUT  FEATURE_TYPE AttributeRemover_2_OUTPUT    TEST @Tcl2("DuplicateRemover_c3e5019e_3c4f_44d2_9d49_d30278a8fecc1_dupKeyCount {(LAYERNAME STH_ID SORT)}") > 0    OUTPUT FAILED FEATURE_TYPE DuplicateRemover_UNIQUE
 
 # -------------------------------------------------------------------------
 
-Tcl2 proc StringConcatenator_beb9fc7d_deeb_4344_b487_c57b44095f0b0_doSetAttr {attrText} {    FME_SetAttribute [FME_DecodeText {LAYERNAME_BFS}] [FME_DecodeText $attrText] }
-FACTORY_DEF * TeeFactory    FACTORY_NAME StringConcatenator    INPUT  FEATURE_TYPE DuplicateRemover_UNIQUE    OUTPUT FEATURE_TYPE StringConcatenator_OUTPUT        @Tcl2("StringConcatenator_beb9fc7d_deeb_4344_b487_c57b44095f0b0_doSetAttr {@EvaluateExpression(STRING_ENCODED,<at>Value<openparen>LAYERNAME<closeparen>_$(BFSNR$encode),StringConcatenator)} ")
+Tcl2 proc StringConcatenator_70dc70ae_012a_4d5a_99e2_d577e97e76be1_doSetAttr {attrText} {    FME_SetAttribute [FME_DecodeText {LAYERNAME_BFS}] [FME_DecodeText $attrText] }
+FACTORY_DEF * TeeFactory    FACTORY_NAME StringConcatenator    INPUT  FEATURE_TYPE DuplicateRemover_UNIQUE    OUTPUT FEATURE_TYPE StringConcatenator_OUTPUT        @Tcl2("StringConcatenator_70dc70ae_012a_4d5a_99e2_d577e97e76be1_doSetAttr {@EvaluateExpression(STRING_ENCODED,<at>Value<openparen>LAYERNAME<closeparen>_$(BFSNR$encode),StringConcatenator)} ")
 
 # -------------------------------------------------------------------------
 
 FACTORY_DEF * TestFactory    FACTORY_NAME Tester    INPUT  FEATURE_TYPE StringConcatenator_OUTPUT    TEST @EvaluateExpression(STRING_ENCODED,$(WMS_LAYERS$encode),Tester) CONTAINS @EvaluateExpression(STRING_ENCODED,<at>Value<openparen>LAYERNAME_BFS<closeparen>,Tester) ENCODED    BOOLEAN_OPERATOR OR    OUTPUT PASSED FEATURE_TYPE Tester_PASSED    OUTPUT FAILED FEATURE_TYPE Tester_FAILED
 # -------------------------------------------------------------------------
+FACTORY_DEF * AttrSetFactory FACTORY_NAME AttributeCreator_2 ATTRSET_PROPAGATE_MISSING YES INPUT  FEATURE_TYPE Tester_FAILED ATTR LAYERNAME_K2 <at>Value<openparen>LAYERNAME<closeparen>_K2    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_2_OUTPUT 
+# -------------------------------------------------------------------------
+MACRO SQLExecutor_DIRECTIVES SERVER_TYPE ORACLE8i REMOVE_SCHEMA_QUALIFIER NO PERSISTENT_CONNECTION YES SHOW_SYSTEM_TABLES NO USER_NAME "$(GDBV_USERNAME)" PASSWORD "$(GDBV_PASSWORD)"
 
-Tcl2 proc StringConcatenator_2_ecd15c2c_b9f0_43b1_8163_a86585b06e0a0_doSetAttr {attrText} {    FME_SetAttribute [FME_DecodeText {LAYERNAME_BFS}] [FME_DecodeText $attrText] }
-FACTORY_DEF * TeeFactory    FACTORY_NAME StringConcatenator_2    INPUT  FEATURE_TYPE Tester_FAILED    OUTPUT FEATURE_TYPE StringConcatenator_2_OUTPUT        @Tcl2("StringConcatenator_2_ecd15c2c_b9f0_43b1_8163_a86585b06e0a0_doSetAttr {@EvaluateExpression(STRING_ENCODED,<at>Value<openparen>LAYERNAME<closeparen>_K,StringConcatenator_2)} ")
+FACTORY_DEF * QueryFactory    FACTORY_NAME SQLExecutor    INPUT  FEATURE_TYPE AttributeCreator_2_OUTPUT    QUERY_SQL            @EvaluateExpression(STRING_ENCODED,select<space>mxd.ebene<space>from<space>gdbp.info_dq<space>dq<space>left<space>join<space>gdbp.info_mxd<space>mxd<space>on<space>dq.OBJEKT_IDENT=mxd.OBJEKT_IDENT<space>where<space>mxd.mxd<space>like<space><apos>%$(MAPSERVICE_NAME$encode)%<apos><space>and<space>mxd.ebene=<apos><at>Value<openparen>LAYERNAME_K2<closeparen><apos><space>and<space>dq.DEFQUERY<space>like<space><apos>%$(BFSNR$encode)%<apos>,SQLExecutor)    READER_TYPE          ORACLE8I_DB    READER_DATASET       "@EvaluateExpression(STRING_ENCODED,$(GDBV_DATABASE$encode),SQLExecutor)"    COMBINE_ATTRIBUTES   RESULT_ONLY    COMBINE_GEOMETRY     QUERY_ONLY    READER_PARAMS        $(SQLExecutor_DIRECTIVES)    OUTPUT RESULT FEATURE_TYPE SQLExecutor_RESULT    OUTPUT QUERY FEATURE_TYPE SQLExecutor_INITIATOR
+
+FACTORY_DEF * TeeFactory   FACTORY_NAME "SQLExecutor RESULT Output Nuker"   INPUT FEATURE_TYPE SQLExecutor_RESULT
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME TestFilter    INPUT  FEATURE_TYPE SQLExecutor_INITIATOR    OUTPUT FEATURE_TYPE TestFilter_TESTFILTERINPUTLINE_0
+
+FACTORY_DEF * TestFactory FACTORY_NAME TestFilter_TestFactory_0 INPUT FEATURE_TYPE TestFilter_TESTFILTERINPUTLINE_0 TEST @EvaluateExpression(STRING_ENCODED,<at>Value<openparen>_matched_records<closeparen>,TestFilter) >= 1 ENCODED BOOLEAN_OPERATOR OR COMPOSITE_TEST_EXPR <Unused> OUTPUT PASSED FEATURE_TYPE TestFilter_K2_LEGENDE OUTPUT FAILED FEATURE_TYPE TestFilter_TESTFILTERINPUTLINE_1
+FACTORY_DEF * TeeFactory FACTORY_NAME TestFilter_K_LEGENDE INPUT FEATURE_TYPE TestFilter_TESTFILTERINPUTLINE_1 OUTPUT FEATURE_TYPE TestFilter_K_LEGENDE
+# -------------------------------------------------------------------------
+
+Tcl2 proc StringConcatenator_2_5abc25c8_64ca_44da_99ab_3db8156dba3f2_doSetAttr {attrText} {    FME_SetAttribute [FME_DecodeText {LAYERNAME_BFS}] [FME_DecodeText $attrText] }
+FACTORY_DEF * TeeFactory    FACTORY_NAME StringConcatenator_2    INPUT  FEATURE_TYPE TestFilter_K_LEGENDE    OUTPUT FEATURE_TYPE StringConcatenator_2_OUTPUT        @Tcl2("StringConcatenator_2_5abc25c8_64ca_44da_99ab_3db8156dba3f2_doSetAttr {@EvaluateExpression(STRING_ENCODED,<at>Value<openparen>LAYERNAME<closeparen>_K,StringConcatenator_2)} ")
 
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * SortFactory    FACTORY_NAME Sorter    INPUT  FEATURE_TYPE StringConcatenator_2_OUTPUT    INPUT  FEATURE_TYPE Tester_PASSED    SORT_BY STH_ID NUMERIC ASCENDING SORT NUMERIC ASCENDING    OUTPUT SORTED FEATURE_TYPE Sorter_SORTED
+Tcl2 proc StringConcatenator_8_e1b31790_1f30_4b1b_8bf3_d873b1413c931_doSetAttr {attrText} {    FME_SetAttribute [FME_DecodeText {LAYERNAME_BFS}] [FME_DecodeText $attrText] }
+FACTORY_DEF * TeeFactory    FACTORY_NAME StringConcatenator_8    INPUT  FEATURE_TYPE TestFilter_K2_LEGENDE    OUTPUT FEATURE_TYPE StringConcatenator_8_OUTPUT        @Tcl2("StringConcatenator_8_e1b31790_1f30_4b1b_8bf3_d873b1413c931_doSetAttr {@EvaluateExpression(STRING_ENCODED,<at>Value<openparen>LAYERNAME<closeparen>_K2,StringConcatenator_8)} ")
+
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * SortFactory    FACTORY_NAME Sorter    INPUT  FEATURE_TYPE StringConcatenator_2_OUTPUT    INPUT  FEATURE_TYPE StringConcatenator_8_OUTPUT    INPUT  FEATURE_TYPE Tester_PASSED    SORT_BY STH_ID NUMERIC ASCENDING SORT NUMERIC ASCENDING    OUTPUT SORTED FEATURE_TYPE Sorter_SORTED
 
 # -------------------------------------------------------------------------
 
 INCLUDE [    set macroLine "MACRO AttributeRemover_3_LIST_EXP ";    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "{\[0-9\]+}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
-FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRemover_3    INPUT  FEATURE_TYPE Sorter_SORTED    OUTPUT FEATURE_TYPE AttributeRemover_3_OUTPUT        @RemoveAttributes(LAYERNAME,SORT)        @RemoveAttributes(fme_regexp_match"$(AttributeRemover_3_LIST_EXP)")
+FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRemover_3    INPUT  FEATURE_TYPE Sorter_SORTED    OUTPUT FEATURE_TYPE AttributeRemover_3_OUTPUT        @RemoveAttributes(LAYERNAME,SORT,LAYERNAME_K2,_matched_records)        @RemoveAttributes(fme_regexp_match"$(AttributeRemover_3_LIST_EXP)")
 
 # -------------------------------------------------------------------------
 
@@ -3429,28 +3671,28 @@ FACTORY_DEF * AggregateFactory    FACTORY_NAME Aggregator    INPUT  FEATURE_TYPE
 
 # -------------------------------------------------------------------------
 
-Tcl2 proc StringConcatenator_3_cd729003_f3da_463d_80a4_a0d21738b5c50_doSetAttr {attrText} {    FME_SetAttribute [FME_DecodeText {DAR_OID}] [FME_DecodeText $attrText] }
-FACTORY_DEF * TeeFactory    FACTORY_NAME StringConcatenator_3    INPUT  FEATURE_TYPE Aggregator_AGGREGATE    OUTPUT FEATURE_TYPE StringConcatenator_3_OUTPUT        @Tcl2("StringConcatenator_3_cd729003_f3da_463d_80a4_a0d21738b5c50_doSetAttr {@EvaluateExpression(STRING_ENCODED,ch.be.bve.agi.npl.$(BFSNR$encode).<at>Value<openparen>STH_ID<closeparen>,StringConcatenator_3)} ")
+Tcl2 proc StringConcatenator_3_7e6ddc13_3242_4f6a_9247_a2f3fecae9191_doSetAttr {attrText} {    FME_SetAttribute [FME_DecodeText {DAR_OID}] [FME_DecodeText $attrText] }
+FACTORY_DEF * TeeFactory    FACTORY_NAME StringConcatenator_3    INPUT  FEATURE_TYPE Aggregator_AGGREGATE    OUTPUT FEATURE_TYPE StringConcatenator_3_OUTPUT        @Tcl2("StringConcatenator_3_7e6ddc13_3242_4f6a_9247_a2f3fecae9191_doSetAttr {@EvaluateExpression(STRING_ENCODED,ch.be.bve.agi.npl.$(BFSNR$encode).<at>Value<openparen>STH_ID<closeparen>,StringConcatenator_3)} ")
 
 # -------------------------------------------------------------------------
 
-Tcl2 proc StringConcatenator_4_4801f832_4f89_4b17_a2f5_0f54f32706660_doSetAttr {attrText} {    FME_SetAttribute [FME_DecodeText {DAR_VERWEISWMS_DE}] [FME_DecodeText $attrText] }
-FACTORY_DEF * TeeFactory    FACTORY_NAME StringConcatenator_4    INPUT  FEATURE_TYPE StringConcatenator_3_OUTPUT    OUTPUT FEATURE_TYPE StringConcatenator_4_OUTPUT        @Tcl2("StringConcatenator_4_4801f832_4f89_4b17_a2f5_0f54f32706660_doSetAttr {@EvaluateExpression(STRING_ENCODED,$(NPL_WMS_BASE$encode)<at>Value<openparen>LAYERNAME_BFS<closeparen>,StringConcatenator_4)} ")
+Tcl2 proc StringConcatenator_4_811d8f46_ea17_4c1b_9889_8aed7812f1bd1_doSetAttr {attrText} {    FME_SetAttribute [FME_DecodeText {DAR_VERWEISWMS_DE}] [FME_DecodeText $attrText] }
+FACTORY_DEF * TeeFactory    FACTORY_NAME StringConcatenator_4    INPUT  FEATURE_TYPE StringConcatenator_3_OUTPUT    OUTPUT FEATURE_TYPE StringConcatenator_4_OUTPUT        @Tcl2("StringConcatenator_4_811d8f46_ea17_4c1b_9889_8aed7812f1bd1_doSetAttr {@EvaluateExpression(STRING_ENCODED,$(NPL_WMS_BASE$encode)<at>Value<openparen>LAYERNAME_BFS<closeparen>,StringConcatenator_4)} ")
 
 # -------------------------------------------------------------------------
 
-Tcl2 proc StringConcatenator_5_87972d77_d2f2_47d0_bd2a_d2e088f219ef0_doSetAttr {attrText} {    FME_SetAttribute [FME_DecodeText {DAR_VERWEISWMS_FR}] [FME_DecodeText $attrText] }
-FACTORY_DEF * TeeFactory    FACTORY_NAME StringConcatenator_5    INPUT  FEATURE_TYPE StringConcatenator_4_OUTPUT    OUTPUT FEATURE_TYPE StringConcatenator_5_OUTPUT        @Tcl2("StringConcatenator_5_87972d77_d2f2_47d0_bd2a_d2e088f219ef0_doSetAttr {@EvaluateExpression(STRING_ENCODED,$(NPL_WMS_BASE$encode)<at>Value<openparen>LAYERNAME_BFS<closeparen>,StringConcatenator_5)} ")
+Tcl2 proc StringConcatenator_5_0666a563_b9eb_4539_9e10_db38c1a9f3361_doSetAttr {attrText} {    FME_SetAttribute [FME_DecodeText {DAR_VERWEISWMS_FR}] [FME_DecodeText $attrText] }
+FACTORY_DEF * TeeFactory    FACTORY_NAME StringConcatenator_5    INPUT  FEATURE_TYPE StringConcatenator_4_OUTPUT    OUTPUT FEATURE_TYPE StringConcatenator_5_OUTPUT        @Tcl2("StringConcatenator_5_0666a563_b9eb_4539_9e10_db38c1a9f3361_doSetAttr {@EvaluateExpression(STRING_ENCODED,$(NPL_WMS_BASE$encode)<at>Value<openparen>LAYERNAME_BFS<closeparen>,StringConcatenator_5)} ")
 
 # -------------------------------------------------------------------------
 
-Tcl2 proc StringConcatenator_6_3fd28e8a_8cd2_4ada_b854_37d6798442830_doSetAttr {attrText} {    FME_SetAttribute [FME_DecodeText {DAR_LEGENDEIMWEB_DE}] [FME_DecodeText $attrText] }
-FACTORY_DEF * TeeFactory    FACTORY_NAME StringConcatenator_6    INPUT  FEATURE_TYPE StringConcatenator_5_OUTPUT    OUTPUT FEATURE_TYPE StringConcatenator_6_OUTPUT        @Tcl2("StringConcatenator_6_3fd28e8a_8cd2_4ada_b854_37d6798442830_doSetAttr {@EvaluateExpression(STRING_ENCODED,$(OUTPUT_RV_URL$encode)legenden<solidus>$(BFSNR$encode)_legende_npl_de.html,StringConcatenator_6)} ")
+Tcl2 proc StringConcatenator_6_6cf6725f_e086_4848_9aba_dad2ec79f3ef1_doSetAttr {attrText} {    FME_SetAttribute [FME_DecodeText {DAR_LEGENDEIMWEB_DE}] [FME_DecodeText $attrText] }
+FACTORY_DEF * TeeFactory    FACTORY_NAME StringConcatenator_6    INPUT  FEATURE_TYPE StringConcatenator_5_OUTPUT    OUTPUT FEATURE_TYPE StringConcatenator_6_OUTPUT        @Tcl2("StringConcatenator_6_6cf6725f_e086_4848_9aba_dad2ec79f3ef1_doSetAttr {@EvaluateExpression(STRING_ENCODED,$(OUTPUT_RV_URL$encode)legenden<solidus>$(BFSNR$encode)_legende_npl_de.html,StringConcatenator_6)} ")
 
 # -------------------------------------------------------------------------
 
-Tcl2 proc StringConcatenator_7_3e685b17_8e92_4416_8b7c_ffee72ac99950_doSetAttr {attrText} {    FME_SetAttribute [FME_DecodeText {DAR_LEGENDEIMWEB_FR}] [FME_DecodeText $attrText] }
-FACTORY_DEF * TeeFactory    FACTORY_NAME StringConcatenator_7    INPUT  FEATURE_TYPE StringConcatenator_6_OUTPUT    OUTPUT FEATURE_TYPE StringConcatenator_7_OUTPUT        @Tcl2("StringConcatenator_7_3e685b17_8e92_4416_8b7c_ffee72ac99950_doSetAttr {@EvaluateExpression(STRING_ENCODED,$(OUTPUT_RV_URL$encode)legenden<solidus>$(BFSNR$encode)_legende_npl_fr.html,StringConcatenator_7)} ")
+Tcl2 proc StringConcatenator_7_e5da2624_3032_48f2_9232_062ace87a9521_doSetAttr {attrText} {    FME_SetAttribute [FME_DecodeText {DAR_LEGENDEIMWEB_FR}] [FME_DecodeText $attrText] }
+FACTORY_DEF * TeeFactory    FACTORY_NAME StringConcatenator_7    INPUT  FEATURE_TYPE StringConcatenator_6_OUTPUT    OUTPUT FEATURE_TYPE StringConcatenator_7_OUTPUT        @Tcl2("StringConcatenator_7_e5da2624_3032_48f2_9232_062ace87a9521_doSetAttr {@EvaluateExpression(STRING_ENCODED,$(OUTPUT_RV_URL$encode)legenden<solidus>$(BFSNR$encode)_legende_npl_fr.html,StringConcatenator_7)} ")
 
 # -------------------------------------------------------------------------
 FACTORY_DEF * AttrSetFactory FACTORY_NAME AttributeCreator ATTRSET_PROPAGATE_MISSING YES INPUT  FEATURE_TYPE StringConcatenator_7_OUTPUT ATTR DAR_LIEFEREINHEIT $(LIEFEREINHEIT$encode)    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_OUTPUT 
