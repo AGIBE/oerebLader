@@ -15,7 +15,7 @@
 #    
 #! PASSWORD=""
 #! ATTR_TYPE_ENCODING="SDF"
-#! VIEW_POSITION="-596 -5010"
+#! VIEW_POSITION="-780 -820"
 #! SHOW_INFO_NODES="true"
 #! FME_STROKE_MAX_DEVIATION="0"
 #! BEGIN_PYTHON=""
@@ -33,13 +33,13 @@
 #! USAGE=""
 #! END_PYTHON=""
 #! HISTORY=""
-#! FME_DOCUMENT_PRIORGUID="539d30ee-3141-44d1-aff1-077d27dcf103,eee0f167-b194-4a23-b592-a7ca93510f86,d25f2455-b4a7-4d67-b376-e2f983ac0184,ce950cc6-2ee4-4452-a366-1da89ad71b9a,e7a5257c-ab6a-446f-bef9-c4e41a637810,27b51821-0b21-4121-92cd-03a0655bc785,73c58f79-6153-4baa-a87c-bc3273804013,640753fe-c969-4125-b6d7-792a1a65d9b0"
+#! FME_DOCUMENT_PRIORGUID="539d30ee-3141-44d1-aff1-077d27dcf103,eee0f167-b194-4a23-b592-a7ca93510f86,d25f2455-b4a7-4d67-b376-e2f983ac0184,ce950cc6-2ee4-4452-a366-1da89ad71b9a,e7a5257c-ab6a-446f-bef9-c4e41a637810,27b51821-0b21-4121-92cd-03a0655bc785,73c58f79-6153-4baa-a87c-bc3273804013,640753fe-c969-4125-b6d7-792a1a65d9b0,42a542f2-fc85-4f81-91de-a3f896c536dd,123944fe-5679-4516-95ab-94a65ff87709"
 #! DOC_TOP_LEFT="-1367 -9934"
 #! REQUIREMENTS_KEYWORD=""
 #! SOURCE_ROUTING_FILE=""
 #! DESTINATION_ROUTING_FILE=""
 #! DESTINATION="NONE"
-#! LAST_SAVE_DATE="2017-01-25T15:01:40"
+#! LAST_SAVE_DATE="2017-02-06T12:52:53"
 #! FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
 #! WORKSPACE_VERSION="1"
 #! SOURCE="NONE"
@@ -50,7 +50,7 @@
 #! REQUIREMENTS=""
 #! BEGIN_TCL=""
 #! DOC_EXTENTS="6110 10482"
-#! FME_DOCUMENT_GUID="42a542f2-fc85-4f81-91de-a3f896c536dd"
+#! FME_DOCUMENT_GUID="a8383bad-fc0f-414d-9a9c-0477ac3d46fb"
 #! SHOW_ANNOTATIONS="true"
 #! IGNORE_READER_FAILURE="No"
 #! WARN_INVALID_XFORM_PARAM="Yes"
@@ -98,11 +98,52 @@
 #! />
 #! </DATASET>
 #! <DATASET
+#! IS_SOURCE="true"
+#! ROLE="READER"
+#! FORMAT="GEODATABASE_SDE"
+#! DATASET="sde"
+#! KEYWORD="GEODATABASE_SDE_2"
+#! MULTI_GEOM_ALLOWED="false"
+#! ATTR_MAX_LENGTH="60"
+#! ATTR_CASE="ANY"
+#! ALLOWED_FEAT_TYPES=""
+#! WRITE_DEFS="true"
+#! DEFLINE_TEMPLATE="geodb_type {FME_GEN_GEOMETRY}"
+#! DEFLINE_ATTRS="true"
+#! EXPOSABLE_ATTRS="geodb_text_leader_line_anchor_point char(254) geodb_dim_length double geodb_v_align char(50) geodb_rel_destination_oid integer multi_reader_type char(50) geodb_edge_feature_count integer geodb_feature_dataset char(254) geodb_text_lc_gap double geodb_subtype_name char(254) geodb_raster_compression_quality integer fme_color char(50) geodb_font_name char(254) geodb_from_junction_element_id integer geodb_raster_pyramid_resample_type char(100) geodb_rel_origin_oid integer fme_text_string char(50) geodb_raster_compression_type char(100) fme_type char(50) geodb_text_lc_textbox_y1 double geodb_text_leader_line_color char(50) geodb_text_lc_textbox_y2 double geodb_text_lc_textbox_y3 double geodb_metadata_string char(254) geodb_text_lc_textbox_y4 double geodb_dim_text_x double geodb_symbol_id integer geodb_text_lc_margin_left double geodb_dim_text_y double multi_reader_keyword char(50) geodb_dim_text_z double geodb_text_point_scale_factor double geodb_text_leader_line char(254) geodb_element_id integer geodb_text_lc_accent_bar_width double geodb_font_italic boolean geodb_text_line_spacing double fme_basename char(50) geodb_text_ref_scale double geodb_topological_configuration char(6) geodb_start_angle double geodb_h_align char(50) fme_secondary_axis double geodb_text_lc_accent_bar_color char(50) geodb_anno_class_id integer geodb_sweep_angle double geodb_text_x_offset double fme_feature_type char(50) geodb_dim_text_angle double geodb_ancillary_role char(7) geodb_font_size double fme_text_size double geodb_text_lc_margin_bottom double geodb_text_size double geodb_raster_pyramid_level integer geodb_text_leader_line_width double fme_sweep_angle double geodb_dim_using_custom_length boolean geodb_text_char_spacing double fme_primary_axis double geodb_text_string char(254) geodb_font_strikethrough boolean geodb_text_character_width double fme_dataset char(50) geodb_text_lc_textbox_x1 double geodb_text_lc_textbox_x2 double geodb_text_lc_textbox_x3 double geodb_rotation double fme_fill_color char(50) geodb_secondary_axis double geodb_text_lc_textbox_x4 double geodb_font_underline boolean geodb_font_bold boolean geodb_text_color char(254) geodb_text_y_offset double geodb_dim_style_id integer geodb_text_scale boolean geodb_measures char(254) geodb_text_part_count integer geodb_type char(25) geodb_dim_line_display smallint geodb_text_clip boolean geodb_to_junction_element_id integer fme_geometry fme_char(50) geodb_text_string_with_format_tags char(254) multi_reader_id integer geodb_text_lc_margin_right double geodb_text_lc_style char(20) geodb_text_break_char integer geodb_text_leader_line_tolerance double geodb_dim_extn_line_display smallint geodb_dim_type smallint geodb_dim_custom_length double geodb_dim_begin_dimension_x double geodb_dim_begin_dimension_y double geodb_dim_begin_dimension_z double geodb_feature_is_simple boolean geodb_primary_axis double geodb_dim_line_x double geodb_right_to_left boolean geodb_dim_end_dimension_x double geodb_dim_line_y double geodb_dim_end_dimension_y double geodb_dim_line_z double geodb_feature_has_relationships boolean geodb_junction_feature_count integer geodb_dim_end_dimension_z double geodb_linked_feature_id integer geodb_edge_element_count integer geodb_text_lc_margin_top double geodb_text_word_spacing double geodb_dim_marker_display smallint fme_rotation double multi_reader_full_id integer geodb_junction_element_count integer fme_start_angle double geodb_dim_extn_line_angle double geodb_font_weight smallint geodb_element_index integer geodb_font_charset smallint geodb_color char(50) geodb_text_angle double"
+#! DEFLINE_PARMS=""
+#! ATTR_INDEX_TYPES=""
+#! ATTR_NAME_INVALID_CHARS=""
+#! SUPPORTS_FEATURE_TYPE_FANOUT="true"
+#! ENABLED="true"
+#! DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
+#! GENERATE_FME_BUILD_NUM="14433"
+#! NAME="WORK_GDB_NUPLA_2"
+#! MAX_FEATURES=""
+#! COORDSYS=""
+#! MIN_FEATURES=""
+#! FEATURE_TYPES=""
+#! START_FEATURE=""
+#! >
+#! <METAFILE_PARAMETER
+#! NAME="NETWORK_PROXY"
+#! VALUE="NO"
+#! />
+#! <METAFILE_PARAMETER
+#! NAME="NETWORK_AUTHENTICATION"
+#! VALUE="NO"
+#! />
+#! <METAFILE_PARAMETER
+#! NAME="ADVANCED_PARMS"
+#! VALUE="GEODATABASE_SDE_IN_SEARCH_ENVELOPE_MINX GEODATABASE_SDE_IN_SEARCH_ENVELOPE_MINY GEODATABASE_SDE_IN_SEARCH_ENVELOPE_MAXX GEODATABASE_SDE_IN_SEARCH_ENVELOPE_MAXY _GEODB_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM GEODATABASE_SDE_IN_CLIP_TO_ENVELOPE GEODATABASE_SDE_IN_TRANSLATE_SPATIAL_DATA_ONLY GEODATABASE_SDE_IN_RESOLVE_DOMAINS GEODATABASE_SDE_IN_RESOLVE_SUBTYPE_NAMES GEODATABASE_SDE_IN_IGNORE_NETWORK_INFO GEODATABASE_SDE_IN_IGNORE_RELATIONSHIP_INFO GEODATABASE_SDE_IN_SPLIT_COMPLEX_EDGES GEODATABASE_SDE_IN_WHERE _GEODBInSearchFeature _GEODBInSearchOrder _GEODBInSearchMethod _GEODBInChildVersionName NULL_OUT_TRANSACTION_TYPE NULL_OUT_SIMPLIFY_GEOM NULL_OUT_ORIGIN_X NULL_OUT_ORIGIN_Y NULL_OUT_XY_SCALE NULL_OUT_HAS_Z_VALUES NULL_OUT_Z_ORIGIN NULL_OUT_Z_SCALE NULL_OUT_GRID_1 _GEODBOutWriterMode _GEODBOutTransaction _GEODBOutTransactionInterval _GEODBOutIgnoreFailedFeatureEntry _GEODBOutMaxNumberFailedFeatures _GEODBOutDumpFailedFeatures _GEODBOutFFSDumpFile _GEODBOutAnnotationUnits _GEODBOutReconcileAndPost _GEODBInArchiveWhereClause _GEODBMergeFeatLinkedAnnos _GEODBInCheckSimpleGeom _GEODBOutDeleteChildAfterReconcileAndPost _GEODBOutValidateFeatures _GEODBOutSimplifyNetworkFeatures _GEODBInPersistentConnection _GEODBOutPersistentConnection GEODATABASE_SDE_IN_SPLIT_MULTI_PART_ANNOS _GEODBSplitComplexAnnotations _GEODBOutCommitTransactionsAfterWrite _GEODBInBeginSql _GEODBInEndSql _GEODBOutBeginSql _GEODBOutEndSql _GEODBCacheMultipatchTextures"
+#! />
+#! </DATASET>
+#! <DATASET
 #! IS_SOURCE="false"
 #! ROLE="WRITER"
 #! FORMAT="GEODATABASE_SDE"
 #! DATASET="sde"
-#! KEYWORD="GEODATABASE_SDE_2"
+#! KEYWORD="GEODATABASE_SDE_3"
 #! MULTI_GEOM_ALLOWED="false"
 #! ATTR_MAX_LENGTH="30"
 #! ATTR_CASE="ANY"
@@ -811,39 +852,6 @@
 #! </FEATURE_TYPE>
 #! <FEATURE_TYPE
 #! IS_SOURCE="true"
-#! NODE_NAME="GEODB.NUPLA_RVST"
-#! IS_EDITABLE="false"
-#! IDENTIFIER="4"
-#! FEAT_GEOMTYPE="geodb_table"
-#! POSITION="-1265 -2372"
-#! ORDER="5e+014"
-#! COLLAPSED="true"
-#! KEYWORD="GEODATABASE_SDE_1"
-#! ENABLED="true"
-#! HIDDEN_USER_ATTRS=""
-#! MERGE="false"
-#! MERGE_FILTER=""
-#! MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
-#! MERGE_FILTER_CASE_SENSITIVE="true"
-#! DYNAMIC_SCHEMA="false"
-#! >
-#! <FEAT_ATTRIBUTE ATTR_NAME="geodb_oid" ATTR_TYPE="integer" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#! <FEAT_ATTRIBUTE ATTR_NAME="OBJECTID" ATTR_TYPE="integer" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#! <FEAT_ATTRIBUTE ATTR_NAME="BFSNR" ATTR_TYPE="smallint" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#! <FEAT_ATTRIBUTE ATTR_NAME="RVS_ID" ATTR_TYPE="char(100)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#! <FEAT_ATTRIBUTE ATTR_NAME="ART" ATTR_TYPE="char(40)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#! <FEAT_ATTRIBUTE ATTR_NAME="TITEL" ATTR_TYPE="char(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#! <FEAT_ATTRIBUTE ATTR_NAME="OFFIZTITEL" ATTR_TYPE="char(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#! <FEAT_ATTRIBUTE ATTR_NAME="ABKUERZUNG" ATTR_TYPE="char(20)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#! <FEAT_ATTRIBUTE ATTR_NAME="OFFIZNR" ATTR_TYPE="char(20)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#! <FEAT_ATTRIBUTE ATTR_NAME="DOKUMENT" ATTR_TYPE="char(100)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#! <FEAT_ATTRIBUTE ATTR_NAME="ARTIKELNR" ATTR_TYPE="char(40)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#! <FEAT_ATTRIBUTE ATTR_NAME="ORDNNR" ATTR_TYPE="smallint" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#! <FEAT_ATTRIBUTE ATTR_NAME="ZUSTAENDIG" ATTR_TYPE="char(36)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#! <FEAT_ATTRIBUTE ATTR_NAME="GEMNAME" ATTR_TYPE="char(50)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#! </FEATURE_TYPE>
-#! <FEATURE_TYPE
-#! IS_SOURCE="true"
 #! NODE_NAME="GEODB.NUPLA_UEFL"
 #! IS_EDITABLE="false"
 #! IDENTIFIER="5"
@@ -1074,7 +1082,7 @@
 #! POSITION="2489 -3065"
 #! ORDER="5e+014"
 #! COLLAPSED="false"
-#! KEYWORD="GEODATABASE_SDE_2"
+#! KEYWORD="GEODATABASE_SDE_3"
 #! ENABLED="true"
 #! FANOUT="No"
 #! FANOUT_ID_ATTR=""
@@ -1117,7 +1125,7 @@
 #! POSITION="2498 -4397"
 #! ORDER="5e+014"
 #! COLLAPSED="false"
-#! KEYWORD="GEODATABASE_SDE_2"
+#! KEYWORD="GEODATABASE_SDE_3"
 #! ENABLED="true"
 #! FANOUT="No"
 #! FANOUT_ID_ATTR=""
@@ -1159,7 +1167,7 @@
 #! POSITION="2575 -8082"
 #! ORDER="5e+014"
 #! COLLAPSED="false"
-#! KEYWORD="GEODATABASE_SDE_2"
+#! KEYWORD="GEODATABASE_SDE_3"
 #! ENABLED="true"
 #! FANOUT="No"
 #! FANOUT_ID_ATTR=""
@@ -1201,7 +1209,7 @@
 #! POSITION="4742 -75"
 #! ORDER="5e+014"
 #! COLLAPSED="true"
-#! KEYWORD="GEODATABASE_SDE_2"
+#! KEYWORD="GEODATABASE_SDE_3"
 #! ENABLED="true"
 #! FANOUT="No"
 #! FANOUT_ID_ATTR=""
@@ -1247,7 +1255,7 @@
 #! POSITION="2776 -336"
 #! ORDER="5e+014"
 #! COLLAPSED="true"
-#! KEYWORD="GEODATABASE_SDE_2"
+#! KEYWORD="GEODATABASE_SDE_3"
 #! ENABLED="true"
 #! FANOUT="No"
 #! FANOUT_ID_ATTR=""
@@ -1293,7 +1301,7 @@
 #! POSITION="2510 -5003"
 #! ORDER="5e+014"
 #! COLLAPSED="false"
-#! KEYWORD="GEODATABASE_SDE_2"
+#! KEYWORD="GEODATABASE_SDE_3"
 #! ENABLED="true"
 #! FANOUT="No"
 #! FANOUT_ID_ATTR=""
@@ -1336,7 +1344,7 @@
 #! POSITION="2599 -8706"
 #! ORDER="5e+014"
 #! COLLAPSED="false"
-#! KEYWORD="GEODATABASE_SDE_2"
+#! KEYWORD="GEODATABASE_SDE_3"
 #! ENABLED="true"
 #! FANOUT="No"
 #! FANOUT_ID_ATTR=""
@@ -1379,7 +1387,7 @@
 #! POSITION="794 -7895"
 #! ORDER="5e+014"
 #! COLLAPSED="false"
-#! KEYWORD="GEODATABASE_SDE_2"
+#! KEYWORD="GEODATABASE_SDE_3"
 #! ENABLED="true"
 #! FANOUT="No"
 #! FANOUT_ID_ATTR=""
@@ -1422,7 +1430,7 @@
 #! POSITION="1001 -730"
 #! ORDER="5e+014"
 #! COLLAPSED="true"
-#! KEYWORD="GEODATABASE_SDE_2"
+#! KEYWORD="GEODATABASE_SDE_3"
 #! ENABLED="true"
 #! FANOUT="No"
 #! FANOUT_ID_ATTR=""
@@ -1465,7 +1473,7 @@
 #! POSITION="3150 -6463"
 #! ORDER="5e+014"
 #! COLLAPSED="false"
-#! KEYWORD="GEODATABASE_SDE_2"
+#! KEYWORD="GEODATABASE_SDE_3"
 #! ENABLED="true"
 #! FANOUT="No"
 #! FANOUT_ID_ATTR=""
@@ -1511,7 +1519,7 @@
 #! POSITION="2510 -2359"
 #! ORDER="5e+014"
 #! COLLAPSED="false"
-#! KEYWORD="GEODATABASE_SDE_2"
+#! KEYWORD="GEODATABASE_SDE_3"
 #! ENABLED="true"
 #! FANOUT="No"
 #! FANOUT_ID_ATTR=""
@@ -1555,7 +1563,7 @@
 #! POSITION="1025 -1267"
 #! ORDER="5e+014"
 #! COLLAPSED="true"
-#! KEYWORD="GEODATABASE_SDE_2"
+#! KEYWORD="GEODATABASE_SDE_3"
 #! ENABLED="true"
 #! FANOUT="No"
 #! FANOUT_ID_ATTR=""
@@ -1598,7 +1606,7 @@
 #! POSITION="2501 -1645"
 #! ORDER="5e+014"
 #! COLLAPSED="false"
-#! KEYWORD="GEODATABASE_SDE_2"
+#! KEYWORD="GEODATABASE_SDE_3"
 #! ENABLED="true"
 #! FANOUT="No"
 #! FANOUT_ID_ATTR=""
@@ -1641,7 +1649,7 @@
 #! POSITION="2357 -1165"
 #! ORDER="5e+014"
 #! COLLAPSED="true"
-#! KEYWORD="GEODATABASE_SDE_2"
+#! KEYWORD="GEODATABASE_SDE_3"
 #! ENABLED="false"
 #! FANOUT="No"
 #! FANOUT_ID_ATTR=""
@@ -1684,7 +1692,7 @@
 #! POSITION="2495 -3704"
 #! ORDER="5e+014"
 #! COLLAPSED="false"
-#! KEYWORD="GEODATABASE_SDE_2"
+#! KEYWORD="GEODATABASE_SDE_3"
 #! ENABLED="true"
 #! FANOUT="No"
 #! FANOUT_ID_ATTR=""
@@ -1727,7 +1735,7 @@
 #! POSITION="2557 -7338"
 #! ORDER="5e+014"
 #! COLLAPSED="false"
-#! KEYWORD="GEODATABASE_SDE_2"
+#! KEYWORD="GEODATABASE_SDE_3"
 #! ENABLED="true"
 #! FANOUT="No"
 #! FANOUT_ID_ATTR=""
@@ -1770,7 +1778,7 @@
 #! POSITION="359 -2386"
 #! ORDER="5e+014"
 #! COLLAPSED="true"
-#! KEYWORD="GEODATABASE_SDE_2"
+#! KEYWORD="GEODATABASE_SDE_3"
 #! ENABLED="true"
 #! FANOUT="No"
 #! FANOUT_ID_ATTR=""
@@ -1806,71 +1814,6 @@
 #! <DEFLINE_PARM PARM_NAME="GEODB_SHAPE_ALIAS" PARM_VALUE="SHAPE"/>
 #! <DEFLINE_PARM PARM_NAME="GEODB_HAS_Z_VALUES" PARM_VALUE=""/>
 #! <DEFLINE_PARM PARM_NAME="GEODB_TRUNCATE_TABLE" PARM_VALUE="NO"/>
-#! </FEATURE_TYPE>
-#! <FEATURE_TYPE
-#! IS_SOURCE="true"
-#! NODE_NAME="GEODB.NUPLA_ABGRZ"
-#! IS_EDITABLE="true"
-#! IDENTIFIER="195"
-#! FEAT_GEOMTYPE="geodb_polyline"
-#! POSITION="-1057 -9086"
-#! ORDER="5e+014"
-#! COLLAPSED="true"
-#! KEYWORD="GEODATABASE_SDE_1"
-#! ENABLED="true"
-#! HIDDEN_USER_ATTRS=""
-#! MERGE="false"
-#! MERGE_FILTER=""
-#! MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
-#! MERGE_FILTER_CASE_SENSITIVE="false"
-#! DYNAMIC_SCHEMA="false"
-#! >
-#! <FEAT_ATTRIBUTE ATTR_NAME="geodb_oid" ATTR_TYPE="integer" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#! <FEAT_ATTRIBUTE ATTR_NAME="OBJECTID" ATTR_TYPE="integer" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#! <FEAT_ATTRIBUTE ATTR_NAME="BFSNR" ATTR_TYPE="smallint" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#! <FEAT_ATTRIBUTE ATTR_NAME="GEMNAME" ATTR_TYPE="char(50)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#! <FEAT_ATTRIBUTE ATTR_NAME="ART" ATTR_TYPE="char(30)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#! <FEAT_ATTRIBUTE ATTR_NAME="DARST_C" ATTR_TYPE="char(5)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#! <FEAT_ATTRIBUTE ATTR_NAME="SHAPE.LEN" ATTR_TYPE="double" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#! </FEATURE_TYPE>
-#! <FEATURE_TYPE
-#! IS_SOURCE="true"
-#! NODE_NAME="GEODB.NUPLA_GNBAUWS"
-#! IS_EDITABLE="true"
-#! IDENTIFIER="196"
-#! FEAT_GEOMTYPE="geodb_polygon"
-#! POSITION="-1005 -9417"
-#! ORDER="5e+014"
-#! COLLAPSED="true"
-#! KEYWORD="GEODATABASE_SDE_1"
-#! ENABLED="true"
-#! HIDDEN_USER_ATTRS=""
-#! MERGE="false"
-#! MERGE_FILTER=""
-#! MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
-#! MERGE_FILTER_CASE_SENSITIVE="false"
-#! DYNAMIC_SCHEMA="false"
-#! >
-#! <FEAT_ATTRIBUTE ATTR_NAME="geodb_oid" ATTR_TYPE="integer" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#! <FEAT_ATTRIBUTE ATTR_NAME="OBJECTID" ATTR_TYPE="integer" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#! <FEAT_ATTRIBUTE ATTR_NAME="BFSNR" ATTR_TYPE="smallint" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#! <FEAT_ATTRIBUTE ATTR_NAME="GEMNAME" ATTR_TYPE="char(50)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#! <FEAT_ATTRIBUTE ATTR_NAME="RVS_ID" ATTR_TYPE="char(100)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#! <FEAT_ATTRIBUTE ATTR_NAME="GENEHM" ATTR_TYPE="date" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#! <FEAT_ATTRIBUTE ATTR_NAME="INKRAFT" ATTR_TYPE="date" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#! <FEAT_ATTRIBUTE ATTR_NAME="BWTYP" ATTR_TYPE="smallint" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#! <FEAT_ATTRIBUTE ATTR_NAME="QUALITAET" ATTR_TYPE="smallint" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#! <FEAT_ATTRIBUTE ATTR_NAME="GEBL" ATTR_TYPE="float" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#! <FEAT_ATTRIBUTE ATTR_NAME="GEBLU" ATTR_TYPE="smallint" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#! <FEAT_ATTRIBUTE ATTR_NAME="GEBT" ATTR_TYPE="float" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#! <FEAT_ATTRIBUTE ATTR_NAME="GEBTU" ATTR_TYPE="smallint" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#! <FEAT_ATTRIBUTE ATTR_NAME="GEBLSYM" ATTR_TYPE="char(2)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#! <FEAT_ATTRIBUTE ATTR_NAME="GEBTSYM" ATTR_TYPE="char(2)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#! <FEAT_ATTRIBUTE ATTR_NAME="DARST_C" ATTR_TYPE="char(5)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#! <FEAT_ATTRIBUTE ATTR_NAME="DATENVERW" ATTR_TYPE="char(36)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#! <FEAT_ATTRIBUTE ATTR_NAME="ZUSTAENDIG" ATTR_TYPE="char(36)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#! <FEAT_ATTRIBUTE ATTR_NAME="SHAPE.AREA" ATTR_TYPE="double" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#! <FEAT_ATTRIBUTE ATTR_NAME="SHAPE.LEN" ATTR_TYPE="double" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #! </FEATURE_TYPE>
 #! <FEATURE_TYPE
 #! IS_SOURCE="true"
@@ -1931,7 +1874,7 @@
 #! POSITION="296 -9116"
 #! ORDER="5e+014"
 #! COLLAPSED="true"
-#! KEYWORD="GEODATABASE_SDE_2"
+#! KEYWORD="GEODATABASE_SDE_3"
 #! ENABLED="true"
 #! FANOUT="No"
 #! FANOUT_ID_ATTR=""
@@ -1970,7 +1913,7 @@
 #! POSITION="1821 -9513"
 #! ORDER="5e+014"
 #! COLLAPSED="false"
-#! KEYWORD="GEODATABASE_SDE_2"
+#! KEYWORD="GEODATABASE_SDE_3"
 #! ENABLED="true"
 #! FANOUT="No"
 #! FANOUT_ID_ATTR=""
@@ -2016,7 +1959,7 @@
 #! POSITION="186 -9934"
 #! ORDER="5e+014"
 #! COLLAPSED="true"
-#! KEYWORD="GEODATABASE_SDE_2"
+#! KEYWORD="GEODATABASE_SDE_3"
 #! ENABLED="true"
 #! FANOUT="No"
 #! FANOUT_ID_ATTR=""
@@ -2064,7 +2007,7 @@
 #! POSITION="3147 -5610"
 #! ORDER="5e+014"
 #! COLLAPSED="false"
-#! KEYWORD="GEODATABASE_SDE_2"
+#! KEYWORD="GEODATABASE_SDE_3"
 #! ENABLED="true"
 #! FANOUT="No"
 #! FANOUT_ID_ATTR=""
@@ -2100,6 +2043,104 @@
 #! <DEFLINE_PARM PARM_NAME="GEODB_SHAPE_ALIAS" PARM_VALUE="SHAPE"/>
 #! <DEFLINE_PARM PARM_NAME="GEODB_HAS_Z_VALUES" PARM_VALUE=""/>
 #! <DEFLINE_PARM PARM_NAME="GEODB_TRUNCATE_TABLE" PARM_VALUE="NO"/>
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#! IS_SOURCE="true"
+#! NODE_NAME="GEODB.NUPLA_ABGRZ"
+#! IS_EDITABLE="false"
+#! IDENTIFIER="244"
+#! FEAT_GEOMTYPE="geodb_polyline"
+#! POSITION="-1136 -9020"
+#! ORDER="5e+014"
+#! COLLAPSED="true"
+#! KEYWORD="GEODATABASE_SDE_2"
+#! ENABLED="true"
+#! HIDDEN_USER_ATTRS=""
+#! MERGE="false"
+#! MERGE_FILTER=""
+#! MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
+#! MERGE_FILTER_CASE_SENSITIVE="true"
+#! DYNAMIC_SCHEMA="false"
+#! >
+#! <FEAT_ATTRIBUTE ATTR_NAME="geodb_oid" ATTR_TYPE="integer" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="OBJECTID" ATTR_TYPE="integer" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="BFSNR" ATTR_TYPE="smallint" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="GEMNAME" ATTR_TYPE="char(50)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="ART" ATTR_TYPE="char(30)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="DARST_C" ATTR_TYPE="char(5)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="SHAPE.LEN" ATTR_TYPE="double" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#! IS_SOURCE="true"
+#! NODE_NAME="GEODB.NUPLA_GNBAUWS"
+#! IS_EDITABLE="false"
+#! IDENTIFIER="245"
+#! FEAT_GEOMTYPE="geodb_polygon"
+#! POSITION="-1116 -9448"
+#! ORDER="5e+014"
+#! COLLAPSED="true"
+#! KEYWORD="GEODATABASE_SDE_2"
+#! ENABLED="true"
+#! HIDDEN_USER_ATTRS=""
+#! MERGE="false"
+#! MERGE_FILTER=""
+#! MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
+#! MERGE_FILTER_CASE_SENSITIVE="true"
+#! DYNAMIC_SCHEMA="false"
+#! >
+#! <FEAT_ATTRIBUTE ATTR_NAME="geodb_oid" ATTR_TYPE="integer" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="OBJECTID" ATTR_TYPE="integer" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="BFSNR" ATTR_TYPE="smallint" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="GEMNAME" ATTR_TYPE="char(50)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="RVS_ID" ATTR_TYPE="char(100)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="GENEHM" ATTR_TYPE="date" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="INKRAFT" ATTR_TYPE="date" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="BWTYP" ATTR_TYPE="smallint" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="QUALITAET" ATTR_TYPE="smallint" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="GEBL" ATTR_TYPE="float" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="GEBLU" ATTR_TYPE="smallint" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="GEBT" ATTR_TYPE="float" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="GEBTU" ATTR_TYPE="smallint" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="GEBLSYM" ATTR_TYPE="char(2)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="GEBTSYM" ATTR_TYPE="char(2)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="DARST_C" ATTR_TYPE="char(5)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="DATENVERW" ATTR_TYPE="char(36)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="ZUSTAENDIG" ATTR_TYPE="char(36)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="SHAPE.AREA" ATTR_TYPE="double" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="SHAPE.LEN" ATTR_TYPE="double" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#! IS_SOURCE="true"
+#! NODE_NAME="GEODB.NUPLA_RVST"
+#! IS_EDITABLE="false"
+#! IDENTIFIER="246"
+#! FEAT_GEOMTYPE="geodb_table"
+#! POSITION="-1203 -2379"
+#! ORDER="5e+014"
+#! COLLAPSED="true"
+#! KEYWORD="GEODATABASE_SDE_2"
+#! ENABLED="true"
+#! HIDDEN_USER_ATTRS=""
+#! MERGE="false"
+#! MERGE_FILTER=""
+#! MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
+#! MERGE_FILTER_CASE_SENSITIVE="false"
+#! DYNAMIC_SCHEMA="false"
+#! >
+#! <FEAT_ATTRIBUTE ATTR_NAME="geodb_oid" ATTR_TYPE="integer" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="OBJECTID" ATTR_TYPE="integer" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="BFSNR" ATTR_TYPE="smallint" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="GEMNAME" ATTR_TYPE="char(50)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="RVS_ID" ATTR_TYPE="char(100)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="ART" ATTR_TYPE="char(40)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="TITEL" ATTR_TYPE="char(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="OFFIZTITEL" ATTR_TYPE="char(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="ABKUERZUNG" ATTR_TYPE="char(20)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="OFFIZNR" ATTR_TYPE="char(20)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="DOKUMENT" ATTR_TYPE="char(100)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="ARTIKELNR" ATTR_TYPE="char(40)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="ORDNNR" ATTR_TYPE="smallint" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="ZUSTAENDIG" ATTR_TYPE="char(36)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #! </FEATURE_TYPE>
 #! </FEATURE_TYPES>
 #! <FMESERVER>
@@ -2346,20 +2387,6 @@
 #! SIZE_POLICY="8"
 #! COMMENT_TYPE="REGULAR"
 #! ANCHORED_NODE="81"
-#! />
-#! <COMMENT
-#! IDENTIFIER="85"
-#! COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:11px; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;GEODB.NUPLA_RVST&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
-#! POSITION="-1282 -2245"
-#! ORDER="5e+014"
-#! FOLLOW_ANCHOR="true"
-#! INFO_NODE="false"
-#! TOP_LEFT="-1282 -2245"
-#! BOTTOM_RIGHT="-1282 -2245"
-#! COLOUR="1,1,0.784314,0.192157"
-#! SIZE_POLICY="8"
-#! COMMENT_TYPE="REGULAR"
-#! ANCHORED_NODE="4"
 #! />
 #! <COMMENT
 #! IDENTIFIER="86"
@@ -2894,34 +2921,6 @@
 #! ANCHORED_NODE="198"
 #! />
 #! <COMMENT
-#! IDENTIFIER="204"
-#! COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:11px; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;GEODB.NUPLA_ABGRZ&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
-#! POSITION="-1074 -8959"
-#! ORDER="5e+014"
-#! FOLLOW_ANCHOR="true"
-#! INFO_NODE="false"
-#! TOP_LEFT="-1074 -8959"
-#! BOTTOM_RIGHT="-1074 -8959"
-#! COLOUR="1,1,0.784314,0.192157"
-#! SIZE_POLICY="8"
-#! COMMENT_TYPE="REGULAR"
-#! ANCHORED_NODE="195"
-#! />
-#! <COMMENT
-#! IDENTIFIER="205"
-#! COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:11px; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;GEODB.NUPLA_GNBAUWS&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
-#! POSITION="-1037 -9300"
-#! ORDER="5e+014"
-#! FOLLOW_ANCHOR="true"
-#! INFO_NODE="false"
-#! TOP_LEFT="-1037 -9300"
-#! BOTTOM_RIGHT="-1037 -9300"
-#! COLOUR="1,1,0.784314,0.192157"
-#! SIZE_POLICY="8"
-#! COMMENT_TYPE="REGULAR"
-#! ANCHORED_NODE="196"
-#! />
-#! <COMMENT
 #! IDENTIFIER="206"
 #! COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:11px; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;GEODB.NPL_GNBAUW&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
 #! POSITION="1822 -9386"
@@ -2972,7 +2971,7 @@
 #! INFO_NODE="false"
 #! TOP_LEFT="-388 -9356"
 #! BOTTOM_RIGHT="-388 -9356"
-#! COLOUR="1,1,0.784314,0.196078"
+#! COLOUR="1,1,0.784314,0.192157"
 #! SIZE_POLICY="8"
 #! COMMENT_TYPE="REGULAR"
 #! ANCHORED_NODE="212"
@@ -2986,7 +2985,7 @@
 #! INFO_NODE="false"
 #! TOP_LEFT="232 -9379"
 #! BOTTOM_RIGHT="232 -9379"
-#! COLOUR="1,1,0.784314,0.196078"
+#! COLOUR="1,1,0.784314,0.192157"
 #! SIZE_POLICY="8"
 #! COMMENT_TYPE="REGULAR"
 #! ANCHORED_NODE="207"
@@ -3000,7 +2999,7 @@
 #! INFO_NODE="false"
 #! TOP_LEFT="998 -9362"
 #! BOTTOM_RIGHT="998 -9362"
-#! COLOUR="1,1,0.784314,0.196078"
+#! COLOUR="1,1,0.784314,0.192157"
 #! SIZE_POLICY="8"
 #! COMMENT_TYPE="REGULAR"
 #! ANCHORED_NODE="214"
@@ -3014,7 +3013,7 @@
 #! INFO_NODE="false"
 #! TOP_LEFT="2833 274"
 #! BOTTOM_RIGHT="2833 274"
-#! COLOUR="1,1,0.784314,0.196078"
+#! COLOUR="1,1,0.784314,0.192157"
 #! SIZE_POLICY="8"
 #! COMMENT_TYPE="REGULAR"
 #! ANCHORED_NODE="221"
@@ -3028,7 +3027,7 @@
 #! INFO_NODE="false"
 #! TOP_LEFT="3430 253"
 #! BOTTOM_RIGHT="3430 253"
-#! COLOUR="1,1,0.784314,0.196078"
+#! COLOUR="1,1,0.784314,0.192157"
 #! SIZE_POLICY="8"
 #! COMMENT_TYPE="REGULAR"
 #! ANCHORED_NODE="225"
@@ -3042,7 +3041,7 @@
 #! INFO_NODE="false"
 #! TOP_LEFT="3148 -5483"
 #! BOTTOM_RIGHT="3148 -5483"
-#! COLOUR="1,1,0.784314,0.196078"
+#! COLOUR="1,1,0.784314,0.192157"
 #! SIZE_POLICY="8"
 #! COMMENT_TYPE="REGULAR"
 #! ANCHORED_NODE="240"
@@ -3056,10 +3055,52 @@
 #! INFO_NODE="false"
 #! TOP_LEFT="2363 -6326"
 #! BOTTOM_RIGHT="2363 -6326"
-#! COLOUR="1,1,0.784314,0.196078"
+#! COLOUR="1,1,0.784314,0.192157"
 #! SIZE_POLICY="8"
 #! COMMENT_TYPE="REGULAR"
 #! ANCHORED_NODE="235"
+#! />
+#! <COMMENT
+#! IDENTIFIER="247"
+#! COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:11px; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;GEODB.NUPLA_ABGRZ&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#! POSITION="-1153 -8893"
+#! ORDER="5e+014"
+#! FOLLOW_ANCHOR="true"
+#! INFO_NODE="false"
+#! TOP_LEFT="-1153 -8893"
+#! BOTTOM_RIGHT="-1153 -8893"
+#! COLOUR="1,1,0.784314,0.192157"
+#! SIZE_POLICY="8"
+#! COMMENT_TYPE="REGULAR"
+#! ANCHORED_NODE="244"
+#! />
+#! <COMMENT
+#! IDENTIFIER="249"
+#! COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:11px; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;GEODB.NUPLA_GNBAUWS&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#! POSITION="-1133 -9321"
+#! ORDER="5e+014"
+#! FOLLOW_ANCHOR="true"
+#! INFO_NODE="false"
+#! TOP_LEFT="-1133 -9321"
+#! BOTTOM_RIGHT="-1133 -9321"
+#! COLOUR="1,1,0.784314,0.192157"
+#! SIZE_POLICY="8"
+#! COMMENT_TYPE="REGULAR"
+#! ANCHORED_NODE="245"
+#! />
+#! <COMMENT
+#! IDENTIFIER="252"
+#! COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:11px; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;GEODB.NUPLA_RVST&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#! POSITION="-1220 -2252"
+#! ORDER="5e+014"
+#! FOLLOW_ANCHOR="true"
+#! INFO_NODE="false"
+#! TOP_LEFT="-1220 -2252"
+#! BOTTOM_RIGHT="-1220 -2252"
+#! COLOUR="1,1,0.784314,0.192157"
+#! SIZE_POLICY="8"
+#! COMMENT_TYPE="REGULAR"
+#! ANCHORED_NODE="246"
 #! />
 #! </COMMENTS>
 #! <CONSTANTS>
@@ -3864,6 +3905,7 @@
 #! <XFORM_ATTR ATTR_NAME="geodb_oid" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="OBJECTID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="BFSNR" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="NAME" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="RELID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="ART" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="TITEL" IS_USER_CREATED="false" FEAT_INDEX="0" />
@@ -3874,7 +3916,6 @@
 #! <XFORM_ATTR ATTR_NAME="ARTIKELNR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="ORDNNR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="ZUSTAENDIG" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="NAME" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeRenamer_7"/>
 #! <XFORM_PARM PARM_NAME="ATTR_LIST" PARM_VALUE="RVS_ID,RELID,&quot;&quot;,DOKUMENT,TEXTIMWEB,&quot;&quot;,GEMNAME,NAME,&quot;&quot;"/>
 #! </TRANSFORMER>
@@ -6059,7 +6100,7 @@
 #! IDENTIFIER="233"
 #! TYPE="AttributeRenamer"
 #! VERSION="2"
-#! POSITION="1830 -1679"
+#! POSITION="1846 -1602"
 #! ORDER="5e+014"
 #! PARMS_EDITED="true"
 #! ENABLED="true"
@@ -6101,59 +6142,6 @@
 #! <XFORM_ATTR ATTR_NAME="_matched_records" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeRenamer_14"/>
 #! <XFORM_PARM PARM_NAME="ATTR_LIST" PARM_VALUE="VE_GUELTIG,GUELTIGBIS,&quot;&quot;"/>
-#! </TRANSFORMER>
-#! <TRANSFORMER
-#! IDENTIFIER="232"
-#! TYPE="AttributeCreator"
-#! VERSION="5"
-#! POSITION="1851 -1954"
-#! ORDER="5e+014"
-#! PARMS_EDITED="true"
-#! ENABLED="true"
-#! >
-#! <OUTPUT_FEAT NAME="OUTPUT"/>
-#! <FEAT_COLLAPSED COLLAPSED="0"/>
-#! <XFORM_ATTR ATTR_NAME="geodb_oid" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="OBJECTID" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="BFSNR" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="REL_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="GENEHM" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="INKRAFT" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="_beschrieb" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="QUALITAET" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="_verbindlkt" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="_kantart" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="ZONENABK" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="BESCHRIEB" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="PLANBESCHR" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="BEMERK" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="DARST_C" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="DATENVERW" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="ZUSTAENDIG" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="BUNDESART" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="NZ" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="NZ_ART" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="GRUENFZ" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="BEDEUT" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="SCHUTZG" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="GW_NAT" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="GW_BED" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="GUELTIGBIS" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="VE_BESCHW" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="VE_THEMA" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="SHAPE.AREA" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="SHAPE.LEN" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="NAME" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="VERBINDLKT" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="_matched_records" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="KANTART" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_PARM PARM_NAME="NUM_PRIOR_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
-#! <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
-#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeCreator_6"/>
-#! <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_VALUE="&lt;Unused&gt;"/>
-#! <XFORM_PARM PARM_NAME="NUM_SUBSEQUENT_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
-#! <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
-#! <XFORM_PARM PARM_NAME="ATTR_LIST" PARM_VALUE="KANTART,Laufende&lt;space&gt;&lt;u00c4&gt;nderung"/>
 #! </TRANSFORMER>
 #! <TRANSFORMER
 #! IDENTIFIER="235"
@@ -6239,6 +6227,60 @@
 #! <XFORM_PARM PARM_NAME="TEST_LIST" PARM_VALUE="BOOL_OP&lt;comma&gt;OR&lt;comma&gt;COMPOSITE_TEST&lt;comma&gt;&lt;lt&gt;Unused&lt;gt&gt;&lt;comma&gt;TEST_CLAUSE&lt;comma&gt;&lt;quote&gt;TEST&lt;space&gt;&lt;lt&gt;at&lt;gt&gt;Value&lt;lt&gt;openparen&lt;gt&gt;STATUS&lt;lt&gt;closeparen&lt;gt&gt;&lt;space&gt;=&lt;space&gt;3&lt;quote&gt;,UEPROJ"/>
 #! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="TestFilter_3"/>
 #! <XFORM_PARM PARM_NAME="DEFAULT_VALUE" PARM_VALUE="UEUL"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#! IDENTIFIER="253"
+#! TYPE="AttributeValueMapper"
+#! VERSION="6"
+#! POSITION="1859 -1938"
+#! ORDER="5e+014"
+#! PARMS_EDITED="true"
+#! ENABLED="true"
+#! >
+#! <OUTPUT_FEAT NAME="OUTPUT"/>
+#! <FEAT_COLLAPSED COLLAPSED="0"/>
+#! <XFORM_ATTR ATTR_NAME="geodb_oid" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="OBJECTID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="BFSNR" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="REL_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="GENEHM" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="INKRAFT" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_beschrieb" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="QUALITAET" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_verbindlkt" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_kantart" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="ZONENABK" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="BESCHRIEB" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="PLANBESCHR" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="BEMERK" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="DARST_C" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="DATENVERW" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="ZUSTAENDIG" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="BUNDESART" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="NZ" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="NZ_ART" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="GRUENFZ" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="BEDEUT" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="SCHUTZG" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="GW_NAT" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="GW_BED" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="GUELTIGBIS" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="VE_BESCHW" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="VE_THEMA" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="SHAPE.AREA" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="SHAPE.LEN" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="NAME" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="VERBINDLKT" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_matched_records" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="KANTART" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_PARM PARM_NAME="DIRECTION" PARM_VALUE="Forward (Source To Destination)"/>
+#! <XFORM_PARM PARM_NAME="VAL_ATTR" PARM_VALUE="KANTART"/>
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeValueMapper_20"/>
+#! <XFORM_PARM PARM_NAME="MAPPING_GRP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="ATTR_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="DEFAULT_VALUE" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="LUT" PARM_VALUE="104,Beschwerde,105,sistiertes&lt;space&gt;Gebiet,106,Laufende&lt;space&gt;&lt;u00c4&gt;nderung,107,Vor&lt;u00fc&gt;bergehende&lt;space&gt;Einschr&lt;u00e4&gt;nkung&lt;space&gt;andere"/>
+#! <XFORM_PARM PARM_NAME="SRC" PARM_VALUE="_kantart"/>
 #! </TRANSFORMER>
 #! </TRANSFORMERS>
 #! <FEAT_LINKS>
@@ -6373,15 +6415,6 @@
 #! SOURCE_NODE="81"
 #! TARGET_NODE="75"
 #! SOURCE_PORT_DESC="fo 0"
-#! TARGET_PORT_DESC="fi 0"
-#! ENABLED="true"
-#! EXTRA_POINTS=""
-#! />
-#! <FEAT_LINK
-#! IDENTIFIER="88"
-#! SOURCE_NODE="4"
-#! TARGET_NODE="87"
-#! SOURCE_PORT_DESC="-1"
 #! TARGET_PORT_DESC="fi 0"
 #! ENABLED="true"
 #! EXTRA_POINTS=""
@@ -6756,29 +6789,11 @@
 #! EXTRA_POINTS=""
 #! />
 #! <FEAT_LINK
-#! IDENTIFIER="203"
-#! SOURCE_NODE="195"
-#! TARGET_NODE="198"
-#! SOURCE_PORT_DESC="-1"
-#! TARGET_PORT_DESC="-1"
-#! ENABLED="true"
-#! EXTRA_POINTS=""
-#! />
-#! <FEAT_LINK
 #! IDENTIFIER="211"
 #! SOURCE_NODE="197"
 #! TARGET_NODE="201"
 #! SOURCE_PORT_DESC="-1"
 #! TARGET_PORT_DESC="-1"
-#! ENABLED="true"
-#! EXTRA_POINTS=""
-#! />
-#! <FEAT_LINK
-#! IDENTIFIER="213"
-#! SOURCE_NODE="196"
-#! TARGET_NODE="212"
-#! SOURCE_PORT_DESC="-1"
-#! TARGET_PORT_DESC="fi 0"
 #! ENABLED="true"
 #! EXTRA_POINTS=""
 #! />
@@ -6873,24 +6888,6 @@
 #! EXTRA_POINTS=""
 #! />
 #! <FEAT_LINK
-#! IDENTIFIER="236"
-#! SOURCE_NODE="233"
-#! TARGET_NODE="232"
-#! SOURCE_PORT_DESC="fo 0"
-#! TARGET_PORT_DESC="fi 0"
-#! ENABLED="true"
-#! EXTRA_POINTS=""
-#! />
-#! <FEAT_LINK
-#! IDENTIFIER="237"
-#! SOURCE_NODE="232"
-#! TARGET_NODE="22"
-#! SOURCE_PORT_DESC="fo 0"
-#! TARGET_PORT_DESC="-1"
-#! ENABLED="true"
-#! EXTRA_POINTS=""
-#! />
-#! <FEAT_LINK
 #! IDENTIFIER="238"
 #! SOURCE_NODE="143"
 #! TARGET_NODE="235"
@@ -6917,33 +6914,64 @@
 #! ENABLED="true"
 #! EXTRA_POINTS=""
 #! />
+#! <FEAT_LINK
+#! IDENTIFIER="248"
+#! SOURCE_NODE="244"
+#! TARGET_NODE="198"
+#! SOURCE_PORT_DESC="-1"
+#! TARGET_PORT_DESC="-1"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="250"
+#! SOURCE_NODE="245"
+#! TARGET_NODE="212"
+#! SOURCE_PORT_DESC="-1"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="251"
+#! SOURCE_NODE="246"
+#! TARGET_NODE="87"
+#! SOURCE_PORT_DESC="-1"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="255"
+#! SOURCE_NODE="253"
+#! TARGET_NODE="22"
+#! SOURCE_PORT_DESC="fo 0"
+#! TARGET_PORT_DESC="-1"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="237"
+#! SOURCE_NODE="233"
+#! TARGET_NODE="253"
+#! SOURCE_PORT_DESC="fo 0"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
 #! </FEAT_LINKS>
 #! <BREAKPOINTS>
 #! </BREAKPOINTS>
 #! <ATTR_LINKS>
 #! <ATTR_LINK
-#! IDENTIFIER="65739"
-#! SOURCE_NODE="195"
-#! TARGET_NODE="198"
-#! SOURCE_PORT_DESC="3"
-#! TARGET_PORT_DESC="1"
-#! />
-#! <ATTR_LINK
-#! IDENTIFIER="196819"
+#! IDENTIFIER="458963"
 #! SOURCE_NODE="197"
 #! TARGET_NODE="201"
-#! SOURCE_PORT_DESC="19"
-#! TARGET_PORT_DESC="8"
+#! SOURCE_PORT_DESC="26"
+#! TARGET_PORT_DESC="10"
 #! />
 #! <ATTR_LINK
-#! IDENTIFIER="524499"
-#! SOURCE_NODE="197"
-#! TARGET_NODE="201"
-#! SOURCE_PORT_DESC="10"
-#! TARGET_PORT_DESC="7"
-#! />
-#! <ATTR_LINK
-#! IDENTIFIER="327891"
+#! IDENTIFIER="262355"
 #! SOURCE_NODE="197"
 #! TARGET_NODE="201"
 #! SOURCE_PORT_DESC="4"
@@ -6957,18 +6985,32 @@
 #! TARGET_PORT_DESC="11"
 #! />
 #! <ATTR_LINK
-#! IDENTIFIER="458963"
+#! IDENTIFIER="393427"
 #! SOURCE_NODE="197"
 #! TARGET_NODE="201"
-#! SOURCE_PORT_DESC="26"
-#! TARGET_PORT_DESC="10"
+#! SOURCE_PORT_DESC="12"
+#! TARGET_PORT_DESC="6"
 #! />
 #! <ATTR_LINK
-#! IDENTIFIER="262355"
+#! IDENTIFIER="196819"
 #! SOURCE_NODE="197"
 #! TARGET_NODE="201"
 #! SOURCE_PORT_DESC="3"
 #! TARGET_PORT_DESC="1"
+#! />
+#! <ATTR_LINK
+#! IDENTIFIER="524499"
+#! SOURCE_NODE="197"
+#! TARGET_NODE="201"
+#! SOURCE_PORT_DESC="10"
+#! TARGET_PORT_DESC="7"
+#! />
+#! <ATTR_LINK
+#! IDENTIFIER="327891"
+#! SOURCE_NODE="197"
+#! TARGET_NODE="201"
+#! SOURCE_PORT_DESC="19"
+#! TARGET_PORT_DESC="8"
 #! />
 #! <ATTR_LINK
 #! IDENTIFIER="65747"
@@ -6978,53 +7020,46 @@
 #! TARGET_PORT_DESC="9"
 #! />
 #! <ATTR_LINK
-#! IDENTIFIER="393427"
-#! SOURCE_NODE="197"
-#! TARGET_NODE="201"
-#! SOURCE_PORT_DESC="12"
-#! TARGET_PORT_DESC="6"
-#! />
-#! <ATTR_LINK
-#! IDENTIFIER="65754"
+#! IDENTIFIER="327898"
 #! SOURCE_NODE="214"
 #! TARGET_NODE="199"
-#! SOURCE_PORT_DESC="ao 0 13"
-#! TARGET_PORT_DESC="5"
+#! SOURCE_PORT_DESC="ao 0 4"
+#! TARGET_PORT_DESC="2"
 #! />
 #! <ATTR_LINK
-#! IDENTIFIER="196826"
+#! IDENTIFIER="131290"
 #! SOURCE_NODE="214"
 #! TARGET_NODE="199"
 #! SOURCE_PORT_DESC="ao 0 14"
 #! TARGET_PORT_DESC="8"
 #! />
 #! <ATTR_LINK
-#! IDENTIFIER="131290"
-#! SOURCE_NODE="214"
-#! TARGET_NODE="199"
-#! SOURCE_PORT_DESC="ao 0 9"
-#! TARGET_PORT_DESC="3"
-#! />
-#! <ATTR_LINK
-#! IDENTIFIER="393434"
-#! SOURCE_NODE="214"
-#! TARGET_NODE="199"
-#! SOURCE_PORT_DESC="ao 0 11"
-#! TARGET_PORT_DESC="6"
-#! />
-#! <ATTR_LINK
 #! IDENTIFIER="262362"
+#! SOURCE_NODE="214"
+#! TARGET_NODE="199"
+#! SOURCE_PORT_DESC="ao 0 13"
+#! TARGET_PORT_DESC="5"
+#! />
+#! <ATTR_LINK
+#! IDENTIFIER="65754"
 #! SOURCE_NODE="214"
 #! TARGET_NODE="199"
 #! SOURCE_PORT_DESC="ao 0 3"
 #! TARGET_PORT_DESC="1"
 #! />
 #! <ATTR_LINK
-#! IDENTIFIER="327898"
+#! IDENTIFIER="393434"
 #! SOURCE_NODE="214"
 #! TARGET_NODE="199"
-#! SOURCE_PORT_DESC="ao 0 4"
-#! TARGET_PORT_DESC="2"
+#! SOURCE_PORT_DESC="ao 0 9"
+#! TARGET_PORT_DESC="3"
+#! />
+#! <ATTR_LINK
+#! IDENTIFIER="196826"
+#! SOURCE_NODE="214"
+#! TARGET_NODE="199"
+#! SOURCE_PORT_DESC="ao 0 11"
+#! TARGET_PORT_DESC="6"
 #! />
 #! </ATTR_LINKS>
 #! <SUBDOCUMENTS>
@@ -7033,7 +7068,7 @@
 #! </LOOKUP_TABLES>
 #! </WORKSPACE>
 #! 
-GUI IGNORE SourceDataset_GEODATABASE_SDE_1,GEODATABASE_SDE_IN_SERVER_GEODATABASE_SDE_1,GEODATABASE_SDE_IN_USERID_GEODATABASE_SDE_1,GEODATABASE_SDE_IN_PASSWORD_GEODATABASE_SDE_1,GEODATABASE_SDE_IN_INSTANCE_GEODATABASE_SDE_1,GEODATABASE_SDE_IN_VERSION_GEODATABASE_SDE_1,GEODATABASE_SDE_IN_WHERE_GEODATABASE_SDE_1,GEODATABASE_SDE_IN_TRANSLATE_SPATIAL_DATA_ONLY_GEODATABASE_SDE_1,GEODATABASE_SDE_IN_RESOLVE_DOMAINS_GEODATABASE_SDE_1,GEODATABASE_SDE_IN_RESOLVE_SUBTYPE_NAMES_GEODATABASE_SDE_1,GEODATABASE_SDE_IN_IGNORE_NETWORK_INFO_GEODATABASE_SDE_1,GEODATABASE_SDE_IN_IGNORE_RELATIONSHIP_INFO_GEODATABASE_SDE_1,GEODATABASE_SDE_IN_SPLIT_COMPLEX_EDGES_GEODATABASE_SDE_1,GEODATABASE_SDE_IN_SPLIT_MULTI_PART_ANNOS_GEODATABASE_SDE_1,GEODATABASE_SDE_IN_EXPOSE_ATTRS_GROUP_GEODATABASE_SDE_1,GEODATABASE_SDE_IN_SEARCH_ENVELOPE_MINX_GEODATABASE_SDE_1,GEODATABASE_SDE_IN_SEARCH_ENVELOPE_MINY_GEODATABASE_SDE_1,GEODATABASE_SDE_IN_SEARCH_ENVELOPE_MAXX_GEODATABASE_SDE_1,GEODATABASE_SDE_IN_SEARCH_ENVELOPE_MAXY_GEODATABASE_SDE_1,GEODATABASE_SDE_IN_CLIP_TO_ENVELOPE_GEODATABASE_SDE_1,_GEODBSplitComplexAnnotations_GEODATABASE_SDE_1,_GEODBCacheMultipatchTextures_GEODATABASE_SDE_1,_GEODB_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_GEODATABASE_SDE_1,_GEODBInSearchFeature_GEODATABASE_SDE_1,_GEODBInSearchOrder_GEODATABASE_SDE_1,_GEODBInSearchMethod_GEODATABASE_SDE_1,_GEODBInChildVersionName_GEODATABASE_SDE_1,_GEODBInArchiveWhereClause_GEODATABASE_SDE_1,_GEODBInCheckSimpleGeom_GEODATABASE_SDE_1,_GEODBMergeFeatLinkedAnnos_GEODATABASE_SDE_1,_GEODBInPersistentConnection_GEODATABASE_SDE_1,_GEODBInBeginSql_GEODATABASE_SDE_1,_GEODBInEndSql_GEODATABASE_SDE_1,DestDataset_GEODATABASE_SDE_2,GEODATABASE_SDE_OUT_SERVER_GEODATABASE_SDE_2,GEODATABASE_SDE_OUT_USERID_GEODATABASE_SDE_2,GEODATABASE_SDE_OUT_PASSWORD_GEODATABASE_SDE_2,GEODATABASE_SDE_OUT_INSTANCE_GEODATABASE_SDE_2,GEODATABASE_SDE_OUT_VERSION_GEODATABASE_SDE_2,GEODATABASE_SDE_OUT_TRANSACTION_TYPE_GEODATABASE_SDE_2,GEODATABASE_SDE_OUT_TEMPLATEFILE_GEODATABASE_SDE_2,GEODATABASE_SDE_OUT_TABLE_PARAMETERS_GROUP_GEODATABASE_SDE_2,GEODATABASE_SDE_OUT_SIMPLIFY_GEOM_GEODATABASE_SDE_2,GEODATABASE_SDE_OUT_ORIGIN_X_GEODATABASE_SDE_2,GEODATABASE_SDE_OUT_ORIGIN_Y_GEODATABASE_SDE_2,GEODATABASE_SDE_OUT_XY_SCALE_GEODATABASE_SDE_2,GEODATABASE_SDE_OUT_HAS_Z_VALUES_GEODATABASE_SDE_2,GEODATABASE_SDE_OUT_Z_ORIGIN_GEODATABASE_SDE_2,GEODATABASE_SDE_OUT_Z_SCALE_GEODATABASE_SDE_2,GEODATABASE_SDE_OUT_GRID_1_GEODATABASE_SDE_2,_GEODBOutDefaultZValue_GEODATABASE_SDE_2,_GEODBOutWriterMode_GEODATABASE_SDE_2,_GEODBOutTransaction_GEODATABASE_SDE_2,_GEODBOutTransactionInterval_GEODATABASE_SDE_2,_GEODBOutIgnoreFailedFeatureEntry_GEODATABASE_SDE_2,_GEODBOutMaxNumberFailedFeatures_GEODATABASE_SDE_2,_GEODBOutDumpFailedFeatures_GEODATABASE_SDE_2,_GEODBOutFFSDumpFile_GEODATABASE_SDE_2,_GEODBOutAnnotationUnits_GEODATABASE_SDE_2,_GEODBOutMeasures_GEODATABASE_SDE_2,_GEODBOutMeasureOrigin_GEODATABASE_SDE_2,_GEODBOutMeasureScale_GEODATABASE_SDE_2,_GEODBOutReconcileAndPost_GEODATABASE_SDE_2,_GEODBOutDeleteChildAfterReconcileAndPost_GEODATABASE_SDE_2,_GEODBOutValidateFeatures_GEODATABASE_SDE_2,_GEODBOutSimplifyNetworkFeatures_GEODATABASE_SDE_2,_GEODBOutPersistentConnection_GEODATABASE_SDE_2,_GEODBOutCommitTransactionsAfterWrite_GEODATABASE_SDE_2,_GEODBOutBeginSql_GEODATABASE_SDE_2,_GEODBOutEndSql_GEODATABASE_SDE_2
+GUI IGNORE SourceDataset_GEODATABASE_SDE_1,GEODATABASE_SDE_IN_SERVER_GEODATABASE_SDE_1,GEODATABASE_SDE_IN_USERID_GEODATABASE_SDE_1,GEODATABASE_SDE_IN_PASSWORD_GEODATABASE_SDE_1,GEODATABASE_SDE_IN_INSTANCE_GEODATABASE_SDE_1,GEODATABASE_SDE_IN_VERSION_GEODATABASE_SDE_1,GEODATABASE_SDE_IN_WHERE_GEODATABASE_SDE_1,GEODATABASE_SDE_IN_TRANSLATE_SPATIAL_DATA_ONLY_GEODATABASE_SDE_1,GEODATABASE_SDE_IN_RESOLVE_DOMAINS_GEODATABASE_SDE_1,GEODATABASE_SDE_IN_RESOLVE_SUBTYPE_NAMES_GEODATABASE_SDE_1,GEODATABASE_SDE_IN_IGNORE_NETWORK_INFO_GEODATABASE_SDE_1,GEODATABASE_SDE_IN_IGNORE_RELATIONSHIP_INFO_GEODATABASE_SDE_1,GEODATABASE_SDE_IN_SPLIT_COMPLEX_EDGES_GEODATABASE_SDE_1,GEODATABASE_SDE_IN_SPLIT_MULTI_PART_ANNOS_GEODATABASE_SDE_1,GEODATABASE_SDE_IN_EXPOSE_ATTRS_GROUP_GEODATABASE_SDE_1,GEODATABASE_SDE_IN_SEARCH_ENVELOPE_MINX_GEODATABASE_SDE_1,GEODATABASE_SDE_IN_SEARCH_ENVELOPE_MINY_GEODATABASE_SDE_1,GEODATABASE_SDE_IN_SEARCH_ENVELOPE_MAXX_GEODATABASE_SDE_1,GEODATABASE_SDE_IN_SEARCH_ENVELOPE_MAXY_GEODATABASE_SDE_1,GEODATABASE_SDE_IN_CLIP_TO_ENVELOPE_GEODATABASE_SDE_1,_GEODBSplitComplexAnnotations_GEODATABASE_SDE_1,_GEODBCacheMultipatchTextures_GEODATABASE_SDE_1,_GEODB_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_GEODATABASE_SDE_1,_GEODBInSearchFeature_GEODATABASE_SDE_1,_GEODBInSearchOrder_GEODATABASE_SDE_1,_GEODBInSearchMethod_GEODATABASE_SDE_1,_GEODBInChildVersionName_GEODATABASE_SDE_1,_GEODBInArchiveWhereClause_GEODATABASE_SDE_1,_GEODBInCheckSimpleGeom_GEODATABASE_SDE_1,_GEODBMergeFeatLinkedAnnos_GEODATABASE_SDE_1,_GEODBInPersistentConnection_GEODATABASE_SDE_1,_GEODBInBeginSql_GEODATABASE_SDE_1,_GEODBInEndSql_GEODATABASE_SDE_1,SourceDataset_GEODATABASE_SDE_2,GEODATABASE_SDE_IN_SERVER_GEODATABASE_SDE_2,GEODATABASE_SDE_IN_USERID_GEODATABASE_SDE_2,GEODATABASE_SDE_IN_PASSWORD_GEODATABASE_SDE_2,GEODATABASE_SDE_IN_INSTANCE_GEODATABASE_SDE_2,GEODATABASE_SDE_IN_VERSION_GEODATABASE_SDE_2,GEODATABASE_SDE_IN_WHERE_GEODATABASE_SDE_2,GEODATABASE_SDE_IN_TRANSLATE_SPATIAL_DATA_ONLY_GEODATABASE_SDE_2,GEODATABASE_SDE_IN_RESOLVE_DOMAINS_GEODATABASE_SDE_2,GEODATABASE_SDE_IN_RESOLVE_SUBTYPE_NAMES_GEODATABASE_SDE_2,GEODATABASE_SDE_IN_IGNORE_NETWORK_INFO_GEODATABASE_SDE_2,GEODATABASE_SDE_IN_IGNORE_RELATIONSHIP_INFO_GEODATABASE_SDE_2,GEODATABASE_SDE_IN_SPLIT_COMPLEX_EDGES_GEODATABASE_SDE_2,GEODATABASE_SDE_IN_SPLIT_MULTI_PART_ANNOS_GEODATABASE_SDE_2,GEODATABASE_SDE_IN_EXPOSE_ATTRS_GROUP_GEODATABASE_SDE_2,GEODATABASE_SDE_IN_SEARCH_ENVELOPE_MINX_GEODATABASE_SDE_2,GEODATABASE_SDE_IN_SEARCH_ENVELOPE_MINY_GEODATABASE_SDE_2,GEODATABASE_SDE_IN_SEARCH_ENVELOPE_MAXX_GEODATABASE_SDE_2,GEODATABASE_SDE_IN_SEARCH_ENVELOPE_MAXY_GEODATABASE_SDE_2,GEODATABASE_SDE_IN_CLIP_TO_ENVELOPE_GEODATABASE_SDE_2,_GEODBSplitComplexAnnotations_GEODATABASE_SDE_2,_GEODBCacheMultipatchTextures_GEODATABASE_SDE_2,_GEODB_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_GEODATABASE_SDE_2,_GEODBInSearchFeature_GEODATABASE_SDE_2,_GEODBInSearchOrder_GEODATABASE_SDE_2,_GEODBInSearchMethod_GEODATABASE_SDE_2,_GEODBInChildVersionName_GEODATABASE_SDE_2,_GEODBInArchiveWhereClause_GEODATABASE_SDE_2,_GEODBInCheckSimpleGeom_GEODATABASE_SDE_2,_GEODBMergeFeatLinkedAnnos_GEODATABASE_SDE_2,_GEODBInPersistentConnection_GEODATABASE_SDE_2,_GEODBInBeginSql_GEODATABASE_SDE_2,_GEODBInEndSql_GEODATABASE_SDE_2,DestDataset_GEODATABASE_SDE_3,GEODATABASE_SDE_OUT_SERVER_GEODATABASE_SDE_3,GEODATABASE_SDE_OUT_USERID_GEODATABASE_SDE_3,GEODATABASE_SDE_OUT_PASSWORD_GEODATABASE_SDE_3,GEODATABASE_SDE_OUT_INSTANCE_GEODATABASE_SDE_3,GEODATABASE_SDE_OUT_VERSION_GEODATABASE_SDE_3,GEODATABASE_SDE_OUT_TRANSACTION_TYPE_GEODATABASE_SDE_3,GEODATABASE_SDE_OUT_TEMPLATEFILE_GEODATABASE_SDE_3,GEODATABASE_SDE_OUT_TABLE_PARAMETERS_GROUP_GEODATABASE_SDE_3,GEODATABASE_SDE_OUT_SIMPLIFY_GEOM_GEODATABASE_SDE_3,GEODATABASE_SDE_OUT_ORIGIN_X_GEODATABASE_SDE_3,GEODATABASE_SDE_OUT_ORIGIN_Y_GEODATABASE_SDE_3,GEODATABASE_SDE_OUT_XY_SCALE_GEODATABASE_SDE_3,GEODATABASE_SDE_OUT_HAS_Z_VALUES_GEODATABASE_SDE_3,GEODATABASE_SDE_OUT_Z_ORIGIN_GEODATABASE_SDE_3,GEODATABASE_SDE_OUT_Z_SCALE_GEODATABASE_SDE_3,GEODATABASE_SDE_OUT_GRID_1_GEODATABASE_SDE_3,_GEODBOutDefaultZValue_GEODATABASE_SDE_3,_GEODBOutWriterMode_GEODATABASE_SDE_3,_GEODBOutTransaction_GEODATABASE_SDE_3,_GEODBOutTransactionInterval_GEODATABASE_SDE_3,_GEODBOutIgnoreFailedFeatureEntry_GEODATABASE_SDE_3,_GEODBOutMaxNumberFailedFeatures_GEODATABASE_SDE_3,_GEODBOutDumpFailedFeatures_GEODATABASE_SDE_3,_GEODBOutFFSDumpFile_GEODATABASE_SDE_3,_GEODBOutAnnotationUnits_GEODATABASE_SDE_3,_GEODBOutMeasures_GEODATABASE_SDE_3,_GEODBOutMeasureOrigin_GEODATABASE_SDE_3,_GEODBOutMeasureScale_GEODATABASE_SDE_3,_GEODBOutReconcileAndPost_GEODATABASE_SDE_3,_GEODBOutDeleteChildAfterReconcileAndPost_GEODATABASE_SDE_3,_GEODBOutValidateFeatures_GEODATABASE_SDE_3,_GEODBOutSimplifyNetworkFeatures_GEODATABASE_SDE_3,_GEODBOutPersistentConnection_GEODATABASE_SDE_3,_GEODBOutCommitTransactionsAfterWrite_GEODATABASE_SDE_3,_GEODBOutBeginSql_GEODATABASE_SDE_3,_GEODBOutEndSql_GEODATABASE_SDE_3
 DEFAULT_MACRO DATABASE 
 GUI TEXT DATABASE Database:
 DEFAULT_MACRO USERNAME 
@@ -7062,14 +7097,17 @@ INCLUDE [ if {{$(LOGFILE)} == {}} { puts_real {Parameter 'LOGFILE' must be given
 INCLUDE [ if {{$(INSTANCE)} == {}} { puts_real {Parameter 'INSTANCE' must be given a value.}; exit 1; }; ]
 #! START_HEADER
 #! START_WB_HEADER
-READER_TYPE GEODATABASE_SDE
-READER_KEYWORD GEODATABASE_SDE_1
-READER_GEN_DIRECTIVES INSTANCE,sde:oracle11g:workt,SEARCH_ENVELOPE_MINX,0,SEARCH_ENVELOPE_MINY,0,USERID,geodb,_MERGE_SCHEMAS,YES,HISTORICAL_VERSION_NAME,,VERSION,SDE.DEFAULT,HISTORICAL_VERSION_TIMESTAMP,,CONNECTION_FILE,,VERSION_TYPE,Connect<space>using<space>a<space>Transactional<space>Version,FEATURE_READ_MODE,Features,CONNECTION,Parameters,WHERE,,USE_SEARCH_ENVELOPE,NO,SERVER,work,TRANSLATE_SPATIAL_DATA_ONLY,no,REMOVE_TABLE_QUALIFIER,NO,IGNORE_RELATIONSHIP_INFO,yes,EXPOSE_ATTRS_GROUP,,SPLIT_COMPLEX_EDGES,no,CLIP_TO_ENVELOPE,NO,SPLIT_MULTI_PART_ANNOS,no,GEODATABASE_SDE_EXPOSE_FORMAT_ATTRS,,RESOLVE_DOMAINS,no,TABLELIST,GEODB.NUPLA_UEWAABL<space>GEODB.NUPLA_UEPT<space>GEODB.NUPLA_UELN<space>GEODB.NUPLA_UELARMES<space>GEODB.NUPLA_UEFL<space>GEODB.NUPLA_RVST<space>GEODB.NUPLA_GNZPPUEO<space>GEODB.NUPLA_GNGRUZO<space>GEODB.NUPLA_VETHEMAT,IGNORE_NETWORK_INFO,yes,SEARCH_ENVELOPE_MAXX,0,SEARCH_ENVELOPE_MAXY,0,RESOLVE_SUBTYPE_NAMES,yes
+READER_TYPE MULTI_READER
+MULTI_READER_TYPE{0} GEODATABASE_SDE
+MULTI_READER_KEYWORD{0} GEODATABASE_SDE_1
+MULTI_READER_GEN_DIRECTIVES{0} INSTANCE,sde:oracle11g:workt,SEARCH_ENVELOPE_MINX,0,SEARCH_ENVELOPE_MINY,0,USERID,geodb,_MERGE_SCHEMAS,YES,HISTORICAL_VERSION_NAME,,VERSION,SDE.DEFAULT,HISTORICAL_VERSION_TIMESTAMP,,CONNECTION_FILE,,VERSION_TYPE,Connect<space>using<space>a<space>Transactional<space>Version,FEATURE_READ_MODE,Features,CONNECTION,Parameters,WHERE,,USE_SEARCH_ENVELOPE,NO,SERVER,work,TRANSLATE_SPATIAL_DATA_ONLY,no,REMOVE_TABLE_QUALIFIER,NO,IGNORE_RELATIONSHIP_INFO,yes,EXPOSE_ATTRS_GROUP,,SPLIT_COMPLEX_EDGES,no,CLIP_TO_ENVELOPE,NO,SPLIT_MULTI_PART_ANNOS,no,GEODATABASE_SDE_EXPOSE_FORMAT_ATTRS,,RESOLVE_DOMAINS,no,TABLELIST,GEODB.NUPLA_UEWAABL<space>GEODB.NUPLA_UEPT<space>GEODB.NUPLA_UELN<space>GEODB.NUPLA_UELARMES<space>GEODB.NUPLA_UEFL<space>GEODB.NUPLA_RVST<space>GEODB.NUPLA_GNZPPUEO<space>GEODB.NUPLA_GNGRUZO<space>GEODB.NUPLA_VETHEMAT,IGNORE_NETWORK_INFO,yes,SEARCH_ENVELOPE_MAXX,0,SEARCH_ENVELOPE_MAXY,0,RESOLVE_SUBTYPE_NAMES,yes
+MULTI_READER_TYPE{1} GEODATABASE_SDE
+MULTI_READER_KEYWORD{1} GEODATABASE_SDE_2
 WRITER_TYPE MULTI_WRITER
 MULTI_WRITER_DATASET_ORDER BY_ID
 MULTI_WRITER_FIRST_WRITER_ID 0
 MULTI_WRITER_TYPE{0} GEODATABASE_SDE
-MULTI_WRITER_KEYWORD{0} GEODATABASE_SDE_2
+MULTI_WRITER_KEYWORD{0} GEODATABASE_SDE_3
 #! END_WB_HEADER
 #! START_WB_HEADER
 MACRO WB_KEYWORD "GEODATABASE_SDE_1"
@@ -7156,7 +7194,7 @@ GEODATABASE_SDE_1_CONNECTION_FILE "$(GEODATABASE_SDE_IN_CONNECTION_FILE_GEODATAB
 # ========================================================================
 # ========================================================================
 # ========================================================================
-DEFAULT_MACRO GEODATABASE_SDE_IN_WHERE_GEODATABASE_SDE_1 BFSNR=$(BFSNR)
+DEFAULT_MACRO GEODATABASE_SDE_IN_WHERE_GEODATABASE_SDE_1 BFSNR=$(BFSNR) AND VERBINDLKT=3
 GEODATABASE_SDE_1_WHERE "$(GEODATABASE_SDE_IN_WHERE_GEODATABASE_SDE_1)"
 GUI OPTIONAL TEXT GEODATABASE_SDE_IN_WHERE_GEODATABASE_SDE_1 WHERE Clause:
 # ========================================================================
@@ -7343,8 +7381,277 @@ GEODATABASE_SDE_1_DATASET "$(SourceDataset_GEODATABASE_SDE_1)"
 #! START_WB_HEADER
 MACRO WB_KEYWORD "GEODATABASE_SDE_2"
 #! END_WB_HEADER
-#! START_DEST_HEADER GEODATABASE_SDE GEODATABASE_SDE_2
-GEODATABASE_SDE_2_COORDINATE_SYSTEM_GRANULARITY FEATURE_TYPE
+#! START_SOURCE_HEADER GEODATABASE_SDE GEODATABASE_SDE_2
+# ============================================================================
+# The following GUI line prompts for a source dataset, sometimes this is not
+# used by SDE.
+# The dataset this mapping file was generated from was:
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+DEFAULT_MACRO SourceDataset
+INCLUDE [ if {{$(SourceDataset)} != ""} {                        \
+ puts {DEFAULT_MACRO SourceDataset_GEODATABASE_SDE_2 $(SourceDataset)}     \
+ } ]
+#! END_WB_HEADER
+#! START_SOURCE_HEADER GEODATABASE_SDE GEODATABASE_SDE_2
+DEFAULT_MACRO SourceDataset_GEODATABASE_SDE_2 sde
+GUI TEXT SourceDataset_GEODATABASE_SDE_2 Source Esri ArcSDE Geodatabase Dataset:
+# ============================================================================
+# Reader connection file stuff.
+# If you manually change this value for whether or not to use connection files,
+# you must also make sure the correct directives appear below this to support your
+# choice.
+# i.e. The GEODB_SDE_CONNECTION_FILE directive should exist and not
+# be commented if you set _GEODBInUsingConnFile to YES.
+# _GEODBInUsingConnFile
+DEFAULT_MACRO _GEODBInUsingConnFile_GEODATABASE_SDE_2 no
+#=============================================================================
+# READER CONNECTION PARAMETERS: Either these or the connection file should be specified.
+# ============================================================================
+# END OF CONNECTION PARAMETERS
+#==============================================================================
+# Translation flags.
+#
+# =============================================================================
+#
+DEFAULT_MACRO GEODATABASE_SDE_IN_SERVER_GEODATABASE_SDE_2 work
+GUI TEXT GEODATABASE_SDE_IN_SERVER_GEODATABASE_SDE_2 Server:
+GEODATABASE_SDE_2_SERVER "$(GEODATABASE_SDE_IN_SERVER_GEODATABASE_SDE_2)"
+# =============================================================================
+#
+DEFAULT_MACRO GEODATABASE_SDE_IN_USERID_GEODATABASE_SDE_2 $(USERNAME)
+GUI TEXT GEODATABASE_SDE_IN_USERID_GEODATABASE_SDE_2 Username:
+GEODATABASE_SDE_2_USERID "$(GEODATABASE_SDE_IN_USERID_GEODATABASE_SDE_2)"
+# =============================================================================
+#
+DEFAULT_MACRO GEODATABASE_SDE_IN_PASSWORD_GEODATABASE_SDE_2 $(PASSWORD)
+GUI PASSWORD GEODATABASE_SDE_IN_PASSWORD_GEODATABASE_SDE_2 Password:
+GEODATABASE_SDE_2_PASSWORD "$(GEODATABASE_SDE_IN_PASSWORD_GEODATABASE_SDE_2)"
+# =============================================================================
+#
+DEFAULT_MACRO GEODATABASE_SDE_IN_INSTANCE_GEODATABASE_SDE_2 $(INSTANCE)
+GUI TEXT GEODATABASE_SDE_IN_INSTANCE_GEODATABASE_SDE_2 Instance Name:
+GEODATABASE_SDE_2_INSTANCE "$(GEODATABASE_SDE_IN_INSTANCE_GEODATABASE_SDE_2)"
+# =============================================================================
+#
+DEFAULT_MACRO GEODATABASE_SDE_IN_VERSION_GEODATABASE_SDE_2 SDE.DEFAULT
+GUI STRING_ENCODED GEODATABASE_SDE_IN_VERSION_GEODATABASE_SDE_2 Transactional Version:
+GEODATABASE_SDE_2_VERSION "$(GEODATABASE_SDE_IN_VERSION_GEODATABASE_SDE_2)"
+# ============================================================================
+# The following GUI line prompts for the name of the host machine on which
+# the SDE Server runs.
+GEODATABASE_SDE_2_SERVER "$(GEODATABASE_SDE_IN_SERVER_GEODATABASE_SDE_2)"
+# ============================================================================
+# The following GUI line prompts for the username to use for
+# accessing the SDE dataset.
+GEODATABASE_SDE_2_USERID "$(GEODATABASE_SDE_IN_USERID_GEODATABASE_SDE_2)"
+# ============================================================================
+# The following GUI line prompts for the user password.
+GEODATABASE_SDE_2_PASSWORD "$(GEODATABASE_SDE_IN_PASSWORD_GEODATABASE_SDE_2)"
+# ============================================================================
+# The following GUI line prompts for the instance
+GEODATABASE_SDE_2_INSTANCE "$(GEODATABASE_SDE_IN_INSTANCE_GEODATABASE_SDE_2)"
+# ============================================================================
+DEFAULT_MACRO GEODATABASE_SDE_IN_CONNECTION_FILE_GEODATABASE_SDE_2 
+GEODATABASE_SDE_2_CONNECTION_FILE "$(GEODATABASE_SDE_IN_CONNECTION_FILE_GEODATABASE_SDE_2)"
+# ============================================================================
+# The following GUI line prompts for the version.
+# ========================================================================
+# The following GUI line prompts for the historical version name.
+# ========================================================================
+# The following GUI line prompts for the historical version timestamp.
+# ========================================================================
+# ========================================================================
+# ========================================================================
+DEFAULT_MACRO GEODATABASE_SDE_IN_WHERE_GEODATABASE_SDE_2 BFSNR=$(BFSNR)
+GEODATABASE_SDE_2_WHERE "$(GEODATABASE_SDE_IN_WHERE_GEODATABASE_SDE_2)"
+GUI OPTIONAL TEXT GEODATABASE_SDE_IN_WHERE_GEODATABASE_SDE_2 WHERE Clause:
+# ========================================================================
+# Determines whether non-spatial data, such as tables, subtypes, domains,
+# and relationship classes, get translated
+DEFAULT_MACRO GEODATABASE_SDE_IN_TRANSLATE_SPATIAL_DATA_ONLY_GEODATABASE_SDE_2 no
+GEODATABASE_SDE_2_TRANSLATE_SPATIAL_DATA_ONLY "$(GEODATABASE_SDE_IN_TRANSLATE_SPATIAL_DATA_ONLY_GEODATABASE_SDE_2)"
+GUI CHECKBOX GEODATABASE_SDE_IN_TRANSLATE_SPATIAL_DATA_ONLY_GEODATABASE_SDE_2 yes%no Spatial Data Only
+# ========================================================================
+# Determines whether to resolve domains
+DEFAULT_MACRO GEODATABASE_SDE_IN_RESOLVE_DOMAINS_GEODATABASE_SDE_2 no
+GEODATABASE_SDE_2_RESOLVE_DOMAINS "$(GEODATABASE_SDE_IN_RESOLVE_DOMAINS_GEODATABASE_SDE_2)"
+GUI CHECKBOX GEODATABASE_SDE_IN_RESOLVE_DOMAINS_GEODATABASE_SDE_2 yes%no Resolve Domains
+# ========================================================================
+# Determines whether to resolve the subtype associated with a feature to the
+# text description linked to the subtype value. The text description will
+# be added as an attribute on the feature.
+DEFAULT_MACRO GEODATABASE_SDE_IN_RESOLVE_SUBTYPE_NAMES_GEODATABASE_SDE_2 yes
+GEODATABASE_SDE_2_RESOLVE_SUBTYPE_NAMES "$(GEODATABASE_SDE_IN_RESOLVE_SUBTYPE_NAMES_GEODATABASE_SDE_2)"
+GUI CHECKBOX GEODATABASE_SDE_IN_RESOLVE_SUBTYPE_NAMES_GEODATABASE_SDE_2 yes%no Resolve Subtypes
+# ========================================================================
+# Determines whether to ignore the network info associated with a feature
+# coming from a network feature class. When set to 'yes', junctions will be
+# treated as point features, and edges will be treated as polyline features,
+# with the geodb_type being set to geodb_point and geodb_polyline, respectively.
+# Caution should be taken when changing the value for this keyword to a different
+# value than was specified when creating the mapping file/workspace.
+DEFAULT_MACRO GEODATABASE_SDE_IN_IGNORE_NETWORK_INFO_GEODATABASE_SDE_2 yes
+GEODATABASE_SDE_2_IGNORE_NETWORK_INFO "$(GEODATABASE_SDE_IN_IGNORE_NETWORK_INFO_GEODATABASE_SDE_2)"
+GUI CHECKBOX GEODATABASE_SDE_IN_IGNORE_NETWORK_INFO_GEODATABASE_SDE_2 yes%no Ignore Network Info
+# ========================================================================
+# Determines whether to ignore the relationship info associated with a feature
+# coming from a feature class containing relationships. When set to 'yes', simple
+# relationships will not be read, and attributed relationships will be read as
+# tables. Caution should be taken when changing the value for this keyword to a
+# different value than was specified when creating the mapping file/workspace.
+DEFAULT_MACRO GEODATABASE_SDE_IN_IGNORE_RELATIONSHIP_INFO_GEODATABASE_SDE_2 yes
+GEODATABASE_SDE_2_IGNORE_RELATIONSHIP_INFO "$(GEODATABASE_SDE_IN_IGNORE_RELATIONSHIP_INFO_GEODATABASE_SDE_2)"
+GUI CHECKBOX GEODATABASE_SDE_IN_IGNORE_RELATIONSHIP_INFO_GEODATABASE_SDE_2 yes%no Ignore Relationship Info
+# ========================================================================
+# Determines whether complex edge features should be split up and each edge
+# element read as a separate feature. The default behaviour is to treat an
+# entire edge *feature* as an FME feature, rather than an edge *element* as an
+# FME feature. Returning edge elements ensures that all network connectivity
+# information on complex edges is read.
+DEFAULT_MACRO GEODATABASE_SDE_IN_SPLIT_COMPLEX_EDGES_GEODATABASE_SDE_2 no
+GEODATABASE_SDE_2_SPLIT_COMPLEX_EDGES "$(GEODATABASE_SDE_IN_SPLIT_COMPLEX_EDGES_GEODATABASE_SDE_2)"
+GUI CHECKBOX GEODATABASE_SDE_IN_SPLIT_COMPLEX_EDGES_GEODATABASE_SDE_2 yes%no Split Complex Edges
+#==============================================================================
+# Determines whether annotation features should be split up and each part
+# element read as a separate feature. The default behaviour is to treat an
+# entire annotation *feature* as an FME feature, rather than an annotation
+# *element* as an FME feature. Returning edge elements ensures that all
+# rotation and positional information for each element is preserved.
+DEFAULT_MACRO GEODATABASE_SDE_IN_SPLIT_MULTI_PART_ANNOS_GEODATABASE_SDE_2 no
+GEODATABASE_SDE_2_SPLIT_MULTI_PART_ANNOS "$(GEODATABASE_SDE_IN_SPLIT_MULTI_PART_ANNOS_GEODATABASE_SDE_2)"
+GUI CHECKBOX GEODATABASE_SDE_IN_SPLIT_MULTI_PART_ANNOS_GEODATABASE_SDE_2 yes%no Split Multi-Part Annotations
+# ========================================================================
+# The following determines whether to read features from the geodatabase
+# tables/feature classes or to read metadata from those tables/feature
+# classes.
+DEFAULT_MACRO GEODATABASE_SDE_IN_FEATURE_READ_MODE_GEODATABASE_SDE_2 Features
+GEODATABASE_SDE_2_FEATURE_READ_MODE "$(GEODATABASE_SDE_IN_FEATURE_READ_MODE_GEODATABASE_SDE_2)"
+DEFAULT_MACRO GEODATABASE_SDE_IN_EXPOSE_ATTRS_GROUP_GEODATABASE_SDE_2 
+GEODATABASE_SDE_2_EXPOSE_ATTRS_GROUP "$(GEODATABASE_SDE_IN_EXPOSE_ATTRS_GROUP_GEODATABASE_SDE_2)"
+GUI DISCLOSUREGROUP GEODATABASE_SDE_IN_EXPOSE_ATTRS_GROUP_GEODATABASE_SDE_2 GEODATABASE_SDE_EXPOSE_FORMAT_ATTRS Schema Attributes
+# Include this file in source setting section to add native search envelope processing
+# Zero as a default means we don't do any search -- this makes workbench happier
+# ===========================================================================
+DEFAULT_MACRO GEODATABASE_SDE_IN_SEARCH_ENVELOPE_MINX_GEODATABASE_SDE_2 0
+GEODATABASE_SDE_2_SEARCH_ENVELOPE "$(GEODATABASE_SDE_IN_SEARCH_ENVELOPE_MINX_GEODATABASE_SDE_2)"
+GUI OPTIONAL FLOAT GEODATABASE_SDE_IN_SEARCH_ENVELOPE_MINX_GEODATABASE_SDE_2 Minimum X:
+# ===========================================================================
+DEFAULT_MACRO GEODATABASE_SDE_IN_SEARCH_ENVELOPE_MINY_GEODATABASE_SDE_2 0
+GEODATABASE_SDE_2_SEARCH_ENVELOPE "$(GEODATABASE_SDE_IN_SEARCH_ENVELOPE_MINY_GEODATABASE_SDE_2)"
+GUI OPTIONAL FLOAT GEODATABASE_SDE_IN_SEARCH_ENVELOPE_MINY_GEODATABASE_SDE_2 Minimum Y:
+# ===========================================================================
+DEFAULT_MACRO GEODATABASE_SDE_IN_SEARCH_ENVELOPE_MAXX_GEODATABASE_SDE_2 0
+GEODATABASE_SDE_2_SEARCH_ENVELOPE "$(GEODATABASE_SDE_IN_SEARCH_ENVELOPE_MAXX_GEODATABASE_SDE_2)"
+GUI OPTIONAL FLOAT GEODATABASE_SDE_IN_SEARCH_ENVELOPE_MAXX_GEODATABASE_SDE_2 Maximum X:
+# ===========================================================================
+DEFAULT_MACRO GEODATABASE_SDE_IN_SEARCH_ENVELOPE_MAXY_GEODATABASE_SDE_2 0
+GEODATABASE_SDE_2_SEARCH_ENVELOPE "$(GEODATABASE_SDE_IN_SEARCH_ENVELOPE_MAXY_GEODATABASE_SDE_2)"
+GUI OPTIONAL FLOAT GEODATABASE_SDE_IN_SEARCH_ENVELOPE_MAXY_GEODATABASE_SDE_2 Maximum Y:
+# ===========================================================================
+DEFAULT_MACRO GEODATABASE_SDE_IN_CLIP_TO_ENVELOPE_GEODATABASE_SDE_2 NO
+GEODATABASE_SDE_2_CLIP_TO_ENVELOPE "$(GEODATABASE_SDE_IN_CLIP_TO_ENVELOPE_GEODATABASE_SDE_2)"
+GUI OPTIONAL CHECKBOX GEODATABASE_SDE_IN_CLIP_TO_ENVELOPE_GEODATABASE_SDE_2 YES%NO Clip to Search Envelope
+#==============================================================================
+# The following specifies that complex representations for annotation should
+# be split into simpler representations.
+DEFAULT_MACRO _GEODBSplitComplexAnnotations_GEODATABASE_SDE_2 no
+GUI CHOICE _GEODBSplitComplexAnnotations_GEODATABASE_SDE_2 yes%no Split Complex Annotations:
+GEODATABASE_SDE_2_SPLIT_COMPLEX_ANNOS $(_GEODBSplitComplexAnnotations_GEODATABASE_SDE_2)
+#==============================================================================
+# The following specifies whether to keep (YES) or clean up (NO) Esri's
+# multipatch texture caches.
+DEFAULT_MACRO _GEODBCacheMultipatchTextures_GEODATABASE_SDE_2 yes
+GUI CHOICE _GEODBCacheMultipatchTextures_GEODATABASE_SDE_2 yes%no Cache Multipatch Textures:
+GEODATABASE_SDE_2_CACHE_MULTIPATCH_TEXTURES $(_GEODBCacheMultipatchTextures_GEODATABASE_SDE_2)
+# ============================================================================
+# Search Envelope Coordinate System
+DEFAULT_MACRO _GEODB_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_GEODATABASE_SDE_2 
+GUI OPTIONAL COORDSYS _GEODB_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_GEODATABASE_SDE_2 Search Envelope Coordinate System:
+GEODATABASE_SDE_2_SEARCH_ENVELOPE_COORDINATE_SYSTEM "$(_GEODB_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_GEODATABASE_SDE_2)"
+# ========================================================================
+# The following determines whether to vectorize arcs. If SPLIT_AT_ARCS
+# is set to yes, then arcs do not get vectorized and lines/polygons
+# containing arcs get split up into line segments and arc segments.
+#
+# Update: This keyword is not applicable when using rich geometry. Since
+# all new mapping files/workspaces have FME_USE_RICH_GEOMETRY set to YES then
+# we do not need to expose this keyword.
+#DEFAULT_MACRO _GEODBInSplitAtArcs no
+#DEFAULT_MACRO _GEODBInSplitAtArcs NO
+#GUI OPTIONAL CHOICE _GEODBInSplitAtArcs yes%no Split at Arcs
+#GEODATABASE_SDE_SPLIT_AT_ARCS "$(_GEODBInSplitAtArcs_GEODATABASE_SDE_2)"
+#
+# ========================================================================
+# The following defines the search feature for the query. It defines an
+# arbitrarily complex search feature as a spatial contraint. It is in the
+# form <keyword>_SEARCH_FEATURE [<xCoord> <yCoord>]+.
+DEFAULT_MACRO _GEODBInSearchFeature_GEODATABASE_SDE_2 
+GUI OPTIONAL TEXT _GEODBInSearchFeature_GEODATABASE_SDE_2 Search Feature:
+GEODATABASE_SDE_2_SEARCH_FEATURE $(_GEODBInSearchFeature_GEODATABASE_SDE_2)
+# ========================================================================
+# Determines whether the spatial component or the attribute component of a
+# query is performed first. This is only applicable when both spatial and
+# non-spatial searches are being performed.
+DEFAULT_MACRO _GEODBInSearchOrder_GEODATABASE_SDE_2 SPATIAL_FIRST
+GUI OPTIONAL CHOICE _GEODBInSearchOrder_GEODATABASE_SDE_2 SPATIAL_FIRST%ATTRIBUTE_FIRST Search Order:
+GEODATABASE_SDE_2_SEARCH_ORDER $(_GEODBInSearchOrder_GEODATABASE_SDE_2)
+# ========================================================================
+# Determines which type of search method to use. This keyword is only applicable
+# when either the keyword SEARCH_ENVELOPE or the keyword SEARCH_FEATURE is specified.
+DEFAULT_MACRO _GEODBInSearchMethod_GEODATABASE_SDE_2 GEODB_INTERSECTS
+GUI OPTIONAL CHOICE _GEODBInSearchMethod_GEODATABASE_SDE_2 GEODB_INTERSECTS%GEODB_ENVELOPE_INTERSECTS%GEODB_TOUCHES%GEODB_OVERLAPS%GEODB_CROSSES%GEODB_WITHIN%GEODB_CONTAINS Search Method:
+GEODATABASE_SDE_2_SEARCH_METHOD $(_GEODBInSearchMethod_GEODATABASE_SDE_2)
+# ========================================================================
+# The following specifies the name of a child version to be created. After
+# the version has been created, tables will be read using this version
+# rather than the version specified by the VERSION keyword.
+DEFAULT_MACRO _GEODBInChildVersionName_GEODATABASE_SDE_2 
+GUI OPTIONAL TEXT _GEODBInChildVersionName_GEODATABASE_SDE_2 Child Version Name:
+GEODATABASE_SDE_2_CHILD_VERSION_NAME $(_GEODBInChildVersionName_GEODATABASE_SDE_2)
+# ========================================================================
+# The following specifies the archive where clause to be used when retrieving
+# features from an archived table in geodb.
+DEFAULT_MACRO _GEODBInArchiveWhereClause_GEODATABASE_SDE_2 
+GUI OPTIONAL TEXT _GEODBInArchiveWhereClause_GEODATABASE_SDE_2 Archive WHERE Clause:
+GEODATABASE_SDE_2_ARCHIVE_WHERE $(_GEODBInArchiveWhereClause_GEODATABASE_SDE_2)
+# ========================================================================
+# The following specifies that simple geometry should be checked for
+# when reading features.
+DEFAULT_MACRO _GEODBInCheckSimpleGeom_GEODATABASE_SDE_2 no
+GUI CHOICE _GEODBInCheckSimpleGeom_GEODATABASE_SDE_2 yes%no Check for Simple Geometry:
+GEODATABASE_SDE_2_CHECK_SIMPLE_GEOM $(_GEODBInCheckSimpleGeom_GEODATABASE_SDE_2)
+# ========================================================================
+# The following specifies whether feature-linked annotations should
+# be merged onto the main feature as a text list attribute when reading.
+DEFAULT_MACRO _GEODBMergeFeatLinkedAnnos_GEODATABASE_SDE_2 no
+GUI CHOICE _GEODBMergeFeatLinkedAnnos_GEODATABASE_SDE_2 yes%no Merge Feature Linked Annotations:
+GEODATABASE_SDE_2_MERGE_FEAT_LINKED_ANNOS $(_GEODBMergeFeatLinkedAnnos_GEODATABASE_SDE_2)
+#==============================================================================
+# Determines whether the connection should persist after the reader/writer
+# has been shut down. The default is 'no'.
+DEFAULT_MACRO _GEODBInPersistentConnection_GEODATABASE_SDE_2 no
+GUI CHOICE _GEODBInPersistentConnection_GEODATABASE_SDE_2 yes%no Make Connection Persistent
+GEODATABASE_SDE_2_PERSISTENT_CONNECTION $(_GEODBInPersistentConnection_GEODATABASE_SDE_2)
+# ==============================================================================
+# The following specifies an SQL command to execute before opening the first
+# Geodatabase table.
+DEFAULT_MACRO _GEODBInBeginSql_GEODATABASE_SDE_2 
+GUI OPTIONAL TEXT_EDIT_SQL _GEODBInBeginSql_GEODATABASE_SDE_2 SQL Statement To Execute Before Translation:
+GEODATABASE_SDE_2_BEGIN_SQL{0} "$(_GEODBInBeginSql_GEODATABASE_SDE_2)"
+# ==============================================================================
+# The following specifies an SQL command to execute after closing all the
+# Geodatabase tables.
+DEFAULT_MACRO _GEODBInEndSql_GEODATABASE_SDE_2 
+GUI OPTIONAL TEXT_EDIT_SQL _GEODBInEndSql_GEODATABASE_SDE_2 SQL Statement To Execute After Translation:
+GEODATABASE_SDE_2_END_SQL{0} "$(_GEODBInEndSql_GEODATABASE_SDE_2)"
+GEODATABASE_SDE_2_DATASET "$(SourceDataset_GEODATABASE_SDE_2)"
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+MACRO WB_KEYWORD "GEODATABASE_SDE_3"
+#! END_WB_HEADER
+#! START_DEST_HEADER GEODATABASE_SDE GEODATABASE_SDE_3
+GEODATABASE_SDE_3_COORDINATE_SYSTEM_GRANULARITY FEATURE_TYPE
 # ============================================================================
 # The following GUI line prompts for a source dataset, sometimes this is not
 # used by SDE.
@@ -7352,12 +7659,12 @@ GEODATABASE_SDE_2_COORDINATE_SYSTEM_GRANULARITY FEATURE_TYPE
 #! START_WB_HEADER
 DEFAULT_MACRO DestDataset
 INCLUDE [ if {"$(DestDataset)" != ""} {                          \
- puts {DEFAULT_MACRO DestDataset_GEODATABASE_SDE_2 $(DestDataset)}         \
+ puts {DEFAULT_MACRO DestDataset_GEODATABASE_SDE_3 $(DestDataset)}         \
  } ]
 #! END_WB_HEADER
-#! START_DEST_HEADER GEODATABASE_SDE GEODATABASE_SDE_2
-DEFAULT_MACRO DestDataset_GEODATABASE_SDE_2 sde
-GUI TEXT DestDataset_GEODATABASE_SDE_2 Destination Esri ArcSDE Geodatabase Dataset:
+#! START_DEST_HEADER GEODATABASE_SDE GEODATABASE_SDE_3
+DEFAULT_MACRO DestDataset_GEODATABASE_SDE_3 sde
+GUI TEXT DestDataset_GEODATABASE_SDE_3 Destination Esri ArcSDE Geodatabase Dataset:
 # ============================================================================
 # Writer connection file stuff.
 # If you manually change this value for whether or not to use connection files,
@@ -7366,242 +7673,242 @@ GUI TEXT DestDataset_GEODATABASE_SDE_2 Destination Esri ArcSDE Geodatabase Datas
 # i.e. The GEODATABASE_SDE_CONNECTION_FILE directive should exist and not
 # be commented if you set _GEODBOutUsingConnFile to YES.
 #
-DEFAULT_MACRO _GEODBOutUsingConnFile_GEODATABASE_SDE_2 no
+DEFAULT_MACRO _GEODBOutUsingConnFile_GEODATABASE_SDE_3 no
 #=============================================================================
 # WRITER CONNECTION PARAMETERS: Either these or the connection file should be specified.
 # END OF CONNECTION PARAMETERS
 #==============================================================================
 # =============================================================================
 #
-DEFAULT_MACRO GEODATABASE_SDE_OUT_SERVER_GEODATABASE_SDE_2 work
-GUI TEXT GEODATABASE_SDE_OUT_SERVER_GEODATABASE_SDE_2 Server:
-GEODATABASE_SDE_2_SERVER "$(GEODATABASE_SDE_OUT_SERVER_GEODATABASE_SDE_2)"
+DEFAULT_MACRO GEODATABASE_SDE_OUT_SERVER_GEODATABASE_SDE_3 work
+GUI TEXT GEODATABASE_SDE_OUT_SERVER_GEODATABASE_SDE_3 Server:
+GEODATABASE_SDE_3_SERVER "$(GEODATABASE_SDE_OUT_SERVER_GEODATABASE_SDE_3)"
 # =============================================================================
 #
-DEFAULT_MACRO GEODATABASE_SDE_OUT_USERID_GEODATABASE_SDE_2 $(USERNAME)
-GUI TEXT GEODATABASE_SDE_OUT_USERID_GEODATABASE_SDE_2 Username:
-GEODATABASE_SDE_2_USERID "$(GEODATABASE_SDE_OUT_USERID_GEODATABASE_SDE_2)"
+DEFAULT_MACRO GEODATABASE_SDE_OUT_USERID_GEODATABASE_SDE_3 $(USERNAME)
+GUI TEXT GEODATABASE_SDE_OUT_USERID_GEODATABASE_SDE_3 Username:
+GEODATABASE_SDE_3_USERID "$(GEODATABASE_SDE_OUT_USERID_GEODATABASE_SDE_3)"
 # =============================================================================
 #
-DEFAULT_MACRO GEODATABASE_SDE_OUT_PASSWORD_GEODATABASE_SDE_2 $(PASSWORD)
-GUI PASSWORD GEODATABASE_SDE_OUT_PASSWORD_GEODATABASE_SDE_2 Password:
-GEODATABASE_SDE_2_PASSWORD "$(GEODATABASE_SDE_OUT_PASSWORD_GEODATABASE_SDE_2)"
+DEFAULT_MACRO GEODATABASE_SDE_OUT_PASSWORD_GEODATABASE_SDE_3 $(PASSWORD)
+GUI PASSWORD GEODATABASE_SDE_OUT_PASSWORD_GEODATABASE_SDE_3 Password:
+GEODATABASE_SDE_3_PASSWORD "$(GEODATABASE_SDE_OUT_PASSWORD_GEODATABASE_SDE_3)"
 # =============================================================================
 #
-DEFAULT_MACRO GEODATABASE_SDE_OUT_INSTANCE_GEODATABASE_SDE_2 $(INSTANCE)
-GUI TEXT GEODATABASE_SDE_OUT_INSTANCE_GEODATABASE_SDE_2 Instance Name:
-GEODATABASE_SDE_2_INSTANCE "$(GEODATABASE_SDE_OUT_INSTANCE_GEODATABASE_SDE_2)"
+DEFAULT_MACRO GEODATABASE_SDE_OUT_INSTANCE_GEODATABASE_SDE_3 $(INSTANCE)
+GUI TEXT GEODATABASE_SDE_OUT_INSTANCE_GEODATABASE_SDE_3 Instance Name:
+GEODATABASE_SDE_3_INSTANCE "$(GEODATABASE_SDE_OUT_INSTANCE_GEODATABASE_SDE_3)"
 # =============================================================================
 #
-DEFAULT_MACRO GEODATABASE_SDE_OUT_VERSION_GEODATABASE_SDE_2 SDE.DEFAULT
-GUI STRING_ENCODED GEODATABASE_SDE_OUT_VERSION_GEODATABASE_SDE_2 Transactional Version:
-GEODATABASE_SDE_2_VERSION "$(GEODATABASE_SDE_OUT_VERSION_GEODATABASE_SDE_2)"
+DEFAULT_MACRO GEODATABASE_SDE_OUT_VERSION_GEODATABASE_SDE_3 SDE.DEFAULT
+GUI STRING_ENCODED GEODATABASE_SDE_OUT_VERSION_GEODATABASE_SDE_3 Transactional Version:
+GEODATABASE_SDE_3_VERSION "$(GEODATABASE_SDE_OUT_VERSION_GEODATABASE_SDE_3)"
 # ========================================================================
 # ============================================================================
 # The following GUI line prompts for the name of the host machine on which.
 # the SDE Server runs.
-GEODATABASE_SDE_2_SERVER "$(GEODATABASE_SDE_OUT_SERVER_GEODATABASE_SDE_2)"
+GEODATABASE_SDE_3_SERVER "$(GEODATABASE_SDE_OUT_SERVER_GEODATABASE_SDE_3)"
 # ========================================================================
 # The following GUI line prompts for the username to use for
 # accessing the SDE dataset.
-GEODATABASE_SDE_2_USERID "$(GEODATABASE_SDE_OUT_USERID_GEODATABASE_SDE_2)"
+GEODATABASE_SDE_3_USERID "$(GEODATABASE_SDE_OUT_USERID_GEODATABASE_SDE_3)"
 # ========================================================================
 # The following GUI line prompts for the user password.
-GEODATABASE_SDE_2_PASSWORD "$(GEODATABASE_SDE_OUT_PASSWORD_GEODATABASE_SDE_2)"
+GEODATABASE_SDE_3_PASSWORD "$(GEODATABASE_SDE_OUT_PASSWORD_GEODATABASE_SDE_3)"
 # ========================================================================
 # The following GUI line prompts for the instance
-GEODATABASE_SDE_2_INSTANCE "$(GEODATABASE_SDE_OUT_INSTANCE_GEODATABASE_SDE_2)"
+GEODATABASE_SDE_3_INSTANCE "$(GEODATABASE_SDE_OUT_INSTANCE_GEODATABASE_SDE_3)"
 # ========================================================================
 # The following GUI line prompts for the version.
 # ============================================================================
-DEFAULT_MACRO GEODATABASE_SDE_OUT_CONNECTION_FILE_GEODATABASE_SDE_2 
-GEODATABASE_SDE_2_CONNECTION_FILE "$(GEODATABASE_SDE_OUT_CONNECTION_FILE_GEODATABASE_SDE_2)"
+DEFAULT_MACRO GEODATABASE_SDE_OUT_CONNECTION_FILE_GEODATABASE_SDE_3 
+GEODATABASE_SDE_3_CONNECTION_FILE "$(GEODATABASE_SDE_OUT_CONNECTION_FILE_GEODATABASE_SDE_3)"
 # ========================================================================
 # ============================================================================
 # This option specifies the transaction type. This should be set to VERSIONING
 # when writing to a versioned table/feature class in an Enterprise Geodatabase.
 # Both TRANSACTIONS and NONE can be chosen only when writing to non-versioned
 # tables/feature classes.
-DEFAULT_MACRO GEODATABASE_SDE_OUT_TRANSACTION_TYPE_GEODATABASE_SDE_2 TRANSACTIONS
-GEODATABASE_SDE_2_TRANSACTION_TYPE "$(GEODATABASE_SDE_OUT_TRANSACTION_TYPE_GEODATABASE_SDE_2)"
-GUI ACTIVECHOICE GEODATABASE_SDE_OUT_TRANSACTION_TYPE_GEODATABASE_SDE_2 VERSIONING%TRANSACTIONS,GEODATABASE_SDE_OUT_VERSION%NONE,GEODATABASE_SDE_OUT_VERSION Transaction Type:
+DEFAULT_MACRO GEODATABASE_SDE_OUT_TRANSACTION_TYPE_GEODATABASE_SDE_3 TRANSACTIONS
+GEODATABASE_SDE_3_TRANSACTION_TYPE "$(GEODATABASE_SDE_OUT_TRANSACTION_TYPE_GEODATABASE_SDE_3)"
+GUI ACTIVECHOICE GEODATABASE_SDE_OUT_TRANSACTION_TYPE_GEODATABASE_SDE_3 VERSIONING%TRANSACTIONS,GEODATABASE_SDE_OUT_VERSION%NONE,GEODATABASE_SDE_OUT_VERSION Transaction Type:
 # ============================================================================
 # Optional template file can be specified. This will load the schema
 # of the template file into the database before any writing occurs.
-DEFAULT_MACRO GEODATABASE_SDE_OUT_TEMPLATEFILE_GEODATABASE_SDE_2 
-GEODATABASE_SDE_2_TEMPLATEFILE "$(GEODATABASE_SDE_OUT_TEMPLATEFILE_GEODATABASE_SDE_2)"
-GUI OPTIONAL FILENAME_MUSTEXIST GEODATABASE_SDE_OUT_TEMPLATEFILE_GEODATABASE_SDE_2 XML_Geodatabase_Files(*.xml)|*.xml|(*.zip)|*.zip|(*.z)|*.z|All_files(*.*)|*.* Template File:
+DEFAULT_MACRO GEODATABASE_SDE_OUT_TEMPLATEFILE_GEODATABASE_SDE_3 
+GEODATABASE_SDE_3_TEMPLATEFILE "$(GEODATABASE_SDE_OUT_TEMPLATEFILE_GEODATABASE_SDE_3)"
+GUI OPTIONAL FILENAME_MUSTEXIST GEODATABASE_SDE_OUT_TEMPLATEFILE_GEODATABASE_SDE_3 XML_Geodatabase_Files(*.xml)|*.xml|(*.zip)|*.zip|(*.z)|*.z|All_files(*.*)|*.* Template File:
 # ========================================================================
-DEFAULT_MACRO GEODATABASE_SDE_OUT_TABLE_PARAMETERS_GROUP_GEODATABASE_SDE_2 
-GUI DISCLOSUREGROUP GEODATABASE_SDE_OUT_TABLE_PARAMETERS_GROUP_GEODATABASE_SDE_2 FME_DISCLOSURE_CLOSED%SIMPLIFY_GEOM%ORIGIN_X%ORIGIN_Y%XY_SCALE%HAS_Z_VALUES%Z_ORIGIN%Z_SCALE%GRID_1 Table Parameters
+DEFAULT_MACRO GEODATABASE_SDE_OUT_TABLE_PARAMETERS_GROUP_GEODATABASE_SDE_3 
+GUI DISCLOSUREGROUP GEODATABASE_SDE_OUT_TABLE_PARAMETERS_GROUP_GEODATABASE_SDE_3 FME_DISCLOSURE_CLOSED%SIMPLIFY_GEOM%ORIGIN_X%ORIGIN_Y%XY_SCALE%HAS_Z_VALUES%Z_ORIGIN%Z_SCALE%GRID_1 Table Parameters
 # ========================================================================
 # Specifies if the geomtery is to be simplified or not. Default is no
-DEFAULT_MACRO GEODATABASE_SDE_OUT_SIMPLIFY_GEOM_GEODATABASE_SDE_2 no
-GEODATABASE_SDE_2_SIMPLIFY_GEOM "$(GEODATABASE_SDE_OUT_SIMPLIFY_GEOM_GEODATABASE_SDE_2)"
-GUI LOOKUP_CHOICE GEODATABASE_SDE_OUT_SIMPLIFY_GEOM_GEODATABASE_SDE_2 yes%no Simplify Geometry:
+DEFAULT_MACRO GEODATABASE_SDE_OUT_SIMPLIFY_GEOM_GEODATABASE_SDE_3 no
+GEODATABASE_SDE_3_SIMPLIFY_GEOM "$(GEODATABASE_SDE_OUT_SIMPLIFY_GEOM_GEODATABASE_SDE_3)"
+GUI LOOKUP_CHOICE GEODATABASE_SDE_OUT_SIMPLIFY_GEOM_GEODATABASE_SDE_3 yes%no Simplify Geometry:
 # ========================================================================
-DEFAULT_MACRO GEODATABASE_SDE_OUT_ORIGIN_X_GEODATABASE_SDE_2 0
-GEODATABASE_SDE_2_ORIGIN_X "$(GEODATABASE_SDE_OUT_ORIGIN_X_GEODATABASE_SDE_2)"
-GUI FLOAT GEODATABASE_SDE_OUT_ORIGIN_X_GEODATABASE_SDE_2 X Origin:
+DEFAULT_MACRO GEODATABASE_SDE_OUT_ORIGIN_X_GEODATABASE_SDE_3 0
+GEODATABASE_SDE_3_ORIGIN_X "$(GEODATABASE_SDE_OUT_ORIGIN_X_GEODATABASE_SDE_3)"
+GUI FLOAT GEODATABASE_SDE_OUT_ORIGIN_X_GEODATABASE_SDE_3 X Origin:
 # ========================================================================
-DEFAULT_MACRO GEODATABASE_SDE_OUT_ORIGIN_Y_GEODATABASE_SDE_2 0
-GEODATABASE_SDE_2_ORIGIN_Y "$(GEODATABASE_SDE_OUT_ORIGIN_Y_GEODATABASE_SDE_2)"
-GUI FLOAT GEODATABASE_SDE_OUT_ORIGIN_Y_GEODATABASE_SDE_2 Y Origin:
+DEFAULT_MACRO GEODATABASE_SDE_OUT_ORIGIN_Y_GEODATABASE_SDE_3 0
+GEODATABASE_SDE_3_ORIGIN_Y "$(GEODATABASE_SDE_OUT_ORIGIN_Y_GEODATABASE_SDE_3)"
+GUI FLOAT GEODATABASE_SDE_OUT_ORIGIN_Y_GEODATABASE_SDE_3 Y Origin:
 # ========================================================================
-DEFAULT_MACRO GEODATABASE_SDE_OUT_XY_SCALE_GEODATABASE_SDE_2 0
-GEODATABASE_SDE_2_XY_SCALE "$(GEODATABASE_SDE_OUT_XY_SCALE_GEODATABASE_SDE_2)"
-GUI FLOAT GEODATABASE_SDE_OUT_XY_SCALE_GEODATABASE_SDE_2 Scale:
+DEFAULT_MACRO GEODATABASE_SDE_OUT_XY_SCALE_GEODATABASE_SDE_3 0
+GEODATABASE_SDE_3_XY_SCALE "$(GEODATABASE_SDE_OUT_XY_SCALE_GEODATABASE_SDE_3)"
+GUI FLOAT GEODATABASE_SDE_OUT_XY_SCALE_GEODATABASE_SDE_3 Scale:
 # ========================================================================
 # Determines if dataset contains Z values. This value will be used if DEF lines
 # don't have anything set. The auto_detect option will use the first feature
 # headed for each feature class to determine whether the feature class should be
 # 2D or 3D.
-DEFAULT_MACRO GEODATABASE_SDE_OUT_HAS_Z_VALUES_GEODATABASE_SDE_2 auto_detect
-GEODATABASE_SDE_2_HAS_Z_VALUES "$(GEODATABASE_SDE_OUT_HAS_Z_VALUES_GEODATABASE_SDE_2)"
-GUI ACTIVECHOICE GEODATABASE_SDE_OUT_HAS_Z_VALUES_GEODATABASE_SDE_2 yes%no,GEODATABASE_SDE_OUT_Z_ORIGIN,GEODATABASE_SDE_OUT_Z_SCALE%auto_detect Contains Z Values:
+DEFAULT_MACRO GEODATABASE_SDE_OUT_HAS_Z_VALUES_GEODATABASE_SDE_3 auto_detect
+GEODATABASE_SDE_3_HAS_Z_VALUES "$(GEODATABASE_SDE_OUT_HAS_Z_VALUES_GEODATABASE_SDE_3)"
+GUI ACTIVECHOICE GEODATABASE_SDE_OUT_HAS_Z_VALUES_GEODATABASE_SDE_3 yes%no,GEODATABASE_SDE_OUT_Z_ORIGIN,GEODATABASE_SDE_OUT_Z_SCALE%auto_detect Contains Z Values:
 # ========================================================================
 # Determines false Z origin
-DEFAULT_MACRO GEODATABASE_SDE_OUT_Z_ORIGIN_GEODATABASE_SDE_2 0
-GEODATABASE_SDE_2_Z_ORIGIN "$(GEODATABASE_SDE_OUT_Z_ORIGIN_GEODATABASE_SDE_2)"
-GUI FLOAT GEODATABASE_SDE_OUT_Z_ORIGIN_GEODATABASE_SDE_2 Z Origin:
+DEFAULT_MACRO GEODATABASE_SDE_OUT_Z_ORIGIN_GEODATABASE_SDE_3 0
+GEODATABASE_SDE_3_Z_ORIGIN "$(GEODATABASE_SDE_OUT_Z_ORIGIN_GEODATABASE_SDE_3)"
+GUI FLOAT GEODATABASE_SDE_OUT_Z_ORIGIN_GEODATABASE_SDE_3 Z Origin:
 # ========================================================================
 # ============================================================================
 # Determines Z scale
-DEFAULT_MACRO GEODATABASE_SDE_OUT_Z_SCALE_GEODATABASE_SDE_2 1
-GEODATABASE_SDE_2_Z_SCALE "$(GEODATABASE_SDE_OUT_Z_SCALE_GEODATABASE_SDE_2)"
-GUI FLOAT GEODATABASE_SDE_OUT_Z_SCALE_GEODATABASE_SDE_2 Z Scale:
+DEFAULT_MACRO GEODATABASE_SDE_OUT_Z_SCALE_GEODATABASE_SDE_3 1
+GEODATABASE_SDE_3_Z_SCALE "$(GEODATABASE_SDE_OUT_Z_SCALE_GEODATABASE_SDE_3)"
+GUI FLOAT GEODATABASE_SDE_OUT_Z_SCALE_GEODATABASE_SDE_3 Z Scale:
 # ========================================================================
 # ============================================================================
 # Determines global Grid 1 size. If there is no value on DEF line for the
 # the feature type then this value will be used otherwise it will be overridden
 # by the DEF line value. If the value is 0 then the grid size will be automatically
 # calculated
-DEFAULT_MACRO GEODATABASE_SDE_OUT_GRID_1_GEODATABASE_SDE_2 0
-GEODATABASE_SDE_2_GRID_1 "$(GEODATABASE_SDE_OUT_GRID_1_GEODATABASE_SDE_2)"
-GUI FLOAT GEODATABASE_SDE_OUT_GRID_1_GEODATABASE_SDE_2 Grid 1 Size:
+DEFAULT_MACRO GEODATABASE_SDE_OUT_GRID_1_GEODATABASE_SDE_3 0
+GEODATABASE_SDE_3_GRID_1 "$(GEODATABASE_SDE_OUT_GRID_1_GEODATABASE_SDE_3)"
+GUI FLOAT GEODATABASE_SDE_OUT_GRID_1_GEODATABASE_SDE_3 Grid 1 Size:
 # ============================================================================
 # Determines default Z value
-DEFAULT_MACRO _GEODBOutDefaultZValue_GEODATABASE_SDE_2 0
-GUI FLOAT _GEODBOutDefaultZValue_GEODATABASE_SDE_2 Default Z Value:
-GEODATABASE_SDE_2_DEFAULT_Z_VALUE $(_GEODBOutDefaultZValue_GEODATABASE_SDE_2)
+DEFAULT_MACRO _GEODBOutDefaultZValue_GEODATABASE_SDE_3 0
+GUI FLOAT _GEODBOutDefaultZValue_GEODATABASE_SDE_3 Default Z Value:
+GEODATABASE_SDE_3_DEFAULT_Z_VALUE $(_GEODBOutDefaultZValue_GEODATABASE_SDE_3)
 # ============================================================================
 # This option specifies the writer mode. If set to UPDATE or DELETE, the
 # mode can be overwritten by each individual feature using the attribute
 # 'fme_db_operation'.
-DEFAULT_MACRO _GEODBOutWriterMode_GEODATABASE_SDE_2 INSERT
-GUI CHOICE _GEODBOutWriterMode_GEODATABASE_SDE_2 INSERT%UPDATE%DELETE Writer Mode:
-GEODATABASE_SDE_2_WRITER_MODE $(_GEODBOutWriterMode_GEODATABASE_SDE_2)
+DEFAULT_MACRO _GEODBOutWriterMode_GEODATABASE_SDE_3 INSERT
+GUI CHOICE _GEODBOutWriterMode_GEODATABASE_SDE_3 INSERT%UPDATE%DELETE Writer Mode:
+GEODATABASE_SDE_3_WRITER_MODE $(_GEODBOutWriterMode_GEODATABASE_SDE_3)
 # ============================================================================
 # This option specifies the starting transaction number. Normally
 # this will be zero, which will write every feature to the Geodatabase,
 # but it might be another value if a previous translation was interrupted.
-DEFAULT_MACRO _GEODBOutTransaction_GEODATABASE_SDE_2 0
-GUI OPTIONAL INTEGER _GEODBOutTransaction_GEODATABASE_SDE_2 Transaction Number:
-GEODATABASE_SDE_2_TRANSACTION $(_GEODBOutTransaction_GEODATABASE_SDE_2)
+DEFAULT_MACRO _GEODBOutTransaction_GEODATABASE_SDE_3 0
+GUI OPTIONAL INTEGER _GEODBOutTransaction_GEODATABASE_SDE_3 Transaction Number:
+GEODATABASE_SDE_3_TRANSACTION $(_GEODBOutTransaction_GEODATABASE_SDE_3)
 # ============================================================================
 # This option specifies how many features will be written to the Geodatabase on
 # each transaction.
-DEFAULT_MACRO _GEODBOutTransactionInterval_GEODATABASE_SDE_2 1000
-GUI OPTIONAL INTEGER _GEODBOutTransactionInterval_GEODATABASE_SDE_2 Features to Write Per Transaction:
-GEODATABASE_SDE_2_TRANSACTION_INTERVAL $(_GEODBOutTransactionInterval_GEODATABASE_SDE_2)
+DEFAULT_MACRO _GEODBOutTransactionInterval_GEODATABASE_SDE_3 1000
+GUI OPTIONAL INTEGER _GEODBOutTransactionInterval_GEODATABASE_SDE_3 Features to Write Per Transaction:
+GEODATABASE_SDE_3_TRANSACTION_INTERVAL $(_GEODBOutTransactionInterval_GEODATABASE_SDE_3)
 # ============================================================================
 # Determines whether to continue the translation, despite having encountered
 # a feature that would normally stop the translation.
-DEFAULT_MACRO _GEODBOutIgnoreFailedFeatureEntry_GEODATABASE_SDE_2 no
-GUI OPTIONAL CHOICE _GEODBOutIgnoreFailedFeatureEntry_GEODATABASE_SDE_2 yes%no Ignore Failed Features:
-GEODATABASE_SDE_2_IGNORE_FAILED_FEATURE_ENTRY $(_GEODBOutIgnoreFailedFeatureEntry_GEODATABASE_SDE_2)
+DEFAULT_MACRO _GEODBOutIgnoreFailedFeatureEntry_GEODATABASE_SDE_3 no
+GUI OPTIONAL CHOICE _GEODBOutIgnoreFailedFeatureEntry_GEODATABASE_SDE_3 yes%no Ignore Failed Features:
+GEODATABASE_SDE_3_IGNORE_FAILED_FEATURE_ENTRY $(_GEODBOutIgnoreFailedFeatureEntry_GEODATABASE_SDE_3)
 # ============================================================================
 # The number of features to ignore before stopping a translation due to a
 # problematic feature. Used only if IGNORE_FAILED_FEATURE_ENTRY is 'yes'.
-DEFAULT_MACRO _GEODBOutMaxNumberFailedFeatures_GEODATABASE_SDE_2 -1
-GUI OPTIONAL INTEGER _GEODBOutMaxNumberFailedFeatures_GEODATABASE_SDE_2 Max Number of Features to Ignore:
-GEODATABASE_SDE_2_MAX_NUMBER_FAILED_FEATURES $(_GEODBOutMaxNumberFailedFeatures_GEODATABASE_SDE_2)
+DEFAULT_MACRO _GEODBOutMaxNumberFailedFeatures_GEODATABASE_SDE_3 -1
+GUI OPTIONAL INTEGER _GEODBOutMaxNumberFailedFeatures_GEODATABASE_SDE_3 Max Number of Features to Ignore:
+GEODATABASE_SDE_3_MAX_NUMBER_FAILED_FEATURES $(_GEODBOutMaxNumberFailedFeatures_GEODATABASE_SDE_3)
 # ============================================================================
 # Determines whether to store failed features in an FFS file, so that they
 # can be viewed/manipulated at a later time. Only applicable if the keyword
 # IGNORE_FAILED_FEATURE_ENTRY is set to 'yes'.
-DEFAULT_MACRO _GEODBOutDumpFailedFeatures_GEODATABASE_SDE_2 no
-GUI OPTIONAL CHOICE _GEODBOutDumpFailedFeatures_GEODATABASE_SDE_2 yes%no Dump Failed Features to File:
-GEODATABASE_SDE_2_DUMP_FAILED_FEATURES $(_GEODBOutDumpFailedFeatures_GEODATABASE_SDE_2)
+DEFAULT_MACRO _GEODBOutDumpFailedFeatures_GEODATABASE_SDE_3 no
+GUI OPTIONAL CHOICE _GEODBOutDumpFailedFeatures_GEODATABASE_SDE_3 yes%no Dump Failed Features to File:
+GEODATABASE_SDE_3_DUMP_FAILED_FEATURES $(_GEODBOutDumpFailedFeatures_GEODATABASE_SDE_3)
 # ============================================================================
 # If the keyword DUMP_FAILED_FEATURES is set to 'yes', determines where to
 # store the failed features. The location must specify both the path and the
 # filename. The filename must have an extension of 'ffs'.
-DEFAULT_MACRO _GEODBOutFFSDumpFile_GEODATABASE_SDE_2 
-GUI OPTIONAL FILENAME _GEODBOutFFSDumpFile_GEODATABASE_SDE_2 FME_Feature_Store_Files(*.ffs)|*.ffs|All_files(*.*)|*.* Failed Feature Dump filename:
-GEODATABASE_SDE_2_FFS_DUMP_FILE "$(_GEODBOutFFSDumpFile_GEODATABASE_SDE_2)"
+DEFAULT_MACRO _GEODBOutFFSDumpFile_GEODATABASE_SDE_3 
+GUI OPTIONAL FILENAME _GEODBOutFFSDumpFile_GEODATABASE_SDE_3 FME_Feature_Store_Files(*.ffs)|*.ffs|All_files(*.*)|*.* Failed Feature Dump filename:
+GEODATABASE_SDE_3_FFS_DUMP_FILE "$(_GEODBOutFFSDumpFile_GEODATABASE_SDE_3)"
 # ============================================================================
 # Specifies the units to use when creating a new annotation feature class.
-DEFAULT_MACRO _GEODBOutAnnotationUnits_GEODATABASE_SDE_2 unknown_units
-GUI OPTIONAL CHOICE _GEODBOutAnnotationUnits_GEODATABASE_SDE_2 unknown_units%decimal_degrees%inches%points%feet%yards%miles%nautical_miles%millimeters%centimeters%meters%kilometers%decimeters Annotation Units:
-GEODATABASE_SDE_2_ANNOTATION_UNITS $(_GEODBOutAnnotationUnits_GEODATABASE_SDE_2)
+DEFAULT_MACRO _GEODBOutAnnotationUnits_GEODATABASE_SDE_3 unknown_units
+GUI OPTIONAL CHOICE _GEODBOutAnnotationUnits_GEODATABASE_SDE_3 unknown_units%decimal_degrees%inches%points%feet%yards%miles%nautical_miles%millimeters%centimeters%meters%kilometers%decimeters Annotation Units:
+GEODATABASE_SDE_3_ANNOTATION_UNITS $(_GEODBOutAnnotationUnits_GEODATABASE_SDE_3)
 # ============================================================================
 # Determines if dataset contains measures. This value will be used if DEF lines
 # don't have anything set.
-DEFAULT_MACRO _GEODBOutMeasures_GEODATABASE_SDE_2 no
-GUI OPTIONAL CHOICE _GEODBOutMeasures_GEODATABASE_SDE_2 yes%no Contains Measures:
-GEODATABASE_SDE_2_HAS_MEASURES $(_GEODBOutMeasures_GEODATABASE_SDE_2)
+DEFAULT_MACRO _GEODBOutMeasures_GEODATABASE_SDE_3 no
+GUI OPTIONAL CHOICE _GEODBOutMeasures_GEODATABASE_SDE_3 yes%no Contains Measures:
+GEODATABASE_SDE_3_HAS_MEASURES $(_GEODBOutMeasures_GEODATABASE_SDE_3)
 # ============================================================================
 # Determines measures' origin value
-DEFAULT_MACRO _GEODBOutMeasureOrigin_GEODATABASE_SDE_2 0
-GUI OPTIONAL FLOAT _GEODBOutMeasureOrigin_GEODATABASE_SDE_2 Measures Origin:
-GEODATABASE_SDE_2_MEASURES_ORIGIN $(_GEODBOutMeasureOrigin_GEODATABASE_SDE_2)
+DEFAULT_MACRO _GEODBOutMeasureOrigin_GEODATABASE_SDE_3 0
+GUI OPTIONAL FLOAT _GEODBOutMeasureOrigin_GEODATABASE_SDE_3 Measures Origin:
+GEODATABASE_SDE_3_MEASURES_ORIGIN $(_GEODBOutMeasureOrigin_GEODATABASE_SDE_3)
 # ============================================================================
 # Determines measures' scale value
-DEFAULT_MACRO _GEODBOutMeasureScale_GEODATABASE_SDE_2 100
-GUI OPTIONAL FLOAT _GEODBOutMeasureScale_GEODATABASE_SDE_2 Measures Scale:
-GEODATABASE_SDE_2_MEASURES_SCALE $(_GEODBOutMeasureScale_GEODATABASE_SDE_2)
+DEFAULT_MACRO _GEODBOutMeasureScale_GEODATABASE_SDE_3 100
+GUI OPTIONAL FLOAT _GEODBOutMeasureScale_GEODATABASE_SDE_3 Measures Scale:
+GEODATABASE_SDE_3_MEASURES_SCALE $(_GEODBOutMeasureScale_GEODATABASE_SDE_3)
 # ============================================================================
 # This option specifies whether we are to reconcile the changes between the
 # version specified by VERSION and its parent version and then post those
 # changes to the parent version. Note: all tables that need to be reconciled,
 # even if they were not written to during the translation will be reconciled.
-DEFAULT_MACRO _GEODBOutReconcileAndPost_GEODATABASE_SDE_2 no
-GUI OPTIONAL CHOICE _GEODBOutReconcileAndPost_GEODATABASE_SDE_2 yes%no Reconcile and Post:
-GEODATABASE_SDE_2_RECONCILE_AND_POST $(_GEODBOutReconcileAndPost_GEODATABASE_SDE_2)
+DEFAULT_MACRO _GEODBOutReconcileAndPost_GEODATABASE_SDE_3 no
+GUI OPTIONAL CHOICE _GEODBOutReconcileAndPost_GEODATABASE_SDE_3 yes%no Reconcile and Post:
+GEODATABASE_SDE_3_RECONCILE_AND_POST $(_GEODBOutReconcileAndPost_GEODATABASE_SDE_3)
 # ============================================================================
 # Decide whether or not to delete the child version after a reconcile and post
 # operation
-DEFAULT_MACRO _GEODBOutDeleteChildAfterReconcileAndPost_GEODATABASE_SDE_2 yes
-GUI CHOICE _GEODBOutDeleteChildAfterReconcileAndPost_GEODATABASE_SDE_2 yes%no Delete child state following reconcile and post:
-GEODATABASE_SDE_2_DELETE_CHILD_AFTER_RECONCILE_AND_POST $(_GEODBOutDeleteChildAfterReconcileAndPost_GEODATABASE_SDE_2)
+DEFAULT_MACRO _GEODBOutDeleteChildAfterReconcileAndPost_GEODATABASE_SDE_3 yes
+GUI CHOICE _GEODBOutDeleteChildAfterReconcileAndPost_GEODATABASE_SDE_3 yes%no Delete child state following reconcile and post:
+GEODATABASE_SDE_3_DELETE_CHILD_AFTER_RECONCILE_AND_POST $(_GEODBOutDeleteChildAfterReconcileAndPost_GEODATABASE_SDE_3)
 # ============================================================================
 # Determines whether to perform validation on features being written to the
 # geodatabase. Default is no.
-DEFAULT_MACRO _GEODBOutValidateFeatures_GEODATABASE_SDE_2 no
-GUI OPTIONAL CHOICE _GEODBOutValidateFeatures_GEODATABASE_SDE_2 yes%no Validate Features to Write:
-GEODATABASE_SDE_2_VALIDATE_FEATURES $(_GEODBOutValidateFeatures_GEODATABASE_SDE_2)
+DEFAULT_MACRO _GEODBOutValidateFeatures_GEODATABASE_SDE_3 no
+GUI OPTIONAL CHOICE _GEODBOutValidateFeatures_GEODATABASE_SDE_3 yes%no Validate Features to Write:
+GEODATABASE_SDE_3_VALIDATE_FEATURES $(_GEODBOutValidateFeatures_GEODATABASE_SDE_3)
 # ============================================================================
 # Determines whether to perform simplification on network features being
 # written to the geodatabase. Default is no.
-DEFAULT_MACRO _GEODBOutSimplifyNetworkFeatures_GEODATABASE_SDE_2 no
-GUI OPTIONAL CHOICE _GEODBOutSimplifyNetworkFeatures_GEODATABASE_SDE_2 yes%no Simplify Network Features:
-GEODATABASE_SDE_2_SIMPLIFY_NETWORK_FEATURES $(_GEODBOutSimplifyNetworkFeatures_GEODATABASE_SDE_2)
+DEFAULT_MACRO _GEODBOutSimplifyNetworkFeatures_GEODATABASE_SDE_3 no
+GUI OPTIONAL CHOICE _GEODBOutSimplifyNetworkFeatures_GEODATABASE_SDE_3 yes%no Simplify Network Features:
+GEODATABASE_SDE_3_SIMPLIFY_NETWORK_FEATURES $(_GEODBOutSimplifyNetworkFeatures_GEODATABASE_SDE_3)
 #==============================================================================
 # Determines whether the connection should persist after the reader/writer
 # has been shut down. The default is 'no'.
-DEFAULT_MACRO _GEODBOutPersistentConnection_GEODATABASE_SDE_2 no
-GUI CHOICE _GEODBOutPersistentConnection_GEODATABASE_SDE_2 yes%no Make Connection Persistent
-GEODATABASE_SDE_2_PERSISTENT_CONNECTION $(_GEODBOutPersistentConnection_GEODATABASE_SDE_2)
+DEFAULT_MACRO _GEODBOutPersistentConnection_GEODATABASE_SDE_3 no
+GUI CHOICE _GEODBOutPersistentConnection_GEODATABASE_SDE_3 yes%no Make Connection Persistent
+GEODATABASE_SDE_3_PERSISTENT_CONNECTION $(_GEODBOutPersistentConnection_GEODATABASE_SDE_3)
 #==============================================================================
 # Determines whether transactions should be committed at the end of each write,
 # as opposed to the start of the next. The default is 'no'.
-DEFAULT_MACRO _GEODBOutCommitTransactionsAfterWrite_GEODATABASE_SDE_2 no
-GUI CHOICE _GEODBOutCommitTransactionsAfterWrite_GEODATABASE_SDE_2 yes%no Commit Transactions at end of Write
-GEODATABASE_SDE_2_COMMIT_TRANSACTIONS_AFTER_WRITE $(_GEODBOutCommitTransactionsAfterWrite_GEODATABASE_SDE_2)
+DEFAULT_MACRO _GEODBOutCommitTransactionsAfterWrite_GEODATABASE_SDE_3 no
+GUI CHOICE _GEODBOutCommitTransactionsAfterWrite_GEODATABASE_SDE_3 yes%no Commit Transactions at end of Write
+GEODATABASE_SDE_3_COMMIT_TRANSACTIONS_AFTER_WRITE $(_GEODBOutCommitTransactionsAfterWrite_GEODATABASE_SDE_3)
 # ==============================================================================
 # The following specifies an SQL command to execute before opening the first
 # Geodatabase table.
-DEFAULT_MACRO _GEODBOutBeginSql_GEODATABASE_SDE_2 
-GUI OPTIONAL TEXT_EDIT_SQL _GEODBOutBeginSql_GEODATABASE_SDE_2 SQL Statement To Execute Before Translation:
-GEODATABASE_SDE_2_BEGIN_SQL{0} "$(_GEODBOutBeginSql_GEODATABASE_SDE_2)"
+DEFAULT_MACRO _GEODBOutBeginSql_GEODATABASE_SDE_3 
+GUI OPTIONAL TEXT_EDIT_SQL _GEODBOutBeginSql_GEODATABASE_SDE_3 SQL Statement To Execute Before Translation:
+GEODATABASE_SDE_3_BEGIN_SQL{0} "$(_GEODBOutBeginSql_GEODATABASE_SDE_3)"
 # ==============================================================================
 # The following specifies an SQL command to execute after closing all the
 # Geodatabase tables.
-DEFAULT_MACRO _GEODBOutEndSql_GEODATABASE_SDE_2 
-GUI OPTIONAL TEXT_EDIT_SQL _GEODBOutEndSql_GEODATABASE_SDE_2 SQL Statement To Execute After Translation:
-GEODATABASE_SDE_2_END_SQL{0} "$(_GEODBOutEndSql_GEODATABASE_SDE_2)"
-GEODATABASE_SDE_2_DATASET "$(DestDataset_GEODATABASE_SDE_2)"
+DEFAULT_MACRO _GEODBOutEndSql_GEODATABASE_SDE_3 
+GUI OPTIONAL TEXT_EDIT_SQL _GEODBOutEndSql_GEODATABASE_SDE_3 SQL Statement To Execute After Translation:
+GEODATABASE_SDE_3_END_SQL{0} "$(_GEODBOutEndSql_GEODATABASE_SDE_3)"
+GEODATABASE_SDE_3_DATASET "$(DestDataset_GEODATABASE_SDE_3)"
 #! END_DEST_HEADER
 #! END_HEADER
 
@@ -7617,9 +7924,14 @@ LOG_TIMINGS YES
 LOG_FILTER_MASK -1
 DEFAULT_MACRO DATASET_KEYWORD_GEODATABASE_SDE_1 GEODATABASE_SDE_1
 DEFAULT_MACRO DATASET_KEYWORD_GEODATABASE_SDE_2 GEODATABASE_SDE_2
+DEFAULT_MACRO DATASET_KEYWORD_GEODATABASE_SDE_3 GEODATABASE_SDE_3
 # -------------------------------------------------------------------------
 
 GEODATABASE_SDE_1_READER_META_ATTRIBUTES fme_feature_type
+
+# -------------------------------------------------------------------------
+
+GEODATABASE_SDE_2_READER_META_ATTRIBUTES fme_feature_type
 
 # -------------------------------------------------------------------------
 
@@ -7638,15 +7950,9 @@ MACRO VISUALIZER_CREATE_SPATIAL_INDEX YES
 # -------------------------------------------------------------------------
 GEODATABASE_SDE_1_DEF GEODB.NUPLA_GNNUTZBK   geodb_type                   geodb_polygon   geodb_oid                    integer   OBJECTID                     integer   BFSNR                        smallint   GEMNAME                      char(50)   RVS_ID                       char(100)   GENEHM                       date   INKRAFT                      date   BESCHRIEB                    char(80)   QUALITAET                    smallint   VERBINDLKT                   smallint   KANTART                      char(10)   ZONENABK                     char(12)   BEZ                          char(150)   PLANBESCHR                   char(150)   BEMERK                       char(80)   DARST_C_NZ                   char(5)   DATENVERW                    char(36)   ZUSTAENDIG                   char(36)   BUNDESART                    char(10)   NZ                           float   NZ_ART                       smallint   GRUENFZ                      float   LAERMES                      smallint   FLMASS                       integer   BR_NUTZART                   char(80)   BR_NMASS                     char(80)   NZ_TYP                       char(100)   BK_TYP                       char(100)   DARST_C_BK                   char(5)   SHAPE.AREA                   double   SHAPE.LEN                    double
 # -------------------------------------------------------------------------
-GEODATABASE_SDE_1_DEF GEODB.NUPLA_ABGRZ   geodb_type                   geodb_polyline   geodb_oid                    integer   OBJECTID                     integer   BFSNR                        smallint   GEMNAME                      char(50)   ART                          char(30)   DARST_C                      char(5)   SHAPE.LEN                    double
-# -------------------------------------------------------------------------
 GEODATABASE_SDE_1_DEF GEODB.NUPLA_UELN   geodb_type                   geodb_polyline   geodb_oid                    integer   OBJECTID                     integer   BFSNR                        smallint   RVS_ID                       char(100)   GENEHM                       date   INKRAFT                      date   BESCHRIEB                    char(80)   QUALITAET                    smallint   VERBINDLKT                   smallint   KANTART                      smallint   LINIENABK                    char(12)   BEZ                          char(150)   PLANBESCHR                   char(150)   BEMERK                       char(80)   DARST_C                      char(5)   DATENVERW                    char(36)   ZUSTAENDIG                   char(36)   BUNDESART                    char(10)   NZ                           float   NZ_ART                       smallint   GRUENFZ                      float   BEDEUT                       smallint   SCHUTZG                      smallint   GW_NAT                       smallint   GW_BED                       smallint   ABSTLINKS                    float   ABSTRECHTS                   float   ABSTDEF                      smallint   STATUS                       smallint   SHAPE.LEN                    double   GEMNAME                      char(50)
 # -------------------------------------------------------------------------
 GEODATABASE_SDE_1_DEF GEODB.NUPLA_UELARMES   geodb_type                   geodb_polygon   geodb_oid                    integer   OBJECTID                     integer   BFSNR                        smallint   RVS_ID                       char(100)   GENEHM                       date   INKRAFT                      date   BESCHRIEB                    char(80)   QUALITAET                    smallint   VERBINDLKT                   smallint   KANTART                      smallint   ZONENABK                     char(12)   BEZ                          char(150)   PLANBESCHR                   char(150)   BEMERK                       char(80)   DARST_C                      char(5)   DATENVERW                    char(36)   ZUSTAENDIG                   char(36)   BUNDESART                    char(10)   SHAPE.AREA                   double   SHAPE.LEN                    double   GEMNAME                      char(50)
-# -------------------------------------------------------------------------
-GEODATABASE_SDE_1_DEF GEODB.NUPLA_GNBAUWS   geodb_type                   geodb_polygon   geodb_oid                    integer   OBJECTID                     integer   BFSNR                        smallint   GEMNAME                      char(50)   RVS_ID                       char(100)   GENEHM                       date   INKRAFT                      date   BWTYP                        smallint   QUALITAET                    smallint   GEBL                         float   GEBLU                        smallint   GEBT                         float   GEBTU                        smallint   GEBLSYM                      char(2)   GEBTSYM                      char(2)   DARST_C                      char(5)   DATENVERW                    char(36)   ZUSTAENDIG                   char(36)   SHAPE.AREA                   double   SHAPE.LEN                    double
-# -------------------------------------------------------------------------
-GEODATABASE_SDE_1_DEF GEODB.NUPLA_RVST   geodb_type                   geodb_table   geodb_oid                    integer   OBJECTID                     integer   BFSNR                        smallint   RVS_ID                       char(100)   ART                          char(40)   TITEL                        char(200)   OFFIZTITEL                   char(200)   ABKUERZUNG                   char(20)   OFFIZNR                      char(20)   DOKUMENT                     char(100)   ARTIKELNR                    char(40)   ORDNNR                       smallint   ZUSTAENDIG                   char(36)   GEMNAME                      char(50)
 # -------------------------------------------------------------------------
 GEODATABASE_SDE_1_DEF GEODB.NUPLA_UEWAABL   geodb_type                   geodb_polyline   geodb_oid                    integer   OBJECTID                     integer   BFSNR                        smallint   GENEHM                       date   INKRAFT                      date   BESCHRIEB                    char(80)   QUALITAET                    smallint   VERBINDLKT                   smallint   KANTART                      smallint   LINIENABK                    char(12)   BEZ                          char(150)   PLANBESCHR                   char(150)   BEMERK                       char(80)   DARST_C                      char(5)   DATENVERW                    char(36)   ZUSTAENDIG                   char(36)   BUNDESART                    char(10)   NZ                           float   NZ_ART                       smallint   GRUENFZ                      float   SHAPE.LEN                    double   RVS_ID                       char(100)   GEMNAME                      char(50)
 # -------------------------------------------------------------------------
@@ -7657,17 +7963,28 @@ GEODATABASE_SDE_1_DEF GEODB.NUPLA_GNGRUZO   geodb_type                   geodb_p
 GEODATABASE_SDE_1_DEF GEODB.NUPLA_GNZPPUEO   geodb_type                   geodb_polygon   geodb_oid                    integer   OBJECTID                     integer   BFSNR                        smallint   RVS_ID                       char(100)   GENEHM                       date   INKRAFT                      date   BESCHRIEB                    char(80)   QUALITAET                    smallint   VERBINDLKT                   smallint   KANTART                      char(10)   ZONENABK                     char(12)   BEZ                          char(150)   PLANBESCHR                   char(150)   BEMERK                       char(80)   DARST_C                      char(5)   DATENVERW                    char(36)   ZUSTAENDIG                   char(36)   BUNDESART                    char(10)   NZ                           float   NZ_ART                       smallint   GRUENFZ                      float   LAERMES                      smallint   FLMASS                       integer   BR_NUTZART                   char(80)   BR_NMASS                     char(80)   SHAPE.AREA                   double   SHAPE.LEN                    double   GEMNAME                      char(50)
 # -------------------------------------------------------------------------
 GEODATABASE_SDE_1_DEF GEODB.NUPLA_UEPT   geodb_type                   geodb_point   geodb_oid                    integer   OBJECTID                     integer   BFSNR                        smallint   RVS_ID                       char(100)   GENEHM                       date   INKRAFT                      date   BESCHRIEB                    char(80)   QUALITAET                    smallint   VERBINDLKT                   smallint   KANTART                      smallint   PUNKTABK                     char(12)   BEZ                          char(150)   PLANBESCHR                   char(150)   BEMERK                       char(80)   DARST_C                      char(5)   DATENVERW                    char(36)   ZUSTAENDIG                   char(36)   BUNDESART                    char(10)   ORI                          float   BEDEUT                       smallint   SCHUTZG                      smallint   GEMNAME                      char(50)
+# -------------------------------------------------------------------------
+GEODATABASE_SDE_2_DEF GEODB.NUPLA_ABGRZ   geodb_type                   geodb_polyline   geodb_oid                    integer   OBJECTID                     integer   BFSNR                        smallint   GEMNAME                      char(50)   ART                          char(30)   DARST_C                      char(5)   SHAPE.LEN                    double
+# -------------------------------------------------------------------------
+GEODATABASE_SDE_2_DEF GEODB.NUPLA_GNBAUWS   geodb_type                   geodb_polygon   geodb_oid                    integer   OBJECTID                     integer   BFSNR                        smallint   GEMNAME                      char(50)   RVS_ID                       char(100)   GENEHM                       date   INKRAFT                      date   BWTYP                        smallint   QUALITAET                    smallint   GEBL                         float   GEBLU                        smallint   GEBT                         float   GEBTU                        smallint   GEBLSYM                      char(2)   GEBTSYM                      char(2)   DARST_C                      char(5)   DATENVERW                    char(36)   ZUSTAENDIG                   char(36)   SHAPE.AREA                   double   SHAPE.LEN                    double
+# -------------------------------------------------------------------------
+GEODATABASE_SDE_2_DEF GEODB.NUPLA_RVST   geodb_type                   geodb_table   geodb_oid                    integer   OBJECTID                     integer   BFSNR                        smallint   GEMNAME                      char(50)   RVS_ID                       char(100)   ART                          char(40)   TITEL                        char(200)   OFFIZTITEL                   char(200)   ABKUERZUNG                   char(20)   OFFIZNR                      char(20)   DOKUMENT                     char(100)   ARTIKELNR                    char(40)   ORDNNR                       smallint   ZUSTAENDIG                   char(36)
 
 # -------------------------------------------------------------------------
 
-Lookup ___KnownFeatureTypes___   GEODB.NUPLA_GNBAUWS yes   GEODB.NUPLA_UEWAABL yes   GEODB.NUPLA_GNGRUZO yes   GEODB.NUPLA_UEFL yes   GEODB.NUPLA_GNNUTZBK yes   GEODB.NUPLA_UELARMES yes   GEODB.NUPLA_UELN yes   GEODB.NUPLA_GNZPPUEO yes   GEODB.NUPLA_ABGRZ yes   GEODB.NUPLA_RVST yes   GEODB.NUPLA_UEPT yes   "" no
+Lookup ___KnownFeatureTypes___   "$(DATASET_KEYWORD_GEODATABASE_SDE_1)_GEODB.NUPLA_UEFL" yes   "$(DATASET_KEYWORD_GEODATABASE_SDE_1)_GEODB.NUPLA_UELARMES" yes   "$(DATASET_KEYWORD_GEODATABASE_SDE_2)_GEODB.NUPLA_ABGRZ" yes   "$(DATASET_KEYWORD_GEODATABASE_SDE_1)_GEODB.NUPLA_UELN" yes   "$(DATASET_KEYWORD_GEODATABASE_SDE_1)_GEODB.NUPLA_GNZPPUEO" yes   "$(DATASET_KEYWORD_GEODATABASE_SDE_2)_GEODB.NUPLA_RVST" yes   "$(DATASET_KEYWORD_GEODATABASE_SDE_1)_GEODB.NUPLA_UEWAABL" yes   "$(DATASET_KEYWORD_GEODATABASE_SDE_1)_GEODB.NUPLA_GNGRUZO" yes   "$(DATASET_KEYWORD_GEODATABASE_SDE_1)_GEODB.NUPLA_UEPT" yes   "$(DATASET_KEYWORD_GEODATABASE_SDE_2)_GEODB.NUPLA_GNBAUWS" yes   "$(DATASET_KEYWORD_GEODATABASE_SDE_1)_GEODB.NUPLA_GNNUTZBK" yes   "" no
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * TestFactory   FACTORY_NAME "Unexpected Input Remover"   INPUT FEATURE_TYPE *   TEST @Lookup(___KnownFeatureTypes___,@FeatureType()) == yes   OUTPUT PASSED FEATURE_TYPE *
+FACTORY_DEF * TestFactory   FACTORY_NAME "Unexpected Input Remover"   INPUT FEATURE_TYPE *   TEST @Lookup(___KnownFeatureTypes___,@Concatenate(&multi_reader_keyword,"_",@FeatureType())) == yes   OUTPUT PASSED FEATURE_TYPE *
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * TeeFactory    FACTORY_NAME "Source -> Generic"    INPUT FEATURE_TYPE *    OUTPUT FEATURE_TYPE *       @Transform(GEODATABASE_SDE,FME_GENERIC,ALIAS_GEOMETRY)
+FACTORY_DEF * TeeFactory    FACTORY_NAME "Source -> Generic"    INPUT FEATURE_TYPE *    OUTPUT FEATURE_TYPE *       @Transform(&multi_reader_type,FME_GENERIC,ALIAS_GEOMETRY)
 DEFAULT_MACRO WB_CURRENT_CONTEXT
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRenamer_7    INPUT  FEATURE_TYPE GEODB.NUPLA_RVST    OUTPUT FEATURE_TYPE AttributeRenamer_7_OUTPUT         @RenameAttributes(ATTR_LIST_DEF_VAL, RVS_ID,RELID,"",DOKUMENT,TEXTIMWEB,"",GEMNAME,NAME,"")
+
+
 # -------------------------------------------------------------------------
 Lookup AttributeValueMapper_16_LOOKUP_TABLE   1               unbeschr<u00e4>nkt   ""              FME_NULL_VALUE   ENCODED_SUPPORTUNICODE
 
@@ -7892,10 +8209,9 @@ FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRenamer_14    INPUT  FEATURE_T
 
 
 # -------------------------------------------------------------------------
-FACTORY_DEF * AttrSetFactory FACTORY_NAME AttributeCreator_6 ATTRSET_PROPAGATE_MISSING YES INPUT  FEATURE_TYPE AttributeRenamer_14_OUTPUT ATTR KANTART Laufende<space><u00c4>nderung    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_6_OUTPUT 
-# -------------------------------------------------------------------------
+Lookup AttributeValueMapper_20_LOOKUP_TABLE   104             Beschwerde   105             sistiertes<space>Gebiet   106             Laufende<space><u00c4>nderung   107             Vor<u00fc>bergehende<space>Einschr<u00e4>nkung<space>andere   ""              ""   ENCODED_SUPPORTUNICODE
 
-FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRenamer_7    INPUT  FEATURE_TYPE GEODB.NUPLA_RVST    OUTPUT FEATURE_TYPE AttributeRenamer_7_OUTPUT         @RenameAttributes(ATTR_LIST_DEF_VAL, RVS_ID,RELID,"",DOKUMENT,TEXTIMWEB,"",GEMNAME,NAME,"")
+FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeValueMapper_20    INPUT  FEATURE_TYPE AttributeRenamer_14_OUTPUT    OUTPUT FEATURE_TYPE AttributeValueMapper_20_OUTPUT         @Lookup(AttributeValueMapper_20_LOOKUP_TABLE,"_kantart",FORWARD|ENCODED_ATTR|REAL_NULL_SUPPORT, KANTART)
 
 
 # -------------------------------------------------------------------------
@@ -7931,8 +8247,8 @@ FACTORY_DEF * PythonFactory    FACTORY_NAME PythonCaller    INPUT  FEATURE_TYPE 
 
 MACRO casemac
 INCLUDE [ if { {YES} == {NO} } { puts {MACRO casemac -nocase}} ]
-Tcl2 proc StringReplacer_5869020d_ddf0_4032_9dc9_5aa8684673b97_replacer { findText replaceText invalidValue} {     set attrs [split \"KANTZONE\" {,}];     set findValue [FME_DecodeText $findText];     set replaceValue [FME_DecodeText $replaceText];     foreach attr $attrs {       set attrVal [FME_GetAttribute $attr];       set length [string length $attrVal];       set noMatch true;       if {$length > 0} {          if {{NO} == {YES}} {             set newAttrVal [regsub $(casemac) -all -- $findValue $attrVal $replaceValue];          } else {             set newAttrVal [string map $(casemac) [list $findValue $replaceValue] $attrVal];          };          if { $newAttrVal ne $attrVal } {             set noMatch false;             FME_SetAttribute $attr $newAttrVal;          };       };       if {$noMatch} {          if { $invalidValue == {FME_NULL_VALUE} } {             FME_SetAttributeNull $attr;          } elseif { $invalidValue != {_FME_NO_OP_} }  {             FME_SetAttribute $attr [FME_DecodeText $invalidValue];          };       };     }; }
-FACTORY_DEF * TeeFactory    FACTORY_NAME StringReplacer    INPUT  FEATURE_TYPE PythonCaller_OUTPUT    OUTPUT FEATURE_TYPE StringReplacer_OUTPUT         @Tcl2("StringReplacer_5869020d_ddf0_4032_9dc9_5aa8684673b97_replacer {Uebriges<space>Gebiet} {uebriges<space>Gebiet} {_FME_NO_OP_}")
+Tcl2 proc StringReplacer_482aa470_3254_443d_a26a_4fdd4e0499760_replacer { findText replaceText invalidValue} {     set attrs [split \"KANTZONE\" {,}];     set findValue [FME_DecodeText $findText];     set replaceValue [FME_DecodeText $replaceText];     foreach attr $attrs {       set attrVal [FME_GetAttribute $attr];       set length [string length $attrVal];       set noMatch true;       if {$length > 0} {          if {{NO} == {YES}} {             set newAttrVal [regsub $(casemac) -all -- $findValue $attrVal $replaceValue];          } else {             set newAttrVal [string map $(casemac) [list $findValue $replaceValue] $attrVal];          };          if { $newAttrVal ne $attrVal } {             set noMatch false;             FME_SetAttribute $attr $newAttrVal;          };       };       if {$noMatch} {          if { $invalidValue == {FME_NULL_VALUE} } {             FME_SetAttributeNull $attr;          } elseif { $invalidValue != {_FME_NO_OP_} }  {             FME_SetAttribute $attr [FME_DecodeText $invalidValue];          };       };     }; }
+FACTORY_DEF * TeeFactory    FACTORY_NAME StringReplacer    INPUT  FEATURE_TYPE PythonCaller_OUTPUT    OUTPUT FEATURE_TYPE StringReplacer_OUTPUT         @Tcl2("StringReplacer_482aa470_3254_443d_a26a_4fdd4e0499760_replacer {Uebriges<space>Gebiet} {uebriges<space>Gebiet} {_FME_NO_OP_}")
 
 # -------------------------------------------------------------------------
 Lookup AttributeValueMapper_LOOKUP_TABLE   0               1   1               2   2               3   3               4   4               5   5               6   ""              ""   ENCODED_SUPPORTUNICODE
@@ -7976,16 +8292,16 @@ FACTORY_DEF * TeeFactory    FACTORY_NAME "AttributeValueMapper_6_OUTPUT -> GEODB
 FACTORY_DEF * TeeFactory    FACTORY_NAME "AttributeCreator_3_OUTPUT -> GEODB.NPL_WEWRF Correlator"    INPUT FEATURE_TYPE AttributeCreator_3_OUTPUT    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 0       @Transform(FME_GENERIC,GEODATABASE_SDE)       @SupplyAttributes(ENCODED,__wb_out_feat_type__,GEODB.NPL_WEWRF)
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * TeeFactory    FACTORY_NAME "AttributeCreator_5_OUTPUT -> GEODB.NPL_GNGU Correlator"    INPUT FEATURE_TYPE AttributeCreator_5_OUTPUT    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 0       @Transform(FME_GENERIC,GEODATABASE_SDE)       @SupplyAttributes(ENCODED,__wb_out_feat_type__,GEODB.NPL_GNGU)
+FACTORY_DEF * TeeFactory    FACTORY_NAME "Tester_FAILED -> GEODB.NPL_GNGU Correlator"    INPUT FEATURE_TYPE Tester_FAILED    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 0       @Transform(FME_GENERIC,GEODATABASE_SDE)       @SupplyAttributes(ENCODED,__wb_out_feat_type__,GEODB.NPL_GNGU)
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * TeeFactory    FACTORY_NAME "Tester_FAILED -> GEODB.NPL_GNGU Correlator"    INPUT FEATURE_TYPE Tester_FAILED    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 0       @Transform(FME_GENERIC,GEODATABASE_SDE)       @SupplyAttributes(ENCODED,__wb_out_feat_type__,GEODB.NPL_GNGU)
+FACTORY_DEF * TeeFactory    FACTORY_NAME "AttributeCreator_5_OUTPUT -> GEODB.NPL_GNGU Correlator"    INPUT FEATURE_TYPE AttributeCreator_5_OUTPUT    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 0       @Transform(FME_GENERIC,GEODATABASE_SDE)       @SupplyAttributes(ENCODED,__wb_out_feat_type__,GEODB.NPL_GNGU)
 # -------------------------------------------------------------------------
 
 FACTORY_DEF * TeeFactory    FACTORY_NAME "AttributeValueMapper_8_OUTPUT -> GEODB.NPL_NHSF Correlator"    INPUT FEATURE_TYPE AttributeValueMapper_8_OUTPUT    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 0       @Transform(FME_GENERIC,GEODATABASE_SDE)       @SupplyAttributes(ENCODED,__wb_out_feat_type__,GEODB.NPL_NHSF)
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * TeeFactory    FACTORY_NAME "GEODB.NUPLA_ABGRZ -> GEODB.NPL_ABGRENZ Correlator"    INPUT FEATURE_TYPE GEODB.NUPLA_ABGRZ    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 0       @Transform(FME_GENERIC,GEODATABASE_SDE)       @CopyAttributes(ENCODED,NAME,GEMNAME)       @SupplyAttributes(ENCODED,__wb_out_feat_type__,GEODB.NPL_ABGRENZ)
+FACTORY_DEF * TeeFactory    FACTORY_NAME "GEODB.NUPLA_ABGRZ -> GEODB.NPL_ABGRENZ Correlator"    INPUT FEATURE_TYPE GEODB.NUPLA_ABGRZ    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 0       @Transform(FME_GENERIC,GEODATABASE_SDE)       @SupplyAttributes(ENCODED,__wb_out_feat_type__,GEODB.NPL_ABGRENZ)
 # -------------------------------------------------------------------------
 
 FACTORY_DEF * TeeFactory    FACTORY_NAME "AttributeValueMapper_11_OUTPUT -> GEODB.NPL_GEGEWL Correlator"    INPUT FEATURE_TYPE AttributeValueMapper_11_OUTPUT    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 0       @Transform(FME_GENERIC,GEODATABASE_SDE)       @SupplyAttributes(ENCODED,__wb_out_feat_type__,GEODB.NPL_GEGEWL)
@@ -8015,7 +8331,7 @@ FACTORY_DEF * TeeFactory    FACTORY_NAME "TestFilter_3_UEPROJ -> GEODB.NPL_UEPRO
 FACTORY_DEF * TeeFactory    FACTORY_NAME "AttributeValueMapper_15_OUTPUT -> GEODB.NPL_NHSP Correlator"    INPUT FEATURE_TYPE AttributeValueMapper_15_OUTPUT    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 0       @Transform(FME_GENERIC,GEODATABASE_SDE)       @SupplyAttributes(ENCODED,__wb_out_feat_type__,GEODB.NPL_NHSP)
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * TeeFactory    FACTORY_NAME "AttributeCreator_6_OUTPUT -> GEODB.NPL_VEFE Correlator"    INPUT FEATURE_TYPE AttributeCreator_6_OUTPUT    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 0       @Transform(FME_GENERIC,GEODATABASE_SDE)       @SupplyAttributes(ENCODED,__wb_out_feat_type__,GEODB.NPL_VEFE)
+FACTORY_DEF * TeeFactory    FACTORY_NAME "AttributeValueMapper_20_OUTPUT -> GEODB.NPL_VEFE Correlator"    INPUT FEATURE_TYPE AttributeValueMapper_20_OUTPUT    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 0       @Transform(FME_GENERIC,GEODATABASE_SDE)       @SupplyAttributes(ENCODED,__wb_out_feat_type__,GEODB.NPL_VEFE)
 # -------------------------------------------------------------------------
 
 FACTORY_DEF * TeeFactory    FACTORY_NAME "AttributeRenamer_4_OUTPUT -> GEODB.NPL_UELAERM Correlator"    INPUT FEATURE_TYPE AttributeRenamer_4_OUTPUT    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 0       @Transform(FME_GENERIC,GEODATABASE_SDE)       @SupplyAttributes(ENCODED,__wb_out_feat_type__,GEODB.NPL_UELAERM)
@@ -8030,43 +8346,43 @@ FACTORY_DEF * TestFactory   FACTORY_NAME "Final Output Feature Type Router"   IN
 FACTORY_DEF * TeeFactory   FACTORY_NAME "Final Output Nuker"   INPUT FEATURE_TYPE __nuke_me__
 
 # -------------------------------------------------------------------------
-GEODATABASE_SDE_2_DEF GEODB.NPL_GEFF   geodb_type                   geodb_polygon   GEODB_DROP_TABLE             NO   GEODB_TRUNCATE_TABLE         NO   GEODB_OBJECT_ID_NAME         OBJECTID   GEODB_OBJECT_ID_ALIAS        OBJECTID   GEODB_SHAPE_NAME             SHAPE   GEODB_SHAPE_ALIAS            SHAPE   GEODB_CONFIG_KEYWORD         DEFAULTS   GEODB_FEATURE_DATASET        ""   GEODB_GRID{1}                ""   GEODB_AVG_NUM_POINTS         ""   GEODB_XORIGIN                ""   GEODB_YORIGIN                ""   GEODB_XYSCALE                ""   GEODB_HAS_Z_VALUES           ""   GEODB_ZORIGIN                ""   GEODB_ZSCALE                 ""   GEODB_HAS_MEASURES           ""   GEODB_MEASURES_ORIGIN        ""   GEODB_MEASURES_SCALE         ""   GEODB_ANNO_REFERENCE_SCALE   ""   BFSNR                        smallint   NAME                         char(31)   REL_ID                       char(100)   VERBINDLKT                   char(100)   ART                          char(100)   STUFE                        char(100)   BESCHRIEB                    char(80)
+GEODATABASE_SDE_3_DEF GEODB.NPL_GEFF   geodb_type                   geodb_polygon   GEODB_DROP_TABLE             NO   GEODB_TRUNCATE_TABLE         NO   GEODB_OBJECT_ID_NAME         OBJECTID   GEODB_OBJECT_ID_ALIAS        OBJECTID   GEODB_SHAPE_NAME             SHAPE   GEODB_SHAPE_ALIAS            SHAPE   GEODB_CONFIG_KEYWORD         DEFAULTS   GEODB_FEATURE_DATASET        ""   GEODB_GRID{1}                ""   GEODB_AVG_NUM_POINTS         ""   GEODB_XORIGIN                ""   GEODB_YORIGIN                ""   GEODB_XYSCALE                ""   GEODB_HAS_Z_VALUES           ""   GEODB_ZORIGIN                ""   GEODB_ZSCALE                 ""   GEODB_HAS_MEASURES           ""   GEODB_MEASURES_ORIGIN        ""   GEODB_MEASURES_SCALE         ""   GEODB_ANNO_REFERENCE_SCALE   ""   BFSNR                        smallint   NAME                         char(31)   REL_ID                       char(100)   VERBINDLKT                   char(100)   ART                          char(100)   STUFE                        char(100)   BESCHRIEB                    char(80)
 # -------------------------------------------------------------------------
-GEODATABASE_SDE_2_DEF GEODB.NPL_GNBAUW   geodb_type                   geodb_polygon   GEODB_DROP_TABLE             NO   GEODB_TRUNCATE_TABLE         NO   GEODB_OBJECT_ID_NAME         OBJECTID   GEODB_OBJECT_ID_ALIAS        OBJECTID   GEODB_SHAPE_NAME             SHAPE   GEODB_SHAPE_ALIAS            SHAPE   GEODB_CONFIG_KEYWORD         DEFAULTS   GEODB_FEATURE_DATASET        ""   GEODB_GRID{1}                ""   GEODB_AVG_NUM_POINTS         ""   GEODB_XORIGIN                ""   GEODB_YORIGIN                ""   GEODB_XYSCALE                ""   GEODB_HAS_Z_VALUES           ""   GEODB_ZORIGIN                ""   GEODB_ZSCALE                 ""   GEODB_HAS_MEASURES           ""   GEODB_MEASURES_ORIGIN        ""   GEODB_MEASURES_SCALE         ""   GEODB_ANNO_REFERENCE_SCALE   ""   BFSNR                        smallint   NAME                         char(31)   REL_ID                       char(100)   GEBLAENGE                    smallint   GEBLANGUNB                   char(20)   GEBLANGSYM                   char(2)   GEBTIEFE                     smallint   GEBTIEFUNB                   char(20)   GEBTIEFSYM                   char(2)   BAUWEISTYP                   char(100)
+GEODATABASE_SDE_3_DEF GEODB.NPL_GNBAUW   geodb_type                   geodb_polygon   GEODB_DROP_TABLE             NO   GEODB_TRUNCATE_TABLE         NO   GEODB_OBJECT_ID_NAME         OBJECTID   GEODB_OBJECT_ID_ALIAS        OBJECTID   GEODB_SHAPE_NAME             SHAPE   GEODB_SHAPE_ALIAS            SHAPE   GEODB_CONFIG_KEYWORD         DEFAULTS   GEODB_FEATURE_DATASET        ""   GEODB_GRID{1}                ""   GEODB_AVG_NUM_POINTS         ""   GEODB_XORIGIN                ""   GEODB_YORIGIN                ""   GEODB_XYSCALE                ""   GEODB_HAS_Z_VALUES           ""   GEODB_ZORIGIN                ""   GEODB_ZSCALE                 ""   GEODB_HAS_MEASURES           ""   GEODB_MEASURES_ORIGIN        ""   GEODB_MEASURES_SCALE         ""   GEODB_ANNO_REFERENCE_SCALE   ""   BFSNR                        smallint   NAME                         char(31)   REL_ID                       char(100)   GEBLAENGE                    smallint   GEBLANGUNB                   char(20)   GEBLANGSYM                   char(2)   GEBTIEFE                     smallint   GEBTIEFUNB                   char(20)   GEBTIEFSYM                   char(2)   BAUWEISTYP                   char(100)
 # -------------------------------------------------------------------------
-GEODATABASE_SDE_2_DEF GEODB.NPL_UEUL   geodb_type                   geodb_polyline   GEODB_DROP_TABLE             NO   GEODB_TRUNCATE_TABLE         NO   GEODB_OBJECT_ID_NAME         OBJECTID   GEODB_OBJECT_ID_ALIAS        OBJECTID   GEODB_SHAPE_NAME             SHAPE   GEODB_SHAPE_ALIAS            SHAPE   GEODB_CONFIG_KEYWORD         DEFAULTS   GEODB_FEATURE_DATASET        ""   GEODB_GRID{1}                ""   GEODB_AVG_NUM_POINTS         ""   GEODB_XORIGIN                ""   GEODB_YORIGIN                ""   GEODB_XYSCALE                ""   GEODB_HAS_Z_VALUES           ""   GEODB_ZORIGIN                ""   GEODB_ZSCALE                 ""   GEODB_HAS_MEASURES           ""   GEODB_MEASURES_ORIGIN        ""   GEODB_MEASURES_SCALE         ""   GEODB_ANNO_REFERENCE_SCALE   ""   BFSNR                        smallint   NAME                         char(31)   REL_ID                       char(100)   VERBINDLKT                   char(100)   KANTART                      char(100)   LINIENABK                    char(12)   LINIENCODE                   char(12)   BESCHRIEB                    char(80)   GENEHMDAT                    date   PLANBESCHR                   char(30)
+GEODATABASE_SDE_3_DEF GEODB.NPL_UEUL   geodb_type                   geodb_polyline   GEODB_DROP_TABLE             NO   GEODB_TRUNCATE_TABLE         NO   GEODB_OBJECT_ID_NAME         OBJECTID   GEODB_OBJECT_ID_ALIAS        OBJECTID   GEODB_SHAPE_NAME             SHAPE   GEODB_SHAPE_ALIAS            SHAPE   GEODB_CONFIG_KEYWORD         DEFAULTS   GEODB_FEATURE_DATASET        ""   GEODB_GRID{1}                ""   GEODB_AVG_NUM_POINTS         ""   GEODB_XORIGIN                ""   GEODB_YORIGIN                ""   GEODB_XYSCALE                ""   GEODB_HAS_Z_VALUES           ""   GEODB_ZORIGIN                ""   GEODB_ZSCALE                 ""   GEODB_HAS_MEASURES           ""   GEODB_MEASURES_ORIGIN        ""   GEODB_MEASURES_SCALE         ""   GEODB_ANNO_REFERENCE_SCALE   ""   BFSNR                        smallint   NAME                         char(31)   REL_ID                       char(100)   VERBINDLKT                   char(100)   KANTART                      char(100)   LINIENABK                    char(12)   LINIENCODE                   char(12)   BESCHRIEB                    char(80)   GENEHMDAT                    date   PLANBESCHR                   char(30)
 # -------------------------------------------------------------------------
 # -------------------------------------------------------------------------
-GEODATABASE_SDE_2_DEF GEODB.NPL_GEGEWF   geodb_type                   geodb_polygon   GEODB_DROP_TABLE             NO   GEODB_TRUNCATE_TABLE         NO   GEODB_OBJECT_ID_NAME         OBJECTID   GEODB_OBJECT_ID_ALIAS        OBJECTID   GEODB_SHAPE_NAME             SHAPE   GEODB_SHAPE_ALIAS            SHAPE   GEODB_CONFIG_KEYWORD         DEFAULTS   GEODB_FEATURE_DATASET        ""   GEODB_GRID{1}                ""   GEODB_AVG_NUM_POINTS         ""   GEODB_XORIGIN                ""   GEODB_YORIGIN                ""   GEODB_XYSCALE                ""   GEODB_HAS_Z_VALUES           ""   GEODB_ZORIGIN                ""   GEODB_ZSCALE                 ""   GEODB_HAS_MEASURES           ""   GEODB_MEASURES_ORIGIN        ""   GEODB_MEASURES_SCALE         ""   GEODB_ANNO_REFERENCE_SCALE   ""   BFSNR                        smallint   NAME                         char(31)   REL_ID                       char(100)   VERBINDLKT                   char(100)   ART                          char(100)   BESCHRIEB                    char(80)
+GEODATABASE_SDE_3_DEF GEODB.NPL_GEGEWF   geodb_type                   geodb_polygon   GEODB_DROP_TABLE             NO   GEODB_TRUNCATE_TABLE         NO   GEODB_OBJECT_ID_NAME         OBJECTID   GEODB_OBJECT_ID_ALIAS        OBJECTID   GEODB_SHAPE_NAME             SHAPE   GEODB_SHAPE_ALIAS            SHAPE   GEODB_CONFIG_KEYWORD         DEFAULTS   GEODB_FEATURE_DATASET        ""   GEODB_GRID{1}                ""   GEODB_AVG_NUM_POINTS         ""   GEODB_XORIGIN                ""   GEODB_YORIGIN                ""   GEODB_XYSCALE                ""   GEODB_HAS_Z_VALUES           ""   GEODB_ZORIGIN                ""   GEODB_ZSCALE                 ""   GEODB_HAS_MEASURES           ""   GEODB_MEASURES_ORIGIN        ""   GEODB_MEASURES_SCALE         ""   GEODB_ANNO_REFERENCE_SCALE   ""   BFSNR                        smallint   NAME                         char(31)   REL_ID                       char(100)   VERBINDLKT                   char(100)   ART                          char(100)   BESCHRIEB                    char(80)
 # -------------------------------------------------------------------------
-GEODATABASE_SDE_2_DEF GEODB.NPL_WEWRF   geodb_type                   geodb_polygon   GEODB_DROP_TABLE             NO   GEODB_TRUNCATE_TABLE         NO   GEODB_OBJECT_ID_NAME         OBJECTID   GEODB_OBJECT_ID_ALIAS        OBJECTID   GEODB_SHAPE_NAME             SHAPE   GEODB_SHAPE_ALIAS            SHAPE   GEODB_CONFIG_KEYWORD         DEFAULTS   GEODB_FEATURE_DATASET        ""   GEODB_GRID{1}                ""   GEODB_AVG_NUM_POINTS         ""   GEODB_XORIGIN                ""   GEODB_YORIGIN                ""   GEODB_XYSCALE                ""   GEODB_HAS_Z_VALUES           ""   GEODB_ZORIGIN                ""   GEODB_ZSCALE                 ""   GEODB_HAS_MEASURES           ""   GEODB_MEASURES_ORIGIN        ""   GEODB_MEASURES_SCALE         ""   GEODB_ANNO_REFERENCE_SCALE   ""   BFSNR                        smallint   NAME                         char(31)   REL_ID                       char(100)   VERBINDLKT                   char(100)   NAMEWEG                      char(80)   ART                          char(100)   BESCHRIEB                    char(80)
+GEODATABASE_SDE_3_DEF GEODB.NPL_WEWRF   geodb_type                   geodb_polygon   GEODB_DROP_TABLE             NO   GEODB_TRUNCATE_TABLE         NO   GEODB_OBJECT_ID_NAME         OBJECTID   GEODB_OBJECT_ID_ALIAS        OBJECTID   GEODB_SHAPE_NAME             SHAPE   GEODB_SHAPE_ALIAS            SHAPE   GEODB_CONFIG_KEYWORD         DEFAULTS   GEODB_FEATURE_DATASET        ""   GEODB_GRID{1}                ""   GEODB_AVG_NUM_POINTS         ""   GEODB_XORIGIN                ""   GEODB_YORIGIN                ""   GEODB_XYSCALE                ""   GEODB_HAS_Z_VALUES           ""   GEODB_ZORIGIN                ""   GEODB_ZSCALE                 ""   GEODB_HAS_MEASURES           ""   GEODB_MEASURES_ORIGIN        ""   GEODB_MEASURES_SCALE         ""   GEODB_ANNO_REFERENCE_SCALE   ""   BFSNR                        smallint   NAME                         char(31)   REL_ID                       char(100)   VERBINDLKT                   char(100)   NAMEWEG                      char(80)   ART                          char(100)   BESCHRIEB                    char(80)
 # -------------------------------------------------------------------------
-GEODATABASE_SDE_2_DEF GEODB.NPL_GNGU   geodb_type                   geodb_polygon   GEODB_DROP_TABLE             NO   GEODB_TRUNCATE_TABLE         NO   GEODB_OBJECT_ID_NAME         OBJECTID   GEODB_OBJECT_ID_ALIAS        OBJECTID   GEODB_SHAPE_NAME             SHAPE   GEODB_SHAPE_ALIAS            SHAPE   GEODB_CONFIG_KEYWORD         DEFAULTS   GEODB_FEATURE_DATASET        ""   GEODB_GRID{1}                ""   GEODB_AVG_NUM_POINTS         ""   GEODB_XORIGIN                ""   GEODB_YORIGIN                ""   GEODB_XYSCALE                ""   GEODB_HAS_Z_VALUES           ""   GEODB_ZORIGIN                ""   GEODB_ZSCALE                 ""   GEODB_HAS_MEASURES           ""   GEODB_MEASURES_ORIGIN        ""   GEODB_MEASURES_SCALE         ""   GEODB_ANNO_REFERENCE_SCALE   ""   BFSNR                        smallint   NAME                         char(31)   REL_ID                       char(100)   VERBINDLKT                   char(100)   ZONENABK                     char(12)   ZONENCODE                    char(12)   ZONENNAME                    char(60)   KANTZONE                     char(100)   AZ                           float   AZART                        char(40)
+GEODATABASE_SDE_3_DEF GEODB.NPL_GNGU   geodb_type                   geodb_polygon   GEODB_DROP_TABLE             NO   GEODB_TRUNCATE_TABLE         NO   GEODB_OBJECT_ID_NAME         OBJECTID   GEODB_OBJECT_ID_ALIAS        OBJECTID   GEODB_SHAPE_NAME             SHAPE   GEODB_SHAPE_ALIAS            SHAPE   GEODB_CONFIG_KEYWORD         DEFAULTS   GEODB_FEATURE_DATASET        ""   GEODB_GRID{1}                ""   GEODB_AVG_NUM_POINTS         ""   GEODB_XORIGIN                ""   GEODB_YORIGIN                ""   GEODB_XYSCALE                ""   GEODB_HAS_Z_VALUES           ""   GEODB_ZORIGIN                ""   GEODB_ZSCALE                 ""   GEODB_HAS_MEASURES           ""   GEODB_MEASURES_ORIGIN        ""   GEODB_MEASURES_SCALE         ""   GEODB_ANNO_REFERENCE_SCALE   ""   BFSNR                        smallint   NAME                         char(31)   REL_ID                       char(100)   VERBINDLKT                   char(100)   ZONENABK                     char(12)   ZONENCODE                    char(12)   ZONENNAME                    char(60)   KANTZONE                     char(100)   AZ                           float   AZART                        char(40)
 # -------------------------------------------------------------------------
-GEODATABASE_SDE_2_DEF GEODB.NPL_NHSF   geodb_type                   geodb_polygon   GEODB_DROP_TABLE             NO   GEODB_TRUNCATE_TABLE         NO   GEODB_OBJECT_ID_NAME         OBJECTID   GEODB_OBJECT_ID_ALIAS        OBJECTID   GEODB_SHAPE_NAME             SHAPE   GEODB_SHAPE_ALIAS            SHAPE   GEODB_CONFIG_KEYWORD         DEFAULTS   GEODB_FEATURE_DATASET        ""   GEODB_GRID{1}                ""   GEODB_AVG_NUM_POINTS         ""   GEODB_XORIGIN                ""   GEODB_YORIGIN                ""   GEODB_XYSCALE                ""   GEODB_HAS_Z_VALUES           ""   GEODB_ZORIGIN                ""   GEODB_ZSCALE                 ""   GEODB_HAS_MEASURES           ""   GEODB_MEASURES_ORIGIN        ""   GEODB_MEASURES_SCALE         ""   GEODB_ANNO_REFERENCE_SCALE   ""   BFSNR                        smallint   NAME                         char(31)   REL_ID                       char(100)   VERBINDLKT                   char(100)   KANTART                      char(100)   SCHUTZGRAD                   char(100)   BESCHRIEB                    char(80)
+GEODATABASE_SDE_3_DEF GEODB.NPL_NHSF   geodb_type                   geodb_polygon   GEODB_DROP_TABLE             NO   GEODB_TRUNCATE_TABLE         NO   GEODB_OBJECT_ID_NAME         OBJECTID   GEODB_OBJECT_ID_ALIAS        OBJECTID   GEODB_SHAPE_NAME             SHAPE   GEODB_SHAPE_ALIAS            SHAPE   GEODB_CONFIG_KEYWORD         DEFAULTS   GEODB_FEATURE_DATASET        ""   GEODB_GRID{1}                ""   GEODB_AVG_NUM_POINTS         ""   GEODB_XORIGIN                ""   GEODB_YORIGIN                ""   GEODB_XYSCALE                ""   GEODB_HAS_Z_VALUES           ""   GEODB_ZORIGIN                ""   GEODB_ZSCALE                 ""   GEODB_HAS_MEASURES           ""   GEODB_MEASURES_ORIGIN        ""   GEODB_MEASURES_SCALE         ""   GEODB_ANNO_REFERENCE_SCALE   ""   BFSNR                        smallint   NAME                         char(31)   REL_ID                       char(100)   VERBINDLKT                   char(100)   KANTART                      char(100)   SCHUTZGRAD                   char(100)   BESCHRIEB                    char(80)
 # -------------------------------------------------------------------------
-GEODATABASE_SDE_2_DEF GEODB.NPL_ABGRENZ   geodb_type                   geodb_polyline   GEODB_DROP_TABLE             NO   GEODB_TRUNCATE_TABLE         NO   GEODB_OBJECT_ID_NAME         OBJECTID   GEODB_OBJECT_ID_ALIAS        OBJECTID   GEODB_SHAPE_NAME             SHAPE   GEODB_SHAPE_ALIAS            SHAPE   GEODB_CONFIG_KEYWORD         DEFAULTS   GEODB_FEATURE_DATASET        ""   GEODB_GRID{1}                ""   GEODB_AVG_NUM_POINTS         ""   GEODB_XORIGIN                ""   GEODB_YORIGIN                ""   GEODB_XYSCALE                ""   GEODB_HAS_Z_VALUES           ""   GEODB_ZORIGIN                ""   GEODB_ZSCALE                 ""   GEODB_HAS_MEASURES           ""   GEODB_MEASURES_ORIGIN        ""   GEODB_MEASURES_SCALE         ""   GEODB_ANNO_REFERENCE_SCALE   ""   BFSNR                        smallint   NAME                         char(31)   ART                          char(30)
+GEODATABASE_SDE_3_DEF GEODB.NPL_ABGRENZ   geodb_type                   geodb_polyline   GEODB_DROP_TABLE             NO   GEODB_TRUNCATE_TABLE         NO   GEODB_OBJECT_ID_NAME         OBJECTID   GEODB_OBJECT_ID_ALIAS        OBJECTID   GEODB_SHAPE_NAME             SHAPE   GEODB_SHAPE_ALIAS            SHAPE   GEODB_CONFIG_KEYWORD         DEFAULTS   GEODB_FEATURE_DATASET        ""   GEODB_GRID{1}                ""   GEODB_AVG_NUM_POINTS         ""   GEODB_XORIGIN                ""   GEODB_YORIGIN                ""   GEODB_XYSCALE                ""   GEODB_HAS_Z_VALUES           ""   GEODB_ZORIGIN                ""   GEODB_ZSCALE                 ""   GEODB_HAS_MEASURES           ""   GEODB_MEASURES_ORIGIN        ""   GEODB_MEASURES_SCALE         ""   GEODB_ANNO_REFERENCE_SCALE   ""   BFSNR                        smallint   NAME                         char(31)   ART                          char(30)
 # -------------------------------------------------------------------------
-GEODATABASE_SDE_2_DEF GEODB.NPL_GEGEWL   geodb_type                   geodb_polyline   GEODB_DROP_TABLE             NO   GEODB_TRUNCATE_TABLE         NO   GEODB_OBJECT_ID_NAME         OBJECTID   GEODB_OBJECT_ID_ALIAS        OBJECTID   GEODB_SHAPE_NAME             SHAPE   GEODB_SHAPE_ALIAS            SHAPE   GEODB_CONFIG_KEYWORD         DEFAULTS   GEODB_FEATURE_DATASET        ""   GEODB_GRID{1}                ""   GEODB_AVG_NUM_POINTS         ""   GEODB_XORIGIN                ""   GEODB_YORIGIN                ""   GEODB_XYSCALE                ""   GEODB_HAS_Z_VALUES           ""   GEODB_ZORIGIN                ""   GEODB_ZSCALE                 ""   GEODB_HAS_MEASURES           ""   GEODB_MEASURES_ORIGIN        ""   GEODB_MEASURES_SCALE         ""   GEODB_ANNO_REFERENCE_SCALE   ""   BFSNR                        smallint   NAME                         char(31)   REL_ID                       char(100)   VERBINDLKT                   char(100)   ART                          char(100)   BESCHRIEB                    char(80)
+GEODATABASE_SDE_3_DEF GEODB.NPL_GEGEWL   geodb_type                   geodb_polyline   GEODB_DROP_TABLE             NO   GEODB_TRUNCATE_TABLE         NO   GEODB_OBJECT_ID_NAME         OBJECTID   GEODB_OBJECT_ID_ALIAS        OBJECTID   GEODB_SHAPE_NAME             SHAPE   GEODB_SHAPE_ALIAS            SHAPE   GEODB_CONFIG_KEYWORD         DEFAULTS   GEODB_FEATURE_DATASET        ""   GEODB_GRID{1}                ""   GEODB_AVG_NUM_POINTS         ""   GEODB_XORIGIN                ""   GEODB_YORIGIN                ""   GEODB_XYSCALE                ""   GEODB_HAS_Z_VALUES           ""   GEODB_ZORIGIN                ""   GEODB_ZSCALE                 ""   GEODB_HAS_MEASURES           ""   GEODB_MEASURES_ORIGIN        ""   GEODB_MEASURES_SCALE         ""   GEODB_ANNO_REFERENCE_SCALE   ""   BFSNR                        smallint   NAME                         char(31)   REL_ID                       char(100)   VERBINDLKT                   char(100)   ART                          char(100)   BESCHRIEB                    char(80)
 # -------------------------------------------------------------------------
-GEODATABASE_SDE_2_DEF GEODB.NPL_WEWRL   geodb_type                   geodb_polyline   GEODB_DROP_TABLE             NO   GEODB_TRUNCATE_TABLE         NO   GEODB_OBJECT_ID_NAME         OBJECTID   GEODB_OBJECT_ID_ALIAS        OBJECTID   GEODB_SHAPE_NAME             SHAPE   GEODB_SHAPE_ALIAS            SHAPE   GEODB_CONFIG_KEYWORD         DEFAULTS   GEODB_FEATURE_DATASET        ""   GEODB_GRID{1}                ""   GEODB_AVG_NUM_POINTS         ""   GEODB_XORIGIN                ""   GEODB_YORIGIN                ""   GEODB_XYSCALE                ""   GEODB_HAS_Z_VALUES           ""   GEODB_ZORIGIN                ""   GEODB_ZSCALE                 ""   GEODB_HAS_MEASURES           ""   GEODB_MEASURES_ORIGIN        ""   GEODB_MEASURES_SCALE         ""   GEODB_ANNO_REFERENCE_SCALE   ""   BFSNR                        smallint   NAME                         char(31)   REL_ID                       char(100)   VERBINDLKT                   char(100)   NAMEWEG                      char(80)   ART                          char(100)   BESCHRIEB                    char(80)
+GEODATABASE_SDE_3_DEF GEODB.NPL_WEWRL   geodb_type                   geodb_polyline   GEODB_DROP_TABLE             NO   GEODB_TRUNCATE_TABLE         NO   GEODB_OBJECT_ID_NAME         OBJECTID   GEODB_OBJECT_ID_ALIAS        OBJECTID   GEODB_SHAPE_NAME             SHAPE   GEODB_SHAPE_ALIAS            SHAPE   GEODB_CONFIG_KEYWORD         DEFAULTS   GEODB_FEATURE_DATASET        ""   GEODB_GRID{1}                ""   GEODB_AVG_NUM_POINTS         ""   GEODB_XORIGIN                ""   GEODB_YORIGIN                ""   GEODB_XYSCALE                ""   GEODB_HAS_Z_VALUES           ""   GEODB_ZORIGIN                ""   GEODB_ZSCALE                 ""   GEODB_HAS_MEASURES           ""   GEODB_MEASURES_ORIGIN        ""   GEODB_MEASURES_SCALE         ""   GEODB_ANNO_REFERENCE_SCALE   ""   BFSNR                        smallint   NAME                         char(31)   REL_ID                       char(100)   VERBINDLKT                   char(100)   NAMEWEG                      char(80)   ART                          char(100)   BESCHRIEB                    char(80)
 # -------------------------------------------------------------------------
-GEODATABASE_SDE_2_DEF GEODB.NPL_RVT   geodb_type                   geodb_table   GEODB_DROP_TABLE             NO   GEODB_TRUNCATE_TABLE         NO   GEODB_OBJECT_ID_NAME         OBJECTID   GEODB_OBJECT_ID_ALIAS        OBJECTID   GEODB_SHAPE_NAME             SHAPE   GEODB_SHAPE_ALIAS            SHAPE   GEODB_CONFIG_KEYWORD         DEFAULTS   GEODB_FEATURE_DATASET        ""   GEODB_GRID{1}                ""   GEODB_AVG_NUM_POINTS         ""   GEODB_XORIGIN                ""   GEODB_YORIGIN                ""   GEODB_XYSCALE                ""   GEODB_HAS_Z_VALUES           ""   GEODB_ZORIGIN                ""   GEODB_ZSCALE                 ""   GEODB_HAS_MEASURES           ""   GEODB_MEASURES_ORIGIN        ""   GEODB_MEASURES_SCALE         ""   GEODB_ANNO_REFERENCE_SCALE   ""   BFSNR                        smallint   NAME                         char(31)   RELID                        char(100)   ARTIKELNR                    char(40)   ART                          char(50)   TEXTIMWEB                    char(200)   TITEL                        char(200)   OFFIZTITEL                   char(200)   ABKUERZUNG                   char(10)   OFFIZNR                      char(20)
+GEODATABASE_SDE_3_DEF GEODB.NPL_RVT   geodb_type                   geodb_table   GEODB_DROP_TABLE             NO   GEODB_TRUNCATE_TABLE         NO   GEODB_OBJECT_ID_NAME         OBJECTID   GEODB_OBJECT_ID_ALIAS        OBJECTID   GEODB_SHAPE_NAME             SHAPE   GEODB_SHAPE_ALIAS            SHAPE   GEODB_CONFIG_KEYWORD         DEFAULTS   GEODB_FEATURE_DATASET        ""   GEODB_GRID{1}                ""   GEODB_AVG_NUM_POINTS         ""   GEODB_XORIGIN                ""   GEODB_YORIGIN                ""   GEODB_XYSCALE                ""   GEODB_HAS_Z_VALUES           ""   GEODB_ZORIGIN                ""   GEODB_ZSCALE                 ""   GEODB_HAS_MEASURES           ""   GEODB_MEASURES_ORIGIN        ""   GEODB_MEASURES_SCALE         ""   GEODB_ANNO_REFERENCE_SCALE   ""   BFSNR                        smallint   NAME                         char(31)   RELID                        char(100)   ARTIKELNR                    char(40)   ART                          char(50)   TEXTIMWEB                    char(200)   TITEL                        char(200)   OFFIZTITEL                   char(200)   ABKUERZUNG                   char(10)   OFFIZNR                      char(20)
 # -------------------------------------------------------------------------
-GEODATABASE_SDE_2_DEF GEODB.NPL_GNGZ   geodb_type                   geodb_polygon   GEODB_DROP_TABLE             NO   GEODB_TRUNCATE_TABLE         NO   GEODB_OBJECT_ID_NAME         OBJECTID   GEODB_OBJECT_ID_ALIAS        OBJECTID   GEODB_SHAPE_NAME             SHAPE   GEODB_SHAPE_ALIAS            SHAPE   GEODB_CONFIG_KEYWORD         DEFAULTS   GEODB_FEATURE_DATASET        ""   GEODB_GRID{1}                ""   GEODB_AVG_NUM_POINTS         ""   GEODB_XORIGIN                ""   GEODB_YORIGIN                ""   GEODB_XYSCALE                ""   GEODB_HAS_Z_VALUES           ""   GEODB_ZORIGIN                ""   GEODB_ZSCALE                 ""   GEODB_HAS_MEASURES           ""   GEODB_MEASURES_ORIGIN        ""   GEODB_MEASURES_SCALE         ""   GEODB_ANNO_REFERENCE_SCALE   ""   BFSNR                        smallint   NAME                         char(31)   REL_ID                       char(100)   VERBINDLKT                   char(100)   ZONENABK                     char(12)   ZONENCODE                    char(12)   ZONENNAME                    char(60)   KANTZONE                     char(100)   AZ                           float   AZART                        char(40)
+GEODATABASE_SDE_3_DEF GEODB.NPL_GNGZ   geodb_type                   geodb_polygon   GEODB_DROP_TABLE             NO   GEODB_TRUNCATE_TABLE         NO   GEODB_OBJECT_ID_NAME         OBJECTID   GEODB_OBJECT_ID_ALIAS        OBJECTID   GEODB_SHAPE_NAME             SHAPE   GEODB_SHAPE_ALIAS            SHAPE   GEODB_CONFIG_KEYWORD         DEFAULTS   GEODB_FEATURE_DATASET        ""   GEODB_GRID{1}                ""   GEODB_AVG_NUM_POINTS         ""   GEODB_XORIGIN                ""   GEODB_YORIGIN                ""   GEODB_XYSCALE                ""   GEODB_HAS_Z_VALUES           ""   GEODB_ZORIGIN                ""   GEODB_ZSCALE                 ""   GEODB_HAS_MEASURES           ""   GEODB_MEASURES_ORIGIN        ""   GEODB_MEASURES_SCALE         ""   GEODB_ANNO_REFERENCE_SCALE   ""   BFSNR                        smallint   NAME                         char(31)   REL_ID                       char(100)   VERBINDLKT                   char(100)   ZONENABK                     char(12)   ZONENCODE                    char(12)   ZONENNAME                    char(60)   KANTZONE                     char(100)   AZ                           float   AZART                        char(40)
 # -------------------------------------------------------------------------
-GEODATABASE_SDE_2_DEF GEODB.NPL_NHSL   geodb_type                   geodb_polyline   GEODB_DROP_TABLE             NO   GEODB_TRUNCATE_TABLE         NO   GEODB_OBJECT_ID_NAME         OBJECTID   GEODB_OBJECT_ID_ALIAS        OBJECTID   GEODB_SHAPE_NAME             SHAPE   GEODB_SHAPE_ALIAS            SHAPE   GEODB_CONFIG_KEYWORD         DEFAULTS   GEODB_FEATURE_DATASET        ""   GEODB_GRID{1}                ""   GEODB_AVG_NUM_POINTS         ""   GEODB_XORIGIN                ""   GEODB_YORIGIN                ""   GEODB_XYSCALE                ""   GEODB_HAS_Z_VALUES           ""   GEODB_ZORIGIN                ""   GEODB_ZSCALE                 ""   GEODB_HAS_MEASURES           ""   GEODB_MEASURES_ORIGIN        ""   GEODB_MEASURES_SCALE         ""   GEODB_ANNO_REFERENCE_SCALE   ""   BFSNR                        smallint   NAME                         char(31)   REL_ID                       char(100)   VERBINDLKT                   char(100)   KANTART                      char(100)   SCHUTZGRAD                   char(100)   BESCHRIEB                    char(80)
+GEODATABASE_SDE_3_DEF GEODB.NPL_NHSL   geodb_type                   geodb_polyline   GEODB_DROP_TABLE             NO   GEODB_TRUNCATE_TABLE         NO   GEODB_OBJECT_ID_NAME         OBJECTID   GEODB_OBJECT_ID_ALIAS        OBJECTID   GEODB_SHAPE_NAME             SHAPE   GEODB_SHAPE_ALIAS            SHAPE   GEODB_CONFIG_KEYWORD         DEFAULTS   GEODB_FEATURE_DATASET        ""   GEODB_GRID{1}                ""   GEODB_AVG_NUM_POINTS         ""   GEODB_XORIGIN                ""   GEODB_YORIGIN                ""   GEODB_XYSCALE                ""   GEODB_HAS_Z_VALUES           ""   GEODB_ZORIGIN                ""   GEODB_ZSCALE                 ""   GEODB_HAS_MEASURES           ""   GEODB_MEASURES_ORIGIN        ""   GEODB_MEASURES_SCALE         ""   GEODB_ANNO_REFERENCE_SCALE   ""   BFSNR                        smallint   NAME                         char(31)   REL_ID                       char(100)   VERBINDLKT                   char(100)   KANTART                      char(100)   SCHUTZGRAD                   char(100)   BESCHRIEB                    char(80)
 # -------------------------------------------------------------------------
-GEODATABASE_SDE_2_DEF GEODB.NPL_UEUZ   geodb_type                   geodb_polygon   GEODB_DROP_TABLE             NO   GEODB_TRUNCATE_TABLE         NO   GEODB_OBJECT_ID_NAME         OBJECTID   GEODB_OBJECT_ID_ALIAS        OBJECTID   GEODB_SHAPE_NAME             SHAPE   GEODB_SHAPE_ALIAS            SHAPE   GEODB_CONFIG_KEYWORD         DEFAULTS   GEODB_FEATURE_DATASET        ""   GEODB_GRID{1}                ""   GEODB_AVG_NUM_POINTS         ""   GEODB_XORIGIN                ""   GEODB_YORIGIN                ""   GEODB_XYSCALE                ""   GEODB_HAS_Z_VALUES           ""   GEODB_ZORIGIN                ""   GEODB_ZSCALE                 ""   GEODB_HAS_MEASURES           ""   GEODB_MEASURES_ORIGIN        ""   GEODB_MEASURES_SCALE         ""   GEODB_ANNO_REFERENCE_SCALE   ""   BFSNR                        smallint   NAME                         char(31)   REL_ID                       char(100)   VERBINDLKT                   char(100)   KANTART                      char(100)   ZONENABK                     char(12)   ZONENCODE                    char(12)   BESCHRIEB                    char(80)
+GEODATABASE_SDE_3_DEF GEODB.NPL_UEUZ   geodb_type                   geodb_polygon   GEODB_DROP_TABLE             NO   GEODB_TRUNCATE_TABLE         NO   GEODB_OBJECT_ID_NAME         OBJECTID   GEODB_OBJECT_ID_ALIAS        OBJECTID   GEODB_SHAPE_NAME             SHAPE   GEODB_SHAPE_ALIAS            SHAPE   GEODB_CONFIG_KEYWORD         DEFAULTS   GEODB_FEATURE_DATASET        ""   GEODB_GRID{1}                ""   GEODB_AVG_NUM_POINTS         ""   GEODB_XORIGIN                ""   GEODB_YORIGIN                ""   GEODB_XYSCALE                ""   GEODB_HAS_Z_VALUES           ""   GEODB_ZORIGIN                ""   GEODB_ZSCALE                 ""   GEODB_HAS_MEASURES           ""   GEODB_MEASURES_ORIGIN        ""   GEODB_MEASURES_SCALE         ""   GEODB_ANNO_REFERENCE_SCALE   ""   BFSNR                        smallint   NAME                         char(31)   REL_ID                       char(100)   VERBINDLKT                   char(100)   KANTART                      char(100)   ZONENABK                     char(12)   ZONENCODE                    char(12)   BESCHRIEB                    char(80)
 # -------------------------------------------------------------------------
-GEODATABASE_SDE_2_DEF GEODB.NPL_GNNUTZZO   geodb_type                   geodb_polygon   GEODB_DROP_TABLE             NO   GEODB_TRUNCATE_TABLE         NO   GEODB_OBJECT_ID_NAME         OBJECTID   GEODB_OBJECT_ID_ALIAS        OBJECTID   GEODB_SHAPE_NAME             SHAPE   GEODB_SHAPE_ALIAS            SHAPE   GEODB_CONFIG_KEYWORD         DEFAULTS   GEODB_FEATURE_DATASET        ""   GEODB_GRID{1}                ""   GEODB_AVG_NUM_POINTS         ""   GEODB_XORIGIN                ""   GEODB_YORIGIN                ""   GEODB_XYSCALE                ""   GEODB_HAS_Z_VALUES           ""   GEODB_ZORIGIN                ""   GEODB_ZSCALE                 ""   GEODB_HAS_MEASURES           ""   GEODB_MEASURES_ORIGIN        ""   GEODB_MEASURES_SCALE         ""   GEODB_ANNO_REFERENCE_SCALE   ""   BFSNR                        smallint   NAME                         char(31)   REL_ID                       char(100)   VERBINDLKT                   char(100)   ZONENABK                     char(12)   ZONENCODE                    char(12)   ZONENNAME                    char(60)   KANTZONE                     char(100)   AZ                           float   AZART                        char(40)   NZTYP                        char(100)   BKTYP                        char(100)
+GEODATABASE_SDE_3_DEF GEODB.NPL_GNNUTZZO   geodb_type                   geodb_polygon   GEODB_DROP_TABLE             NO   GEODB_TRUNCATE_TABLE         NO   GEODB_OBJECT_ID_NAME         OBJECTID   GEODB_OBJECT_ID_ALIAS        OBJECTID   GEODB_SHAPE_NAME             SHAPE   GEODB_SHAPE_ALIAS            SHAPE   GEODB_CONFIG_KEYWORD         DEFAULTS   GEODB_FEATURE_DATASET        ""   GEODB_GRID{1}                ""   GEODB_AVG_NUM_POINTS         ""   GEODB_XORIGIN                ""   GEODB_YORIGIN                ""   GEODB_XYSCALE                ""   GEODB_HAS_Z_VALUES           ""   GEODB_ZORIGIN                ""   GEODB_ZSCALE                 ""   GEODB_HAS_MEASURES           ""   GEODB_MEASURES_ORIGIN        ""   GEODB_MEASURES_SCALE         ""   GEODB_ANNO_REFERENCE_SCALE   ""   BFSNR                        smallint   NAME                         char(31)   REL_ID                       char(100)   VERBINDLKT                   char(100)   ZONENABK                     char(12)   ZONENCODE                    char(12)   ZONENNAME                    char(60)   KANTZONE                     char(100)   AZ                           float   AZART                        char(40)   NZTYP                        char(100)   BKTYP                        char(100)
 # -------------------------------------------------------------------------
-GEODATABASE_SDE_2_DEF GEODB.NPL_UEPROJ   geodb_type                   geodb_polyline   GEODB_DROP_TABLE             NO   GEODB_TRUNCATE_TABLE         NO   GEODB_OBJECT_ID_NAME         OBJECTID   GEODB_OBJECT_ID_ALIAS        OBJECTID   GEODB_SHAPE_NAME             SHAPE   GEODB_SHAPE_ALIAS            SHAPE   GEODB_CONFIG_KEYWORD         DEFAULTS   GEODB_FEATURE_DATASET        ""   GEODB_GRID{1}                ""   GEODB_AVG_NUM_POINTS         ""   GEODB_XORIGIN                ""   GEODB_YORIGIN                ""   GEODB_XYSCALE                ""   GEODB_HAS_Z_VALUES           ""   GEODB_ZORIGIN                ""   GEODB_ZSCALE                 ""   GEODB_HAS_MEASURES           ""   GEODB_MEASURES_ORIGIN        ""   GEODB_MEASURES_SCALE         ""   GEODB_ANNO_REFERENCE_SCALE   ""   BFSNR                        smallint   NAME                         char(31)   REL_ID                       char(100)   VERBINDLKT                   char(100)   KANTART                      char(100)   LINIENABK                    char(12)   LINIENCODE                   char(12)   BESCHRIEB                    char(80)   GENEHMDAT                    date   PLANBESCHR                   char(30)
+GEODATABASE_SDE_3_DEF GEODB.NPL_UEPROJ   geodb_type                   geodb_polyline   GEODB_DROP_TABLE             NO   GEODB_TRUNCATE_TABLE         NO   GEODB_OBJECT_ID_NAME         OBJECTID   GEODB_OBJECT_ID_ALIAS        OBJECTID   GEODB_SHAPE_NAME             SHAPE   GEODB_SHAPE_ALIAS            SHAPE   GEODB_CONFIG_KEYWORD         DEFAULTS   GEODB_FEATURE_DATASET        ""   GEODB_GRID{1}                ""   GEODB_AVG_NUM_POINTS         ""   GEODB_XORIGIN                ""   GEODB_YORIGIN                ""   GEODB_XYSCALE                ""   GEODB_HAS_Z_VALUES           ""   GEODB_ZORIGIN                ""   GEODB_ZSCALE                 ""   GEODB_HAS_MEASURES           ""   GEODB_MEASURES_ORIGIN        ""   GEODB_MEASURES_SCALE         ""   GEODB_ANNO_REFERENCE_SCALE   ""   BFSNR                        smallint   NAME                         char(31)   REL_ID                       char(100)   VERBINDLKT                   char(100)   KANTART                      char(100)   LINIENABK                    char(12)   LINIENCODE                   char(12)   BESCHRIEB                    char(80)   GENEHMDAT                    date   PLANBESCHR                   char(30)
 # -------------------------------------------------------------------------
-GEODATABASE_SDE_2_DEF GEODB.NPL_NHSP   geodb_type                   geodb_point   GEODB_DROP_TABLE             NO   GEODB_TRUNCATE_TABLE         NO   GEODB_OBJECT_ID_NAME         OBJECTID   GEODB_OBJECT_ID_ALIAS        OBJECTID   GEODB_SHAPE_NAME             SHAPE   GEODB_SHAPE_ALIAS            SHAPE   GEODB_CONFIG_KEYWORD         DEFAULTS   GEODB_FEATURE_DATASET        ""   GEODB_GRID{1}                ""   GEODB_AVG_NUM_POINTS         ""   GEODB_XORIGIN                ""   GEODB_YORIGIN                ""   GEODB_XYSCALE                ""   GEODB_HAS_Z_VALUES           ""   GEODB_ZORIGIN                ""   GEODB_ZSCALE                 ""   GEODB_HAS_MEASURES           ""   GEODB_MEASURES_ORIGIN        ""   GEODB_MEASURES_SCALE         ""   GEODB_ANNO_REFERENCE_SCALE   ""   BFSNR                        smallint   NAME                         char(31)   REL_ID                       char(100)   VERBINDLKT                   char(100)   KANTART                      char(100)   SCHUTZGRAD                   char(100)   BESCHRIEB                    char(80)
+GEODATABASE_SDE_3_DEF GEODB.NPL_NHSP   geodb_type                   geodb_point   GEODB_DROP_TABLE             NO   GEODB_TRUNCATE_TABLE         NO   GEODB_OBJECT_ID_NAME         OBJECTID   GEODB_OBJECT_ID_ALIAS        OBJECTID   GEODB_SHAPE_NAME             SHAPE   GEODB_SHAPE_ALIAS            SHAPE   GEODB_CONFIG_KEYWORD         DEFAULTS   GEODB_FEATURE_DATASET        ""   GEODB_GRID{1}                ""   GEODB_AVG_NUM_POINTS         ""   GEODB_XORIGIN                ""   GEODB_YORIGIN                ""   GEODB_XYSCALE                ""   GEODB_HAS_Z_VALUES           ""   GEODB_ZORIGIN                ""   GEODB_ZSCALE                 ""   GEODB_HAS_MEASURES           ""   GEODB_MEASURES_ORIGIN        ""   GEODB_MEASURES_SCALE         ""   GEODB_ANNO_REFERENCE_SCALE   ""   BFSNR                        smallint   NAME                         char(31)   REL_ID                       char(100)   VERBINDLKT                   char(100)   KANTART                      char(100)   SCHUTZGRAD                   char(100)   BESCHRIEB                    char(80)
 # -------------------------------------------------------------------------
-GEODATABASE_SDE_2_DEF GEODB.NPL_VEFE   geodb_type                   geodb_polygon   GEODB_DROP_TABLE             NO   GEODB_TRUNCATE_TABLE         NO   GEODB_OBJECT_ID_NAME         OBJECTID   GEODB_OBJECT_ID_ALIAS        OBJECTID   GEODB_SHAPE_NAME             SHAPE   GEODB_SHAPE_ALIAS            SHAPE   GEODB_CONFIG_KEYWORD         DEFAULTS   GEODB_FEATURE_DATASET        ""   GEODB_GRID{1}                ""   GEODB_AVG_NUM_POINTS         ""   GEODB_XORIGIN                ""   GEODB_YORIGIN                ""   GEODB_XYSCALE                ""   GEODB_HAS_Z_VALUES           ""   GEODB_ZORIGIN                ""   GEODB_ZSCALE                 ""   GEODB_HAS_MEASURES           ""   GEODB_MEASURES_ORIGIN        ""   GEODB_MEASURES_SCALE         ""   GEODB_ANNO_REFERENCE_SCALE   ""   BFSNR                        smallint   NAME                         char(31)   REL_ID                       char(100)   VERBINDLKT                   char(100)   KANTART                      char(100)   GUELTIGBIS                   date   BESCHRIEB                    char(80)
+GEODATABASE_SDE_3_DEF GEODB.NPL_VEFE   geodb_type                   geodb_polygon   GEODB_DROP_TABLE             NO   GEODB_TRUNCATE_TABLE         NO   GEODB_OBJECT_ID_NAME         OBJECTID   GEODB_OBJECT_ID_ALIAS        OBJECTID   GEODB_SHAPE_NAME             SHAPE   GEODB_SHAPE_ALIAS            SHAPE   GEODB_CONFIG_KEYWORD         DEFAULTS   GEODB_FEATURE_DATASET        ""   GEODB_GRID{1}                ""   GEODB_AVG_NUM_POINTS         ""   GEODB_XORIGIN                ""   GEODB_YORIGIN                ""   GEODB_XYSCALE                ""   GEODB_HAS_Z_VALUES           ""   GEODB_ZORIGIN                ""   GEODB_ZSCALE                 ""   GEODB_HAS_MEASURES           ""   GEODB_MEASURES_ORIGIN        ""   GEODB_MEASURES_SCALE         ""   GEODB_ANNO_REFERENCE_SCALE   ""   BFSNR                        smallint   NAME                         char(31)   REL_ID                       char(100)   VERBINDLKT                   char(100)   KANTART                      char(100)   GUELTIGBIS                   date   BESCHRIEB                    char(80)
 # -------------------------------------------------------------------------
-GEODATABASE_SDE_2_DEF GEODB.NPL_UELAERM   geodb_type                   geodb_polygon   GEODB_DROP_TABLE             NO   GEODB_TRUNCATE_TABLE         NO   GEODB_OBJECT_ID_NAME         OBJECTID   GEODB_OBJECT_ID_ALIAS        OBJECTID   GEODB_SHAPE_NAME             SHAPE   GEODB_SHAPE_ALIAS            SHAPE   GEODB_CONFIG_KEYWORD         DEFAULTS   GEODB_FEATURE_DATASET        ""   GEODB_GRID{1}                ""   GEODB_AVG_NUM_POINTS         ""   GEODB_XORIGIN                ""   GEODB_YORIGIN                ""   GEODB_XYSCALE                ""   GEODB_HAS_Z_VALUES           ""   GEODB_ZORIGIN                ""   GEODB_ZSCALE                 ""   GEODB_HAS_MEASURES           ""   GEODB_MEASURES_ORIGIN        ""   GEODB_MEASURES_SCALE         ""   GEODB_ANNO_REFERENCE_SCALE   ""   BFSNR                        smallint   NAME                         char(31)   REL_ID                       char(100)   VERBINDLKT                   char(100)   KANTART                      char(100)   ZONENABK                     char(12)   ZONENCODE                    char(12)
+GEODATABASE_SDE_3_DEF GEODB.NPL_UELAERM   geodb_type                   geodb_polygon   GEODB_DROP_TABLE             NO   GEODB_TRUNCATE_TABLE         NO   GEODB_OBJECT_ID_NAME         OBJECTID   GEODB_OBJECT_ID_ALIAS        OBJECTID   GEODB_SHAPE_NAME             SHAPE   GEODB_SHAPE_ALIAS            SHAPE   GEODB_CONFIG_KEYWORD         DEFAULTS   GEODB_FEATURE_DATASET        ""   GEODB_GRID{1}                ""   GEODB_AVG_NUM_POINTS         ""   GEODB_XORIGIN                ""   GEODB_YORIGIN                ""   GEODB_XYSCALE                ""   GEODB_HAS_Z_VALUES           ""   GEODB_ZORIGIN                ""   GEODB_ZSCALE                 ""   GEODB_HAS_MEASURES           ""   GEODB_MEASURES_ORIGIN        ""   GEODB_MEASURES_SCALE         ""   GEODB_ANNO_REFERENCE_SCALE   ""   BFSNR                        smallint   NAME                         char(31)   REL_ID                       char(100)   VERBINDLKT                   char(100)   KANTART                      char(100)   ZONENABK                     char(12)   ZONENCODE                    char(12)
 # -------------------------------------------------------------------------
-GEODATABASE_SDE_2_DEF GEODB.NPL_UEWAAB   geodb_type                   geodb_polyline   GEODB_DROP_TABLE             NO   GEODB_TRUNCATE_TABLE         NO   GEODB_OBJECT_ID_NAME         OBJECTID   GEODB_OBJECT_ID_ALIAS        OBJECTID   GEODB_SHAPE_NAME             SHAPE   GEODB_SHAPE_ALIAS            SHAPE   GEODB_CONFIG_KEYWORD         DEFAULTS   GEODB_FEATURE_DATASET        ""   GEODB_GRID{1}                ""   GEODB_AVG_NUM_POINTS         ""   GEODB_XORIGIN                ""   GEODB_YORIGIN                ""   GEODB_XYSCALE                ""   GEODB_HAS_Z_VALUES           ""   GEODB_ZORIGIN                ""   GEODB_ZSCALE                 ""   GEODB_HAS_MEASURES           ""   GEODB_MEASURES_ORIGIN        ""   GEODB_MEASURES_SCALE         ""   GEODB_ANNO_REFERENCE_SCALE   ""   BFSNR                        smallint   NAME                         char(31)   REL_ID                       char(100)   VERBINDLKT                   char(100)   KANTART                      char(100)   LINIENABK                    char(12)   LINIENCODE                   char(12)
+GEODATABASE_SDE_3_DEF GEODB.NPL_UEWAAB   geodb_type                   geodb_polyline   GEODB_DROP_TABLE             NO   GEODB_TRUNCATE_TABLE         NO   GEODB_OBJECT_ID_NAME         OBJECTID   GEODB_OBJECT_ID_ALIAS        OBJECTID   GEODB_SHAPE_NAME             SHAPE   GEODB_SHAPE_ALIAS            SHAPE   GEODB_CONFIG_KEYWORD         DEFAULTS   GEODB_FEATURE_DATASET        ""   GEODB_GRID{1}                ""   GEODB_AVG_NUM_POINTS         ""   GEODB_XORIGIN                ""   GEODB_YORIGIN                ""   GEODB_XYSCALE                ""   GEODB_HAS_Z_VALUES           ""   GEODB_ZORIGIN                ""   GEODB_ZSCALE                 ""   GEODB_HAS_MEASURES           ""   GEODB_MEASURES_ORIGIN        ""   GEODB_MEASURES_SCALE         ""   GEODB_ANNO_REFERENCE_SCALE   ""   BFSNR                        smallint   NAME                         char(31)   REL_ID                       char(100)   VERBINDLKT                   char(100)   KANTART                      char(100)   LINIENABK                    char(12)   LINIENCODE                   char(12)
