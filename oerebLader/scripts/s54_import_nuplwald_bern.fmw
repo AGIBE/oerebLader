@@ -26,7 +26,7 @@
 #    
 #! PASSWORD=""
 #! ATTR_TYPE_ENCODING="SDF"
-#! VIEW_POSITION="5630 -2140"
+#! VIEW_POSITION="3676 -1026"
 #! SHOW_INFO_NODES="true"
 #! FME_STROKE_MAX_DEVIATION="0"
 #! BEGIN_PYTHON=""
@@ -44,13 +44,13 @@
 #! USAGE=""
 #! END_PYTHON=""
 #! HISTORY=""
-#! FME_DOCUMENT_PRIORGUID="570e2da0-f8f8-4e60-bd50-7fae8ca2bbea,c83439e6-2eab-4963-b880-8034ee427339,c3d31f8a-4855-4db0-ac29-5df4fe89c3f2,76304f21-1c5f-4b89-a82a-d38b1d42c482,6ce16359-e474-4bcd-9574-3aee9a059150,e7574669-4461-4e14-a85b-05c2cfdca0cf,0aca8287-54aa-4054-880c-b4a579d4dc6f,d57be020-f735-42ef-9fab-71caa062d93c,f2f54816-0285-49b1-a2e3-27c8a3598602,18d1ecfd-6f2d-4404-a30c-723dbd5a3fbc,52e1acbf-a7c6-4bb2-95c8-d8450a598e9e,9b5d1fe0-a9ac-45e9-8547-5ab62d662dba"
+#! FME_DOCUMENT_PRIORGUID="570e2da0-f8f8-4e60-bd50-7fae8ca2bbea,c83439e6-2eab-4963-b880-8034ee427339,c3d31f8a-4855-4db0-ac29-5df4fe89c3f2,76304f21-1c5f-4b89-a82a-d38b1d42c482,6ce16359-e474-4bcd-9574-3aee9a059150,e7574669-4461-4e14-a85b-05c2cfdca0cf,0aca8287-54aa-4054-880c-b4a579d4dc6f,d57be020-f735-42ef-9fab-71caa062d93c,f2f54816-0285-49b1-a2e3-27c8a3598602,18d1ecfd-6f2d-4404-a30c-723dbd5a3fbc,52e1acbf-a7c6-4bb2-95c8-d8450a598e9e,9b5d1fe0-a9ac-45e9-8547-5ab62d662dba,07515f3c-ff9b-4413-9f28-00ab269c47cd"
 #! DOC_TOP_LEFT="-319 -4449"
 #! REQUIREMENTS_KEYWORD=""
 #! SOURCE_ROUTING_FILE=""
 #! DESTINATION_ROUTING_FILE=""
 #! DESTINATION="NONE"
-#! LAST_SAVE_DATE="2017-01-25T16:36:08"
+#! LAST_SAVE_DATE="2017-03-13T16:23:43"
 #! FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
 #! WORKSPACE_VERSION="1"
 #! SOURCE="NONE"
@@ -61,7 +61,7 @@
 #! REQUIREMENTS=""
 #! BEGIN_TCL=""
 #! DOC_EXTENTS="20950 4356"
-#! FME_DOCUMENT_GUID="07515f3c-ff9b-4413-9f28-00ab269c47cd"
+#! FME_DOCUMENT_GUID="8e35063c-a4fe-4d82-b2e3-287fd932c057"
 #! SHOW_ANNOTATIONS="true"
 #! IGNORE_READER_FAILURE="No"
 #! WARN_INVALID_XFORM_PARAM="Yes"
@@ -4869,6 +4869,31 @@
 #! <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
 #! <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
 #! </TRANSFORMER>
+#! <TRANSFORMER
+#! IDENTIFIER="263"
+#! TYPE="Counter"
+#! VERSION="2"
+#! POSITION="6009 -1291"
+#! ORDER="5e+014"
+#! PARMS_EDITED="true"
+#! ENABLED="true"
+#! >
+#! <OUTPUT_FEAT NAME="OUTPUT"/>
+#! <FEAT_COLLAPSED COLLAPSED="0"/>
+#! <XFORM_ATTR ATTR_NAME="EIB_XTF_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="EIB_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="EIB_AUSSAGE_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="EIB_AUSSAGE_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="EIB_PUBLIZIERTAB" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="EIB_SORT" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_PARM PARM_NAME="SCOPE" PARM_VALUE="Global"/>
+#! <XFORM_PARM PARM_NAME="START" PARM_VALUE="1"/>
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Counter"/>
+#! <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="DOMAIN" PARM_VALUE="counter"/>
+#! <XFORM_PARM PARM_NAME="CNT_ATTR" PARM_VALUE="EIB_SORT"/>
+#! </TRANSFORMER>
 #! </TRANSFORMERS>
 #! <FEAT_LINKS>
 #! <FEAT_LINK
@@ -4922,15 +4947,6 @@
 #! TARGET_NODE="62"
 #! SOURCE_PORT_DESC="fo 0"
 #! TARGET_PORT_DESC="fi 0"
-#! ENABLED="true"
-#! EXTRA_POINTS=""
-#! />
-#! <FEAT_LINK
-#! IDENTIFIER="64"
-#! SOURCE_NODE="62"
-#! TARGET_NODE="49"
-#! SOURCE_PORT_DESC="fo 0"
-#! TARGET_PORT_DESC="-1"
 #! ENABLED="true"
 #! EXTRA_POINTS=""
 #! />
@@ -5678,6 +5694,24 @@
 #! TARGET_NODE="177"
 #! SOURCE_PORT_DESC="-1"
 #! TARGET_PORT_DESC="fi 1"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="264"
+#! SOURCE_NODE="62"
+#! TARGET_NODE="263"
+#! SOURCE_PORT_DESC="fo 0"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="266"
+#! SOURCE_NODE="263"
+#! TARGET_NODE="49"
+#! SOURCE_PORT_DESC="fo 0"
+#! TARGET_PORT_DESC="-1"
 #! ENABLED="true"
 #! EXTRA_POINTS=""
 #! />
@@ -8049,27 +8083,27 @@ FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRenamer_3    INPUT  FEATURE_TY
 FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeRenamer_3 OUTPUT Splitter"   INPUT FEATURE_TYPE AttributeRenamer_3_OUTPUT   OUTPUT FEATURE_TYPE AttributeRenamer_3_OUTPUT_0_yKWDRz2uARM=   OUTPUT FEATURE_TYPE AttributeRenamer_3_OUTPUT_1_yKWDRz2uARM=   OUTPUT FEATURE_TYPE AttributeRenamer_3_OUTPUT_2_yKWDRz2uARM=   OUTPUT FEATURE_TYPE AttributeRenamer_3_OUTPUT_3_yKWDRz2uARM=
 # -------------------------------------------------------------------------
 
-INCLUDE [if { {ATTRIBUTES} == {ATTRIBUTES} } {                puts "MACRO FeatureMerger_4_REFERENCE_INFO ATTRIBUTES";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} && {<Unused>} == {POLYGONS}} {                puts "MACRO FeatureMerger_4_REFERENCE_INFO GEOM_BUILD_POLYS";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} && {<Unused>} == {AGGREGATES}} {                puts "MACRO FeatureMerger_4_REFERENCE_INFO GEOM_BUILD_AGGREGATES";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} && {<Unused>} == {LINESFROMPOINTS}} {                puts "MACRO FeatureMerger_4_REFERENCE_INFO GEOM_BUILD_LINES_FROM_POINTS";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} && {<Unused>} == {POLYGONS}} {                puts "MACRO FeatureMerger_4_REFERENCE_INFO GEOM_AND_ATTR_BUILD_POLYS";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} && {<Unused>} == {AGGREGATES}} {                puts "MACRO FeatureMerger_4_REFERENCE_INFO GEOM_AND_ATTR_BUILD_AGGREGATES";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} && {<Unused>} == {LINESFROMPOINTS}} {                puts "MACRO FeatureMerger_4_REFERENCE_INFO GEOM_AND_ATTR_BUILD_LINES_FROM_POINTS";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} } {                puts "MACRO FeatureMerger_4_REFERENCE_INFO GEOM_BUILD_AGGREGATES";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} } {                puts "MACRO FeatureMerger_4_REFERENCE_INFO GEOM_AND_ATTR_BUILD_AGGREGATES";             }          else {}; ]
-
-FACTORY_DEF * ReferenceFactory    FACTORY_NAME FeatureMerger_4    INPUT REFERENCER FEATURE_TYPE AttributeRenamer_3_OUTPUT_2_yKWDRz2uARM=    INPUT REFERENCEE FEATURE_TYPE AttributeRemover_5_OUTPUT_0_JvRf0Rb7Rbw=    REFERENCE_INFO $(FeatureMerger_4_REFERENCE_INFO)    REFERENCE_TABLE @EvaluateExpression(STRING_ENCODED,<at>Value<openparen>AMT_XTF_ID<closeparen>,FeatureMerger_4) @EvaluateExpression(STRING_ENCODED,<at>Value<openparen>ZustaendigeStelle<closeparen>,FeatureMerger_4) AUTO    MERGE_ATTRIBUTES Yes    MANAGE_FME_TYPE Yes    MODE COMPLETE    PROCESS_DUPLICATE_REFERENCEES No    REFERENCEES_FIRST No    OUTPUT COMPLETE FEATURE_TYPE FeatureMerger_4_MERGED
+INCLUDE [    set macroLine "MACRO AttributeRemover_6_LIST_EXP ";    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "{\[0-9\]+}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
+FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRemover_6    INPUT  FEATURE_TYPE AttributeRenamer_3_OUTPUT_3_yKWDRz2uARM=    OUTPUT FEATURE_TYPE AttributeRemover_6_OUTPUT        @RemoveAttributes(AMTNAME,UID_AMT,AMTIMWEB)        @RemoveAttributes(fme_regexp_match"$(AttributeRemover_6_LIST_EXP)")
 
 # -------------------------------------------------------------------------
 
-INCLUDE [    set macroLine "MACRO AttributeRemover_4_LIST_EXP ";    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "{\[0-9\]+}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
-FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRemover_4    INPUT  FEATURE_TYPE AttributeRenamer_3_OUTPUT_0_yKWDRz2uARM=    OUTPUT FEATURE_TYPE AttributeRemover_4_OUTPUT        @RemoveAttributes(AMTNAME,UID_AMT,AMTIMWEB)        @RemoveAttributes(fme_regexp_match"$(AttributeRemover_4_LIST_EXP)")
+INCLUDE [if { {ATTRIBUTES} == {ATTRIBUTES} } {                puts "MACRO FeatureMerger_4_REFERENCE_INFO ATTRIBUTES";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} && {<Unused>} == {POLYGONS}} {                puts "MACRO FeatureMerger_4_REFERENCE_INFO GEOM_BUILD_POLYS";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} && {<Unused>} == {AGGREGATES}} {                puts "MACRO FeatureMerger_4_REFERENCE_INFO GEOM_BUILD_AGGREGATES";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} && {<Unused>} == {LINESFROMPOINTS}} {                puts "MACRO FeatureMerger_4_REFERENCE_INFO GEOM_BUILD_LINES_FROM_POINTS";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} && {<Unused>} == {POLYGONS}} {                puts "MACRO FeatureMerger_4_REFERENCE_INFO GEOM_AND_ATTR_BUILD_POLYS";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} && {<Unused>} == {AGGREGATES}} {                puts "MACRO FeatureMerger_4_REFERENCE_INFO GEOM_AND_ATTR_BUILD_AGGREGATES";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} && {<Unused>} == {LINESFROMPOINTS}} {                puts "MACRO FeatureMerger_4_REFERENCE_INFO GEOM_AND_ATTR_BUILD_LINES_FROM_POINTS";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} } {                puts "MACRO FeatureMerger_4_REFERENCE_INFO GEOM_BUILD_AGGREGATES";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} } {                puts "MACRO FeatureMerger_4_REFERENCE_INFO GEOM_AND_ATTR_BUILD_AGGREGATES";             }          else {}; ]
 
-FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeRemover_4 OUTPUT Splitter"   INPUT FEATURE_TYPE AttributeRemover_4_OUTPUT   OUTPUT FEATURE_TYPE AttributeRemover_4_OUTPUT_0_qMCX59OFq2s=   OUTPUT FEATURE_TYPE AttributeRemover_4_OUTPUT_1_qMCX59OFq2s=
+FACTORY_DEF * ReferenceFactory    FACTORY_NAME FeatureMerger_4    INPUT REFERENCER FEATURE_TYPE AttributeRenamer_3_OUTPUT_0_yKWDRz2uARM=    INPUT REFERENCEE FEATURE_TYPE AttributeRemover_5_OUTPUT_1_JvRf0Rb7Rbw=    REFERENCE_INFO $(FeatureMerger_4_REFERENCE_INFO)    REFERENCE_TABLE @EvaluateExpression(STRING_ENCODED,<at>Value<openparen>AMT_XTF_ID<closeparen>,FeatureMerger_4) @EvaluateExpression(STRING_ENCODED,<at>Value<openparen>ZustaendigeStelle<closeparen>,FeatureMerger_4) AUTO    MERGE_ATTRIBUTES Yes    MANAGE_FME_TYPE Yes    MODE COMPLETE    PROCESS_DUPLICATE_REFERENCEES No    REFERENCEES_FIRST No    OUTPUT COMPLETE FEATURE_TYPE FeatureMerger_4_MERGED
+
 # -------------------------------------------------------------------------
 
 INCLUDE [if { {ATTRIBUTES} == {ATTRIBUTES} } {                puts "MACRO FeatureMerger_5_REFERENCE_INFO ATTRIBUTES";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} && {<Unused>} == {POLYGONS}} {                puts "MACRO FeatureMerger_5_REFERENCE_INFO GEOM_BUILD_POLYS";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} && {<Unused>} == {AGGREGATES}} {                puts "MACRO FeatureMerger_5_REFERENCE_INFO GEOM_BUILD_AGGREGATES";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} && {<Unused>} == {LINESFROMPOINTS}} {                puts "MACRO FeatureMerger_5_REFERENCE_INFO GEOM_BUILD_LINES_FROM_POINTS";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} && {<Unused>} == {POLYGONS}} {                puts "MACRO FeatureMerger_5_REFERENCE_INFO GEOM_AND_ATTR_BUILD_POLYS";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} && {<Unused>} == {AGGREGATES}} {                puts "MACRO FeatureMerger_5_REFERENCE_INFO GEOM_AND_ATTR_BUILD_AGGREGATES";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} && {<Unused>} == {LINESFROMPOINTS}} {                puts "MACRO FeatureMerger_5_REFERENCE_INFO GEOM_AND_ATTR_BUILD_LINES_FROM_POINTS";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} } {                puts "MACRO FeatureMerger_5_REFERENCE_INFO GEOM_BUILD_AGGREGATES";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} } {                puts "MACRO FeatureMerger_5_REFERENCE_INFO GEOM_AND_ATTR_BUILD_AGGREGATES";             }          else {}; ]
 
-FACTORY_DEF * ReferenceFactory    FACTORY_NAME FeatureMerger_5    INPUT REFERENCER FEATURE_TYPE AttributeRenamer_3_OUTPUT_3_yKWDRz2uARM=    INPUT REFERENCEE FEATURE_TYPE AttributeRemover_5_OUTPUT_1_JvRf0Rb7Rbw=    REFERENCE_INFO $(FeatureMerger_5_REFERENCE_INFO)    REFERENCE_TABLE @EvaluateExpression(STRING_ENCODED,<at>Value<openparen>AMT_XTF_ID<closeparen>,FeatureMerger_5) @EvaluateExpression(STRING_ENCODED,<at>Value<openparen>Datenverwaltungsstelle<closeparen>,FeatureMerger_5) AUTO    MERGE_ATTRIBUTES Yes    MANAGE_FME_TYPE Yes    MODE COMPLETE    PROCESS_DUPLICATE_REFERENCEES No    REFERENCEES_FIRST No    OUTPUT COMPLETE FEATURE_TYPE FeatureMerger_5_MERGED
+FACTORY_DEF * ReferenceFactory    FACTORY_NAME FeatureMerger_5    INPUT REFERENCER FEATURE_TYPE AttributeRenamer_3_OUTPUT_1_yKWDRz2uARM=    INPUT REFERENCEE FEATURE_TYPE AttributeRemover_5_OUTPUT_0_JvRf0Rb7Rbw=    REFERENCE_INFO $(FeatureMerger_5_REFERENCE_INFO)    REFERENCE_TABLE @EvaluateExpression(STRING_ENCODED,<at>Value<openparen>AMT_XTF_ID<closeparen>,FeatureMerger_5) @EvaluateExpression(STRING_ENCODED,<at>Value<openparen>Datenverwaltungsstelle<closeparen>,FeatureMerger_5) AUTO    MERGE_ATTRIBUTES Yes    MANAGE_FME_TYPE Yes    MODE COMPLETE    PROCESS_DUPLICATE_REFERENCEES No    REFERENCEES_FIRST No    OUTPUT COMPLETE FEATURE_TYPE FeatureMerger_5_MERGED
 
 # -------------------------------------------------------------------------
 
-INCLUDE [    set macroLine "MACRO AttributeRemover_6_LIST_EXP ";    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "{\[0-9\]+}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
-FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRemover_6    INPUT  FEATURE_TYPE AttributeRenamer_3_OUTPUT_1_yKWDRz2uARM=    OUTPUT FEATURE_TYPE AttributeRemover_6_OUTPUT        @RemoveAttributes(AMTNAME,UID_AMT,AMTIMWEB)        @RemoveAttributes(fme_regexp_match"$(AttributeRemover_6_LIST_EXP)")
+INCLUDE [    set macroLine "MACRO AttributeRemover_4_LIST_EXP ";    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "{\[0-9\]+}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
+FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRemover_4    INPUT  FEATURE_TYPE AttributeRenamer_3_OUTPUT_2_yKWDRz2uARM=    OUTPUT FEATURE_TYPE AttributeRemover_4_OUTPUT        @RemoveAttributes(AMTNAME,UID_AMT,AMTIMWEB)        @RemoveAttributes(fme_regexp_match"$(AttributeRemover_4_LIST_EXP)")
 
+FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeRemover_4 OUTPUT Splitter"   INPUT FEATURE_TYPE AttributeRemover_4_OUTPUT   OUTPUT FEATURE_TYPE AttributeRemover_4_OUTPUT_0_qMCX59OFq2s=   OUTPUT FEATURE_TYPE AttributeRemover_4_OUTPUT_1_qMCX59OFq2s=
 # -------------------------------------------------------------------------
 
 FACTORY_DEF * TeeFactory    FACTORY_NAME UUIDGenerator    INPUT  FEATURE_TYPE DM16NplBE_Bern.Nutzungsplanung.WF_LinienelementWald    OUTPUT FEATURE_TYPE UUIDGenerator_OUTPUT         "LIN_OID" @UUID()
@@ -8123,25 +8157,31 @@ FACTORY_DEF * AggregateFactory    FACTORY_NAME Aggregator    INPUT  FEATURE_TYPE
 FACTORY_DEF * TeeFactory   FACTORY_NAME "Aggregator AGGREGATE Splitter"   INPUT FEATURE_TYPE Aggregator_AGGREGATE   OUTPUT FEATURE_TYPE Aggregator_AGGREGATE_0_qtKD1R8siTs=   OUTPUT FEATURE_TYPE Aggregator_AGGREGATE_1_qtKD1R8siTs=   OUTPUT FEATURE_TYPE Aggregator_AGGREGATE_2_qtKD1R8siTs=
 # -------------------------------------------------------------------------
 
+Tcl2 proc Counter_e4c48358_6e46_4ac2_9e3a_65441b87d2020_createDomain { in_domainName } {    set domainName $in_domainName;    if { {Global} == {Local} }    {       set xFormName [FME_EncodeText {Counter_}];       set domainName $xFormName$domainName;    };    return $domainName; }
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME Counter    INPUT  FEATURE_TYPE Aggregator_AGGREGATE_0_qtKD1R8siTs=    OUTPUT FEATURE_TYPE Counter_OUTPUT         "EIB_SORT" @Count(fme_encoded,@Tcl2("Counter_e4c48358_6e46_4ac2_9e3a_65441b87d2020_createDomain {counter}"), 1)
+
+# -------------------------------------------------------------------------
+
 INCLUDE [    set macroLine "MACRO AttributeRemover_3_LIST_EXP ";    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "{\[0-9\]+}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
-FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRemover_3    INPUT  FEATURE_TYPE Aggregator_AGGREGATE_1_qtKD1R8siTs=    OUTPUT FEATURE_TYPE AttributeRemover_3_OUTPUT        @RemoveAttributes(EIB_XTF_ID,EIB_AUSSAGE_DE,EIB_AUSSAGE_FR,EIB_PUBLIZIERTAB)        @RemoveAttributes(fme_regexp_match"$(AttributeRemover_3_LIST_EXP)")
+FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRemover_3    INPUT  FEATURE_TYPE Aggregator_AGGREGATE_2_qtKD1R8siTs=    OUTPUT FEATURE_TYPE AttributeRemover_3_OUTPUT        @RemoveAttributes(EIB_XTF_ID,EIB_AUSSAGE_DE,EIB_AUSSAGE_FR,EIB_PUBLIZIERTAB)        @RemoveAttributes(fme_regexp_match"$(AttributeRemover_3_LIST_EXP)")
 
 FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeRemover_3 OUTPUT Splitter"   INPUT FEATURE_TYPE AttributeRemover_3_OUTPUT   OUTPUT FEATURE_TYPE AttributeRemover_3_OUTPUT_0_PU5POLcQj9M=   OUTPUT FEATURE_TYPE AttributeRemover_3_OUTPUT_1_PU5POLcQj9M=   OUTPUT FEATURE_TYPE AttributeRemover_3_OUTPUT_2_PU5POLcQj9M=
 # -------------------------------------------------------------------------
-FACTORY_DEF * AttrSetFactory FACTORY_NAME AttributeCreator_2 ATTRSET_PROPAGATE_MISSING YES INPUT  FEATURE_TYPE AttributeRemover_3_OUTPUT_1_PU5POLcQj9M= ATTR VOR_OID ch.admin.bk.sr.921.0    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_2_OUTPUT 
+FACTORY_DEF * AttrSetFactory FACTORY_NAME AttributeCreator_2 ATTRSET_PROPAGATE_MISSING YES INPUT  FEATURE_TYPE AttributeRemover_3_OUTPUT_0_PU5POLcQj9M= ATTR VOR_OID ch.admin.bk.sr.921.0    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_2_OUTPUT 
 # -------------------------------------------------------------------------
-FACTORY_DEF * AttrSetFactory FACTORY_NAME AttributeCreator_3 ATTRSET_PROPAGATE_MISSING YES INPUT  FEATURE_TYPE AttributeRemover_3_OUTPUT_0_PU5POLcQj9M= ATTR VOR_OID ch.be.sk.bsg.921.11    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_3_OUTPUT 
+FACTORY_DEF * AttrSetFactory FACTORY_NAME AttributeCreator_3 ATTRSET_PROPAGATE_MISSING YES INPUT  FEATURE_TYPE AttributeRemover_3_OUTPUT_2_PU5POLcQj9M= ATTR VOR_OID ch.be.sk.bsg.921.11    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_3_OUTPUT 
 # -------------------------------------------------------------------------
-FACTORY_DEF * AttrSetFactory FACTORY_NAME AttributeCreator_4 ATTRSET_PROPAGATE_MISSING YES INPUT  FEATURE_TYPE AttributeRemover_3_OUTPUT_2_PU5POLcQj9M= ATTR VOR_OID ch.be.sk.bsg.921.111    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_4_OUTPUT 
+FACTORY_DEF * AttrSetFactory FACTORY_NAME AttributeCreator_4 ATTRSET_PROPAGATE_MISSING YES INPUT  FEATURE_TYPE AttributeRemover_3_OUTPUT_1_PU5POLcQj9M= ATTR VOR_OID ch.be.sk.bsg.921.111    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_4_OUTPUT 
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * TeeFactory    FACTORY_NAME UUIDGenerator_3    INPUT  FEATURE_TYPE AttributeCreator_2_OUTPUT    INPUT  FEATURE_TYPE AttributeCreator_4_OUTPUT    INPUT  FEATURE_TYPE AttributeCreator_3_OUTPUT    OUTPUT FEATURE_TYPE UUIDGenerator_3_OUTPUT         "HIV_ID" @UUID()
+FACTORY_DEF * TeeFactory    FACTORY_NAME UUIDGenerator_3    INPUT  FEATURE_TYPE AttributeCreator_3_OUTPUT    INPUT  FEATURE_TYPE AttributeCreator_4_OUTPUT    INPUT  FEATURE_TYPE AttributeCreator_2_OUTPUT    OUTPUT FEATURE_TYPE UUIDGenerator_3_OUTPUT         "HIV_ID" @UUID()
 
 FACTORY_DEF * TeeFactory   FACTORY_NAME "UUIDGenerator_3 OUTPUT Splitter"   INPUT FEATURE_TYPE UUIDGenerator_3_OUTPUT   OUTPUT FEATURE_TYPE UUIDGenerator_3_OUTPUT_0_imAloxdiMNw=   OUTPUT FEATURE_TYPE UUIDGenerator_3_OUTPUT_1_imAloxdiMNw=
 # -------------------------------------------------------------------------
 
 INCLUDE [    set macroLine "MACRO AttributeRemover_8_LIST_EXP ";    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "{\[0-9\]+}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
-FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRemover_8    INPUT  FEATURE_TYPE Aggregator_AGGREGATE_2_qtKD1R8siTs=    OUTPUT FEATURE_TYPE AttributeRemover_8_OUTPUT        @RemoveAttributes(EIB_AUSSAGE_DE,EIB_AUSSAGE_FR,EIB_PUBLIZIERTAB)        @RemoveAttributes(fme_regexp_match"$(AttributeRemover_8_LIST_EXP)")
+FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRemover_8    INPUT  FEATURE_TYPE Aggregator_AGGREGATE_1_qtKD1R8siTs=    OUTPUT FEATURE_TYPE AttributeRemover_8_OUTPUT        @RemoveAttributes(EIB_AUSSAGE_DE,EIB_AUSSAGE_FR,EIB_PUBLIZIERTAB)        @RemoveAttributes(fme_regexp_match"$(AttributeRemover_8_LIST_EXP)")
 
 # -------------------------------------------------------------------------
 
@@ -8214,8 +8254,8 @@ MACRO $(Dokument_vorbereiten_WORKSPACE_NAME)_AMT_XTF_ID <at>Value<openparen>AMT_
 MACRO $(Dokument_vorbereiten_WORKSPACE_NAME)_AMT_ID <at>Value<openparen>AMT_ID<closeparen>
 DEFAULT_MACRO Dokument_vorbereiten_WORKSPACE_NAME ""
 INCLUDE [puts {MACRO WB_OLD_CONTEXT_$(Dokument_vorbereiten_WORKSPACE_NAME) $(WB_CURRENT_CONTEXT)};          puts {MACRO WB_CURRENT_CONTEXT $(Dokument_vorbereiten_WORKSPACE_NAME)}]
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(Dokument_vorbereiten_WORKSPACE_NAME)_Dokument1485358568 Input Splitter"   INPUT FEATURE_TYPE "$(Dokument_vorbereiten_WORKSPACE_NAME)_Dokument"   OUTPUT FEATURE_TYPE "$(Dokument_vorbereiten_WORKSPACE_NAME)_Dokument" "@EvaluateExpression(ATTR_CREATE_EXPR_PROPAGATE_MISSING,OffiziellerTitel,$($(Dokument_vorbereiten_WORKSPACE_NAME)_OFFIZIELLERTITEL),ZustaendigeStelle,$($(Dokument_vorbereiten_WORKSPACE_NAME)_ZUSTAENDIGESTELLE),Titel,$($(Dokument_vorbereiten_WORKSPACE_NAME)_TITEL),Abkuerzung,$($(Dokument_vorbereiten_WORKSPACE_NAME)_ABKUERZUNG),OffizielleNr,$($(Dokument_vorbereiten_WORKSPACE_NAME)_OFFIZIELLENR),Gemeinde,$($(Dokument_vorbereiten_WORKSPACE_NAME)_GEMEINDE),xtf_id,$($(Dokument_vorbereiten_WORKSPACE_NAME)_XTF_ID),Dokument,$($(Dokument_vorbereiten_WORKSPACE_NAME)_DOKUMENT),Art_Doku,$($(Dokument_vorbereiten_WORKSPACE_NAME)_ART_DOKU),AMT_XTF_ID,$($(Dokument_vorbereiten_WORKSPACE_NAME)_AMT_XTF_ID),AMT_ID,$($(Dokument_vorbereiten_WORKSPACE_NAME)_AMT_ID), FEATURE_TYPE)"
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(Dokument_vorbereiten_WORKSPACE_NAME)_Amt1485358568 Input Splitter"   INPUT FEATURE_TYPE "$(Dokument_vorbereiten_WORKSPACE_NAME)_Amt"   OUTPUT FEATURE_TYPE "$(Dokument_vorbereiten_WORKSPACE_NAME)_Amt" "@EvaluateExpression(ATTR_CREATE_EXPR_PROPAGATE_MISSING,OffiziellerTitel,$($(Dokument_vorbereiten_WORKSPACE_NAME)_OFFIZIELLERTITEL),ZustaendigeStelle,$($(Dokument_vorbereiten_WORKSPACE_NAME)_ZUSTAENDIGESTELLE),Titel,$($(Dokument_vorbereiten_WORKSPACE_NAME)_TITEL),Abkuerzung,$($(Dokument_vorbereiten_WORKSPACE_NAME)_ABKUERZUNG),OffizielleNr,$($(Dokument_vorbereiten_WORKSPACE_NAME)_OFFIZIELLENR),Gemeinde,$($(Dokument_vorbereiten_WORKSPACE_NAME)_GEMEINDE),xtf_id,$($(Dokument_vorbereiten_WORKSPACE_NAME)_XTF_ID),Dokument,$($(Dokument_vorbereiten_WORKSPACE_NAME)_DOKUMENT),Art_Doku,$($(Dokument_vorbereiten_WORKSPACE_NAME)_ART_DOKU),AMT_XTF_ID,$($(Dokument_vorbereiten_WORKSPACE_NAME)_AMT_XTF_ID),AMT_ID,$($(Dokument_vorbereiten_WORKSPACE_NAME)_AMT_ID), FEATURE_TYPE)"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(Dokument_vorbereiten_WORKSPACE_NAME)_Dokument1489418623 Input Splitter"   INPUT FEATURE_TYPE "$(Dokument_vorbereiten_WORKSPACE_NAME)_Dokument"   OUTPUT FEATURE_TYPE "$(Dokument_vorbereiten_WORKSPACE_NAME)_Dokument" "@EvaluateExpression(ATTR_CREATE_EXPR_PROPAGATE_MISSING,OffiziellerTitel,$($(Dokument_vorbereiten_WORKSPACE_NAME)_OFFIZIELLERTITEL),ZustaendigeStelle,$($(Dokument_vorbereiten_WORKSPACE_NAME)_ZUSTAENDIGESTELLE),Titel,$($(Dokument_vorbereiten_WORKSPACE_NAME)_TITEL),Abkuerzung,$($(Dokument_vorbereiten_WORKSPACE_NAME)_ABKUERZUNG),OffizielleNr,$($(Dokument_vorbereiten_WORKSPACE_NAME)_OFFIZIELLENR),Gemeinde,$($(Dokument_vorbereiten_WORKSPACE_NAME)_GEMEINDE),xtf_id,$($(Dokument_vorbereiten_WORKSPACE_NAME)_XTF_ID),Dokument,$($(Dokument_vorbereiten_WORKSPACE_NAME)_DOKUMENT),Art_Doku,$($(Dokument_vorbereiten_WORKSPACE_NAME)_ART_DOKU),AMT_XTF_ID,$($(Dokument_vorbereiten_WORKSPACE_NAME)_AMT_XTF_ID),AMT_ID,$($(Dokument_vorbereiten_WORKSPACE_NAME)_AMT_ID), FEATURE_TYPE)"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(Dokument_vorbereiten_WORKSPACE_NAME)_Amt1489418623 Input Splitter"   INPUT FEATURE_TYPE "$(Dokument_vorbereiten_WORKSPACE_NAME)_Amt"   OUTPUT FEATURE_TYPE "$(Dokument_vorbereiten_WORKSPACE_NAME)_Amt" "@EvaluateExpression(ATTR_CREATE_EXPR_PROPAGATE_MISSING,OffiziellerTitel,$($(Dokument_vorbereiten_WORKSPACE_NAME)_OFFIZIELLERTITEL),ZustaendigeStelle,$($(Dokument_vorbereiten_WORKSPACE_NAME)_ZUSTAENDIGESTELLE),Titel,$($(Dokument_vorbereiten_WORKSPACE_NAME)_TITEL),Abkuerzung,$($(Dokument_vorbereiten_WORKSPACE_NAME)_ABKUERZUNG),OffizielleNr,$($(Dokument_vorbereiten_WORKSPACE_NAME)_OFFIZIELLENR),Gemeinde,$($(Dokument_vorbereiten_WORKSPACE_NAME)_GEMEINDE),xtf_id,$($(Dokument_vorbereiten_WORKSPACE_NAME)_XTF_ID),Dokument,$($(Dokument_vorbereiten_WORKSPACE_NAME)_DOKUMENT),Art_Doku,$($(Dokument_vorbereiten_WORKSPACE_NAME)_ART_DOKU),AMT_XTF_ID,$($(Dokument_vorbereiten_WORKSPACE_NAME)_AMT_XTF_ID),AMT_ID,$($(Dokument_vorbereiten_WORKSPACE_NAME)_AMT_ID), FEATURE_TYPE)"
 # -------------------------------------------------------------------------
 
 INCLUDE [    set macroLine "MACRO $(Dokument_vorbereiten_WORKSPACE_NAME)_AttributeRemover_LIST_EXP ";    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "{\[0-9\]+}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
@@ -8266,7 +8306,7 @@ INCLUDE [if { {ATTRIBUTES} == {ATTRIBUTES} } {                puts "MACRO $(Doku
 
 FACTORY_DEF * ReferenceFactory    FACTORY_NAME $(Dokument_vorbereiten_WORKSPACE_NAME)_FeatureMerger    INPUT REFERENCER FEATURE_TYPE "$(Dokument_vorbereiten_WORKSPACE_NAME)_PythonCaller_OUTPUT"    INPUT REFERENCEE FEATURE_TYPE "$(Dokument_vorbereiten_WORKSPACE_NAME)_AttributeRenamer_OUTPUT"    REFERENCE_INFO $($(Dokument_vorbereiten_WORKSPACE_NAME)_FeatureMerger_REFERENCE_INFO)    REFERENCE_TABLE @EvaluateExpression(STRING_ENCODED,<at>Value<openparen>ZustaendigeStelle<closeparen>,$(Dokument_vorbereiten_WORKSPACE_NAME)_FeatureMerger) @EvaluateExpression(STRING_ENCODED,<at>Value<openparen>AMT_XTF_ID<closeparen>,$(Dokument_vorbereiten_WORKSPACE_NAME)_FeatureMerger) AUTO    MERGE_ATTRIBUTES Yes    MANAGE_FME_TYPE Yes    MODE COMPLETE    PROCESS_DUPLICATE_REFERENCEES No    REFERENCEES_FIRST No    OUTPUT COMPLETE FEATURE_TYPE "$(Dokument_vorbereiten_WORKSPACE_NAME)_FeatureMerger_MERGED"
 
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(Dokument_vorbereiten_WORKSPACE_NAME)_Alle_Dokumente1485358568 Output Collector"   INPUT FEATURE_TYPE "$(Dokument_vorbereiten_WORKSPACE_NAME)_FeatureMerger_MERGED"   OUTPUT FEATURE_TYPE "$(Dokument_vorbereiten_WORKSPACE_NAME)_Alle_Dokumente"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(Dokument_vorbereiten_WORKSPACE_NAME)_Alle_Dokumente1489418623 Output Collector"   INPUT FEATURE_TYPE "$(Dokument_vorbereiten_WORKSPACE_NAME)_FeatureMerger_MERGED"   OUTPUT FEATURE_TYPE "$(Dokument_vorbereiten_WORKSPACE_NAME)_Alle_Dokumente"
 INCLUDE [puts {MACRO WB_CURRENT_CONTEXT $(WB_OLD_CONTEXT_$(Dokument_vorbereiten_WORKSPACE_NAME))}]
 FACTORY_DEF * TeeFactory   FACTORY_NAME "Dokument_vorbereiten Alle_Dokumente Output Renamer/Nuker"   INPUT FEATURE_TYPE Dokument_vorbereiten_Alle_Dokumente   OUTPUT FEATURE_TYPE Dokument_vorbereiten_Alle_Dokumente
 FACTORY_DEF * TeeFactory   FACTORY_NAME "Dokument_vorbereiten Alle_Dokumente Splitter"   INPUT FEATURE_TYPE Dokument_vorbereiten_Alle_Dokumente   OUTPUT FEATURE_TYPE Dokument_vorbereiten_Alle_Dokumente_0_dK6R3+d645U=   OUTPUT FEATURE_TYPE Dokument_vorbereiten_Alle_Dokumente_1_dK6R3+d645U=   OUTPUT FEATURE_TYPE Dokument_vorbereiten_Alle_Dokumente_2_dK6R3+d645U=
@@ -8286,8 +8326,8 @@ MACRO $(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_HINWEIS <at>Value<openparen>Hinwe
 MACRO $(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_VOR_XTF_ID <at>Value<openparen>VOR_XTF_ID<closeparen>
 DEFAULT_MACRO HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME ""
 INCLUDE [puts {MACRO WB_OLD_CONTEXT_$(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME) $(WB_CURRENT_CONTEXT)};          puts {MACRO WB_CURRENT_CONTEXT $(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)}]
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_AlleDokumente1485358568 Input Splitter"   INPUT FEATURE_TYPE "$(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_AlleDokumente"   OUTPUT FEATURE_TYPE "$(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_AlleDokumente" "@EvaluateExpression(ATTR_CREATE_EXPR_PROPAGATE_MISSING,ArtikelNr,$($(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_ARTIKELNR),Ordnungsnummer,$($(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_ORDNUNGSNUMMER),VOR_OID,$($(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_VOR_OID),Ursprung,$($(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_URSPRUNG),Hinweis,$($(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_HINWEIS),VOR_XTF_ID,$($(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_VOR_XTF_ID), FEATURE_TYPE)"
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_HinweisWeitereDokumente1485358568 Input Splitter"   INPUT FEATURE_TYPE "$(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_HinweisWeitereDokumente"   OUTPUT FEATURE_TYPE "$(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_HinweisWeitereDokumente" "@EvaluateExpression(ATTR_CREATE_EXPR_PROPAGATE_MISSING,ArtikelNr,$($(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_ARTIKELNR),Ordnungsnummer,$($(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_ORDNUNGSNUMMER),VOR_OID,$($(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_VOR_OID),Ursprung,$($(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_URSPRUNG),Hinweis,$($(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_HINWEIS),VOR_XTF_ID,$($(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_VOR_XTF_ID), FEATURE_TYPE)"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_AlleDokumente1489418623 Input Splitter"   INPUT FEATURE_TYPE "$(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_AlleDokumente"   OUTPUT FEATURE_TYPE "$(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_AlleDokumente" "@EvaluateExpression(ATTR_CREATE_EXPR_PROPAGATE_MISSING,ArtikelNr,$($(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_ARTIKELNR),Ordnungsnummer,$($(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_ORDNUNGSNUMMER),VOR_OID,$($(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_VOR_OID),Ursprung,$($(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_URSPRUNG),Hinweis,$($(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_HINWEIS),VOR_XTF_ID,$($(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_VOR_XTF_ID), FEATURE_TYPE)"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_HinweisWeitereDokumente1489418623 Input Splitter"   INPUT FEATURE_TYPE "$(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_HinweisWeitereDokumente"   OUTPUT FEATURE_TYPE "$(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_HinweisWeitereDokumente" "@EvaluateExpression(ATTR_CREATE_EXPR_PROPAGATE_MISSING,ArtikelNr,$($(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_ARTIKELNR),Ordnungsnummer,$($(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_ORDNUNGSNUMMER),VOR_OID,$($(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_VOR_OID),Ursprung,$($(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_URSPRUNG),Hinweis,$($(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_HINWEIS),VOR_XTF_ID,$($(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_VOR_XTF_ID), FEATURE_TYPE)"
 # -------------------------------------------------------------------------
 
 FACTORY_DEF * TeeFactory    FACTORY_NAME $(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_AttributeRenamer_5    INPUT  FEATURE_TYPE "$(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_HinweisWeitereDokumente"    OUTPUT FEATURE_TYPE "$(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_AttributeRenamer_5_OUTPUT"         @RenameAttributes(ATTR_LIST_DEF_VAL, ArtikelNr,ARTIKELNR,"",Ordnungsnummer,ORDNNR,"")
@@ -8308,7 +8348,7 @@ FACTORY_DEF * TeeFactory   FACTORY_NAME "$(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME
 
 INCLUDE [if { {ATTRIBUTES} == {ATTRIBUTES} } {                puts "MACRO $(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_FeatureMerger_5_REFERENCE_INFO ATTRIBUTES";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} && {<Unused>} == {POLYGONS}} {                puts "MACRO $(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_FeatureMerger_5_REFERENCE_INFO GEOM_BUILD_POLYS";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} && {<Unused>} == {AGGREGATES}} {                puts "MACRO $(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_FeatureMerger_5_REFERENCE_INFO GEOM_BUILD_AGGREGATES";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} && {<Unused>} == {LINESFROMPOINTS}} {                puts "MACRO $(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_FeatureMerger_5_REFERENCE_INFO GEOM_BUILD_LINES_FROM_POINTS";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} && {<Unused>} == {POLYGONS}} {                puts "MACRO $(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_FeatureMerger_5_REFERENCE_INFO GEOM_AND_ATTR_BUILD_POLYS";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} && {<Unused>} == {AGGREGATES}} {                puts "MACRO $(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_FeatureMerger_5_REFERENCE_INFO GEOM_AND_ATTR_BUILD_AGGREGATES";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} && {<Unused>} == {LINESFROMPOINTS}} {                puts "MACRO $(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_FeatureMerger_5_REFERENCE_INFO GEOM_AND_ATTR_BUILD_LINES_FROM_POINTS";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} } {                puts "MACRO $(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_FeatureMerger_5_REFERENCE_INFO GEOM_BUILD_AGGREGATES";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} } {                puts "MACRO $(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_FeatureMerger_5_REFERENCE_INFO GEOM_AND_ATTR_BUILD_AGGREGATES";             }          else {}; ]
 
-FACTORY_DEF * ReferenceFactory    FACTORY_NAME $(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_FeatureMerger_5    INPUT REFERENCER FEATURE_TYPE "$(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_AttributeRemover_7_OUTPUT"    INPUT REFERENCEE FEATURE_TYPE "$(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_AttributeRemover_9_OUTPUT_1_biMx161Oxig="    REFERENCE_INFO $($(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_FeatureMerger_5_REFERENCE_INFO)    REFERENCE_TABLE @EvaluateExpression(STRING_ENCODED,<at>Value<openparen>Ursprung<closeparen>,$(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_FeatureMerger_5) @EvaluateExpression(STRING_ENCODED,<at>Value<openparen>VOR_XTF_ID<closeparen>,$(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_FeatureMerger_5) AUTO    MERGE_ATTRIBUTES Yes    MANAGE_FME_TYPE Yes    MODE COMPLETE    PROCESS_DUPLICATE_REFERENCEES No    REFERENCEES_FIRST No    OUTPUT COMPLETE FEATURE_TYPE "$(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_FeatureMerger_5_MERGED"
+FACTORY_DEF * ReferenceFactory    FACTORY_NAME $(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_FeatureMerger_5    INPUT REFERENCER FEATURE_TYPE "$(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_AttributeRemover_7_OUTPUT"    INPUT REFERENCEE FEATURE_TYPE "$(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_AttributeRemover_9_OUTPUT_0_biMx161Oxig="    REFERENCE_INFO $($(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_FeatureMerger_5_REFERENCE_INFO)    REFERENCE_TABLE @EvaluateExpression(STRING_ENCODED,<at>Value<openparen>Ursprung<closeparen>,$(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_FeatureMerger_5) @EvaluateExpression(STRING_ENCODED,<at>Value<openparen>VOR_XTF_ID<closeparen>,$(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_FeatureMerger_5) AUTO    MERGE_ATTRIBUTES Yes    MANAGE_FME_TYPE Yes    MODE COMPLETE    PROCESS_DUPLICATE_REFERENCEES No    REFERENCEES_FIRST No    OUTPUT COMPLETE FEATURE_TYPE "$(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_FeatureMerger_5_MERGED"
 
 # -------------------------------------------------------------------------
 
@@ -8324,7 +8364,7 @@ FACTORY_DEF * TeeFactory    FACTORY_NAME $(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME
 
 INCLUDE [if { {ATTRIBUTES} == {ATTRIBUTES} } {                puts "MACRO $(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_FeatureMerger_6_REFERENCE_INFO ATTRIBUTES";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} && {<Unused>} == {POLYGONS}} {                puts "MACRO $(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_FeatureMerger_6_REFERENCE_INFO GEOM_BUILD_POLYS";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} && {<Unused>} == {AGGREGATES}} {                puts "MACRO $(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_FeatureMerger_6_REFERENCE_INFO GEOM_BUILD_AGGREGATES";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} && {<Unused>} == {LINESFROMPOINTS}} {                puts "MACRO $(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_FeatureMerger_6_REFERENCE_INFO GEOM_BUILD_LINES_FROM_POINTS";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} && {<Unused>} == {POLYGONS}} {                puts "MACRO $(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_FeatureMerger_6_REFERENCE_INFO GEOM_AND_ATTR_BUILD_POLYS";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} && {<Unused>} == {AGGREGATES}} {                puts "MACRO $(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_FeatureMerger_6_REFERENCE_INFO GEOM_AND_ATTR_BUILD_AGGREGATES";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} && {<Unused>} == {LINESFROMPOINTS}} {                puts "MACRO $(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_FeatureMerger_6_REFERENCE_INFO GEOM_AND_ATTR_BUILD_LINES_FROM_POINTS";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} } {                puts "MACRO $(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_FeatureMerger_6_REFERENCE_INFO GEOM_BUILD_AGGREGATES";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} } {                puts "MACRO $(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_FeatureMerger_6_REFERENCE_INFO GEOM_AND_ATTR_BUILD_AGGREGATES";             }          else {}; ]
 
-FACTORY_DEF * ReferenceFactory    FACTORY_NAME $(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_FeatureMerger_6    INPUT REFERENCER FEATURE_TYPE "$(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_AttributeRemover_12_OUTPUT"    INPUT REFERENCEE FEATURE_TYPE "$(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_AttributeRemover_9_OUTPUT_0_biMx161Oxig="    REFERENCE_INFO $($(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_FeatureMerger_6_REFERENCE_INFO)    REFERENCE_TABLE @EvaluateExpression(STRING_ENCODED,<at>Value<openparen>Hinweis<closeparen>,$(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_FeatureMerger_6) @EvaluateExpression(STRING_ENCODED,<at>Value<openparen>VOR_XTF_ID<closeparen>,$(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_FeatureMerger_6) AUTO    MERGE_ATTRIBUTES Yes    MANAGE_FME_TYPE Yes    MODE COMPLETE    PROCESS_DUPLICATE_REFERENCEES No    REFERENCEES_FIRST No    OUTPUT COMPLETE FEATURE_TYPE "$(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_FeatureMerger_6_MERGED"
+FACTORY_DEF * ReferenceFactory    FACTORY_NAME $(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_FeatureMerger_6    INPUT REFERENCER FEATURE_TYPE "$(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_AttributeRemover_12_OUTPUT"    INPUT REFERENCEE FEATURE_TYPE "$(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_AttributeRemover_9_OUTPUT_1_biMx161Oxig="    REFERENCE_INFO $($(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_FeatureMerger_6_REFERENCE_INFO)    REFERENCE_TABLE @EvaluateExpression(STRING_ENCODED,<at>Value<openparen>Hinweis<closeparen>,$(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_FeatureMerger_6) @EvaluateExpression(STRING_ENCODED,<at>Value<openparen>VOR_XTF_ID<closeparen>,$(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_FeatureMerger_6) AUTO    MERGE_ATTRIBUTES Yes    MANAGE_FME_TYPE Yes    MODE COMPLETE    PROCESS_DUPLICATE_REFERENCEES No    REFERENCEES_FIRST No    OUTPUT COMPLETE FEATURE_TYPE "$(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_FeatureMerger_6_MERGED"
 
 # -------------------------------------------------------------------------
 
@@ -8336,7 +8376,7 @@ FACTORY_DEF * TeeFactory    FACTORY_NAME $(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME
 INCLUDE [    set macroLine "MACRO $(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_AttributeRemover_13_LIST_EXP ";    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "{\[0-9\]+}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
 FACTORY_DEF * TeeFactory    FACTORY_NAME $(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_AttributeRemover_13    INPUT  FEATURE_TYPE "$(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_AttributeRenamer_8_OUTPUT"    OUTPUT FEATURE_TYPE "$(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_AttributeRemover_13_OUTPUT"        @RemoveAttributes(Hinweis,VOR_XTF_ID)        @RemoveAttributes(fme_regexp_match"$($(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_AttributeRemover_13_LIST_EXP)")
 
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_HINWEIDOK_ID_ersetzt1485358568 Output Collector"   INPUT FEATURE_TYPE "$(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_AttributeRemover_13_OUTPUT"   OUTPUT FEATURE_TYPE "$(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_HINWEIDOK_ID_ersetzt"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_HINWEIDOK_ID_ersetzt1489418623 Output Collector"   INPUT FEATURE_TYPE "$(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_AttributeRemover_13_OUTPUT"   OUTPUT FEATURE_TYPE "$(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_HINWEIDOK_ID_ersetzt"
 INCLUDE [puts {MACRO WB_CURRENT_CONTEXT $(WB_OLD_CONTEXT_$(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME))}]
 FACTORY_DEF * TeeFactory   FACTORY_NAME "HINWEIDOK-IDs_ersetzen HINWEIDOK_ID_ersetzt Output Renamer/Nuker"   INPUT FEATURE_TYPE HINWEIDOK-IDs_ersetzen_HINWEIDOK_ID_ersetzt   OUTPUT FEATURE_TYPE HINWEIDOK-IDs_ersetzen_HINWEIDOK_ID_ersetzt
 # -------------------------------------------------------------------------
@@ -8348,7 +8388,7 @@ MACRO $(HINWEIDOK_flachdruecken_WORKSPACE_NAME)___COMPOUND_PARAMETERS
 MACRO $(HINWEIDOK_flachdruecken_WORKSPACE_NAME)_SUB_DOC_NAME HINWEIDOK flachdruecken
 DEFAULT_MACRO HINWEIDOK_flachdruecken_WORKSPACE_NAME ""
 INCLUDE [puts {MACRO WB_OLD_CONTEXT_$(HINWEIDOK_flachdruecken_WORKSPACE_NAME) $(WB_CURRENT_CONTEXT)};          puts {MACRO WB_CURRENT_CONTEXT $(HINWEIDOK_flachdruecken_WORKSPACE_NAME)}]
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(HINWEIDOK_flachdruecken_WORKSPACE_NAME)_HINWEIDOK1485358568 Input Splitter"   INPUT FEATURE_TYPE "$(HINWEIDOK_flachdruecken_WORKSPACE_NAME)_HINWEIDOK"   OUTPUT FEATURE_TYPE "$(HINWEIDOK_flachdruecken_WORKSPACE_NAME)_HINWEIDOK"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(HINWEIDOK_flachdruecken_WORKSPACE_NAME)_HINWEIDOK1489418623 Input Splitter"   INPUT FEATURE_TYPE "$(HINWEIDOK_flachdruecken_WORKSPACE_NAME)_HINWEIDOK"   OUTPUT FEATURE_TYPE "$(HINWEIDOK_flachdruecken_WORKSPACE_NAME)_HINWEIDOK"
 # -------------------------------------------------------------------------
 FACTORY_DEF * InlineQueryFactory FACTORY_NAME $(HINWEIDOK_flachdruecken_WORKSPACE_NAME)_InlineQuerier TABLE_DEF HINWEIDOK ARTIKELNR<comma>text<comma>ORDNNR<comma>text<comma>VOR_OIDURSPRUNG<comma>text<comma>VOR_OIDHINWEIS<comma>text QUERY_DEF VIW_VORCHAIN1 SQL_ENCODED SELECT<space>HINWEIDOK.VOR_OIDURSPRUNG<comma><lf><space><space>HINWEIDOK.VOR_OIDHINWEIS<comma><lf><space><space>HINWEIDOK1.VOR_OIDHINWEIS<space>AS<space>VOR_OIDHINWEIS1<comma><lf><space><space>HINWEIDOK2.VOR_OIDHINWEIS<space>AS<space>VOR_OIDHINWEIS2<lf>FROM<space>HINWEIDOK<lf>LEFT<space>JOIN<space>HINWEIDOK<space>HINWEIDOK1<lf>ON<space>HINWEIDOK.VOR_OIDHINWEIS<space>=<space>HINWEIDOK1.VOR_OIDURSPRUNG<lf>LEFT<space>JOIN<space>HINWEIDOK<space>HINWEIDOK2<lf>ON<space>HINWEIDOK1.VOR_OIDHINWEIS<space>=<space>HINWEIDOK2.VOR_OIDURSPRUNG GEOMETRY_SELECTION FIRST INPUT HINWEIDOK FEATURE_TYPE "$(HINWEIDOK_flachdruecken_WORKSPACE_NAME)_HINWEIDOK" OUTPUT VIW_VORCHAIN1 FEATURE_TYPE $(HINWEIDOK_flachdruecken_WORKSPACE_NAME)_InlineQuerier_VIW_VORCHAIN1
 # -------------------------------------------------------------------------
@@ -8363,7 +8403,7 @@ FACTORY_DEF * TeeFactory    FACTORY_NAME $(HINWEIDOK_flachdruecken_WORKSPACE_NAM
 INCLUDE [    set macroLine "MACRO $(HINWEIDOK_flachdruecken_WORKSPACE_NAME)_AttributeRemover_14_LIST_EXP ";    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "{\[0-9\]+}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
 FACTORY_DEF * TeeFactory    FACTORY_NAME $(HINWEIDOK_flachdruecken_WORKSPACE_NAME)_AttributeRemover_14    INPUT  FEATURE_TYPE "$(HINWEIDOK_flachdruecken_WORKSPACE_NAME)_AttributeRenamer_11_OUTPUT"    OUTPUT FEATURE_TYPE "$(HINWEIDOK_flachdruecken_WORKSPACE_NAME)_AttributeRemover_14_OUTPUT"        @RemoveAttributes(oidfrom)        @RemoveAttributes(fme_regexp_match"$($(HINWEIDOK_flachdruecken_WORKSPACE_NAME)_AttributeRemover_14_LIST_EXP)")
 
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(HINWEIDOK_flachdruecken_WORKSPACE_NAME)_HINWEIDOK_flach1485358568 Output Collector"   INPUT FEATURE_TYPE "$(HINWEIDOK_flachdruecken_WORKSPACE_NAME)_AttributeRemover_14_OUTPUT"   OUTPUT FEATURE_TYPE "$(HINWEIDOK_flachdruecken_WORKSPACE_NAME)_HINWEIDOK_flach"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(HINWEIDOK_flachdruecken_WORKSPACE_NAME)_HINWEIDOK_flach1489418623 Output Collector"   INPUT FEATURE_TYPE "$(HINWEIDOK_flachdruecken_WORKSPACE_NAME)_AttributeRemover_14_OUTPUT"   OUTPUT FEATURE_TYPE "$(HINWEIDOK_flachdruecken_WORKSPACE_NAME)_HINWEIDOK_flach"
 INCLUDE [puts {MACRO WB_CURRENT_CONTEXT $(WB_OLD_CONTEXT_$(HINWEIDOK_flachdruecken_WORKSPACE_NAME))}]
 FACTORY_DEF * TeeFactory   FACTORY_NAME "HINWEIDOK_flachdruecken HINWEIDOK_flach Output Renamer/Nuker"   INPUT FEATURE_TYPE HINWEIDOK_flachdruecken_HINWEIDOK_flach   OUTPUT FEATURE_TYPE HINWEIDOK_flachdruecken_HINWEIDOK_flach
 # -------------------------------------------------------------------------
@@ -8382,7 +8422,7 @@ FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeRemover_10 OUTPUT Splitter"   
 
 INCLUDE [if { {ATTRIBUTES} == {ATTRIBUTES} } {                puts "MACRO FeatureMerger_11_REFERENCE_INFO ATTRIBUTES";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} && {POLYGONS} == {POLYGONS}} {                puts "MACRO FeatureMerger_11_REFERENCE_INFO GEOM_BUILD_POLYS";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} && {POLYGONS} == {AGGREGATES}} {                puts "MACRO FeatureMerger_11_REFERENCE_INFO GEOM_BUILD_AGGREGATES";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} && {POLYGONS} == {LINESFROMPOINTS}} {                puts "MACRO FeatureMerger_11_REFERENCE_INFO GEOM_BUILD_LINES_FROM_POINTS";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} && {POLYGONS} == {POLYGONS}} {                puts "MACRO FeatureMerger_11_REFERENCE_INFO GEOM_AND_ATTR_BUILD_POLYS";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} && {POLYGONS} == {AGGREGATES}} {                puts "MACRO FeatureMerger_11_REFERENCE_INFO GEOM_AND_ATTR_BUILD_AGGREGATES";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} && {POLYGONS} == {LINESFROMPOINTS}} {                puts "MACRO FeatureMerger_11_REFERENCE_INFO GEOM_AND_ATTR_BUILD_LINES_FROM_POINTS";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} } {                puts "MACRO FeatureMerger_11_REFERENCE_INFO GEOM_BUILD_AGGREGATES";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} } {                puts "MACRO FeatureMerger_11_REFERENCE_INFO GEOM_AND_ATTR_BUILD_AGGREGATES";             }          else {}; ]
 
-FACTORY_DEF * ReferenceFactory    FACTORY_NAME FeatureMerger_11    INPUT REFERENCER FEATURE_TYPE AttributeRemover_10_OUTPUT_0_0A9M96QeoKA=    INPUT REFERENCEE FEATURE_TYPE HINWEIDOK_flachdruecken_HINWEIDOK_flach    REFERENCE_INFO $(FeatureMerger_11_REFERENCE_INFO)    REFERENCE_TABLE @EvaluateExpression(STRING_ENCODED,<at>Value<openparen>VOR_OID<closeparen>,FeatureMerger_11) @EvaluateExpression(STRING_ENCODED,<at>Value<openparen>VOR_OIDURSPRUNG<closeparen>,FeatureMerger_11) AUTO    LIST_NAME "duplicates"    MERGE_ATTRIBUTES Yes    MANAGE_FME_TYPE Yes    MODE COMPLETE    PROCESS_DUPLICATE_REFERENCEES Yes    REFERENCEES_FIRST No    OUTPUT COMPLETE FEATURE_TYPE FeatureMerger_11_MERGED
+FACTORY_DEF * ReferenceFactory    FACTORY_NAME FeatureMerger_11    INPUT REFERENCER FEATURE_TYPE AttributeRemover_10_OUTPUT_1_0A9M96QeoKA=    INPUT REFERENCEE FEATURE_TYPE HINWEIDOK_flachdruecken_HINWEIDOK_flach    REFERENCE_INFO $(FeatureMerger_11_REFERENCE_INFO)    REFERENCE_TABLE @EvaluateExpression(STRING_ENCODED,<at>Value<openparen>VOR_OID<closeparen>,FeatureMerger_11) @EvaluateExpression(STRING_ENCODED,<at>Value<openparen>VOR_OIDURSPRUNG<closeparen>,FeatureMerger_11) AUTO    LIST_NAME "duplicates"    MERGE_ATTRIBUTES Yes    MANAGE_FME_TYPE Yes    MODE COMPLETE    PROCESS_DUPLICATE_REFERENCEES Yes    REFERENCEES_FIRST No    OUTPUT COMPLETE FEATURE_TYPE FeatureMerger_11_MERGED
 
 # -------------------------------------------------------------------------
 
@@ -8410,13 +8450,18 @@ FACTORY_DEF * AggregateFactory    FACTORY_NAME Aggregator_3    INPUT  FEATURE_TY
 
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * TeeFactory    FACTORY_NAME UUIDGenerator_7    INPUT  FEATURE_TYPE AttributeRemover_10_OUTPUT_1_0A9M96QeoKA=    INPUT  FEATURE_TYPE Aggregator_3_AGGREGATE    OUTPUT FEATURE_TYPE UUIDGenerator_7_OUTPUT         "HIV_ID" @UUID()
+FACTORY_DEF * TeeFactory    FACTORY_NAME UUIDGenerator_7    INPUT  FEATURE_TYPE AttributeRemover_10_OUTPUT_0_0A9M96QeoKA=    INPUT  FEATURE_TYPE Aggregator_3_AGGREGATE    OUTPUT FEATURE_TYPE UUIDGenerator_7_OUTPUT         "HIV_ID" @UUID()
 
 FACTORY_DEF * TeeFactory   FACTORY_NAME "UUIDGenerator_7 OUTPUT Splitter"   INPUT FEATURE_TYPE UUIDGenerator_7_OUTPUT   OUTPUT FEATURE_TYPE UUIDGenerator_7_OUTPUT_0_pTtEZb5y6ac=   OUTPUT FEATURE_TYPE UUIDGenerator_7_OUTPUT_1_pTtEZb5y6ac=   OUTPUT FEATURE_TYPE UUIDGenerator_7_OUTPUT_2_pTtEZb5y6ac=
 # -------------------------------------------------------------------------
 
-Tcl2 proc DuplicateRemover_3_894edb20_f6ea_4739_801b_fbbe493c529a0_dupKeyCount { attrList } {     set attrList [string trim $attrList {()}];     set attrs [split $attrList { } ];     set attrVal {___DuplicateRemover_3_894edb20_f6ea_4739_801b_fbbe493c529a0___};     foreach {attrName} $attrs {         set attrName [FME_DecodeText $attrName];         append attrVal [FME_GetAttribute $attrName] {_fmebreak_};     };     return [expr [incr ::__DuplicateRemover_3_894edb20_f6ea_4739_801b_fbbe493c529a0__KeySeenCount($attrVal)] - 1]; };
-FACTORY_DEF * TestFactory    FACTORY_NAME DuplicateRemover_3    INPUT  FEATURE_TYPE UUIDGenerator_7_OUTPUT_1_pTtEZb5y6ac=    TEST @Tcl2("DuplicateRemover_3_894edb20_f6ea_4739_801b_fbbe493c529a0_dupKeyCount {(EIB_OID VOR_OID)}") > 0    OUTPUT FAILED FEATURE_TYPE DuplicateRemover_3_UNIQUE
+Tcl2 proc DuplicateRemover_3_12c8b1c2_f7cb_4f4a_a5a9_447f1e5f16dd0_dupKeyCount { attrList } {     set attrList [string trim $attrList {()}];     set attrs [split $attrList { } ];     set attrVal {___DuplicateRemover_3_12c8b1c2_f7cb_4f4a_a5a9_447f1e5f16dd0___};     foreach {attrName} $attrs {         set attrName [FME_DecodeText $attrName];         append attrVal [FME_GetAttribute $attrName] {_fmebreak_};     };     return [expr [incr ::__DuplicateRemover_3_12c8b1c2_f7cb_4f4a_a5a9_447f1e5f16dd0__KeySeenCount($attrVal)] - 1]; };
+FACTORY_DEF * TestFactory    FACTORY_NAME DuplicateRemover_3    INPUT  FEATURE_TYPE UUIDGenerator_7_OUTPUT_1_pTtEZb5y6ac=    TEST @Tcl2("DuplicateRemover_3_12c8b1c2_f7cb_4f4a_a5a9_447f1e5f16dd0_dupKeyCount {(EIB_OID VOR_OID)}") > 0    OUTPUT FAILED FEATURE_TYPE DuplicateRemover_3_UNIQUE
+
+# -------------------------------------------------------------------------
+
+INCLUDE [    set macroLine "MACRO AttributeRemover_19_LIST_EXP ";    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "{\[0-9\]+}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
+FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRemover_19    INPUT  FEATURE_TYPE UUIDGenerator_3_OUTPUT_1_imAloxdiMNw=    INPUT  FEATURE_TYPE UUIDGenerator_7_OUTPUT_0_pTtEZb5y6ac=    OUTPUT FEATURE_TYPE AttributeRemover_19_OUTPUT        @RemoveAttributes(HIV_ID)        @RemoveAttributes(fme_regexp_match"$(AttributeRemover_19_LIST_EXP)")
 
 # -------------------------------------------------------------------------
 
@@ -8443,15 +8488,10 @@ FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRemover_11    INPUT  FEATURE_T
 
 # -------------------------------------------------------------------------
 
-Tcl2 proc DuplicateRemover_2_879729b5_332c_4149_9763_43f3187b54eb0_dupKeyCount { attrList } {     set attrList [string trim $attrList {()}];     set attrs [split $attrList { } ];     set attrVal {___DuplicateRemover_2_879729b5_332c_4149_9763_43f3187b54eb0___};     foreach {attrName} $attrs {         set attrName [FME_DecodeText $attrName];         append attrVal [FME_GetAttribute $attrName] {_fmebreak_};     };     return [expr [incr ::__DuplicateRemover_2_879729b5_332c_4149_9763_43f3187b54eb0__KeySeenCount($attrVal)] - 1]; };
-FACTORY_DEF * TestFactory    FACTORY_NAME DuplicateRemover_2    INPUT  FEATURE_TYPE AttributeRemover_11_OUTPUT    TEST @Tcl2("DuplicateRemover_2_879729b5_332c_4149_9763_43f3187b54eb0_dupKeyCount {(VOR_XTF_ID VOR_TITEL_DE VOR_OFFIZIELLERTITEL_DE VOR_ABKUERZUNG_DE VOR_OFFIZIELLENR VOR_OID VOR_PUBLIZIERTAB VOA_ID VOR_TITEL_FR VOR_OFFIZIELLERTITEL_FR VOR_ABKUERZUNG_FR VOR_TEXTIMWEB_DE VOR_TEXTIMWEB_FR filecopy_source_dataset filecopy_dest_dataset)}") > 0    OUTPUT FAILED FEATURE_TYPE DuplicateRemover_2_UNIQUE
+Tcl2 proc DuplicateRemover_2_178449d1_04f3_4efd_b0a3_d1f0724da1d20_dupKeyCount { attrList } {     set attrList [string trim $attrList {()}];     set attrs [split $attrList { } ];     set attrVal {___DuplicateRemover_2_178449d1_04f3_4efd_b0a3_d1f0724da1d20___};     foreach {attrName} $attrs {         set attrName [FME_DecodeText $attrName];         append attrVal [FME_GetAttribute $attrName] {_fmebreak_};     };     return [expr [incr ::__DuplicateRemover_2_178449d1_04f3_4efd_b0a3_d1f0724da1d20__KeySeenCount($attrVal)] - 1]; };
+FACTORY_DEF * TestFactory    FACTORY_NAME DuplicateRemover_2    INPUT  FEATURE_TYPE AttributeRemover_11_OUTPUT    TEST @Tcl2("DuplicateRemover_2_178449d1_04f3_4efd_b0a3_d1f0724da1d20_dupKeyCount {(VOR_XTF_ID VOR_TITEL_DE VOR_OFFIZIELLERTITEL_DE VOR_ABKUERZUNG_DE VOR_OFFIZIELLENR VOR_OID VOR_PUBLIZIERTAB VOA_ID VOR_TITEL_FR VOR_OFFIZIELLERTITEL_FR VOR_ABKUERZUNG_FR VOR_TEXTIMWEB_DE VOR_TEXTIMWEB_FR filecopy_source_dataset filecopy_dest_dataset)}") > 0    OUTPUT FAILED FEATURE_TYPE DuplicateRemover_2_UNIQUE
 
 FACTORY_DEF * TeeFactory   FACTORY_NAME "DuplicateRemover_2 UNIQUE Splitter"   INPUT FEATURE_TYPE DuplicateRemover_2_UNIQUE   OUTPUT FEATURE_TYPE DuplicateRemover_2_UNIQUE_0_1tr7Jl4tl3A=   OUTPUT FEATURE_TYPE DuplicateRemover_2_UNIQUE_1_1tr7Jl4tl3A=
-# -------------------------------------------------------------------------
-
-INCLUDE [    set macroLine "MACRO AttributeRemover_19_LIST_EXP ";    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "{\[0-9\]+}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
-FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRemover_19    INPUT  FEATURE_TYPE UUIDGenerator_3_OUTPUT_0_imAloxdiMNw=    INPUT  FEATURE_TYPE UUIDGenerator_7_OUTPUT_0_pTtEZb5y6ac=    OUTPUT FEATURE_TYPE AttributeRemover_19_OUTPUT        @RemoveAttributes(HIV_ID)        @RemoveAttributes(fme_regexp_match"$(AttributeRemover_19_LIST_EXP)")
-
 # -------------------------------------------------------------------------
 
 INCLUDE [if { {ATTRIBUTES} == {ATTRIBUTES} } {                puts "MACRO FeatureMerger_13_REFERENCE_INFO ATTRIBUTES";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} && {<Unused>} == {POLYGONS}} {                puts "MACRO FeatureMerger_13_REFERENCE_INFO GEOM_BUILD_POLYS";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} && {<Unused>} == {AGGREGATES}} {                puts "MACRO FeatureMerger_13_REFERENCE_INFO GEOM_BUILD_AGGREGATES";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} && {<Unused>} == {LINESFROMPOINTS}} {                puts "MACRO FeatureMerger_13_REFERENCE_INFO GEOM_BUILD_LINES_FROM_POINTS";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} && {<Unused>} == {POLYGONS}} {                puts "MACRO FeatureMerger_13_REFERENCE_INFO GEOM_AND_ATTR_BUILD_POLYS";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} && {<Unused>} == {AGGREGATES}} {                puts "MACRO FeatureMerger_13_REFERENCE_INFO GEOM_AND_ATTR_BUILD_AGGREGATES";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} && {<Unused>} == {LINESFROMPOINTS}} {                puts "MACRO FeatureMerger_13_REFERENCE_INFO GEOM_AND_ATTR_BUILD_LINES_FROM_POINTS";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} } {                puts "MACRO FeatureMerger_13_REFERENCE_INFO GEOM_BUILD_AGGREGATES";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} } {                puts "MACRO FeatureMerger_13_REFERENCE_INFO GEOM_AND_ATTR_BUILD_AGGREGATES";             }          else {}; ]
@@ -8466,7 +8506,7 @@ FACTORY_DEF * JoinFactory    FACTORY_NAME Joiner    INPUT  FEATURE_TYPE FeatureM
 
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRenamer_13    INPUT  FEATURE_TYPE FeatureMerger_13_MERGED    INPUT  FEATURE_TYPE Joiner_JOINED    OUTPUT FEATURE_TYPE AttributeRenamer_13_OUTPUT         @RenameAttributes(ATTR_LIST_DEF_VAL, EIB_OID,RVS_ID,"",VOR_TITEL_DE,TITEL,"",VOR_OFFIZIELLERTITEL_DE,OFFIZTITEL,"",VOR_ABKUERZUNG_DE,ABKUERZUNG,"",VOR_OFFIZIELLENR,OFFIZNR,"",VOR_TEXTIMWEB_DE,DOKUMENT,"",HIV_ARTNR,ARTIKELNR,"")
+FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRenamer_13    INPUT  FEATURE_TYPE Joiner_JOINED    INPUT  FEATURE_TYPE FeatureMerger_13_MERGED    OUTPUT FEATURE_TYPE AttributeRenamer_13_OUTPUT         @RenameAttributes(ATTR_LIST_DEF_VAL, EIB_OID,RVS_ID,"",VOR_TITEL_DE,TITEL,"",VOR_OFFIZIELLERTITEL_DE,OFFIZTITEL,"",VOR_ABKUERZUNG_DE,ABKUERZUNG,"",VOR_OFFIZIELLENR,OFFIZNR,"",VOR_TEXTIMWEB_DE,DOKUMENT,"",HIV_ARTNR,ARTIKELNR,"")
 
 
 # -------------------------------------------------------------------------
@@ -8486,21 +8526,21 @@ FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRemover_12    INPUT  FEATURE_T
 
 # -------------------------------------------------------------------------
 
-Tcl2 proc DuplicateRemover_1687c4a8_dc30_46b5_ad4e_0d1db4776a310_dupKeyCount { attrList } {     set attrList [string trim $attrList {()}];     set attrs [split $attrList { } ];     set attrVal {___DuplicateRemover_1687c4a8_dc30_46b5_ad4e_0d1db4776a310___};     foreach {attrName} $attrs {         set attrName [FME_DecodeText $attrName];         append attrVal [FME_GetAttribute $attrName] {_fmebreak_};     };     return [expr [incr ::__DuplicateRemover_1687c4a8_dc30_46b5_ad4e_0d1db4776a310__KeySeenCount($attrVal)] - 1]; };
-FACTORY_DEF * TestFactory    FACTORY_NAME DuplicateRemover    INPUT  FEATURE_TYPE AttributeRemover_12_OUTPUT    TEST @Tcl2("DuplicateRemover_1687c4a8_dc30_46b5_ad4e_0d1db4776a310_dupKeyCount {(RVS_ID ARTIKELNR DOKUMENT TITEL OFFIZTITEL ABKUERZUNG OFFIZNR ZUSTAENDIG ART)}") > 0    OUTPUT FAILED FEATURE_TYPE DuplicateRemover_UNIQUE
+Tcl2 proc DuplicateRemover_e81f01bf_45f3_4406_bd64_1431e872ff770_dupKeyCount { attrList } {     set attrList [string trim $attrList {()}];     set attrs [split $attrList { } ];     set attrVal {___DuplicateRemover_e81f01bf_45f3_4406_bd64_1431e872ff770___};     foreach {attrName} $attrs {         set attrName [FME_DecodeText $attrName];         append attrVal [FME_GetAttribute $attrName] {_fmebreak_};     };     return [expr [incr ::__DuplicateRemover_e81f01bf_45f3_4406_bd64_1431e872ff770__KeySeenCount($attrVal)] - 1]; };
+FACTORY_DEF * TestFactory    FACTORY_NAME DuplicateRemover    INPUT  FEATURE_TYPE AttributeRemover_12_OUTPUT    TEST @Tcl2("DuplicateRemover_e81f01bf_45f3_4406_bd64_1431e872ff770_dupKeyCount {(RVS_ID ARTIKELNR DOKUMENT TITEL OFFIZTITEL ABKUERZUNG OFFIZNR ZUSTAENDIG ART)}") > 0    OUTPUT FAILED FEATURE_TYPE DuplicateRemover_UNIQUE
 
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME "UUIDGenerator_3_OUTPUT_0_imAloxdiMNw= -> OEREB2.HINVOR Correlator"    INPUT FEATURE_TYPE UUIDGenerator_3_OUTPUT_0_imAloxdiMNw=    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 0       @Transform(FME_GENERIC,ORACLE8I_DB) "@EvaluateExpression(ATTR_CREATE_EXPR_PROPAGATE_MISSING,HIV_LIEFEREINHEIT,$(LIEFEREINHEIT$encode), ATTR_SET)"       @SupplyAttributes(ENCODED,__wb_out_feat_type__,OEREB2.HINVOR)
 # -------------------------------------------------------------------------
 
 FACTORY_DEF * TeeFactory    FACTORY_NAME "DuplicateRemover_3_UNIQUE -> OEREB2.HINVOR Correlator"    INPUT FEATURE_TYPE DuplicateRemover_3_UNIQUE    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 0       @Transform(FME_GENERIC,ORACLE8I_DB) "@EvaluateExpression(ATTR_CREATE_EXPR_PROPAGATE_MISSING,HIV_LIEFEREINHEIT,$(LIEFEREINHEIT$encode), ATTR_SET)"       @SupplyAttributes(ENCODED,__wb_out_feat_type__,OEREB2.HINVOR)
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * TeeFactory    FACTORY_NAME "UUIDGenerator_3_OUTPUT_1_imAloxdiMNw= -> OEREB2.HINVOR Correlator"    INPUT FEATURE_TYPE UUIDGenerator_3_OUTPUT_1_imAloxdiMNw=    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 0       @Transform(FME_GENERIC,ORACLE8I_DB) "@EvaluateExpression(ATTR_CREATE_EXPR_PROPAGATE_MISSING,HIV_LIEFEREINHEIT,$(LIEFEREINHEIT$encode), ATTR_SET)"       @SupplyAttributes(ENCODED,__wb_out_feat_type__,OEREB2.HINVOR)
+FACTORY_DEF * TeeFactory    FACTORY_NAME "Counter_OUTPUT -> OEREB2.EIGENTUMSBESCHRAENKUNG Correlator"    INPUT FEATURE_TYPE Counter_OUTPUT    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 0       @Transform(FME_GENERIC,ORACLE8I_DB) "@EvaluateExpression(ATTR_CREATE_EXPR_PROPAGATE_MISSING,EIB_LIEFEREINHEIT,$(LIEFEREINHEIT$encode),AMT_OID,$(AMT_OID$encode),DAR_OID,$(DAR_OID$encode),RES_ID,$(RES_ID$encode),STH_ID,$(STH_ID$encode),EIB_LEGENDESYMBOL_DE,$(LEGEND_BASEURL$encode),EIB_LEGENDESYMBOL_FR,$(LEGEND_BASEURL$encode), ATTR_SET)"       @SupplyAttributes(ENCODED,__wb_out_feat_type__,OEREB2.EIGENTUMSBESCHRAENKUNG)
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * TeeFactory    FACTORY_NAME "Aggregator_AGGREGATE_0_qtKD1R8siTs= -> OEREB2.EIGENTUMSBESCHRAENKUNG Correlator"    INPUT FEATURE_TYPE Aggregator_AGGREGATE_0_qtKD1R8siTs=    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 0       @Transform(FME_GENERIC,ORACLE8I_DB) "@EvaluateExpression(ATTR_CREATE_EXPR_PROPAGATE_MISSING,EIB_LIEFEREINHEIT,$(LIEFEREINHEIT$encode),AMT_OID,$(AMT_OID$encode),DAR_OID,$(DAR_OID$encode),RES_ID,$(RES_ID$encode),STH_ID,$(STH_ID$encode),EIB_LEGENDESYMBOL_DE,$(LEGEND_BASEURL$encode),EIB_LEGENDESYMBOL_FR,$(LEGEND_BASEURL$encode), ATTR_SET)"       @SupplyAttributes(ENCODED,__wb_out_feat_type__,OEREB2.EIGENTUMSBESCHRAENKUNG)
-# -------------------------------------------------------------------------
-
-FACTORY_DEF * TeeFactory    FACTORY_NAME "DuplicateRemover_2_UNIQUE_1_1tr7Jl4tl3A= -> OEREB2.VORSCHRIFT Correlator"    INPUT FEATURE_TYPE DuplicateRemover_2_UNIQUE_1_1tr7Jl4tl3A=    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 0       @Transform(FME_GENERIC,ORACLE8I_DB) "@EvaluateExpression(ATTR_CREATE_EXPR_PROPAGATE_MISSING,VOR_LIEFEREINHEIT,$(LIEFEREINHEIT$encode),RES_ID,$(RES_ID$encode),AMT_OID,$(AMT_OID$encode), ATTR_SET)"       @SupplyAttributes(ENCODED,__wb_out_feat_type__,OEREB2.VORSCHRIFT)
+FACTORY_DEF * TeeFactory    FACTORY_NAME "DuplicateRemover_2_UNIQUE_0_1tr7Jl4tl3A= -> OEREB2.VORSCHRIFT Correlator"    INPUT FEATURE_TYPE DuplicateRemover_2_UNIQUE_0_1tr7Jl4tl3A=    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 0       @Transform(FME_GENERIC,ORACLE8I_DB) "@EvaluateExpression(ATTR_CREATE_EXPR_PROPAGATE_MISSING,VOR_LIEFEREINHEIT,$(LIEFEREINHEIT$encode),RES_ID,$(RES_ID$encode),AMT_OID,$(AMT_OID$encode), ATTR_SET)"       @SupplyAttributes(ENCODED,__wb_out_feat_type__,OEREB2.VORSCHRIFT)
 # -------------------------------------------------------------------------
 
 FACTORY_DEF * TeeFactory    FACTORY_NAME "AttributeCreator_OUTPUT_0_olPiq+C1D00= -> OEREB2.LINIE Correlator"    INPUT FEATURE_TYPE AttributeCreator_OUTPUT_0_olPiq+C1D00=    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 1       @Transform(FME_GENERIC,GEODATABASE_SDE) "@EvaluateExpression(ATTR_CREATE_EXPR_PROPAGATE_MISSING,LIN_LIEFEREINHEIT,$(LIEFEREINHEIT$encode),AMT_OID,$(AMT_OID$encode),RES_ID,$(RES_ID$encode), ATTR_SET)"       @SupplyAttributes(ENCODED,__wb_out_feat_type__,OEREB2.LINIE)
@@ -8521,7 +8561,7 @@ FACTORY_DEF * TeeFactory    FACTORY_NAME "FeatureMerger_5_MERGED -> GEODB.NUPLWA
 FACTORY_DEF * TeeFactory    FACTORY_NAME "FeatureMerger_4_MERGED -> GEODB.NUPLWALD_WALDAMTT Correlator"    INPUT FEATURE_TYPE FeatureMerger_4_MERGED    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 2       @Transform(FME_GENERIC,GEODATABASE_SDE) "@EvaluateExpression(ATTR_CREATE_EXPR_PROPAGATE_MISSING,BFSNR,$(BFSNR$encode),GEMNAME,$(GEMNAME$encode), ATTR_SET)"       @SupplyAttributes(ENCODED,__wb_out_feat_type__,GEODB.NUPLWALD_WALDAMTT)
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * TeeFactory    FACTORY_NAME "DuplicateRemover_2_UNIQUE_0_1tr7Jl4tl3A= -> filecopy Correlator"    INPUT FEATURE_TYPE DuplicateRemover_2_UNIQUE_0_1tr7Jl4tl3A=    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 3       @Transform(FME_GENERIC,FILECOPY)       @SupplyAttributes(ENCODED,__wb_out_feat_type__,filecopy)
+FACTORY_DEF * TeeFactory    FACTORY_NAME "DuplicateRemover_2_UNIQUE_1_1tr7Jl4tl3A= -> filecopy Correlator"    INPUT FEATURE_TYPE DuplicateRemover_2_UNIQUE_1_1tr7Jl4tl3A=    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 3       @Transform(FME_GENERIC,FILECOPY)       @SupplyAttributes(ENCODED,__wb_out_feat_type__,filecopy)
 # -------------------------------------------------------------------------
 
 FACTORY_DEF * TestFactory   FACTORY_NAME "Final Output Feature Type Router"   INPUT FEATURE_TYPE *   TEST @Value(__wb_out_feat_type__) != ""   OUTPUT PASSED FEATURE_TYPE *     @FeatureType(@Value(__wb_out_feat_type__))   OUTPUT FAILED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")
