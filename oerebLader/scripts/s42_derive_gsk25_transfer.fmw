@@ -5,7 +5,7 @@
 #    Command-line to run this workspace:
 #    
 #    
-#    "C:\Program Files (x86)\FME\fme.exe" D:\Daten\repos\oerebLader\oerebLader\scripts\s42_derive_gsk25_transfer.fmw
+#    "C:\Program Files (x86)\FME\fme.exe" D:\eclipse_workspaces\oerebLader\oerebLader\scripts\s42_derive_gsk25_transfer.fmw
 #          --GEODB_USERNAME ""
 #          --GEODB_PASSWORD ********
 #          --GEODB_DATABASE ""
@@ -24,7 +24,7 @@
 #    
 #! PASSWORD=""
 #! ATTR_TYPE_ENCODING="SDF"
-#! VIEW_POSITION="4176 456"
+#! VIEW_POSITION="-1173 1467"
 #! SHOW_INFO_NODES="true"
 #! FME_STROKE_MAX_DEVIATION="0"
 #! BEGIN_PYTHON=""
@@ -42,13 +42,13 @@
 #! USAGE=""
 #! END_PYTHON=""
 #! HISTORY=""
-#! FME_DOCUMENT_PRIORGUID="352de003-3c2e-4471-bb8d-1302fdc19ba2,c28f0f50-1d1f-4b78-aca7-2678e7dc51dd,8e2cb3b0-7e7c-41a9-8867-4da115812f23,678e1772-bbaa-4327-b1fb-45c701e6de33,60303124-8218-430f-ae1d-1b16aa64ef8f,01832909-8e5c-492a-b2a0-aab160f6263b,8979e61b-53f8-4e61-a75f-384c521df3e9,86e25990-6da7-4394-97c3-a567961770ab,6836889d-a080-484a-8d88-611ba8685b07,87236980-a427-49e1-b8b9-0f77db73aca8,d6ef1440-6300-45ae-965d-78fd8f4e1f0f,42aa922e-e192-48b9-8317-41b69c81a718,578f4f42-f550-41b3-8562-24aef8078eb9,786c1e84-8caa-438f-ab2f-b05c3ad17201,2d7901f0-2e95-4920-b692-ff0677fa6881,c734fa4e-e13a-41ae-aed2-fad8fad5993c,d0bf3c3f-ee82-4f5e-b2df-9f6aecc9b8b0"
+#! FME_DOCUMENT_PRIORGUID="352de003-3c2e-4471-bb8d-1302fdc19ba2,c28f0f50-1d1f-4b78-aca7-2678e7dc51dd,8e2cb3b0-7e7c-41a9-8867-4da115812f23,678e1772-bbaa-4327-b1fb-45c701e6de33,60303124-8218-430f-ae1d-1b16aa64ef8f,01832909-8e5c-492a-b2a0-aab160f6263b,8979e61b-53f8-4e61-a75f-384c521df3e9,86e25990-6da7-4394-97c3-a567961770ab,6836889d-a080-484a-8d88-611ba8685b07,87236980-a427-49e1-b8b9-0f77db73aca8,d6ef1440-6300-45ae-965d-78fd8f4e1f0f,42aa922e-e192-48b9-8317-41b69c81a718,578f4f42-f550-41b3-8562-24aef8078eb9,786c1e84-8caa-438f-ab2f-b05c3ad17201,2d7901f0-2e95-4920-b692-ff0677fa6881,c734fa4e-e13a-41ae-aed2-fad8fad5993c,d0bf3c3f-ee82-4f5e-b2df-9f6aecc9b8b0,888600ae-476b-4e35-b1a5-3bc508e9ed99"
 #! DOC_TOP_LEFT="-1147 -2861"
 #! REQUIREMENTS_KEYWORD=""
 #! SOURCE_ROUTING_FILE=""
 #! DESTINATION_ROUTING_FILE=""
 #! DESTINATION="NONE"
-#! LAST_SAVE_DATE="2017-03-13T16:20:40"
+#! LAST_SAVE_DATE="2017-04-03T10:07:24"
 #! FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
 #! WORKSPACE_VERSION="1"
 #! SOURCE="NONE"
@@ -59,7 +59,7 @@
 #! REQUIREMENTS=""
 #! BEGIN_TCL=""
 #! DOC_EXTENTS="10010 4329"
-#! FME_DOCUMENT_GUID="888600ae-476b-4e35-b1a5-3bc508e9ed99"
+#! FME_DOCUMENT_GUID="c9dcd998-eaff-4204-b5e5-487731b46290"
 #! SHOW_ANNOTATIONS="true"
 #! IGNORE_READER_FAILURE="No"
 #! WARN_INVALID_XFORM_PARAM="Yes"
@@ -2855,7 +2855,7 @@
 #! <XFORM_ATTR ATTR_NAME="REGLEM_DOC" IS_USER_CREATED="false" FEAT_INDEX="6" />
 #! <XFORM_ATTR ATTR_NAME="SHAPE.AREA" IS_USER_CREATED="false" FEAT_INDEX="6" />
 #! <XFORM_ATTR ATTR_NAME="SHAPE.LEN" IS_USER_CREATED="false" FEAT_INDEX="6" />
-#! <OUTPUT_FEAT NAME="SA1"/>
+#! <OUTPUT_FEAT NAME="S3Zu"/>
 #! <FEAT_COLLAPSED COLLAPSED="7"/>
 #! <XFORM_ATTR ATTR_NAME="geodb_oid" IS_USER_CREATED="false" FEAT_INDEX="7" />
 #! <XFORM_ATTR ATTR_NAME="OBJECTID" IS_USER_CREATED="false" FEAT_INDEX="7" />
@@ -2867,7 +2867,7 @@
 #! <XFORM_ATTR ATTR_NAME="REGLEM_DOC" IS_USER_CREATED="false" FEAT_INDEX="7" />
 #! <XFORM_ATTR ATTR_NAME="SHAPE.AREA" IS_USER_CREATED="false" FEAT_INDEX="7" />
 #! <XFORM_ATTR ATTR_NAME="SHAPE.LEN" IS_USER_CREATED="false" FEAT_INDEX="7" />
-#! <OUTPUT_FEAT NAME="SA2"/>
+#! <OUTPUT_FEAT NAME="SBW"/>
 #! <FEAT_COLLAPSED COLLAPSED="8"/>
 #! <XFORM_ATTR ATTR_NAME="geodb_oid" IS_USER_CREATED="false" FEAT_INDEX="8" />
 #! <XFORM_ATTR ATTR_NAME="OBJECTID" IS_USER_CREATED="false" FEAT_INDEX="8" />
@@ -2879,7 +2879,7 @@
 #! <XFORM_ATTR ATTR_NAME="REGLEM_DOC" IS_USER_CREATED="false" FEAT_INDEX="8" />
 #! <XFORM_ATTR ATTR_NAME="SHAPE.AREA" IS_USER_CREATED="false" FEAT_INDEX="8" />
 #! <XFORM_ATTR ATTR_NAME="SHAPE.LEN" IS_USER_CREATED="false" FEAT_INDEX="8" />
-#! <OUTPUT_FEAT NAME="SA3"/>
+#! <OUTPUT_FEAT NAME="Sh"/>
 #! <FEAT_COLLAPSED COLLAPSED="9"/>
 #! <XFORM_ATTR ATTR_NAME="geodb_oid" IS_USER_CREATED="false" FEAT_INDEX="9" />
 #! <XFORM_ATTR ATTR_NAME="OBJECTID" IS_USER_CREATED="false" FEAT_INDEX="9" />
@@ -2891,10 +2891,58 @@
 #! <XFORM_ATTR ATTR_NAME="REGLEM_DOC" IS_USER_CREATED="false" FEAT_INDEX="9" />
 #! <XFORM_ATTR ATTR_NAME="SHAPE.AREA" IS_USER_CREATED="false" FEAT_INDEX="9" />
 #! <XFORM_ATTR ATTR_NAME="SHAPE.LEN" IS_USER_CREATED="false" FEAT_INDEX="9" />
+#! <OUTPUT_FEAT NAME="Sm"/>
+#! <FEAT_COLLAPSED COLLAPSED="10"/>
+#! <XFORM_ATTR ATTR_NAME="geodb_oid" IS_USER_CREATED="false" FEAT_INDEX="10" />
+#! <XFORM_ATTR ATTR_NAME="OBJECTID" IS_USER_CREATED="false" FEAT_INDEX="10" />
+#! <XFORM_ATTR ATTR_NAME="GSZ_NR" IS_USER_CREATED="false" FEAT_INDEX="10" />
+#! <XFORM_ATTR ATTR_NAME="TYP" IS_USER_CREATED="false" FEAT_INDEX="10" />
+#! <XFORM_ATTR ATTR_NAME="GSZ_NAME" IS_USER_CREATED="false" FEAT_INDEX="10" />
+#! <XFORM_ATTR ATTR_NAME="BESCHLUSS" IS_USER_CREATED="false" FEAT_INDEX="10" />
+#! <XFORM_ATTR ATTR_NAME="BESCHL_DOC" IS_USER_CREATED="false" FEAT_INDEX="10" />
+#! <XFORM_ATTR ATTR_NAME="REGLEM_DOC" IS_USER_CREATED="false" FEAT_INDEX="10" />
+#! <XFORM_ATTR ATTR_NAME="SHAPE.AREA" IS_USER_CREATED="false" FEAT_INDEX="10" />
+#! <XFORM_ATTR ATTR_NAME="SHAPE.LEN" IS_USER_CREATED="false" FEAT_INDEX="10" />
+#! <OUTPUT_FEAT NAME="SA1"/>
+#! <FEAT_COLLAPSED COLLAPSED="11"/>
+#! <XFORM_ATTR ATTR_NAME="geodb_oid" IS_USER_CREATED="false" FEAT_INDEX="11" />
+#! <XFORM_ATTR ATTR_NAME="OBJECTID" IS_USER_CREATED="false" FEAT_INDEX="11" />
+#! <XFORM_ATTR ATTR_NAME="GSZ_NR" IS_USER_CREATED="false" FEAT_INDEX="11" />
+#! <XFORM_ATTR ATTR_NAME="TYP" IS_USER_CREATED="false" FEAT_INDEX="11" />
+#! <XFORM_ATTR ATTR_NAME="GSZ_NAME" IS_USER_CREATED="false" FEAT_INDEX="11" />
+#! <XFORM_ATTR ATTR_NAME="BESCHLUSS" IS_USER_CREATED="false" FEAT_INDEX="11" />
+#! <XFORM_ATTR ATTR_NAME="BESCHL_DOC" IS_USER_CREATED="false" FEAT_INDEX="11" />
+#! <XFORM_ATTR ATTR_NAME="REGLEM_DOC" IS_USER_CREATED="false" FEAT_INDEX="11" />
+#! <XFORM_ATTR ATTR_NAME="SHAPE.AREA" IS_USER_CREATED="false" FEAT_INDEX="11" />
+#! <XFORM_ATTR ATTR_NAME="SHAPE.LEN" IS_USER_CREATED="false" FEAT_INDEX="11" />
+#! <OUTPUT_FEAT NAME="SA2"/>
+#! <FEAT_COLLAPSED COLLAPSED="12"/>
+#! <XFORM_ATTR ATTR_NAME="geodb_oid" IS_USER_CREATED="false" FEAT_INDEX="12" />
+#! <XFORM_ATTR ATTR_NAME="OBJECTID" IS_USER_CREATED="false" FEAT_INDEX="12" />
+#! <XFORM_ATTR ATTR_NAME="GSZ_NR" IS_USER_CREATED="false" FEAT_INDEX="12" />
+#! <XFORM_ATTR ATTR_NAME="TYP" IS_USER_CREATED="false" FEAT_INDEX="12" />
+#! <XFORM_ATTR ATTR_NAME="GSZ_NAME" IS_USER_CREATED="false" FEAT_INDEX="12" />
+#! <XFORM_ATTR ATTR_NAME="BESCHLUSS" IS_USER_CREATED="false" FEAT_INDEX="12" />
+#! <XFORM_ATTR ATTR_NAME="BESCHL_DOC" IS_USER_CREATED="false" FEAT_INDEX="12" />
+#! <XFORM_ATTR ATTR_NAME="REGLEM_DOC" IS_USER_CREATED="false" FEAT_INDEX="12" />
+#! <XFORM_ATTR ATTR_NAME="SHAPE.AREA" IS_USER_CREATED="false" FEAT_INDEX="12" />
+#! <XFORM_ATTR ATTR_NAME="SHAPE.LEN" IS_USER_CREATED="false" FEAT_INDEX="12" />
+#! <OUTPUT_FEAT NAME="SA3"/>
+#! <FEAT_COLLAPSED COLLAPSED="13"/>
+#! <XFORM_ATTR ATTR_NAME="geodb_oid" IS_USER_CREATED="false" FEAT_INDEX="13" />
+#! <XFORM_ATTR ATTR_NAME="OBJECTID" IS_USER_CREATED="false" FEAT_INDEX="13" />
+#! <XFORM_ATTR ATTR_NAME="GSZ_NR" IS_USER_CREATED="false" FEAT_INDEX="13" />
+#! <XFORM_ATTR ATTR_NAME="TYP" IS_USER_CREATED="false" FEAT_INDEX="13" />
+#! <XFORM_ATTR ATTR_NAME="GSZ_NAME" IS_USER_CREATED="false" FEAT_INDEX="13" />
+#! <XFORM_ATTR ATTR_NAME="BESCHLUSS" IS_USER_CREATED="false" FEAT_INDEX="13" />
+#! <XFORM_ATTR ATTR_NAME="BESCHL_DOC" IS_USER_CREATED="false" FEAT_INDEX="13" />
+#! <XFORM_ATTR ATTR_NAME="REGLEM_DOC" IS_USER_CREATED="false" FEAT_INDEX="13" />
+#! <XFORM_ATTR ATTR_NAME="SHAPE.AREA" IS_USER_CREATED="false" FEAT_INDEX="13" />
+#! <XFORM_ATTR ATTR_NAME="SHAPE.LEN" IS_USER_CREATED="false" FEAT_INDEX="13" />
 #! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeFilter"/>
 #! <XFORM_PARM PARM_NAME="ATTR_GROUP" PARM_VALUE=""/>
 #! <XFORM_PARM PARM_NAME="ATTR_NAME" PARM_VALUE="TYP"/>
-#! <XFORM_PARM PARM_NAME="ATTR_VALUES" PARM_VALUE="&lt;lt&gt;EMPTY&lt;gt&gt;,&lt;lt&gt;MISSING&lt;gt&gt;,&lt;lt&gt;NULL&lt;gt&gt;,&lt;lt&gt;UNFILTERED&lt;gt&gt;,S1,S2,S3,SA1,SA2,SA3"/>
+#! <XFORM_PARM PARM_NAME="ATTR_VALUES" PARM_VALUE="&lt;lt&gt;EMPTY&lt;gt&gt;,&lt;lt&gt;MISSING&lt;gt&gt;,&lt;lt&gt;NULL&lt;gt&gt;,&lt;lt&gt;UNFILTERED&lt;gt&gt;,S1,S2,S3,S3Zu,SBW,Sh,Sm,SA1,SA2,SA3"/>
 #! </TRANSFORMER>
 #! <TRANSFORMER
 #! IDENTIFIER="23"
@@ -3728,7 +3776,7 @@
 #! IDENTIFIER="40"
 #! SOURCE_NODE="14"
 #! TARGET_NODE="39"
-#! SOURCE_PORT_DESC="fo 7"
+#! SOURCE_PORT_DESC="fo 11"
 #! TARGET_PORT_DESC="fi 0"
 #! ENABLED="true"
 #! EXTRA_POINTS=""
@@ -3746,7 +3794,7 @@
 #! IDENTIFIER="42"
 #! SOURCE_NODE="14"
 #! TARGET_NODE="39"
-#! SOURCE_PORT_DESC="fo 8"
+#! SOURCE_PORT_DESC="fo 12"
 #! TARGET_PORT_DESC="fi 0"
 #! ENABLED="true"
 #! EXTRA_POINTS=""
@@ -3755,7 +3803,7 @@
 #! IDENTIFIER="43"
 #! SOURCE_NODE="14"
 #! TARGET_NODE="39"
-#! SOURCE_PORT_DESC="fo 9"
+#! SOURCE_PORT_DESC="fo 13"
 #! TARGET_PORT_DESC="fi 0"
 #! ENABLED="true"
 #! EXTRA_POINTS=""
@@ -4108,6 +4156,42 @@
 #! TARGET_NODE="127"
 #! SOURCE_PORT_DESC="fo 0"
 #! TARGET_PORT_DESC="-1"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="145"
+#! SOURCE_NODE="14"
+#! TARGET_NODE="38"
+#! SOURCE_PORT_DESC="fo 7"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="159"
+#! SOURCE_NODE="14"
+#! TARGET_NODE="38"
+#! SOURCE_PORT_DESC="fo 8"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="160"
+#! SOURCE_NODE="14"
+#! TARGET_NODE="38"
+#! SOURCE_PORT_DESC="fo 9"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="161"
+#! SOURCE_NODE="14"
+#! TARGET_NODE="38"
+#! SOURCE_PORT_DESC="fo 10"
+#! TARGET_PORT_DESC="fi 0"
 #! ENABLED="true"
 #! EXTRA_POINTS=""
 #! />
@@ -5318,7 +5402,6 @@ FME_REPROJECTION_ENGINE FME
 FME_IMPLICIT_CSMAP_REPROJECTION_MODE Auto
 FME_GEOMETRY_HANDLING Enhanced
 FME_STROKE_MAX_DEVIATION 0
-LOG_TIMINGS YES
 LOG_FILTER_MASK -1
 DEFAULT_MACRO DATASET_KEYWORD_GEODATABASE_SDE_1 GEODATABASE_SDE_1
 DEFAULT_MACRO DATASET_KEYWORD_XLSXR_1 XLSXR_1
@@ -5378,17 +5461,17 @@ FACTORY_DEF * TeeFactory    FACTORY_NAME "AMT (XLSXR_1) Splitter"    INPUT FEATU
 DEFAULT_MACRO WB_CURRENT_CONTEXT
 # -------------------------------------------------------------------------
 
-Tcl2 proc StringConcatenator_ce5977b1_c341_4a54_a044_9186dce306ae0_doSetAttr {attrText} {    FME_SetAttribute [FME_DecodeText {DAR_LEGENDEIMWEB_DE}] [FME_DecodeText $attrText] }
-FACTORY_DEF * TeeFactory    FACTORY_NAME StringConcatenator    INPUT  FEATURE_TYPE DARSTELLUNGSDIENST    OUTPUT FEATURE_TYPE StringConcatenator_OUTPUT        @Tcl2("StringConcatenator_ce5977b1_c341_4a54_a044_9186dce306ae0_doSetAttr {@EvaluateExpression(STRING_ENCODED,$(LEGEND_BASEURL$encode)<at>Value<openparen>DAR_LEGENDEIMWEB_DE<closeparen>,StringConcatenator)} ")
+Tcl2 proc StringConcatenator_44473125_a661_409a_a5ce_e01bf4332f8c0_doSetAttr {attrText} {    FME_SetAttribute [FME_DecodeText {DAR_LEGENDEIMWEB_DE}] [FME_DecodeText $attrText] }
+FACTORY_DEF * TeeFactory    FACTORY_NAME StringConcatenator    INPUT  FEATURE_TYPE DARSTELLUNGSDIENST    OUTPUT FEATURE_TYPE StringConcatenator_OUTPUT        @Tcl2("StringConcatenator_44473125_a661_409a_a5ce_e01bf4332f8c0_doSetAttr {@EvaluateExpression(STRING_ENCODED,$(LEGEND_BASEURL$encode)<at>Value<openparen>DAR_LEGENDEIMWEB_DE<closeparen>,StringConcatenator)} ")
 
 # -------------------------------------------------------------------------
 
-Tcl2 proc StringConcatenator_2_3be1d65e_b6d7_4fab_a4ac_17fcc35494280_doSetAttr {attrText} {    FME_SetAttribute [FME_DecodeText {DAR_LEGENDEIMWEB_FR}] [FME_DecodeText $attrText] }
-FACTORY_DEF * TeeFactory    FACTORY_NAME StringConcatenator_2    INPUT  FEATURE_TYPE StringConcatenator_OUTPUT    OUTPUT FEATURE_TYPE StringConcatenator_2_OUTPUT        @Tcl2("StringConcatenator_2_3be1d65e_b6d7_4fab_a4ac_17fcc35494280_doSetAttr {@EvaluateExpression(STRING_ENCODED,$(LEGEND_BASEURL$encode)<at>Value<openparen>DAR_LEGENDEIMWEB_FR<closeparen>,StringConcatenator_2)} ")
+Tcl2 proc StringConcatenator_2_fb3d2b98_d7eb_4260_aadc_ab023c95d4680_doSetAttr {attrText} {    FME_SetAttribute [FME_DecodeText {DAR_LEGENDEIMWEB_FR}] [FME_DecodeText $attrText] }
+FACTORY_DEF * TeeFactory    FACTORY_NAME StringConcatenator_2    INPUT  FEATURE_TYPE StringConcatenator_OUTPUT    OUTPUT FEATURE_TYPE StringConcatenator_2_OUTPUT        @Tcl2("StringConcatenator_2_fb3d2b98_d7eb_4260_aadc_ab023c95d4680_doSetAttr {@EvaluateExpression(STRING_ENCODED,$(LEGEND_BASEURL$encode)<at>Value<openparen>DAR_LEGENDEIMWEB_FR<closeparen>,StringConcatenator_2)} ")
 
 FACTORY_DEF * TeeFactory   FACTORY_NAME "StringConcatenator_2 OUTPUT Splitter"   INPUT FEATURE_TYPE StringConcatenator_2_OUTPUT   OUTPUT FEATURE_TYPE StringConcatenator_2_OUTPUT_0_nXTcUNlyUmU=   OUTPUT FEATURE_TYPE StringConcatenator_2_OUTPUT_1_nXTcUNlyUmU=
 # -------------------------------------------------------------------------
-FACTORY_DEF * AttrSetFactory FACTORY_NAME AttributeCreator_7 ATTRSET_PROPAGATE_MISSING YES INPUT  FEATURE_TYPE AMT_2_qXySqpxJk6s= ATTR _joinfield 666    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_7_OUTPUT 
+FACTORY_DEF * AttrSetFactory FACTORY_NAME AttributeCreator_7 ATTRSET_PROPAGATE_MISSING YES INPUT  FEATURE_TYPE AMT_0_qXySqpxJk6s= ATTR _joinfield 666    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_7_OUTPUT 
 # -------------------------------------------------------------------------
 
 INCLUDE [    set macroLine "MACRO AttributeRemover_4_LIST_EXP ";    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "{\[0-9\]+}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
@@ -5400,7 +5483,7 @@ INCLUDE [    set macroLine "MACRO AttributeRemover_2_LIST_EXP ";    foreach attr
 FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRemover_2    INPUT  FEATURE_TYPE GEODB.GSK25_GSKT    OUTPUT FEATURE_TYPE AttributeRemover_2_OUTPUT        @RemoveAttributes(geodb_oid,OBJECTID)        @RemoveAttributes(fme_regexp_match"$(AttributeRemover_2_LIST_EXP)")
 
 # -------------------------------------------------------------------------
-Lookup AttributeFilter_AttributeFilterLut   S1 ok   S2 ok   S3 ok   SA1 ok   SA2 ok   SA3 ok   "" notok   ENCODED
+Lookup AttributeFilter_AttributeFilterLut   S1 ok   S2 ok   S3 ok   S3Zu ok   SBW ok   Sh ok   Sm ok   SA1 ok   SA2 ok   SA3 ok   "" notok   ENCODED
 
 Tcl2 proc AttributeFilter_setFeatType {} {     global FME_FeatureType;     set ft {AttributeFilter_};     append ft [FME_EncodeText [FME_GetAttribute {"TYP"}]];     set FME_FeatureType $ft; }
 FACTORY_DEF * TestFactory    FACTORY_NAME AttributeFilter    INPUT  FEATURE_TYPE GEODB.GSK25_GSK    TEST @Lookup(AttributeFilter_AttributeFilterLut,"TYP",ENCODED_ATTR) == "ok"    OUTPUT PASSED FEATURE_TYPE * @Tcl2(AttributeFilter_setFeatType)    OUTPUT FAILED FEATURE_TYPE AttributeFilter_<NULL>
@@ -5415,13 +5498,13 @@ FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeFilter <MISSING> Output Nuker"
 FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeFilter <NULL> Output Nuker"   INPUT FEATURE_TYPE AttributeFilter_<NULL>
 FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeFilter <UNFILTERED> Output Nuker"   INPUT FEATURE_TYPE AttributeFilter_<UNFILTERED>
 # -------------------------------------------------------------------------
-FACTORY_DEF * AttrSetFactory FACTORY_NAME AttributeCreator_2 ATTRSET_PROPAGATE_MISSING YES INPUT  FEATURE_TYPE AttributeFilter_SA2    INPUT  FEATURE_TYPE AttributeFilter_SA1    INPUT  FEATURE_TYPE AttributeFilter_SA3 ATTR THE_ID $(THEMA_AREALE$encode) ATTR DAR_OID $(DARST_AREALE$encode) ATTR EIB_AUSSAGE_DE Schutzareal<space><at>Value<openparen>TYP<closeparen><space><openparen><at>Value<openparen>GSZ_NAME<closeparen><closeparen> ATTR EIB_AUSSAGE_FR P<u00e9>rim<u00e8>tre<space>de<space>protection<space><at>Value<openparen>TYP<closeparen><openparen><at>Value<openparen>GSZ_NAME<closeparen><closeparen> ATTR STH_ID $(SUBTHEMA_AREALE$encode)    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_2_OUTPUT 
+FACTORY_DEF * AttrSetFactory FACTORY_NAME AttributeCreator_2 ATTRSET_PROPAGATE_MISSING YES INPUT  FEATURE_TYPE AttributeFilter_SA3    INPUT  FEATURE_TYPE AttributeFilter_SA1    INPUT  FEATURE_TYPE AttributeFilter_SA2 ATTR THE_ID $(THEMA_AREALE$encode) ATTR DAR_OID $(DARST_AREALE$encode) ATTR EIB_AUSSAGE_DE Schutzareal<space><at>Value<openparen>TYP<closeparen><space><openparen><at>Value<openparen>GSZ_NAME<closeparen><closeparen> ATTR EIB_AUSSAGE_FR P<u00e9>rim<u00e8>tre<space>de<space>protection<space><at>Value<openparen>TYP<closeparen><openparen><at>Value<openparen>GSZ_NAME<closeparen><closeparen> ATTR STH_ID $(SUBTHEMA_AREALE$encode)    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_2_OUTPUT 
 # -------------------------------------------------------------------------
-FACTORY_DEF * AttrSetFactory FACTORY_NAME AttributeCreator_3 ATTRSET_PROPAGATE_MISSING YES INPUT  FEATURE_TYPE AttributeFilter_S1    INPUT  FEATURE_TYPE AttributeFilter_S3    INPUT  FEATURE_TYPE AttributeFilter_S2 ATTR THE_ID $(THEMA_ZONEN$encode) ATTR DAR_OID $(DARST_ZONEN$encode) ATTR EIB_AUSSAGE_DE Schutzzone<space><at>Value<openparen>TYP<closeparen><space><openparen><at>Value<openparen>GSZ_NAME<closeparen><closeparen> ATTR EIB_AUSSAGE_FR Zone<space>de<space>protection<space><at>Value<openparen>TYP<closeparen><space><openparen><at>Value<openparen>GSZ_NAME<closeparen><closeparen> ATTR STH_ID $(SUBTHEMA_ZONEN$encode)    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_3_OUTPUT 
+FACTORY_DEF * AttrSetFactory FACTORY_NAME AttributeCreator_3 ATTRSET_PROPAGATE_MISSING YES INPUT  FEATURE_TYPE AttributeFilter_Sm    INPUT  FEATURE_TYPE AttributeFilter_S3    INPUT  FEATURE_TYPE AttributeFilter_S1    INPUT  FEATURE_TYPE AttributeFilter_SBW    INPUT  FEATURE_TYPE AttributeFilter_Sh    INPUT  FEATURE_TYPE AttributeFilter_S2    INPUT  FEATURE_TYPE AttributeFilter_S3Zu ATTR THE_ID $(THEMA_ZONEN$encode) ATTR DAR_OID $(DARST_ZONEN$encode) ATTR EIB_AUSSAGE_DE Schutzzone<space><at>Value<openparen>TYP<closeparen><space><openparen><at>Value<openparen>GSZ_NAME<closeparen><closeparen> ATTR EIB_AUSSAGE_FR Zone<space>de<space>protection<space><at>Value<openparen>TYP<closeparen><space><openparen><at>Value<openparen>GSZ_NAME<closeparen><closeparen> ATTR STH_ID $(SUBTHEMA_ZONEN$encode)    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_3_OUTPUT 
 # -------------------------------------------------------------------------
 
 INCLUDE [    set macroLine "MACRO AttributeRemover_LIST_EXP ";    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "{\[0-9\]+}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
-FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRemover    INPUT  FEATURE_TYPE AttributeCreator_3_OUTPUT    INPUT  FEATURE_TYPE AttributeCreator_2_OUTPUT    OUTPUT FEATURE_TYPE AttributeRemover_OUTPUT        @RemoveAttributes(geodb_oid,OBJECTID,SHAPE.AREA,SHAPE.LEN)        @RemoveAttributes(fme_regexp_match"$(AttributeRemover_LIST_EXP)")
+FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRemover    INPUT  FEATURE_TYPE AttributeCreator_2_OUTPUT    INPUT  FEATURE_TYPE AttributeCreator_3_OUTPUT    OUTPUT FEATURE_TYPE AttributeRemover_OUTPUT        @RemoveAttributes(geodb_oid,OBJECTID,SHAPE.AREA,SHAPE.LEN)        @RemoveAttributes(fme_regexp_match"$(AttributeRemover_LIST_EXP)")
 
 # -------------------------------------------------------------------------
 
@@ -5473,7 +5556,7 @@ FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeCreator OUTPUT Splitter"   INP
 
 FME_PYTHON_PATH "$(FME_MF_DIR)"
 
-FACTORY_DEF * PythonFactory    FACTORY_NAME PythonCaller    INPUT  FEATURE_TYPE AttributeCreator_OUTPUT_1_olPiq+C1D00=    SYMBOL_NAME processFeature    PYTHON_NAMESPACE FMEOBJECTS    SOURCE_CODE import<space>fmeobjects<lf>#<space>Template<space>Function<space>interface:<lf>def<space>processFeature<openparen>feature<closeparen>:<lf><space><space><space><space>reglement<space>=<space>feature.getAttribute<openparen><quote>REGLEM_DOC<quote><closeparen>.lower<openparen><closeparen><lf><space><space><space><space><lf><space><space><space><space>titel_de<space>=<space><quote>Reglement<quote><lf><space><space><space><space>titel_fr<space>=<space><quote>R<u00e8>glement<quote><lf><space><space><space><space><lf><space><space><space><space>if<space><quote>veraltet<quote><space>in<space>reglement:<lf><space><space><space><space><space><space><space><space>titel_de<space>=<space><quote>Rechtsvorschriften<space>veraltet<quote><lf><space><space><space><space><space><space><space><space>titel_fr<space>=<space><quote>Prescriptions<space>l<u00e9>gales<space>obsol<u00e8>tes<quote><lf><lf><space><space><space><space>feature.setAttribute<openparen><quote>VOR_TITEL_DE<quote><comma><space>titel_de<closeparen><lf><space><space><space><space>feature.setAttribute<openparen><quote>VOR_TITEL_FR<quote><comma><space>titel_fr<closeparen><lf><space><space><space><space>feature.setAttribute<openparen><quote>VOR_OFFIZIELLERTITEL_DE<quote><comma><space>titel_de<closeparen><lf><space><space><space><space>feature.setAttribute<openparen><quote>VOR_OFFIZIELLERTITEL_FR<quote><comma><space>titel_fr<closeparen>    OUTPUT PYOUTPUT FEATURE_TYPE PythonCaller_OUTPUT
+FACTORY_DEF * PythonFactory    FACTORY_NAME PythonCaller    INPUT  FEATURE_TYPE AttributeCreator_OUTPUT_3_olPiq+C1D00=    SYMBOL_NAME processFeature    PYTHON_NAMESPACE FMEOBJECTS    SOURCE_CODE import<space>fmeobjects<lf>#<space>Template<space>Function<space>interface:<lf>def<space>processFeature<openparen>feature<closeparen>:<lf><space><space><space><space>reglement<space>=<space>feature.getAttribute<openparen><quote>REGLEM_DOC<quote><closeparen>.lower<openparen><closeparen><lf><space><space><space><space><lf><space><space><space><space>titel_de<space>=<space><quote>Reglement<quote><lf><space><space><space><space>titel_fr<space>=<space><quote>R<u00e8>glement<quote><lf><space><space><space><space><lf><space><space><space><space>if<space><quote>veraltet<quote><space>in<space>reglement:<lf><space><space><space><space><space><space><space><space>titel_de<space>=<space><quote>Rechtsvorschriften<space>veraltet<quote><lf><space><space><space><space><space><space><space><space>titel_fr<space>=<space><quote>Prescriptions<space>l<u00e9>gales<space>obsol<u00e8>tes<quote><lf><lf><space><space><space><space>feature.setAttribute<openparen><quote>VOR_TITEL_DE<quote><comma><space>titel_de<closeparen><lf><space><space><space><space>feature.setAttribute<openparen><quote>VOR_TITEL_FR<quote><comma><space>titel_fr<closeparen><lf><space><space><space><space>feature.setAttribute<openparen><quote>VOR_OFFIZIELLERTITEL_DE<quote><comma><space>titel_de<closeparen><lf><space><space><space><space>feature.setAttribute<openparen><quote>VOR_OFFIZIELLERTITEL_FR<quote><comma><space>titel_fr<closeparen>    OUTPUT PYOUTPUT FEATURE_TYPE PythonCaller_OUTPUT
 
 FACTORY_DEF * TeeFactory   FACTORY_NAME "PythonCaller OUTPUT Splitter"   INPUT FEATURE_TYPE PythonCaller_OUTPUT   OUTPUT FEATURE_TYPE PythonCaller_OUTPUT_0_oCFN77Xe1JY=   OUTPUT FEATURE_TYPE PythonCaller_OUTPUT_1_oCFN77Xe1JY=
 # -------------------------------------------------------------------------
@@ -5491,69 +5574,69 @@ FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRenamer_2    INPUT  FEATURE_TY
 
 FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeRenamer_2 OUTPUT Splitter"   INPUT FEATURE_TYPE AttributeRenamer_2_OUTPUT   OUTPUT FEATURE_TYPE AttributeRenamer_2_OUTPUT_0_g+OaL7DIfGA=   OUTPUT FEATURE_TYPE AttributeRenamer_2_OUTPUT_1_g+OaL7DIfGA=   OUTPUT FEATURE_TYPE AttributeRenamer_2_OUTPUT_2_g+OaL7DIfGA=
 # -------------------------------------------------------------------------
-FACTORY_DEF * AttrSetFactory FACTORY_NAME AttributeCreator_4 ATTRSET_PROPAGATE_MISSING YES INPUT  FEATURE_TYPE AttributeRenamer_2_OUTPUT_2_g+OaL7DIfGA= ATTR VOR_OIDHINWEIS ch.admin.bk.sr.814.20    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_4_OUTPUT 
+FACTORY_DEF * AttrSetFactory FACTORY_NAME AttributeCreator_9 ATTRSET_PROPAGATE_MISSING YES INPUT  FEATURE_TYPE AttributeRenamer_2_OUTPUT_2_g+OaL7DIfGA= ATTR VOR_OIDHINWEIS ch.be.sk.bsg.752.32    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_9_OUTPUT 
+# -------------------------------------------------------------------------
+FACTORY_DEF * AttrSetFactory FACTORY_NAME AttributeCreator_4 ATTRSET_PROPAGATE_MISSING YES INPUT  FEATURE_TYPE AttributeRenamer_2_OUTPUT_1_g+OaL7DIfGA= ATTR VOR_OIDHINWEIS ch.admin.bk.sr.814.20    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_4_OUTPUT 
 # -------------------------------------------------------------------------
 FACTORY_DEF * AttrSetFactory FACTORY_NAME AttributeCreator_8 ATTRSET_PROPAGATE_MISSING YES INPUT  FEATURE_TYPE AttributeRenamer_2_OUTPUT_0_g+OaL7DIfGA= ATTR VOR_OIDHINWEIS ch.admin.bk.sr.814.201    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_8_OUTPUT 
 # -------------------------------------------------------------------------
-FACTORY_DEF * AttrSetFactory FACTORY_NAME AttributeCreator_9 ATTRSET_PROPAGATE_MISSING YES INPUT  FEATURE_TYPE AttributeRenamer_2_OUTPUT_1_g+OaL7DIfGA= ATTR VOR_OIDHINWEIS ch.be.sk.bsg.752.32    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_9_OUTPUT 
-# -------------------------------------------------------------------------
 
-FACTORY_DEF * TeeFactory    FACTORY_NAME UUIDGenerator_5    INPUT  FEATURE_TYPE AttributeCreator_4_OUTPUT    INPUT  FEATURE_TYPE AttributeCreator_9_OUTPUT    INPUT  FEATURE_TYPE AttributeCreator_8_OUTPUT    OUTPUT FEATURE_TYPE UUIDGenerator_5_OUTPUT         "HWD_ID" @UUID()
+FACTORY_DEF * TeeFactory    FACTORY_NAME UUIDGenerator_5    INPUT  FEATURE_TYPE AttributeCreator_8_OUTPUT    INPUT  FEATURE_TYPE AttributeCreator_9_OUTPUT    INPUT  FEATURE_TYPE AttributeCreator_4_OUTPUT    OUTPUT FEATURE_TYPE UUIDGenerator_5_OUTPUT         "HWD_ID" @UUID()
 
 FACTORY_DEF * TeeFactory   FACTORY_NAME "UUIDGenerator_5 OUTPUT Splitter"   INPUT FEATURE_TYPE UUIDGenerator_5_OUTPUT   OUTPUT FEATURE_TYPE UUIDGenerator_5_OUTPUT_0_tPxX3NkWeU4=   OUTPUT FEATURE_TYPE UUIDGenerator_5_OUTPUT_1_tPxX3NkWeU4=
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * TeeFactory    FACTORY_NAME UUIDGenerator_4    INPUT  FEATURE_TYPE AttributeCreator_OUTPUT_4_olPiq+C1D00=    OUTPUT FEATURE_TYPE UUIDGenerator_4_OUTPUT         "HIV_ID" @UUID()
+Tcl2 proc Counter_39d5c3be_31a8_4983_a683_676f8ab747d10_createDomain { in_domainName } {    set domainName $in_domainName;    if { {Global} == {Local} }    {       set xFormName [FME_EncodeText {Counter_}];       set domainName $xFormName$domainName;    };    return $domainName; }
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME Counter    INPUT  FEATURE_TYPE AttributeCreator_OUTPUT_2_olPiq+C1D00=    OUTPUT FEATURE_TYPE Counter_OUTPUT         "EIB_SORT" @Count(fme_encoded,@Tcl2("Counter_39d5c3be_31a8_4983_a683_676f8ab747d10_createDomain {counter}"), 1)
+
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME UUIDGenerator_4    INPUT  FEATURE_TYPE AttributeCreator_OUTPUT_0_olPiq+C1D00=    OUTPUT FEATURE_TYPE UUIDGenerator_4_OUTPUT         "HIV_ID" @UUID()
 
 FACTORY_DEF * TeeFactory   FACTORY_NAME "UUIDGenerator_4 OUTPUT Splitter"   INPUT FEATURE_TYPE UUIDGenerator_4_OUTPUT   OUTPUT FEATURE_TYPE UUIDGenerator_4_OUTPUT_0_lgHBjcvsH0I=   OUTPUT FEATURE_TYPE UUIDGenerator_4_OUTPUT_1_lgHBjcvsH0I=
 # -------------------------------------------------------------------------
 
-Tcl2 proc Counter_3a1eade7_793b_4df5_b580_cb99990626370_createDomain { in_domainName } {    set domainName $in_domainName;    if { {Global} == {Local} }    {       set xFormName [FME_EncodeText {Counter_}];       set domainName $xFormName$domainName;    };    return $domainName; }
-
-FACTORY_DEF * TeeFactory    FACTORY_NAME Counter    INPUT  FEATURE_TYPE AttributeCreator_OUTPUT_0_olPiq+C1D00=    OUTPUT FEATURE_TYPE Counter_OUTPUT         "EIB_SORT" @Count(fme_encoded,@Tcl2("Counter_3a1eade7_793b_4df5_b580_cb99990626370_createDomain {counter}"), 1)
-
+FACTORY_DEF * TeeFactory    FACTORY_NAME "UUIDGenerator_4_OUTPUT_1_lgHBjcvsH0I= -> OEREB.HINVOR Correlator"    INPUT FEATURE_TYPE UUIDGenerator_4_OUTPUT_1_lgHBjcvsH0I=    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 1       @Transform(FME_GENERIC,ORACLE8I_DB) "@EvaluateExpression(ATTR_CREATE_EXPR_PROPAGATE_MISSING,HIV_LIEFEREINHEIT,$(LIEFEREINHEIT$encode), ATTR_SET)"       @SupplyAttributes(ENCODED,__wb_out_feat_type__,OEREB.HINVOR)
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * TeeFactory    FACTORY_NAME "UUIDGenerator_4_OUTPUT_0_lgHBjcvsH0I= -> OEREB.HINVOR Correlator"    INPUT FEATURE_TYPE UUIDGenerator_4_OUTPUT_0_lgHBjcvsH0I=    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 1       @Transform(FME_GENERIC,ORACLE8I_DB) "@EvaluateExpression(ATTR_CREATE_EXPR_PROPAGATE_MISSING,HIV_LIEFEREINHEIT,$(LIEFEREINHEIT$encode), ATTR_SET)"       @SupplyAttributes(ENCODED,__wb_out_feat_type__,OEREB.HINVOR)
+FACTORY_DEF * TeeFactory    FACTORY_NAME "AttributeCreator_OUTPUT_5_olPiq+C1D00= -> OEREB.EIGENTUMSBESCHRAENKUNG Correlator"    INPUT FEATURE_TYPE AttributeCreator_OUTPUT_5_olPiq+C1D00=    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 1       @Transform(FME_GENERIC,ORACLE8I_DB) "@EvaluateExpression(ATTR_CREATE_EXPR_PROPAGATE_MISSING,EIB_LIEFEREINHEIT,$(LIEFEREINHEIT$encode),RES_ID,$(RECHTSSTATUS$encode), ATTR_SET)"       @SupplyAttributes(ENCODED,__wb_out_feat_type__,OEREB.EIGENTUMSBESCHRAENKUNG)
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * TeeFactory    FACTORY_NAME "AttributeCreator_OUTPUT_3_olPiq+C1D00= -> OEREB.EIGENTUMSBESCHRAENKUNG Correlator"    INPUT FEATURE_TYPE AttributeCreator_OUTPUT_3_olPiq+C1D00=    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 1       @Transform(FME_GENERIC,ORACLE8I_DB) "@EvaluateExpression(ATTR_CREATE_EXPR_PROPAGATE_MISSING,EIB_LIEFEREINHEIT,$(LIEFEREINHEIT$encode),RES_ID,$(RECHTSSTATUS$encode), ATTR_SET)"       @SupplyAttributes(ENCODED,__wb_out_feat_type__,OEREB.EIGENTUMSBESCHRAENKUNG)
+FACTORY_DEF * TeeFactory    FACTORY_NAME "AttributeCreator_5_OUTPUT_0_AHl5K7h8luY= -> OEREB.VORSCHRIFT Correlator"    INPUT FEATURE_TYPE AttributeCreator_5_OUTPUT_0_AHl5K7h8luY=    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 1       @Transform(FME_GENERIC,ORACLE8I_DB) "@EvaluateExpression(ATTR_CREATE_EXPR_PROPAGATE_MISSING,VOR_LIEFEREINHEIT,$(LIEFEREINHEIT$encode),RES_ID,$(RECHTSSTATUS$encode),VOA_ID,1, ATTR_SET)"       @SupplyAttributes(ENCODED,__wb_out_feat_type__,OEREB.VORSCHRIFT)
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * TeeFactory    FACTORY_NAME "AttributeCreator_5_OUTPUT_1_AHl5K7h8luY= -> OEREB.VORSCHRIFT Correlator"    INPUT FEATURE_TYPE AttributeCreator_5_OUTPUT_1_AHl5K7h8luY=    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 1       @Transform(FME_GENERIC,ORACLE8I_DB) "@EvaluateExpression(ATTR_CREATE_EXPR_PROPAGATE_MISSING,VOR_LIEFEREINHEIT,$(LIEFEREINHEIT$encode),RES_ID,$(RECHTSSTATUS$encode),VOA_ID,1, ATTR_SET)"       @SupplyAttributes(ENCODED,__wb_out_feat_type__,OEREB.VORSCHRIFT)
+FACTORY_DEF * TeeFactory    FACTORY_NAME "StringConcatenator_2_OUTPUT_0_nXTcUNlyUmU= -> OEREB.DARSTELLUNGSDIENST Correlator"    INPUT FEATURE_TYPE StringConcatenator_2_OUTPUT_0_nXTcUNlyUmU=    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 1       @Transform(FME_GENERIC,ORACLE8I_DB) "@EvaluateExpression(ATTR_CREATE_EXPR_PROPAGATE_MISSING,DAR_LIEFEREINHEIT,$(LIEFEREINHEIT$encode), ATTR_SET)"       @SupplyAttributes(ENCODED,__wb_out_feat_type__,OEREB.DARSTELLUNGSDIENST)
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * TeeFactory    FACTORY_NAME "StringConcatenator_2_OUTPUT_1_nXTcUNlyUmU= -> OEREB.DARSTELLUNGSDIENST Correlator"    INPUT FEATURE_TYPE StringConcatenator_2_OUTPUT_1_nXTcUNlyUmU=    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 1       @Transform(FME_GENERIC,ORACLE8I_DB) "@EvaluateExpression(ATTR_CREATE_EXPR_PROPAGATE_MISSING,DAR_LIEFEREINHEIT,$(LIEFEREINHEIT$encode), ATTR_SET)"       @SupplyAttributes(ENCODED,__wb_out_feat_type__,OEREB.DARSTELLUNGSDIENST)
+FACTORY_DEF * TeeFactory    FACTORY_NAME "UUIDGenerator_5_OUTPUT_1_tPxX3NkWeU4= -> OEREB.HINWEIDOK Correlator"    INPUT FEATURE_TYPE UUIDGenerator_5_OUTPUT_1_tPxX3NkWeU4=    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 1       @Transform(FME_GENERIC,ORACLE8I_DB) "@EvaluateExpression(ATTR_CREATE_EXPR_PROPAGATE_MISSING,HWD_LIEFEREINHEIT,$(LIEFEREINHEIT$encode), ATTR_SET)"       @SupplyAttributes(ENCODED,__wb_out_feat_type__,OEREB.HINWEIDOK)
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * TeeFactory    FACTORY_NAME "UUIDGenerator_5_OUTPUT_0_tPxX3NkWeU4= -> OEREB.HINWEIDOK Correlator"    INPUT FEATURE_TYPE UUIDGenerator_5_OUTPUT_0_tPxX3NkWeU4=    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 1       @Transform(FME_GENERIC,ORACLE8I_DB) "@EvaluateExpression(ATTR_CREATE_EXPR_PROPAGATE_MISSING,HWD_LIEFEREINHEIT,$(LIEFEREINHEIT$encode), ATTR_SET)"       @SupplyAttributes(ENCODED,__wb_out_feat_type__,OEREB.HINWEIDOK)
+FACTORY_DEF * TeeFactory    FACTORY_NAME "AMT_1_qXySqpxJk6s= -> OEREB.AMT Correlator"    INPUT FEATURE_TYPE AMT_1_qXySqpxJk6s=    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 1       @Transform(FME_GENERIC,ORACLE8I_DB) "@EvaluateExpression(ATTR_CREATE_EXPR_PROPAGATE_MISSING,AMT_LIEFEREINHEIT,$(LIEFEREINHEIT$encode), ATTR_SET)"       @SupplyAttributes(ENCODED,__wb_out_feat_type__,OEREB.AMT)
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * TeeFactory    FACTORY_NAME "AMT_0_qXySqpxJk6s= -> OEREB.AMT Correlator"    INPUT FEATURE_TYPE AMT_0_qXySqpxJk6s=    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 1       @Transform(FME_GENERIC,ORACLE8I_DB) "@EvaluateExpression(ATTR_CREATE_EXPR_PROPAGATE_MISSING,AMT_LIEFEREINHEIT,$(LIEFEREINHEIT$encode), ATTR_SET)"       @SupplyAttributes(ENCODED,__wb_out_feat_type__,OEREB.AMT)
+FACTORY_DEF * TeeFactory    FACTORY_NAME "UUIDGenerator_5_OUTPUT_0_tPxX3NkWeU4= -> OEREB2.HINWEIDOK Correlator"    INPUT FEATURE_TYPE UUIDGenerator_5_OUTPUT_0_tPxX3NkWeU4=    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 2       @Transform(FME_GENERIC,ORACLE8I_DB) "@EvaluateExpression(ATTR_CREATE_EXPR_PROPAGATE_MISSING,HWD_LIEFEREINHEIT,$(LIEFEREINHEIT$encode), ATTR_SET)"       @SupplyAttributes(ENCODED,__wb_out_feat_type__,OEREB2.HINWEIDOK)
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * TeeFactory    FACTORY_NAME "UUIDGenerator_5_OUTPUT_1_tPxX3NkWeU4= -> OEREB2.HINWEIDOK Correlator"    INPUT FEATURE_TYPE UUIDGenerator_5_OUTPUT_1_tPxX3NkWeU4=    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 2       @Transform(FME_GENERIC,ORACLE8I_DB) "@EvaluateExpression(ATTR_CREATE_EXPR_PROPAGATE_MISSING,HWD_LIEFEREINHEIT,$(LIEFEREINHEIT$encode), ATTR_SET)"       @SupplyAttributes(ENCODED,__wb_out_feat_type__,OEREB2.HINWEIDOK)
+FACTORY_DEF * TeeFactory    FACTORY_NAME "AMT_2_qXySqpxJk6s= -> OEREB2.AMT Correlator"    INPUT FEATURE_TYPE AMT_2_qXySqpxJk6s=    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 2       @Transform(FME_GENERIC,ORACLE8I_DB) "@EvaluateExpression(ATTR_CREATE_EXPR_PROPAGATE_MISSING,AMT_LIEFEREINHEIT,$(LIEFEREINHEIT$encode), ATTR_SET)"       @SupplyAttributes(ENCODED,__wb_out_feat_type__,OEREB2.AMT)
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * TeeFactory    FACTORY_NAME "AMT_1_qXySqpxJk6s= -> OEREB2.AMT Correlator"    INPUT FEATURE_TYPE AMT_1_qXySqpxJk6s=    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 2       @Transform(FME_GENERIC,ORACLE8I_DB) "@EvaluateExpression(ATTR_CREATE_EXPR_PROPAGATE_MISSING,AMT_LIEFEREINHEIT,$(LIEFEREINHEIT$encode), ATTR_SET)"       @SupplyAttributes(ENCODED,__wb_out_feat_type__,OEREB2.AMT)
-# -------------------------------------------------------------------------
-
-FACTORY_DEF * TeeFactory    FACTORY_NAME "UUIDGenerator_4_OUTPUT_1_lgHBjcvsH0I= -> OEREB2.HINVOR Correlator"    INPUT FEATURE_TYPE UUIDGenerator_4_OUTPUT_1_lgHBjcvsH0I=    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 2       @Transform(FME_GENERIC,ORACLE8I_DB) "@EvaluateExpression(ATTR_CREATE_EXPR_PROPAGATE_MISSING,HIV_LIEFEREINHEIT,$(LIEFEREINHEIT$encode), ATTR_SET)"       @SupplyAttributes(ENCODED,__wb_out_feat_type__,OEREB2.HINVOR)
+FACTORY_DEF * TeeFactory    FACTORY_NAME "UUIDGenerator_4_OUTPUT_0_lgHBjcvsH0I= -> OEREB2.HINVOR Correlator"    INPUT FEATURE_TYPE UUIDGenerator_4_OUTPUT_0_lgHBjcvsH0I=    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 2       @Transform(FME_GENERIC,ORACLE8I_DB) "@EvaluateExpression(ATTR_CREATE_EXPR_PROPAGATE_MISSING,HIV_LIEFEREINHEIT,$(LIEFEREINHEIT$encode), ATTR_SET)"       @SupplyAttributes(ENCODED,__wb_out_feat_type__,OEREB2.HINVOR)
 # -------------------------------------------------------------------------
 
 FACTORY_DEF * TeeFactory    FACTORY_NAME "Counter_OUTPUT -> OEREB2.EIGENTUMSBESCHRAENKUNG Correlator"    INPUT FEATURE_TYPE Counter_OUTPUT    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 2       @Transform(FME_GENERIC,ORACLE8I_DB) "@EvaluateExpression(ATTR_CREATE_EXPR_PROPAGATE_MISSING,EIB_LIEFEREINHEIT,$(LIEFEREINHEIT$encode),RES_ID,$(RECHTSSTATUS$encode), ATTR_SET)"       @SupplyAttributes(ENCODED,__wb_out_feat_type__,OEREB2.EIGENTUMSBESCHRAENKUNG)
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * TeeFactory    FACTORY_NAME "StringConcatenator_2_OUTPUT_0_nXTcUNlyUmU= -> OEREB2.DARSTELLUNGSDIENST Correlator"    INPUT FEATURE_TYPE StringConcatenator_2_OUTPUT_0_nXTcUNlyUmU=    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 2       @Transform(FME_GENERIC,ORACLE8I_DB) "@EvaluateExpression(ATTR_CREATE_EXPR_PROPAGATE_MISSING,DAR_LIEFEREINHEIT,$(LIEFEREINHEIT$encode), ATTR_SET)"       @SupplyAttributes(ENCODED,__wb_out_feat_type__,OEREB2.DARSTELLUNGSDIENST)
+FACTORY_DEF * TeeFactory    FACTORY_NAME "StringConcatenator_2_OUTPUT_1_nXTcUNlyUmU= -> OEREB2.DARSTELLUNGSDIENST Correlator"    INPUT FEATURE_TYPE StringConcatenator_2_OUTPUT_1_nXTcUNlyUmU=    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 2       @Transform(FME_GENERIC,ORACLE8I_DB) "@EvaluateExpression(ATTR_CREATE_EXPR_PROPAGATE_MISSING,DAR_LIEFEREINHEIT,$(LIEFEREINHEIT$encode), ATTR_SET)"       @SupplyAttributes(ENCODED,__wb_out_feat_type__,OEREB2.DARSTELLUNGSDIENST)
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * TeeFactory    FACTORY_NAME "AttributeCreator_5_OUTPUT_0_AHl5K7h8luY= -> OEREB2.VORSCHRIFT Correlator"    INPUT FEATURE_TYPE AttributeCreator_5_OUTPUT_0_AHl5K7h8luY=    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 2       @Transform(FME_GENERIC,ORACLE8I_DB) "@EvaluateExpression(ATTR_CREATE_EXPR_PROPAGATE_MISSING,VOR_LIEFEREINHEIT,$(LIEFEREINHEIT$encode),RES_ID,$(RECHTSSTATUS$encode),VOA_ID,1, ATTR_SET)"       @SupplyAttributes(ENCODED,__wb_out_feat_type__,OEREB2.VORSCHRIFT)
+FACTORY_DEF * TeeFactory    FACTORY_NAME "AttributeCreator_5_OUTPUT_1_AHl5K7h8luY= -> OEREB2.VORSCHRIFT Correlator"    INPUT FEATURE_TYPE AttributeCreator_5_OUTPUT_1_AHl5K7h8luY=    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 2       @Transform(FME_GENERIC,ORACLE8I_DB) "@EvaluateExpression(ATTR_CREATE_EXPR_PROPAGATE_MISSING,VOR_LIEFEREINHEIT,$(LIEFEREINHEIT$encode),RES_ID,$(RECHTSSTATUS$encode),VOA_ID,1, ATTR_SET)"       @SupplyAttributes(ENCODED,__wb_out_feat_type__,OEREB2.VORSCHRIFT)
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * TeeFactory    FACTORY_NAME "AttributeCreator_OUTPUT_5_olPiq+C1D00= -> OEREB.FLAECHE Correlator"    INPUT FEATURE_TYPE AttributeCreator_OUTPUT_5_olPiq+C1D00=    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 0       @Transform(FME_GENERIC,GEODATABASE_SDE) "@EvaluateExpression(ATTR_CREATE_EXPR_PROPAGATE_MISSING,FLA_LIEFEREINHEIT,$(LIEFEREINHEIT$encode),RES_ID,$(RECHTSSTATUS$encode), ATTR_SET)"       @SupplyAttributes(ENCODED,__wb_out_feat_type__,OEREB.FLAECHE)
+FACTORY_DEF * TeeFactory    FACTORY_NAME "AttributeCreator_OUTPUT_1_olPiq+C1D00= -> OEREB.FLAECHE Correlator"    INPUT FEATURE_TYPE AttributeCreator_OUTPUT_1_olPiq+C1D00=    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 0       @Transform(FME_GENERIC,GEODATABASE_SDE) "@EvaluateExpression(ATTR_CREATE_EXPR_PROPAGATE_MISSING,FLA_LIEFEREINHEIT,$(LIEFEREINHEIT$encode),RES_ID,$(RECHTSSTATUS$encode), ATTR_SET)"       @SupplyAttributes(ENCODED,__wb_out_feat_type__,OEREB.FLAECHE)
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * TeeFactory    FACTORY_NAME "AttributeCreator_OUTPUT_2_olPiq+C1D00= -> OEREB2.FLAECHE Correlator"    INPUT FEATURE_TYPE AttributeCreator_OUTPUT_2_olPiq+C1D00=    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 3       @Transform(FME_GENERIC,GEODATABASE_SDE) "@EvaluateExpression(ATTR_CREATE_EXPR_PROPAGATE_MISSING,FLA_LIEFEREINHEIT,$(LIEFEREINHEIT$encode),RES_ID,$(RECHTSSTATUS$encode), ATTR_SET)"       @SupplyAttributes(ENCODED,__wb_out_feat_type__,OEREB2.FLAECHE)
+FACTORY_DEF * TeeFactory    FACTORY_NAME "AttributeCreator_OUTPUT_4_olPiq+C1D00= -> OEREB2.FLAECHE Correlator"    INPUT FEATURE_TYPE AttributeCreator_OUTPUT_4_olPiq+C1D00=    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 3       @Transform(FME_GENERIC,GEODATABASE_SDE) "@EvaluateExpression(ATTR_CREATE_EXPR_PROPAGATE_MISSING,FLA_LIEFEREINHEIT,$(LIEFEREINHEIT$encode),RES_ID,$(RECHTSSTATUS$encode), ATTR_SET)"       @SupplyAttributes(ENCODED,__wb_out_feat_type__,OEREB2.FLAECHE)
 # -------------------------------------------------------------------------
 
 FACTORY_DEF * TestFactory   FACTORY_NAME "Final Output Feature Type Router"   INPUT FEATURE_TYPE __WB_BYPASS_TERMINATOR__     @SupplyAttributes(__wb_out_feat_type__,__WB_BYPASS_TERMINATOR__)     @Tcl2("FME_StatMessage 818062 {@Value(_wb_termination_message) (@Value(_wb_termination_xformer))} 818063")   INPUT FEATURE_TYPE *   TEST @Value(__wb_out_feat_type__) != ""   OUTPUT PASSED FEATURE_TYPE *     @FeatureType(@Value(__wb_out_feat_type__))   OUTPUT FAILED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")

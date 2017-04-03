@@ -5,7 +5,7 @@
 #    Command-line to run this workspace:
 #    
 #    
-#    "C:\Program Files (x86)\FME\fme.exe" D:\Daten\repos\oerebLader\oerebLader\scripts\s13_import_gsk.fmw
+#    "C:\Program Files (x86)\FME\fme.exe" D:\eclipse_workspaces\oerebLader\oerebLader\scripts\s13_import_gsk.fmw
 #          --DATABASE ""
 #          --USERNAME ""
 #          --PASSWORD ********
@@ -18,7 +18,7 @@
 #    
 #! PASSWORD=""
 #! ATTR_TYPE_ENCODING="SDF"
-#! VIEW_POSITION="-107 -531"
+#! VIEW_POSITION="-573 -52"
 #! SHOW_INFO_NODES="true"
 #! FME_STROKE_MAX_DEVIATION="0"
 #! BEGIN_PYTHON=""
@@ -36,13 +36,13 @@
 #! USAGE=""
 #! END_PYTHON=""
 #! HISTORY=""
-#! FME_DOCUMENT_PRIORGUID="8e0b0471-7c2f-4018-8022-1af4586503ea,3c020e63-11e7-4661-b56a-3e15c34b7ab1,cab1e1b8-d299-4584-8b5e-ce6bdba4cd6f,b48da339-2818-47dc-8949-9e40c381439b,70cf04ba-dbc1-40c9-b337-b76f97236a6f,e84709dd-e71f-4d49-bfab-a1a046cbd783"
+#! FME_DOCUMENT_PRIORGUID="8e0b0471-7c2f-4018-8022-1af4586503ea,3c020e63-11e7-4661-b56a-3e15c34b7ab1,cab1e1b8-d299-4584-8b5e-ce6bdba4cd6f,b48da339-2818-47dc-8949-9e40c381439b,70cf04ba-dbc1-40c9-b337-b76f97236a6f,e84709dd-e71f-4d49-bfab-a1a046cbd783,158b7fa1-7f44-45f5-a944-3ea359780250"
 #! DOC_TOP_LEFT="60 -2835"
 #! REQUIREMENTS_KEYWORD=""
 #! SOURCE_ROUTING_FILE=""
 #! DESTINATION_ROUTING_FILE=""
 #! DESTINATION="NONE"
-#! LAST_SAVE_DATE="2016-11-16T16:28:34"
+#! LAST_SAVE_DATE="2017-04-03T10:04:03"
 #! FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
 #! WORKSPACE_VERSION="1"
 #! SOURCE="NONE"
@@ -53,7 +53,7 @@
 #! REQUIREMENTS=""
 #! BEGIN_TCL=""
 #! DOC_EXTENTS="3370 2790"
-#! FME_DOCUMENT_GUID="158b7fa1-7f44-45f5-a944-3ea359780250"
+#! FME_DOCUMENT_GUID="458a11cc-9d50-4405-8c0b-db78afa98f12"
 #! SHOW_ANNOTATIONS="true"
 #! IGNORE_READER_FAILURE="No"
 #! WARN_INVALID_XFORM_PARAM="Yes"
@@ -72,7 +72,7 @@
 #! WRITE_DEFS="true"
 #! DEFLINE_TEMPLATE="geodb_type {FME_GEN_GEOMETRY}"
 #! DEFLINE_ATTRS="true"
-#! EXPOSABLE_ATTRS="geodb_text_leader_line_anchor_point char(254) geodb_dim_length double geodb_v_align char(50) geodb_rel_destination_oid integer multi_reader_type char(50) geodb_edge_feature_count integer geodb_feature_dataset char(254) geodb_subtype_name char(254) geodb_text_lc_gap double geodb_raster_compression_quality integer fme_color char(50) geodb_font_name char(254) geodb_from_junction_element_id integer geodb_raster_pyramid_resample_type char(100) geodb_rel_origin_oid integer fme_text_string char(50) geodb_raster_compression_type char(100) fme_type char(50) geodb_text_lc_textbox_y1 double geodb_text_leader_line_color char(50) geodb_text_lc_textbox_y2 double geodb_metadata_string char(254) geodb_text_lc_textbox_y3 double geodb_dim_text_x double geodb_text_lc_textbox_y4 double geodb_dim_text_y double geodb_symbol_id integer geodb_text_lc_margin_left double geodb_dim_text_z double multi_reader_keyword char(50) geodb_text_point_scale_factor double geodb_text_leader_line char(254) geodb_element_id integer geodb_text_lc_accent_bar_width double geodb_font_italic boolean fme_basename char(50) geodb_text_line_spacing double geodb_text_ref_scale double geodb_topological_configuration char(6) geodb_h_align char(50) geodb_start_angle double fme_secondary_axis double geodb_text_lc_accent_bar_color char(50) geodb_anno_class_id integer geodb_sweep_angle double geodb_text_x_offset double fme_feature_type char(50) geodb_dim_text_angle double geodb_ancillary_role char(7) geodb_font_size double fme_text_size double geodb_text_lc_margin_bottom double geodb_text_size double geodb_raster_pyramid_level integer geodb_text_leader_line_width double fme_sweep_angle double geodb_dim_using_custom_length boolean geodb_text_char_spacing double fme_primary_axis double geodb_text_string char(254) geodb_font_strikethrough boolean fme_dataset char(50) geodb_text_character_width double geodb_text_lc_textbox_x1 double geodb_text_lc_textbox_x2 double geodb_rotation double geodb_text_lc_textbox_x3 double fme_fill_color char(50) geodb_secondary_axis double geodb_text_lc_textbox_x4 double geodb_font_underline boolean geodb_font_bold boolean geodb_text_color char(254) geodb_text_y_offset double geodb_dim_style_id integer geodb_text_scale boolean geodb_measures char(254) geodb_text_part_count integer geodb_type char(25) geodb_dim_line_display smallint geodb_text_clip boolean geodb_to_junction_element_id integer fme_geometry fme_char(50) geodb_text_string_with_format_tags char(254) multi_reader_id integer geodb_text_lc_margin_right double geodb_text_lc_style char(20) geodb_text_break_char integer geodb_text_leader_line_tolerance double geodb_dim_extn_line_display smallint geodb_dim_type smallint geodb_dim_custom_length double geodb_dim_begin_dimension_x double geodb_dim_begin_dimension_y double geodb_dim_begin_dimension_z double geodb_feature_is_simple boolean geodb_primary_axis double geodb_dim_line_x double geodb_right_to_left boolean geodb_dim_end_dimension_x double geodb_dim_line_y double geodb_dim_end_dimension_y double geodb_dim_line_z double geodb_feature_has_relationships boolean geodb_junction_feature_count integer geodb_dim_end_dimension_z double geodb_linked_feature_id integer geodb_edge_element_count integer geodb_text_lc_margin_top double geodb_text_word_spacing double geodb_dim_marker_display smallint fme_rotation double multi_reader_full_id integer geodb_junction_element_count integer fme_start_angle double geodb_dim_extn_line_angle double geodb_font_weight smallint geodb_element_index integer geodb_font_charset smallint geodb_color char(50) geodb_text_angle double"
+#! EXPOSABLE_ATTRS="geodb_text_leader_line_anchor_point char(254) geodb_dim_length double geodb_v_align char(50) geodb_rel_destination_oid integer multi_reader_type char(50) geodb_edge_feature_count integer geodb_feature_dataset char(254) geodb_text_lc_gap double geodb_subtype_name char(254) geodb_raster_compression_quality integer fme_color char(50) geodb_font_name char(254) geodb_from_junction_element_id integer geodb_raster_pyramid_resample_type char(100) geodb_rel_origin_oid integer fme_text_string char(50) geodb_raster_compression_type char(100) fme_type char(50) geodb_text_lc_textbox_y1 double geodb_text_leader_line_color char(50) geodb_text_lc_textbox_y2 double geodb_text_lc_textbox_y3 double geodb_metadata_string char(254) geodb_text_lc_textbox_y4 double geodb_dim_text_x double geodb_symbol_id integer geodb_text_lc_margin_left double geodb_dim_text_y double multi_reader_keyword char(50) geodb_dim_text_z double geodb_text_point_scale_factor double geodb_text_leader_line char(254) geodb_element_id integer geodb_text_lc_accent_bar_width double geodb_font_italic boolean geodb_text_line_spacing double fme_basename char(50) geodb_text_ref_scale double geodb_topological_configuration char(6) geodb_start_angle double geodb_h_align char(50) fme_secondary_axis double geodb_text_lc_accent_bar_color char(50) geodb_anno_class_id integer geodb_sweep_angle double geodb_text_x_offset double fme_feature_type char(50) geodb_dim_text_angle double geodb_ancillary_role char(7) geodb_font_size double fme_text_size double geodb_text_lc_margin_bottom double geodb_text_size double geodb_raster_pyramid_level integer geodb_text_leader_line_width double fme_sweep_angle double geodb_dim_using_custom_length boolean geodb_text_char_spacing double fme_primary_axis double geodb_text_string char(254) geodb_font_strikethrough boolean geodb_text_character_width double fme_dataset char(50) geodb_text_lc_textbox_x1 double geodb_text_lc_textbox_x2 double geodb_text_lc_textbox_x3 double geodb_rotation double fme_fill_color char(50) geodb_secondary_axis double geodb_text_lc_textbox_x4 double geodb_font_underline boolean geodb_font_bold boolean geodb_text_color char(254) geodb_text_y_offset double geodb_dim_style_id integer geodb_text_scale boolean geodb_measures char(254) geodb_text_part_count integer geodb_type char(25) geodb_dim_line_display smallint geodb_text_clip boolean geodb_to_junction_element_id integer fme_geometry fme_char(50) geodb_text_string_with_format_tags char(254) multi_reader_id integer geodb_text_lc_margin_right double geodb_text_lc_style char(20) geodb_text_break_char integer geodb_text_leader_line_tolerance double geodb_dim_extn_line_display smallint geodb_dim_type smallint geodb_dim_custom_length double geodb_dim_begin_dimension_x double geodb_dim_begin_dimension_y double geodb_dim_begin_dimension_z double geodb_feature_is_simple boolean geodb_primary_axis double geodb_dim_line_x double geodb_right_to_left boolean geodb_dim_end_dimension_x double geodb_dim_line_y double geodb_dim_end_dimension_y double geodb_dim_line_z double geodb_feature_has_relationships boolean geodb_junction_feature_count integer geodb_dim_end_dimension_z double geodb_linked_feature_id integer geodb_edge_element_count integer geodb_text_lc_margin_top double geodb_text_word_spacing double geodb_dim_marker_display smallint fme_rotation double multi_reader_full_id integer geodb_junction_element_count integer fme_start_angle double geodb_dim_extn_line_angle double geodb_font_weight smallint geodb_element_index integer geodb_font_charset smallint geodb_color char(50) geodb_text_angle double"
 #! DEFLINE_PARMS=""
 #! ATTR_INDEX_TYPES=""
 #! ATTR_NAME_INVALID_CHARS=""
@@ -1122,7 +1122,7 @@
 #! IS_EDITABLE="true"
 #! IDENTIFIER="21"
 #! FEAT_GEOMTYPE="geodb_point"
-#! POSITION="1636 -1285"
+#! POSITION="1636 -1281"
 #! ORDER="5e+014"
 #! COLLAPSED="true"
 #! KEYWORD="GEODATABASE_SDE_1"
@@ -1134,8 +1134,8 @@
 #! <FEAT_ATTRIBUTE ATTR_NAME="WAWIS_NR" ATTR_TYPE="char(20)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #! <FEAT_ATTRIBUTE ATTR_NAME="BEZEICH" ATTR_TYPE="char(100)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #! <FEAT_ATTRIBUTE ATTR_NAME="TYP" ATTR_TYPE="char(3)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#! <FEAT_ATTRIBUTE ATTR_NAME="X_KOORD" ATTR_TYPE="integer" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#! <FEAT_ATTRIBUTE ATTR_NAME="Y_KOORD" ATTR_TYPE="integer" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="E_KOORD" ATTR_TYPE="integer" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="N_KOORD" ATTR_TYPE="integer" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #! <FEAT_ATTRIBUTE ATTR_NAME="KONZENT" ATTR_TYPE="double" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #! <DEFLINE_PARM PARM_NAME="GEODB_MEASURES_ORIGIN" PARM_VALUE=""/>
 #! <DEFLINE_PARM PARM_NAME="GEODB_DROP_TABLE" PARM_VALUE="NO"/>
@@ -1216,8 +1216,8 @@
 #! <FEAT_ATTRIBUTE ATTR_NAME="WAWIS_NR" ATTR_TYPE="char(20)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #! <FEAT_ATTRIBUTE ATTR_NAME="BEZEICH" ATTR_TYPE="char(100)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #! <FEAT_ATTRIBUTE ATTR_NAME="TYP" ATTR_TYPE="char(3)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#! <FEAT_ATTRIBUTE ATTR_NAME="X_KOORD" ATTR_TYPE="integer" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#! <FEAT_ATTRIBUTE ATTR_NAME="Y_KOORD" ATTR_TYPE="integer" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="E_KOORD" ATTR_TYPE="integer" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="N_KOORD" ATTR_TYPE="integer" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #! <FEAT_ATTRIBUTE ATTR_NAME="AUSRICHT" ATTR_TYPE="smallint" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #! <FEAT_ATTRIBUTE ATTR_NAME="QS_MITTEL" ATTR_TYPE="double" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #! <FEAT_ATTRIBUTE ATTR_NAME="QS_MIN" ATTR_TYPE="double" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
@@ -1291,7 +1291,7 @@
 #! FEAT_GEOMTYPE="geodb_polygon"
 #! POSITION="1644 -2108"
 #! ORDER="5e+014"
-#! COLLAPSED="false"
+#! COLLAPSED="true"
 #! KEYWORD="GEODATABASE_SDE_1"
 #! ENABLED="true"
 #! FANOUT="No"
@@ -1330,7 +1330,7 @@
 #! FEAT_GEOMTYPE="geodb_polygon"
 #! POSITION="1619 -2381"
 #! ORDER="5e+014"
-#! COLLAPSED="true"
+#! COLLAPSED="false"
 #! KEYWORD="GEODATABASE_SDE_1"
 #! ENABLED="true"
 #! FANOUT="No"
@@ -1340,7 +1340,6 @@
 #! <FEAT_ATTRIBUTE ATTR_NAME="TYP" ATTR_TYPE="char(3)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #! <FEAT_ATTRIBUTE ATTR_NAME="GSZ_NAME" ATTR_TYPE="char(255)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #! <FEAT_ATTRIBUTE ATTR_NAME="BESCHLUSS" ATTR_TYPE="date" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#! <FEAT_ATTRIBUTE ATTR_NAME="BESCHL_DOC" ATTR_TYPE="char(1023)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #! <FEAT_ATTRIBUTE ATTR_NAME="REGLEM_DOC" ATTR_TYPE="char(1023)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #! <DEFLINE_PARM PARM_NAME="GEODB_MEASURES_ORIGIN" PARM_VALUE=""/>
 #! <DEFLINE_PARM PARM_NAME="GEODB_DROP_TABLE" PARM_VALUE="NO"/>
@@ -1390,7 +1389,7 @@
 #! FEAT_GEOMTYPE="geodb_polygon"
 #! POSITION="96 -2410"
 #! ORDER="5e+014"
-#! COLLAPSED="true"
+#! COLLAPSED="false"
 #! KEYWORD="GEODATABASE_FILE_1"
 #! ENABLED="true"
 #! HIDDEN_USER_ATTRS="Shape_Area geodb_oid OBJECTID Shape_Length"
@@ -1405,7 +1404,7 @@
 #! <FEAT_ATTRIBUTE ATTR_NAME="Shape_Length" ATTR_TYPE="double" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #! <FEAT_ATTRIBUTE ATTR_NAME="Shape_Area" ATTR_TYPE="double" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #! <FEAT_ATTRIBUTE ATTR_NAME="GSZ_NR" ATTR_TYPE="integer" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#! <FEAT_ATTRIBUTE ATTR_NAME="TYP" ATTR_TYPE="char(3)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="TYP" ATTR_TYPE="char(4)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #! <FEAT_ATTRIBUTE ATTR_NAME="GSZ_NAME" ATTR_TYPE="char(255)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #! <FEAT_ATTRIBUTE ATTR_NAME="BESCHLUSS" ATTR_TYPE="date" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #! <FEAT_ATTRIBUTE ATTR_NAME="REGLEM_DOC" ATTR_TYPE="char(100)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
@@ -1430,7 +1429,7 @@
 #! >
 #! <FEAT_ATTRIBUTE ATTR_NAME="geodb_oid" ATTR_TYPE="integer" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #! <FEAT_ATTRIBUTE ATTR_NAME="OBJECTID" ATTR_TYPE="integer" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#! <FEAT_ATTRIBUTE ATTR_NAME="TYP" ATTR_TYPE="char(3)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="TYP" ATTR_TYPE="char(4)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #! <FEAT_ATTRIBUTE ATTR_NAME="BEZEICH_DE" ATTR_TYPE="char(100)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #! <FEAT_ATTRIBUTE ATTR_NAME="BEZEICH_FR" ATTR_TYPE="char(100)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #! </FEATURE_TYPE>
@@ -1559,9 +1558,9 @@
 #! <FEAT_ATTRIBUTE ATTR_NAME="WAWIS_NR" ATTR_TYPE="char(20)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #! <FEAT_ATTRIBUTE ATTR_NAME="BEZEICH" ATTR_TYPE="char(100)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #! <FEAT_ATTRIBUTE ATTR_NAME="TYP" ATTR_TYPE="char(3)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#! <FEAT_ATTRIBUTE ATTR_NAME="X_KOORD" ATTR_TYPE="integer" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#! <FEAT_ATTRIBUTE ATTR_NAME="Y_KOORD" ATTR_TYPE="integer" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #! <FEAT_ATTRIBUTE ATTR_NAME="KONZENT" ATTR_TYPE="double" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="E_KOORD" ATTR_TYPE="integer" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="N_KOORD" ATTR_TYPE="integer" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #! </FEATURE_TYPE>
 #! <FEATURE_TYPE
 #! IS_SOURCE="true"
@@ -1611,12 +1610,12 @@
 #! <FEAT_ATTRIBUTE ATTR_NAME="WAWIS_NR" ATTR_TYPE="char(20)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #! <FEAT_ATTRIBUTE ATTR_NAME="BEZEICH" ATTR_TYPE="char(100)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #! <FEAT_ATTRIBUTE ATTR_NAME="TYP" ATTR_TYPE="char(3)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#! <FEAT_ATTRIBUTE ATTR_NAME="X_KOORD" ATTR_TYPE="integer" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#! <FEAT_ATTRIBUTE ATTR_NAME="Y_KOORD" ATTR_TYPE="integer" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #! <FEAT_ATTRIBUTE ATTR_NAME="AUSRICHT" ATTR_TYPE="smallint" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #! <FEAT_ATTRIBUTE ATTR_NAME="QS_MITTEL" ATTR_TYPE="double" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #! <FEAT_ATTRIBUTE ATTR_NAME="QS_MIN" ATTR_TYPE="double" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #! <FEAT_ATTRIBUTE ATTR_NAME="QS_MAX" ATTR_TYPE="double" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="E_KOORD" ATTR_TYPE="integer" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="N_KOORD" ATTR_TYPE="integer" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #! </FEATURE_TYPE>
 #! <FEATURE_TYPE
 #! IS_SOURCE="true"
@@ -1723,12 +1722,12 @@
 #! <COMMENT
 #! IDENTIFIER="44"
 #! COMMENT_VALUE="&lt;html&gt;&lt;body&gt;GEODB.GSK25_GSKFA&lt;/body&gt;&lt;/html&gt;"
-#! POSITION="1616 -1185"
+#! POSITION="1616 -1181"
 #! ORDER="25"
 #! FOLLOW_ANCHOR="true"
 #! INFO_NODE="false"
-#! TOP_LEFT="1616 -1185"
-#! BOTTOM_RIGHT="1616 -1185"
+#! TOP_LEFT="1616 -1181"
+#! BOTTOM_RIGHT="1616 -1181"
 #! COLOUR="1,1,0.784314,0.192157"
 #! SIZE_POLICY="8"
 #! COMMENT_TYPE="REGULAR"
@@ -1897,7 +1896,7 @@
 #! INFO_NODE="false"
 #! TOP_LEFT="102 -45"
 #! BOTTOM_RIGHT="102 -45"
-#! COLOUR="1,1,0.784314,0.196078"
+#! COLOUR="1,1,0.784314,0.192157"
 #! SIZE_POLICY="8"
 #! COMMENT_TYPE="REGULAR"
 #! ANCHORED_NODE="76"
@@ -1911,7 +1910,7 @@
 #! INFO_NODE="false"
 #! TOP_LEFT="105 -267"
 #! BOTTOM_RIGHT="105 -267"
-#! COLOUR="1,1,0.784314,0.196078"
+#! COLOUR="1,1,0.784314,0.192157"
 #! SIZE_POLICY="8"
 #! COMMENT_TYPE="REGULAR"
 #! ANCHORED_NODE="78"
@@ -1925,7 +1924,7 @@
 #! INFO_NODE="false"
 #! TOP_LEFT="96 -490"
 #! BOTTOM_RIGHT="96 -490"
-#! COLOUR="1,1,0.784314,0.196078"
+#! COLOUR="1,1,0.784314,0.192157"
 #! SIZE_POLICY="8"
 #! COMMENT_TYPE="REGULAR"
 #! ANCHORED_NODE="79"
@@ -1939,7 +1938,7 @@
 #! INFO_NODE="false"
 #! TOP_LEFT="105 -709"
 #! BOTTOM_RIGHT="105 -709"
-#! COLOUR="1,1,0.784314,0.196078"
+#! COLOUR="1,1,0.784314,0.192157"
 #! SIZE_POLICY="8"
 #! COMMENT_TYPE="REGULAR"
 #! ANCHORED_NODE="83"
@@ -1953,7 +1952,7 @@
 #! INFO_NODE="false"
 #! TOP_LEFT="102 -919"
 #! BOTTOM_RIGHT="102 -919"
-#! COLOUR="1,1,0.784314,0.196078"
+#! COLOUR="1,1,0.784314,0.192157"
 #! SIZE_POLICY="8"
 #! COMMENT_TYPE="REGULAR"
 #! ANCHORED_NODE="88"
@@ -1967,7 +1966,7 @@
 #! INFO_NODE="false"
 #! TOP_LEFT="82 -1146"
 #! BOTTOM_RIGHT="82 -1146"
-#! COLOUR="1,1,0.784314,0.196078"
+#! COLOUR="1,1,0.784314,0.192157"
 #! SIZE_POLICY="8"
 #! COMMENT_TYPE="REGULAR"
 #! ANCHORED_NODE="89"
@@ -1981,7 +1980,7 @@
 #! INFO_NODE="false"
 #! TOP_LEFT="79 -1368"
 #! BOTTOM_RIGHT="79 -1368"
-#! COLOUR="1,1,0.784314,0.196078"
+#! COLOUR="1,1,0.784314,0.192157"
 #! SIZE_POLICY="8"
 #! COMMENT_TYPE="REGULAR"
 #! ANCHORED_NODE="90"
@@ -1995,7 +1994,7 @@
 #! INFO_NODE="false"
 #! TOP_LEFT="73 -1575"
 #! BOTTOM_RIGHT="73 -1575"
-#! COLOUR="1,1,0.784314,0.196078"
+#! COLOUR="1,1,0.784314,0.192157"
 #! SIZE_POLICY="8"
 #! COMMENT_TYPE="REGULAR"
 #! ANCHORED_NODE="93"
@@ -2009,7 +2008,7 @@
 #! INFO_NODE="false"
 #! TOP_LEFT="69 -1792"
 #! BOTTOM_RIGHT="69 -1792"
-#! COLOUR="1,1,0.784314,0.196078"
+#! COLOUR="1,1,0.784314,0.192157"
 #! SIZE_POLICY="8"
 #! COMMENT_TYPE="REGULAR"
 #! ANCHORED_NODE="96"
@@ -2023,7 +2022,7 @@
 #! INFO_NODE="false"
 #! TOP_LEFT="60 -2019"
 #! BOTTOM_RIGHT="60 -2019"
-#! COLOUR="1,1,0.784314,0.196078"
+#! COLOUR="1,1,0.784314,0.192157"
 #! SIZE_POLICY="8"
 #! COMMENT_TYPE="REGULAR"
 #! ANCHORED_NODE="97"
@@ -2037,7 +2036,7 @@
 #! INFO_NODE="false"
 #! TOP_LEFT="79 -2283"
 #! BOTTOM_RIGHT="79 -2283"
-#! COLOUR="1,1,0.784314,0.196078"
+#! COLOUR="1,1,0.784314,0.192157"
 #! SIZE_POLICY="8"
 #! COMMENT_TYPE="REGULAR"
 #! ANCHORED_NODE="75"
@@ -2923,7 +2922,6 @@ FME_REPROJECTION_ENGINE FME
 FME_IMPLICIT_CSMAP_REPROJECTION_MODE Auto
 FME_GEOMETRY_HANDLING Enhanced
 FME_STROKE_MAX_DEVIATION 0
-LOG_TIMINGS YES
 LOG_FILTER_MASK -1
 DEFAULT_MACRO DATASET_KEYWORD_GEODATABASE_FILE_1 GEODATABASE_FILE_1
 DEFAULT_MACRO DATASET_KEYWORD_GEODATABASE_SDE_1 GEODATABASE_SDE_1
@@ -2948,9 +2946,9 @@ MACRO VISUALIZER_FEATURE_FILE $(WORKSPACE_TEMP_DIR)/inspector.ffs
 MACRO VISUALIZER_SCHEMA_FILE $(WORKSPACE_TEMP_DIR)/inspector.fsc
 MACRO VISUALIZER_CREATE_SPATIAL_INDEX YES
 # -------------------------------------------------------------------------
-GEODATABASE_FILE_1_DEF GSK25_GSKFA   geodb_type                   geodb_point   geodb_oid                    integer   OBJECTID                     integer   GSZ_NR                       integer   WAWIS_NR                     char(20)   BEZEICH                      char(100)   TYP                          char(3)   X_KOORD                      integer   Y_KOORD                      integer   KONZENT                      double
+GEODATABASE_FILE_1_DEF GSK25_GSKFA   geodb_type                   geodb_point   geodb_oid                    integer   OBJECTID                     integer   GSZ_NR                       integer   WAWIS_NR                     char(20)   BEZEICH                      char(100)   TYP                          char(3)   KONZENT                      double   E_KOORD                      integer   N_KOORD                      integer
 # -------------------------------------------------------------------------
-GEODATABASE_FILE_1_DEF GSK25_GSKT   geodb_type                   geodb_table   geodb_oid                    integer   OBJECTID                     integer   TYP                          char(3)   BEZEICH_DE                   char(100)   BEZEICH_FR                   char(100)
+GEODATABASE_FILE_1_DEF GSK25_GSKT   geodb_type                   geodb_table   geodb_oid                    integer   OBJECTID                     integer   TYP                          char(4)   BEZEICH_DE                   char(100)   BEZEICH_FR                   char(100)
 # -------------------------------------------------------------------------
 GEODATABASE_FILE_1_DEF GSK25_GSKSLF   geodb_type                   geodb_polyline   geodb_oid                    integer   OBJECTID                     integer   Shape_Length                 double   GSZ_NR                       integer   WAWIS_NR                     char(20)   BEZEICH                      char(100)   TYP                          char(3)   QS_MITTEL                    double   QS_MIN                       double   QS_MAX                       double
 # -------------------------------------------------------------------------
@@ -2964,11 +2962,11 @@ GEODATABASE_FILE_1_DEF GSK25_GSKQUT   geodb_type                   geodb_table  
 # -------------------------------------------------------------------------
 GEODATABASE_FILE_1_DEF GSK25_GSKUL   geodb_type                   geodb_polyline   geodb_oid                    integer   OBJECTID                     integer   Shape_Length                 double   GSZ_NR                       integer
 # -------------------------------------------------------------------------
-GEODATABASE_FILE_1_DEF GSK25_GSK   geodb_type                   geodb_polygon   geodb_oid                    integer   OBJECTID                     integer   Shape_Length                 double   Shape_Area                   double   GSZ_NR                       integer   TYP                          char(3)   GSZ_NAME                     char(255)   BESCHLUSS                    date   REGLEM_DOC                   char(100)
+GEODATABASE_FILE_1_DEF GSK25_GSK   geodb_type                   geodb_polygon   geodb_oid                    integer   OBJECTID                     integer   Shape_Length                 double   Shape_Area                   double   GSZ_NR                       integer   TYP                          char(4)   GSZ_NAME                     char(255)   BESCHLUSS                    date   REGLEM_DOC                   char(100)
 # -------------------------------------------------------------------------
 GEODATABASE_FILE_1_DEF GSK25_GSKFAT   geodb_type                   geodb_table   geodb_oid                    integer   OBJECTID                     integer   TYP                          char(3)   BEZEICH_DE                   char(100)   BEZEICH_FR                   char(100)
 # -------------------------------------------------------------------------
-GEODATABASE_FILE_1_DEF GSK25_GSKQU   geodb_type                   geodb_point   geodb_oid                    integer   OBJECTID                     integer   GSZ_NR                       integer   WAWIS_NR                     char(20)   BEZEICH                      char(100)   TYP                          char(3)   X_KOORD                      integer   Y_KOORD                      integer   AUSRICHT                     smallint   QS_MITTEL                    double   QS_MIN                       double   QS_MAX                       double
+GEODATABASE_FILE_1_DEF GSK25_GSKQU   geodb_type                   geodb_point   geodb_oid                    integer   OBJECTID                     integer   GSZ_NR                       integer   WAWIS_NR                     char(20)   BEZEICH                      char(100)   TYP                          char(3)   AUSRICHT                     smallint   QS_MITTEL                    double   QS_MIN                       double   QS_MAX                       double   E_KOORD                      integer   N_KOORD                      integer
 
 # -------------------------------------------------------------------------
 
@@ -3031,10 +3029,10 @@ FACTORY_DEF * TeeFactory    FACTORY_NAME "GSK25_GSKSLFT -> GEODB.GSK25_GSKSLFT C
 FACTORY_DEF * TeeFactory    FACTORY_NAME "GSK25_GSKUL -> GEODB.GSK25_GSKUL Correlator"    INPUT FEATURE_TYPE GSK25_GSKUL    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 0       @Transform(FME_GENERIC,GEODATABASE_SDE)       @SupplyAttributes(ENCODED,__wb_out_feat_type__,GEODB.GSK25_GSKUL)
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * TeeFactory    FACTORY_NAME "GSK25_GSKQU -> GEODB.GSK25_GSKQU Correlator"    INPUT FEATURE_TYPE GSK25_GSKQU    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 0       @Transform(FME_GENERIC,GEODATABASE_SDE)       @SupplyAttributes(ENCODED,__wb_out_feat_type__,GEODB.GSK25_GSKQU)
+FACTORY_DEF * TeeFactory    FACTORY_NAME "GSK25_GSKSLF -> GEODB.GSK25_GSKSLF Correlator"    INPUT FEATURE_TYPE GSK25_GSKSLF    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 0       @Transform(FME_GENERIC,GEODATABASE_SDE)       @SupplyAttributes(ENCODED,__wb_out_feat_type__,GEODB.GSK25_GSKSLF)
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * TeeFactory    FACTORY_NAME "GSK25_GSKSLF -> GEODB.GSK25_GSKSLF Correlator"    INPUT FEATURE_TYPE GSK25_GSKSLF    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 0       @Transform(FME_GENERIC,GEODATABASE_SDE)       @SupplyAttributes(ENCODED,__wb_out_feat_type__,GEODB.GSK25_GSKSLF)
+FACTORY_DEF * TeeFactory    FACTORY_NAME "GSK25_GSKQU -> GEODB.GSK25_GSKQU Correlator"    INPUT FEATURE_TYPE GSK25_GSKQU    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 0       @Transform(FME_GENERIC,GEODATABASE_SDE)       @SupplyAttributes(ENCODED,__wb_out_feat_type__,GEODB.GSK25_GSKQU)
 # -------------------------------------------------------------------------
 
 FACTORY_DEF * TeeFactory    FACTORY_NAME "Aggregator_AGGREGATE -> filecopy Correlator"    INPUT FEATURE_TYPE Aggregator_AGGREGATE    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 1       @Transform(FME_GENERIC,FILECOPY)       @CopyAttributes(ENCODED,filecopy_source_dataset,reglem_source_dataset,filecopy_dest_dataset,reglem_dest_dataset)       @SupplyAttributes(ENCODED,__wb_out_feat_type__,filecopy)
@@ -3048,9 +3046,9 @@ FACTORY_DEF * TeeFactory   FACTORY_NAME "Final Output Nuker"   INPUT FEATURE_TYP
 # -------------------------------------------------------------------------
 GEODATABASE_SDE_1_DEF GEODB.GSK25_GSKQUT   geodb_type                   geodb_table   GEODB_DROP_TABLE             NO   GEODB_TRUNCATE_TABLE         YES   GEODB_OBJECT_ID_NAME         OBJECTID   GEODB_OBJECT_ID_ALIAS        OBJECTID   GEODB_SHAPE_NAME             SHAPE   GEODB_SHAPE_ALIAS            SHAPE   GEODB_CONFIG_KEYWORD         DEFAULTS   GEODB_FEATURE_DATASET        ""   GEODB_GRID{1}                ""   GEODB_AVG_NUM_POINTS         ""   GEODB_XORIGIN                ""   GEODB_YORIGIN                ""   GEODB_XYSCALE                ""   GEODB_HAS_Z_VALUES           ""   GEODB_ZORIGIN                ""   GEODB_ZSCALE                 ""   GEODB_HAS_MEASURES           ""   GEODB_MEASURES_ORIGIN        ""   GEODB_MEASURES_SCALE         ""   GEODB_ANNO_REFERENCE_SCALE   ""   TYP                          char(3)   BEZEICH_DE                   char(100)   BEZEICH_FR                   char(100)
 # -------------------------------------------------------------------------
-GEODATABASE_SDE_1_DEF GEODB.GSK25_GSKFA   geodb_type                   geodb_point   GEODB_DROP_TABLE             NO   GEODB_TRUNCATE_TABLE         YES   GEODB_OBJECT_ID_NAME         OBJECTID   GEODB_OBJECT_ID_ALIAS        OBJECTID   GEODB_SHAPE_NAME             SHAPE   GEODB_SHAPE_ALIAS            SHAPE   GEODB_CONFIG_KEYWORD         DEFAULTS   GEODB_FEATURE_DATASET        ""   GEODB_GRID{1}                ""   GEODB_AVG_NUM_POINTS         ""   GEODB_XORIGIN                ""   GEODB_YORIGIN                ""   GEODB_XYSCALE                ""   GEODB_HAS_Z_VALUES           ""   GEODB_ZORIGIN                ""   GEODB_ZSCALE                 ""   GEODB_HAS_MEASURES           ""   GEODB_MEASURES_ORIGIN        ""   GEODB_MEASURES_SCALE         ""   GEODB_ANNO_REFERENCE_SCALE   ""   GSZ_NR                       integer   WAWIS_NR                     char(20)   BEZEICH                      char(100)   TYP                          char(3)   X_KOORD                      integer   Y_KOORD                      integer   KONZENT                      double
+GEODATABASE_SDE_1_DEF GEODB.GSK25_GSKFA   geodb_type                   geodb_point   GEODB_DROP_TABLE             NO   GEODB_TRUNCATE_TABLE         YES   GEODB_OBJECT_ID_NAME         OBJECTID   GEODB_OBJECT_ID_ALIAS        OBJECTID   GEODB_SHAPE_NAME             SHAPE   GEODB_SHAPE_ALIAS            SHAPE   GEODB_CONFIG_KEYWORD         DEFAULTS   GEODB_FEATURE_DATASET        ""   GEODB_GRID{1}                ""   GEODB_AVG_NUM_POINTS         ""   GEODB_XORIGIN                ""   GEODB_YORIGIN                ""   GEODB_XYSCALE                ""   GEODB_HAS_Z_VALUES           ""   GEODB_ZORIGIN                ""   GEODB_ZSCALE                 ""   GEODB_HAS_MEASURES           ""   GEODB_MEASURES_ORIGIN        ""   GEODB_MEASURES_SCALE         ""   GEODB_ANNO_REFERENCE_SCALE   ""   GSZ_NR                       integer   WAWIS_NR                     char(20)   BEZEICH                      char(100)   TYP                          char(3)   E_KOORD                      integer   N_KOORD                      integer   KONZENT                      double
 # -------------------------------------------------------------------------
-GEODATABASE_SDE_1_DEF GEODB.GSK25_GSK   geodb_type                   geodb_polygon   GEODB_DROP_TABLE             NO   GEODB_TRUNCATE_TABLE         YES   GEODB_OBJECT_ID_NAME         OBJECTID   GEODB_OBJECT_ID_ALIAS        OBJECTID   GEODB_SHAPE_NAME             SHAPE   GEODB_SHAPE_ALIAS            SHAPE   GEODB_CONFIG_KEYWORD         DEFAULTS   GEODB_FEATURE_DATASET        ""   GEODB_GRID{1}                ""   GEODB_AVG_NUM_POINTS         ""   GEODB_XORIGIN                ""   GEODB_YORIGIN                ""   GEODB_XYSCALE                ""   GEODB_HAS_Z_VALUES           ""   GEODB_ZORIGIN                ""   GEODB_ZSCALE                 ""   GEODB_HAS_MEASURES           ""   GEODB_MEASURES_ORIGIN        ""   GEODB_MEASURES_SCALE         ""   GEODB_ANNO_REFERENCE_SCALE   ""   GSZ_NR                       integer   TYP                          char(3)   GSZ_NAME                     char(255)   BESCHLUSS                    date   BESCHL_DOC                   char(1023)   REGLEM_DOC                   char(1023)
+GEODATABASE_SDE_1_DEF GEODB.GSK25_GSK   geodb_type                   geodb_polygon   GEODB_DROP_TABLE             NO   GEODB_TRUNCATE_TABLE         YES   GEODB_OBJECT_ID_NAME         OBJECTID   GEODB_OBJECT_ID_ALIAS        OBJECTID   GEODB_SHAPE_NAME             SHAPE   GEODB_SHAPE_ALIAS            SHAPE   GEODB_CONFIG_KEYWORD         DEFAULTS   GEODB_FEATURE_DATASET        ""   GEODB_GRID{1}                ""   GEODB_AVG_NUM_POINTS         ""   GEODB_XORIGIN                ""   GEODB_YORIGIN                ""   GEODB_XYSCALE                ""   GEODB_HAS_Z_VALUES           ""   GEODB_ZORIGIN                ""   GEODB_ZSCALE                 ""   GEODB_HAS_MEASURES           ""   GEODB_MEASURES_ORIGIN        ""   GEODB_MEASURES_SCALE         ""   GEODB_ANNO_REFERENCE_SCALE   ""   GSZ_NR                       integer   TYP                          char(3)   GSZ_NAME                     char(255)   BESCHLUSS                    date   REGLEM_DOC                   char(1023)
 # -------------------------------------------------------------------------
 GEODATABASE_SDE_1_DEF GEODB.GSK25_GSKT   geodb_type                   geodb_table   GEODB_DROP_TABLE             NO   GEODB_TRUNCATE_TABLE         YES   GEODB_OBJECT_ID_NAME         OBJECTID   GEODB_OBJECT_ID_ALIAS        OBJECTID   GEODB_SHAPE_NAME             SHAPE   GEODB_SHAPE_ALIAS            SHAPE   GEODB_CONFIG_KEYWORD         DEFAULTS   GEODB_FEATURE_DATASET        ""   GEODB_GRID{1}                ""   GEODB_AVG_NUM_POINTS         ""   GEODB_XORIGIN                ""   GEODB_YORIGIN                ""   GEODB_XYSCALE                ""   GEODB_HAS_Z_VALUES           ""   GEODB_ZORIGIN                ""   GEODB_ZSCALE                 ""   GEODB_HAS_MEASURES           ""   GEODB_MEASURES_ORIGIN        ""   GEODB_MEASURES_SCALE         ""   GEODB_ANNO_REFERENCE_SCALE   ""   TYP                          char(3)   BEZEICH_DE                   char(100)   BEZEICH_FR                   char(100)
 # -------------------------------------------------------------------------
@@ -3064,6 +3062,6 @@ GEODATABASE_SDE_1_DEF GEODB.GSK25_GSKSLFT   geodb_type                   geodb_t
 # -------------------------------------------------------------------------
 GEODATABASE_SDE_1_DEF GEODB.GSK25_GSKUL   geodb_type                   geodb_polyline   GEODB_DROP_TABLE             NO   GEODB_TRUNCATE_TABLE         YES   GEODB_OBJECT_ID_NAME         OBJECTID   GEODB_OBJECT_ID_ALIAS        OBJECTID   GEODB_SHAPE_NAME             SHAPE   GEODB_SHAPE_ALIAS            SHAPE   GEODB_CONFIG_KEYWORD         DEFAULTS   GEODB_FEATURE_DATASET        ""   GEODB_GRID{1}                ""   GEODB_AVG_NUM_POINTS         ""   GEODB_XORIGIN                ""   GEODB_YORIGIN                ""   GEODB_XYSCALE                ""   GEODB_HAS_Z_VALUES           ""   GEODB_ZORIGIN                ""   GEODB_ZSCALE                 ""   GEODB_HAS_MEASURES           ""   GEODB_MEASURES_ORIGIN        ""   GEODB_MEASURES_SCALE         ""   GEODB_ANNO_REFERENCE_SCALE   ""   GSZ_NR                       integer
 # -------------------------------------------------------------------------
-GEODATABASE_SDE_1_DEF GEODB.GSK25_GSKQU   geodb_type                   geodb_point   GEODB_DROP_TABLE             NO   GEODB_TRUNCATE_TABLE         YES   GEODB_OBJECT_ID_NAME         OBJECTID   GEODB_OBJECT_ID_ALIAS        OBJECTID   GEODB_SHAPE_NAME             SHAPE   GEODB_SHAPE_ALIAS            SHAPE   GEODB_CONFIG_KEYWORD         DEFAULTS   GEODB_FEATURE_DATASET        ""   GEODB_GRID{1}                ""   GEODB_AVG_NUM_POINTS         ""   GEODB_XORIGIN                ""   GEODB_YORIGIN                ""   GEODB_XYSCALE                ""   GEODB_HAS_Z_VALUES           ""   GEODB_ZORIGIN                ""   GEODB_ZSCALE                 ""   GEODB_HAS_MEASURES           ""   GEODB_MEASURES_ORIGIN        ""   GEODB_MEASURES_SCALE         ""   GEODB_ANNO_REFERENCE_SCALE   ""   GSZ_NR                       integer   WAWIS_NR                     char(20)   BEZEICH                      char(100)   TYP                          char(3)   X_KOORD                      integer   Y_KOORD                      integer   AUSRICHT                     smallint   QS_MITTEL                    double   QS_MIN                       double   QS_MAX                       double
-# -------------------------------------------------------------------------
 GEODATABASE_SDE_1_DEF GEODB.GSK25_GSKSLF   geodb_type                   geodb_polyline   GEODB_DROP_TABLE             NO   GEODB_TRUNCATE_TABLE         YES   GEODB_OBJECT_ID_NAME         OBJECTID   GEODB_OBJECT_ID_ALIAS        OBJECTID   GEODB_SHAPE_NAME             SHAPE   GEODB_SHAPE_ALIAS            SHAPE   GEODB_CONFIG_KEYWORD         DEFAULTS   GEODB_FEATURE_DATASET        ""   GEODB_GRID{1}                ""   GEODB_AVG_NUM_POINTS         ""   GEODB_XORIGIN                ""   GEODB_YORIGIN                ""   GEODB_XYSCALE                ""   GEODB_HAS_Z_VALUES           ""   GEODB_ZORIGIN                ""   GEODB_ZSCALE                 ""   GEODB_HAS_MEASURES           ""   GEODB_MEASURES_ORIGIN        ""   GEODB_MEASURES_SCALE         ""   GEODB_ANNO_REFERENCE_SCALE   ""   GSZ_NR                       integer   WAWIS_NR                     char(20)   BEZEICH                      char(100)   TYP                          char(3)   QS_MITTEL                    double   QS_MIN                       double   QS_MAX                       double
+# -------------------------------------------------------------------------
+GEODATABASE_SDE_1_DEF GEODB.GSK25_GSKQU   geodb_type                   geodb_point   GEODB_DROP_TABLE             NO   GEODB_TRUNCATE_TABLE         YES   GEODB_OBJECT_ID_NAME         OBJECTID   GEODB_OBJECT_ID_ALIAS        OBJECTID   GEODB_SHAPE_NAME             SHAPE   GEODB_SHAPE_ALIAS            SHAPE   GEODB_CONFIG_KEYWORD         DEFAULTS   GEODB_FEATURE_DATASET        ""   GEODB_GRID{1}                ""   GEODB_AVG_NUM_POINTS         ""   GEODB_XORIGIN                ""   GEODB_YORIGIN                ""   GEODB_XYSCALE                ""   GEODB_HAS_Z_VALUES           ""   GEODB_ZORIGIN                ""   GEODB_ZSCALE                 ""   GEODB_HAS_MEASURES           ""   GEODB_MEASURES_ORIGIN        ""   GEODB_MEASURES_SCALE         ""   GEODB_ANNO_REFERENCE_SCALE   ""   GSZ_NR                       integer   WAWIS_NR                     char(20)   BEZEICH                      char(100)   TYP                          char(3)   E_KOORD                      integer   N_KOORD                      integer   AUSRICHT                     smallint   QS_MITTEL                    double   QS_MIN                       double   QS_MAX                       double
