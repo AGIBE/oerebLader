@@ -47,6 +47,7 @@ def run(config):
         'OUTPUT_RV_DIR': str(output_rv_dir),
         'OUTPUT_RV_URL': str(output_rv_url),
         'SIMPLIFY_GEOMETRY': str(simplify_geometry),
+        'CREATE_LINETABLES': str(config['GENERAL']['create_linetables']),
         'LOGFILE': str(fme_logfile)
     }
     try:
