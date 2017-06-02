@@ -41,7 +41,7 @@ def run(config):
     runner = fmeobjects.FMEWorkspaceRunner()
     bfsnr = config['LIEFEREINHEIT']['bfsnr']
     legend_basedir = os.path.join(config['GENERAL']['files_be_ch_baseunc'], unicode(config['LIEFEREINHEIT']['id']), unicode(config['ticketnr']), "legenden")
-    token = ""
+    token = "0"
     # Das Legendenverzeichnis muss im Voraus vorhanden sein, damit der HTTP-Fetcher
     # im FME dorthin schreiben kann. Er erzeugt keine Directories.
     if not os.path.exists(legend_basedir):
@@ -73,7 +73,7 @@ def run(config):
         'GDBV_PASSWORD': str(config['GDBV_WORK']['password']),
         'BFSNR': str(bfsnr),
         'MAPSERVICE_BASE_URL': str(config['LEGENDS']['legend_mapservice_base_url']),
-        'MAPSERVICE_LEGEND_URL': mapservice_legend_url,
+        'MAPSERVICE_LEGEND_URL': str(mapservice_legend_url),
         'MAPSERVICE_NAME': str(config['LEGENDS']['legend_mapservice_name']),
         'LEGEND_BASEURL': str(legend_baseurl),
         'LEGEND_BASEDIR': str(legend_basedir),
