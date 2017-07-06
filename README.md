@@ -1,2 +1,2 @@
 # oerebLader
-�REB-Kataster Kanton Bern: Modul Import
+ÖREB-Kataster Kanton Bern: Modul Import
