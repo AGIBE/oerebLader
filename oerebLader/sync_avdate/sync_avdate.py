@@ -60,8 +60,6 @@ def run_sync_avdate():
         logger.info(sql_basedata_fr)
 
         try:
-            logger.info("Aktualisiere Verschnittfunktion public.")
-            oerebLader.helpers.sql_helper.writeSQL(config['OEREBAPP']['connection_string'], sql_avdate)
             logger.info("Aktualisiere Verschnittfunktion CUG.")
             oerebLader.helpers.sql_helper.writeSQL(config['OEREBCUGAPP']['connection_string'], sql_avdate)
             logger.info("Aktualisiere Verschnittfunktion public 2.")
