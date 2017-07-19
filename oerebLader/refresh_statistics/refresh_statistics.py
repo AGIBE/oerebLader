@@ -38,14 +38,8 @@ def run_refresh_statistics():
     config = oerebLader.helpers.config.get_config()
     logger = init_logging(config)
     
-    logger.info("Statistiken des ÖREB-Schemas in VEK2 werden aktualisiert.")
-    refresh_stats(config['OEREB_VEK2']['connection_string'], config['OEREB_VEK2']['username'])
-
     logger.info("Statistiken des ÖREB2-Schemas in VEK2 werden aktualisiert.")
     refresh_stats(config['OEREB2_VEK2']['connection_string'], config['OEREB2_VEK2']['username'])
-
-    logger.info("Statistiken des ÖREB-Schemas in VEK1 werden aktualisiert.")
-    refresh_stats(config['OEREB_VEK1']['connection_string'], config['OEREB_VEK1']['username'])
 
     logger.info("Statistiken des ÖREB2-Schemas in VEK1 werden aktualisiert.")
     refresh_stats(config['OEREB2_VEK1']['connection_string'], config['OEREB2_VEK1']['username'])
