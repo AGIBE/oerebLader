@@ -19,9 +19,6 @@ def run(config):
     # Der FMEWorkspaceRunner akzeptiert keine Unicode-Strings!
     # Daher müssen workspace und parameters umgewandelt werden!
     parameters = {
-        'OEREB_DATABASE': str(config['OEREB_WORK']['database']),
-        'OEREB_USERNAME': str(config['OEREB_WORK']['username']),
-        'OEREB_PASSWORD': str(config['OEREB_WORK']['password']),
         'OEREB2_DATABASE': str(config['OEREB2_WORK']['database']),
         'OEREB2_USERNAME': str(config['OEREB2_WORK']['username']),
         'OEREB2_PASSWORD': str(config['OEREB2_WORK']['password']),
