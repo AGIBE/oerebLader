@@ -222,10 +222,8 @@ def run_release(dailyMode):
 
     # Connection-Files löschen
     oerebLader.helpers.connection_helper.delete_connection_files(config['GEODB_WORK']['connection_file'], logger)
-    oerebLader.helpers.connection_helper.delete_connection_files(config['OEREB_WORK']['connection_file'], logger)
     oerebLader.helpers.connection_helper.delete_connection_files(config['OEREB2_WORK']['connection_file'], logger)
     oerebLader.helpers.connection_helper.delete_connection_files(config['NORM_TEAM']['connection_file'], logger)
-    oerebLader.helpers.connection_helper.delete_connection_files(config['OEREB_TEAM']['connection_file'], logger)
     oerebLader.helpers.connection_helper.delete_connection_files(config['OEREB2_TEAM']['connection_file'], logger)
             
     logger.info("Alle Ticket-Stati aktualisiert.")
