@@ -66,9 +66,7 @@ def get_config():
 
     # Connection-Strings zusammensetzen
     create_connection_string(config, 'GEODB_WORK')
-    create_connection_string(config, 'OEREB_WORK')
     create_connection_string(config, 'OEREB2_WORK')
-    create_connection_string(config, 'OEREB_TEAM')
     create_connection_string(config, 'OEREB2_TEAM')
     create_connection_string(config, 'NORM_TEAM')
     create_connection_string(config, "GEODB_DD_TEAM")
@@ -76,9 +74,7 @@ def get_config():
     create_connection_string(config, "OEREB2APP")
     create_connection_string(config, "OEREBCUGAPP")
     create_connection_string(config, "GEO_VEK1")
-    create_connection_string(config, "OEREB_VEK1")
     create_connection_string(config, "OEREB2_VEK1")
-    create_connection_string(config, "OEREB_VEK2")
     create_connection_string(config, "OEREB2_VEK2")
     create_connection_string(config, "TBA_WORK")
     create_connection_string(config, "GDBV_WORK")
