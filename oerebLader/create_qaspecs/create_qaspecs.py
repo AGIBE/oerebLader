@@ -49,24 +49,16 @@ def run_create_qaspecs(config=None, liefereinheiten=[-1]):
     
     qa_basedir = config['GENERAL']['qa']
     
-    template_qa_filename = os.path.join(qa_basedir, "OEREB_Liefereinheit_Template.qa.xml")
     template2_qa_filename = os.path.join(qa_basedir, "OEREB2_Liefereinheit_Template.qa.xml")
     logger.info("Folgende Template-Files werden verwendet:")
-    logger.info(template_qa_filename)
     logger.info(template2_qa_filename)
-    template_qa = ""
     template2_qa = ""
     
-    with codecs.open(template_qa_filename, "r", "utf-8") as template_qa_file:
-        template_qa = template_qa_file.read()
-        
     with codecs.open(template2_qa_filename, "r", "utf-8") as template2_qa_file:
         template2_qa = template2_qa_file.read()
     
-    qa_dir = os.path.join(qa_basedir, "OEREB")
     qa2_dir = os.path.join(qa_basedir, "OEREB2")
     logger.info("Die QA-Spezifikation werden gespeichert in: ")
-    logger.info(qa_dir)
     logger.info(qa2_dir)
     
     if liefereinheiten[0] == -1:
@@ -74,14 +66,8 @@ def run_create_qaspecs(config=None, liefereinheiten=[-1]):
         
     for le in liefereinheiten:
         logger.info("Liefereinheit " + unicode(le) + " wird bearbeitet.")
-        liefereinheit_qa_filename = os.path.join(qa_dir, "OEREB_" + unicode(le) + ".qa.xml")
         liefereinheit2_qa_filename = os.path.join(qa2_dir, "OEREB2_" + unicode(le) + ".qa.xml")
-        template_qa_liefereinheit = template_qa.replace("$$$LIEFEREINHEIT$$$", unicode(le))
         template2_qa_liefereinheit = template2_qa.replace("$$$LIEFEREINHEIT$$$", unicode(le))
-
-        logger.info("Datei " + liefereinheit_qa_filename + " wird geschrieben.")
-        with codecs.open(liefereinheit_qa_filename, "w", "utf-8") as liefereinheit_qa_file:
-            liefereinheit_qa_file.write(template_qa_liefereinheit)
 
         logger.info("Datei " + liefereinheit2_qa_filename + " wird geschrieben.")
         with codecs.open(liefereinheit2_qa_filename, "w", "utf-8") as liefereinheit2_qa_file:
