@@ -11,6 +11,7 @@ import oerebLader.sync_avdate.sync_avdate
 import oerebLader.create_qaspecs.create_qaspecs
 import oerebLader.switch_bfsnr.switch_bfsnr
 import oerebLader.build_mapfile_kanton.build_mapfile_kanton
+import oerebLader.build_map.build_map
 
 def import_ticket(args):
     oerebLader.workflows.workflow.run_workflow(args.TICKET)
@@ -65,6 +66,10 @@ def build_mapfile_kanton(args):
     oerebLader.build_mapfile_kanton.build_mapfile_kanton.run_build_mapfile_kantonr()
     print("Build_mapfile_kanton SUCCESSFUL!")
     
+def build_map(args):
+    oerebLader.build_map.build_map.run_build_map(args.MODE, args.batchdir)
+    print("Build_map SUCCESSFUL!")    
+    
 def main():
     version_text = "oerebLader v" + __version__
     parser = argparse.ArgumentParser(description="Kommandozeile fuer den oerebLader. Importiert Tickets und zeigt offene Tickets an.", prog="oerebLader.exe", version=version_text)
@@ -115,6 +120,12 @@ def main():
     # BUILD_MAPFILE_KANTON-Befehl
     build_mapfile_kanton_parser = subparsers.add_parser("build_mapfile_kanton", help="Erstellt das Mapfile für den Kantons-Prüfdienst neu.")
     build_mapfile_kanton_parser.set_defaults(func=build_mapfile_kanton)
+    
+    # BUILD_MAP-Befehl
+    build_map_parser = subparsers.add_parser("build_map", help="Erstellt das Mapfile für den Prüfdienst oder den öffentlichen Dienst.")
+    build_map_parser.add_argument("MODE", choices=["oereb","oerebpruef"], help="Zu erstellendes Mapfile (oereb oder oerebpruef).")
+    build_map_parser.add_argument("batchdir", help="Verzeichnis, in dem der publish-Batch erstellt werden soll.")
+    build_map_parser.set_defaults(func=build_map)
     
     args = parser.parse_args()
     args.func(args)
