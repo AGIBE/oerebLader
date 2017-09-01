@@ -9,6 +9,7 @@ import oerebLader.refresh_verschnitt.refresh_verschnitt
 import oerebLader.refresh_statistics.refresh_statistics
 import oerebLader.sync_avdate.sync_avdate
 import oerebLader.create_qaspecs.create_qaspecs
+import oerebLader.switch_bfsnr.switch_bfsnr
 
 def import_ticket(args):
     oerebLader.workflows.workflow.run_workflow(args.TICKET)
@@ -55,6 +56,10 @@ def create_qaspecs(args):
     oerebLader.create_qaspecs.create_qaspecs.run_create_qaspecs()
     print("Create_qaspces SUCCESSFUL!")
     
+def switch_bfsnr(args):
+    oerebLader.switch_bfsnr.switch_bfsnr.run_switch_bfsnr(args.BFSNR)
+    print("Switch_bfsnr SUCCESSFUL!")
+    
 def main():
     version_text = "oerebLader v" + __version__
     parser = argparse.ArgumentParser(description="Kommandozeile fuer den oerebLader. Importiert Tickets und zeigt offene Tickets an.", prog="oerebLader.exe", version=version_text)
@@ -96,6 +101,11 @@ def main():
     # CREATE_QASPECS-Befehl
     create_qaspecs_parser = subparsers.add_parser("create_qaspecs", help="Erstellt pro Liefereinheit ein QA-Spezifikations-XML.")
     create_qaspecs_parser.set_defaults(func=create_qaspecs)
+    
+    # SWITCH_BFSNR-Befehl
+    switch_bfsnr_parser = subparsers.add_parser("switch_bfsnr", help="Wechselt den Gemeinde-Prüfdienst auf eine neue Gemeinde.")
+    switch_bfsnr_parser.add_argument("BFSNR", type=int, choices=range(300, 999), help="BFSNR der Gemeinde, auf die das Mapfile wechseln soll.")
+    switch_bfsnr_parser.set_defaults(func=switch_bfsnr)
     
     args = parser.parse_args()
     args.func(args)
