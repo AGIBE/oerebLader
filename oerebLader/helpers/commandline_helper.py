@@ -10,6 +10,7 @@ import oerebLader.refresh_statistics.refresh_statistics
 import oerebLader.sync_avdate.sync_avdate
 import oerebLader.create_qaspecs.create_qaspecs
 import oerebLader.switch_bfsnr.switch_bfsnr
+import oerebLader.build_mapfile_kanton.build_mapfile_kanton
 
 def import_ticket(args):
     oerebLader.workflows.workflow.run_workflow(args.TICKET)
@@ -60,6 +61,10 @@ def switch_bfsnr(args):
     oerebLader.switch_bfsnr.switch_bfsnr.run_switch_bfsnr(args.BFSNR)
     print("Switch_bfsnr SUCCESSFUL!")
     
+def build_mapfile_kanton(args):
+    oerebLader.build_mapfile_kanton.build_mapfile_kanton.run_build_mapfile_kantonr()
+    print("Build_mapfile_kanton SUCCESSFUL!")
+    
 def main():
     version_text = "oerebLader v" + __version__
     parser = argparse.ArgumentParser(description="Kommandozeile fuer den oerebLader. Importiert Tickets und zeigt offene Tickets an.", prog="oerebLader.exe", version=version_text)
@@ -106,6 +111,10 @@ def main():
     switch_bfsnr_parser = subparsers.add_parser("switch_bfsnr", help="Wechselt den Gemeinde-Prüfdienst auf eine neue Gemeinde.")
     switch_bfsnr_parser.add_argument("BFSNR", type=int, choices=range(300, 999), help="BFSNR der Gemeinde, auf die das Mapfile wechseln soll.")
     switch_bfsnr_parser.set_defaults(func=switch_bfsnr)
+    
+    # BUILD_MAPFILE_KANTON-Befehl
+    build_mapfile_kanton_parser = subparsers.add_parser("build_mapfile_kanton", help="Erstellt das Mapfile für den Kantons-Prüfdienst neu.")
+    build_mapfile_kanton_parser.set_defaults(func=build_mapfile_kanton)
     
     args = parser.parse_args()
     args.func(args)
