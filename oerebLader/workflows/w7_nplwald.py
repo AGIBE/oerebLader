@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from __future__ import absolute_import, division, print_function, unicode_literals
 import oerebLader.scripts.s26_initialize
-import oerebLader.scripts.s3_delete_nplwald
+import oerebLader.scripts.s3_delete_nuplwald
 import oerebLader.scripts.s4_delete_transfer
 import oerebLader.scripts.s21_import_nplwald
 import oerebLader.scripts.s46_import_nuplwald
@@ -17,7 +17,7 @@ def run(ticketnr):
     config = oerebLader.helpers.config.get_config()
     
     oerebLader.scripts.s26_initialize.run(config, ticketnr)
-    oerebLader.scripts.s3_delete_nplwald.run(config)
+    oerebLader.scripts.s3_delete_nuplwald.run(config)
     oerebLader.scripts.s4_delete_transfer.run(config)
     oerebLader.scripts.s21_import_nplwald.run(config)
     oerebLader.scripts.s46_import_nuplwald.run(config)
