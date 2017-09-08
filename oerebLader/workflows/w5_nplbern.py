@@ -5,7 +5,6 @@ import oerebLader.scripts.s1_delete_nupla
 import oerebLader.scripts.s4_delete_transfer
 import oerebLader.scripts.s52_import_nupla_bern
 import oerebLader.scripts.s50_create_legend
-import oerebLader.scripts.s31_qa_npl
 import oerebLader.scripts.s38_qa_transfer
 import oerebLader.scripts.s44_checkurl_transfer
 import oerebLader.scripts.s12_finish
@@ -21,7 +20,6 @@ def run(ticketnr):
     oerebLader.scripts.s4_delete_transfer.run(config)
     oerebLader.scripts.s52_import_nupla_bern.run(config)
     oerebLader.scripts.s50_create_legend.run(config)
-    oerebLader.scripts.s31_qa_npl.run(config)
     oerebLader.scripts.s38_qa_transfer.run(config)
     oerebLader.scripts.s44_checkurl_transfer.run(config)
     oerebLader.scripts.s12_finish.run(config)
