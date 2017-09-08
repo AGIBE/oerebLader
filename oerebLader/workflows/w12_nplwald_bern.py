@@ -3,7 +3,6 @@ from __future__ import absolute_import, division, print_function, unicode_litera
 import oerebLader.scripts.s26_initialize
 import oerebLader.scripts.s3_delete_nuplwald
 import oerebLader.scripts.s4_delete_transfer
-import oerebLader.scripts.s53_import_nplwald_bern
 import oerebLader.scripts.s54_import_nuplwald_bern
 import oerebLader.scripts.s34_qa_nplwald
 import oerebLader.scripts.s38_qa_transfer
@@ -19,7 +18,6 @@ def run(ticketnr):
     oerebLader.scripts.s26_initialize.run(config, ticketnr)
     oerebLader.scripts.s3_delete_nuplwald.run(config)
     oerebLader.scripts.s4_delete_transfer.run(config)
-    oerebLader.scripts.s53_import_nplwald_bern.run(config)
     oerebLader.scripts.s54_import_nuplwald_bern.run(config)
     oerebLader.scripts.s34_qa_nplwald.run(config)
     oerebLader.scripts.s38_qa_transfer.run(config)
