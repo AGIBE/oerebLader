@@ -32,7 +32,7 @@
 #!   SOURCE_ROUTING_FILE=""
 #!   REQUIREMENTS=""
 #!   IGNORE_READER_FAILURE="No"
-#!   LAST_SAVE_DATE="2017-09-08T10:19:21"
+#!   LAST_SAVE_DATE="2017-09-08T11:15:58"
 #!   SOURCE="NONE"
 #!   WORKSPACE_VERSION="1"
 #!   FME_BUILD_NUM="16674"
@@ -48,7 +48,7 @@
 #!   REQUIREMENTS_KEYWORD=""
 #!   DESCRIPTION=""
 #!   MAX_LOG_FEATURES="200"
-#!   VIEW_POSITION="16364.7 -986.121"
+#!   VIEW_POSITION="17000.2 -465.282"
 #!   DESTINATION="NONE"
 #!   BEGIN_PYTHON=""
 #!   TERMINATE_REJECTED="NO"
@@ -2861,10 +2861,10 @@
 #! <COMMENT
 #!   IDENTIFIER="267"
 #!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Rechtsvorschriften entfernen&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
-#!   POSITION="19805.8 -1452.78"
-#!   TOP_LEFT="19805.8 -1452.78"
-#!   BOTTOM_RIGHT="19804.8 -1451.78"
-#!   BOUNDING_RECT="19805.8 -1452.78 -1 -1"
+#!   POSITION="19809.2 -1452.78"
+#!   TOP_LEFT="19809.2 -1452.78"
+#!   BOTTOM_RIGHT="19808.2 -1451.78"
+#!   BOUNDING_RECT="19809.2 -1452.78 -1 -1"
 #!   ORDER="5e+14"
 #!   FOLLOW_ANCHOR="true"
 #!   INFO_NODE="false"
@@ -5664,8 +5664,8 @@
 #!   IDENTIFIER="263"
 #!   TYPE="FeatureMerger"
 #!   VERSION="15"
-#!   POSITION="19805.8 -1581.53"
-#!   BOUNDING_RECT="19805.8 -1581.53 -1 -1"
+#!   POSITION="19809.2 -1581.53"
+#!   BOUNDING_RECT="19809.2 -1581.53 -1 -1"
 #!   ORDER="5e+14"
 #!   PARMS_EDITED="true"
 #!   ENABLED="true"
@@ -9345,8 +9345,8 @@ MACRO $(Dokument_vorbereiten_WORKSPACE_NAME)_AMT_XTF_ID <at>Value<openparen>AMT_
 MACRO $(Dokument_vorbereiten_WORKSPACE_NAME)_AMT_ID <at>Value<openparen>AMT_ID<closeparen>
 DEFAULT_MACRO Dokument_vorbereiten_WORKSPACE_NAME ""
 INCLUDE [puts {MACRO WB_OLD_CONTEXT_$(Dokument_vorbereiten_WORKSPACE_NAME) $(WB_CURRENT_CONTEXT)};          puts {MACRO WB_CURRENT_CONTEXT $(Dokument_vorbereiten_WORKSPACE_NAME)}]
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(Dokument_vorbereiten_WORKSPACE_NAME)_Dokument1504858761 Input Splitter"   INPUT FEATURE_TYPE "$(Dokument_vorbereiten_WORKSPACE_NAME)_Dokument"   OUTPUT FEATURE_TYPE "$(Dokument_vorbereiten_WORKSPACE_NAME)_Dokument" "@EvaluateExpression(ATTR_CREATE_EXPR_PROPAGATE_MISSING_FDIV,OffiziellerTitel,$($(Dokument_vorbereiten_WORKSPACE_NAME)_OFFIZIELLERTITEL),ZustaendigeStelle,$($(Dokument_vorbereiten_WORKSPACE_NAME)_ZUSTAENDIGESTELLE),Titel,$($(Dokument_vorbereiten_WORKSPACE_NAME)_TITEL),Abkuerzung,$($(Dokument_vorbereiten_WORKSPACE_NAME)_ABKUERZUNG),OffizielleNr,$($(Dokument_vorbereiten_WORKSPACE_NAME)_OFFIZIELLENR),Gemeinde,$($(Dokument_vorbereiten_WORKSPACE_NAME)_GEMEINDE),xtf_id,$($(Dokument_vorbereiten_WORKSPACE_NAME)_XTF_ID),Dokument,$($(Dokument_vorbereiten_WORKSPACE_NAME)_DOKUMENT),Art_Doku,$($(Dokument_vorbereiten_WORKSPACE_NAME)_ART_DOKU),AMT_XTF_ID,$($(Dokument_vorbereiten_WORKSPACE_NAME)_AMT_XTF_ID),AMT_ID,$($(Dokument_vorbereiten_WORKSPACE_NAME)_AMT_ID), FEATURE_TYPE)"
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(Dokument_vorbereiten_WORKSPACE_NAME)_Amt1504858761 Input Splitter"   INPUT FEATURE_TYPE "$(Dokument_vorbereiten_WORKSPACE_NAME)_Amt"   OUTPUT FEATURE_TYPE "$(Dokument_vorbereiten_WORKSPACE_NAME)_Amt" "@EvaluateExpression(ATTR_CREATE_EXPR_PROPAGATE_MISSING_FDIV,OffiziellerTitel,$($(Dokument_vorbereiten_WORKSPACE_NAME)_OFFIZIELLERTITEL),ZustaendigeStelle,$($(Dokument_vorbereiten_WORKSPACE_NAME)_ZUSTAENDIGESTELLE),Titel,$($(Dokument_vorbereiten_WORKSPACE_NAME)_TITEL),Abkuerzung,$($(Dokument_vorbereiten_WORKSPACE_NAME)_ABKUERZUNG),OffizielleNr,$($(Dokument_vorbereiten_WORKSPACE_NAME)_OFFIZIELLENR),Gemeinde,$($(Dokument_vorbereiten_WORKSPACE_NAME)_GEMEINDE),xtf_id,$($(Dokument_vorbereiten_WORKSPACE_NAME)_XTF_ID),Dokument,$($(Dokument_vorbereiten_WORKSPACE_NAME)_DOKUMENT),Art_Doku,$($(Dokument_vorbereiten_WORKSPACE_NAME)_ART_DOKU),AMT_XTF_ID,$($(Dokument_vorbereiten_WORKSPACE_NAME)_AMT_XTF_ID),AMT_ID,$($(Dokument_vorbereiten_WORKSPACE_NAME)_AMT_ID), FEATURE_TYPE)"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(Dokument_vorbereiten_WORKSPACE_NAME)_Dokument1504862158 Input Splitter"   INPUT FEATURE_TYPE "$(Dokument_vorbereiten_WORKSPACE_NAME)_Dokument"   OUTPUT FEATURE_TYPE "$(Dokument_vorbereiten_WORKSPACE_NAME)_Dokument" "@EvaluateExpression(ATTR_CREATE_EXPR_PROPAGATE_MISSING_FDIV,OffiziellerTitel,$($(Dokument_vorbereiten_WORKSPACE_NAME)_OFFIZIELLERTITEL),ZustaendigeStelle,$($(Dokument_vorbereiten_WORKSPACE_NAME)_ZUSTAENDIGESTELLE),Titel,$($(Dokument_vorbereiten_WORKSPACE_NAME)_TITEL),Abkuerzung,$($(Dokument_vorbereiten_WORKSPACE_NAME)_ABKUERZUNG),OffizielleNr,$($(Dokument_vorbereiten_WORKSPACE_NAME)_OFFIZIELLENR),Gemeinde,$($(Dokument_vorbereiten_WORKSPACE_NAME)_GEMEINDE),xtf_id,$($(Dokument_vorbereiten_WORKSPACE_NAME)_XTF_ID),Dokument,$($(Dokument_vorbereiten_WORKSPACE_NAME)_DOKUMENT),Art_Doku,$($(Dokument_vorbereiten_WORKSPACE_NAME)_ART_DOKU),AMT_XTF_ID,$($(Dokument_vorbereiten_WORKSPACE_NAME)_AMT_XTF_ID),AMT_ID,$($(Dokument_vorbereiten_WORKSPACE_NAME)_AMT_ID), FEATURE_TYPE)"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(Dokument_vorbereiten_WORKSPACE_NAME)_Amt1504862158 Input Splitter"   INPUT FEATURE_TYPE "$(Dokument_vorbereiten_WORKSPACE_NAME)_Amt"   OUTPUT FEATURE_TYPE "$(Dokument_vorbereiten_WORKSPACE_NAME)_Amt" "@EvaluateExpression(ATTR_CREATE_EXPR_PROPAGATE_MISSING_FDIV,OffiziellerTitel,$($(Dokument_vorbereiten_WORKSPACE_NAME)_OFFIZIELLERTITEL),ZustaendigeStelle,$($(Dokument_vorbereiten_WORKSPACE_NAME)_ZUSTAENDIGESTELLE),Titel,$($(Dokument_vorbereiten_WORKSPACE_NAME)_TITEL),Abkuerzung,$($(Dokument_vorbereiten_WORKSPACE_NAME)_ABKUERZUNG),OffizielleNr,$($(Dokument_vorbereiten_WORKSPACE_NAME)_OFFIZIELLENR),Gemeinde,$($(Dokument_vorbereiten_WORKSPACE_NAME)_GEMEINDE),xtf_id,$($(Dokument_vorbereiten_WORKSPACE_NAME)_XTF_ID),Dokument,$($(Dokument_vorbereiten_WORKSPACE_NAME)_DOKUMENT),Art_Doku,$($(Dokument_vorbereiten_WORKSPACE_NAME)_ART_DOKU),AMT_XTF_ID,$($(Dokument_vorbereiten_WORKSPACE_NAME)_AMT_XTF_ID),AMT_ID,$($(Dokument_vorbereiten_WORKSPACE_NAME)_AMT_ID), FEATURE_TYPE)"
 # -------------------------------------------------------------------------
 
 INCLUDE [    set macroLine "MACRO $(Dokument_vorbereiten_WORKSPACE_NAME)_AttributeRemover_LIST_EXP ";    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "{\[0-9\]+}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
@@ -9397,7 +9397,7 @@ INCLUDE [if { {ATTRIBUTES} == {ATTRIBUTES} } {                puts "MACRO $(Doku
 
 FACTORY_DEF * ReferenceFactory    FACTORY_NAME $(Dokument_vorbereiten_WORKSPACE_NAME)_FeatureMerger    INPUT REFERENCER FEATURE_TYPE "$(Dokument_vorbereiten_WORKSPACE_NAME)_PythonCaller_OUTPUT"    INPUT REFERENCEE FEATURE_TYPE "$(Dokument_vorbereiten_WORKSPACE_NAME)_AttributeRenamer_OUTPUT"    REFERENCE_INFO $($(Dokument_vorbereiten_WORKSPACE_NAME)_FeatureMerger_REFERENCE_INFO)    REFERENCE_TABLE @EvaluateExpression(STRING_ENCODED,<at>Value<openparen>ZustaendigeStelle<closeparen>,$(Dokument_vorbereiten_WORKSPACE_NAME)_FeatureMerger) @EvaluateExpression(STRING_ENCODED,<at>Value<openparen>AMT_XTF_ID<closeparen>,$(Dokument_vorbereiten_WORKSPACE_NAME)_FeatureMerger) AUTO    IGNORE_NULLS "Yes"    MERGE_ATTRIBUTES Yes    MANAGE_FME_TYPE Yes    MODE COMPLETE    PROCESS_DUPLICATE_REFERENCEES No    REFERENCEES_FIRST No    OUTPUT COMPLETE FEATURE_TYPE "$(Dokument_vorbereiten_WORKSPACE_NAME)_FeatureMerger_MERGED"
 
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(Dokument_vorbereiten_WORKSPACE_NAME)_Alle_Dokumente1504858761 Output Collector"   INPUT FEATURE_TYPE "$(Dokument_vorbereiten_WORKSPACE_NAME)_FeatureMerger_MERGED"   OUTPUT FEATURE_TYPE "$(Dokument_vorbereiten_WORKSPACE_NAME)_Alle_Dokumente"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(Dokument_vorbereiten_WORKSPACE_NAME)_Alle_Dokumente1504862158 Output Collector"   INPUT FEATURE_TYPE "$(Dokument_vorbereiten_WORKSPACE_NAME)_FeatureMerger_MERGED"   OUTPUT FEATURE_TYPE "$(Dokument_vorbereiten_WORKSPACE_NAME)_Alle_Dokumente"
 INCLUDE [puts {MACRO WB_CURRENT_CONTEXT $(WB_OLD_CONTEXT_$(Dokument_vorbereiten_WORKSPACE_NAME))}]
 FACTORY_DEF * TeeFactory   FACTORY_NAME "Dokument_vorbereiten Alle_Dokumente Output Renamer/Nuker"   INPUT FEATURE_TYPE Dokument_vorbereiten_Alle_Dokumente   OUTPUT FEATURE_TYPE Dokument_vorbereiten_Alle_Dokumente
 FACTORY_DEF * TeeFactory   FACTORY_NAME "Dokument_vorbereiten Alle_Dokumente Splitter"   INPUT FEATURE_TYPE Dokument_vorbereiten_Alle_Dokumente   OUTPUT FEATURE_TYPE Dokument_vorbereiten_Alle_Dokumente_0_mCuepRI9+x4=   OUTPUT FEATURE_TYPE Dokument_vorbereiten_Alle_Dokumente_1_LO16A5wX+Zc=   OUTPUT FEATURE_TYPE Dokument_vorbereiten_Alle_Dokumente_2_03JnNeqzsXM=
@@ -9417,8 +9417,8 @@ MACRO $(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_HINWEIS <at>Value<openparen>Hinwe
 MACRO $(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_VOR_XTF_ID <at>Value<openparen>VOR_XTF_ID<closeparen>
 DEFAULT_MACRO HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME ""
 INCLUDE [puts {MACRO WB_OLD_CONTEXT_$(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME) $(WB_CURRENT_CONTEXT)};          puts {MACRO WB_CURRENT_CONTEXT $(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)}]
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_AlleDokumente1504858761 Input Splitter"   INPUT FEATURE_TYPE "$(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_AlleDokumente"   OUTPUT FEATURE_TYPE "$(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_AlleDokumente" "@EvaluateExpression(ATTR_CREATE_EXPR_PROPAGATE_MISSING_FDIV,ArtikelNr,$($(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_ARTIKELNR),Ordnungsnummer,$($(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_ORDNUNGSNUMMER),VOR_OID,$($(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_VOR_OID),Ursprung,$($(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_URSPRUNG),Hinweis,$($(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_HINWEIS),VOR_XTF_ID,$($(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_VOR_XTF_ID), FEATURE_TYPE)"
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_HinweisWeitereDokumente1504858761 Input Splitter"   INPUT FEATURE_TYPE "$(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_HinweisWeitereDokumente"   OUTPUT FEATURE_TYPE "$(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_HinweisWeitereDokumente" "@EvaluateExpression(ATTR_CREATE_EXPR_PROPAGATE_MISSING_FDIV,ArtikelNr,$($(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_ARTIKELNR),Ordnungsnummer,$($(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_ORDNUNGSNUMMER),VOR_OID,$($(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_VOR_OID),Ursprung,$($(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_URSPRUNG),Hinweis,$($(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_HINWEIS),VOR_XTF_ID,$($(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_VOR_XTF_ID), FEATURE_TYPE)"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_AlleDokumente1504862158 Input Splitter"   INPUT FEATURE_TYPE "$(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_AlleDokumente"   OUTPUT FEATURE_TYPE "$(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_AlleDokumente" "@EvaluateExpression(ATTR_CREATE_EXPR_PROPAGATE_MISSING_FDIV,ArtikelNr,$($(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_ARTIKELNR),Ordnungsnummer,$($(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_ORDNUNGSNUMMER),VOR_OID,$($(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_VOR_OID),Ursprung,$($(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_URSPRUNG),Hinweis,$($(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_HINWEIS),VOR_XTF_ID,$($(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_VOR_XTF_ID), FEATURE_TYPE)"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_HinweisWeitereDokumente1504862158 Input Splitter"   INPUT FEATURE_TYPE "$(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_HinweisWeitereDokumente"   OUTPUT FEATURE_TYPE "$(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_HinweisWeitereDokumente" "@EvaluateExpression(ATTR_CREATE_EXPR_PROPAGATE_MISSING_FDIV,ArtikelNr,$($(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_ARTIKELNR),Ordnungsnummer,$($(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_ORDNUNGSNUMMER),VOR_OID,$($(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_VOR_OID),Ursprung,$($(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_URSPRUNG),Hinweis,$($(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_HINWEIS),VOR_XTF_ID,$($(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_VOR_XTF_ID), FEATURE_TYPE)"
 # -------------------------------------------------------------------------
 
 FACTORY_DEF * TeeFactory    FACTORY_NAME $(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_AttributeRenamer_5    INPUT  FEATURE_TYPE "$(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_HinweisWeitereDokumente"    OUTPUT FEATURE_TYPE "$(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_AttributeRenamer_5_OUTPUT"         @RenameAttributes(ATTR_LIST_DEF_VAL, ArtikelNr,ARTIKELNR,"",Ordnungsnummer,ORDNNR,"")
@@ -9467,7 +9467,7 @@ FACTORY_DEF * TeeFactory    FACTORY_NAME $(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME
 INCLUDE [    set macroLine "MACRO $(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_AttributeRemover_13_LIST_EXP ";    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "{\[0-9\]+}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
 FACTORY_DEF * TeeFactory    FACTORY_NAME $(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_AttributeRemover_13    INPUT  FEATURE_TYPE "$(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_AttributeRenamer_8_OUTPUT"    OUTPUT FEATURE_TYPE "$(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_AttributeRemover_13_OUTPUT"        @RemoveAttributes(Hinweis,VOR_XTF_ID)        @RemoveAttributes(fme_regexp_match"$($(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_AttributeRemover_13_LIST_EXP)")
 
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_HINWEIDOK_ID_ersetzt1504858761 Output Collector"   INPUT FEATURE_TYPE "$(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_AttributeRemover_13_OUTPUT"   OUTPUT FEATURE_TYPE "$(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_HINWEIDOK_ID_ersetzt"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_HINWEIDOK_ID_ersetzt1504862158 Output Collector"   INPUT FEATURE_TYPE "$(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_AttributeRemover_13_OUTPUT"   OUTPUT FEATURE_TYPE "$(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME)_HINWEIDOK_ID_ersetzt"
 INCLUDE [puts {MACRO WB_CURRENT_CONTEXT $(WB_OLD_CONTEXT_$(HINWEIDOK-IDs_ersetzen_WORKSPACE_NAME))}]
 FACTORY_DEF * TeeFactory   FACTORY_NAME "HINWEIDOK-IDs_ersetzen HINWEIDOK_ID_ersetzt Output Renamer/Nuker"   INPUT FEATURE_TYPE HINWEIDOK-IDs_ersetzen_HINWEIDOK_ID_ersetzt   OUTPUT FEATURE_TYPE HINWEIDOK-IDs_ersetzen_HINWEIDOK_ID_ersetzt
 # -------------------------------------------------------------------------
@@ -9479,7 +9479,7 @@ MACRO $(HINWEIDOK_flachdruecken_WORKSPACE_NAME)___COMPOUND_PARAMETERS
 MACRO $(HINWEIDOK_flachdruecken_WORKSPACE_NAME)_SUB_DOC_NAME HINWEIDOK flachdruecken
 DEFAULT_MACRO HINWEIDOK_flachdruecken_WORKSPACE_NAME ""
 INCLUDE [puts {MACRO WB_OLD_CONTEXT_$(HINWEIDOK_flachdruecken_WORKSPACE_NAME) $(WB_CURRENT_CONTEXT)};          puts {MACRO WB_CURRENT_CONTEXT $(HINWEIDOK_flachdruecken_WORKSPACE_NAME)}]
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(HINWEIDOK_flachdruecken_WORKSPACE_NAME)_HINWEIDOK1504858761 Input Splitter"   INPUT FEATURE_TYPE "$(HINWEIDOK_flachdruecken_WORKSPACE_NAME)_HINWEIDOK"   OUTPUT FEATURE_TYPE "$(HINWEIDOK_flachdruecken_WORKSPACE_NAME)_HINWEIDOK"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(HINWEIDOK_flachdruecken_WORKSPACE_NAME)_HINWEIDOK1504862158 Input Splitter"   INPUT FEATURE_TYPE "$(HINWEIDOK_flachdruecken_WORKSPACE_NAME)_HINWEIDOK"   OUTPUT FEATURE_TYPE "$(HINWEIDOK_flachdruecken_WORKSPACE_NAME)_HINWEIDOK"
 # -------------------------------------------------------------------------
 FACTORY_DEF * InlineQueryFactory FACTORY_NAME $(HINWEIDOK_flachdruecken_WORKSPACE_NAME)_InlineQuerier TABLE_DEF HINWEIDOK ARTIKELNR<comma>text<comma>ORDNNR<comma>text<comma>VOR_OIDURSPRUNG<comma>text<comma>VOR_OIDHINWEIS<comma>text QUERY_DEF VIW_VORCHAIN1 SQL_ENCODED SELECT<space>HINWEIDOK.VOR_OIDURSPRUNG<comma><lf><space><space>HINWEIDOK.VOR_OIDHINWEIS<comma><lf><space><space>HINWEIDOK1.VOR_OIDHINWEIS<space>AS<space>VOR_OIDHINWEIS1<comma><lf><space><space>HINWEIDOK2.VOR_OIDHINWEIS<space>AS<space>VOR_OIDHINWEIS2<lf>FROM<space>HINWEIDOK<lf>LEFT<space>JOIN<space>HINWEIDOK<space>HINWEIDOK1<lf>ON<space>HINWEIDOK.VOR_OIDHINWEIS<space>=<space>HINWEIDOK1.VOR_OIDURSPRUNG<lf>LEFT<space>JOIN<space>HINWEIDOK<space>HINWEIDOK2<lf>ON<space>HINWEIDOK1.VOR_OIDHINWEIS<space>=<space>HINWEIDOK2.VOR_OIDURSPRUNG GEOMETRY_SELECTION FIRST INPUT HINWEIDOK FEATURE_TYPE "$(HINWEIDOK_flachdruecken_WORKSPACE_NAME)_HINWEIDOK" OUTPUT VIW_VORCHAIN1 FEATURE_TYPE $(HINWEIDOK_flachdruecken_WORKSPACE_NAME)_InlineQuerier_VIW_VORCHAIN1
 # -------------------------------------------------------------------------
@@ -9494,7 +9494,7 @@ FACTORY_DEF * TeeFactory    FACTORY_NAME $(HINWEIDOK_flachdruecken_WORKSPACE_NAM
 INCLUDE [    set macroLine "MACRO $(HINWEIDOK_flachdruecken_WORKSPACE_NAME)_AttributeRemover_14_LIST_EXP ";    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "{\[0-9\]+}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
 FACTORY_DEF * TeeFactory    FACTORY_NAME $(HINWEIDOK_flachdruecken_WORKSPACE_NAME)_AttributeRemover_14    INPUT  FEATURE_TYPE "$(HINWEIDOK_flachdruecken_WORKSPACE_NAME)_AttributeRenamer_11_OUTPUT"    OUTPUT FEATURE_TYPE "$(HINWEIDOK_flachdruecken_WORKSPACE_NAME)_AttributeRemover_14_OUTPUT"        @RemoveAttributes(oidfrom)        @RemoveAttributes(fme_regexp_match"$($(HINWEIDOK_flachdruecken_WORKSPACE_NAME)_AttributeRemover_14_LIST_EXP)")
 
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(HINWEIDOK_flachdruecken_WORKSPACE_NAME)_HINWEIDOK_flach1504858761 Output Collector"   INPUT FEATURE_TYPE "$(HINWEIDOK_flachdruecken_WORKSPACE_NAME)_AttributeRemover_14_OUTPUT"   OUTPUT FEATURE_TYPE "$(HINWEIDOK_flachdruecken_WORKSPACE_NAME)_HINWEIDOK_flach"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(HINWEIDOK_flachdruecken_WORKSPACE_NAME)_HINWEIDOK_flach1504862158 Output Collector"   INPUT FEATURE_TYPE "$(HINWEIDOK_flachdruecken_WORKSPACE_NAME)_AttributeRemover_14_OUTPUT"   OUTPUT FEATURE_TYPE "$(HINWEIDOK_flachdruecken_WORKSPACE_NAME)_HINWEIDOK_flach"
 INCLUDE [puts {MACRO WB_CURRENT_CONTEXT $(WB_OLD_CONTEXT_$(HINWEIDOK_flachdruecken_WORKSPACE_NAME))}]
 FACTORY_DEF * TeeFactory   FACTORY_NAME "HINWEIDOK_flachdruecken HINWEIDOK_flach Output Renamer/Nuker"   INPUT FEATURE_TYPE HINWEIDOK_flachdruecken_HINWEIDOK_flach   OUTPUT FEATURE_TYPE HINWEIDOK_flachdruecken_HINWEIDOK_flach
 # -------------------------------------------------------------------------
@@ -9697,8 +9697,8 @@ FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRemover_19    INPUT  FEATURE_T
 
 # -------------------------------------------------------------------------
 
-Tcl2 proc DuplicateRemover_3_2ace3735_f4b8_4fe4_9428_9ab227f8139c1_dupKeyCount { attrList } {     set attrList [string trim $attrList {()}];     set attrs [split $attrList { } ];     set attrVal {___DuplicateRemover_3_2ace3735_f4b8_4fe4_9428_9ab227f8139c1___};     foreach {attrName} $attrs {         set attrName [FME_DecodeText $attrName];         append attrVal [FME_GetAttribute $attrName] {_fmebreak_};     };     return [expr [incr ::__DuplicateRemover_3_2ace3735_f4b8_4fe4_9428_9ab227f8139c1__KeySeenCount($attrVal)] - 1]; };
-FACTORY_DEF * TestFactory    FACTORY_NAME DuplicateRemover_3    INPUT  FEATURE_TYPE UUIDGenerator_7_OUTPUT_2_6rrhsl1anMs=    TEST @Tcl2("DuplicateRemover_3_2ace3735_f4b8_4fe4_9428_9ab227f8139c1_dupKeyCount {(EIB_OID VOR_OID)}") > 0    OUTPUT FAILED FEATURE_TYPE DuplicateRemover_3_UNIQUE
+Tcl2 proc DuplicateRemover_3_2ace3735_f4b8_4fe4_9428_9ab227f8139c2_dupKeyCount { attrList } {     set attrList [string trim $attrList {()}];     set attrs [split $attrList { } ];     set attrVal {___DuplicateRemover_3_2ace3735_f4b8_4fe4_9428_9ab227f8139c2___};     foreach {attrName} $attrs {         set attrName [FME_DecodeText $attrName];         append attrVal [FME_GetAttribute $attrName] {_fmebreak_};     };     return [expr [incr ::__DuplicateRemover_3_2ace3735_f4b8_4fe4_9428_9ab227f8139c2__KeySeenCount($attrVal)] - 1]; };
+FACTORY_DEF * TestFactory    FACTORY_NAME DuplicateRemover_3    INPUT  FEATURE_TYPE UUIDGenerator_7_OUTPUT_2_6rrhsl1anMs=    TEST @Tcl2("DuplicateRemover_3_2ace3735_f4b8_4fe4_9428_9ab227f8139c2_dupKeyCount {(EIB_OID VOR_OID)}") > 0    OUTPUT FAILED FEATURE_TYPE DuplicateRemover_3_UNIQUE
 
 # -------------------------------------------------------------------------
 
@@ -9725,8 +9725,8 @@ FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRemover_11    INPUT  FEATURE_T
 
 # -------------------------------------------------------------------------
 
-Tcl2 proc DuplicateRemover_2_5d832f4c_cbc8_4094_9395_abd69659bcdf1_dupKeyCount { attrList } {     set attrList [string trim $attrList {()}];     set attrs [split $attrList { } ];     set attrVal {___DuplicateRemover_2_5d832f4c_cbc8_4094_9395_abd69659bcdf1___};     foreach {attrName} $attrs {         set attrName [FME_DecodeText $attrName];         append attrVal [FME_GetAttribute $attrName] {_fmebreak_};     };     return [expr [incr ::__DuplicateRemover_2_5d832f4c_cbc8_4094_9395_abd69659bcdf1__KeySeenCount($attrVal)] - 1]; };
-FACTORY_DEF * TestFactory    FACTORY_NAME DuplicateRemover_2    INPUT  FEATURE_TYPE AttributeRemover_11_OUTPUT    TEST @Tcl2("DuplicateRemover_2_5d832f4c_cbc8_4094_9395_abd69659bcdf1_dupKeyCount {(VOR_XTF_ID VOR_TITEL_DE VOR_OFFIZIELLERTITEL_DE VOR_ABKUERZUNG_DE VOR_OFFIZIELLENR VOR_OID VOR_PUBLIZIERTAB VOA_ID VOR_TITEL_FR VOR_OFFIZIELLERTITEL_FR VOR_ABKUERZUNG_FR VOR_TEXTIMWEB_DE VOR_TEXTIMWEB_FR filecopy_source_dataset filecopy_dest_dataset)}") > 0    OUTPUT FAILED FEATURE_TYPE DuplicateRemover_2_UNIQUE
+Tcl2 proc DuplicateRemover_2_5d832f4c_cbc8_4094_9395_abd69659bcdf2_dupKeyCount { attrList } {     set attrList [string trim $attrList {()}];     set attrs [split $attrList { } ];     set attrVal {___DuplicateRemover_2_5d832f4c_cbc8_4094_9395_abd69659bcdf2___};     foreach {attrName} $attrs {         set attrName [FME_DecodeText $attrName];         append attrVal [FME_GetAttribute $attrName] {_fmebreak_};     };     return [expr [incr ::__DuplicateRemover_2_5d832f4c_cbc8_4094_9395_abd69659bcdf2__KeySeenCount($attrVal)] - 1]; };
+FACTORY_DEF * TestFactory    FACTORY_NAME DuplicateRemover_2    INPUT  FEATURE_TYPE AttributeRemover_11_OUTPUT    TEST @Tcl2("DuplicateRemover_2_5d832f4c_cbc8_4094_9395_abd69659bcdf2_dupKeyCount {(VOR_XTF_ID VOR_TITEL_DE VOR_OFFIZIELLERTITEL_DE VOR_ABKUERZUNG_DE VOR_OFFIZIELLENR VOR_OID VOR_PUBLIZIERTAB VOA_ID VOR_TITEL_FR VOR_OFFIZIELLERTITEL_FR VOR_ABKUERZUNG_FR VOR_TEXTIMWEB_DE VOR_TEXTIMWEB_FR filecopy_source_dataset filecopy_dest_dataset)}") > 0    OUTPUT FAILED FEATURE_TYPE DuplicateRemover_2_UNIQUE
 
 # -------------------------------------------------------------------------
 
@@ -9795,8 +9795,8 @@ FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRemover_12    INPUT  FEATURE_T
 
 # -------------------------------------------------------------------------
 
-Tcl2 proc DuplicateRemover_32807760_da28_4083_89c1_904e2f1a524c1_dupKeyCount { attrList } {     set attrList [string trim $attrList {()}];     set attrs [split $attrList { } ];     set attrVal {___DuplicateRemover_32807760_da28_4083_89c1_904e2f1a524c1___};     foreach {attrName} $attrs {         set attrName [FME_DecodeText $attrName];         append attrVal [FME_GetAttribute $attrName] {_fmebreak_};     };     return [expr [incr ::__DuplicateRemover_32807760_da28_4083_89c1_904e2f1a524c1__KeySeenCount($attrVal)] - 1]; };
-FACTORY_DEF * TestFactory    FACTORY_NAME DuplicateRemover    INPUT  FEATURE_TYPE AttributeRemover_12_OUTPUT    TEST @Tcl2("DuplicateRemover_32807760_da28_4083_89c1_904e2f1a524c1_dupKeyCount {(RVS_ID ARTIKELNR DOKUMENT TITEL OFFIZTITEL ABKUERZUNG OFFIZNR ZUSTAENDIG ART)}") > 0    OUTPUT FAILED FEATURE_TYPE DuplicateRemover_UNIQUE
+Tcl2 proc DuplicateRemover_32807760_da28_4083_89c1_904e2f1a524c2_dupKeyCount { attrList } {     set attrList [string trim $attrList {()}];     set attrs [split $attrList { } ];     set attrVal {___DuplicateRemover_32807760_da28_4083_89c1_904e2f1a524c2___};     foreach {attrName} $attrs {         set attrName [FME_DecodeText $attrName];         append attrVal [FME_GetAttribute $attrName] {_fmebreak_};     };     return [expr [incr ::__DuplicateRemover_32807760_da28_4083_89c1_904e2f1a524c2__KeySeenCount($attrVal)] - 1]; };
+FACTORY_DEF * TestFactory    FACTORY_NAME DuplicateRemover    INPUT  FEATURE_TYPE AttributeRemover_12_OUTPUT    TEST @Tcl2("DuplicateRemover_32807760_da28_4083_89c1_904e2f1a524c2_dupKeyCount {(RVS_ID ARTIKELNR DOKUMENT TITEL OFFIZTITEL ABKUERZUNG OFFIZNR ZUSTAENDIG ART)}") > 0    OUTPUT FAILED FEATURE_TYPE DuplicateRemover_UNIQUE
 
 # -------------------------------------------------------------------------
 
