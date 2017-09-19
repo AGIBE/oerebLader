@@ -21,6 +21,11 @@ def run(config):
         'DATABASE': str(config['GEODB_WORK']['database']),
         'USERNAME': str(config['GEODB_WORK']['username']),
         'PASSWORD': str(config['GEODB_WORK']['password']),
+        'GEODB_PG_DATABASE': str(config['GEODB_WORK_PG']['database']),
+        'GEODB_PG_USERNAME': str(config['GEODB_WORK_PG']['username']),
+        'GEODB_PG_PASSWORD': str(config['GEODB_WORK_PG']['password']),
+        'GEODB_PG_HOST': str(config['GEODB_WORK_PG']['host']),
+        'GEODB_PG_PORT': str(config['GEODB_WORK_PG']['port']),
         'MODELLABLAGE': str(config['GENERAL']['models']),
         'XTF_FILE': str(config['LIEFEREINHEIT']['gpr_source']),
         'LOGFILE': str(fme_logfile)
