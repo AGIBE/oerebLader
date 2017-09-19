@@ -23,7 +23,6 @@ def run(config):
         logger.info("Oracle: " + npl_delete_sql)
         logger.info("PostGIS: " + npl_delete_psql)
         oerebLader.helpers.sql_helper.writeSQL(config['GEODB_WORK']['connection_string'], npl_delete_sql)
-        logger.info(config['GEODB_WORK_PG']['connection_string'])
         oerebLader.helpers.sql_helper.writePSQL(config['GEODB_WORK_PG']['connection_string'], npl_delete_psql)
         
     logger.info("Script " +  os.path.basename(__file__) + " ist beendet.")
