@@ -18,8 +18,12 @@ def run(config):
         npl_table = npl_ebene[3] + "_" + npl_ebene[0]
         npl_bfsnr_field = npl_ebene[1]
         npl_delete_sql = "DELETE FROM %s WHERE %s = %s" % (npl_table, npl_bfsnr_field, bfsnr)
+        npl_delete_psql = "DELETE FROM geodb.%s WHERE %s = %s" % (npl_table, npl_bfsnr_field, bfsnr)
         logger.info("Lösche aus " + npl_table)
-        logger.info(npl_delete_sql)
+        logger.info("Oracle: " + npl_delete_sql)
+        logger.info("PostGIS: " + npl_delete_psql)
         oerebLader.helpers.sql_helper.writeSQL(config['GEODB_WORK']['connection_string'], npl_delete_sql)
+        logger.info(config['GEODB_WORK_PG']['connection_string'])
+        oerebLader.helpers.sql_helper.writePSQL(config['GEODB_WORK_PG']['connection_string'], npl_delete_psql)
         
     logger.info("Script " +  os.path.basename(__file__) + " ist beendet.")
