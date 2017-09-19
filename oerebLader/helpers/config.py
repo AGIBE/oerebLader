@@ -60,6 +60,16 @@ def create_connection_string(config, key):
     
     connection_string = username + "/" + password + "@" + database
     config[key]['connection_string'] = connection_string
+    
+def create_pg_connection_string(config, key):
+    username = config[key]['username']
+    password = config[key]['password']
+    database = config[key]['database']
+    host     = config[key]['host']
+    port     = config[key]['port']
+    
+    connection_string = "user=%s password=%s dbname=%s host=%s port=%s" % (username, password, database, host, port)
+    config[key]['connection_string'] = connection_string
 
 def get_config():
     config = init_generalconfig()
@@ -77,5 +87,6 @@ def get_config():
     create_connection_string(config, "OEREB2_VEK2")
     create_connection_string(config, "TBA_WORK")
     create_connection_string(config, "GDBV_WORK")
+    create_pg_connection_string(config, "GEODB_WORK_PG")
 
     return config

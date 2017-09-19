@@ -1,7 +1,21 @@
 # -*- coding: utf-8 -*-
 from __future__ import absolute_import, division, print_function, unicode_literals
 import cx_Oracle
+import psycopg2
 import os
+
+def readPSQL(connection_string, sql_statement):
+    with psycopg2.connect(connection_string) as conn:
+        cur = conn.cursor()
+        cur.execute(sql_statement)
+        result_list = cur.fetchall()
+        
+    return result_list
+
+def writePSQL(connection_string, sql_statement):
+    with psycopg2.connect(connection_string) as conn:
+        cur = conn.cursor()
+        cur.execute(sql_statement)
 
 def readSQL(connection_string, sql_statement):
     # Das Setzen von NLS_LANG garantiert, dass Texte aus der DB
