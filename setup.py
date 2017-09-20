@@ -13,7 +13,7 @@ setup(
       # .fmw-Files werden von Python nicht erkannt. Deshalb müssen sie explizit als Package-Inhalt aufgelistet werden.
       package_data={'': ["*.fmw"]},
       # Abhängigkeiten
-      install_requires = ["configobj==5.0.6", "cx-Oracle==5.1.3", "python-keyczar==0.715", "chromalog==1.0.4", "requests[security]==2.8.0", "chardet==2.3.0", "Jinja2==2.8", "mappyfile==0.4.3", "GitPython==2.1.5", "psycopg2=2.7.3.1"],
+      install_requires = ["configobj==5.0.6", "cx-Oracle==5.1.3", "python-keyczar==0.715", "chromalog==1.0.4", "requests[security]==2.8.0", "chardet==2.3.0", "Jinja2==2.8", "mappyfile==0.4.3", "GitPython==2.1.5", "psycopg2==2.7.3.1"],
       # PyPI metadata
       author = "Peter Schär",
       author_email = "peter.schaer@bve.be.ch",
