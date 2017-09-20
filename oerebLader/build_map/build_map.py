@@ -142,7 +142,9 @@ def run_build_map(mode, batch_dir):
     templates_subdir = "templates"
     build_subdir = "build"
     images_subdir = "images"
-    layers = config['GENERAL']['kommunale_layer']
+    layers = []
+    for layer in config['KOMMUNALE_LAYER']:
+        layers.append(layer['layer'].split(".")[1])
     connections_dir = config['REPOS']['connections_dir']
     master_repo_dir = config['REPOS'][mode]
     logger.info("Repository wird geklont.")

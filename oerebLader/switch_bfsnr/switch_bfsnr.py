@@ -33,7 +33,9 @@ def run_switch_bfsnr(bfsnr):
     logger.info("Die BFS-Nummer im Gemeinde-Prüfdienst wird gewechselt auf: " + unicode(bfsnr))
     
     repo_dir = os.environ["OEREB_REPO_PRUEF"]
-    layers = config['GENERAL']['kommunale_layer']
+    layers = []
+    for layer in config['KOMMUNALE_LAYER']:
+        layers.append(layer['layer'].split(".")[1])
 
     search_string = "[[[BFSNR]]]"
     bfsnr = unicode(bfsnr)
