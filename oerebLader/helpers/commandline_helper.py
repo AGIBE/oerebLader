@@ -122,8 +122,8 @@ def main():
     build_mapfile_kanton_parser.set_defaults(func=build_mapfile_kanton)
     
     # BUILD_MAP-Befehl
-    build_map_parser = subparsers.add_parser("build_map", help="Erstellt das Mapfile für den Prüfdienst oder den öffentlichen Dienst.")
-    build_map_parser.add_argument("MODE", choices=["oereb","oerebpruef"], help="Zu erstellendes Mapfile (oereb oder oerebpruef).")
+    build_map_parser = subparsers.add_parser("build_map", help="Erstellt das Mapfile für den öffentlichen Dienst (VEK1), den Vorschaudienst (VEK2) den Prüfdienst (WORK).")
+    build_map_parser.add_argument("MODE", choices=["oereb","oerebpreview", "oerebpruef"], help="Zu erstellendes Mapfile (oereb, oerebpreview oder oerebpruef).")
     build_map_parser.add_argument("batchdir", help="Verzeichnis, in dem der publish-Batch erstellt werden soll.")
     build_map_parser.set_defaults(func=build_map)
     

@@ -9,10 +9,9 @@ import shutil
 import sys
 import tempfile
 import git
-import subprocess
+import copy
 import oerebLader.helpers.log_helper
-from bsddb.test.test_basics import DASH
-from errno import EINPROGRESS
+import oerebLader.helpers.mapfile_helper
 
 def init_logging(config):
     log_directory = os.path.join(config['LOGGING']['basedir'], "build_map")
@@ -88,7 +87,6 @@ def get_gemeinde_mapfiles(gemeinde_directory):
     return gemeinde_mapfiles
 
 def get_include_line(gemeinde_mapfile):
-    include_line = ""
     bfsnr = gemeinde_mapfile[-7:-4]
     
     include_path = os.path.join("nupla", bfsnr, os.path.basename(gemeinde_mapfile))
@@ -97,7 +95,7 @@ def get_include_line(gemeinde_mapfile):
     
     return include_line
 
-def write_publish_batch(repo_dir, mapfile_path, publish_dir, batch_dir):
+def write_publish_batch(repo_dir, mapfile_path_de, mapfile_path_fr, publish_dir, batch_dir):
     '''
     Beim Aufruf von shp2img via subprocess kommt es immer zu 
     einem Fehler, der nicht eingegrenzt werden kann.
@@ -107,12 +105,14 @@ def write_publish_batch(repo_dir, mapfile_path, publish_dir, batch_dir):
     Somit wird hier nur ein Batch-File erzeugt, dass anschliessend
     ausserhalb des oerebLaders ausgeführt werden muss.
     '''
-    png_file = os.path.join(batch_dir, "maptest.png")
+    png_file_de = os.path.join(batch_dir, "maptest_de.png")
+    png_file_fr = os.path.join(batch_dir, "maptest_fr.png")
     # Die EXIT-Option bewirkt, dass es im Fehlerfall nach shp2img nicht weitergeht.
-    cmd1 = "shp2img -e 2550300 1120800 2688900 1247400 -o " + png_file + " -s 1095 1000 -m " + mapfile_path + " || EXIT /B 1"
-    cmd2 = "rmdir " + publish_dir + " /s /q"
-    cmd3 = "mkdir " + publish_dir
-    cmd4 = "xcopy " + repo_dir + "\* " + publish_dir + " /s /e"
+    cmd1 = "shp2img -e 2550300 1120800 2688900 1247400 -o " + png_file_de + " -s 1095 1000 -map_debug 2 -m " + mapfile_path_de + " || EXIT /B 1"
+    cmd2 = "shp2img -e 2550300 1120800 2688900 1247400 -o " + png_file_fr + " -s 1095 1000 -map_debug 2 -m " + mapfile_path_fr + " || EXIT /B 1"
+    cmd3 = "rmdir " + publish_dir + " /s /q"
+    cmd4 = "mkdir " + publish_dir
+    cmd5 = "xcopy " + repo_dir + "\* " + publish_dir + " /s /e"
     batch_file_path = os.path.join(batch_dir, "publish.bat")
     with codecs.open(batch_file_path, "w", "utf-8") as batch_file:
         batch_file.write(cmd1)
@@ -122,13 +122,15 @@ def write_publish_batch(repo_dir, mapfile_path, publish_dir, batch_dir):
         batch_file.write(cmd3)
         batch_file.write("\n")
         batch_file.write(cmd4)
+        batch_file.write("\n")
+        batch_file.write(cmd5)
         
     return batch_file_path
     
     
 def clone_master_repo(master_repo_dir):
     tmpdir = tempfile.mkdtemp()
-    cloned_repo = git.Repo.clone_from(master_repo_dir, tmpdir)
+    cloned_repo = git.Repo.clone_from(master_repo_dir, tmpdir, branch='layerstruktur')
     return cloned_repo.working_dir
 
 def run_build_map(mode, batch_dir):
@@ -145,7 +147,7 @@ def run_build_map(mode, batch_dir):
     layers = []
     for layer in config['KOMMUNALE_LAYER']:
         layers.append(layer['layer'].split(".")[1])
-    connections_dir = config['REPOS']['connections_dir']
+#     connections_dir = config['REPOS']['connections_dir']
     master_repo_dir = config['REPOS'][mode]
     logger.info("Repository wird geklont.")
     repo_dir = clone_master_repo(master_repo_dir)
@@ -153,10 +155,11 @@ def run_build_map(mode, batch_dir):
     publish_dir = os.path.join(config['REPOS']['mapfile_publish_directory'], mode)
     # =====================================================
     
-    build_dir = os.path.join(repo_dir, build_subdir)
+    build_dir = os.path.join(repo_dir, build_subdir, mode)
     template_mapfile_path = os.path.join(repo_dir, mode + "/" + mode + ".map")
     template_mapfile_temp_path = os.path.join(repo_dir, mode + "/" + mode + "_temp.map")
-    output_mapfile_path = os.path.join(build_dir, "oerebpruef.map")
+    output_mapfile_de_path = os.path.join(build_dir, mode + "_de.map")
+    output_mapfile_fr_path = os.path.join(build_dir, mode + "_fr.map")
     
     # Build-Verzeichnis initialisieren
     logger.info("Build-Verzeichnis wird erstellt:" + build_dir)
@@ -182,11 +185,11 @@ def run_build_map(mode, batch_dir):
     shutil.copytree(src_images_dir, dest_images_dir)
     
     # Connections kopieren
-    logger.info("Connections kopieren...")
-    dest_connections_dir_1 = os.path.join(repo_dir, mode, "connections")
-    dest_connections_dir_2 = os.path.join(repo_dir, "connections")
-    shutil.copytree(connections_dir, dest_connections_dir_1)
-    shutil.copytree(connections_dir, dest_connections_dir_2)
+#     logger.info("Connections kopieren...")
+#     dest_connections_dir_1 = os.path.join(repo_dir, mode, "connections")
+#     dest_connections_dir_2 = os.path.join(repo_dir, "connections")
+#     shutil.copytree(connections_dir, dest_connections_dir_1)
+#     shutil.copytree(connections_dir, dest_connections_dir_2)
     
     # NUPLA-Includes bilden
     nupla_dir = os.path.join(repo_dir, mode + "/nupla")
@@ -194,7 +197,7 @@ def run_build_map(mode, batch_dir):
 
     logger.info("Gemeindeliste ermitteln...")
     gemeinde_directories = []
-    if mode == "oereb":
+    if mode in ("oereb", "oerebpreview"):
         logger.info("Ermittle Gemeinden anhand der vorhandenen Gemeinde-Directories in " + nupla_dir)
         gemeinde_directories = get_gemeinden_directories(nupla_dir)
     elif mode == "oerebpruef":
@@ -232,17 +235,38 @@ def run_build_map(mode, batch_dir):
     
     # Mapfile kopieren
     logger.info("Temporäres Mapfile wird mit mappyfile geparst.")
-    mapfile_content = mappyfile.load(template_mapfile_temp_path)
-    if mode == "oerepruef":
-        logger.info("WMS-Link wird angepasst.")
-        maplink = mapfile_content['web']['metadata']['"wms_onlineresource"'].replace("_gemeinde","")
-        mapfile_content['web']['metadata']['"wms_onlineresource"'] = maplink
+    mapfile_content_de = mappyfile.load(template_mapfile_temp_path)
+    mapfile_content_fr = mappyfile.load(template_mapfile_temp_path)
 
-    logger.info("Mapfile wird geschrieben: " + output_mapfile_path)
-    with codecs.open(output_mapfile_path, "w", encoding="utf-8") as mapfile:
-        mapfile.write(mappyfile.dumps(mapfile_content))
+    # Sprachunabhängige Parameter manipulieren
+    
+    # Stufe MAP
+    mapfile_content_de = oerebLader.helpers.mapfile_helper.fill_map_metadata(mapfile_content_de, mode, config)
+    mapfile_content_fr = oerebLader.helpers.mapfile_helper.fill_map_metadata(mapfile_content_fr, mode, config)
+    
+    # Stufe LAYER
+    mapfile_content_de = oerebLader.helpers.mapfile_helper.fill_layer_metadata(mapfile_content_de, mode, config)
+    mapfile_content_fr = oerebLader.helpers.mapfile_helper.fill_layer_metadata(mapfile_content_fr, mode, config)
+        
+    # Sprachabhängige Parameter manipulieren
+
+    # Stufe MAP
+    mapfile_content_de = oerebLader.helpers.mapfile_helper.fill_map_language_metadata(mapfile_content_de, "de", mode, config)
+    mapfile_content_fr = oerebLader.helpers.mapfile_helper.fill_map_language_metadata(mapfile_content_fr, "fr", mode, config)
+    
+    # Stufe LAYER
+    mapfile_content_de = oerebLader.helpers.mapfile_helper.fill_layer_language_metadata(mapfile_content_de, "de", config)
+    mapfile_content_fr = oerebLader.helpers.mapfile_helper.fill_layer_language_metadata(mapfile_content_fr, "fr", config)
+        
+    logger.info("Deutsches Mapfile wird geschrieben: " + output_mapfile_de_path)
+    with codecs.open(output_mapfile_de_path, "w", encoding="utf-8") as mapfile:
+        mapfile.write(mappyfile.dumps(mapfile_content_de))
+
+    logger.info("Französisches Mapfile wird geschrieben: " + output_mapfile_fr_path)
+    with codecs.open(output_mapfile_fr_path, "w", encoding="utf-8") as mapfile:
+        mapfile.write(mappyfile.dumps(mapfile_content_fr))
     
     logger.info("Das Mapfile liegt in: " + build_dir)
     
-    write_publish_batch(build_dir, output_mapfile_path, publish_dir, batch_dir)
+    write_publish_batch(build_dir, output_mapfile_de_path, output_mapfile_fr_path, publish_dir, batch_dir)
     
