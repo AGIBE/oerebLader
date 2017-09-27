@@ -4,7 +4,9 @@ import os
 import codecs
 import datetime
 import logging
+import mappyfile
 import oerebLader.helpers.log_helper
+import oerebLader.helpers.mapfile_helper
 
 def init_logging(config):
     log_directory = os.path.join(config['LOGGING']['basedir'], "switch_bfsnr")
@@ -28,6 +30,7 @@ def init_logging(config):
     return logger
 
 def run_switch_bfsnr(bfsnr):
+    mode = "oerebpruef_gemeinde"
     config = oerebLader.helpers.config.get_config()
     logger = init_logging(config)
     logger.info("Die BFS-Nummer im Gemeinde-Prüfdienst wird gewechselt auf: " + unicode(bfsnr))
@@ -61,5 +64,28 @@ def run_switch_bfsnr(bfsnr):
     logger.info("Gemeinde-Mapfile schreiben: " + mapfile_path)
     with codecs.open(mapfile_path, "w", encoding="utf-8") as mapfile:
         mapfile.write(template_content)
+        
+    logger.info("Gemeinde-Mapfile wird mit mappyfile geparst: " + mapfile_path)
+    mf_content = mappyfile.load(mapfile_path)
+    
+    # Sprachunabhängige Parameter manipulieren
+    
+    # Stufe MAP
+    mf_content = oerebLader.helpers.mapfile_helper.fill_map_metadata(mf_content, mode, config)
+    
+    # Stufe LAYER
+    mf_content = oerebLader.helpers.mapfile_helper.fill_layer_metadata(mf_content, mode, config)
+        
+    # Sprachabhängige Parameter manipulieren
+
+    # Stufe MAP
+    mf_content = oerebLader.helpers.mapfile_helper.fill_map_language_metadata(mf_content, "de", mode, config)
+    
+    # Stufe LAYER
+    mf_content = oerebLader.helpers.mapfile_helper.fill_layer_language_metadata(mf_content, "de", config)
+    
+    logger.info("Gemeinde-Mapfile schreiben: " + mapfile_path)
+    with codecs.open(mapfile_path, "w", encoding="utf-8") as mapfile:
+        mapfile.write(mappyfile.dumps(mf_content))
         
     logger.info("BFS-Nummer im Gemeinde-Prüfdienst wurde gewechselt auf: " + bfsnr)
