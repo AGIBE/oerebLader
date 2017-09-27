@@ -5,6 +5,7 @@ import oerebLader.scripts.s2_delete_nuplkueo
 import oerebLader.scripts.s4_delete_transfer
 import oerebLader.scripts.s47_import_nuplkueo
 import oerebLader.scripts.s38_qa_transfer
+import oerebLader.scripts.s57_qa_nuplkueo
 import oerebLader.scripts.s44_checkurl_transfer
 import oerebLader.scripts.s12_finish
 
@@ -19,5 +20,6 @@ def run(ticketnr):
     oerebLader.scripts.s4_delete_transfer.run(config)
     oerebLader.scripts.s47_import_nuplkueo.run(config)
     oerebLader.scripts.s38_qa_transfer.run(config)
+    oerebLader.scripts.s57_qa_nuplkueo.run(config)
     oerebLader.scripts.s44_checkurl_transfer.run(config)
     oerebLader.scripts.s12_finish.run(config)
