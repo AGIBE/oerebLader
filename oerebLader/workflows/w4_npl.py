@@ -8,6 +8,7 @@ import oerebLader.scripts.s40_update_oerebsta
 import oerebLader.scripts.s48_import_nupla
 import oerebLader.scripts.s49_derive_legendenbildli
 import oerebLader.scripts.s50_create_legend
+import oerebLader.scripts.s55_qa_nupla
 import oerebLader.scripts.s35_qa_oerebsta
 import oerebLader.scripts.s38_qa_transfer
 import oerebLader.scripts.s44_checkurl_transfer
@@ -29,5 +30,6 @@ def run(ticketnr):
     oerebLader.scripts.s50_create_legend.run(config)
     # oerebLader.scripts.s35_qa_oerebsta.run(config)
     oerebLader.scripts.s38_qa_transfer.run(config)
+    # oerebLader.scripts.s55_qa_nupla.run(config)
     oerebLader.scripts.s44_checkurl_transfer.run(config)
     oerebLader.scripts.s12_finish.run(config)
