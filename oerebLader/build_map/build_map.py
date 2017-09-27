@@ -10,7 +10,6 @@ import tempfile
 import git
 import oerebLader.helpers.log_helper
 import oerebLader.helpers.mapfile_helper
-from bsddb.test.test_basics import DASH
 
 def init_logging(config):
     log_directory = os.path.join(config['LOGGING']['basedir'], "build_map")
