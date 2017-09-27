@@ -4,6 +4,7 @@ import oerebLader.scripts.s26_initialize
 import oerebLader.scripts.s4_delete_transfer
 import oerebLader.scripts.s19_import_tba
 import oerebLader.scripts.s38_qa_transfer
+import oerebLader.scripts.s58_qa_nuplkast
 import oerebLader.scripts.s44_checkurl_transfer
 import oerebLader.scripts.s12_finish
 
@@ -17,5 +18,6 @@ def run(ticketnr):
     oerebLader.scripts.s4_delete_transfer.run(config)
     oerebLader.scripts.s19_import_tba.run(config)
     oerebLader.scripts.s38_qa_transfer.run(config)
+    oerebLader.scripts.s58_qa_nuplkast.run(config)
     oerebLader.scripts.s44_checkurl_transfer.run(config)
     oerebLader.scripts.s12_finish.run(config)
