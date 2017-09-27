@@ -4,7 +4,9 @@ import os
 import codecs
 import datetime
 import logging
+import mappyfile
 import oerebLader.helpers.log_helper
+import oerebLader.helpers.mapfile_helper
 
 def init_logging(config):
     log_directory = os.path.join(config['LOGGING']['basedir'], "build_mapfile_kanton")
@@ -28,6 +30,7 @@ def init_logging(config):
     return logger
 
 def run_build_mapfile_kantonr():
+    mode = "oerebpruef_kanton"
     config = oerebLader.helpers.config.get_config()
     logger = init_logging(config)
     logger.info("Das Mapfile für den Kantons-Prüfdienst wird neuerstellt.")
@@ -43,10 +46,32 @@ def run_build_mapfile_kantonr():
     
     logger.info("Strings werden ersetzt.")
     template_mapfile_content = template_mapfile_content.replace("[[[BFSNR]]]","")
-    template_mapfile_content = template_mapfile_content.replace("oerebpruef_gemeinde","oerebpruef_kanton")
     
     logger.info("Mapfile des Kantons-Prüfdienst wird geschrieben.")
     with codecs.open(kanton_mapfile_path, "w", "utf-8") as kanton_mapfile:
         kanton_mapfile.write(template_mapfile_content)
+
+    logger.info("Mapfile des Kantons-Prüfdienst wird mit mappyfile geparst: " + kanton_mapfile_path)
+    mf_content = mappyfile.load(kanton_mapfile_path)
+    
+    # Sprachunabhängige Parameter manipulieren
+    
+    # Stufe MAP
+    mf_content = oerebLader.helpers.mapfile_helper.fill_map_metadata(mf_content, mode, config)
+    
+    # Stufe LAYER
+    mf_content = oerebLader.helpers.mapfile_helper.fill_layer_metadata(mf_content, mode, config)
         
+    # Sprachabhängige Parameter manipulieren
+
+    # Stufe MAP
+    mf_content = oerebLader.helpers.mapfile_helper.fill_map_language_metadata(mf_content, "de", mode, config)
+    
+    # Stufe LAYER
+    mf_content = oerebLader.helpers.mapfile_helper.fill_layer_language_metadata(mf_content, "de", config)
+    
+    logger.info("Mapfile des Kantons-Prüfdienst wird geschrieben.")
+    with codecs.open(kanton_mapfile_path, "w", encoding="utf-8") as mapfile:
+        mapfile.write(mappyfile.dumps(mf_content))        
+    
     logger.info("Mapfile des Kantons-Prüfdienst wurde neuerstellt.")
