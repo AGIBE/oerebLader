@@ -7,7 +7,7 @@ def pad_string(string_to_pad):
 
 def fill_map_metadata(mf, mode, config):
 
-    mf['NAME'] = pad_string(mode)
+    mf['name'] = pad_string(mode)
     mf['web']['metadata']['"wms_srs"'] = pad_string(config['MAPFILE']['wms_srs'])
     mf['web']['metadata']['"wms_extent"'] = pad_string(config['MAPFILE']['wms_extent'])
 
@@ -16,7 +16,7 @@ def fill_map_metadata(mf, mode, config):
 def fill_layer_metadata(mf, mode, config):
 
     for mapfile_layer in mf['layers']:
-        mapfile_layer['connectiontype'] = pad_string(config['MAPFILE']['CONNECTIONTYPE'])
+        mapfile_layer['connectiontype'] = config['MAPFILE']['CONNECTIONTYPE']
         mapfile_layer['connection'] = pad_string(config['MAPFILE']['CONNECTION'][mode])
         mapfile_layer['METADATA']['"wms_srs"'] = pad_string(config['MAPFILE']['wms_srs'])
         mapfile_layer['METADATA']['"wms_extent"'] = pad_string(config['MAPFILE']['wms_extent'])
@@ -26,8 +26,8 @@ def fill_layer_metadata(mf, mode, config):
 def fill_map_language_metadata(mf, lang, mode, config):
     
     mf['web']['metadata']['"wms_onlineresource"'] = pad_string(config['MAPFILE']['wms_onlineresource'][mode][lang])
-    mf['web']['metadata']['"wms_title"'] = pad_string(config['MAPFILE']['wms_title'][lang])
-    mf['web']['metadata']['"wms_abstract"'] = pad_string(config['MAPFILE']['wms_abstract'][lang])
+    mf['web']['metadata']['"wms_title"'] = pad_string(config['MAPFILE']['wms_title'][mode][lang])
+    mf['web']['metadata']['"wms_abstract"'] = pad_string(config['MAPFILE']['wms_abstract'][mode][lang])
     mf['web']['metadata']['"wms_contactorganization"'] = pad_string(config['MAPFILE']['wms_contactorganization'][lang])
     mf['web']['metadata']['"wms_accessconstraints"'] = pad_string(config['MAPFILE']['wms_accessconstraints'][lang])
     

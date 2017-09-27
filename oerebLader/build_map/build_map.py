@@ -6,12 +6,11 @@ import datetime
 import logging
 import mappyfile
 import shutil
-import sys
 import tempfile
 import git
-import copy
 import oerebLader.helpers.log_helper
 import oerebLader.helpers.mapfile_helper
+from bsddb.test.test_basics import DASH
 
 def init_logging(config):
     log_directory = os.path.join(config['LOGGING']['basedir'], "build_map")
@@ -33,28 +32,6 @@ def init_logging(config):
     logger.propagate = False
     
     return logger
-
-def get_gemeinden_tickets(directory):
-    '''
-    Ermittelt alle Gemeinden (BFSNR), die einen
-    Ticket-Status von 2 oder drei haben.
-    Wird für den MODE=oerebpruef verwendet, da
-    im Prüfdienst nur die Gemeinden, die nach-
-    geführt werden, auftauchen sollen.
-    In der Ticket-Tabelle werden nur Tickets
-    mit einer NPL-Liefereinheit (Endung "01")
-    berücksichtigt.
-    Zurückgegeben wird eine Liste von Verzeichnissen.
-    '''
-    #TODO: Code ändern => Zugriff auf Ticket-Tabelle
-    gemeinden_directories = []
-    for gd in os.listdir(directory):
-        item = os.path.join(directory, gd)
-        if os.path.isdir(item):
-            gemeinden_directories.append(item)
-    
-    return gemeinden_directories
-
 
 def get_gemeinden_directories(directory):
     '''
@@ -128,9 +105,12 @@ def write_publish_batch(repo_dir, mapfile_path_de, mapfile_path_fr, publish_dir,
     return batch_file_path
     
     
-def clone_master_repo(master_repo_dir):
+def clone_master_repo(master_repo_dir, mode):
     tmpdir = tempfile.mkdtemp()
-    cloned_repo = git.Repo.clone_from(master_repo_dir, tmpdir, branch='layerstruktur')
+    if mode == "oerebpruef":
+        cloned_repo = git.Repo.clone_from(master_repo_dir, tmpdir, branch='layerstruktur')
+    else:
+        cloned_repo = git.Repo.clone_from(master_repo_dir, tmpdir)
     return cloned_repo.working_dir
 
 def run_build_map(mode, batch_dir):
@@ -147,17 +127,22 @@ def run_build_map(mode, batch_dir):
     layers = []
     for layer in config['KOMMUNALE_LAYER']:
         layers.append(layer['layer'].split(".")[1])
-#     connections_dir = config['REPOS']['connections_dir']
     master_repo_dir = config['REPOS'][mode]
     logger.info("Repository wird geklont.")
-    repo_dir = clone_master_repo(master_repo_dir)
+    repo_dir = clone_master_repo(master_repo_dir, mode)
     logger.info("Klon residiert in: " + repo_dir)
     publish_dir = os.path.join(config['REPOS']['mapfile_publish_directory'], mode)
+    # Da es ein oerebpreview-Repo nicht gibt, sondern stattdessen das
+    # oereb-repo verwendet wird, braucht es eine zusätzliche Variable neben mode,
+    # mit der im Preview-Fall im oereb-Repo die richtigen Pfade gefunden werden.  
+    input_mode = mode
+    if mode == 'oerebpreview':
+        input_mode = 'oereb'
     # =====================================================
     
     build_dir = os.path.join(repo_dir, build_subdir, mode)
-    template_mapfile_path = os.path.join(repo_dir, mode + "/" + mode + ".map")
-    template_mapfile_temp_path = os.path.join(repo_dir, mode + "/" + mode + "_temp.map")
+    template_mapfile_path = os.path.join(repo_dir, input_mode + "/" + input_mode + ".map")
+    template_mapfile_temp_path = os.path.join(repo_dir, input_mode + "/" + input_mode + "_temp.map")
     output_mapfile_de_path = os.path.join(build_dir, mode + "_de.map")
     output_mapfile_fr_path = os.path.join(build_dir, mode + "_fr.map")
     
@@ -168,45 +153,29 @@ def run_build_map(mode, batch_dir):
 
     # Fonts kopieren
     logger.info("Fonts kopieren...")
-    src_fonts_dir = os.path.join(repo_dir, mode , fonts_subdir)
+    src_fonts_dir = os.path.join(repo_dir, input_mode, fonts_subdir)
     dest_fonts_dir = os.path.join(build_dir, fonts_subdir)
     shutil.copytree(src_fonts_dir, dest_fonts_dir)
 
     # Templates kopieren
     logger.info("Templates kopieren...")
-    src_templates_dir = os.path.join(repo_dir, mode , templates_subdir)
+    src_templates_dir = os.path.join(repo_dir, input_mode, templates_subdir)
     dest_templates_dir = os.path.join(build_dir, templates_subdir)
     shutil.copytree(src_templates_dir, dest_templates_dir)    
     
     # Images kopieren
     logger.info("Images kopieren...")
-    src_images_dir = os.path.join(repo_dir, mode, images_subdir)
+    src_images_dir = os.path.join(repo_dir, input_mode, images_subdir)
     dest_images_dir = os.path.join(build_dir, images_subdir)
     shutil.copytree(src_images_dir, dest_images_dir)
     
-    # Connections kopieren
-#     logger.info("Connections kopieren...")
-#     dest_connections_dir_1 = os.path.join(repo_dir, mode, "connections")
-#     dest_connections_dir_2 = os.path.join(repo_dir, "connections")
-#     shutil.copytree(connections_dir, dest_connections_dir_1)
-#     shutil.copytree(connections_dir, dest_connections_dir_2)
-    
     # NUPLA-Includes bilden
-    nupla_dir = os.path.join(repo_dir, mode + "/nupla")
+    nupla_dir = os.path.join(repo_dir, input_mode + "/nupla")
     include_lines = []
 
     logger.info("Gemeindeliste ermitteln...")
-    gemeinde_directories = []
-    if mode in ("oereb", "oerebpreview"):
-        logger.info("Ermittle Gemeinden anhand der vorhandenen Gemeinde-Directories in " + nupla_dir)
-        gemeinde_directories = get_gemeinden_directories(nupla_dir)
-    elif mode == "oerebpruef":
-        logger.info("Ermittle Gemeinden anhand der Tickets mit Status 2 und 3")
-        gemeinde_directories = get_gemeinden_tickets(nupla_dir)
-    else:
-        logger.error("Ungültiger Mode angegeben: " + mode)
-        logger.error("Script wird abgebrochen.")
-        sys.exit()
+    logger.info("Ermittle Gemeinden anhand der vorhandenen Gemeinde-Directories in " + nupla_dir)
+    gemeinde_directories = get_gemeinden_directories(nupla_dir)
         
     for gemeinde in gemeinde_directories:
         for gemeinde_mapfile in get_gemeinde_mapfiles(gemeinde):
