@@ -11,6 +11,11 @@ import logging
 import arcpy
 import fmeobjects
 import sys
+import tempfile
+import git
+import shutil
+import platform
+
 
 def init_logging(config):
     log_directory = os.path.join(config['LOGGING']['basedir'], "release")
@@ -33,6 +38,74 @@ def init_logging(config):
     
     return logger
 
+def clone_master_repo(master_repo_dir):
+    tmpdir = tempfile.mkdtemp()
+    if "oerebpruef" in master_repo_dir:
+        cloned_repo = git.Repo.clone_from(master_repo_dir, tmpdir, branch='layerstruktur')
+    else:
+        cloned_repo = git.Repo.clone_from(master_repo_dir, tmpdir)
+    return cloned_repo.working_dir
+
+def get_release_mapfiles(config, logger):
+    folders = []
+    geoproducts_sql = "select LISTAGG(ticket.ID, ',') WITHIN GROUP (ORDER BY ticket.ID) as ID, LISTAGG(liefereinheit.BFSNR, ',') WITHIN GROUP (ORDER BY liefereinheit.BFSNR) as BFSNR, workflow_gpr.gprcode from ticket left join liefereinheit on ticket.LIEFEREINHEIT=liefereinheit.id left join workflow_gpr on liefereinheit.workflow=workflow_gpr.workflow where ticket.STATUS=3 and ticket.ART!=5 group by gprcode"
+    geoproducts = oerebLader.helpers.sql_helper.readSQL(config['OEREB2_WORK']['connection_string'], geoproducts_sql)
+    
+    for gpr in geoproducts:
+        gprcode = gpr[2].lower()
+        if gprcode == 'nupla':
+            bfsnr = gpr[1].split(',')
+            for bfs in bfsnr:
+                bfs_folder = 'nupla/' + bfs + "/"
+                folders.append(bfs_folder)
+        else:
+            folders.append(gprcode)
+            
+    # Diese drei Verzeichnisse werden immer kopiert!
+    folders.append('fonts')
+    folders.append('templates')
+    folders.append('symbole')
+            
+    return folders
+    
+def release_mapfiles(config, logger):
+    logger.info("Repository oereb wird geklont...")
+    oereb_repo_dir = clone_master_repo(config['REPOS']['oereb'])
+    logger.info(oereb_repo_dir)
+    logger.info("Repository oerebpruef wird geklont...")
+    oerebpruef_repo_dir = clone_master_repo(config['REPOS']['oerebpruef'])
+    logger.info(oerebpruef_repo_dir)
+    
+    # Zu kopierende Ordner bzw. Files bestimmen
+    mapfile_folders = get_release_mapfiles(config, logger)
+    logger.info("Folgende Mapfile-Ordner werden kopiert:")
+    for mff in mapfile_folders:
+        mff_src = os.path.join(oerebpruef_repo_dir, "oerebpruef", mff)
+        mff_target = os.path.join(oereb_repo_dir, "oereb", mff)
+        logger.info("Der Ziel-Ordner wird gelöscht: " + mff_target)
+        shutil.rmtree(mff_target)
+        logger.info("Der Quell-Ordner wird kopiert: " + mff_src)
+        logger.info("nach: " +mff_target)
+        # Die Logfiles aus der Migration sollen nicht kopiert werden.
+        shutil.copytree(mff_src, mff_target, ignore=shutil.ignore_patterns('*.log'))
+        
+    repo = git.Repo(oereb_repo_dir)
+    # Nur wenn das Repo dirty ist, wird überhaupt
+    # ein Commit gemacht.
+    if repo.is_dirty(untracked_files=True):
+        logger.info("git add...")
+        repo.git.add(all=True)
+        commit_msg = "Release " + datetime.datetime.now().strftime("%d.%m.%Y %H:%M:%S") + " (" + platform.node()  + ")"
+        logger.info("git commit -m " + commit_msg)
+        repo.git.commit(m=commit_msg)
+        logger.info("git push origin master")
+        repo.git.push("origin", "master")
+        logger.info("Zentrales ÖREB-Repository wurde aktualisiert.")
+        logger.info(config['REPOS']['oereb'])
+    else:
+        logger.warn("Das Repository hat keine Änderungen detektiert.")
+        logger.warn("Es wird nichts committed.")
+
 def run_release(dailyMode):
     config = oerebLader.helpers.config.get_config()
     logger = init_logging(config)
@@ -53,6 +126,7 @@ def run_release(dailyMode):
     ticket_sql = "select ticket.ID, liefereinheit.ID, liefereinheit.NAME, liefereinheit.BFSNR, liefereinheit.WORKFLOW from ticket left join liefereinheit on ticket.LIEFEREINHEIT=liefereinheit.id where ticket.STATUS=3 and ticket.ART" + valid_art
     tickets = oerebLader.helpers.sql_helper.readSQL(config['OEREB2_WORK']['connection_string'], ticket_sql)
     liefereinheiten = []
+    
     #Geoprodukt kopieren
     logger.info("Das Geoprodukt wird freigegeben.")
     for ticket in tickets:
@@ -191,6 +265,10 @@ def run_release(dailyMode):
             logger.error(ex)
             logger.error("Release wird abgebrochen!")
             sys.exit()
+        
+        # Mapfiles kopieren
+        logger.info("Mapfiles werden kopiert (oerebpruef->oereb)...")
+        release_mapfiles(config, logger)
         
         # Ticket-Status aktualisieren
         logger.info("Ticket-Stati werden aktualisiert.")
