@@ -64,6 +64,12 @@ def get_EIB_index(mapfile, eib, bfsnr):
                 if eib["darst_c"]==expression:
                     eib_index=i
                     
+    # Wenn auch kein kantonales Symbol gefunden wird,
+    # wird das Symbol "alle anderen Werte" genommen.
+    # Dieses ist immer das letzte/unterste im Mapfile
+    if eib_index == "-999":
+        eib_index = len(layer['classes']) - 1
+                    
     return eib_index
 
 def run(config):
@@ -114,6 +120,7 @@ def run(config):
                 already_downloaded_files.append(filename)
             else:
                 logger.warning("Legendenbild konnte nicht heruntergeladen werden.")
+                logger.warning("HTTP-Status: " + unicode(r.status_code))
             
         eib_sql = "UPDATE EIGENTUMSBESCHRAENKUNG SET EIB_LEGENDESYMBOL_DE='" + legendicon_url_files + "', EIB_LEGENDESYMBOL_FR='" + legendicon_url_files + "' WHERE EIB_OID='" + eib["eib_oid"] + "'"
         oerebLader.helpers.sql_helper.writeSQL(config['OEREB2_WORK']['connection_string'], eib_sql)            
