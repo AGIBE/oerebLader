@@ -46,9 +46,9 @@ def clone_master_repo(master_repo_dir):
         cloned_repo = git.Repo.clone_from(master_repo_dir, tmpdir)
     return cloned_repo.working_dir
 
-def get_release_mapfiles(config, logger):
+def get_release_mapfiles(config, logger, valid_art):
     folders = []
-    geoproducts_sql = "select LISTAGG(ticket.ID, ',') WITHIN GROUP (ORDER BY ticket.ID) as ID, LISTAGG(liefereinheit.BFSNR, ',') WITHIN GROUP (ORDER BY liefereinheit.BFSNR) as BFSNR, workflow_gpr.gprcode from ticket left join liefereinheit on ticket.LIEFEREINHEIT=liefereinheit.id left join workflow_gpr on liefereinheit.workflow=workflow_gpr.workflow where ticket.STATUS=3 and ticket.ART!=5 group by gprcode"
+    geoproducts_sql = "select LISTAGG(ticket.ID, ',') WITHIN GROUP (ORDER BY ticket.ID) as ID, LISTAGG(liefereinheit.BFSNR, ',') WITHIN GROUP (ORDER BY liefereinheit.BFSNR) as BFSNR, workflow_gpr.gprcode from ticket left join liefereinheit on ticket.LIEFEREINHEIT=liefereinheit.id left join workflow_gpr on liefereinheit.workflow=workflow_gpr.workflow where ticket.STATUS=3 and ticket.ART" + valid_art + " group by gprcode"
     geoproducts = oerebLader.helpers.sql_helper.readSQL(config['OEREB2_WORK']['connection_string'], geoproducts_sql)
     
     for gpr in geoproducts:
@@ -65,10 +65,13 @@ def get_release_mapfiles(config, logger):
     folders.append('fonts')
     folders.append('templates')
     folders.append('symbole')
-            
+    
+    # Allfällige Duplikate entfernen
+    folders = list(set(folders))
+    
     return folders
     
-def release_mapfiles(config, logger):
+def release_mapfiles(config, logger, valid_art):
     logger.info("Repository oereb wird geklont...")
     oereb_repo_dir = clone_master_repo(config['REPOS']['oereb'])
     logger.info(oereb_repo_dir)
@@ -77,7 +80,7 @@ def release_mapfiles(config, logger):
     logger.info(oerebpruef_repo_dir)
     
     # Zu kopierende Ordner bzw. Files bestimmen
-    mapfile_folders = get_release_mapfiles(config, logger)
+    mapfile_folders = get_release_mapfiles(config, logger, valid_art)
     logger.info("Folgende Mapfile-Ordner werden kopiert:")
     for mff in mapfile_folders:
         mff_src = os.path.join(oerebpruef_repo_dir, "oerebpruef", mff)
@@ -237,6 +240,10 @@ def run_release(dailyMode):
                 logger.error("Fehler beim Kopieren. Anzahl Features in der Quelle und im Ziel sind nicht identisch!")
                 logger.error("Release wird abgebrochen!")
                 sys.exit()
+
+        # Mapfiles kopieren
+        logger.info("Mapfiles werden kopiert (oerebpruef->oereb)...")
+        release_mapfiles(config, logger, valid_art)
         
         # GeoDB-Tabellen schreiben (Flag, Task)
         # sowie GeoDB-Taskid in die TICKET-Tabelle zurückschreiben
@@ -266,16 +273,11 @@ def run_release(dailyMode):
             logger.error("Release wird abgebrochen!")
             sys.exit()
         
-        # Mapfiles kopieren
-        logger.info("Mapfiles werden kopiert (oerebpruef->oereb)...")
-        release_mapfiles(config, logger)
-        
         # Ticket-Status aktualisieren
         logger.info("Ticket-Stati werden aktualisiert.")
         ilader_tasks = set()
         for ticket in tickets:
             # iLader-Task ermitteln (sofern vorhanden)
-            # Anpassen, dass der Fall mit mehreren Geoprodukten pro Ticket auch korrekt verarbeitet wird.
             sql_iLader_task = "SELECT task_id_geodb FROM ticket where id=" + unicode(ticket[0])
             taskid = oerebLader.helpers.sql_helper.readSQL(config['OEREB2_WORK']['connection_string'], sql_iLader_task)[0][0]
             if taskid is not None:
