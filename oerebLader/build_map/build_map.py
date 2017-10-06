@@ -71,7 +71,7 @@ def get_include_line(gemeinde_mapfile):
     
     return include_line
 
-def write_publish_batch(repo_dir, mapfile_path_de, mapfile_path_fr, publish_dir, batch_dir):
+def write_publish_batch(repo_dir, mapfile_path_de, mapfile_path_fr, publish_dir, batch_dir, publish2_dir, mode):
     '''
     Beim Aufruf von shp2img via subprocess kommt es immer zu 
     einem Fehler, der nicht eingegrenzt werden kann.
@@ -89,6 +89,10 @@ def write_publish_batch(repo_dir, mapfile_path_de, mapfile_path_fr, publish_dir,
     cmd3 = "rmdir " + publish_dir + " /s /q"
     cmd4 = "mkdir " + publish_dir
     cmd5 = "xcopy " + repo_dir + "\* " + publish_dir + " /s /e"
+    if mode == 'oerebpruef':
+        cmd6 = "rmdir " + publish2_dir + " /s /q"
+        cmd7 = "mkdir " + publish2_dir
+        cmd8 = "xcopy " + repo_dir + "\* " + publish2_dir + " /s /e"
     batch_file_path = os.path.join(batch_dir, "publish.bat")
     with codecs.open(batch_file_path, "w", "utf-8") as batch_file:
         batch_file.write(cmd1)
@@ -100,6 +104,13 @@ def write_publish_batch(repo_dir, mapfile_path_de, mapfile_path_fr, publish_dir,
         batch_file.write(cmd4)
         batch_file.write("\n")
         batch_file.write(cmd5)
+        if mode == 'oerebpruef':
+            batch_file.write("\n")
+            batch_file.write(cmd6)
+            batch_file.write("\n")
+            batch_file.write(cmd7)
+            batch_file.write("\n")
+            batch_file.write(cmd8)
         
     return batch_file_path
     
@@ -131,6 +142,7 @@ def run_build_map(mode, batch_dir):
     repo_dir = clone_master_repo(master_repo_dir, mode)
     logger.info("Klon residiert in: " + repo_dir)
     publish_dir = os.path.join(config['REPOS']['mapfile_publish_directory'], mode)
+    publish2_dir = os.path.join(config['LEGENDS']['legend_mapfile'], mode)
     # Da es ein oerebpreview-Repo nicht gibt, sondern stattdessen das
     # oereb-repo verwendet wird, braucht es eine zusätzliche Variable neben mode,
     # mit der im Preview-Fall im oereb-Repo die richtigen Pfade gefunden werden.  
@@ -238,5 +250,5 @@ def run_build_map(mode, batch_dir):
     
     logger.info("Das Mapfile liegt in: " + build_dir)
     
-    write_publish_batch(build_dir, output_mapfile_de_path, output_mapfile_fr_path, publish_dir, batch_dir)
+    write_publish_batch(build_dir, output_mapfile_de_path, output_mapfile_fr_path, publish_dir, batch_dir, publish2_dir, mode)
     

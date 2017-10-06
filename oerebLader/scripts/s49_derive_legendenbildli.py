@@ -92,7 +92,7 @@ def run(config):
     logger.info("Hole alle EIB_OIDs für die Liefereinheit " + unicode(config['LIEFEREINHEIT']['id']))
     eibs = getEIB(config['LIEFEREINHEIT']['id'], config, nupla_layers,)
 
-    mapfile_path = config['LEGENDS']['legend_mapfile']
+    mapfile_path = os.path.join(config['LEGENDS']['legend_mapfile'], "oerebpruef/oerebpruef_de.map")
     logger.info("Mapfile einlesen: " + mapfile_path)
     with codecs.open(mapfile_path, "r", "utf-8") as mapfile:
         mf = mappyfile.loads(mapfile.read())
