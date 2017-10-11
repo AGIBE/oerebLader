@@ -40,10 +40,7 @@ def init_logging(config):
 
 def clone_master_repo(master_repo_dir):
     tmpdir = tempfile.mkdtemp()
-    if "oerebpruef" in master_repo_dir:
-        cloned_repo = git.Repo.clone_from(master_repo_dir, tmpdir, branch='layerstruktur')
-    else:
-        cloned_repo = git.Repo.clone_from(master_repo_dir, tmpdir)
+    cloned_repo = git.Repo.clone_from(master_repo_dir, tmpdir)
     return cloned_repo.working_dir
 
 def get_release_mapfiles(config, logger, valid_art):
