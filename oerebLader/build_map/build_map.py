@@ -117,10 +117,7 @@ def write_publish_batch(repo_dir, mapfile_path_de, mapfile_path_fr, publish_dir,
     
 def clone_master_repo(master_repo_dir, mode):
     tmpdir = tempfile.mkdtemp()
-    if mode == "oerebpruef":
-        cloned_repo = git.Repo.clone_from(master_repo_dir, tmpdir, branch='layerstruktur')
-    else:
-        cloned_repo = git.Repo.clone_from(master_repo_dir, tmpdir)
+    cloned_repo = git.Repo.clone_from(master_repo_dir, tmpdir)
     return cloned_repo.working_dir
 
 def run_build_map(mode, batch_dir):
