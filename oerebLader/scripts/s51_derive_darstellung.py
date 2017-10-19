@@ -16,6 +16,8 @@ def run(config):
     logger.info("Das FME-Logfile heisst: " + fme_logfile)
 
     runner = fmeobjects.FMEWorkspaceRunner()
+    
+    bfsnr = config['LIEFEREINHEIT']['bfsnr']
 
     if config['GENERAL']['files_be_ch_baseurl'].endswith("/"):
         output_rv_url = config['GENERAL']['files_be_ch_baseurl'] + unicode(config['LIEFEREINHEIT']['id']) + "/" + unicode(config['ticketnr']) + "/"
@@ -32,6 +34,7 @@ def run(config):
         'LIEFEREINHEIT': str(config['LIEFEREINHEIT']['id']),        
         'NPL_WMS_BASE': str(config['GENERAL']['npl_wms_base']),
         'OUTPUT_RV_URL': str(output_rv_url),
+        'BFSNR': str(bfsnr),
         'LOGFILE': str(fme_logfile)
     }
     try:
