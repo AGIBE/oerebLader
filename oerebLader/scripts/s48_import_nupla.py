@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 from __future__ import absolute_import, division, print_function, unicode_literals
 import oerebLader.helpers.fme_helper
+import oerebLader.helpers.sql_helper
 import sys
 import logging
 import os
@@ -62,6 +63,15 @@ def run(config):
         logger.error(ex)
         logger.error("Import wird abgebrochen!")
         sys.exit()
+        
+    # Alle Darstellungscodes, die mit S beginnen,
+    # werden durch ein F ersetzt (s. #242)
+    for layer in config['KOMMUNALE_LAYER']:
+        logger.info("Französischsprachige Darstellungscodes werden übersetzt.")
+        tablename = layer['table']
+        logger.info("Tabelle " + tablename)
+        darst_c_sql = "update " + tablename + " set darst_c = 'F' || substr(darst_c, 2) where darst_c like 'S%' and bfsnr=" + unicode(bfsnr)
+        oerebLader.helpers.sql_helper.writeSQL(config['GEODB_WORK']['connection_string'], darst_c_sql)
         
     logger.info("Script " +  os.path.basename(__file__) + " ist beendet.")
     
