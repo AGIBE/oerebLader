@@ -71,7 +71,10 @@ def run(config):
         tablename = layer['table']
         logger.info("Tabelle " + tablename)
         darst_c_sql = "update " + tablename + " set darst_c = 'F' || substr(darst_c, 2) where darst_c like 'S%' and bfsnr=" + unicode(bfsnr)
+        logger.info("Update Oracle-WORK...")
         oerebLader.helpers.sql_helper.writeSQL(config['GEODB_WORK']['connection_string'], darst_c_sql)
+        logger.info("Update PostGIS-WORK...")
+        oerebLader.helpers.sql_helper.writePSQL(config['GEODB_WORK_PG']['connection_string'], darst_c_sql)
         
     logger.info("Script " +  os.path.basename(__file__) + " ist beendet.")
     
