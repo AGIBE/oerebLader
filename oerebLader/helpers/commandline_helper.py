@@ -12,6 +12,7 @@ import oerebLader.create_qaspecs.create_qaspecs
 import oerebLader.switch_bfsnr.switch_bfsnr
 import oerebLader.build_mapfile_kanton.build_mapfile_kanton
 import oerebLader.build_map.build_map
+import oerebLader.collect_legends.collect_legends
 
 def import_ticket(args):
     oerebLader.workflows.workflow.run_workflow(args.TICKET)
@@ -68,7 +69,11 @@ def build_mapfile_kanton(args):
     
 def build_map(args):
     oerebLader.build_map.build_map.run_build_map(args.MODE, args.batchdir)
-    print("Build_map SUCCESSFUL!")    
+    print("Build_map SUCCESSFUL!")
+    
+def collect_legends(args):
+    oerebLader.collect_legends.collect_legends.run_collect_legends()
+    print("Collect_legends SUCCESSFUL!")
     
 def main():
     version_text = "oerebLader v" + __version__
@@ -126,6 +131,10 @@ def main():
     build_map_parser.add_argument("MODE", choices=["oereb","oerebpreview", "oerebpruef"], help="Zu erstellendes Mapfile (oereb, oerebpreview oder oerebpruef).")
     build_map_parser.add_argument("batchdir", help="Verzeichnis, in dem der publish-Batch erstellt werden soll.")
     build_map_parser.set_defaults(func=build_map)
+    
+    # COLLECT_LEGENDS-Befehl
+    collect_legends_parser = subparsers.add_parser("collect_legends", help="Sucht die aktuellen Gemeinde-Legenden zusammen und kopiert sie in den Legenden-Ordner.")
+    collect_legends_parser.set_defaults(func=collect_legends)
     
     args = parser.parse_args()
     args.func(args)
