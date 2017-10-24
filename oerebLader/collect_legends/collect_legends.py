@@ -7,6 +7,7 @@ import shutil
 import oerebLader.helpers.log_helper
 import oerebLader.helpers.config
 import oerebLader.helpers.sql_helper
+import requests
 
 def init_logging(config):
     log_directory = os.path.join(config['LOGGING']['basedir'], "collect_legends")
@@ -29,12 +30,24 @@ def init_logging(config):
     
     return logger
 
-def run_collect_legends():
-    config = oerebLader.helpers.config.get_config()
-    logger = init_logging(config)
-    logger.info("Die aktuellen Gemeinde-Legenden werden zusammengesucht.")
-    
-    legend_dir = os.path.join(config['GENERAL']['files_be_ch_baseunc'], "legenden/gemeinden")
+def download_file(url, file_path, logger):
+    r = requests.get(url)
+    if r.status_code == 200:
+        with open(file_path, 'w') as f:
+            f.write(r.content)
+    else:
+        logger.warn("File konnte nicht heruntergeladen werden.")
+        logger.warn(r.status_code)
+        
+
+def copy_legends(mode, config, logger):
+
+    if mode=='oereb':
+        legend_dir = os.path.join(config['GENERAL']['files_be_ch_baseunc'], "legenden/gemeinden/oereb")
+        connection = config['OEREB2_VEK1']['connection_string']
+    if mode=='oerebpruef':
+        legend_dir = os.path.join(config['GENERAL']['files_be_ch_baseunc'], "legenden/gemeinden/oerebpruef")
+        connection = config['OEREB2_WORK']['connection_string']
 
     logger.info("Das Legenden-Verzeichnis lautet: " + legend_dir)
     if not os.path.exists(legend_dir):
@@ -49,28 +62,37 @@ def run_collect_legends():
             os.remove(file_path)
     
     legenden_sql = "select distinct dar_liefereinheit, substr(dar_liefereinheit, 0, 3) bfsnr, DAR_LEGENDEIMWEB_DE, DAR_LEGENDEIMWEB_FR from oereb2.darstellungsdienst where dar_liefereinheit like '___01' and dar_legendeimweb_de like '%.html'"
-    
-    legends_result = oerebLader.helpers.sql_helper.readSQL(config['OEREB2_VEK1']['connection_string'], legenden_sql)
+    legends_result = oerebLader.helpers.sql_helper.readSQL(connection, legenden_sql)
     
     for legend in legends_result:
-        source_legend_de = legend[2].replace(config['GENERAL']['files_be_ch_baseurl'], config['GENERAL']['files_be_ch_baseunc'])
-        source_legend_de = source_legend_de.replace("npl", "komplett")
-        source_legend_fr = legend[3].replace(config['GENERAL']['files_be_ch_baseurl'], config['GENERAL']['files_be_ch_baseunc'])
-        source_legend_fr = source_legend_fr.replace("npl", "komplett")
+        
+        source_legend_de = legend[2].replace("npl", "komplett")
+        source_legend_fr = legend[3].replace("npl", "komplett")
         
         bfsnr = unicode(legend[1])
+        target_legendname_de = os.path.join(legend_dir, bfsnr + "_de.html")
+        target_legendname_fr = os.path.join(legend_dir, bfsnr + "_fr.html")
         
-        target_legendname_de = bfsnr + "_de.html"
-        target_legendname_fr = bfsnr + "_fr.html"
+        logger.info("Lade herunter: " + source_legend_de)
+        logger.info("Kopiere nach: " + target_legendname_de)
+        download_file(source_legend_de, target_legendname_de, logger)
+
+        logger.info("Lade herunter: " + source_legend_fr)
+        logger.info("Kopiere nach: " + target_legendname_fr)
+        download_file(source_legend_fr, target_legendname_fr, logger)
         
-        target_legende_de = os.path.join(legend_dir, target_legendname_de)
-        target_legende_fr = os.path.join(legend_dir, target_legendname_fr)
-        
-        logger.info("Kopiere " + source_legend_de)
-        logger.info("nach " + target_legende_de)
-        shutil.copy2(source_legend_de, target_legende_de)
-        logger.info("Kopiere " + source_legend_fr)
-        logger.info("nach " + target_legende_fr)
-        shutil.copy2(source_legend_fr, target_legende_fr)
+
+def run_collect_legends():
+    config = oerebLader.helpers.config.get_config()
+    logger = init_logging(config)
+    
+    logger.info("Legenden der öffentlichen Karte werden kopiert.")
+    copy_legends("oereb", config, logger)
+    
+    logger.info("Legenden der Prüfkarte werden kopiert.")
+    copy_legends("oerebpruef", config, logger)
+
+    
+
     
     
