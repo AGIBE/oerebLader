@@ -45,12 +45,16 @@ def clone_master_repo(master_repo_dir):
 
 def get_release_mapfiles(config, logger, valid_art):
     folders = []
+    files = []
     geoproducts_sql = "select LISTAGG(ticket.ID, ',') WITHIN GROUP (ORDER BY ticket.ID) as ID, LISTAGG(liefereinheit.BFSNR, ',') WITHIN GROUP (ORDER BY liefereinheit.BFSNR) as BFSNR, workflow_gpr.gprcode from ticket left join liefereinheit on ticket.LIEFEREINHEIT=liefereinheit.id left join workflow_gpr on liefereinheit.workflow=workflow_gpr.workflow where ticket.STATUS=3 and ticket.ART" + valid_art + " group by gprcode"
     geoproducts = oerebLader.helpers.sql_helper.readSQL(config['OEREB2_WORK']['connection_string'], geoproducts_sql)
     
     for gpr in geoproducts:
         gprcode = gpr[2].lower()
         if gprcode == 'nupla':
+            for layer in config['KOMMUNALE_LAYER']:
+                mapfile_name = 'nupla/' + layer['layer'].split(".")[1].replace("nupla_","") + ".map"
+                files.append(mapfile_name)
             bfsnr = gpr[1].split(',')
             for bfs in bfsnr:
                 bfs_folder = 'nupla/' + bfs + "/"
@@ -64,9 +68,10 @@ def get_release_mapfiles(config, logger, valid_art):
     folders.append('symbole')
     
     # Allfällige Duplikate entfernen
+    files = list(set(files))
     folders = list(set(folders))
     
-    return folders
+    return (folders, files)
     
 def release_mapfiles(config, logger, valid_art):
     logger.info("Repository oereb wird geklont...")
@@ -77,7 +82,10 @@ def release_mapfiles(config, logger, valid_art):
     logger.info(oerebpruef_repo_dir)
     
     # Zu kopierende Ordner bzw. Files bestimmen
-    mapfile_folders = get_release_mapfiles(config, logger, valid_art)
+    released_mapfiles = get_release_mapfiles(config, logger, valid_art)
+    mapfile_folders = released_mapfiles[0]
+    mapfiles = released_mapfiles[1] 
+    
     logger.info("Folgende Mapfile-Ordner werden kopiert:")
     for mff in mapfile_folders:
         mff_src = os.path.join(oerebpruef_repo_dir, "oerebpruef", mff)
@@ -88,6 +96,14 @@ def release_mapfiles(config, logger, valid_art):
         logger.info("nach: " +mff_target)
         # Die Logfiles aus der Migration sollen nicht kopiert werden.
         shutil.copytree(mff_src, mff_target, ignore=shutil.ignore_patterns('*.log'))
+        
+    logger.info("Folgende Einzel-Mapfiles werden kopiert:")
+    for mf in mapfiles:
+        mf_src = os.path.join(oerebpruef_repo_dir, "oerebpruef", mf)
+        mf_target = os.path.join(oereb_repo_dir, "oereb", mf)
+        logger.info("Kopiere..." + mf_src)
+        logger.info("...nach " + mf_target)
+        shutil.copyfile(mf_src, mf_target)
         
     repo = git.Repo(oereb_repo_dir)
     # Nur wenn das Repo dirty ist, wird überhaupt
