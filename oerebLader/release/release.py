@@ -123,7 +123,7 @@ def run_release(dailyMode):
     else:
         valid_art = "!=5"
     
-    ticket_sql = "select ticket.ID, liefereinheit.ID, liefereinheit.NAME, liefereinheit.BFSNR, liefereinheit.WORKFLOW from ticket left join liefereinheit on ticket.LIEFEREINHEIT=liefereinheit.id where ticket.STATUS=3 and ticket.ART" + valid_art
+    ticket_sql = "select ticket.ID, liefereinheit.ID, liefereinheit.NAME, liefereinheit.BFSNR, liefereinheit.WORKFLOW, ticket.art from ticket left join liefereinheit on ticket.LIEFEREINHEIT=liefereinheit.id where ticket.STATUS=3 and ticket.ART" + valid_art
     tickets = oerebLader.helpers.sql_helper.readSQL(config['OEREB2_WORK']['connection_string'], ticket_sql)
     liefereinheiten = []
     
@@ -270,6 +270,24 @@ def run_release(dailyMode):
             logger.error("Release wird abgebrochen!")
             sys.exit()
         
+        # OEREBSTA aktualisieren
+        logger.info("Geoprodukt OEREBSTA wird aktualisiert.")
+        oerebsta_updated = False
+        for ticket in tickets:
+            # Nur bei TICKETART=1 (Erstimport) wird OEREBSTA aktualisiert.
+            if ticket[5] == 1:
+                bfsnr = unicode(ticket[3])
+                logger.info("Aktualisiere BFSNR " + bfsnr)
+                oerebsta_sql = "UPDATE norm.oerebsta_oestatus SET status=1 where bfsnr=" + bfsnr
+                oerebsta_updated = True
+                try:
+                    oerebLader.helpers.sql_helper.writeSQL(config['NORM_TEAM']['connection_string'], oerebsta_sql)
+                except Exception as ex:
+                    logger.error("Fehler beim Aktualisieren von OEREBSTA.")
+                    logger.error(unicode(ex))
+                    logger.error("Script wird abgebrochen!")
+                    sys.exit()
+        
         # Ticket-Status aktualisieren
         logger.info("Ticket-Stati werden aktualisiert.")
         ilader_tasks = set()
@@ -296,6 +314,13 @@ def run_release(dailyMode):
         logger.warn("Folgende iLader-Tasks müssen nun importiert werden:")
         for iLader_task in ilader_tasks:
             logger.warn("iLader run " + iLader_task)
+        
+        if oerebsta_updated == True:
+            oerebsta_task_sql = "select t.task_objectid from geodb_dd.tb_task t left join geodb_dd.tb_flag_agi f on t.FLAG_OBJECTID=f.FLAG_OBJECTID where f.GPR_BEZEICHNUNG='OEREBSTA' and t.TASK_STATUS=2"
+            oerebsta_tasks = oerebLader.helpers.sql_helper.readSQL(config['GEODB_DD_TEAM']['connection_string'], oerebsta_task_sql)
+            logger.warn("OEREBSTA wurde aktualisiert und muss ebenfalls importiert werden:")
+            for ot in oerebsta_tasks:
+                logger.warn("iLader run " + unicode(ot[0]))
 
     # Connection-Files löschen
     oerebLader.helpers.connection_helper.delete_connection_files(config['GEODB_WORK']['connection_file'], logger)
