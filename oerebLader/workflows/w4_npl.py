@@ -4,12 +4,10 @@ import oerebLader.scripts.s26_initialize
 import oerebLader.scripts.s1_delete_nupla
 import oerebLader.scripts.s4_delete_transfer
 import oerebLader.scripts.s51_derive_darstellung
-import oerebLader.scripts.s40_update_oerebsta
 import oerebLader.scripts.s48_import_nupla
 import oerebLader.scripts.s49_derive_legendenbildli
 import oerebLader.scripts.s50_create_legend
 import oerebLader.scripts.s55_qa_nupla
-import oerebLader.scripts.s35_qa_oerebsta
 import oerebLader.scripts.s38_qa_transfer
 import oerebLader.scripts.s44_checkurl_transfer
 import oerebLader.scripts.s12_finish
@@ -23,12 +21,10 @@ def run(ticketnr):
     oerebLader.scripts.s26_initialize.run(config, ticketnr)
     oerebLader.scripts.s1_delete_nupla.run(config)
     oerebLader.scripts.s4_delete_transfer.run(config)
-    # oerebLader.scripts.s40_update_oerebsta.run(config)
     oerebLader.scripts.s48_import_nupla.run(config)
     oerebLader.scripts.s51_derive_darstellung.run(config)
     oerebLader.scripts.s49_derive_legendenbildli.run(config)
     oerebLader.scripts.s50_create_legend.run(config)
-    # oerebLader.scripts.s35_qa_oerebsta.run(config)
     oerebLader.scripts.s38_qa_transfer.run(config)
     # oerebLader.scripts.s55_qa_nupla.run(config)
     oerebLader.scripts.s44_checkurl_transfer.run(config)
