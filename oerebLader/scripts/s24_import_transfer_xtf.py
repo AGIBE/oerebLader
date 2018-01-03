@@ -14,6 +14,7 @@ def run(config):
     fme_logfile = oerebLader.helpers.fme_helper.prepare_fme_log(fme_script, config['LOGGING']['log_directory']) 
     logger.info("Script " +  fme_script + " wird ausgeführt.")
     logger.info("Das FME-Logfile heisst: " + fme_logfile)
+    legend_basedir = os.path.join(config['GENERAL']['files_be_ch_baseunc'], "legenden", unicode(config['LIEFEREINHEIT']['id']))
     if config['GENERAL']['files_be_ch_baseurl'].endswith("/"):
         legend_baseurl = config['GENERAL']['files_be_ch_baseurl'] + "legenden/" + unicode(config['LIEFEREINHEIT']['id']) + "/"
     else:
@@ -29,6 +30,7 @@ def run(config):
         'MODELLABLAGE': str(config['GENERAL']['models']),
         'XTF_FILE': str(config['LIEFEREINHEIT']['ts_source']),
         'LEGEND_BASEURL': str(legend_baseurl),
+        'LEGEND_BASEDIR': str(legend_basedir),
         'LIEFEREINHEIT': str(config['LIEFEREINHEIT']['id']),
         'LOGFILE': str(fme_logfile)
     }
