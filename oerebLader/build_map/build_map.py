@@ -197,7 +197,12 @@ def run_build_map(mode, batch_dir):
     logger.info("Strings werden ersetzt.")
     # Thun (CUG) darf nicht angezeigt werden. Daher hier
     # ein fixer Definition Query
-    mapfile_raw_content = mapfile_raw_content.replace("[[[BFSNR]]]"," and bfsnr!=942")
+    # #525: Thun soll nur im öffentlichen WMS ausgeblendet werden, in
+    # der Prüfkarte soll Thun aber sichtbar sein.
+    if mode == "oerebpruef":
+        mapfile_raw_content = mapfile_raw_content.replace("[[[BFSNR]]]","")
+    else:
+        mapfile_raw_content = mapfile_raw_content.replace("[[[BFSNR]]]"," and bfsnr!=942")
             
     for layer in layers:
         layer_include_search_string = "###" + layer +"###"
