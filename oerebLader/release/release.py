@@ -66,6 +66,7 @@ def get_release_mapfiles(config, logger, valid_art):
     folders.append('fonts')
     folders.append('templates')
     folders.append('symbole')
+    folders.append('images')
     
     # Allfällige Duplikate entfernen
     files = list(set(files))
