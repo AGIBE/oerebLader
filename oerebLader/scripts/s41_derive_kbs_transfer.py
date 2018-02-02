@@ -35,6 +35,7 @@ def run(config):
         'EXCEL_AMT': str(excel_file_amt),
         'LEGEND_BASEURL': str(legend_baseurl),
         'LIEFEREINHEIT': str(config['LIEFEREINHEIT']['id']),
+        'RV_BASEURL': str(config['GENERAL']['kbs_call']),
         'LOGFILE': str(fme_logfile)
     }
     try:
