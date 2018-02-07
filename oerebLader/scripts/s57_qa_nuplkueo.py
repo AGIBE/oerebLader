@@ -21,7 +21,7 @@ def run(config):
     result_dir = os.path.join(config['LOGGING']['log_directory'], result_dir_name)
     logger.info("Die Resultate werden ausgegeben in: " + result_dir)
     
-    result = arcpy.XmlBasedVerificationTool(qa_spec,"NUPLKUEO","25000","GEODB " + config['GEODB_WORK']['connection_file'], "No", result_dir, "File Geodatabase")
+    result = arcpy.XmlBasedVerificationTool_ProSuite(qa_spec,"NUPLKUEO","25000","GEODB " + config['GEODB_WORK']['connection_file'], "No", result_dir, "File Geodatabase")
     if unicode(result.getOutput(1))== "true":
         logger.info("QA-Check Geoprodukt NUPLKUEO ohne Fehler durchgelaufen.")
     else:

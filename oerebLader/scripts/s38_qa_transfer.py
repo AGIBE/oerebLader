@@ -27,7 +27,7 @@ def run(config):
     result2_dir = os.path.join(config['LOGGING']['log_directory'], result2_dir_name)
     logger.info("Die Resultate werden ausgegeben in: " + result2_dir)
             
-    result2 = arcpy.XmlBasedVerificationTool(qa2_spec,"OEREB2","25000","OEREBK2-Transferstrukturchecker " + config['OEREB2_WORK']['connection_file'], "No", result2_dir, "File Geodatabase")
+    result2 = arcpy.XmlBasedVerificationTool_ProSuite(qa2_spec,"OEREB2","25000","OEREBK2-Transferstrukturchecker " + config['OEREB2_WORK']['connection_file'], "No", result2_dir, "File Geodatabase")
     if unicode(result2.getOutput(1))== "true":
         logger.info("QA-Check Transferstruktur 2 ohne Fehler durchgelaufen.")
     else:
