@@ -132,8 +132,9 @@ def run_build_map(mode, batch_dir):
     build_subdir = "build"
     images_subdir = "images"
     layers = []
-    for layer in config['KOMMUNALE_LAYER']:
-        layers.append(layer['layer'].split(".")[1])
+    if mode in ("oereb", "oerebpreview", "oerebpruef"):
+        for layer in config['KOMMUNALE_LAYER']:
+            layers.append(layer['layer'].split(".")[1])
     master_repo_dir = config['REPOS'][mode]
     logger.info("Repository wird geklont.")
     repo_dir = clone_master_repo(master_repo_dir, mode)
@@ -163,55 +164,67 @@ def run_build_map(mode, batch_dir):
     logger.info("Fonts kopieren...")
     src_fonts_dir = os.path.join(repo_dir, input_mode, fonts_subdir)
     dest_fonts_dir = os.path.join(build_dir, fonts_subdir)
-    shutil.copytree(src_fonts_dir, dest_fonts_dir)
+    if os.path.exists(src_fonts_dir):
+        shutil.copytree(src_fonts_dir, dest_fonts_dir)
+    else:
+        logger.info("Fonts-Directory ist leer, es wird nicht kopiert.")
 
     # Templates kopieren
     logger.info("Templates kopieren...")
     src_templates_dir = os.path.join(repo_dir, input_mode, templates_subdir)
     dest_templates_dir = os.path.join(build_dir, templates_subdir)
-    shutil.copytree(src_templates_dir, dest_templates_dir)    
+    if os.path.exists(src_templates_dir):
+        shutil.copytree(src_templates_dir, dest_templates_dir)
+    else:
+        logger.info("Templates-Directory ist leer, es wird nicht kopiert.")    
     
     # Images kopieren
     logger.info("Images kopieren...")
     src_images_dir = os.path.join(repo_dir, input_mode, images_subdir)
     dest_images_dir = os.path.join(build_dir, images_subdir)
-    shutil.copytree(src_images_dir, dest_images_dir)
-    
-    # NUPLA-Includes bilden
-    nupla_dir = os.path.join(repo_dir, input_mode + "/nupla")
-    include_lines = []
-
-    logger.info("Gemeindeliste ermitteln...")
-    logger.info("Ermittle Gemeinden anhand der vorhandenen Gemeinde-Directories in " + nupla_dir)
-    gemeinde_directories = get_gemeinden_directories(nupla_dir)
-        
-    for gemeinde in gemeinde_directories:
-        for gemeinde_mapfile in get_gemeinde_mapfiles(gemeinde):
-            include_line = get_include_line(gemeinde_mapfile)
-            include_lines.append(include_line)
+    if os.path.exists(src_images_dir):
+        shutil.copytree(src_images_dir, dest_images_dir)
+    else:
+        logger.info("Images-Directory ist leer, es wird nicht kopiert.")
 
     logger.info("Template-Mapfile wird eingelesen: " + template_mapfile_path)
     with codecs.open(template_mapfile_path, "r", encoding="utf-8") as mapfile_raw:
         mapfile_raw_content = mapfile_raw.read()
+
+    # Alles Gemeindespezifische gibts nicht für oerebav und oerebhinweis
+    # Daher wird das hier abgefangen
+    if mode in ("oereb", "oerebpreview", "oerebpruef"):
+        # NUPLA-Includes bilden
+        nupla_dir = os.path.join(repo_dir, input_mode + "/nupla")
+        include_lines = []
     
-    logger.info("Strings werden ersetzt.")
-    # Thun (CUG) darf nicht angezeigt werden. Daher hier
-    # ein fixer Definition Query
-    # #525: Thun soll nur im öffentlichen WMS ausgeblendet werden, in
-    # der Prüfkarte soll Thun aber sichtbar sein.
-    if mode == "oerebpruef":
-        mapfile_raw_content = mapfile_raw_content.replace("[[[BFSNR]]]","")
-    else:
-        mapfile_raw_content = mapfile_raw_content.replace("[[[BFSNR]]]"," and bfsnr!=942")
+        logger.info("Gemeindeliste ermitteln...")
+        logger.info("Ermittle Gemeinden anhand der vorhandenen Gemeinde-Directories in " + nupla_dir)
+        gemeinde_directories = get_gemeinden_directories(nupla_dir)
             
-    for layer in layers:
-        layer_include_search_string = "###" + layer +"###"
-        layer_include_string = ""
-        for il in include_lines:
-            if layer in il:
-                layer_include_string += il + "\n"
-        
-        mapfile_raw_content = mapfile_raw_content.replace(layer_include_search_string, layer_include_string)
+        for gemeinde in gemeinde_directories:
+            for gemeinde_mapfile in get_gemeinde_mapfiles(gemeinde):
+                include_line = get_include_line(gemeinde_mapfile)
+                include_lines.append(include_line)
+    
+        logger.info("Strings werden ersetzt.")
+        # Thun (CUG) darf nicht angezeigt werden. Daher hier
+        # ein fixer Definition Query
+        # #525: Thun soll nur im öffentlichen WMS ausgeblendet werden, in
+        # der Prüfkarte soll Thun aber sichtbar sein.
+        if mode == "oerebpruef":
+            mapfile_raw_content = mapfile_raw_content.replace("[[[BFSNR]]]","")
+        else:
+            mapfile_raw_content = mapfile_raw_content.replace("[[[BFSNR]]]"," and bfsnr!=942")
+                
+        for layer in layers:
+            layer_include_search_string = "###" + layer +"###"
+            layer_include_string = ""
+            for il in include_lines:
+                if layer in il:
+                    layer_include_string += il + "\n"
+            
+            mapfile_raw_content = mapfile_raw_content.replace(layer_include_search_string, layer_include_string)
     
     logger.info("Temporäres Mapfile wird geschrieben: " + template_mapfile_temp_path)
     with codecs.open(template_mapfile_temp_path, "w", encoding="utf-8") as temp_mapfile:
