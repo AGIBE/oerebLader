@@ -63,7 +63,7 @@
 #!   FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Datum"
 #!   WORKSPACE_VERSION="1"
 #!   MAX_LOG_FEATURES="200"
-#!   LAST_SAVE_DATE="2018-03-22T16:01:58"
+#!   LAST_SAVE_DATE="2018-03-22T16:08:36"
 #!   BEGIN_TCL=""
 #! >
 #! <DATASETS>
@@ -1649,7 +1649,7 @@
 #!   POSITION="109 -2704"
 #!   BOUNDING_RECT="109 -2704 0 0"
 #!   ORDER="5e+14"
-#!   COLLAPSED="false"
+#!   COLLAPSED="true"
 #!   KEYWORD="GEODATABASE_SDE_1"
 #!   PARMS_EDITED="true"
 #!   ENABLED="true"
@@ -5672,9 +5672,9 @@ FACTORY_DEF * AttrSetFactory    FACTORY_NAME AttributeCreator_6    INPUT  FEATUR
 
 # -------------------------------------------------------------------------
 
-INCLUDE [    set macroLine "MACRO AttributeKeeper_2_05c2f9c9_9f99_4344_80aa_0450af2320bc1_LIST_EXP ";    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "\\{\[0-9\]+\\}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
+INCLUDE [    set macroLine "MACRO AttributeKeeper_2_05c2f9c9_9f99_4344_80aa_0450af2320bc2_LIST_EXP ";    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "\\{\[0-9\]+\\}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
 
-FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeKeeper_2    INPUT  FEATURE_TYPE AttributeCreator_6_OUTPUT    OUTPUT FEATURE_TYPE AttributeKeeper_2_OUTPUT        @KeepAttributes(fme_encoded,_joinfield,DAR_OID,fme_pcre_match,"^fme_$(AttributeKeeper_2_05c2f9c9_9f99_4344_80aa_0450af2320bc1_LIST_EXP)")
+FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeKeeper_2    INPUT  FEATURE_TYPE AttributeCreator_6_OUTPUT    OUTPUT FEATURE_TYPE AttributeKeeper_2_OUTPUT        @KeepAttributes(fme_encoded,_joinfield,DAR_OID,fme_pcre_match,"^fme_$(AttributeKeeper_2_05c2f9c9_9f99_4344_80aa_0450af2320bc2_LIST_EXP)")
 
 # -------------------------------------------------------------------------
 
@@ -5688,16 +5688,16 @@ FACTORY_DEF * AttrSetFactory    FACTORY_NAME AttributeCreator_4    INPUT  FEATUR
 
 # -------------------------------------------------------------------------
 
-INCLUDE [    set macroLine "MACRO AttributeKeeper_4bd6f06f_ad9b_4707_8e63_e0233474c91c1_LIST_EXP ";    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "\\{\[0-9\]+\\}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
+INCLUDE [    set macroLine "MACRO AttributeKeeper_4bd6f06f_ad9b_4707_8e63_e0233474c91c2_LIST_EXP ";    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "\\{\[0-9\]+\\}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
 
-FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeKeeper    INPUT  FEATURE_TYPE AttributeCreator_4_OUTPUT    OUTPUT FEATURE_TYPE AttributeKeeper_OUTPUT        @KeepAttributes(fme_encoded,_joinfield,AMT_OID,fme_pcre_match,"^fme_$(AttributeKeeper_4bd6f06f_ad9b_4707_8e63_e0233474c91c1_LIST_EXP)")
+FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeKeeper    INPUT  FEATURE_TYPE AttributeCreator_4_OUTPUT    OUTPUT FEATURE_TYPE AttributeKeeper_OUTPUT        @KeepAttributes(fme_encoded,_joinfield,AMT_OID,fme_pcre_match,"^fme_$(AttributeKeeper_4bd6f06f_ad9b_4707_8e63_e0233474c91c2_LIST_EXP)")
 
 FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeKeeper OUTPUT Splitter"   INPUT FEATURE_TYPE AttributeKeeper_OUTPUT   OUTPUT FEATURE_TYPE AttributeKeeper_OUTPUT_0_rpABwRdi1ws=   OUTPUT FEATURE_TYPE AttributeKeeper_OUTPUT_1_ZImEmLS5GM8=
 # -------------------------------------------------------------------------
 
-INCLUDE [    set macroLine "MACRO AttributeKeeper_5_7abc7236_2d58_485e_aa1d_71523888271d1_LIST_EXP ";    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "\\{\[0-9\]+\\}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
+INCLUDE [    set macroLine "MACRO AttributeKeeper_5_7abc7236_2d58_485e_aa1d_71523888271d2_LIST_EXP ";    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "\\{\[0-9\]+\\}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
 
-FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeKeeper_5    INPUT  FEATURE_TYPE GEODB.BALISKBS_BEWT_GEODATABASE_SDE_1    OUTPUT FEATURE_TYPE AttributeKeeper_5_OUTPUT        @KeepAttributes(fme_encoded,BEWT_CODE,BEZEICH_DE,BEZEICH_FR,fme_pcre_match,"^fme_$(AttributeKeeper_5_7abc7236_2d58_485e_aa1d_71523888271d1_LIST_EXP)")
+FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeKeeper_5    INPUT  FEATURE_TYPE GEODB.BALISKBS_BEWT_GEODATABASE_SDE_1    OUTPUT FEATURE_TYPE AttributeKeeper_5_OUTPUT        @KeepAttributes(fme_encoded,BEWT_CODE,BEZEICH_DE,BEZEICH_FR,fme_pcre_match,"^fme_$(AttributeKeeper_5_7abc7236_2d58_485e_aa1d_71523888271d2_LIST_EXP)")
 
 # -------------------------------------------------------------------------
 
@@ -5735,9 +5735,9 @@ FACTORY_DEF * TeeFactory    FACTORY_NAME TimeStamper    INPUT  FEATURE_TYPE Attr
 
 # -------------------------------------------------------------------------
 
-INCLUDE [    set macroLine "MACRO AttributeKeeper_4_1fa0d7b4_4ae0_4001_bb44_b069861ca0de1_LIST_EXP ";    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "\\{\[0-9\]+\\}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
+INCLUDE [    set macroLine "MACRO AttributeKeeper_4_1fa0d7b4_4ae0_4001_bb44_b069861ca0de2_LIST_EXP ";    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "\\{\[0-9\]+\\}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
 
-FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeKeeper_4    INPUT  FEATURE_TYPE UUIDGenerator_6_OUTPUT_0_Vhc4mkRO1yI=    OUTPUT FEATURE_TYPE AttributeKeeper_4_OUTPUT        @KeepAttributes(fme_encoded,BEWT_CODE,usg_VOR_OID,fme_pcre_match,"^fme_$(AttributeKeeper_4_1fa0d7b4_4ae0_4001_bb44_b069861ca0de1_LIST_EXP)")
+FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeKeeper_4    INPUT  FEATURE_TYPE UUIDGenerator_6_OUTPUT_0_Vhc4mkRO1yI=    OUTPUT FEATURE_TYPE AttributeKeeper_4_OUTPUT        @KeepAttributes(fme_encoded,BEWT_CODE,usg_VOR_OID,fme_pcre_match,"^fme_$(AttributeKeeper_4_1fa0d7b4_4ae0_4001_bb44_b069861ca0de2_LIST_EXP)")
 
 # -------------------------------------------------------------------------
 
@@ -5746,9 +5746,9 @@ FACTORY_DEF * AttrSetFactory    FACTORY_NAME AttributeCreator_5    INPUT  FEATUR
 
 # -------------------------------------------------------------------------
 
-INCLUDE [    set macroLine "MACRO AttributeKeeper_3_29701db7_2817_4627_b50a_9b2647128e2e1_LIST_EXP ";    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "\\{\[0-9\]+\\}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
+INCLUDE [    set macroLine "MACRO AttributeKeeper_3_29701db7_2817_4627_b50a_9b2647128e2e2_LIST_EXP ";    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "\\{\[0-9\]+\\}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
 
-FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeKeeper_3    INPUT  FEATURE_TYPE AttributeCreator_5_OUTPUT    OUTPUT FEATURE_TYPE AttributeKeeper_3_OUTPUT        @KeepAttributes(fme_encoded,ART_NR,STATUS,STA_NR,BEW32USG,PRIORI_NR,STA_NAME,_joinfield,EINTRAGKBS,fme_pcre_match,"^fme_$(AttributeKeeper_3_29701db7_2817_4627_b50a_9b2647128e2e1_LIST_EXP)")
+FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeKeeper_3    INPUT  FEATURE_TYPE AttributeCreator_5_OUTPUT    OUTPUT FEATURE_TYPE AttributeKeeper_3_OUTPUT        @KeepAttributes(fme_encoded,ART_NR,STATUS,STA_NR,BEW32USG,PRIORI_NR,STA_NAME,_joinfield,EINTRAGKBS,fme_pcre_match,"^fme_$(AttributeKeeper_3_29701db7_2817_4627_b50a_9b2647128e2e2_LIST_EXP)")
 
 # -------------------------------------------------------------------------
 
