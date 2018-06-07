@@ -14,6 +14,7 @@ import oerebLader.workflows.w9_kbsflug
 import oerebLader.workflows.w10_sizoplan
 import oerebLader.workflows.w11_prjzflug
 import oerebLader.workflows.w12_nplwald_bern
+import oerebLader.workflows.w13_baulnstr
 import sys
 
 #TODO: Import NPLKSTRA mit THE_ID=20 umsetzen

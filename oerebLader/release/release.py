@@ -92,7 +92,8 @@ def release_mapfiles(config, logger, valid_art):
         mff_src = os.path.join(oerebpruef_repo_dir, "oerebpruef", mff)
         mff_target = os.path.join(oereb_repo_dir, "oereb", mff)
         logger.info("Der Ziel-Ordner wird gelöscht: " + mff_target)
-        shutil.rmtree(mff_target)
+        if os.path.exists(mff_target):
+            shutil.rmtree(mff_target)
         logger.info("Der Quell-Ordner wird kopiert: " + mff_src)
         logger.info("nach: " +mff_target)
         # Die Logfiles aus der Migration sollen nicht kopiert werden.
