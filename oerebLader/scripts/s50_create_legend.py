@@ -29,35 +29,6 @@ def get_legend_entries(config):
 
     return legend_list
 
-def get_subthemes(config):
-    subthemes_list = []
-    subtheme_sql = "select sth_id, STH_NAME_DE, STH_NAME_FR from subthema where the_id not in (1, 15, 17) order by STH_SORT asc"
-    subthemes = oerebLader.helpers.sql_helper.readSQL(config['OEREB2_WORK']['connection_string'], subtheme_sql)
-    
-    for subtheme in subthemes:
-        subtheme_dict = {}
-        sth_id = subtheme[0]
-
-        dar_oid_sql = "select distinct dar_oid from eigentumsbeschraenkung where STH_ID=" + unicode(sth_id)
-        dar_oids = oerebLader.helpers.sql_helper.readSQL(config['OEREB2_WORK']['connection_string'], dar_oid_sql)
-        if len(dar_oids) > 0:
-            # Es sollen nur Subthemen aufgelistet werden,
-            # von denen es überhaupt Daten gibt.
-            subtheme_dict['title_de'] = subtheme[1]
-            subtheme_dict['title_fr'] = subtheme[2]
-            # Annahme: es gibt ausserhalb der kommunalen Nutzungsplanung
-            # immer nur genau einen Darstellungsdienst pro Subthema
-            dar_oid = dar_oids[0][0]
-            legend_image_sql = "select DAR_LEGENDEIMWEB_DE, DAR_LEGENDEIMWEB_FR from darstellungsdienst where dar_oid='" + dar_oid + "'"
-            legend_images = oerebLader.helpers.sql_helper.readSQL(config['OEREB2_WORK']['connection_string'], legend_image_sql)
-            subtheme_dict['legend_image_de'] = legend_images[0][0]
-            subtheme_dict['legend_image_fr'] = legend_images[0][1]
-        
-        if subtheme_dict:
-            subthemes_list.append(subtheme_dict)
-            
-    return subthemes_list
-
 def render_template(config, template_file, templateVars, html_filename):
     templateLoader = jinja2.FileSystemLoader(searchpath=config['LEGENDS']['legend_template_dir'])
     templateEnv = jinja2.Environment( loader=templateLoader )
@@ -96,11 +67,10 @@ def create_legend_komplett(config, legend_dir, gemname):
     template_filename_fr = "legend_komplett_template_fr.txt"
 
     legend_entries = get_legend_entries(config)
-    subthemes = get_subthemes(config)
+#     subthemes = get_subthemes(config)
     
     template_vars = { "gemname" : gemname,
-                     "legend_entries" : legend_entries,
-                     "subthemes": subthemes
+                     "legend_entries" : legend_entries
                    }
 
     # Deutsch
