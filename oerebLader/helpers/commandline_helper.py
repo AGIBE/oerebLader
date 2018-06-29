@@ -13,6 +13,7 @@ import oerebLader.switch_bfsnr.switch_bfsnr
 import oerebLader.build_mapfile_kanton.build_mapfile_kanton
 import oerebLader.build_map.build_map
 import oerebLader.collect_legends.collect_legends
+import oerebLader.create_legend.create_legend
 
 def import_ticket(args):
     oerebLader.workflows.workflow.run_workflow(args.TICKET)
@@ -75,6 +76,10 @@ def collect_legends(args):
     oerebLader.collect_legends.collect_legends.run_collect_legends()
     print("Collect_legends SUCCESSFUL!")
     
+def create_legend(args):
+    oerebLader.create_legend.create_legend.run_create_legend(args.BFSNR)
+    print("Create_legend SUCCESSFUL!")
+    
 def main():
     version_text = "oerebLader v" + __version__
     parser = argparse.ArgumentParser(description="Kommandozeile fuer den oerebLader. Importiert Tickets und zeigt offene Tickets an.", prog="oerebLader.exe", version=version_text)
@@ -135,6 +140,13 @@ def main():
     # COLLECT_LEGENDS-Befehl
     collect_legends_parser = subparsers.add_parser("collect_legends", help="Sucht die aktuellen Gemeinde-Legenden zusammen und kopiert sie in den Legenden-Ordner.")
     collect_legends_parser.set_defaults(func=collect_legends)
+    
+    # CREATE_LEGEND-Befehl
+    create_legend_parser = subparsers.add_parser("create_legend", help="Erstellt die HTML-Legenden neu. Entweder für alle aufgeschalteten Gemeinden oder nur für eine einzelne aufgeschaltete Gemeinde.")
+    valid_bfsnr = range(300, 1000)
+    valid_bfsnr.append(9999)
+    create_legend_parser.add_argument("BFSNR", type=int, default="9999", choices=valid_bfsnr, nargs='?', help="BFSNR der Gemeinde, deren HTML-Legende aktualisiert werden soll.")
+    create_legend_parser.set_defaults(func=create_legend)
     
     args = parser.parse_args()
     args.func(args)
