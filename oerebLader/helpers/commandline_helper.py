@@ -77,7 +77,7 @@ def collect_legends(args):
     print("Collect_legends SUCCESSFUL!")
     
 def create_legend(args):
-    oerebLader.create_legend.create_legend.run_create_legend(args.BFSNR)
+    oerebLader.create_legend.create_legend.run_create_legend(args.BFSNR, args.MODE)
     print("Create_legend SUCCESSFUL!")
     
 def main():
@@ -144,8 +144,10 @@ def main():
     # CREATE_LEGEND-Befehl
     create_legend_parser = subparsers.add_parser("create_legend", help="Erstellt die HTML-Legenden neu. Entweder für alle aufgeschalteten Gemeinden oder nur für eine einzelne aufgeschaltete Gemeinde.")
     valid_bfsnr = range(300, 1000)
-    valid_bfsnr.append(9999)
-    create_legend_parser.add_argument("BFSNR", type=int, default="9999", choices=valid_bfsnr, nargs='?', help="BFSNR der Gemeinde, deren HTML-Legende aktualisiert werden soll.")
+    valid_bfsnr = map(unicode, valid_bfsnr)
+    valid_bfsnr.append("ALL")
+    create_legend_parser.add_argument("BFSNR", choices=valid_bfsnr, nargs='?', help="BFSNR der Gemeinde, deren HTML-Legende aktualisiert werden soll.")
+    create_legend_parser.add_argument("MODE", choices=['oereb','oerebpruef'], help="Welche Legende soll erstellt werden? Prüflegende (oerebpruef) oder öffentliche Legende (oereb).")
     create_legend_parser.set_defaults(func=create_legend)
     
     args = parser.parse_args()
