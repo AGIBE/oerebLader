@@ -123,6 +123,27 @@ def release_mapfiles(config, logger, valid_art):
     else:
         logger.warn("Das Repository hat keine Änderungen detektiert.")
         logger.warn("Es wird nichts committed.")
+        
+def update_transferdate(config, logger, liefereinheiten, dailyMode):
+
+    logger.info("Ermittle Themen, deren Transferdatum aktualisiert werden muss.")    
+    themes_sql = "select distinct the_id from subthema where sth_id in (select distinct sth_id from eigentumsbeschraenkung where eib_liefereinheit in " + liefereinheiten + ") ORDER BY the_id"
+    themes_result = oerebLader.helpers.sql_helper.readSQL(config['OEREB2_WORK']['connection_string'], themes_sql)
+    
+    transfer_date = datetime.date.today().isoformat()
+    
+    for tr in themes_result:
+        logger.info("Update Thema " + unicode(tr[0]))
+        transfer_date_sql = "update thema set the_transferdate=TO_DATE('" + transfer_date + "', 'YYYY-MM-DD') where the_id=" + unicode(tr[0])
+        logger.info(transfer_date_sql)
+        logger.info("VEK2 wird aktualisiert.")
+        oerebLader.helpers.sql_helper.writeSQL(config['OEREB2_VEK2']['connection_string'], transfer_date_sql)
+        
+        # Tagesaktuelles Release - VEK1 wird ebenfalls aktualisiert.
+        if dailyMode:
+            logger.info("VEK1 wird aktualisiert.")
+            oerebLader.helpers.sql_helper.writeSQL(config['OEREB2_VEK1']['connection_string'], transfer_date_sql)
+
 
 def run_release(dailyMode):
     config = oerebLader.helpers.config.get_config()
@@ -259,6 +280,11 @@ def run_release(dailyMode):
         # Mapfiles kopieren
         logger.info("Mapfiles werden kopiert (oerebpruef->oereb)...")
         release_mapfiles(config, logger, valid_art)
+        
+        # Nachführungsdatum in Tabelle THEMA schreiben
+        logger.info("Nachführungsdaten in der Tabelle THEMA wird aktualisiert.")
+        update_transferdate(config, logger, liefereinheiten_joined, dailyMode)
+        
         
         # GeoDB-Tabellen schreiben (Flag, Task)
         # sowie GeoDB-Taskid in die TICKET-Tabelle zurückschreiben
