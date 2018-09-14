@@ -30,7 +30,7 @@ def process_zip(zip_url):
             if name.endswith(".xtf") and "lv95" in name:
                 xtf_filename = os.path.join(tempDir, name)
                 zip_file.extract(name, tempDir)
-            if name.endswith("1_3.xml"):
+            if name.endswith("1_4.xml"):
                 xml_filename = os.path.join(tempDir, name)
                 zip_file.extract(name, tempDir)
         zip_file.close()
