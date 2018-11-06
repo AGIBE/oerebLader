@@ -25,8 +25,10 @@ def run(config):
     excel_file_amt = os.path.join(config['LIEFEREINHEIT']['ts_source'], "AMT_" + unicode(config['LIEFEREINHEIT']['id']) + ".xlsx")
     excel_file_darstellungsdienst = os.path.join(config['LIEFEREINHEIT']['ts_source'], "DARSTELLUNGSDIENST_" + unicode(config['LIEFEREINHEIT']['id']) + ".xlsx")
     if config['GENERAL']['files_be_ch_baseurl'].endswith("/"):
+        legend_fullurl = config['GENERAL']['files_be_ch_baseurl'] + "legenden/GGO/ggo.png"
         legend_baseurl = config['GENERAL']['files_be_ch_baseurl'] + "legenden/GGO/"
     else:
+        legend_fullurl = config['GENERAL']['files_be_ch_baseurl'] + "/legenden/GGO/ggo.png"
         legend_baseurl = config['GENERAL']['files_be_ch_baseurl'] + "/legenden/GGO/"
 
     # Der FMEWorkspaceRunner akzeptiert keine Unicode-Strings!
@@ -50,6 +52,7 @@ def run(config):
         'EXCEL_DARSTELLUNGSDIENST': str(excel_file_darstellungsdienst),
         'EXCEL_AMT': str(excel_file_amt),
         'LEGEND_BASEURL': str(legend_baseurl),
+        'LEGEND_FULLURL': str(legend_fullurl),
         'LIEFEREINHEIT': str(config['LIEFEREINHEIT']['id']),
         'LOGFILE': str(fme_logfile)
     }
