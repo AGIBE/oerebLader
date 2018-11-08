@@ -15,6 +15,7 @@ import oerebLader.workflows.w10_sizoplan
 import oerebLader.workflows.w11_prjzflug
 import oerebLader.workflows.w12_nplwald_bern
 import oerebLader.workflows.w13_baulnstr
+import oerebLader.workflows.w14_ggo
 import sys
 
 #TODO: Import NPLKSTRA mit THE_ID=20 umsetzen
@@ -37,28 +38,27 @@ def run_workflow(ticketnr):
         print("Der Import wird nicht ausgefuehrt.")
 
 def is_valid_ticket(ticketnr, config):
-    
+
     valid_ticket = False
-    
+
     valid_ticket_sql = "SELECT id, status FROM ticket WHERE id=" + unicode(ticketnr)
     results = oerebLader.helpers.sql_helper.readSQL(config['OEREB2_WORK']['connection_string'], valid_ticket_sql)
-    
+
     if len(results) == 1:
         status = results[0][1]
         if status == 1:
             valid_ticket = True
-    
+
     return valid_ticket
 
 def get_workflow_for_ticket(ticketnr, config):
     workflow_ticket_sql = "select ticket.id, liefereinheit.WORKFLOW from ticket left join liefereinheit on ticket.LIEFEREINHEIT=liefereinheit.ID where ticket.ID=" + unicode(ticketnr)
-    
+
     results = oerebLader.helpers.sql_helper.readSQL(config['OEREB2_WORK']['connection_string'], workflow_ticket_sql)
-    
+
     workflow = ""
-    
+
     if len(results) == 1:
         workflow = results[0][1]
-        
+
     return workflow
-    

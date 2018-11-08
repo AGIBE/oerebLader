@@ -2,19 +2,26 @@
 #! <WORKSPACE
 #    Command-line to run this workspace:
 #        "C:\Program Files (x86)\FME\fme.exe" C:\Daten\repos\oerebLader\oerebLader\scripts\s60_import_ggo.fmw
-#              --SourceDataset_GEODATABASE_FILE "Y:\Rampe\GGO\GGO.gdb"
-#              --DestDataset_POSTGIS "GEODB_WORK_PG"
-#              --DestDataset_ORACLE_NONSPATIAL "WORK<openparen>OEREB2<closeparen>_ORAKLE"
-#              --OUTPUT_RV_URL "https://oerebfiles-test.apps.be.ch/9984/"
-#              --INPUT_RV_DIR "\\geoda.infra.be.ch\arbeit\Rampe\GGO\RV"
-#              --OUTPUT_RV_DIR "\\a4pu-cfs-oereb.infra.be.ch\a4pu-cfs-oereb\9984"
-#              --DestDataset_FILECOPY "C:\Windows\Temp"
-#              --DestDataset_FILECOPY_3 "C:\Windows\Temp"
-#              --SourceDataset_XLSXR "Y:\Anwend\OEREBK\Data\9984_GeschuetzteGeologischeObjekte\AMT_9984.xlsx"
-#              --SourceDataset_XLSXR_3 "Y:\Anwend\OEREBK\Data\9984_GeschuetzteGeologischeObjekte\DARSTELLUNGSDIENST_9984.xlsx"
-#              --LIEFEREINHEIT "9984"
-#              --LEGEND_BASEURL "https://oerebfiles.apps.be.ch/legenden/GGO/"
-#              --LEGEND_FULLURL "https://oerebfiles.apps.be.ch/legenden/GGO/ggo.png"
+#              --FGDB ""
+#              --OUTPUT_RV_URL ""
+#              --INPUT_RV_DIR ""
+#              --OUTPUT_RV_DIR ""
+#              --EXCEL_AMT ""
+#              --EXCEL_DARSTELLUNGSDIENST ""
+#              --LIEFEREINHEIT ""
+#              --LEGEND_BASEURL ""
+#              --LEGEND_FULLURL ""
+#              --LOGFILE ""
+#              --WORK_CONNECTION ""
+#              --GEODB_PG_DATABASE ""
+#              --GEODB_PG_USERNAME ""
+#              --GEODB_PG_PASSWORD ""
+#              --GEODB_PG_HOST ""
+#              --GEODB_PG_PORT ""
+#              --OEREB2_DATABASE ""
+#              --OEREB2_USERNAME ""
+#              --OEREB2_PASSWORD ""
+#              --OEREB2_CONNECTION ""
 #    
 #!   ATTR_TYPE_ENCODING="SDF"
 #!   BEGIN_PYTHON=""
@@ -29,8 +36,8 @@
 #!   END_TCL=""
 #!   EXPLICIT_BOOKMARK_ORDER="false"
 #!   FME_BUILD_NUM="18310"
-#!   FME_DOCUMENT_GUID="ddbf323f-1717-4496-ad97-b9b232cc90d1"
-#!   FME_DOCUMENT_PRIORGUID="396a3b6a-1c9e-4ea8-8495-396082fec669,cc6b9f83-584b-429d-a011-b21b993f550d,7c986f47-7182-478a-afac-7f6f36098607,3f6bb2c8-b583-42e1-aedc-ba354ff935c3,8fe0f761-b5ff-4e08-8d6a-9599183c1424,6fd5cde4-5f3c-48be-b2e1-de0480075171,b537534b-6830-40c4-a061-6589b643cbcb,0e20f45c-f058-4b0f-a6a3-f22748c924dd"
+#!   FME_DOCUMENT_GUID="95eefe42-8736-49ed-bcfe-fc9543fb6509"
+#!   FME_DOCUMENT_PRIORGUID="396a3b6a-1c9e-4ea8-8495-396082fec669,cc6b9f83-584b-429d-a011-b21b993f550d,7c986f47-7182-478a-afac-7f6f36098607,3f6bb2c8-b583-42e1-aedc-ba354ff935c3,8fe0f761-b5ff-4e08-8d6a-9599183c1424,6fd5cde4-5f3c-48be-b2e1-de0480075171,b537534b-6830-40c4-a061-6589b643cbcb,0e20f45c-f058-4b0f-a6a3-f22748c924dd,ddbf323f-1717-4496-ad97-b9b232cc90d1"
 #!   FME_GEOMETRY_HANDLING="Enhanced"
 #!   FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
 #!   FME_REPROJECTION_ENGINE="FME"
@@ -39,8 +46,8 @@
 #!   HISTORY=""
 #!   IGNORE_READER_FAILURE="No"
 #!   LAST_SAVE_BUILD="FME(R) 2018.0.1.0 (20180518 - Build 18310 - WIN32)"
-#!   LAST_SAVE_DATE="2018-11-07T15:40:47"
-#!   LOG_FILE=""
+#!   LAST_SAVE_DATE="2018-11-07T17:31:28"
+#!   LOG_FILE="$(LOGFILE)"
 #!   LOG_MAX_RECORDED_FEATURES="200"
 #!   MARKDOWN_DESCRIPTION=""
 #!   MARKDOWN_USAGE=""
@@ -57,7 +64,7 @@
 #!   TITLE=""
 #!   USAGE=""
 #!   USE_MARKDOWN=""
-#!   VIEW_POSITION="-1090.64 18.7502"
+#!   VIEW_POSITION="-1090.64 -1096.89"
 #!   WARN_INVALID_XFORM_PARAM="Yes"
 #!   WORKSPACE_VERSION="1"
 #!   ZOOM_SCALE="100"
@@ -67,7 +74,7 @@
 #!   IS_SOURCE="true"
 #!   ROLE="READER"
 #!   FORMAT="GEODATABASE_FILE"
-#!   DATASET="$(SourceDataset_GEODATABASE_FILE)"
+#!   DATASET="$(FGDB)"
 #!   KEYWORD="GEODATABASE_FILE_1"
 #!   MULTI_GEOM_ALLOWED="false"
 #!   ATTR_MAX_LENGTH="0"
@@ -76,7 +83,7 @@
 #!   WRITE_DEFS="true"
 #!   DEFLINE_TEMPLATE="geodb_type {FME_GEN_GEOMETRY} geodb_where_wwjd &quot;&quot;"
 #!   DEFLINE_ATTRS="true"
-#!   EXPOSABLE_ATTRS="geodb_font_strikethrough boolean geodb_feature_is_simple boolean geodb_dim_line_display smallint geodb_text_lc_textbox_y1 double geodb_dim_extn_line_angle double fme_rotation double geodb_dim_line_x double geodb_text_lc_gap double geodb_text_lc_textbox_y3 double geodb_font_weight smallint fme_basename char(50) geodb_text_character_width double geodb_text_point_scale_factor double geodb_text_lc_style char(20) geodb_start_angle double geodb_text_color char(254) geodb_oid integer geodb_rel_origin_oid integer geodb_dim_end_dimension_z double geodb_junction_feature_count integer geodb_text_char_spacing double geodb_text_lc_margin_bottom double geodb_dim_begin_dimension_y double geodb_dim_end_dimension_x double geodb_from_junction_element_id integer geodb_edge_element_count integer geodb_edge_feature_count integer geodb_dim_end_dimension_y double multi_reader_full_id integer geodb_text_string_with_format_tags char(254) fme_sweep_angle double geodb_rotation double fme_geometry char(50) geodb_text_lc_textbox_x1 double fme_dataset char(50) geodb_text_x_offset double geodb_to_junction_element_id integer multi_reader_keyword char(50) geodb_text_lc_margin_right double geodb_text_size double geodb_metadata_string char(254) geodb_raster_pyramid_resample_type char(100) geodb_subtype_name char(254) geodb_text_lc_textbox_y4 double fme_type char(50) geodb_text_lc_accent_bar_color char(50) fme_color char(50) geodb_dim_text_x double geodb_text_clip boolean geodb_text_y_offset double geodb_junction_element_count integer fme_text_string char(50) geodb_feature_dataset char(254) fme_start_angle double geodb_h_align char(50) geodb_dim_length double geodb_font_name char(254) geodb_secondary_axis double geodb_v_align char(50) geodb_font_size double geodb_color char(50) geodb_dim_type smallint geodb_raster_compression_quality integer geodb_text_part_count integer geodb_type char(25) geodb_text_word_spacing double geodb_text_break_char integer geodb_text_leader_line_width double geodb_feature_has_relationships boolean geodb_text_ref_scale double geodb_text_scale boolean geodb_dim_begin_dimension_x double geodb_font_underline boolean geodb_rel_destination_oid integer geodb_linked_feature_id integer geodb_raster_pyramid_level integer geodb_text_lc_textbox_x4 double geodb_feature_class_alias char(254) geodb_dim_line_z double geodb_text_line_spacing double geodb_dim_text_y double geodb_raster_compression_type char(100) geodb_dim_line_y double geodb_font_charset smallint fme_fill_color char(50) geodb_dim_style_id integer fme_secondary_axis double geodb_dim_using_custom_length boolean geodb_dim_custom_length double geodb_text_lc_margin_top double geodb_element_index integer geodb_text_lc_margin_left double geodb_right_to_left boolean geodb_topological_configuration char(6) geodb_dim_marker_display smallint geodb_dim_begin_dimension_z double geodb_text_lc_accent_bar_width double geodb_sweep_angle double multi_reader_type char(50) fme_feature_type char(50) geodb_ancillary_role char(7) geodb_font_bold boolean geodb_text_leader_line_color char(50) geodb_text_lc_textbox_x3 double geodb_font_italic boolean geodb_text_leader_line char(254) geodb_text_leader_line_anchor_point char(254) geodb_dim_extn_line_display smallint geodb_text_angle double geodb_dim_text_z double geodb_primary_axis double multi_reader_id integer geodb_text_string char(254) fme_primary_axis double geodb_text_lc_textbox_y2 double geodb_anno_class_id integer geodb_text_lc_textbox_x2 double geodb_element_id integer geodb_dim_text_angle double geodb_text_leader_line_tolerance double geodb_measures char(254) geodb_symbol_id integer fme_text_size double"
+#!   EXPOSABLE_ATTRS="geodb_from_junction_element_id integer geodb_dim_type smallint geodb_dim_end_dimension_z double geodb_dim_begin_dimension_x double geodb_text_string char(254) geodb_dim_marker_display smallint geodb_font_size double fme_text_size double geodb_raster_compression_type char(100) geodb_element_index integer geodb_rel_origin_oid integer geodb_dim_using_custom_length boolean geodb_junction_feature_count integer geodb_font_underline boolean fme_basename char(50) geodb_font_weight smallint geodb_font_charset smallint geodb_secondary_axis double geodb_text_part_count integer geodb_text_lc_textbox_y1 double geodb_color char(50) geodb_font_italic boolean geodb_dim_length double geodb_font_bold boolean geodb_text_clip boolean multi_reader_keyword char(50) geodb_raster_pyramid_resample_type char(100) fme_sweep_angle double geodb_start_angle double geodb_text_lc_textbox_x1 double geodb_rel_destination_oid integer geodb_text_size double geodb_dim_extn_line_display smallint geodb_text_lc_textbox_x4 double geodb_font_name char(254) geodb_edge_feature_count integer geodb_oid integer geodb_text_lc_margin_right double geodb_text_x_offset double geodb_text_lc_textbox_y4 double geodb_dim_extn_line_angle double fme_start_angle double geodb_anno_class_id integer geodb_dim_begin_dimension_y double geodb_dim_text_z double geodb_edge_element_count integer geodb_junction_element_count integer geodb_text_word_spacing double geodb_text_leader_line char(254) geodb_text_lc_accent_bar_color char(50) geodb_text_char_spacing double multi_reader_id integer geodb_dim_line_display smallint geodb_feature_dataset char(254) geodb_text_lc_gap double geodb_dim_text_angle double geodb_text_string_with_format_tags char(254) geodb_rotation double geodb_feature_has_relationships boolean geodb_text_lc_textbox_y2 double geodb_element_id integer geodb_text_leader_line_width double fme_primary_axis double geodb_v_align char(50) geodb_raster_compression_quality integer geodb_feature_class_alias char(254) geodb_text_lc_margin_top double geodb_text_break_char integer geodb_dim_style_id integer geodb_metadata_string char(254) geodb_raster_pyramid_level integer geodb_dim_line_z double geodb_text_lc_textbox_x2 double geodb_to_junction_element_id integer geodb_subtype_name char(254) geodb_text_lc_margin_bottom double fme_type char(50) fme_secondary_axis double geodb_right_to_left boolean geodb_dim_custom_length double geodb_dim_text_y double fme_fill_color char(50) geodb_ancillary_role char(7) fme_rotation double geodb_text_y_offset double geodb_dim_begin_dimension_z double geodb_dim_text_x double geodb_h_align char(50) fme_text_string char(50) geodb_text_lc_textbox_x3 double geodb_primary_axis double geodb_text_leader_line_tolerance double fme_geometry char(50) geodb_text_scale boolean geodb_feature_is_simple boolean geodb_dim_end_dimension_y double geodb_type char(25) geodb_dim_line_x double geodb_symbol_id integer geodb_text_character_width double multi_reader_full_id integer geodb_text_point_scale_factor double geodb_dim_end_dimension_x double geodb_text_ref_scale double geodb_text_leader_line_color char(50) geodb_text_color char(254) geodb_measures char(254) geodb_dim_line_y double geodb_text_lc_margin_left double geodb_text_lc_accent_bar_width double geodb_text_line_spacing double geodb_sweep_angle double multi_reader_type char(50) geodb_text_leader_line_anchor_point char(254) geodb_topological_configuration char(6) fme_feature_type char(50) fme_color char(50) geodb_font_strikethrough boolean fme_dataset char(50) geodb_linked_feature_id integer geodb_text_lc_textbox_y3 double geodb_text_lc_style char(20) geodb_text_angle double"
 #!   DEFLINE_PARMS="&quot;GUI OPTIONAL NAMEDGROUP geodb_table_settings_group geodb_where_wwjd Table Settings&quot; &quot;&quot; &quot;GUI OPTIONAL TEXT_EDIT_SQL_CFG geodb_where_wwjd MODE,WHERE WHERE Clause&quot; &quot;&quot; "
 #!   ATTR_INDEX_TYPES=""
 #!   ATTR_NAME_INVALID_CHARS=""
@@ -137,7 +144,7 @@
 #!   IS_SOURCE="true"
 #!   ROLE="READER"
 #!   FORMAT="XLSXR"
-#!   DATASET="$(SourceDataset_XLSXR)"
+#!   DATASET="$(EXCEL_AMT)"
 #!   KEYWORD="XLSXR_1"
 #!   MULTI_GEOM_ALLOWED="false"
 #!   ATTR_MAX_LENGTH="0"
@@ -146,7 +153,7 @@
 #!   WRITE_DEFS="true"
 #!   DEFLINE_TEMPLATE="xlsx_start_row &quot;&quot; xlsx_end_row &quot;&quot;"
 #!   DEFLINE_ATTRS="true"
-#!   EXPOSABLE_ATTRS="fme_basename char(50) multi_reader_keyword char(50) fme_text_string char(50) fme_sweep_angle number(31,15) fme_color char(50) fme_rotation number(31,15) fme_dataset char(50) fme_secondary_axis number(31,15) fme_type char(50) fme_feature_type char(50) fme_text_size number(31,15) fme_start_angle number(31,15) multi_reader_type char(50) fme_fill_color char(50) xlsx_row_id number(11,0) fme_geometry char(50) multi_reader_full_id number(11,0) multi_reader_id number(11,0) fme_primary_axis number(31,15)"
+#!   EXPOSABLE_ATTRS="fme_sweep_angle number(31,15) xlsx_row_id number(11,0) fme_basename char(50) multi_reader_full_id number(11,0) fme_feature_type char(50) fme_type char(50) fme_dataset char(50) fme_secondary_axis number(31,15) fme_primary_axis number(31,15) fme_text_string char(50) fme_start_angle number(31,15) fme_geometry char(50) multi_reader_type char(50) fme_text_size number(31,15) multi_reader_keyword char(50) multi_reader_id number(11,0) fme_fill_color char(50) fme_rotation number(31,15) fme_color char(50)"
 #!   DEFLINE_PARMS="&quot;GUI OPTIONAL NAMEDGROUP xlsx_table_settings_group xlsx_start_row%xlsx_end_row Table&quot; &quot;&quot; &quot;GUI FORCE_DEFS OPTIONAL INTEGER xlsx_start_row Start Row:&quot; &quot;&quot; &quot;GUI FORCE_DEFS OPTIONAL INTEGER xlsx_end_row End Row:&quot; &quot;&quot; "
 #!   ATTR_INDEX_TYPES=""
 #!   ATTR_NAME_INVALID_CHARS=""
@@ -195,7 +202,7 @@
 #!   IS_SOURCE="true"
 #!   ROLE="READER"
 #!   FORMAT="XLSXR"
-#!   DATASET="$(SourceDataset_XLSXR_3)"
+#!   DATASET="$(EXCEL_DARSTELLUNGSDIENST)"
 #!   KEYWORD="XLSXR_2"
 #!   MULTI_GEOM_ALLOWED="false"
 #!   ATTR_MAX_LENGTH="0"
@@ -204,7 +211,7 @@
 #!   WRITE_DEFS="true"
 #!   DEFLINE_TEMPLATE="xlsx_start_row &quot;&quot; xlsx_end_row &quot;&quot;"
 #!   DEFLINE_ATTRS="true"
-#!   EXPOSABLE_ATTRS="fme_basename char(50) multi_reader_keyword char(50) fme_text_string char(50) fme_sweep_angle number(31,15) fme_color char(50) fme_rotation number(31,15) fme_dataset char(50) fme_secondary_axis number(31,15) fme_type char(50) fme_feature_type char(50) fme_text_size number(31,15) fme_start_angle number(31,15) multi_reader_type char(50) fme_fill_color char(50) xlsx_row_id number(11,0) fme_geometry char(50) multi_reader_full_id number(11,0) multi_reader_id number(11,0) fme_primary_axis number(31,15)"
+#!   EXPOSABLE_ATTRS="fme_sweep_angle number(31,15) xlsx_row_id number(11,0) fme_basename char(50) multi_reader_full_id number(11,0) fme_feature_type char(50) fme_type char(50) fme_dataset char(50) fme_secondary_axis number(31,15) fme_primary_axis number(31,15) fme_text_string char(50) fme_start_angle number(31,15) fme_geometry char(50) multi_reader_type char(50) fme_text_size number(31,15) multi_reader_keyword char(50) multi_reader_id number(11,0) fme_fill_color char(50) fme_rotation number(31,15) fme_color char(50)"
 #!   DEFLINE_PARMS="&quot;GUI OPTIONAL NAMEDGROUP xlsx_table_settings_group xlsx_start_row%xlsx_end_row Table&quot; &quot;&quot; &quot;GUI FORCE_DEFS OPTIONAL INTEGER xlsx_start_row Start Row:&quot; &quot;&quot; &quot;GUI FORCE_DEFS OPTIONAL INTEGER xlsx_end_row End Row:&quot; &quot;&quot; "
 #!   ATTR_INDEX_TYPES=""
 #!   ATTR_NAME_INVALID_CHARS=""
@@ -262,7 +269,7 @@
 #!   WRITE_DEFS="true"
 #!   DEFLINE_TEMPLATE="geodb_type {FME_GEN_GEOMETRY} GEODB_UPDATE_KEY_COLUMNS &quot;&quot; GEODB_DROP_TABLE NO GEODB_TRUNCATE_TABLE NO fme_feature_operation INSERT fme_table_handling CREATE_IF_MISSING fme_selection_method MATCH_COLUMNS fme_match_columns &quot;&quot; fme_where_builder_clause &quot;&quot; fme_update_geometry YES GEODB_OBJECT_ID_NAME OBJECTID GEODB_OBJECT_ID_ALIAS OBJECTID GEODB_SHAPE_NAME SHAPE GEODB_SHAPE_ALIAS SHAPE GEODB_CONFIG_KEYWORD DEFAULTS GEODB_FEATURE_DATASET &quot;&quot; GEODB_GRID{1} &quot;&quot; GEODB_AVG_NUM_POINTS &quot;&quot; GEODB_XORIGIN &quot;&quot; GEODB_YORIGIN &quot;&quot; GEODB_XYSCALE &quot;&quot; GEODB_HAS_Z_VALUES &quot;&quot; GEODB_ZORIGIN &quot;&quot; GEODB_ZSCALE &quot;&quot; GEODB_HAS_MEASURES &quot;&quot; GEODB_MEASURES_ORIGIN &quot;&quot; GEODB_MEASURES_SCALE &quot;&quot; GEODB_ANNO_REFERENCE_SCALE &quot;&quot;"
 #!   DEFLINE_ATTRS="true"
-#!   EXPOSABLE_ATTRS="geodb_font_strikethrough boolean geodb_dim_line_display smallint geodb_dim_extn_line_angle double fme_rotation double geodb_dim_line_x double geodb_text_lc_gap double geodb_font_weight smallint fme_basename char(50) geodb_text_character_width double geodb_text_lc_style char(20) geodb_start_angle double geodb_text_color char(254) geodb_dim_end_dimension_z double geodb_text_char_spacing double geodb_text_lc_margin_bottom double geodb_dim_begin_dimension_y double geodb_dim_end_dimension_x double geodb_dim_end_dimension_y double geodb_text_x_coord double geodb_text_string_with_format_tags char(254) fme_sweep_angle double geodb_rotation double geodb_text_feat_class_name char(254) fme_geometry char(50) fme_dataset char(50) geodb_text_x_offset double geodb_text_lc_margin_right double geodb_text_size double geodb_metadata_string char(254) geodb_raster_pyramid_resample_type char(100) geodb_subtype_name char(254) fme_db_operation char(8) fme_type char(50) geodb_text_lc_accent_bar_color char(50) fme_color char(50) geodb_dim_text_x double geodb_text_clip boolean geodb_text_y_offset double fme_where char(254) fme_text_string char(50) geodb_feature_dataset char(254) fme_start_angle double geodb_h_align char(50) geodb_dim_length double geodb_font_name char(254) geodb_secondary_axis double geodb_v_align char(50) geodb_allow_symbol_overrides boolean geodb_font_size double geodb_color char(50) geodb_dim_type smallint geodb_raster_compression_quality integer geodb_type char(25) geodb_text_word_spacing double geodb_text_break_char integer geodb_text_leader_line_width double geodb_text_ref_scale double geodb_text_scale boolean geodb_dim_begin_dimension_x double geodb_font_underline boolean geodb_linked_feature_id integer geodb_raster_pyramid_level integer geodb_feature_class_alias char(254) geodb_dim_line_z double geodb_text_y_coord double geodb_text_line_spacing double geodb_dim_text_y double geodb_raster_compression_type char(100) geodb_dim_line_y double geodb_font_charset smallint geodb_dim_style_id integer fme_fill_color char(50) fme_secondary_axis double geodb_dim_using_custom_length boolean geodb_dim_custom_length double geodb_text_lc_margin_top double geodb_text_lc_margin_left double geodb_right_to_left boolean geodb_dim_marker_display smallint geodb_dim_begin_dimension_z double geodb_text_lc_accent_bar_width double geodb_sweep_angle double fme_feature_type char(50) geodb_ancillary_role char(7) geodb_font_bold boolean geodb_text_leader_line_color char(50) geodb_font_italic boolean geodb_text_leader_line char(254) geodb_text_leader_line_anchor_point char(254) geodb_dim_extn_line_display smallint geodb_text_angle double geodb_dim_text_z double geodb_primary_axis double geodb_text_string char(254) fme_primary_axis double geodb_anno_class_id integer geodb_dim_text_angle double geodb_text_leader_line_tolerance double geodb_measures char(254) geodb_symbol_id integer fme_text_size double"
+#!   EXPOSABLE_ATTRS="geodb_dim_type smallint geodb_dim_begin_dimension_x double fme_db_operation char(8) geodb_dim_end_dimension_z double geodb_text_string char(254) geodb_dim_marker_display smallint geodb_font_size double fme_text_size double geodb_raster_compression_type char(100) geodb_dim_using_custom_length boolean geodb_font_underline boolean fme_basename char(50) geodb_font_weight smallint geodb_font_charset smallint geodb_secondary_axis double geodb_text_feat_class_name char(254) geodb_color char(50) geodb_font_italic boolean geodb_dim_length double geodb_font_bold boolean geodb_text_clip boolean geodb_raster_pyramid_resample_type char(100) fme_sweep_angle double geodb_start_angle double geodb_text_size double geodb_dim_extn_line_display smallint geodb_font_name char(254) geodb_text_x_coord double geodb_text_lc_margin_right double geodb_text_x_offset double geodb_dim_extn_line_angle double fme_start_angle double geodb_allow_symbol_overrides boolean geodb_anno_class_id integer geodb_dim_begin_dimension_y double geodb_dim_text_z double geodb_text_word_spacing double geodb_text_leader_line char(254) geodb_text_lc_accent_bar_color char(50) geodb_text_char_spacing double geodb_dim_line_display smallint geodb_feature_dataset char(254) geodb_text_lc_gap double geodb_dim_text_angle double geodb_text_string_with_format_tags char(254) geodb_rotation double geodb_text_leader_line_width double fme_primary_axis double geodb_v_align char(50) geodb_raster_compression_quality integer geodb_feature_class_alias char(254) geodb_text_lc_margin_top double geodb_text_break_char integer geodb_dim_style_id integer geodb_metadata_string char(254) geodb_dim_line_z double geodb_raster_pyramid_level integer geodb_subtype_name char(254) geodb_text_lc_margin_bottom double fme_type char(50) fme_secondary_axis double geodb_right_to_left boolean geodb_dim_custom_length double geodb_dim_text_y double geodb_text_y_coord double fme_fill_color char(50) geodb_ancillary_role char(7) fme_rotation double geodb_text_y_offset double geodb_dim_begin_dimension_z double geodb_dim_text_x double geodb_h_align char(50) fme_text_string char(50) geodb_primary_axis double geodb_text_leader_line_tolerance double fme_geometry char(50) geodb_text_scale boolean geodb_dim_end_dimension_y double geodb_type char(25) geodb_dim_line_x double geodb_symbol_id integer geodb_text_character_width double geodb_dim_end_dimension_x double geodb_text_ref_scale double geodb_text_leader_line_color char(50) geodb_text_color char(254) fme_where char(254) geodb_measures char(254) geodb_dim_line_y double geodb_text_lc_margin_left double geodb_text_lc_accent_bar_width double geodb_text_line_spacing double geodb_sweep_angle double geodb_text_leader_line_anchor_point char(254) fme_feature_type char(50) fme_color char(50) geodb_linked_feature_id integer geodb_font_strikethrough boolean fme_dataset char(50) geodb_text_lc_style char(20) geodb_text_angle double"
 #!   DEFLINE_PARMS="&quot;GUI OPTIONAL NAMEDGROUP fme_configuration_group fme_configuration_common_group%fme_spatial_group%fme_advanced_group%oracle_advanced_group Table&quot; &quot;&quot; &quot;GUI OPTIONAL NAMEDGROUP fme_configuration_common_group fme_feature_operation%fme_table_handling%oracle_model%fme_update_geometry%fme_selection_group%fme_table_creation_group General&quot; &quot;&quot; &quot;GUI ACTIVECHOICE_LOOKUP fme_feature_operation Insert,INSERT,fme_update_geometry,fme_selection_group%Update,UPDATE,++fme_table_handling+USE_EXISTING,++fme_selection_group+FME_DISCLOSURE_OPEN%Delete,DELETE,++fme_table_handling+USE_EXISTING,fme_update_geometry,++fme_selection_group+FME_DISCLOSURE_OPEN,fme_spatial_group,fme_advanced_group,oracle_sequenced_cols%&lt;at&gt;Value&lt;openparen&gt;fme_db_operation&lt;closeparen&gt;,MULTIPLE,++fme_table_handling+USE_EXISTING,++fme_selection_group+FME_DISCLOSURE_OPEN Feature Operation&quot; INSERT &quot;GUI ACTIVECHOICE_LOOKUP fme_table_handling Use&lt;space&gt;Existing,USE_EXISTING,fme_table_creation_group%Create&lt;space&gt;If&lt;space&gt;Needed,CREATE_IF_MISSING%Drop&lt;space&gt;and&lt;space&gt;Create,DROP_CREATE%Truncate&lt;space&gt;Existing,TRUNCATE_EXISTING,fme_table_creation_group Table Handling&quot; CREATE_IF_MISSING &quot;GUI WHOLE_LINE LOOKUP_CHOICE fme_update_geometry Yes,YES%No,NO Update Spatial Column(s)&quot; YES &quot;GUI OPTIONAL DISCLOSUREGROUP fme_selection_group fme_selection_method Row Selection&quot; &quot;&quot; &quot;GUI OPTIONAL WHOLE_LINE RADIOPARAMETERGROUP fme_selection_method fme_match_columns,MATCH_COLUMNS%fme_where_builder_clause,BUILDER Row Selection Method&quot; MATCH_COLUMNS &quot;GUI WHOLE_LINE ATTRLIST_COMMAS fme_match_columns \&quot; \&quot; Match Columns&quot; &quot;&quot; &quot;GUI WHOLE_LINE TEXT_EDIT_SQL_CFG_OR_ATTR fme_where_builder_clause MODE,WHERE WHERE Clause&quot; &quot;&quot; &quot;GUI OPTIONAL DISCLOSUREGROUP fme_table_creation_group FME_DISCLOSURE_OPEN%GEODB_FEATURE_DATASET%GEODB_HAS_Z_VALUES%GEODB_HAS_MEASURES%GEODB_ORIGIN_GROUP%GEODB_ANNO_GROUP%GEODB_ADVANCED_GROUP Table Creation Parameters&quot; &quot;&quot; &quot;GUI OPTIONAL DISCLOSUREGROUP GEODB_ORIGIN_GROUP GEODB_XY_GROUP%GEODB_Z_GROUP%GEODB_MEASURES_GROUP Origin and Scale&quot; &quot;&quot; &quot;GUI OPTIONAL DISCLOSUREGROUP GEODB_ANNO_GROUP GEODB_ANNO_REFERENCE_SCALE Annotation&quot; &quot;&quot; &quot;GUI OPTIONAL DISCLOSUREGROUP GEODB_ADVANCED_GROUP GEODB_OBJECT_ID_NAME%GEODB_OBJECT_ID_ALIAS%GEODB_SHAPE_NAME%GEODB_SHAPE_ALIAS%GEODB_CONFIG_KEYWORD%GEODB_GRID{1}%GEODB_AVG_NUM_POINTS Advanced&quot; &quot;&quot; &quot;GUI OPTIONAL DISCLOSUREGROUP GEODB_XY_GROUP GEODB_XORIGIN%GEODB_YORIGIN%GEODB_XYSCALE X/Y&quot; &quot;&quot; &quot;GUI OPTIONAL DISCLOSUREGROUP GEODB_Z_GROUP GEODB_ZORIGIN%GEODB_ZSCALE Z&quot; &quot;&quot; &quot;GUI OPTIONAL DISCLOSUREGROUP GEODB_MEASURES_GROUP GEODB_MEASURES_ORIGIN%GEODB_MEASURES_SCALE Measures&quot; &quot;&quot; &quot;GUI TEXT GEODB_OBJECT_ID_NAME Object ID Field&quot; OBJECTID &quot;GUI TEXT GEODB_OBJECT_ID_ALIAS Object ID Alias&quot; OBJECTID &quot;GUI TEXT GEODB_SHAPE_NAME Shape Field&quot; SHAPE &quot;GUI TEXT GEODB_SHAPE_ALIAS Shape Alias&quot; SHAPE &quot;GUI TEXT GEODB_CONFIG_KEYWORD Configuration Keyword&quot; DEFAULTS &quot;GUI OPTIONAL TEXT GEODB_FEATURE_DATASET Feature Dataset&quot; &quot;&quot; &quot;GUI OPTIONAL FLOAT GEODB_GRID{1} Grid 1&quot; &quot;&quot; &quot;GUI OPTIONAL INTEGER GEODB_AVG_NUM_POINTS Average Number of Points&quot; &quot;&quot; &quot;GUI OPTIONAL FLOAT GEODB_XORIGIN X Origin&quot; &quot;&quot; &quot;GUI OPTIONAL FLOAT GEODB_YORIGIN Y Origin&quot; &quot;&quot; &quot;GUI OPTIONAL FLOAT GEODB_XYSCALE X/Y Scale&quot; &quot;&quot; &quot;GUI OPTIONAL CHOICE GEODB_HAS_Z_VALUES yes%no Contains Z Values&quot; &quot;&quot; &quot;GUI OPTIONAL FLOAT GEODB_ZORIGIN Z Origin&quot; &quot;&quot; &quot;GUI OPTIONAL FLOAT GEODB_ZSCALE Z Scale&quot; &quot;&quot; &quot;GUI OPTIONAL CHOICE GEODB_HAS_MEASURES yes%no Contains Measures&quot; &quot;&quot; &quot;GUI OPTIONAL FLOAT GEODB_MEASURES_ORIGIN Measure Origin&quot; &quot;&quot; &quot;GUI OPTIONAL FLOAT GEODB_MEASURES_SCALE Measure Scale&quot; &quot;&quot; &quot;GUI OPTIONAL FLOAT GEODB_ANNO_REFERENCE_SCALE Annotation Reference Scale&quot; &quot;&quot; "
 #!   ATTR_INDEX_TYPES=""
 #!   ATTR_NAME_INVALID_CHARS=":. %-#[]&quot;()!?*&apos;&amp;+\/{}|="
@@ -271,6 +278,7 @@
 #!   DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
 #!   DATASET_TYPE="NONE"
 #!   GENERATE_FME_BUILD_NUM="18310"
+#!   NAME="GEODB_WORK_ORACLE"
 #!   COORDSYS="EPSG:2056"
 #! >
 #! <METAFILE_PARAMETER
@@ -326,7 +334,7 @@
 #!   IS_SOURCE="false"
 #!   ROLE="WRITER"
 #!   FORMAT="POSTGIS"
-#!   DATASET="$(DestDataset_POSTGIS)"
+#!   DATASET="$(GEODB_PG_DATABASE)"
 #!   KEYWORD="POSTGIS_1"
 #!   MULTI_GEOM_ALLOWED="true"
 #!   ATTR_MAX_LENGTH="63"
@@ -335,7 +343,7 @@
 #!   WRITE_DEFS="true"
 #!   DEFLINE_TEMPLATE="postgis_type postgis_geometry postgis_mode &quot;&quot; postgis_sql_key_columns &quot;&quot; postgis_drop_table &quot;&quot; postgis_truncate_table &quot;&quot; fme_feature_operation INSERT fme_table_handling CREATE_IF_MISSING fme_selection_method MATCH_COLUMNS fme_match_columns &quot;&quot; fme_where_builder_clause &quot;&quot; fme_update_geometry YES postgis_create_with_oids NO postgis_create_gist_index YES postgis_spatial_column_type geometry postgis_spatial_column geom postgis_srid &quot;&quot; postgis_vacuum_analyze no postgis_allow_serial_writing NO"
 #!   DEFLINE_ATTRS="true"
-#!   EXPOSABLE_ATTRS="fme_basename char(50) fme_sweep_angle float8 fme_text_string char(50) fme_color char(50) fme_rotation float8 fme_dataset char(50) postgis_type char(50) fme_secondary_axis float8 fme_type char(50) fme_feature_type char(50) fme_text_size float8 fme_start_angle float8 postgis_collection_id int4 fme_fill_color char(50) fme_geometry char(50) fme_primary_axis float8 fme_db_operation char(8) postgis_collection_part_id int4"
+#!   EXPOSABLE_ATTRS="fme_sweep_angle float8 fme_basename char(50) fme_feature_type char(50) fme_type char(50) fme_dataset char(50) postgis_collection_part_id int4 fme_secondary_axis float8 postgis_collection_id int4 postgis_type char(50) fme_db_operation char(8) fme_primary_axis float8 fme_text_string char(50) fme_start_angle float8 fme_geometry char(50) fme_text_size float8 fme_fill_color char(50) fme_rotation float8 fme_color char(50)"
 #!   DEFLINE_PARMS="&quot;GUI OPTIONAL NAMEDGROUP fme_configuration_group fme_configuration_common_group%fme_spatial_group%fme_advanced_group%oracle_advanced_group Table&quot; &quot;&quot; &quot;GUI OPTIONAL NAMEDGROUP fme_configuration_common_group fme_feature_operation%fme_table_handling%oracle_model%fme_update_geometry%fme_selection_group%fme_table_creation_group General&quot; &quot;&quot; &quot;GUI ACTIVECHOICE_LOOKUP fme_feature_operation Insert,INSERT,fme_update_geometry,fme_selection_group%Update,UPDATE,++fme_table_handling+USE_EXISTING,++fme_selection_group+FME_DISCLOSURE_OPEN%Delete,DELETE,++fme_table_handling+USE_EXISTING,fme_update_geometry,++fme_selection_group+FME_DISCLOSURE_OPEN,fme_spatial_group,fme_advanced_group,oracle_sequenced_cols%&lt;at&gt;Value&lt;openparen&gt;fme_db_operation&lt;closeparen&gt;,MULTIPLE,++fme_table_handling+USE_EXISTING,++fme_selection_group+FME_DISCLOSURE_OPEN Feature Operation&quot; INSERT &quot;GUI ACTIVECHOICE_LOOKUP fme_table_handling Use&lt;space&gt;Existing,USE_EXISTING,fme_table_creation_group%Create&lt;space&gt;If&lt;space&gt;Needed,CREATE_IF_MISSING%Drop&lt;space&gt;and&lt;space&gt;Create,DROP_CREATE%Truncate&lt;space&gt;Existing,TRUNCATE_EXISTING,fme_table_creation_group Table Handling&quot; CREATE_IF_MISSING &quot;GUI WHOLE_LINE LOOKUP_CHOICE fme_update_geometry Yes,YES%No,NO Update Spatial Column(s)&quot; YES &quot;GUI OPTIONAL DISCLOSUREGROUP fme_selection_group fme_selection_method Row Selection&quot; &quot;&quot; &quot;GUI OPTIONAL WHOLE_LINE RADIOPARAMETERGROUP fme_selection_method fme_match_columns,MATCH_COLUMNS%fme_where_builder_clause,BUILDER Row Selection Method&quot; MATCH_COLUMNS &quot;GUI WHOLE_LINE ATTRLIST_COMMAS fme_match_columns \&quot; \&quot; Match Columns&quot; &quot;&quot; &quot;GUI WHOLE_LINE TEXT_EDIT_SQL_CFG_OR_ATTR fme_where_builder_clause MODE,WHERE WHERE Clause&quot; &quot;&quot; &quot;GUI OPTIONAL DISCLOSUREGROUP fme_table_creation_group postgis_create_with_oids%postgis_create_gist_index Table Creation Parameters&quot; &quot;&quot; &quot;GUI CHOICE postgis_create_with_oids YES%NO Create With OIDs&quot; NO &quot;GUI CHOICE postgis_create_gist_index YES%NO Create GiST Index&quot; YES &quot;GUI OPTIONAL NAMEDGROUP fme_spatial_group postgis_spatial_column_type%postgis_spatial_column%postgis_srid Spatial&quot; &quot;&quot; &quot;GUI LOOKUP_CHOICE postgis_spatial_column_type Geometry,geometry%Geography,geography Spatial Type&quot; geometry &quot;GUI OPTIONAL WHOLE_LINE TEXT postgis_spatial_column Spatial Column&quot; shape &quot;GUI OPTIONAL FLOAT postgis_srid Spatial Column SRID&quot; &quot;&quot; &quot;GUI OPTIONAL DISCLOSUREGROUP fme_advanced_group postgis_vacuum_analyze%postgis_allow_serial_writing Advanced&quot; &quot;&quot; &quot;GUI CHOICE postgis_vacuum_analyze YES%NO Vacuum Analyze Table&quot; NO &quot;GUI CHOICE postgis_allow_serial_writing YES%NO Allow Serial Column Writing&quot; NO "
 #!   ATTR_INDEX_TYPES="BTree RTree Hash PrimaryKey"
 #!   ATTR_NAME_INVALID_CHARS=". %-#[]&quot;()!?*&apos;&amp;+\/"
@@ -396,7 +404,7 @@
 #!   WRITE_DEFS="true"
 #!   DEFLINE_TEMPLATE="geodb_type {FME_GEN_GEOMETRY} GEODB_UPDATE_KEY_COLUMNS &quot;&quot; GEODB_DROP_TABLE NO GEODB_TRUNCATE_TABLE NO fme_feature_operation INSERT fme_table_handling CREATE_IF_MISSING fme_selection_method MATCH_COLUMNS fme_match_columns &quot;&quot; fme_where_builder_clause &quot;&quot; fme_update_geometry YES GEODB_OBJECT_ID_NAME OBJECTID GEODB_OBJECT_ID_ALIAS OBJECTID GEODB_SHAPE_NAME SHAPE GEODB_SHAPE_ALIAS SHAPE GEODB_CONFIG_KEYWORD DEFAULTS GEODB_FEATURE_DATASET &quot;&quot; GEODB_GRID{1} &quot;&quot; GEODB_AVG_NUM_POINTS &quot;&quot; GEODB_XORIGIN &quot;&quot; GEODB_YORIGIN &quot;&quot; GEODB_XYSCALE &quot;&quot; GEODB_HAS_Z_VALUES &quot;&quot; GEODB_ZORIGIN &quot;&quot; GEODB_ZSCALE &quot;&quot; GEODB_HAS_MEASURES &quot;&quot; GEODB_MEASURES_ORIGIN &quot;&quot; GEODB_MEASURES_SCALE &quot;&quot; GEODB_ANNO_REFERENCE_SCALE &quot;&quot;"
 #!   DEFLINE_ATTRS="true"
-#!   EXPOSABLE_ATTRS="geodb_font_strikethrough boolean geodb_dim_line_display smallint geodb_dim_extn_line_angle double fme_rotation double geodb_dim_line_x double geodb_text_lc_gap double geodb_font_weight smallint fme_basename char(50) geodb_text_character_width double geodb_text_lc_style char(20) geodb_start_angle double geodb_text_color char(254) geodb_dim_end_dimension_z double geodb_text_char_spacing double geodb_text_lc_margin_bottom double geodb_dim_begin_dimension_y double geodb_dim_end_dimension_x double geodb_dim_end_dimension_y double geodb_text_x_coord double geodb_text_string_with_format_tags char(254) fme_sweep_angle double geodb_rotation double geodb_text_feat_class_name char(254) fme_geometry char(50) fme_dataset char(50) geodb_text_x_offset double geodb_text_lc_margin_right double geodb_text_size double geodb_metadata_string char(254) geodb_raster_pyramid_resample_type char(100) geodb_subtype_name char(254) fme_db_operation char(8) fme_type char(50) geodb_text_lc_accent_bar_color char(50) fme_color char(50) geodb_dim_text_x double geodb_text_clip boolean geodb_text_y_offset double fme_where char(254) fme_text_string char(50) geodb_feature_dataset char(254) fme_start_angle double geodb_h_align char(50) geodb_dim_length double geodb_font_name char(254) geodb_secondary_axis double geodb_v_align char(50) geodb_allow_symbol_overrides boolean geodb_font_size double geodb_color char(50) geodb_dim_type smallint geodb_raster_compression_quality integer geodb_type char(25) geodb_text_word_spacing double geodb_text_break_char integer geodb_text_leader_line_width double geodb_text_ref_scale double geodb_text_scale boolean geodb_dim_begin_dimension_x double geodb_font_underline boolean geodb_linked_feature_id integer geodb_raster_pyramid_level integer geodb_feature_class_alias char(254) geodb_dim_line_z double geodb_text_y_coord double geodb_text_line_spacing double geodb_dim_text_y double geodb_raster_compression_type char(100) geodb_dim_line_y double geodb_font_charset smallint geodb_dim_style_id integer fme_fill_color char(50) fme_secondary_axis double geodb_dim_using_custom_length boolean geodb_dim_custom_length double geodb_text_lc_margin_top double geodb_text_lc_margin_left double geodb_right_to_left boolean geodb_dim_marker_display smallint geodb_dim_begin_dimension_z double geodb_text_lc_accent_bar_width double geodb_sweep_angle double fme_feature_type char(50) geodb_ancillary_role char(7) geodb_font_bold boolean geodb_text_leader_line_color char(50) geodb_font_italic boolean geodb_text_leader_line char(254) geodb_text_leader_line_anchor_point char(254) geodb_dim_extn_line_display smallint geodb_text_angle double geodb_dim_text_z double geodb_primary_axis double geodb_text_string char(254) fme_primary_axis double geodb_anno_class_id integer geodb_dim_text_angle double geodb_text_leader_line_tolerance double geodb_measures char(254) geodb_symbol_id integer fme_text_size double"
+#!   EXPOSABLE_ATTRS="geodb_dim_type smallint geodb_dim_begin_dimension_x double fme_db_operation char(8) geodb_dim_end_dimension_z double geodb_text_string char(254) geodb_dim_marker_display smallint geodb_font_size double fme_text_size double geodb_raster_compression_type char(100) geodb_dim_using_custom_length boolean geodb_font_underline boolean fme_basename char(50) geodb_font_weight smallint geodb_font_charset smallint geodb_secondary_axis double geodb_text_feat_class_name char(254) geodb_color char(50) geodb_font_italic boolean geodb_dim_length double geodb_font_bold boolean geodb_text_clip boolean geodb_raster_pyramid_resample_type char(100) fme_sweep_angle double geodb_start_angle double geodb_text_size double geodb_dim_extn_line_display smallint geodb_font_name char(254) geodb_text_x_coord double geodb_text_lc_margin_right double geodb_text_x_offset double geodb_dim_extn_line_angle double fme_start_angle double geodb_allow_symbol_overrides boolean geodb_anno_class_id integer geodb_dim_begin_dimension_y double geodb_dim_text_z double geodb_text_word_spacing double geodb_text_leader_line char(254) geodb_text_lc_accent_bar_color char(50) geodb_text_char_spacing double geodb_dim_line_display smallint geodb_feature_dataset char(254) geodb_text_lc_gap double geodb_dim_text_angle double geodb_text_string_with_format_tags char(254) geodb_rotation double geodb_text_leader_line_width double fme_primary_axis double geodb_v_align char(50) geodb_raster_compression_quality integer geodb_feature_class_alias char(254) geodb_text_lc_margin_top double geodb_text_break_char integer geodb_dim_style_id integer geodb_metadata_string char(254) geodb_dim_line_z double geodb_raster_pyramid_level integer geodb_subtype_name char(254) geodb_text_lc_margin_bottom double fme_type char(50) fme_secondary_axis double geodb_right_to_left boolean geodb_dim_custom_length double geodb_dim_text_y double geodb_text_y_coord double fme_fill_color char(50) geodb_ancillary_role char(7) fme_rotation double geodb_text_y_offset double geodb_dim_begin_dimension_z double geodb_dim_text_x double geodb_h_align char(50) fme_text_string char(50) geodb_primary_axis double geodb_text_leader_line_tolerance double fme_geometry char(50) geodb_text_scale boolean geodb_dim_end_dimension_y double geodb_type char(25) geodb_dim_line_x double geodb_symbol_id integer geodb_text_character_width double geodb_dim_end_dimension_x double geodb_text_ref_scale double geodb_text_leader_line_color char(50) geodb_text_color char(254) fme_where char(254) geodb_measures char(254) geodb_dim_line_y double geodb_text_lc_margin_left double geodb_text_lc_accent_bar_width double geodb_text_line_spacing double geodb_sweep_angle double geodb_text_leader_line_anchor_point char(254) fme_feature_type char(50) fme_color char(50) geodb_linked_feature_id integer geodb_font_strikethrough boolean fme_dataset char(50) geodb_text_lc_style char(20) geodb_text_angle double"
 #!   DEFLINE_PARMS="&quot;GUI OPTIONAL NAMEDGROUP fme_configuration_group fme_configuration_common_group%fme_spatial_group%fme_advanced_group%oracle_advanced_group Table&quot; &quot;&quot; &quot;GUI OPTIONAL NAMEDGROUP fme_configuration_common_group fme_feature_operation%fme_table_handling%oracle_model%fme_update_geometry%fme_selection_group%fme_table_creation_group General&quot; &quot;&quot; &quot;GUI ACTIVECHOICE_LOOKUP fme_feature_operation Insert,INSERT,fme_update_geometry,fme_selection_group%Update,UPDATE,++fme_table_handling+USE_EXISTING,++fme_selection_group+FME_DISCLOSURE_OPEN%Delete,DELETE,++fme_table_handling+USE_EXISTING,fme_update_geometry,++fme_selection_group+FME_DISCLOSURE_OPEN,fme_spatial_group,fme_advanced_group,oracle_sequenced_cols%&lt;at&gt;Value&lt;openparen&gt;fme_db_operation&lt;closeparen&gt;,MULTIPLE,++fme_table_handling+USE_EXISTING,++fme_selection_group+FME_DISCLOSURE_OPEN Feature Operation&quot; INSERT &quot;GUI ACTIVECHOICE_LOOKUP fme_table_handling Use&lt;space&gt;Existing,USE_EXISTING,fme_table_creation_group%Create&lt;space&gt;If&lt;space&gt;Needed,CREATE_IF_MISSING%Drop&lt;space&gt;and&lt;space&gt;Create,DROP_CREATE%Truncate&lt;space&gt;Existing,TRUNCATE_EXISTING,fme_table_creation_group Table Handling&quot; CREATE_IF_MISSING &quot;GUI WHOLE_LINE LOOKUP_CHOICE fme_update_geometry Yes,YES%No,NO Update Spatial Column(s)&quot; YES &quot;GUI OPTIONAL DISCLOSUREGROUP fme_selection_group fme_selection_method Row Selection&quot; &quot;&quot; &quot;GUI OPTIONAL WHOLE_LINE RADIOPARAMETERGROUP fme_selection_method fme_match_columns,MATCH_COLUMNS%fme_where_builder_clause,BUILDER Row Selection Method&quot; MATCH_COLUMNS &quot;GUI WHOLE_LINE ATTRLIST_COMMAS fme_match_columns \&quot; \&quot; Match Columns&quot; &quot;&quot; &quot;GUI WHOLE_LINE TEXT_EDIT_SQL_CFG_OR_ATTR fme_where_builder_clause MODE,WHERE WHERE Clause&quot; &quot;&quot; &quot;GUI OPTIONAL DISCLOSUREGROUP fme_table_creation_group FME_DISCLOSURE_OPEN%GEODB_FEATURE_DATASET%GEODB_HAS_Z_VALUES%GEODB_HAS_MEASURES%GEODB_ORIGIN_GROUP%GEODB_ANNO_GROUP%GEODB_ADVANCED_GROUP Table Creation Parameters&quot; &quot;&quot; &quot;GUI OPTIONAL DISCLOSUREGROUP GEODB_ORIGIN_GROUP GEODB_XY_GROUP%GEODB_Z_GROUP%GEODB_MEASURES_GROUP Origin and Scale&quot; &quot;&quot; &quot;GUI OPTIONAL DISCLOSUREGROUP GEODB_ANNO_GROUP GEODB_ANNO_REFERENCE_SCALE Annotation&quot; &quot;&quot; &quot;GUI OPTIONAL DISCLOSUREGROUP GEODB_ADVANCED_GROUP GEODB_OBJECT_ID_NAME%GEODB_OBJECT_ID_ALIAS%GEODB_SHAPE_NAME%GEODB_SHAPE_ALIAS%GEODB_CONFIG_KEYWORD%GEODB_GRID{1}%GEODB_AVG_NUM_POINTS Advanced&quot; &quot;&quot; &quot;GUI OPTIONAL DISCLOSUREGROUP GEODB_XY_GROUP GEODB_XORIGIN%GEODB_YORIGIN%GEODB_XYSCALE X/Y&quot; &quot;&quot; &quot;GUI OPTIONAL DISCLOSUREGROUP GEODB_Z_GROUP GEODB_ZORIGIN%GEODB_ZSCALE Z&quot; &quot;&quot; &quot;GUI OPTIONAL DISCLOSUREGROUP GEODB_MEASURES_GROUP GEODB_MEASURES_ORIGIN%GEODB_MEASURES_SCALE Measures&quot; &quot;&quot; &quot;GUI TEXT GEODB_OBJECT_ID_NAME Object ID Field&quot; OBJECTID &quot;GUI TEXT GEODB_OBJECT_ID_ALIAS Object ID Alias&quot; OBJECTID &quot;GUI TEXT GEODB_SHAPE_NAME Shape Field&quot; SHAPE &quot;GUI TEXT GEODB_SHAPE_ALIAS Shape Alias&quot; SHAPE &quot;GUI TEXT GEODB_CONFIG_KEYWORD Configuration Keyword&quot; DEFAULTS &quot;GUI OPTIONAL TEXT GEODB_FEATURE_DATASET Feature Dataset&quot; &quot;&quot; &quot;GUI OPTIONAL FLOAT GEODB_GRID{1} Grid 1&quot; &quot;&quot; &quot;GUI OPTIONAL INTEGER GEODB_AVG_NUM_POINTS Average Number of Points&quot; &quot;&quot; &quot;GUI OPTIONAL FLOAT GEODB_XORIGIN X Origin&quot; &quot;&quot; &quot;GUI OPTIONAL FLOAT GEODB_YORIGIN Y Origin&quot; &quot;&quot; &quot;GUI OPTIONAL FLOAT GEODB_XYSCALE X/Y Scale&quot; &quot;&quot; &quot;GUI OPTIONAL CHOICE GEODB_HAS_Z_VALUES yes%no Contains Z Values&quot; &quot;&quot; &quot;GUI OPTIONAL FLOAT GEODB_ZORIGIN Z Origin&quot; &quot;&quot; &quot;GUI OPTIONAL FLOAT GEODB_ZSCALE Z Scale&quot; &quot;&quot; &quot;GUI OPTIONAL CHOICE GEODB_HAS_MEASURES yes%no Contains Measures&quot; &quot;&quot; &quot;GUI OPTIONAL FLOAT GEODB_MEASURES_ORIGIN Measure Origin&quot; &quot;&quot; &quot;GUI OPTIONAL FLOAT GEODB_MEASURES_SCALE Measure Scale&quot; &quot;&quot; &quot;GUI OPTIONAL FLOAT GEODB_ANNO_REFERENCE_SCALE Annotation Reference Scale&quot; &quot;&quot; "
 #!   ATTR_INDEX_TYPES=""
 #!   ATTR_NAME_INVALID_CHARS=":. %-#[]&quot;()!?*&apos;&amp;+\/{}|="
@@ -460,8 +468,8 @@
 #!   IS_SOURCE="false"
 #!   ROLE="WRITER"
 #!   FORMAT="ORACLE_NONSPATIAL"
-#!   DATASET="$(DestDataset_ORACLE_NONSPATIAL)"
-#!   KEYWORD="ORACLE_NONSPATIAL_2"
+#!   DATASET="$(OEREB2_DATABASE)"
+#!   KEYWORD="ORACLE_NONSPATIAL_1"
 #!   MULTI_GEOM_ALLOWED="true"
 #!   ATTR_MAX_LENGTH="30"
 #!   ATTR_CASE="UPPER_FIRST_ALPHA"
@@ -469,7 +477,7 @@
 #!   WRITE_DEFS="true"
 #!   DEFLINE_TEMPLATE="oracle_create_table &quot;&quot; oracle_drop_table &quot;&quot; oracle_table_writer_mode &quot;&quot; oracle_update_key_columns &quot;&quot; oracle_truncate_table &quot;&quot; fme_feature_operation INSERT fme_table_handling CREATE_IF_MISSING fme_selection_method MATCH_COLUMNS fme_match_columns &quot;&quot; fme_where_builder_clause &quot;&quot; oracle_params &quot;&quot; oracle_sql_encoded &quot;&quot; oracle_sequenced_cols &quot;&quot;"
 #!   DEFLINE_ATTRS="true"
-#!   EXPOSABLE_ATTRS="fme_geometry char(50) fme_primary_axis float fme_db_operation char(8) fme_feature_type char(50) fme_start_angle float fme_basename char(50) fme_dataset char(50) fme_type char(50) fme_fill_color char(50) fme_rotation float fme_sweep_angle float fme_color char(50) fme_text_size float fme_text_string char(50) fme_secondary_axis float oracle_type char(50)"
+#!   EXPOSABLE_ATTRS="fme_text_string char(50) fme_fill_color char(50) fme_geometry char(50) fme_basename char(50) fme_dataset char(50) fme_type char(50) fme_secondary_axis float oracle_type char(50) fme_primary_axis float fme_rotation float fme_color char(50) fme_feature_type char(50) fme_sweep_angle float fme_text_size float fme_db_operation char(8) fme_start_angle float"
 #!   DEFLINE_PARMS="&quot;GUI OPTIONAL NAMEDGROUP fme_configuration_group fme_configuration_common_group%fme_spatial_group%fme_advanced_group%oracle_advanced_group Table&quot; &quot;&quot; &quot;GUI OPTIONAL NAMEDGROUP fme_configuration_common_group fme_feature_operation%fme_table_handling%oracle_model%fme_update_geometry%fme_selection_group%fme_table_creation_group General&quot; &quot;&quot; &quot;GUI ACTIVECHOICE_LOOKUP fme_feature_operation Insert,INSERT,fme_update_geometry,fme_selection_group%Update,UPDATE,++fme_table_handling+USE_EXISTING,++fme_selection_group+FME_DISCLOSURE_OPEN%Delete,DELETE,++fme_table_handling+USE_EXISTING,fme_update_geometry,++fme_selection_group+FME_DISCLOSURE_OPEN,fme_spatial_group,fme_advanced_group,oracle_sequenced_cols%&lt;at&gt;Value&lt;openparen&gt;fme_db_operation&lt;closeparen&gt;,MULTIPLE,++fme_table_handling+USE_EXISTING,++fme_selection_group+FME_DISCLOSURE_OPEN Feature Operation&quot; INSERT &quot;GUI ACTIVECHOICE_LOOKUP fme_table_handling Use&lt;space&gt;Existing,USE_EXISTING,fme_table_creation_group%Create&lt;space&gt;If&lt;space&gt;Needed,CREATE_IF_MISSING%Drop&lt;space&gt;and&lt;space&gt;Create,DROP_CREATE%Truncate&lt;space&gt;Existing,TRUNCATE_EXISTING,fme_table_creation_group Table Handling&quot; CREATE_IF_MISSING &quot;GUI OPTIONAL DISCLOSUREGROUP fme_selection_group fme_selection_method Row Selection&quot; &quot;&quot; &quot;GUI OPTIONAL WHOLE_LINE RADIOPARAMETERGROUP fme_selection_method fme_match_columns,MATCH_COLUMNS%fme_where_builder_clause,BUILDER Row Selection Method&quot; MATCH_COLUMNS &quot;GUI WHOLE_LINE ATTRLIST_COMMAS fme_match_columns \&quot; \&quot; Match Columns&quot; &quot;&quot; &quot;GUI WHOLE_LINE TEXT_EDIT_SQL_CFG_OR_ATTR fme_where_builder_clause MODE,WHERE WHERE Clause&quot; &quot;&quot; &quot;GUI OPTIONAL DISCLOSUREGROUP fme_table_creation_group oracle_params Table Creation Parameters&quot; &quot;&quot; &quot;GUI OPTIONAL WHOLE_LINE TEXT oracle_params Additional CREATE TABLE Clause(s)&quot; &quot;&quot; &quot;GUI OPTIONAL DISCLOSUREGROUP oracle_advanced_group oracle_sequenced_cols%oracle_sql_encoded Advanced&quot; &quot;&quot; &quot;GUI OPTIONAL WHOLE_LINE TEXT oracle_sequenced_cols Sequenced Table Columns&quot; &quot;&quot; &quot;GUI OPTIONAL WHOLE_LINE TEXT_EDIT_SQL_CFG oracle_sql_encoded MODE,SQL;FORMAT,ORACLE_NONSPATIAL SQL Statement (Overrides Feature Operation)&quot; &quot;&quot; "
 #!   ATTR_INDEX_TYPES="BTree Bitmap PrimaryKey Unique"
 #!   ATTR_NAME_INVALID_CHARS=".%&lt;&gt;|: []()?*&apos;&amp;+-/}{\\&quot;"
@@ -531,7 +539,7 @@
 #!   WRITE_DEFS="false"
 #!   DEFLINE_TEMPLATE=""
 #!   DEFLINE_ATTRS="true"
-#!   EXPOSABLE_ATTRS="fme_geometry char(50) fme_primary_axis real64 fme_feature_type char(50) fme_start_angle real64 fme_basename char(50) fme_type char(50) fme_dataset char(50) fme_sweep_angle real64 fme_rotation real64 fme_fill_color char(50) fme_color char(50) fme_text_size real64 fme_text_string char(50) fme_secondary_axis real64"
+#!   EXPOSABLE_ATTRS="fme_text_string char(50) fme_fill_color char(50) fme_geometry char(50) fme_basename char(50) fme_type char(50) fme_dataset char(50) fme_secondary_axis real64 fme_primary_axis real64 fme_rotation real64 fme_color char(50) fme_feature_type char(50) fme_sweep_angle real64 fme_text_size real64 fme_start_angle real64"
 #!   DEFLINE_PARMS=""
 #!   ATTR_INDEX_TYPES=""
 #!   ATTR_NAME_INVALID_CHARS=""
@@ -583,7 +591,7 @@
 #!   WRITE_DEFS="false"
 #!   DEFLINE_TEMPLATE=""
 #!   DEFLINE_ATTRS="true"
-#!   EXPOSABLE_ATTRS="fme_geometry char(50) fme_primary_axis real64 fme_feature_type char(50) fme_start_angle real64 fme_basename char(50) fme_type char(50) fme_dataset char(50) fme_sweep_angle real64 fme_rotation real64 fme_fill_color char(50) fme_color char(50) fme_text_size real64 fme_text_string char(50) fme_secondary_axis real64"
+#!   EXPOSABLE_ATTRS="fme_text_string char(50) fme_fill_color char(50) fme_geometry char(50) fme_basename char(50) fme_type char(50) fme_dataset char(50) fme_secondary_axis real64 fme_primary_axis real64 fme_rotation real64 fme_color char(50) fme_feature_type char(50) fme_sweep_angle real64 fme_text_size real64 fme_start_angle real64"
 #!   DEFLINE_PARMS=""
 #!   ATTR_INDEX_TYPES=""
 #!   ATTR_NAME_INVALID_CHARS=""
@@ -951,6 +959,186 @@
 #! <DATA_TYPE
 #!   IS_SOURCE="false"
 #!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_char(width)"
+#!   FORMAT="ORACLE_NONSPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="varchar2(width)"
+#!   FME_TYPE="fme_varchar(width)"
+#!   FORMAT="ORACLE_NONSPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="raw(width)"
+#!   FME_TYPE="fme_varbinary(width)"
+#!   FORMAT="ORACLE_NONSPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="raw(width)"
+#!   FME_TYPE="fme_binary(width)"
+#!   FORMAT="ORACLE_NONSPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="nchar(width)"
+#!   FME_TYPE="fme_char(width)"
+#!   FORMAT="ORACLE_NONSPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="nvarchar(width)"
+#!   FME_TYPE="fme_varchar(width)"
+#!   FORMAT="ORACLE_NONSPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="blob"
+#!   FME_TYPE="fme_binarybuffer"
+#!   FORMAT="ORACLE_NONSPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="clob"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="ORACLE_NONSPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="json"
+#!   FME_TYPE="fme_json"
+#!   FORMAT="ORACLE_NONSPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="nclob"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="ORACLE_NONSPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="xmltype"
+#!   FME_TYPE="fme_xml"
+#!   FORMAT="ORACLE_NONSPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="float"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="ORACLE_NONSPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="binary_double"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="ORACLE_NONSPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="float"
+#!   FME_TYPE="fme_real32"
+#!   FORMAT="ORACLE_NONSPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="binary_float"
+#!   FME_TYPE="fme_real32"
+#!   FORMAT="ORACLE_NONSPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="integer"
+#!   FME_TYPE="fme_int32"
+#!   FORMAT="ORACLE_NONSPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="integer"
+#!   FME_TYPE="fme_uint16"
+#!   FORMAT="ORACLE_NONSPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="smallint"
+#!   FME_TYPE="fme_int16"
+#!   FORMAT="ORACLE_NONSPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="smallint"
+#!   FME_TYPE="fme_int8"
+#!   FORMAT="ORACLE_NONSPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="smallint"
+#!   FME_TYPE="fme_uint8"
+#!   FORMAT="ORACLE_NONSPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="timestamp"
+#!   FME_TYPE="fme_datetime"
+#!   FORMAT="ORACLE_NONSPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="timestamp"
+#!   FME_TYPE="fme_time"
+#!   FORMAT="ORACLE_NONSPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="date"
+#!   FME_TYPE="fme_datetime"
+#!   FORMAT="ORACLE_NONSPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="date"
+#!   FME_TYPE="fme_date"
+#!   FORMAT="ORACLE_NONSPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(8)"
+#!   FME_TYPE="fme_boolean"
+#!   FORMAT="ORACLE_NONSPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="number(width,decimal)"
+#!   FME_TYPE="fme_decimal(width,decimal)"
+#!   FORMAT="ORACLE_NONSPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="number(10,0)"
+#!   FME_TYPE="fme_uint32"
+#!   FORMAT="ORACLE_NONSPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="number(19,0)"
+#!   FME_TYPE="fme_int64"
+#!   FORMAT="ORACLE_NONSPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="number(20,0)"
+#!   FME_TYPE="fme_uint64"
+#!   FORMAT="ORACLE_NONSPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="number"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="ORACLE_NONSPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(width)"
 #!   FME_TYPE="fme_varchar(width)"
 #!   FORMAT="GEODATABASE_SDE"
 #! />
@@ -1253,186 +1441,6 @@
 #!   FORMAT_TYPE="int16"
 #!   FME_TYPE="fme_uint8"
 #!   FORMAT="FILECOPY"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="char(width)"
-#!   FME_TYPE="fme_char(width)"
-#!   FORMAT="ORACLE_NONSPATIAL"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="varchar2(width)"
-#!   FME_TYPE="fme_varchar(width)"
-#!   FORMAT="ORACLE_NONSPATIAL"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="raw(width)"
-#!   FME_TYPE="fme_varbinary(width)"
-#!   FORMAT="ORACLE_NONSPATIAL"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="raw(width)"
-#!   FME_TYPE="fme_binary(width)"
-#!   FORMAT="ORACLE_NONSPATIAL"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="nchar(width)"
-#!   FME_TYPE="fme_char(width)"
-#!   FORMAT="ORACLE_NONSPATIAL"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="nvarchar(width)"
-#!   FME_TYPE="fme_varchar(width)"
-#!   FORMAT="ORACLE_NONSPATIAL"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="blob"
-#!   FME_TYPE="fme_binarybuffer"
-#!   FORMAT="ORACLE_NONSPATIAL"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="clob"
-#!   FME_TYPE="fme_buffer"
-#!   FORMAT="ORACLE_NONSPATIAL"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="json"
-#!   FME_TYPE="fme_json"
-#!   FORMAT="ORACLE_NONSPATIAL"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="nclob"
-#!   FME_TYPE="fme_buffer"
-#!   FORMAT="ORACLE_NONSPATIAL"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="xmltype"
-#!   FME_TYPE="fme_xml"
-#!   FORMAT="ORACLE_NONSPATIAL"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="float"
-#!   FME_TYPE="fme_real64"
-#!   FORMAT="ORACLE_NONSPATIAL"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="binary_double"
-#!   FME_TYPE="fme_real64"
-#!   FORMAT="ORACLE_NONSPATIAL"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="float"
-#!   FME_TYPE="fme_real32"
-#!   FORMAT="ORACLE_NONSPATIAL"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="binary_float"
-#!   FME_TYPE="fme_real32"
-#!   FORMAT="ORACLE_NONSPATIAL"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="integer"
-#!   FME_TYPE="fme_int32"
-#!   FORMAT="ORACLE_NONSPATIAL"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="integer"
-#!   FME_TYPE="fme_uint16"
-#!   FORMAT="ORACLE_NONSPATIAL"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="smallint"
-#!   FME_TYPE="fme_int16"
-#!   FORMAT="ORACLE_NONSPATIAL"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="smallint"
-#!   FME_TYPE="fme_int8"
-#!   FORMAT="ORACLE_NONSPATIAL"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="smallint"
-#!   FME_TYPE="fme_uint8"
-#!   FORMAT="ORACLE_NONSPATIAL"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="timestamp"
-#!   FME_TYPE="fme_datetime"
-#!   FORMAT="ORACLE_NONSPATIAL"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="timestamp"
-#!   FME_TYPE="fme_time"
-#!   FORMAT="ORACLE_NONSPATIAL"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="date"
-#!   FME_TYPE="fme_datetime"
-#!   FORMAT="ORACLE_NONSPATIAL"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="date"
-#!   FME_TYPE="fme_date"
-#!   FORMAT="ORACLE_NONSPATIAL"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="char(8)"
-#!   FME_TYPE="fme_boolean"
-#!   FORMAT="ORACLE_NONSPATIAL"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="number(width,decimal)"
-#!   FME_TYPE="fme_decimal(width,decimal)"
-#!   FORMAT="ORACLE_NONSPATIAL"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="number(10,0)"
-#!   FME_TYPE="fme_uint32"
-#!   FORMAT="ORACLE_NONSPATIAL"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="number(19,0)"
-#!   FME_TYPE="fme_int64"
-#!   FORMAT="ORACLE_NONSPATIAL"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="number(20,0)"
-#!   FME_TYPE="fme_uint64"
-#!   FORMAT="ORACLE_NONSPATIAL"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="number"
-#!   FME_TYPE="fme_real64"
-#!   FORMAT="ORACLE_NONSPATIAL"
 #! />
 #! <DATA_TYPE
 #!   IS_SOURCE="false"
@@ -1882,6 +1890,180 @@
 #! />
 #! <GEOM_TYPE
 #!   IS_SOURCE="false"
+#!   FORMAT_TYPE="oracle_nil"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="ORACLE_NONSPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="oracle_nil"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="ORACLE_NONSPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="oracle_nil"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="ORACLE_NONSPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="oracle_nil"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="ORACLE_NONSPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="oracle_nil"
+#!   FME_TYPE="fme_text"
+#!   FORMAT="ORACLE_NONSPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="oracle_nil"
+#!   FME_TYPE="fme_ellipse"
+#!   FORMAT="ORACLE_NONSPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="oracle_nil"
+#!   FME_TYPE="fme_arc"
+#!   FORMAT="ORACLE_NONSPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="oracle_nil"
+#!   FME_TYPE="fme_rectangle"
+#!   FORMAT="ORACLE_NONSPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="oracle_nil"
+#!   FME_TYPE="fme_rounded_rectangle"
+#!   FORMAT="ORACLE_NONSPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="oracle_nil"
+#!   FME_TYPE="fme_collection"
+#!   FORMAT="ORACLE_NONSPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="oracle_circle"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="ORACLE_NONSPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="oracle_point"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="ORACLE_NONSPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="oracle_multipoint"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="ORACLE_NONSPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="oracle_line"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="ORACLE_NONSPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="oracle_multiline"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="ORACLE_NONSPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="oracle_area"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="ORACLE_NONSPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="oracle_multipoly"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="ORACLE_NONSPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="oracle_arc"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="ORACLE_NONSPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="oracle_rectangle"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="ORACLE_NONSPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="oracle_collection"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="ORACLE_NONSPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="oracle_solid"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="ORACLE_NONSPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="oracle_surface"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="ORACLE_NONSPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="oracle_multisolid"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="ORACLE_NONSPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="oracle_multisurface"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="ORACLE_NONSPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="oracle_nil"
+#!   FME_TYPE="fme_raster"
+#!   FORMAT="ORACLE_NONSPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="oracle_nil"
+#!   FME_TYPE="fme_surface"
+#!   FORMAT="ORACLE_NONSPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="oracle_nil"
+#!   FME_TYPE="fme_solid"
+#!   FORMAT="ORACLE_NONSPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="oracle_nil"
+#!   FME_TYPE="fme_point_cloud"
+#!   FORMAT="ORACLE_NONSPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="oracle_nil"
+#!   FME_TYPE="fme_feature_table"
+#!   FORMAT="ORACLE_NONSPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
 #!   FORMAT_TYPE="geodb_point"
 #!   FME_TYPE="fme_point"
 #!   FORMAT="GEODATABASE_SDE"
@@ -2113,180 +2295,6 @@
 #!   FORMAT_TYPE="filecopy_none"
 #!   FME_TYPE="fme_feature_table"
 #!   FORMAT="FILECOPY"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="oracle_nil"
-#!   FME_TYPE="fme_no_geom"
-#!   FORMAT="ORACLE_NONSPATIAL"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="oracle_nil"
-#!   FME_TYPE="fme_point"
-#!   FORMAT="ORACLE_NONSPATIAL"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="oracle_nil"
-#!   FME_TYPE="fme_line"
-#!   FORMAT="ORACLE_NONSPATIAL"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="oracle_nil"
-#!   FME_TYPE="fme_area"
-#!   FORMAT="ORACLE_NONSPATIAL"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="oracle_nil"
-#!   FME_TYPE="fme_text"
-#!   FORMAT="ORACLE_NONSPATIAL"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="oracle_nil"
-#!   FME_TYPE="fme_ellipse"
-#!   FORMAT="ORACLE_NONSPATIAL"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="oracle_nil"
-#!   FME_TYPE="fme_arc"
-#!   FORMAT="ORACLE_NONSPATIAL"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="oracle_nil"
-#!   FME_TYPE="fme_rectangle"
-#!   FORMAT="ORACLE_NONSPATIAL"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="oracle_nil"
-#!   FME_TYPE="fme_rounded_rectangle"
-#!   FORMAT="ORACLE_NONSPATIAL"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="oracle_nil"
-#!   FME_TYPE="fme_collection"
-#!   FORMAT="ORACLE_NONSPATIAL"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="oracle_circle"
-#!   FME_TYPE="fme_no_geom"
-#!   FORMAT="ORACLE_NONSPATIAL"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="oracle_point"
-#!   FME_TYPE="fme_no_geom"
-#!   FORMAT="ORACLE_NONSPATIAL"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="oracle_multipoint"
-#!   FME_TYPE="fme_no_geom"
-#!   FORMAT="ORACLE_NONSPATIAL"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="oracle_line"
-#!   FME_TYPE="fme_no_geom"
-#!   FORMAT="ORACLE_NONSPATIAL"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="oracle_multiline"
-#!   FME_TYPE="fme_no_geom"
-#!   FORMAT="ORACLE_NONSPATIAL"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="oracle_area"
-#!   FME_TYPE="fme_no_geom"
-#!   FORMAT="ORACLE_NONSPATIAL"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="oracle_multipoly"
-#!   FME_TYPE="fme_no_geom"
-#!   FORMAT="ORACLE_NONSPATIAL"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="oracle_arc"
-#!   FME_TYPE="fme_no_geom"
-#!   FORMAT="ORACLE_NONSPATIAL"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="oracle_rectangle"
-#!   FME_TYPE="fme_no_geom"
-#!   FORMAT="ORACLE_NONSPATIAL"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="oracle_collection"
-#!   FME_TYPE="fme_no_geom"
-#!   FORMAT="ORACLE_NONSPATIAL"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="oracle_solid"
-#!   FME_TYPE="fme_no_geom"
-#!   FORMAT="ORACLE_NONSPATIAL"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="oracle_surface"
-#!   FME_TYPE="fme_no_geom"
-#!   FORMAT="ORACLE_NONSPATIAL"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="oracle_multisolid"
-#!   FME_TYPE="fme_no_geom"
-#!   FORMAT="ORACLE_NONSPATIAL"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="oracle_multisurface"
-#!   FME_TYPE="fme_no_geom"
-#!   FORMAT="ORACLE_NONSPATIAL"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="oracle_nil"
-#!   FME_TYPE="fme_raster"
-#!   FORMAT="ORACLE_NONSPATIAL"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="oracle_nil"
-#!   FME_TYPE="fme_surface"
-#!   FORMAT="ORACLE_NONSPATIAL"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="oracle_nil"
-#!   FME_TYPE="fme_solid"
-#!   FORMAT="ORACLE_NONSPATIAL"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="oracle_nil"
-#!   FME_TYPE="fme_point_cloud"
-#!   FORMAT="ORACLE_NONSPATIAL"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="oracle_nil"
-#!   FME_TYPE="fme_feature_table"
-#!   FORMAT="ORACLE_NONSPATIAL"
 #! />
 #! <GEOM_TYPE
 #!   IS_SOURCE="false"
@@ -2563,7 +2571,7 @@
 #!   FEATURE_TYPE_NAME=""
 #!   FEATURE_TYPE_NAME_QUALIFIER="geodb"
 #!   IS_EDITABLE="true"
-#!   IDENTIFIER="8"
+#!   IDENTIFIER="4"
 #!   FEAT_GEOMTYPE="All"
 #!   POSITION="2432.1232812328121 -300.62565625656259"
 #!   BOUNDING_RECT="2432.1232812328121 -300.62565625656259 -1 -1"
@@ -2617,7 +2625,7 @@
 #!   FEATURE_TYPE_NAME=""
 #!   FEATURE_TYPE_NAME_QUALIFIER="OEREB2"
 #!   IS_EDITABLE="true"
-#!   IDENTIFIER="10"
+#!   IDENTIFIER="5"
 #!   FEAT_GEOMTYPE="geodb_point"
 #!   POSITION="3841.512375123752 -2064.7546875468756"
 #!   BOUNDING_RECT="3841.512375123752 -2064.7546875468756 -1 -1"
@@ -2679,13 +2687,13 @@
 #!   FEATURE_TYPE_NAME=""
 #!   FEATURE_TYPE_NAME_QUALIFIER="OEREB2"
 #!   IS_EDITABLE="true"
-#!   IDENTIFIER="11"
+#!   IDENTIFIER="6"
 #!   FEAT_GEOMTYPE="All"
 #!   POSITION="907.10803108031087 -2635.6484064840661"
 #!   BOUNDING_RECT="907.10803108031087 -2635.6484064840661 -1 -1"
 #!   ORDER="500000000000102"
 #!   COLLAPSED="true"
-#!   KEYWORD="ORACLE_NONSPATIAL_2"
+#!   KEYWORD="ORACLE_NONSPATIAL_1"
 #!   PARMS_EDITED="false"
 #!   ENABLED="true"
 #!   SCHEMA_ATTRIBUTE_SOURCE="1"
@@ -2717,13 +2725,13 @@
 #!   FEATURE_TYPE_NAME=""
 #!   FEATURE_TYPE_NAME_QUALIFIER="OEREB2"
 #!   IS_EDITABLE="true"
-#!   IDENTIFIER="12"
+#!   IDENTIFIER="7"
 #!   FEAT_GEOMTYPE="All"
 #!   POSITION="2138.3703437034374 -3413.1585315853172"
 #!   BOUNDING_RECT="2138.3703437034374 -3413.1585315853172 -1 -1"
 #!   ORDER="500000000000100"
 #!   COLLAPSED="false"
-#!   KEYWORD="ORACLE_NONSPATIAL_2"
+#!   KEYWORD="ORACLE_NONSPATIAL_1"
 #!   PARMS_EDITED="false"
 #!   ENABLED="true"
 #!   SCHEMA_ATTRIBUTE_SOURCE="1"
@@ -2755,13 +2763,13 @@
 #!   FEATURE_TYPE_NAME=""
 #!   FEATURE_TYPE_NAME_QUALIFIER="OEREB2"
 #!   IS_EDITABLE="true"
-#!   IDENTIFIER="13"
+#!   IDENTIFIER="8"
 #!   FEAT_GEOMTYPE="All"
 #!   POSITION="4344.6424064240637 -2434.3993439934402"
 #!   BOUNDING_RECT="4344.6424064240637 -2434.3993439934402 -1 -1"
 #!   ORDER="500000000000133"
 #!   COLLAPSED="false"
-#!   KEYWORD="ORACLE_NONSPATIAL_2"
+#!   KEYWORD="ORACLE_NONSPATIAL_1"
 #!   PARMS_EDITED="false"
 #!   ENABLED="true"
 #!   SCHEMA_ATTRIBUTE_SOURCE="1"
@@ -2801,13 +2809,13 @@
 #!   FEATURE_TYPE_NAME=""
 #!   FEATURE_TYPE_NAME_QUALIFIER="OEREB2"
 #!   IS_EDITABLE="true"
-#!   IDENTIFIER="14"
+#!   IDENTIFIER="9"
 #!   FEAT_GEOMTYPE="All"
 #!   POSITION="4479.0187501874998 -3041.3700937009376"
 #!   BOUNDING_RECT="4479.0187501874998 -3041.3700937009376 -1 -1"
 #!   ORDER="500000000000103"
 #!   COLLAPSED="false"
-#!   KEYWORD="ORACLE_NONSPATIAL_2"
+#!   KEYWORD="ORACLE_NONSPATIAL_1"
 #!   PARMS_EDITED="false"
 #!   ENABLED="true"
 #!   SCHEMA_ATTRIBUTE_SOURCE="1"
@@ -2838,13 +2846,13 @@
 #!   FEATURE_TYPE_NAME=""
 #!   FEATURE_TYPE_NAME_QUALIFIER="OEREB2"
 #!   IS_EDITABLE="true"
-#!   IDENTIFIER="15"
+#!   IDENTIFIER="10"
 #!   FEAT_GEOMTYPE="All"
 #!   POSITION="4594.6449064490653 -4195.7674376743762"
 #!   BOUNDING_RECT="4594.6449064490653 -4195.7674376743762 -1 -1"
 #!   ORDER="500000000000123"
 #!   COLLAPSED="true"
-#!   KEYWORD="ORACLE_NONSPATIAL_2"
+#!   KEYWORD="ORACLE_NONSPATIAL_1"
 #!   PARMS_EDITED="false"
 #!   ENABLED="true"
 #!   SCHEMA_ATTRIBUTE_SOURCE="1"
@@ -2889,7 +2897,7 @@
 #!   FEATURE_TYPE_NAME=""
 #!   FEATURE_TYPE_NAME_QUALIFIER=""
 #!   IS_EDITABLE="false"
-#!   IDENTIFIER="23"
+#!   IDENTIFIER="11"
 #!   FEAT_GEOMTYPE="All"
 #!   POSITION="2897.7529375293761 -1418.7641876418763"
 #!   BOUNDING_RECT="2897.7529375293761 -1418.7641876418763 -1 -1"
@@ -2910,7 +2918,7 @@
 #!   FEATURE_TYPE_NAME=""
 #!   FEATURE_TYPE_NAME_QUALIFIER=""
 #!   IS_EDITABLE="false"
-#!   IDENTIFIER="25"
+#!   IDENTIFIER="12"
 #!   FEAT_GEOMTYPE="filecopy_none"
 #!   POSITION="2969.6286562865639 -1792.2668126681265"
 #!   BOUNDING_RECT="2969.6286562865639 -1792.2668126681265 -1 -1"
@@ -2931,7 +2939,7 @@
 #!   FEATURE_TYPE_NAME=""
 #!   FEATURE_TYPE_NAME_QUALIFIER=""
 #!   IS_EDITABLE="false"
-#!   IDENTIFIER="38"
+#!   IDENTIFIER="13"
 #!   FEAT_GEOMTYPE="xlsx_none"
 #!   POSITION="-1050.0115001150011 -2519.3978439784405"
 #!   BOUNDING_RECT="-1050.0115001150011 -2519.3978439784405 -1 -1"
@@ -2963,7 +2971,7 @@
 #!   FEATURE_TYPE_NAME=""
 #!   FEATURE_TYPE_NAME_QUALIFIER=""
 #!   IS_EDITABLE="false"
-#!   IDENTIFIER="39"
+#!   IDENTIFIER="14"
 #!   FEAT_GEOMTYPE="xlsx_none"
 #!   POSITION="-984.38584385843876 -3045.4043440434407"
 #!   BOUNDING_RECT="-984.38584385843876 -3045.4043440434407 -1 -1"
@@ -2995,13 +3003,13 @@
 #!   FEATURE_TYPE_NAME=""
 #!   FEATURE_TYPE_NAME_QUALIFIER="OEREB2"
 #!   IS_EDITABLE="true"
-#!   IDENTIFIER="106"
+#!   IDENTIFIER="15"
 #!   FEAT_GEOMTYPE="All"
 #!   POSITION="5650.90546905469 -3622.6587815878138"
 #!   BOUNDING_RECT="5650.90546905469 -3622.6587815878138 -1 -1"
 #!   ORDER="500000000000124"
 #!   COLLAPSED="false"
-#!   KEYWORD="ORACLE_NONSPATIAL_2"
+#!   KEYWORD="ORACLE_NONSPATIAL_1"
 #!   PARMS_EDITED="false"
 #!   ENABLED="true"
 #!   SCHEMA_ATTRIBUTE_SOURCE="1"
@@ -3031,68 +3039,103 @@
 #! </FMESERVER>
 #! <GLOBAL_PARAMETERS>
 #! <GLOBAL_PARAMETER
-#!   GUI_LINE="GUI SOURCE_GEODATABASE SourceDataset_GEODATABASE_FILE File Geodatabase:"
-#!   DEFAULT_VALUE="Y:\Rampe\GGO\GGO.gdb"
-#!   IS_STAND_ALONE="false"
-#! />
-#! <GLOBAL_PARAMETER
-#!   GUI_LINE="GUI NAMED_DB_CONNECTION_ENCODED DestDataset_POSTGIS FMT:POSTGIS%FAMILY:PostgreSQL Connection:"
-#!   DEFAULT_VALUE="GEODB_WORK_PG"
-#!   IS_STAND_ALONE="false"
-#! />
-#! <GLOBAL_PARAMETER
-#!   GUI_LINE="GUI NAMED_DB_CONNECTION_ENCODED DestDataset_ORACLE_NONSPATIAL FMT:ORACLE_NONSPATIAL%FAMILY:Oracle Connection:"
-#!   DEFAULT_VALUE="WORK&lt;openparen&gt;OEREB2&lt;closeparen&gt;_ORAKLE"
+#!   GUI_LINE="GUI SOURCE_GEODATABASE FGDB File Geodatabase:"
+#!   DEFAULT_VALUE=""
 #!   IS_STAND_ALONE="false"
 #! />
 #! <GLOBAL_PARAMETER
 #!   GUI_LINE="GUI OPTIONAL TEXT OUTPUT_RV_URL Output-URL Rechtsvorschriften:"
-#!   DEFAULT_VALUE="https://oerebfiles-test.apps.be.ch/9984/"
+#!   DEFAULT_VALUE=""
 #!   IS_STAND_ALONE="false"
 #! />
 #! <GLOBAL_PARAMETER
 #!   GUI_LINE="GUI OPTIONAL TEXT INPUT_RV_DIR Input-Directory Rechtsvorschriften:"
-#!   DEFAULT_VALUE="\\geoda.infra.be.ch\arbeit\Rampe\GGO\RV"
+#!   DEFAULT_VALUE=""
 #!   IS_STAND_ALONE="false"
 #! />
 #! <GLOBAL_PARAMETER
 #!   GUI_LINE="GUI OPTIONAL TEXT OUTPUT_RV_DIR Output-Directory Rechtsvorschriften:"
-#!   DEFAULT_VALUE="\\a4pu-cfs-oereb.infra.be.ch\a4pu-cfs-oereb\9984"
+#!   DEFAULT_VALUE=""
 #!   IS_STAND_ALONE="true"
 #! />
 #! <GLOBAL_PARAMETER
-#!   GUI_LINE="GUI DIRNAME DestDataset_FILECOPY Destination File Copy Folder:"
-#!   DEFAULT_VALUE="C:\Windows\Temp"
+#!   GUI_LINE="GUI MULTIFILE EXCEL_AMT Excel_Files(*.xlsx;*.xlsm;*.xls)|*.xlsx;*.xlsm;*.xls|Excel_Workbook_2007(*.xlsx)|*.xlsx|Excel_Macro_Workbook(*.xlsm)|*.xlsm|Excel_Workbook_Pre_2007(*.xls)|*.xls|All_files(*)|* Source Microsoft Excel File AMT:"
+#!   DEFAULT_VALUE=""
 #!   IS_STAND_ALONE="false"
 #! />
 #! <GLOBAL_PARAMETER
-#!   GUI_LINE="GUI DIRNAME DestDataset_FILECOPY_3 Destination File Copy Folder:"
-#!   DEFAULT_VALUE="C:\Windows\Temp"
-#!   IS_STAND_ALONE="false"
-#! />
-#! <GLOBAL_PARAMETER
-#!   GUI_LINE="GUI MULTIFILE SourceDataset_XLSXR Excel_Files(*.xlsx;*.xlsm;*.xls)|*.xlsx;*.xlsm;*.xls|Excel_Workbook_2007(*.xlsx)|*.xlsx|Excel_Macro_Workbook(*.xlsm)|*.xlsm|Excel_Workbook_Pre_2007(*.xls)|*.xls|All_files(*)|* Source Microsoft Excel File(s):"
-#!   DEFAULT_VALUE="Y:\Anwend\OEREBK\Data\9984_GeschuetzteGeologischeObjekte\AMT_9984.xlsx"
-#!   IS_STAND_ALONE="false"
-#! />
-#! <GLOBAL_PARAMETER
-#!   GUI_LINE="GUI MULTIFILE SourceDataset_XLSXR_3 Excel_Files(*.xlsx;*.xlsm;*.xls)|*.xlsx;*.xlsm;*.xls|Excel_Workbook_2007(*.xlsx)|*.xlsx|Excel_Macro_Workbook(*.xlsm)|*.xlsm|Excel_Workbook_Pre_2007(*.xls)|*.xls|All_files(*)|* Source Microsoft Excel File(s):"
-#!   DEFAULT_VALUE="Y:\Anwend\OEREBK\Data\9984_GeschuetzteGeologischeObjekte\DARSTELLUNGSDIENST_9984.xlsx"
+#!   GUI_LINE="GUI MULTIFILE EXCEL_DARSTELLUNGSDIENST Excel_Files(*.xlsx;*.xlsm;*.xls)|*.xlsx;*.xlsm;*.xls|Excel_Workbook_2007(*.xlsx)|*.xlsx|Excel_Macro_Workbook(*.xlsm)|*.xlsm|Excel_Workbook_Pre_2007(*.xls)|*.xls|All_files(*)|* Source Microsoft Excel File Darstellungsdienst:"
+#!   DEFAULT_VALUE=""
 #!   IS_STAND_ALONE="false"
 #! />
 #! <GLOBAL_PARAMETER
 #!   GUI_LINE="GUI OPTIONAL TEXT_OR_ATTR LIEFEREINHEIT Liefereinheit:"
-#!   DEFAULT_VALUE="9984"
+#!   DEFAULT_VALUE=""
 #!   IS_STAND_ALONE="true"
 #! />
 #! <GLOBAL_PARAMETER
 #!   GUI_LINE="GUI OPTIONAL TEXT_OR_ATTR LEGEND_BASEURL Base-URL Legende:"
-#!   DEFAULT_VALUE="https://oerebfiles.apps.be.ch/legenden/GGO/"
+#!   DEFAULT_VALUE=""
 #!   IS_STAND_ALONE="true"
 #! />
 #! <GLOBAL_PARAMETER
 #!   GUI_LINE="GUI OPTIONAL TEXT_OR_ATTR LEGEND_FULLURL URL-Legendsymbol:"
-#!   DEFAULT_VALUE="https://oerebfiles.apps.be.ch/legenden/GGO/ggo.png"
+#!   DEFAULT_VALUE=""
+#!   IS_STAND_ALONE="true"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI OPTIONAL TEXT LOGFILE Logfile:"
+#!   DEFAULT_VALUE=""
+#!   IS_STAND_ALONE="true"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI OPTIONAL TEXT WORK_CONNECTION Connection to work:"
+#!   DEFAULT_VALUE=""
+#!   IS_STAND_ALONE="true"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI OPTIONAL TEXT GEODB_PG_DATABASE Postgis Database:"
+#!   DEFAULT_VALUE=""
+#!   IS_STAND_ALONE="true"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI OPTIONAL TEXT GEODB_PG_USERNAME Postgis Username:"
+#!   DEFAULT_VALUE=""
+#!   IS_STAND_ALONE="true"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI OPTIONAL TEXT GEODB_PG_PASSWORD Postgis Password:"
+#!   DEFAULT_VALUE=""
+#!   IS_STAND_ALONE="true"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI OPTIONAL TEXT GEODB_PG_HOST Postgis Host:"
+#!   DEFAULT_VALUE=""
+#!   IS_STAND_ALONE="true"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI OPTIONAL TEXT GEODB_PG_PORT Postgis Port:"
+#!   DEFAULT_VALUE=""
+#!   IS_STAND_ALONE="true"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI OPTIONAL TEXT OEREB2_DATABASE OEREB2 Database:"
+#!   DEFAULT_VALUE=""
+#!   IS_STAND_ALONE="true"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI OPTIONAL TEXT OEREB2_USERNAME OEREB2 Username:"
+#!   DEFAULT_VALUE=""
+#!   IS_STAND_ALONE="true"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI OPTIONAL TEXT OEREB2_PASSWORD OEREB2 Password:"
+#!   DEFAULT_VALUE=""
+#!   IS_STAND_ALONE="true"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI OPTIONAL TEXT OEREB2_CONNECTION OEREB2 Conneciont:"
+#!   DEFAULT_VALUE=""
 #!   IS_STAND_ALONE="true"
 #! />
 #! <GLOBAL_PARAMETER
@@ -3105,10 +3148,20 @@
 #!   DEFAULT_VALUE="230"
 #!   IS_STAND_ALONE="true"
 #! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI IGNORE OPTIONAL DIRNAME DestDataset_FILECOPY_3 Destination File Copy Folder:"
+#!   DEFAULT_VALUE="C:\Windows\Temp"
+#!   IS_STAND_ALONE="false"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI IGNORE OPTIONAL DIRNAME DestDataset_FILECOPY Destination File Copy Folder:"
+#!   DEFAULT_VALUE="C:\Windows\Temp"
+#!   IS_STAND_ALONE="false"
+#! />
 #! </GLOBAL_PARAMETERS>
 #! <COMMENTS>
 #! <COMMENT
-#!   IDENTIFIER="92"
+#!   IDENTIFIER="100"
 #!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;PUN_OID&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
 #!   POSITION="10.375343753437534 -1538.765437654376"
 #!   TOP_LEFT="10.375343753437534 -1538.765437654376"
@@ -3119,10 +3172,10 @@
 #!   INFO_NODE="false"
 #!   COLOUR="1,1,0.78431372549019607,0.19607843137254902"
 #!   SIZE_POLICY="10"
-#!   ANCHORED_NODE="50"
+#!   ANCHORED_NODE="28"
 #! />
 #! <COMMENT
-#!   IDENTIFIER="96"
+#!   IDENTIFIER="101"
 #!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;EIB_OID&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
 #!   POSITION="76.001000009999871 -1875.644406444065"
 #!   TOP_LEFT="76.001000009999871 -1875.644406444065"
@@ -3133,10 +3186,10 @@
 #!   INFO_NODE="false"
 #!   COLOUR="1,1,0.78431372549019607,0.19607843137254902"
 #!   SIZE_POLICY="10"
-#!   ANCHORED_NODE="53"
+#!   ANCHORED_NODE="29"
 #! />
 #! <COMMENT
-#!   IDENTIFIER="97"
+#!   IDENTIFIER="102"
 #!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;VOR_OID&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
 #!   POSITION="2755.0017500174999 -2851.3688436884368"
 #!   TOP_LEFT="2755.0017500174999 -2851.3688436884368"
@@ -3147,10 +3200,10 @@
 #!   INFO_NODE="false"
 #!   COLOUR="1,1,0.78431372549019607,0.19607843137254902"
 #!   SIZE_POLICY="10"
-#!   ANCHORED_NODE="93"
+#!   ANCHORED_NODE="40"
 #! />
 #! <COMMENT
-#!   IDENTIFIER="100"
+#!   IDENTIFIER="103"
 #!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;HIV_ID&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
 #!   POSITION="3410.4093440934416 -2938.155031550315"
 #!   TOP_LEFT="3410.4093440934416 -2938.155031550315"
@@ -3161,10 +3214,10 @@
 #!   INFO_NODE="false"
 #!   COLOUR="1,1,0.78431372549019607,0.19607843137254902"
 #!   SIZE_POLICY="10"
-#!   ANCHORED_NODE="103"
+#!   ANCHORED_NODE="43"
 #! />
 #! <COMMENT
-#!   IDENTIFIER="117"
+#!   IDENTIFIER="104"
 #!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;HWD_ID&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
 #!   POSITION="5004.1752817528168 -3553.7861878618792"
 #!   TOP_LEFT="5004.1752817528168 -3553.7861878618792"
@@ -3175,7 +3228,7 @@
 #!   INFO_NODE="false"
 #!   COLOUR="1,1,0.78431372549019607,0.19607843137254902"
 #!   SIZE_POLICY="10"
-#!   ANCHORED_NODE="107"
+#!   ANCHORED_NODE="48"
 #! />
 #! </COMMENTS>
 #! <CONSTANTS>
@@ -3184,7 +3237,7 @@
 #! </BOOKMARKS>
 #! <TRANSFORMERS>
 #! <TRANSFORMER
-#!   IDENTIFIER="6"
+#!   IDENTIFIER="16"
 #!   TYPE="BulkAttributeRenamer"
 #!   VERSION="4"
 #!   POSITION="1521.8902189021894 -106.8737187371874"
@@ -3231,7 +3284,7 @@
 #!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="BulkAttributeRenamer"/>
 #! </TRANSFORMER>
 #! <TRANSFORMER
-#!   IDENTIFIER="16"
+#!   IDENTIFIER="17"
 #!   TYPE="PythonCaller"
 #!   VERSION="4"
 #!   POSITION="-281.25281252812522 -235"
@@ -3275,7 +3328,7 @@
 #!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="PythonCaller"/>
 #! </TRANSFORMER>
 #! <TRANSFORMER
-#!   IDENTIFIER="19"
+#!   IDENTIFIER="18"
 #!   TYPE="Tester"
 #!   VERSION="2"
 #!   POSITION="832.10728107281022 -1321.888218882189"
@@ -3339,7 +3392,7 @@
 #!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Tester"/>
 #! </TRANSFORMER>
 #! <TRANSFORMER
-#!   IDENTIFIER="21"
+#!   IDENTIFIER="19"
 #!   TYPE="Tester"
 #!   VERSION="2"
 #!   POSITION="887.50887508875064 -1612.516125161251"
@@ -3403,7 +3456,7 @@
 #!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Tester_2"/>
 #! </TRANSFORMER>
 #! <TRANSFORMER
-#!   IDENTIFIER="27"
+#!   IDENTIFIER="20"
 #!   TYPE="AttributeRemover"
 #!   VERSION="1"
 #!   POSITION="1421.8892188921893 -1381.888218882189"
@@ -3424,7 +3477,7 @@
 #!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeRemover"/>
 #! </TRANSFORMER>
 #! <TRANSFORMER
-#!   IDENTIFIER="29"
+#!   IDENTIFIER="21"
 #!   TYPE="AttributeRemover"
 #!   VERSION="1"
 #!   POSITION="1421.8892188921893 -1672.516125161251"
@@ -3445,7 +3498,7 @@
 #!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeRemover_2"/>
 #! </TRANSFORMER>
 #! <TRANSFORMER
-#!   IDENTIFIER="32"
+#!   IDENTIFIER="22"
 #!   TYPE="Aggregator"
 #!   VERSION="14"
 #!   POSITION="2303.1480314803143 -1415.7641876418763"
@@ -3489,7 +3542,7 @@
 #!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Aggregator"/>
 #! </TRANSFORMER>
 #! <TRANSFORMER
-#!   IDENTIFIER="35"
+#!   IDENTIFIER="23"
 #!   TYPE="Aggregator"
 #!   VERSION="14"
 #!   POSITION="2340.6484064840643 -1761.0165001650014"
@@ -3533,7 +3586,7 @@
 #!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Aggregator_2"/>
 #! </TRANSFORMER>
 #! <TRANSFORMER
-#!   IDENTIFIER="42"
+#!   IDENTIFIER="24"
 #!   TYPE="StringConcatenator"
 #!   VERSION="7"
 #!   POSITION="468.7546875468754 -3079.7796877968785"
@@ -3560,7 +3613,7 @@
 #!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="StringConcatenator"/>
 #! </TRANSFORMER>
 #! <TRANSFORMER
-#!   IDENTIFIER="41"
+#!   IDENTIFIER="25"
 #!   TYPE="StringConcatenator"
 #!   VERSION="7"
 #!   POSITION="1119.6101561015603 -3271.9077190771918"
@@ -3587,7 +3640,7 @@
 #!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="StringConcatenator_2"/>
 #! </TRANSFORMER>
 #! <TRANSFORMER
-#!   IDENTIFIER="44"
+#!   IDENTIFIER="26"
 #!   TYPE="AttributeRemover"
 #!   VERSION="1"
 #!   POSITION="-503.13003130031308 -1672.516125161251"
@@ -3613,7 +3666,7 @@
 #!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeRemover_3"/>
 #! </TRANSFORMER>
 #! <TRANSFORMER
-#!   IDENTIFIER="48"
+#!   IDENTIFIER="27"
 #!   TYPE="AttributeCreator"
 #!   VERSION="8"
 #!   POSITION="709.38209382093828 -2053.145531455315"
@@ -3654,7 +3707,7 @@
 #!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeCreator"/>
 #! </TRANSFORMER>
 #! <TRANSFORMER
-#!   IDENTIFIER="50"
+#!   IDENTIFIER="28"
 #!   TYPE="UUIDGenerator"
 #!   VERSION="0"
 #!   POSITION="34.375343753437534 -1672.516125161251"
@@ -3681,7 +3734,7 @@
 #!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="UUIDGenerator"/>
 #! </TRANSFORMER>
 #! <TRANSFORMER
-#!   IDENTIFIER="53"
+#!   IDENTIFIER="29"
 #!   TYPE="UUIDGenerator"
 #!   VERSION="0"
 #!   POSITION="100.00100000999987 -2009.39509395094"
@@ -3709,7 +3762,7 @@
 #!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="UUIDGenerator_2"/>
 #! </TRANSFORMER>
 #! <TRANSFORMER
-#!   IDENTIFIER="52"
+#!   IDENTIFIER="30"
 #!   TYPE="AttributeRemover"
 #!   VERSION="1"
 #!   POSITION="468.7546875468754 -2330.2508125081249"
@@ -3730,7 +3783,7 @@
 #!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeRemover_4"/>
 #! </TRANSFORMER>
 #! <TRANSFORMER
-#!   IDENTIFIER="59"
+#!   IDENTIFIER="31"
 #!   TYPE="FeatureMerger"
 #!   VERSION="17"
 #!   POSITION="1393.7639376393754 -2053.145531455315"
@@ -3836,7 +3889,7 @@
 #!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="FeatureMerger"/>
 #! </TRANSFORMER>
 #! <TRANSFORMER
-#!   IDENTIFIER="63"
+#!   IDENTIFIER="32"
 #!   TYPE="Terminator"
 #!   VERSION="3"
 #!   POSITION="2468.7746877468767 -2162.874968749687"
@@ -3852,7 +3905,7 @@
 #!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Terminator"/>
 #! </TRANSFORMER>
 #! <TRANSFORMER
-#!   IDENTIFIER="61"
+#!   IDENTIFIER="33"
 #!   TYPE="AttributeRemover"
 #!   VERSION="1"
 #!   POSITION="90.625906259062617 -2744.3978439784405"
@@ -3873,7 +3926,7 @@
 #!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeRemover_5"/>
 #! </TRANSFORMER>
 #! <TRANSFORMER
-#!   IDENTIFIER="69"
+#!   IDENTIFIER="34"
 #!   TYPE="FeatureMerger"
 #!   VERSION="17"
 #!   POSITION="2094.6199061990628 -2579.3978439784405"
@@ -3985,7 +4038,7 @@
 #!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="FeatureMerger_2"/>
 #! </TRANSFORMER>
 #! <TRANSFORMER
-#!   IDENTIFIER="79"
+#!   IDENTIFIER="35"
 #!   TYPE="Terminator"
 #!   VERSION="3"
 #!   POSITION="2175.0217502175028 -3150.3848438484383"
@@ -4001,7 +4054,7 @@
 #!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Terminator_2"/>
 #! </TRANSFORMER>
 #! <TRANSFORMER
-#!   IDENTIFIER="73"
+#!   IDENTIFIER="36"
 #!   TYPE="AttributeCreator"
 #!   VERSION="8"
 #!   POSITION="-475.00475004750047 -2519.3978439784405"
@@ -4031,7 +4084,7 @@
 #!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeCreator_3"/>
 #! </TRANSFORMER>
 #! <TRANSFORMER
-#!   IDENTIFIER="70"
+#!   IDENTIFIER="37"
 #!   TYPE="AttributeCreator"
 #!   VERSION="8"
 #!   POSITION="-418.75418754187547 -2946.6334063340632"
@@ -4061,7 +4114,7 @@
 #!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeCreator_2"/>
 #! </TRANSFORMER>
 #! <TRANSFORMER
-#!   IDENTIFIER="87"
+#!   IDENTIFIER="38"
 #!   TYPE="Counter"
 #!   VERSION="2"
 #!   POSITION="3353.1585315853158 -2478.1497814978147"
@@ -4129,7 +4182,7 @@
 #!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Counter"/>
 #! </TRANSFORMER>
 #! <TRANSFORMER
-#!   IDENTIFIER="78"
+#!   IDENTIFIER="39"
 #!   TYPE="Terminator"
 #!   VERSION="3"
 #!   POSITION="3340.6584065840657 -2740.6524065240651"
@@ -4145,7 +4198,7 @@
 #!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Terminator_3"/>
 #! </TRANSFORMER>
 #! <TRANSFORMER
-#!   IDENTIFIER="93"
+#!   IDENTIFIER="40"
 #!   TYPE="UUIDGenerator"
 #!   VERSION="0"
 #!   POSITION="2779.0017500174999 -2985.119531195312"
@@ -4185,7 +4238,7 @@
 #!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="UUIDGenerator_3"/>
 #! </TRANSFORMER>
 #! <TRANSFORMER
-#!   IDENTIFIER="98"
+#!   IDENTIFIER="41"
 #!   TYPE="AttributeCreator"
 #!   VERSION="8"
 #!   POSITION="2657.1255312553121 -4108.266562665628"
@@ -4238,7 +4291,7 @@
 #!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeCreator_4"/>
 #! </TRANSFORMER>
 #! <TRANSFORMER
-#!   IDENTIFIER="95"
+#!   IDENTIFIER="42"
 #!   TYPE="AttributeRenamer"
 #!   VERSION="4"
 #!   POSITION="3381.2838128381291 -4139.5168751687506"
@@ -4285,7 +4338,7 @@
 #!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeRenamer"/>
 #! </TRANSFORMER>
 #! <TRANSFORMER
-#!   IDENTIFIER="103"
+#!   IDENTIFIER="43"
 #!   TYPE="UUIDGenerator"
 #!   VERSION="0"
 #!   POSITION="3434.4093440934416 -3071.9057190571903"
@@ -4326,7 +4379,7 @@
 #!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="UUIDGenerator_4"/>
 #! </TRANSFORMER>
 #! <TRANSFORMER
-#!   IDENTIFIER="111"
+#!   IDENTIFIER="44"
 #!   TYPE="AttributeRemover"
 #!   VERSION="1"
 #!   POSITION="2900.0290002900028 -3774.1591565915642"
@@ -4346,7 +4399,7 @@
 #!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeRemover_6"/>
 #! </TRANSFORMER>
 #! <TRANSFORMER
-#!   IDENTIFIER="108"
+#!   IDENTIFIER="45"
 #!   TYPE="AttributeRenamer"
 #!   VERSION="4"
 #!   POSITION="3353.1585315853158 -3695.9079690796916"
@@ -4365,7 +4418,7 @@
 #!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeRenamer_2"/>
 #! </TRANSFORMER>
 #! <TRANSFORMER
-#!   IDENTIFIER="113"
+#!   IDENTIFIER="46"
 #!   TYPE="AttributeCreator"
 #!   VERSION="8"
 #!   POSITION="4412.5441254412526 -3506.2850628506285"
@@ -4391,7 +4444,7 @@
 #!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeCreator_5"/>
 #! </TRANSFORMER>
 #! <TRANSFORMER
-#!   IDENTIFIER="109"
+#!   IDENTIFIER="47"
 #!   TYPE="AttributeCreator"
 #!   VERSION="8"
 #!   POSITION="4384.4188441884407 -3904.6587815878138"
@@ -4417,7 +4470,7 @@
 #!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeCreator_6"/>
 #! </TRANSFORMER>
 #! <TRANSFORMER
-#!   IDENTIFIER="107"
+#!   IDENTIFIER="48"
 #!   TYPE="UUIDGenerator"
 #!   VERSION="0"
 #!   POSITION="5028.1752817528168 -3687.5368753687544"
@@ -4440,9 +4493,9 @@
 #! </TRANSFORMERS>
 #! <FEAT_LINKS>
 #! <FEAT_LINK
-#!   IDENTIFIER="91"
+#!   IDENTIFIER="49"
 #!   SOURCE_NODE="2"
-#!   TARGET_NODE="16"
+#!   TARGET_NODE="17"
 #!   SOURCE_PORT_DESC="-1"
 #!   TARGET_PORT_DESC="fi 0 "
 #!   ENABLED="true"
@@ -4451,9 +4504,9 @@
 #!   EXTRA_POINTS=""
 #! />
 #! <FEAT_LINK
-#!   IDENTIFIER="74"
-#!   SOURCE_NODE="38"
-#!   TARGET_NODE="73"
+#!   IDENTIFIER="50"
+#!   SOURCE_NODE="13"
+#!   TARGET_NODE="36"
 #!   SOURCE_PORT_DESC="-1"
 #!   TARGET_PORT_DESC="fi 0 "
 #!   ENABLED="true"
@@ -4462,9 +4515,9 @@
 #!   EXTRA_POINTS=""
 #! />
 #! <FEAT_LINK
-#!   IDENTIFIER="72"
-#!   SOURCE_NODE="39"
-#!   TARGET_NODE="70"
+#!   IDENTIFIER="51"
+#!   SOURCE_NODE="14"
+#!   TARGET_NODE="37"
 #!   SOURCE_PORT_DESC="-1"
 #!   TARGET_PORT_DESC="fi 0 "
 #!   ENABLED="true"
@@ -4473,9 +4526,9 @@
 #!   EXTRA_POINTS=""
 #! />
 #! <FEAT_LINK
-#!   IDENTIFIER="9"
-#!   SOURCE_NODE="6"
-#!   TARGET_NODE="8"
+#!   IDENTIFIER="52"
+#!   SOURCE_NODE="16"
+#!   TARGET_NODE="4"
 #!   SOURCE_PORT_DESC="fo 0 OUTPUT"
 #!   TARGET_PORT_DESC="-1"
 #!   ENABLED="true"
@@ -4484,8 +4537,8 @@
 #!   EXTRA_POINTS=""
 #! />
 #! <FEAT_LINK
-#!   IDENTIFIER="18"
-#!   SOURCE_NODE="16"
+#!   IDENTIFIER="53"
+#!   SOURCE_NODE="17"
 #!   TARGET_NODE="3"
 #!   SOURCE_PORT_DESC="fo 0 OUTPUT"
 #!   TARGET_PORT_DESC="-1"
@@ -4495,9 +4548,9 @@
 #!   EXTRA_POINTS=""
 #! />
 #! <FEAT_LINK
-#!   IDENTIFIER="7"
-#!   SOURCE_NODE="16"
-#!   TARGET_NODE="6"
+#!   IDENTIFIER="54"
+#!   SOURCE_NODE="17"
+#!   TARGET_NODE="16"
 #!   SOURCE_PORT_DESC="fo 0 OUTPUT"
 #!   TARGET_PORT_DESC="fi 0 "
 #!   ENABLED="true"
@@ -4506,9 +4559,9 @@
 #!   EXTRA_POINTS=""
 #! />
 #! <FEAT_LINK
-#!   IDENTIFIER="20"
-#!   SOURCE_NODE="16"
-#!   TARGET_NODE="19"
+#!   IDENTIFIER="55"
+#!   SOURCE_NODE="17"
+#!   TARGET_NODE="18"
 #!   SOURCE_PORT_DESC="fo 0 OUTPUT"
 #!   TARGET_PORT_DESC="fi 0 "
 #!   ENABLED="true"
@@ -4517,9 +4570,9 @@
 #!   EXTRA_POINTS=""
 #! />
 #! <FEAT_LINK
-#!   IDENTIFIER="22"
-#!   SOURCE_NODE="16"
-#!   TARGET_NODE="21"
+#!   IDENTIFIER="56"
+#!   SOURCE_NODE="17"
+#!   TARGET_NODE="19"
 #!   SOURCE_PORT_DESC="fo 0 OUTPUT"
 #!   TARGET_PORT_DESC="fi 0 "
 #!   ENABLED="true"
@@ -4528,9 +4581,9 @@
 #!   EXTRA_POINTS=""
 #! />
 #! <FEAT_LINK
-#!   IDENTIFIER="47"
-#!   SOURCE_NODE="16"
-#!   TARGET_NODE="44"
+#!   IDENTIFIER="57"
+#!   SOURCE_NODE="17"
+#!   TARGET_NODE="26"
 #!   SOURCE_PORT_DESC="fo 0 OUTPUT"
 #!   TARGET_PORT_DESC="fi 0 "
 #!   ENABLED="true"
@@ -4539,9 +4592,20 @@
 #!   EXTRA_POINTS=""
 #! />
 #! <FEAT_LINK
-#!   IDENTIFIER="24"
+#!   IDENTIFIER="58"
+#!   SOURCE_NODE="18"
+#!   TARGET_NODE="20"
+#!   SOURCE_PORT_DESC="fo 0 PASSED"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="59"
 #!   SOURCE_NODE="19"
-#!   TARGET_NODE="27"
+#!   TARGET_NODE="21"
 #!   SOURCE_PORT_DESC="fo 0 PASSED"
 #!   TARGET_PORT_DESC="fi 0 "
 #!   ENABLED="true"
@@ -4550,42 +4614,31 @@
 #!   EXTRA_POINTS=""
 #! />
 #! <FEAT_LINK
-#!   IDENTIFIER="30"
+#!   IDENTIFIER="60"
+#!   SOURCE_NODE="20"
+#!   TARGET_NODE="22"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="61"
 #!   SOURCE_NODE="21"
-#!   TARGET_NODE="29"
-#!   SOURCE_PORT_DESC="fo 0 PASSED"
-#!   TARGET_PORT_DESC="fi 0 "
-#!   ENABLED="true"
-#!   EXECUTION_IDX="0"
-#!   HIDDEN="false"
-#!   EXTRA_POINTS=""
-#! />
-#! <FEAT_LINK
-#!   IDENTIFIER="33"
-#!   SOURCE_NODE="27"
-#!   TARGET_NODE="32"
-#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
-#!   TARGET_PORT_DESC="fi 0 "
-#!   ENABLED="true"
-#!   EXECUTION_IDX="0"
-#!   HIDDEN="false"
-#!   EXTRA_POINTS=""
-#! />
-#! <FEAT_LINK
-#!   IDENTIFIER="36"
-#!   SOURCE_NODE="29"
-#!   TARGET_NODE="35"
-#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
-#!   TARGET_PORT_DESC="fi 0 "
-#!   ENABLED="true"
-#!   EXECUTION_IDX="0"
-#!   HIDDEN="false"
-#!   EXTRA_POINTS=""
-#! />
-#! <FEAT_LINK
-#!   IDENTIFIER="34"
-#!   SOURCE_NODE="32"
 #!   TARGET_NODE="23"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="62"
+#!   SOURCE_NODE="22"
+#!   TARGET_NODE="11"
 #!   SOURCE_PORT_DESC="fo 0 AGGREGATE"
 #!   TARGET_PORT_DESC="-1"
 #!   ENABLED="true"
@@ -4594,20 +4647,31 @@
 #!   EXTRA_POINTS=""
 #! />
 #! <FEAT_LINK
-#!   IDENTIFIER="37"
-#!   SOURCE_NODE="35"
-#!   TARGET_NODE="25"
-#!   SOURCE_PORT_DESC="fo 0 AGGREGATE"
-#!   TARGET_PORT_DESC="-1"
-#!   ENABLED="true"
-#!   EXECUTION_IDX="0"
-#!   HIDDEN="false"
-#!   EXTRA_POINTS=""
-#! />
-#! <FEAT_LINK
-#!   IDENTIFIER="46"
-#!   SOURCE_NODE="41"
+#!   IDENTIFIER="63"
+#!   SOURCE_NODE="23"
 #!   TARGET_NODE="12"
+#!   SOURCE_PORT_DESC="fo 0 AGGREGATE"
+#!   TARGET_PORT_DESC="-1"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="65"
+#!   SOURCE_NODE="24"
+#!   TARGET_NODE="25"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="64"
+#!   SOURCE_NODE="25"
+#!   TARGET_NODE="7"
 #!   SOURCE_PORT_DESC="fo 0 OUTPUT"
 #!   TARGET_PORT_DESC="-1"
 #!   ENABLED="true"
@@ -4616,64 +4680,9 @@
 #!   EXTRA_POINTS=""
 #! />
 #! <FEAT_LINK
-#!   IDENTIFIER="45"
-#!   SOURCE_NODE="42"
-#!   TARGET_NODE="41"
-#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
-#!   TARGET_PORT_DESC="fi 0 "
-#!   ENABLED="true"
-#!   EXECUTION_IDX="0"
-#!   HIDDEN="false"
-#!   EXTRA_POINTS=""
-#! />
-#! <FEAT_LINK
-#!   IDENTIFIER="51"
-#!   SOURCE_NODE="44"
-#!   TARGET_NODE="50"
-#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
-#!   TARGET_PORT_DESC="fi 0 "
-#!   ENABLED="true"
-#!   EXECUTION_IDX="0"
-#!   HIDDEN="false"
-#!   EXTRA_POINTS=""
-#! />
-#! <FEAT_LINK
-#!   IDENTIFIER="71"
-#!   SOURCE_NODE="48"
-#!   TARGET_NODE="59"
-#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
-#!   TARGET_PORT_DESC="fi 0 REQUESTOR"
-#!   ENABLED="true"
-#!   EXECUTION_IDX="0"
-#!   HIDDEN="false"
-#!   EXTRA_POINTS=""
-#! />
-#! <FEAT_LINK
-#!   IDENTIFIER="54"
-#!   SOURCE_NODE="50"
-#!   TARGET_NODE="53"
-#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
-#!   TARGET_PORT_DESC="fi 0 "
-#!   ENABLED="true"
-#!   EXECUTION_IDX="0"
-#!   HIDDEN="false"
-#!   EXTRA_POINTS=""
-#! />
-#! <FEAT_LINK
-#!   IDENTIFIER="83"
-#!   SOURCE_NODE="52"
-#!   TARGET_NODE="59"
-#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
-#!   TARGET_PORT_DESC="fi 1 SUPPLIER"
-#!   ENABLED="true"
-#!   EXECUTION_IDX="0"
-#!   HIDDEN="false"
-#!   EXTRA_POINTS=""
-#! />
-#! <FEAT_LINK
-#!   IDENTIFIER="55"
-#!   SOURCE_NODE="53"
-#!   TARGET_NODE="48"
+#!   IDENTIFIER="66"
+#!   SOURCE_NODE="26"
+#!   TARGET_NODE="28"
 #!   SOURCE_PORT_DESC="fo 0 OUTPUT"
 #!   TARGET_PORT_DESC="fi 0 "
 #!   ENABLED="true"
@@ -4683,9 +4692,9 @@
 #! />
 #! <FEAT_LINK
 #!   IDENTIFIER="67"
-#!   SOURCE_NODE="59"
-#!   TARGET_NODE="69"
-#!   SOURCE_PORT_DESC="fo 0 MERGED"
+#!   SOURCE_NODE="27"
+#!   TARGET_NODE="31"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
 #!   TARGET_PORT_DESC="fi 0 REQUESTOR"
 #!   ENABLED="true"
 #!   EXECUTION_IDX="0"
@@ -4693,9 +4702,31 @@
 #!   EXTRA_POINTS=""
 #! />
 #! <FEAT_LINK
-#!   IDENTIFIER="85"
-#!   SOURCE_NODE="61"
-#!   TARGET_NODE="69"
+#!   IDENTIFIER="68"
+#!   SOURCE_NODE="28"
+#!   TARGET_NODE="29"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="70"
+#!   SOURCE_NODE="29"
+#!   TARGET_NODE="27"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="69"
+#!   SOURCE_NODE="30"
+#!   TARGET_NODE="31"
 #!   SOURCE_PORT_DESC="fo 0 OUTPUT"
 #!   TARGET_PORT_DESC="fi 1 SUPPLIER"
 #!   ENABLED="true"
@@ -4704,9 +4735,31 @@
 #!   EXTRA_POINTS=""
 #! />
 #! <FEAT_LINK
-#!   IDENTIFIER="77"
-#!   SOURCE_NODE="69"
-#!   TARGET_NODE="10"
+#!   IDENTIFIER="71"
+#!   SOURCE_NODE="31"
+#!   TARGET_NODE="34"
+#!   SOURCE_PORT_DESC="fo 0 MERGED"
+#!   TARGET_PORT_DESC="fi 0 REQUESTOR"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="72"
+#!   SOURCE_NODE="33"
+#!   TARGET_NODE="34"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 1 SUPPLIER"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="73"
+#!   SOURCE_NODE="34"
+#!   TARGET_NODE="5"
 #!   SOURCE_PORT_DESC="fo 0 MERGED"
 #!   TARGET_PORT_DESC="-1"
 #!   ENABLED="true"
@@ -4715,43 +4768,10 @@
 #!   EXTRA_POINTS=""
 #! />
 #! <FEAT_LINK
-#!   IDENTIFIER="88"
-#!   SOURCE_NODE="69"
-#!   TARGET_NODE="87"
+#!   IDENTIFIER="74"
+#!   SOURCE_NODE="34"
+#!   TARGET_NODE="38"
 #!   SOURCE_PORT_DESC="fo 0 MERGED"
-#!   TARGET_PORT_DESC="fi 0 "
-#!   ENABLED="true"
-#!   EXECUTION_IDX="1"
-#!   HIDDEN="false"
-#!   EXTRA_POINTS=""
-#! />
-#! <FEAT_LINK
-#!   IDENTIFIER="94"
-#!   SOURCE_NODE="69"
-#!   TARGET_NODE="93"
-#!   SOURCE_PORT_DESC="fo 0 MERGED"
-#!   TARGET_PORT_DESC="fi 0 "
-#!   ENABLED="true"
-#!   EXECUTION_IDX="2"
-#!   HIDDEN="false"
-#!   EXTRA_POINTS=""
-#! />
-#! <FEAT_LINK
-#!   IDENTIFIER="76"
-#!   SOURCE_NODE="70"
-#!   TARGET_NODE="61"
-#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
-#!   TARGET_PORT_DESC="fi 0 "
-#!   ENABLED="true"
-#!   EXECUTION_IDX="0"
-#!   HIDDEN="false"
-#!   EXTRA_POINTS=""
-#! />
-#! <FEAT_LINK
-#!   IDENTIFIER="86"
-#!   SOURCE_NODE="70"
-#!   TARGET_NODE="42"
-#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
 #!   TARGET_PORT_DESC="fi 0 "
 #!   ENABLED="true"
 #!   EXECUTION_IDX="1"
@@ -4760,8 +4780,107 @@
 #! />
 #! <FEAT_LINK
 #!   IDENTIFIER="75"
-#!   SOURCE_NODE="73"
-#!   TARGET_NODE="52"
+#!   SOURCE_NODE="34"
+#!   TARGET_NODE="40"
+#!   SOURCE_PORT_DESC="fo 0 MERGED"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="2"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="78"
+#!   SOURCE_NODE="36"
+#!   TARGET_NODE="30"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="79"
+#!   SOURCE_NODE="36"
+#!   TARGET_NODE="6"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="-1"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="1"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="76"
+#!   SOURCE_NODE="37"
+#!   TARGET_NODE="33"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="77"
+#!   SOURCE_NODE="37"
+#!   TARGET_NODE="24"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="1"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="80"
+#!   SOURCE_NODE="38"
+#!   TARGET_NODE="8"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="-1"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="81"
+#!   SOURCE_NODE="40"
+#!   TARGET_NODE="41"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="82"
+#!   SOURCE_NODE="40"
+#!   TARGET_NODE="43"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="1"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="83"
+#!   SOURCE_NODE="40"
+#!   TARGET_NODE="44"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="2"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="85"
+#!   SOURCE_NODE="41"
+#!   TARGET_NODE="42"
 #!   SOURCE_PORT_DESC="fo 0 OUTPUT"
 #!   TARGET_PORT_DESC="fi 0 "
 #!   ENABLED="true"
@@ -4771,41 +4890,52 @@
 #! />
 #! <FEAT_LINK
 #!   IDENTIFIER="84"
-#!   SOURCE_NODE="73"
-#!   TARGET_NODE="11"
+#!   SOURCE_NODE="42"
+#!   TARGET_NODE="10"
 #!   SOURCE_PORT_DESC="fo 0 OUTPUT"
 #!   TARGET_PORT_DESC="-1"
 #!   ENABLED="true"
-#!   EXECUTION_IDX="1"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="86"
+#!   SOURCE_NODE="43"
+#!   TARGET_NODE="9"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="-1"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="91"
+#!   SOURCE_NODE="44"
+#!   TARGET_NODE="45"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="88"
+#!   SOURCE_NODE="45"
+#!   TARGET_NODE="47"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
 #!   HIDDEN="false"
 #!   EXTRA_POINTS=""
 #! />
 #! <FEAT_LINK
 #!   IDENTIFIER="89"
-#!   SOURCE_NODE="87"
-#!   TARGET_NODE="13"
-#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
-#!   TARGET_PORT_DESC="-1"
-#!   ENABLED="true"
-#!   EXECUTION_IDX="0"
-#!   HIDDEN="false"
-#!   EXTRA_POINTS=""
-#! />
-#! <FEAT_LINK
-#!   IDENTIFIER="99"
-#!   SOURCE_NODE="93"
-#!   TARGET_NODE="98"
-#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
-#!   TARGET_PORT_DESC="fi 0 "
-#!   ENABLED="true"
-#!   EXECUTION_IDX="0"
-#!   HIDDEN="false"
-#!   EXTRA_POINTS=""
-#! />
-#! <FEAT_LINK
-#!   IDENTIFIER="104"
-#!   SOURCE_NODE="93"
-#!   TARGET_NODE="103"
+#!   SOURCE_NODE="45"
+#!   TARGET_NODE="46"
 #!   SOURCE_PORT_DESC="fo 0 OUTPUT"
 #!   TARGET_PORT_DESC="fi 0 "
 #!   ENABLED="true"
@@ -4814,19 +4944,30 @@
 #!   EXTRA_POINTS=""
 #! />
 #! <FEAT_LINK
-#!   IDENTIFIER="112"
-#!   SOURCE_NODE="93"
-#!   TARGET_NODE="111"
+#!   IDENTIFIER="92"
+#!   SOURCE_NODE="46"
+#!   TARGET_NODE="48"
 #!   SOURCE_PORT_DESC="fo 0 OUTPUT"
 #!   TARGET_PORT_DESC="fi 0 "
 #!   ENABLED="true"
-#!   EXECUTION_IDX="2"
+#!   EXECUTION_IDX="0"
 #!   HIDDEN="false"
 #!   EXTRA_POINTS=""
 #! />
 #! <FEAT_LINK
-#!   IDENTIFIER="102"
-#!   SOURCE_NODE="95"
+#!   IDENTIFIER="90"
+#!   SOURCE_NODE="47"
+#!   TARGET_NODE="48"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="87"
+#!   SOURCE_NODE="48"
 #!   TARGET_NODE="15"
 #!   SOURCE_PORT_DESC="fo 0 OUTPUT"
 #!   TARGET_PORT_DESC="-1"
@@ -4836,97 +4977,9 @@
 #!   EXTRA_POINTS=""
 #! />
 #! <FEAT_LINK
-#!   IDENTIFIER="101"
-#!   SOURCE_NODE="98"
-#!   TARGET_NODE="95"
-#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
-#!   TARGET_PORT_DESC="fi 0 "
-#!   ENABLED="true"
-#!   EXECUTION_IDX="0"
-#!   HIDDEN="false"
-#!   EXTRA_POINTS=""
-#! />
-#! <FEAT_LINK
-#!   IDENTIFIER="105"
-#!   SOURCE_NODE="103"
-#!   TARGET_NODE="14"
-#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
-#!   TARGET_PORT_DESC="-1"
-#!   ENABLED="true"
-#!   EXECUTION_IDX="0"
-#!   HIDDEN="false"
-#!   EXTRA_POINTS=""
-#! />
-#! <FEAT_LINK
-#!   IDENTIFIER="115"
-#!   SOURCE_NODE="107"
-#!   TARGET_NODE="106"
-#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
-#!   TARGET_PORT_DESC="-1"
-#!   ENABLED="true"
-#!   EXECUTION_IDX="0"
-#!   HIDDEN="false"
-#!   EXTRA_POINTS=""
-#! />
-#! <FEAT_LINK
-#!   IDENTIFIER="121"
-#!   SOURCE_NODE="108"
-#!   TARGET_NODE="109"
-#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
-#!   TARGET_PORT_DESC="fi 0 "
-#!   ENABLED="true"
-#!   EXECUTION_IDX="0"
-#!   HIDDEN="false"
-#!   EXTRA_POINTS=""
-#! />
-#! <FEAT_LINK
-#!   IDENTIFIER="120"
-#!   SOURCE_NODE="108"
-#!   TARGET_NODE="113"
-#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
-#!   TARGET_PORT_DESC="fi 0 "
-#!   ENABLED="true"
-#!   EXECUTION_IDX="1"
-#!   HIDDEN="false"
-#!   EXTRA_POINTS=""
-#! />
-#! <FEAT_LINK
-#!   IDENTIFIER="116"
-#!   SOURCE_NODE="109"
-#!   TARGET_NODE="107"
-#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
-#!   TARGET_PORT_DESC="fi 0 "
-#!   ENABLED="true"
-#!   EXECUTION_IDX="0"
-#!   HIDDEN="false"
-#!   EXTRA_POINTS=""
-#! />
-#! <FEAT_LINK
-#!   IDENTIFIER="114"
-#!   SOURCE_NODE="111"
-#!   TARGET_NODE="108"
-#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
-#!   TARGET_PORT_DESC="fi 0 "
-#!   ENABLED="true"
-#!   EXECUTION_IDX="0"
-#!   HIDDEN="false"
-#!   EXTRA_POINTS=""
-#! />
-#! <FEAT_LINK
-#!   IDENTIFIER="110"
-#!   SOURCE_NODE="113"
-#!   TARGET_NODE="107"
-#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
-#!   TARGET_PORT_DESC="fi 0 "
-#!   ENABLED="true"
-#!   EXECUTION_IDX="0"
-#!   HIDDEN="false"
-#!   EXTRA_POINTS=""
-#! />
-#! <FEAT_LINK
-#!   IDENTIFIER="65"
-#!   SOURCE_NODE="59"
-#!   TARGET_NODE="63"
+#!   IDENTIFIER="93"
+#!   SOURCE_NODE="31"
+#!   TARGET_NODE="32"
 #!   SOURCE_PORT_DESC="fo 1 UNMERGED_REQUESTOR"
 #!   TARGET_PORT_DESC="fi 0 "
 #!   ENABLED="true"
@@ -4935,9 +4988,9 @@
 #!   EXTRA_POINTS=""
 #! />
 #! <FEAT_LINK
-#!   IDENTIFIER="81"
-#!   SOURCE_NODE="69"
-#!   TARGET_NODE="79"
+#!   IDENTIFIER="94"
+#!   SOURCE_NODE="34"
+#!   TARGET_NODE="35"
 #!   SOURCE_PORT_DESC="fo 1 UNMERGED_REQUESTOR"
 #!   TARGET_PORT_DESC="fi 0 "
 #!   ENABLED="true"
@@ -4946,9 +4999,9 @@
 #!   EXTRA_POINTS=""
 #! />
 #! <FEAT_LINK
-#!   IDENTIFIER="90"
-#!   SOURCE_NODE="87"
-#!   TARGET_NODE="78"
+#!   IDENTIFIER="95"
+#!   SOURCE_NODE="38"
+#!   TARGET_NODE="39"
 #!   SOURCE_PORT_DESC="fo 1 &lt;lt&gt;REJECTED&lt;gt&gt;"
 #!   TARGET_PORT_DESC="fi 0 "
 #!   ENABLED="true"
@@ -4957,9 +5010,9 @@
 #!   EXTRA_POINTS=""
 #! />
 #! <FEAT_LINK
-#!   IDENTIFIER="66"
-#!   SOURCE_NODE="59"
-#!   TARGET_NODE="63"
+#!   IDENTIFIER="96"
+#!   SOURCE_NODE="31"
+#!   TARGET_NODE="32"
 #!   SOURCE_PORT_DESC="fo 3 UNUSED_SUPPLIER"
 #!   TARGET_PORT_DESC="fi 0 "
 #!   ENABLED="true"
@@ -4968,9 +5021,9 @@
 #!   EXTRA_POINTS=""
 #! />
 #! <FEAT_LINK
-#!   IDENTIFIER="82"
-#!   SOURCE_NODE="69"
-#!   TARGET_NODE="79"
+#!   IDENTIFIER="97"
+#!   SOURCE_NODE="34"
+#!   TARGET_NODE="35"
 #!   SOURCE_PORT_DESC="fo 3 UNUSED_SUPPLIER"
 #!   TARGET_PORT_DESC="fi 0 "
 #!   ENABLED="true"
@@ -4979,9 +5032,9 @@
 #!   EXTRA_POINTS=""
 #! />
 #! <FEAT_LINK
-#!   IDENTIFIER="64"
-#!   SOURCE_NODE="59"
-#!   TARGET_NODE="63"
+#!   IDENTIFIER="98"
+#!   SOURCE_NODE="31"
+#!   TARGET_NODE="32"
 #!   SOURCE_PORT_DESC="fo 4 &lt;lt&gt;REJECTED&lt;gt&gt;"
 #!   TARGET_PORT_DESC="fi 0 "
 #!   ENABLED="true"
@@ -4990,9 +5043,9 @@
 #!   EXTRA_POINTS=""
 #! />
 #! <FEAT_LINK
-#!   IDENTIFIER="80"
-#!   SOURCE_NODE="69"
-#!   TARGET_NODE="79"
+#!   IDENTIFIER="99"
+#!   SOURCE_NODE="34"
+#!   TARGET_NODE="35"
 #!   SOURCE_PORT_DESC="fo 4 &lt;lt&gt;REJECTED&lt;gt&gt;"
 #!   TARGET_PORT_DESC="fi 0 "
 #!   ENABLED="true"
@@ -5005,30 +5058,30 @@
 #! </BREAKPOINTS>
 #! <ATTR_LINKS>
 #! <ATTR_LINK
-#!   IDENTIFIER="65570"
-#!   SOURCE_NODE="32"
-#!   TARGET_NODE="23"
+#!   IDENTIFIER="131134"
+#!   SOURCE_NODE="22"
+#!   TARGET_NODE="11"
+#!   SOURCE_PORT_DESC="ao 0 0 AGGREGATE"
+#!   TARGET_PORT_DESC="0"
+#! />
+#! <ATTR_LINK
+#!   IDENTIFIER="65598"
+#!   SOURCE_NODE="22"
+#!   TARGET_NODE="11"
 #!   SOURCE_PORT_DESC="ao 0 1 AGGREGATE"
 #!   TARGET_PORT_DESC="1"
 #! />
 #! <ATTR_LINK
-#!   IDENTIFIER="131106"
-#!   SOURCE_NODE="32"
-#!   TARGET_NODE="23"
+#!   IDENTIFIER="65599"
+#!   SOURCE_NODE="23"
+#!   TARGET_NODE="12"
 #!   SOURCE_PORT_DESC="ao 0 0 AGGREGATE"
 #!   TARGET_PORT_DESC="0"
 #! />
 #! <ATTR_LINK
-#!   IDENTIFIER="65573"
-#!   SOURCE_NODE="35"
-#!   TARGET_NODE="25"
-#!   SOURCE_PORT_DESC="ao 0 0 AGGREGATE"
-#!   TARGET_PORT_DESC="0"
-#! />
-#! <ATTR_LINK
-#!   IDENTIFIER="131109"
-#!   SOURCE_NODE="35"
-#!   TARGET_NODE="25"
+#!   IDENTIFIER="131135"
+#!   SOURCE_NODE="23"
+#!   TARGET_NODE="12"
 #!   SOURCE_PORT_DESC="ao 0 1 AGGREGATE"
 #!   TARGET_PORT_DESC="1"
 #! />
@@ -5039,44 +5092,58 @@
 #! </LOOKUP_TABLES>
 #! </WORKSPACE>
 FME_PYTHON_VERSION 27
-GUI IGNORE SourceDataset_GEODATABASE_FILE_1,GEODATABASE_FILE_IN_FME_CONNECTION_GROUP_GEODATABASE_FILE_1,GEODATABASE_FILE_IN_FME_GROUP_NAMED1_GEODATABASE_FILE_1,GEODATABASE_FILE_IN_WHERE_WWJD_GEODATABASE_FILE_1,GEODATABASE_FILE_IN_TRANSLATE_SPATIAL_DATA_ONLY_GEODATABASE_FILE_1,GEODATABASE_FILE_IN_RESOLVE_DOMAINS_GEODATABASE_FILE_1,GEODATABASE_FILE_IN_RESOLVE_SUBTYPE_NAMES_GEODATABASE_FILE_1,GEODATABASE_FILE_IN_IGNORE_NETWORK_INFO_GEODATABASE_FILE_1,GEODATABASE_FILE_IN_IGNORE_RELATIONSHIP_INFO_GEODATABASE_FILE_1,GEODATABASE_FILE_IN_SPLIT_COMPLEX_EDGES_GEODATABASE_FILE_1,GEODATABASE_FILE_IN_SPLIT_MULTI_PART_ANNOS_GEODATABASE_FILE_1,GEODATABASE_FILE_IN_USE_SEARCH_ENVELOPE_GEODATABASE_FILE_1,GEODATABASE_FILE_IN_SEARCH_ENVELOPE_MINX_GEODATABASE_FILE_1,GEODATABASE_FILE_IN_SEARCH_ENVELOPE_MINY_GEODATABASE_FILE_1,GEODATABASE_FILE_IN_SEARCH_ENVELOPE_MAXX_GEODATABASE_FILE_1,GEODATABASE_FILE_IN_SEARCH_ENVELOPE_MAXY_GEODATABASE_FILE_1,GEODATABASE_FILE_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_GEODATABASE_FILE_1,GEODATABASE_FILE_IN_CLIP_TO_ENVELOPE_GEODATABASE_FILE_1,GEODATABASE_FILE_IN_GEODB_SHARED_RDR_ADV_PARM_GROUP_GEODATABASE_FILE_1,GEODATABASE_FILE_IN_SPLIT_COMPLEX_ANNOS_GEODATABASE_FILE_1,GEODATABASE_FILE_IN_CACHE_MULTIPATCH_TEXTURES_GEODATABASE_FILE_1,GEODATABASE_FILE_IN_SEARCH_METHOD_GEODATABASE_FILE_1,GEODATABASE_FILE_IN_SEARCH_ORDER_GEODATABASE_FILE_1,GEODATABASE_FILE_IN_SEARCH_FEATURE_GEODATABASE_FILE_1,GEODATABASE_FILE_IN_CHECK_SIMPLE_GEOM_GEODATABASE_FILE_1,GEODATABASE_FILE_IN_MERGE_FEAT_LINKED_ANNOS_GEODATABASE_FILE_1,GEODATABASE_FILE_IN_BEGIN_SQL{0}_GEODATABASE_FILE_1,GEODATABASE_FILE_IN_END_SQL{0}_GEODATABASE_FILE_1,GEODATABASE_FILE_IN_NETWORK_AUTHENTICATION_GEODATABASE_FILE_1,_GEODB_IN_ALIAS_MODE_GEODATABASE_FILE_1,SourceDataset_XLSXR_1,XLSXR_IN_MANYFILE_XLSXR_1,XLSXR_IN_ADVANCED_XLSXR_1,XLSXR_IN_SCAN_SCHEMA_IF_DYNAMIC_XLSXR_1,XLSXR_IN_READ_BLANK_AS_XLSXR_1,XLSXR_IN_EXPAND_MERGED_CELLS_XLSXR_1,XLSXR_IN_NETWORK_AUTHENTICATION_XLSXR_1,SourceDataset_XLSXR_2,XLSXR_IN_MANYFILE_XLSXR_2,XLSXR_IN_ADVANCED_XLSXR_2,XLSXR_IN_SCAN_SCHEMA_IF_DYNAMIC_XLSXR_2,XLSXR_IN_READ_BLANK_AS_XLSXR_2,XLSXR_IN_EXPAND_MERGED_CELLS_XLSXR_2,XLSXR_IN_NETWORK_AUTHENTICATION_XLSXR_2,GEODATABASE_SDE_OUT_FME_CONNECTION_GROUP_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_CONNECTION_FILE_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_FME_GROUP_NAMED1_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_TRANSACTION_TYPE_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_TEMPLATEFILE_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_TABLE_PARAMETERS_GROUP_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_SIMPLIFY_GEOM_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_ORIGIN_X_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_ORIGIN_Y_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_XY_SCALE_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_HAS_Z_VALUES_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_Z_ORIGIN_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_Z_SCALE_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_GRID_1_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_GEODB_SDE_WRT_ADV_PARM_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_DEFAULT_Z_VALUE_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_TRANSACTION_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_TRANSACTION_INTERVAL_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_IGNORE_FAILED_FEATURE_ENTRY_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_MAX_NUMBER_FAILED_FEATURES_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_DUMP_FAILED_FEATURES_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_FFS_DUMP_FILE_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_ANNOTATION_UNITS_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_HAS_MEASURES_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_MEASURES_ORIGIN_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_MEASURES_SCALE_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_RECONCILE_AND_POST_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_DELETE_CHILD_AFTER_RECONCILE_AND_POST_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_VALIDATE_FEATURES_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_SIMPLIFY_NETWORK_FEATURES_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_PERSISTENT_CONNECTION_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_COMMIT_TRANSACTIONS_AFTER_WRITE_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_BEGIN_SQL{0}_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_END_SQL{0}_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_USERID_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_PASSWORD_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_VERSION_GEODATABASE_SDE_1,DestDataset_POSTGIS_1,POSTGIS_OUT_FME_CONNECTION_GROUP_POSTGIS_1,POSTGIS_OUT_ADVANCED_POSTGIS_1,POSTGIS_OUT_BULK_COPY_POSTGIS_1,POSTGIS_OUT_START_TRANSACTION_POSTGIS_1,POSTGIS_OUT_TRANSACTION_INTERVAL_POSTGIS_1,POSTGIS_OUT_INSERT_TEXT_GEOMETRY_POSTGIS_1,POSTGIS_OUT_BEGIN_SQL_POSTGIS_1,POSTGIS_OUT_END_SQL_POSTGIS_1,GEODATABASE_SDE_OUT_FME_CONNECTION_GROUP_GEODATABASE_SDE_2,GEODATABASE_SDE_OUT_CONNECTION_FILE_GEODATABASE_SDE_2,GEODATABASE_SDE_OUT_FME_GROUP_NAMED1_GEODATABASE_SDE_2,GEODATABASE_SDE_OUT_TRANSACTION_TYPE_GEODATABASE_SDE_2,GEODATABASE_SDE_OUT_TEMPLATEFILE_GEODATABASE_SDE_2,GEODATABASE_SDE_OUT_TABLE_PARAMETERS_GROUP_GEODATABASE_SDE_2,GEODATABASE_SDE_OUT_SIMPLIFY_GEOM_GEODATABASE_SDE_2,GEODATABASE_SDE_OUT_ORIGIN_X_GEODATABASE_SDE_2,GEODATABASE_SDE_OUT_ORIGIN_Y_GEODATABASE_SDE_2,GEODATABASE_SDE_OUT_XY_SCALE_GEODATABASE_SDE_2,GEODATABASE_SDE_OUT_HAS_Z_VALUES_GEODATABASE_SDE_2,GEODATABASE_SDE_OUT_Z_ORIGIN_GEODATABASE_SDE_2,GEODATABASE_SDE_OUT_Z_SCALE_GEODATABASE_SDE_2,GEODATABASE_SDE_OUT_GRID_1_GEODATABASE_SDE_2,GEODATABASE_SDE_OUT_GEODB_SDE_WRT_ADV_PARM_GEODATABASE_SDE_2,GEODATABASE_SDE_OUT_DEFAULT_Z_VALUE_GEODATABASE_SDE_2,GEODATABASE_SDE_OUT_TRANSACTION_GEODATABASE_SDE_2,GEODATABASE_SDE_OUT_TRANSACTION_INTERVAL_GEODATABASE_SDE_2,GEODATABASE_SDE_OUT_IGNORE_FAILED_FEATURE_ENTRY_GEODATABASE_SDE_2,GEODATABASE_SDE_OUT_MAX_NUMBER_FAILED_FEATURES_GEODATABASE_SDE_2,GEODATABASE_SDE_OUT_DUMP_FAILED_FEATURES_GEODATABASE_SDE_2,GEODATABASE_SDE_OUT_FFS_DUMP_FILE_GEODATABASE_SDE_2,GEODATABASE_SDE_OUT_ANNOTATION_UNITS_GEODATABASE_SDE_2,GEODATABASE_SDE_OUT_HAS_MEASURES_GEODATABASE_SDE_2,GEODATABASE_SDE_OUT_MEASURES_ORIGIN_GEODATABASE_SDE_2,GEODATABASE_SDE_OUT_MEASURES_SCALE_GEODATABASE_SDE_2,GEODATABASE_SDE_OUT_RECONCILE_AND_POST_GEODATABASE_SDE_2,GEODATABASE_SDE_OUT_DELETE_CHILD_AFTER_RECONCILE_AND_POST_GEODATABASE_SDE_2,GEODATABASE_SDE_OUT_VALIDATE_FEATURES_GEODATABASE_SDE_2,GEODATABASE_SDE_OUT_SIMPLIFY_NETWORK_FEATURES_GEODATABASE_SDE_2,GEODATABASE_SDE_OUT_PERSISTENT_CONNECTION_GEODATABASE_SDE_2,GEODATABASE_SDE_OUT_COMMIT_TRANSACTIONS_AFTER_WRITE_GEODATABASE_SDE_2,GEODATABASE_SDE_OUT_BEGIN_SQL{0}_GEODATABASE_SDE_2,GEODATABASE_SDE_OUT_END_SQL{0}_GEODATABASE_SDE_2,GEODATABASE_SDE_OUT_USERID_GEODATABASE_SDE_2,GEODATABASE_SDE_OUT_PASSWORD_GEODATABASE_SDE_2,GEODATABASE_SDE_OUT_VERSION_GEODATABASE_SDE_2,DestDataset_ORACLE_NONSPATIAL_2,ORACLE_NONSPATIAL_OUT_FME_CONNECTION_GROUP_ORACLE_NONSPATIAL_2,ORACLE_NONSPATIAL_OUT_PERSISTENT_CONNECTION_ORACLE_NONSPATIAL_2,ORACLE_NONSPATIAL_OUT_ORACLENONSPATIAL_WRT_ADV_PARA_ORACLE_NONSPATIAL_2,ORACLE_NONSPATIAL_OUT_START_TRANSACTION_ORACLE_NONSPATIAL_2,ORACLE_NONSPATIAL_OUT_CHUNK_SIZE_ORACLE_NONSPATIAL_2,ORACLE_NONSPATIAL_OUT_TRANSACTION_INTERVAL_ORACLE_NONSPATIAL_2,ORACLE_NONSPATIAL_OUT_BEGIN_SQL{0}_ORACLE_NONSPATIAL_2,ORACLE_NONSPATIAL_OUT_END_SQL{0}_ORACLE_NONSPATIAL_2,ORACLE_NONSPATIAL_OUT_STRICT_ATTR_CONVERSION_ORACLE_NONSPATIAL_2,ORACLE_NONSPATIAL_OUT_WORKSPACE_ORACLE_NONSPATIAL_2,DestDataset_FILECOPY_1,FILECOPY_OUT_FME_GROUP_NAMED1_FILECOPY_1,FILECOPY_OUT_FILE_OPERATION_FILECOPY_1,FILECOPY_OUT_OVERWRITE_FILE_FILECOPY_1,FILECOPY_OUT_COPY_SOURCE_DIRECTORY_FILECOPY_1,FILECOPY_OUT_COPY_SUBDIRECTORIES_FILECOPY_1,FILECOPY_OUT_FAIL_NONEXISTENT_SOURCE_FILECOPY_1,FILECOPY_OUT_FAIL_INVALID_DESTINATION_FILECOPY_1,FILECOPY_OUT_FME_GROUP_NAMED2_FILECOPY_1,FILECOPY_OUT_MIME_TYPE_FILECOPY_1,DestDataset_FILECOPY_2,FILECOPY_OUT_FME_GROUP_NAMED1_FILECOPY_2,FILECOPY_OUT_FILE_OPERATION_FILECOPY_2,FILECOPY_OUT_OVERWRITE_FILE_FILECOPY_2,FILECOPY_OUT_COPY_SOURCE_DIRECTORY_FILECOPY_2,FILECOPY_OUT_COPY_SUBDIRECTORIES_FILECOPY_2,FILECOPY_OUT_FAIL_NONEXISTENT_SOURCE_FILECOPY_2,FILECOPY_OUT_FAIL_INVALID_DESTINATION_FILECOPY_2,FILECOPY_OUT_FME_GROUP_NAMED2_FILECOPY_2,FILECOPY_OUT_MIME_TYPE_FILECOPY_2
-DEFAULT_MACRO SourceDataset_GEODATABASE_FILE Y:\Rampe\GGO\GGO.gdb
-GUI SOURCE_GEODATABASE SourceDataset_GEODATABASE_FILE File Geodatabase:
-DEFAULT_MACRO DestDataset_POSTGIS GEODB_WORK_PG
-GUI NAMED_DB_CONNECTION_ENCODED DestDataset_POSTGIS FMT:POSTGIS%FAMILY:PostgreSQL Connection:
-DEFAULT_MACRO DestDataset_ORACLE_NONSPATIAL WORK<openparen>OEREB2<closeparen>_ORAKLE
-GUI NAMED_DB_CONNECTION_ENCODED DestDataset_ORACLE_NONSPATIAL FMT:ORACLE_NONSPATIAL%FAMILY:Oracle Connection:
-DEFAULT_MACRO OUTPUT_RV_URL https://oerebfiles-test.apps.be.ch/9984/
+GUI IGNORE SourceDataset_GEODATABASE_FILE_1,GEODATABASE_FILE_IN_FME_CONNECTION_GROUP_GEODATABASE_FILE_1,GEODATABASE_FILE_IN_FME_GROUP_NAMED1_GEODATABASE_FILE_1,GEODATABASE_FILE_IN_WHERE_WWJD_GEODATABASE_FILE_1,GEODATABASE_FILE_IN_TRANSLATE_SPATIAL_DATA_ONLY_GEODATABASE_FILE_1,GEODATABASE_FILE_IN_RESOLVE_DOMAINS_GEODATABASE_FILE_1,GEODATABASE_FILE_IN_RESOLVE_SUBTYPE_NAMES_GEODATABASE_FILE_1,GEODATABASE_FILE_IN_IGNORE_NETWORK_INFO_GEODATABASE_FILE_1,GEODATABASE_FILE_IN_IGNORE_RELATIONSHIP_INFO_GEODATABASE_FILE_1,GEODATABASE_FILE_IN_SPLIT_COMPLEX_EDGES_GEODATABASE_FILE_1,GEODATABASE_FILE_IN_SPLIT_MULTI_PART_ANNOS_GEODATABASE_FILE_1,GEODATABASE_FILE_IN_USE_SEARCH_ENVELOPE_GEODATABASE_FILE_1,GEODATABASE_FILE_IN_SEARCH_ENVELOPE_MINX_GEODATABASE_FILE_1,GEODATABASE_FILE_IN_SEARCH_ENVELOPE_MINY_GEODATABASE_FILE_1,GEODATABASE_FILE_IN_SEARCH_ENVELOPE_MAXX_GEODATABASE_FILE_1,GEODATABASE_FILE_IN_SEARCH_ENVELOPE_MAXY_GEODATABASE_FILE_1,GEODATABASE_FILE_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_GEODATABASE_FILE_1,GEODATABASE_FILE_IN_CLIP_TO_ENVELOPE_GEODATABASE_FILE_1,GEODATABASE_FILE_IN_GEODB_SHARED_RDR_ADV_PARM_GROUP_GEODATABASE_FILE_1,GEODATABASE_FILE_IN_SPLIT_COMPLEX_ANNOS_GEODATABASE_FILE_1,GEODATABASE_FILE_IN_CACHE_MULTIPATCH_TEXTURES_GEODATABASE_FILE_1,GEODATABASE_FILE_IN_SEARCH_METHOD_GEODATABASE_FILE_1,GEODATABASE_FILE_IN_SEARCH_ORDER_GEODATABASE_FILE_1,GEODATABASE_FILE_IN_SEARCH_FEATURE_GEODATABASE_FILE_1,GEODATABASE_FILE_IN_CHECK_SIMPLE_GEOM_GEODATABASE_FILE_1,GEODATABASE_FILE_IN_MERGE_FEAT_LINKED_ANNOS_GEODATABASE_FILE_1,GEODATABASE_FILE_IN_BEGIN_SQL{0}_GEODATABASE_FILE_1,GEODATABASE_FILE_IN_END_SQL{0}_GEODATABASE_FILE_1,GEODATABASE_FILE_IN_NETWORK_AUTHENTICATION_GEODATABASE_FILE_1,_GEODB_IN_ALIAS_MODE_GEODATABASE_FILE_1,SourceDataset_XLSXR_1,XLSXR_IN_MANYFILE_XLSXR_1,XLSXR_IN_ADVANCED_XLSXR_1,XLSXR_IN_SCAN_SCHEMA_IF_DYNAMIC_XLSXR_1,XLSXR_IN_READ_BLANK_AS_XLSXR_1,XLSXR_IN_EXPAND_MERGED_CELLS_XLSXR_1,XLSXR_IN_NETWORK_AUTHENTICATION_XLSXR_1,SourceDataset_XLSXR_2,XLSXR_IN_MANYFILE_XLSXR_2,XLSXR_IN_ADVANCED_XLSXR_2,XLSXR_IN_SCAN_SCHEMA_IF_DYNAMIC_XLSXR_2,XLSXR_IN_READ_BLANK_AS_XLSXR_2,XLSXR_IN_EXPAND_MERGED_CELLS_XLSXR_2,XLSXR_IN_NETWORK_AUTHENTICATION_XLSXR_2,GEODATABASE_SDE_OUT_FME_CONNECTION_GROUP_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_CONNECTION_FILE_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_FME_GROUP_NAMED1_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_TRANSACTION_TYPE_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_TEMPLATEFILE_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_TABLE_PARAMETERS_GROUP_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_SIMPLIFY_GEOM_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_ORIGIN_X_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_ORIGIN_Y_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_XY_SCALE_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_HAS_Z_VALUES_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_Z_ORIGIN_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_Z_SCALE_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_GRID_1_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_GEODB_SDE_WRT_ADV_PARM_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_DEFAULT_Z_VALUE_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_TRANSACTION_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_TRANSACTION_INTERVAL_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_IGNORE_FAILED_FEATURE_ENTRY_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_MAX_NUMBER_FAILED_FEATURES_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_DUMP_FAILED_FEATURES_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_FFS_DUMP_FILE_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_ANNOTATION_UNITS_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_HAS_MEASURES_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_MEASURES_ORIGIN_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_MEASURES_SCALE_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_RECONCILE_AND_POST_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_DELETE_CHILD_AFTER_RECONCILE_AND_POST_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_VALIDATE_FEATURES_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_SIMPLIFY_NETWORK_FEATURES_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_PERSISTENT_CONNECTION_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_COMMIT_TRANSACTIONS_AFTER_WRITE_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_BEGIN_SQL{0}_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_END_SQL{0}_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_USERID_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_PASSWORD_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_VERSION_GEODATABASE_SDE_1,POSTGIS_OUT_HOST_POSTGIS_1,POSTGIS_OUT_PORT_POSTGIS_1,DestDataset_POSTGIS_1,POSTGIS_OUT_USER_NAME_POSTGIS_1,POSTGIS_OUT_PASSWORD_POSTGIS_1,POSTGIS_OUT_FME_CONNECTION_GROUP_POSTGIS_1,POSTGIS_OUT_ADVANCED_POSTGIS_1,POSTGIS_OUT_BULK_COPY_POSTGIS_1,POSTGIS_OUT_START_TRANSACTION_POSTGIS_1,POSTGIS_OUT_TRANSACTION_INTERVAL_POSTGIS_1,POSTGIS_OUT_INSERT_TEXT_GEOMETRY_POSTGIS_1,POSTGIS_OUT_BEGIN_SQL_POSTGIS_1,POSTGIS_OUT_END_SQL_POSTGIS_1,GEODATABASE_SDE_OUT_FME_CONNECTION_GROUP_GEODATABASE_SDE_2,GEODATABASE_SDE_OUT_CONNECTION_FILE_GEODATABASE_SDE_2,GEODATABASE_SDE_OUT_FME_GROUP_NAMED1_GEODATABASE_SDE_2,GEODATABASE_SDE_OUT_TRANSACTION_TYPE_GEODATABASE_SDE_2,GEODATABASE_SDE_OUT_TEMPLATEFILE_GEODATABASE_SDE_2,GEODATABASE_SDE_OUT_TABLE_PARAMETERS_GROUP_GEODATABASE_SDE_2,GEODATABASE_SDE_OUT_SIMPLIFY_GEOM_GEODATABASE_SDE_2,GEODATABASE_SDE_OUT_ORIGIN_X_GEODATABASE_SDE_2,GEODATABASE_SDE_OUT_ORIGIN_Y_GEODATABASE_SDE_2,GEODATABASE_SDE_OUT_XY_SCALE_GEODATABASE_SDE_2,GEODATABASE_SDE_OUT_HAS_Z_VALUES_GEODATABASE_SDE_2,GEODATABASE_SDE_OUT_Z_ORIGIN_GEODATABASE_SDE_2,GEODATABASE_SDE_OUT_Z_SCALE_GEODATABASE_SDE_2,GEODATABASE_SDE_OUT_GRID_1_GEODATABASE_SDE_2,GEODATABASE_SDE_OUT_GEODB_SDE_WRT_ADV_PARM_GEODATABASE_SDE_2,GEODATABASE_SDE_OUT_DEFAULT_Z_VALUE_GEODATABASE_SDE_2,GEODATABASE_SDE_OUT_TRANSACTION_GEODATABASE_SDE_2,GEODATABASE_SDE_OUT_TRANSACTION_INTERVAL_GEODATABASE_SDE_2,GEODATABASE_SDE_OUT_IGNORE_FAILED_FEATURE_ENTRY_GEODATABASE_SDE_2,GEODATABASE_SDE_OUT_MAX_NUMBER_FAILED_FEATURES_GEODATABASE_SDE_2,GEODATABASE_SDE_OUT_DUMP_FAILED_FEATURES_GEODATABASE_SDE_2,GEODATABASE_SDE_OUT_FFS_DUMP_FILE_GEODATABASE_SDE_2,GEODATABASE_SDE_OUT_ANNOTATION_UNITS_GEODATABASE_SDE_2,GEODATABASE_SDE_OUT_HAS_MEASURES_GEODATABASE_SDE_2,GEODATABASE_SDE_OUT_MEASURES_ORIGIN_GEODATABASE_SDE_2,GEODATABASE_SDE_OUT_MEASURES_SCALE_GEODATABASE_SDE_2,GEODATABASE_SDE_OUT_RECONCILE_AND_POST_GEODATABASE_SDE_2,GEODATABASE_SDE_OUT_DELETE_CHILD_AFTER_RECONCILE_AND_POST_GEODATABASE_SDE_2,GEODATABASE_SDE_OUT_VALIDATE_FEATURES_GEODATABASE_SDE_2,GEODATABASE_SDE_OUT_SIMPLIFY_NETWORK_FEATURES_GEODATABASE_SDE_2,GEODATABASE_SDE_OUT_PERSISTENT_CONNECTION_GEODATABASE_SDE_2,GEODATABASE_SDE_OUT_COMMIT_TRANSACTIONS_AFTER_WRITE_GEODATABASE_SDE_2,GEODATABASE_SDE_OUT_BEGIN_SQL{0}_GEODATABASE_SDE_2,GEODATABASE_SDE_OUT_END_SQL{0}_GEODATABASE_SDE_2,GEODATABASE_SDE_OUT_USERID_GEODATABASE_SDE_2,GEODATABASE_SDE_OUT_PASSWORD_GEODATABASE_SDE_2,GEODATABASE_SDE_OUT_VERSION_GEODATABASE_SDE_2,DestDataset_ORACLE_NONSPATIAL_1,ORACLE_NONSPATIAL_OUT_USER_NAME_ORACLE_NONSPATIAL_1,ORACLE_NONSPATIAL_OUT_PASSWORD_ORACLE_NONSPATIAL_1,ORACLE_NONSPATIAL_OUT_FME_CONNECTION_GROUP_ORACLE_NONSPATIAL_1,ORACLE_NONSPATIAL_OUT_PERSISTENT_CONNECTION_ORACLE_NONSPATIAL_1,ORACLE_NONSPATIAL_OUT_ORACLENONSPATIAL_WRT_ADV_PARA_ORACLE_NONSPATIAL_1,ORACLE_NONSPATIAL_OUT_START_TRANSACTION_ORACLE_NONSPATIAL_1,ORACLE_NONSPATIAL_OUT_CHUNK_SIZE_ORACLE_NONSPATIAL_1,ORACLE_NONSPATIAL_OUT_TRANSACTION_INTERVAL_ORACLE_NONSPATIAL_1,ORACLE_NONSPATIAL_OUT_BEGIN_SQL{0}_ORACLE_NONSPATIAL_1,ORACLE_NONSPATIAL_OUT_END_SQL{0}_ORACLE_NONSPATIAL_1,ORACLE_NONSPATIAL_OUT_STRICT_ATTR_CONVERSION_ORACLE_NONSPATIAL_1,ORACLE_NONSPATIAL_OUT_WORKSPACE_ORACLE_NONSPATIAL_1,DestDataset_FILECOPY_1,FILECOPY_OUT_FME_GROUP_NAMED1_FILECOPY_1,FILECOPY_OUT_FILE_OPERATION_FILECOPY_1,FILECOPY_OUT_OVERWRITE_FILE_FILECOPY_1,FILECOPY_OUT_COPY_SOURCE_DIRECTORY_FILECOPY_1,FILECOPY_OUT_COPY_SUBDIRECTORIES_FILECOPY_1,FILECOPY_OUT_FAIL_NONEXISTENT_SOURCE_FILECOPY_1,FILECOPY_OUT_FAIL_INVALID_DESTINATION_FILECOPY_1,FILECOPY_OUT_FME_GROUP_NAMED2_FILECOPY_1,FILECOPY_OUT_MIME_TYPE_FILECOPY_1,DestDataset_FILECOPY_2,FILECOPY_OUT_FME_GROUP_NAMED1_FILECOPY_2,FILECOPY_OUT_FILE_OPERATION_FILECOPY_2,FILECOPY_OUT_OVERWRITE_FILE_FILECOPY_2,FILECOPY_OUT_COPY_SOURCE_DIRECTORY_FILECOPY_2,FILECOPY_OUT_COPY_SUBDIRECTORIES_FILECOPY_2,FILECOPY_OUT_FAIL_NONEXISTENT_SOURCE_FILECOPY_2,FILECOPY_OUT_FAIL_INVALID_DESTINATION_FILECOPY_2,FILECOPY_OUT_FME_GROUP_NAMED2_FILECOPY_2,FILECOPY_OUT_MIME_TYPE_FILECOPY_2
+DEFAULT_MACRO FGDB 
+GUI SOURCE_GEODATABASE FGDB File Geodatabase:
+DEFAULT_MACRO OUTPUT_RV_URL 
 GUI OPTIONAL TEXT OUTPUT_RV_URL Output-URL Rechtsvorschriften:
-DEFAULT_MACRO INPUT_RV_DIR \\geoda.infra.be.ch\arbeit\Rampe\GGO\RV
+DEFAULT_MACRO INPUT_RV_DIR 
 GUI OPTIONAL TEXT INPUT_RV_DIR Input-Directory Rechtsvorschriften:
-DEFAULT_MACRO OUTPUT_RV_DIR \\a4pu-cfs-oereb.infra.be.ch\a4pu-cfs-oereb\9984
+DEFAULT_MACRO OUTPUT_RV_DIR 
 GUI OPTIONAL TEXT OUTPUT_RV_DIR Output-Directory Rechtsvorschriften:
-DEFAULT_MACRO DestDataset_FILECOPY C:\Windows\Temp
-GUI DIRNAME DestDataset_FILECOPY Destination File Copy Folder:
-DEFAULT_MACRO DestDataset_FILECOPY_3 C:\Windows\Temp
-GUI DIRNAME DestDataset_FILECOPY_3 Destination File Copy Folder:
-DEFAULT_MACRO SourceDataset_XLSXR Y:\Anwend\OEREBK\Data\9984_GeschuetzteGeologischeObjekte\AMT_9984.xlsx
-GUI MULTIFILE SourceDataset_XLSXR Excel_Files(*.xlsx;*.xlsm;*.xls)|*.xlsx;*.xlsm;*.xls|Excel_Workbook_2007(*.xlsx)|*.xlsx|Excel_Macro_Workbook(*.xlsm)|*.xlsm|Excel_Workbook_Pre_2007(*.xls)|*.xls|All_files(*)|* Source Microsoft Excel File(s):
-DEFAULT_MACRO SourceDataset_XLSXR_3 Y:\Anwend\OEREBK\Data\9984_GeschuetzteGeologischeObjekte\DARSTELLUNGSDIENST_9984.xlsx
-GUI MULTIFILE SourceDataset_XLSXR_3 Excel_Files(*.xlsx;*.xlsm;*.xls)|*.xlsx;*.xlsm;*.xls|Excel_Workbook_2007(*.xlsx)|*.xlsx|Excel_Macro_Workbook(*.xlsm)|*.xlsm|Excel_Workbook_Pre_2007(*.xls)|*.xls|All_files(*)|* Source Microsoft Excel File(s):
-DEFAULT_MACRO LIEFEREINHEIT 9984
+DEFAULT_MACRO EXCEL_AMT 
+GUI MULTIFILE EXCEL_AMT Excel_Files(*.xlsx;*.xlsm;*.xls)|*.xlsx;*.xlsm;*.xls|Excel_Workbook_2007(*.xlsx)|*.xlsx|Excel_Macro_Workbook(*.xlsm)|*.xlsm|Excel_Workbook_Pre_2007(*.xls)|*.xls|All_files(*)|* Source Microsoft Excel File AMT:
+DEFAULT_MACRO EXCEL_DARSTELLUNGSDIENST 
+GUI MULTIFILE EXCEL_DARSTELLUNGSDIENST Excel_Files(*.xlsx;*.xlsm;*.xls)|*.xlsx;*.xlsm;*.xls|Excel_Workbook_2007(*.xlsx)|*.xlsx|Excel_Macro_Workbook(*.xlsm)|*.xlsm|Excel_Workbook_Pre_2007(*.xls)|*.xls|All_files(*)|* Source Microsoft Excel File Darstellungsdienst:
+DEFAULT_MACRO LIEFEREINHEIT 
 GUI OPTIONAL TEXT LIEFEREINHEIT Liefereinheit:
-DEFAULT_MACRO LEGEND_BASEURL https://oerebfiles.apps.be.ch/legenden/GGO/
+DEFAULT_MACRO LEGEND_BASEURL 
 GUI OPTIONAL TEXT LEGEND_BASEURL Base-URL Legende:
-DEFAULT_MACRO LEGEND_FULLURL https://oerebfiles.apps.be.ch/legenden/GGO/ggo.png
+DEFAULT_MACRO LEGEND_FULLURL 
 GUI OPTIONAL TEXT LEGEND_FULLURL URL-Legendsymbol:
+DEFAULT_MACRO LOGFILE 
+GUI OPTIONAL TEXT LOGFILE Logfile:
+DEFAULT_MACRO WORK_CONNECTION 
+GUI OPTIONAL TEXT WORK_CONNECTION Connection to work:
+DEFAULT_MACRO GEODB_PG_DATABASE 
+GUI OPTIONAL TEXT GEODB_PG_DATABASE Postgis Database:
+DEFAULT_MACRO GEODB_PG_USERNAME 
+GUI OPTIONAL TEXT GEODB_PG_USERNAME Postgis Username:
+DEFAULT_MACRO GEODB_PG_PASSWORD 
+GUI OPTIONAL TEXT GEODB_PG_PASSWORD Postgis Password:
+DEFAULT_MACRO GEODB_PG_HOST 
+GUI OPTIONAL TEXT GEODB_PG_HOST Postgis Host:
+DEFAULT_MACRO GEODB_PG_PORT 
+GUI OPTIONAL TEXT GEODB_PG_PORT Postgis Port:
+DEFAULT_MACRO OEREB2_DATABASE 
+GUI OPTIONAL TEXT OEREB2_DATABASE OEREB2 Database:
+DEFAULT_MACRO OEREB2_USERNAME 
+GUI OPTIONAL TEXT OEREB2_USERNAME OEREB2 Username:
+DEFAULT_MACRO OEREB2_PASSWORD 
+GUI OPTIONAL TEXT OEREB2_PASSWORD OEREB2 Password:
+DEFAULT_MACRO OEREB2_CONNECTION 
+GUI OPTIONAL TEXT OEREB2_CONNECTION OEREB2 Conneciont:
 DEFAULT_MACRO RES_ID 1
 GUI IGNORE OPTIONAL TEXT RES_ID Rechtsstatus:
 DEFAULT_MACRO STH_ID 230
 GUI IGNORE OPTIONAL TEXT STH_ID Subthema ID:
-INCLUDE [ if {{$(SourceDataset_GEODATABASE_FILE)} == {}} { puts_real {Parameter 'SourceDataset_GEODATABASE_FILE' must be given a value.}; exit 1; }; ]
-INCLUDE [ if {{$(DestDataset_POSTGIS)} == {}} { puts_real {Parameter 'DestDataset_POSTGIS' must be given a value.}; exit 1; }; ]
-INCLUDE [ if {{$(DestDataset_ORACLE_NONSPATIAL)} == {}} { puts_real {Parameter 'DestDataset_ORACLE_NONSPATIAL' must be given a value.}; exit 1; }; ]
-INCLUDE [ if {{$(DestDataset_FILECOPY)} == {}} { puts_real {Parameter 'DestDataset_FILECOPY' must be given a value.}; exit 1; }; ]
-INCLUDE [ if {{$(DestDataset_FILECOPY_3)} == {}} { puts_real {Parameter 'DestDataset_FILECOPY_3' must be given a value.}; exit 1; }; ]
-INCLUDE [ if {{$(SourceDataset_XLSXR)} == {}} { puts_real {Parameter 'SourceDataset_XLSXR' must be given a value.}; exit 1; }; ]
-INCLUDE [ if {{$(SourceDataset_XLSXR_3)} == {}} { puts_real {Parameter 'SourceDataset_XLSXR_3' must be given a value.}; exit 1; }; ]
+DEFAULT_MACRO DestDataset_FILECOPY_3 C:\Windows\Temp
+GUI IGNORE OPTIONAL DIRNAME DestDataset_FILECOPY_3 Destination File Copy Folder:
+DEFAULT_MACRO DestDataset_FILECOPY C:\Windows\Temp
+GUI IGNORE OPTIONAL DIRNAME DestDataset_FILECOPY Destination File Copy Folder:
+INCLUDE [ if {{$(FGDB)} == {}} { puts_real {Parameter 'FGDB' must be given a value.}; exit 1; }; ]
+INCLUDE [ if {{$(EXCEL_AMT)} == {}} { puts_real {Parameter 'EXCEL_AMT' must be given a value.}; exit 1; }; ]
+INCLUDE [ if {{$(EXCEL_DARSTELLUNGSDIENST)} == {}} { puts_real {Parameter 'EXCEL_DARSTELLUNGSDIENST' must be given a value.}; exit 1; }; ]
 #! START_HEADER
 #! START_WB_HEADER
 READER_TYPE MULTI_READER
@@ -5100,7 +5167,7 @@ MULTI_WRITER_KEYWORD{1} POSTGIS_1
 MULTI_WRITER_TYPE{2} GEODATABASE_SDE
 MULTI_WRITER_KEYWORD{2} GEODATABASE_SDE_2
 MULTI_WRITER_TYPE{3} ORACLE_NONSPATIAL
-MULTI_WRITER_KEYWORD{3} ORACLE_NONSPATIAL_2
+MULTI_WRITER_KEYWORD{3} ORACLE_NONSPATIAL_1
 MULTI_WRITER_TYPE{4} FILECOPY
 MULTI_WRITER_KEYWORD{4} FILECOPY_1
 MULTI_WRITER_TYPE{5} FILECOPY
@@ -5124,7 +5191,7 @@ INCLUDE [ if {{$(SourceDataset)} != ""} {                        \
  } ]
 #! END_WB_HEADER
 #! START_SOURCE_HEADER GEODATABASE_FILE GEODATABASE_FILE_1
-DEFAULT_MACRO SourceDataset_GEODATABASE_FILE_1 $(SourceDataset_GEODATABASE_FILE)
+DEFAULT_MACRO SourceDataset_GEODATABASE_FILE_1 $(FGDB)
 GUI SOURCE_GEODATABASE SourceDataset_GEODATABASE_FILE_1 File Geodatabase:
 # Translation flags.
 #
@@ -5330,7 +5397,7 @@ INCLUDE [ if {{$(SourceDataset)} != ""} {                        \
  } ]
 #! END_WB_HEADER
 #! START_SOURCE_HEADER XLSXR XLSXR_1
-DEFAULT_MACRO SourceDataset_XLSXR_1 $(SourceDataset_XLSXR)
+DEFAULT_MACRO SourceDataset_XLSXR_1 $(EXCEL_AMT)
 GUI MULTIFILE SourceDataset_XLSXR_1 Excel_Files(*.xlsx;*.xlsm;*.xls)|*.xlsx;*.xlsm;*.xls|Excel_Workbook_2007(*.xlsx)|*.xlsx|Excel_Macro_Workbook(*.xlsm)|*.xlsm|Excel_Workbook_Pre_2007(*.xls)|*.xls|All_files(*)|* Source Microsoft Excel File(s):
 #GUI GROUP TABLELIST Constraints
 # TABLELIST is not shown in GUI, but is required for infrastructure
@@ -5394,7 +5461,7 @@ INCLUDE [ if {{$(SourceDataset)} != ""} {                        \
  } ]
 #! END_WB_HEADER
 #! START_SOURCE_HEADER XLSXR XLSXR_2
-DEFAULT_MACRO SourceDataset_XLSXR_2 $(SourceDataset_XLSXR_3)
+DEFAULT_MACRO SourceDataset_XLSXR_2 $(EXCEL_DARSTELLUNGSDIENST)
 GUI MULTIFILE SourceDataset_XLSXR_2 Excel_Files(*.xlsx;*.xlsm;*.xls)|*.xlsx;*.xlsm;*.xls|Excel_Workbook_2007(*.xlsx)|*.xlsx|Excel_Macro_Workbook(*.xlsm)|*.xlsm|Excel_Workbook_Pre_2007(*.xls)|*.xls|All_files(*)|* Source Microsoft Excel File(s):
 #GUI GROUP TABLELIST Constraints
 # TABLELIST is not shown in GUI, but is required for infrastructure
@@ -5454,10 +5521,10 @@ INCLUDE [ if {"$(DestDataset)" != ""} {                          \
 #! END_WB_HEADER
 #! START_DEST_HEADER GEODATABASE_SDE GEODATABASE_SDE_1
 DEFAULT_MACRO DestDataset_GEODATABASE_SDE_1 NULL
-DEFAULT_MACRO GEODATABASE_SDE_OUT_FME_CONNECTION_GROUP_GEODATABASE_SDE_1 FME_DISCLOSURE_CLOSED
+DEFAULT_MACRO GEODATABASE_SDE_OUT_FME_CONNECTION_GROUP_GEODATABASE_SDE_1 FME_DISCLOSURE_OPEN
 GUI OPTIONAL DISCLOSUREGROUP GEODATABASE_SDE_OUT_FME_CONNECTION_GROUP_GEODATABASE_SDE_1 GEODATABASE_SDE_OUT_CONNECTION_FILE_GEODATABASE_SDE_1%GEODATABASE_SDE_OUT_CREDENTIALS_OVERRIDE%GEODATABASE_SDE_OUT_VERSION_OVERRIDE Database Connection
 # ============================================================================
-DEFAULT_MACRO GEODATABASE_SDE_OUT_CONNECTION_FILE_GEODATABASE_SDE_1 P:\Z_Systems\GeoDB\Zusatzdaten_BKT\WORKT_GEODB.sde
+DEFAULT_MACRO GEODATABASE_SDE_OUT_CONNECTION_FILE_GEODATABASE_SDE_1 $(WORK_CONNECTION)
 GEODATABASE_SDE_1_CONNECTION_FILE "$(GEODATABASE_SDE_OUT_CONNECTION_FILE_GEODATABASE_SDE_1)"
 GUI FILENAME_MUSTEXIST GEODATABASE_SDE_OUT_CONNECTION_FILE_GEODATABASE_SDE_1 Esri_Connection_File(*.sde)|*.sde Connection File:
 # ============================================================================
@@ -5465,7 +5532,7 @@ GUI FILENAME_MUSTEXIST GEODATABASE_SDE_OUT_CONNECTION_FILE_GEODATABASE_SDE_1 Esr
 # ============================================================================
 # The following GUI line prompts for the version.
 # ========================================================================
-DEFAULT_MACRO GEODATABASE_SDE_OUT_FME_GROUP_NAMED1_GEODATABASE_SDE_1 FME_DISCLOSURE_CLOSED
+DEFAULT_MACRO GEODATABASE_SDE_OUT_FME_GROUP_NAMED1_GEODATABASE_SDE_1 FME_DISCLOSURE_OPEN
 GUI OPTIONAL DISCLOSUREGROUP GEODATABASE_SDE_OUT_FME_GROUP_NAMED1_GEODATABASE_SDE_1 GEODATABASE_SDE_OUT_TRANSACTION_TYPE_GEODATABASE_SDE_1%GEODATABASE_SDE_OUT_TEMPLATEFILE_GEODATABASE_SDE_1 General Parameters
 # ============================================================================
 # This option specifies the transaction type. This should be set to VERSIONING
@@ -5529,7 +5596,7 @@ GUI FLOAT GEODATABASE_SDE_OUT_Z_SCALE_GEODATABASE_SDE_1 Z Scale:
 DEFAULT_MACRO GEODATABASE_SDE_OUT_GRID_1_GEODATABASE_SDE_1 0
 GEODATABASE_SDE_1_GRID_1 "$(GEODATABASE_SDE_OUT_GRID_1_GEODATABASE_SDE_1)"
 GUI FLOAT GEODATABASE_SDE_OUT_GRID_1_GEODATABASE_SDE_1 Grid 1 Size:
-DEFAULT_MACRO GEODATABASE_SDE_OUT_GEODB_SDE_WRT_ADV_PARM_GEODATABASE_SDE_1 
+DEFAULT_MACRO GEODATABASE_SDE_OUT_GEODB_SDE_WRT_ADV_PARM_GEODATABASE_SDE_1 FME_DISCLOSURE_CLOSED
 GUI OPTIONAL DISCLOSUREGROUP GEODATABASE_SDE_OUT_GEODB_SDE_WRT_ADV_PARM_GEODATABASE_SDE_1 GEODATABASE_SDE_OUT_DEFAULT_Z_VALUE_GEODATABASE_SDE_1%GEODATABASE_SDE_OUT_TRANSACTION_GEODATABASE_SDE_1%GEODATABASE_SDE_OUT_TRANSACTION_INTERVAL_GEODATABASE_SDE_1%GEODATABASE_SDE_OUT_IGNORE_FAILED_FEATURE_ENTRY_GEODATABASE_SDE_1%GEODATABASE_SDE_OUT_MAX_NUMBER_FAILED_FEATURES_GEODATABASE_SDE_1%GEODATABASE_SDE_OUT_DUMP_FAILED_FEATURES_GEODATABASE_SDE_1%GEODATABASE_SDE_OUT_FFS_DUMP_FILE_GEODATABASE_SDE_1%GEODATABASE_SDE_OUT_ANNOTATION_UNITS_GEODATABASE_SDE_1%GEODATABASE_SDE_OUT_HAS_MEASURES_GEODATABASE_SDE_1%GEODATABASE_SDE_OUT_MEASURES_ORIGIN_GEODATABASE_SDE_1%GEODATABASE_SDE_OUT_MEASURES_SCALE_GEODATABASE_SDE_1%GEODATABASE_SDE_OUT_RECONCILE_AND_POST_GEODATABASE_SDE_1%GEODATABASE_SDE_OUT_DELETE_CHILD_AFTER_RECONCILE_AND_POST_GEODATABASE_SDE_1%GEODATABASE_SDE_OUT_VALIDATE_FEATURES_GEODATABASE_SDE_1%GEODATABASE_SDE_OUT_SIMPLIFY_NETWORK_FEATURES_GEODATABASE_SDE_1%GEODATABASE_SDE_OUT_PERSISTENT_CONNECTION_GEODATABASE_SDE_1%GEODATABASE_SDE_OUT_COMMIT_TRANSACTIONS_AFTER_WRITE_GEODATABASE_SDE_1%GEODATABASE_SDE_OUT_BEGIN_SQL{0}_GEODATABASE_SDE_1%GEODATABASE_SDE_OUT_END_SQL{0}_GEODATABASE_SDE_1 Advanced
 # ============================================================================
 # Determines default Z value
@@ -5668,6 +5735,12 @@ GEODATABASE_SDE_1_DATASET "$(DestDataset_GEODATABASE_SDE_1)"
 MACRO WB_KEYWORD "POSTGIS_1"
 #! END_WB_HEADER
 #! START_DEST_HEADER POSTGIS POSTGIS_1
+DEFAULT_MACRO POSTGIS_OUT_HOST_POSTGIS_1 $(GEODB_PG_HOST)
+POSTGIS_1_HOST "$(POSTGIS_OUT_HOST_POSTGIS_1)"
+GUI TEXT POSTGIS_OUT_HOST_POSTGIS_1 Host:
+DEFAULT_MACRO POSTGIS_OUT_PORT_POSTGIS_1 $(GEODB_PG_PORT)
+POSTGIS_1_PORT "$(POSTGIS_OUT_PORT_POSTGIS_1)"
+GUI INTEGER POSTGIS_OUT_PORT_POSTGIS_1 Port:
 #! END_DEST_HEADER
 #! START_WB_HEADER
 DEFAULT_MACRO DestDataset
@@ -5676,8 +5749,15 @@ INCLUDE [ if {"$(DestDataset)" != ""} {                          \
  } ]
 #! END_WB_HEADER
 #! START_DEST_HEADER POSTGIS POSTGIS_1
-DEFAULT_MACRO DestDataset_POSTGIS_1 $(DestDataset_POSTGIS)
-GUI NAMED_DB_CONNECTION_ENCODED DestDataset_POSTGIS_1 FMT:POSTGIS Connection:
+DEFAULT_MACRO DestDataset_POSTGIS_1 $(GEODB_PG_DATABASE)
+POSTGIS_1_DATASET "$(DestDataset_POSTGIS_1)"
+GUI TEXT DestDataset_POSTGIS_1 Database:
+DEFAULT_MACRO POSTGIS_OUT_USER_NAME_POSTGIS_1 $(GEODB_PG_USERNAME)
+POSTGIS_1_USER_NAME "$(POSTGIS_OUT_USER_NAME_POSTGIS_1)"
+GUI TEXT POSTGIS_OUT_USER_NAME_POSTGIS_1 Username:
+DEFAULT_MACRO POSTGIS_OUT_PASSWORD_POSTGIS_1 $(GEODB_PG_PASSWORD)
+POSTGIS_1_PASSWORD "$(POSTGIS_OUT_PASSWORD_POSTGIS_1)"
+GUI OPTIONAL PASSWORD_ENCODED POSTGIS_OUT_PASSWORD_POSTGIS_1 Password:
 POSTGIS_1_PLUGIN_MAX_CHANNELS 1
 DEFAULT_MACRO POSTGIS_OUT_STRICT_TEMPORAL_TYPE_HANDLING_POSTGIS_1 Yes
 POSTGIS_1_STRICT_TEMPORAL_TYPE_HANDLING "$(POSTGIS_OUT_STRICT_TEMPORAL_TYPE_HANDLING_POSTGIS_1)"
@@ -5717,7 +5797,6 @@ POSTGIS_1_END_SQL "$(POSTGIS_OUT_END_SQL_POSTGIS_1)"
 GUI OPTIONAL TEXT_EDIT_SQL_CFG POSTGIS_OUT_END_SQL_POSTGIS_1 MODE,SQL;FORMAT,POSTGIS SQL To Run After Write
 # ============================================================================ 
 POSTGIS_1_GENERATE_FME_BUILD_NUM 18310
-POSTGIS_1_DATASET "$(DestDataset_POSTGIS_1)"
 #! END_DEST_HEADER
 #! START_WB_HEADER
 MACRO WB_KEYWORD "GEODATABASE_SDE_2"
@@ -5735,7 +5814,7 @@ DEFAULT_MACRO DestDataset_GEODATABASE_SDE_2 NULL
 DEFAULT_MACRO GEODATABASE_SDE_OUT_FME_CONNECTION_GROUP_GEODATABASE_SDE_2 
 GUI OPTIONAL DISCLOSUREGROUP GEODATABASE_SDE_OUT_FME_CONNECTION_GROUP_GEODATABASE_SDE_2 GEODATABASE_SDE_OUT_CONNECTION_FILE_GEODATABASE_SDE_2%GEODATABASE_SDE_OUT_CREDENTIALS_OVERRIDE%GEODATABASE_SDE_OUT_VERSION_OVERRIDE Database Connection
 # ============================================================================
-DEFAULT_MACRO GEODATABASE_SDE_OUT_CONNECTION_FILE_GEODATABASE_SDE_2 P:\Z_Systems\GeoDB\Zusatzdaten_BKT\OEREB2@WORKT.sde
+DEFAULT_MACRO GEODATABASE_SDE_OUT_CONNECTION_FILE_GEODATABASE_SDE_2 $(OEREB2_CONNECTION)
 GEODATABASE_SDE_2_CONNECTION_FILE "$(GEODATABASE_SDE_OUT_CONNECTION_FILE_GEODATABASE_SDE_2)"
 GUI FILENAME_MUSTEXIST GEODATABASE_SDE_OUT_CONNECTION_FILE_GEODATABASE_SDE_2 Esri_Connection_File(*.sde)|*.sde Connection File:
 # ============================================================================
@@ -5943,84 +6022,90 @@ GEODATABASE_SDE_2_VERSION "$(GEODATABASE_SDE_OUT_VERSION_GEODATABASE_SDE_2)"
 GEODATABASE_SDE_2_DATASET "$(DestDataset_GEODATABASE_SDE_2)"
 #! END_DEST_HEADER
 #! START_WB_HEADER
-MACRO WB_KEYWORD "ORACLE_NONSPATIAL_2"
+MACRO WB_KEYWORD "ORACLE_NONSPATIAL_1"
 #! END_WB_HEADER
-#! START_DEST_HEADER ORACLE_NONSPATIAL ORACLE_NONSPATIAL_2
+#! START_DEST_HEADER ORACLE_NONSPATIAL ORACLE_NONSPATIAL_1
 #! END_DEST_HEADER
 #! START_WB_HEADER
 DEFAULT_MACRO DestDataset
 INCLUDE [ if {"$(DestDataset)" != ""} {                          \
- puts {DEFAULT_MACRO DestDataset_ORACLE_NONSPATIAL_2 $(DestDataset)}         \
+ puts {DEFAULT_MACRO DestDataset_ORACLE_NONSPATIAL_1 $(DestDataset)}         \
  } ]
 #! END_WB_HEADER
-#! START_DEST_HEADER ORACLE_NONSPATIAL ORACLE_NONSPATIAL_2
-DEFAULT_MACRO DestDataset_ORACLE_NONSPATIAL_2 $(DestDataset_ORACLE_NONSPATIAL)
-GUI NAMED_DB_CONNECTION_ENCODED DestDataset_ORACLE_NONSPATIAL_2 FMT:ORACLE_NONSPATIAL Connection:
-ORACLE_NONSPATIAL_2_SERVER_TYPE ORACLE8i
+#! START_DEST_HEADER ORACLE_NONSPATIAL ORACLE_NONSPATIAL_1
+DEFAULT_MACRO DestDataset_ORACLE_NONSPATIAL_1 $(OEREB2_DATABASE)
+ORACLE_NONSPATIAL_1_DATASET "$(DestDataset_ORACLE_NONSPATIAL_1)"
+GUI TEXT DestDataset_ORACLE_NONSPATIAL_1 Service Name or Easy Connect:
+DEFAULT_MACRO ORACLE_NONSPATIAL_OUT_USER_NAME_ORACLE_NONSPATIAL_1 $(OEREB2_USERNAME)
+ORACLE_NONSPATIAL_1_USER_NAME "$(ORACLE_NONSPATIAL_OUT_USER_NAME_ORACLE_NONSPATIAL_1)"
+GUI OPTIONAL TEXT_ENCODED ORACLE_NONSPATIAL_OUT_USER_NAME_ORACLE_NONSPATIAL_1 Username:
+DEFAULT_MACRO ORACLE_NONSPATIAL_OUT_PASSWORD_ORACLE_NONSPATIAL_1 $(OEREB2_PASSWORD)
+ORACLE_NONSPATIAL_1_PASSWORD "$(ORACLE_NONSPATIAL_OUT_PASSWORD_ORACLE_NONSPATIAL_1)"
+GUI OPTIONAL PASSWORD_ENCODED ORACLE_NONSPATIAL_OUT_PASSWORD_ORACLE_NONSPATIAL_1 Password:
+ORACLE_NONSPATIAL_1_SERVER_TYPE ORACLE8i
 # New non-spatial Oracle Writers support case sensitive table names.
-DEFAULT_MACRO ORACLE_NONSPATIAL_OUT_UPPER_CASE_WRITER_TABLE_NAMES_ORACLE_NONSPATIAL_2 NO
-ORACLE_NONSPATIAL_2_UPPER_CASE_WRITER_TABLE_NAMES "$(ORACLE_NONSPATIAL_OUT_UPPER_CASE_WRITER_TABLE_NAMES_ORACLE_NONSPATIAL_2)"
+DEFAULT_MACRO ORACLE_NONSPATIAL_OUT_UPPER_CASE_WRITER_TABLE_NAMES_ORACLE_NONSPATIAL_1 NO
+ORACLE_NONSPATIAL_1_UPPER_CASE_WRITER_TABLE_NAMES "$(ORACLE_NONSPATIAL_OUT_UPPER_CASE_WRITER_TABLE_NAMES_ORACLE_NONSPATIAL_1)"
 # ==============================================================================
-DEFAULT_MACRO ORACLE_NONSPATIAL_OUT_FME_CONNECTION_GROUP_ORACLE_NONSPATIAL_2 
-GUI OPTIONAL DISCLOSUREGROUP ORACLE_NONSPATIAL_OUT_FME_CONNECTION_GROUP_ORACLE_NONSPATIAL_2 ORACLE_NONSPATIAL_OUT_NAMED_CONNECTION%ORACLE_NONSPATIAL_OUT_WORKSPACE_ORACLE_NONSPATIAL_2%ORACLE_NONSPATIAL_OUT_PERSISTENT_CONNECTION_ORACLE_NONSPATIAL_2 Database Connection
-DEFAULT_MACRO ORACLE_NONSPATIAL_OUT_WORKSPACE_ORACLE_NONSPATIAL_2 
-ORACLE_NONSPATIAL_2_WORKSPACE "$(ORACLE_NONSPATIAL_OUT_WORKSPACE_ORACLE_NONSPATIAL_2)"
-DEFAULT_MACRO ORACLE_NONSPATIAL_OUT_PERSISTENT_CONNECTION_ORACLE_NONSPATIAL_2 YES
-ORACLE_NONSPATIAL_2_PERSISTENT_CONNECTION "$(ORACLE_NONSPATIAL_OUT_PERSISTENT_CONNECTION_ORACLE_NONSPATIAL_2)"
-GUI OPTIONAL CHECKBOX ORACLE_NONSPATIAL_OUT_PERSISTENT_CONNECTION_ORACLE_NONSPATIAL_2 YES%NO Persistent Connection:
+DEFAULT_MACRO ORACLE_NONSPATIAL_OUT_FME_CONNECTION_GROUP_ORACLE_NONSPATIAL_1 
+GUI OPTIONAL DISCLOSUREGROUP ORACLE_NONSPATIAL_OUT_FME_CONNECTION_GROUP_ORACLE_NONSPATIAL_1 ORACLE_NONSPATIAL_OUT_NAMED_CONNECTION%ORACLE_NONSPATIAL_OUT_WORKSPACE_ORACLE_NONSPATIAL_1%ORACLE_NONSPATIAL_OUT_PERSISTENT_CONNECTION_ORACLE_NONSPATIAL_1 Database Connection
+DEFAULT_MACRO ORACLE_NONSPATIAL_OUT_WORKSPACE_ORACLE_NONSPATIAL_1 
+ORACLE_NONSPATIAL_1_WORKSPACE "$(ORACLE_NONSPATIAL_OUT_WORKSPACE_ORACLE_NONSPATIAL_1)"
+DEFAULT_MACRO ORACLE_NONSPATIAL_OUT_PERSISTENT_CONNECTION_ORACLE_NONSPATIAL_1 YES
+ORACLE_NONSPATIAL_1_PERSISTENT_CONNECTION "$(ORACLE_NONSPATIAL_OUT_PERSISTENT_CONNECTION_ORACLE_NONSPATIAL_1)"
+GUI OPTIONAL CHECKBOX ORACLE_NONSPATIAL_OUT_PERSISTENT_CONNECTION_ORACLE_NONSPATIAL_1 YES%NO Persistent Connection:
 # ==============================================================================
-DEFAULT_MACRO ORACLE_NONSPATIAL_OUT_ORACLENONSPATIAL_WRT_ADV_PARA_ORACLE_NONSPATIAL_2 
-GUI OPTIONAL DISCLOSUREGROUP ORACLE_NONSPATIAL_OUT_ORACLENONSPATIAL_WRT_ADV_PARA_ORACLE_NONSPATIAL_2 ORACLE_NONSPATIAL_OUT_START_TRANSACTION_ORACLE_NONSPATIAL_2%ORACLE_NONSPATIAL_OUT_CHUNK_SIZE_ORACLE_NONSPATIAL_2%ORACLE_NONSPATIAL_OUT_TRANSACTION_INTERVAL_ORACLE_NONSPATIAL_2%ORACLE_NONSPATIAL_OUT_BEGIN_SQL{0}_ORACLE_NONSPATIAL_2%ORACLE_NONSPATIAL_OUT_END_SQL{0}_ORACLE_NONSPATIAL_2%ORACLE_NONSPATIAL_OUT_STRICT_ATTR_CONVERSION_ORACLE_NONSPATIAL_2 Advanced
+DEFAULT_MACRO ORACLE_NONSPATIAL_OUT_ORACLENONSPATIAL_WRT_ADV_PARA_ORACLE_NONSPATIAL_1 
+GUI OPTIONAL DISCLOSUREGROUP ORACLE_NONSPATIAL_OUT_ORACLENONSPATIAL_WRT_ADV_PARA_ORACLE_NONSPATIAL_1 ORACLE_NONSPATIAL_OUT_START_TRANSACTION_ORACLE_NONSPATIAL_1%ORACLE_NONSPATIAL_OUT_CHUNK_SIZE_ORACLE_NONSPATIAL_1%ORACLE_NONSPATIAL_OUT_TRANSACTION_INTERVAL_ORACLE_NONSPATIAL_1%ORACLE_NONSPATIAL_OUT_BEGIN_SQL{0}_ORACLE_NONSPATIAL_1%ORACLE_NONSPATIAL_OUT_END_SQL{0}_ORACLE_NONSPATIAL_1%ORACLE_NONSPATIAL_OUT_STRICT_ATTR_CONVERSION_ORACLE_NONSPATIAL_1 Advanced
 # ============================================================================
 # The following option specifies which feature number the writer should actually
 # start writing features to the database on. This should normally be zero, but
 # can be changed if a previous translation is interrupted.
-DEFAULT_MACRO ORACLE_NONSPATIAL_OUT_START_TRANSACTION_ORACLE_NONSPATIAL_2 0
-ORACLE_NONSPATIAL_2_START_TRANSACTION "$(ORACLE_NONSPATIAL_OUT_START_TRANSACTION_ORACLE_NONSPATIAL_2)"
-GUI INTEGER ORACLE_NONSPATIAL_OUT_START_TRANSACTION_ORACLE_NONSPATIAL_2 Transaction to Start Writing at:
+DEFAULT_MACRO ORACLE_NONSPATIAL_OUT_START_TRANSACTION_ORACLE_NONSPATIAL_1 0
+ORACLE_NONSPATIAL_1_START_TRANSACTION "$(ORACLE_NONSPATIAL_OUT_START_TRANSACTION_ORACLE_NONSPATIAL_1)"
+GUI INTEGER ORACLE_NONSPATIAL_OUT_START_TRANSACTION_ORACLE_NONSPATIAL_1 Transaction to Start Writing at:
 # ============================================================================
 # The following specifies how many features will be written to the database in
 # on each bulk write.
-DEFAULT_MACRO ORACLE_NONSPATIAL_OUT_CHUNK_SIZE_ORACLE_NONSPATIAL_2 200
-ORACLE_NONSPATIAL_2_CHUNK_SIZE "$(ORACLE_NONSPATIAL_OUT_CHUNK_SIZE_ORACLE_NONSPATIAL_2)"
-GUI INTEGER ORACLE_NONSPATIAL_OUT_CHUNK_SIZE_ORACLE_NONSPATIAL_2 Bulk Write Size:
+DEFAULT_MACRO ORACLE_NONSPATIAL_OUT_CHUNK_SIZE_ORACLE_NONSPATIAL_1 200
+ORACLE_NONSPATIAL_1_CHUNK_SIZE "$(ORACLE_NONSPATIAL_OUT_CHUNK_SIZE_ORACLE_NONSPATIAL_1)"
+GUI INTEGER ORACLE_NONSPATIAL_OUT_CHUNK_SIZE_ORACLE_NONSPATIAL_1 Bulk Write Size:
 # ============================================================================
 # The following specifies how many features will be written to the database in
 # each transaction.
-DEFAULT_MACRO ORACLE_NONSPATIAL_OUT_TRANSACTION_INTERVAL_ORACLE_NONSPATIAL_2 1000
-ORACLE_NONSPATIAL_2_TRANSACTION_INTERVAL "$(ORACLE_NONSPATIAL_OUT_TRANSACTION_INTERVAL_ORACLE_NONSPATIAL_2)"
-GUI INTEGER ORACLE_NONSPATIAL_OUT_TRANSACTION_INTERVAL_ORACLE_NONSPATIAL_2 Features Per Transaction
+DEFAULT_MACRO ORACLE_NONSPATIAL_OUT_TRANSACTION_INTERVAL_ORACLE_NONSPATIAL_1 1000
+ORACLE_NONSPATIAL_1_TRANSACTION_INTERVAL "$(ORACLE_NONSPATIAL_OUT_TRANSACTION_INTERVAL_ORACLE_NONSPATIAL_1)"
+GUI INTEGER ORACLE_NONSPATIAL_OUT_TRANSACTION_INTERVAL_ORACLE_NONSPATIAL_1 Features Per Transaction
 # ============================================================================
 # The following specifies an SQL command to execute before opening the first
 # ORACLE table.
-DEFAULT_MACRO ORACLE_NONSPATIAL_OUT_BEGIN_SQL{0}_ORACLE_NONSPATIAL_2 
-ORACLE_NONSPATIAL_2_BEGIN_SQL{0} "$(ORACLE_NONSPATIAL_OUT_BEGIN_SQL{0}_ORACLE_NONSPATIAL_2)"
-GUI OPTIONAL TEXT_EDIT_SQL_CFG ORACLE_NONSPATIAL_OUT_BEGIN_SQL{0}_ORACLE_NONSPATIAL_2 MODE,SQL;FORMAT,ORACLE_NONSPATIAL SQL To Run Before Write
+DEFAULT_MACRO ORACLE_NONSPATIAL_OUT_BEGIN_SQL{0}_ORACLE_NONSPATIAL_1 
+ORACLE_NONSPATIAL_1_BEGIN_SQL{0} "$(ORACLE_NONSPATIAL_OUT_BEGIN_SQL{0}_ORACLE_NONSPATIAL_1)"
+GUI OPTIONAL TEXT_EDIT_SQL_CFG ORACLE_NONSPATIAL_OUT_BEGIN_SQL{0}_ORACLE_NONSPATIAL_1 MODE,SQL;FORMAT,ORACLE_NONSPATIAL SQL To Run Before Write
 # ============================================================================
 # The following specifies an SQL command to execute after closing all the
 # ORACLE tables.
-DEFAULT_MACRO ORACLE_NONSPATIAL_OUT_END_SQL{0}_ORACLE_NONSPATIAL_2 
-ORACLE_NONSPATIAL_2_END_SQL{0} "$(ORACLE_NONSPATIAL_OUT_END_SQL{0}_ORACLE_NONSPATIAL_2)"
-GUI OPTIONAL TEXT_EDIT_SQL_CFG ORACLE_NONSPATIAL_OUT_END_SQL{0}_ORACLE_NONSPATIAL_2 MODE,SQL;FORMAT,ORACLE_NONSPATIAL SQL To Run After Write
+DEFAULT_MACRO ORACLE_NONSPATIAL_OUT_END_SQL{0}_ORACLE_NONSPATIAL_1 
+ORACLE_NONSPATIAL_1_END_SQL{0} "$(ORACLE_NONSPATIAL_OUT_END_SQL{0}_ORACLE_NONSPATIAL_1)"
+GUI OPTIONAL TEXT_EDIT_SQL_CFG ORACLE_NONSPATIAL_OUT_END_SQL{0}_ORACLE_NONSPATIAL_1 MODE,SQL;FORMAT,ORACLE_NONSPATIAL SQL To Run After Write
 # ==============================================================================
 # The following specifies whether rows written to the writer's tables have
 # to adhere strictly to the destination feature type. When 'No' or 'Warn',
 # character columns are truncated to fit and other conversion problems end up
 # inserting NULL values; if STRICT_ATTR_CONVERSION is 'Yes', rows containing
 # such problems will be logged and not written to the tables.
-DEFAULT_MACRO ORACLE_NONSPATIAL_OUT_STRICT_ATTR_CONVERSION_ORACLE_NONSPATIAL_2 No
-ORACLE_NONSPATIAL_2_STRICT_ATTR_CONVERSION "$(ORACLE_NONSPATIAL_OUT_STRICT_ATTR_CONVERSION_ORACLE_NONSPATIAL_2)"
-GUI OPTIONAL CHOICE ORACLE_NONSPATIAL_OUT_STRICT_ATTR_CONVERSION_ORACLE_NONSPATIAL_2 Yes%No%Warn Enforce Strict Attribute Conversion:
-DEFAULT_MACRO ORACLE_NONSPATIAL_OUT_COORDINATE_SYSTEM_GRANULARITY_ORACLE_NONSPATIAL_2 FEATURE
-ORACLE_NONSPATIAL_2_COORDINATE_SYSTEM_GRANULARITY "$(ORACLE_NONSPATIAL_OUT_COORDINATE_SYSTEM_GRANULARITY_ORACLE_NONSPATIAL_2)"
+DEFAULT_MACRO ORACLE_NONSPATIAL_OUT_STRICT_ATTR_CONVERSION_ORACLE_NONSPATIAL_1 No
+ORACLE_NONSPATIAL_1_STRICT_ATTR_CONVERSION "$(ORACLE_NONSPATIAL_OUT_STRICT_ATTR_CONVERSION_ORACLE_NONSPATIAL_1)"
+GUI OPTIONAL CHOICE ORACLE_NONSPATIAL_OUT_STRICT_ATTR_CONVERSION_ORACLE_NONSPATIAL_1 Yes%No%Warn Enforce Strict Attribute Conversion:
+DEFAULT_MACRO ORACLE_NONSPATIAL_OUT_COORDINATE_SYSTEM_GRANULARITY_ORACLE_NONSPATIAL_1 FEATURE
+ORACLE_NONSPATIAL_1_COORDINATE_SYSTEM_GRANULARITY "$(ORACLE_NONSPATIAL_OUT_COORDINATE_SYSTEM_GRANULARITY_ORACLE_NONSPATIAL_1)"
 # ============================================================================ 
-ORACLE_NONSPATIAL_2_GENERATE_FME_BUILD_NUM 18310
+ORACLE_NONSPATIAL_1_GENERATE_FME_BUILD_NUM 18310
 # ==============================================================================
 # The following specifies the name of the Oracle Workspace that we should go
 # to when writing tables. Redefining just the GUI line as we can't bring up the
 # Oracle workspace picker in non-Settings box contexts.
-GUI OPTIONAL TEXT ORACLE_NONSPATIAL_OUT_WORKSPACE_ORACLE_NONSPATIAL_2 Oracle Workspace:
-ORACLE_NONSPATIAL_2_DATASET "$(DestDataset_ORACLE_NONSPATIAL_2)"
+GUI OPTIONAL TEXT ORACLE_NONSPATIAL_OUT_WORKSPACE_ORACLE_NONSPATIAL_1 Oracle Workspace:
 #! END_DEST_HEADER
 #! START_WB_HEADER
 MACRO WB_KEYWORD "FILECOPY_1"
@@ -6197,7 +6282,7 @@ FILECOPY_2_DATASET "$(DestDataset_FILECOPY_2)"
 
 #! END_HEADER
 
-LOG_FILENAME "$(FME_MF_DIR)s60_import_ggo.log"
+LOG_FILENAME "$(LOGFILE)"
 LOG_APPEND NO
 LOG_MAX_FEATURES 200
 LOG_MAX_RECORDED_FEATURES 200
@@ -6212,7 +6297,7 @@ DEFAULT_MACRO DATASET_KEYWORD_XLSXR_2 XLSXR_2
 DEFAULT_MACRO DATASET_KEYWORD_GEODATABASE_SDE_1 GEODATABASE_SDE_1
 DEFAULT_MACRO DATASET_KEYWORD_POSTGIS_1 POSTGIS_1
 DEFAULT_MACRO DATASET_KEYWORD_GEODATABASE_SDE_2 GEODATABASE_SDE_2
-DEFAULT_MACRO DATASET_KEYWORD_ORACLE_NONSPATIAL_2 ORACLE_NONSPATIAL_2
+DEFAULT_MACRO DATASET_KEYWORD_ORACLE_NONSPATIAL_1 ORACLE_NONSPATIAL_1
 DEFAULT_MACRO DATASET_KEYWORD_FILECOPY_1 FILECOPY_1
 DEFAULT_MACRO DATASET_KEYWORD_FILECOPY_2 FILECOPY_2
 # -------------------------------------------------------------------------
@@ -6242,17 +6327,17 @@ MACRO FME_VIEWER_APP fmedatainspector
 
 FACTORY_DEF * RoutingFactory   FACTORY_NAME "Router and Unexpected Input Remover"   COMMAND_PARM_EVALUATION SINGLE_PASS   INPUT FEATURE_TYPE *    ROUTE GEODATABASE_FILE GEODATABASE_FILE_1::GGO_GGOP multi_reader_keyword,$(DATASET_KEYWORD_GEODATABASE_FILE_1) TO FME_GENERIC ::GGO_GGOP ALIAS_GEOMETRY    ROUTE XLSXR XLSXR_1::AMT multi_reader_keyword,$(DATASET_KEYWORD_XLSXR_1) TO FME_GENERIC ::AMT ALIAS_GEOMETRY    ROUTE XLSXR XLSXR_2::DARSTELLUNGSDIENST multi_reader_keyword,$(DATASET_KEYWORD_XLSXR_2) TO FME_GENERIC ::DARSTELLUNGSDIENST ALIAS_GEOMETRY    MERGE_INPUT Yes   OUTPUT ROUTED FEATURE_TYPE *
 GEODATABASE_FILE_1_MERGE_DEF GEODATABASE_FILE_1::GGO_GGOP EXACT GGO_GGOP DEFLINE geodb_type,geodb_point,geodb_where_wwjd,,fme_attribute_reading,defined,OBJECTID,integer,GGO_NR,smallint,GGO_ZUSNR,smallint,GGO_NAME,char<openparen>100<closeparen>,GGO_BED_D,char<openparen>50<closeparen>,GGO_BED_F,char<openparen>50<closeparen>,BESCHL_ART,char<openparen>4<closeparen>,BESCHL_NR,smallint,BESCHL_DAT,date,E_KOORD,double,N_KOORD,double,GESTEIN,char<openparen>80<closeparen>,PETRO_STRA,char<openparen>80<closeparen>,HERKUNFT,char<openparen>80<closeparen>,BEMERKUNG,char<openparen>100<closeparen>,URL_BESCHL,char<openparen>150<closeparen>,URL_PLAN,char<openparen>150<closeparen>
-XLSXR_1_MERGE_DEF XLSXR_1::AMT EXACT AMT DEFLINE xlsx_start_row,,xlsx_end_row,,xlsx_schema_start_row,1,xlsx_schema_end_col,0,xlsx_schema_end_row,0,xlsx_header_row,0,xlsx_schema_start_col,0,fme_attribute_reading,defined,AMT_OID,char<openparen>20<closeparen>,AMT_NAME_DE,char<openparen>33<closeparen>,AMT_NAME_FR,char<openparen>40<closeparen>,AMT_AMTIMWEB_DE,char<openparen>23<closeparen>,AMT_AMTIMWEB_FR,char<openparen>21<closeparen>
-XLSXR_2_MERGE_DEF XLSXR_2::DARSTELLUNGSDIENST EXACT DARSTELLUNGSDIENST DEFLINE xlsx_start_row,,xlsx_end_row,,xlsx_schema_start_row,1,xlsx_schema_end_col,0,xlsx_schema_end_row,0,xlsx_header_row,0,xlsx_schema_start_col,0,fme_attribute_reading,defined,DAR_OID,char<openparen>15<closeparen>,DAR_VERWEISWMS_DE,char<openparen>259<closeparen>,DAR_VERWEISWMS_FR,char<openparen>259<closeparen>,DAR_LEGENDEIMWEB_DE,char<openparen>11<closeparen>,DAR_LEGENDEIMWEB_FR,char<openparen>11<closeparen>
+XLSXR_1_MERGE_DEF XLSXR_1::AMT EXACT AMT DEFLINE xlsx_start_row,,xlsx_end_row,,xlsx_schema_start_row,1,xlsx_header_row,0,xlsx_schema_end_col,0,xlsx_schema_start_col,0,xlsx_schema_end_row,0,fme_attribute_reading,defined,AMT_OID,char<openparen>20<closeparen>,AMT_NAME_DE,char<openparen>33<closeparen>,AMT_NAME_FR,char<openparen>40<closeparen>,AMT_AMTIMWEB_DE,char<openparen>23<closeparen>,AMT_AMTIMWEB_FR,char<openparen>21<closeparen>
+XLSXR_2_MERGE_DEF XLSXR_2::DARSTELLUNGSDIENST EXACT DARSTELLUNGSDIENST DEFLINE xlsx_start_row,,xlsx_end_row,,xlsx_schema_start_row,1,xlsx_header_row,0,xlsx_schema_end_col,0,xlsx_schema_start_col,0,xlsx_schema_end_row,0,fme_attribute_reading,defined,DAR_OID,char<openparen>15<closeparen>,DAR_VERWEISWMS_DE,char<openparen>259<closeparen>,DAR_VERWEISWMS_FR,char<openparen>259<closeparen>,DAR_LEGENDEIMWEB_DE,char<openparen>11<closeparen>,DAR_LEGENDEIMWEB_FR,char<openparen>11<closeparen>
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME "DARSTELLUNGSDIENST (XLSXR_2) Splitter"    INPUT FEATURE_TYPE DARSTELLUNGSDIENST    OUTPUT FEATURE_TYPE DARSTELLUNGSDIENST_XLSXR_2
 # -------------------------------------------------------------------------
 
 FACTORY_DEF * TeeFactory    FACTORY_NAME "GGO_GGOP (GEODATABASE_FILE_1) Splitter"    INPUT FEATURE_TYPE GGO_GGOP    OUTPUT FEATURE_TYPE GGO_GGOP_GEODATABASE_FILE_1
 # -------------------------------------------------------------------------
 
 FACTORY_DEF * TeeFactory    FACTORY_NAME "AMT (XLSXR_1) Splitter"    INPUT FEATURE_TYPE AMT    OUTPUT FEATURE_TYPE AMT_XLSXR_1
-# -------------------------------------------------------------------------
-
-FACTORY_DEF * TeeFactory    FACTORY_NAME "DARSTELLUNGSDIENST (XLSXR_2) Splitter"    INPUT FEATURE_TYPE DARSTELLUNGSDIENST    OUTPUT FEATURE_TYPE DARSTELLUNGSDIENST_XLSXR_2
 DEFAULT_MACRO WB_CURRENT_CONTEXT
 # -------------------------------------------------------------------------
 
@@ -6378,7 +6463,7 @@ FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME AttributeCreator_6    INPUT  FEAT
 
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * TeeFactory    FACTORY_NAME UUIDGenerator_5    INPUT  FEATURE_TYPE AttributeCreator_5_OUTPUT    INPUT  FEATURE_TYPE AttributeCreator_6_OUTPUT    OUTPUT FEATURE_TYPE UUIDGenerator_5_OUTPUT         "HWD_ID" @UUID()
+FACTORY_DEF * TeeFactory    FACTORY_NAME UUIDGenerator_5    INPUT  FEATURE_TYPE AttributeCreator_6_OUTPUT    INPUT  FEATURE_TYPE AttributeCreator_5_OUTPUT    OUTPUT FEATURE_TYPE UUIDGenerator_5_OUTPUT         "HWD_ID" @UUID()
 
 # -------------------------------------------------------------------------
 
@@ -6447,7 +6532,7 @@ FACTORY_DEF {*} TeeFactory    FACTORY_NAME BulkAttributeRenamer    INPUT  FEATUR
 
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * RoutingFactory FACTORY_NAME "Destination Feature Type Routing Correlator"   COMMAND_PARM_EVALUATION SINGLE_PASS   INPUT FEATURE_TYPE *    ROUTE FME_GENERIC Aggregator_AGGREGATE TO FILECOPY __GO_TO_FINAL_OUTPUT_ROUTER__ <at>CopyAttributes<openparen>ENCODED<comma>filecopy_source_dataset<comma>beschl_source_dataset<comma>filecopy_dest_dataset<comma>beschl_dest_dataset<closeparen>,multi_writer_id,4,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>filecopy<closeparen> GEOMETRY    ROUTE FME_GENERIC FeatureMerger_2_MERGED_0_knF9TdE9dMM= TO GEODATABASE_SDE __GO_TO_FINAL_OUTPUT_ROUTER__ <at>EvaluateExpression<openparen>ATTR_CREATE_EXPR_PROPAGATE_MISSING_FDIV<comma>PUN_LIEFEREINHEIT<comma>$(LIEFEREINHEIT$encode$encode)<comma>RES_ID<comma>$(RES_ID$encode$encode)<comma><space>ATTR_SET<closeparen>,multi_writer_id,2,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>OEREB2.PUNKT<closeparen> GEOMETRY    ROUTE FME_GENERIC PythonCaller_OUTPUT_0_Y/oSM8lq1h4= TO GEODATABASE_SDE __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>GGO_GGOP<closeparen> COORDINATE_SYSTEM EPSG:2056 GEOMETRY    ROUTE FME_GENERIC BulkAttributeRenamer_OUTPUT TO POSTGIS __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,1,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>geodb.ggo_ggop<closeparen> COORDINATE_SYSTEM EPSG:2065 GEOMETRY    ROUTE FME_GENERIC Aggregator_2_AGGREGATE TO FILECOPY __GO_TO_FINAL_OUTPUT_ROUTER__ <at>CopyAttributes<openparen>ENCODED<comma>filecopy_source_dataset<comma>plan_source_dataset<comma>filecopy_dest_dataset<comma>plan_dest_dataset<closeparen>,multi_writer_id,5,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>filecopy<closeparen> GEOMETRY    ROUTE FME_GENERIC AttributeCreator_3_OUTPUT_1_1sMaJ5SQWdM= TO ORACLE_NONSPATIAL __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,3,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>OEREB2.AMT<closeparen> GEOMETRY    ROUTE FME_GENERIC StringConcatenator_2_OUTPUT TO ORACLE_NONSPATIAL __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,3,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>OEREB2.DARSTELLUNGSDIENST<closeparen> GEOMETRY    ROUTE FME_GENERIC Counter_OUTPUT TO ORACLE_NONSPATIAL __GO_TO_FINAL_OUTPUT_ROUTER__ <at>EvaluateExpression<openparen>ATTR_CREATE_EXPR_PROPAGATE_MISSING_FDIV<comma>RES_ID<comma>$(RES_ID$encode$encode)<comma>STH_ID<comma>$(STH_ID$encode$encode)<comma><space>ATTR_SET<closeparen>,multi_writer_id,3,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>OEREB2.EIGENTUMSBESCHRAENKUNG<closeparen> GEOMETRY    ROUTE FME_GENERIC UUIDGenerator_4_OUTPUT TO ORACLE_NONSPATIAL __GO_TO_FINAL_OUTPUT_ROUTER__ <at>EvaluateExpression<openparen>ATTR_CREATE_EXPR_PROPAGATE_MISSING_FDIV<comma>HIV_LIEFEREINHEIT<comma>$(LIEFEREINHEIT$encode$encode)<comma><space>ATTR_SET<closeparen>,multi_writer_id,3,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>OEREB2.HINVOR<closeparen> GEOMETRY    ROUTE FME_GENERIC AttributeRenamer_OUTPUT TO ORACLE_NONSPATIAL __GO_TO_FINAL_OUTPUT_ROUTER__ <at>EvaluateExpression<openparen>ATTR_CREATE_EXPR_PROPAGATE_MISSING_FDIV<comma>VOR_LIEFEREINHEIT<comma>$(LIEFEREINHEIT$encode$encode)<comma>RES_ID<comma>$(RES_ID$encode$encode)<comma>VOA_ID<comma>1<comma><space>ATTR_SET<closeparen>,multi_writer_id,3,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>OEREB2.VORSCHRIFT<closeparen> GEOMETRY    ROUTE FME_GENERIC UUIDGenerator_5_OUTPUT TO ORACLE_NONSPATIAL __GO_TO_FINAL_OUTPUT_ROUTER__ <at>EvaluateExpression<openparen>ATTR_CREATE_EXPR_PROPAGATE_MISSING_FDIV<comma>HWD_LIEFEREINHEIT<comma>$(LIEFEREINHEIT$encode$encode)<comma><space>ATTR_SET<closeparen>,multi_writer_id,3,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>OEREB2.HINWEIDOK<closeparen> GEOMETRY    ROUTE FME_GENERIC __WB_BYPASS_TERMINATOR__ <at>Tcl2<openparen>FME_StatMessage<space>818062<space><opencurly><at>Value<openparen>_wb_termination_message<closeparen><space><openparen><at>Value<openparen>_wb_termination_xformer<closeparen><closeparen><closecurly><space>818063<closeparen> TO FME_GENERIC __WB_BYPASS_TERMINATOR__ __wb_out_feat_type__,__WB_BYPASS_TERMINATOR__ GEOMETRY   FEATURE_TYPE_ATTRIBUTE __wb_out_feat_type__   OUTPUT ROUTED FEATURE_TYPE *    OUTPUT NOT_ROUTED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")
+FACTORY_DEF * RoutingFactory FACTORY_NAME "Destination Feature Type Routing Correlator"   COMMAND_PARM_EVALUATION SINGLE_PASS   INPUT FEATURE_TYPE *    ROUTE FME_GENERIC PythonCaller_OUTPUT_0_Y/oSM8lq1h4= TO GEODATABASE_SDE __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>GGO_GGOP<closeparen> COORDINATE_SYSTEM EPSG:2056 GEOMETRY    ROUTE FME_GENERIC AttributeCreator_3_OUTPUT_1_1sMaJ5SQWdM= TO ORACLE_NONSPATIAL __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,3,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>OEREB2.AMT<closeparen> GEOMETRY    ROUTE FME_GENERIC StringConcatenator_2_OUTPUT TO ORACLE_NONSPATIAL __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,3,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>OEREB2.DARSTELLUNGSDIENST<closeparen> GEOMETRY    ROUTE FME_GENERIC Counter_OUTPUT TO ORACLE_NONSPATIAL __GO_TO_FINAL_OUTPUT_ROUTER__ <at>EvaluateExpression<openparen>ATTR_CREATE_EXPR_PROPAGATE_MISSING_FDIV<comma>RES_ID<comma>$(RES_ID$encode$encode)<comma>STH_ID<comma>$(STH_ID$encode$encode)<comma><space>ATTR_SET<closeparen>,multi_writer_id,3,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>OEREB2.EIGENTUMSBESCHRAENKUNG<closeparen> GEOMETRY    ROUTE FME_GENERIC UUIDGenerator_4_OUTPUT TO ORACLE_NONSPATIAL __GO_TO_FINAL_OUTPUT_ROUTER__ <at>EvaluateExpression<openparen>ATTR_CREATE_EXPR_PROPAGATE_MISSING_FDIV<comma>HIV_LIEFEREINHEIT<comma>$(LIEFEREINHEIT$encode$encode)<comma><space>ATTR_SET<closeparen>,multi_writer_id,3,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>OEREB2.HINVOR<closeparen> GEOMETRY    ROUTE FME_GENERIC AttributeRenamer_OUTPUT TO ORACLE_NONSPATIAL __GO_TO_FINAL_OUTPUT_ROUTER__ <at>EvaluateExpression<openparen>ATTR_CREATE_EXPR_PROPAGATE_MISSING_FDIV<comma>VOR_LIEFEREINHEIT<comma>$(LIEFEREINHEIT$encode$encode)<comma>RES_ID<comma>$(RES_ID$encode$encode)<comma>VOA_ID<comma>1<comma><space>ATTR_SET<closeparen>,multi_writer_id,3,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>OEREB2.VORSCHRIFT<closeparen> GEOMETRY    ROUTE FME_GENERIC UUIDGenerator_5_OUTPUT TO ORACLE_NONSPATIAL __GO_TO_FINAL_OUTPUT_ROUTER__ <at>EvaluateExpression<openparen>ATTR_CREATE_EXPR_PROPAGATE_MISSING_FDIV<comma>HWD_LIEFEREINHEIT<comma>$(LIEFEREINHEIT$encode$encode)<comma><space>ATTR_SET<closeparen>,multi_writer_id,3,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>OEREB2.HINWEIDOK<closeparen> GEOMETRY    ROUTE FME_GENERIC Aggregator_2_AGGREGATE TO FILECOPY __GO_TO_FINAL_OUTPUT_ROUTER__ <at>CopyAttributes<openparen>ENCODED<comma>filecopy_source_dataset<comma>plan_source_dataset<comma>filecopy_dest_dataset<comma>plan_dest_dataset<closeparen>,multi_writer_id,5,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>filecopy<closeparen> GEOMETRY    ROUTE FME_GENERIC Aggregator_AGGREGATE TO FILECOPY __GO_TO_FINAL_OUTPUT_ROUTER__ <at>CopyAttributes<openparen>ENCODED<comma>filecopy_source_dataset<comma>beschl_source_dataset<comma>filecopy_dest_dataset<comma>beschl_dest_dataset<closeparen>,multi_writer_id,4,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>filecopy<closeparen> GEOMETRY    ROUTE FME_GENERIC FeatureMerger_2_MERGED_0_knF9TdE9dMM= TO GEODATABASE_SDE __GO_TO_FINAL_OUTPUT_ROUTER__ <at>EvaluateExpression<openparen>ATTR_CREATE_EXPR_PROPAGATE_MISSING_FDIV<comma>PUN_LIEFEREINHEIT<comma>$(LIEFEREINHEIT$encode$encode)<comma>RES_ID<comma>$(RES_ID$encode$encode)<comma><space>ATTR_SET<closeparen>,multi_writer_id,2,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>OEREB2.PUNKT<closeparen> GEOMETRY    ROUTE FME_GENERIC BulkAttributeRenamer_OUTPUT TO POSTGIS __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,1,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>geodb.ggo_ggop<closeparen> COORDINATE_SYSTEM EPSG:2065 GEOMETRY    ROUTE FME_GENERIC __WB_BYPASS_TERMINATOR__ <at>Tcl2<openparen>FME_StatMessage<space>818062<space><opencurly><at>Value<openparen>_wb_termination_message<closeparen><space><openparen><at>Value<openparen>_wb_termination_xformer<closeparen><closeparen><closecurly><space>818063<closeparen> TO FME_GENERIC __WB_BYPASS_TERMINATOR__ __wb_out_feat_type__,__WB_BYPASS_TERMINATOR__ GEOMETRY   FEATURE_TYPE_ATTRIBUTE __wb_out_feat_type__   OUTPUT ROUTED FEATURE_TYPE *    OUTPUT NOT_ROUTED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")
 # -------------------------------------------------------------------------
 
 FACTORY_DEF * TeeFactory   FACTORY_NAME "Final Output Nuker"   INPUT FEATURE_TYPE __nuke_me__
@@ -6459,14 +6544,14 @@ POSTGIS_1_DEF geodb.ggo_ggop   postgis_type                 postgis_geometry   p
 # -------------------------------------------------------------------------
 GEODATABASE_SDE_2_DEF OEREB2.PUNKT   geodb_type                   geodb_point   GEODB_UPDATE_KEY_COLUMNS     ""   GEODB_DROP_TABLE             NO   GEODB_TRUNCATE_TABLE         NO   fme_feature_operation        INSERT   fme_table_handling           CREATE_IF_MISSING   GEODB_OBJECT_ID_NAME         OBJECTID   GEODB_OBJECT_ID_ALIAS        OBJECTID   GEODB_SHAPE_NAME             SHAPE   GEODB_SHAPE_ALIAS            SHAPE   GEODB_CONFIG_KEYWORD         DEFAULTS   GEODB_FEATURE_DATASET        ""   GEODB_GRID{1}                ""   GEODB_AVG_NUM_POINTS         ""   GEODB_XORIGIN                ""   GEODB_YORIGIN                ""   GEODB_XYSCALE                ""   GEODB_HAS_Z_VALUES           ""   GEODB_ZORIGIN                ""   GEODB_ZSCALE                 ""   GEODB_HAS_MEASURES           ""   GEODB_MEASURES_ORIGIN        ""   GEODB_MEASURES_SCALE         ""   GEODB_ANNO_REFERENCE_SCALE   ""   OBJECTID                     integer   PUN_OID                      char(128)   PUN_XTF_ID                   char(128)   PUN_PUBLIZIERTAB             date   PUN_METAGEO_DE               char(1023)   PUN_METAGEO_FR               char(1023)   PUN_LIEFEREINHEIT            integer   EIB_OID                      char(128)   AMT_OID                      char(128)   RES_ID                       integer
 # -------------------------------------------------------------------------
-ORACLE_NONSPATIAL_2_DEF OEREB2.DARSTELLUNGSDIENST   oracle_create_table          ""   oracle_drop_table            ""   oracle_table_writer_mode     ""   oracle_update_key_columns    ""   oracle_truncate_table        ""   fme_feature_operation        INSERT   fme_table_handling           USE_EXISTING   DAR_OID                      nvarchar(128)   DAR_XTF_ID                   nvarchar(128)   DAR_VERWEISWMS_DE            nvarchar(1023)   DAR_VERWEISWMS_FR            nvarchar(1023)   DAR_LEGENDEIMWEB_DE          nvarchar(1023)   DAR_LEGENDEIMWEB_FR          nvarchar(1023)   DAR_LIEFEREINHEIT            number(6,0)
+ORACLE_NONSPATIAL_1_DEF OEREB2.HINVOR   oracle_create_table          ""   oracle_drop_table            ""   oracle_table_writer_mode     ""   oracle_update_key_columns    ""   oracle_truncate_table        ""   fme_feature_operation        INSERT   fme_table_handling           USE_EXISTING   HIV_ID                       nvarchar(128)   HIV_XTF_ID                   nvarchar(128)   HIV_ARTNR                    nvarchar(255)   HIV_LIEFEREINHEIT            number(6,0)   EIB_OID                      nvarchar(128)   VOR_OID                      nvarchar(128)
 # -------------------------------------------------------------------------
-ORACLE_NONSPATIAL_2_DEF OEREB2.HINVOR   oracle_create_table          ""   oracle_drop_table            ""   oracle_table_writer_mode     ""   oracle_update_key_columns    ""   oracle_truncate_table        ""   fme_feature_operation        INSERT   fme_table_handling           USE_EXISTING   HIV_ID                       nvarchar(128)   HIV_XTF_ID                   nvarchar(128)   HIV_ARTNR                    nvarchar(255)   HIV_LIEFEREINHEIT            number(6,0)   EIB_OID                      nvarchar(128)   VOR_OID                      nvarchar(128)
+ORACLE_NONSPATIAL_1_DEF OEREB2.DARSTELLUNGSDIENST   oracle_create_table          ""   oracle_drop_table            ""   oracle_table_writer_mode     ""   oracle_update_key_columns    ""   oracle_truncate_table        ""   fme_feature_operation        INSERT   fme_table_handling           USE_EXISTING   DAR_OID                      nvarchar(128)   DAR_XTF_ID                   nvarchar(128)   DAR_VERWEISWMS_DE            nvarchar(1023)   DAR_VERWEISWMS_FR            nvarchar(1023)   DAR_LEGENDEIMWEB_DE          nvarchar(1023)   DAR_LEGENDEIMWEB_FR          nvarchar(1023)   DAR_LIEFEREINHEIT            number(6,0)
 # -------------------------------------------------------------------------
-ORACLE_NONSPATIAL_2_DEF OEREB2.VORSCHRIFT   oracle_create_table          ""   oracle_drop_table            ""   oracle_table_writer_mode     ""   oracle_update_key_columns    ""   oracle_truncate_table        ""   fme_feature_operation        INSERT   fme_table_handling           USE_EXISTING   VOR_OID                      nvarchar(128)   VOR_XTF_ID                   nvarchar(128)   VOR_TEXTIMWEB_DE             nvarchar(1023)   VOR_TEXTIMWEB_FR             nvarchar(1023)   VOR_PUBLIZIERTAB             date   VOR_TITEL_DE                 nvarchar(200)   VOR_TITEL_FR                 nvarchar(200)   VOR_OFFIZIELLERTITEL_DE      nvarchar(255)   VOR_OFFIZIELLERTITEL_FR      nvarchar(255)   VOR_ABKUERZUNG_DE            nvarchar(255)   VOR_ABKUERZUNG_FR            nvarchar(255)   VOR_OFFIZIELLENR             nvarchar(20)   VOR_KANTON                   nvarchar(2)   VOR_LIEFEREINHEIT            number(6,0)   RES_ID                       number(10,0)   BFS_NR                       number(5,0)   VOA_ID                       number(10,0)   AMT_OID                      nvarchar(128)   DOKUMENT                     blob   VOR_SORT                     number(10,0)
+ORACLE_NONSPATIAL_1_DEF OEREB2.VORSCHRIFT   oracle_create_table          ""   oracle_drop_table            ""   oracle_table_writer_mode     ""   oracle_update_key_columns    ""   oracle_truncate_table        ""   fme_feature_operation        INSERT   fme_table_handling           USE_EXISTING   VOR_OID                      nvarchar(128)   VOR_XTF_ID                   nvarchar(128)   VOR_TEXTIMWEB_DE             nvarchar(1023)   VOR_TEXTIMWEB_FR             nvarchar(1023)   VOR_PUBLIZIERTAB             date   VOR_TITEL_DE                 nvarchar(200)   VOR_TITEL_FR                 nvarchar(200)   VOR_OFFIZIELLERTITEL_DE      nvarchar(255)   VOR_OFFIZIELLERTITEL_FR      nvarchar(255)   VOR_ABKUERZUNG_DE            nvarchar(255)   VOR_ABKUERZUNG_FR            nvarchar(255)   VOR_OFFIZIELLENR             nvarchar(20)   VOR_KANTON                   nvarchar(2)   VOR_LIEFEREINHEIT            number(6,0)   RES_ID                       number(10,0)   BFS_NR                       number(5,0)   VOA_ID                       number(10,0)   AMT_OID                      nvarchar(128)   DOKUMENT                     blob   VOR_SORT                     number(10,0)
 # -------------------------------------------------------------------------
-ORACLE_NONSPATIAL_2_DEF OEREB2.EIGENTUMSBESCHRAENKUNG   oracle_create_table          ""   oracle_drop_table            ""   oracle_table_writer_mode     ""   oracle_update_key_columns    ""   oracle_truncate_table        ""   fme_feature_operation        INSERT   fme_table_handling           USE_EXISTING   EIB_OID                      nvarchar(128)   EIB_XTF_ID                   nvarchar(128)   EIB_AUSSAGE_DE               nclob   EIB_AUSSAGE_FR               nclob   EIB_ARTCODE                  nvarchar(40)   EIB_ARTCODELISTE             nvarchar(1023)   EIB_PUBLIZIERTAB             date   EIB_LIEFEREINHEIT            number(6,0)   AMT_OID                      nvarchar(128)   DAR_OID                      nvarchar(128)   RES_ID                       number(10,0)   STH_ID                       number(10,0)   EIB_SORT                     number(10,0)   EIB_LEGENDESYMBOL_DE         nvarchar(1023)   EIB_LEGENDESYMBOL_FR         nvarchar(1023)
+ORACLE_NONSPATIAL_1_DEF OEREB2.AMT   oracle_create_table          ""   oracle_drop_table            ""   oracle_table_writer_mode     ""   oracle_update_key_columns    ""   oracle_truncate_table        ""   fme_feature_operation        INSERT   fme_table_handling           USE_EXISTING   AMT_OID                      nvarchar(128)   AMT_XTF_ID                   nvarchar(128)   AMT_NAME_DE                  nvarchar(255)   AMT_NAME_FR                  nvarchar(255)   AMT_AMTIMWEB_DE              nvarchar(1023)   AMT_AMTIMWEB_FR              nvarchar(1023)   AMT_LIEFEREINHEIT            number(6,0)
 # -------------------------------------------------------------------------
-ORACLE_NONSPATIAL_2_DEF OEREB2.AMT   oracle_create_table          ""   oracle_drop_table            ""   oracle_table_writer_mode     ""   oracle_update_key_columns    ""   oracle_truncate_table        ""   fme_feature_operation        INSERT   fme_table_handling           USE_EXISTING   AMT_OID                      nvarchar(128)   AMT_XTF_ID                   nvarchar(128)   AMT_NAME_DE                  nvarchar(255)   AMT_NAME_FR                  nvarchar(255)   AMT_AMTIMWEB_DE              nvarchar(1023)   AMT_AMTIMWEB_FR              nvarchar(1023)   AMT_LIEFEREINHEIT            number(6,0)
+ORACLE_NONSPATIAL_1_DEF OEREB2.EIGENTUMSBESCHRAENKUNG   oracle_create_table          ""   oracle_drop_table            ""   oracle_table_writer_mode     ""   oracle_update_key_columns    ""   oracle_truncate_table        ""   fme_feature_operation        INSERT   fme_table_handling           USE_EXISTING   EIB_OID                      nvarchar(128)   EIB_XTF_ID                   nvarchar(128)   EIB_AUSSAGE_DE               nclob   EIB_AUSSAGE_FR               nclob   EIB_ARTCODE                  nvarchar(40)   EIB_ARTCODELISTE             nvarchar(1023)   EIB_PUBLIZIERTAB             date   EIB_LIEFEREINHEIT            number(6,0)   AMT_OID                      nvarchar(128)   DAR_OID                      nvarchar(128)   RES_ID                       number(10,0)   STH_ID                       number(10,0)   EIB_SORT                     number(10,0)   EIB_LEGENDESYMBOL_DE         nvarchar(1023)   EIB_LEGENDESYMBOL_FR         nvarchar(1023)
 # -------------------------------------------------------------------------
-ORACLE_NONSPATIAL_2_DEF OEREB2.HINWEIDOK   oracle_create_table          ""   oracle_drop_table            ""   oracle_table_writer_mode     ""   oracle_update_key_columns    ""   oracle_truncate_table        ""   fme_feature_operation        INSERT   fme_table_handling           USE_EXISTING   HWD_ID                       nvarchar(128)   HWD_XTF_ID                   nvarchar(128)   HWD_LIEFEREINHEIT            number(6,0)   HWD_ARTNR                    nvarchar(255)   VOR_OIDURSPRUNG              nvarchar(128)   VOR_OIDHINWEIS               nvarchar(128)
+ORACLE_NONSPATIAL_1_DEF OEREB2.HINWEIDOK   oracle_create_table          ""   oracle_drop_table            ""   oracle_table_writer_mode     ""   oracle_update_key_columns    ""   oracle_truncate_table        ""   fme_feature_operation        INSERT   fme_table_handling           USE_EXISTING   HWD_ID                       nvarchar(128)   HWD_XTF_ID                   nvarchar(128)   HWD_LIEFEREINHEIT            number(6,0)   HWD_ARTNR                    nvarchar(255)   VOR_OIDURSPRUNG              nvarchar(128)   VOR_OIDHINWEIS               nvarchar(128)

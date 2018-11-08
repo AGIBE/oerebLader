@@ -34,12 +34,11 @@ def run(config):
     # Der FMEWorkspaceRunner akzeptiert keine Unicode-Strings!
     # Daher müssen workspace und parameters umgewandelt werden!
     parameters = {
-        'GEODB_DATABASE': str(config['GEODB_WORK']['database']),
-        'GEODB_USERNAME': str(config['GEODB_WORK']['username']),
-        'GEODB_PASSWORD': str(config['GEODB_WORK']['password']),
+        'WORK_CONNECTION': str(config['GEODB_WORK']['connection_file']),
         'OEREB2_DATABASE': str(config['OEREB2_WORK']['database']),
         'OEREB2_USERNAME': str(config['OEREB2_WORK']['username']),
         'OEREB2_PASSWORD': str(config['OEREB2_WORK']['password']),
+        'OEREB2_CONNECTION': str(config['OEREB2_WORK']['connection_file']),
         'GEODB_PG_DATABASE': str(config['GEODB_WORK_PG']['database']),
         'GEODB_PG_USERNAME': str(config['GEODB_WORK_PG']['username']),
         'GEODB_PG_PASSWORD': str(config['GEODB_WORK_PG']['password']),
