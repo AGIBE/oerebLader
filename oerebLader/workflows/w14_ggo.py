@@ -18,6 +18,6 @@ def run(ticketnr):
     oerebLader.scripts.s4_delete_transfer.run(config)
     oerebLader.scripts.s60_import_ggo.run(config)
     oerebLader.scripts.s38_qa_transfer.run(config)
-    #oerebLader.scripts.s61_qa_ggo.run(config)
+    oerebLader.scripts.s61_qa_ggo.run(config)
     oerebLader.scripts.s44_checkurl_transfer.run(config)
     oerebLader.scripts.s12_finish.run(config)
