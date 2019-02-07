@@ -108,6 +108,20 @@ def run(config, ticketnr):
         logger.error("Import wird abgebrochen.")
         sys.exit()
     
+    # POSTGIS-SCHEMAS holen
+    logger.info("PostGIS-Schemas werden geholt.")
+    schema_sql = "SELECT schema FROM workflow_schema WHERE workflow='" + config['LIEFEREINHEIT']['workflow'] + "'"
+    schema_result = oerebLader.helpers.sql_helper.readSQL(config['OEREB2_WORK']['connection_string'], schema_sql)
+    schemas = []
+    if len(schema_result) > 0:
+        for schema in schema_result:
+            schemas.append(schema[0])
+        config['LIEFEREINHEIT']['schemas'] = schemas
+    else:
+        logger.error("Für den Workflow konnten keine PostGIS-Schemas gefunden werden.")
+        logger.error("Import wird abgebrochen.")
+        sys.exit()
+
     logger.info("Name der Liefereinheit: " + unicode(config['LIEFEREINHEIT']['name']))
     logger.info("BFS-Nummer: " + unicode(config['LIEFEREINHEIT']['bfsnr']))
     logger.info("Gemeindename: " + unicode(config['LIEFEREINHEIT']['gemeinde_name']))
@@ -116,6 +130,7 @@ def run(config, ticketnr):
     logger.info("Prüfsumme: " + unicode(config['LIEFEREINHEIT']['md5']))
     logger.info("Workflow: " + unicode(config['LIEFEREINHEIT']['workflow']))
     logger.info("Geoprodukt-Code(s): " + unicode(",".join(config['LIEFEREINHEIT']['gprcodes'])))
+    logger.info("PostGIS-Schema(s): " + unicode(",".join(config['LIEFEREINHEIT']['schemas'])))
   
     logger.info("Script " +  os.path.basename(__file__) + " ist beendet.")
     

@@ -88,6 +88,7 @@ def get_config():
     create_connection_string(config, "TBA_WORK")
     create_connection_string(config, "GDBV_WORK")
     create_pg_connection_string(config, "GEODB_WORK_PG")
+    create_pg_connection_string(config, "OEREB_WORK_PG")
     
     # Dictionary mit kommunalen Layern erstellen
     layers = []
