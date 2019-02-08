@@ -19,6 +19,8 @@ def run(config):
     excel_amt_file = os.path.join(tba_path, excel_amt_filename)
     excel_darstellungsdienst_filename = "DARSTELLUNGSDIENST_" + unicode(config['LIEFEREINHEIT']['id']) + ".xlsx"
     excel_darstellungsdienst_file = os.path.join(tba_path, excel_darstellungsdienst_filename)
+    excel_availability_filename = "availability_" + unicode(config['LIEFEREINHEIT']['id']) + ".xlsx"
+    excel_availability_file = os.path.join(tba_path, excel_availability_filename)
     if config['GENERAL']['files_be_ch_baseurl'].endswith("/"):
         legend_fullurl = config['GENERAL']['files_be_ch_baseurl'] + "legenden/TBA/baulinie_kantonsstrasse.png"
         legend_baseurl = config['GENERAL']['files_be_ch_baseurl'] + "legenden/TBA/"
@@ -31,12 +33,22 @@ def run(config):
     # Der FMEWorkspaceRunner akzeptiert keine Unicode-Strings!
     # Daher müssen workspace und parameters umgewandelt werden!
     parameters = {
+        'EXCEL_AMT': str(excel_amt_file),
+        'EXCEL_DARSTELLUNGSDIENST': str(excel_darstellungsdienst_file),
+        'EXCEL_AVAILABILITY': str(excel_availability_file),
+        'LIEFEREINHEIT': str(config['LIEFEREINHEIT']['id']),
+        'LOGFILE': str(fme_logfile),
         'GEODB_DATABASE': str(config['GEODB_WORK']['database']),
         'GEODB_USERNAME': str(config['GEODB_WORK']['username']),
         'GEODB_PASSWORD': str(config['GEODB_WORK']['password']),
+        'TBA_DATABASE': str(config['TBA_WORK']['database']),
+        'TBA_USERNAME': str(config['TBA_WORK']['username']),
+        'TBA_PASSWORD': str(config['TBA_WORK']['password']),
         'OEREB2_DATABASE': str(config['OEREB2_WORK']['database']),
         'OEREB2_USERNAME': str(config['OEREB2_WORK']['username']),
         'OEREB2_PASSWORD': str(config['OEREB2_WORK']['password']),
+        'LEGEND_FULLURL': str(legend_fullurl),
+        'LEGEND_BASEURL': str(legend_baseurl),
         'GEODB_PG_DATABASE': str(config['GEODB_WORK_PG']['database']),
         'GEODB_PG_USERNAME': str(config['GEODB_WORK_PG']['username']),
         'GEODB_PG_PASSWORD': str(config['GEODB_WORK_PG']['password']),
@@ -46,16 +58,7 @@ def run(config):
         'OEREB_PG_USERNAME': str(config['OEREB_WORK_PG']['username']),
         'OEREB_PG_PASSWORD': str(config['OEREB_WORK_PG']['password']),
         'OEREB_PG_HOST': str(config['OEREB_WORK_PG']['host']),
-        'OEREB_PG_PORT': str(config['OEREB_WORK_PG']['port']),
-        'TBA_DATABASE': str(config['TBA_WORK']['database']),
-        'TBA_USERNAME': str(config['TBA_WORK']['username']),
-        'TBA_PASSWORD': str(config['TBA_WORK']['password']),
-        'EXCEL_AMT': str(excel_amt_file),
-        'EXCEL_DARSTELLUNGSDIENST': str(excel_darstellungsdienst_file),
-        'LEGEND_FULLURL': str(legend_fullurl),
-        'LEGEND_BASEURL': str(legend_baseurl),
-        'LIEFEREINHEIT': str(config['LIEFEREINHEIT']['id']),
-        'LOGFILE': str(fme_logfile)
+        'OEREB_PG_PORT': str(config['OEREB_WORK_PG']['port'])
     }
     try:
         runner.runWithParameters(str(fme_script), parameters)
