@@ -20,10 +20,10 @@ def run(config):
     output_rv_dir = os.path.join(config['GENERAL']['files_be_ch_baseunc'], unicode(config['LIEFEREINHEIT']['id']), unicode(config['ticketnr']))
     if config['GENERAL']['files_be_ch_baseurl'].endswith("/"):
         output_rv_url = config['GENERAL']['files_be_ch_baseurl'] + unicode(config['LIEFEREINHEIT']['id']) + "/" + unicode(config['ticketnr']) + "/"
-        output_objbl_url = config['GENERAL']['files_be_ch_baseurl'] + unicode(config['LIEFEREINHEIT']['id']) + "/objbl/"
+        output_objbl_url = config['GENERAL']['files_be_ch_baseurl'] + unicode(config['LIEFEREINHEIT']['id']) + "/" + unicode(config['ticketnr']) + "/objbl/"
     else:
         output_rv_url = config['GENERAL']['files_be_ch_baseurl'] + "/" + unicode(config['LIEFEREINHEIT']['id']) + "/" + unicode(config['ticketnr']) + "/"
-        output_objbl_url = config['GENERAL']['files_be_ch_baseurl'] + "/" + unicode(config['LIEFEREINHEIT']['id']) + "/objbl/"
+        output_objbl_url = config['GENERAL']['files_be_ch_baseurl'] + "/" + unicode(config['LIEFEREINHEIT']['id']) + "/" + unicode(config['ticketnr']) + "/objbl/"
     excel_file_amt = os.path.join(config['LIEFEREINHEIT']['ts_source'], "AMT_" + unicode(config['LIEFEREINHEIT']['id']) + ".xlsx")
     excel_file_darstellungsdienst = os.path.join(config['LIEFEREINHEIT']['ts_source'], "DARSTELLUNGSDIENST_" + unicode(config['LIEFEREINHEIT']['id']) + ".xlsx")
     if config['GENERAL']['files_be_ch_baseurl'].endswith("/"):
@@ -34,7 +34,7 @@ def run(config):
         legend_baseurl = config['GENERAL']['files_be_ch_baseurl'] + "/legenden/GGO/"
 
     input_objbl_dir = os.path.join(os.path.dirname(config['LIEFEREINHEIT']['gpr_source']), "Objektblaetter")
-    output_objbl_dir = os.path.join(config['GENERAL']['files_be_ch_baseunc'], unicode(config['LIEFEREINHEIT']['id']), "objbl")
+    output_objbl_dir = os.path.join(config['GENERAL']['files_be_ch_baseunc'], unicode(config['LIEFEREINHEIT']['id']), unicode(config['ticketnr']), "objbl")
     logger.info("Output-Dir Pläne: " + output_objbl_dir)
     logger.info("Output-URL Objektblätter: " + output_objbl_url)
 
