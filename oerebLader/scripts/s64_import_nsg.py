@@ -65,6 +65,7 @@ def run(config):
         'EXCEL_TEILPLAENE': str(excel_file_teilplaene),
         'LEGEND_BASEURL': str(legend_baseurl),
         'LIEFEREINHEIT': str(config['LIEFEREINHEIT']['id']),
+        'STROKER': str(config['GENERAL']['fme_stroker_value']),
         'LOGFILE': str(fme_logfile)
     }
     try:

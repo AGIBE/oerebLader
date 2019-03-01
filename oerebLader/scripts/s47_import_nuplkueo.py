@@ -56,6 +56,7 @@ def run(config):
         'OUTPUT_RV_DIR': str(output_rv_dir),
         'OUTPUT_RV_URL': str(output_rv_url),
         'CREATE_LINETABLES': str(config['GENERAL']['create_linetables']),
+        'STROKER': str(config['GENERAL']['fme_stroker_value']),
         'LOGFILE': str(fme_logfile)
     }
     try:

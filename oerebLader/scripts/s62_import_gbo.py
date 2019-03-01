@@ -55,6 +55,7 @@ def run(config):
         'EXCEL_AMT': str(excel_file_amt),
         'LEGEND_BASEURL': str(legend_baseurl),
         'LIEFEREINHEIT': str(config['LIEFEREINHEIT']['id']),
+        'STROKER': str(config['GENERAL']['fme_stroker_value']),
         'LOGFILE': str(fme_logfile)
     }
     try:

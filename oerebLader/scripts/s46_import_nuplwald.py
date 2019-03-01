@@ -56,6 +56,7 @@ def run(config):
         'INPUT_RV_DIR': str(input_rv_dir),
         'OUTPUT_RV_DIR': str(output_rv_dir),
         'OUTPUT_RV_URL': str(output_rv_url),
+        'STROKER': str(config['GENERAL']['fme_stroker_value']),
         'LOGFILE': str(fme_logfile)
     }
     try:

@@ -41,6 +41,7 @@ def run(config):
         'LEGEND_BASEURL': str(legend_baseurl),
         'LIEFEREINHEIT': str(config['LIEFEREINHEIT']['id']),
         'RV_BASEURL': str(config['GENERAL']['kbs_call']),
+        'STROKER': str(config['GENERAL']['fme_stroker_value']),
         'LOGFILE': str(fme_logfile)
     }
     try:

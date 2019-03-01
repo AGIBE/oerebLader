@@ -38,6 +38,7 @@ def run(config):
         'EXCEL_AVAILABILITY': str(excel_availability_file),
         'LIEFEREINHEIT': str(config['LIEFEREINHEIT']['id']),
         'LOGFILE': str(fme_logfile),
+        'STROKER': str(config['GENERAL']['fme_stroker_value']),
         'GEODB_DATABASE': str(config['GEODB_WORK']['database']),
         'GEODB_USERNAME': str(config['GEODB_WORK']['username']),
         'GEODB_PASSWORD': str(config['GEODB_WORK']['password']),
