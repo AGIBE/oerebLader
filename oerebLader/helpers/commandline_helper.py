@@ -14,6 +14,7 @@ import oerebLader.build_mapfile_kanton.build_mapfile_kanton
 import oerebLader.build_map.build_map
 import oerebLader.collect_legends.collect_legends
 import oerebLader.create_legend.create_legend
+import oerebLader.download_tickets.download_tickets
 
 def import_ticket(args):
     oerebLader.workflows.workflow.run_workflow(args.TICKET)
@@ -79,6 +80,10 @@ def collect_legends(args):
 def create_legend(args):
     oerebLader.create_legend.create_legend.run_create_legend(args.BFSNR, args.MODE)
     print("Create_legend SUCCESSFUL!")
+
+def download_tickets(args):
+    oerebLader.download_tickets.download_tickets.run_download_tickets()
+    print("Download_Tickets SUCCESSFUL!")
     
 def main():
     version_text = "oerebLader v" + __version__
@@ -149,6 +154,10 @@ def main():
     create_legend_parser.add_argument("BFSNR", choices=valid_bfsnr, nargs='?', help="BFSNR der Gemeinde, deren HTML-Legende aktualisiert werden soll.")
     create_legend_parser.add_argument("MODE", choices=['oereb','oerebpruef'], help="Welche Legende soll erstellt werden? Prüflegende (oerebpruef) oder öffentliche Legende (oereb).")
     create_legend_parser.set_defaults(func=create_legend)
+
+    # DOWNLOAD_TICKETS-Befehl
+    download_tickets_parser = subparsers.add_parser("download_tickets", help="Lädt die aktuellen Ticketlisten aus dem Ticketsystem herunter.")
+    download_tickets_parser.set_defaults(func=download_tickets)
     
     args = parser.parse_args()
     args.func(args)
