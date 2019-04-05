@@ -22,7 +22,6 @@ def run(ticketnr):
     oerebLader.scripts.s1_delete_nupla.run(config)
     oerebLader.scripts.s4_delete_transfer.run(config)
     oerebLader.scripts.s48_import_nupla.run(config)
-    oerebLader.scripts.s51_derive_darstellung.run(config)
     oerebLader.scripts.s49_derive_legendenbildli.run(config)
     oerebLader.scripts.s50_create_legend.run(config)
     oerebLader.scripts.s38_qa_transfer.run(config)
