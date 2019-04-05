@@ -6,6 +6,8 @@ import os
 import requests
 import codecs
 import mappyfile
+import json
+import base64
 
 logger = logging.getLogger('oerebLaderLogger')
 
@@ -72,10 +74,42 @@ def get_EIB_index(mapfile, eib, bfsnr):
                     
     return eib_index
 
+def get_id_mapping_json(json_filepath):
+
+    with codecs.open(json_filepath, "r", "utf-8") as ff:
+        js = json.load(ff)
+
+    return js
+
+def get_mapping_infos(json_object, eib_oid):
+
+    plr_id = ""
+    schema = ""
+
+    for id in json_object:
+        if id['eib_oid'] == eib_oid:
+            plr_id = id['plr_id']
+            schema = id['schema']
+
+    return(plr_id, schema)
+
+def download_and_encode_image(image_url):
+    encoded_image = 'not found'
+    r = requests.get(image_url)
+    if r.status_code == 200:
+        encoded_image = base64.b64encode(r.content)
+    else:
+        logger.warning("Legendenbild konnte nicht heruntergeladen werden.")
+        logger.warning("HTTP-Status: " + unicode(r.status_code))
+
+    return encoded_image
+
 def run(config):
     logger.info("Script " +  os.path.basename(__file__) + " wird ausgeführt.")
 
     bfsnr = config['LIEFEREINHEIT']['bfsnr']
+    id_mapping_jsonfile = os.path.join(config['TEMPDIR'], 'id_mapping.json')
+    id_mapping_json = get_id_mapping_json(id_mapping_jsonfile)
     legend_basedir = os.path.join(config['GENERAL']['files_be_ch_baseunc'], unicode(config['LIEFEREINHEIT']['id']), unicode(config['ticketnr']), "legenden")
 
     # Das Legendenverzeichnis muss im Voraus vorhanden sein, damit der HTTP-Fetcher
@@ -121,9 +155,16 @@ def run(config):
             else:
                 logger.warning("Legendenbild konnte nicht heruntergeladen werden.")
                 logger.warning("HTTP-Status: " + unicode(r.status_code))
-            
+
+        # Update TRANSFERSTRUKTUR ORACLE
         eib_sql = "UPDATE EIGENTUMSBESCHRAENKUNG SET EIB_LEGENDESYMBOL_DE='" + legendicon_url_files + "', EIB_LEGENDESYMBOL_FR='" + legendicon_url_files + "' WHERE EIB_OID='" + eib["eib_oid"] + "'"
-        oerebLader.helpers.sql_helper.writeSQL(config['OEREB2_WORK']['connection_string'], eib_sql)            
+        oerebLader.helpers.sql_helper.writeSQL(config['OEREB2_WORK']['connection_string'], eib_sql)
+
+        # Update TRANSFERSTRUKTUR pyramid_oereb
+        (plr_id, schema) = get_mapping_infos(id_mapping_json, eib["eib_oid"])
+        image = download_and_encode_image(legendicon_url_files)
+        legend_entry_sql = "UPDATE " + schema + ".legend_entry SET symbol_url='" + legendicon_url_files + "', symbol='" + image + "' WHERE id='" + plr_id + "'"
+        oerebLader.helpers.sql_helper.writePSQL(config['OEREB_WORK_PG']['connection_string'], legend_entry_sql)
         
     logger.info("Script " +  os.path.basename(__file__) + " ist beendet.")
     
