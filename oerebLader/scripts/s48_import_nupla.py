@@ -17,9 +17,10 @@ def run(config):
     logger.info("Das FME-Logfile heisst: " + fme_logfile)
     runner = fmeobjects.FMEWorkspaceRunner()
     bfsnr = config['LIEFEREINHEIT']['bfsnr']
+    id_mapping_json = os.path.join(config['TEMPDIR'], 'id_mapping.json')
+    logger.info("Temporäres JSON-File: " + id_mapping_json)
     itf_file = os.path.join(config['LIEFEREINHEIT']['gpr_source'], unicode(bfsnr), unicode(bfsnr) + ".itf")
     excel_file_amt = os.path.join(config['LIEFEREINHEIT']['gpr_source'], unicode(bfsnr), "AMT_" + unicode(bfsnr) + ".xlsx")
-    excel_file_darstellungsdienst = os.path.join(config['LIEFEREINHEIT']['gpr_source'], unicode(bfsnr), "DARSTELLUNGSDIENST_" + unicode(bfsnr) + ".xlsx")
     simplify_geometry = config['GENERAL']['simplify_geometry']
     input_rv_dir = os.path.join(config['LIEFEREINHEIT']['gpr_source'], unicode(bfsnr), "rv")
     output_rv_dir = os.path.join(config['GENERAL']['files_be_ch_baseunc'], unicode(config['LIEFEREINHEIT']['id']), unicode(config['ticketnr']))
@@ -43,6 +44,11 @@ def run(config):
         'GEODB_PG_PASSWORD': str(config['GEODB_WORK_PG']['password']),
         'GEODB_PG_HOST': str(config['GEODB_WORK_PG']['host']),
         'GEODB_PG_PORT': str(config['GEODB_WORK_PG']['port']),
+        'OEREB_PG_DATABASE': str(config['OEREB_WORK_PG']['database']),
+        'OEREB_PG_USERNAME': str(config['OEREB_WORK_PG']['username']),
+        'OEREB_PG_PASSWORD': str(config['OEREB_WORK_PG']['password']),
+        'OEREB_PG_HOST': str(config['OEREB_WORK_PG']['host']),
+        'OEREB_PG_PORT': str(config['OEREB_WORK_PG']['port']),
         'MODELLABLAGE': str(config['GENERAL']['models']),
         'EXCEL_AMT': str(excel_file_amt),
         'BFSNR': str(bfsnr),
@@ -54,6 +60,9 @@ def run(config):
         'OUTPUT_RV_URL': str(output_rv_url),
         'SIMPLIFY_GEOMETRY': str(simplify_geometry),
         'CREATE_LINETABLES': str(config['GENERAL']['create_linetables']),
+        'STROKER': str(config['GENERAL']['fme_stroker_value']),
+        'NPL_WMS_BASE': str(config['GENERAL']['npl_wms_base']),
+        'ID_MAPPING_JSON': str(id_mapping_json),
         'LOGFILE': str(fme_logfile)
     }
     try:
