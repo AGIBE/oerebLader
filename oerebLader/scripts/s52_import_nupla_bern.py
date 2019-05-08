@@ -48,7 +48,11 @@ def run(config):
         'GEODB_PG_PASSWORD': str(config['GEODB_WORK_PG']['password']),
         'GEODB_PG_HOST': str(config['GEODB_WORK_PG']['host']),
         'GEODB_PG_PORT': str(config['GEODB_WORK_PG']['port']),
-        'MODELLABLAGE': str(config['GENERAL']['models']),
+        'OEREB_PG_DATABASE': str(config['OEREB_WORK_PG']['database']),
+        'OEREB_PG_USERNAME': str(config['OEREB_WORK_PG']['username']),
+        'OEREB_PG_PASSWORD': str(config['OEREB_WORK_PG']['password']),
+        'OEREB_PG_HOST': str(config['OEREB_WORK_PG']['host']),
+        'OEREB_PG_PORT': str(config['OEREB_WORK_PG']['port']),
         'EXCEL_AMT': str(excel_file_amt),
         'EXCEL_DARSTELLUNG': str(excel_file_darstellung),
         'BFSNR': str(bfsnr),
@@ -63,6 +67,7 @@ def run(config):
         'OUTPUT_RV_DIR': str(output_rv_dir),
         'OUTPUT_RV_URL': str(output_rv_url),
         'CREATE_LINETABLES': str(config['GENERAL']['create_linetables']),
+        'STROKER': str(config['GENERAL']['fme_stroker_value']),
         'LOGFILE': str(fme_logfile)
     }
     try:
