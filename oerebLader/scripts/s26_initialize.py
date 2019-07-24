@@ -6,11 +6,9 @@ import oerebLader.helpers.connection_helper
 import logging
 import os
 import sys
-import tempfile
 import arcpy
 import datetime
 import chromalog
-import tempfile
 
 def init_logging(ticketnr, config):
     log_directory = os.path.join(config['LOGGING']['basedir'], unicode(ticketnr))
@@ -43,9 +41,6 @@ def run(config, ticketnr):
     logger.info("Ticket-Nr: " + unicode(config['ticketnr']))
     logger.info("Script " +  os.path.basename(__file__) + " wird ausgeführt.")
 
-    # Temporäres Directory erstellen
-    config['TEMPDIR'] = tempfile.mkdtemp()
-    
     # Temporäre ArcGIS-Connectionfiles erstellen
     # Die Files werden am Schluss durch s12_finish
     # wieder gelöscht.

@@ -6,6 +6,7 @@ import sys
 import logging
 import os
 import fmeobjects
+import json
 
 logger = logging.getLogger('oerebLaderLogger')
 
@@ -17,8 +18,6 @@ def run(config):
     logger.info("Das FME-Logfile heisst: " + fme_logfile)
     runner = fmeobjects.FMEWorkspaceRunner()
     bfsnr = config['LIEFEREINHEIT']['bfsnr']
-    id_mapping_json = os.path.join(config['TEMPDIR'], 'id_mapping.json')
-    logger.info("Temporäres JSON-File: " + id_mapping_json)
     itf_file = os.path.join(config['LIEFEREINHEIT']['gpr_source'], unicode(bfsnr), unicode(config['ticketnr']), unicode(bfsnr) + ".itf")
     excel_file_amt = os.path.join(config['LIEFEREINHEIT']['gpr_source'], unicode(bfsnr), unicode(config['ticketnr']), "AMT_" + unicode(bfsnr) + ".xlsx")
     simplify_geometry = config['GENERAL']['simplify_geometry']
@@ -62,7 +61,6 @@ def run(config):
         'CREATE_LINETABLES': str(config['GENERAL']['create_linetables']),
         'STROKER': str(config['GENERAL']['fme_stroker_value']),
         'NPL_WMS_BASE': str(config['GENERAL']['npl_wms_base']),
-        'ID_MAPPING_JSON': str(id_mapping_json),
         'LOGFILE': str(fme_logfile)
     }
     try:
