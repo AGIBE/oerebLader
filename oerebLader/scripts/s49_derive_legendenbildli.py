@@ -6,13 +6,18 @@ import os
 import requests
 import codecs
 import mappyfile
-import json
 import base64
+import operator
+import itertools
+import uuid
+import json
+import psycopg2
+from psycopg2.extras import Json
 
 logger = logging.getLogger('oerebLaderLogger')
 
-def getDARSTC(eib_oid, table, config):
-    darst_sql = "SELECT distinct darst_c FROM " + table + " WHERE RVS_ID='" + eib_oid + "'"
+def get_darstc(plr_id, table, config):
+    darst_sql = "SELECT distinct darst_c FROM " + table + " WHERE RVS_ID='" + plr_id + "'"
     results = oerebLader.helpers.sql_helper.readSQL(config['GEODB_WORK']['connection_string'], darst_sql)
 
     darst_c = ""
@@ -23,75 +28,89 @@ def getDARSTC(eib_oid, table, config):
         
     return darst_c
 
-def getEIB(liefereinheit, config, nupla_layers):
-    eib_sql = "SELECT EIB_OID, DAR_OID FROM EIGENTUMSBESCHRAENKUNG WHERE EIB_LIEFEREINHEIT=" + unicode(liefereinheit)
-    eibs = []
-    result_eibs = oerebLader.helpers.sql_helper.readSQL(config['OEREB2_WORK']['connection_string'], eib_sql)
-    
-    for r in result_eibs:
-        eib_oid = r[0]
-        dar_oid = r[1]
-        dar_oid = dar_oid.split(".")[-1]
-        result = (item for item in nupla_layers if item["id"] == dar_oid).next()
-        layer = result["layer"]
-        table = result["table"]
-        darst_c = getDARSTC(eib_oid, table, config)
-        eib = {"eib_oid": eib_oid, "layer": layer, "table": table, "darst_c": darst_c}
-        eibs.append(eib)
-        
-    return eibs
+def get_public_law_restriction_per_schema(liefereinheit, config, schema):
 
-def get_EIB_index(mapfile, eib, bfsnr):
-    layer = (item for item in mapfile["layers"] if item["name"].strip('"')==eib["layer"]).next()
-    eib_index = "-999"
+    plr_sql = "SELECT id, information, topic, sub_theme, published_from, view_service_id, office_id FROM " + schema + ".public_law_restriction where liefereinheit=" + unicode(liefereinheit)
+    return oerebLader.helpers.sql_helper.readPSQL(config['OEREB_WORK_PG']['connection_string'], plr_sql)
+
+def get_public_law_restrictions(liefereinheit, config, nupla_layers, schemas):
+
+    plrs = []
+
+    for schema in schemas:
+        result_plrs = get_public_law_restriction_per_schema(liefereinheit, config, schema)
+        for r in result_plrs:
+            # Felder aus der DB
+            view_service_id = r[5]
+            # Berechnete Felder
+            sub_theme_id = view_service_id.split(".")[-1]
+            result = (item for item in nupla_layers if item["id"] == sub_theme_id).next()
+            layer = result["layer"]
+            table = result["table"]
+            plr = {
+                "id": r[0],
+                "information": r[1],
+                "topic": r[2],
+                "sub_theme": r[3],
+                "published_from": r[4],
+                "view_service_id": view_service_id,
+                "office_id": r[6],
+                "layer": layer,
+                "table": table,
+                "darstc": get_darstc(r[0], table, config),
+                "schema": schema
+            }
+            plrs.append(plr)
+        
+    return plrs
+
+def get_public_law_restriction_index(mapfile, plr, bfsnr):
+    layer = (item for item in mapfile["layers"] if item["name"].strip('"')==plr["layer"]).next()
+    plr_index = "-999"
     # Suche nach BFSNR und DARST_C (d.h. kommunales Symbol)
     for i,cls in enumerate(layer["classes"]):
         # Die Klasse "alle anderen Werte" hat keine Expression.
         # Daher muss sie ignoriert werden.
         if "expression" in cls.keys():
             expression = cls["expression"].strip('"')
-            if bfsnr in expression and eib["darst_c"] in expression:
-                eib_index = i
+            if bfsnr in expression and plr["darstc"] in expression:
+                plr_index = i
     
     # Wenn nicht als kommunales Symbol gefunden
     # wird nun auch in den kantonalen gesucht
-    if eib_index == "-999":
+    if plr_index == "-999":
         for i,cls in enumerate(layer["classes"]):
             # Die Klasse "alle anderen Werte" hat keine Expression.
             # Daher muss sie ignoriert werden.
             if "expression" in cls.keys():
                 expression = cls["expression"].strip('"')
-                # der DARST_C muss der Expression genau entsprechen
+                # der DARSTC muss der Expression genau entsprechen
                 # Nur dann ist es ein kantonales Symbol
-                if eib["darst_c"]==expression:
-                    eib_index=i
+                if plr["darstc"]==expression:
+                    plr_index=i
                     
     # Wenn auch kein kantonales Symbol gefunden wird,
     # wird das Symbol "alle anderen Werte" genommen.
     # Dieses ist immer das letzte/unterste im Mapfile
-    if eib_index == "-999":
-        eib_index = len(layer['classes']) - 1
+    if plr_index == "-999":
+        plr_index = len(layer['classes']) - 1
                     
-    return eib_index
+    return plr_index
 
-def get_id_mapping_json(json_filepath):
+def aggregate_plrs(plrs):
+    # Inspiriert durch: 
+    # https://stackoverflow.com/questions/21674331/group-by-multiple-keys-and-summarize-average-values-of-a-list-of-dictionaries
+    grouper = operator.itemgetter('information', 'liefereinheit', 'office_id', 'published_from', 'schema', 'sub_theme', 'symbol_url', 'topic', 'view_service_id')
+    result = []
+    for key, grp in itertools.groupby(sorted(plrs, key = grouper), grouper):
+        temp_dict = dict(zip(['information', 'liefereinheit', 'office_id', 'published_from', 'schema', 'sub_theme', 'symbol_url', 'topic', 'view_service_id'], key))
+        ids = []
+        for item in grp:
+            ids.append(item['id'])
+        temp_dict["id"] = ";".join(ids)
+        result.append(temp_dict)
 
-    with codecs.open(json_filepath, "r", "utf-8") as ff:
-        js = json.load(ff)
-
-    return js
-
-def get_mapping_infos(json_object, eib_oid):
-
-    plr_id = ""
-    schema = ""
-
-    for id in json_object:
-        if id['eib_oid'] == eib_oid:
-            plr_id = id['plr_id']
-            schema = id['schema']
-
-    return(plr_id, schema)
+    return result
 
 def download_and_encode_image(image_url):
     encoded_image = 'not found'
@@ -108,9 +127,8 @@ def run(config):
     logger.info("Script " +  os.path.basename(__file__) + " wird ausgeführt.")
 
     bfsnr = config['LIEFEREINHEIT']['bfsnr']
-    id_mapping_jsonfile = os.path.join(config['TEMPDIR'], 'id_mapping.json')
-    id_mapping_json = get_id_mapping_json(id_mapping_jsonfile)
     legend_basedir = os.path.join(config['GENERAL']['files_be_ch_baseunc'], unicode(config['LIEFEREINHEIT']['id']), unicode(config['ticketnr']), "legenden")
+    schemas = config['LIEFEREINHEIT']['schemas']
 
     # Das Legendenverzeichnis muss im Voraus vorhanden sein, damit der HTTP-Fetcher
     # im FME dorthin schreiben kann. Er erzeugt keine Directories.
@@ -124,24 +142,25 @@ def run(config):
     nupla_layers = config["KOMMUNALE_LAYER"]
     
     logger.info("Hole alle EIB_OIDs für die Liefereinheit " + unicode(config['LIEFEREINHEIT']['id']))
-    eibs = getEIB(config['LIEFEREINHEIT']['id'], config, nupla_layers,)
+    plrs = get_public_law_restrictions(config['LIEFEREINHEIT']['id'], config, nupla_layers, schemas)
 
     mapfile_path = os.path.join(config['LEGENDS']['legend_mapfile'], "oerebpruef/oerebpruef_de.map")
     logger.info("Mapfile einlesen: " + mapfile_path)
     with codecs.open(mapfile_path, "r", "utf-8") as mapfile:
         mf = mappyfile.loads(mapfile.read())
 
-    logger.info("Der Class-Index für jede EIB wird aus dem Mapfile ausgelesen.")
+    logger.info("Der Class-Index für jede PLR wird aus dem Mapfile ausgelesen.")
     already_downloaded_files = []
-    for eib in eibs:
+    for plr in plrs:
+        plr['liefereinheit'] = unicode(config['LIEFEREINHEIT']['id'])
         # Index holen
-        eib_index = get_EIB_index(mf, eib, unicode(bfsnr))
+        plr_index = get_public_law_restriction_index(mf, plr, unicode(bfsnr))
         
         # URLs und Pfade bilden
-        legendicon_url = config['LEGENDS']['legend_mapservice_base_url'] + eib["layer"] + "," + unicode(eib_index)
-        filename = eib["layer"].split(".")[1] + "_" + eib["darst_c"] + "_" + unicode(eib_index) + ".png"
+        legendicon_url = config['LEGENDS']['legend_mapservice_base_url'] + plr["layer"] + "," + unicode(plr_index)
+        filename = plr["layer"].split(".")[1] + "_" + plr["darstc"] + "_" + unicode(plr_index) + ".png"
         legendicon_file = os.path.join(legend_basedir, filename)
-        legendicon_url_files = legend_baseurl + filename
+        plr['symbol_url'] = legend_baseurl + filename
         
         # Viele Bilder werden mehrfach referenziert, müssen aber nur
         # einmal heruntergeladen werden.
@@ -151,20 +170,44 @@ def run(config):
             if r.status_code == 200:
                 with open(legendicon_file, 'wb') as f:
                     f.write(r.content)
+                # plr['symbol'] = base64.b64encode(r.content)
                 already_downloaded_files.append(filename)
             else:
                 logger.warning("Legendenbild konnte nicht heruntergeladen werden.")
                 logger.warning("HTTP-Status: " + unicode(r.status_code))
 
-        # Update TRANSFERSTRUKTUR ORACLE
-        eib_sql = "UPDATE EIGENTUMSBESCHRAENKUNG SET EIB_LEGENDESYMBOL_DE='" + legendicon_url_files + "', EIB_LEGENDESYMBOL_FR='" + legendicon_url_files + "' WHERE EIB_OID='" + eib["eib_oid"] + "'"
-        oerebLader.helpers.sql_helper.writeSQL(config['OEREB2_WORK']['connection_string'], eib_sql)
+        # Update TRANSFERSTRUKTUR ORACLE (hier muss keine Aggregation erfolgen)
+        plr_sql = "UPDATE EIGENTUMSBESCHRAENKUNG SET EIB_LEGENDESYMBOL_DE='" + plr['symbol_url'] + "', EIB_LEGENDESYMBOL_FR='" + plr['symbol_url'] + "' WHERE EIB_OID='" + plr["id"] + "'"
+        oerebLader.helpers.sql_helper.writeSQL(config['OEREB2_WORK']['connection_string'], plr_sql)
+
+    # legend_entry abfüllen (inkl. TypeCode-Aggregation)
+    for legend_entry in  aggregate_plrs(plrs):
+        legend_entry_id = uuid.uuid4()
+        schema = legend_entry['schema']
+        symbol_url = legend_entry['symbol_url']
+        symbol = download_and_encode_image(symbol_url)
+        legend_text = legend_entry['information']
+        type_code = uuid.uuid4()
+        type_code_list = uuid.uuid4()
+        topic = legend_entry['topic']
+        sub_theme = legend_entry['sub_theme']
+        view_service_id = legend_entry['view_service_id']
+        liefereinheit = legend_entry['liefereinheit']
+        legend_entry_insert_sql = "INSERT INTO %s.legend_entry (id, symbol, symbol_url, legend_text, type_code, type_code_list, topic, sub_theme, view_service_id, liefereinheit) VALUES ('%s', '%s', '%s', %s, '%s', '%s', '%s', %s, '%s', %s)" % (schema, legend_entry_id, symbol, symbol_url, Json(legend_text), type_code, type_code_list, topic, Json(sub_theme), view_service_id, liefereinheit)
+        oerebLader.helpers.sql_helper.writePSQL(config['OEREB_WORK_PG']['connection_string'], legend_entry_insert_sql)
+        plr_ids = legend_entry['id'].split(";")
+        for plr_id in plr_ids:
+            public_law_restriction_update_sql = "UPDATE %s.public_law_restriction SET type_code='%s', type_code_list='%s' WHERE id='%s'" % (schema, type_code, type_code_list, plr_id)
+            oerebLader.helpers.sql_helper.writePSQL(config['OEREB_WORK_PG']['connection_string'], public_law_restriction_update_sql)
+        
 
         # Update TRANSFERSTRUKTUR pyramid_oereb
-        (plr_id, schema) = get_mapping_infos(id_mapping_json, eib["eib_oid"])
-        image = download_and_encode_image(legendicon_url_files)
-        legend_entry_sql = "UPDATE " + schema + ".legend_entry SET symbol_url='" + legendicon_url_files + "', symbol='" + image + "' WHERE id='" + plr_id + "'"
-        oerebLader.helpers.sql_helper.writePSQL(config['OEREB_WORK_PG']['connection_string'], legend_entry_sql)
+        # image = download_and_encode_image(legendicon_url_files)
+        # schema = eib['schema']
+        # LEGEND_ENTRY Aggregate & Insert
+        # legend_entry_sql = "UPDATE " + schema + ".legend_entry SET symbol_url='" + legendicon_url_files + "', symbol='" + image + "' WHERE id='" + eib["eib_oid"] + "'"
+        #public_law_restriction_sql = 
+        # oerebLader.helpers.sql_helper.writePSQL(config['OEREB_WORK_PG']['connection_string'], legend_entry_sql)
         
     logger.info("Script " +  os.path.basename(__file__) + " ist beendet.")
     
