@@ -13,6 +13,7 @@ import uuid
 import json
 import psycopg2
 from psycopg2.extras import Json
+import time
 
 logger = logging.getLogger('oerebLaderLogger')
 
@@ -121,6 +122,9 @@ def download_and_encode_image(image_url):
         logger.warning("Legendenbild konnte nicht heruntergeladen werden.")
         logger.warning("HTTP-Status: " + unicode(r.status_code))
 
+    # Die Verzögerung wurde nötig, weil es ohne ab und zu
+    # zu einem SSLError gekommen ist ("Max retries exceeded with url").
+    time.sleep(1)
     return encoded_image
 
 def run(config):
@@ -170,17 +174,19 @@ def run(config):
             if r.status_code == 200:
                 with open(legendicon_file, 'wb') as f:
                     f.write(r.content)
-                # plr['symbol'] = base64.b64encode(r.content)
                 already_downloaded_files.append(filename)
             else:
                 logger.warning("Legendenbild konnte nicht heruntergeladen werden.")
                 logger.warning("HTTP-Status: " + unicode(r.status_code))
 
         # Update TRANSFERSTRUKTUR ORACLE (hier muss keine Aggregation erfolgen)
+        logger.info("Transferstruktur Oracle wird aktualisiert (Tabelle EIGENTUMSBESCHRAENKUNG)")
         plr_sql = "UPDATE EIGENTUMSBESCHRAENKUNG SET EIB_LEGENDESYMBOL_DE='" + plr['symbol_url'] + "', EIB_LEGENDESYMBOL_FR='" + plr['symbol_url'] + "' WHERE EIB_OID='" + plr["id"] + "'"
         oerebLader.helpers.sql_helper.writeSQL(config['OEREB2_WORK']['connection_string'], plr_sql)
 
     # legend_entry abfüllen (inkl. TypeCode-Aggregation)
+    logger.info("Transferstruktur PiostGIS wird aktualisiert.")
+    logger.info("Tabellen public_law_restriction und legend_entry.")
     for legend_entry in  aggregate_plrs(plrs):
         legend_entry_id = uuid.uuid4()
         schema = legend_entry['schema']
@@ -199,15 +205,6 @@ def run(config):
         for plr_id in plr_ids:
             public_law_restriction_update_sql = "UPDATE %s.public_law_restriction SET type_code='%s', type_code_list='%s' WHERE id='%s'" % (schema, type_code, type_code_list, plr_id)
             oerebLader.helpers.sql_helper.writePSQL(config['OEREB_WORK_PG']['connection_string'], public_law_restriction_update_sql)
-        
-
-        # Update TRANSFERSTRUKTUR pyramid_oereb
-        # image = download_and_encode_image(legendicon_url_files)
-        # schema = eib['schema']
-        # LEGEND_ENTRY Aggregate & Insert
-        # legend_entry_sql = "UPDATE " + schema + ".legend_entry SET symbol_url='" + legendicon_url_files + "', symbol='" + image + "' WHERE id='" + eib["eib_oid"] + "'"
-        #public_law_restriction_sql = 
-        # oerebLader.helpers.sql_helper.writePSQL(config['OEREB_WORK_PG']['connection_string'], legend_entry_sql)
         
     logger.info("Script " +  os.path.basename(__file__) + " ist beendet.")
     
