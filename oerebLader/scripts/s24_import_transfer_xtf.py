@@ -19,6 +19,8 @@ def run(config):
         legend_baseurl = config['GENERAL']['files_be_ch_baseurl'] + "legenden/" + unicode(config['LIEFEREINHEIT']['id']) + "/"
     else:
         legend_baseurl = config['GENERAL']['files_be_ch_baseurl'] + "/legenden/" + unicode(config['LIEFEREINHEIT']['id']) + "/"
+    # Bei den Bundesthemen ist immer nur genau ein Schema betroffen.
+    schema = config['LIEFEREINHEIT']['schemas'][0]
 
     runner = fmeobjects.FMEWorkspaceRunner()
     # Der FMEWorkspaceRunner akzeptiert keine Unicode-Strings!
@@ -27,11 +29,18 @@ def run(config):
         'OEREB2_DATABASE': str(config['OEREB2_WORK']['database']),
         'OEREB2_USERNAME': str(config['OEREB2_WORK']['username']),
         'OEREB2_PASSWORD': str(config['OEREB2_WORK']['password']),
+        'OEREB2_CONNECTIONFILE': str(config['OEREB2_WORK']['connection_file']),
         'MODELLABLAGE': str(config['GENERAL']['models']),
         'XTF_FILE': str(config['LIEFEREINHEIT']['ts_source']),
         'LEGEND_BASEURL': str(legend_baseurl),
         'LEGEND_BASEDIR': str(legend_basedir),
         'LIEFEREINHEIT': str(config['LIEFEREINHEIT']['id']),
+        'OEREB_PG_DATABASE': str(config['OEREB_WORK_PG']['database']),
+        'OEREB_PG_USERNAME': str(config['OEREB_WORK_PG']['username']),
+        'OEREB_PG_PASSWORD': str(config['OEREB_WORK_PG']['password']),
+        'OEREB_PG_HOST': str(config['OEREB_WORK_PG']['host']),
+        'OEREB_PG_PORT': str(config['OEREB_WORK_PG']['port']),
+        'SCHEMA': str(schema),
         'LOGFILE': str(fme_logfile)
     }
     try:
