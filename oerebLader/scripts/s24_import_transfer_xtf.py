@@ -41,6 +41,7 @@ def run(config):
         'OEREB_PG_HOST': str(config['OEREB_WORK_PG']['host']),
         'OEREB_PG_PORT': str(config['OEREB_WORK_PG']['port']),
         'SCHEMA': str(schema),
+        'STROKER': str(config['GENERAL']['fme_stroker_value']),
         'LOGFILE': str(fme_logfile)
     }
     try:
