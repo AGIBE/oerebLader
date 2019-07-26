@@ -1,7 +1,7 @@
 #! <?xml version="1.0" encoding="UTF-8" ?>
 #! <WORKSPACE
 #    Command-line to run this workspace:
-#        "C:\Program Files (x86)\FME\fme.exe" C:\Daten\repos\oerebLader\oerebLader\scripts\s15_import_kbsbund.fmw
+#        "C:\Program Files (x86)\FME\fme.exe" D:\Daten\repos\oerebLader\oerebLader\scripts\s15_import_kbsbund.fmw
 #              --XTF_FILE ""
 #              --USERNAME ""
 #              --PASSWORD "********"
@@ -17,7 +17,7 @@
 #              --XML_FILE ""
 #    
 #!   ATTR_TYPE_ENCODING="SDF"
-#!   BEGIN_PYTHON="#&lt;space&gt;-*-&lt;space&gt;coding:&lt;space&gt;latin-1&lt;space&gt;-*-&lt;lf&gt;import&lt;space&gt;fmeobjects&lt;lf&gt;&lt;lf&gt;#=======================================================================================&lt;lf&gt;#&lt;space&gt;Mehrsprachige&lt;space&gt;Felder&lt;space&gt;in&lt;space&gt;INTERLIS2&lt;space&gt;behandeln&lt;lf&gt;def&lt;space&gt;processMultilangFields&lt;openparen&gt;feature&lt;closeparen&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;multilangFields&lt;space&gt;=&lt;space&gt;feature.getAttribute&lt;openparen&gt;&lt;apos&gt;multilangfields&lt;apos&gt;&lt;closeparen&gt;.split&lt;openparen&gt;&lt;quote&gt;&lt;comma&gt;&lt;quote&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;for&lt;space&gt;mlField&lt;space&gt;in&lt;space&gt;multilangFields:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;content_de&lt;space&gt;=&lt;space&gt;&lt;quote&gt;&lt;quote&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;content_fr&lt;space&gt;=&lt;space&gt;&lt;quote&gt;&lt;quote&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;content_it&lt;space&gt;=&lt;space&gt;&lt;quote&gt;&lt;quote&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;att_Language_list&lt;space&gt;=&lt;space&gt;feature.getAttribute&lt;openparen&gt;mlField&lt;space&gt;+&lt;space&gt;&lt;apos&gt;&lt;opencurly&gt;0&lt;closecurly&gt;.LocalisedText&lt;opencurly&gt;&lt;closecurly&gt;.Language&lt;apos&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;att_Text_list&lt;space&gt;=&lt;space&gt;feature.getAttribute&lt;openparen&gt;mlField&lt;space&gt;+&lt;space&gt;&lt;apos&gt;&lt;opencurly&gt;0&lt;closecurly&gt;.LocalisedText&lt;opencurly&gt;&lt;closecurly&gt;.Text&lt;apos&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;#&lt;space&gt;wenn&lt;space&gt;das&lt;space&gt;Multilang-Feld&lt;space&gt;nicht&lt;space&gt;abgef&lt;u00fc&gt;llt&lt;space&gt;ist&lt;comma&gt;&lt;space&gt;soll&lt;space&gt;es&lt;space&gt;nicht&lt;space&gt;bearbeitet&lt;space&gt;werden&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;if&lt;space&gt;att_Language_list&lt;space&gt;is&lt;space&gt;not&lt;space&gt;None:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;for&lt;space&gt;i&lt;space&gt;in&lt;space&gt;range&lt;openparen&gt;len&lt;openparen&gt;att_Language_list&lt;closeparen&gt;&lt;closeparen&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;if&lt;space&gt;att_Language_list&lt;openbracket&gt;i&lt;closebracket&gt;==&lt;quote&gt;de&lt;quote&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;content_de&lt;space&gt;=&lt;space&gt;att_Text_list&lt;openbracket&gt;i&lt;closebracket&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;if&lt;space&gt;att_Language_list&lt;openbracket&gt;i&lt;closebracket&gt;==&lt;quote&gt;fr&lt;quote&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;content_fr&lt;space&gt;=&lt;space&gt;att_Text_list&lt;openbracket&gt;i&lt;closebracket&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;if&lt;space&gt;att_Language_list&lt;openbracket&gt;i&lt;closebracket&gt;==&lt;quote&gt;it&lt;quote&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;content_it&lt;space&gt;=&lt;space&gt;att_Text_list&lt;openbracket&gt;i&lt;closebracket&gt;&lt;lf&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;#&lt;space&gt;Wenn&lt;space&gt;der&lt;space&gt;Text&lt;space&gt;nur&lt;space&gt;in&lt;space&gt;einer&lt;space&gt;Sprache&lt;space&gt;vorhanden&lt;space&gt;ist&lt;comma&gt;&lt;space&gt;wird&lt;space&gt;er&lt;space&gt;auch&lt;space&gt;f&lt;u00fc&gt;r&lt;space&gt;die&lt;space&gt;andere&lt;space&gt;Sprache&lt;space&gt;verwendet&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;if&lt;space&gt;content_de&lt;space&gt;==&lt;space&gt;&lt;quote&gt;&lt;quote&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;content_de&lt;space&gt;=&lt;space&gt;content_fr&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;if&lt;space&gt;content_de&lt;space&gt;==&lt;space&gt;&lt;quote&gt;&lt;quote&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;content_de&lt;space&gt;=&lt;space&gt;content_it&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;if&lt;space&gt;content_fr&lt;space&gt;==&lt;space&gt;&lt;quote&gt;&lt;quote&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;content_fr&lt;space&gt;=&lt;space&gt;content_de&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;if&lt;space&gt;content_fr&lt;space&gt;==&lt;space&gt;&lt;quote&gt;&lt;quote&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;content_fr&lt;space&gt;=&lt;space&gt;content_it&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;feature.setAttribute&lt;openparen&gt;mlField&lt;space&gt;+&lt;space&gt;&lt;quote&gt;_DE&lt;quote&gt;&lt;comma&gt;&lt;space&gt;content_de&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;feature.setAttribute&lt;openparen&gt;mlField&lt;space&gt;+&lt;space&gt;&lt;quote&gt;_FR&lt;quote&gt;&lt;comma&gt;&lt;space&gt;content_fr&lt;closeparen&gt;&lt;lf&gt;&lt;lf&gt;"
+#!   BEGIN_PYTHON="#&lt;space&gt;-*-&lt;space&gt;coding:&lt;space&gt;utf-8&lt;space&gt;-*-&lt;lf&gt;import&lt;space&gt;fmeobjects&lt;lf&gt;&lt;lf&gt;#=======================================================================================&lt;lf&gt;#&lt;space&gt;Mehrsprachige&lt;space&gt;Felder&lt;space&gt;in&lt;space&gt;INTERLIS2&lt;space&gt;behandeln&lt;lf&gt;def&lt;space&gt;processMultilangFields&lt;openparen&gt;feature&lt;closeparen&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;multilangFields&lt;space&gt;=&lt;space&gt;feature.getAttribute&lt;openparen&gt;&lt;apos&gt;multilangfields&lt;apos&gt;&lt;closeparen&gt;.split&lt;openparen&gt;&lt;quote&gt;&lt;comma&gt;&lt;quote&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;for&lt;space&gt;mlField&lt;space&gt;in&lt;space&gt;multilangFields:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;content_de&lt;space&gt;=&lt;space&gt;&lt;quote&gt;&lt;quote&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;content_fr&lt;space&gt;=&lt;space&gt;&lt;quote&gt;&lt;quote&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;content_it&lt;space&gt;=&lt;space&gt;&lt;quote&gt;&lt;quote&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;att_Language_list&lt;space&gt;=&lt;space&gt;feature.getAttribute&lt;openparen&gt;mlField&lt;space&gt;+&lt;space&gt;&lt;apos&gt;&lt;opencurly&gt;0&lt;closecurly&gt;.LocalisedText&lt;opencurly&gt;&lt;closecurly&gt;.Language&lt;apos&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;att_Text_list&lt;space&gt;=&lt;space&gt;feature.getAttribute&lt;openparen&gt;mlField&lt;space&gt;+&lt;space&gt;&lt;apos&gt;&lt;opencurly&gt;0&lt;closecurly&gt;.LocalisedText&lt;opencurly&gt;&lt;closecurly&gt;.Text&lt;apos&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;#&lt;space&gt;wenn&lt;space&gt;das&lt;space&gt;Multilang-Feld&lt;space&gt;nicht&lt;space&gt;abgef&lt;u00fc&gt;llt&lt;space&gt;ist&lt;comma&gt;&lt;space&gt;soll&lt;space&gt;es&lt;space&gt;nicht&lt;space&gt;bearbeitet&lt;space&gt;werden&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;if&lt;space&gt;att_Language_list&lt;space&gt;is&lt;space&gt;not&lt;space&gt;None:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;for&lt;space&gt;i&lt;space&gt;in&lt;space&gt;range&lt;openparen&gt;len&lt;openparen&gt;att_Language_list&lt;closeparen&gt;&lt;closeparen&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;if&lt;space&gt;att_Language_list&lt;openbracket&gt;i&lt;closebracket&gt;==&lt;quote&gt;de&lt;quote&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;content_de&lt;space&gt;=&lt;space&gt;att_Text_list&lt;openbracket&gt;i&lt;closebracket&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;if&lt;space&gt;att_Language_list&lt;openbracket&gt;i&lt;closebracket&gt;==&lt;quote&gt;fr&lt;quote&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;content_fr&lt;space&gt;=&lt;space&gt;att_Text_list&lt;openbracket&gt;i&lt;closebracket&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;if&lt;space&gt;att_Language_list&lt;openbracket&gt;i&lt;closebracket&gt;==&lt;quote&gt;it&lt;quote&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;content_it&lt;space&gt;=&lt;space&gt;att_Text_list&lt;openbracket&gt;i&lt;closebracket&gt;&lt;lf&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;#&lt;space&gt;Wenn&lt;space&gt;der&lt;space&gt;Text&lt;space&gt;nur&lt;space&gt;in&lt;space&gt;einer&lt;space&gt;Sprache&lt;space&gt;vorhanden&lt;space&gt;ist&lt;comma&gt;&lt;space&gt;wird&lt;space&gt;er&lt;space&gt;auch&lt;space&gt;f&lt;u00fc&gt;r&lt;space&gt;die&lt;space&gt;andere&lt;space&gt;Sprache&lt;space&gt;verwendet&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;if&lt;space&gt;content_de&lt;space&gt;==&lt;space&gt;&lt;quote&gt;&lt;quote&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;content_de&lt;space&gt;=&lt;space&gt;content_fr&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;if&lt;space&gt;content_de&lt;space&gt;==&lt;space&gt;&lt;quote&gt;&lt;quote&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;content_de&lt;space&gt;=&lt;space&gt;content_it&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;if&lt;space&gt;content_fr&lt;space&gt;==&lt;space&gt;&lt;quote&gt;&lt;quote&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;content_fr&lt;space&gt;=&lt;space&gt;content_de&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;if&lt;space&gt;content_fr&lt;space&gt;==&lt;space&gt;&lt;quote&gt;&lt;quote&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;content_fr&lt;space&gt;=&lt;space&gt;content_it&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;feature.setAttribute&lt;openparen&gt;mlField&lt;space&gt;+&lt;space&gt;&lt;quote&gt;_DE&lt;quote&gt;&lt;comma&gt;&lt;space&gt;content_de&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;feature.setAttribute&lt;openparen&gt;mlField&lt;space&gt;+&lt;space&gt;&lt;quote&gt;_FR&lt;quote&gt;&lt;comma&gt;&lt;space&gt;content_fr&lt;closeparen&gt;&lt;lf&gt;&lt;lf&gt;"
 #!   BEGIN_TCL=""
 #!   CATEGORY=""
 #!   DESCRIPTION=""
@@ -29,8 +29,8 @@
 #!   END_TCL=""
 #!   EXPLICIT_BOOKMARK_ORDER="false"
 #!   FME_BUILD_NUM="18310"
-#!   FME_DOCUMENT_GUID="f6d37524-0819-4085-a778-27c7a014cc96"
-#!   FME_DOCUMENT_PRIORGUID="a3e40621-e887-43b4-b138-07569a31c96d,858097f2-f1e2-4415-9a1b-f8b178b7bc53,e628029b-185e-4830-b4a3-0c8f682f978e,45c61655-09ab-4c8c-b2bf-1157ed668cdd,f4fb1b4c-8c0c-4942-bf34-2b5dbb0cb69a,e0bb3b12-4f7b-4080-aa97-7a9e6b48556f,43a16399-1ec6-4f24-9953-6a160077cf93,7165de78-0e81-4d5b-8405-81cad3c16bc9,21cfe63b-c26c-43a6-a93f-972946d50b85,ab1b2c9c-5f48-4fdc-8260-0a4f9035e188,9b246169-460b-478a-9f23-5fb7b1a40e70,d3cf68d6-4844-48df-bcf5-e465334c20a4,c4f1bdf2-fbf7-40fd-96ae-8535c44c64f4,1418a602-4c08-408e-a863-a4018bcaeaf3,a397e7ae-08e6-486a-9651-d48d714e9209,384864cc-82a3-4f47-86a4-b428c4ee576e,25e2c634-d9fa-4b93-bdcb-f62f7a4e5f26,2e8cf80a-fb6a-45f3-ae18-d5d3d368782c,e913a168-cff8-4ed1-935e-8acb0aff45f0,94bc701e-8467-4a92-aaec-b87c3241ed14,39987c61-8794-49d9-8c51-6b454bd93b21,f2b84f49-76fb-4964-8679-f2b257673100,293a7a10-0141-4774-b0f3-87f0b37299fc,f36b0de5-6613-4b08-85f0-4e41504baef5,1e800154-866d-42c6-b240-17811adf2d18"
+#!   FME_DOCUMENT_GUID="66eee829-bdd6-4e63-9608-364441122218"
+#!   FME_DOCUMENT_PRIORGUID="a3e40621-e887-43b4-b138-07569a31c96d,858097f2-f1e2-4415-9a1b-f8b178b7bc53,e628029b-185e-4830-b4a3-0c8f682f978e,45c61655-09ab-4c8c-b2bf-1157ed668cdd,f4fb1b4c-8c0c-4942-bf34-2b5dbb0cb69a,e0bb3b12-4f7b-4080-aa97-7a9e6b48556f,43a16399-1ec6-4f24-9953-6a160077cf93,7165de78-0e81-4d5b-8405-81cad3c16bc9,21cfe63b-c26c-43a6-a93f-972946d50b85,ab1b2c9c-5f48-4fdc-8260-0a4f9035e188,9b246169-460b-478a-9f23-5fb7b1a40e70,d3cf68d6-4844-48df-bcf5-e465334c20a4,c4f1bdf2-fbf7-40fd-96ae-8535c44c64f4,1418a602-4c08-408e-a863-a4018bcaeaf3,a397e7ae-08e6-486a-9651-d48d714e9209,384864cc-82a3-4f47-86a4-b428c4ee576e,25e2c634-d9fa-4b93-bdcb-f62f7a4e5f26,2e8cf80a-fb6a-45f3-ae18-d5d3d368782c,e913a168-cff8-4ed1-935e-8acb0aff45f0,94bc701e-8467-4a92-aaec-b87c3241ed14,39987c61-8794-49d9-8c51-6b454bd93b21,f2b84f49-76fb-4964-8679-f2b257673100,293a7a10-0141-4774-b0f3-87f0b37299fc,f36b0de5-6613-4b08-85f0-4e41504baef5,1e800154-866d-42c6-b240-17811adf2d18,f6d37524-0819-4085-a778-27c7a014cc96"
 #!   FME_GEOMETRY_HANDLING="Enhanced"
 #!   FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
 #!   FME_REPROJECTION_ENGINE="FME"
@@ -39,7 +39,7 @@
 #!   HISTORY=""
 #!   IGNORE_READER_FAILURE="No"
 #!   LAST_SAVE_BUILD="FME(R) 2018.0.1.0 (20180518 - Build 18310 - WIN32)"
-#!   LAST_SAVE_DATE="2018-09-27T09:29:52"
+#!   LAST_SAVE_DATE="2019-07-26T08:23:51"
 #!   LOG_FILE="$(LOGFILE)"
 #!   LOG_MAX_RECORDED_FEATURES="200"
 #!   MARKDOWN_DESCRIPTION=""
@@ -76,7 +76,7 @@
 #!   WRITE_DEFS="true"
 #!   DEFLINE_TEMPLATE=""
 #!   DEFLINE_ATTRS="true"
-#!   EXPOSABLE_ATTRS="xtf_geomattr xtf_char(255) xtf_basket xtf_char(200) fme_start_angle xtf_real64 fme_basename xtf_char(50) fme_text_size xtf_real64 fme_feature_type xtf_char(50) fme_color xtf_char(50) multi_reader_id xtf_int32 xtf_operation xtf_char(6) multi_reader_type xtf_char(50) fme_sweep_angle xtf_real64 fme_text_string xtf_char(50) fme_fill_color xtf_char(50) fme_rotation xtf_real64 multi_reader_full_id xtf_int32 fme_dataset xtf_char(50) fme_secondary_axis xtf_real64 fme_type xtf_char(50) multi_reader_keyword xtf_char(50) xtf_class xtf_char(255) fme_primary_axis xtf_real64 fme_geometry fme_char(50) xtf_consistency xtf_char(12)"
+#!   EXPOSABLE_ATTRS="fme_color xtf_char(50) fme_feature_type xtf_char(50) multi_reader_id xtf_int32 multi_reader_full_id xtf_int32 fme_secondary_axis xtf_real64 fme_geometry fme_char(50) xtf_basket xtf_char(200) fme_sweep_angle xtf_real64 fme_fill_color xtf_char(50) xtf_geomattr xtf_char(255) multi_reader_type xtf_char(50) fme_text_size xtf_real64 fme_text_string xtf_char(50) fme_start_angle xtf_real64 xtf_operation xtf_char(6) fme_type xtf_char(50) fme_basename xtf_char(50) xtf_consistency xtf_char(12) fme_primary_axis xtf_real64 fme_dataset xtf_char(50) xtf_class xtf_char(255) multi_reader_keyword xtf_char(50) fme_rotation xtf_real64"
 #!   DEFLINE_PARMS=""
 #!   ATTR_INDEX_TYPES=""
 #!   ATTR_NAME_INVALID_CHARS=""
@@ -106,7 +106,7 @@
 #!   WRITE_DEFS="true"
 #!   DEFLINE_TEMPLATE=""
 #!   DEFLINE_ATTRS="true"
-#!   EXPOSABLE_ATTRS="xtf_geomattr xtf_char(255) xtf_basket xtf_char(200) fme_start_angle xtf_real64 fme_basename xtf_char(50) fme_text_size xtf_real64 fme_feature_type xtf_char(50) fme_color xtf_char(50) multi_reader_id xtf_int32 xtf_operation xtf_char(6) multi_reader_type xtf_char(50) fme_sweep_angle xtf_real64 fme_text_string xtf_char(50) fme_fill_color xtf_char(50) fme_rotation xtf_real64 multi_reader_full_id xtf_int32 fme_dataset xtf_char(50) fme_secondary_axis xtf_real64 fme_type xtf_char(50) multi_reader_keyword xtf_char(50) xtf_class xtf_char(255) fme_primary_axis xtf_real64 fme_geometry fme_char(50) xtf_consistency xtf_char(12)"
+#!   EXPOSABLE_ATTRS="fme_color xtf_char(50) fme_feature_type xtf_char(50) multi_reader_id xtf_int32 multi_reader_full_id xtf_int32 fme_secondary_axis xtf_real64 fme_geometry fme_char(50) xtf_basket xtf_char(200) fme_sweep_angle xtf_real64 fme_fill_color xtf_char(50) xtf_geomattr xtf_char(255) multi_reader_type xtf_char(50) fme_text_size xtf_real64 fme_text_string xtf_char(50) fme_start_angle xtf_real64 xtf_operation xtf_char(6) fme_type xtf_char(50) fme_basename xtf_char(50) xtf_consistency xtf_char(12) fme_primary_axis xtf_real64 fme_dataset xtf_char(50) xtf_class xtf_char(255) multi_reader_keyword xtf_char(50) fme_rotation xtf_real64"
 #!   DEFLINE_PARMS=""
 #!   ATTR_INDEX_TYPES=""
 #!   ATTR_NAME_INVALID_CHARS=""
@@ -136,7 +136,7 @@
 #!   WRITE_DEFS="true"
 #!   DEFLINE_TEMPLATE="geodb_type {FME_GEN_GEOMETRY} GEODB_UPDATE_KEY_COLUMNS &quot;&quot; GEODB_DROP_TABLE NO GEODB_TRUNCATE_TABLE NO GEODB_OBJECT_ID_NAME OBJECTID GEODB_OBJECT_ID_ALIAS OBJECTID GEODB_SHAPE_NAME SHAPE GEODB_SHAPE_ALIAS SHAPE GEODB_CONFIG_KEYWORD DEFAULTS GEODB_FEATURE_DATASET &quot;&quot; GEODB_GRID{1} &quot;&quot; GEODB_AVG_NUM_POINTS &quot;&quot; GEODB_XORIGIN &quot;&quot; GEODB_YORIGIN &quot;&quot; GEODB_XYSCALE &quot;&quot; GEODB_HAS_Z_VALUES &quot;&quot; GEODB_ZORIGIN &quot;&quot; GEODB_ZSCALE &quot;&quot; GEODB_HAS_MEASURES &quot;&quot; GEODB_MEASURES_ORIGIN &quot;&quot; GEODB_MEASURES_SCALE &quot;&quot; GEODB_ANNO_REFERENCE_SCALE &quot;&quot;"
 #!   DEFLINE_ATTRS="true"
-#!   EXPOSABLE_ATTRS="geodb_metadata_string char(254) geodb_font_strikethrough boolean geodb_type char(25) geodb_font_size double geodb_text_line_spacing double geodb_dim_style_id integer geodb_text_character_width double geodb_color char(50) geodb_font_name char(254) fme_feature_type char(50) geodb_dim_line_z double geodb_text_feat_class_name char(254) geodb_text_break_char integer geodb_font_italic boolean fme_text_string char(50) geodb_dim_end_dimension_x double geodb_raster_pyramid_level integer fme_start_angle double geodb_dim_line_y double geodb_anno_class_id integer geodb_text_string char(254) geodb_text_char_spacing double geodb_measures char(254) geodb_dim_begin_dimension_z double geodb_start_angle double geodb_text_scale boolean geodb_dim_begin_dimension_x double geodb_dim_line_x double geodb_dim_text_z double geodb_h_align char(50) geodb_sweep_angle double geodb_dim_extn_line_angle double geodb_dim_text_x double geodb_dim_begin_dimension_y double geodb_font_underline boolean geodb_dim_extn_line_display smallint geodb_rotation double geodb_text_y_offset double geodb_dim_marker_display smallint geodb_symbol_id integer geodb_feature_dataset char(254) geodb_font_weight smallint geodb_allow_symbol_overrides boolean geodb_text_angle double geodb_dim_end_dimension_z double geodb_ancillary_role char(7) geodb_text_string_with_format_tags char(254) geodb_font_charset smallint fme_rotation double fme_dataset char(50) geodb_dim_line_display smallint geodb_dim_end_dimension_y double geodb_subtype_name char(254) fme_db_operation char(8) geodb_right_to_left boolean geodb_dim_using_custom_length boolean geodb_secondary_axis double geodb_text_y_coord double geodb_dim_custom_length double geodb_dim_text_angle double geodb_v_align char(50) geodb_text_size double geodb_text_color char(254) geodb_primary_axis double geodb_dim_type smallint geodb_raster_compression_quality integer fme_text_size double geodb_text_ref_scale double geodb_linked_feature_id integer geodb_dim_text_y double fme_type char(50) fme_geometry fme_char(50) fme_sweep_angle double fme_secondary_axis double fme_where char(254) geodb_raster_compression_type char(100) geodb_text_x_coord double geodb_text_word_spacing double fme_fill_color char(50) geodb_text_clip boolean fme_primary_axis double fme_color char(50) geodb_font_bold boolean geodb_dim_length double geodb_text_x_offset double fme_basename char(50) geodb_raster_pyramid_resample_type char(100)"
+#!   EXPOSABLE_ATTRS="geodb_raster_pyramid_level integer geodb_rotation double fme_start_angle double fme_rotation double geodb_font_underline boolean geodb_text_y_coord double geodb_text_word_spacing double fme_color char(50) fme_geometry fme_char(50) geodb_dim_begin_dimension_z double geodb_metadata_string char(254) geodb_dim_extn_line_display smallint geodb_font_strikethrough boolean geodb_dim_using_custom_length boolean geodb_dim_end_dimension_x double geodb_dim_text_z double geodb_dim_begin_dimension_x double geodb_dim_length double geodb_font_italic boolean fme_db_operation char(8) geodb_dim_line_y double geodb_dim_line_display smallint geodb_text_break_char integer geodb_text_angle double geodb_raster_pyramid_resample_type char(100) geodb_text_feat_class_name char(254) fme_text_string char(50) geodb_linked_feature_id integer geodb_text_string char(254) geodb_font_charset smallint geodb_raster_compression_type char(100) geodb_font_size double geodb_dim_text_y double geodb_ancillary_role char(7) geodb_sweep_angle double geodb_dim_line_x double geodb_dim_line_z double geodb_text_clip boolean geodb_allow_symbol_overrides boolean geodb_right_to_left boolean geodb_dim_end_dimension_z double geodb_type char(25) geodb_dim_text_angle double geodb_dim_text_x double geodb_v_align char(50) geodb_raster_compression_quality integer geodb_text_scale boolean geodb_symbol_id integer geodb_text_y_offset double geodb_dim_custom_length double fme_text_size double geodb_dim_begin_dimension_y double geodb_anno_class_id integer geodb_secondary_axis double fme_fill_color char(50) geodb_dim_end_dimension_y double fme_type char(50) fme_where char(254) geodb_start_angle double geodb_text_x_coord double geodb_text_char_spacing double geodb_dim_extn_line_angle double geodb_text_color char(254) geodb_font_name char(254) geodb_dim_type smallint geodb_feature_dataset char(254) fme_basename char(50) fme_dataset char(50) geodb_dim_marker_display smallint geodb_font_bold boolean geodb_text_size double geodb_text_character_width double fme_secondary_axis double fme_primary_axis double geodb_text_ref_scale double fme_feature_type char(50) geodb_dim_style_id integer geodb_text_string_with_format_tags char(254) geodb_primary_axis double geodb_h_align char(50) fme_sweep_angle double geodb_measures char(254) geodb_text_line_spacing double geodb_subtype_name char(254) geodb_text_x_offset double geodb_font_weight smallint geodb_color char(50)"
 #!   DEFLINE_PARMS="&quot;GUI CHOICE GEODB_DROP_TABLE YES%NO Drop Table First&quot; NO &quot;GUI CHOICE GEODB_TRUNCATE_TABLE YES%NO Truncate Table First&quot; NO &quot;GUI FORCE_DEFS OPTIONAL WHOLE_LINE ATTRLIST_COMMAS GEODB_UPDATE_KEY_COLUMNS \&quot; \&quot; Update Key Fields&quot; &quot;&quot; &quot;GUI TEXT GEODB_OBJECT_ID_NAME Object ID Field&quot; OBJECTID &quot;GUI TEXT GEODB_OBJECT_ID_ALIAS Object ID Alias&quot; OBJECTID &quot;GUI TEXT GEODB_SHAPE_NAME Shape Field&quot; SHAPE &quot;GUI TEXT GEODB_SHAPE_ALIAS Shape Alias&quot; SHAPE &quot;GUI TEXT GEODB_CONFIG_KEYWORD Configuration Keyword&quot; DEFAULTS &quot;GUI OPTIONAL TEXT GEODB_FEATURE_DATASET Feature Dataset&quot; &quot;&quot; &quot;GUI OPTIONAL FLOAT GEODB_GRID{1} Grid 1&quot; &quot;&quot; &quot;GUI OPTIONAL INTEGER GEODB_AVG_NUM_POINTS Avg Num of Points&quot; &quot;&quot; &quot;GUI OPTIONAL FLOAT GEODB_XORIGIN X Origin&quot; &quot;&quot; &quot;GUI OPTIONAL FLOAT GEODB_YORIGIN Y Origin&quot; &quot;&quot; &quot;GUI OPTIONAL FLOAT GEODB_XYSCALE X,Y Scale&quot; &quot;&quot; &quot;GUI OPTIONAL CHOICE GEODB_HAS_Z_VALUES yes%no Contains Z Values&quot; &quot;&quot; &quot;GUI OPTIONAL FLOAT GEODB_ZORIGIN Z Origin&quot; &quot;&quot; &quot;GUI OPTIONAL FLOAT GEODB_ZSCALE Z Scale&quot; &quot;&quot; &quot;GUI OPTIONAL CHOICE GEODB_HAS_MEASURES yes%no Contains Measures&quot; &quot;&quot; &quot;GUI OPTIONAL FLOAT GEODB_MEASURES_ORIGIN Measure Origin&quot; &quot;&quot; &quot;GUI OPTIONAL FLOAT GEODB_MEASURES_SCALE Measure Scale&quot; &quot;&quot; &quot;GUI OPTIONAL FLOAT GEODB_ANNO_REFERENCE_SCALE Annotation Reference Scale&quot; &quot;&quot; "
 #!   ATTR_INDEX_TYPES=""
 #!   ATTR_NAME_INVALID_CHARS=":. %-#[]&quot;()!?*&apos;&amp;+\/{}|="
@@ -174,7 +174,7 @@
 #!   WRITE_DEFS="true"
 #!   DEFLINE_TEMPLATE="postgis_type postgis_geometry postgis_mode &quot;&quot; postgis_sql_key_columns &quot;&quot; postgis_drop_table &quot;&quot; postgis_truncate_table &quot;&quot; fme_feature_operation INSERT fme_table_handling CREATE_IF_MISSING fme_selection_method MATCH_COLUMNS fme_match_columns &quot;&quot; fme_where_builder_clause &quot;&quot; fme_update_geometry YES postgis_create_with_oids NO postgis_create_gist_index YES postgis_spatial_column_type geometry postgis_spatial_column geom postgis_srid &quot;&quot; postgis_vacuum_analyze no postgis_allow_serial_writing NO"
 #!   DEFLINE_ATTRS="true"
-#!   EXPOSABLE_ATTRS="postgis_collection_id int4 fme_start_angle float8 fme_basename char(50) fme_text_size float8 fme_feature_type char(50) fme_color char(50) fme_db_operation char(8) fme_sweep_angle float8 fme_text_string char(50) fme_fill_color char(50) fme_rotation float8 fme_dataset char(50) fme_secondary_axis float8 fme_type char(50) postgis_collection_part_id int4 postgis_type char(50) fme_primary_axis float8 fme_geometry fme_char(50)"
+#!   EXPOSABLE_ATTRS="fme_color char(50) fme_feature_type char(50) fme_secondary_axis float8 fme_geometry fme_char(50) fme_sweep_angle float8 postgis_collection_id int4 fme_db_operation char(8) fme_fill_color char(50) postgis_collection_part_id int4 fme_text_size float8 fme_text_string char(50) fme_start_angle float8 fme_type char(50) fme_basename char(50) fme_primary_axis float8 fme_dataset char(50) fme_rotation float8 postgis_type char(50)"
 #!   DEFLINE_PARMS="&quot;GUI OPTIONAL NAMEDGROUP fme_configuration_group fme_configuration_common_group%fme_spatial_group%fme_advanced_group%oracle_advanced_group Table Settings&quot; &quot;&quot; &quot;GUI OPTIONAL NAMEDGROUP fme_configuration_common_group fme_feature_operation%fme_table_handling%oracle_model%fme_update_geometry%fme_selection_group%fme_table_creation_group General&quot; &quot;&quot; &quot;GUI ACTIVECHOICE_LOOKUP fme_feature_operation Insert,INSERT,fme_update_geometry,fme_selection_group%Update,UPDATE,++fme_table_handling+USE_EXISTING,++fme_selection_group+FME_DISCLOSURE_OPEN%Delete,DELETE,++fme_table_handling+USE_EXISTING,fme_update_geometry,++fme_selection_group+FME_DISCLOSURE_OPEN,fme_spatial_group,fme_advanced_group,oracle_sequenced_cols%&lt;at&gt;Value&lt;openparen&gt;fme_db_operation&lt;closeparen&gt;,MULTIPLE,++fme_table_handling+USE_EXISTING,++fme_selection_group+FME_DISCLOSURE_OPEN Feature Operation&quot; INSERT &quot;GUI ACTIVECHOICE_LOOKUP fme_table_handling Use&lt;space&gt;Existing,USE_EXISTING,fme_table_creation_group%Create&lt;space&gt;If&lt;space&gt;Needed,CREATE_IF_MISSING%Drop&lt;space&gt;and&lt;space&gt;Create,DROP_CREATE%Truncate&lt;space&gt;Existing,TRUNCATE_EXISTING,fme_table_creation_group Table Handling&quot; CREATE_IF_MISSING &quot;GUI WHOLE_LINE LOOKUP_CHOICE fme_update_geometry Yes,YES%No,NO Update Spatial Column(s)&quot; YES &quot;GUI OPTIONAL DISCLOSUREGROUP fme_selection_group fme_selection_method Row Selection&quot; &quot;&quot; &quot;GUI OPTIONAL WHOLE_LINE RADIOPARAMETERGROUP fme_selection_method fme_match_columns,MATCH_COLUMNS%fme_where_builder_clause,BUILDER Row Selection Method&quot; MATCH_COLUMNS &quot;GUI WHOLE_LINE ATTRLIST_COMMAS fme_match_columns \&quot; \&quot; Match Columns&quot; &quot;&quot; &quot;GUI WHOLE_LINE TEXT_EDIT_SQL_CFG_OR_ATTR fme_where_builder_clause MODE,WHERE WHERE Clause&quot; &quot;&quot; &quot;GUI OPTIONAL DISCLOSUREGROUP fme_table_creation_group postgis_create_with_oids%postgis_create_gist_index Table Creation Parameters&quot; &quot;&quot; &quot;GUI CHOICE postgis_create_with_oids YES%NO Create With OIDs&quot; NO &quot;GUI CHOICE postgis_create_gist_index YES%NO Create GiST Index&quot; YES &quot;GUI OPTIONAL NAMEDGROUP fme_spatial_group postgis_spatial_column_type%postgis_spatial_column%postgis_srid Spatial&quot; &quot;&quot; &quot;GUI LOOKUP_CHOICE postgis_spatial_column_type Geometry,geometry%Geography,geography Spatial Type&quot; geometry &quot;GUI OPTIONAL WHOLE_LINE TEXT postgis_spatial_column Spatial Column&quot; shape &quot;GUI OPTIONAL FLOAT postgis_srid Spatial Column SRID&quot; &quot;&quot; &quot;GUI OPTIONAL DISCLOSUREGROUP fme_advanced_group postgis_vacuum_analyze%postgis_allow_serial_writing Advanced&quot; &quot;&quot; &quot;GUI CHOICE postgis_vacuum_analyze YES%NO Vacuum Analyze Table&quot; NO &quot;GUI CHOICE postgis_allow_serial_writing YES%NO Allow Serial Column Writing&quot; NO "
 #!   ATTR_INDEX_TYPES="BTREE RTREE HASH PRIKEY"
 #!   ATTR_NAME_INVALID_CHARS=". %-#[]&quot;()!?*&apos;&amp;+\/"
@@ -284,186 +284,6 @@
 #!   FORMAT_TYPE="xtf_time"
 #!   FME_TYPE="fme_time"
 #!   FORMAT="ch.ehi.fme.Main"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="char(width)"
-#!   FME_TYPE="fme_varchar(width)"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="char(width)"
-#!   FME_TYPE="fme_char(width)"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="char(2048)"
-#!   FME_TYPE="fme_buffer"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="char(2048)"
-#!   FME_TYPE="fme_xml"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="char(2048)"
-#!   FME_TYPE="fme_json"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="blob"
-#!   FME_TYPE="fme_binarybuffer"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="blob"
-#!   FME_TYPE="fme_varbinary(width)"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="blob"
-#!   FME_TYPE="fme_binary(width)"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="guid"
-#!   FME_TYPE="fme_buffer"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="date"
-#!   FME_TYPE="fme_datetime"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="date"
-#!   FME_TYPE="fme_date"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="date"
-#!   FME_TYPE="fme_time"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="integer"
-#!   FME_TYPE="fme_int32"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="integer"
-#!   FME_TYPE="fme_uint16"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="smallint"
-#!   FME_TYPE="fme_int16"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="smallint"
-#!   FME_TYPE="fme_int8"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="smallint"
-#!   FME_TYPE="fme_uint8"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="float"
-#!   FME_TYPE="fme_real32"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="double"
-#!   FME_TYPE="fme_real64"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="double"
-#!   FME_TYPE="fme_uint32"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="char(20)"
-#!   FME_TYPE="fme_int64"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="char(20)"
-#!   FME_TYPE="fme_uint64"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="boolean"
-#!   FME_TYPE="fme_boolean"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="double(width,decimal)"
-#!   FME_TYPE="fme_decimal(width,decimal)"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="subtype(stringset)"
-#!   FME_TYPE="fme_char(width)"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="subtype_codes(stringmap)"
-#!   FME_TYPE="fme_char(width)"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="range_domain(range_domain)"
-#!   FME_TYPE="fme_char(width)"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="coded_domain(coded_domain)"
-#!   FME_TYPE="fme_char(width)"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="char(1)"
-#!   FME_TYPE="fme_char(width)"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="blob"
-#!   FME_TYPE="fme_buffer"
-#!   FORMAT="GEODATABASE_SDE"
 #! />
 #! <DATA_TYPE
 #!   IS_SOURCE="false"
@@ -675,6 +495,186 @@
 #!   FME_TYPE="fme_json"
 #!   FORMAT="POSTGIS"
 #! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_varchar(width)"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_char(width)"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(2048)"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(2048)"
+#!   FME_TYPE="fme_xml"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(2048)"
+#!   FME_TYPE="fme_json"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="blob"
+#!   FME_TYPE="fme_binarybuffer"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="blob"
+#!   FME_TYPE="fme_varbinary(width)"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="blob"
+#!   FME_TYPE="fme_binary(width)"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="guid"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="date"
+#!   FME_TYPE="fme_datetime"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="date"
+#!   FME_TYPE="fme_date"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="date"
+#!   FME_TYPE="fme_time"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="integer"
+#!   FME_TYPE="fme_int32"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="integer"
+#!   FME_TYPE="fme_uint16"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="smallint"
+#!   FME_TYPE="fme_int16"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="smallint"
+#!   FME_TYPE="fme_int8"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="smallint"
+#!   FME_TYPE="fme_uint8"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="float"
+#!   FME_TYPE="fme_real32"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="double"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="double"
+#!   FME_TYPE="fme_uint32"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(20)"
+#!   FME_TYPE="fme_int64"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(20)"
+#!   FME_TYPE="fme_uint64"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="boolean"
+#!   FME_TYPE="fme_boolean"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="double(width,decimal)"
+#!   FME_TYPE="fme_decimal(width,decimal)"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="subtype(stringset)"
+#!   FME_TYPE="fme_char(width)"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="subtype_codes(stringmap)"
+#!   FME_TYPE="fme_char(width)"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="range_domain(range_domain)"
+#!   FME_TYPE="fme_char(width)"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="coded_domain(coded_domain)"
+#!   FME_TYPE="fme_char(width)"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(1)"
+#!   FME_TYPE="fme_char(width)"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="blob"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
 #! </DATA_TYPES>
 #! <GEOM_TYPES>
 #! <GEOM_TYPE
@@ -772,144 +772,6 @@
 #!   FORMAT_TYPE="xtf_none"
 #!   FME_TYPE="fme_feature_table"
 #!   FORMAT="ch.ehi.fme.Main"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="geodb_point"
-#!   FME_TYPE="fme_point"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="geodb_polygon"
-#!   FME_TYPE="fme_area"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="geodb_polygon"
-#!   FME_TYPE="fme_rounded_rectangle"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="geodb_polyline"
-#!   FME_TYPE="fme_line"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="geodb_multipoint"
-#!   FME_TYPE="fme_point"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="geodb_table"
-#!   FME_TYPE="fme_no_geom"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="geodb_table"
-#!   FME_TYPE="fme_collection"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="geodb_polyline"
-#!   FME_TYPE="fme_arc"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="geodb_polygon"
-#!   FME_TYPE="fme_ellipse"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="geodb_polygon"
-#!   FME_TYPE="fme_rectangle"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="geodb_annotation"
-#!   FME_TYPE="fme_text"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="geodb_dimension"
-#!   FME_TYPE="fme_point"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="geodb_simple_junction"
-#!   FME_TYPE="fme_point"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="geodb_simple_edge"
-#!   FME_TYPE="fme_line"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="geodb_complex_junction"
-#!   FME_TYPE="fme_point"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="geodb_complex_edge"
-#!   FME_TYPE="fme_line"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="geodb_attributed_relationship"
-#!   FME_TYPE="fme_no_geom"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="geodb_relationship"
-#!   FME_TYPE="fme_no_geom"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="geodb_metadata"
-#!   FME_TYPE="fme_no_geom"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="geodb_multipatch"
-#!   FME_TYPE="fme_surface"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="geodb_multipatch"
-#!   FME_TYPE="fme_solid"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="geodb_polygon"
-#!   FME_TYPE="fme_raster"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="geodb_polygon"
-#!   FME_TYPE="fme_point_cloud"
-#!   FORMAT="GEODATABASE_SDE"
 #! />
 #! <GEOM_TYPE
 #!   IS_SOURCE="false"
@@ -1066,6 +928,144 @@
 #!   FORMAT_TYPE="postgis_none"
 #!   FME_TYPE="fme_feature_table"
 #!   FORMAT="POSTGIS"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geodb_point"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geodb_polygon"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geodb_polygon"
+#!   FME_TYPE="fme_rounded_rectangle"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geodb_polyline"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geodb_multipoint"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geodb_table"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geodb_table"
+#!   FME_TYPE="fme_collection"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geodb_polyline"
+#!   FME_TYPE="fme_arc"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geodb_polygon"
+#!   FME_TYPE="fme_ellipse"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geodb_polygon"
+#!   FME_TYPE="fme_rectangle"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geodb_annotation"
+#!   FME_TYPE="fme_text"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geodb_dimension"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geodb_simple_junction"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geodb_simple_edge"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geodb_complex_junction"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geodb_complex_edge"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geodb_attributed_relationship"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geodb_relationship"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geodb_metadata"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geodb_multipatch"
+#!   FME_TYPE="fme_surface"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geodb_multipatch"
+#!   FME_TYPE="fme_solid"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geodb_polygon"
+#!   FME_TYPE="fme_raster"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geodb_polygon"
+#!   FME_TYPE="fme_point_cloud"
+#!   FORMAT="GEODATABASE_SDE"
 #! />
 #! </GEOM_TYPES>
 #! <FEATURE_TYPES>
@@ -2243,7 +2243,7 @@
 #!   BOUNDING_RECT="1835.1199999999999 -3587 1877.4100000000001 944.298"
 #!   STICKY="true"
 #!   COLOUR="0.21176470588235294,0.72941176470588232,0.61176470588235299"
-#!   CONTENTS="25 162 177 17 23 150 127 152 128 29 "
+#!   CONTENTS="25 17 162 177 23 127 128 150 29 152 "
 #! >
 #! </BOOKMARK>
 #! <BOOKMARK
@@ -2256,7 +2256,7 @@
 #!   BOUNDING_RECT="-207 -3847 1263.26 393.66699999999997"
 #!   STICKY="true"
 #!   COLOUR="0.066666666666666666,0.55686274509803924,0.59215686274509804"
-#!   CONTENTS="170 125 "
+#!   CONTENTS="125 170 "
 #! >
 #! </BOOKMARK>
 #! <BOOKMARK
@@ -2269,7 +2269,7 @@
 #!   BOUNDING_RECT="560 -1527 2315 772"
 #!   STICKY="true"
 #!   COLOUR="0.24705882352941178,0.50196078431372548,0.68627450980392157"
-#!   CONTENTS="84 90 85 79 93 92 86 87 89 94 88 "
+#!   CONTENTS="92 79 93 86 90 87 85 94 84 89 88 "
 #! >
 #! </BOOKMARK>
 #! <BOOKMARK
@@ -2282,7 +2282,7 @@
 #!   BOUNDING_RECT="634 -2522 2468 669"
 #!   STICKY="true"
 #!   COLOUR="0.76470588235294112,0.56470588235294117,0.6588235294117647"
-#!   CONTENTS="105 107 109 111 102 110 99 103 101 100 108 "
+#!   CONTENTS="108 99 103 105 100 102 110 111 109 107 101 "
 #! >
 #! </BOOKMARK>
 #! </BOOKMARKS>
@@ -5109,7 +5109,6 @@ FME_REPROJECTION_ENGINE FME
 FME_IMPLICIT_CSMAP_REPROJECTION_MODE Auto
 FME_GEOMETRY_HANDLING Enhanced
 FME_STROKE_MAX_DEVIATION 0
-LOG_TIMINGS YES
 LOG_FILTER_MASK -1
 DEFAULT_MACRO DATASET_KEYWORD_ch.ehi.fme.Main_1 ch.ehi.fme.Main_1
 DEFAULT_MACRO DATASET_KEYWORD_ch.ehi.fme.Main_2 ch.ehi.fme.Main_2
@@ -5128,7 +5127,7 @@ ch.ehi.fme.Main_2_READER_META_ATTRIBUTES fme_feature_type
 
 POSTGIS_1_COORDINATE_SYSTEM EPSG:2056
 MULTI_READER_CONTINUE_ON_READER_FAILURE No
-FME_BEGIN_PYTHON_ENC #<space>-*-<space>coding:<space>latin-1<space>-*-<lf>import<space>fmeobjects<lf><lf>#=======================================================================================<lf>#<space>Mehrsprachige<space>Felder<space>in<space>INTERLIS2<space>behandeln<lf>def<space>processMultilangFields<openparen>feature<closeparen>:<lf><space><space><space><space><lf><space><space><space><space>multilangFields<space>=<space>feature.getAttribute<openparen><apos>multilangfields<apos><closeparen>.split<openparen><quote><comma><quote><closeparen><lf><space><space><space><space><lf><space><space><space><space>for<space>mlField<space>in<space>multilangFields:<lf><space><space><space><space><space><space><space><space>content_de<space>=<space><quote><quote><lf><space><space><space><space><space><space><space><space>content_fr<space>=<space><quote><quote><lf><space><space><space><space><space><space><space><space>content_it<space>=<space><quote><quote><lf><space><space><space><space><lf><space><space><space><space><space><space><space><space>att_Language_list<space>=<space>feature.getAttribute<openparen>mlField<space>+<space><apos><opencurly>0<closecurly>.LocalisedText<opencurly><closecurly>.Language<apos><closeparen><lf><space><space><space><space><space><space><space><space>att_Text_list<space>=<space>feature.getAttribute<openparen>mlField<space>+<space><apos><opencurly>0<closecurly>.LocalisedText<opencurly><closecurly>.Text<apos><closeparen><lf><space><space><space><space><space><space><space><space><lf><space><space><space><space><space><space><space><space>#<space>wenn<space>das<space>Multilang-Feld<space>nicht<space>abgef<u00fc>llt<space>ist<comma><space>soll<space>es<space>nicht<space>bearbeitet<space>werden<lf><space><space><space><space><space><space><space><space>if<space>att_Language_list<space>is<space>not<space>None:<lf><space><space><space><space><lf><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space>for<space>i<space>in<space>range<openparen>len<openparen>att_Language_list<closeparen><closeparen>:<lf><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space>if<space>att_Language_list<openbracket>i<closebracket>==<quote>de<quote>:<lf><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space>content_de<space>=<space>att_Text_list<openbracket>i<closebracket><lf><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space>if<space>att_Language_list<openbracket>i<closebracket>==<quote>fr<quote>:<lf><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space>content_fr<space>=<space>att_Text_list<openbracket>i<closebracket><lf><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space>if<space>att_Language_list<openbracket>i<closebracket>==<quote>it<quote>:<lf><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space>content_it<space>=<space>att_Text_list<openbracket>i<closebracket><lf><lf><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space>#<space>Wenn<space>der<space>Text<space>nur<space>in<space>einer<space>Sprache<space>vorhanden<space>ist<comma><space>wird<space>er<space>auch<space>f<u00fc>r<space>die<space>andere<space>Sprache<space>verwendet<lf><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space>if<space>content_de<space>==<space><quote><quote>:<lf><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space>content_de<space>=<space>content_fr<lf><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space>if<space>content_de<space>==<space><quote><quote>:<lf><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space>content_de<space>=<space>content_it<lf><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space>if<space>content_fr<space>==<space><quote><quote>:<lf><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space>content_fr<space>=<space>content_de<lf><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space>if<space>content_fr<space>==<space><quote><quote>:<lf><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space>content_fr<space>=<space>content_it<lf><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><lf><space><space><space><space><space><space><space><space>feature.setAttribute<openparen>mlField<space>+<space><quote>_DE<quote><comma><space>content_de<closeparen><lf><space><space><space><space><space><space><space><space>feature.setAttribute<openparen>mlField<space>+<space><quote>_FR<quote><comma><space>content_fr<closeparen><lf><lf>
+FME_BEGIN_PYTHON_ENC #<space>-*-<space>coding:<space>utf-8<space>-*-<lf>import<space>fmeobjects<lf><lf>#=======================================================================================<lf>#<space>Mehrsprachige<space>Felder<space>in<space>INTERLIS2<space>behandeln<lf>def<space>processMultilangFields<openparen>feature<closeparen>:<lf><space><space><space><space><lf><space><space><space><space>multilangFields<space>=<space>feature.getAttribute<openparen><apos>multilangfields<apos><closeparen>.split<openparen><quote><comma><quote><closeparen><lf><space><space><space><space><lf><space><space><space><space>for<space>mlField<space>in<space>multilangFields:<lf><space><space><space><space><space><space><space><space>content_de<space>=<space><quote><quote><lf><space><space><space><space><space><space><space><space>content_fr<space>=<space><quote><quote><lf><space><space><space><space><space><space><space><space>content_it<space>=<space><quote><quote><lf><space><space><space><space><lf><space><space><space><space><space><space><space><space>att_Language_list<space>=<space>feature.getAttribute<openparen>mlField<space>+<space><apos><opencurly>0<closecurly>.LocalisedText<opencurly><closecurly>.Language<apos><closeparen><lf><space><space><space><space><space><space><space><space>att_Text_list<space>=<space>feature.getAttribute<openparen>mlField<space>+<space><apos><opencurly>0<closecurly>.LocalisedText<opencurly><closecurly>.Text<apos><closeparen><lf><space><space><space><space><space><space><space><space><lf><space><space><space><space><space><space><space><space>#<space>wenn<space>das<space>Multilang-Feld<space>nicht<space>abgef<u00fc>llt<space>ist<comma><space>soll<space>es<space>nicht<space>bearbeitet<space>werden<lf><space><space><space><space><space><space><space><space>if<space>att_Language_list<space>is<space>not<space>None:<lf><space><space><space><space><lf><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space>for<space>i<space>in<space>range<openparen>len<openparen>att_Language_list<closeparen><closeparen>:<lf><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space>if<space>att_Language_list<openbracket>i<closebracket>==<quote>de<quote>:<lf><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space>content_de<space>=<space>att_Text_list<openbracket>i<closebracket><lf><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space>if<space>att_Language_list<openbracket>i<closebracket>==<quote>fr<quote>:<lf><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space>content_fr<space>=<space>att_Text_list<openbracket>i<closebracket><lf><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space>if<space>att_Language_list<openbracket>i<closebracket>==<quote>it<quote>:<lf><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space>content_it<space>=<space>att_Text_list<openbracket>i<closebracket><lf><lf><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space>#<space>Wenn<space>der<space>Text<space>nur<space>in<space>einer<space>Sprache<space>vorhanden<space>ist<comma><space>wird<space>er<space>auch<space>f<u00fc>r<space>die<space>andere<space>Sprache<space>verwendet<lf><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space>if<space>content_de<space>==<space><quote><quote>:<lf><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space>content_de<space>=<space>content_fr<lf><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space>if<space>content_de<space>==<space><quote><quote>:<lf><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space>content_de<space>=<space>content_it<lf><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space>if<space>content_fr<space>==<space><quote><quote>:<lf><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space>content_fr<space>=<space>content_de<lf><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space>if<space>content_fr<space>==<space><quote><quote>:<lf><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space>content_fr<space>=<space>content_it<lf><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><lf><space><space><space><space><space><space><space><space>feature.setAttribute<openparen>mlField<space>+<space><quote>_DE<quote><comma><space>content_de<closeparen><lf><space><space><space><space><space><space><space><space>feature.setAttribute<openparen>mlField<space>+<space><quote>_FR<quote><comma><space>content_fr<closeparen><lf><lf>
 
 # -------------------------------------------------------------------------
 
@@ -5145,10 +5144,16 @@ ch.ehi.fme.Main_2_DEF KbS_Basis_V1_4.Codelisten.Untersuchungsmassnahmen_Definiti
 FACTORY_DEF * RoutingFactory   FACTORY_NAME "Router and Unexpected Input Remover"   COMMAND_PARM_EVALUATION SINGLE_PASS   INPUT FEATURE_TYPE *    ROUTE ch.ehi.fme.Main ch.ehi.fme.Main_1::KbS_LV95_V1_4.Belastete_Standorte.Belasteter_Standort multi_reader_keyword,$(DATASET_KEYWORD_ch.ehi.fme.Main_1) TO FME_GENERIC ::KbS_LV95_V1_4.Belastete_Standorte.Belasteter_Standort ALIAS_GEOMETRY    ROUTE ch.ehi.fme.Main ch.ehi.fme.Main_2::KbS_Basis_V1_4.Codelisten.Deponietyp_Definition multi_reader_keyword,$(DATASET_KEYWORD_ch.ehi.fme.Main_2) TO FME_GENERIC ::KbS_Basis_V1_4.Codelisten.Deponietyp_Definition ALIAS_GEOMETRY    ROUTE ch.ehi.fme.Main ch.ehi.fme.Main_2::KbS_Basis_V1_4.Codelisten.Untersuchungsmassnahmen_Definition multi_reader_keyword,$(DATASET_KEYWORD_ch.ehi.fme.Main_2) TO FME_GENERIC ::KbS_Basis_V1_4.Codelisten.Untersuchungsmassnahmen_Definition ALIAS_GEOMETRY    MERGE_INPUT Yes   OUTPUT ROUTED FEATURE_TYPE *
 ch.ehi.fme.Main_1_MERGE_DEF ch.ehi.fme.Main_1::KbS_LV95_V1_4.Belastete_Standorte.ZustaendigkeitKataster EXACT KbS_LV95_V1_4.Belastete_Standorte.ZustaendigkeitKataster
 ch.ehi.fme.Main_1_MERGE_DEF ch.ehi.fme.Main_1::KbS_LV95_V1_4.Belastete_Standorte.Belasteter_Standort EXACT KbS_LV95_V1_4.Belastete_Standorte.Belasteter_Standort
-ch.ehi.fme.Main_2_MERGE_DEF ch.ehi.fme.Main_2::KbS_Basis_V1_4.Codelisten.Standorttyp_Definition EXACT KbS_Basis_V1_4.Codelisten.Standorttyp_Definition
 ch.ehi.fme.Main_2_MERGE_DEF ch.ehi.fme.Main_2::KbS_Basis_V1_4.Codelisten.Deponietyp_Definition EXACT KbS_Basis_V1_4.Codelisten.Deponietyp_Definition
+ch.ehi.fme.Main_2_MERGE_DEF ch.ehi.fme.Main_2::KbS_Basis_V1_4.Codelisten.Standorttyp_Definition EXACT KbS_Basis_V1_4.Codelisten.Standorttyp_Definition
 ch.ehi.fme.Main_2_MERGE_DEF ch.ehi.fme.Main_2::KbS_Basis_V1_4.Codelisten.Untersuchungsmassnahmen_Definition EXACT KbS_Basis_V1_4.Codelisten.Untersuchungsmassnahmen_Definition
 ch.ehi.fme.Main_2_MERGE_DEF ch.ehi.fme.Main_2::KbS_Basis_V1_4.Codelisten.StatusAltlV_Definition EXACT KbS_Basis_V1_4.Codelisten.StatusAltlV_Definition
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME "KbS_LV95_V1_4.Belastete_Standorte.ZustaendigkeitKataster (ch.ehi.fme.Main_1) Splitter"    INPUT FEATURE_TYPE KbS_LV95_V1_4.Belastete_Standorte.ZustaendigkeitKataster
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME "KbS_LV95_V1_4.Belastete_Standorte.Belasteter_Standort (ch.ehi.fme.Main_1) Splitter"    INPUT FEATURE_TYPE KbS_LV95_V1_4.Belastete_Standorte.Belasteter_Standort    OUTPUT FEATURE_TYPE KbS_LV95_V1_4.Belastete_Standorte.Belasteter_Standort_ch.ehi.fme.Main_1
 # -------------------------------------------------------------------------
 
 FACTORY_DEF * TeeFactory    FACTORY_NAME "KbS_Basis_V1_4.Codelisten.Standorttyp_Definition (ch.ehi.fme.Main_2) Splitter"    INPUT FEATURE_TYPE KbS_Basis_V1_4.Codelisten.Standorttyp_Definition
@@ -5161,12 +5166,6 @@ FACTORY_DEF * TeeFactory    FACTORY_NAME "KbS_Basis_V1_4.Codelisten.Untersuchung
 # -------------------------------------------------------------------------
 
 FACTORY_DEF * TeeFactory    FACTORY_NAME "KbS_Basis_V1_4.Codelisten.StatusAltlV_Definition (ch.ehi.fme.Main_2) Splitter"    INPUT FEATURE_TYPE KbS_Basis_V1_4.Codelisten.StatusAltlV_Definition
-# -------------------------------------------------------------------------
-
-FACTORY_DEF * TeeFactory    FACTORY_NAME "KbS_LV95_V1_4.Belastete_Standorte.ZustaendigkeitKataster (ch.ehi.fme.Main_1) Splitter"    INPUT FEATURE_TYPE KbS_LV95_V1_4.Belastete_Standorte.ZustaendigkeitKataster
-# -------------------------------------------------------------------------
-
-FACTORY_DEF * TeeFactory    FACTORY_NAME "KbS_LV95_V1_4.Belastete_Standorte.Belasteter_Standort (ch.ehi.fme.Main_1) Splitter"    INPUT FEATURE_TYPE KbS_LV95_V1_4.Belastete_Standorte.Belasteter_Standort    OUTPUT FEATURE_TYPE KbS_LV95_V1_4.Belastete_Standorte.Belasteter_Standort_ch.ehi.fme.Main_1
 DEFAULT_MACRO WB_CURRENT_CONTEXT
 # -------------------------------------------------------------------------
 FACTORY_DEF * AttrSetFactory FACTORY_NAME AttributeCreator_2 ATTRSET_PROPAGATE_MISSING YES INPUT  FEATURE_TYPE KbS_Basis_V1_4.Codelisten.Untersuchungsmassnahmen_Definition_ch.ehi.fme.Main_2 ATTR multilangfields Definition    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_2_OUTPUT 
@@ -5328,8 +5327,8 @@ FACTORY_DEF * TeeFactory    FACTORY_NAME GeometryFilter_InputPassThrough    INPU
 FACTORY_DEF $(INSTANCE_FILTERING) TestFactory    FACTORY_NAME GeometryFilter_InstanceTest    INPUT FEATURE_TYPE GeometryFilter___Input___    TEST @Geometry(IS_GEOMETRY_INSTANCE) == 1    OUTPUT PASSED FEATURE_TYPE $(OUTPUT_INSTANCE_FTYPE)    OUTPUT FAILED FEATURE_TYPE GeometryFilter___Input___
 FACTORY_DEF $(COLLECTION_HANDLING) TestFactory    FACTORY_NAME GeometryFilter_CollectionTest    INPUT FEATURE_TYPE GeometryFilter___Input___    TEST &fme_type == "fme_collection"    OUTPUT FAILED FEATURE_TYPE GeometryFilter___Not_Collection___    OUTPUT PASSED FEATURE_TYPE GeometryFilter___Collection___
 FACTORY_DEF $(COLLECTION_HANDLING) DeaggregateFactory    FACTORY_NAME GeometryFilter_Deagg    INPUT FEATURE_TYPE GeometryFilter___Collection___    HOMOGENIZE_COLLECTIONS YES    RECURSIVE YES    SET_FME_TYPE YES    INSTANTIATE_GEOMETRY_INSTANCES_NEW <Unused>    OUTPUT POINT FEATURE_TYPE GeometryFilter___HomogeneousAggregate___    OUTPUT LINE FEATURE_TYPE GeometryFilter___HomogeneousAggregate___    OUTPUT POLYGON FEATURE_TYPE GeometryFilter___HomogeneousAggregate___    OUTPUT DONUT FEATURE_TYPE GeometryFilter___HomogeneousAggregate___    OUTPUT AGGREGATE FEATURE_TYPE GeometryFilter___HomogeneousAggregate___
-FACTORY_DEF * TeeFactory    FACTORY_NAME GeometryFilter_RouterPrepper    INPUT FEATURE_TYPE GeometryFilter___HomogeneousAggregate___    INPUT FEATURE_TYPE GeometryFilter___Not_Collection___    INPUT FEATURE_TYPE GeometryFilter___Input___    OUTPUT FEATURE_TYPE GeometryFilter___Prepped___        GeometryFilter_cb7c3ce9_a8cf_46ee_b9b1_a8094486fb9f0_targetFeatureType @Lookup(GeometryFilter_RouterTable,&fme_type)
-FACTORY_DEF * TestFactory    FACTORY_NAME GeometryFilter_Router    INPUT FEATURE_TYPE GeometryFilter___Prepped___    TEST @Value(GeometryFilter_cb7c3ce9_a8cf_46ee_b9b1_a8094486fb9f0_targetFeatureType) != "not_selected"    OUTPUT PASSED FEATURE_TYPE * @FeatureType(@Value(GeometryFilter_cb7c3ce9_a8cf_46ee_b9b1_a8094486fb9f0_targetFeatureType))                                 @RemoveAttributes(GeometryFilter_cb7c3ce9_a8cf_46ee_b9b1_a8094486fb9f0_targetFeatureType)    OUTPUT FAILED FEATURE_TYPE GeometryFilter_<UNFILTERED>        @RemoveAttributes(GeometryFilter_cb7c3ce9_a8cf_46ee_b9b1_a8094486fb9f0_targetFeatureType)
+FACTORY_DEF * TeeFactory    FACTORY_NAME GeometryFilter_RouterPrepper    INPUT FEATURE_TYPE GeometryFilter___HomogeneousAggregate___    INPUT FEATURE_TYPE GeometryFilter___Not_Collection___    INPUT FEATURE_TYPE GeometryFilter___Input___    OUTPUT FEATURE_TYPE GeometryFilter___Prepped___        GeometryFilter_9f060471_82d3_46ea_88a5_a6cb593af9a40_targetFeatureType @Lookup(GeometryFilter_RouterTable,&fme_type)
+FACTORY_DEF * TestFactory    FACTORY_NAME GeometryFilter_Router    INPUT FEATURE_TYPE GeometryFilter___Prepped___    TEST @Value(GeometryFilter_9f060471_82d3_46ea_88a5_a6cb593af9a40_targetFeatureType) != "not_selected"    OUTPUT PASSED FEATURE_TYPE * @FeatureType(@Value(GeometryFilter_9f060471_82d3_46ea_88a5_a6cb593af9a40_targetFeatureType))                                 @RemoveAttributes(GeometryFilter_9f060471_82d3_46ea_88a5_a6cb593af9a40_targetFeatureType)    OUTPUT FAILED FEATURE_TYPE GeometryFilter_<UNFILTERED>        @RemoveAttributes(GeometryFilter_9f060471_82d3_46ea_88a5_a6cb593af9a40_targetFeatureType)
 
 FACTORY_DEF * TeeFactory   FACTORY_NAME "GeometryFilter POINT Splitter"   INPUT FEATURE_TYPE GeometryFilter_POINT   OUTPUT FEATURE_TYPE GeometryFilter_POINT_0_QhKLo7xp6ec=   OUTPUT FEATURE_TYPE GeometryFilter_POINT_1_9oK7ioxof/8=
 # -------------------------------------------------------------------------
@@ -5370,16 +5369,16 @@ FACTORY_DEF * TeeFactory   FACTORY_NAME "Final Output Nuker"   INPUT FEATURE_TYP
 # -------------------------------------------------------------------------
 GEODATABASE_SDE_1_DEF GEODB.FeatureClass104   geodb_type                   geodb_table   GEODB_DROP_TABLE             NO   GEODB_TRUNCATE_TABLE         YES   GEODB_OBJECT_ID_NAME         OBJECTID   GEODB_OBJECT_ID_ALIAS        OBJECTID   GEODB_SHAPE_NAME             SHAPE   GEODB_SHAPE_ALIAS            SHAPE   GEODB_CONFIG_KEYWORD         DEFAULTS   GEODB_FEATURE_DATASET        ""   GEODB_GRID{1}                ""   GEODB_AVG_NUM_POINTS         ""   GEODB_XORIGIN                ""   GEODB_YORIGIN                ""   GEODB_XYSCALE                ""   GEODB_HAS_Z_VALUES           ""   GEODB_ZORIGIN                ""   GEODB_ZSCALE                 ""   GEODB_HAS_MEASURES           ""   GEODB_MEASURES_ORIGIN        ""   GEODB_MEASURES_SCALE         ""   GEODB_ANNO_REFERENCE_SCALE   ""   KBSNUMMER                    char(100)   DEPOTYP_D                    char(100)   DEPOTYP_F                    char(100)
 # -------------------------------------------------------------------------
-GEODATABASE_SDE_1_DEF GEODB.FeatureClass100   geodb_type                   geodb_polygon   GEODB_DROP_TABLE             NO   GEODB_TRUNCATE_TABLE         YES   GEODB_OBJECT_ID_NAME         OBJECTID   GEODB_OBJECT_ID_ALIAS        OBJECTID   GEODB_SHAPE_NAME             SHAPE   GEODB_SHAPE_ALIAS            SHAPE   GEODB_CONFIG_KEYWORD         DEFAULTS   GEODB_FEATURE_DATASET        ""   GEODB_GRID{1}                ""   GEODB_AVG_NUM_POINTS         ""   GEODB_XORIGIN                ""   GEODB_YORIGIN                ""   GEODB_XYSCALE                ""   GEODB_HAS_Z_VALUES           ""   GEODB_ZORIGIN                ""   GEODB_ZSCALE                 ""   GEODB_HAS_MEASURES           ""   GEODB_MEASURES_ORIGIN        ""   GEODB_MEASURES_SCALE         ""   GEODB_ANNO_REFERENCE_SCALE   ""   KBSNUMMER                    char(100)   STAOTYP                      smallint   INBETRIEB                    smallint   NACHSORGE                    smallint   STATUS                       smallint   ERSTEINTR                    char(255)   LETZTEANP                    char(255)   URLAUSZUG                    char(1024)   BEMERK_D                     char(1024)   BEMERK_F                     char(1024)
-# -------------------------------------------------------------------------
 GEODATABASE_SDE_1_DEF GEODB.FeatureClass103   geodb_type                   geodb_table   GEODB_DROP_TABLE             NO   GEODB_TRUNCATE_TABLE         YES   GEODB_OBJECT_ID_NAME         OBJECTID   GEODB_OBJECT_ID_ALIAS        OBJECTID   GEODB_SHAPE_NAME             SHAPE   GEODB_SHAPE_ALIAS            SHAPE   GEODB_CONFIG_KEYWORD         DEFAULTS   GEODB_FEATURE_DATASET        ""   GEODB_GRID{1}                ""   GEODB_AVG_NUM_POINTS         ""   GEODB_XORIGIN                ""   GEODB_YORIGIN                ""   GEODB_XYSCALE                ""   GEODB_HAS_Z_VALUES           ""   GEODB_ZORIGIN                ""   GEODB_ZSCALE                 ""   GEODB_HAS_MEASURES           ""   GEODB_MEASURES_ORIGIN        ""   GEODB_MEASURES_SCALE         ""   GEODB_ANNO_REFERENCE_SCALE   ""   KBSNUMMER                    char(100)   MASSN_D                      char(100)   MASSN_F                      char(100)
 # -------------------------------------------------------------------------
 GEODATABASE_SDE_1_DEF GEODB.FeatureClass101   geodb_type                   geodb_point   GEODB_DROP_TABLE             NO   GEODB_TRUNCATE_TABLE         YES   GEODB_OBJECT_ID_NAME         OBJECTID   GEODB_OBJECT_ID_ALIAS        OBJECTID   GEODB_SHAPE_NAME             SHAPE   GEODB_SHAPE_ALIAS            SHAPE   GEODB_CONFIG_KEYWORD         DEFAULTS   GEODB_FEATURE_DATASET        ""   GEODB_GRID{1}                ""   GEODB_AVG_NUM_POINTS         ""   GEODB_XORIGIN                ""   GEODB_YORIGIN                ""   GEODB_XYSCALE                ""   GEODB_HAS_Z_VALUES           ""   GEODB_ZORIGIN                ""   GEODB_ZSCALE                 ""   GEODB_HAS_MEASURES           ""   GEODB_MEASURES_ORIGIN        ""   GEODB_MEASURES_SCALE         ""   GEODB_ANNO_REFERENCE_SCALE   ""   KBSNUMMER                    char(100)   STAOTYP                      smallint   INBETRIEB                    smallint   NACHSORGE                    smallint   STATUS                       smallint   ERSTEINTR                    char(255)   LETZTEANP                    char(255)   URLAUSZUG                    char(1024)   BEMERK_D                     char(1024)   BEMERK_F                     char(1024)
 # -------------------------------------------------------------------------
-POSTGIS_1_DEF geodb.kbsflug_depotyp   postgis_type                 postgis_geometry   postgis_mode                 ""   postgis_sql_key_columns      ""   postgis_drop_table           ""   postgis_truncate_table       ""   fme_feature_operation        INSERT   fme_table_handling           TRUNCATE_EXISTING   postgis_create_with_oids     NO   postgis_create_gist_index    YES   postgis_spatial_column_type  geometry   postgis_spatial_column       shape   postgis_srid                 ""   postgis_vacuum_analyze       NO   postgis_allow_serial_writing NO   objectid                     int4   kbsnummer                    varchar(100)   depotyp_d                    varchar(100)   depotyp_f                    varchar(100)
+GEODATABASE_SDE_1_DEF GEODB.FeatureClass100   geodb_type                   geodb_polygon   GEODB_DROP_TABLE             NO   GEODB_TRUNCATE_TABLE         YES   GEODB_OBJECT_ID_NAME         OBJECTID   GEODB_OBJECT_ID_ALIAS        OBJECTID   GEODB_SHAPE_NAME             SHAPE   GEODB_SHAPE_ALIAS            SHAPE   GEODB_CONFIG_KEYWORD         DEFAULTS   GEODB_FEATURE_DATASET        ""   GEODB_GRID{1}                ""   GEODB_AVG_NUM_POINTS         ""   GEODB_XORIGIN                ""   GEODB_YORIGIN                ""   GEODB_XYSCALE                ""   GEODB_HAS_Z_VALUES           ""   GEODB_ZORIGIN                ""   GEODB_ZSCALE                 ""   GEODB_HAS_MEASURES           ""   GEODB_MEASURES_ORIGIN        ""   GEODB_MEASURES_SCALE         ""   GEODB_ANNO_REFERENCE_SCALE   ""   KBSNUMMER                    char(100)   STAOTYP                      smallint   INBETRIEB                    smallint   NACHSORGE                    smallint   STATUS                       smallint   ERSTEINTR                    char(255)   LETZTEANP                    char(255)   URLAUSZUG                    char(1024)   BEMERK_D                     char(1024)   BEMERK_F                     char(1024)
+# -------------------------------------------------------------------------
+POSTGIS_1_DEF geodb.kbsflug_untersm   postgis_type                 postgis_geometry   postgis_mode                 ""   postgis_sql_key_columns      ""   postgis_drop_table           ""   postgis_truncate_table       ""   fme_feature_operation        INSERT   fme_table_handling           TRUNCATE_EXISTING   postgis_create_with_oids     NO   postgis_create_gist_index    YES   postgis_spatial_column_type  geometry   postgis_spatial_column       shape   postgis_srid                 ""   postgis_vacuum_analyze       NO   postgis_allow_serial_writing NO   objectid                     int4   kbsnummer                    varchar(100)   massn_d                      varchar(100)   massn_f                      varchar(100)
 # -------------------------------------------------------------------------
 POSTGIS_1_DEF geodb.kbsflug_kbsflugf   postgis_type                 postgis_geometry   postgis_mode                 ""   postgis_sql_key_columns      ""   postgis_drop_table           ""   postgis_truncate_table       ""   fme_feature_operation        INSERT   fme_table_handling           TRUNCATE_EXISTING   postgis_create_with_oids     NO   postgis_create_gist_index    YES   postgis_spatial_column_type  geometry   postgis_spatial_column       shape   postgis_srid                 ""   postgis_vacuum_analyze       NO   postgis_allow_serial_writing NO   objectid                     int4   kbsnummer                    varchar(100)   staotyp                      int2   inbetrieb                    int2   nachsorge                    int2   status                       int2   ersteintr                    varchar(255)   letzteanp                    varchar(255)   urlauszug                    varchar(255)   bemerk_d                     varchar(255)   bemerk_f                     varchar(255)
 # -------------------------------------------------------------------------
-POSTGIS_1_DEF geodb.kbsflug_kbsflugp   postgis_type                 postgis_geometry   postgis_mode                 ""   postgis_sql_key_columns      ""   postgis_drop_table           ""   postgis_truncate_table       ""   fme_feature_operation        INSERT   fme_table_handling           TRUNCATE_EXISTING   postgis_create_with_oids     NO   postgis_create_gist_index    YES   postgis_spatial_column_type  geometry   postgis_spatial_column       shape   postgis_srid                 ""   postgis_vacuum_analyze       NO   postgis_allow_serial_writing NO   objectid                     int4   kbsnummer                    varchar(100)   staotyp                      int2   inbetrieb                    int2   nachsorge                    int2   status                       int2   ersteintr                    varchar(255)   letzteanp                    varchar(255)   urlauszug                    varchar(255)   bemerk_d                     varchar(255)   bemerk_f                     varchar(255)
+POSTGIS_1_DEF geodb.kbsflug_depotyp   postgis_type                 postgis_geometry   postgis_mode                 ""   postgis_sql_key_columns      ""   postgis_drop_table           ""   postgis_truncate_table       ""   fme_feature_operation        INSERT   fme_table_handling           TRUNCATE_EXISTING   postgis_create_with_oids     NO   postgis_create_gist_index    YES   postgis_spatial_column_type  geometry   postgis_spatial_column       shape   postgis_srid                 ""   postgis_vacuum_analyze       NO   postgis_allow_serial_writing NO   objectid                     int4   kbsnummer                    varchar(100)   depotyp_d                    varchar(100)   depotyp_f                    varchar(100)
 # -------------------------------------------------------------------------
-POSTGIS_1_DEF geodb.kbsflug_untersm   postgis_type                 postgis_geometry   postgis_mode                 ""   postgis_sql_key_columns      ""   postgis_drop_table           ""   postgis_truncate_table       ""   fme_feature_operation        INSERT   fme_table_handling           TRUNCATE_EXISTING   postgis_create_with_oids     NO   postgis_create_gist_index    YES   postgis_spatial_column_type  geometry   postgis_spatial_column       shape   postgis_srid                 ""   postgis_vacuum_analyze       NO   postgis_allow_serial_writing NO   objectid                     int4   kbsnummer                    varchar(100)   massn_d                      varchar(100)   massn_f                      varchar(100)
+POSTGIS_1_DEF geodb.kbsflug_kbsflugp   postgis_type                 postgis_geometry   postgis_mode                 ""   postgis_sql_key_columns      ""   postgis_drop_table           ""   postgis_truncate_table       ""   fme_feature_operation        INSERT   fme_table_handling           TRUNCATE_EXISTING   postgis_create_with_oids     NO   postgis_create_gist_index    YES   postgis_spatial_column_type  geometry   postgis_spatial_column       shape   postgis_srid                 ""   postgis_vacuum_analyze       NO   postgis_allow_serial_writing NO   objectid                     int4   kbsnummer                    varchar(100)   staotyp                      int2   inbetrieb                    int2   nachsorge                    int2   status                       int2   ersteintr                    varchar(255)   letzteanp                    varchar(255)   urlauszug                    varchar(255)   bemerk_d                     varchar(255)   bemerk_f                     varchar(255)
