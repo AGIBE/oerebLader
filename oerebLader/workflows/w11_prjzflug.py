@@ -4,6 +4,7 @@ import oerebLader.scripts.s26_initialize
 import oerebLader.scripts.s4_delete_transfer
 import oerebLader.scripts.s22_import_prjzflug
 import oerebLader.scripts.s24_import_transfer_xtf
+import oerebLader.scripts.s67_update_data_integration
 import oerebLader.scripts.s36_qa_prjzflug
 import oerebLader.scripts.s38_qa_transfer
 import oerebLader.scripts.s44_checkurl_transfer
@@ -19,6 +20,7 @@ def run(ticketnr):
     oerebLader.scripts.s4_delete_transfer.run(config)
     oerebLader.scripts.s22_import_prjzflug.run(config)
     oerebLader.scripts.s24_import_transfer_xtf.run(config)
+    oerebLader.scripts.s67_update_data_integration.run(config)
     oerebLader.scripts.s36_qa_prjzflug
     oerebLader.scripts.s38_qa_transfer.run(config)
     oerebLader.scripts.s44_checkurl_transfer.run(config)
