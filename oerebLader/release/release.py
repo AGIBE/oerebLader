@@ -15,6 +15,8 @@ import tempfile
 import git
 import shutil
 import platform
+import psycopg2
+import tempfile
 
 
 def init_logging(config):
@@ -144,6 +146,44 @@ def update_transferdate(config, logger, liefereinheiten, dailyMode):
             logger.info("VEK1 wird aktualisiert.")
             oerebLader.helpers.sql_helper.writeSQL(config['OEREB2_VEK1']['connection_string'], transfer_date_sql)
 
+def get_schema_from_liefereinheit(liefereinheit, connection_string):
+    schemas = []
+    liefereinheit = unicode(liefereinheit)
+    schema_sql = "select schema from workflow_schema where WORKFLOW in (select workflow from liefereinheit where id='%s')" % (liefereinheit)
+    schema_sql_results = oerebLader.helpers.sql_helper.readSQL(connection_string, schema_sql)
+    for schema_result in schema_sql_results:
+        schemas.append(schema_result[0])
+
+    return schemas
+
+def get_pg_tables(connection_string):
+    pg_tables = []
+    table_sql = "select ebecode, filter_field from oereb2.gpr where gprcode='OEREB_PG' order by EBEORDER"
+    table_sql_results = oerebLader.helpers.sql_helper.readSQL(connection_string, table_sql)
+    for table_sql_result in table_sql_results:
+        pg_table = (table_sql_result[0], table_sql_result[1])
+        pg_tables.append(pg_table)
+    
+    return pg_tables
+
+def append_transferstruktur(source_connection_string, target_connection_string, source_sql, full_tablename):
+    # https://codereview.stackexchange.com/questions/115863/run-query-and-insert-the-result-to-another-table
+    # Inhalte aus WORK mit COPY TO in ein Temp-File schreiben
+    copy_to_query = "COPY (%s) TO STDOUT WITH (FORMAT text)" % (source_sql)
+    with tempfile.NamedTemporaryFile('w+t') as fp:
+        with psycopg2.connect(source_connection_string) as source_connection:
+            with source_connection.cursor() as source_cursor:
+                source_cursor.copy_expert(copy_to_query, fp)
+
+        # Alles ins File rausschreiben
+        fp.flush()
+        # File auf Anfang zurücksetzen
+        fp.seek(0)
+
+        with psycopg2.connect(target_connection_string) as target_connection:
+            with target_connection.cursor() as target_cursor:
+                target_cursor.copy_from(file=fp, table=full_tablename)
+
 
 def run_release(dailyMode):
     config = oerebLader.helpers.config.get_config()
@@ -226,9 +266,51 @@ def run_release(dailyMode):
                 logger.error("Fehler beim Kopieren. Anzahl Features in der Quelle und im Ziel sind nicht identisch!")
                 logger.error("Release wird abgebrochen!")
                 sys.exit()
-                
+
+    # Transferstruktur PostGIS kopieren wenn es Tickets hat
     if len(tickets) > 0:
-        # Transferstruktur kopieren wenn es Tickets hat
+        logger.info("Kopiere Transferstruktur PostGIS...")
+        pg_tables = get_pg_tables(config['OEREB2_WORK']['connection_string'])
+        # https://stackoverflow.com/questions/3940128/how-can-i-reverse-a-list-in-python#3940137
+        pg_tables_reversed = pg_tables[::-1]
+        # Doppelte Liefereinheiten entfernen
+        liefereinheiten = list(set(liefereinheiten))
+        for liefereinheit in liefereinheiten:
+            logger.info("Kopiere Liefereinheit %s..." % (unicode(liefereinheit)))
+            # Schema(s) der Liefereinheit holen
+            schemas = get_schema_from_liefereinheit(liefereinheit, config['OEREB2_WORK']['connection_string'])
+            for schema in schemas:
+                logger.info("Verarbeite Schema %s..." % (schema))
+                # Löschen in TEAM
+                logger.info("Transferstruktur TEAM leeren...")
+                for pg_table in pg_tables:
+                    full_tablename = schema + "." + pg_table[0]
+                    where_clause = "%s=%s" % (pg_table[1], unicode(liefereinheit))
+                    delete_sql = "DELETE FROM %s WHERE %s" % (full_tablename, where_clause) 
+                    logger.info(delete_sql)
+                    oerebLader.helpers.sql_helper.writePSQL(config['OEREB_TEAM_PG']['connection_string'], delete_sql)
+                # Beim Einfügen muss die umgekehrte Tabellen-Reihenfolge als beim Löschen verwendet werden
+                # Grund: Foreign Key-Constraints
+                logger.info("Appending...")
+                for pg_table in pg_tables_reversed:
+                    full_tablename = schema + "." + pg_table[0]
+                    where_clause = "%s=%s" % (pg_table[1], unicode(liefereinheit))
+                    source_sql = "SELECT * FROM %s WHERE %s" % (full_tablename, where_clause)
+                    logger.info(source_sql)
+                    append_transferstruktur(config['OEREB_WORK_PG']['connection_string'], config['OEREB_TEAM_PG']['connection_string'], source_sql, full_tablename)
+                    # QS (Objekte zählen)
+                    logger.info("Counting..")
+                    source_count = len(oerebLader.helpers.sql_helper.readPSQL(config['OEREB_WORK_PG']['connection_string'], source_sql))
+                    target_count = len(oerebLader.helpers.sql_helper.readPSQL(config['OEREB_TEAM_PG']['connection_string'], source_sql))
+                    logger.info("Anzahl Features im Quell-Layer: " + unicode(source_count))
+                    logger.info("Anzahl Features im Ziel-Layer: " + unicode(target_count))
+                    if source_count!=target_count:
+                        logger.error("Fehler beim Kopieren. Anzahl Features in der Quelle und im Ziel sind nicht identisch!")
+                        logger.error("Release wird abgebrochen!")
+                        sys.exit()
+                
+    # Transferstruktur Oracle kopieren wenn es Tickets hat
+    if len(tickets) > 0:
         # Doppelte Liefereinheiten entfernen
         liefereinheiten = list(set(liefereinheiten))
         # WHERE-Clause bilden
