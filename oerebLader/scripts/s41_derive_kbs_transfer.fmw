@@ -1,7 +1,7 @@
 #! <?xml version="1.0" encoding="UTF-8" ?>
 #! <WORKSPACE
 #    Command-line to run this workspace:
-#        "C:\Program Files (x86)\FME\fme.exe" C:\Daten\repos\oerebLader\oerebLader\scripts\s41_derive_kbs_transfer.fmw
+#        "C:\Program Files (x86)\FME\fme.exe" D:\Daten\repos\oerebLader\oerebLader\scripts\s41_derive_kbs_transfer.fmw
 #              --LIEFEREINHEIT ""
 #              --LOGFILE ""
 #              --GEODB_DATABASE ""
@@ -28,8 +28,8 @@
 #!   END_TCL=""
 #!   EXPLICIT_BOOKMARK_ORDER="false"
 #!   FME_BUILD_NUM="18310"
-#!   FME_DOCUMENT_GUID="49bf2cfe-e3bf-4491-8167-849bbeac21af"
-#!   FME_DOCUMENT_PRIORGUID="890cec7f-6108-40bd-9c08-90d1910cf09a,b35b9a05-86df-4b99-b64d-1cb3d20361ab,78f9184d-0094-4dcb-ac11-de1393bc33bc,7cbd0ae7-8b6f-457b-befe-2c44ddec1b5e,a0238ff2-5a9f-4eac-8dac-732589990b41,9c260004-880b-4c03-a21a-efb29c61b6ec,1f865043-a843-497f-84e2-6512b399c9f6,7339b596-d87a-43a9-a622-125f5933b02f,3a90bf2b-1fa1-4880-b526-cb69b57c574d,d4e25ee3-9b98-4553-b71e-36549f6eeaf5,d35c2bb9-cd56-4ec9-92ac-c6c6683f0281,31ab9944-dda0-458e-a0c2-b7bc403a0685,03c63af4-d6d8-44ff-9541-90e39a1c9553,09344580-9cde-4fcc-b8f2-1a49db3357da,2c334dca-02c0-4123-b40e-d6f2603d9829,aec6ba70-252e-44cb-9ca9-7409fe589f7d,830f211e-6f72-455c-9b8d-45f9be6641f6,f0db51b9-01ca-4fa1-903a-a338580c9394,8b15feeb-9c7d-4e33-ac59-368b4403b143,e76a9a76-781a-4a73-a1e0-81db61f21526,b515f113-3200-478a-85e9-1e2ff48d9559,cec93a1f-4c62-4613-a551-18e7485b2588,b580a921-c3d5-4807-8f13-9bd6203c9d44,59106c5e-2114-4111-94cd-8c63011e2cdc,d11394f3-8631-4ab1-9200-8862d9a0653b,0bbe9984-1084-438c-8fd9-673eeb11ebbe"
+#!   FME_DOCUMENT_GUID="6b70caca-9f17-4951-b929-a83482ad212b"
+#!   FME_DOCUMENT_PRIORGUID="890cec7f-6108-40bd-9c08-90d1910cf09a,b35b9a05-86df-4b99-b64d-1cb3d20361ab,78f9184d-0094-4dcb-ac11-de1393bc33bc,7cbd0ae7-8b6f-457b-befe-2c44ddec1b5e,a0238ff2-5a9f-4eac-8dac-732589990b41,9c260004-880b-4c03-a21a-efb29c61b6ec,1f865043-a843-497f-84e2-6512b399c9f6,7339b596-d87a-43a9-a622-125f5933b02f,3a90bf2b-1fa1-4880-b526-cb69b57c574d,d4e25ee3-9b98-4553-b71e-36549f6eeaf5,d35c2bb9-cd56-4ec9-92ac-c6c6683f0281,31ab9944-dda0-458e-a0c2-b7bc403a0685,03c63af4-d6d8-44ff-9541-90e39a1c9553,09344580-9cde-4fcc-b8f2-1a49db3357da,2c334dca-02c0-4123-b40e-d6f2603d9829,aec6ba70-252e-44cb-9ca9-7409fe589f7d,830f211e-6f72-455c-9b8d-45f9be6641f6,f0db51b9-01ca-4fa1-903a-a338580c9394,8b15feeb-9c7d-4e33-ac59-368b4403b143,e76a9a76-781a-4a73-a1e0-81db61f21526,b515f113-3200-478a-85e9-1e2ff48d9559,cec93a1f-4c62-4613-a551-18e7485b2588,b580a921-c3d5-4807-8f13-9bd6203c9d44,59106c5e-2114-4111-94cd-8c63011e2cdc,d11394f3-8631-4ab1-9200-8862d9a0653b,0bbe9984-1084-438c-8fd9-673eeb11ebbe,49bf2cfe-e3bf-4491-8167-849bbeac21af"
 #!   FME_GEOMETRY_HANDLING="Enhanced"
 #!   FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Datum"
 #!   FME_REPROJECTION_ENGINE="FME"
@@ -38,7 +38,7 @@
 #!   HISTORY=""
 #!   IGNORE_READER_FAILURE="No"
 #!   LAST_SAVE_BUILD="FME(R) 2018.0.1.0 (20180518 - Build 18310 - WIN32)"
-#!   LAST_SAVE_DATE="2018-09-27T10:38:29"
+#!   LAST_SAVE_DATE="2019-09-18T15:57:38"
 #!   LOG_FILE="$(LOGFILE)"
 #!   LOG_MAX_RECORDED_FEATURES="200"
 #!   MARKDOWN_DESCRIPTION=""
@@ -56,7 +56,7 @@
 #!   TITLE=""
 #!   USAGE=""
 #!   USE_MARKDOWN=""
-#!   VIEW_POSITION="-17.7559 -372.873"
+#!   VIEW_POSITION="5525.62 -372.873"
 #!   WARN_INVALID_XFORM_PARAM="Yes"
 #!   WORKSPACE_VERSION="1"
 #!   ZOOM_SCALE="88"
@@ -75,7 +75,7 @@
 #!   WRITE_DEFS="true"
 #!   DEFLINE_TEMPLATE="geodb_type {FME_GEN_GEOMETRY}"
 #!   DEFLINE_ATTRS="true"
-#!   EXPOSABLE_ATTRS="fme_geometry fme_char(50) geodb_dim_text_x double geodb_text_leader_line char(254) geodb_topological_configuration char(6) geodb_text_lc_margin_right double geodb_measures char(254) geodb_text_lc_margin_bottom double geodb_dim_extn_line_angle double fme_type char(50) geodb_text_lc_style char(20) fme_text_string char(50) geodb_text_y_offset double geodb_feature_dataset char(254) geodb_dim_length double geodb_text_size double geodb_text_lc_textbox_y3 double geodb_text_lc_textbox_y4 double geodb_text_color char(254) geodb_dim_begin_dimension_z double geodb_dim_begin_dimension_x double geodb_text_leader_line_tolerance double geodb_primary_axis double geodb_raster_pyramid_level integer geodb_dim_line_x double geodb_font_charset smallint geodb_dim_end_dimension_y double geodb_text_string_with_format_tags char(254) geodb_text_break_char integer geodb_text_lc_textbox_x3 double geodb_raster_compression_type char(100) fme_color char(50) geodb_dim_style_id integer geodb_font_weight smallint geodb_dim_using_custom_length boolean geodb_secondary_axis double geodb_dim_text_z double geodb_text_lc_margin_top double geodb_color char(50) geodb_text_part_count integer geodb_text_ref_scale double fme_text_size double geodb_text_leader_line_color char(50) geodb_feature_has_relationships boolean geodb_type char(25) geodb_dim_custom_length double geodb_feature_is_simple boolean geodb_text_lc_textbox_x1 double geodb_text_lc_textbox_y1 double geodb_anno_class_id integer multi_reader_type char(50) multi_reader_full_id integer geodb_text_lc_accent_bar_width double geodb_text_lc_textbox_x2 double geodb_text_x_offset double geodb_text_leader_line_anchor_point char(254) geodb_to_junction_element_id integer geodb_dim_marker_display smallint geodb_text_clip boolean multi_reader_keyword char(50) geodb_text_angle double geodb_dim_text_angle double geodb_font_bold boolean geodb_h_align char(50) geodb_text_lc_margin_left double geodb_rotation double geodb_dim_end_dimension_z double geodb_text_char_spacing double geodb_element_id integer fme_feature_type char(50) geodb_dim_text_y double multi_reader_id integer geodb_symbol_id integer geodb_subtype_name char(254) geodb_element_index integer fme_sweep_angle double geodb_text_lc_textbox_y2 double fme_dataset char(50) geodb_text_point_scale_factor double geodb_rel_destination_oid integer geodb_dim_line_z double geodb_junction_feature_count integer geodb_linked_feature_id integer geodb_dim_line_display smallint geodb_dim_type smallint fme_primary_axis double fme_fill_color char(50) geodb_v_align char(50) geodb_from_junction_element_id integer geodb_text_leader_line_width double geodb_dim_line_y double geodb_raster_pyramid_resample_type char(100) geodb_rel_origin_oid integer geodb_text_lc_gap double geodb_text_word_spacing double geodb_ancillary_role char(7) geodb_right_to_left boolean geodb_raster_compression_quality integer fme_basename char(50) geodb_text_line_spacing double geodb_start_angle double geodb_dim_end_dimension_x double geodb_junction_element_count integer geodb_edge_feature_count integer fme_rotation double geodb_font_size double geodb_text_lc_accent_bar_color char(50) geodb_font_italic boolean geodb_text_character_width double geodb_dim_extn_line_display smallint geodb_metadata_string char(254) geodb_text_string char(254) geodb_font_name char(254) geodb_edge_element_count integer geodb_font_strikethrough boolean geodb_text_scale boolean geodb_font_underline boolean fme_start_angle double geodb_dim_begin_dimension_y double geodb_sweep_angle double fme_secondary_axis double geodb_text_lc_textbox_x4 double"
+#!   EXPOSABLE_ATTRS="geodb_text_leader_line char(254) geodb_from_junction_element_id integer geodb_text_lc_style char(20) geodb_font_size double geodb_feature_has_relationships boolean geodb_font_italic boolean geodb_font_strikethrough boolean fme_secondary_axis double geodb_to_junction_element_id integer geodb_metadata_string char(254) geodb_junction_feature_count integer geodb_text_lc_textbox_x1 double geodb_symbol_id integer fme_feature_type char(50) geodb_dim_type smallint geodb_text_string char(254) geodb_text_lc_textbox_y1 double geodb_text_lc_gap double fme_geometry fme_char(50) geodb_dim_line_display smallint geodb_dim_begin_dimension_y double geodb_text_color char(254) multi_reader_keyword char(50) multi_reader_full_id integer fme_type char(50) geodb_text_lc_textbox_x3 double geodb_v_align char(50) geodb_element_index integer geodb_text_lc_margin_left double fme_text_string char(50) geodb_dim_style_id integer geodb_text_lc_margin_bottom double geodb_text_leader_line_color char(50) fme_fill_color char(50) geodb_dim_extn_line_display smallint geodb_dim_using_custom_length boolean geodb_raster_compression_quality integer geodb_text_point_scale_factor double geodb_dim_line_z double geodb_text_y_offset double geodb_dim_text_z double geodb_raster_pyramid_resample_type char(100) geodb_text_ref_scale double geodb_text_part_count integer geodb_right_to_left boolean geodb_text_scale boolean geodb_dim_text_x double geodb_h_align char(50) geodb_start_angle double geodb_font_bold boolean geodb_rel_destination_oid integer geodb_anno_class_id integer geodb_dim_line_x double geodb_text_angle double geodb_font_charset smallint geodb_primary_axis double geodb_junction_element_count integer geodb_text_clip boolean geodb_text_string_with_format_tags char(254) geodb_raster_compression_type char(100) geodb_feature_is_simple boolean geodb_dim_begin_dimension_x double geodb_rel_origin_oid integer fme_primary_axis double geodb_sweep_angle double geodb_dim_end_dimension_y double multi_reader_id integer fme_sweep_angle double geodb_dim_line_y double geodb_ancillary_role char(7) geodb_text_lc_textbox_y3 double geodb_text_character_width double geodb_edge_element_count integer geodb_dim_begin_dimension_z double geodb_color char(50) fme_basename char(50) geodb_dim_end_dimension_z double geodb_dim_marker_display smallint geodb_text_lc_textbox_y4 double geodb_text_lc_accent_bar_width double geodb_topological_configuration char(6) geodb_text_lc_margin_top double fme_start_angle double geodb_raster_pyramid_level integer fme_rotation double geodb_text_leader_line_tolerance double fme_text_size double geodb_dim_text_angle double geodb_text_char_spacing double geodb_text_lc_textbox_x2 double geodb_dim_length double geodb_dim_custom_length double geodb_text_break_char integer geodb_edge_feature_count integer geodb_secondary_axis double geodb_dim_extn_line_angle double geodb_element_id integer geodb_subtype_name char(254) geodb_linked_feature_id integer geodb_text_word_spacing double fme_color char(50) geodb_text_lc_accent_bar_color char(50) geodb_rotation double geodb_text_leader_line_anchor_point char(254) geodb_text_lc_margin_right double geodb_font_weight smallint geodb_feature_dataset char(254) multi_reader_type char(50) geodb_font_name char(254) geodb_text_size double geodb_text_lc_textbox_y2 double fme_dataset char(50) geodb_text_lc_textbox_x4 double geodb_type char(25) geodb_text_line_spacing double geodb_measures char(254) geodb_text_leader_line_width double geodb_dim_end_dimension_x double geodb_text_x_offset double geodb_dim_text_y double geodb_font_underline boolean"
 #!   DEFLINE_PARMS=""
 #!   ATTR_INDEX_TYPES=""
 #!   ATTR_NAME_INVALID_CHARS=""
@@ -118,7 +118,7 @@
 #!   WRITE_DEFS="true"
 #!   DEFLINE_TEMPLATE="xlsx_start_row &quot;&quot; xlsx_end_row &quot;&quot;"
 #!   DEFLINE_ATTRS="true"
-#!   EXPOSABLE_ATTRS="fme_type char(50) fme_dataset char(50) fme_sweep_angle number(31,15) fme_start_angle number(31,15) fme_basename char(50) fme_primary_axis number(31,15) multi_reader_keyword char(50) fme_feature_type char(50) multi_reader_id number(11,0) multi_reader_type char(50) fme_rotation number(31,15) fme_fill_color char(50) fme_geometry fme_char(50) fme_text_string char(50) fme_text_size number(31,15) fme_secondary_axis number(31,15) xlsx_row_id number(11,0) fme_color char(50) multi_reader_full_id number(11,0)"
+#!   EXPOSABLE_ATTRS="fme_geometry fme_char(50) fme_sweep_angle number(31,15) multi_reader_keyword char(50) fme_text_string char(50) multi_reader_id number(11,0) fme_basename char(50) fme_dataset char(50) fme_type char(50) fme_primary_axis number(31,15) fme_fill_color char(50) fme_secondary_axis number(31,15) fme_feature_type char(50) xlsx_row_id number(11,0) fme_color char(50) fme_start_angle number(31,15) multi_reader_type char(50) multi_reader_full_id number(11,0) fme_text_size number(31,15) fme_rotation number(31,15)"
 #!   DEFLINE_PARMS="&quot;GUI FORCE_DEFS OPTIONAL INTEGER xlsx_start_row Start Row:&quot; &quot;&quot; &quot;GUI FORCE_DEFS OPTIONAL INTEGER xlsx_end_row End Row:&quot; &quot;&quot; "
 #!   ATTR_INDEX_TYPES=""
 #!   ATTR_NAME_INVALID_CHARS=""
@@ -161,7 +161,7 @@
 #!   WRITE_DEFS="true"
 #!   DEFLINE_TEMPLATE="xlsx_start_row &quot;&quot; xlsx_end_row &quot;&quot;"
 #!   DEFLINE_ATTRS="true"
-#!   EXPOSABLE_ATTRS="fme_type char(50) fme_dataset char(50) fme_sweep_angle number(31,15) fme_start_angle number(31,15) fme_basename char(50) fme_primary_axis number(31,15) multi_reader_keyword char(50) fme_feature_type char(50) multi_reader_id number(11,0) multi_reader_type char(50) fme_rotation number(31,15) fme_fill_color char(50) fme_geometry fme_char(50) fme_text_string char(50) fme_text_size number(31,15) fme_secondary_axis number(31,15) xlsx_row_id number(11,0) fme_color char(50) multi_reader_full_id number(11,0)"
+#!   EXPOSABLE_ATTRS="fme_geometry fme_char(50) fme_sweep_angle number(31,15) multi_reader_keyword char(50) fme_text_string char(50) multi_reader_id number(11,0) fme_basename char(50) fme_dataset char(50) fme_type char(50) fme_primary_axis number(31,15) fme_fill_color char(50) fme_secondary_axis number(31,15) fme_feature_type char(50) xlsx_row_id number(11,0) fme_color char(50) fme_start_angle number(31,15) multi_reader_type char(50) multi_reader_full_id number(11,0) fme_text_size number(31,15) fme_rotation number(31,15)"
 #!   DEFLINE_PARMS="&quot;GUI FORCE_DEFS OPTIONAL INTEGER xlsx_start_row Start Row:&quot; &quot;&quot; &quot;GUI FORCE_DEFS OPTIONAL INTEGER xlsx_end_row End Row:&quot; &quot;&quot; "
 #!   ATTR_INDEX_TYPES=""
 #!   ATTR_NAME_INVALID_CHARS=""
@@ -204,7 +204,7 @@
 #!   WRITE_DEFS="true"
 #!   DEFLINE_TEMPLATE="geodb_type {FME_GEN_GEOMETRY} GEODB_UPDATE_KEY_COLUMNS &quot;&quot; GEODB_DROP_TABLE NO GEODB_TRUNCATE_TABLE NO GEODB_OBJECT_ID_NAME OBJECTID GEODB_OBJECT_ID_ALIAS OBJECTID GEODB_SHAPE_NAME SHAPE GEODB_SHAPE_ALIAS SHAPE GEODB_CONFIG_KEYWORD DEFAULTS GEODB_FEATURE_DATASET &quot;&quot; GEODB_GRID{1} &quot;&quot; GEODB_AVG_NUM_POINTS &quot;&quot; GEODB_XORIGIN &quot;&quot; GEODB_YORIGIN &quot;&quot; GEODB_XYSCALE &quot;&quot; GEODB_HAS_Z_VALUES &quot;&quot; GEODB_ZORIGIN &quot;&quot; GEODB_ZSCALE &quot;&quot; GEODB_HAS_MEASURES &quot;&quot; GEODB_MEASURES_ORIGIN &quot;&quot; GEODB_MEASURES_SCALE &quot;&quot; GEODB_ANNO_REFERENCE_SCALE &quot;&quot;"
 #!   DEFLINE_ATTRS="true"
-#!   EXPOSABLE_ATTRS="fme_geometry fme_char(50) geodb_dim_text_x double geodb_measures char(254) geodb_dim_extn_line_angle double fme_type char(50) fme_text_string char(50) geodb_text_y_coord double geodb_text_y_offset double geodb_feature_dataset char(254) geodb_dim_length double geodb_text_size double geodb_text_color char(254) geodb_dim_begin_dimension_z double geodb_dim_begin_dimension_x double geodb_primary_axis double geodb_raster_pyramid_level integer geodb_dim_line_x double geodb_font_charset smallint fme_where char(254) geodb_dim_end_dimension_y double geodb_text_string_with_format_tags char(254) geodb_text_break_char integer geodb_raster_compression_type char(100) fme_color char(50) geodb_dim_style_id integer geodb_font_weight smallint fme_db_operation char(8) geodb_dim_using_custom_length boolean geodb_secondary_axis double geodb_dim_text_z double geodb_color char(50) geodb_text_ref_scale double fme_text_size double geodb_text_feat_class_name char(254) geodb_type char(25) geodb_dim_custom_length double geodb_allow_symbol_overrides boolean geodb_anno_class_id integer geodb_text_x_offset double geodb_dim_marker_display smallint geodb_text_clip boolean geodb_text_angle double geodb_dim_text_angle double geodb_font_bold boolean geodb_h_align char(50) geodb_rotation double geodb_dim_end_dimension_z double geodb_text_char_spacing double fme_feature_type char(50) geodb_dim_text_y double geodb_symbol_id integer geodb_subtype_name char(254) fme_sweep_angle double fme_dataset char(50) geodb_dim_line_z double geodb_dim_line_display smallint geodb_linked_feature_id integer geodb_dim_type smallint fme_primary_axis double fme_fill_color char(50) geodb_v_align char(50) geodb_dim_line_y double geodb_raster_pyramid_resample_type char(100) geodb_ancillary_role char(7) geodb_text_word_spacing double geodb_right_to_left boolean geodb_raster_compression_quality integer geodb_text_x_coord double fme_basename char(50) geodb_text_line_spacing double geodb_start_angle double geodb_dim_end_dimension_x double fme_rotation double geodb_font_size double geodb_font_italic boolean geodb_text_character_width double geodb_dim_extn_line_display smallint geodb_metadata_string char(254) geodb_text_string char(254) geodb_font_name char(254) geodb_font_strikethrough boolean geodb_text_scale boolean geodb_font_underline boolean fme_start_angle double geodb_dim_begin_dimension_y double geodb_sweep_angle double fme_secondary_axis double"
+#!   EXPOSABLE_ATTRS="geodb_allow_symbol_overrides boolean geodb_font_size double geodb_font_italic boolean geodb_font_strikethrough boolean fme_secondary_axis double geodb_metadata_string char(254) geodb_symbol_id integer fme_feature_type char(50) geodb_dim_type smallint geodb_text_string char(254) geodb_text_y_coord double fme_geometry fme_char(50) geodb_dim_line_display smallint geodb_dim_begin_dimension_y double geodb_text_color char(254) fme_type char(50) geodb_v_align char(50) fme_text_string char(50) geodb_dim_style_id integer geodb_text_x_coord double fme_fill_color char(50) geodb_dim_extn_line_display smallint geodb_dim_using_custom_length boolean geodb_raster_compression_quality integer geodb_dim_line_z double geodb_text_y_offset double geodb_dim_text_z double geodb_raster_pyramid_resample_type char(100) geodb_text_ref_scale double geodb_right_to_left boolean geodb_text_scale boolean geodb_dim_text_x double geodb_h_align char(50) geodb_start_angle double geodb_font_bold boolean geodb_anno_class_id integer geodb_dim_line_x double geodb_text_angle double geodb_font_charset smallint geodb_primary_axis double geodb_text_clip boolean geodb_text_string_with_format_tags char(254) geodb_raster_compression_type char(100) geodb_dim_begin_dimension_x double fme_primary_axis double geodb_sweep_angle double geodb_dim_end_dimension_y double fme_sweep_angle double geodb_ancillary_role char(7) geodb_dim_line_y double geodb_text_character_width double geodb_dim_begin_dimension_z double geodb_color char(50) fme_basename char(50) geodb_dim_end_dimension_z double fme_db_operation char(8) geodb_dim_marker_display smallint fme_start_angle double geodb_raster_pyramid_level integer fme_rotation double fme_text_size double geodb_dim_text_angle double geodb_text_char_spacing double geodb_dim_length double geodb_dim_custom_length double geodb_text_break_char integer geodb_secondary_axis double geodb_linked_feature_id integer geodb_dim_extn_line_angle double geodb_subtype_name char(254) geodb_text_word_spacing double fme_color char(50) geodb_rotation double geodb_font_weight smallint geodb_feature_dataset char(254) fme_where char(254) geodb_font_name char(254) fme_dataset char(50) geodb_text_size double geodb_type char(25) geodb_text_feat_class_name char(254) geodb_text_line_spacing double geodb_measures char(254) geodb_dim_end_dimension_x double geodb_dim_text_y double geodb_text_x_offset double geodb_font_underline boolean"
 #!   DEFLINE_PARMS="&quot;GUI CHOICE GEODB_DROP_TABLE YES%NO Drop Table First&quot; NO &quot;GUI CHOICE GEODB_TRUNCATE_TABLE YES%NO Truncate Table First&quot; NO &quot;GUI FORCE_DEFS OPTIONAL WHOLE_LINE ATTRLIST_COMMAS GEODB_UPDATE_KEY_COLUMNS \&quot; \&quot; Update Key Fields&quot; &quot;&quot; &quot;GUI TEXT GEODB_OBJECT_ID_NAME Object ID Field&quot; OBJECTID &quot;GUI TEXT GEODB_OBJECT_ID_ALIAS Object ID Alias&quot; OBJECTID &quot;GUI TEXT GEODB_SHAPE_NAME Shape Field&quot; SHAPE &quot;GUI TEXT GEODB_SHAPE_ALIAS Shape Alias&quot; SHAPE &quot;GUI TEXT GEODB_CONFIG_KEYWORD Configuration Keyword&quot; DEFAULTS &quot;GUI OPTIONAL TEXT GEODB_FEATURE_DATASET Feature Dataset&quot; &quot;&quot; &quot;GUI OPTIONAL FLOAT GEODB_GRID{1} Grid 1&quot; &quot;&quot; &quot;GUI OPTIONAL INTEGER GEODB_AVG_NUM_POINTS Avg Num of Points&quot; &quot;&quot; &quot;GUI OPTIONAL FLOAT GEODB_XORIGIN X Origin&quot; &quot;&quot; &quot;GUI OPTIONAL FLOAT GEODB_YORIGIN Y Origin&quot; &quot;&quot; &quot;GUI OPTIONAL FLOAT GEODB_XYSCALE X,Y Scale&quot; &quot;&quot; &quot;GUI OPTIONAL CHOICE GEODB_HAS_Z_VALUES yes%no Contains Z Values&quot; &quot;&quot; &quot;GUI OPTIONAL FLOAT GEODB_ZORIGIN Z Origin&quot; &quot;&quot; &quot;GUI OPTIONAL FLOAT GEODB_ZSCALE Z Scale&quot; &quot;&quot; &quot;GUI OPTIONAL CHOICE GEODB_HAS_MEASURES yes%no Contains Measures&quot; &quot;&quot; &quot;GUI OPTIONAL FLOAT GEODB_MEASURES_ORIGIN Measure Origin&quot; &quot;&quot; &quot;GUI OPTIONAL FLOAT GEODB_MEASURES_SCALE Measure Scale&quot; &quot;&quot; &quot;GUI OPTIONAL FLOAT GEODB_ANNO_REFERENCE_SCALE Annotation Reference Scale&quot; &quot;&quot; "
 #!   ATTR_INDEX_TYPES=""
 #!   ATTR_NAME_INVALID_CHARS=":. %-#[]&quot;()!?*&apos;&amp;+\/{}|="
@@ -242,7 +242,7 @@
 #!   WRITE_DEFS="true"
 #!   DEFLINE_TEMPLATE="oracle_create_table &quot;&quot; oracle_params &quot;&quot; oracle_drop_table &quot;&quot; oracle_table_writer_mode INHERIT_FROM_WRITER oracle_update_key_columns &quot;&quot; oracle_truncate_table &quot;&quot; oracle_sql_encoded &quot;&quot; oracle_sequenced_cols &quot;&quot;"
 #!   DEFLINE_ATTRS="true"
-#!   EXPOSABLE_ATTRS="fme_color char(50) fme_where char(254) fme_text_string char(50) fme_geometry fme_char(50) fme_start_angle float fme_basename char(50) fme_fill_color char(50) oracle_type char(50) fme_dataset char(50) fme_db_operation char(8) fme_type char(50) fme_primary_axis float fme_rotation float fme_sweep_angle float fme_secondary_axis float fme_text_size float fme_feature_type char(50)"
+#!   EXPOSABLE_ATTRS="fme_rotation float fme_start_angle float fme_dataset char(50) fme_feature_type char(50) fme_geometry fme_char(50) oracle_type char(50) fme_text_string char(50) fme_fill_color char(50) fme_db_operation char(8) fme_sweep_angle float fme_text_size float fme_color char(50) fme_basename char(50) fme_type char(50) fme_secondary_axis float fme_where char(254) fme_primary_axis float"
 #!   DEFLINE_PARMS="&quot;GUI DISABLE oracle_create_table Create Table&quot; Yes &quot;GUI DISABLED_ONLY FORCE_DEFS OPTIONAL WHOLE_LINE TEXT oracle_params Additional Table Creation Parameters&quot; &quot;&quot; &quot;GUI DISABLED_ONLY FORCE_DEFS CHOICE oracle_drop_table Yes%No Drop Existing Table&quot; No &quot;GUI OPTIONAL CHOICE oracle_table_writer_mode INHERIT_FROM_WRITER%INSERT%UPDATE%DELETE Writer Mode&quot; INHERIT_FROM_WRITER &quot;GUI OPTIONAL ATTRLIST_COMMAS oracle_update_key_columns \&quot; \&quot; Update Key Columns&quot; &quot;&quot; &quot;GUI CHOICE oracle_truncate_table Yes%No Truncate Existing Table&quot; No &quot;GUI OPTIONAL WHOLE_LINE TEXT_EDIT_SQL oracle_sql_encoded SQL Statement&quot; &quot;&quot; &quot;GUI ALWAYS_ENABLED FORCE_DEFS OPTIONAL WHOLE_LINE TEXT oracle_sequenced_cols Sequenced Table Columns&quot; &quot;&quot; "
 #!   ATTR_INDEX_TYPES="BTree Bitmap PrimaryKey Unique"
 #!   ATTR_NAME_INVALID_CHARS=".%&lt;&gt;|: []()?*&apos;&amp;+-/}{\\&quot;"
@@ -1706,7 +1706,7 @@
 #!   KEYWORD="XLSXR_2"
 #!   PARMS_EDITED="true"
 #!   ENABLED="true"
-#!   HIDDEN_USER_ATTRS="DAR_LEGENDEIMWEB_DE DAR_LEGENDEIMWEB_FR"
+#!   HIDDEN_USER_ATTRS="DAR_LEGENDEIMWEB_FR DAR_LEGENDEIMWEB_DE"
 #!   READ_SELECT_ATTRS="true"
 #!   MERGE_FILTER=""
 #!   MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
@@ -2238,20 +2238,6 @@
 #!   ANCHORED_NODE="168"
 #! />
 #! <COMMENT
-#!   IDENTIFIER="82"
-#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:11px; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;EIB_AUSSAGE zusammensetzen&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
-#!   POSITION="8112.6899999999996 -2102.4200000000001"
-#!   TOP_LEFT="8112.6899999999996 -2102.4200000000001"
-#!   BOTTOM_RIGHT="8112.6899999999996 -2102.4200000000001"
-#!   BOUNDING_RECT="8112.6899999999996 -2102.4200000000001 0 0"
-#!   ORDER="500000000000000"
-#!   FOLLOW_ANCHOR="true"
-#!   INFO_NODE="false"
-#!   COLOUR="1,1,0.78431372549019607,0.19215686274509805"
-#!   SIZE_POLICY="8"
-#!   ANCHORED_NODE="181"
-#! />
-#! <COMMENT
 #!   IDENTIFIER="85"
 #!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:11px; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;GEODB.BALISKBS_BEWT&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
 #!   POSITION="72 -2558"
@@ -2463,7 +2449,7 @@
 #! />
 #! <COMMENT
 #!   IDENTIFIER="241"
-#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;STATUS joinen&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;STATUSMGDM joinen&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
 #!   POSITION="3520.4099999999999 -1349.49"
 #!   TOP_LEFT="3520.4099999999999 -1349.49"
 #!   BOTTOM_RIGHT="3519.4099999999999 -1348.49"
@@ -2476,26 +2462,12 @@
 #!   ANCHORED_NODE="196"
 #! />
 #! <COMMENT
-#!   IDENTIFIER="261"
-#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;PRIORI joinen&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
-#!   POSITION="3488.6700000000001 -1727.76"
-#!   TOP_LEFT="3488.6700000000001 -1727.76"
-#!   BOTTOM_RIGHT="3487.6700000000001 -1726.76"
-#!   BOUNDING_RECT="3488.6700000000001 -1727.76 -1 -1"
-#!   ORDER="500000000000000"
-#!   FOLLOW_ANCHOR="true"
-#!   INFO_NODE="false"
-#!   COLOUR="1,1,0.78431372549019607,0.19215686274509805"
-#!   SIZE_POLICY="8"
-#!   ANCHORED_NODE="260"
-#! />
-#! <COMMENT
 #!   IDENTIFIER="265"
 #!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;ART joinen&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
-#!   POSITION="3483.29 -2147.5500000000002"
-#!   TOP_LEFT="3483.29 -2147.5500000000002"
-#!   BOTTOM_RIGHT="3482.29 -2146.5500000000002"
-#!   BOUNDING_RECT="3483.29 -2147.5500000000002 -1 -1"
+#!   POSITION="3522.3528906289066 -1746.267578084872"
+#!   TOP_LEFT="3522.3528906289066 -1746.267578084872"
+#!   BOTTOM_RIGHT="3521.3528906289066 -1745.267578084872"
+#!   BOUNDING_RECT="3522.3528906289066 -1746.267578084872 -1 -1"
 #!   ORDER="500000000000000"
 #!   FOLLOW_ANCHOR="true"
 #!   INFO_NODE="false"
@@ -2525,10 +2497,9 @@
 #!     <XFORM_ATTR ATTR_NAME="STA_NR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="ART_NR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="STA_NAME" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="PRIORI_NR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="EINTRAGKBS" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="BEW32USG" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="STATUS" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="STATUSMGDM" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="AMT_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="DAR_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_PARM PARM_NAME="LIST_ATTRS" PARM_VALUE=""/>
@@ -2549,20 +2520,18 @@
 #!   LAST_PARM_EDIT="14433"
 #! >
 #!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
 #!     <XFORM_ATTR ATTR_NAME="STA_NR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="ART_NR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="STA_NAME" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="PRIORI_NR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="EINTRAGKBS" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="BEW32USG" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="STATUS" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="STATUSMGDM" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="AMT_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="DAR_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="STATUS_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="STATUS_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_matched_records" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="PRIORI_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="PRIORI_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="ART_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="ART_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="BEWT_CODE" IS_USER_CREATED="false" FEAT_INDEX="0" />
@@ -2585,20 +2554,18 @@
 #!   LAST_PARM_EDIT="14433"
 #! >
 #!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
 #!     <XFORM_ATTR ATTR_NAME="STA_NR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="ART_NR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="STA_NAME" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="PRIORI_NR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="EINTRAGKBS" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="BEW32USG" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="STATUS" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="STATUSMGDM" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="AMT_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="DAR_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="STATUS_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="STATUS_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_matched_records" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="PRIORI_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="PRIORI_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="ART_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="ART_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="BEWT_CODE" IS_USER_CREATED="false" FEAT_INDEX="0" />
@@ -2622,20 +2589,18 @@
 #!   LAST_PARM_EDIT="14433"
 #! >
 #!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
 #!     <XFORM_ATTR ATTR_NAME="STA_NR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="ART_NR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="STA_NAME" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="PRIORI_NR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="EINTRAGKBS" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="BEW32USG" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="STATUS" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="STATUSMGDM" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="AMT_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="DAR_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="STATUS_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="STATUS_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_matched_records" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="PRIORI_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="PRIORI_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="ART_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="ART_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="BEWT_CODE" IS_USER_CREATED="false" FEAT_INDEX="0" />
@@ -2656,56 +2621,6 @@
 #!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="PythonCaller_4"/>
 #! </TRANSFORMER>
 #! <TRANSFORMER
-#!   IDENTIFIER="181"
-#!   TYPE="PythonCaller"
-#!   VERSION="4"
-#!   POSITION="8122.6899999999996 -2265.4200000000001"
-#!   BOUNDING_RECT="8122.6899999999996 -2265.4200000000001 0 0"
-#!   ORDER="500000000000000"
-#!   PARMS_EDITED="true"
-#!   ENABLED="true"
-#!   LAST_PARM_EDIT="14433"
-#! >
-#!     <OUTPUT_FEAT NAME="OUTPUT"/>
-#!     <FEAT_COLLAPSED COLLAPSED="0"/>
-#!     <XFORM_ATTR ATTR_NAME="EIB_LEGENDESYMBOL_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="EIB_LEGENDESYMBOL_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="STA_NR" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="ART_NR" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="STA_NAME" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="PRIORI_NR" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="EINTRAGKBS" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="BEW32USG" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="STATUS" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="AMT_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="DAR_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="STATUS_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="STATUS_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="_matched_records" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="PRIORI_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="PRIORI_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="ART_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="ART_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="BEWT_CODE" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="usg_VOR_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="FLA_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="EIB_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="FLA_PUBLIZIERTAB" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="EIB_PUBLIZIERTAB" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="VOR_PUBLIZIERTAB" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="EIB_AUSSAGE_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="EIB_AUSSAGE_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_PARM PARM_NAME="ADVANCED_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="HIDE_ATTRIBUTES" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="LIST_ATTRS" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="NEW_ATTRIBUTES" PARM_VALUE="EIB_AUSSAGE_DE EIB_AUSSAGE_FR"/>
-#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="PYTHONSOURCE" PARM_VALUE="from&lt;space&gt;__future__&lt;space&gt;import&lt;space&gt;unicode_literals&lt;lf&gt;import&lt;space&gt;fmeobjects&lt;lf&gt;&lt;lf&gt;def&lt;space&gt;CreateAussage&lt;openparen&gt;feature&lt;closeparen&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;_Art_Bez&lt;space&gt;=&lt;space&gt;feature.getAttribute&lt;openparen&gt;&lt;quote&gt;ART_DE&lt;quote&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;_Art_Bez_F&lt;space&gt;=&lt;space&gt;feature.getAttribute&lt;openparen&gt;&lt;quote&gt;ART_FR&lt;quote&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;_Status_Bez&lt;space&gt;=&lt;space&gt;feature.getAttribute&lt;openparen&gt;&lt;quote&gt;STATUS_DE&lt;quote&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;_Status_Bez_F&lt;space&gt;=&lt;space&gt;feature.getAttribute&lt;openparen&gt;&lt;quote&gt;STATUS_FR&lt;quote&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;_Priori_Bez&lt;space&gt;=&lt;space&gt;feature.getAttribute&lt;openparen&gt;&lt;quote&gt;PRIORI_DE&lt;quote&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;_Priori_Bez_F&lt;space&gt;=&lt;space&gt;feature.getAttribute&lt;openparen&gt;&lt;quote&gt;PRIORI_FR&lt;quote&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;_STA_NR&lt;space&gt;=&lt;space&gt;feature.getAttribute&lt;openparen&gt;&lt;quote&gt;STA_NR&lt;quote&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;_Name&lt;space&gt;=&lt;space&gt;feature.getAttribute&lt;openparen&gt;&lt;quote&gt;STA_NAME&lt;quote&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;if&lt;space&gt;_Priori_Bez&lt;space&gt;==&lt;space&gt;&lt;quote&gt;dringend&lt;quote&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;_bezeichner&lt;space&gt;=&lt;space&gt;&lt;quote&gt;Untersuchung&lt;space&gt;erforderlich&lt;quote&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;_bezeichner_f&lt;space&gt;=&lt;space&gt;&lt;quote&gt;investigation&lt;space&gt;n&lt;u00e9&gt;cessaire&lt;quote&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;#&lt;space&gt;&lt;u00d6&gt;REB-Aussage&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;if&lt;space&gt;_Status_Bez&lt;space&gt;is&lt;space&gt;not&lt;space&gt;None:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;feature.setAttribute&lt;openparen&gt;&lt;quote&gt;EIB_AUSSAGE_DE&lt;quote&gt;&lt;comma&gt;&lt;space&gt;_Art_Bez+&lt;quote&gt;&lt;space&gt;&lt;openparen&gt;Nr.&lt;space&gt;&lt;quote&gt;+_STA_NR+&lt;quote&gt;&lt;comma&gt;&lt;space&gt;&lt;quote&gt;+_Name.strip&lt;openparen&gt;&lt;closeparen&gt;+&lt;quote&gt;&lt;closeparen&gt;&lt;comma&gt;&lt;space&gt;&lt;quote&gt;+_Status_Bez+&lt;quote&gt;&lt;comma&gt;&lt;space&gt;&lt;quote&gt;+_bezeichner&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;feature.setAttribute&lt;openparen&gt;&lt;quote&gt;EIB_AUSSAGE_FR&lt;quote&gt;&lt;comma&gt;&lt;space&gt;_Art_Bez_F+&lt;quote&gt;&lt;space&gt;&lt;openparen&gt;No.&lt;space&gt;&lt;quote&gt;+_STA_NR+&lt;quote&gt;&lt;comma&gt;&lt;space&gt;&lt;quote&gt;+_Name.strip&lt;openparen&gt;&lt;closeparen&gt;+&lt;quote&gt;&lt;closeparen&gt;&lt;comma&gt;&lt;space&gt;&lt;quote&gt;+_Status_Bez_F+&lt;quote&gt;&lt;comma&gt;&lt;space&gt;&lt;quote&gt;+_bezeichner_f&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;else:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;feature.setAttribute&lt;openparen&gt;&lt;quote&gt;EIB_AUSSAGE_DE&lt;quote&gt;&lt;comma&gt;&lt;space&gt;_Art_Bez+&lt;quote&gt;&lt;space&gt;&lt;openparen&gt;Nr.&lt;space&gt;&lt;quote&gt;+_STA_NR+&lt;quote&gt;&lt;comma&gt;&lt;space&gt;&lt;quote&gt;+_Name.strip&lt;openparen&gt;&lt;closeparen&gt;+&lt;quote&gt;&lt;closeparen&gt;&lt;comma&gt;&lt;space&gt;&lt;quote&gt;+_bezeichner&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;feature.setAttribute&lt;openparen&gt;&lt;quote&gt;EIB_AUSSAGE_FR&lt;quote&gt;&lt;comma&gt;&lt;space&gt;_Art_Bez_F+&lt;quote&gt;&lt;space&gt;&lt;openparen&gt;No.&lt;space&gt;&lt;quote&gt;+_STA_NR+&lt;quote&gt;&lt;comma&gt;&lt;space&gt;&lt;quote&gt;+_Name.strip&lt;openparen&gt;&lt;closeparen&gt;+&lt;quote&gt;&lt;closeparen&gt;&lt;comma&gt;&lt;space&gt;&lt;quote&gt;+_bezeichner_f&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;elif&lt;space&gt;_Priori_Bez&lt;space&gt;==&lt;space&gt;&lt;quote&gt;erforderlich&lt;quote&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;_bezeichner&lt;space&gt;=&lt;space&gt;&lt;quote&gt;Untersuchung&lt;space&gt;erforderlich&lt;quote&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;_bezeichner_f&lt;space&gt;=&lt;space&gt;&lt;quote&gt;investigation&lt;space&gt;n&lt;u00e9&gt;cessaire&lt;quote&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;#&lt;space&gt;&lt;u00d6&gt;REB-Aussage&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;if&lt;space&gt;_Status_Bez&lt;space&gt;is&lt;space&gt;not&lt;space&gt;None:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;feature.setAttribute&lt;openparen&gt;&lt;quote&gt;EIB_AUSSAGE_DE&lt;quote&gt;&lt;comma&gt;&lt;space&gt;_Art_Bez+&lt;quote&gt;&lt;space&gt;&lt;openparen&gt;Nr.&lt;space&gt;&lt;quote&gt;+_STA_NR+&lt;quote&gt;&lt;comma&gt;&lt;space&gt;&lt;quote&gt;+_Name.strip&lt;openparen&gt;&lt;closeparen&gt;+&lt;quote&gt;&lt;closeparen&gt;&lt;comma&gt;&lt;space&gt;&lt;quote&gt;+_Status_Bez+&lt;quote&gt;&lt;comma&gt;&lt;space&gt;&lt;quote&gt;+_bezeichner&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;feature.setAttribute&lt;openparen&gt;&lt;quote&gt;EIB_AUSSAGE_FR&lt;quote&gt;&lt;comma&gt;&lt;space&gt;_Art_Bez_F+&lt;quote&gt;&lt;space&gt;&lt;openparen&gt;No.&lt;space&gt;&lt;quote&gt;+_STA_NR+&lt;quote&gt;&lt;comma&gt;&lt;space&gt;&lt;quote&gt;+_Name.strip&lt;openparen&gt;&lt;closeparen&gt;+&lt;quote&gt;&lt;closeparen&gt;&lt;comma&gt;&lt;space&gt;&lt;quote&gt;+_Status_Bez_F+&lt;quote&gt;&lt;comma&gt;&lt;space&gt;&lt;quote&gt;+_bezeichner_f&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;else:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;feature.setAttribute&lt;openparen&gt;&lt;quote&gt;EIB_AUSSAGE_DE&lt;quote&gt;&lt;comma&gt;&lt;space&gt;_Art_Bez+&lt;quote&gt;&lt;space&gt;&lt;openparen&gt;Nr.&lt;space&gt;&lt;quote&gt;+_STA_NR+&lt;quote&gt;&lt;comma&gt;&lt;space&gt;&lt;quote&gt;+_Name.strip&lt;openparen&gt;&lt;closeparen&gt;+&lt;quote&gt;&lt;closeparen&gt;&lt;comma&gt;&lt;space&gt;&lt;quote&gt;+_bezeichner&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;feature.setAttribute&lt;openparen&gt;&lt;quote&gt;EIB_AUSSAGE_FR&lt;quote&gt;&lt;comma&gt;&lt;space&gt;_Art_Bez_F+&lt;quote&gt;&lt;space&gt;&lt;openparen&gt;No.&lt;space&gt;&lt;quote&gt;+_STA_NR+&lt;quote&gt;&lt;comma&gt;&lt;space&gt;&lt;quote&gt;+_Name.strip&lt;openparen&gt;&lt;closeparen&gt;+&lt;quote&gt;&lt;closeparen&gt;&lt;comma&gt;&lt;space&gt;&lt;quote&gt;+_bezeichner_f&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;else:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;_bezeichner&lt;space&gt;=&lt;space&gt;&lt;quote&gt;projektspezifische&lt;space&gt;Massnahmen&lt;space&gt;&lt;quote&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;_bezeichner_f&lt;space&gt;=&lt;space&gt;_Priori_Bez_F&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;#&lt;space&gt;&lt;u00d6&gt;REB-Aussage&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;if&lt;space&gt;_Status_Bez&lt;space&gt;is&lt;space&gt;not&lt;space&gt;None:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;feature.setAttribute&lt;openparen&gt;&lt;quote&gt;EIB_AUSSAGE_DE&lt;quote&gt;&lt;comma&gt;&lt;space&gt;_Art_Bez+&lt;quote&gt;&lt;space&gt;&lt;openparen&gt;Nr.&lt;space&gt;&lt;quote&gt;+_STA_NR+&lt;quote&gt;&lt;comma&gt;&lt;space&gt;&lt;quote&gt;+_Name.strip&lt;openparen&gt;&lt;closeparen&gt;+&lt;quote&gt;&lt;closeparen&gt;&lt;comma&gt;&lt;space&gt;&lt;quote&gt;+_Status_Bez+&lt;quote&gt;&lt;comma&gt;&lt;space&gt;&lt;quote&gt;+_bezeichner+_Priori_Bez&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;feature.setAttribute&lt;openparen&gt;&lt;quote&gt;EIB_AUSSAGE_FR&lt;quote&gt;&lt;comma&gt;&lt;space&gt;_Art_Bez_F+&lt;quote&gt;&lt;space&gt;&lt;openparen&gt;No.&lt;space&gt;&lt;quote&gt;+_STA_NR+&lt;quote&gt;&lt;comma&gt;&lt;space&gt;&lt;quote&gt;+_Name.strip&lt;openparen&gt;&lt;closeparen&gt;+&lt;quote&gt;&lt;closeparen&gt;&lt;comma&gt;&lt;space&gt;&lt;quote&gt;+_Status_Bez_F+&lt;quote&gt;&lt;comma&gt;&lt;space&gt;&lt;quote&gt;+_bezeichner_f+&lt;space&gt;&lt;quote&gt;&lt;space&gt;&lt;openparen&gt;sp&lt;u00e9&gt;cifique&lt;space&gt;au&lt;space&gt;projet&lt;closeparen&gt;&lt;quote&gt;&lt;closeparen&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;else:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;feature.setAttribute&lt;openparen&gt;&lt;quote&gt;EIB_AUSSAGE_DE&lt;quote&gt;&lt;comma&gt;&lt;space&gt;_Art_Bez+&lt;quote&gt;&lt;space&gt;&lt;openparen&gt;Nr.&lt;space&gt;&lt;quote&gt;+_STA_NR+&lt;quote&gt;&lt;comma&gt;&lt;space&gt;&lt;quote&gt;+_Name.strip&lt;openparen&gt;&lt;closeparen&gt;+&lt;quote&gt;&lt;closeparen&gt;&lt;comma&gt;&lt;space&gt;&lt;quote&gt;+_bezeichner+_Priori_Bez+&lt;quote&gt;&lt;space&gt;&lt;openparen&gt;projektspezifisch&lt;closeparen&gt;&lt;quote&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;feature.setAttribute&lt;openparen&gt;&lt;quote&gt;EIB_AUSSAGE_FR&lt;quote&gt;&lt;comma&gt;&lt;space&gt;_Art_Bez_F+&lt;quote&gt;&lt;space&gt;&lt;openparen&gt;No.&lt;space&gt;&lt;quote&gt;+_STA_NR+&lt;quote&gt;&lt;comma&gt;&lt;space&gt;&lt;quote&gt;+_Name.strip&lt;openparen&gt;&lt;closeparen&gt;+&lt;quote&gt;&lt;closeparen&gt;&lt;comma&gt;&lt;space&gt;&lt;quote&gt;+_bezeichner_f+&lt;space&gt;&lt;quote&gt;&lt;space&gt;&lt;openparen&gt;sp&lt;u00e9&gt;cifique&lt;space&gt;au&lt;space&gt;projet&lt;closeparen&gt;&lt;quote&gt;&lt;closeparen&gt;&lt;space&gt;"/>
-#!     <XFORM_PARM PARM_NAME="PYTHONSYMBOL" PARM_VALUE="CreateAussage"/>
-#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="PythonCaller_6"/>
-#! </TRANSFORMER>
-#! <TRANSFORMER
 #!   IDENTIFIER="197"
 #!   TYPE="UUIDGenerator"
 #!   VERSION="0"
@@ -2721,17 +2636,14 @@
 #!     <XFORM_ATTR ATTR_NAME="STA_NR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="ART_NR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="STA_NAME" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="PRIORI_NR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="EINTRAGKBS" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="BEW32USG" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="STATUS" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="STATUSMGDM" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="AMT_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="DAR_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="STATUS_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="STATUS_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_matched_records" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="PRIORI_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="PRIORI_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="ART_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="ART_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="BEWT_CODE" IS_USER_CREATED="false" FEAT_INDEX="0" />
@@ -2763,17 +2675,14 @@
 #!     <XFORM_ATTR ATTR_NAME="STA_NR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="ART_NR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="STA_NAME" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="PRIORI_NR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="EINTRAGKBS" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="BEW32USG" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="STATUS" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="STATUSMGDM" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="AMT_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="DAR_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="STATUS_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="STATUS_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_matched_records" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="PRIORI_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="PRIORI_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="ART_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="ART_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="BEWT_CODE" IS_USER_CREATED="false" FEAT_INDEX="0" />
@@ -2806,17 +2715,14 @@
 #!     <XFORM_ATTR ATTR_NAME="STA_NR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="ART_NR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="STA_NAME" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="PRIORI_NR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="EINTRAGKBS" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="BEW32USG" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="STATUS" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="STATUSMGDM" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="AMT_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="DAR_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="STATUS_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="STATUS_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_matched_records" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="PRIORI_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="PRIORI_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="ART_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="ART_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="BEWT_CODE" IS_USER_CREATED="false" FEAT_INDEX="0" />
@@ -2852,17 +2758,14 @@
 #!     <XFORM_ATTR ATTR_NAME="STA_NR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="ART_NR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="STA_NAME" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="PRIORI_NR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="EINTRAGKBS" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="BEW32USG" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="STATUS" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="STATUSMGDM" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="AMT_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="DAR_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="STATUS_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="STATUS_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_matched_records" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="PRIORI_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="PRIORI_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="ART_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="ART_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="BEWT_CODE" IS_USER_CREATED="false" FEAT_INDEX="0" />
@@ -2896,7 +2799,7 @@
 #! >
 #!     <OUTPUT_FEAT NAME="OUTPUT"/>
 #!     <FEAT_COLLAPSED COLLAPSED="0"/>
-#!     <XFORM_ATTR ATTR_NAME="STATUS" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="STATUSMGDM" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="AMT_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="DAR_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_matched_records" IS_USER_CREATED="false" FEAT_INDEX="0" />
@@ -2923,7 +2826,7 @@
 #!     <OUTPUT_FEAT NAME="OUTPUT"/>
 #!     <FEAT_COLLAPSED COLLAPSED="0"/>
 #!     <XFORM_ATTR ATTR_NAME="VOR_OIDURSPRUNG" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="STATUS" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="STATUSMGDM" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="AMT_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="DAR_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_matched_records" IS_USER_CREATED="false" FEAT_INDEX="0" />
@@ -2949,7 +2852,7 @@
 #!     <FEAT_COLLAPSED COLLAPSED="0"/>
 #!     <XFORM_ATTR ATTR_NAME="VOR_OIDHINWEIS" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="VOR_OIDURSPRUNG" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="STATUS" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="STATUSMGDM" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="AMT_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="DAR_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_matched_records" IS_USER_CREATED="false" FEAT_INDEX="0" />
@@ -2981,7 +2884,7 @@
 #!     <FEAT_COLLAPSED COLLAPSED="0"/>
 #!     <XFORM_ATTR ATTR_NAME="VOR_OIDHINWEIS" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="VOR_OIDURSPRUNG" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="STATUS" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="STATUSMGDM" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="AMT_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="DAR_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_matched_records" IS_USER_CREATED="false" FEAT_INDEX="0" />
@@ -3013,7 +2916,7 @@
 #!     <FEAT_COLLAPSED COLLAPSED="0"/>
 #!     <XFORM_ATTR ATTR_NAME="VOR_OIDHINWEIS" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="VOR_OIDURSPRUNG" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="STATUS" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="STATUSMGDM" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="AMT_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="DAR_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_matched_records" IS_USER_CREATED="false" FEAT_INDEX="0" />
@@ -3041,17 +2944,14 @@
 #!     <XFORM_ATTR ATTR_NAME="STA_NR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="ART_NR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="STA_NAME" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="PRIORI_NR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="EINTRAGKBS" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="BEW32USG" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="STATUS" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="STATUSMGDM" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="AMT_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="DAR_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="STATUS_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="STATUS_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_matched_records" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="PRIORI_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="PRIORI_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="ART_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="ART_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="BEWT_CODE" IS_USER_CREATED="false" FEAT_INDEX="0" />
@@ -3061,17 +2961,14 @@
 #!     <XFORM_ATTR ATTR_NAME="STA_NR" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="ART_NR" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="STA_NAME" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="PRIORI_NR" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="EINTRAGKBS" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="BEW32USG" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="STATUS" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="STATUSMGDM" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="AMT_OID" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="DAR_OID" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="STATUS_DE" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="STATUS_FR" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="_matched_records" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="PRIORI_DE" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="PRIORI_FR" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="ART_DE" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="ART_FR" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <OUTPUT_FEAT NAME="REFERENCED"/>
@@ -3253,17 +3150,14 @@
 #!     <XFORM_ATTR ATTR_NAME="STA_NR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="ART_NR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="STA_NAME" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="PRIORI_NR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="EINTRAGKBS" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="BEW32USG" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="STATUS" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="STATUSMGDM" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="AMT_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="DAR_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="STATUS_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="STATUS_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_matched_records" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="PRIORI_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="PRIORI_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="ART_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="ART_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="BEWT_CODE" IS_USER_CREATED="false" FEAT_INDEX="0" />
@@ -3304,7 +3198,7 @@
 #!     <FEAT_COLLAPSED COLLAPSED="0"/>
 #!     <XFORM_ATTR ATTR_NAME="VOR_OIDHINWEIS" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="VOR_OIDURSPRUNG" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="STATUS" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="STATUSMGDM" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="AMT_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="DAR_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_matched_records" IS_USER_CREATED="false" FEAT_INDEX="0" />
@@ -3418,10 +3312,9 @@
 #!     <XFORM_ATTR ATTR_NAME="STA_NR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="ART_NR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="STA_NAME" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="PRIORI_NR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="EINTRAGKBS" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="BEW32USG" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="STATUS" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="STATUSMGDM" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="AMT_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <OUTPUT_FEAT NAME="NOT_MERGED"/>
 #!     <FEAT_COLLAPSED COLLAPSED="1"/>
@@ -3429,10 +3322,9 @@
 #!     <XFORM_ATTR ATTR_NAME="STA_NR" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="ART_NR" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="STA_NAME" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="PRIORI_NR" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="EINTRAGKBS" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="BEW32USG" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="STATUS" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="STATUSMGDM" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <OUTPUT_FEAT NAME="REFERENCED"/>
 #!     <FEAT_COLLAPSED COLLAPSED="2"/>
 #!     <XFORM_ATTR ATTR_NAME="_joinfield" IS_USER_CREATED="false" FEAT_INDEX="2" />
@@ -3512,10 +3404,9 @@
 #!     <XFORM_ATTR ATTR_NAME="STA_NR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="ART_NR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="STA_NAME" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="PRIORI_NR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="EINTRAGKBS" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="BEW32USG" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="STATUS" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="STATUSMGDM" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="AMT_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="DAR_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <OUTPUT_FEAT NAME="NOT_MERGED"/>
@@ -3524,10 +3415,9 @@
 #!     <XFORM_ATTR ATTR_NAME="STA_NR" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="ART_NR" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="STA_NAME" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="PRIORI_NR" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="EINTRAGKBS" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="BEW32USG" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="STATUS" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="STATUSMGDM" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="AMT_OID" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <OUTPUT_FEAT NAME="REFERENCED"/>
 #!     <FEAT_COLLAPSED COLLAPSED="2"/>
@@ -3661,7 +3551,7 @@
 #!   ORDER="500000000000000"
 #!   PARMS_EDITED="true"
 #!   ENABLED="true"
-#!   LAST_PARM_EDIT="16674"
+#!   LAST_PARM_EDIT="18310"
 #! >
 #!     <OUTPUT_FEAT NAME="OUTPUT"/>
 #!     <FEAT_COLLAPSED COLLAPSED="0"/>
@@ -3670,17 +3560,14 @@
 #!     <XFORM_ATTR ATTR_NAME="STA_NR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="ART_NR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="STA_NAME" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="PRIORI_NR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="EINTRAGKBS" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="BEW32USG" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="STATUS" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="STATUSMGDM" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="AMT_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="DAR_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="STATUS_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="STATUS_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_matched_records" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="PRIORI_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="PRIORI_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="ART_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="ART_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="BEWT_CODE" IS_USER_CREATED="false" FEAT_INDEX="0" />
@@ -3692,7 +3579,7 @@
 #!     <XFORM_ATTR ATTR_NAME="VOR_PUBLIZIERTAB" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="ATTRIBUTE_HANDLING" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="&quot;&quot; EIB_LEGENDESYMBOL_DE SET_TO $(LEGEND_BASEURL)&lt;at&gt;Value&lt;openparen&gt;ART_NR&lt;closeparen&gt;.png  EIB_LEGENDESYMBOL_FR SET_TO $(LEGEND_BASEURL)&lt;at&gt;Value&lt;openparen&gt;ART_NR&lt;closeparen&gt;.png"/>
+#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="&quot;&quot; EIB_LEGENDESYMBOL_DE SET_TO $(LEGEND_BASEURL)&lt;at&gt;Value&lt;openparen&gt;STATUS_DE&lt;closeparen&gt;.png  EIB_LEGENDESYMBOL_FR SET_TO $(LEGEND_BASEURL)&lt;at&gt;Value&lt;openparen&gt;STATUS_FR&lt;closeparen&gt;.png"/>
 #!     <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
 #!     <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_VALUE="No Substitution"/>
 #!     <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
@@ -3714,22 +3601,21 @@
 #! >
 #!     <OUTPUT_FEAT NAME="OUTPUT"/>
 #!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="EIB_AUSSAGE_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="EIB_AUSSAGE_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="EIB_LEGENDESYMBOL_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="EIB_LEGENDESYMBOL_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="STA_NR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="ART_NR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="STA_NAME" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="PRIORI_NR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="EINTRAGKBS" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="BEW32USG" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="STATUS" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="STATUSMGDM" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="AMT_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="DAR_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="STATUS_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="STATUS_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_matched_records" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="PRIORI_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="PRIORI_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="ART_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="ART_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="BEWT_CODE" IS_USER_CREATED="false" FEAT_INDEX="0" />
@@ -3739,27 +3625,24 @@
 #!     <XFORM_ATTR ATTR_NAME="FLA_PUBLIZIERTAB" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="EIB_PUBLIZIERTAB" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="VOR_PUBLIZIERTAB" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="EIB_AUSSAGE_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="EIB_AUSSAGE_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="EIB_SORT" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <OUTPUT_FEAT NAME="&lt;REJECTED&gt;"/>
 #!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="EIB_AUSSAGE_DE" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="EIB_AUSSAGE_FR" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="EIB_LEGENDESYMBOL_DE" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="EIB_LEGENDESYMBOL_FR" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="STA_NR" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="ART_NR" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="STA_NAME" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="PRIORI_NR" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="EINTRAGKBS" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="BEW32USG" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="STATUS" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="STATUSMGDM" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="AMT_OID" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="DAR_OID" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="STATUS_DE" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="STATUS_FR" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="_matched_records" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="PRIORI_DE" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="PRIORI_FR" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="ART_DE" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="ART_FR" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="BEWT_CODE" IS_USER_CREATED="false" FEAT_INDEX="1" />
@@ -3769,8 +3652,6 @@
 #!     <XFORM_ATTR ATTR_NAME="FLA_PUBLIZIERTAB" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="EIB_PUBLIZIERTAB" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="VOR_PUBLIZIERTAB" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="EIB_AUSSAGE_DE" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="EIB_AUSSAGE_FR" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="fme_rejection_code" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="EIB_SORT" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_PARM PARM_NAME="CNT_ATTR" PARM_VALUE="EIB_SORT"/>
@@ -3797,17 +3678,14 @@
 #!     <XFORM_ATTR ATTR_NAME="STA_NR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="ART_NR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="STA_NAME" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="PRIORI_NR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="EINTRAGKBS" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="BEW32USG" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="STATUS" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="STATUSMGDM" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="AMT_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="DAR_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="STATUS_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="STATUS_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_matched_records" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="PRIORI_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="PRIORI_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="ART_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="ART_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="BEWT_CODE" IS_USER_CREATED="false" FEAT_INDEX="0" />
@@ -3877,12 +3755,12 @@
 #!   IDENTIFIER="164"
 #!   TYPE="AttributeKeeper"
 #!   VERSION="3"
-#!   POSITION="1369.8900000000001 -1177"
-#!   BOUNDING_RECT="1369.8900000000001 -1177 -1 -1"
+#!   POSITION="1842.195859422231 -1177"
+#!   BOUNDING_RECT="1842.195859422231 -1177 -1 -1"
 #!   ORDER="500000000000000"
 #!   PARMS_EDITED="true"
 #!   ENABLED="true"
-#!   LAST_PARM_EDIT="16674"
+#!   LAST_PARM_EDIT="18310"
 #! >
 #!     <OUTPUT_FEAT NAME="OUTPUT"/>
 #!     <FEAT_COLLAPSED COLLAPSED="0"/>
@@ -3890,11 +3768,10 @@
 #!     <XFORM_ATTR ATTR_NAME="STA_NR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="ART_NR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="STA_NAME" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="PRIORI_NR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="EINTRAGKBS" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="BEW32USG" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="STATUS" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_PARM PARM_NAME="KEEP_ATTRS" PARM_VALUE="ART_NR,STATUS,STA_NR,BEW32USG,PRIORI_NR,STA_NAME,_joinfield,EINTRAGKBS"/>
+#!     <XFORM_ATTR ATTR_NAME="STATUSMGDM" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="KEEP_ATTRS" PARM_VALUE="STA_NAME,_joinfield,ART_NR,EINTRAGKBS,BEW32USG,STATUSMGDM,STA_NR"/>
 #!     <XFORM_PARM PARM_NAME="KEEP_LIST" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
@@ -3909,17 +3786,16 @@
 #!   ORDER="500000000000000"
 #!   PARMS_EDITED="true"
 #!   ENABLED="true"
-#!   LAST_PARM_EDIT="16674"
+#!   LAST_PARM_EDIT="18310"
 #! >
 #!     <OUTPUT_FEAT NAME="JOINED"/>
 #!     <FEAT_COLLAPSED COLLAPSED="0"/>
 #!     <XFORM_ATTR ATTR_NAME="STA_NR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="ART_NR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="STA_NAME" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="PRIORI_NR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="EINTRAGKBS" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="BEW32USG" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="STATUS" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="STATUSMGDM" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="AMT_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="DAR_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="STATUS_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
@@ -3933,95 +3809,36 @@
 #!     <XFORM_PARM PARM_NAME="DATASET" PARM_VALUE="$(GEODB_DATABASE)"/>
 #!     <XFORM_PARM PARM_NAME="DYNGROUP_0" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="FORMAT" PARM_VALUE="ORACLE_NONSPATIAL"/>
-#!     <XFORM_PARM PARM_NAME="FORMAT_PARAMS" PARM_VALUE="ORACLE_NONSPATIAL_PASSWORD,&quot;OPTIONAL PASSWORD_ENCODED&quot;,ORACLE_NONSPATIAL&lt;space&gt;Password:,ORACLE_NONSPATIAL_USE_UNIFIED_DATE_ATTRS,&quot;IGNORE TEXT&quot;,ORACLE_NONSPATIAL&lt;space&gt;,ORACLE_NONSPATIAL_SHOW_SYSTEM_TABLES,&quot;OPTIONAL CHECKBOX YES%NO&quot;,ORACLE_NONSPATIAL&lt;space&gt;Include&lt;space&gt;System&lt;space&gt;Tables,ORACLE_NONSPATIAL_REMOVE_SCHEMA_QUALIFIER,&quot;OPTIONAL CHECKBOX YES%NO&quot;,ORACLE_NONSPATIAL&lt;space&gt;Remove&lt;space&gt;Table&lt;space&gt;Qualifier,ORACLE_NONSPATIAL_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS,&quot;IGNORE TEXT&quot;,ORACLE_NONSPATIAL&lt;space&gt;,ORACLE_NONSPATIAL_USER_NAME,&quot;OPTIONAL TEXT_ENCODED&quot;,ORACLE_NONSPATIAL&lt;space&gt;Username:,ORACLE_NONSPATIAL_SERVER_TYPE,&quot;IGNORE TEXT&quot;,ORACLE_NONSPATIAL&lt;space&gt;,ORACLE_NONSPATIAL_PERSISTENT_CONNECTION,&quot;OPTIONAL CHECKBOX YES%NO&quot;,ORACLE_NONSPATIAL&lt;space&gt;Persistent&lt;space&gt;Connection"/>
+#!     <XFORM_PARM PARM_NAME="FORMAT_PARAMS" PARM_VALUE="ORACLE_NONSPATIAL_REMOVE_SCHEMA_QUALIFIER,&quot;OPTIONAL CHECKBOX YES%NO&quot;,ORACLE_NONSPATIAL&lt;space&gt;Remove&lt;space&gt;Table&lt;space&gt;Qualifier,ORACLE_NONSPATIAL_PERSISTENT_CONNECTION,&quot;OPTIONAL CHECKBOX YES%NO&quot;,ORACLE_NONSPATIAL&lt;space&gt;Persistent&lt;space&gt;Connection,ORACLE_NONSPATIAL_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS,&quot;OPTIONAL NO_EDIT TEXT&quot;,ORACLE_NONSPATIAL&lt;space&gt;,ORACLE_NONSPATIAL_USER_NAME,&quot;OPTIONAL TEXT_ENCODED&quot;,ORACLE_NONSPATIAL&lt;space&gt;Username:,ORACLE_NONSPATIAL_PASSWORD,&quot;OPTIONAL PASSWORD_ENCODED&quot;,ORACLE_NONSPATIAL&lt;space&gt;Password:,ORACLE_NONSPATIAL_SHOW_SYSTEM_TABLES,&quot;OPTIONAL CHECKBOX YES%NO&quot;,ORACLE_NONSPATIAL&lt;space&gt;Include&lt;space&gt;System&lt;space&gt;Tables,ORACLE_NONSPATIAL_SERVER_TYPE,&quot;OPTIONAL NO_EDIT TEXT&quot;,ORACLE_NONSPATIAL&lt;space&gt;,ORACLE_NONSPATIAL_USE_UNIFIED_DATE_ATTRS,&quot;OPTIONAL NO_EDIT TEXT&quot;,ORACLE_NONSPATIAL&lt;space&gt;"/>
 #!     <XFORM_PARM PARM_NAME="JOINED_ATTRIBUTE_PREFIX" PARM_VALUE="&lt;Unused&gt;"/>
 #!     <XFORM_PARM PARM_NAME="JOINED_LIST_NAME" PARM_VALUE="&lt;Unused&gt;"/>
 #!     <XFORM_PARM PARM_NAME="JOIN_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="JOIN_KEYS" PARM_VALUE="STATUS&lt;space&gt;STATUS_NR"/>
+#!     <XFORM_PARM PARM_NAME="JOIN_KEYS" PARM_VALUE="STATUSMGDM&lt;space&gt;STATUS_CODE"/>
 #!     <XFORM_PARM PARM_NAME="MATCHED_ATTR_NAME" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="MATCH_MULTIPLE_DISPLAY" PARM_VALUE="&lt;Unused&gt;"/>
 #!     <XFORM_PARM PARM_NAME="MATCH_RULE_DISPLAY" PARM_VALUE="Must Match Exactly One (1:1)"/>
 #!     <XFORM_PARM PARM_NAME="OPTIMIZE_GROUP" PARM_VALUE="FME_DISCLOSURE_OPEN"/>
 #!     <XFORM_PARM PARM_NAME="ORACLE_NONSPATIAL_PASSWORD" PARM_VALUE="$(GEODB_PASSWORD)"/>
 #!     <XFORM_PARM PARM_NAME="ORACLE_NONSPATIAL_PERSISTENT_CONNECTION" PARM_VALUE="YES"/>
-#!     <XFORM_PARM PARM_NAME="ORACLE_NONSPATIAL_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS" PARM_VALUE="Yes"/>
+#!     <XFORM_PARM PARM_NAME="ORACLE_NONSPATIAL_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="ORACLE_NONSPATIAL_REMOVE_SCHEMA_QUALIFIER" PARM_VALUE="NO"/>
-#!     <XFORM_PARM PARM_NAME="ORACLE_NONSPATIAL_SERVER_TYPE" PARM_VALUE="ORACLE8i"/>
+#!     <XFORM_PARM PARM_NAME="ORACLE_NONSPATIAL_SERVER_TYPE" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="ORACLE_NONSPATIAL_SHOW_SYSTEM_TABLES" PARM_VALUE="NO"/>
 #!     <XFORM_PARM PARM_NAME="ORACLE_NONSPATIAL_USER_NAME" PARM_VALUE="$(GEODB_USERNAME)"/>
-#!     <XFORM_PARM PARM_NAME="ORACLE_NONSPATIAL_USE_UNIFIED_DATE_ATTRS" PARM_VALUE="YES"/>
+#!     <XFORM_PARM PARM_NAME="ORACLE_NONSPATIAL_USE_UNIFIED_DATE_ATTRS" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="PREFETCH_EXHAUSTIVE" PARM_VALUE="Yes"/>
 #!     <XFORM_PARM PARM_NAME="PREFETCH_QUERY" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="TABLE" PARM_VALUE="GEODB.BALISKBS_STATUS"/>
+#!     <XFORM_PARM PARM_NAME="TABLE" PARM_VALUE="GEODB.BALISKBS_STATMGDM"/>
 #!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="TRIM_KEY_FIELDS_DISPLAY" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Joiner"/>
 #! </TRANSFORMER>
 #! <TRANSFORMER
-#!   IDENTIFIER="260"
-#!   TYPE="Joiner"
-#!   VERSION="5"
-#!   POSITION="3617.1700000000001 -1875.01"
-#!   BOUNDING_RECT="3617.1700000000001 -1875.01 -1 -1"
-#!   ORDER="500000000000000"
-#!   PARMS_EDITED="true"
-#!   ENABLED="true"
-#!   LAST_PARM_EDIT="16674"
-#! >
-#!     <OUTPUT_FEAT NAME="JOINED"/>
-#!     <FEAT_COLLAPSED COLLAPSED="0"/>
-#!     <XFORM_ATTR ATTR_NAME="STA_NR" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="ART_NR" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="STA_NAME" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="PRIORI_NR" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="EINTRAGKBS" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="BEW32USG" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="STATUS" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="AMT_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="DAR_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="STATUS_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="STATUS_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="_matched_records" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="PRIORI_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="PRIORI_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_PARM PARM_NAME="ADDED_FIELDS" PARM_VALUE="PRIORI_DE&lt;space&gt;PRIORI_FR"/>
-#!     <XFORM_PARM PARM_NAME="ATTR_ACCUM_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="ATTR_ACCUM_MODE" PARM_VALUE="Merge Joined"/>
-#!     <XFORM_PARM PARM_NAME="ATTR_CONFLICT_RES" PARM_VALUE="Use Original"/>
-#!     <XFORM_PARM PARM_NAME="CACHE_SIZE" PARM_VALUE="5000"/>
-#!     <XFORM_PARM PARM_NAME="DATASET" PARM_VALUE="$(GEODB_DATABASE)"/>
-#!     <XFORM_PARM PARM_NAME="DYNGROUP_0" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="FORMAT" PARM_VALUE="ORACLE_NONSPATIAL"/>
-#!     <XFORM_PARM PARM_NAME="FORMAT_PARAMS" PARM_VALUE="ORACLE_NONSPATIAL_SERVER_TYPE,&quot;IGNORE TEXT&quot;,ORACLE_NONSPATIAL&lt;space&gt;,ORACLE_NONSPATIAL_SHOW_SYSTEM_TABLES,&quot;OPTIONAL CHECKBOX YES%NO&quot;,ORACLE_NONSPATIAL&lt;space&gt;Include&lt;space&gt;System&lt;space&gt;Tables,ORACLE_NONSPATIAL_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS,&quot;IGNORE TEXT&quot;,ORACLE_NONSPATIAL&lt;space&gt;,ORACLE_NONSPATIAL_REMOVE_SCHEMA_QUALIFIER,&quot;OPTIONAL CHECKBOX YES%NO&quot;,ORACLE_NONSPATIAL&lt;space&gt;Remove&lt;space&gt;Table&lt;space&gt;Qualifier,ORACLE_NONSPATIAL_PASSWORD,&quot;OPTIONAL PASSWORD_ENCODED&quot;,ORACLE_NONSPATIAL&lt;space&gt;Password:,ORACLE_NONSPATIAL_USE_UNIFIED_DATE_ATTRS,&quot;IGNORE TEXT&quot;,ORACLE_NONSPATIAL&lt;space&gt;,ORACLE_NONSPATIAL_USER_NAME,&quot;OPTIONAL TEXT_ENCODED&quot;,ORACLE_NONSPATIAL&lt;space&gt;Username:,ORACLE_NONSPATIAL_PERSISTENT_CONNECTION,&quot;OPTIONAL CHECKBOX YES%NO&quot;,ORACLE_NONSPATIAL&lt;space&gt;Persistent&lt;space&gt;Connection"/>
-#!     <XFORM_PARM PARM_NAME="JOINED_ATTRIBUTE_PREFIX" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <XFORM_PARM PARM_NAME="JOINED_LIST_NAME" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <XFORM_PARM PARM_NAME="JOIN_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="JOIN_KEYS" PARM_VALUE="PRIORI_NR&lt;space&gt;PRIORI_NR"/>
-#!     <XFORM_PARM PARM_NAME="MATCHED_ATTR_NAME" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="MATCH_MULTIPLE_DISPLAY" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <XFORM_PARM PARM_NAME="MATCH_RULE_DISPLAY" PARM_VALUE="Must Match Exactly One (1:1)"/>
-#!     <XFORM_PARM PARM_NAME="OPTIMIZE_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="ORACLE_NONSPATIAL_PASSWORD" PARM_VALUE="$(GEODB_PASSWORD)"/>
-#!     <XFORM_PARM PARM_NAME="ORACLE_NONSPATIAL_PERSISTENT_CONNECTION" PARM_VALUE="YES"/>
-#!     <XFORM_PARM PARM_NAME="ORACLE_NONSPATIAL_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS" PARM_VALUE="Yes"/>
-#!     <XFORM_PARM PARM_NAME="ORACLE_NONSPATIAL_REMOVE_SCHEMA_QUALIFIER" PARM_VALUE="NO"/>
-#!     <XFORM_PARM PARM_NAME="ORACLE_NONSPATIAL_SERVER_TYPE" PARM_VALUE="ORACLE8i"/>
-#!     <XFORM_PARM PARM_NAME="ORACLE_NONSPATIAL_SHOW_SYSTEM_TABLES" PARM_VALUE="NO"/>
-#!     <XFORM_PARM PARM_NAME="ORACLE_NONSPATIAL_USER_NAME" PARM_VALUE="$(GEODB_USERNAME)"/>
-#!     <XFORM_PARM PARM_NAME="ORACLE_NONSPATIAL_USE_UNIFIED_DATE_ATTRS" PARM_VALUE="YES"/>
-#!     <XFORM_PARM PARM_NAME="PREFETCH_EXHAUSTIVE" PARM_VALUE="Yes"/>
-#!     <XFORM_PARM PARM_NAME="PREFETCH_QUERY" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="TABLE" PARM_VALUE="GEODB.BALISKBS_PRIORI"/>
-#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="TRIM_KEY_FIELDS_DISPLAY" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Joiner_2"/>
-#! </TRANSFORMER>
-#! <TRANSFORMER
 #!   IDENTIFIER="263"
 #!   TYPE="Joiner"
 #!   VERSION="5"
-#!   POSITION="3596.1599999999999 -2294.8000000000002"
-#!   BOUNDING_RECT="3596.1599999999999 -2294.8000000000002 -1 -1"
+#!   POSITION="3635.2228906289065 -1893.517578084872"
+#!   BOUNDING_RECT="3635.2228906289065 -1893.517578084872 -1 -1"
 #!   ORDER="500000000000000"
 #!   PARMS_EDITED="true"
 #!   ENABLED="true"
@@ -4032,17 +3849,14 @@
 #!     <XFORM_ATTR ATTR_NAME="STA_NR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="ART_NR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="STA_NAME" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="PRIORI_NR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="EINTRAGKBS" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="BEW32USG" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="STATUS" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="STATUSMGDM" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="AMT_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="DAR_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="STATUS_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="STATUS_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_matched_records" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="PRIORI_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="PRIORI_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="ART_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="ART_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_PARM PARM_NAME="ADDED_FIELDS" PARM_VALUE="ART_DE&lt;space&gt;ART_FR"/>
@@ -4147,6 +3961,108 @@
 #!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeKeeper_5"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="139"
+#!   TYPE="AttributeTrimmer"
+#!   VERSION="3"
+#!   POSITION="1306.8312501306834 -1177"
+#!   BOUNDING_RECT="1306.8312501306834 -1177 -1 -1"
+#!   ORDER="500000000000001"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="18310"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="_joinfield" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="OBJECTID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="STA_NR" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="BEDEUT" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ART_NR" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="STA_NAME" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="HGDE_NR" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="HGDE_NAME" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="GEMEINDEN" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="UNTERSUCHT" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="PRIORI_NR" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="FLAECHE" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="VOLUMEN" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ZEIT_START" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ZEIT_ENDE" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="UNFALLZEIT" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="INFOKBS" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="EINTRAGKBS" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="INFO" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="SHAPE.AREA" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="SHAPE.LEN" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="BEW32USG" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="INBETRIEB" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="DEPONIETYP" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="KOORD_E" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="KOORD_N" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="NACHSORGE" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="UNTERSUCH_M" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="STATUS" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="STATUSMGDM" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="LETZTE_ANP" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="STOFFE_D" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="STOFFE_F" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="SRC_ATTRS" PARM_VALUE="STA_NAME"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TRIM_CHARS" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TRIM_TO_NONE" PARM_VALUE="Yes"/>
+#!     <XFORM_PARM PARM_NAME="TRIM_TYPE" PARM_VALUE="Both"/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeTrimmer"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="137"
+#!   TYPE="AttributeCreator"
+#!   VERSION="8"
+#!   POSITION="8171.2464851921231 -2265.4200000000001"
+#!   BOUNDING_RECT="8171.2464851921231 -2265.4200000000001 -1 -1"
+#!   ORDER="500000000000002"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="18310"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="EIB_AUSSAGE_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="EIB_AUSSAGE_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="EIB_LEGENDESYMBOL_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="EIB_LEGENDESYMBOL_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="STA_NR" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ART_NR" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="STA_NAME" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="EINTRAGKBS" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="BEW32USG" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="STATUSMGDM" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="AMT_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="DAR_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="STATUS_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="STATUS_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_matched_records" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ART_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ART_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="BEWT_CODE" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="usg_VOR_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="FLA_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="EIB_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="FLA_PUBLIZIERTAB" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="EIB_PUBLIZIERTAB" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="VOR_PUBLIZIERTAB" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_HANDLING" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="&quot;&quot; EIB_AUSSAGE_DE SET_TO &lt;at&gt;Value&lt;openparen&gt;STATUS_DE&lt;closeparen&gt;&lt;space&gt;&lt;openparen&gt;&lt;at&gt;Value&lt;openparen&gt;ART_DE&lt;closeparen&gt;&lt;space&gt;Nr.&lt;space&gt;&lt;at&gt;Value&lt;openparen&gt;STA_NR&lt;closeparen&gt;&lt;comma&gt;&lt;space&gt;&lt;at&gt;Value&lt;openparen&gt;STA_NAME&lt;closeparen&gt;&lt;closeparen&gt;  EIB_AUSSAGE_FR SET_TO &lt;at&gt;Value&lt;openparen&gt;STATUS_FR&lt;closeparen&gt;&lt;space&gt;&lt;openparen&gt;&lt;at&gt;Value&lt;openparen&gt;ART_FR&lt;closeparen&gt;&lt;space&gt;Nr.&lt;space&gt;&lt;at&gt;Value&lt;openparen&gt;STA_NR&lt;closeparen&gt;&lt;comma&gt;&lt;space&gt;&lt;at&gt;Value&lt;openparen&gt;STA_NAME&lt;closeparen&gt;&lt;closeparen&gt;"/>
+#!     <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_VALUE="No Substitution"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_PRIOR_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_SUBSEQUENT_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeCreator_11"/>
 #! </TRANSFORMER>
 #! </TRANSFORMERS>
 #! <FEAT_LINKS>
@@ -4327,9 +4243,31 @@
 #!   EXTRA_POINTS=""
 #! />
 #! <FEAT_LINK
+#!   IDENTIFIER="188"
+#!   SOURCE_NODE="137"
+#!   TARGET_NODE="257"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
 #!   IDENTIFIER="145"
 #!   SOURCE_NODE="138"
 #!   TARGET_NODE="92"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="156"
+#!   SOURCE_NODE="139"
+#!   TARGET_NODE="164"
 #!   SOURCE_PORT_DESC="fo 0 OUTPUT"
 #!   TARGET_PORT_DESC="fi 0 "
 #!   ENABLED="true"
@@ -4349,9 +4287,9 @@
 #!   EXTRA_POINTS=""
 #! />
 #! <FEAT_LINK
-#!   IDENTIFIER="188"
+#!   IDENTIFIER="155"
 #!   SOURCE_NODE="141"
-#!   TARGET_NODE="164"
+#!   TARGET_NODE="139"
 #!   SOURCE_PORT_DESC="fo 0 OUTPUT"
 #!   TARGET_PORT_DESC="fi 0 "
 #!   ENABLED="true"
@@ -4525,17 +4463,6 @@
 #!   EXTRA_POINTS=""
 #! />
 #! <FEAT_LINK
-#!   IDENTIFIER="258"
-#!   SOURCE_NODE="181"
-#!   TARGET_NODE="257"
-#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
-#!   TARGET_PORT_DESC="fi 0 "
-#!   ENABLED="true"
-#!   EXECUTION_IDX="0"
-#!   HIDDEN="false"
-#!   EXTRA_POINTS=""
-#! />
-#! <FEAT_LINK
 #!   IDENTIFIER="192"
 #!   SOURCE_NODE="185"
 #!   TARGET_NODE="178"
@@ -4558,9 +4485,9 @@
 #!   EXTRA_POINTS=""
 #! />
 #! <FEAT_LINK
-#!   IDENTIFIER="262"
+#!   IDENTIFIER="157"
 #!   SOURCE_NODE="196"
-#!   TARGET_NODE="260"
+#!   TARGET_NODE="263"
 #!   SOURCE_PORT_DESC="fo 0 JOINED"
 #!   TARGET_PORT_DESC="fi 0 "
 #!   ENABLED="true"
@@ -4712,9 +4639,9 @@
 #!   EXTRA_POINTS=""
 #! />
 #! <FEAT_LINK
-#!   IDENTIFIER="251"
+#!   IDENTIFIER="184"
 #!   SOURCE_NODE="249"
-#!   TARGET_NODE="181"
+#!   TARGET_NODE="137"
 #!   SOURCE_PORT_DESC="fo 0 OUTPUT"
 #!   TARGET_PORT_DESC="fi 0 "
 #!   ENABLED="true"
@@ -4728,17 +4655,6 @@
 #!   TARGET_NODE="220"
 #!   SOURCE_PORT_DESC="fo 0 OUTPUT"
 #!   TARGET_PORT_DESC="-1"
-#!   ENABLED="true"
-#!   EXECUTION_IDX="0"
-#!   HIDDEN="false"
-#!   EXTRA_POINTS=""
-#! />
-#! <FEAT_LINK
-#!   IDENTIFIER="264"
-#!   SOURCE_NODE="260"
-#!   TARGET_NODE="263"
-#!   SOURCE_PORT_DESC="fo 0 JOINED"
-#!   TARGET_PORT_DESC="fi 0 "
 #!   ENABLED="true"
 #!   EXECUTION_IDX="0"
 #!   HIDDEN="false"
@@ -5584,7 +5500,6 @@ FME_REPROJECTION_ENGINE FME
 FME_IMPLICIT_CSMAP_REPROJECTION_MODE Datum
 FME_GEOMETRY_HANDLING Enhanced
 FME_STROKE_MAX_DEVIATION 0
-LOG_TIMINGS YES
 LOG_FILTER_MASK -1
 DEFAULT_MACRO DATASET_KEYWORD_GEODATABASE_SDE_1 GEODATABASE_SDE_1
 DEFAULT_MACRO DATASET_KEYWORD_XLSXR_1 XLSXR_1
@@ -5629,6 +5544,9 @@ XLSXR_1_MERGE_DEF XLSXR_1::AMT EXACT AMT
 XLSXR_2_MERGE_DEF XLSXR_2::DARSTELLUNGSDIENST EXACT DARSTELLUNGSDIENST
 # -------------------------------------------------------------------------
 
+FACTORY_DEF * TeeFactory    FACTORY_NAME "AMT (XLSXR_1) Splitter"    INPUT FEATURE_TYPE AMT    OUTPUT FEATURE_TYPE AMT_XLSXR_1_0_UHiqv03QpVU=    OUTPUT FEATURE_TYPE AMT_XLSXR_1_1_JDSzqpD1FY4=
+# -------------------------------------------------------------------------
+
 FACTORY_DEF * TeeFactory    FACTORY_NAME "DARSTELLUNGSDIENST (XLSXR_2) Splitter"    INPUT FEATURE_TYPE DARSTELLUNGSDIENST    OUTPUT FEATURE_TYPE DARSTELLUNGSDIENST_XLSXR_2_0_nzumT65SMOA=    OUTPUT FEATURE_TYPE DARSTELLUNGSDIENST_XLSXR_2_1_Ngn+9ViRT3U=
 # -------------------------------------------------------------------------
 
@@ -5636,9 +5554,6 @@ FACTORY_DEF * TeeFactory    FACTORY_NAME "GEODB.BALISKBS_KBS (GEODATABASE_SDE_1)
 # -------------------------------------------------------------------------
 
 FACTORY_DEF * TeeFactory    FACTORY_NAME "GEODB.BALISKBS_BEWT (GEODATABASE_SDE_1) Splitter"    INPUT FEATURE_TYPE GEODB.BALISKBS_BEWT    OUTPUT FEATURE_TYPE GEODB.BALISKBS_BEWT_GEODATABASE_SDE_1
-# -------------------------------------------------------------------------
-
-FACTORY_DEF * TeeFactory    FACTORY_NAME "AMT (XLSXR_1) Splitter"    INPUT FEATURE_TYPE AMT    OUTPUT FEATURE_TYPE AMT_XLSXR_1_0_UHiqv03QpVU=    OUTPUT FEATURE_TYPE AMT_XLSXR_1_1_JDSzqpD1FY4=
 DEFAULT_MACRO WB_CURRENT_CONTEXT
 # -------------------------------------------------------------------------
 
@@ -5652,9 +5567,9 @@ FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME AttributeCreator_6    INPUT  FEAT
 
 # -------------------------------------------------------------------------
 
-INCLUDE [    set macroLine "MACRO AttributeKeeper_2_90fc8b6f_8913_49fc_9eed_4c32b7642a0e0_LIST_EXP ";    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "\\{\[0-9\]+\\}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
+INCLUDE [    set macroLine "MACRO AttributeKeeper_2_dae5dcca_e812_4b59_aad8_8379ed8c0a6e1_LIST_EXP ";    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "\\{\[0-9\]+\\}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
 
-FACTORY_DEF {*} TeeFactory    FACTORY_NAME AttributeKeeper_2    INPUT  FEATURE_TYPE AttributeCreator_6_OUTPUT    OUTPUT { FEATURE_TYPE AttributeKeeper_2_OUTPUT        @KeepAttributes(fme_encoded,_joinfield,DAR_OID,fme_pcre_match,"^fme_$(AttributeKeeper_2_90fc8b6f_8913_49fc_9eed_4c32b7642a0e0_LIST_EXP)")         }
+FACTORY_DEF {*} TeeFactory    FACTORY_NAME AttributeKeeper_2    INPUT  FEATURE_TYPE AttributeCreator_6_OUTPUT    OUTPUT { FEATURE_TYPE AttributeKeeper_2_OUTPUT        @KeepAttributes(fme_encoded,_joinfield,DAR_OID,fme_pcre_match,"^fme_$(AttributeKeeper_2_dae5dcca_e812_4b59_aad8_8379ed8c0a6e1_LIST_EXP)")         }
 
 # -------------------------------------------------------------------------
 
@@ -5663,16 +5578,16 @@ FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME AttributeCreator_4    INPUT  FEAT
 
 # -------------------------------------------------------------------------
 
-INCLUDE [    set macroLine "MACRO AttributeKeeper_a6726361_0b21_4b11_85f7_84c6530b2ad10_LIST_EXP ";    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "\\{\[0-9\]+\\}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
+INCLUDE [    set macroLine "MACRO AttributeKeeper_2004699d_20f7_41b3_b55a_ec261327c3f71_LIST_EXP ";    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "\\{\[0-9\]+\\}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
 
-FACTORY_DEF {*} TeeFactory    FACTORY_NAME AttributeKeeper    INPUT  FEATURE_TYPE AttributeCreator_4_OUTPUT    OUTPUT { FEATURE_TYPE AttributeKeeper_OUTPUT        @KeepAttributes(fme_encoded,_joinfield,AMT_OID,fme_pcre_match,"^fme_$(AttributeKeeper_a6726361_0b21_4b11_85f7_84c6530b2ad10_LIST_EXP)")         }
+FACTORY_DEF {*} TeeFactory    FACTORY_NAME AttributeKeeper    INPUT  FEATURE_TYPE AttributeCreator_4_OUTPUT    OUTPUT { FEATURE_TYPE AttributeKeeper_OUTPUT        @KeepAttributes(fme_encoded,_joinfield,AMT_OID,fme_pcre_match,"^fme_$(AttributeKeeper_2004699d_20f7_41b3_b55a_ec261327c3f71_LIST_EXP)")         }
 
 FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeKeeper OUTPUT Splitter"   INPUT FEATURE_TYPE AttributeKeeper_OUTPUT   OUTPUT FEATURE_TYPE AttributeKeeper_OUTPUT_0_rpABwRdi1ws=   OUTPUT FEATURE_TYPE AttributeKeeper_OUTPUT_1_ZImEmLS5GM8=
 # -------------------------------------------------------------------------
 
-INCLUDE [    set macroLine "MACRO AttributeKeeper_5_9337ad5f_a996_4794_88f9_3623f60aa6af0_LIST_EXP ";    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "\\{\[0-9\]+\\}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
+INCLUDE [    set macroLine "MACRO AttributeKeeper_5_60fde0aa_bb8c_4c5a_9bc9_8b51a42b8b3b1_LIST_EXP ";    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "\\{\[0-9\]+\\}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
 
-FACTORY_DEF {*} TeeFactory    FACTORY_NAME AttributeKeeper_5    INPUT  FEATURE_TYPE GEODB.BALISKBS_BEWT_GEODATABASE_SDE_1    OUTPUT { FEATURE_TYPE AttributeKeeper_5_OUTPUT        @KeepAttributes(fme_encoded,BEWT_CODE,BEZEICH_DE,BEZEICH_FR,fme_pcre_match,"^fme_$(AttributeKeeper_5_9337ad5f_a996_4794_88f9_3623f60aa6af0_LIST_EXP)")         }
+FACTORY_DEF {*} TeeFactory    FACTORY_NAME AttributeKeeper_5    INPUT  FEATURE_TYPE GEODB.BALISKBS_BEWT_GEODATABASE_SDE_1    OUTPUT { FEATURE_TYPE AttributeKeeper_5_OUTPUT        @KeepAttributes(fme_encoded,BEWT_CODE,BEZEICH_DE,BEZEICH_FR,fme_pcre_match,"^fme_$(AttributeKeeper_5_60fde0aa_bb8c_4c5a_9bc9_8b51a42b8b3b1_LIST_EXP)")         }
 
 # -------------------------------------------------------------------------
 
@@ -5710,9 +5625,9 @@ FACTORY_DEF * TeeFactory    FACTORY_NAME TimeStamper    INPUT  FEATURE_TYPE Attr
 
 # -------------------------------------------------------------------------
 
-INCLUDE [    set macroLine "MACRO AttributeKeeper_4_e87cc4fa_5a79_4719_8d22_306051fefbc40_LIST_EXP ";    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "\\{\[0-9\]+\\}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
+INCLUDE [    set macroLine "MACRO AttributeKeeper_4_e2bab686_252f_4c7c_8f37_89f98ffb40d91_LIST_EXP ";    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "\\{\[0-9\]+\\}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
 
-FACTORY_DEF {*} TeeFactory    FACTORY_NAME AttributeKeeper_4    INPUT  FEATURE_TYPE UUIDGenerator_6_OUTPUT_0_Vhc4mkRO1yI=    OUTPUT { FEATURE_TYPE AttributeKeeper_4_OUTPUT        @KeepAttributes(fme_encoded,BEWT_CODE,usg_VOR_OID,fme_pcre_match,"^fme_$(AttributeKeeper_4_e87cc4fa_5a79_4719_8d22_306051fefbc40_LIST_EXP)")         }
+FACTORY_DEF {*} TeeFactory    FACTORY_NAME AttributeKeeper_4    INPUT  FEATURE_TYPE UUIDGenerator_6_OUTPUT_0_Vhc4mkRO1yI=    OUTPUT { FEATURE_TYPE AttributeKeeper_4_OUTPUT        @KeepAttributes(fme_encoded,BEWT_CODE,usg_VOR_OID,fme_pcre_match,"^fme_$(AttributeKeeper_4_e2bab686_252f_4c7c_8f37_89f98ffb40d91_LIST_EXP)")         }
 
 # -------------------------------------------------------------------------
 
@@ -5721,9 +5636,14 @@ FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME AttributeCreator_5    INPUT  FEAT
 
 # -------------------------------------------------------------------------
 
-INCLUDE [    set macroLine "MACRO AttributeKeeper_3_71136355_844d_4882_9046_9f36bcdb2d690_LIST_EXP ";    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "\\{\[0-9\]+\\}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
+Tcl2 proc AttributeTrimmer_232b575e_cab3_4942_808f_53ae611ea4e21_trimmer { trimChars} {    set attrs [split {STA_NAME} {,}];    set trimChars [FME_DecodeText $trimChars];    foreach attr $attrs {       set attrVal [FME_GetAttribute $attr];       set length [string length $attrVal];       if {$length > 0} {          if {[string length $trimChars] == 0} {             set result [string trim $attrVal];         } else {             set result [string trim $attrVal $trimChars];         };          if {[string length $result] == 0 && {Yes} == {No}} {              if { {trim} == {trimleft}} {                set lastPos [expr $length - 1];                set result [string range $attrVal $lastPos $lastPos ];              } elseif { {trim} == {trimright}} {                set result [string range $attrVal 0 0];              } else {                set midPos [expr $length / 2];                set result [string range $attrVal $midPos $midPos];              };          };          FME_SetAttribute $attr $result;       };    }; }
+FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeTrimmer    INPUT  FEATURE_TYPE AttributeCreator_5_OUTPUT    OUTPUT FEATURE_TYPE AttributeTrimmer_OUTPUT      @Tcl2("AttributeTrimmer_232b575e_cab3_4942_808f_53ae611ea4e21_trimmer {} ")
 
-FACTORY_DEF {*} TeeFactory    FACTORY_NAME AttributeKeeper_3    INPUT  FEATURE_TYPE AttributeCreator_5_OUTPUT    OUTPUT { FEATURE_TYPE AttributeKeeper_3_OUTPUT        @KeepAttributes(fme_encoded,ART_NR,STATUS,STA_NR,BEW32USG,PRIORI_NR,STA_NAME,_joinfield,EINTRAGKBS,fme_pcre_match,"^fme_$(AttributeKeeper_3_71136355_844d_4882_9046_9f36bcdb2d690_LIST_EXP)")         }
+# -------------------------------------------------------------------------
+
+INCLUDE [    set macroLine "MACRO AttributeKeeper_3_da9922e9_c9a0_4dc1_97ad_4024c54504eb1_LIST_EXP ";    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "\\{\[0-9\]+\\}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
+
+FACTORY_DEF {*} TeeFactory    FACTORY_NAME AttributeKeeper_3    INPUT  FEATURE_TYPE AttributeTrimmer_OUTPUT    OUTPUT { FEATURE_TYPE AttributeKeeper_3_OUTPUT        @KeepAttributes(fme_encoded,STA_NAME,_joinfield,ART_NR,EINTRAGKBS,BEW32USG,STATUSMGDM,STA_NR,fme_pcre_match,"^fme_$(AttributeKeeper_3_da9922e9_c9a0_4dc1_97ad_4024c54504eb1_LIST_EXP)")         }
 
 # -------------------------------------------------------------------------
 
@@ -5743,22 +5663,16 @@ INCLUDE [    set macroLine "MACRO AttributeRemover_3_LIST_EXP ";    foreach attr
 FACTORY_DEF {*} TeeFactory    FACTORY_NAME AttributeRemover_3    INPUT  FEATURE_TYPE FeatureMerger_4_MERGED    OUTPUT { FEATURE_TYPE AttributeRemover_3_OUTPUT        @RemoveAttributes(fme_encoded,_joinfield)        @RemoveAttributes(fme_pcre_match"$(AttributeRemover_3_LIST_EXP)")         }
 
 # -------------------------------------------------------------------------
-MACRO Joiner_DIRECTIVES PASSWORD "$(GEODB_PASSWORD)" USE_UNIFIED_DATE_ATTRS YES SHOW_SYSTEM_TABLES NO REMOVE_SCHEMA_QUALIFIER NO QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS Yes USER_NAME "$(GEODB_USERNAME)" SERVER_TYPE ORACLE8i PERSISTENT_CONNECTION YES
+MACRO Joiner_DIRECTIVES REMOVE_SCHEMA_QUALIFIER NO PERSISTENT_CONNECTION YES USER_NAME "$(GEODB_USERNAME)" PASSWORD "$(GEODB_PASSWORD)" SHOW_SYSTEM_TABLES NO
 
 INCLUDE [    if { {MUST_MATCH_ONE} == {MATCH_ALL} } {       puts {MACRO Joiner_ONE_FEATURE_PER_JOIN <Unused>};    } else {       puts {MACRO Joiner_ONE_FEATURE_PER_JOIN YES};    } ]
-FACTORY_DEF * JoinFactory    FACTORY_NAME Joiner    INPUT  FEATURE_TYPE AttributeRemover_3_OUTPUT    READER_TYPE             ORACLE_NONSPATIAL    READER_DATASET          "$(GEODB_DATABASE$encode)"    TABLE_ID                "GEODB.BALISKBS_STATUS"    READER_PARAMS           $(Joiner_DIRECTIVES)    JOIN_KEYS               STATUS<space>STATUS_NR    ADDED_FIELDS            STATUS_DE<space>STATUS_FR    COMBINE_ATTRIBUTES      PREFER_ORIGINAL    MATCH_RULE              MUST_MATCH_ONE    CACHE_SIZE              5000    PREFETCH_EXHAUSTIVE     Yes    ONE_FEATURE_PER_JOIN    $(Joiner_ONE_FEATURE_PER_JOIN)    JOIN_ID                 "Joiner"    OUTPUT JOINED FEATURE_TYPE Joiner_JOINED
-
-# -------------------------------------------------------------------------
-MACRO Joiner_2_DIRECTIVES SERVER_TYPE ORACLE8i SHOW_SYSTEM_TABLES NO QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS Yes REMOVE_SCHEMA_QUALIFIER NO PASSWORD "$(GEODB_PASSWORD)" USE_UNIFIED_DATE_ATTRS YES USER_NAME "$(GEODB_USERNAME)" PERSISTENT_CONNECTION YES
-
-INCLUDE [    if { {MUST_MATCH_ONE} == {MATCH_ALL} } {       puts {MACRO Joiner_2_ONE_FEATURE_PER_JOIN <Unused>};    } else {       puts {MACRO Joiner_2_ONE_FEATURE_PER_JOIN YES};    } ]
-FACTORY_DEF * JoinFactory    FACTORY_NAME Joiner_2    INPUT  FEATURE_TYPE Joiner_JOINED    READER_TYPE             ORACLE_NONSPATIAL    READER_DATASET          "$(GEODB_DATABASE$encode)"    TABLE_ID                "GEODB.BALISKBS_PRIORI"    READER_PARAMS           $(Joiner_2_DIRECTIVES)    JOIN_KEYS               PRIORI_NR<space>PRIORI_NR    ADDED_FIELDS            PRIORI_DE<space>PRIORI_FR    COMBINE_ATTRIBUTES      PREFER_ORIGINAL    MATCH_RULE              MUST_MATCH_ONE    CACHE_SIZE              5000    PREFETCH_EXHAUSTIVE     Yes    ONE_FEATURE_PER_JOIN    $(Joiner_2_ONE_FEATURE_PER_JOIN)    JOIN_ID                 "Joiner_2"    OUTPUT JOINED FEATURE_TYPE Joiner_2_JOINED
+FACTORY_DEF * JoinFactory    FACTORY_NAME Joiner    INPUT  FEATURE_TYPE AttributeRemover_3_OUTPUT    READER_TYPE             ORACLE_NONSPATIAL    READER_DATASET          "$(GEODB_DATABASE$encode)"    TABLE_ID                "GEODB.BALISKBS_STATMGDM"    READER_PARAMS           $(Joiner_DIRECTIVES)    JOIN_KEYS               STATUSMGDM<space>STATUS_CODE    ADDED_FIELDS            STATUS_DE<space>STATUS_FR    COMBINE_ATTRIBUTES      PREFER_ORIGINAL    MATCH_RULE              MUST_MATCH_ONE    CACHE_SIZE              5000    PREFETCH_EXHAUSTIVE     Yes    ONE_FEATURE_PER_JOIN    $(Joiner_ONE_FEATURE_PER_JOIN)    JOIN_ID                 "Joiner"    OUTPUT JOINED FEATURE_TYPE Joiner_JOINED
 
 # -------------------------------------------------------------------------
 MACRO Joiner_3_DIRECTIVES SERVER_TYPE ORACLE8i SHOW_SYSTEM_TABLES NO QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS Yes REMOVE_SCHEMA_QUALIFIER NO PASSWORD "$(GEODB_PASSWORD)" USE_UNIFIED_DATE_ATTRS YES USER_NAME "$(GEODB_USERNAME)" PERSISTENT_CONNECTION YES
 
 INCLUDE [    if { {MUST_MATCH_ONE} == {MATCH_ALL} } {       puts {MACRO Joiner_3_ONE_FEATURE_PER_JOIN <Unused>};    } else {       puts {MACRO Joiner_3_ONE_FEATURE_PER_JOIN YES};    } ]
-FACTORY_DEF * JoinFactory    FACTORY_NAME Joiner_3    INPUT  FEATURE_TYPE Joiner_2_JOINED    READER_TYPE             ORACLE_NONSPATIAL    READER_DATASET          "$(GEODB_DATABASE$encode)"    TABLE_ID                "GEODB.BALISKBS_ART"    READER_PARAMS           $(Joiner_3_DIRECTIVES)    JOIN_KEYS               ART_NR<space>ART_NR    ADDED_FIELDS            ART_DE<space>ART_FR    COMBINE_ATTRIBUTES      PREFER_ORIGINAL    MATCH_RULE              MUST_MATCH_ONE    CACHE_SIZE              5000    PREFETCH_EXHAUSTIVE     Yes    ONE_FEATURE_PER_JOIN    $(Joiner_3_ONE_FEATURE_PER_JOIN)    JOIN_ID                 "Joiner_3"    OUTPUT JOINED FEATURE_TYPE Joiner_3_JOINED
+FACTORY_DEF * JoinFactory    FACTORY_NAME Joiner_3    INPUT  FEATURE_TYPE Joiner_JOINED    READER_TYPE             ORACLE_NONSPATIAL    READER_DATASET          "$(GEODB_DATABASE$encode)"    TABLE_ID                "GEODB.BALISKBS_ART"    READER_PARAMS           $(Joiner_3_DIRECTIVES)    JOIN_KEYS               ART_NR<space>ART_NR    ADDED_FIELDS            ART_DE<space>ART_FR    COMBINE_ATTRIBUTES      PREFER_ORIGINAL    MATCH_RULE              MUST_MATCH_ONE    CACHE_SIZE              5000    PREFETCH_EXHAUSTIVE     Yes    ONE_FEATURE_PER_JOIN    $(Joiner_3_ONE_FEATURE_PER_JOIN)    JOIN_ID                 "Joiner_3"    OUTPUT JOINED FEATURE_TYPE Joiner_3_JOINED
 
 # -------------------------------------------------------------------------
 
@@ -5784,15 +5698,13 @@ FACTORY_DEF * PythonFactory    FACTORY_NAME PythonCaller_4    INPUT  FEATURE_TYP
 FACTORY_DEF * TeeFactory   FACTORY_NAME "PythonCaller_4 OUTPUT Splitter"   INPUT FEATURE_TYPE PythonCaller_4_OUTPUT   OUTPUT FEATURE_TYPE PythonCaller_4_OUTPUT_0_DabZ9LuopEs=   OUTPUT FEATURE_TYPE PythonCaller_4_OUTPUT_1_hnDlqYzuo3Y=   OUTPUT FEATURE_TYPE PythonCaller_4_OUTPUT_2_0b36VXyEebM=
 # -------------------------------------------------------------------------
 
-FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME AttributeCreator_9    INPUT  FEATURE_TYPE PythonCaller_4_OUTPUT_2_0b36VXyEebM=    MULTI_FEATURE_MODE NO    NULL_ATTR_MODE NO_OP     ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV     ATTR_ACTION { "" "EIB_LEGENDESYMBOL_DE" "SET_TO" "$(LEGEND_BASEURL$encode)<at>Value<openparen>ART_NR<closeparen>.png" }      ATTR_ACTION { "" "EIB_LEGENDESYMBOL_FR" "SET_TO" "$(LEGEND_BASEURL$encode)<at>Value<openparen>ART_NR<closeparen>.png" }    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_9_OUTPUT
+FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME AttributeCreator_9    INPUT  FEATURE_TYPE PythonCaller_4_OUTPUT_2_0b36VXyEebM=    MULTI_FEATURE_MODE NO    NULL_ATTR_MODE NO_OP     ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV     ATTR_ACTION { "" "EIB_LEGENDESYMBOL_DE" "SET_TO" "$(LEGEND_BASEURL$encode)<at>Value<openparen>STATUS_DE<closeparen>.png" }      ATTR_ACTION { "" "EIB_LEGENDESYMBOL_FR" "SET_TO" "$(LEGEND_BASEURL$encode)<at>Value<openparen>STATUS_FR<closeparen>.png" }    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_9_OUTPUT
 
 
 # -------------------------------------------------------------------------
 
+FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME AttributeCreator_11    INPUT  FEATURE_TYPE AttributeCreator_9_OUTPUT    MULTI_FEATURE_MODE NO    NULL_ATTR_MODE NO_OP     ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV     ATTR_ACTION { "" "EIB_AUSSAGE_DE" "SET_TO" "<at>Value<openparen>STATUS_DE<closeparen><space><openparen><at>Value<openparen>ART_DE<closeparen><space>Nr.<space><at>Value<openparen>STA_NR<closeparen><comma><space><at>Value<openparen>STA_NAME<closeparen><closeparen>" }      ATTR_ACTION { "" "EIB_AUSSAGE_FR" "SET_TO" "<at>Value<openparen>STATUS_FR<closeparen><space><openparen><at>Value<openparen>ART_FR<closeparen><space>Nr.<space><at>Value<openparen>STA_NR<closeparen><comma><space><at>Value<openparen>STA_NAME<closeparen><closeparen>" }    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_11_OUTPUT
 
-FME_PYTHON_PATH "$(FME_MF_DIR)"
-
-FACTORY_DEF * PythonFactory    FACTORY_NAME PythonCaller_6    INPUT  FEATURE_TYPE AttributeCreator_9_OUTPUT    SYMBOL_NAME CreateAussage    PYTHON_NAMESPACE FMEOBJECTS    SOURCE_CODE from<space>__future__<space>import<space>unicode_literals<lf>import<space>fmeobjects<lf><lf>def<space>CreateAussage<openparen>feature<closeparen>:<lf><space><space><space><space>_Art_Bez<space>=<space>feature.getAttribute<openparen><quote>ART_DE<quote><closeparen><lf><space><space><space><space>_Art_Bez_F<space>=<space>feature.getAttribute<openparen><quote>ART_FR<quote><closeparen><lf><space><space><space><space>_Status_Bez<space>=<space>feature.getAttribute<openparen><quote>STATUS_DE<quote><closeparen><lf><space><space><space><space>_Status_Bez_F<space>=<space>feature.getAttribute<openparen><quote>STATUS_FR<quote><closeparen><lf><space><space><space><space>_Priori_Bez<space>=<space>feature.getAttribute<openparen><quote>PRIORI_DE<quote><closeparen><lf><space><space><space><space>_Priori_Bez_F<space>=<space>feature.getAttribute<openparen><quote>PRIORI_FR<quote><closeparen><lf><space><space><space><space>_STA_NR<space>=<space>feature.getAttribute<openparen><quote>STA_NR<quote><closeparen><lf><space><space><space><space>_Name<space>=<space>feature.getAttribute<openparen><quote>STA_NAME<quote><closeparen><lf><space><space><space><space><lf><space><space><space><space>if<space>_Priori_Bez<space>==<space><quote>dringend<quote>:<lf><space><space><space><space><space><space><space><space>_bezeichner<space>=<space><quote>Untersuchung<space>erforderlich<quote><lf><space><space><space><space><space><space><space><space>_bezeichner_f<space>=<space><quote>investigation<space>n<u00e9>cessaire<quote><lf><space><space><space><space><space><space><space><lf><space><space><space><space><space><space><space><space>#<space><u00d6>REB-Aussage<lf><space><space><space><space><space><space><space><space>if<space>_Status_Bez<space>is<space>not<space>None:<lf><space><space><space><space><space><space><space><space><space><space><space><space>feature.setAttribute<openparen><quote>EIB_AUSSAGE_DE<quote><comma><space>_Art_Bez+<quote><space><openparen>Nr.<space><quote>+_STA_NR+<quote><comma><space><quote>+_Name.strip<openparen><closeparen>+<quote><closeparen><comma><space><quote>+_Status_Bez+<quote><comma><space><quote>+_bezeichner<closeparen><lf><space><space><space><space><space><space><space><space><space><space><space><space>feature.setAttribute<openparen><quote>EIB_AUSSAGE_FR<quote><comma><space>_Art_Bez_F+<quote><space><openparen>No.<space><quote>+_STA_NR+<quote><comma><space><quote>+_Name.strip<openparen><closeparen>+<quote><closeparen><comma><space><quote>+_Status_Bez_F+<quote><comma><space><quote>+_bezeichner_f<closeparen><lf><space><space><space><space><space><space><space><space>else:<lf><space><space><space><space><space><space><space><space><space><space><space><space>feature.setAttribute<openparen><quote>EIB_AUSSAGE_DE<quote><comma><space>_Art_Bez+<quote><space><openparen>Nr.<space><quote>+_STA_NR+<quote><comma><space><quote>+_Name.strip<openparen><closeparen>+<quote><closeparen><comma><space><quote>+_bezeichner<closeparen><lf><space><space><space><space><space><space><space><space><space><space><space><space>feature.setAttribute<openparen><quote>EIB_AUSSAGE_FR<quote><comma><space>_Art_Bez_F+<quote><space><openparen>No.<space><quote>+_STA_NR+<quote><comma><space><quote>+_Name.strip<openparen><closeparen>+<quote><closeparen><comma><space><quote>+_bezeichner_f<closeparen><lf><space><space><space><space><space><space><space><lf><space><space><space><space>elif<space>_Priori_Bez<space>==<space><quote>erforderlich<quote>:<lf><space><space><space><space><space><space><space><space>_bezeichner<space>=<space><quote>Untersuchung<space>erforderlich<quote><lf><space><space><space><space><space><space><space><space>_bezeichner_f<space>=<space><quote>investigation<space>n<u00e9>cessaire<quote><lf><space><space><space><space><space><space><space><lf><space><space><space><space><space><space><space><space>#<space><u00d6>REB-Aussage<lf><space><space><space><space><space><space><space><space>if<space>_Status_Bez<space>is<space>not<space>None:<lf><space><space><space><space><space><space><space><space><space><space><space><space>feature.setAttribute<openparen><quote>EIB_AUSSAGE_DE<quote><comma><space>_Art_Bez+<quote><space><openparen>Nr.<space><quote>+_STA_NR+<quote><comma><space><quote>+_Name.strip<openparen><closeparen>+<quote><closeparen><comma><space><quote>+_Status_Bez+<quote><comma><space><quote>+_bezeichner<closeparen><lf><space><space><space><space><space><space><space><space><space><space><space><space>feature.setAttribute<openparen><quote>EIB_AUSSAGE_FR<quote><comma><space>_Art_Bez_F+<quote><space><openparen>No.<space><quote>+_STA_NR+<quote><comma><space><quote>+_Name.strip<openparen><closeparen>+<quote><closeparen><comma><space><quote>+_Status_Bez_F+<quote><comma><space><quote>+_bezeichner_f<closeparen><lf><space><space><space><space><space><space><space><space>else:<lf><space><space><space><space><space><space><space><space><space><space><space><space>feature.setAttribute<openparen><quote>EIB_AUSSAGE_DE<quote><comma><space>_Art_Bez+<quote><space><openparen>Nr.<space><quote>+_STA_NR+<quote><comma><space><quote>+_Name.strip<openparen><closeparen>+<quote><closeparen><comma><space><quote>+_bezeichner<closeparen><lf><space><space><space><space><space><space><space><space><space><space><space><space>feature.setAttribute<openparen><quote>EIB_AUSSAGE_FR<quote><comma><space>_Art_Bez_F+<quote><space><openparen>No.<space><quote>+_STA_NR+<quote><comma><space><quote>+_Name.strip<openparen><closeparen>+<quote><closeparen><comma><space><quote>+_bezeichner_f<closeparen><lf><space><space><space><space><space><space><space><lf><space><space><space><space>else:<lf><space><space><space><space><space><space><space><space>_bezeichner<space>=<space><quote>projektspezifische<space>Massnahmen<space><quote><lf><space><space><space><space><space><space><space><space>_bezeichner_f<space>=<space>_Priori_Bez_F<lf><space><space><space><space><space><space><space><lf><space><space><space><space><space><space><space><space>#<space><u00d6>REB-Aussage<lf><space><space><space><space><space><space><space><space>if<space>_Status_Bez<space>is<space>not<space>None:<lf><space><space><space><space><space><space><space><space><space><space><space><space>feature.setAttribute<openparen><quote>EIB_AUSSAGE_DE<quote><comma><space>_Art_Bez+<quote><space><openparen>Nr.<space><quote>+_STA_NR+<quote><comma><space><quote>+_Name.strip<openparen><closeparen>+<quote><closeparen><comma><space><quote>+_Status_Bez+<quote><comma><space><quote>+_bezeichner+_Priori_Bez<closeparen><lf><space><space><space><space><space><space><space><space><space><space><space><space>feature.setAttribute<openparen><quote>EIB_AUSSAGE_FR<quote><comma><space>_Art_Bez_F+<quote><space><openparen>No.<space><quote>+_STA_NR+<quote><comma><space><quote>+_Name.strip<openparen><closeparen>+<quote><closeparen><comma><space><quote>+_Status_Bez_F+<quote><comma><space><quote>+_bezeichner_f+<space><quote><space><openparen>sp<u00e9>cifique<space>au<space>projet<closeparen><quote><closeparen><space><lf><space><space><space><space><space><space><space><space>else:<lf><space><space><space><space><space><space><space><space><space><space><space><space>feature.setAttribute<openparen><quote>EIB_AUSSAGE_DE<quote><comma><space>_Art_Bez+<quote><space><openparen>Nr.<space><quote>+_STA_NR+<quote><comma><space><quote>+_Name.strip<openparen><closeparen>+<quote><closeparen><comma><space><quote>+_bezeichner+_Priori_Bez+<quote><space><openparen>projektspezifisch<closeparen><quote><closeparen><lf><space><space><space><space><space><space><space><space><space><space><space><space>feature.setAttribute<openparen><quote>EIB_AUSSAGE_FR<quote><comma><space>_Art_Bez_F+<quote><space><openparen>No.<space><quote>+_STA_NR+<quote><comma><space><quote>+_Name.strip<openparen><closeparen>+<quote><closeparen><comma><space><quote>+_bezeichner_f+<space><quote><space><openparen>sp<u00e9>cifique<space>au<space>projet<closeparen><quote><closeparen><space>    OUTPUT PYOUTPUT FEATURE_TYPE PythonCaller_6_OUTPUT
 
 # -------------------------------------------------------------------------
 
@@ -5801,7 +5713,7 @@ FACTORY_DEF * PythonFactory    FACTORY_NAME PythonCaller_6    INPUT  FEATURE_TYP
 # domain, we don't need to do anything in Tcl per feature going by
 
 INCLUDE [    set domainPrefix {};    if { {Global} == {Local} }    {       set domainPrefix [FME_EncodeText {Counter_}];    };    puts "MACRO Counter_FULL_DOMAIN ${domainPrefix}counter"; ]
-FACTORY_DEF * ExecuteFunctionFactory    FACTORY_NAME Counter_Rejector    INPUT  FEATURE_TYPE PythonCaller_6_OUTPUT    FUNCTION_DEFINITION @Count(REJECTABLE_WITH_FLAG,fme_encoded,$(Counter_FULL_DOMAIN),"1")    RESULT_ATTRIBUTE "EIB_SORT"    OUTPUT COMPLETE FEATURE_TYPE Counter_OUTPUT    OUTPUT REJECTED FEATURE_TYPE Counter_<REJECTED>
+FACTORY_DEF * ExecuteFunctionFactory    FACTORY_NAME Counter_Rejector    INPUT  FEATURE_TYPE AttributeCreator_11_OUTPUT    FUNCTION_DEFINITION @Count(REJECTABLE_WITH_FLAG,fme_encoded,$(Counter_FULL_DOMAIN),"1")    RESULT_ATTRIBUTE "EIB_SORT"    OUTPUT COMPLETE FEATURE_TYPE Counter_OUTPUT    OUTPUT REJECTED FEATURE_TYPE Counter_<REJECTED>
 
 FACTORY_DEF * TeeFactory   FACTORY_NAME "Counter <REJECTED> Transformer Output Nuker"   INPUT FEATURE_TYPE Counter_<REJECTED>
 # -------------------------------------------------------------------------
@@ -5870,7 +5782,7 @@ FACTORY_DEF * TeeFactory    FACTORY_NAME UUIDGenerator_5    INPUT  FEATURE_TYPE 
 
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * RoutingFactory FACTORY_NAME "Destination Feature Type Routing Correlator"   COMMAND_PARM_EVALUATION SINGLE_PASS   INPUT FEATURE_TYPE *    ROUTE FME_GENERIC PythonCaller_4_OUTPUT_1_hnDlqYzuo3Y= TO GEODATABASE_SDE __GO_TO_FINAL_OUTPUT_ROUTER__ <at>EvaluateExpression<openparen>ATTR_CREATE_EXPR_PROPAGATE_MISSING_FDIV<comma>FLA_LIEFEREINHEIT<comma>$(LIEFEREINHEIT$encode$encode)<comma>RES_ID<comma>$(RECHTSSTATUS$encode$encode)<comma><space>ATTR_SET<closeparen>,multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>OEREB2.FLAECHE<closeparen> GEOMETRY    ROUTE FME_GENERIC TimeStamper_OUTPUT TO ORACLE8I_DB __GO_TO_FINAL_OUTPUT_ROUTER__ <at>EvaluateExpression<openparen>ATTR_CREATE_EXPR_PROPAGATE_MISSING_FDIV<comma>VOR_LIEFEREINHEIT<comma>$(LIEFEREINHEIT$encode$encode)<comma>RES_ID<comma>$(RECHTSSTATUS$encode$encode)<comma><space>ATTR_SET<closeparen>,multi_writer_id,1,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>OEREB2.VORSCHRIFT<closeparen> GEOMETRY    ROUTE FME_GENERIC AttributeCreator_2_OUTPUT TO ORACLE8I_DB __GO_TO_FINAL_OUTPUT_ROUTER__ <at>EvaluateExpression<openparen>ATTR_CREATE_EXPR_PROPAGATE_MISSING_FDIV<comma>VOR_LIEFEREINHEIT<comma>$(LIEFEREINHEIT$encode$encode)<comma>RES_ID<comma>$(RECHTSSTATUS$encode$encode)<comma><space>ATTR_SET<closeparen>,multi_writer_id,1,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>OEREB2.VORSCHRIFT<closeparen> GEOMETRY    ROUTE FME_GENERIC UUIDGenerator_5_OUTPUT TO ORACLE8I_DB __GO_TO_FINAL_OUTPUT_ROUTER__ <at>EvaluateExpression<openparen>ATTR_CREATE_EXPR_PROPAGATE_MISSING_FDIV<comma>HWD_LIEFEREINHEIT<comma>$(LIEFEREINHEIT$encode$encode)<comma><space>ATTR_SET<closeparen>,multi_writer_id,1,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>OEREB2.HINWEIDOK<closeparen> GEOMETRY    ROUTE FME_GENERIC UUIDGenerator_4_OUTPUT_1_LoJlrbD7DWw= TO ORACLE8I_DB __GO_TO_FINAL_OUTPUT_ROUTER__ <at>EvaluateExpression<openparen>ATTR_CREATE_EXPR_PROPAGATE_MISSING_FDIV<comma>HIV_LIEFEREINHEIT<comma>$(LIEFEREINHEIT$encode$encode)<comma><space>ATTR_SET<closeparen>,multi_writer_id,1,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>OEREB2.HINVOR<closeparen> GEOMETRY    ROUTE FME_GENERIC Counter_OUTPUT TO ORACLE8I_DB __GO_TO_FINAL_OUTPUT_ROUTER__ <at>EvaluateExpression<openparen>ATTR_CREATE_EXPR_PROPAGATE_MISSING_FDIV<comma>EIB_LIEFEREINHEIT<comma>$(LIEFEREINHEIT$encode$encode)<comma>RES_ID<comma>$(RECHTSSTATUS$encode$encode)<comma>STH_ID<comma>$(SUBTHEMA$encode$encode)<comma><space>ATTR_SET<closeparen>,multi_writer_id,1,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>OEREB2.EIGENTUMSBESCHRAENKUNG<closeparen> GEOMETRY    ROUTE FME_GENERIC AttributeCreator_10_OUTPUT TO ORACLE8I_DB __GO_TO_FINAL_OUTPUT_ROUTER__ <at>EvaluateExpression<openparen>ATTR_CREATE_EXPR_PROPAGATE_MISSING_FDIV<comma>DAR_LIEFEREINHEIT<comma>$(LIEFEREINHEIT$encode$encode)<comma><space>ATTR_SET<closeparen>,multi_writer_id,1,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>OEREB2.DARSTELLUNGSDIENST<closeparen> GEOMETRY    ROUTE FME_GENERIC AMT_XLSXR_1_1_JDSzqpD1FY4= TO ORACLE8I_DB __GO_TO_FINAL_OUTPUT_ROUTER__ <at>EvaluateExpression<openparen>ATTR_CREATE_EXPR_PROPAGATE_MISSING_FDIV<comma>AMT_LIEFEREINHEIT<comma>$(LIEFEREINHEIT$encode$encode)<comma><space>ATTR_SET<closeparen>,multi_writer_id,1,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>OEREB2.AMT<closeparen> GEOMETRY   FEATURE_TYPE_ATTRIBUTE __wb_out_feat_type__   OUTPUT ROUTED FEATURE_TYPE *    OUTPUT NOT_ROUTED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")
+FACTORY_DEF * RoutingFactory FACTORY_NAME "Destination Feature Type Routing Correlator"   COMMAND_PARM_EVALUATION SINGLE_PASS   INPUT FEATURE_TYPE *    ROUTE FME_GENERIC TimeStamper_OUTPUT TO ORACLE8I_DB __GO_TO_FINAL_OUTPUT_ROUTER__ <at>EvaluateExpression<openparen>ATTR_CREATE_EXPR_PROPAGATE_MISSING_FDIV<comma>VOR_LIEFEREINHEIT<comma>$(LIEFEREINHEIT$encode$encode)<comma>RES_ID<comma>$(RECHTSSTATUS$encode$encode)<comma><space>ATTR_SET<closeparen>,multi_writer_id,1,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>OEREB2.VORSCHRIFT<closeparen> GEOMETRY    ROUTE FME_GENERIC AttributeCreator_2_OUTPUT TO ORACLE8I_DB __GO_TO_FINAL_OUTPUT_ROUTER__ <at>EvaluateExpression<openparen>ATTR_CREATE_EXPR_PROPAGATE_MISSING_FDIV<comma>VOR_LIEFEREINHEIT<comma>$(LIEFEREINHEIT$encode$encode)<comma>RES_ID<comma>$(RECHTSSTATUS$encode$encode)<comma><space>ATTR_SET<closeparen>,multi_writer_id,1,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>OEREB2.VORSCHRIFT<closeparen> GEOMETRY    ROUTE FME_GENERIC UUIDGenerator_5_OUTPUT TO ORACLE8I_DB __GO_TO_FINAL_OUTPUT_ROUTER__ <at>EvaluateExpression<openparen>ATTR_CREATE_EXPR_PROPAGATE_MISSING_FDIV<comma>HWD_LIEFEREINHEIT<comma>$(LIEFEREINHEIT$encode$encode)<comma><space>ATTR_SET<closeparen>,multi_writer_id,1,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>OEREB2.HINWEIDOK<closeparen> GEOMETRY    ROUTE FME_GENERIC UUIDGenerator_4_OUTPUT_1_LoJlrbD7DWw= TO ORACLE8I_DB __GO_TO_FINAL_OUTPUT_ROUTER__ <at>EvaluateExpression<openparen>ATTR_CREATE_EXPR_PROPAGATE_MISSING_FDIV<comma>HIV_LIEFEREINHEIT<comma>$(LIEFEREINHEIT$encode$encode)<comma><space>ATTR_SET<closeparen>,multi_writer_id,1,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>OEREB2.HINVOR<closeparen> GEOMETRY    ROUTE FME_GENERIC Counter_OUTPUT TO ORACLE8I_DB __GO_TO_FINAL_OUTPUT_ROUTER__ <at>EvaluateExpression<openparen>ATTR_CREATE_EXPR_PROPAGATE_MISSING_FDIV<comma>EIB_LIEFEREINHEIT<comma>$(LIEFEREINHEIT$encode$encode)<comma>RES_ID<comma>$(RECHTSSTATUS$encode$encode)<comma>STH_ID<comma>$(SUBTHEMA$encode$encode)<comma><space>ATTR_SET<closeparen>,multi_writer_id,1,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>OEREB2.EIGENTUMSBESCHRAENKUNG<closeparen> GEOMETRY    ROUTE FME_GENERIC AttributeCreator_10_OUTPUT TO ORACLE8I_DB __GO_TO_FINAL_OUTPUT_ROUTER__ <at>EvaluateExpression<openparen>ATTR_CREATE_EXPR_PROPAGATE_MISSING_FDIV<comma>DAR_LIEFEREINHEIT<comma>$(LIEFEREINHEIT$encode$encode)<comma><space>ATTR_SET<closeparen>,multi_writer_id,1,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>OEREB2.DARSTELLUNGSDIENST<closeparen> GEOMETRY    ROUTE FME_GENERIC AMT_XLSXR_1_1_JDSzqpD1FY4= TO ORACLE8I_DB __GO_TO_FINAL_OUTPUT_ROUTER__ <at>EvaluateExpression<openparen>ATTR_CREATE_EXPR_PROPAGATE_MISSING_FDIV<comma>AMT_LIEFEREINHEIT<comma>$(LIEFEREINHEIT$encode$encode)<comma><space>ATTR_SET<closeparen>,multi_writer_id,1,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>OEREB2.AMT<closeparen> GEOMETRY    ROUTE FME_GENERIC PythonCaller_4_OUTPUT_1_hnDlqYzuo3Y= TO GEODATABASE_SDE __GO_TO_FINAL_OUTPUT_ROUTER__ <at>EvaluateExpression<openparen>ATTR_CREATE_EXPR_PROPAGATE_MISSING_FDIV<comma>FLA_LIEFEREINHEIT<comma>$(LIEFEREINHEIT$encode$encode)<comma>RES_ID<comma>$(RECHTSSTATUS$encode$encode)<comma><space>ATTR_SET<closeparen>,multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>OEREB2.FLAECHE<closeparen> GEOMETRY   FEATURE_TYPE_ATTRIBUTE __wb_out_feat_type__   OUTPUT ROUTED FEATURE_TYPE *    OUTPUT NOT_ROUTED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")
 # -------------------------------------------------------------------------
 
 FACTORY_DEF * TeeFactory   FACTORY_NAME "Final Output Nuker"   INPUT FEATURE_TYPE __nuke_me__
@@ -5878,14 +5790,14 @@ FACTORY_DEF * TeeFactory   FACTORY_NAME "Final Output Nuker"   INPUT FEATURE_TYP
 # -------------------------------------------------------------------------
 GEODATABASE_SDE_2_DEF OEREB2.FLAECHE   geodb_type                   geodb_polygon   GEODB_DROP_TABLE             NO   GEODB_TRUNCATE_TABLE         NO   GEODB_OBJECT_ID_NAME         OBJECTID   GEODB_OBJECT_ID_ALIAS        OBJECTID   GEODB_SHAPE_NAME             SHAPE   GEODB_SHAPE_ALIAS            SHAPE   GEODB_CONFIG_KEYWORD         DEFAULTS   GEODB_FEATURE_DATASET        ""   GEODB_GRID{1}                ""   GEODB_AVG_NUM_POINTS         ""   GEODB_XORIGIN                ""   GEODB_YORIGIN                ""   GEODB_XYSCALE                ""   GEODB_HAS_Z_VALUES           ""   GEODB_ZORIGIN                ""   GEODB_ZSCALE                 ""   GEODB_HAS_MEASURES           ""   GEODB_MEASURES_ORIGIN        ""   GEODB_MEASURES_SCALE         ""   GEODB_ANNO_REFERENCE_SCALE   ""   FLA_OID                      char(128)   FLA_XTF_ID                   char(128)   FLA_PUBLIZIERTAB             date   FLA_METAGEO_DE               char(1023)   FLA_METAGEO_FR               char(1023)   FLA_LIEFEREINHEIT            integer   EIB_OID                      char(128)   AMT_OID                      char(128)   RES_ID                       integer
 # -------------------------------------------------------------------------
+ORACLE8I_DB_1_DEF OEREB2.HINWEIDOK   oracle_create_table          No   oracle_table_writer_mode     INHERIT_FROM_WRITER   oracle_update_key_columns    ""   oracle_truncate_table        No   HWD_ID                       nvarchar(128)   HWD_XTF_ID                   nvarchar(128)   HWD_LIEFEREINHEIT            number(6,0)   HWD_ARTNR                    nvarchar(255)   VOR_OIDURSPRUNG              nvarchar(128)   VOR_OIDHINWEIS               nvarchar(128)
+# -------------------------------------------------------------------------
 ORACLE8I_DB_1_DEF OEREB2.VORSCHRIFT   oracle_create_table          No   oracle_table_writer_mode     INHERIT_FROM_WRITER   oracle_update_key_columns    ""   oracle_truncate_table        No   VOR_OID                      nvarchar(128)   VOR_XTF_ID                   nvarchar(128)   VOR_TEXTIMWEB_DE             nvarchar(1023)   VOR_TEXTIMWEB_FR             nvarchar(1023)   VOR_PUBLIZIERTAB             date   VOR_TITEL_DE                 nvarchar(200)   VOR_TITEL_FR                 nvarchar(200)   VOR_OFFIZIELLERTITEL_DE      nvarchar(255)   VOR_OFFIZIELLERTITEL_FR      nvarchar(255)   VOR_ABKUERZUNG_DE            nvarchar(255)   VOR_ABKUERZUNG_FR            nvarchar(255)   VOR_OFFIZIELLENR             nvarchar(20)   VOR_KANTON                   nvarchar(2)   VOR_LIEFEREINHEIT            number(6,0)   RES_ID                       number(10,0)   BFS_NR                       number(5,0)   VOA_ID                       number(10,0)   AMT_OID                      nvarchar(128)   DOKUMENT                     blob   VOR_SORT                     number(10,0)
 # -------------------------------------------------------------------------
 ORACLE8I_DB_1_DEF OEREB2.AMT   oracle_create_table          No   oracle_table_writer_mode     INHERIT_FROM_WRITER   oracle_update_key_columns    ""   oracle_truncate_table        No   AMT_OID                      nvarchar(128)   AMT_XTF_ID                   nvarchar(128)   AMT_NAME_DE                  nvarchar(255)   AMT_NAME_FR                  nvarchar(255)   AMT_AMTIMWEB_DE              nvarchar(1023)   AMT_AMTIMWEB_FR              nvarchar(1023)   AMT_LIEFEREINHEIT            number(6,0)   AMT_LINE1                    nvarchar(80)   AMT_LINE2                    nvarchar(80)   AMT_STREET                   nvarchar(100)   AMT_NUMBER                   nvarchar(7)   AMT_POSTALCODE               nvarchar(4)   AMT_CITY                     nvarchar(60)
 # -------------------------------------------------------------------------
+ORACLE8I_DB_1_DEF OEREB2.HINVOR   oracle_create_table          No   oracle_table_writer_mode     INHERIT_FROM_WRITER   oracle_update_key_columns    ""   oracle_truncate_table        No   HIV_ID                       nvarchar(128)   HIV_XTF_ID                   nvarchar(128)   HIV_ARTNR                    nvarchar(255)   HIV_LIEFEREINHEIT            number(6,0)   EIB_OID                      nvarchar(128)   VOR_OID                      nvarchar(128)
+# -------------------------------------------------------------------------
 ORACLE8I_DB_1_DEF OEREB2.DARSTELLUNGSDIENST   oracle_create_table          No   oracle_table_writer_mode     INHERIT_FROM_WRITER   oracle_update_key_columns    ""   oracle_truncate_table        No   DAR_OID                      nvarchar(128)   DAR_XTF_ID                   nvarchar(128)   DAR_VERWEISWMS_DE            nvarchar(1023)   DAR_VERWEISWMS_FR            nvarchar(1023)   DAR_LEGENDEIMWEB_DE          nvarchar(1023)   DAR_LEGENDEIMWEB_FR          nvarchar(1023)   DAR_LIEFEREINHEIT            number(6,0)
 # -------------------------------------------------------------------------
-ORACLE8I_DB_1_DEF OEREB2.HINWEIDOK   oracle_create_table          No   oracle_table_writer_mode     INHERIT_FROM_WRITER   oracle_update_key_columns    ""   oracle_truncate_table        No   HWD_ID                       nvarchar(128)   HWD_XTF_ID                   nvarchar(128)   HWD_LIEFEREINHEIT            number(6,0)   HWD_ARTNR                    nvarchar(255)   VOR_OIDURSPRUNG              nvarchar(128)   VOR_OIDHINWEIS               nvarchar(128)
-# -------------------------------------------------------------------------
 ORACLE8I_DB_1_DEF OEREB2.EIGENTUMSBESCHRAENKUNG   oracle_create_table          No   oracle_table_writer_mode     INHERIT_FROM_WRITER   oracle_update_key_columns    ""   oracle_truncate_table        No   EIB_OID                      nvarchar(128)   EIB_XTF_ID                   nvarchar(128)   EIB_AUSSAGE_DE               nclob   EIB_AUSSAGE_FR               nclob   EIB_ARTCODE                  nvarchar(40)   EIB_ARTCODELISTE             nvarchar(1023)   EIB_PUBLIZIERTAB             date   EIB_LIEFEREINHEIT            number(6,0)   AMT_OID                      nvarchar(128)   DAR_OID                      nvarchar(128)   RES_ID                       number(10,0)   STH_ID                       number(10,0)   EIB_SORT                     number(10,0)   EIB_LEGENDESYMBOL_DE         nvarchar(1023)   EIB_LEGENDESYMBOL_FR         nvarchar(1023)
-# -------------------------------------------------------------------------
-ORACLE8I_DB_1_DEF OEREB2.HINVOR   oracle_create_table          No   oracle_table_writer_mode     INHERIT_FROM_WRITER   oracle_update_key_columns    ""   oracle_truncate_table        No   HIV_ID                       nvarchar(128)   HIV_XTF_ID                   nvarchar(128)   HIV_ARTNR                    nvarchar(255)   HIV_LIEFEREINHEIT            number(6,0)   EIB_OID                      nvarchar(128)   VOR_OID                      nvarchar(128)
