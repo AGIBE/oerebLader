@@ -21,14 +21,14 @@
 #!   DESCRIPTION=""
 #!   DESTINATION="NONE"
 #!   DESTINATION_ROUTING_FILE=""
-#!   DOC_EXTENTS="7387.57 3095.72"
-#!   DOC_TOP_LEFT="193.752 -3085.97"
+#!   DOC_EXTENTS="8806.34 3126.97"
+#!   DOC_TOP_LEFT="193.752 -3117.22"
 #!   END_PYTHON=""
 #!   END_TCL=""
 #!   EXPLICIT_BOOKMARK_ORDER="false"
 #!   FME_BUILD_NUM="18310"
-#!   FME_DOCUMENT_GUID="e85cdbb3-2edd-42e1-9c41-80452481ff23"
-#!   FME_DOCUMENT_PRIORGUID="5be125f2-590d-4cce-ac22-5f14b8b53049,e0d09a53-58fa-43ba-9aff-87554d375a44,eea87cef-3b06-4716-a302-a60d51863c3e"
+#!   FME_DOCUMENT_GUID="8215f362-847f-4831-9821-6e60d81e6ae0"
+#!   FME_DOCUMENT_PRIORGUID="5be125f2-590d-4cce-ac22-5f14b8b53049,e0d09a53-58fa-43ba-9aff-87554d375a44,eea87cef-3b06-4716-a302-a60d51863c3e,e85cdbb3-2edd-42e1-9c41-80452481ff23"
 #!   FME_GEOMETRY_HANDLING="Enhanced"
 #!   FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
 #!   FME_REPROJECTION_ENGINE="FME"
@@ -37,7 +37,7 @@
 #!   HISTORY=""
 #!   IGNORE_READER_FAILURE="No"
 #!   LAST_SAVE_BUILD="FME(R) 2018.0.1.0 (20180518 - Build 18310 - WIN32)"
-#!   LAST_SAVE_DATE="2019-09-05T12:41:55"
+#!   LAST_SAVE_DATE="2019-09-20T08:42:03"
 #!   LOG_FILE="$(LOGFILE)"
 #!   LOG_MAX_RECORDED_FEATURES="200"
 #!   MARKDOWN_DESCRIPTION=""
@@ -55,7 +55,7 @@
 #!   TITLE=""
 #!   USAGE=""
 #!   USE_MARKDOWN=""
-#!   VIEW_POSITION="34.3753 68.7507"
+#!   VIEW_POSITION="3443.78 -559.381"
 #!   WARN_INVALID_XFORM_PARAM="Yes"
 #!   WORKSPACE_VERSION="1"
 #!   ZOOM_SCALE="100"
@@ -187,10 +187,10 @@
 #! <COMMENT
 #!   IDENTIFIER="57"
 #!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;url_de&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
-#!   POSITION="3301.0332503325035 -1180.638656386564"
-#!   TOP_LEFT="3301.0332503325035 -1180.638656386564"
-#!   BOTTOM_RIGHT="3731.0332503325035 -1179.638656386564"
-#!   BOUNDING_RECT="3301.0332503325035 -1180.638656386564 430 -1"
+#!   POSITION="4719.79743797438 -1208.7639376393765"
+#!   TOP_LEFT="4719.79743797438 -1208.7639376393765"
+#!   BOTTOM_RIGHT="5149.79743797438 -1207.7639376393765"
+#!   BOUNDING_RECT="4719.79743797438 -1208.7639376393765 430 -1"
 #!   ORDER="500000000000029"
 #!   FOLLOW_ANCHOR="true"
 #!   INFO_NODE="false"
@@ -201,10 +201,10 @@
 #! <COMMENT
 #!   IDENTIFIER="58"
 #!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;url_fr&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
-#!   POSITION="3301.0332503325035 -1476.2648126481265"
-#!   TOP_LEFT="3301.0332503325035 -1476.2648126481265"
-#!   BOTTOM_RIGHT="3731.0332503325035 -1475.2648126481265"
-#!   BOUNDING_RECT="3301.0332503325035 -1476.2648126481265 430 -1"
+#!   POSITION="4719.79743797438 -1504.3900939009391"
+#!   TOP_LEFT="4719.79743797438 -1504.3900939009391"
+#!   BOTTOM_RIGHT="5149.79743797438 -1503.3900939009391"
+#!   BOUNDING_RECT="4719.79743797438 -1504.3900939009391 430 -1"
 #!   ORDER="500000000000030"
 #!   FOLLOW_ANCHOR="true"
 #!   INFO_NODE="false"
@@ -229,10 +229,10 @@
 #! <COMMENT
 #!   IDENTIFIER="69"
 #!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;DARSTELLUNGSDIENST.DAR_LEGENDEIMWEB_DE/FR&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
-#!   POSITION="2103.1386388863893 -2857.8411431729364"
-#!   TOP_LEFT="2103.1386388863893 -2857.8411431729364"
-#!   BOTTOM_RIGHT="2865.6462639626393 -2956.5918306798117"
-#!   BOUNDING_RECT="2103.1386388863893 -2857.8411431729364 762.50762507624995 98.750687506875067"
+#!   POSITION="2134.3889513895147 -2889.0914556760622"
+#!   TOP_LEFT="2134.3889513895147 -2889.0914556760622"
+#!   BOTTOM_RIGHT="2896.8965764657646 -2987.8421431829374"
+#!   BOUNDING_RECT="2134.3889513895147 -2889.0914556760622 762.50762507624995 98.750687506875067"
 #!   ORDER="500000000000027"
 #!   FOLLOW_ANCHOR="true"
 #!   INFO_NODE="false"
@@ -428,55 +428,6 @@
 #!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="SQLExecutor"/>
 #! </TRANSFORMER>
 #! <TRANSFORMER
-#!   IDENTIFIER="10"
-#!   TYPE="Aggregator"
-#!   VERSION="14"
-#!   POSITION="4615.6711567115681 -1387.5138751387512"
-#!   BOUNDING_RECT="4615.6711567115681 -1387.5138751387512 -1 -1"
-#!   ORDER="500000000000014"
-#!   PARMS_EDITED="true"
-#!   ENABLED="true"
-#!   LAST_PARM_EDIT="18310"
-#! >
-#!     <OUTPUT_FEAT NAME="AGGREGATE"/>
-#!     <FEAT_COLLAPSED COLLAPSED="0"/>
-#!     <XFORM_ATTR ATTR_NAME="url" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="liefereinheit" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="schema" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="schemas" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="url_infos{}.liefereinheit" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="url_infos{}.schema" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_PARM PARM_NAME="ACCUM_ATTRS_NAME" PARM_VALUE="Use Attributes From One Feature"/>
-#!     <XFORM_PARM PARM_NAME="AGGREGATE_TYPE" PARM_VALUE="Homogeneous Collection (If Possible)"/>
-#!     <XFORM_PARM PARM_NAME="ASSEMBLE_HIERARCHY_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="ASSEMBLE_ONE_LEVEL_GROUP" PARM_VALUE="FME_DISCLOSURE_OPEN"/>
-#!     <XFORM_PARM PARM_NAME="ATTR_ACCUM_GROUP" PARM_VALUE="FME_DISCLOSURE_OPEN"/>
-#!     <XFORM_PARM PARM_NAME="ATTR_TO_TRAIT" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <XFORM_PARM PARM_NAME="AV" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="CHILD_ID_ATTR" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <XFORM_PARM PARM_NAME="CONCAT_ATTRS" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="COUNT_ATTR" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="CYCLE_ID_ERROR_ATTR" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <XFORM_PARM PARM_NAME="GENERATE_LIST_GROUP" PARM_VALUE="YES"/>
-#!     <XFORM_PARM PARM_NAME="GEOM_NAME_FIELD" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="GROUP_BY" PARM_VALUE="url"/>
-#!     <XFORM_PARM PARM_NAME="ID_ATTR" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <XFORM_PARM PARM_NAME="ID_SELECTION" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <XFORM_PARM PARM_NAME="LIST_ATTRS_TO_INCLUDE" PARM_VALUE="liefereinheit schema"/>
-#!     <XFORM_PARM PARM_NAME="LIST_ATTRS_TO_INCLUDE_MODE" PARM_VALUE="Selected Attributes"/>
-#!     <XFORM_PARM PARM_NAME="LIST_NAME" PARM_VALUE="url_infos"/>
-#!     <XFORM_PARM PARM_NAME="MODE" PARM_VALUE="Geometry - Assemble One Level"/>
-#!     <XFORM_PARM PARM_NAME="ORDERED" PARM_VALUE="No"/>
-#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="PARENT_ID_ATTR" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <XFORM_PARM PARM_NAME="PRESERVE_ID" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <XFORM_PARM PARM_NAME="SEP" PARM_VALUE="&lt;comma&gt;"/>
-#!     <XFORM_PARM PARM_NAME="SUM" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="WEIGHT" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Aggregator"/>
-#! </TRANSFORMER>
-#! <TRANSFORMER
 #!   IDENTIFIER="11"
 #!   TYPE="SQLExecutor"
 #!   VERSION="8"
@@ -491,7 +442,7 @@
 #!     <FEAT_COLLAPSED COLLAPSED="0"/>
 #!     <XFORM_ATTR ATTR_NAME="liefereinheit" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="schema" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="url" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="url_de" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <OUTPUT_FEAT NAME="INITIATOR"/>
 #!     <FEAT_COLLAPSED COLLAPSED="1"/>
 #!     <XFORM_ATTR ATTR_NAME="liefereinheit" IS_USER_CREATED="false" FEAT_INDEX="1" />
@@ -502,17 +453,17 @@
 #!     <XFORM_ATTR ATTR_NAME="liefereinheit" IS_USER_CREATED="false" FEAT_INDEX="2" />
 #!     <XFORM_ATTR ATTR_NAME="schema" IS_USER_CREATED="false" FEAT_INDEX="2" />
 #!     <XFORM_ATTR ATTR_NAME="_reader_error" IS_USER_CREATED="false" FEAT_INDEX="2" />
-#!     <XFORM_ATTR ATTR_NAME="url" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="url_de" IS_USER_CREATED="false" FEAT_INDEX="2" />
 #!     <XFORM_PARM PARM_NAME="COMBINE_ATTRS" PARM_VALUE="Keep Result Attributes if Conflict"/>
 #!     <XFORM_PARM PARM_NAME="COMBINE_GEOM" PARM_VALUE="Initiator Geometry Only"/>
 #!     <XFORM_PARM PARM_NAME="COORDSYS" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="DATASET" PARM_VALUE="$(OEREB_PG_DATABASE)"/>
 #!     <XFORM_PARM PARM_NAME="DB_GROUP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="DYNGROUP_0" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="EXPOSED_ATTRIBUTE_LIST" PARM_VALUE="url"/>
+#!     <XFORM_PARM PARM_NAME="EXPOSED_ATTRIBUTE_LIST" PARM_VALUE="url_de"/>
 #!     <XFORM_PARM PARM_NAME="FEATURETYPES" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="FORMAT" PARM_VALUE="POSTGRES"/>
-#!     <XFORM_PARM PARM_NAME="FORMAT_PARAMS" PARM_VALUE="POSTGRES_HOST,&quot;OPTIONAL TEXT&quot;,POSTGRES&lt;space&gt;Host:,POSTGRES_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS,&quot;IGNORE TEXT&quot;,POSTGRES&lt;space&gt;,POSTGRES_USER_NAME,&quot;OPTIONAL TEXT&quot;,POSTGRES&lt;space&gt;Username:,POSTGRES_PASSWORD,&quot;OPTIONAL PASSWORD_ENCODED&quot;,POSTGRES&lt;space&gt;Password:,POSTGRES_READ_TIME_WITH_TIMEZONE,&quot;IGNORE TEXT&quot;,POSTGRES&lt;space&gt;,POSTGRES_SCHEMAS_FOR_TABLE_LISTING,&quot;IGNORE TEXT&quot;,POSTGRES&lt;space&gt;Schemas&lt;space&gt;for&lt;space&gt;Table&lt;space&gt;Listing:,POSTGRES_PORT,&quot;OPTIONAL INTEGER&quot;,POSTGRES&lt;space&gt;Port:"/>
+#!     <XFORM_PARM PARM_NAME="FORMAT_PARAMS" PARM_VALUE="POSTGRES_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS,&quot;IGNORE TEXT&quot;,POSTGRES&lt;space&gt;,POSTGRES_SCHEMAS_FOR_TABLE_LISTING,&quot;IGNORE TEXT&quot;,POSTGRES&lt;space&gt;Schemas&lt;space&gt;for&lt;space&gt;Table&lt;space&gt;Listing:,POSTGRES_PASSWORD,&quot;OPTIONAL PASSWORD_ENCODED&quot;,POSTGRES&lt;space&gt;Password:,POSTGRES_READ_TIME_WITH_TIMEZONE,&quot;IGNORE TEXT&quot;,POSTGRES&lt;space&gt;,POSTGRES_PORT,&quot;OPTIONAL INTEGER&quot;,POSTGRES&lt;space&gt;Port:,POSTGRES_HOST,&quot;OPTIONAL TEXT&quot;,POSTGRES&lt;space&gt;Host:,POSTGRES_USER_NAME,&quot;OPTIONAL TEXT&quot;,POSTGRES&lt;space&gt;Username:"/>
 #!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="POSTGRES_HOST" PARM_VALUE="$(OEREB_PG_HOST)"/>
 #!     <XFORM_PARM PARM_NAME="POSTGRES_PASSWORD" PARM_VALUE="$(OEREB_PG_PASSWORD)"/>
@@ -529,8 +480,8 @@
 #!   IDENTIFIER="12"
 #!   TYPE="Tester"
 #!   VERSION="2"
-#!   POSITION="4015.6651566515675 -1387.5138751387512"
-#!   BOUNDING_RECT="4015.6651566515675 -1387.5138751387512 -1 -1"
+#!   POSITION="5434.429344293444 -1415.6391563915638"
+#!   BOUNDING_RECT="5434.429344293444 -1415.6391563915638 -1 -1"
 #!   ORDER="500000000000016"
 #!   PARMS_EDITED="true"
 #!   ENABLED="true"
@@ -538,16 +489,10 @@
 #! >
 #!     <OUTPUT_FEAT NAME="PASSED"/>
 #!     <FEAT_COLLAPSED COLLAPSED="0"/>
-#!     <XFORM_ATTR ATTR_NAME="liefereinheit" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="schema" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="url" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="schemas" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <OUTPUT_FEAT NAME="FAILED"/>
 #!     <FEAT_COLLAPSED COLLAPSED="1"/>
-#!     <XFORM_ATTR ATTR_NAME="liefereinheit" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="schema" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="url" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="schemas" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_PARM PARM_NAME="BOOL_OP" PARM_VALUE="OR"/>
 #!     <XFORM_PARM PARM_NAME="COMPOSITE_TEST" PARM_VALUE="&lt;Unused&gt;"/>
 #!     <XFORM_PARM PARM_NAME="TEST_CLAUSE" PARM_VALUE="TEST url ATTRIBUTE_HAS_A_VALUE &quot;&quot;"/>
@@ -610,8 +555,8 @@
 #!   IDENTIFIER="16"
 #!   TYPE="HTTPCaller"
 #!   VERSION="1"
-#!   POSITION="5240.6774067740662 -1387.5138751387512"
-#!   BOUNDING_RECT="5240.6774067740662 -1387.5138751387512 -1 -1"
+#!   POSITION="6659.4415944159427 -1415.6391563915638"
+#!   BOUNDING_RECT="6659.4415944159427 -1415.6391563915638 -1 -1"
 #!   ORDER="500000000000019"
 #!   PARMS_EDITED="true"
 #!   ENABLED="true"
@@ -620,21 +565,11 @@
 #!     <OUTPUT_FEAT NAME="Output"/>
 #!     <FEAT_COLLAPSED COLLAPSED="0"/>
 #!     <XFORM_ATTR ATTR_NAME="url" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="liefereinheit" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="schema" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="schemas" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="url_infos{}.liefereinheit" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="url_infos{}.schema" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_response_body" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_http_status_code" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <OUTPUT_FEAT NAME="&lt;Rejected&gt;"/>
 #!     <FEAT_COLLAPSED COLLAPSED="1"/>
 #!     <XFORM_ATTR ATTR_NAME="url" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="liefereinheit" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="schema" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="schemas" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="url_infos{}.liefereinheit" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="url_infos{}.schema" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="_error" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="_response_body" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="_http_status_code" IS_USER_CREATED="false" FEAT_INDEX="1" />
@@ -684,8 +619,8 @@
 #!   IDENTIFIER="17"
 #!   TYPE="Tester"
 #!   VERSION="2"
-#!   POSITION="5856.3085630856312 -1387.5138751387512"
-#!   BOUNDING_RECT="5856.3085630856312 -1387.5138751387512 -1 -1"
+#!   POSITION="7275.0727507275078 -1415.6391563915638"
+#!   BOUNDING_RECT="7275.0727507275078 -1415.6391563915638 -1 -1"
 #!   ORDER="500000000000020"
 #!   PARMS_EDITED="true"
 #!   ENABLED="true"
@@ -694,21 +629,11 @@
 #!     <OUTPUT_FEAT NAME="PASSED"/>
 #!     <FEAT_COLLAPSED COLLAPSED="0"/>
 #!     <XFORM_ATTR ATTR_NAME="url" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="liefereinheit" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="schema" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="schemas" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="url_infos{}.liefereinheit" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="url_infos{}.schema" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_response_body" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_http_status_code" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <OUTPUT_FEAT NAME="FAILED"/>
 #!     <FEAT_COLLAPSED COLLAPSED="1"/>
 #!     <XFORM_ATTR ATTR_NAME="url" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="liefereinheit" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="schema" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="schemas" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="url_infos{}.liefereinheit" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="url_infos{}.schema" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="_response_body" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="_http_status_code" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_PARM PARM_NAME="BOOL_OP" PARM_VALUE="OR"/>
@@ -722,8 +647,8 @@
 #!   IDENTIFIER="18"
 #!   TYPE="Terminator"
 #!   VERSION="3"
-#!   POSITION="7581.3258132581323 -1819.3925939259393"
-#!   BOUNDING_RECT="7581.3258132581323 -1819.3925939259393 -1 -1"
+#!   POSITION="9000.0900009000088 -1847.5178751787519"
+#!   BOUNDING_RECT="9000.0900009000088 -1847.5178751787519 -1 -1"
 #!   ORDER="500000000000021"
 #!   PARMS_EDITED="true"
 #!   ENABLED="true"
@@ -738,8 +663,8 @@
 #!   IDENTIFIER="19"
 #!   TYPE="Logger"
 #!   VERSION="4"
-#!   POSITION="6440.6894068940665 -1819.3925939259393"
-#!   BOUNDING_RECT="6440.6894068940665 -1819.3925939259393 -1 -1"
+#!   POSITION="7859.453594535943 -1847.5178751787519"
+#!   BOUNDING_RECT="7859.453594535943 -1847.5178751787519 -1 -1"
 #!   ORDER="500000000000024"
 #!   PARMS_EDITED="true"
 #!   ENABLED="true"
@@ -748,11 +673,6 @@
 #!     <OUTPUT_FEAT NAME="LOGGED"/>
 #!     <FEAT_COLLAPSED COLLAPSED="0"/>
 #!     <XFORM_ATTR ATTR_NAME="url" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="liefereinheit" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="schema" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="schemas" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="url_infos{}.liefereinheit" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="url_infos{}.schema" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_response_body" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_http_status_code" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_error" IS_USER_CREATED="false" FEAT_INDEX="0" />
@@ -771,8 +691,8 @@
 #!   IDENTIFIER="20"
 #!   TYPE="FeatureHolder"
 #!   VERSION="0"
-#!   POSITION="7034.4453444534465 -1819.3925939259393"
-#!   BOUNDING_RECT="7034.4453444534465 -1819.3925939259393 -1 -1"
+#!   POSITION="8453.2095320953213 -1847.5178751787519"
+#!   BOUNDING_RECT="8453.2095320953213 -1847.5178751787519 -1 -1"
 #!   ORDER="500000000000025"
 #!   PARMS_EDITED="true"
 #!   ENABLED="true"
@@ -781,11 +701,6 @@
 #!     <OUTPUT_FEAT NAME="OUTPUT"/>
 #!     <FEAT_COLLAPSED COLLAPSED="0"/>
 #!     <XFORM_ATTR ATTR_NAME="url" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="liefereinheit" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="schema" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="schemas" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="url_infos{}.liefereinheit" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="url_infos{}.schema" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_response_body" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_http_status_code" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_error" IS_USER_CREATED="false" FEAT_INDEX="0" />
@@ -848,8 +763,8 @@
 #!   IDENTIFIER="47"
 #!   TYPE="AttributeManager"
 #!   VERSION="1"
-#!   POSITION="3325.0332503325035 -1314.389343893439"
-#!   BOUNDING_RECT="3325.0332503325035 -1314.389343893439 -1 -1"
+#!   POSITION="4743.79743797438 -1342.5146251462515"
+#!   BOUNDING_RECT="4743.79743797438 -1342.5146251462515 -1 -1"
 #!   ORDER="500000000000028"
 #!   PARMS_EDITED="true"
 #!   ENABLED="true"
@@ -857,13 +772,10 @@
 #! >
 #!     <OUTPUT_FEAT NAME="OUTPUT"/>
 #!     <FEAT_COLLAPSED COLLAPSED="0"/>
-#!     <XFORM_ATTR ATTR_NAME="liefereinheit" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="schema" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="url" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="schemas" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="ATTRIBUTE_HANDLING" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="liefereinheit liefereinheit  NO_OP schema schema  NO_OP url_de url  RENAME_SET_VALUE url_fr url_fr  REMOVE"/>
+#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="liefereinheit liefereinheit  REMOVE schema schema  REMOVE url_de url  RENAME_SET_VALUE url_fr url_fr  REMOVE schemas schemas  REMOVE"/>
 #!     <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
 #!     <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_VALUE="No Substitution"/>
 #!     <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
@@ -876,8 +788,8 @@
 #!   IDENTIFIER="53"
 #!   TYPE="AttributeManager"
 #!   VERSION="1"
-#!   POSITION="3325.0332503325035 -1610.0155001550015"
-#!   BOUNDING_RECT="3325.0332503325035 -1610.0155001550015 -1 -1"
+#!   POSITION="4743.79743797438 -1638.1407814078141"
+#!   BOUNDING_RECT="4743.79743797438 -1638.1407814078141 -1 -1"
 #!   ORDER="500000000000028"
 #!   PARMS_EDITED="true"
 #!   ENABLED="true"
@@ -885,13 +797,10 @@
 #! >
 #!     <OUTPUT_FEAT NAME="OUTPUT"/>
 #!     <FEAT_COLLAPSED COLLAPSED="0"/>
-#!     <XFORM_ATTR ATTR_NAME="liefereinheit" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="schema" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="url" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="schemas" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="ATTRIBUTE_HANDLING" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="liefereinheit liefereinheit  NO_OP schema schema  NO_OP url_de url_de  REMOVE url_fr url  RENAME_SET_VALUE"/>
+#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="liefereinheit liefereinheit  REMOVE schema schema  REMOVE url_de url_de  REMOVE url_fr url  RENAME_SET_VALUE schemas schemas  REMOVE"/>
 #!     <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
 #!     <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_VALUE="No Substitution"/>
 #!     <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
@@ -956,8 +865,8 @@
 #!   IDENTIFIER="68"
 #!   TYPE="SQLExecutor"
 #!   VERSION="8"
-#!   POSITION="2293.7697565900839 -3085.9684244457485"
-#!   BOUNDING_RECT="2293.7697565900839 -3085.9684244457485 -1 -1"
+#!   POSITION="2325.0200690932093 -3117.2187369488743"
+#!   BOUNDING_RECT="2325.0200690932093 -3117.2187369488743 -1 -1"
 #!   ORDER="500000000000026"
 #!   PARMS_EDITED="true"
 #!   ENABLED="true"
@@ -1003,6 +912,91 @@
 #!     <XFORM_PARM PARM_NAME="SQL_STATEMENT" PARM_VALUE="select&lt;space&gt;distinct&lt;space&gt;dar_legendeimweb_de&lt;space&gt;url_de&lt;comma&gt;&lt;space&gt;dar_legendeimweb_fr&lt;space&gt;url_fr&lt;space&gt;from&lt;space&gt;darstellungsdienst&lt;space&gt;where&lt;space&gt;dar_liefereinheit=&lt;at&gt;Value&lt;openparen&gt;liefereinheit&lt;closeparen&gt;"/>
 #!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="SQLExecutor_5"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="75"
+#!   TYPE="BulkAttributeRenamer"
+#!   VERSION="4"
+#!   POSITION="4109.4160941609416 -1278.1377813778136"
+#!   BOUNDING_RECT="4109.4160941609416 -1278.1377813778136 -1 -1"
+#!   ORDER="500000000000032"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="18310"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="schemas" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="liefereinheit" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="url_de" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="url_fr" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="schema" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ATTRCHOICE" PARM_VALUE="All Attributes"/>
+#!     <XFORM_PARM PARM_NAME="ATTRLIST" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="ATTRS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="CASE_CHANGE_TYPE" PARM_VALUE="lower"/>
+#!     <XFORM_PARM PARM_NAME="CASE_DISP" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="MODE_CHOICE" PARM_VALUE="RENAME"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PATTERN_ACTION_DISP" PARM_VALUE="CASECHANGE"/>
+#!     <XFORM_PARM PARM_NAME="REPLACE_PATTERN" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="REPLACE_STR" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="BulkAttributeRenamer"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="66"
+#!   TYPE="BulkAttributeRenamer"
+#!   VERSION="4"
+#!   POSITION="4137.5375471996949 -1593.7637093887527"
+#!   BOUNDING_RECT="4137.5375471996949 -1593.7637093887527 -1 -1"
+#!   ORDER="500000000000032"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="18310"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="schemas" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="liefereinheit" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="url_de" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="url_fr" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="schema" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ATTRCHOICE" PARM_VALUE="All Attributes"/>
+#!     <XFORM_PARM PARM_NAME="ATTRLIST" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="ATTRS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="CASE_CHANGE_TYPE" PARM_VALUE="lower"/>
+#!     <XFORM_PARM PARM_NAME="CASE_DISP" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="MODE_CHOICE" PARM_VALUE="RENAME"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PATTERN_ACTION_DISP" PARM_VALUE="CASECHANGE"/>
+#!     <XFORM_PARM PARM_NAME="REPLACE_PATTERN" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="REPLACE_STR" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="BulkAttributeRenamer_2"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="67"
+#!   TYPE="DuplicateFilter"
+#!   VERSION="5"
+#!   POSITION="6043.8104381043813 -1342.5146251462515"
+#!   BOUNDING_RECT="6043.8104381043813 -1342.5146251462515 -1 -1"
+#!   ORDER="500000000000033"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="18310"
+#! >
+#!     <OUTPUT_FEAT NAME="UNIQUE"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="url" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="DUPLICATE"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="url" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_PARM PARM_NAME="INPUT_ORDERED_CHOICE" PARM_VALUE="No"/>
+#!     <XFORM_PARM PARM_NAME="KEYATTR" PARM_VALUE="url"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="DuplicateFilter"/>
 #! </TRANSFORMER>
 #! </TRANSFORMERS>
 #! <FEAT_LINKS>
@@ -1117,9 +1111,9 @@
 #!   EXTRA_POINTS=""
 #! />
 #! <FEAT_LINK
-#!   IDENTIFIER="52"
+#!   IDENTIFIER="77"
 #!   SOURCE_NODE="7"
-#!   TARGET_NODE="47"
+#!   TARGET_NODE="75"
 #!   SOURCE_PORT_DESC="fo 0 RESULT"
 #!   TARGET_PORT_DESC="fi 0 "
 #!   ENABLED="true"
@@ -1128,9 +1122,9 @@
 #!   EXTRA_POINTS=""
 #! />
 #! <FEAT_LINK
-#!   IDENTIFIER="54"
+#!   IDENTIFIER="83"
 #!   SOURCE_NODE="7"
-#!   TARGET_NODE="53"
+#!   TARGET_NODE="66"
 #!   SOURCE_PORT_DESC="fo 0 RESULT"
 #!   TARGET_PORT_DESC="fi 0 "
 #!   ENABLED="true"
@@ -1139,20 +1133,9 @@
 #!   EXTRA_POINTS=""
 #! />
 #! <FEAT_LINK
-#!   IDENTIFIER="35"
-#!   SOURCE_NODE="10"
-#!   TARGET_NODE="16"
-#!   SOURCE_PORT_DESC="fo 0 AGGREGATE"
-#!   TARGET_PORT_DESC="fi 0 "
-#!   ENABLED="true"
-#!   EXECUTION_IDX="0"
-#!   HIDDEN="false"
-#!   EXTRA_POINTS=""
-#! />
-#! <FEAT_LINK
-#!   IDENTIFIER="59"
+#!   IDENTIFIER="80"
 #!   SOURCE_NODE="11"
-#!   TARGET_NODE="47"
+#!   TARGET_NODE="75"
 #!   SOURCE_PORT_DESC="fo 0 RESULT"
 #!   TARGET_PORT_DESC="fi 0 "
 #!   ENABLED="true"
@@ -1161,9 +1144,9 @@
 #!   EXTRA_POINTS=""
 #! />
 #! <FEAT_LINK
-#!   IDENTIFIER="37"
+#!   IDENTIFIER="72"
 #!   SOURCE_NODE="12"
-#!   TARGET_NODE="10"
+#!   TARGET_NODE="67"
 #!   SOURCE_PORT_DESC="fo 0 PASSED"
 #!   TARGET_PORT_DESC="fi 0 "
 #!   ENABLED="true"
@@ -1172,9 +1155,9 @@
 #!   EXTRA_POINTS=""
 #! />
 #! <FEAT_LINK
-#!   IDENTIFIER="60"
+#!   IDENTIFIER="81"
 #!   SOURCE_NODE="14"
-#!   TARGET_NODE="47"
+#!   TARGET_NODE="75"
 #!   SOURCE_PORT_DESC="fo 0 RESULT"
 #!   TARGET_PORT_DESC="fi 0 "
 #!   ENABLED="true"
@@ -1183,9 +1166,9 @@
 #!   EXTRA_POINTS=""
 #! />
 #! <FEAT_LINK
-#!   IDENTIFIER="61"
+#!   IDENTIFIER="86"
 #!   SOURCE_NODE="14"
-#!   TARGET_NODE="53"
+#!   TARGET_NODE="66"
 #!   SOURCE_PORT_DESC="fo 0 RESULT"
 #!   TARGET_PORT_DESC="fi 0 "
 #!   ENABLED="true"
@@ -1227,9 +1210,9 @@
 #!   EXTRA_POINTS=""
 #! />
 #! <FEAT_LINK
-#!   IDENTIFIER="50"
+#!   IDENTIFIER="79"
 #!   SOURCE_NODE="21"
-#!   TARGET_NODE="47"
+#!   TARGET_NODE="75"
 #!   SOURCE_PORT_DESC="fo 0 RESULT"
 #!   TARGET_PORT_DESC="fi 0 "
 #!   ENABLED="true"
@@ -1238,9 +1221,9 @@
 #!   EXTRA_POINTS=""
 #! />
 #! <FEAT_LINK
-#!   IDENTIFIER="62"
+#!   IDENTIFIER="85"
 #!   SOURCE_NODE="21"
-#!   TARGET_NODE="53"
+#!   TARGET_NODE="66"
 #!   SOURCE_PORT_DESC="fo 0 RESULT"
 #!   TARGET_PORT_DESC="fi 0 "
 #!   ENABLED="true"
@@ -1271,31 +1254,53 @@
 #!   EXTRA_POINTS=""
 #! />
 #! <FEAT_LINK
-#!   IDENTIFIER="66"
+#!   IDENTIFIER="76"
 #!   SOURCE_NODE="63"
-#!   TARGET_NODE="47"
+#!   TARGET_NODE="75"
 #!   SOURCE_PORT_DESC="fo 0 RESULT"
 #!   TARGET_PORT_DESC="fi 0 "
 #!   ENABLED="true"
 #!   EXECUTION_IDX="0"
-#!   HIDDEN="false"
-#!   EXTRA_POINTS=""
-#! />
-#! <FEAT_LINK
-#!   IDENTIFIER="67"
-#!   SOURCE_NODE="63"
-#!   TARGET_NODE="53"
-#!   SOURCE_PORT_DESC="fo 0 RESULT"
-#!   TARGET_PORT_DESC="fi 0 "
-#!   ENABLED="true"
-#!   EXECUTION_IDX="1"
 #!   HIDDEN="false"
 #!   EXTRA_POINTS=""
 #! />
 #! <FEAT_LINK
 #!   IDENTIFIER="71"
+#!   SOURCE_NODE="63"
+#!   TARGET_NODE="66"
+#!   SOURCE_PORT_DESC="fo 0 RESULT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="1"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="87"
+#!   SOURCE_NODE="66"
+#!   TARGET_NODE="53"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="88"
+#!   SOURCE_NODE="67"
+#!   TARGET_NODE="16"
+#!   SOURCE_PORT_DESC="fo 0 UNIQUE"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="78"
 #!   SOURCE_NODE="68"
-#!   TARGET_NODE="47"
+#!   TARGET_NODE="75"
 #!   SOURCE_PORT_DESC="fo 0 RESULT"
 #!   TARGET_PORT_DESC="fi 0 "
 #!   ENABLED="true"
@@ -1304,13 +1309,24 @@
 #!   EXTRA_POINTS=""
 #! />
 #! <FEAT_LINK
-#!   IDENTIFIER="72"
+#!   IDENTIFIER="84"
 #!   SOURCE_NODE="68"
-#!   TARGET_NODE="53"
+#!   TARGET_NODE="66"
 #!   SOURCE_PORT_DESC="fo 0 RESULT"
 #!   TARGET_PORT_DESC="fi 0 "
 #!   ENABLED="true"
 #!   EXECUTION_IDX="1"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="82"
+#!   SOURCE_NODE="75"
+#!   TARGET_NODE="47"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
 #!   HIDDEN="false"
 #!   EXTRA_POINTS=""
 #! />
@@ -1465,7 +1481,7 @@ DEFAULT_MACRO _WB_BYPASS_TERMINATION No
 FACTORY_DEF * TeeFactory FACTORY_NAME SQLExecutor_6_<Rejected> INPUT FEATURE_TYPE SQLExecutor_6_<REJECTED>  OUTPUT FAILED FEATURE_TYPE * @Abort(ENCODED, SQLExecutor_6<space>output<space>a<space><lt>Rejected<gt><space>feature.<space><space>To<space>continue<space>translation<space>when<space>features<space>are<space>rejected<comma><space>change<space><apos>Workspace<space>Parameters<apos><space><gt><space>Translation<space><gt><space><apos>Rejected<space>Feature<space>Handling<apos><space>to<space><apos>Continue<space>Translation<apos>)
 # -------------------------------------------------------------------------
 
-Tcl2 set AttributeSplitter_e6e6873a_cd42_4bdd_9c6e_105f690a360d0_splitDelim [FME_DecodeText {<comma>}];      if { [regexp {^([1-9][0-9]*s)+$} [set AttributeSplitter_e6e6873a_cd42_4bdd_9c6e_105f690a360d0_splitDelim]] }      {         set AttributeSplitter_e6e6873a_cd42_4bdd_9c6e_105f690a360d0_splitWidths [split [regsub -all {s$} {<comma>} {}] s];         proc AttributeSplitter_doSplit {}         {            global AttributeSplitter_e6e6873a_cd42_4bdd_9c6e_105f690a360d0_splitWidths;            set source [FME_GetAttribute [FME_DecodeText {schemas}]];            set attrNum 0;            set listName [FME_DecodeText {schema}];            set attrPos 0;            set keepEmptyParts [string equal {No} {No}];            foreach width [set AttributeSplitter_e6e6873a_cd42_4bdd_9c6e_105f690a360d0_splitWidths]            {               set endPos [expr $attrPos + $width - 1];               set bit [string range $source $attrPos $endPos];               set part [string trim $bit];               if { $keepEmptyParts || $part != \"\" } {                  FME_SetAttribute "$listName{$attrNum}" $part;                  incr attrNum;               };               incr attrPos $width;            };         };      }      else      {         proc AttributeSplitter_doSplit {}         {            global AttributeSplitter_e6e6873a_cd42_4bdd_9c6e_105f690a360d0_splitDelim;            set delim [set AttributeSplitter_e6e6873a_cd42_4bdd_9c6e_105f690a360d0_splitDelim];            set delimLength [string length $delim];            set source [FME_GetAttribute [FME_DecodeText {schemas}]];            set keepEmptyParts [string equal {No} {No}];            set bits {};            set startIndex 0;            set nextIndex [string first $delim $source $startIndex];            while {$nextIndex >= 0} {              lappend bits [string range $source $startIndex [expr $nextIndex-1]];              set startIndex [expr $nextIndex + $delimLength];              set nextIndex [string first $delim $source $startIndex];            };            lappend bits [string range $source $startIndex end];            set listName [FME_DecodeText {schema}];            set attrNum 0;            foreach bit $bits            {               set trimmedPart [string trim $bit];               if { $keepEmptyParts || $trimmedPart != \"\" } {                  FME_SetAttribute "$listName{$attrNum}" $trimmedPart;                  incr attrNum;               };            }          }       }
+Tcl2 set AttributeSplitter_49971427_b871_4833_9f2e_4e2caa0d41273_splitDelim [FME_DecodeText {<comma>}];      if { [regexp {^([1-9][0-9]*s)+$} [set AttributeSplitter_49971427_b871_4833_9f2e_4e2caa0d41273_splitDelim]] }      {         set AttributeSplitter_49971427_b871_4833_9f2e_4e2caa0d41273_splitWidths [split [regsub -all {s$} {<comma>} {}] s];         proc AttributeSplitter_doSplit {}         {            global AttributeSplitter_49971427_b871_4833_9f2e_4e2caa0d41273_splitWidths;            set source [FME_GetAttribute [FME_DecodeText {schemas}]];            set attrNum 0;            set listName [FME_DecodeText {schema}];            set attrPos 0;            set keepEmptyParts [string equal {No} {No}];            foreach width [set AttributeSplitter_49971427_b871_4833_9f2e_4e2caa0d41273_splitWidths]            {               set endPos [expr $attrPos + $width - 1];               set bit [string range $source $attrPos $endPos];               set part [string trim $bit];               if { $keepEmptyParts || $part != \"\" } {                  FME_SetAttribute "$listName{$attrNum}" $part;                  incr attrNum;               };               incr attrPos $width;            };         };      }      else      {         proc AttributeSplitter_doSplit {}         {            global AttributeSplitter_49971427_b871_4833_9f2e_4e2caa0d41273_splitDelim;            set delim [set AttributeSplitter_49971427_b871_4833_9f2e_4e2caa0d41273_splitDelim];            set delimLength [string length $delim];            set source [FME_GetAttribute [FME_DecodeText {schemas}]];            set keepEmptyParts [string equal {No} {No}];            set bits {};            set startIndex 0;            set nextIndex [string first $delim $source $startIndex];            while {$nextIndex >= 0} {              lappend bits [string range $source $startIndex [expr $nextIndex-1]];              set startIndex [expr $nextIndex + $delimLength];              set nextIndex [string first $delim $source $startIndex];            };            lappend bits [string range $source $startIndex end];            set listName [FME_DecodeText {schema}];            set attrNum 0;            foreach bit $bits            {               set trimmedPart [string trim $bit];               if { $keepEmptyParts || $trimmedPart != \"\" } {                  FME_SetAttribute "$listName{$attrNum}" $trimmedPart;                  incr attrNum;               };            }          }       }
 FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeSplitter    INPUT  FEATURE_TYPE AttributeManager_OUTPUT_0_qkWxPTSviNs=    OUTPUT FEATURE_TYPE AttributeSplitter_OUTPUT         @Tcl2(AttributeSplitter_doSplit)
 
 # -------------------------------------------------------------------------
@@ -1475,9 +1491,9 @@ DEFAULT_MACRO _WB_BYPASS_TERMINATION No
 FACTORY_DEF * TeeFactory FACTORY_NAME ListExploder_<Rejected> INPUT FEATURE_TYPE ListExploder_<REJECTED>  OUTPUT FAILED FEATURE_TYPE * @Abort(ENCODED, ListExploder<space>output<space>a<space><lt>Rejected<gt><space>feature.<space><space>To<space>continue<space>translation<space>when<space>features<space>are<space>rejected<comma><space>change<space><apos>Workspace<space>Parameters<apos><space><gt><space>Translation<space><gt><space><apos>Rejected<space>Feature<space>Handling<apos><space>to<space><apos>Continue<space>Translation<apos>)
 # -------------------------------------------------------------------------
 
-INCLUDE [    set macroLine "MACRO AttributeKeeper_81a8f601_48ec_46ca_9a50_cf946abfa6fe0_LIST_EXP ";    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "\\{\[0-9\]+\\}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
+INCLUDE [    set macroLine "MACRO AttributeKeeper_15ebdc5a_e708_4c49_afab_7b64ca3de2583_LIST_EXP ";    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "\\{\[0-9\]+\\}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
 
-FACTORY_DEF {*} TeeFactory    FACTORY_NAME AttributeKeeper    INPUT  FEATURE_TYPE ListExploder_ELEMENTS    OUTPUT { FEATURE_TYPE AttributeKeeper_OUTPUT        @KeepAttributes(fme_encoded,schema,liefereinheit,fme_pcre_match,"^fme_$(AttributeKeeper_81a8f601_48ec_46ca_9a50_cf946abfa6fe0_LIST_EXP)")         }
+FACTORY_DEF {*} TeeFactory    FACTORY_NAME AttributeKeeper    INPUT  FEATURE_TYPE ListExploder_ELEMENTS    OUTPUT { FEATURE_TYPE AttributeKeeper_OUTPUT        @KeepAttributes(fme_encoded,schema,liefereinheit,fme_pcre_match,"^fme_$(AttributeKeeper_15ebdc5a_e708_4c49_afab_7b64ca3de2583_LIST_EXP)")         }
 
 FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeKeeper OUTPUT Splitter"   INPUT FEATURE_TYPE AttributeKeeper_OUTPUT   OUTPUT FEATURE_TYPE AttributeKeeper_OUTPUT_0_rpABwRdi1ws=   OUTPUT FEATURE_TYPE AttributeKeeper_OUTPUT_1_ZImEmLS5GM8=   OUTPUT FEATURE_TYPE AttributeKeeper_OUTPUT_2_TmNRcQ2YPyY=
 # -------------------------------------------------------------------------
@@ -1490,7 +1506,7 @@ FACTORY_DEF * TeeFactory   FACTORY_NAME "SQLExecutor_4 INITIATOR Transformer Out
 DEFAULT_MACRO _WB_BYPASS_TERMINATION No
 FACTORY_DEF * TeeFactory FACTORY_NAME SQLExecutor_4_<Rejected> INPUT FEATURE_TYPE SQLExecutor_4_<REJECTED>  OUTPUT FAILED FEATURE_TYPE * @Abort(ENCODED, SQLExecutor_4<space>output<space>a<space><lt>Rejected<gt><space>feature.<space><space>To<space>continue<space>translation<space>when<space>features<space>are<space>rejected<comma><space>change<space><apos>Workspace<space>Parameters<apos><space><gt><space>Translation<space><gt><space><apos>Rejected<space>Feature<space>Handling<apos><space>to<space><apos>Continue<space>Translation<apos>)
 # -------------------------------------------------------------------------
-MACRO SQLExecutor_3_DIRECTIVES HOST "$(OEREB_PG_HOST)" QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS Yes USER_NAME "$(OEREB_PG_USERNAME)" PASSWORD "$(OEREB_PG_PASSWORD)" READ_TIME_WITH_TIMEZONE Yes PORT "$(OEREB_PG_PORT)"
+MACRO SQLExecutor_3_DIRECTIVES QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS Yes PASSWORD "$(OEREB_PG_PASSWORD)" READ_TIME_WITH_TIMEZONE Yes PORT "$(OEREB_PG_PORT)" HOST "$(OEREB_PG_HOST)" USER_NAME "$(OEREB_PG_USERNAME)"
 
 FACTORY_DEF * QueryFactory    FACTORY_NAME SQLExecutor_3    INPUT  FEATURE_TYPE AttributeKeeper_OUTPUT_1_ZImEmLS5GM8=    QUERY_SQL            "@EvaluateExpression(FDIV,STRING_ENCODED,SELECT<space>distinct<space>symbol_url<space>url_de<space>FROM<space><at>Value<openparen>schema<closeparen>.legend_entry<space>where<space>liefereinheit=<at>Value<openparen>liefereinheit<closeparen>,SQLExecutor_3)"    READER_TYPE          POSTGRES    READER_DATASET       "@EvaluateExpression(FDIV,STRING_ENCODED,$(OEREB_PG_DATABASE$encode),SQLExecutor_3)"    COMBINE_ATTRIBUTES   PREFER_RESULT    COMBINE_GEOMETRY     QUERY_ONLY    CONTINUE_ON_READER_ERROR YES    QUERYFCT_PROPAGATE_IDS_ON_SQL_EXECUTE YES    READER_PARAMS        $(SQLExecutor_3_DIRECTIVES)    OUTPUT RESULT FEATURE_TYPE SQLExecutor_3_RESULT        @SupplyAttributes(fme_feature_type,SQLExecutor_3)    OUTPUT QUERY FEATURE_TYPE SQLExecutor_3_INITIATOR    OUTPUT READER_ERROR FEATURE_TYPE SQLExecutor_3_<REJECTED>
 
@@ -1508,33 +1524,39 @@ DEFAULT_MACRO _WB_BYPASS_TERMINATION No
 FACTORY_DEF * TeeFactory FACTORY_NAME SQLExecutor_<Rejected> INPUT FEATURE_TYPE SQLExecutor_<REJECTED>  OUTPUT FAILED FEATURE_TYPE * @Abort(ENCODED, SQLExecutor<space>output<space>a<space><lt>Rejected<gt><space>feature.<space><space>To<space>continue<space>translation<space>when<space>features<space>are<space>rejected<comma><space>change<space><apos>Workspace<space>Parameters<apos><space><gt><space>Translation<space><gt><space><apos>Rejected<space>Feature<space>Handling<apos><space>to<space><apos>Continue<space>Translation<apos>)
 # -------------------------------------------------------------------------
 
-
-FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME AttributeManager_3    INPUT  FEATURE_TYPE SQLExecutor_RESULT_1_N3993qDbe+E=    INPUT  FEATURE_TYPE SQLExecutor_4_RESULT_1_36+cUWkuGiM=    INPUT  FEATURE_TYPE SQLExecutor_6_RESULT_1_jCckqZLtsbE=    INPUT  FEATURE_TYPE SQLExecutor_2_RESULT_1_255TfJJCeOQ=    INPUT  FEATURE_TYPE SQLExecutor_5_RESULT_1_0mhshCfetJs=    MULTI_FEATURE_MODE NO     NULL_ATTR_MODE NO_OP     ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV    ACTION_COLUMN 3    DEF_VAL_COLUMN 2    ATTR_ACTION { "url_de" "url_de" "" "REMOVE" }      ATTR_ACTION { "url_fr" "url" "" "RENAME_SET_VALUE" }    OUTPUT OUTPUT FEATURE_TYPE AttributeManager_3_OUTPUT
+FACTORY_DEF {*} TeeFactory    FACTORY_NAME BulkAttributeRenamer_2    INPUT  FEATURE_TYPE SQLExecutor_2_RESULT_1_255TfJJCeOQ=    INPUT  FEATURE_TYPE SQLExecutor_RESULT_1_N3993qDbe+E=    INPUT  FEATURE_TYPE SQLExecutor_5_RESULT_1_0mhshCfetJs=    INPUT  FEATURE_TYPE SQLExecutor_6_RESULT_1_jCckqZLtsbE=    INPUT  FEATURE_TYPE SQLExecutor_4_RESULT_1_36+cUWkuGiM=    OUTPUT { FEATURE_TYPE BulkAttributeRenamer_2_OUTPUT        @RenameAttributes(PATTERN_REPLACE, CASECHANGE, <Unused>, "<Unused>", "<Unused>", "lower", "<Unused>", "-_", "RENAME", "NONFME")         }
 
 # -------------------------------------------------------------------------
 
 
-FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME AttributeManager_2    INPUT  FEATURE_TYPE SQLExecutor_RESULT_0_yZOpFWkl7nU=    INPUT  FEATURE_TYPE SQLExecutor_3_RESULT    INPUT  FEATURE_TYPE SQLExecutor_4_RESULT_0_ZLD6MxWDJE4=    INPUT  FEATURE_TYPE SQLExecutor_6_RESULT_0_/Ep1ujY3Juw=    INPUT  FEATURE_TYPE SQLExecutor_2_RESULT_0_uHPUmprYjr8=    INPUT  FEATURE_TYPE SQLExecutor_5_RESULT_0_U/Sc0RKvjZA=    MULTI_FEATURE_MODE NO     NULL_ATTR_MODE NO_OP     ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV    ACTION_COLUMN 3    DEF_VAL_COLUMN 2    ATTR_ACTION { "url_de" "url" "" "RENAME_SET_VALUE" }      ATTR_ACTION { "url_fr" "url_fr" "" "REMOVE" }    OUTPUT OUTPUT FEATURE_TYPE AttributeManager_2_OUTPUT
+FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME AttributeManager_3    INPUT  FEATURE_TYPE BulkAttributeRenamer_2_OUTPUT    MULTI_FEATURE_MODE NO     NULL_ATTR_MODE NO_OP     ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV    ACTION_COLUMN 3    DEF_VAL_COLUMN 2    ATTR_ACTION { "liefereinheit" "liefereinheit" "" "REMOVE" }      ATTR_ACTION { "schema" "schema" "" "REMOVE" }      ATTR_ACTION { "url_de" "url_de" "" "REMOVE" }      ATTR_ACTION { "url_fr" "url" "" "RENAME_SET_VALUE" }      ATTR_ACTION { "schemas" "schemas" "" "REMOVE" }    OUTPUT OUTPUT FEATURE_TYPE AttributeManager_3_OUTPUT
+
+# -------------------------------------------------------------------------
+
+FACTORY_DEF {*} TeeFactory    FACTORY_NAME BulkAttributeRenamer    INPUT  FEATURE_TYPE SQLExecutor_2_RESULT_0_uHPUmprYjr8=    INPUT  FEATURE_TYPE SQLExecutor_RESULT_0_yZOpFWkl7nU=    INPUT  FEATURE_TYPE SQLExecutor_5_RESULT_0_U/Sc0RKvjZA=    INPUT  FEATURE_TYPE SQLExecutor_6_RESULT_0_/Ep1ujY3Juw=    INPUT  FEATURE_TYPE SQLExecutor_3_RESULT    INPUT  FEATURE_TYPE SQLExecutor_4_RESULT_0_ZLD6MxWDJE4=    OUTPUT { FEATURE_TYPE BulkAttributeRenamer_OUTPUT        @RenameAttributes(PATTERN_REPLACE, CASECHANGE, <Unused>, "<Unused>", "<Unused>", "lower", "<Unused>", "-_", "RENAME", "NONFME")         }
+
+# -------------------------------------------------------------------------
+
+
+FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME AttributeManager_2    INPUT  FEATURE_TYPE BulkAttributeRenamer_OUTPUT    MULTI_FEATURE_MODE NO     NULL_ATTR_MODE NO_OP     ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV    ACTION_COLUMN 3    DEF_VAL_COLUMN 2    ATTR_ACTION { "liefereinheit" "liefereinheit" "" "REMOVE" }      ATTR_ACTION { "schema" "schema" "" "REMOVE" }      ATTR_ACTION { "url_de" "url" "" "RENAME_SET_VALUE" }      ATTR_ACTION { "url_fr" "url_fr" "" "REMOVE" }      ATTR_ACTION { "schemas" "schemas" "" "REMOVE" }    OUTPUT OUTPUT FEATURE_TYPE AttributeManager_2_OUTPUT
 
 # -------------------------------------------------------------------------
 
 FACTORY_DEF * TestFactory    FACTORY_NAME Tester    INPUT  FEATURE_TYPE AttributeManager_2_OUTPUT    INPUT  FEATURE_TYPE AttributeManager_3_OUTPUT    TEST url ATTRIBUTE_HAS_A_VALUE "" ENCODED    BOOLEAN_OPERATOR OR    OUTPUT PASSED FEATURE_TYPE Tester_PASSED
 # -------------------------------------------------------------------------
 
-DEFAULT_MACRO Aggregator_BREAK_ATTR
-INCLUDE [if {"No" == "Yes"} {puts {MACRO Aggregator_BREAK_ATTR BREAK_BEFORE_FIELD_CHANGE url} }]
-FACTORY_DEF {*} AggregateFactory    FACTORY_NAME Aggregator    INPUT  FEATURE_TYPE Tester_PASSED    MODE ONE_LEVEL    GROUP_BY { url }    $(Aggregator_BREAK_ATTR)    REMOVE_GEOMETRY NO    ACCUMULATE_ATTRIBUTES One    LIST_NAME "url_infos{}"    LIST_ATTRS_TO_INCLUDE { liefereinheit schema }    LIST_ATTRS_TO_INCLUDE_MODE SELECTED    SEPARATOR <comma>    PRODUCE_MULTIS YES    OUTPUT AGGREGATE FEATURE_TYPE Aggregator_AGGREGATE
+FACTORY_DEF {*} DuplicateRemoverFactory    FACTORY_NAME DuplicateFilter    COMMAND_PARM_EVALUATION SINGLE_PASS    SUPPORTS_FEATURE_TABLES    INPUT  FEATURE_TYPE Tester_PASSED    KEY_ATTRIBUTES { url }    INPUT_IS_ORDERED NO    OUTPUT UNIQUE FEATURE_TYPE DuplicateFilter_UNIQUE
 
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * HTTPFactory    FACTORY_NAME HTTPCaller       INPUT  FEATURE_TYPE Aggregator_AGGREGATE    TARGET_URL "@EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>url<closeparen>,HTTPCaller)"    HTTP_METHOD HEAD    SAVE_FILE NO    OUTPUT_FILENAME "<Unused>"    OUTPUT_DIRECTORY "<Unused>"    FILE_EXTENSION "<Unused>"    TARGET_ATTR "_response_body"    FILE_PATH_ATTR "<Unused>"    UPLOAD_FILE "<Unused>"    UPLOAD_BODY "<Unused>"    MULTIPART_UPLOAD <Unused>    UPLOAD_CONTENT_TYPE "<Unused>"    COMBINED_MULTIPART_TABLE    REQUEST_HEADER_TABLE    ADDITIONAL_URL_PARAMETERS    AUTH_USERNAME "<Unused>"    AUTH_PASSWORD "<Unused>"    AUTH_METHOD "<Unused>"    TARGET_ATTRIBUTE_ENCODING auto-detect    RESPONSE_HEADER_LIST_ATTR ""    STATUS_CODE_ATTR "_http_status_code"    ERROR_ATTR "_error"    CONNECTION_TIMEOUT_LENGTH 60    TRANSFER_TIMEOUT_LENGTH 90    FOLLOW_REDIRECTS Yes    VERIFY_SSL_CERTIFICATES Yes    NAMED_CONNECTION "<Unused>"    USE_COOKIES No    OUTPUT OUTPUT FEATURE_TYPE HTTPCaller_Output    OUTPUT REJECTED FEATURE_TYPE HTTPCaller_<Rejected>
+FACTORY_DEF * HTTPFactory    FACTORY_NAME HTTPCaller       INPUT  FEATURE_TYPE DuplicateFilter_UNIQUE    TARGET_URL "@EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>url<closeparen>,HTTPCaller)"    HTTP_METHOD HEAD    SAVE_FILE NO    OUTPUT_FILENAME "<Unused>"    OUTPUT_DIRECTORY "<Unused>"    FILE_EXTENSION "<Unused>"    TARGET_ATTR "_response_body"    FILE_PATH_ATTR "<Unused>"    UPLOAD_FILE "<Unused>"    UPLOAD_BODY "<Unused>"    MULTIPART_UPLOAD <Unused>    UPLOAD_CONTENT_TYPE "<Unused>"    COMBINED_MULTIPART_TABLE    REQUEST_HEADER_TABLE    ADDITIONAL_URL_PARAMETERS    AUTH_USERNAME "<Unused>"    AUTH_PASSWORD "<Unused>"    AUTH_METHOD "<Unused>"    TARGET_ATTRIBUTE_ENCODING auto-detect    RESPONSE_HEADER_LIST_ATTR ""    STATUS_CODE_ATTR "_http_status_code"    ERROR_ATTR "_error"    CONNECTION_TIMEOUT_LENGTH 60    TRANSFER_TIMEOUT_LENGTH 90    FOLLOW_REDIRECTS Yes    VERIFY_SSL_CERTIFICATES Yes    NAMED_CONNECTION "<Unused>"    USE_COOKIES No    OUTPUT OUTPUT FEATURE_TYPE HTTPCaller_Output    OUTPUT REJECTED FEATURE_TYPE HTTPCaller_<Rejected>
 
 # -------------------------------------------------------------------------
 
 FACTORY_DEF * TestFactory    FACTORY_NAME Tester_2    INPUT  FEATURE_TYPE HTTPCaller_Output    TEST @EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>_http_status_code<closeparen>,Tester_2) = 200 ENCODED    BOOLEAN_OPERATOR OR    OUTPUT FAILED FEATURE_TYPE Tester_2_FAILED
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * TeeFactory    FACTORY_NAME URLs_NotFound_Logger    INPUT  FEATURE_TYPE HTTPCaller_<Rejected>    INPUT  FEATURE_TYPE Tester_2_FAILED    OUTPUT FEATURE_TYPE URLs_NotFound_LOGGED                  @FeatureType("URLs_NotFound")                  @Log(ENCODED, "URLs_NotFound:<space>Ung<u00fc>ltige<space>URL:","20","1000","",ERROR,LOG_ONLY,URLs_NotFound_1848f5bc_1a6d_471e_beae_bcea9c70b2c80)                  @FeatureType(URLs_NotFound_LOGGED) @Value("URLs_NotFound")
+FACTORY_DEF * TeeFactory    FACTORY_NAME URLs_NotFound_Logger    INPUT  FEATURE_TYPE HTTPCaller_<Rejected>    INPUT  FEATURE_TYPE Tester_2_FAILED    OUTPUT FEATURE_TYPE URLs_NotFound_LOGGED                  @FeatureType("URLs_NotFound")                  @Log(ENCODED, "URLs_NotFound:<space>Ung<u00fc>ltige<space>URL:","20","1000","",ERROR,LOG_ONLY,URLs_NotFound_b01a14e2_9d6a_4f55_b3d8_cb3a45ec12b03)                  @FeatureType(URLs_NotFound_LOGGED) @Value("URLs_NotFound")
 
 # -------------------------------------------------------------------------
 
