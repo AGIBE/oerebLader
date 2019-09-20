@@ -27,8 +27,8 @@
 #!   END_TCL=""
 #!   EXPLICIT_BOOKMARK_ORDER="false"
 #!   FME_BUILD_NUM="18310"
-#!   FME_DOCUMENT_GUID="943b3b6f-2e19-4c30-8380-25b38732ba99"
-#!   FME_DOCUMENT_PRIORGUID="352de003-3c2e-4471-bb8d-1302fdc19ba2,c28f0f50-1d1f-4b78-aca7-2678e7dc51dd,8e2cb3b0-7e7c-41a9-8867-4da115812f23,678e1772-bbaa-4327-b1fb-45c701e6de33,60303124-8218-430f-ae1d-1b16aa64ef8f,01832909-8e5c-492a-b2a0-aab160f6263b,8979e61b-53f8-4e61-a75f-384c521df3e9,86e25990-6da7-4394-97c3-a567961770ab,6836889d-a080-484a-8d88-611ba8685b07,87236980-a427-49e1-b8b9-0f77db73aca8,d6ef1440-6300-45ae-965d-78fd8f4e1f0f,42aa922e-e192-48b9-8317-41b69c81a718,578f4f42-f550-41b3-8562-24aef8078eb9,786c1e84-8caa-438f-ab2f-b05c3ad17201,2d7901f0-2e95-4920-b692-ff0677fa6881,c734fa4e-e13a-41ae-aed2-fad8fad5993c,d0bf3c3f-ee82-4f5e-b2df-9f6aecc9b8b0,888600ae-476b-4e35-b1a5-3bc508e9ed99,c9dcd998-eaff-4204-b5e5-487731b46290,c1434782-2378-4e96-8277-64cbc7faa8b0,1bfd3fcb-d7ca-4a3b-b018-ad840d7c8e88,6bf62a1b-b59b-49d5-b3bf-075aa446d8fe"
+#!   FME_DOCUMENT_GUID="09561a09-713b-4506-83d3-7bd8f2f3329e"
+#!   FME_DOCUMENT_PRIORGUID="352de003-3c2e-4471-bb8d-1302fdc19ba2,c28f0f50-1d1f-4b78-aca7-2678e7dc51dd,8e2cb3b0-7e7c-41a9-8867-4da115812f23,678e1772-bbaa-4327-b1fb-45c701e6de33,60303124-8218-430f-ae1d-1b16aa64ef8f,01832909-8e5c-492a-b2a0-aab160f6263b,8979e61b-53f8-4e61-a75f-384c521df3e9,86e25990-6da7-4394-97c3-a567961770ab,6836889d-a080-484a-8d88-611ba8685b07,87236980-a427-49e1-b8b9-0f77db73aca8,d6ef1440-6300-45ae-965d-78fd8f4e1f0f,42aa922e-e192-48b9-8317-41b69c81a718,578f4f42-f550-41b3-8562-24aef8078eb9,786c1e84-8caa-438f-ab2f-b05c3ad17201,2d7901f0-2e95-4920-b692-ff0677fa6881,c734fa4e-e13a-41ae-aed2-fad8fad5993c,d0bf3c3f-ee82-4f5e-b2df-9f6aecc9b8b0,888600ae-476b-4e35-b1a5-3bc508e9ed99,c9dcd998-eaff-4204-b5e5-487731b46290,c1434782-2378-4e96-8277-64cbc7faa8b0,1bfd3fcb-d7ca-4a3b-b018-ad840d7c8e88,6bf62a1b-b59b-49d5-b3bf-075aa446d8fe,943b3b6f-2e19-4c30-8380-25b38732ba99"
 #!   FME_GEOMETRY_HANDLING="Enhanced"
 #!   FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
 #!   FME_REPROJECTION_ENGINE="FME"
@@ -37,7 +37,7 @@
 #!   HISTORY=""
 #!   IGNORE_READER_FAILURE="No"
 #!   LAST_SAVE_BUILD="FME(R) 2018.0.1.0 (20180518 - Build 18310 - WIN32)"
-#!   LAST_SAVE_DATE="2018-11-08T12:41:12"
+#!   LAST_SAVE_DATE="2019-09-20T09:33:01"
 #!   LOG_FILE="$(LOGFILE)"
 #!   LOG_MAX_RECORDED_FEATURES="200"
 #!   MARKDOWN_DESCRIPTION=""
@@ -55,7 +55,7 @@
 #!   TITLE=""
 #!   USAGE=""
 #!   USE_MARKDOWN=""
-#!   VIEW_POSITION="4621.92 371.879"
+#!   VIEW_POSITION="2221.9 -768.758"
 #!   WARN_INVALID_XFORM_PARAM="Yes"
 #!   WORKSPACE_VERSION="1"
 #!   ZOOM_SCALE="100"
@@ -74,7 +74,7 @@
 #!   WRITE_DEFS="true"
 #!   DEFLINE_TEMPLATE="geodb_type {FME_GEN_GEOMETRY}"
 #!   DEFLINE_ATTRS="true"
-#!   EXPOSABLE_ATTRS="geodb_dim_line_y double geodb_text_lc_style char(20) geodb_dim_extn_line_angle double geodb_raster_compression_quality integer geodb_text_scale boolean geodb_text_lc_textbox_y3 double geodb_text_word_spacing double geodb_dim_extn_line_display smallint geodb_dim_end_dimension_y double geodb_raster_pyramid_level integer fme_geometry fme_char(50) geodb_text_lc_textbox_y2 double geodb_text_ref_scale double geodb_symbol_id integer geodb_color char(50) geodb_to_junction_element_id integer geodb_text_character_width double geodb_junction_feature_count integer geodb_text_leader_line_color char(50) geodb_text_point_scale_factor double geodb_primary_axis double geodb_dim_begin_dimension_z double geodb_dim_line_display smallint geodb_subtype_name char(254) multi_reader_id integer geodb_dim_begin_dimension_y double geodb_edge_element_count integer geodb_text_lc_accent_bar_color char(50) geodb_raster_compression_type char(100) geodb_text_lc_textbox_x4 double geodb_feature_is_simple boolean geodb_font_underline boolean geodb_text_part_count integer fme_feature_type char(50) geodb_text_string char(254) geodb_text_lc_gap double geodb_text_string_with_format_tags char(254) fme_text_string char(50) geodb_text_lc_margin_top double fme_color char(50) geodb_text_x_offset double geodb_text_line_spacing double geodb_text_size double geodb_dim_style_id integer geodb_rel_destination_oid integer geodb_font_weight smallint geodb_dim_using_custom_length boolean geodb_dim_end_dimension_z double geodb_text_lc_textbox_y4 double geodb_font_strikethrough boolean geodb_rotation double geodb_dim_text_angle double geodb_feature_has_relationships boolean geodb_element_index integer geodb_h_align char(50) geodb_font_bold boolean geodb_text_leader_line char(254) geodb_junction_element_count integer geodb_text_clip boolean geodb_dim_line_z double geodb_text_leader_line_width double geodb_from_junction_element_id integer geodb_dim_type smallint geodb_v_align char(50) fme_sweep_angle double geodb_type char(25) geodb_text_lc_textbox_x1 double fme_type char(50) geodb_dim_text_y double geodb_dim_end_dimension_x double fme_dataset char(50) geodb_text_lc_textbox_x2 double geodb_text_lc_accent_bar_width double geodb_text_leader_line_tolerance double geodb_text_color char(254) geodb_metadata_string char(254) geodb_raster_pyramid_resample_type char(100) geodb_text_leader_line_anchor_point char(254) geodb_dim_begin_dimension_x double fme_primary_axis double geodb_ancillary_role char(7) geodb_text_char_spacing double geodb_dim_marker_display smallint geodb_font_size double geodb_rel_origin_oid integer geodb_font_charset smallint geodb_dim_text_z double geodb_text_break_char integer geodb_right_to_left boolean geodb_element_id integer geodb_feature_dataset char(254) geodb_text_y_offset double geodb_text_lc_textbox_x3 double geodb_dim_text_x double geodb_text_lc_textbox_y1 double geodb_font_italic boolean geodb_font_name char(254) geodb_start_angle double geodb_text_lc_margin_right double geodb_secondary_axis double geodb_text_lc_margin_left double geodb_text_angle double geodb_sweep_angle double multi_reader_keyword char(50) geodb_dim_length double geodb_topological_configuration char(6) geodb_dim_line_x double multi_reader_full_id integer fme_text_size double fme_rotation double fme_basename char(50) fme_start_angle double geodb_anno_class_id integer fme_secondary_axis double geodb_dim_custom_length double geodb_edge_feature_count integer multi_reader_type char(50) fme_fill_color char(50) geodb_text_lc_margin_bottom double geodb_linked_feature_id integer geodb_measures char(254)"
+#!   EXPOSABLE_ATTRS="fme_rotation double geodb_raster_pyramid_level integer geodb_secondary_axis double geodb_dim_using_custom_length boolean geodb_element_id integer geodb_text_lc_margin_top double geodb_dim_end_dimension_x double geodb_dim_begin_dimension_z double geodb_element_index integer geodb_text_y_offset double geodb_text_lc_textbox_x3 double geodb_symbol_id integer geodb_right_to_left boolean geodb_text_clip boolean geodb_text_leader_line_anchor_point char(254) fme_basename char(50) geodb_text_lc_margin_right double geodb_dim_begin_dimension_y double geodb_text_lc_style char(20) geodb_text_ref_scale double geodb_rotation double geodb_text_leader_line char(254) geodb_text_lc_textbox_x2 double multi_reader_full_id integer geodb_start_angle double geodb_text_char_spacing double geodb_text_string_with_format_tags char(254) fme_geometry fme_char(50) fme_type char(50) geodb_text_angle double geodb_font_weight smallint multi_reader_id integer geodb_dim_begin_dimension_x double geodb_dim_line_z double geodb_from_junction_element_id integer fme_text_string char(50) geodb_font_charset smallint geodb_font_strikethrough boolean geodb_anno_class_id integer geodb_edge_element_count integer geodb_text_string char(254) geodb_rel_origin_oid integer geodb_font_name char(254) fme_fill_color char(50) geodb_dim_text_angle double geodb_v_align char(50) geodb_dim_end_dimension_y double geodb_text_lc_textbox_y2 double geodb_subtype_name char(254) geodb_dim_text_y double multi_reader_keyword char(50) geodb_metadata_string char(254) geodb_raster_compression_quality integer geodb_h_align char(50) geodb_dim_custom_length double geodb_dim_line_display smallint geodb_text_line_spacing double geodb_dim_line_x double geodb_dim_end_dimension_z double fme_primary_axis double geodb_text_leader_line_color char(50) geodb_font_underline boolean geodb_text_lc_margin_left double geodb_junction_feature_count integer geodb_sweep_angle double geodb_measures char(254) fme_sweep_angle double geodb_feature_dataset char(254) geodb_dim_line_y double geodb_text_lc_textbox_y1 double fme_feature_type char(50) fme_start_angle double geodb_text_character_width double geodb_text_lc_margin_bottom double fme_text_size double geodb_text_size double geodb_text_lc_textbox_y3 double geodb_dim_marker_display smallint geodb_to_junction_element_id integer geodb_raster_pyramid_resample_type char(100) fme_dataset char(50) geodb_text_leader_line_width double geodb_text_part_count integer geodb_text_lc_accent_bar_color char(50) geodb_text_leader_line_tolerance double geodb_font_italic boolean geodb_text_lc_textbox_y4 double geodb_text_lc_textbox_x4 double geodb_junction_element_count integer geodb_linked_feature_id integer geodb_text_lc_textbox_x1 double geodb_text_point_scale_factor double geodb_text_x_offset double geodb_dim_type smallint geodb_feature_is_simple boolean geodb_primary_axis double geodb_color char(50) geodb_text_scale boolean fme_secondary_axis double multi_reader_type char(50) geodb_text_lc_accent_bar_width double geodb_text_color char(254) geodb_dim_length double geodb_dim_extn_line_angle double geodb_type char(25) geodb_ancillary_role char(7) geodb_raster_compression_type char(100) geodb_font_bold boolean geodb_topological_configuration char(6) geodb_feature_has_relationships boolean geodb_edge_feature_count integer geodb_text_lc_gap double fme_color char(50) geodb_font_size double geodb_dim_extn_line_display smallint geodb_dim_text_z double geodb_rel_destination_oid integer geodb_dim_style_id integer geodb_text_break_char integer geodb_dim_text_x double geodb_text_word_spacing double"
 #!   DEFLINE_PARMS=""
 #!   ATTR_INDEX_TYPES=""
 #!   ATTR_NAME_INVALID_CHARS=""
@@ -117,7 +117,7 @@
 #!   WRITE_DEFS="true"
 #!   DEFLINE_TEMPLATE="xlsx_start_row &quot;&quot; xlsx_end_row &quot;&quot;"
 #!   DEFLINE_ATTRS="true"
-#!   EXPOSABLE_ATTRS="fme_text_size number(31,15) multi_reader_keyword char(50) fme_feature_type char(50) fme_start_angle number(31,15) fme_type char(50) fme_geometry fme_char(50) fme_rotation number(31,15) fme_dataset char(50) xlsx_row_id number(11,0) fme_basename char(50) multi_reader_full_id number(11,0) fme_secondary_axis number(31,15) multi_reader_id number(11,0) fme_primary_axis number(31,15) multi_reader_type char(50) fme_sweep_angle number(31,15) fme_color char(50) fme_text_string char(50) fme_fill_color char(50)"
+#!   EXPOSABLE_ATTRS="fme_rotation number(31,15) fme_secondary_axis number(31,15) fme_type char(50) fme_fill_color char(50) fme_geometry fme_char(50) multi_reader_id number(11,0) fme_start_angle number(31,15) multi_reader_full_id number(11,0) multi_reader_type char(50) fme_basename char(50) fme_primary_axis number(31,15) xlsx_row_id number(11,0) fme_sweep_angle number(31,15) multi_reader_keyword char(50) fme_dataset char(50) fme_feature_type char(50) fme_text_size number(31,15) fme_text_string char(50) fme_color char(50)"
 #!   DEFLINE_PARMS="&quot;GUI FORCE_DEFS OPTIONAL INTEGER xlsx_start_row Start Row:&quot; &quot;&quot; &quot;GUI FORCE_DEFS OPTIONAL INTEGER xlsx_end_row End Row:&quot; &quot;&quot; "
 #!   ATTR_INDEX_TYPES=""
 #!   ATTR_NAME_INVALID_CHARS=""
@@ -160,7 +160,7 @@
 #!   WRITE_DEFS="true"
 #!   DEFLINE_TEMPLATE="xlsx_start_row &quot;&quot; xlsx_end_row &quot;&quot;"
 #!   DEFLINE_ATTRS="true"
-#!   EXPOSABLE_ATTRS="fme_text_size number(31,15) multi_reader_keyword char(50) fme_feature_type char(50) fme_start_angle number(31,15) fme_type char(50) fme_geometry fme_char(50) fme_rotation number(31,15) fme_dataset char(50) xlsx_row_id number(11,0) fme_basename char(50) multi_reader_full_id number(11,0) fme_secondary_axis number(31,15) multi_reader_id number(11,0) fme_primary_axis number(31,15) multi_reader_type char(50) fme_sweep_angle number(31,15) fme_color char(50) fme_text_string char(50) fme_fill_color char(50)"
+#!   EXPOSABLE_ATTRS="fme_rotation number(31,15) fme_secondary_axis number(31,15) fme_type char(50) fme_fill_color char(50) fme_geometry fme_char(50) multi_reader_id number(11,0) fme_start_angle number(31,15) multi_reader_full_id number(11,0) multi_reader_type char(50) fme_basename char(50) fme_primary_axis number(31,15) xlsx_row_id number(11,0) fme_sweep_angle number(31,15) multi_reader_keyword char(50) fme_dataset char(50) fme_feature_type char(50) fme_text_size number(31,15) fme_text_string char(50) fme_color char(50)"
 #!   DEFLINE_PARMS="&quot;GUI FORCE_DEFS OPTIONAL INTEGER xlsx_start_row Start Row:&quot; &quot;&quot; &quot;GUI FORCE_DEFS OPTIONAL INTEGER xlsx_end_row End Row:&quot; &quot;&quot; "
 #!   ATTR_INDEX_TYPES=""
 #!   ATTR_NAME_INVALID_CHARS=""
@@ -203,7 +203,7 @@
 #!   WRITE_DEFS="true"
 #!   DEFLINE_TEMPLATE="oracle_create_table &quot;&quot; oracle_params &quot;&quot; oracle_drop_table &quot;&quot; oracle_table_writer_mode INHERIT_FROM_WRITER oracle_update_key_columns &quot;&quot; oracle_truncate_table &quot;&quot; oracle_sql_encoded &quot;&quot; oracle_sequenced_cols &quot;&quot;"
 #!   DEFLINE_ATTRS="true"
-#!   EXPOSABLE_ATTRS="fme_text_size float oracle_type char(50) fme_secondary_axis float fme_text_string char(50) fme_rotation float fme_primary_axis float fme_color char(50) fme_where char(254) fme_start_angle float fme_db_operation char(8) fme_dataset char(50) fme_feature_type char(50) fme_geometry fme_char(50) fme_fill_color char(50) fme_type char(50) fme_basename char(50) fme_sweep_angle float"
+#!   EXPOSABLE_ATTRS="fme_rotation float fme_secondary_axis float fme_fill_color char(50) fme_text_string char(50) fme_primary_axis float fme_basename char(50) oracle_type char(50) fme_start_angle float fme_text_size float fme_db_operation char(8) fme_type char(50) fme_color char(50) fme_dataset char(50) fme_geometry fme_char(50) fme_sweep_angle float fme_where char(254) fme_feature_type char(50)"
 #!   DEFLINE_PARMS="&quot;GUI DISABLE oracle_create_table Create Table&quot; Yes &quot;GUI DISABLED_ONLY FORCE_DEFS OPTIONAL WHOLE_LINE TEXT oracle_params Additional Table Creation Parameters&quot; &quot;&quot; &quot;GUI DISABLED_ONLY FORCE_DEFS CHOICE oracle_drop_table Yes%No Drop Existing Table&quot; No &quot;GUI OPTIONAL CHOICE oracle_table_writer_mode INHERIT_FROM_WRITER%INSERT%UPDATE%DELETE Writer Mode&quot; INHERIT_FROM_WRITER &quot;GUI OPTIONAL ATTRLIST_COMMAS oracle_update_key_columns \&quot; \&quot; Update Key Columns&quot; &quot;&quot; &quot;GUI CHOICE oracle_truncate_table Yes%No Truncate Existing Table&quot; No &quot;GUI OPTIONAL WHOLE_LINE TEXT_EDIT_SQL oracle_sql_encoded SQL Statement&quot; &quot;&quot; &quot;GUI ALWAYS_ENABLED FORCE_DEFS OPTIONAL WHOLE_LINE TEXT oracle_sequenced_cols Sequenced Table Columns&quot; &quot;&quot; "
 #!   ATTR_INDEX_TYPES="BTree Bitmap PrimaryKey Unique"
 #!   ATTR_NAME_INVALID_CHARS=".%&lt;&gt;|: []()?*&apos;&amp;+-/}{\\&quot;"
@@ -241,7 +241,7 @@
 #!   WRITE_DEFS="true"
 #!   DEFLINE_TEMPLATE="geodb_type {FME_GEN_GEOMETRY} GEODB_UPDATE_KEY_COLUMNS &quot;&quot; GEODB_DROP_TABLE NO GEODB_TRUNCATE_TABLE NO GEODB_OBJECT_ID_NAME OBJECTID GEODB_OBJECT_ID_ALIAS OBJECTID GEODB_SHAPE_NAME SHAPE GEODB_SHAPE_ALIAS SHAPE GEODB_CONFIG_KEYWORD DEFAULTS GEODB_FEATURE_DATASET &quot;&quot; GEODB_GRID{1} &quot;&quot; GEODB_AVG_NUM_POINTS &quot;&quot; GEODB_XORIGIN &quot;&quot; GEODB_YORIGIN &quot;&quot; GEODB_XYSCALE &quot;&quot; GEODB_HAS_Z_VALUES &quot;&quot; GEODB_ZORIGIN &quot;&quot; GEODB_ZSCALE &quot;&quot; GEODB_HAS_MEASURES &quot;&quot; GEODB_MEASURES_ORIGIN &quot;&quot; GEODB_MEASURES_SCALE &quot;&quot; GEODB_ANNO_REFERENCE_SCALE &quot;&quot;"
 #!   DEFLINE_ATTRS="true"
-#!   EXPOSABLE_ATTRS="geodb_dim_line_y double geodb_raster_compression_quality integer geodb_dim_extn_line_angle double geodb_text_scale boolean geodb_text_word_spacing double geodb_dim_extn_line_display smallint geodb_dim_end_dimension_y double geodb_raster_pyramid_level integer fme_geometry fme_char(50) geodb_symbol_id integer geodb_text_ref_scale double geodb_color char(50) geodb_text_character_width double geodb_primary_axis double geodb_dim_begin_dimension_z double geodb_dim_line_display smallint geodb_subtype_name char(254) geodb_dim_begin_dimension_y double geodb_raster_compression_type char(100) geodb_font_underline boolean geodb_text_string char(254) fme_feature_type char(50) geodb_text_string_with_format_tags char(254) fme_text_string char(50) fme_color char(50) geodb_text_x_offset double geodb_text_line_spacing double geodb_text_size double geodb_dim_style_id integer geodb_dim_using_custom_length boolean geodb_font_weight smallint geodb_dim_end_dimension_z double geodb_font_strikethrough boolean geodb_rotation double geodb_dim_text_angle double geodb_h_align char(50) geodb_font_bold boolean geodb_text_clip boolean fme_where char(254) geodb_dim_line_z double geodb_dim_type smallint geodb_v_align char(50) geodb_text_feat_class_name char(254) fme_sweep_angle double geodb_type char(25) fme_type char(50) geodb_dim_text_y double geodb_dim_end_dimension_x double fme_dataset char(50) geodb_text_color char(254) fme_db_operation char(8) geodb_metadata_string char(254) geodb_raster_pyramid_resample_type char(100) geodb_dim_begin_dimension_x double fme_primary_axis double geodb_ancillary_role char(7) geodb_text_char_spacing double geodb_dim_marker_display smallint geodb_font_size double geodb_font_charset smallint geodb_dim_text_z double geodb_text_break_char integer geodb_right_to_left boolean geodb_text_y_coord double geodb_feature_dataset char(254) geodb_text_y_offset double geodb_dim_text_x double geodb_font_italic boolean geodb_font_name char(254) geodb_start_angle double geodb_secondary_axis double geodb_text_angle double geodb_sweep_angle double geodb_allow_symbol_overrides boolean geodb_dim_length double geodb_dim_line_x double fme_text_size double fme_rotation double fme_basename char(50) fme_start_angle double geodb_anno_class_id integer fme_secondary_axis double geodb_dim_custom_length double geodb_text_x_coord double fme_fill_color char(50) geodb_linked_feature_id integer geodb_measures char(254)"
+#!   EXPOSABLE_ATTRS="fme_rotation double geodb_raster_pyramid_level integer geodb_secondary_axis double geodb_dim_using_custom_length boolean geodb_dim_end_dimension_x double geodb_dim_begin_dimension_z double geodb_text_y_offset double geodb_symbol_id integer geodb_right_to_left boolean geodb_text_clip boolean fme_basename char(50) geodb_dim_begin_dimension_y double geodb_text_ref_scale double geodb_rotation double geodb_start_angle double geodb_text_char_spacing double geodb_text_string_with_format_tags char(254) fme_db_operation char(8) fme_type char(50) fme_geometry fme_char(50) geodb_text_angle double geodb_font_weight smallint geodb_dim_begin_dimension_x double geodb_dim_line_z double geodb_font_charset smallint fme_text_string char(50) geodb_font_strikethrough boolean geodb_anno_class_id integer geodb_text_string char(254) geodb_font_name char(254) fme_fill_color char(50) geodb_dim_text_angle double geodb_v_align char(50) geodb_dim_end_dimension_y double geodb_subtype_name char(254) geodb_dim_text_y double geodb_metadata_string char(254) geodb_raster_compression_quality integer geodb_h_align char(50) geodb_dim_custom_length double geodb_dim_line_display smallint geodb_text_line_spacing double geodb_dim_line_x double geodb_dim_end_dimension_z double fme_primary_axis double geodb_font_underline boolean geodb_sweep_angle double geodb_allow_symbol_overrides boolean geodb_measures char(254) fme_sweep_angle double geodb_feature_dataset char(254) geodb_dim_line_y double fme_feature_type char(50) fme_start_angle double geodb_text_character_width double fme_text_size double geodb_text_size double geodb_dim_marker_display smallint geodb_raster_pyramid_resample_type char(100) fme_dataset char(50) geodb_font_italic boolean geodb_linked_feature_id integer geodb_text_x_offset double geodb_dim_type smallint fme_where char(254) geodb_primary_axis double geodb_text_feat_class_name char(254) geodb_color char(50) geodb_text_scale boolean fme_secondary_axis double geodb_text_color char(254) geodb_dim_length double geodb_dim_extn_line_angle double geodb_type char(25) geodb_ancillary_role char(7) geodb_text_x_coord double geodb_raster_compression_type char(100) geodb_font_bold boolean fme_color char(50) geodb_text_y_coord double geodb_font_size double geodb_dim_extn_line_display smallint geodb_dim_text_z double geodb_dim_style_id integer geodb_text_break_char integer geodb_dim_text_x double geodb_text_word_spacing double"
 #!   DEFLINE_PARMS="&quot;GUI CHOICE GEODB_DROP_TABLE YES%NO Drop Table First&quot; NO &quot;GUI CHOICE GEODB_TRUNCATE_TABLE YES%NO Truncate Table First&quot; NO &quot;GUI FORCE_DEFS OPTIONAL WHOLE_LINE ATTRLIST_COMMAS GEODB_UPDATE_KEY_COLUMNS \&quot; \&quot; Update Key Fields&quot; &quot;&quot; &quot;GUI TEXT GEODB_OBJECT_ID_NAME Object ID Field&quot; OBJECTID &quot;GUI TEXT GEODB_OBJECT_ID_ALIAS Object ID Alias&quot; OBJECTID &quot;GUI TEXT GEODB_SHAPE_NAME Shape Field&quot; SHAPE &quot;GUI TEXT GEODB_SHAPE_ALIAS Shape Alias&quot; SHAPE &quot;GUI TEXT GEODB_CONFIG_KEYWORD Configuration Keyword&quot; DEFAULTS &quot;GUI OPTIONAL TEXT GEODB_FEATURE_DATASET Feature Dataset&quot; &quot;&quot; &quot;GUI OPTIONAL FLOAT GEODB_GRID{1} Grid 1&quot; &quot;&quot; &quot;GUI OPTIONAL INTEGER GEODB_AVG_NUM_POINTS Avg Num of Points&quot; &quot;&quot; &quot;GUI OPTIONAL FLOAT GEODB_XORIGIN X Origin&quot; &quot;&quot; &quot;GUI OPTIONAL FLOAT GEODB_YORIGIN Y Origin&quot; &quot;&quot; &quot;GUI OPTIONAL FLOAT GEODB_XYSCALE X,Y Scale&quot; &quot;&quot; &quot;GUI OPTIONAL CHOICE GEODB_HAS_Z_VALUES yes%no Contains Z Values&quot; &quot;&quot; &quot;GUI OPTIONAL FLOAT GEODB_ZORIGIN Z Origin&quot; &quot;&quot; &quot;GUI OPTIONAL FLOAT GEODB_ZSCALE Z Scale&quot; &quot;&quot; &quot;GUI OPTIONAL CHOICE GEODB_HAS_MEASURES yes%no Contains Measures&quot; &quot;&quot; &quot;GUI OPTIONAL FLOAT GEODB_MEASURES_ORIGIN Measure Origin&quot; &quot;&quot; &quot;GUI OPTIONAL FLOAT GEODB_MEASURES_SCALE Measure Scale&quot; &quot;&quot; &quot;GUI OPTIONAL FLOAT GEODB_ANNO_REFERENCE_SCALE Annotation Reference Scale&quot; &quot;&quot; "
 #!   ATTR_INDEX_TYPES=""
 #!   ATTR_NAME_INVALID_CHARS=":. %-#[]&quot;()!?*&apos;&amp;+\/{}|="
@@ -625,6 +625,186 @@
 #! <DATA_TYPE
 #!   IS_SOURCE="false"
 #!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_varchar(width)"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_char(width)"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(2048)"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(2048)"
+#!   FME_TYPE="fme_xml"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(2048)"
+#!   FME_TYPE="fme_json"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="blob"
+#!   FME_TYPE="fme_binarybuffer"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="blob"
+#!   FME_TYPE="fme_varbinary(width)"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="blob"
+#!   FME_TYPE="fme_binary(width)"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="guid"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="date"
+#!   FME_TYPE="fme_datetime"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="date"
+#!   FME_TYPE="fme_date"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="date"
+#!   FME_TYPE="fme_time"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="integer"
+#!   FME_TYPE="fme_int32"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="integer"
+#!   FME_TYPE="fme_uint16"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="smallint"
+#!   FME_TYPE="fme_int16"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="smallint"
+#!   FME_TYPE="fme_int8"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="smallint"
+#!   FME_TYPE="fme_uint8"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="float"
+#!   FME_TYPE="fme_real32"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="double"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="double"
+#!   FME_TYPE="fme_uint32"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(20)"
+#!   FME_TYPE="fme_int64"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(20)"
+#!   FME_TYPE="fme_uint64"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="boolean"
+#!   FME_TYPE="fme_boolean"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="double(width,decimal)"
+#!   FME_TYPE="fme_decimal(width,decimal)"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="subtype(stringset)"
+#!   FME_TYPE="fme_char(width)"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="subtype_codes(stringmap)"
+#!   FME_TYPE="fme_char(width)"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="range_domain(range_domain)"
+#!   FME_TYPE="fme_char(width)"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="coded_domain(coded_domain)"
+#!   FME_TYPE="fme_char(width)"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(1)"
+#!   FME_TYPE="fme_char(width)"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="blob"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(width)"
 #!   FME_TYPE="fme_char(width)"
 #!   FORMAT="ORACLE8I_DB"
 #! />
@@ -831,186 +1011,6 @@
 #!   FORMAT_TYPE="float"
 #!   FME_TYPE="fme_decimal(width,decimal)"
 #!   FORMAT="ORACLE8I_DB"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="char(width)"
-#!   FME_TYPE="fme_varchar(width)"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="char(width)"
-#!   FME_TYPE="fme_char(width)"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="char(2048)"
-#!   FME_TYPE="fme_buffer"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="char(2048)"
-#!   FME_TYPE="fme_xml"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="char(2048)"
-#!   FME_TYPE="fme_json"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="blob"
-#!   FME_TYPE="fme_binarybuffer"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="blob"
-#!   FME_TYPE="fme_varbinary(width)"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="blob"
-#!   FME_TYPE="fme_binary(width)"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="guid"
-#!   FME_TYPE="fme_buffer"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="date"
-#!   FME_TYPE="fme_datetime"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="date"
-#!   FME_TYPE="fme_date"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="date"
-#!   FME_TYPE="fme_time"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="integer"
-#!   FME_TYPE="fme_int32"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="integer"
-#!   FME_TYPE="fme_uint16"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="smallint"
-#!   FME_TYPE="fme_int16"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="smallint"
-#!   FME_TYPE="fme_int8"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="smallint"
-#!   FME_TYPE="fme_uint8"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="float"
-#!   FME_TYPE="fme_real32"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="double"
-#!   FME_TYPE="fme_real64"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="double"
-#!   FME_TYPE="fme_uint32"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="char(20)"
-#!   FME_TYPE="fme_int64"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="char(20)"
-#!   FME_TYPE="fme_uint64"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="boolean"
-#!   FME_TYPE="fme_boolean"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="double(width,decimal)"
-#!   FME_TYPE="fme_decimal(width,decimal)"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="subtype(stringset)"
-#!   FME_TYPE="fme_char(width)"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="subtype_codes(stringmap)"
-#!   FME_TYPE="fme_char(width)"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="range_domain(range_domain)"
-#!   FME_TYPE="fme_char(width)"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="coded_domain(coded_domain)"
-#!   FME_TYPE="fme_char(width)"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="char(1)"
-#!   FME_TYPE="fme_char(width)"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="blob"
-#!   FME_TYPE="fme_buffer"
-#!   FORMAT="GEODATABASE_SDE"
 #! />
 #! </DATA_TYPES>
 #! <GEOM_TYPES>
@@ -1250,6 +1250,144 @@
 #! />
 #! <GEOM_TYPE
 #!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geodb_point"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geodb_polygon"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geodb_polygon"
+#!   FME_TYPE="fme_rounded_rectangle"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geodb_polyline"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geodb_multipoint"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geodb_table"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geodb_table"
+#!   FME_TYPE="fme_collection"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geodb_polyline"
+#!   FME_TYPE="fme_arc"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geodb_polygon"
+#!   FME_TYPE="fme_ellipse"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geodb_polygon"
+#!   FME_TYPE="fme_rectangle"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geodb_annotation"
+#!   FME_TYPE="fme_text"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geodb_dimension"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geodb_simple_junction"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geodb_simple_edge"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geodb_complex_junction"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geodb_complex_edge"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geodb_attributed_relationship"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geodb_relationship"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geodb_metadata"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geodb_multipatch"
+#!   FME_TYPE="fme_surface"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geodb_multipatch"
+#!   FME_TYPE="fme_solid"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geodb_polygon"
+#!   FME_TYPE="fme_raster"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geodb_polygon"
+#!   FME_TYPE="fme_point_cloud"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
 #!   FORMAT_TYPE="oracle_nil"
 #!   FME_TYPE="fme_no_geom"
 #!   FORMAT="ORACLE8I_DB"
@@ -1415,144 +1553,6 @@
 #!   FORMAT_TYPE="oracle_nil"
 #!   FME_TYPE="fme_point_cloud"
 #!   FORMAT="ORACLE8I_DB"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="geodb_point"
-#!   FME_TYPE="fme_point"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="geodb_polygon"
-#!   FME_TYPE="fme_area"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="geodb_polygon"
-#!   FME_TYPE="fme_rounded_rectangle"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="geodb_polyline"
-#!   FME_TYPE="fme_line"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="geodb_multipoint"
-#!   FME_TYPE="fme_point"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="geodb_table"
-#!   FME_TYPE="fme_no_geom"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="geodb_table"
-#!   FME_TYPE="fme_collection"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="geodb_polyline"
-#!   FME_TYPE="fme_arc"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="geodb_polygon"
-#!   FME_TYPE="fme_ellipse"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="geodb_polygon"
-#!   FME_TYPE="fme_rectangle"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="geodb_annotation"
-#!   FME_TYPE="fme_text"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="geodb_dimension"
-#!   FME_TYPE="fme_point"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="geodb_simple_junction"
-#!   FME_TYPE="fme_point"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="geodb_simple_edge"
-#!   FME_TYPE="fme_line"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="geodb_complex_junction"
-#!   FME_TYPE="fme_point"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="geodb_complex_edge"
-#!   FME_TYPE="fme_line"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="geodb_attributed_relationship"
-#!   FME_TYPE="fme_no_geom"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="geodb_relationship"
-#!   FME_TYPE="fme_no_geom"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="geodb_metadata"
-#!   FME_TYPE="fme_no_geom"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="geodb_multipatch"
-#!   FME_TYPE="fme_surface"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="geodb_multipatch"
-#!   FME_TYPE="fme_solid"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="geodb_polygon"
-#!   FME_TYPE="fme_raster"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="geodb_polygon"
-#!   FME_TYPE="fme_point_cloud"
-#!   FORMAT="GEODATABASE_SDE"
 #! />
 #! </GEOM_TYPES>
 #! <FEATURE_TYPES>
@@ -2360,6 +2360,34 @@
 #!   SIZE_POLICY="8"
 #!   ANCHORED_NODE="147"
 #! />
+#! <COMMENT
+#!   IDENTIFIER="156"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;EIB_AUSSAGE_DE&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="2502.3994435328577 1180.0010000099999"
+#!   TOP_LEFT="2502.3994435328577 1180.0010000099999"
+#!   BOTTOM_RIGHT="2932.3994435328577 1181.0010000099999"
+#!   BOUNDING_RECT="2502.3994435328577 1180.0010000099999 430 -1"
+#!   ORDER="500000000000156"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   COLOUR="1,1,0.78431372549019607,0.19607843137254902"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="139"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="162"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;EIB_AUSSAGE_FR&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="2511.3981645234849 851.25846529964906"
+#!   TOP_LEFT="2511.3981645234849 851.25846529964906"
+#!   BOTTOM_RIGHT="2941.3981645234849 852.25846529964906"
+#!   BOUNDING_RECT="2511.3981645234849 851.25846529964906 430 -1"
+#!   ORDER="500000000000156"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   COLOUR="1,1,0.78431372549019607,0.19607843137254902"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="142"
+#! />
 #! </COMMENTS>
 #! <CONSTANTS>
 #! </CONSTANTS>
@@ -2381,8 +2409,6 @@
 #!     <FEAT_COLLAPSED COLLAPSED="0"/>
 #!     <XFORM_ATTR ATTR_NAME="THE_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="DAR_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="EIB_AUSSAGE_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="EIB_AUSSAGE_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="STH_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="GSZ_NR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="TYP" IS_USER_CREATED="false" FEAT_INDEX="0" />
@@ -2400,8 +2426,8 @@
 #!   IDENTIFIER="7"
 #!   TYPE="AttributeRemover"
 #!   VERSION="1"
-#!   POSITION="-426 697"
-#!   BOUNDING_RECT="-426 697 0 0"
+#!   POSITION="-375 475.12278122781231"
+#!   BOUNDING_RECT="-375 475.12278122781231 0 0"
 #!   ORDER="500000000000000"
 #!   PARMS_EDITED="true"
 #!   ENABLED="true"
@@ -2433,8 +2459,6 @@
 #!     <FEAT_COLLAPSED COLLAPSED="0"/>
 #!     <XFORM_ATTR ATTR_NAME="THE_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="DAR_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="EIB_AUSSAGE_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="EIB_AUSSAGE_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="STH_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="GSZ_NR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="TYP" IS_USER_CREATED="false" FEAT_INDEX="0" />
@@ -2448,8 +2472,6 @@
 #!     <FEAT_COLLAPSED COLLAPSED="1"/>
 #!     <XFORM_ATTR ATTR_NAME="THE_ID" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="DAR_OID" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="EIB_AUSSAGE_DE" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="EIB_AUSSAGE_FR" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="STH_ID" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="GSZ_NR" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="TYP" IS_USER_CREATED="false" FEAT_INDEX="1" />
@@ -2512,8 +2534,6 @@
 #!     <XFORM_ATTR ATTR_NAME="EIB_LEGENDESYMBOL_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="THE_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="DAR_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="EIB_AUSSAGE_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="EIB_AUSSAGE_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="STH_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="GSZ_NR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="TYP" IS_USER_CREATED="false" FEAT_INDEX="0" />
@@ -2523,6 +2543,8 @@
 #!     <XFORM_ATTR ATTR_NAME="REGLEM_DOC" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="BEZEICH_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="BEZEICH_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="EIB_AUSSAGE_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="EIB_AUSSAGE_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="AMT_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="FLA_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
@@ -2734,8 +2756,6 @@
 #!     <XFORM_ATTR ATTR_NAME="EIB_LEGENDESYMBOL_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="THE_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="DAR_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="EIB_AUSSAGE_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="EIB_AUSSAGE_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="STH_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="GSZ_NR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="TYP" IS_USER_CREATED="false" FEAT_INDEX="0" />
@@ -2745,6 +2765,8 @@
 #!     <XFORM_ATTR ATTR_NAME="REGLEM_DOC" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="BEZEICH_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="BEZEICH_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="EIB_AUSSAGE_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="EIB_AUSSAGE_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="AMT_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="FLA_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="EIB_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
@@ -2762,14 +2784,12 @@
 #!   ORDER="500000000000000"
 #!   PARMS_EDITED="true"
 #!   ENABLED="true"
-#!   LAST_PARM_EDIT="16674"
+#!   LAST_PARM_EDIT="18310"
 #! >
 #!     <OUTPUT_FEAT NAME="OUTPUT"/>
 #!     <FEAT_COLLAPSED COLLAPSED="0"/>
 #!     <XFORM_ATTR ATTR_NAME="THE_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="DAR_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="EIB_AUSSAGE_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="EIB_AUSSAGE_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="STH_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="geodb_oid" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="OBJECTID" IS_USER_CREATED="false" FEAT_INDEX="0" />
@@ -2783,7 +2803,7 @@
 #!     <XFORM_ATTR ATTR_NAME="SHAPE.LEN" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="ATTRIBUTE_HANDLING" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="&quot;&quot; THE_ID SET_TO $(THEMA_ZONEN)  DAR_OID SET_TO $(DARST_ZONEN)  EIB_AUSSAGE_DE SET_TO Schutzzone&lt;space&gt;&lt;at&gt;Value&lt;openparen&gt;TYP&lt;closeparen&gt;&lt;space&gt;&lt;openparen&gt;&lt;at&gt;Value&lt;openparen&gt;GSZ_NAME&lt;closeparen&gt;&lt;closeparen&gt;  EIB_AUSSAGE_FR SET_TO Zone&lt;space&gt;de&lt;space&gt;protection&lt;space&gt;&lt;at&gt;Value&lt;openparen&gt;TYP&lt;closeparen&gt;&lt;space&gt;&lt;openparen&gt;&lt;at&gt;Value&lt;openparen&gt;GSZ_NAME&lt;closeparen&gt;&lt;closeparen&gt;  STH_ID SET_TO $(SUBTHEMA_ZONEN)"/>
+#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="&quot;&quot; THE_ID SET_TO $(THEMA_ZONEN)  DAR_OID SET_TO $(DARST_ZONEN)  STH_ID SET_TO $(SUBTHEMA_ZONEN)"/>
 #!     <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
 #!     <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_VALUE="No Substitution"/>
 #!     <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
@@ -2801,14 +2821,12 @@
 #!   ORDER="500000000000000"
 #!   PARMS_EDITED="true"
 #!   ENABLED="true"
-#!   LAST_PARM_EDIT="16674"
+#!   LAST_PARM_EDIT="18310"
 #! >
 #!     <OUTPUT_FEAT NAME="OUTPUT"/>
 #!     <FEAT_COLLAPSED COLLAPSED="0"/>
 #!     <XFORM_ATTR ATTR_NAME="THE_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="DAR_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="EIB_AUSSAGE_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="EIB_AUSSAGE_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="STH_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="geodb_oid" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="OBJECTID" IS_USER_CREATED="false" FEAT_INDEX="0" />
@@ -2822,7 +2840,7 @@
 #!     <XFORM_ATTR ATTR_NAME="SHAPE.LEN" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="ATTRIBUTE_HANDLING" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="&quot;&quot; THE_ID SET_TO $(THEMA_AREALE)  DAR_OID SET_TO $(DARST_AREALE)  EIB_AUSSAGE_DE SET_TO Schutzareal&lt;space&gt;&lt;at&gt;Value&lt;openparen&gt;TYP&lt;closeparen&gt;&lt;space&gt;&lt;openparen&gt;&lt;at&gt;Value&lt;openparen&gt;GSZ_NAME&lt;closeparen&gt;&lt;closeparen&gt;  EIB_AUSSAGE_FR SET_TO P&lt;u00e9&gt;rim&lt;u00e8&gt;tre&lt;space&gt;de&lt;space&gt;protection&lt;space&gt;&lt;at&gt;Value&lt;openparen&gt;TYP&lt;closeparen&gt;&lt;openparen&gt;&lt;at&gt;Value&lt;openparen&gt;GSZ_NAME&lt;closeparen&gt;&lt;closeparen&gt;  STH_ID SET_TO $(SUBTHEMA_AREALE)"/>
+#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="&quot;&quot; THE_ID SET_TO $(THEMA_AREALE)  DAR_OID SET_TO $(DARST_AREALE)  STH_ID SET_TO $(SUBTHEMA_AREALE)"/>
 #!     <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
 #!     <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_VALUE="No Substitution"/>
 #!     <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
@@ -2850,8 +2868,6 @@
 #!     <XFORM_ATTR ATTR_NAME="EIB_LEGENDESYMBOL_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="THE_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="DAR_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="EIB_AUSSAGE_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="EIB_AUSSAGE_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="STH_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="GSZ_NR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="GSZ_NAME" IS_USER_CREATED="false" FEAT_INDEX="0" />
@@ -2860,6 +2876,8 @@
 #!     <XFORM_ATTR ATTR_NAME="REGLEM_DOC" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="BEZEICH_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="BEZEICH_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="EIB_AUSSAGE_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="EIB_AUSSAGE_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="AMT_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="FLA_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="EIB_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
@@ -2887,8 +2905,6 @@
 #!     <XFORM_ATTR ATTR_NAME="EIB_LEGENDESYMBOL_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="THE_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="DAR_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="EIB_AUSSAGE_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="EIB_AUSSAGE_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="STH_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="GSZ_NR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="TYP" IS_USER_CREATED="false" FEAT_INDEX="0" />
@@ -2898,6 +2914,8 @@
 #!     <XFORM_ATTR ATTR_NAME="REGLEM_DOC" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="BEZEICH_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="BEZEICH_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="EIB_AUSSAGE_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="EIB_AUSSAGE_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="AMT_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="FLA_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="EIB_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
@@ -2929,8 +2947,6 @@
 #!     <XFORM_ATTR ATTR_NAME="EIB_LEGENDESYMBOL_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="THE_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="DAR_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="EIB_AUSSAGE_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="EIB_AUSSAGE_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="STH_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="GSZ_NR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="GSZ_NAME" IS_USER_CREATED="false" FEAT_INDEX="0" />
@@ -2939,6 +2955,8 @@
 #!     <XFORM_ATTR ATTR_NAME="REGLEM_DOC" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="BEZEICH_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="BEZEICH_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="EIB_AUSSAGE_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="EIB_AUSSAGE_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="AMT_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="FLA_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="EIB_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
@@ -2971,8 +2989,6 @@
 #!     <XFORM_ATTR ATTR_NAME="EIB_LEGENDESYMBOL_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="THE_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="DAR_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="EIB_AUSSAGE_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="EIB_AUSSAGE_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="STH_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="GSZ_NR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="GSZ_NAME" IS_USER_CREATED="false" FEAT_INDEX="0" />
@@ -2981,6 +2997,8 @@
 #!     <XFORM_ATTR ATTR_NAME="REGLEM_DOC" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="BEZEICH_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="BEZEICH_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="EIB_AUSSAGE_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="EIB_AUSSAGE_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="AMT_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="FLA_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="EIB_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
@@ -2994,7 +3012,7 @@
 #!     <XFORM_PARM PARM_NAME="LIST_ATTRS" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="NEW_ATTRIBUTES" PARM_VALUE="VOR_OFFIZIELLERTITEL_DE VOR_OFFIZIELLERTITEL_FR VOR_TITEL_DE VOR_TITEL_FR"/>
 #!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="PYTHONSOURCE" PARM_VALUE="import&lt;space&gt;fmeobjects&lt;lf&gt;#&lt;space&gt;Template&lt;space&gt;Function&lt;space&gt;interface:&lt;lf&gt;def&lt;space&gt;processFeature&lt;openparen&gt;feature&lt;closeparen&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;reglement&lt;space&gt;=&lt;space&gt;feature.getAttribute&lt;openparen&gt;&lt;quote&gt;REGLEM_DOC&lt;quote&gt;&lt;closeparen&gt;.lower&lt;openparen&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;titel_de&lt;space&gt;=&lt;space&gt;u&lt;quote&gt;Reglement&lt;quote&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;titel_fr&lt;space&gt;=&lt;space&gt;u&lt;quote&gt;R&lt;u00e8&gt;glement&lt;quote&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;if&lt;space&gt;&lt;quote&gt;veraltet&lt;quote&gt;&lt;space&gt;in&lt;space&gt;reglement:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;titel_de&lt;space&gt;=&lt;space&gt;u&lt;quote&gt;Rechtsvorschriften&lt;space&gt;veraltet&lt;quote&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;titel_fr&lt;space&gt;=&lt;space&gt;u&lt;quote&gt;Prescriptions&lt;space&gt;l&lt;u00e9&gt;gales&lt;space&gt;obsol&lt;u00e8&gt;tes&lt;quote&gt;&lt;lf&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;feature.setAttribute&lt;openparen&gt;&lt;quote&gt;VOR_TITEL_DE&lt;quote&gt;&lt;comma&gt;&lt;space&gt;titel_de&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;feature.setAttribute&lt;openparen&gt;&lt;quote&gt;VOR_TITEL_FR&lt;quote&gt;&lt;comma&gt;&lt;space&gt;titel_fr&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;feature.setAttribute&lt;openparen&gt;&lt;quote&gt;VOR_OFFIZIELLERTITEL_DE&lt;quote&gt;&lt;comma&gt;&lt;space&gt;titel_de&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;feature.setAttribute&lt;openparen&gt;&lt;quote&gt;VOR_OFFIZIELLERTITEL_FR&lt;quote&gt;&lt;comma&gt;&lt;space&gt;titel_fr&lt;closeparen&gt;"/>
+#!     <XFORM_PARM PARM_NAME="PYTHONSOURCE" PARM_VALUE="#&lt;space&gt;-*-&lt;space&gt;coding:&lt;space&gt;utf-8&lt;space&gt;-*-&lt;lf&gt;from&lt;space&gt;__future__&lt;space&gt;import&lt;space&gt;absolute_import&lt;comma&gt;&lt;space&gt;division&lt;comma&gt;&lt;space&gt;print_function&lt;comma&gt;&lt;space&gt;unicode_literals&lt;lf&gt;import&lt;space&gt;fmeobjects&lt;lf&gt;#&lt;space&gt;Template&lt;space&gt;Function&lt;space&gt;interface:&lt;lf&gt;def&lt;space&gt;processFeature&lt;openparen&gt;feature&lt;closeparen&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;reglement&lt;space&gt;=&lt;space&gt;feature.getAttribute&lt;openparen&gt;&lt;quote&gt;REGLEM_DOC&lt;quote&gt;&lt;closeparen&gt;.lower&lt;openparen&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;titel_de&lt;space&gt;=&lt;space&gt;u&lt;quote&gt;Reglement&lt;quote&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;titel_fr&lt;space&gt;=&lt;space&gt;u&lt;quote&gt;R&lt;u00e8&gt;glement&lt;quote&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;if&lt;space&gt;&lt;quote&gt;veraltet&lt;quote&gt;&lt;space&gt;in&lt;space&gt;reglement:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;titel_de&lt;space&gt;=&lt;space&gt;u&lt;quote&gt;Rechtsvorschriften&lt;space&gt;veraltet&lt;quote&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;titel_fr&lt;space&gt;=&lt;space&gt;u&lt;quote&gt;Prescriptions&lt;space&gt;l&lt;u00e9&gt;gales&lt;space&gt;obsol&lt;u00e8&gt;tes&lt;quote&gt;&lt;lf&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;feature.setAttribute&lt;openparen&gt;&lt;quote&gt;VOR_TITEL_DE&lt;quote&gt;&lt;comma&gt;&lt;space&gt;titel_de&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;feature.setAttribute&lt;openparen&gt;&lt;quote&gt;VOR_TITEL_FR&lt;quote&gt;&lt;comma&gt;&lt;space&gt;titel_fr&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;feature.setAttribute&lt;openparen&gt;&lt;quote&gt;VOR_OFFIZIELLERTITEL_DE&lt;quote&gt;&lt;comma&gt;&lt;space&gt;titel_de&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;feature.setAttribute&lt;openparen&gt;&lt;quote&gt;VOR_OFFIZIELLERTITEL_FR&lt;quote&gt;&lt;comma&gt;&lt;space&gt;titel_fr&lt;closeparen&gt;"/>
 #!     <XFORM_PARM PARM_NAME="PYTHONSYMBOL" PARM_VALUE="processFeature"/>
 #!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="PythonCaller"/>
@@ -3135,8 +3153,6 @@
 #!     <XFORM_ATTR ATTR_NAME="EIB_LEGENDESYMBOL_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="THE_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="DAR_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="EIB_AUSSAGE_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="EIB_AUSSAGE_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="STH_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="GSZ_NR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="GSZ_NAME" IS_USER_CREATED="false" FEAT_INDEX="0" />
@@ -3145,6 +3161,8 @@
 #!     <XFORM_ATTR ATTR_NAME="REGLEM_DOC" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="BEZEICH_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="BEZEICH_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="EIB_AUSSAGE_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="EIB_AUSSAGE_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="AMT_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="FLA_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="EIB_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
@@ -3186,8 +3204,6 @@
 #!     <XFORM_ATTR ATTR_NAME="EIB_LEGENDESYMBOL_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="THE_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="DAR_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="EIB_AUSSAGE_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="EIB_AUSSAGE_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="STH_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="GSZ_NR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="GSZ_NAME" IS_USER_CREATED="false" FEAT_INDEX="0" />
@@ -3196,6 +3212,8 @@
 #!     <XFORM_ATTR ATTR_NAME="REGLEM_DOC" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="BEZEICH_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="BEZEICH_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="EIB_AUSSAGE_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="EIB_AUSSAGE_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="AMT_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="FLA_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="EIB_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
@@ -3215,12 +3233,12 @@
 #!   IDENTIFIER="111"
 #!   TYPE="AttributeCreator"
 #!   VERSION="8"
-#!   POSITION="2471 822"
-#!   BOUNDING_RECT="2471 822 0 0"
+#!   POSITION="2492.8752187521882 1362.6304063040629"
+#!   BOUNDING_RECT="2492.8752187521882 1362.6304063040629 0 0"
 #!   ORDER="500000000000000"
 #!   PARMS_EDITED="true"
 #!   ENABLED="true"
-#!   LAST_PARM_EDIT="16674"
+#!   LAST_PARM_EDIT="18310"
 #! >
 #!     <OUTPUT_FEAT NAME="OUTPUT"/>
 #!     <FEAT_COLLAPSED COLLAPSED="0"/>
@@ -3229,8 +3247,6 @@
 #!     <XFORM_ATTR ATTR_NAME="EIB_LEGENDESYMBOL_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="THE_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="DAR_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="EIB_AUSSAGE_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="EIB_AUSSAGE_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="STH_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="GSZ_NR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="TYP" IS_USER_CREATED="false" FEAT_INDEX="0" />
@@ -3242,7 +3258,7 @@
 #!     <XFORM_ATTR ATTR_NAME="BEZEICH_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="ATTRIBUTE_HANDLING" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="&quot;&quot; _joinfield SET_TO 666  EIB_LEGENDESYMBOL_DE SET_TO $(LEGEND_BASEURL)&lt;at&gt;Value&lt;openparen&gt;TYP&lt;closeparen&gt;.png  EIB_LEGENDESYMBOL_FR SET_TO $(LEGEND_BASEURL)&lt;at&gt;Value&lt;openparen&gt;TYP&lt;closeparen&gt;.png"/>
+#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="&quot;&quot; _joinfield SET_TO 666  EIB_LEGENDESYMBOL_DE SET_TO $(LEGEND_BASEURL)&lt;at&gt;Value&lt;openparen&gt;TYP&lt;closeparen&gt;_MGDM.png  EIB_LEGENDESYMBOL_FR SET_TO $(LEGEND_BASEURL)&lt;at&gt;Value&lt;openparen&gt;TYP&lt;closeparen&gt;_MGDM.png"/>
 #!     <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
 #!     <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_VALUE="No Substitution"/>
 #!     <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
@@ -3320,8 +3336,6 @@
 #!     <XFORM_ATTR ATTR_NAME="EIB_LEGENDESYMBOL_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="THE_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="DAR_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="EIB_AUSSAGE_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="EIB_AUSSAGE_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="STH_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="GSZ_NR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="TYP" IS_USER_CREATED="false" FEAT_INDEX="0" />
@@ -3331,6 +3345,8 @@
 #!     <XFORM_ATTR ATTR_NAME="REGLEM_DOC" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="BEZEICH_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="BEZEICH_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="EIB_AUSSAGE_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="EIB_AUSSAGE_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="AMT_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <OUTPUT_FEAT NAME="NOT_MERGED"/>
 #!     <FEAT_COLLAPSED COLLAPSED="1"/>
@@ -3339,8 +3355,6 @@
 #!     <XFORM_ATTR ATTR_NAME="EIB_LEGENDESYMBOL_FR" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="THE_ID" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="DAR_OID" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="EIB_AUSSAGE_DE" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="EIB_AUSSAGE_FR" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="STH_ID" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="GSZ_NR" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="TYP" IS_USER_CREATED="false" FEAT_INDEX="1" />
@@ -3350,6 +3364,8 @@
 #!     <XFORM_ATTR ATTR_NAME="REGLEM_DOC" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="BEZEICH_DE" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="BEZEICH_FR" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="EIB_AUSSAGE_DE" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="EIB_AUSSAGE_FR" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <OUTPUT_FEAT NAME="REFERENCED"/>
 #!     <FEAT_COLLAPSED COLLAPSED="2"/>
 #!     <XFORM_ATTR ATTR_NAME="_joinfield" IS_USER_CREATED="false" FEAT_INDEX="2" />
@@ -3391,7 +3407,7 @@
 #!   POSITION="4305 1140"
 #!   BOUNDING_RECT="4305 1140 0 0"
 #!   ORDER="500000000000000"
-#!   PARMS_EDITED="false"
+#!   PARMS_EDITED="true"
 #!   ENABLED="true"
 #!   LAST_PARM_EDIT="14433"
 #! >
@@ -3500,8 +3516,6 @@
 #!     <XFORM_ATTR ATTR_NAME="EIB_LEGENDESYMBOL_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="THE_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="DAR_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="EIB_AUSSAGE_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="EIB_AUSSAGE_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="STH_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="GSZ_NR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="GSZ_NAME" IS_USER_CREATED="false" FEAT_INDEX="0" />
@@ -3510,6 +3524,8 @@
 #!     <XFORM_ATTR ATTR_NAME="REGLEM_DOC" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="BEZEICH_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="BEZEICH_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="EIB_AUSSAGE_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="EIB_AUSSAGE_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="AMT_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="FLA_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="EIB_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
@@ -3526,8 +3542,6 @@
 #!     <XFORM_ATTR ATTR_NAME="EIB_LEGENDESYMBOL_FR" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="THE_ID" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="DAR_OID" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="EIB_AUSSAGE_DE" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="EIB_AUSSAGE_FR" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="STH_ID" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="GSZ_NR" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="GSZ_NAME" IS_USER_CREATED="false" FEAT_INDEX="1" />
@@ -3536,6 +3550,8 @@
 #!     <XFORM_ATTR ATTR_NAME="REGLEM_DOC" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="BEZEICH_DE" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="BEZEICH_FR" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="EIB_AUSSAGE_DE" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="EIB_AUSSAGE_FR" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="AMT_OID" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="FLA_OID" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="EIB_OID" IS_USER_CREATED="false" FEAT_INDEX="1" />
@@ -3549,6 +3565,83 @@
 #!     <XFORM_PARM PARM_NAME="START" PARM_VALUE="1"/>
 #!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Counter"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="139"
+#!   TYPE="AttributeValueMapper"
+#!   VERSION="6"
+#!   POSITION="2526.3994435328577 1046.2503125031249"
+#!   BOUNDING_RECT="2526.3994435328577 1046.2503125031249 -1 -1"
+#!   ORDER="500000000000155"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="18310"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="_joinfield" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="EIB_LEGENDESYMBOL_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="EIB_LEGENDESYMBOL_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="THE_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="DAR_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="STH_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="GSZ_NR" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="TYP" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="GSZ_NAME" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="BESCHLUSS" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="BESCHL_DOC" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="REGLEM_DOC" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="BEZEICH_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="BEZEICH_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="EIB_AUSSAGE_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ATTR_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="DEFAULT_VALUE" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="DIRECTION" PARM_VALUE="Forward (Source To Destination)"/>
+#!     <XFORM_PARM PARM_NAME="LUT" PARM_VALUE="S1,Grundwasserschutzzone&lt;space&gt;S1&lt;space&gt;&lt;openparen&gt;&lt;at&gt;Value&lt;openparen&gt;GSZ_NAME&lt;closeparen&gt;&lt;comma&gt;&lt;space&gt;Nr.&lt;space&gt;&lt;at&gt;Value&lt;openparen&gt;GSZ_NR&lt;closeparen&gt;&lt;closeparen&gt;,S2,Grundwasserschutzzone&lt;space&gt;S2&lt;space&gt;&lt;openparen&gt;&lt;at&gt;Value&lt;openparen&gt;GSZ_NAME&lt;closeparen&gt;&lt;comma&gt;&lt;space&gt;Nr.&lt;space&gt;&lt;at&gt;Value&lt;openparen&gt;GSZ_NR&lt;closeparen&gt;&lt;closeparen&gt;,S3,Grundwasserschutzzone&lt;space&gt;S3&lt;space&gt;&lt;openparen&gt;&lt;at&gt;Value&lt;openparen&gt;GSZ_NAME&lt;closeparen&gt;&lt;comma&gt;&lt;space&gt;Nr.&lt;space&gt;&lt;at&gt;Value&lt;openparen&gt;GSZ_NR&lt;closeparen&gt;&lt;closeparen&gt;,S3Zu,Zustr&lt;u00f6&gt;mbereich&lt;space&gt;Zu&lt;space&gt;anstelle&lt;space&gt;einer&lt;space&gt;S3&lt;space&gt;oder&lt;space&gt;Sm&lt;space&gt;&lt;openparen&gt;&lt;at&gt;Value&lt;openparen&gt;GSZ_NAME&lt;closeparen&gt;&lt;comma&gt;&lt;space&gt;Nr.&lt;space&gt;&lt;at&gt;Value&lt;openparen&gt;GSZ_NR&lt;closeparen&gt;&lt;closeparen&gt;,SBW,Nicht&lt;space&gt;nach&lt;space&gt;Bundesrecht&lt;space&gt;vorgesehener&lt;space&gt;Schutzzonentyp&lt;space&gt;&lt;openparen&gt;&lt;at&gt;Value&lt;openparen&gt;BEZEICH_DE&lt;closeparen&gt;&lt;comma&gt;&lt;space&gt;&lt;at&gt;Value&lt;openparen&gt;GSZ_NAME&lt;closeparen&gt;&lt;comma&gt;&lt;space&gt;Nr.&lt;space&gt;&lt;at&gt;Value&lt;openparen&gt;GSZ_NR&lt;closeparen&gt;&lt;closeparen&gt;,Sh,Grundwasserschutzzone&lt;space&gt;Sh&lt;space&gt;&lt;openparen&gt;&lt;at&gt;Value&lt;openparen&gt;GSZ_NAME&lt;closeparen&gt;&lt;comma&gt;&lt;space&gt;Nr.&lt;space&gt;&lt;at&gt;Value&lt;openparen&gt;GSZ_NR&lt;closeparen&gt;&lt;closeparen&gt;,Sm,Grundwasserschutzzone&lt;space&gt;Sm&lt;space&gt;&lt;openparen&gt;&lt;at&gt;Value&lt;openparen&gt;GSZ_NAME&lt;closeparen&gt;&lt;comma&gt;&lt;space&gt;Nr.&lt;space&gt;&lt;at&gt;Value&lt;openparen&gt;GSZ_NR&lt;closeparen&gt;&lt;closeparen&gt;,SA1,K&lt;u00fc&gt;nftige&lt;space&gt;Schutzzone&lt;space&gt;S1&lt;space&gt;&lt;openparen&gt;&lt;at&gt;Value&lt;openparen&gt;GSZ_NAME&lt;closeparen&gt;&lt;comma&gt;&lt;space&gt;Nr.&lt;space&gt;&lt;at&gt;Value&lt;openparen&gt;GSZ_NR&lt;closeparen&gt;&lt;closeparen&gt;,SA2,K&lt;u00fc&gt;nftige&lt;space&gt;Schutzzone&lt;space&gt;S2&lt;space&gt;&lt;openparen&gt;&lt;at&gt;Value&lt;openparen&gt;GSZ_NAME&lt;closeparen&gt;&lt;comma&gt;&lt;space&gt;Nr.&lt;space&gt;&lt;at&gt;Value&lt;openparen&gt;GSZ_NR&lt;closeparen&gt;&lt;closeparen&gt;,SA3,K&lt;u00fc&gt;nftige&lt;space&gt;Schutzzone&lt;space&gt;S3&lt;space&gt;&lt;openparen&gt;&lt;at&gt;Value&lt;openparen&gt;GSZ_NAME&lt;closeparen&gt;&lt;comma&gt;&lt;space&gt;Nr.&lt;space&gt;&lt;at&gt;Value&lt;openparen&gt;GSZ_NR&lt;closeparen&gt;&lt;closeparen&gt;"/>
+#!     <XFORM_PARM PARM_NAME="SRC" PARM_VALUE="TYP"/>
+#!     <XFORM_PARM PARM_NAME="VALUE_MAP_TABLE_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="VAL_ATTR" PARM_VALUE="EIB_AUSSAGE_DE"/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeValueMapper_2"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="142"
+#!   TYPE="AttributeValueMapper"
+#!   VERSION="6"
+#!   POSITION="2535.3981645234849 717.50777779277394"
+#!   BOUNDING_RECT="2535.3981645234849 717.50777779277394 -1 -1"
+#!   ORDER="500000000000155"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="18310"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="_joinfield" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="EIB_LEGENDESYMBOL_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="EIB_LEGENDESYMBOL_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="THE_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="DAR_OID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="STH_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="GSZ_NR" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="TYP" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="GSZ_NAME" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="BESCHLUSS" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="BESCHL_DOC" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="REGLEM_DOC" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="BEZEICH_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="BEZEICH_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="EIB_AUSSAGE_DE" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="EIB_AUSSAGE_FR" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ATTR_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="DEFAULT_VALUE" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="DIRECTION" PARM_VALUE="Forward (Source To Destination)"/>
+#!     <XFORM_PARM PARM_NAME="LUT" PARM_VALUE="S1,Zone&lt;space&gt;de&lt;space&gt;protection&lt;space&gt;des&lt;space&gt;eaux&lt;space&gt;souterraines&lt;space&gt;S1&lt;space&gt;&lt;openparen&gt;&lt;at&gt;Value&lt;openparen&gt;GSZ_NAME&lt;closeparen&gt;&lt;comma&gt;&lt;space&gt;N&lt;u00b0&gt;&lt;space&gt;&lt;at&gt;Value&lt;openparen&gt;GSZ_NR&lt;closeparen&gt;&lt;closeparen&gt;,S2,Zone&lt;space&gt;de&lt;space&gt;protection&lt;space&gt;des&lt;space&gt;eaux&lt;space&gt;souterraines&lt;space&gt;S2&lt;space&gt;&lt;openparen&gt;&lt;at&gt;Value&lt;openparen&gt;GSZ_NAME&lt;closeparen&gt;&lt;comma&gt;&lt;space&gt;N&lt;u00b0&gt;&lt;space&gt;&lt;at&gt;Value&lt;openparen&gt;GSZ_NR&lt;closeparen&gt;&lt;closeparen&gt;,S3,Zone&lt;space&gt;de&lt;space&gt;protection&lt;space&gt;des&lt;space&gt;eaux&lt;space&gt;souterraines&lt;space&gt;S3&lt;space&gt;&lt;openparen&gt;&lt;at&gt;Value&lt;openparen&gt;GSZ_NAME&lt;closeparen&gt;&lt;comma&gt;&lt;space&gt;N&lt;u00b0&gt;&lt;space&gt;&lt;at&gt;Value&lt;openparen&gt;GSZ_NR&lt;closeparen&gt;&lt;closeparen&gt;,S3Zu,Aire&lt;space&gt;d&lt;u2019&gt;alimentation&lt;space&gt;Zu&lt;space&gt;au&lt;space&gt;lieu&lt;space&gt;de&lt;space&gt;S3&lt;space&gt;ou&lt;space&gt;Sm&lt;space&gt;&lt;openparen&gt;&lt;at&gt;Value&lt;openparen&gt;GSZ_NAME&lt;closeparen&gt;&lt;comma&gt;&lt;space&gt;N&lt;u00b0&gt;&lt;space&gt;&lt;at&gt;Value&lt;openparen&gt;GSZ_NR&lt;closeparen&gt;&lt;closeparen&gt;,SBW,Types&lt;space&gt;de&lt;space&gt;zones&lt;space&gt;de&lt;space&gt;protection&lt;space&gt;non&lt;space&gt;pr&lt;u00e9&gt;vus&lt;space&gt;par&lt;space&gt;le&lt;space&gt;droit&lt;space&gt;f&lt;u00e9&gt;d&lt;u00e9&gt;ral&lt;space&gt;&lt;openparen&gt;&lt;at&gt;Value&lt;openparen&gt;BEZEICH_FR&lt;closeparen&gt;&lt;comma&gt;&lt;space&gt;&lt;at&gt;Value&lt;openparen&gt;GSZ_NAME&lt;closeparen&gt;&lt;comma&gt;&lt;space&gt;N&lt;u00b0&gt;&lt;space&gt;&lt;at&gt;Value&lt;openparen&gt;GSZ_NR&lt;closeparen&gt;&lt;closeparen&gt;,Sh,Zone&lt;space&gt;de&lt;space&gt;protection&lt;space&gt;des&lt;space&gt;eaux&lt;space&gt;souterraines&lt;space&gt;Sh&lt;space&gt;&lt;openparen&gt;&lt;at&gt;Value&lt;openparen&gt;GSZ_NAME&lt;closeparen&gt;&lt;comma&gt;&lt;space&gt;N&lt;u00b0&gt;&lt;space&gt;&lt;at&gt;Value&lt;openparen&gt;GSZ_NR&lt;closeparen&gt;&lt;closeparen&gt;,Sm,Zone&lt;space&gt;de&lt;space&gt;protection&lt;space&gt;des&lt;space&gt;eaux&lt;space&gt;souterraines&lt;space&gt;Sm&lt;space&gt;&lt;openparen&gt;&lt;at&gt;Value&lt;openparen&gt;GSZ_NAME&lt;closeparen&gt;&lt;comma&gt;&lt;space&gt;N&lt;u00b0&gt;&lt;space&gt;&lt;at&gt;Value&lt;openparen&gt;GSZ_NR&lt;closeparen&gt;&lt;closeparen&gt;,SA1,Future&lt;space&gt;zone&lt;space&gt;de&lt;space&gt;protection&lt;space&gt;S1&lt;space&gt;&lt;openparen&gt;&lt;at&gt;Value&lt;openparen&gt;GSZ_NAME&lt;closeparen&gt;&lt;comma&gt;&lt;space&gt;N&lt;u00b0&gt;&lt;space&gt;&lt;at&gt;Value&lt;openparen&gt;GSZ_NR&lt;closeparen&gt;&lt;closeparen&gt;,SA2,Future&lt;space&gt;zone&lt;space&gt;de&lt;space&gt;protection&lt;space&gt;S2&lt;space&gt;&lt;openparen&gt;&lt;at&gt;Value&lt;openparen&gt;GSZ_NAME&lt;closeparen&gt;&lt;comma&gt;&lt;space&gt;N&lt;u00b0&gt;&lt;space&gt;&lt;at&gt;Value&lt;openparen&gt;GSZ_NR&lt;closeparen&gt;&lt;closeparen&gt;,SA3,Future&lt;space&gt;zone&lt;space&gt;de&lt;space&gt;protection&lt;space&gt;S3&lt;space&gt;&lt;openparen&gt;&lt;at&gt;Value&lt;openparen&gt;GSZ_NAME&lt;closeparen&gt;&lt;comma&gt;&lt;space&gt;N&lt;u00b0&gt;&lt;space&gt;&lt;at&gt;Value&lt;openparen&gt;GSZ_NR&lt;closeparen&gt;&lt;closeparen&gt;"/>
+#!     <XFORM_PARM PARM_NAME="SRC" PARM_VALUE="TYP"/>
+#!     <XFORM_PARM PARM_NAME="VALUE_MAP_TABLE_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="VAL_ATTR" PARM_VALUE="EIB_AUSSAGE_FR"/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeValueMapper_3"/>
 #! </TRANSFORMER>
 #! </TRANSFORMERS>
 #! <FEAT_LINKS>
@@ -3872,11 +3965,11 @@
 #!   EXTRA_POINTS=""
 #! />
 #! <FEAT_LINK
-#!   IDENTIFIER="119"
+#!   IDENTIFIER="163"
 #!   SOURCE_NODE="111"
-#!   TARGET_NODE="118"
+#!   TARGET_NODE="139"
 #!   SOURCE_PORT_DESC="fo 0 OUTPUT"
-#!   TARGET_PORT_DESC="fi 0 REQUESTOR"
+#!   TARGET_PORT_DESC="fi 0 "
 #!   ENABLED="true"
 #!   EXECUTION_IDX="0"
 #!   HIDDEN="false"
@@ -3921,6 +4014,28 @@
 #!   TARGET_NODE="127"
 #!   SOURCE_PORT_DESC="fo 0 OUTPUT"
 #!   TARGET_PORT_DESC="-1"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="119"
+#!   SOURCE_NODE="139"
+#!   TARGET_NODE="142"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="165"
+#!   SOURCE_NODE="142"
+#!   TARGET_NODE="118"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 REQUESTOR"
 #!   ENABLED="true"
 #!   EXECUTION_IDX="0"
 #!   HIDDEN="false"
@@ -4175,13 +4290,13 @@ INCLUDE [ if {{$(LEGEND_BASEURL)} == {}} { puts_real {Parameter 'LEGEND_BASEURL'
 READER_TYPE MULTI_READER
 MULTI_READER_TYPE{0} GEODATABASE_SDE
 MULTI_READER_KEYWORD{0} GEODATABASE_SDE_1
-MULTI_READER_GEN_DIRECTIVES{0} INSTANCE,sde:oracle11g:a4pa-db-work.infra.be.ch<solidus>a4phwork,SEARCH_ENVELOPE_MINX,0,SEARCH_ENVELOPE_MINY,0,USERID,geodb,_MERGE_SCHEMAS,YES,HISTORICAL_VERSION_NAME,,VERSION,SDE.DEFAULT,HISTORICAL_VERSION_TIMESTAMP,,CONNECTION_FILE,,VERSION_TYPE,Connect<space>using<space>a<space>Transactional<space>Version,FEATURE_READ_MODE,Features,CONNECTION,Parameters,WHERE,,USE_SEARCH_ENVELOPE,NO,SERVER,workh,TRANSLATE_SPATIAL_DATA_ONLY,no,REMOVE_TABLE_QUALIFIER,NO,IGNORE_RELATIONSHIP_INFO,yes,EXPOSE_ATTRS_GROUP,,SPLIT_COMPLEX_EDGES,no,CLIP_TO_ENVELOPE,NO,SPLIT_MULTI_PART_ANNOS,no,GEODATABASE_SDE_EXPOSE_FORMAT_ATTRS,,RESOLVE_DOMAINS,no,TABLELIST,GEODB.GSK25_GSKT<space>GEODB.GSK25_GSK,IGNORE_NETWORK_INFO,yes,SEARCH_ENVELOPE_MAXX,0,SEARCH_ENVELOPE_MAXY,0,RESOLVE_SUBTYPE_NAMES,yes
+MULTI_READER_GEN_DIRECTIVES{0} VERSION_OVERRIDE,FME_DISCLOSURE_CLOSED,VERSION_TYPE,Version<space>from<space>SDE<space>Connection,GEODATABASE_SDE_EXPOSE_FORMAT_ATTRS,,SEARCH_ENVELOPE_MINX,0,WHERE,,HISTORICAL_VERSION_TIMESTAMP,,READ_VERSION_DIFFERENCES,NO,COMPARE_TRANSACTIONAL_VERSION,,SEARCH_ORDER,SPATIAL_FIRST,ARCHIVE_WHERE,,COMPARE_HISTORICAL_VERSION_TIMESTAMP,,USE_SEARCH_ENVELOPE,NO,TABLELIST,OEREB2.FLAECHE<space>OEREB2.LINIE<space>OEREB2.PUNKT,COMPARE_HISTORICAL_VERSION_NAME,,SPLIT_MULTI_PART_ANNOS,no,IGNORE_NETWORK_INFO,yes,SEARCH_METHOD,GEODB_INTERSECTS,_MERGE_SCHEMAS,YES,QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS,Yes,SEARCH_ENVELOPE_MINY,0,EXPOSE_ATTRS_GROUP,,GEODB_SDE_RDR_ADV_PARM,,CREDENTIALS_OVERRIDE,NO,FME_CONNECTION_GROUP,,TRANSLATE_SPATIAL_DATA_ONLY,no,CLIP_TO_ENVELOPE,NO,COMPARE_VERSION_TYPE,<lt>Unused<gt>,SEARCH_ENVELOPE_MAXX,0,SEARCH_ENVELOPE_MAXY,0,BEGIN_SQL<opencurly>0<closecurly>,,RESOLVE_DOMAINS,no,SPLIT_COMPLEX_ANNOS,no,CHECK_SIMPLE_GEOM,no,IGNORE_RELATIONSHIP_INFO,yes,PERSISTENT_CONNECTION,no,USERID,,ALIAS_MODE,NONE,CONNECTION_FILE,P:<backslash>Z_Systems<backslash>GeoDB<backslash>Zusatzdaten<backslash>VEK1_TUOEREB2.sde,VERSION,,SPLIT_COMPLEX_EDGES,no,CHILD_VERSION_NAME,,RESOLVE_SUBTYPE_NAMES,yes,FEATURE_READ_MODE,Features,CACHE_MULTIPATCH_TEXTURES,yes,REMOVE_TABLE_QUALIFIER,NO,MERGE_FEAT_LINKED_ANNOS,no,END_SQL<opencurly>0<closecurly>,,HISTORICAL_VERSION_NAME,,SEARCH_FEATURE,
 MULTI_READER_TYPE{1} XLSXR
 MULTI_READER_KEYWORD{1} XLSXR_1
-MULTI_READER_GEN_DIRECTIVES{1} ADVANCED,,FORCE_DATETIME,YES,SCHEMA,AMT<comma>0<lt>comma<gt>AMT_OID<lt>comma<gt>char<lt>comma<gt>17<lt>comma<gt><lt>comma<gt><lt>comma<gt>1<lt>comma<gt>AMT_NAME_DE<lt>comma<gt>char<lt>comma<gt>43<lt>comma<gt><lt>comma<gt><lt>comma<gt>2<lt>comma<gt>AMT_NAME_FR<lt>comma<gt>char<lt>comma<gt>50<lt>comma<gt><lt>comma<gt><lt>comma<gt>3<lt>comma<gt>AMT_AMTIMWEB_DE<lt>comma<gt>char<lt>comma<gt>21<lt>comma<gt><lt>comma<gt><lt>comma<gt>4<lt>comma<gt>AMT_AMTIMWEB_FR<lt>comma<gt>char<lt>comma<gt>21<lt>comma<gt><lt>comma<gt><comma>1<lt>comma<gt><lt>comma<gt><lt>comma<gt><comma>NO<lt>comma<gt>NO<lt>comma<gt>1<lt>comma<gt><lt>solidus<gt><lt>solidus<gt>geoda.infra.be.ch<lt>solidus<gt>arbeit<lt>solidus<gt>Anwend<lt>solidus<gt>OEREBK<lt>solidus<gt>Data<lt>solidus<gt>131_Grundwasserschutz<lt>solidus<gt>AMT_1113.xlsx<lt>comma<gt><lt>quote<gt>0<lt>comma<gt>0<lt>comma<gt>4<lt>comma<gt>1<lt>quote<gt><lt>comma<gt><lt>comma<gt>NO,SCAN_SCHEMA_IF_DYNAMIC,No,TABLELIST,AMT,_MERGE_SCHEMAS,YES,EXCEL_COL_NAMES,YES,USE_SCHEMA_OTHER_FILES,No,EXPAND_MERGED_CELLS,Yes
+MULTI_READER_GEN_DIRECTIVES{1} ADVANCED,,FORCE_DATETIME,YES,SCHEMA,AMT<comma>0<lt>comma<gt>AMT_OID<lt>comma<gt>char<lt>comma<gt>18<lt>comma<gt><lt>comma<gt><lt>comma<gt>1<lt>comma<gt>AMT_NAME_DE<lt>comma<gt>char<lt>comma<gt>43<lt>comma<gt><lt>comma<gt><lt>comma<gt>2<lt>comma<gt>AMT_NAME_FR<lt>comma<gt>char<lt>comma<gt>50<lt>comma<gt><lt>comma<gt><lt>comma<gt>3<lt>comma<gt>AMT_AMTIMWEB_DE<lt>comma<gt>char<lt>comma<gt>101<lt>comma<gt><lt>comma<gt><lt>comma<gt>4<lt>comma<gt>AMT_AMTIMWEB_FR<lt>comma<gt>char<lt>comma<gt>101<lt>comma<gt><lt>comma<gt><comma>1<lt>comma<gt><lt>comma<gt><lt>comma<gt><comma>NO<lt>comma<gt>NO<lt>comma<gt>1<lt>comma<gt><lt>solidus<gt><lt>solidus<gt>geoda.infra.be.ch<lt>solidus<gt>arbeit<lt>solidus<gt>Anwend<lt>solidus<gt>OEREBK<lt>solidus<gt>Data<lt>solidus<gt>116_KatasterBelasteteStandorte<lt>solidus<gt>AMT_1116.xlsx<lt>comma<gt><lt>quote<gt>0<lt>comma<gt>0<lt>comma<gt>4<lt>comma<gt>1<lt>quote<gt><lt>comma<gt><lt>comma<gt>NO,SCAN_SCHEMA_IF_DYNAMIC,No,TABLELIST,AMT,_MERGE_SCHEMAS,YES,EXCEL_COL_NAMES,YES,USE_SCHEMA_OTHER_FILES,No,EXPAND_MERGED_CELLS,Yes
 MULTI_READER_TYPE{2} XLSXR
 MULTI_READER_KEYWORD{2} XLSXR_2
-MULTI_READER_GEN_DIRECTIVES{2} ADVANCED,,FORCE_DATETIME,YES,SCHEMA,DARSTELLUNGSDIENST<comma>0<lt>comma<gt>DAR_OID<lt>comma<gt>char<lt>comma<gt>22<lt>comma<gt><lt>comma<gt><lt>comma<gt>1<lt>comma<gt>DAR_VERWEISWMS_DE<lt>comma<gt>char<lt>comma<gt>304<lt>comma<gt><lt>comma<gt><lt>comma<gt>2<lt>comma<gt>DAR_VERWEISWMS_FR<lt>comma<gt>char<lt>comma<gt>304<lt>comma<gt><lt>comma<gt><lt>comma<gt>3<lt>comma<gt>DAR_LEGENDEIMWEB_DE<lt>comma<gt>char<lt>comma<gt>68<lt>comma<gt><lt>comma<gt><lt>comma<gt>4<lt>comma<gt>DAR_LEGENDEIMWEB_FR<lt>comma<gt>char<lt>comma<gt>68<lt>comma<gt><lt>comma<gt><comma>1<lt>comma<gt><lt>comma<gt><lt>comma<gt><comma>NO<lt>comma<gt>NO<lt>comma<gt>1<lt>comma<gt><lt>solidus<gt><lt>solidus<gt>geoda.infra.be.ch<lt>solidus<gt>arbeit<lt>solidus<gt>Anwend<lt>solidus<gt>OEREBK<lt>solidus<gt>Data<lt>solidus<gt>131_Grundwasserschutz<lt>solidus<gt>DARSTELLUNGSDIENST_1113.xlsx<lt>comma<gt><lt>quote<gt>0<lt>comma<gt>0<lt>comma<gt>4<lt>comma<gt>2<lt>quote<gt><lt>comma<gt><lt>comma<gt>NO,SCAN_SCHEMA_IF_DYNAMIC,No,TABLELIST,DARSTELLUNGSDIENST,_MERGE_SCHEMAS,YES,EXCEL_COL_NAMES,YES,USE_SCHEMA_OTHER_FILES,No,EXPAND_MERGED_CELLS,Yes
+MULTI_READER_GEN_DIRECTIVES{2} ADVANCED,,FORCE_DATETIME,YES,SCHEMA,DARSTELLUNGSDIENST<comma>0<lt>comma<gt>DAR_OID<lt>comma<gt>char<lt>comma<gt>19<lt>comma<gt><lt>comma<gt><lt>comma<gt>1<lt>comma<gt>DAR_VERWEISWMS_DE<lt>comma<gt>char<lt>comma<gt>301<lt>comma<gt><lt>comma<gt><lt>comma<gt>2<lt>comma<gt>DAR_VERWEISWMS_FR<lt>comma<gt>char<lt>comma<gt>301<lt>comma<gt><lt>comma<gt><lt>comma<gt>3<lt>comma<gt>DAR_LEGENDEIMWEB_DE<lt>comma<gt>char<lt>comma<gt>65<lt>comma<gt><lt>comma<gt><lt>comma<gt>4<lt>comma<gt>DAR_LEGENDEIMWEB_FR<lt>comma<gt>char<lt>comma<gt>65<lt>comma<gt><lt>comma<gt><comma>1<lt>comma<gt><lt>comma<gt><lt>comma<gt><comma>NO<lt>comma<gt>NO<lt>comma<gt>1<lt>comma<gt><lt>solidus<gt><lt>solidus<gt>geoda.infra.be.ch<lt>solidus<gt>arbeit<lt>solidus<gt>Anwend<lt>solidus<gt>OEREBK<lt>solidus<gt>Data<lt>solidus<gt>116_KatasterBelasteteStandorte<lt>solidus<gt>DARSTELLUNGSDIENST_1116.xlsx<lt>comma<gt><lt>quote<gt>0<lt>comma<gt>0<lt>comma<gt>4<lt>comma<gt>1<lt>quote<gt><lt>comma<gt><lt>comma<gt>NO,SCAN_SCHEMA_IF_DYNAMIC,No,TABLELIST,DARSTELLUNGSDIENST,_MERGE_SCHEMAS,YES,EXCEL_COL_NAMES,YES,USE_SCHEMA_OTHER_FILES,No,EXPAND_MERGED_CELLS,Yes
 
 WRITER_TYPE MULTI_WRITER
 MULTI_WRITER_DATASET_ORDER BY_ID
@@ -4976,10 +5091,10 @@ FACTORY_DEF * TeeFactory    FACTORY_NAME "GEODB.GSK25_GSK (GEODATABASE_SDE_1) Sp
 FACTORY_DEF * TeeFactory    FACTORY_NAME "GEODB.GSK25_GSKT (GEODATABASE_SDE_1) Splitter"    INPUT FEATURE_TYPE GEODB.GSK25_GSKT    OUTPUT FEATURE_TYPE GEODB.GSK25_GSKT_GEODATABASE_SDE_1
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * TeeFactory    FACTORY_NAME "AMT (XLSXR_1) Splitter"    INPUT FEATURE_TYPE AMT    OUTPUT FEATURE_TYPE AMT_XLSXR_1_0_UHiqv03QpVU=    OUTPUT FEATURE_TYPE AMT_XLSXR_1_1_JDSzqpD1FY4=
+FACTORY_DEF * TeeFactory    FACTORY_NAME "DARSTELLUNGSDIENST (XLSXR_2) Splitter"    INPUT FEATURE_TYPE DARSTELLUNGSDIENST    OUTPUT FEATURE_TYPE DARSTELLUNGSDIENST_XLSXR_2
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * TeeFactory    FACTORY_NAME "DARSTELLUNGSDIENST (XLSXR_2) Splitter"    INPUT FEATURE_TYPE DARSTELLUNGSDIENST    OUTPUT FEATURE_TYPE DARSTELLUNGSDIENST_XLSXR_2
+FACTORY_DEF * TeeFactory    FACTORY_NAME "AMT (XLSXR_1) Splitter"    INPUT FEATURE_TYPE AMT    OUTPUT FEATURE_TYPE AMT_XLSXR_1_0_UHiqv03QpVU=    OUTPUT FEATURE_TYPE AMT_XLSXR_1_1_JDSzqpD1FY4=
 DEFAULT_MACRO WB_CURRENT_CONTEXT
 # -------------------------------------------------------------------------
 
@@ -5021,12 +5136,12 @@ FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeFilter <lt>NULL<gt> Transforme
 FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeFilter <lt>UNFILTERED<gt> Transformer Output Nuker"   INPUT FEATURE_TYPE AttributeFilter_<lt>UNFILTERED<gt>
 # -------------------------------------------------------------------------
 
-FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME AttributeCreator_2    INPUT  FEATURE_TYPE AttributeFilter_SA1    INPUT  FEATURE_TYPE AttributeFilter_SA2    INPUT  FEATURE_TYPE AttributeFilter_SA3    MULTI_FEATURE_MODE NO    NULL_ATTR_MODE NO_OP     ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV     ATTR_ACTION { "" "THE_ID" "SET_TO" "$(THEMA_AREALE$encode)" }      ATTR_ACTION { "" "DAR_OID" "SET_TO" "$(DARST_AREALE$encode)" }      ATTR_ACTION { "" "EIB_AUSSAGE_DE" "SET_TO" "Schutzareal<space><at>Value<openparen>TYP<closeparen><space><openparen><at>Value<openparen>GSZ_NAME<closeparen><closeparen>" }      ATTR_ACTION { "" "EIB_AUSSAGE_FR" "SET_TO" "P<u00e9>rim<u00e8>tre<space>de<space>protection<space><at>Value<openparen>TYP<closeparen><openparen><at>Value<openparen>GSZ_NAME<closeparen><closeparen>" }      ATTR_ACTION { "" "STH_ID" "SET_TO" "$(SUBTHEMA_AREALE$encode)" }    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_2_OUTPUT
+FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME AttributeCreator_2    INPUT  FEATURE_TYPE AttributeFilter_SA1    INPUT  FEATURE_TYPE AttributeFilter_SA2    INPUT  FEATURE_TYPE AttributeFilter_SA3    MULTI_FEATURE_MODE NO    NULL_ATTR_MODE NO_OP     ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV     ATTR_ACTION { "" "THE_ID" "SET_TO" "$(THEMA_AREALE$encode)" }      ATTR_ACTION { "" "DAR_OID" "SET_TO" "$(DARST_AREALE$encode)" }      ATTR_ACTION { "" "STH_ID" "SET_TO" "$(SUBTHEMA_AREALE$encode)" }    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_2_OUTPUT
 
 
 # -------------------------------------------------------------------------
 
-FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME AttributeCreator_3    INPUT  FEATURE_TYPE AttributeFilter_S1    INPUT  FEATURE_TYPE AttributeFilter_S2    INPUT  FEATURE_TYPE AttributeFilter_S3    INPUT  FEATURE_TYPE AttributeFilter_S3Zu    INPUT  FEATURE_TYPE AttributeFilter_SBW    INPUT  FEATURE_TYPE AttributeFilter_Sh    INPUT  FEATURE_TYPE AttributeFilter_Sm    MULTI_FEATURE_MODE NO    NULL_ATTR_MODE NO_OP     ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV     ATTR_ACTION { "" "THE_ID" "SET_TO" "$(THEMA_ZONEN$encode)" }      ATTR_ACTION { "" "DAR_OID" "SET_TO" "$(DARST_ZONEN$encode)" }      ATTR_ACTION { "" "EIB_AUSSAGE_DE" "SET_TO" "Schutzzone<space><at>Value<openparen>TYP<closeparen><space><openparen><at>Value<openparen>GSZ_NAME<closeparen><closeparen>" }      ATTR_ACTION { "" "EIB_AUSSAGE_FR" "SET_TO" "Zone<space>de<space>protection<space><at>Value<openparen>TYP<closeparen><space><openparen><at>Value<openparen>GSZ_NAME<closeparen><closeparen>" }      ATTR_ACTION { "" "STH_ID" "SET_TO" "$(SUBTHEMA_ZONEN$encode)" }    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_3_OUTPUT
+FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME AttributeCreator_3    INPUT  FEATURE_TYPE AttributeFilter_S1    INPUT  FEATURE_TYPE AttributeFilter_S2    INPUT  FEATURE_TYPE AttributeFilter_S3    INPUT  FEATURE_TYPE AttributeFilter_S3Zu    INPUT  FEATURE_TYPE AttributeFilter_SBW    INPUT  FEATURE_TYPE AttributeFilter_Sh    INPUT  FEATURE_TYPE AttributeFilter_Sm    MULTI_FEATURE_MODE NO    NULL_ATTR_MODE NO_OP     ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV     ATTR_ACTION { "" "THE_ID" "SET_TO" "$(THEMA_ZONEN$encode)" }      ATTR_ACTION { "" "DAR_OID" "SET_TO" "$(DARST_ZONEN$encode)" }      ATTR_ACTION { "" "STH_ID" "SET_TO" "$(SUBTHEMA_ZONEN$encode)" }    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_3_OUTPUT
 
 
 # -------------------------------------------------------------------------
@@ -5042,14 +5157,26 @@ FACTORY_DEF {*} ReferenceFactory    FACTORY_NAME FeatureMerger    INPUT REFERENC
 
 # -------------------------------------------------------------------------
 
-FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME AttributeCreator_6    INPUT  FEATURE_TYPE FeatureMerger_MERGED    MULTI_FEATURE_MODE NO    NULL_ATTR_MODE NO_OP     ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV     ATTR_ACTION { "" "_joinfield" "SET_TO" "666" }      ATTR_ACTION { "" "EIB_LEGENDESYMBOL_DE" "SET_TO" "$(LEGEND_BASEURL$encode)<at>Value<openparen>TYP<closeparen>.png" }      ATTR_ACTION { "" "EIB_LEGENDESYMBOL_FR" "SET_TO" "$(LEGEND_BASEURL$encode)<at>Value<openparen>TYP<closeparen>.png" }    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_6_OUTPUT
+FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME AttributeCreator_6    INPUT  FEATURE_TYPE FeatureMerger_MERGED    MULTI_FEATURE_MODE NO    NULL_ATTR_MODE NO_OP     ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV     ATTR_ACTION { "" "_joinfield" "SET_TO" "666" }      ATTR_ACTION { "" "EIB_LEGENDESYMBOL_DE" "SET_TO" "$(LEGEND_BASEURL$encode)<at>Value<openparen>TYP<closeparen>_MGDM.png" }      ATTR_ACTION { "" "EIB_LEGENDESYMBOL_FR" "SET_TO" "$(LEGEND_BASEURL$encode)<at>Value<openparen>TYP<closeparen>_MGDM.png" }    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_6_OUTPUT
+
+
+# -------------------------------------------------------------------------
+Lookup AttributeValueMapper_2_LOOKUP_TABLE   S1              @EvaluateExpression(FDIV,STRING_ENCODED,Grundwasserschutzzone<space>S1<space><openparen><at>Value<openparen>GSZ_NAME<closeparen><comma><space>Nr.<space><at>Value<openparen>GSZ_NR<closeparen><closeparen>,AttributeValueMapper_2)   S2              @EvaluateExpression(FDIV,STRING_ENCODED,Grundwasserschutzzone<space>S2<space><openparen><at>Value<openparen>GSZ_NAME<closeparen><comma><space>Nr.<space><at>Value<openparen>GSZ_NR<closeparen><closeparen>,AttributeValueMapper_2)   S3              @EvaluateExpression(FDIV,STRING_ENCODED,Grundwasserschutzzone<space>S3<space><openparen><at>Value<openparen>GSZ_NAME<closeparen><comma><space>Nr.<space><at>Value<openparen>GSZ_NR<closeparen><closeparen>,AttributeValueMapper_2)   S3Zu            @EvaluateExpression(FDIV,STRING_ENCODED,Zustr<u00f6>mbereich<space>Zu<space>anstelle<space>einer<space>S3<space>oder<space>Sm<space><openparen><at>Value<openparen>GSZ_NAME<closeparen><comma><space>Nr.<space><at>Value<openparen>GSZ_NR<closeparen><closeparen>,AttributeValueMapper_2)   SBW             @EvaluateExpression(FDIV,STRING_ENCODED,Nicht<space>nach<space>Bundesrecht<space>vorgesehener<space>Schutzzonentyp<space><openparen><at>Value<openparen>BEZEICH_DE<closeparen><comma><space><at>Value<openparen>GSZ_NAME<closeparen><comma><space>Nr.<space><at>Value<openparen>GSZ_NR<closeparen><closeparen>,AttributeValueMapper_2)   Sh              @EvaluateExpression(FDIV,STRING_ENCODED,Grundwasserschutzzone<space>Sh<space><openparen><at>Value<openparen>GSZ_NAME<closeparen><comma><space>Nr.<space><at>Value<openparen>GSZ_NR<closeparen><closeparen>,AttributeValueMapper_2)   Sm              @EvaluateExpression(FDIV,STRING_ENCODED,Grundwasserschutzzone<space>Sm<space><openparen><at>Value<openparen>GSZ_NAME<closeparen><comma><space>Nr.<space><at>Value<openparen>GSZ_NR<closeparen><closeparen>,AttributeValueMapper_2)   SA1             @EvaluateExpression(FDIV,STRING_ENCODED,K<u00fc>nftige<space>Schutzzone<space>S1<space><openparen><at>Value<openparen>GSZ_NAME<closeparen><comma><space>Nr.<space><at>Value<openparen>GSZ_NR<closeparen><closeparen>,AttributeValueMapper_2)   SA2             @EvaluateExpression(FDIV,STRING_ENCODED,K<u00fc>nftige<space>Schutzzone<space>S2<space><openparen><at>Value<openparen>GSZ_NAME<closeparen><comma><space>Nr.<space><at>Value<openparen>GSZ_NR<closeparen><closeparen>,AttributeValueMapper_2)   SA3             @EvaluateExpression(FDIV,STRING_ENCODED,K<u00fc>nftige<space>Schutzzone<space>S3<space><openparen><at>Value<openparen>GSZ_NAME<closeparen><comma><space>Nr.<space><at>Value<openparen>GSZ_NR<closeparen><closeparen>,AttributeValueMapper_2)   ""              ""   ENCODED_SUPPORTUNICODE
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeValueMapper_2    INPUT  FEATURE_TYPE AttributeCreator_6_OUTPUT    OUTPUT FEATURE_TYPE AttributeValueMapper_2_OUTPUT         @Lookup(AttributeValueMapper_2_LOOKUP_TABLE,"TYP",FORWARD|ENCODED_ATTR|REAL_NULL_SUPPORT, EIB_AUSSAGE_DE)
+
+
+# -------------------------------------------------------------------------
+Lookup AttributeValueMapper_3_LOOKUP_TABLE   S1              @EvaluateExpression(FDIV,STRING_ENCODED,Zone<space>de<space>protection<space>des<space>eaux<space>souterraines<space>S1<space><openparen><at>Value<openparen>GSZ_NAME<closeparen><comma><space>N<u00b0><space><at>Value<openparen>GSZ_NR<closeparen><closeparen>,AttributeValueMapper_3)   S2              @EvaluateExpression(FDIV,STRING_ENCODED,Zone<space>de<space>protection<space>des<space>eaux<space>souterraines<space>S2<space><openparen><at>Value<openparen>GSZ_NAME<closeparen><comma><space>N<u00b0><space><at>Value<openparen>GSZ_NR<closeparen><closeparen>,AttributeValueMapper_3)   S3              @EvaluateExpression(FDIV,STRING_ENCODED,Zone<space>de<space>protection<space>des<space>eaux<space>souterraines<space>S3<space><openparen><at>Value<openparen>GSZ_NAME<closeparen><comma><space>N<u00b0><space><at>Value<openparen>GSZ_NR<closeparen><closeparen>,AttributeValueMapper_3)   S3Zu            @EvaluateExpression(FDIV,STRING_ENCODED,Aire<space>d<u2019>alimentation<space>Zu<space>au<space>lieu<space>de<space>S3<space>ou<space>Sm<space><openparen><at>Value<openparen>GSZ_NAME<closeparen><comma><space>N<u00b0><space><at>Value<openparen>GSZ_NR<closeparen><closeparen>,AttributeValueMapper_3)   SBW             @EvaluateExpression(FDIV,STRING_ENCODED,Types<space>de<space>zones<space>de<space>protection<space>non<space>pr<u00e9>vus<space>par<space>le<space>droit<space>f<u00e9>d<u00e9>ral<space><openparen><at>Value<openparen>BEZEICH_FR<closeparen><comma><space><at>Value<openparen>GSZ_NAME<closeparen><comma><space>N<u00b0><space><at>Value<openparen>GSZ_NR<closeparen><closeparen>,AttributeValueMapper_3)   Sh              @EvaluateExpression(FDIV,STRING_ENCODED,Zone<space>de<space>protection<space>des<space>eaux<space>souterraines<space>Sh<space><openparen><at>Value<openparen>GSZ_NAME<closeparen><comma><space>N<u00b0><space><at>Value<openparen>GSZ_NR<closeparen><closeparen>,AttributeValueMapper_3)   Sm              @EvaluateExpression(FDIV,STRING_ENCODED,Zone<space>de<space>protection<space>des<space>eaux<space>souterraines<space>Sm<space><openparen><at>Value<openparen>GSZ_NAME<closeparen><comma><space>N<u00b0><space><at>Value<openparen>GSZ_NR<closeparen><closeparen>,AttributeValueMapper_3)   SA1             @EvaluateExpression(FDIV,STRING_ENCODED,Future<space>zone<space>de<space>protection<space>S1<space><openparen><at>Value<openparen>GSZ_NAME<closeparen><comma><space>N<u00b0><space><at>Value<openparen>GSZ_NR<closeparen><closeparen>,AttributeValueMapper_3)   SA2             @EvaluateExpression(FDIV,STRING_ENCODED,Future<space>zone<space>de<space>protection<space>S2<space><openparen><at>Value<openparen>GSZ_NAME<closeparen><comma><space>N<u00b0><space><at>Value<openparen>GSZ_NR<closeparen><closeparen>,AttributeValueMapper_3)   SA3             @EvaluateExpression(FDIV,STRING_ENCODED,Future<space>zone<space>de<space>protection<space>S3<space><openparen><at>Value<openparen>GSZ_NAME<closeparen><comma><space>N<u00b0><space><at>Value<openparen>GSZ_NR<closeparen><closeparen>,AttributeValueMapper_3)   ""              ""   ENCODED_SUPPORTUNICODE
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeValueMapper_3    INPUT  FEATURE_TYPE AttributeValueMapper_2_OUTPUT    OUTPUT FEATURE_TYPE AttributeValueMapper_3_OUTPUT         @Lookup(AttributeValueMapper_3_LOOKUP_TABLE,"TYP",FORWARD|ENCODED_ATTR|REAL_NULL_SUPPORT, EIB_AUSSAGE_FR)
 
 
 # -------------------------------------------------------------------------
 
 INCLUDE [if { {ATTRIBUTES} == {ATTRIBUTES} } {                puts "MACRO FeatureMerger_2_REFERENCE_INFO ATTRIBUTES";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} && {<Unused>} == {POLYGONS}} {                puts "MACRO FeatureMerger_2_REFERENCE_INFO GEOM_BUILD_POLYS";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} && {<Unused>} == {AGGREGATES}} {                puts "MACRO FeatureMerger_2_REFERENCE_INFO GEOM_BUILD_AGGREGATES";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} && {<Unused>} == {LINESFROMPOINTS}} {                puts "MACRO FeatureMerger_2_REFERENCE_INFO GEOM_BUILD_LINES_FROM_POINTS";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} && {<Unused>} == {POLYGONS}} {                puts "MACRO FeatureMerger_2_REFERENCE_INFO GEOM_AND_ATTR_BUILD_POLYS";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} && {<Unused>} == {AGGREGATES}} {                puts "MACRO FeatureMerger_2_REFERENCE_INFO GEOM_AND_ATTR_BUILD_AGGREGATES";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} && {<Unused>} == {LINESFROMPOINTS}} {                puts "MACRO FeatureMerger_2_REFERENCE_INFO GEOM_AND_ATTR_BUILD_LINES_FROM_POINTS";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} } {                puts "MACRO FeatureMerger_2_REFERENCE_INFO GEOM_BUILD_AGGREGATES";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} } {                puts "MACRO FeatureMerger_2_REFERENCE_INFO GEOM_AND_ATTR_BUILD_AGGREGATES";             }          else {}; ]
 
-FACTORY_DEF {*} ReferenceFactory    FACTORY_NAME FeatureMerger_2    INPUT REFERENCER FEATURE_TYPE AttributeCreator_6_OUTPUT    INPUT REFERENCEE FEATURE_TYPE AttributeRemover_4_OUTPUT    REFERENCE_INFO $(FeatureMerger_2_REFERENCE_INFO)    REFERENCE_TABLE @EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>_joinfield<closeparen>,FeatureMerger_2) @EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>_joinfield<closeparen>,FeatureMerger_2) AUTO    ATTR_ACCUM_MODE "HANDLE_CONFLICT"    ATTR_CONFLICT_RES "REQUESTOR_IF_CONFLICT"    IGNORE_NULLS "Yes"    HANDLE_NULL_MISSING_KEYS_LIKE_FME2013 No    MERGE_ATTRIBUTES Yes    MANAGE_FME_TYPE Yes    MODE COMPLETE    PROCESS_DUPLICATE_REFERENCEES No    REFERENCEES_FIRST No    OUTPUT COMPLETE FEATURE_TYPE FeatureMerger_2_MERGED    OUTPUT INCOMPLETE FEATURE_TYPE FeatureMerger_2_NOT_MERGED    OUTPUT UNREFERENCED FEATURE_TYPE FeatureMerger_2_UNREFERENCED
+FACTORY_DEF {*} ReferenceFactory    FACTORY_NAME FeatureMerger_2    INPUT REFERENCER FEATURE_TYPE AttributeValueMapper_3_OUTPUT    INPUT REFERENCEE FEATURE_TYPE AttributeRemover_4_OUTPUT    REFERENCE_INFO $(FeatureMerger_2_REFERENCE_INFO)    REFERENCE_TABLE @EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>_joinfield<closeparen>,FeatureMerger_2) @EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>_joinfield<closeparen>,FeatureMerger_2) AUTO    ATTR_ACCUM_MODE "HANDLE_CONFLICT"    ATTR_CONFLICT_RES "REQUESTOR_IF_CONFLICT"    IGNORE_NULLS "Yes"    HANDLE_NULL_MISSING_KEYS_LIKE_FME2013 No    MERGE_ATTRIBUTES Yes    MANAGE_FME_TYPE Yes    MODE COMPLETE    PROCESS_DUPLICATE_REFERENCEES No    REFERENCEES_FIRST No    OUTPUT COMPLETE FEATURE_TYPE FeatureMerger_2_MERGED    OUTPUT INCOMPLETE FEATURE_TYPE FeatureMerger_2_NOT_MERGED    OUTPUT UNREFERENCED FEATURE_TYPE FeatureMerger_2_UNREFERENCED
 
 # -------------------------------------------------------------------------
 
@@ -5103,7 +5230,7 @@ FACTORY_DEF * TeeFactory    FACTORY_NAME UUIDGenerator_4    INPUT  FEATURE_TYPE 
 
 FME_PYTHON_PATH "$(FME_MF_DIR)"
 
-FACTORY_DEF * PythonFactory    FACTORY_NAME PythonCaller    INPUT  FEATURE_TYPE AttributeCreator_OUTPUT_0_lQ+3mj5tm0E=    SYMBOL_NAME processFeature    PYTHON_NAMESPACE FMEOBJECTS    SOURCE_CODE import<space>fmeobjects<lf>#<space>Template<space>Function<space>interface:<lf>def<space>processFeature<openparen>feature<closeparen>:<lf><space><space><space><space>reglement<space>=<space>feature.getAttribute<openparen><quote>REGLEM_DOC<quote><closeparen>.lower<openparen><closeparen><lf><space><space><space><space><lf><space><space><space><space>titel_de<space>=<space>u<quote>Reglement<quote><lf><space><space><space><space>titel_fr<space>=<space>u<quote>R<u00e8>glement<quote><lf><space><space><space><space><lf><space><space><space><space>if<space><quote>veraltet<quote><space>in<space>reglement:<lf><space><space><space><space><space><space><space><space>titel_de<space>=<space>u<quote>Rechtsvorschriften<space>veraltet<quote><lf><space><space><space><space><space><space><space><space>titel_fr<space>=<space>u<quote>Prescriptions<space>l<u00e9>gales<space>obsol<u00e8>tes<quote><lf><lf><space><space><space><space>feature.setAttribute<openparen><quote>VOR_TITEL_DE<quote><comma><space>titel_de<closeparen><lf><space><space><space><space>feature.setAttribute<openparen><quote>VOR_TITEL_FR<quote><comma><space>titel_fr<closeparen><lf><space><space><space><space>feature.setAttribute<openparen><quote>VOR_OFFIZIELLERTITEL_DE<quote><comma><space>titel_de<closeparen><lf><space><space><space><space>feature.setAttribute<openparen><quote>VOR_OFFIZIELLERTITEL_FR<quote><comma><space>titel_fr<closeparen>    OUTPUT PYOUTPUT FEATURE_TYPE PythonCaller_OUTPUT
+FACTORY_DEF * PythonFactory    FACTORY_NAME PythonCaller    INPUT  FEATURE_TYPE AttributeCreator_OUTPUT_0_lQ+3mj5tm0E=    SYMBOL_NAME processFeature    PYTHON_NAMESPACE FMEOBJECTS    SOURCE_CODE #<space>-*-<space>coding:<space>utf-8<space>-*-<lf>from<space>__future__<space>import<space>absolute_import<comma><space>division<comma><space>print_function<comma><space>unicode_literals<lf>import<space>fmeobjects<lf>#<space>Template<space>Function<space>interface:<lf>def<space>processFeature<openparen>feature<closeparen>:<lf><space><space><space><space>reglement<space>=<space>feature.getAttribute<openparen><quote>REGLEM_DOC<quote><closeparen>.lower<openparen><closeparen><lf><space><space><space><space><lf><space><space><space><space>titel_de<space>=<space>u<quote>Reglement<quote><lf><space><space><space><space>titel_fr<space>=<space>u<quote>R<u00e8>glement<quote><lf><space><space><space><space><lf><space><space><space><space>if<space><quote>veraltet<quote><space>in<space>reglement:<lf><space><space><space><space><space><space><space><space>titel_de<space>=<space>u<quote>Rechtsvorschriften<space>veraltet<quote><lf><space><space><space><space><space><space><space><space>titel_fr<space>=<space>u<quote>Prescriptions<space>l<u00e9>gales<space>obsol<u00e8>tes<quote><lf><lf><space><space><space><space>feature.setAttribute<openparen><quote>VOR_TITEL_DE<quote><comma><space>titel_de<closeparen><lf><space><space><space><space>feature.setAttribute<openparen><quote>VOR_TITEL_FR<quote><comma><space>titel_fr<closeparen><lf><space><space><space><space>feature.setAttribute<openparen><quote>VOR_OFFIZIELLERTITEL_DE<quote><comma><space>titel_de<closeparen><lf><space><space><space><space>feature.setAttribute<openparen><quote>VOR_OFFIZIELLERTITEL_FR<quote><comma><space>titel_fr<closeparen>    OUTPUT PYOUTPUT FEATURE_TYPE PythonCaller_OUTPUT
 
 FACTORY_DEF * TeeFactory   FACTORY_NAME "PythonCaller OUTPUT Splitter"   INPUT FEATURE_TYPE PythonCaller_OUTPUT   OUTPUT FEATURE_TYPE PythonCaller_OUTPUT_0_Y/oSM8lq1h4=   OUTPUT FEATURE_TYPE PythonCaller_OUTPUT_1_pbEWODpJnFk=
 # -------------------------------------------------------------------------
@@ -5142,22 +5269,22 @@ FACTORY_DEF * TeeFactory    FACTORY_NAME UUIDGenerator_5    INPUT  FEATURE_TYPE 
 
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * RoutingFactory FACTORY_NAME "Destination Feature Type Routing Correlator"   COMMAND_PARM_EVALUATION SINGLE_PASS   INPUT FEATURE_TYPE *    ROUTE FME_GENERIC AttributeCreator_5_OUTPUT TO ORACLE8I_DB __GO_TO_FINAL_OUTPUT_ROUTER__ <at>EvaluateExpression<openparen>ATTR_CREATE_EXPR_PROPAGATE_MISSING_FDIV<comma>VOR_LIEFEREINHEIT<comma>$(LIEFEREINHEIT$encode$encode)<comma>RES_ID<comma>$(RECHTSSTATUS$encode$encode)<comma>VOA_ID<comma>1<comma><space>ATTR_SET<closeparen>,multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>OEREB2.VORSCHRIFT<closeparen> GEOMETRY    ROUTE FME_GENERIC UUIDGenerator_5_OUTPUT TO ORACLE8I_DB __GO_TO_FINAL_OUTPUT_ROUTER__ <at>EvaluateExpression<openparen>ATTR_CREATE_EXPR_PROPAGATE_MISSING_FDIV<comma>HWD_LIEFEREINHEIT<comma>$(LIEFEREINHEIT$encode$encode)<comma><space>ATTR_SET<closeparen>,multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>OEREB2.HINWEIDOK<closeparen> GEOMETRY    ROUTE FME_GENERIC UUIDGenerator_4_OUTPUT TO ORACLE8I_DB __GO_TO_FINAL_OUTPUT_ROUTER__ <at>EvaluateExpression<openparen>ATTR_CREATE_EXPR_PROPAGATE_MISSING_FDIV<comma>HIV_LIEFEREINHEIT<comma>$(LIEFEREINHEIT$encode$encode)<comma><space>ATTR_SET<closeparen>,multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>OEREB2.HINVOR<closeparen> GEOMETRY    ROUTE FME_GENERIC Counter_OUTPUT TO ORACLE8I_DB __GO_TO_FINAL_OUTPUT_ROUTER__ <at>EvaluateExpression<openparen>ATTR_CREATE_EXPR_PROPAGATE_MISSING_FDIV<comma>EIB_LIEFEREINHEIT<comma>$(LIEFEREINHEIT$encode$encode)<comma>RES_ID<comma>$(RECHTSSTATUS$encode$encode)<comma><space>ATTR_SET<closeparen>,multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>OEREB2.EIGENTUMSBESCHRAENKUNG<closeparen> GEOMETRY    ROUTE FME_GENERIC StringConcatenator_2_OUTPUT TO ORACLE8I_DB __GO_TO_FINAL_OUTPUT_ROUTER__ <at>EvaluateExpression<openparen>ATTR_CREATE_EXPR_PROPAGATE_MISSING_FDIV<comma>DAR_LIEFEREINHEIT<comma>$(LIEFEREINHEIT$encode$encode)<comma><space>ATTR_SET<closeparen>,multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>OEREB2.DARSTELLUNGSDIENST<closeparen> GEOMETRY    ROUTE FME_GENERIC AMT_XLSXR_1_1_JDSzqpD1FY4= TO ORACLE8I_DB __GO_TO_FINAL_OUTPUT_ROUTER__ <at>EvaluateExpression<openparen>ATTR_CREATE_EXPR_PROPAGATE_MISSING_FDIV<comma>AMT_LIEFEREINHEIT<comma>$(LIEFEREINHEIT$encode$encode)<comma><space>ATTR_SET<closeparen>,multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>OEREB2.AMT<closeparen> GEOMETRY    ROUTE FME_GENERIC AttributeCreator_OUTPUT_2_LCEXEZ3I7po= TO GEODATABASE_SDE __GO_TO_FINAL_OUTPUT_ROUTER__ <at>EvaluateExpression<openparen>ATTR_CREATE_EXPR_PROPAGATE_MISSING_FDIV<comma>FLA_LIEFEREINHEIT<comma>$(LIEFEREINHEIT$encode$encode)<comma>RES_ID<comma>$(RECHTSSTATUS$encode$encode)<comma><space>ATTR_SET<closeparen>,multi_writer_id,1,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>OEREB2.FLAECHE<closeparen> GEOMETRY    ROUTE FME_GENERIC __WB_BYPASS_TERMINATOR__ <at>Tcl2<openparen>FME_StatMessage<space>818062<space><opencurly><at>Value<openparen>_wb_termination_message<closeparen><space><openparen><at>Value<openparen>_wb_termination_xformer<closeparen><closeparen><closecurly><space>818063<closeparen> TO FME_GENERIC __WB_BYPASS_TERMINATOR__ __wb_out_feat_type__,__WB_BYPASS_TERMINATOR__ GEOMETRY   FEATURE_TYPE_ATTRIBUTE __wb_out_feat_type__   OUTPUT ROUTED FEATURE_TYPE *    OUTPUT NOT_ROUTED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")
+FACTORY_DEF * RoutingFactory FACTORY_NAME "Destination Feature Type Routing Correlator"   COMMAND_PARM_EVALUATION SINGLE_PASS   INPUT FEATURE_TYPE *    ROUTE FME_GENERIC AttributeCreator_OUTPUT_2_LCEXEZ3I7po= TO GEODATABASE_SDE __GO_TO_FINAL_OUTPUT_ROUTER__ <at>EvaluateExpression<openparen>ATTR_CREATE_EXPR_PROPAGATE_MISSING_FDIV<comma>FLA_LIEFEREINHEIT<comma>$(LIEFEREINHEIT$encode$encode)<comma>RES_ID<comma>$(RECHTSSTATUS$encode$encode)<comma><space>ATTR_SET<closeparen>,multi_writer_id,1,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>OEREB2.FLAECHE<closeparen> GEOMETRY    ROUTE FME_GENERIC AttributeCreator_5_OUTPUT TO ORACLE8I_DB __GO_TO_FINAL_OUTPUT_ROUTER__ <at>EvaluateExpression<openparen>ATTR_CREATE_EXPR_PROPAGATE_MISSING_FDIV<comma>VOR_LIEFEREINHEIT<comma>$(LIEFEREINHEIT$encode$encode)<comma>RES_ID<comma>$(RECHTSSTATUS$encode$encode)<comma>VOA_ID<comma>1<comma><space>ATTR_SET<closeparen>,multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>OEREB2.VORSCHRIFT<closeparen> GEOMETRY    ROUTE FME_GENERIC UUIDGenerator_5_OUTPUT TO ORACLE8I_DB __GO_TO_FINAL_OUTPUT_ROUTER__ <at>EvaluateExpression<openparen>ATTR_CREATE_EXPR_PROPAGATE_MISSING_FDIV<comma>HWD_LIEFEREINHEIT<comma>$(LIEFEREINHEIT$encode$encode)<comma><space>ATTR_SET<closeparen>,multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>OEREB2.HINWEIDOK<closeparen> GEOMETRY    ROUTE FME_GENERIC UUIDGenerator_4_OUTPUT TO ORACLE8I_DB __GO_TO_FINAL_OUTPUT_ROUTER__ <at>EvaluateExpression<openparen>ATTR_CREATE_EXPR_PROPAGATE_MISSING_FDIV<comma>HIV_LIEFEREINHEIT<comma>$(LIEFEREINHEIT$encode$encode)<comma><space>ATTR_SET<closeparen>,multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>OEREB2.HINVOR<closeparen> GEOMETRY    ROUTE FME_GENERIC Counter_OUTPUT TO ORACLE8I_DB __GO_TO_FINAL_OUTPUT_ROUTER__ <at>EvaluateExpression<openparen>ATTR_CREATE_EXPR_PROPAGATE_MISSING_FDIV<comma>EIB_LIEFEREINHEIT<comma>$(LIEFEREINHEIT$encode$encode)<comma>RES_ID<comma>$(RECHTSSTATUS$encode$encode)<comma><space>ATTR_SET<closeparen>,multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>OEREB2.EIGENTUMSBESCHRAENKUNG<closeparen> GEOMETRY    ROUTE FME_GENERIC StringConcatenator_2_OUTPUT TO ORACLE8I_DB __GO_TO_FINAL_OUTPUT_ROUTER__ <at>EvaluateExpression<openparen>ATTR_CREATE_EXPR_PROPAGATE_MISSING_FDIV<comma>DAR_LIEFEREINHEIT<comma>$(LIEFEREINHEIT$encode$encode)<comma><space>ATTR_SET<closeparen>,multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>OEREB2.DARSTELLUNGSDIENST<closeparen> GEOMETRY    ROUTE FME_GENERIC AMT_XLSXR_1_1_JDSzqpD1FY4= TO ORACLE8I_DB __GO_TO_FINAL_OUTPUT_ROUTER__ <at>EvaluateExpression<openparen>ATTR_CREATE_EXPR_PROPAGATE_MISSING_FDIV<comma>AMT_LIEFEREINHEIT<comma>$(LIEFEREINHEIT$encode$encode)<comma><space>ATTR_SET<closeparen>,multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>OEREB2.AMT<closeparen> GEOMETRY    ROUTE FME_GENERIC __WB_BYPASS_TERMINATOR__ <at>Tcl2<openparen>FME_StatMessage<space>818062<space><opencurly><at>Value<openparen>_wb_termination_message<closeparen><space><openparen><at>Value<openparen>_wb_termination_xformer<closeparen><closeparen><closecurly><space>818063<closeparen> TO FME_GENERIC __WB_BYPASS_TERMINATOR__ __wb_out_feat_type__,__WB_BYPASS_TERMINATOR__ GEOMETRY   FEATURE_TYPE_ATTRIBUTE __wb_out_feat_type__   OUTPUT ROUTED FEATURE_TYPE *    OUTPUT NOT_ROUTED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")
 # -------------------------------------------------------------------------
 
 FACTORY_DEF * TeeFactory   FACTORY_NAME "Final Output Nuker"   INPUT FEATURE_TYPE __nuke_me__
 
 # -------------------------------------------------------------------------
-ORACLE8I_DB_1_DEF OEREB2.DARSTELLUNGSDIENST   oracle_create_table          No   oracle_table_writer_mode     INHERIT_FROM_WRITER   oracle_update_key_columns    ""   oracle_truncate_table        No   DAR_OID                      nvarchar(128)   DAR_XTF_ID                   nvarchar(128)   DAR_VERWEISWMS_DE            nvarchar(1023)   DAR_VERWEISWMS_FR            nvarchar(1023)   DAR_LEGENDEIMWEB_DE          nvarchar(1023)   DAR_LEGENDEIMWEB_FR          nvarchar(1023)   DAR_LIEFEREINHEIT            number(6,0)
-# -------------------------------------------------------------------------
-ORACLE8I_DB_1_DEF OEREB2.VORSCHRIFT   oracle_create_table          No   oracle_table_writer_mode     INHERIT_FROM_WRITER   oracle_update_key_columns    ""   oracle_truncate_table        No   VOR_OID                      nvarchar(128)   VOR_XTF_ID                   nvarchar(128)   VOR_TEXTIMWEB_DE             nvarchar(1023)   VOR_TEXTIMWEB_FR             nvarchar(1023)   VOR_PUBLIZIERTAB             date   VOR_TITEL_DE                 nvarchar(200)   VOR_TITEL_FR                 nvarchar(200)   VOR_OFFIZIELLERTITEL_DE      nvarchar(255)   VOR_OFFIZIELLERTITEL_FR      nvarchar(255)   VOR_ABKUERZUNG_DE            nvarchar(255)   VOR_ABKUERZUNG_FR            nvarchar(255)   VOR_OFFIZIELLENR             nvarchar(20)   VOR_KANTON                   nvarchar(2)   VOR_LIEFEREINHEIT            number(6,0)   RES_ID                       number(10,0)   BFS_NR                       number(5,0)   VOA_ID                       number(10,0)   AMT_OID                      nvarchar(128)   DOKUMENT                     blob   VOR_SORT                     number(10,0)
-# -------------------------------------------------------------------------
-ORACLE8I_DB_1_DEF OEREB2.AMT   oracle_create_table          No   oracle_table_writer_mode     INHERIT_FROM_WRITER   oracle_update_key_columns    ""   oracle_truncate_table        No   AMT_OID                      nvarchar(128)   AMT_XTF_ID                   nvarchar(128)   AMT_NAME_DE                  nvarchar(255)   AMT_NAME_FR                  nvarchar(255)   AMT_AMTIMWEB_DE              nvarchar(1023)   AMT_AMTIMWEB_FR              nvarchar(1023)   AMT_LIEFEREINHEIT            number(6,0)   AMT_LINE1                    nvarchar(80)   AMT_LINE2                    nvarchar(80)   AMT_STREET                   nvarchar(100)   AMT_NUMBER                   nvarchar(7)   AMT_POSTALCODE               nvarchar(4)   AMT_CITY                     nvarchar(60)
+ORACLE8I_DB_1_DEF OEREB2.HINWEIDOK   oracle_create_table          No   oracle_table_writer_mode     INHERIT_FROM_WRITER   oracle_update_key_columns    ""   oracle_truncate_table        No   HWD_ID                       nvarchar(128)   HWD_XTF_ID                   nvarchar(128)   HWD_LIEFEREINHEIT            number(6,0)   HWD_ARTNR                    nvarchar(255)   VOR_OIDURSPRUNG              nvarchar(128)   VOR_OIDHINWEIS               nvarchar(128)
 # -------------------------------------------------------------------------
 ORACLE8I_DB_1_DEF OEREB2.HINVOR   oracle_create_table          No   oracle_table_writer_mode     INHERIT_FROM_WRITER   oracle_update_key_columns    ""   oracle_truncate_table        No   HIV_ID                       nvarchar(128)   HIV_XTF_ID                   nvarchar(128)   HIV_ARTNR                    nvarchar(255)   HIV_LIEFEREINHEIT            number(6,0)   EIB_OID                      nvarchar(128)   VOR_OID                      nvarchar(128)
 # -------------------------------------------------------------------------
-ORACLE8I_DB_1_DEF OEREB2.EIGENTUMSBESCHRAENKUNG   oracle_drop_table            No   EIB_OID                      nvarchar(128)   EIB_XTF_ID                   nvarchar(128)   EIB_AUSSAGE_DE               nclob   EIB_AUSSAGE_FR               nclob   EIB_ARTCODE                  nvarchar(40)   EIB_ARTCODELISTE             nvarchar(1023)   EIB_PUBLIZIERTAB             date   EIB_LIEFEREINHEIT            number(6,0)   AMT_OID                      nvarchar(128)   DAR_OID                      nvarchar(128)   RES_ID                       number(10,0)   STH_ID                       number(10,0)   EIB_SORT                     number(10,0)   EIB_LEGENDESYMBOL_DE         nvarchar(1023)   EIB_LEGENDESYMBOL_FR         nvarchar(1023)
+ORACLE8I_DB_1_DEF OEREB2.DARSTELLUNGSDIENST   oracle_create_table          No   oracle_table_writer_mode     INHERIT_FROM_WRITER   oracle_update_key_columns    ""   oracle_truncate_table        No   DAR_OID                      nvarchar(128)   DAR_XTF_ID                   nvarchar(128)   DAR_VERWEISWMS_DE            nvarchar(1023)   DAR_VERWEISWMS_FR            nvarchar(1023)   DAR_LEGENDEIMWEB_DE          nvarchar(1023)   DAR_LEGENDEIMWEB_FR          nvarchar(1023)   DAR_LIEFEREINHEIT            number(6,0)
 # -------------------------------------------------------------------------
-ORACLE8I_DB_1_DEF OEREB2.HINWEIDOK   oracle_create_table          No   oracle_table_writer_mode     INHERIT_FROM_WRITER   oracle_update_key_columns    ""   oracle_truncate_table        No   HWD_ID                       nvarchar(128)   HWD_XTF_ID                   nvarchar(128)   HWD_LIEFEREINHEIT            number(6,0)   HWD_ARTNR                    nvarchar(255)   VOR_OIDURSPRUNG              nvarchar(128)   VOR_OIDHINWEIS               nvarchar(128)
+ORACLE8I_DB_1_DEF OEREB2.AMT   oracle_create_table          No   oracle_table_writer_mode     INHERIT_FROM_WRITER   oracle_update_key_columns    ""   oracle_truncate_table        No   AMT_OID                      nvarchar(128)   AMT_XTF_ID                   nvarchar(128)   AMT_NAME_DE                  nvarchar(255)   AMT_NAME_FR                  nvarchar(255)   AMT_AMTIMWEB_DE              nvarchar(1023)   AMT_AMTIMWEB_FR              nvarchar(1023)   AMT_LIEFEREINHEIT            number(6,0)   AMT_LINE1                    nvarchar(80)   AMT_LINE2                    nvarchar(80)   AMT_STREET                   nvarchar(100)   AMT_NUMBER                   nvarchar(7)   AMT_POSTALCODE               nvarchar(4)   AMT_CITY                     nvarchar(60)
+# -------------------------------------------------------------------------
+ORACLE8I_DB_1_DEF OEREB2.VORSCHRIFT   oracle_create_table          No   oracle_table_writer_mode     INHERIT_FROM_WRITER   oracle_update_key_columns    ""   oracle_truncate_table        No   VOR_OID                      nvarchar(128)   VOR_XTF_ID                   nvarchar(128)   VOR_TEXTIMWEB_DE             nvarchar(1023)   VOR_TEXTIMWEB_FR             nvarchar(1023)   VOR_PUBLIZIERTAB             date   VOR_TITEL_DE                 nvarchar(200)   VOR_TITEL_FR                 nvarchar(200)   VOR_OFFIZIELLERTITEL_DE      nvarchar(255)   VOR_OFFIZIELLERTITEL_FR      nvarchar(255)   VOR_ABKUERZUNG_DE            nvarchar(255)   VOR_ABKUERZUNG_FR            nvarchar(255)   VOR_OFFIZIELLENR             nvarchar(20)   VOR_KANTON                   nvarchar(2)   VOR_LIEFEREINHEIT            number(6,0)   RES_ID                       number(10,0)   BFS_NR                       number(5,0)   VOA_ID                       number(10,0)   AMT_OID                      nvarchar(128)   DOKUMENT                     blob   VOR_SORT                     number(10,0)
+# -------------------------------------------------------------------------
+ORACLE8I_DB_1_DEF OEREB2.EIGENTUMSBESCHRAENKUNG   oracle_drop_table            No   EIB_OID                      nvarchar(128)   EIB_XTF_ID                   nvarchar(128)   EIB_AUSSAGE_DE               nclob   EIB_AUSSAGE_FR               nclob   EIB_ARTCODE                  nvarchar(40)   EIB_ARTCODELISTE             nvarchar(1023)   EIB_PUBLIZIERTAB             date   EIB_LIEFEREINHEIT            number(6,0)   AMT_OID                      nvarchar(128)   DAR_OID                      nvarchar(128)   RES_ID                       number(10,0)   STH_ID                       number(10,0)   EIB_SORT                     number(10,0)   EIB_LEGENDESYMBOL_DE         nvarchar(1023)   EIB_LEGENDESYMBOL_FR         nvarchar(1023)
 # -------------------------------------------------------------------------
 GEODATABASE_SDE_2_DEF OEREB2.FLAECHE   geodb_type                   geodb_polygon   GEODB_DROP_TABLE             NO   GEODB_TRUNCATE_TABLE         NO   GEODB_OBJECT_ID_NAME         OBJECTID   GEODB_OBJECT_ID_ALIAS        OBJECTID   GEODB_SHAPE_NAME             SHAPE   GEODB_SHAPE_ALIAS            SHAPE   GEODB_CONFIG_KEYWORD         DEFAULTS   GEODB_FEATURE_DATASET        ""   GEODB_GRID{1}                ""   GEODB_AVG_NUM_POINTS         ""   GEODB_XORIGIN                ""   GEODB_YORIGIN                ""   GEODB_XYSCALE                ""   GEODB_HAS_Z_VALUES           ""   GEODB_ZORIGIN                ""   GEODB_ZSCALE                 ""   GEODB_HAS_MEASURES           ""   GEODB_MEASURES_ORIGIN        ""   GEODB_MEASURES_SCALE         ""   GEODB_ANNO_REFERENCE_SCALE   ""   FLA_OID                      char(128)   FLA_XTF_ID                   char(128)   FLA_PUBLIZIERTAB             date   FLA_METAGEO_DE               char(1023)   FLA_METAGEO_FR               char(1023)   FLA_LIEFEREINHEIT            integer   EIB_OID                      char(128)   AMT_OID                      char(128)   RES_ID                       integer
