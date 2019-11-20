@@ -27,8 +27,8 @@
 #!   END_TCL=""
 #!   EXPLICIT_BOOKMARK_ORDER="false"
 #!   FME_BUILD_NUM="18310"
-#!   FME_DOCUMENT_GUID="8215f362-847f-4831-9821-6e60d81e6ae0"
-#!   FME_DOCUMENT_PRIORGUID="5be125f2-590d-4cce-ac22-5f14b8b53049,e0d09a53-58fa-43ba-9aff-87554d375a44,eea87cef-3b06-4716-a302-a60d51863c3e,e85cdbb3-2edd-42e1-9c41-80452481ff23"
+#!   FME_DOCUMENT_GUID="998a3d6e-115e-4eec-943d-62e232458735"
+#!   FME_DOCUMENT_PRIORGUID="5be125f2-590d-4cce-ac22-5f14b8b53049,e0d09a53-58fa-43ba-9aff-87554d375a44,eea87cef-3b06-4716-a302-a60d51863c3e,e85cdbb3-2edd-42e1-9c41-80452481ff23,8215f362-847f-4831-9821-6e60d81e6ae0"
 #!   FME_GEOMETRY_HANDLING="Enhanced"
 #!   FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
 #!   FME_REPROJECTION_ENGINE="FME"
@@ -37,7 +37,7 @@
 #!   HISTORY=""
 #!   IGNORE_READER_FAILURE="No"
 #!   LAST_SAVE_BUILD="FME(R) 2018.0.1.0 (20180518 - Build 18310 - WIN32)"
-#!   LAST_SAVE_DATE="2019-09-20T08:42:03"
+#!   LAST_SAVE_DATE="2019-11-20T13:07:34"
 #!   LOG_FILE="$(LOGFILE)"
 #!   LOG_MAX_RECORDED_FEATURES="200"
 #!   MARKDOWN_DESCRIPTION=""
@@ -55,7 +55,7 @@
 #!   TITLE=""
 #!   USAGE=""
 #!   USE_MARKDOWN=""
-#!   VIEW_POSITION="3443.78 -559.381"
+#!   VIEW_POSITION="3646.91 9.37509"
 #!   WARN_INVALID_XFORM_PARAM="Yes"
 #!   WORKSPACE_VERSION="1"
 #!   ZOOM_SCALE="100"
@@ -495,7 +495,7 @@
 #!     <XFORM_ATTR ATTR_NAME="url" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_PARM PARM_NAME="BOOL_OP" PARM_VALUE="OR"/>
 #!     <XFORM_PARM PARM_NAME="COMPOSITE_TEST" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <XFORM_PARM PARM_NAME="TEST_CLAUSE" PARM_VALUE="TEST url ATTRIBUTE_HAS_A_VALUE &quot;&quot;"/>
+#!     <XFORM_PARM PARM_NAME="TEST_CLAUSE" PARM_VALUE="CASE_INSENSITIVE_TEST &lt;at&gt;Value&lt;openparen&gt;url&lt;closeparen&gt; BEGINS_WITH http"/>
 #!     <XFORM_PARM PARM_NAME="TEST_CLAUSE_GRP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Tester"/>
@@ -673,9 +673,9 @@
 #!     <OUTPUT_FEAT NAME="LOGGED"/>
 #!     <FEAT_COLLAPSED COLLAPSED="0"/>
 #!     <XFORM_ATTR ATTR_NAME="url" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_error" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_response_body" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_http_status_code" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="_error" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_PARM PARM_NAME="FEATURE_TYPE" PARM_VALUE="URLs_NotFound"/>
 #!     <XFORM_PARM PARM_NAME="LOG_FEATURE" PARM_VALUE="LOG_ONLY"/>
 #!     <XFORM_PARM PARM_NAME="MAXCOORDS" PARM_VALUE="20"/>
@@ -701,9 +701,9 @@
 #!     <OUTPUT_FEAT NAME="OUTPUT"/>
 #!     <FEAT_COLLAPSED COLLAPSED="0"/>
 #!     <XFORM_ATTR ATTR_NAME="url" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_error" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_response_body" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_http_status_code" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="_error" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="FeatureHolder_2"/>
 #! </TRANSFORMER>
@@ -1481,7 +1481,7 @@ DEFAULT_MACRO _WB_BYPASS_TERMINATION No
 FACTORY_DEF * TeeFactory FACTORY_NAME SQLExecutor_6_<Rejected> INPUT FEATURE_TYPE SQLExecutor_6_<REJECTED>  OUTPUT FAILED FEATURE_TYPE * @Abort(ENCODED, SQLExecutor_6<space>output<space>a<space><lt>Rejected<gt><space>feature.<space><space>To<space>continue<space>translation<space>when<space>features<space>are<space>rejected<comma><space>change<space><apos>Workspace<space>Parameters<apos><space><gt><space>Translation<space><gt><space><apos>Rejected<space>Feature<space>Handling<apos><space>to<space><apos>Continue<space>Translation<apos>)
 # -------------------------------------------------------------------------
 
-Tcl2 set AttributeSplitter_49971427_b871_4833_9f2e_4e2caa0d41273_splitDelim [FME_DecodeText {<comma>}];      if { [regexp {^([1-9][0-9]*s)+$} [set AttributeSplitter_49971427_b871_4833_9f2e_4e2caa0d41273_splitDelim]] }      {         set AttributeSplitter_49971427_b871_4833_9f2e_4e2caa0d41273_splitWidths [split [regsub -all {s$} {<comma>} {}] s];         proc AttributeSplitter_doSplit {}         {            global AttributeSplitter_49971427_b871_4833_9f2e_4e2caa0d41273_splitWidths;            set source [FME_GetAttribute [FME_DecodeText {schemas}]];            set attrNum 0;            set listName [FME_DecodeText {schema}];            set attrPos 0;            set keepEmptyParts [string equal {No} {No}];            foreach width [set AttributeSplitter_49971427_b871_4833_9f2e_4e2caa0d41273_splitWidths]            {               set endPos [expr $attrPos + $width - 1];               set bit [string range $source $attrPos $endPos];               set part [string trim $bit];               if { $keepEmptyParts || $part != \"\" } {                  FME_SetAttribute "$listName{$attrNum}" $part;                  incr attrNum;               };               incr attrPos $width;            };         };      }      else      {         proc AttributeSplitter_doSplit {}         {            global AttributeSplitter_49971427_b871_4833_9f2e_4e2caa0d41273_splitDelim;            set delim [set AttributeSplitter_49971427_b871_4833_9f2e_4e2caa0d41273_splitDelim];            set delimLength [string length $delim];            set source [FME_GetAttribute [FME_DecodeText {schemas}]];            set keepEmptyParts [string equal {No} {No}];            set bits {};            set startIndex 0;            set nextIndex [string first $delim $source $startIndex];            while {$nextIndex >= 0} {              lappend bits [string range $source $startIndex [expr $nextIndex-1]];              set startIndex [expr $nextIndex + $delimLength];              set nextIndex [string first $delim $source $startIndex];            };            lappend bits [string range $source $startIndex end];            set listName [FME_DecodeText {schema}];            set attrNum 0;            foreach bit $bits            {               set trimmedPart [string trim $bit];               if { $keepEmptyParts || $trimmedPart != \"\" } {                  FME_SetAttribute "$listName{$attrNum}" $trimmedPart;                  incr attrNum;               };            }          }       }
+Tcl2 set AttributeSplitter_c0a02f46_4c4a_4e57_999b_a3bd2679e6fe2_splitDelim [FME_DecodeText {<comma>}];      if { [regexp {^([1-9][0-9]*s)+$} [set AttributeSplitter_c0a02f46_4c4a_4e57_999b_a3bd2679e6fe2_splitDelim]] }      {         set AttributeSplitter_c0a02f46_4c4a_4e57_999b_a3bd2679e6fe2_splitWidths [split [regsub -all {s$} {<comma>} {}] s];         proc AttributeSplitter_doSplit {}         {            global AttributeSplitter_c0a02f46_4c4a_4e57_999b_a3bd2679e6fe2_splitWidths;            set source [FME_GetAttribute [FME_DecodeText {schemas}]];            set attrNum 0;            set listName [FME_DecodeText {schema}];            set attrPos 0;            set keepEmptyParts [string equal {No} {No}];            foreach width [set AttributeSplitter_c0a02f46_4c4a_4e57_999b_a3bd2679e6fe2_splitWidths]            {               set endPos [expr $attrPos + $width - 1];               set bit [string range $source $attrPos $endPos];               set part [string trim $bit];               if { $keepEmptyParts || $part != \"\" } {                  FME_SetAttribute "$listName{$attrNum}" $part;                  incr attrNum;               };               incr attrPos $width;            };         };      }      else      {         proc AttributeSplitter_doSplit {}         {            global AttributeSplitter_c0a02f46_4c4a_4e57_999b_a3bd2679e6fe2_splitDelim;            set delim [set AttributeSplitter_c0a02f46_4c4a_4e57_999b_a3bd2679e6fe2_splitDelim];            set delimLength [string length $delim];            set source [FME_GetAttribute [FME_DecodeText {schemas}]];            set keepEmptyParts [string equal {No} {No}];            set bits {};            set startIndex 0;            set nextIndex [string first $delim $source $startIndex];            while {$nextIndex >= 0} {              lappend bits [string range $source $startIndex [expr $nextIndex-1]];              set startIndex [expr $nextIndex + $delimLength];              set nextIndex [string first $delim $source $startIndex];            };            lappend bits [string range $source $startIndex end];            set listName [FME_DecodeText {schema}];            set attrNum 0;            foreach bit $bits            {               set trimmedPart [string trim $bit];               if { $keepEmptyParts || $trimmedPart != \"\" } {                  FME_SetAttribute "$listName{$attrNum}" $trimmedPart;                  incr attrNum;               };            }          }       }
 FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeSplitter    INPUT  FEATURE_TYPE AttributeManager_OUTPUT_0_qkWxPTSviNs=    OUTPUT FEATURE_TYPE AttributeSplitter_OUTPUT         @Tcl2(AttributeSplitter_doSplit)
 
 # -------------------------------------------------------------------------
@@ -1491,9 +1491,9 @@ DEFAULT_MACRO _WB_BYPASS_TERMINATION No
 FACTORY_DEF * TeeFactory FACTORY_NAME ListExploder_<Rejected> INPUT FEATURE_TYPE ListExploder_<REJECTED>  OUTPUT FAILED FEATURE_TYPE * @Abort(ENCODED, ListExploder<space>output<space>a<space><lt>Rejected<gt><space>feature.<space><space>To<space>continue<space>translation<space>when<space>features<space>are<space>rejected<comma><space>change<space><apos>Workspace<space>Parameters<apos><space><gt><space>Translation<space><gt><space><apos>Rejected<space>Feature<space>Handling<apos><space>to<space><apos>Continue<space>Translation<apos>)
 # -------------------------------------------------------------------------
 
-INCLUDE [    set macroLine "MACRO AttributeKeeper_15ebdc5a_e708_4c49_afab_7b64ca3de2583_LIST_EXP ";    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "\\{\[0-9\]+\\}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
+INCLUDE [    set macroLine "MACRO AttributeKeeper_2bf577bf_2e10_4220_9e8a_fd6828e0fde42_LIST_EXP ";    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "\\{\[0-9\]+\\}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
 
-FACTORY_DEF {*} TeeFactory    FACTORY_NAME AttributeKeeper    INPUT  FEATURE_TYPE ListExploder_ELEMENTS    OUTPUT { FEATURE_TYPE AttributeKeeper_OUTPUT        @KeepAttributes(fme_encoded,schema,liefereinheit,fme_pcre_match,"^fme_$(AttributeKeeper_15ebdc5a_e708_4c49_afab_7b64ca3de2583_LIST_EXP)")         }
+FACTORY_DEF {*} TeeFactory    FACTORY_NAME AttributeKeeper    INPUT  FEATURE_TYPE ListExploder_ELEMENTS    OUTPUT { FEATURE_TYPE AttributeKeeper_OUTPUT        @KeepAttributes(fme_encoded,schema,liefereinheit,fme_pcre_match,"^fme_$(AttributeKeeper_2bf577bf_2e10_4220_9e8a_fd6828e0fde42_LIST_EXP)")         }
 
 FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeKeeper OUTPUT Splitter"   INPUT FEATURE_TYPE AttributeKeeper_OUTPUT   OUTPUT FEATURE_TYPE AttributeKeeper_OUTPUT_0_rpABwRdi1ws=   OUTPUT FEATURE_TYPE AttributeKeeper_OUTPUT_1_ZImEmLS5GM8=   OUTPUT FEATURE_TYPE AttributeKeeper_OUTPUT_2_TmNRcQ2YPyY=
 # -------------------------------------------------------------------------
@@ -1524,7 +1524,7 @@ DEFAULT_MACRO _WB_BYPASS_TERMINATION No
 FACTORY_DEF * TeeFactory FACTORY_NAME SQLExecutor_<Rejected> INPUT FEATURE_TYPE SQLExecutor_<REJECTED>  OUTPUT FAILED FEATURE_TYPE * @Abort(ENCODED, SQLExecutor<space>output<space>a<space><lt>Rejected<gt><space>feature.<space><space>To<space>continue<space>translation<space>when<space>features<space>are<space>rejected<comma><space>change<space><apos>Workspace<space>Parameters<apos><space><gt><space>Translation<space><gt><space><apos>Rejected<space>Feature<space>Handling<apos><space>to<space><apos>Continue<space>Translation<apos>)
 # -------------------------------------------------------------------------
 
-FACTORY_DEF {*} TeeFactory    FACTORY_NAME BulkAttributeRenamer_2    INPUT  FEATURE_TYPE SQLExecutor_2_RESULT_1_255TfJJCeOQ=    INPUT  FEATURE_TYPE SQLExecutor_RESULT_1_N3993qDbe+E=    INPUT  FEATURE_TYPE SQLExecutor_5_RESULT_1_0mhshCfetJs=    INPUT  FEATURE_TYPE SQLExecutor_6_RESULT_1_jCckqZLtsbE=    INPUT  FEATURE_TYPE SQLExecutor_4_RESULT_1_36+cUWkuGiM=    OUTPUT { FEATURE_TYPE BulkAttributeRenamer_2_OUTPUT        @RenameAttributes(PATTERN_REPLACE, CASECHANGE, <Unused>, "<Unused>", "<Unused>", "lower", "<Unused>", "-_", "RENAME", "NONFME")         }
+FACTORY_DEF {*} TeeFactory    FACTORY_NAME BulkAttributeRenamer_2    INPUT  FEATURE_TYPE SQLExecutor_RESULT_1_N3993qDbe+E=    INPUT  FEATURE_TYPE SQLExecutor_4_RESULT_1_36+cUWkuGiM=    INPUT  FEATURE_TYPE SQLExecutor_6_RESULT_1_jCckqZLtsbE=    INPUT  FEATURE_TYPE SQLExecutor_2_RESULT_1_255TfJJCeOQ=    INPUT  FEATURE_TYPE SQLExecutor_5_RESULT_1_0mhshCfetJs=    OUTPUT { FEATURE_TYPE BulkAttributeRenamer_2_OUTPUT        @RenameAttributes(PATTERN_REPLACE, CASECHANGE, <Unused>, "<Unused>", "<Unused>", "lower", "<Unused>", "-_", "RENAME", "NONFME")         }
 
 # -------------------------------------------------------------------------
 
@@ -1533,7 +1533,7 @@ FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME AttributeManager_3    INPUT  FEAT
 
 # -------------------------------------------------------------------------
 
-FACTORY_DEF {*} TeeFactory    FACTORY_NAME BulkAttributeRenamer    INPUT  FEATURE_TYPE SQLExecutor_2_RESULT_0_uHPUmprYjr8=    INPUT  FEATURE_TYPE SQLExecutor_RESULT_0_yZOpFWkl7nU=    INPUT  FEATURE_TYPE SQLExecutor_5_RESULT_0_U/Sc0RKvjZA=    INPUT  FEATURE_TYPE SQLExecutor_6_RESULT_0_/Ep1ujY3Juw=    INPUT  FEATURE_TYPE SQLExecutor_3_RESULT    INPUT  FEATURE_TYPE SQLExecutor_4_RESULT_0_ZLD6MxWDJE4=    OUTPUT { FEATURE_TYPE BulkAttributeRenamer_OUTPUT        @RenameAttributes(PATTERN_REPLACE, CASECHANGE, <Unused>, "<Unused>", "<Unused>", "lower", "<Unused>", "-_", "RENAME", "NONFME")         }
+FACTORY_DEF {*} TeeFactory    FACTORY_NAME BulkAttributeRenamer    INPUT  FEATURE_TYPE SQLExecutor_RESULT_0_yZOpFWkl7nU=    INPUT  FEATURE_TYPE SQLExecutor_3_RESULT    INPUT  FEATURE_TYPE SQLExecutor_4_RESULT_0_ZLD6MxWDJE4=    INPUT  FEATURE_TYPE SQLExecutor_6_RESULT_0_/Ep1ujY3Juw=    INPUT  FEATURE_TYPE SQLExecutor_2_RESULT_0_uHPUmprYjr8=    INPUT  FEATURE_TYPE SQLExecutor_5_RESULT_0_U/Sc0RKvjZA=    OUTPUT { FEATURE_TYPE BulkAttributeRenamer_OUTPUT        @RenameAttributes(PATTERN_REPLACE, CASECHANGE, <Unused>, "<Unused>", "<Unused>", "lower", "<Unused>", "-_", "RENAME", "NONFME")         }
 
 # -------------------------------------------------------------------------
 
@@ -1542,7 +1542,7 @@ FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME AttributeManager_2    INPUT  FEAT
 
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * TestFactory    FACTORY_NAME Tester    INPUT  FEATURE_TYPE AttributeManager_2_OUTPUT    INPUT  FEATURE_TYPE AttributeManager_3_OUTPUT    TEST url ATTRIBUTE_HAS_A_VALUE "" ENCODED    BOOLEAN_OPERATOR OR    OUTPUT PASSED FEATURE_TYPE Tester_PASSED
+FACTORY_DEF * TestFactory    FACTORY_NAME Tester    INPUT  FEATURE_TYPE AttributeManager_2_OUTPUT    INPUT  FEATURE_TYPE AttributeManager_3_OUTPUT    CASE_INSENSITIVE_TEST @EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>url<closeparen>,Tester) BEGINS_WITH http ENCODED    BOOLEAN_OPERATOR OR    OUTPUT PASSED FEATURE_TYPE Tester_PASSED
 # -------------------------------------------------------------------------
 
 FACTORY_DEF {*} DuplicateRemoverFactory    FACTORY_NAME DuplicateFilter    COMMAND_PARM_EVALUATION SINGLE_PASS    SUPPORTS_FEATURE_TABLES    INPUT  FEATURE_TYPE Tester_PASSED    KEY_ATTRIBUTES { url }    INPUT_IS_ORDERED NO    OUTPUT UNIQUE FEATURE_TYPE DuplicateFilter_UNIQUE
@@ -1556,7 +1556,7 @@ FACTORY_DEF * HTTPFactory    FACTORY_NAME HTTPCaller       INPUT  FEATURE_TYPE D
 FACTORY_DEF * TestFactory    FACTORY_NAME Tester_2    INPUT  FEATURE_TYPE HTTPCaller_Output    TEST @EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>_http_status_code<closeparen>,Tester_2) = 200 ENCODED    BOOLEAN_OPERATOR OR    OUTPUT FAILED FEATURE_TYPE Tester_2_FAILED
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * TeeFactory    FACTORY_NAME URLs_NotFound_Logger    INPUT  FEATURE_TYPE HTTPCaller_<Rejected>    INPUT  FEATURE_TYPE Tester_2_FAILED    OUTPUT FEATURE_TYPE URLs_NotFound_LOGGED                  @FeatureType("URLs_NotFound")                  @Log(ENCODED, "URLs_NotFound:<space>Ung<u00fc>ltige<space>URL:","20","1000","",ERROR,LOG_ONLY,URLs_NotFound_b01a14e2_9d6a_4f55_b3d8_cb3a45ec12b03)                  @FeatureType(URLs_NotFound_LOGGED) @Value("URLs_NotFound")
+FACTORY_DEF * TeeFactory    FACTORY_NAME URLs_NotFound_Logger    INPUT  FEATURE_TYPE HTTPCaller_<Rejected>    INPUT  FEATURE_TYPE Tester_2_FAILED    OUTPUT FEATURE_TYPE URLs_NotFound_LOGGED                  @FeatureType("URLs_NotFound")                  @Log(ENCODED, "URLs_NotFound:<space>Ung<u00fc>ltige<space>URL:","20","1000","",ERROR,LOG_ONLY,URLs_NotFound_c363a697_5286_4f5a_a78c_eea5a537a9962)                  @FeatureType(URLs_NotFound_LOGGED) @Value("URLs_NotFound")
 
 # -------------------------------------------------------------------------
 
