@@ -25,11 +25,15 @@ def run(config):
     oereb_pg_ebenen = oerebLader.helpers.sql_helper.readSQL(config['OEREB2_WORK']['connection_string'], oereb_pg_sql)
     for schema in config['LIEFEREINHEIT']['schemas']:
         for oereb_pg_ebene in oereb_pg_ebenen:
-            oereb_pg_table = schema + "." + oereb_pg_ebene[0]
-            oereb_pg_liefereinheit_field = oereb_pg_ebene[1]
-            oereb_pg_delete_sql = "DELETE FROM %s WHERE %s = %s" % (oereb_pg_table, oereb_pg_liefereinheit_field, liefereinheit)
-            logger.info("Deleting Transferstruktur PostGIS...")
-            logger.info(oereb_pg_delete_sql)
-            oerebLader.helpers.sql_helper.writePSQL(config['OEREB_WORK_PG']['connection_string'], oereb_pg_delete_sql)
+            # Die Tabelle motorway_building_lines.availability darf nicht geleert werden (#3421).
+            if unicode(liefereinheit) == '1088' and oereb_pg_ebene[0].lower() == 'availability':
+                logger.info("Tabelle %s.%s wird nicht gelöscht..." % (schema, oereb_pg_ebene[0]))
+            else:
+                oereb_pg_table = schema + "." + oereb_pg_ebene[0]
+                oereb_pg_liefereinheit_field = oereb_pg_ebene[1]
+                oereb_pg_delete_sql = "DELETE FROM %s WHERE %s = %s" % (oereb_pg_table, oereb_pg_liefereinheit_field, liefereinheit)
+                logger.info("Deleting Transferstruktur PostGIS...")
+                logger.info(oereb_pg_delete_sql)
+                oerebLader.helpers.sql_helper.writePSQL(config['OEREB_WORK_PG']['connection_string'], oereb_pg_delete_sql)
 
     logger.info("Script " +  os.path.basename(__file__) + " ist beendet.")
