@@ -19,6 +19,7 @@ setup(
       author_email = "peter.schaer@bve.be.ch",
       description = "Import-Modul ÖREB-Kataster des Kantons Bern",
       url = "http://www.be.ch/oerebk",
+      scripts = [r"bin\ol.py",r"bin\oerebLader.py",r"bin\checkBundesthemen.py"],
       # https://pythonhosted.org/setuptools/setuptools.html#automatic-script-creation
     entry_points={
          'console_scripts': [
