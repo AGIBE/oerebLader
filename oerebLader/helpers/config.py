@@ -4,6 +4,7 @@ import oerebLader.helpers.crypto_helper
 import configobj
 import os
 
+
 def decrypt_passwords(section, key):
     '''
     Entschlüsselt sämtliche Passworte in der zentralen
@@ -14,7 +15,7 @@ def decrypt_passwords(section, key):
     :param key: aktueller Schlüssel im ConfigObj-Objekt
     '''
     # Hilfsklasse für die Entschlüsselung
-    
+
     # Annahme: alle Keys, die "password" heissen, enthalten zu entschlüsselnde Passwörter
     crypter = oerebLader.helpers.crypto_helper.Crypter()
     if key == "password":
@@ -32,10 +33,11 @@ def get_general_configfile_from_envvar():
     '''
     config_directory = os.environ['OEREBIMPORTHOME']
     config_filename = "config.ini"
-    
+
     config_file = os.path.join(config_directory, config_filename)
-    
+
     return config_file
+
 
 def init_generalconfig():
     '''
@@ -44,32 +46,37 @@ def init_generalconfig():
     '''
     config_filename = get_general_configfile_from_envvar()
     config_file = configobj.ConfigObj(config_filename, encoding="UTF-8")
-    
+
     # Die Walk-Funktion geht rekursiv durch alle
-    # Sections und Untersections der Config und 
+    # Sections und Untersections der Config und
     # ruft für jeden Key die angegebene Funktion
     # auf
     config_file.walk(decrypt_passwords)
-    
+
     return config_file.dict()
+
 
 def create_connection_string(config, key):
     username = config[key]['username']
     password = config[key]['password']
     database = config[key]['database']
-    
+
     connection_string = username + "/" + password + "@" + database
     config[key]['connection_string'] = connection_string
-    
+
+
 def create_pg_connection_string(config, key):
     username = config[key]['username']
     password = config[key]['password']
     database = config[key]['database']
-    host     = config[key]['host']
-    port     = config[key]['port']
-    
-    connection_string = "user=%s password=%s dbname=%s host=%s port=%s" % (username, password, database, host, port)
+    host = config[key]['host']
+    port = config[key]['port']
+
+    connection_string = "user=%s password=%s dbname=%s host=%s port=%s" % (
+        username, password, database, host, port
+    )
     config[key]['connection_string'] = connection_string
+
 
 def get_config():
     config = init_generalconfig()
@@ -90,10 +97,12 @@ def get_config():
     create_pg_connection_string(config, "GEODB_WORK_PG")
     create_pg_connection_string(config, "OEREB_WORK_PG")
     create_pg_connection_string(config, "OEREB_TEAM_PG")
-    
+    create_pg_connection_string(config, "OEREB_VEK2_PG")
+    create_pg_connection_string(config, "OEREB_VEK1_PG")
+
     # Dictionary mit kommunalen Layern erstellen
     layers = []
-    for k,v in config['KOMMUNALE_LAYER'].items():
+    for k, v in config['KOMMUNALE_LAYER'].items():
         layers.append(v)
     config['KOMMUNALE_LAYER'] = layers
 
