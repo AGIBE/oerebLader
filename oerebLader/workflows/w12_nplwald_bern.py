@@ -4,6 +4,7 @@ import oerebLader.scripts.s26_initialize
 import oerebLader.scripts.s3_delete_nuplwald
 import oerebLader.scripts.s4_delete_transfer
 import oerebLader.scripts.s54_import_nuplwald_bern
+import oerebLader.scripts.s68_update_nuplwald
 import oerebLader.scripts.s66_update_availability
 import oerebLader.scripts.s67_update_data_integration
 import oerebLader.scripts.s38_qa_transfer
@@ -21,6 +22,7 @@ def run(ticketnr):
     oerebLader.scripts.s3_delete_nuplwald.run(config)
     oerebLader.scripts.s4_delete_transfer.run(config)
     oerebLader.scripts.s54_import_nuplwald_bern.run(config)
+    oerebLader.scripts.s68_update_nuplwald.run(config)
     oerebLader.scripts.s66_update_availability.run(config)
     oerebLader.scripts.s67_update_data_integration.run(config)
     oerebLader.scripts.s38_qa_transfer.run(config)
