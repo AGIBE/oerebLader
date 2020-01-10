@@ -17,7 +17,7 @@ def run(config):
     runner = fmeobjects.FMEWorkspaceRunner()
     bfsnr = config['LIEFEREINHEIT']['bfsnr']
     itf_file = os.path.join(config['LIEFEREINHEIT']['gpr_source'], unicode(bfsnr), unicode(config['ticketnr']), unicode(bfsnr) + ".itf")
-    input_rv_dir = os.path.join(config['LIEFEREINHEIT']['gpr_source'], unicode(config['ticketnr']), unicode(bfsnr), "rv")
+    input_rv_dir = os.path.join(config['LIEFEREINHEIT']['gpr_source'], unicode(bfsnr), unicode(config['ticketnr']), "rv")
     output_rv_dir = os.path.join(config['GENERAL']['files_be_ch_baseunc'], unicode(config['LIEFEREINHEIT']['id']), unicode(config['ticketnr']))
     if config['GENERAL']['files_be_ch_baseurl'].endswith("/"):
         output_rv_url = config['GENERAL']['files_be_ch_baseurl'] + unicode(config['LIEFEREINHEIT']['id']) + "/" + unicode(config['ticketnr']) + "/"
@@ -57,6 +57,8 @@ def run(config):
         'OUTPUT_RV_DIR': str(output_rv_dir),
         'OUTPUT_RV_URL': str(output_rv_url),
         'STROKER': str(config['GENERAL']['fme_stroker_value']),
+        'WALDGRENZEN_VERFUEGUNG_DE': str(config['GENERAL']['waldgrenzen_verfuegung_de']),
+        'WALDGRENZEN_VERFUEGUNG_FR': str(config['GENERAL']['waldgrenzen_verfuegung_fr']),
         'LOGFILE': str(fme_logfile)
     }
     try:
