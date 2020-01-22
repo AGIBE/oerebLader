@@ -9,3 +9,4 @@ oerebLader.egg-info/*
 *.pyt.xml
 *.recover
 .vscode/*
+*.code-workspace
