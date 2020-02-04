@@ -45,6 +45,7 @@ def refresh_stats_pg(connection_string):
 
 def refresh_stats(connection_string, ownername):
     with cx_Oracle.connect(connection_string) as conn:
+        conn.autocommit = True
         cur = conn.cursor()
         cur.callproc(
             name="dbms_stats.gather_schema_stats",

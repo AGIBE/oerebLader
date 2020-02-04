@@ -181,6 +181,7 @@ def append_transferstruktur(source_connection_string, target_connection_string, 
         fp.seek(0)
 
         with psycopg2.connect(target_connection_string) as target_connection:
+            target_connection.autocommit = True
             with target_connection.cursor() as target_cursor:
                 target_cursor.copy_from(file=fp, table=full_tablename)
 
