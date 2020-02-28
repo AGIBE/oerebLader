@@ -16,6 +16,7 @@ import oerebLader.collect_legends.collect_legends
 import oerebLader.create_legend.create_legend
 import oerebLader.download_tickets.download_tickets
 import oerebLader.update_municipality.update_municipality
+import oerebLader.repair_geometries.repair_geometries
 
 
 def import_ticket(args):
@@ -110,6 +111,10 @@ def update_municipality(args):
         args.SOURCE, args.TARGET
     )
     print("Update_Municipality SUCCESSFUL!")
+
+def repair_geometries(args):
+    oerebLader.repair_geometries.repair_geometries.run_repair_geometries(args.TARGET)
+    print("Repair_geometries SUCCESSFUL!")
 
 
 def main():
@@ -275,6 +280,11 @@ def main():
         help="Aus welcher Quelle soll aktualisiert werden?"
     )
     update_municipality_parser.set_defaults(func=update_municipality)
+
+    # REPAIR_GEOMETRIES-Befehl
+    repair_geometries_parser = subparsers.add_parser("repair_geometries", help="Repariert in allen PostGIS-Schemas die Geometrien mit ST_MAKEVALID().")
+    repair_geometries_parser.add_argument("TARGET", choices=['work', 'team', 'vek2', 'vek1'], help="In welcher Datenbank soll repariert werden?")
+    repair_geometries_parser.set_defaults(func=repair_geometries)
 
     args = parser.parse_args()
     args.func(args)
