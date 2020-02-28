@@ -199,7 +199,11 @@ def run(config):
         sub_theme = legend_entry['sub_theme']
         view_service_id = legend_entry['view_service_id']
         liefereinheit = legend_entry['liefereinheit']
-        legend_entry_insert_sql = "INSERT INTO %s.legend_entry (id, symbol, symbol_url, legend_text, type_code, type_code_list, topic, sub_theme, view_service_id, liefereinheit) VALUES ('%s', '%s', '%s', %s, '%s', '%s', '%s', %s, '%s', %s)" % (schema, legend_entry_id, symbol, symbol_url, Json(legend_text), type_code, type_code_list, topic, Json(sub_theme), view_service_id, liefereinheit)
+        # sub_theme muss gesondert behandelt werden (#5131)
+        if sub_theme is not None:
+            legend_entry_insert_sql = "INSERT INTO %s.legend_entry (id, symbol, symbol_url, legend_text, type_code, type_code_list, topic, sub_theme, view_service_id, liefereinheit) VALUES ('%s', '%s', '%s', %s, '%s', '%s', '%s', %s, '%s', %s)" % (schema, legend_entry_id, symbol, symbol_url, Json(legend_text), type_code, type_code_list, topic, Json(sub_theme), view_service_id, liefereinheit)
+        else:
+            legend_entry_insert_sql = "INSERT INTO %s.legend_entry (id, symbol, symbol_url, legend_text, type_code, type_code_list, topic, view_service_id, liefereinheit) VALUES ('%s', '%s', '%s', %s, '%s', '%s', '%s', '%s', %s)" % (schema, legend_entry_id, symbol, symbol_url, Json(legend_text), type_code, type_code_list, topic, view_service_id, liefereinheit)
         oerebLader.helpers.sql_helper.writePSQL(config['OEREB_WORK_PG']['connection_string'], legend_entry_insert_sql)
         plr_ids = legend_entry['id'].split(";")
         for plr_id in plr_ids:
