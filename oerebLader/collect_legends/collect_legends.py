@@ -8,6 +8,9 @@ import oerebLader.helpers.log_helper
 import oerebLader.helpers.config
 import oerebLader.helpers.sql_helper
 import requests
+from requests.adapters import HTTPAdapter
+from requests.packages.urllib3.util.retry import Retry
+
 
 def init_logging(config):
     log_directory = os.path.join(config['LOGGING']['basedir'], "collect_legends")
@@ -30,8 +33,31 @@ def init_logging(config):
     
     return logger
 
+# aus: https://www.peterbe.com/plog/best-practice-with-retries-with-requests
+def requests_retry_session(
+    retries=5,
+    backoff_factor=2,
+    status_forcelist=(500, 502, 504),
+    session=None,
+):
+    session = session or requests.Session()
+    retry = Retry(
+        total=retries,
+        read=retries,
+        connect=retries,
+        backoff_factor=backoff_factor,
+        status_forcelist=status_forcelist,
+    )
+    adapter = HTTPAdapter(max_retries=retry)
+    session.mount('http://', adapter)
+    session.mount('https://', adapter)
+    return session
+
 def download_file(url, file_path, logger):
-    r = requests.get(url)
+    # Aufruf mit Retry und Backoff
+    # umgeht Schwierigkeiten mit SSLError
+    # "Max retries exceeded with url..."
+    r = requests_retry_session().get(url)
     if r.status_code == 200:
         with open(file_path, 'w') as f:
             f.write(r.content)
