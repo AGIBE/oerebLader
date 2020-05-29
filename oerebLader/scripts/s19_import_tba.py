@@ -15,8 +15,7 @@ def run(config):
     logger.info("Script " +  fme_script + " wird ausgeführt.")
     logger.info("Das FME-Logfile heisst: " + fme_logfile)
     tba_path = config['LIEFEREINHEIT']['ts_source']
-    excel_amt_filename = "AMT_" + unicode(config['LIEFEREINHEIT']['id']) + ".xlsx"
-    excel_amt_file = os.path.join(tba_path, excel_amt_filename)
+    excel_amt_file = config['GENERAL']['amt_tabelle']
     excel_darstellungsdienst_filename = "DARSTELLUNGSDIENST_" + unicode(config['LIEFEREINHEIT']['id']) + ".xlsx"
     excel_darstellungsdienst_file = os.path.join(tba_path, excel_darstellungsdienst_filename)
     excel_availability_filename = "availability_" + unicode(config['LIEFEREINHEIT']['id']) + ".xlsx"
