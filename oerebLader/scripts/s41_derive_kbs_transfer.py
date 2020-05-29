@@ -14,7 +14,7 @@ def run(config):
     fme_logfile = oerebLader.helpers.fme_helper.prepare_fme_log(fme_script, config['LOGGING']['log_directory']) 
     logger.info("Script " +  fme_script + " wird ausgef�hrt.")
     logger.info("Das FME-Logfile heisst: " + fme_logfile)
-    excel_file_amt = os.path.join(config['LIEFEREINHEIT']['ts_source'], "AMT_" + unicode(config['LIEFEREINHEIT']['id']) + ".xlsx")
+    excel_file_amt = config['GENERAL']['amt_tabelle']
     excel_file_darstellungsdienst = os.path.join(config['LIEFEREINHEIT']['ts_source'], "DARSTELLUNGSDIENST_" + unicode(config['LIEFEREINHEIT']['id']) + ".xlsx")
     if config['GENERAL']['files_be_ch_baseurl'].endswith("/"):
         legend_baseurl = config['GENERAL']['files_be_ch_baseurl'] + "legenden/KBS/"
