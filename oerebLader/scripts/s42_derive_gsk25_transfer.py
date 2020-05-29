@@ -12,9 +12,9 @@ def run(config):
     logger.info("Script " +  os.path.basename(__file__) + " wird ausgeführt.")
     fme_script = os.path.splitext(__file__)[0] + ".fmw"
     fme_logfile = oerebLader.helpers.fme_helper.prepare_fme_log(fme_script, config['LOGGING']['log_directory']) 
-    logger.info("Script " +  fme_script + " wird ausgef�hrt.")
+    logger.info("Script " +  fme_script + " wird ausgeführt.")
     logger.info("Das FME-Logfile heisst: " + fme_logfile)
-    excel_file_amt = os.path.join(config['LIEFEREINHEIT']['ts_source'], "AMT_" + unicode(config['LIEFEREINHEIT']['id']) + ".xlsx")
+    excel_file_amt = config['GENERAL']['amt_tabelle']
     excel_file_darstellungsdienst = os.path.join(config['LIEFEREINHEIT']['ts_source'], "DARSTELLUNGSDIENST_" + unicode(config['LIEFEREINHEIT']['id']) + ".xlsx")
     if config['GENERAL']['files_be_ch_baseurl'].endswith("/"):
         legend_baseurl = config['GENERAL']['files_be_ch_baseurl'] + "legenden/GSK/"
