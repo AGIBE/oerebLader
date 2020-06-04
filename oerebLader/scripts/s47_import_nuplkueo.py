@@ -25,7 +25,7 @@ def run(config):
     else:
         legend_baseurl = config['GENERAL']['files_be_ch_baseurl'] + "/legenden/KantUeO/KantUeO.png"
         output_rv_url = config['GENERAL']['files_be_ch_baseurl'] + "/" + unicode(config['LIEFEREINHEIT']['id']) + "/" + unicode(config['ticketnr']) + "/"
-    
+
     # Der FMEWorkspaceRunner akzeptiert keine Unicode-Strings!
     # Daher müssen workspace und parameters umgewandelt werden!
     #TODO: Parameter für Sprache der Gemeinde einbauen und GEGR entsprechend abfüllen
@@ -57,6 +57,9 @@ def run(config):
         'OUTPUT_RV_URL': str(output_rv_url),
         'CREATE_LINETABLES': str(config['GENERAL']['create_linetables']),
         'STROKER': str(config['GENERAL']['fme_stroker_value']),
+        'AMT_OID_BASE': str(config['LIEFEREINHEIT']['amt_oid_base']),
+        'AMT_OID': str(config['LIEFEREINHEIT']['amt_oid']),
+        'EXCEL_AMT': str(config['GENERAL']['amt_tabelle']),
         'LOGFILE': str(fme_logfile)
     }
     try:
@@ -66,6 +69,8 @@ def run(config):
         logger.error(ex)
         logger.error("Import wird abgebrochen!")
         sys.exit()
-        
+    
+
+
     logger.info("Script " +  os.path.basename(__file__) + " ist beendet.")
     
