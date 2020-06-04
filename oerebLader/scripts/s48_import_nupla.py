@@ -19,7 +19,7 @@ def run(config):
     runner = fmeobjects.FMEWorkspaceRunner()
     bfsnr = config['LIEFEREINHEIT']['bfsnr']
     itf_file = os.path.join(config['LIEFEREINHEIT']['gpr_source'], unicode(bfsnr), unicode(config['ticketnr']), unicode(bfsnr) + ".itf")
-    excel_file_amt = os.path.join(config['LIEFEREINHEIT']['gpr_source'], unicode(bfsnr), unicode(config['ticketnr']), "AMT_" + unicode(bfsnr) + ".xlsx")
+    excel_file_amt = config['GENERAL']['amt_tabelle']
     simplify_geometry = config['GENERAL']['simplify_geometry']
     input_rv_dir = os.path.join(config['LIEFEREINHEIT']['gpr_source'], unicode(bfsnr), unicode(config['ticketnr']), "rv")
     output_rv_dir = os.path.join(config['GENERAL']['files_be_ch_baseunc'], unicode(config['LIEFEREINHEIT']['id']), unicode(config['ticketnr']))
@@ -27,6 +27,7 @@ def run(config):
         output_rv_url = config['GENERAL']['files_be_ch_baseurl'] + unicode(config['LIEFEREINHEIT']['id']) + "/" + unicode(config['ticketnr']) + "/"
     else:
         output_rv_url = config['GENERAL']['files_be_ch_baseurl'] + "/" + unicode(config['LIEFEREINHEIT']['id']) + "/" + unicode(config['ticketnr']) + "/"
+
     
     # Der FMEWorkspaceRunner akzeptiert keine Unicode-Strings!
     # Daher müssen workspace und parameters umgewandelt werden!
@@ -61,6 +62,7 @@ def run(config):
         'CREATE_LINETABLES': str(config['GENERAL']['create_linetables']),
         'STROKER': str(config['GENERAL']['fme_stroker_value']),
         'NPL_WMS_BASE': str(config['GENERAL']['npl_wms_base']),
+        'AMT_OID': str(config['LIEFEREINHEIT']['amt_oid']),
         'LOGFILE': str(fme_logfile)
     }
     try:
