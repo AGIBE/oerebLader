@@ -26,7 +26,19 @@ class AmtReader(object):
 
     def get_oid_by_liefereinheit(self, liefereinheit):
         amt_oid = -99
+        amt_oid_base = -99
+        suffix = ""
         liefereinheit = unicode(liefereinheit)
+
+        # NUPLWALD und NUPLKUEO haben nicht pro Liefereinheit einen Eintrag in der
+        # zentralen AMT-Tabelle sondern nur einen einzigen. Deshalb muss das hier
+        # erkannt werden
+        if len(liefereinheit) == 5 and liefereinheit.endswith('03'):
+            suffix = "." + liefereinheit[:3]
+            liefereinheit = "9903"
+        if len(liefereinheit) == 5 and liefereinheit.endswith('04'):
+            suffix = "." + liefereinheit[:3]
+            liefereinhiet = "9904"
 
         amt_oid_index = self.get_columindex_by_name("AMT_OID")
         print(amt_oid_index)
@@ -36,6 +48,7 @@ class AmtReader(object):
         for row in self.sheet.iter_rows():
             amt_liefereinheit = unicode(row[amt_liefereinheit_index].value)
             if amt_liefereinheit == liefereinheit:
-                amt_oid = row[amt_oid_index].value
+                amt_oid = row[amt_oid_index].value + suffix
+                amt_oid_base = row[amt_oid_index].value
 
-        return amt_oid
+        return (amt_oid, amt_oid_base)
