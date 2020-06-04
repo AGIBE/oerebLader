@@ -17,7 +17,7 @@ def run(config):
     runner = fmeobjects.FMEWorkspaceRunner()
     bfsnr = config['LIEFEREINHEIT']['bfsnr']
     itf_file = os.path.join(config['LIEFEREINHEIT']['gpr_source'], unicode(bfsnr), unicode(config['ticketnr']), unicode(bfsnr) + ".itf")
-    excel_file_amt = os.path.join(config['LIEFEREINHEIT']['gpr_source'], unicode(bfsnr), unicode(config['ticketnr']), "AMT_" + unicode(bfsnr) + ".xlsx")
+    excel_file_amt = config['GENERAL']['amt_tabelle']
     excel_file_darstellung = os.path.join(config['LIEFEREINHEIT']['gpr_source'], unicode(bfsnr), unicode(config['ticketnr']), "DARSTELLUNGSDIENST_" + unicode(bfsnr) + ".xlsx")
     input_rv_dir = os.path.join(config['LIEFEREINHEIT']['gpr_source'], unicode(bfsnr), unicode(config['ticketnr']), "rv")
     input_legend_dir = os.path.join(config['LIEFEREINHEIT']['gpr_source'], unicode(bfsnr), unicode(config['ticketnr']), "legenden")
@@ -68,6 +68,7 @@ def run(config):
         'OUTPUT_RV_URL': str(output_rv_url),
         'CREATE_LINETABLES': str(config['GENERAL']['create_linetables']),
         'STROKER': str(config['GENERAL']['fme_stroker_value']),
+        'AMT_OID': str(config['LIEFEREINHEIT']['amt_oid']),
         'LOGFILE': str(fme_logfile)
     }
     try:
