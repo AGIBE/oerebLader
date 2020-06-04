@@ -38,12 +38,10 @@ class AmtReader(object):
             liefereinheit = "9903"
         if len(liefereinheit) == 5 and liefereinheit.endswith('04'):
             suffix = "." + liefereinheit[:3]
-            liefereinhiet = "9904"
+            liefereinheit = "9904"
 
         amt_oid_index = self.get_columindex_by_name("AMT_OID")
-        print(amt_oid_index)
         amt_liefereinheit_index = self.get_columindex_by_name("AMT_LIEFEREINHEIT")
-        print(amt_liefereinheit_index)
 
         for row in self.sheet.iter_rows():
             amt_liefereinheit = unicode(row[amt_liefereinheit_index].value)
@@ -52,3 +50,8 @@ class AmtReader(object):
                 amt_oid_base = row[amt_oid_index].value
 
         return (amt_oid, amt_oid_base)
+
+if __name__ == "__main__":
+    ar = AmtReader(r"\\geoda.infra.be.ch\arbeit\Anwend\OEREBK\Data\AMT\AMT.xlsx","AMT")
+    oids = ar.get_oid_by_liefereinheit(36204)
+    print(oids)
