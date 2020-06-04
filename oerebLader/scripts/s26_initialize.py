@@ -3,6 +3,7 @@ from __future__ import absolute_import, division, print_function, unicode_litera
 import oerebLader.helpers.sql_helper
 import oerebLader.helpers.log_helper
 import oerebLader.helpers.connection_helper
+import oerebLader.helpers.excel_helper
 import logging
 import os
 import sys
@@ -121,6 +122,11 @@ def run(config, ticketnr):
         logger.error("Import wird abgebrochen.")
         sys.exit()
 
+    # AMT_OID aus zentraler AMT-Tabelle holen (für Bundesthemen == -99)
+    logger.info("AMT_OID wird aus zentraler AMT-Tabelle geholt.")
+    ar = oerebLader.helpers.excel_helper.AmtReader(config['GENERAL']['amt_tabelle'], "AMT")
+    config['LIEFEREINHEIT']['amt_oid'] = ar.get_oid_by_liefereinheit(config['LIEFEREINHEIT']['id'])
+
     logger.info("Name der Liefereinheit: " + unicode(config['LIEFEREINHEIT']['name']))
     logger.info("BFS-Nummer: " + unicode(config['LIEFEREINHEIT']['bfsnr']))
     logger.info("Gemeindename: " + unicode(config['LIEFEREINHEIT']['gemeinde_name']))
@@ -130,6 +136,7 @@ def run(config, ticketnr):
     logger.info("Workflow: " + unicode(config['LIEFEREINHEIT']['workflow']))
     logger.info("Geoprodukt-Code(s): " + unicode(",".join(config['LIEFEREINHEIT']['gprcodes'])))
     logger.info("PostGIS-Schema(s): " + unicode(",".join(config['LIEFEREINHEIT']['schemas'])))
+    logger.info("AMT_OID: " + unicode(config['LIEFEREINHEIT']['amt_oid']))
   
     logger.info("Script " +  os.path.basename(__file__) + " ist beendet.")
     
