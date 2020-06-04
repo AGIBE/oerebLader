@@ -57,6 +57,9 @@ def run(config):
         'OUTPUT_RV_DIR': str(output_rv_dir),
         'OUTPUT_RV_URL': str(output_rv_url),
         'STROKER': str(config['GENERAL']['fme_stroker_value']),
+        'AMT_OID_BASE': str(config['LIEFEREINHEIT']['amt_oid_base']),
+        'AMT_OID': str(config['LIEFEREINHEIT']['amt_oid']),
+        'EXCEL_AMT': str(config['GENERAL']['amt_tabelle']),
         'WALDGRENZEN_VERFUEGUNG_DE': str(config['GENERAL']['waldgrenzen_verfuegung_de']),
         'WALDGRENZEN_VERFUEGUNG_FR': str(config['GENERAL']['waldgrenzen_verfuegung_fr']),
         'LOGFILE': str(fme_logfile)
