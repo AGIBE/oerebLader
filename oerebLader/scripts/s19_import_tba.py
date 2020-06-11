@@ -18,8 +18,6 @@ def run(config):
     excel_amt_file = config['GENERAL']['amt_tabelle']
     excel_darstellungsdienst_filename = "DARSTELLUNGSDIENST_" + unicode(config['LIEFEREINHEIT']['id']) + ".xlsx"
     excel_darstellungsdienst_file = os.path.join(tba_path, excel_darstellungsdienst_filename)
-    excel_availability_filename = "availability_" + unicode(config['LIEFEREINHEIT']['id']) + ".xlsx"
-    excel_availability_file = os.path.join(tba_path, excel_availability_filename)
     if config['GENERAL']['files_be_ch_baseurl'].endswith("/"):
         legend_fullurl = config['GENERAL']['files_be_ch_baseurl'] + "legenden/TBA/baulinie_kantonsstrasse.png"
         legend_baseurl = config['GENERAL']['files_be_ch_baseurl'] + "legenden/TBA/"
@@ -34,7 +32,6 @@ def run(config):
     parameters = {
         'EXCEL_AMT': str(excel_amt_file),
         'EXCEL_DARSTELLUNGSDIENST': str(excel_darstellungsdienst_file),
-        'EXCEL_AVAILABILITY': str(excel_availability_file),
         'LIEFEREINHEIT': str(config['LIEFEREINHEIT']['id']),
         'LOGFILE': str(fme_logfile),
         'STROKER': str(config['GENERAL']['fme_stroker_value']),
