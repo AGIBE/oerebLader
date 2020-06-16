@@ -20,7 +20,7 @@ def init_logging(config):
     logfile = os.path.join(log_directory, "collect_legends.log")
     # Wenn schon ein Logfile existiert, wird es umbenannt
     if os.path.exists(logfile):
-        archive_logfile = "build_map" + datetime.datetime.now().strftime("_%Y_%m_%d_%H_%M_%S") + ".log"
+        archive_logfile = "collect_legends" + datetime.datetime.now().strftime("_%Y_%m_%d_%H_%M_%S") + ".log"
         archive_logfile = os.path.join(log_directory, archive_logfile)
         os.rename(logfile, archive_logfile)
         
