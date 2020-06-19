@@ -65,8 +65,3 @@ class AmtReader(object):
                 amt_amtimweb_fr = row[amt_amtimweb_fr_index].value
 
         return (amt_oid, amt_oid_base, amt_name_de, amt_name_fr, amt_amtimweb_de, amt_amtimweb_fr)
-
-if __name__ == "__main__":
-    ar = AmtReader(r"\\geoda.infra.be.ch\arbeit\Anwend\OEREBK\Data\AMT\AMT.xlsx","AMT")
-    oids = ar.get_oid_by_liefereinheit(36204)
-    print(oids)
