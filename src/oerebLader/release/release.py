@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 from __future__ import absolute_import, division, print_function, unicode_literals
+import AGILib.connection
 import oerebLader.helpers.config
 import oerebLader.helpers.log_helper
-import oerebLader.helpers.connection_helper
 import oerebLader.helpers.sql_helper
 import oerebLader.helpers.fme_helper
 import os
@@ -192,10 +192,10 @@ def run_release(dailyMode):
     logger.info("Der Release wird initialisiert!")
     
     # Connection-Files erstellen
-    config['GEODB_WORK']['connection_file'] = oerebLader.helpers.connection_helper.create_connection_files(config, 'GEODB_WORK', logger)
-    config['OEREB2_WORK']['connection_file'] = oerebLader.helpers.connection_helper.create_connection_files(config, 'OEREB2_WORK', logger)
-    config['NORM_TEAM']['connection_file'] = oerebLader.helpers.connection_helper.create_connection_files(config, 'NORM_TEAM', logger)
-    config['OEREB2_TEAM']['connection_file'] = oerebLader.helpers.connection_helper.create_connection_files(config, 'OEREB2_TEAM', logger)
+    config['GEODB_WORK']['connection_file'] = config['GEODB_WORK']['connection'].create_sde_connection()
+    config['OEREB2_WORK']['connection_file'] = config['OEREB2_WORK']['connection'].create_sde_connection()
+    config['NORM_TEAM']['connection_file'] = config['NORM_TEAM']['connection'].create_sde_connection()
+    config['OEREB2_TEAM']['connection_file'] = config['OEREB2_TEAM']['connection'].create_sde_connection()
     
     logger.info("Folgende Tickets werden released:")
     if dailyMode:
@@ -450,10 +450,10 @@ def run_release(dailyMode):
                 logger.warn("iLader run " + unicode(ot[0]))
 
     # Connection-Files löschen
-    oerebLader.helpers.connection_helper.delete_connection_files(config['GEODB_WORK']['connection_file'], logger)
-    oerebLader.helpers.connection_helper.delete_connection_files(config['OEREB2_WORK']['connection_file'], logger)
-    oerebLader.helpers.connection_helper.delete_connection_files(config['NORM_TEAM']['connection_file'], logger)
-    oerebLader.helpers.connection_helper.delete_connection_files(config['OEREB2_TEAM']['connection_file'], logger)
+    config['GEODB_WORK']['connection'].delete_all_sde_connections()
+    config['OEREB2_WORK']['connection'].delete_all_sde_connections()
+    config['NORM_TEAM']['connection'].delete_all_sde_connections()
+    config['OEREB2_TEAM']['connection'].delete_all_sde_connections()
             
     logger.info("Alle Ticket-Stati aktualisiert.")
     logger.info("Release abgeschlossen.")

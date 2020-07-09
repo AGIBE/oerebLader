@@ -1,15 +1,14 @@
 # -*- coding: utf-8 -*-
 from __future__ import absolute_import, division, print_function, unicode_literals
+import AGILib.connection
 import oerebLader.helpers.sql_helper
 import oerebLader.helpers.log_helper
-import oerebLader.helpers.connection_helper
 import oerebLader.helpers.excel_helper
 import logging
 import os
 import sys
 import arcpy
 import datetime
-import chromalog
 
 def init_logging(ticketnr, config):
     log_directory = os.path.join(config['LOGGING']['basedir'], unicode(ticketnr))
@@ -45,8 +44,8 @@ def run(config, ticketnr):
     # Temporäre ArcGIS-Connectionfiles erstellen
     # Die Files werden am Schluss durch s12_finish
     # wieder gelöscht.
-    config['GEODB_WORK']['connection_file'] = oerebLader.helpers.connection_helper.create_connection_files(config, 'GEODB_WORK', logger)
-    config['OEREB2_WORK']['connection_file'] = oerebLader.helpers.connection_helper.create_connection_files(config, 'OEREB2_WORK', logger)
+    config['GEODB_WORK']['connection_file'] = config['GEODB_WORK']['connection'].create_sde_connection()
+    config['GEODB_WORK']['connection_file'] = config['OEREB2_WORK']['connection'].create_sde_connection()
     
     config['LIEFEREINHEIT'] = {}
 

@@ -1,29 +1,8 @@
 # -*- coding: utf-8 -*-
 from __future__ import absolute_import, division, print_function, unicode_literals
-import oerebLader.helpers.crypto_helper
-import configobj
+import AGILib.configuration
+import AGILib.connection
 import os
-
-
-def decrypt_passwords(section, key):
-    '''
-    Entschlüsselt sämtliche Passworte in der zentralen
-    Konfigurationsdatei. Wird aus der ConfigObj.walk-Funktion
-    aus aufgerufen. Deshalb sind section und key als
-    Parameter obligatorisch.
-    :param section: ConfigObj.Section-Objekt
-    :param key: aktueller Schlüssel im ConfigObj-Objekt
-    '''
-    # Hilfsklasse für die Entschlüsselung
-
-    # Annahme: alle Keys, die "password" heissen, enthalten zu entschlüsselnde Passwörter
-    crypter = oerebLader.helpers.crypto_helper.Crypter()
-    if key == "password":
-        encrypted_password = section[key]
-        decrypted_password = crypter.decrypt(encrypted_password)
-        # Wert in der Config ersetzen
-        section[key] = decrypted_password
-
 
 def get_general_configfile_from_envvar():
     '''
@@ -38,67 +17,36 @@ def get_general_configfile_from_envvar():
 
     return config_file
 
-
-def init_generalconfig():
-    '''
-    liest die zentrale Konfigurationsdatei in ein ConfigObj-Objet ein.
-    Dieser kann wie ein Dictionary gelesen werden.
-    '''
-    config_filename = get_general_configfile_from_envvar()
-    config_file = configobj.ConfigObj(config_filename, encoding="UTF-8")
-
-    # Die Walk-Funktion geht rekursiv durch alle
-    # Sections und Untersections der Config und
-    # ruft für jeden Key die angegebene Funktion
-    # auf
-    config_file.walk(decrypt_passwords)
-
-    return config_file.dict()
-
-
-def create_connection_string(config, key):
-    username = config[key]['username']
-    password = config[key]['password']
-    database = config[key]['database']
-
-    connection_string = username + "/" + password + "@" + database
-    config[key]['connection_string'] = connection_string
-
-
-def create_pg_connection_string(config, key):
-    username = config[key]['username']
-    password = config[key]['password']
-    database = config[key]['database']
-    host = config[key]['host']
-    port = config[key]['port']
-
-    connection_string = "user=%s password=%s dbname=%s host=%s port=%s" % (
-        username, password, database, host, port
-    )
-    config[key]['connection_string'] = connection_string
+def create_connection(config, key):
+    if key.endswith("_PG"):
+        connection = AGILib.connection.Connection(db_type="postgres", db=config[key]['database'], username=config[key]['username'], password=config[key]['password'], host=config[key]['host'], port=config[key]['port'])
+    else:
+        connection = AGILib.connection.Connection(db_type="oracle", db=config[key]['database'], username=config[key]['username'], password=config[key]['password'])
+    
+    config[key]['connection'] = connection
 
 
 def get_config():
-    config = init_generalconfig()
+    config = AGILib.configuration.Configuration(configfile_path=get_general_configfile_from_envvar()).config
 
-    # Connection-Strings zusammensetzen
-    create_connection_string(config, 'GEODB_WORK')
-    create_connection_string(config, 'OEREB2_WORK')
-    create_connection_string(config, 'OEREB2_TEAM')
-    create_connection_string(config, 'NORM_TEAM')
-    create_connection_string(config, "GEODB_DD_TEAM")
-    create_connection_string(config, "OEREB2APP")
-    create_connection_string(config, "OEREBCUGAPP")
-    create_connection_string(config, "GEO_VEK1")
-    create_connection_string(config, "OEREB2_VEK1")
-    create_connection_string(config, "OEREB2_VEK2")
-    create_connection_string(config, "TBA_WORK")
-    create_connection_string(config, "GDBV_WORK")
-    create_pg_connection_string(config, "GEODB_WORK_PG")
-    create_pg_connection_string(config, "OEREB_WORK_PG")
-    create_pg_connection_string(config, "OEREB_TEAM_PG")
-    create_pg_connection_string(config, "OEREB_VEK2_PG")
-    create_pg_connection_string(config, "OEREB_VEK1_PG")
+    # Connection-Objekte erstellen
+    create_connection(config, 'GEODB_WORK')
+    create_connection(config, 'OEREB2_WORK')
+    create_connection(config, 'OEREB2_TEAM')
+    create_connection(config, 'NORM_TEAM')
+    create_connection(config, "GEODB_DD_TEAM")
+    create_connection(config, "OEREB2APP")
+    create_connection(config, "OEREBCUGAPP")
+    create_connection(config, "GEO_VEK1")
+    create_connection(config, "OEREB2_VEK1")
+    create_connection(config, "OEREB2_VEK2")
+    create_connection(config, "TBA_WORK")
+    create_connection(config, "GDBV_WORK")
+    create_connection(config, "GEODB_WORK_PG")
+    create_connection(config, "OEREB_WORK_PG")
+    create_connection(config, "OEREB_TEAM_PG")
+    create_connection(config, "OEREB_VEK2_PG")
+    create_connection(config, "OEREB_VEK1_PG")
 
     # Dictionary mit kommunalen Layern erstellen
     layers = []

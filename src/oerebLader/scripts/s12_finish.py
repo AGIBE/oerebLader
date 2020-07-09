@@ -5,7 +5,6 @@ import logging
 import sys
 import oerebLader.helpers.md5_helper
 import oerebLader.helpers.sql_helper
-import oerebLader.helpers.connection_helper
 
 logger = logging.getLogger('oerebLaderLogger')
 
@@ -13,8 +12,8 @@ def run(config):
     logger.info("Script " +  os.path.basename(__file__) + " wird ausgeführt.")
     
     # ArcGIS Connection-Files löschen
-    oerebLader.helpers.connection_helper.delete_connection_files(config['GEODB_WORK']['connection_file'], logger)
-    oerebLader.helpers.connection_helper.delete_connection_files(config['OEREB2_WORK']['connection_file'], logger)
+    config['GEODB_WORK']['connection'].delete_all_sde_connections()
+    config['OEREB2_WORK']['connection'].delete_all_sde_connections()
     
     # Ticket-Status aktualisieren
     logger.info("Ticket-Status wird auf 2 gesetzt!")
