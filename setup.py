@@ -1,17 +1,29 @@
 # -*- coding: utf-8 -*-
-# übernommen aus: https://pythonhosted.org/setuptools/setuptools.html#id24
-import ez_setup
-from oerebLader import __version__
-import oerebLader
-ez_setup.use_setuptools()
+from distutils.core import setup
+from setuptools import find_packages
+import codecs
+import os.path
 
-from setuptools import setup, find_packages
+def read(rel_path):
+    here = os.path.abspath(os.path.dirname(__file__))
+    with codecs.open(os.path.join(here, rel_path), 'r') as fp:
+        return fp.read()
+
+def get_version(rel_path):
+    for line in read(rel_path).splitlines():
+        if line.startswith('__version__'):
+            delim = '"' if '"' in line else "'"
+            return line.split(delim)[1]
+    else:
+        raise RuntimeError("Unable to find version string.")
+
 setup(
       name = "oerebLader",
-      packages = find_packages(),
-      version = __version__,
+      packages = find_packages(where="src"),
+      version = get_version("src/oerebLader/__init__.py"),
       # .fmw-Files werden von Python nicht erkannt. Deshalb müssen sie explizit als Package-Inhalt aufgelistet werden.
       package_data={'': ["*.fmw"]},
+      package_dir = {"": "src"},
       # Abhängigkeiten
       install_requires = ["AGILib>=1.1"],
       # PyPI metadata
