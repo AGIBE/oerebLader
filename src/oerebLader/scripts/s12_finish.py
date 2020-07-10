@@ -3,7 +3,7 @@ from __future__ import absolute_import, division, print_function, unicode_litera
 import os
 import logging
 import sys
-import oerebLader.helpers.md5_helper
+import oerebLader.check_bundesthemen.md5
 import oerebLader.helpers.sql_helper
 
 logger = logging.getLogger('oerebLaderLogger')
@@ -28,7 +28,7 @@ def run(config):
     
     # MD5-Wert aktualisieren - wenn vorhanden
     if config['LIEFEREINHEIT']['md5'] != None and config['LIEFEREINHEIT']['ts_source'] != None:
-        md5_new =  oerebLader.helpers.md5_helper.get_md5_from_zip(config['LIEFEREINHEIT']['ts_source'])
+        md5_new = oerebLader.check_bundesthemen.md5.get_md5_from_zip(config['LIEFEREINHEIT']['ts_source'])
         logger.info("MD5-Wert wird auf " + md5_new  + " aktualisiert.")
         sql_update_md5 = "UPDATE liefereinheit SET md5='" + md5_new + "' WHERE ID=" + unicode(config['LIEFEREINHEIT']['id'])
         try:

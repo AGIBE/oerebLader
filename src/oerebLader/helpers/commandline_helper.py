@@ -18,6 +18,7 @@ import oerebLader.download_tickets.download_tickets
 import oerebLader.update_municipality.update_municipality
 import oerebLader.repair_geometries.repair_geometries
 import oerebLader.update_office.update_office
+import oerebLader.check_bundesthemen.check_bundesthemen
 
 
 def import_ticket(args):
@@ -121,6 +122,9 @@ def update_office(args):
     oerebLader.update_office.update_office.run_update_office(args.TARGET)
     print("Update_office SUCCESSFUL!")
 
+def check_bundesthemen(args):
+    oerebLader.check_bundesthemen.check_bundesthemen.run_check_bundesthemen()
+    print("Check Bundesthemen SUCCESSFUL!")
 
 def main():
     version_text = "oerebLader v" + __version__
@@ -295,6 +299,10 @@ def main():
     update_office_parser = subparsers.add_parser("update_office", help="Aktualisiert alle Office-Tabellen aus der zentralen AMT-Tabelle.")
     update_office_parser.add_argument("TARGET", choices=['work', 'team', 'vek2', 'vek1'], help="In welcher Datenbank soll aktualisiert werden?")
     update_office_parser.set_defaults(func=update_office)
+
+    # CHECK_BUNDESTHEMEN-Befehl
+    check_bundesthemen_parser = subparsers.add_parser("check_bundesthemen", help="Prüft für alle Bundesthemen, ob eine Aktualisierung vorliegt.")
+    check_bundesthemen_parser.set_defaults(func=check_bundesthemen)
 
     args = parser.parse_args()
     args.func(args)

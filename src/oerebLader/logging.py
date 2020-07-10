@@ -5,7 +5,9 @@ import os
 
 def init_logging(command_name, config):
     logfile_folder = os.path.join(config['LOGGING']['basedir'], command_name)
+    if not os.path.exists(logfile_folder):
+        os.makedirs(logfile_folder)
     logfile_name = command_name + ".log"
-    config['logging']['log_directory'] = logfile_folder
+    config['LOGGING']['log_directory'] = logfile_folder
     logger = AGILib.agilogger.initialize_agilogger(logfile_name=logfile_name, logfile_folder=logfile_folder, list_log_handler=['file', 'stream'], archive=True, logger_name="oerebLaderLogger")
     return logger
