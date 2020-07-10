@@ -5,7 +5,7 @@
 build/*
 dist/*
 docs/_build/*
-oerebLader.egg-info/*
+src/oerebLader.egg-info/*
 *.pyt.xml
 *.recover
 .vscode/*
