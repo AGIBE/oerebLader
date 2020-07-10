@@ -5,7 +5,7 @@ import datetime
 import sys
 import urlparse
 import oerebLader.logging
-import oerebLader.helpers.config
+import oerebLader.config
 import oerebLader.helpers.sql_helper
 import oerebLader.helpers.legend_helper
 
@@ -78,7 +78,7 @@ def get_legend_path(config, liefereinheit, connection_string):
     return legend_path
     
 def run_create_legend(input_bfsnr, mode):
-    config = oerebLader.helpers.config.get_config()
+    config = oerebLader.config.get_config()
     logger = oerebLader.logging.init_logging("create_legend", config)
 
     # Je nach Modus wird in anderer DB nach den Bildern gesucht.    

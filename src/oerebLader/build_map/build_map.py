@@ -99,7 +99,7 @@ def clone_master_repo(master_repo_dir, mode):
     return cloned_repo.working_dir
 
 def run_build_map(mode, batch_dir):
-    config = oerebLader.helpers.config.get_config()
+    config = oerebLader.config.get_config()
     logger = oerebLader.logging.init_logging("build_map", config)
     logger.info("Das Mapfile des Dienstes " + mode + " wird erstellt.")
     

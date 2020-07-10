@@ -10,7 +10,7 @@ import oerebLader.helpers.mapfile_helper
 
 def run_switch_bfsnr(bfsnr):
     mode = "oerebpruef_gemeinde"
-    config = oerebLader.helpers.config.get_config()
+    config = oerebLader.config.get_config()
     logger = oerebLader.logging.init_logging("switch_bfsnr", config)
     logger.info("Die BFS-Nummer im Gemeinde-Prüfdienst wird gewechselt auf: " + unicode(bfsnr))
     

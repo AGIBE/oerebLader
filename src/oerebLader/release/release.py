@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from __future__ import absolute_import, division, print_function, unicode_literals
 import AGILib.connection
-import oerebLader.helpers.config
+import oerebLader.config
 import oerebLader.logging
 import oerebLader.helpers.sql_helper
 import oerebLader.helpers.fme_helper
@@ -165,7 +165,7 @@ def append_transferstruktur(source_connection_string, target_connection_string, 
 
 
 def run_release(dailyMode):
-    config = oerebLader.helpers.config.get_config()
+    config = oerebLader.config.get_config()
     logger = oerebLader.logging.init_logging("release", config)
     logger.info("Der Release wird initialisiert!")
     

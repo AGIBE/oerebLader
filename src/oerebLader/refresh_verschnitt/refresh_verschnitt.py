@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 from __future__ import absolute_import, division, print_function, unicode_literals
-import oerebLader.helpers.config
+import oerebLader.config
 import oerebLader.logging
 import os
 import datetime
@@ -8,7 +8,7 @@ import urllib2
 import sys
 
 def run_refresh_verschnitt():
-    config = oerebLader.helpers.config.get_config()
+    config = oerebLader.config.get_config()
     logger = oerebLader.logging.init_logging("refresh_verschnitt", config)
     logger.info("Folgende URL werden refreshed: ")
     

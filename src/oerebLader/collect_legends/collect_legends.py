@@ -4,7 +4,7 @@ import os
 import datetime
 import shutil
 import oerebLader.logging
-import oerebLader.helpers.config
+import oerebLader.config
 import oerebLader.helpers.sql_helper
 import requests
 from requests.adapters import HTTPAdapter
@@ -86,7 +86,7 @@ def copy_legends(mode, config, logger):
         
 
 def run_collect_legends():
-    config = oerebLader.helpers.config.get_config()
+    config = oerebLader.config.get_config()
     logger = oerebLader.logging.init_logging("collect_legends", config)
     
     logger.info("Legenden der öffentlichen Karte werden kopiert.")

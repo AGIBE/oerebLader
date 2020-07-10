@@ -5,7 +5,7 @@ import datetime
 import codecs
 import oerebLader.logging
 import logging
-import oerebLader.helpers.config
+import oerebLader.config
 import oerebLader.helpers.sql_helper
 
 def get_liefereinheiten(config):
@@ -20,7 +20,7 @@ def run_create_qaspecs(config=None, liefereinheiten=[-1]):
     if config is not None:
         logger = logging.getLogger('oerebLaderLogger')
     else:
-        config = oerebLader.helpers.config.get_config()
+        config = oerebLader.config.get_config()
         logger = oerebLader.logging.init_logging("create_qaspecs", config)
     
     logger.info("Die QA-Spezifikationen werden neu erstellt.")

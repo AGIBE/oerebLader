@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 from __future__ import absolute_import, division, print_function, unicode_literals
-import oerebLader.helpers.config
+import oerebLader.config
 import oerebLader.logging
 import oerebLader.helpers.sql_helper
 import psycopg2
@@ -27,7 +27,7 @@ def count_invalid_geometries(schema, connection_string):
         return len(invalid_geometries_result)
 
 def run_repair_geometries(db):
-    config = oerebLader.helpers.config.get_config()
+    config = oerebLader.config.get_config()
     logger = oerebLader.logging.init_logging("repair_geometries", config)
     db_key = 'OEREB_' + db.upper() + "_PG"
     target_connection_string = config[db_key]['connection_string']

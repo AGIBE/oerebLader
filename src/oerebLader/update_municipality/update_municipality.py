@@ -8,7 +8,7 @@ import arcpy
 import tempfile
 import datetime
 import oerebLader.logging
-import oerebLader.helpers.config
+import oerebLader.config
 import oerebLader.helpers.fme_helper
 
 def create_connection_files(username, password, database):
@@ -25,7 +25,7 @@ def create_connection_files(username, password, database):
 
 def run_update_municipality(source, target):
 
-    config = oerebLader.helpers.config.get_config()
+    config = oerebLader.config.get_config()
     logger = oerebLader.logging.init_logging("update_municipality", config)
 
     logger.info("Municipality-Tabelle wird aktualisiert.")

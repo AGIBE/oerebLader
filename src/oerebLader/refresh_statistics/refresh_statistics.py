@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 from __future__ import absolute_import, division, print_function, unicode_literals
-import oerebLader.helpers.config
+import oerebLader.config
 import oerebLader.logging
 import os
 import datetime
@@ -29,7 +29,7 @@ def refresh_stats(connection_string, ownername):
 
 
 def run_refresh_statistics():
-    config = oerebLader.helpers.config.get_config()
+    config = oerebLader.config.get_config()
     logger = oerebLader.logging.init_logging("refresh_statistics", config)
 
     logger.info("Statistiken des ÖREB2-Schemas in VEK2 werden aktualisiert.")

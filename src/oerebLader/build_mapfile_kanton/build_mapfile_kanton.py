@@ -9,7 +9,7 @@ import oerebLader.helpers.mapfile_helper
 
 def run_build_mapfile_kantonr():
     mode = "oerebpruef_kanton"
-    config = oerebLader.helpers.config.get_config()
+    config = oerebLader.config.get_config()
     logger = oerebLader.logging.init_logging("build_mapfile_kanton", config)
     logger.info("Das Mapfile für den Kantons-Prüfdienst wird neuerstellt.")
     

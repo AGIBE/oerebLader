@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from __future__ import absolute_import, division, print_function, unicode_literals
 import cx_Oracle
-import oerebLader.helpers.config
+import oerebLader.config
 import oerebLader.logging
 import oerebLader.check_bundesthemen.md5
 import oerebLader.helpers.sql_helper
@@ -44,7 +44,7 @@ def create_ticket(liefereinheit, config):
     logging.info("Ticket wurde erstellt!")
 
 def run_check_bundesthemen():
-    config = oerebLader.helpers.config.get_config()
+    config = oerebLader.config.get_config()
     logger = oerebLader.logging.init_logging("check_bundesthemen", config)
     
     liefereinheiten = config['GENERAL']['bundesthemen']

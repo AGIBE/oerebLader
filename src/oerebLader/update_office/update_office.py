@@ -12,7 +12,7 @@ from psycopg2.extras import Json
 import sys
 
 def run_update_office(target):
-    config = oerebLader.helpers.config.get_config()
+    config = oerebLader.config.get_config()
     logger = oerebLader.logging.init_logging("update_office", config)
     if target == 'work':
         pg_connectionstring = config['OEREB_WORK_PG']['connection_string']

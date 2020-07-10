@@ -21,7 +21,7 @@ import oerebLader.update_office.update_office
 import oerebLader.check_bundesthemen.check_bundesthemen
 
 def get_open_tickets():
-    config = oerebLader.helpers.config.get_config()
+    config = oerebLader.config.get_config()
     # tagesaktuelle Tickets (ART=5) werden hier nicht angezeigt, da sie nicht manuell importiert werden.
     open_tickets_sql = "select ticket.id, ticket.name, ticket.LIEFEREINHEIT, liefereinheit.name from ticket left join liefereinheit on ticket.LIEFEREINHEIT=liefereinheit.ID where ticket.STATUS=1 and ticket.ART IN (1,2,3,4) order by ticket.id"
     open_tickets = oerebLader.helpers.sql_helper.readSQL(config['OEREB2_WORK']['connection_string'], open_tickets_sql)
@@ -35,7 +35,7 @@ def get_open_tickets():
     return ticket_list
 
 def get_releasable_tickets():
-    config = oerebLader.helpers.config.get_config()
+    config = oerebLader.config.get_config()
     # tagesaktuelle Tickets (ART=5) werden hier nicht angezeigt, da sie nicht manuell importiert werden.
     open_tickets_sql = "select ticket.id, ticket.name, ticket.LIEFEREINHEIT, liefereinheit.name from ticket left join liefereinheit on ticket.LIEFEREINHEIT=liefereinheit.ID where ticket.STATUS=3 and ticket.ART IN (1,2,3,4) order by ticket.id"
     open_tickets = oerebLader.helpers.sql_helper.readSQL(config['OEREB2_WORK']['connection_string'], open_tickets_sql)

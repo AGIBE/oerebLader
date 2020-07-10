@@ -10,11 +10,11 @@ import oerebLader.scripts.s38_qa_transfer
 import oerebLader.scripts.s44_checkurl_transfer
 import oerebLader.scripts.s12_finish
 
-import oerebLader.helpers.config
+import oerebLader.config
 
 def run(ticketnr):
 
-    config = oerebLader.helpers.config.get_config()
+    config = oerebLader.config.get_config()
     
     oerebLader.scripts.s26_initialize.run(config, ticketnr)
     oerebLader.scripts.s4_delete_transfer.run(config)

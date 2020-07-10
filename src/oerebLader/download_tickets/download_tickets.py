@@ -5,11 +5,11 @@ import datetime
 import requests
 import sys
 import oerebLader.logging
-import oerebLader.helpers.config
+import oerebLader.config
 
 def run_download_tickets():
 
-    config = oerebLader.helpers.config.get_config()
+    config = oerebLader.config.get_config()
     logger = oerebLader.logging.init_logging("download_tickets", config)
 
     logger.info("Tickets werden heruntergeladen.")

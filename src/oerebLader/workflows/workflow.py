@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 from __future__ import absolute_import, division, print_function, unicode_literals
-import oerebLader.helpers.config
+import oerebLader.config
 import oerebLader.helpers.sql_helper
 import oerebLader.workflows.w2_kbs
 import oerebLader.workflows.w1_gsk
@@ -23,7 +23,7 @@ import sys
 #TODO: Import NPLKSTRA mit THE_ID=20 umsetzen
 
 def run_workflow(ticketnr):
-    config = oerebLader.helpers.config.get_config()
+    config = oerebLader.config.get_config()
     if is_valid_ticket(ticketnr, config):
         print("Fuehre aus: " + unicode(ticketnr))
         workflow = get_workflow_for_ticket(ticketnr, config)

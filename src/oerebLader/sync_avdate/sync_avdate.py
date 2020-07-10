@@ -8,7 +8,7 @@ import datetime
 import sys
 
 def run_sync_avdate():
-    config = oerebLader.helpers.config.get_config()
+    config = oerebLader.config.get_config()
     logger = oerebLader.logging.init_logging("sync_avdate", config)
     
     logger.info("Hole AV-Datum aus dem GeoDB-DD.")
