@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from __future__ import absolute_import, division, print_function, unicode_literals
 import oerebLader.helpers.config
-import oerebLader.helpers.log_helper
+import oerebLader.logging
 import oerebLader.helpers.sql_helper
 import psycopg2
 import logging
@@ -18,27 +18,6 @@ def get_postgis_schemas(config):
 
     return schemas
 
-def init_logging(config):
-    log_directory = os.path.join(config['LOGGING']['basedir'], "repair_geometries")
-    config['LOGGING']['log_directory'] = log_directory
-    if not os.path.exists(log_directory):
-        os.makedirs(log_directory)
-    logfile = os.path.join(log_directory, "repair_geometries.log")
-    # Wenn schon ein Logfile existiert, wird es umbenannt
-    if os.path.exists(logfile):
-        archive_logfile = "repair_geometries" + datetime.datetime.now().strftime("_%Y_%m_%d_%H_%M_%S") + ".log"
-        archive_logfile = os.path.join(log_directory, archive_logfile)
-        os.rename(logfile, archive_logfile)
-        
-    logger = logging.getLogger("oerebLaderLogger")
-    logger.setLevel(logging.DEBUG)
-    logger.handlers = []
-    logger.addHandler(oerebLader.helpers.log_helper.create_loghandler_file(logfile))
-    logger.addHandler(oerebLader.helpers.log_helper.create_loghandler_stream())
-    logger.propagate = False
-    
-    return logger
-
 def count_invalid_geometries(schema, connection_string):
     invalid_geometries_sql = "select id from %s.geometry where st_isvalid(geom) = false" % (schema)
     invalid_geometries_result = oerebLader.helpers.sql_helper.readPSQL(connection_string, invalid_geometries_sql)
@@ -47,10 +26,9 @@ def count_invalid_geometries(schema, connection_string):
     else:
         return len(invalid_geometries_result)
 
-
 def run_repair_geometries(db):
     config = oerebLader.helpers.config.get_config()
-    logger = init_logging(config)
+    logger = oerebLader.logging.init_logging("repair_geometries", config)
     db_key = 'OEREB_' + db.upper() + "_PG"
     target_connection_string = config[db_key]['connection_string']
 

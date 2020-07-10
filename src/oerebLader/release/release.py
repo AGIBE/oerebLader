@@ -2,7 +2,7 @@
 from __future__ import absolute_import, division, print_function, unicode_literals
 import AGILib.connection
 import oerebLader.helpers.config
-import oerebLader.helpers.log_helper
+import oerebLader.logging
 import oerebLader.helpers.sql_helper
 import oerebLader.helpers.fme_helper
 import os
@@ -17,28 +17,6 @@ import shutil
 import platform
 import psycopg2
 import tempfile
-
-
-def init_logging(config):
-    log_directory = os.path.join(config['LOGGING']['basedir'], "release")
-    config['LOGGING']['log_directory'] = log_directory
-    if not os.path.exists(log_directory):
-        os.makedirs(log_directory)
-    logfile = os.path.join(log_directory, "release.log")
-    # Wenn schon ein Logfile existiert, wird es umbenannt
-    if os.path.exists(logfile):
-        archive_logfile = "release" + datetime.datetime.now().strftime("_%Y_%m_%d_%H_%M_%S") + ".log"
-        archive_logfile = os.path.join(log_directory, archive_logfile)
-        os.rename(logfile, archive_logfile)
-        
-    logger = logging.getLogger("oerebLaderLogger")
-    logger.setLevel(logging.DEBUG)
-    logger.handlers = []
-    logger.addHandler(oerebLader.helpers.log_helper.create_loghandler_file(logfile))
-    logger.addHandler(oerebLader.helpers.log_helper.create_loghandler_stream())
-    logger.propagate = False
-    
-    return logger
 
 def clone_master_repo(master_repo_dir):
     tmpdir = tempfile.mkdtemp()
@@ -188,7 +166,7 @@ def append_transferstruktur(source_connection_string, target_connection_string, 
 
 def run_release(dailyMode):
     config = oerebLader.helpers.config.get_config()
-    logger = init_logging(config)
+    logger = oerebLader.logging.init_logging("release", config)
     logger.info("Der Release wird initialisiert!")
     
     # Connection-Files erstellen

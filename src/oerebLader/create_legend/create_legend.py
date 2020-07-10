@@ -1,35 +1,13 @@
 # -*- coding: utf-8 -*-
 from __future__ import absolute_import, division, print_function, unicode_literals
-import logging
 import os
 import datetime
 import sys
 import urlparse
-import oerebLader.helpers.log_helper
+import oerebLader.logging
 import oerebLader.helpers.config
 import oerebLader.helpers.sql_helper
 import oerebLader.helpers.legend_helper
-
-def init_logging(config):
-    log_directory = os.path.join(config['LOGGING']['basedir'], "create_legend")
-    config['LOGGING']['log_directory'] = log_directory
-    if not os.path.exists(log_directory):
-        os.makedirs(log_directory)
-    logfile = os.path.join(log_directory, "create_legend.log")
-    # Wenn schon ein Logfile existiert, wird es umbenannt
-    if os.path.exists(logfile):
-        archive_logfile = "create_legend" + datetime.datetime.now().strftime("_%Y_%m_%d_%H_%M_%S") + ".log"
-        archive_logfile = os.path.join(log_directory, archive_logfile)
-        os.rename(logfile, archive_logfile)
-        
-    logger = logging.getLogger("oerebLaderLogger")
-    logger.setLevel(logging.DEBUG)
-    logger.handlers = []
-    logger.addHandler(oerebLader.helpers.log_helper.create_loghandler_file(logfile))
-    logger.addHandler(oerebLader.helpers.log_helper.create_loghandler_stream())
-    logger.propagate = False
-    
-    return logger
 
 def get_liefereinheiten(config, bfsnr, connection_string):
     
@@ -101,7 +79,7 @@ def get_legend_path(config, liefereinheit, connection_string):
     
 def run_create_legend(input_bfsnr, mode):
     config = oerebLader.helpers.config.get_config()
-    logger = init_logging(config)
+    logger = oerebLader.logging.init_logging("create_legend", config)
 
     # Je nach Modus wird in anderer DB nach den Bildern gesucht.    
     connection_string = ""

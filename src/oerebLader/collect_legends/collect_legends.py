@@ -2,36 +2,13 @@
 from __future__ import absolute_import, division, print_function, unicode_literals
 import os
 import datetime
-import logging
 import shutil
-import oerebLader.helpers.log_helper
+import oerebLader.logging
 import oerebLader.helpers.config
 import oerebLader.helpers.sql_helper
 import requests
 from requests.adapters import HTTPAdapter
 from requests.packages.urllib3.util.retry import Retry
-
-
-def init_logging(config):
-    log_directory = os.path.join(config['LOGGING']['basedir'], "collect_legends")
-    config['LOGGING']['log_directory'] = log_directory
-    if not os.path.exists(log_directory):
-        os.makedirs(log_directory)
-    logfile = os.path.join(log_directory, "collect_legends.log")
-    # Wenn schon ein Logfile existiert, wird es umbenannt
-    if os.path.exists(logfile):
-        archive_logfile = "collect_legends" + datetime.datetime.now().strftime("_%Y_%m_%d_%H_%M_%S") + ".log"
-        archive_logfile = os.path.join(log_directory, archive_logfile)
-        os.rename(logfile, archive_logfile)
-        
-    logger = logging.getLogger("oerebLaderLogger")
-    logger.setLevel(logging.DEBUG)
-    logger.handlers = []
-    logger.addHandler(oerebLader.helpers.log_helper.create_loghandler_file(logfile))
-    logger.addHandler(oerebLader.helpers.log_helper.create_loghandler_stream())
-    logger.propagate = False
-    
-    return logger
 
 # aus: https://www.peterbe.com/plog/best-practice-with-retries-with-requests
 def requests_retry_session(
@@ -110,7 +87,7 @@ def copy_legends(mode, config, logger):
 
 def run_collect_legends():
     config = oerebLader.helpers.config.get_config()
-    logger = init_logging(config)
+    logger = oerebLader.logging.init_logging("collect_legends", config)
     
     logger.info("Legenden der öffentlichen Karte werden kopiert.")
     copy_legends("oereb", config, logger)

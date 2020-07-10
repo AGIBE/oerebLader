@@ -3,34 +3,12 @@ from __future__ import absolute_import, division, print_function, unicode_litera
 import os
 import codecs
 import datetime
-import logging
 import mappyfile
 import shutil
 import tempfile
 import git
-import oerebLader.helpers.log_helper
+import oerebLader.logging
 import oerebLader.helpers.mapfile_helper
-
-def init_logging(config):
-    log_directory = os.path.join(config['LOGGING']['basedir'], "build_map")
-    config['LOGGING']['log_directory'] = log_directory
-    if not os.path.exists(log_directory):
-        os.makedirs(log_directory)
-    logfile = os.path.join(log_directory, "build_map.log")
-    # Wenn schon ein Logfile existiert, wird es umbenannt
-    if os.path.exists(logfile):
-        archive_logfile = "build_map" + datetime.datetime.now().strftime("_%Y_%m_%d_%H_%M_%S") + ".log"
-        archive_logfile = os.path.join(log_directory, archive_logfile)
-        os.rename(logfile, archive_logfile)
-        
-    logger = logging.getLogger("oerebLaderLogger")
-    logger.setLevel(logging.DEBUG)
-    logger.handlers = []
-    logger.addHandler(oerebLader.helpers.log_helper.create_loghandler_file(logfile))
-    logger.addHandler(oerebLader.helpers.log_helper.create_loghandler_stream())
-    logger.propagate = False
-    
-    return logger
 
 def get_gemeinden_directories(directory):
     '''
@@ -122,7 +100,7 @@ def clone_master_repo(master_repo_dir, mode):
 
 def run_build_map(mode, batch_dir):
     config = oerebLader.helpers.config.get_config()
-    logger = init_logging(config)
+    logger = oerebLader.logging.init_logging("build_map", config)
     logger.info("Das Mapfile des Dienstes " + mode + " wird erstellt.")
     
     # Config

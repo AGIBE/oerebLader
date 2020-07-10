@@ -2,7 +2,7 @@
 from __future__ import absolute_import, division, print_function, unicode_literals
 import AGILib.connection
 import oerebLader.helpers.sql_helper
-import oerebLader.helpers.log_helper
+import oerebLader.logging
 import oerebLader.helpers.excel_helper
 import logging
 import os
@@ -10,32 +10,11 @@ import sys
 import arcpy
 import datetime
 
-def init_logging(ticketnr, config):
-    log_directory = os.path.join(config['LOGGING']['basedir'], unicode(ticketnr))
-    config['LOGGING']['log_directory'] = log_directory
-    if not os.path.exists(log_directory):
-        os.makedirs(log_directory)
-    logfile = os.path.join(log_directory, unicode(ticketnr) + ".log")
-    # Wenn schon ein Logfile existiert, wird es umbenannt
-    if os.path.exists(logfile):
-        archive_logfile = unicode(ticketnr) + datetime.datetime.now().strftime("_%Y_%m_%d_%H_%M_%S") + ".log"
-        archive_logfile = os.path.join(log_directory, archive_logfile)
-        os.rename(logfile, archive_logfile)
-        
-    logger = logging.getLogger("oerebLaderLogger")
-    logger.setLevel(logging.DEBUG)
-    logger.handlers = []
-    logger.addHandler(oerebLader.helpers.log_helper.create_loghandler_file(logfile))
-    logger.addHandler(oerebLader.helpers.log_helper.create_loghandler_stream())
-    logger.propagate = False
-    
-    return logger
-
 def run(config, ticketnr):
     config['ticketnr'] = ticketnr
     
     # Logging initialisieren
-    logger = init_logging(ticketnr, config)
+    logger = oerebLader.logging.init_logging(unicode(ticketnr), config)
     
     logger.info("Import wird initialisiert.")
     logger.info("Ticket-Nr: " + unicode(config['ticketnr']))

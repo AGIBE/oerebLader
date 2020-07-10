@@ -7,37 +7,9 @@ import fmeobjects
 import arcpy
 import tempfile
 import datetime
-import oerebLader.helpers.log_helper
+import oerebLader.logging
 import oerebLader.helpers.config
 import oerebLader.helpers.fme_helper
-
-
-def init_logging(config):
-    log_directory = os.path.join(
-        config['LOGGING']['basedir'], "update_municipality"
-    )
-    config['LOGGING']['log_directory'] = log_directory
-    if not os.path.exists(log_directory):
-        os.makedirs(log_directory)
-    logfile = os.path.join(log_directory, "update_municipality.log")
-    # Wenn schon ein Logfile existiert, wird es umbenannt
-    if os.path.exists(logfile):
-        archive_logfile = "update_municipality" + datetime.datetime.now(
-        ).strftime("_%Y_%m_%d_%H_%M_%S") + ".log"
-        archive_logfile = os.path.join(log_directory, archive_logfile)
-        os.rename(logfile, archive_logfile)
-
-    logger = logging.getLogger("oerebLaderLogger")
-    logger.setLevel(logging.DEBUG)
-    logger.handlers = []
-    logger.addHandler(
-        oerebLader.helpers.log_helper.create_loghandler_file(logfile)
-    )
-    logger.addHandler(oerebLader.helpers.log_helper.create_loghandler_stream())
-    logger.propagate = False
-
-    return logger
-
 
 def create_connection_files(username, password, database):
 
@@ -54,7 +26,7 @@ def create_connection_files(username, password, database):
 def run_update_municipality(source, target):
 
     config = oerebLader.helpers.config.get_config()
-    logger = init_logging(config)
+    logger = oerebLader.logging.init_logging("update_municipality", config)
 
     logger.info("Municipality-Tabelle wird aktualisiert.")
 
