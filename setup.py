@@ -34,8 +34,8 @@ setup(
       # https://pythonhosted.org/setuptools/setuptools.html#automatic-script-creation
     entry_points={
          'console_scripts': [
-              'oerebLader = oerebLader.helpers.commandline_helper:main',
-              'ol = oerebLader.helpers.commandline_helper:main'
+              'oerebLader = oerebLader.__main__:main',
+              'ol = oerebLader.__main__:main'
           ]
     }
 )
