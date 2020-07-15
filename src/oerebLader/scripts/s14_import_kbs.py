@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 from __future__ import absolute_import, division, print_function, unicode_literals
-import oerebLader.helpers.fme_helper
+import AGILib.fme
 import logging
 import os
 import arcpy
@@ -55,10 +55,9 @@ def run(config):
 
     
     fme_script = os.path.splitext(__file__)[0] + ".fmw"
-    fme_logfile = oerebLader.helpers.fme_helper.prepare_fme_log(fme_script, config['LOGGING']['log_directory']) 
+    fme_logfile = os.path.join(config['LOGGING']['log_directory'], os.path.splitext(__file__)[0] + ".log") 
     logger.info("Script " +  fme_script + " wird ausgeführt.")
     logger.info("Das FME-Logfile heisst: " + fme_logfile)
-    runner = fmeobjects.FMEWorkspaceRunner()
 
     # Der FMEWorkspaceRunner akzeptiert keine Unicode-Strings!
     # Daher müssen workspace und parameters umgewandelt werden!
@@ -71,16 +70,14 @@ def run(config):
         'GEODB_PG_PORT': str(config['GEODB_WORK_PG']['port']),
         'SCHEMA_NAME': str(config['GEODB_WORK']['username']),
         'TABELLEN': str(" ".join(ebenen_fme)),
-        'DATEFIELDS': str(dfield),
-        'LOGFILE': str(fme_logfile)
+        'DATEFIELDS': str(dfield)
     }
-    try:
-        runner.runWithParameters(str(fme_script), parameters)
-    except fmeobjects.FMEException as ex:
-        logger.error("FME-Workbench " + fme_script + " konnte nicht ausgeführt werden!")
-        logger.error(ex)
-        logger.error("Import wird abgebrochen!")
-        sys.exit()
+
+    fmerunner = AGILib.fme.FMERunner(fme_workbench=fme_script, fme_workbench_parameters=parameters, fme_logfile=fme_logfile, fme_logfile_archive=True)
+    fmerunner.run()
+    if fmerunner.returncode != 0:
+        logger.error("FME-Script %s abgebrochen." % (fme_script))
+        raise RuntimeError("FME-Script %s abgebrochen." % (fme_script))
         
     # Berechtigungen in PostGIS neu setzen, da Tabellen
     # immer gelöscht und neu angelegt werden.

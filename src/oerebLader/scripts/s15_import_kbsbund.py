@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 from __future__ import absolute_import, division, print_function, unicode_literals
-import oerebLader.helpers.fme_helper
+import AGILib.fme
 import sys
 import logging
 import os
@@ -42,7 +42,7 @@ def process_zip(zip_url):
 def run(config):
     logger.info("Script " +  os.path.basename(__file__) + " wird ausgeführt.")
     fme_script = os.path.splitext(__file__)[0] + ".fmw"
-    fme_logfile = oerebLader.helpers.fme_helper.prepare_fme_log(fme_script, config['LOGGING']['log_directory']) 
+    fme_logfile = os.path.join(config['LOGGING']['log_directory'], os.path.splitext(__file__)[0] + ".log") 
     logger.info("Script " +  fme_script + " wird ausgeführt.")
     logger.info("Das XTF- und das XML-File werden aus dem Zip-File extrahiert.")
     xtf_files = process_zip(config['LIEFEREINHEIT']['gpr_source'])
@@ -51,7 +51,7 @@ def run(config):
     logger.info("XTF-File: " + xtf_file)
     logger.info("XML-File: " + xml_file)
     logger.info("Das FME-Logfile heisst: " + fme_logfile)
-    runner = fmeobjects.FMEWorkspaceRunner()
+    
     # Der FMEWorkspaceRunner akzeptiert keine Unicode-Strings!
     # Daher müssen workspace und parameters umgewandelt werden!
     parameters = {
@@ -66,16 +66,13 @@ def run(config):
         'MODELLABLAGE': str(config['GENERAL']['models']),
         'XTF_FILE': str(xtf_file),
         'XML_FILE': str(xml_file),
-        'GPRCODE': str(config['LIEFEREINHEIT']['gprcodes'][0]),
-        'LOGFILE': str(fme_logfile)
+        'GPRCODE': str(config['LIEFEREINHEIT']['gprcodes'][0])
     }
 
-    try:
-        runner.runWithParameters(str(fme_script), parameters)
-    except fmeobjects.FMEException as ex:
-        logger.error("FME-Workbench " + fme_script + " konnte nicht ausgeführt werden!")
-        logger.error(ex)
-        logger.error("Import wird abgebrochen!")
-        sys.exit()
+    fmerunner = AGILib.fme.FMERunner(fme_workbench=fme_script, fme_workbench_parameters=parameters, fme_logfile=fme_logfile, fme_logfile_archive=True)
+    fmerunner.run()
+    if fmerunner.returncode != 0:
+        logger.error("FME-Script %s abgebrochen." % (fme_script))
+        raise RuntimeError("FME-Script %s abgebrochen." % (fme_script))
         
     logger.info("Script " +  os.path.basename(__file__) + " ist beendet.")

@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 from __future__ import absolute_import, division, print_function, unicode_literals
-import oerebLader.helpers.fme_helper
+import AGILib.fme
 import sys
 import logging
 import os
@@ -11,7 +11,7 @@ logger = logging.getLogger('oerebLaderLogger')
 def run(config):
     logger.info("Script " +  os.path.basename(__file__) + " wird ausgeführt.")
     fme_script = os.path.splitext(__file__)[0] + ".fmw"
-    fme_logfile = oerebLader.helpers.fme_helper.prepare_fme_log(fme_script, config['LOGGING']['log_directory']) 
+    fme_logfile = os.path.join(config['LOGGING']['log_directory'], os.path.splitext(__file__)[0] + ".log")
     logger.info("Script " +  fme_script + " wird ausgef�hrt.")
     logger.info("Das FME-Logfile heisst: " + fme_logfile)
     excel_file_amt = config['GENERAL']['amt_tabelle']
@@ -21,7 +21,6 @@ def run(config):
     else:
         legend_baseurl = config['GENERAL']['files_be_ch_baseurl'] + "/legenden/KBS/"
     
-    runner = fmeobjects.FMEWorkspaceRunner()
     # Der FMEWorkspaceRunner akzeptiert keine Unicode-Strings!
     # Daher müssen workspace und parameters umgewandelt werden!
     parameters = {
@@ -41,16 +40,14 @@ def run(config):
         'LEGEND_BASEURL': str(legend_baseurl),
         'LIEFEREINHEIT': str(config['LIEFEREINHEIT']['id']),
         'RV_BASEURL': str(config['GENERAL']['kbs_call']),
-        'STROKER': str(config['GENERAL']['fme_stroker_value']),
-        'LOGFILE': str(fme_logfile)
+        'STROKER': str(config['GENERAL']['fme_stroker_value'])
     }
-    try:
-        runner.runWithParameters(str(fme_script), parameters)
-    except fmeobjects.FMEException as ex:
-        logger.error("FME-Workbench " + fme_script + " konnte nicht ausgeführt werden!")
-        logger.error(ex)
-        logger.error("Import wird abgebrochen!")
-        sys.exit()
+
+    fmerunner = AGILib.fme.FMERunner(fme_workbench=fme_script, fme_workbench_parameters=parameters, fme_logfile=fme_logfile, fme_logfile_archive=True)
+    fmerunner.run()
+    if fmerunner.returncode != 0:
+        logger.error("FME-Script %s abgebrochen." % (fme_script))
+        raise RuntimeError("FME-Script %s abgebrochen." % (fme_script))
         
     logger.info("Script " +  os.path.basename(__file__) + " ist beendet.")
     

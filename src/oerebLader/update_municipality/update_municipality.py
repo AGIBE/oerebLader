@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 from __future__ import absolute_import, division, print_function, unicode_literals
+import AGILib.fme
 import os
 import logging
 import sys
@@ -9,7 +10,6 @@ import tempfile
 import datetime
 import oerebLader.logging
 import oerebLader.config
-import oerebLader.helpers.fme_helper
 
 def run_update_municipality(source, target):
 
@@ -19,13 +19,9 @@ def run_update_municipality(source, target):
     logger.info("Municipality-Tabelle wird aktualisiert.")
 
     fme_script = os.path.splitext(__file__)[0] + ".fmw"
-    fme_script_logfile = os.path.splitext(__file__)[0] + "_fme.fmw"
-    fme_logfile = oerebLader.helpers.fme_helper.prepare_fme_log(
-        fme_script_logfile, config['LOGGING']['log_directory']
-    )
+    fme_logfile = os.path.join(config['LOGGING']['log_directory'], os.path.splitext(__file__)[0] + "_fme.log")
     logger.info("Script " + fme_script + " wird ausgeführt.")
     logger.info("Das FME-Logfile heisst: " + fme_logfile)
-    runner = fmeobjects.FMEWorkspaceRunner()
 
     source_tablename = "GEODB." + source
     logger.info("Quelle der Aktualisierung: %s" % source_tablename)
@@ -49,18 +45,15 @@ def run_update_municipality(source, target):
         'OEREB_PG_PORT': str(config[target_keyname]['port']),
         'SOURCETABLE': str(source_tablename),
         'VEK1_CONNECTIONFILE': str(source_connectionfile),
-        'LOGO_BASE_PATH': str(logo_base_path),
-        'LOGFILE': str(fme_logfile)
+        'LOGO_BASE_PATH': str(logo_base_path)
     }
-    try:
-        runner.runWithParameters(str(fme_script), parameters)
-    except fmeobjects.FMEException as ex:
-        logger.error(
-            "FME-Workbench " + fme_script + " konnte nicht ausgeführt werden!"
-        )
-        logger.error(ex)
-        logger.error("Import wird abgebrochen!")
-        sys.exit()
-
-    logger.info("Connection-File wird gelöscht.")
-    config['GEO_VEK1']['connection'].delete_all_sde_connections()
+    fmerunner = AGILib.fme.FMERunner(fme_workbench=fme_script, fme_workbench_parameters=parameters, fme_logfile=fme_logfile, fme_logfile_archive=True)
+    fmerunner.run()
+    if fmerunner.returncode != 0:
+        logger.info("Connection-File wird gelöscht.")
+        config['GEO_VEK1']['connection'].delete_all_sde_connections()
+        logger.error("FME-Script %s abgebrochen." % (fme_script))
+        raise RuntimeError("FME-Script %s abgebrochen." % (fme_script))
+    else:
+        logger.info("Connection-File wird gelöscht.")
+        config['GEO_VEK1']['connection'].delete_all_sde_connections()

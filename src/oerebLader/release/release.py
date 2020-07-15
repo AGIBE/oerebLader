@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 from __future__ import absolute_import, division, print_function, unicode_literals
 import AGILib.connection
+import AGILib.fme
 import oerebLader.config
 import oerebLader.logging
-import oerebLader.helpers.fme_helper
 import os
 import datetime
 import logging
@@ -350,10 +350,9 @@ def run_release(dailyMode):
         # sowie GeoDB-Taskid in die TICKET-Tabelle zurückschreiben
         #TODO: Workbench so anpassen, dass auch mehrere Geoprodukte pro Ticket korrekt verarbeitet werden. 
         fme_script = os.path.splitext(__file__)[0] + "_geodb.fmw"
-        fme_logfile = oerebLader.helpers.fme_helper.prepare_fme_log(fme_script, config['LOGGING']['log_directory']) 
+        fme_logfile = os.path.join(config['LOGGING']['log_directory'], os.path.splitext(__file__)[0] + "_geodb.log") 
         logger.info("Script " +  fme_script + " wird ausgeführt.")
         logger.info("Das FME-Logfile heisst: " + fme_logfile)
-        runner = fmeobjects.FMEWorkspaceRunner()
         # Der FMEWorkspaceRunner akzeptiert keine Unicode-Strings!
         # Daher müssen workspace und parameters umgewandelt werden!
         parameters = {
@@ -363,16 +362,14 @@ def run_release(dailyMode):
             'TEAM_DB': str(config['GEODB_DD_TEAM']['database']),
             'TEAM_USERNAME': str(config['GEODB_DD_TEAM']['username']),
             'TEAM_PASSWORD': str(config['GEODB_DD_TEAM']['password']),
-            'ART_CLAUSE': str(valid_art),
-            'LOGFILE': str(fme_logfile)
+            'ART_CLAUSE': str(valid_art)
         }
-        try:
-            runner.runWithParameters(str(fme_script), parameters)
-        except fmeobjects.FMEException as ex:
-            logger.error("FME-Workbench " + fme_script + " konnte nicht ausgeführt werden!")
-            logger.error(ex)
-            logger.error("Release wird abgebrochen!")
-            sys.exit()
+
+        fmerunner = AGILib.fme.FMERunner(fme_workbench=fme_script, fme_workbench_parameters=parameters, fme_logfile=fme_logfile, fme_logfile_archive=True)
+        fmerunner.run()
+        if fmerunner.returncode != 0:
+            logger.error("FME-Script %s abgebrochen." % (fme_script))
+            raise RuntimeError("FME-Script %s abgebrochen." % (fme_script))
         
         # OEREBSTA aktualisieren
         logger.info("Geoprodukt OEREBSTA wird aktualisiert.")
