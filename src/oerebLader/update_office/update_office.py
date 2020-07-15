@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from __future__ import absolute_import, division, print_function, unicode_literals
 import oerebLader.logging
-import oerebLader.helpers.excel_helper
+import oerebLader.update_office.excel
 import logging
 import os
 import datetime
@@ -37,7 +37,7 @@ def run_update_office(target):
     for row in liefereinheiten_result:
         liefereinheit = row[0]
         logger.info("Verarbeite Liefereinheit %s..." % (unicode(liefereinheit)))
-        ar = oerebLader.helpers.excel_helper.AmtReader(config['GENERAL']['amt_tabelle'], "AMT")
+        ar = oerebLader.update_office.excel.AmtReader(config['GENERAL']['amt_tabelle'], "AMT")
         amt_oid, amt_oid_base, amt_name_de, amt_name_fr, amt_amtimweb_de, amt_amtimweb_fr = ar.get_oid_by_liefereinheit(liefereinheit)
         if amt_oid is None:
             logger.error("Für die Liefereinheit %s wurde kein Eintrag in der AMT-Tabellegefunden. Sie wird nicht verarbeitet." % (unicode(liefereinheit)))

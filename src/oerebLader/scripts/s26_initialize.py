@@ -2,7 +2,7 @@
 from __future__ import absolute_import, division, print_function, unicode_literals
 import AGILib.connection
 import oerebLader.logging
-import oerebLader.helpers.excel_helper
+import oerebLader.update_office.excel
 import logging
 import os
 import sys
@@ -101,7 +101,7 @@ def run(config, ticketnr):
 
     # AMT_OID aus zentraler AMT-Tabelle holen (für Bundesthemen == -99)
     logger.info("AMT_OID wird aus zentraler AMT-Tabelle geholt.")
-    ar = oerebLader.helpers.excel_helper.AmtReader(config['GENERAL']['amt_tabelle'], "AMT")
+    ar = oerebLader.update_office.excel.AmtReader(config['GENERAL']['amt_tabelle'], "AMT")
     amt_oids = ar.get_oid_by_liefereinheit(config['LIEFEREINHEIT']['id'])
     config['LIEFEREINHEIT']['amt_oid'] = amt_oids[0]
     config['LIEFEREINHEIT']['amt_oid_base'] = amt_oids[1]
