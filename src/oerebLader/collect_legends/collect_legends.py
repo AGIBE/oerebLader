@@ -5,7 +5,6 @@ import datetime
 import shutil
 import oerebLader.logging
 import oerebLader.config
-import oerebLader.helpers.sql_helper
 import requests
 from requests.adapters import HTTPAdapter
 from requests.packages.urllib3.util.retry import Retry
@@ -47,10 +46,10 @@ def copy_legends(mode, config, logger):
 
     if mode=='oereb':
         legend_dir = os.path.join(config['GENERAL']['files_be_ch_baseunc'], "legenden/gemeinden/oereb")
-        connection = config['OEREB2_VEK1']['connection_string']
+        connection = config['OEREB2_VEK1']['connection']
     if mode=='oerebpruef':
         legend_dir = os.path.join(config['GENERAL']['files_be_ch_baseunc'], "legenden/gemeinden/oerebpruef")
-        connection = config['OEREB2_WORK']['connection_string']
+        connection = config['OEREB2_WORK']['connection']
 
     logger.info("Das Legenden-Verzeichnis lautet: " + legend_dir)
     if not os.path.exists(legend_dir):
@@ -65,7 +64,7 @@ def copy_legends(mode, config, logger):
             os.remove(file_path)
     
     legenden_sql = "select distinct dar_liefereinheit, substr(dar_liefereinheit, 0, 3) bfsnr, DAR_LEGENDEIMWEB_DE, DAR_LEGENDEIMWEB_FR from oereb2.darstellungsdienst where dar_liefereinheit like '___01' and dar_legendeimweb_de like '%.html'"
-    legends_result = oerebLader.helpers.sql_helper.readSQL(connection, legenden_sql)
+    legends_result = connection.db_read(legenden_sql)
     
     for legend in legends_result:
         

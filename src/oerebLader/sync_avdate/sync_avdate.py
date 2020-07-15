@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 from __future__ import absolute_import, division, print_function, unicode_literals
 import oerebLader.logging
-import oerebLader.helpers.sql_helper
 import logging
 import os
 import datetime
@@ -14,7 +13,7 @@ def run_sync_avdate():
     logger.info("Hole AV-Datum aus dem GeoDB-DD.")
     dd_sql = "select GZS_ZEITSTAND from VW_GEOPRODUKT_ZEITSTAND where GPR_BEZEICHNUNG='MOPUBE' and GZS_AKTUELL=1"
     logger.info(dd_sql)
-    result = oerebLader.helpers.sql_helper.readSQL(config['GEODB_DD_TEAM']['connection_string'], dd_sql)
+    result = config['GEODB_DD_TEAM']['connection'].db_read(dd_sql)
     if len(result) == 0:
         logger.error("Für das Geoprodukt MOPUBE konnte im DD kein aktueller Zeitstand gefunden werden.")
         logger.error("Es wird kein AV-Datum synchronisiert.")
@@ -40,11 +39,11 @@ def run_sync_avdate():
 
         try:
             logger.info("Aktualisiere Verschnittfunktion CUG.")
-            oerebLader.helpers.sql_helper.writeSQL(config['OEREBCUGAPP']['connection_string'], sql_avdate)
+            config['OEREBCUGAPP']['connection'].db_write(sql_avdate)
             logger.info("Aktualisiere Verschnittfunktion public 2.")
-            oerebLader.helpers.sql_helper.writeSQL(config['OEREB2APP']['connection_string'], sql_avdate)
-            oerebLader.helpers.sql_helper.writeSQL(config['OEREB2APP']['connection_string'], sql_basedata_de)
-            oerebLader.helpers.sql_helper.writeSQL(config['OEREB2APP']['connection_string'], sql_basedata_fr)
+            config['OEREB2APP']['connection'].db_write(sql_avdate)
+            config['OEREB2APP']['connection'].db_write(sql_basedata_de)
+            config['OEREB2APP']['connection'].db_write(sql_basedata_fr)
         except Exception as ex:
             logger.error("Fehler beim Updaten des AV-Datums!")
             logger.error(unicode(ex))

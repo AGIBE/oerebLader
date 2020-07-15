@@ -4,7 +4,6 @@ import cx_Oracle
 import oerebLader.config
 import oerebLader.logging
 import oerebLader.check_bundesthemen.md5
-import oerebLader.helpers.sql_helper
 import os
 import logging
 import datetime
@@ -13,7 +12,7 @@ import sys
 def get_liefereinheit_info(liefereinheit, config):
     logging.info("Liefereinheiten-Informationen werden geholt.")
     liefereinheit_sql = "SELECT name, bfsnr, gpr_source, ts_source, md5 FROM liefereinheit where id=" + unicode(liefereinheit)
-    liefereinheit_result = oerebLader.helpers.sql_helper.readSQL(config['OEREB2_WORK']['connection_string'], liefereinheit_sql)
+    liefereinheit_result = config['OEREB_WORK_PG']['connection'].db_read(liefereinheit_sql)
     
     liefereinheit_info = {}
 
@@ -35,7 +34,7 @@ def create_ticket(liefereinheit, config):
     create_ticket_sql = "INSERT INTO ticket (liefereinheit, status, art, name, nachfuehrung) VALUES (%s, %s, %s, '%s', SYSDATE)" % (liefereinheit, 1, 5, name)
     logging.info(create_ticket_sql)
     try:
-        oerebLader.helpers.sql_helper.writeSQL(config['OEREB2_WORK']['connection_string'], create_ticket_sql)
+        config['OEREB_WORK_PG']['connection'].db_write(create_ticket_sql)
     except Exception as ex:
         logging.error("Fehler beim Einfügen des Tickets!")
         logging.error(unicode(ex))

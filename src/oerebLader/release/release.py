@@ -3,7 +3,6 @@ from __future__ import absolute_import, division, print_function, unicode_litera
 import AGILib.connection
 import oerebLader.config
 import oerebLader.logging
-import oerebLader.helpers.sql_helper
 import oerebLader.helpers.fme_helper
 import os
 import datetime
@@ -26,8 +25,8 @@ def clone_master_repo(master_repo_dir):
 def get_release_mapfiles(config, logger, valid_art):
     folders = []
     files = []
-    geoproducts_sql = "select LISTAGG(ticket.ID, ',') WITHIN GROUP (ORDER BY ticket.ID) as ID, LISTAGG(liefereinheit.BFSNR, ',') WITHIN GROUP (ORDER BY liefereinheit.BFSNR) as BFSNR, workflow_gpr.gprcode from ticket left join liefereinheit on ticket.LIEFEREINHEIT=liefereinheit.id left join workflow_gpr on liefereinheit.workflow=workflow_gpr.workflow where ticket.STATUS=3 and ticket.ART" + valid_art + " group by gprcode"
-    geoproducts = oerebLader.helpers.sql_helper.readSQL(config['OEREB2_WORK']['connection_string'], geoproducts_sql)
+    geoproducts_sql = "select string_agg(ticket.ID::text, ',' ORDER BY ticket.ID) as ID, string_agg(liefereinheit.BFSNR::text, ',' ORDER BY liefereinheit.BFSNR) as BFSNR, workflow_gpr.gprcode from ticket left join liefereinheit on ticket.LIEFEREINHEIT=liefereinheit.id left join workflow_gpr on liefereinheit.workflow=workflow_gpr.workflow where ticket.STATUS=3 and ticket.ART" + valid_art + " group by gprcode"
+    geoproducts = config['OEREB_WORK_PG']['connection'].db_read(geoproducts_sql)
     
     for gpr in geoproducts:
         gprcode = gpr[2].lower()
@@ -108,7 +107,7 @@ def update_transferdate(config, logger, liefereinheiten, dailyMode):
 
     logger.info("Ermittle Themen, deren Transferdatum aktualisiert werden muss.")    
     themes_sql = "select distinct the_id from subthema where sth_id in (select distinct sth_id from eigentumsbeschraenkung where eib_liefereinheit in " + liefereinheiten + ") ORDER BY the_id"
-    themes_result = oerebLader.helpers.sql_helper.readSQL(config['OEREB2_WORK']['connection_string'], themes_sql)
+    themes_result = config['OEREB2_WORK']['connection'].db_read(themes_sql)
     
     transfer_date = datetime.date.today().isoformat()
     
@@ -117,39 +116,39 @@ def update_transferdate(config, logger, liefereinheiten, dailyMode):
         transfer_date_sql = "update thema set the_transferdate=TO_DATE('" + transfer_date + "', 'YYYY-MM-DD') where the_id=" + unicode(tr[0])
         logger.info(transfer_date_sql)
         logger.info("VEK2 wird aktualisiert.")
-        oerebLader.helpers.sql_helper.writeSQL(config['OEREB2_VEK2']['connection_string'], transfer_date_sql)
+        config['OEREB2_VEK2']['connection'].db_write(transfer_date_sql)
         
         # Tagesaktuelles Release - VEK1 wird ebenfalls aktualisiert.
         if dailyMode:
             logger.info("VEK1 wird aktualisiert.")
-            oerebLader.helpers.sql_helper.writeSQL(config['OEREB2_VEK1']['connection_string'], transfer_date_sql)
+            config['OEREB2_VEK1']['connection'].db_write(transfer_date_sql)
 
-def get_schema_from_liefereinheit(liefereinheit, connection_string):
+def get_schema_from_liefereinheit(liefereinheit, connection):
     schemas = []
     liefereinheit = unicode(liefereinheit)
     schema_sql = "select schema from workflow_schema where WORKFLOW in (select workflow from liefereinheit where id='%s')" % (liefereinheit)
-    schema_sql_results = oerebLader.helpers.sql_helper.readSQL(connection_string, schema_sql)
+    schema_sql_results = connection.db_read(schema_sql)
     for schema_result in schema_sql_results:
         schemas.append(schema_result[0])
 
     return schemas
 
-def get_pg_tables(connection_string):
+def get_pg_tables(connection):
     pg_tables = []
     table_sql = "select ebecode, filter_field from oereb2.gpr where gprcode='OEREB_PG' order by EBEORDER"
-    table_sql_results = oerebLader.helpers.sql_helper.readSQL(connection_string, table_sql)
+    table_sql_results = connection.db_read(table_sql)
     for table_sql_result in table_sql_results:
         pg_table = (table_sql_result[0], table_sql_result[1])
         pg_tables.append(pg_table)
     
     return pg_tables
 
-def append_transferstruktur(source_connection_string, target_connection_string, source_sql, full_tablename):
+def append_transferstruktur(source_connection, target_connection, source_sql, full_tablename):
     # https://codereview.stackexchange.com/questions/115863/run-query-and-insert-the-result-to-another-table
     # Inhalte aus WORK mit COPY TO in ein Temp-File schreiben
     copy_to_query = "COPY (%s) TO STDOUT WITH (FORMAT text)" % (source_sql)
     with tempfile.NamedTemporaryFile('w+t') as fp:
-        with psycopg2.connect(source_connection_string) as source_connection:
+        with psycopg2.connect(source_connection.postgres_connection_string) as source_connection:
             with source_connection.cursor() as source_cursor:
                 source_cursor.copy_expert(copy_to_query, fp)
 
@@ -158,7 +157,7 @@ def append_transferstruktur(source_connection_string, target_connection_string, 
         # File auf Anfang zurücksetzen
         fp.seek(0)
 
-        with psycopg2.connect(target_connection_string) as target_connection:
+        with psycopg2.connect(target_connection.postgres_connection_string) as target_connection:
             target_connection.autocommit = True
             with target_connection.cursor() as target_cursor:
                 target_cursor.copy_from(file=fp, table=full_tablename)
@@ -182,7 +181,7 @@ def run_release(dailyMode):
         valid_art = "!=5"
     
     ticket_sql = "select ticket.ID, liefereinheit.ID, liefereinheit.NAME, liefereinheit.BFSNR, liefereinheit.WORKFLOW, ticket.art from ticket left join liefereinheit on ticket.LIEFEREINHEIT=liefereinheit.id where ticket.STATUS=3 and ticket.ART" + valid_art
-    tickets = oerebLader.helpers.sql_helper.readSQL(config['OEREB2_WORK']['connection_string'], ticket_sql)
+    tickets = config['OEREB_WORK_PG']['connection'].db_read(ticket_sql)
     liefereinheiten = []
     
     #Geoprodukt kopieren
@@ -193,7 +192,7 @@ def run_release(dailyMode):
         liefereinheiten.append(unicode(ticket[1]))
 
         gpr_sql = "SELECT gprcode FROM workflow_gpr WHERE workflow='" + workflow + "'"
-        gpr_result = oerebLader.helpers.sql_helper.readSQL(config['OEREB2_WORK']['connection_string'], gpr_sql)
+        gpr_result = config['OEREB_WORK_PG']['connection'].db_read(gpr_sql)
         gpr_codes = []
         if len(gpr_result) > 0:
             for gpr in gpr_result:
@@ -201,7 +200,7 @@ def run_release(dailyMode):
         gpr_where_clause = "GPRCODE IN ('" + "','".join(gpr_codes) + "')"
         logger.info("GPR WHERE Clause: " + gpr_where_clause)
         gpr_sql = "SELECT EBECODE, FILTER_FIELD, FILTER_TYPE, GPRCODE FROM GPR WHERE " + gpr_where_clause
-        ebenen = oerebLader.helpers.sql_helper.readSQL(config['OEREB2_WORK']['connection_string'], gpr_sql)
+        ebenen = config['OEREB_WORK_PG']['connection'].db_read(gpr_sql)
         for ebene in ebenen:
             ebene_name = ebene[3] + "_" + ebene[0]
             source = os.path.join(config['GEODB_WORK']['connection_file'], config['GEODB_WORK']['username'] + "." + ebene_name)
@@ -233,7 +232,7 @@ def run_release(dailyMode):
 
             logger.info("Deleting...")
             logger.info(delete_sql)
-            oerebLader.helpers.sql_helper.writeSQL(config['NORM_TEAM']['connection_string'], delete_sql)
+            config['NORM_TEAM']['connection'].db_write(delete_sql)
             logger.info("Appending...")
             arcpy.Append_management(source_layer, target, "TEST")
             logger.info("Counting..")
@@ -249,7 +248,7 @@ def run_release(dailyMode):
     # Transferstruktur PostGIS kopieren wenn es Tickets hat
     if len(tickets) > 0:
         logger.info("Kopiere Transferstruktur PostGIS...")
-        pg_tables = get_pg_tables(config['OEREB2_WORK']['connection_string'])
+        pg_tables = get_pg_tables(config['OEREB_WORK_PG']['connection'])
         # https://stackoverflow.com/questions/3940128/how-can-i-reverse-a-list-in-python#3940137
         pg_tables_reversed = pg_tables[::-1]
         # Doppelte Liefereinheiten entfernen
@@ -257,7 +256,7 @@ def run_release(dailyMode):
         for liefereinheit in liefereinheiten:
             logger.info("Kopiere Liefereinheit %s..." % (unicode(liefereinheit)))
             # Schema(s) der Liefereinheit holen
-            schemas = get_schema_from_liefereinheit(liefereinheit, config['OEREB2_WORK']['connection_string'])
+            schemas = get_schema_from_liefereinheit(liefereinheit, config['OEREB_WORK_PG']['connection'])
             for schema in schemas:
                 logger.info("Verarbeite Schema %s..." % (schema))
                 # Löschen in TEAM
@@ -267,7 +266,7 @@ def run_release(dailyMode):
                     where_clause = "%s=%s" % (pg_table[1], unicode(liefereinheit))
                     delete_sql = "DELETE FROM %s WHERE %s" % (full_tablename, where_clause) 
                     logger.info(delete_sql)
-                    oerebLader.helpers.sql_helper.writePSQL(config['OEREB_TEAM_PG']['connection_string'], delete_sql)
+                    config['OEREB_TEAM_PG']['connection'].db_write(delete_sql)
                 # Beim Einfügen muss die umgekehrte Tabellen-Reihenfolge als beim Löschen verwendet werden
                 # Grund: Foreign Key-Constraints
                 logger.info("Appending...")
@@ -276,11 +275,11 @@ def run_release(dailyMode):
                     where_clause = "%s=%s" % (pg_table[1], unicode(liefereinheit))
                     source_sql = "SELECT * FROM %s WHERE %s" % (full_tablename, where_clause)
                     logger.info(source_sql)
-                    append_transferstruktur(config['OEREB_WORK_PG']['connection_string'], config['OEREB_TEAM_PG']['connection_string'], source_sql, full_tablename)
+                    append_transferstruktur(config['OEREB_WORK_PG']['connection'], config['OEREB_TEAM_PG']['connection'], source_sql, full_tablename)
                     # QS (Objekte zählen)
                     logger.info("Counting..")
-                    source_count = len(oerebLader.helpers.sql_helper.readPSQL(config['OEREB_WORK_PG']['connection_string'], source_sql))
-                    target_count = len(oerebLader.helpers.sql_helper.readPSQL(config['OEREB_TEAM_PG']['connection_string'], source_sql))
+                    source_count = len(config['OEREB_WORK_PG']['connection'].db_read(source_sql))
+                    target_count = len(config['OEREB_TEAM_PG']['connection'].db_read(source_sql))
                     logger.info("Anzahl Features im Quell-Layer: " + unicode(source_count))
                     logger.info("Anzahl Features im Ziel-Layer: " + unicode(target_count))
                     if source_count!=target_count:
@@ -295,14 +294,14 @@ def run_release(dailyMode):
         # WHERE-Clause bilden
         liefereinheiten_joined = "(" + ",".join(liefereinheiten) + ")"
         oereb_sql = "SELECT EBECODE, FILTER_FIELD, FILTER_TYPE FROM GPR WHERE GPRCODE='OEREB'"
-        oereb_ebenen = oerebLader.helpers.sql_helper.readSQL(config['OEREB2_WORK']['connection_string'], oereb_sql)
+        oereb_ebenen = config['OEREB_WORK_PG']['connection'].db_read(oereb_sql)
         for oereb_ebene in oereb_ebenen:
             oereb_table = oereb_ebene[0]
             oereb_liefereinheit_field = oereb_ebene[1]
             oereb_delete_sql = "DELETE FROM %s WHERE %s IN %s" % (oereb_table, oereb_liefereinheit_field, liefereinheiten_joined)
             logger.info("Deleting Transferstruktur neu...")
             logger.info(oereb_delete_sql)
-            oerebLader.helpers.sql_helper.writeSQL(config['OEREB2_TEAM']['connection_string'], oereb_delete_sql)
+            config['OEREB2_TEAM']['connection'].db_write(oereb_delete_sql)
             
             # Truncate/Append für Transferstruktur neu
             source2 = os.path.join(config['OEREB2_WORK']['connection_file'], config['OEREB2_WORK']['username'] + "." + oereb_table)
@@ -386,7 +385,7 @@ def run_release(dailyMode):
                 oerebsta_sql = "UPDATE norm.oerebsta_oestatus SET status=1 where bfsnr=" + bfsnr
                 oerebsta_updated = True
                 try:
-                    oerebLader.helpers.sql_helper.writeSQL(config['NORM_TEAM']['connection_string'], oerebsta_sql)
+                    config['NORM_TEAM']['connection'].db_write(oerebsta_sql)
                 except Exception as ex:
                     logger.error("Fehler beim Aktualisieren von OEREBSTA.")
                     logger.error(unicode(ex))
@@ -399,7 +398,7 @@ def run_release(dailyMode):
         for ticket in tickets:
             # iLader-Task ermitteln (sofern vorhanden)
             sql_iLader_task = "SELECT task_id_geodb FROM ticket where id=" + unicode(ticket[0])
-            taskid = oerebLader.helpers.sql_helper.readSQL(config['OEREB2_WORK']['connection_string'], sql_iLader_task)[0][0]
+            taskid = config['OEREB_WORK_PG']['connection'].db_read(sql_iLader_task)[0][0]
             if taskid is not None:
                 ilader_tasks.add(unicode(taskid))
             else:
@@ -409,7 +408,7 @@ def run_release(dailyMode):
             logger.info("Ticket-Status des Tickets " + unicode(ticket[0]) + " wird auf 4 gesetzt!")
             sql_update_ticket_status = "UPDATE ticket SET status=4 WHERE id=" + unicode(ticket[0])
             try:
-                oerebLader.helpers.sql_helper.writeSQL(config['OEREB2_WORK']['connection_string'], sql_update_ticket_status)
+                config['OEREB_WORK_PG']['connection'].db_write(sql_update_ticket_status)
             except Exception as ex:
                 logger.error("Fehler beim Updaten des Ticket-Status!")
                 logger.error(unicode(ex))
@@ -422,7 +421,7 @@ def run_release(dailyMode):
         
         if oerebsta_updated == True:
             oerebsta_task_sql = "select t.task_objectid from geodb_dd.tb_task t left join geodb_dd.tb_flag_agi f on t.FLAG_OBJECTID=f.FLAG_OBJECTID where f.GPR_BEZEICHNUNG='OEREBSTA' and t.TASK_STATUS=2"
-            oerebsta_tasks = oerebLader.helpers.sql_helper.readSQL(config['GEODB_DD_TEAM']['connection_string'], oerebsta_task_sql)
+            oerebsta_tasks = config['GEODB_DD_TEAM']['connection'].db_read(oerebsta_task_sql)
             logger.warn("OEREBSTA wurde aktualisiert und muss ebenfalls importiert werden:")
             for ot in oerebsta_tasks:
                 logger.warn("iLader run " + unicode(ot[0]))

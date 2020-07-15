@@ -2,7 +2,6 @@
 from __future__ import absolute_import, division, print_function, unicode_literals
 import argparse
 from oerebLader import __version__
-import oerebLader.helpers.sql_helper
 import oerebLader.workflows.workflow
 import oerebLader.release.release
 import oerebLader.refresh_verschnitt.refresh_verschnitt
@@ -24,11 +23,16 @@ def get_open_tickets():
     config = oerebLader.config.get_config()
     # tagesaktuelle Tickets (ART=5) werden hier nicht angezeigt, da sie nicht manuell importiert werden.
     open_tickets_sql = "select ticket.id, ticket.name, ticket.LIEFEREINHEIT, liefereinheit.name from ticket left join liefereinheit on ticket.LIEFEREINHEIT=liefereinheit.ID where ticket.STATUS=1 and ticket.ART IN (1,2,3,4) order by ticket.id"
-    open_tickets = oerebLader.helpers.sql_helper.readSQL(config['OEREB2_WORK']['connection_string'], open_tickets_sql)
-    
+    open_tickets = config['OEREB_WORK_PG']['connection'].db_read(open_tickets_sql)
+  
     ticket_list = []
     
     for open_ticket in open_tickets:
+        print(open_ticket)
+        print(type(open_ticket[0]))
+        print(type(open_ticket[1]))
+        print(type(open_ticket[2]))
+        print(type(open_ticket[3]))
         ticket_string = "%s (%s) -- %s (%s)" % (unicode(open_ticket[0]), open_ticket[1], open_ticket[3], unicode(open_ticket[2]))
         ticket_list.append(ticket_string)
         
@@ -38,7 +42,7 @@ def get_releasable_tickets():
     config = oerebLader.config.get_config()
     # tagesaktuelle Tickets (ART=5) werden hier nicht angezeigt, da sie nicht manuell importiert werden.
     open_tickets_sql = "select ticket.id, ticket.name, ticket.LIEFEREINHEIT, liefereinheit.name from ticket left join liefereinheit on ticket.LIEFEREINHEIT=liefereinheit.ID where ticket.STATUS=3 and ticket.ART IN (1,2,3,4) order by ticket.id"
-    open_tickets = oerebLader.helpers.sql_helper.readSQL(config['OEREB2_WORK']['connection_string'], open_tickets_sql)
+    open_tickets = config['OEREB_WORK_PG']['connection'].db_read(open_tickets_sql)
     
     ticket_list = []
     

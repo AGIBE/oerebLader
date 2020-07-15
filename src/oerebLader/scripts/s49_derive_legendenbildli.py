@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 from __future__ import absolute_import, division, print_function, unicode_literals
-import oerebLader.helpers.sql_helper
 import logging
 import os
 import requests
@@ -19,7 +18,7 @@ logger = logging.getLogger('oerebLaderLogger')
 
 def get_darstc(plr_id, table, config):
     darst_sql = "SELECT distinct darst_c FROM " + table + " WHERE RVS_ID='" + plr_id + "'"
-    results = oerebLader.helpers.sql_helper.readSQL(config['GEODB_WORK']['connection_string'], darst_sql)
+    results = config['GEODB_WORK']['connection'].db_read(darst_sql)
 
     darst_c = ""
     if len(results) != 1:
@@ -32,7 +31,7 @@ def get_darstc(plr_id, table, config):
 def get_public_law_restriction_per_schema(liefereinheit, config, schema):
 
     plr_sql = "SELECT id, information, topic, sub_theme, published_from, view_service_id, office_id FROM " + schema + ".public_law_restriction where liefereinheit=" + unicode(liefereinheit)
-    return oerebLader.helpers.sql_helper.readPSQL(config['OEREB_WORK_PG']['connection_string'], plr_sql)
+    return config['OEREB_WORK_PG']['connection'].db_read(plr_sql)
 
 def get_public_law_restrictions(liefereinheit, config, nupla_layers, schemas):
 
@@ -182,7 +181,7 @@ def run(config):
         # Update TRANSFERSTRUKTUR ORACLE (hier muss keine Aggregation erfolgen)
         logger.info("Transferstruktur Oracle wird aktualisiert (Tabelle EIGENTUMSBESCHRAENKUNG)")
         plr_sql = "UPDATE EIGENTUMSBESCHRAENKUNG SET EIB_LEGENDESYMBOL_DE='" + plr['symbol_url'] + "', EIB_LEGENDESYMBOL_FR='" + plr['symbol_url'] + "' WHERE EIB_OID='" + plr["id"] + "'"
-        oerebLader.helpers.sql_helper.writeSQL(config['OEREB2_WORK']['connection_string'], plr_sql)
+        config['OEREB2_WORK']['connection'].db_write(plr_sql)
 
     # legend_entry abfüllen (inkl. TypeCode-Aggregation)
     logger.info("Transferstruktur PiostGIS wird aktualisiert.")
@@ -204,11 +203,11 @@ def run(config):
             legend_entry_insert_sql = "INSERT INTO %s.legend_entry (id, symbol, symbol_url, legend_text, type_code, type_code_list, topic, sub_theme, view_service_id, liefereinheit) VALUES ('%s', '%s', '%s', %s, '%s', '%s', '%s', %s, '%s', %s)" % (schema, legend_entry_id, symbol, symbol_url, Json(legend_text), type_code, type_code_list, topic, Json(sub_theme), view_service_id, liefereinheit)
         else:
             legend_entry_insert_sql = "INSERT INTO %s.legend_entry (id, symbol, symbol_url, legend_text, type_code, type_code_list, topic, view_service_id, liefereinheit) VALUES ('%s', '%s', '%s', %s, '%s', '%s', '%s', '%s', %s)" % (schema, legend_entry_id, symbol, symbol_url, Json(legend_text), type_code, type_code_list, topic, view_service_id, liefereinheit)
-        oerebLader.helpers.sql_helper.writePSQL(config['OEREB_WORK_PG']['connection_string'], legend_entry_insert_sql)
+        config['OEREB_WORK_PG']['connection'].db_write(legend_entry_insert_sql)
         plr_ids = legend_entry['id'].split(";")
         for plr_id in plr_ids:
             public_law_restriction_update_sql = "UPDATE %s.public_law_restriction SET type_code='%s', type_code_list='%s' WHERE id='%s'" % (schema, type_code, type_code_list, plr_id)
-            oerebLader.helpers.sql_helper.writePSQL(config['OEREB_WORK_PG']['connection_string'], public_law_restriction_update_sql)
+            config['OEREB_WORK_PG']['connection'].db_write(public_law_restriction_update_sql)
         
     logger.info("Script " +  os.path.basename(__file__) + " ist beendet.")
     

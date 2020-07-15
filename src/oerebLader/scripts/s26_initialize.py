@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 from __future__ import absolute_import, division, print_function, unicode_literals
 import AGILib.connection
-import oerebLader.helpers.sql_helper
 import oerebLader.logging
 import oerebLader.helpers.excel_helper
 import logging
@@ -31,7 +30,7 @@ def run(config, ticketnr):
     # Ticket-Infos holen
     logger.info("Ticket-Information holen und validieren.")
     ticket_name_sql = "SELECT liefereinheit, name, status FROM ticket WHERE id=" + unicode(ticketnr)
-    ticket_result = oerebLader.helpers.sql_helper.readSQL(config['OEREB2_WORK']['connection_string'], ticket_name_sql)
+    ticket_result = config['OEREB_WORK_PG']['connection'].db_read(ticket_name_sql)
     if len(ticket_result) == 1:
         ticket_status = ticket_result[0][2]
         if ticket_status == 1:
@@ -52,14 +51,14 @@ def run(config, ticketnr):
     # Liefereinheiten-Infos holen
     logger.info("Liefereinheiten-Informationen werden geholt.")
     liefereinheit_sql = "SELECT name, bfsnr, gpr_source, ts_source, md5, workflow FROM liefereinheit WHERE id=" + unicode(config['LIEFEREINHEIT']['id'])
-    liefereinheit_result = oerebLader.helpers.sql_helper.readSQL(config['OEREB2_WORK']['connection_string'], liefereinheit_sql)
+    liefereinheit_result = config['OEREB_WORK_PG']['connection'].db_read(liefereinheit_sql)
     
     if len(liefereinheit_result) == 1:
         config['LIEFEREINHEIT']['name'] = liefereinheit_result[0][0]
         config['LIEFEREINHEIT']['bfsnr'] = liefereinheit_result[0][1]
         if config['LIEFEREINHEIT']['bfsnr'] > 0:
             gemeinde_name_sql = "SELECT bfs_name FROM bfs WHERE bfs_nr=" + unicode(config['LIEFEREINHEIT']['bfsnr'])
-            gemeinde_name_result = oerebLader.helpers.sql_helper.readSQL(config['OEREB2_WORK']['connection_string'],gemeinde_name_sql)
+            gemeinde_name_result = config['OEREB_WORK_PG']['connection'].db_read(gemeinde_name_sql)
             config['LIEFEREINHEIT']['gemeinde_name'] = gemeinde_name_result[0][0]
         else:
             config['LIEFEREINHEIT']['gemeinde_name'] = None
@@ -75,7 +74,7 @@ def run(config, ticketnr):
     # GPRCODES holen
     logger.info("GPR-Infos werden geholt.")
     gpr_sql = "SELECT gprcode FROM workflow_gpr WHERE workflow='" + config['LIEFEREINHEIT']['workflow'] + "'"
-    gpr_result = oerebLader.helpers.sql_helper.readSQL(config['OEREB2_WORK']['connection_string'], gpr_sql)
+    gpr_result = config['OEREB_WORK_PG']['connection'].db_read(gpr_sql)
     gpr_codes = []
     if len(gpr_result) > 0:
         for gpr in gpr_result:
@@ -89,7 +88,7 @@ def run(config, ticketnr):
     # POSTGIS-SCHEMAS holen
     logger.info("PostGIS-Schemas werden geholt.")
     schema_sql = "SELECT schema FROM workflow_schema WHERE workflow='" + config['LIEFEREINHEIT']['workflow'] + "'"
-    schema_result = oerebLader.helpers.sql_helper.readSQL(config['OEREB2_WORK']['connection_string'], schema_sql)
+    schema_result = config['OEREB_WORK_PG']['connection'].db_read(schema_sql)
     schemas = []
     if len(schema_result) > 0:
         for schema in schema_result:

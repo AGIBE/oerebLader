@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 from __future__ import absolute_import, division, print_function, unicode_literals
 import oerebLader.logging
-import oerebLader.helpers.sql_helper
 import oerebLader.helpers.excel_helper
 import logging
 import os
@@ -15,26 +14,26 @@ def run_update_office(target):
     config = oerebLader.config.get_config()
     logger = oerebLader.logging.init_logging("update_office", config)
     if target == 'work':
-        pg_connectionstring = config['OEREB_WORK_PG']['connection_string']
-        ora_connectionstring = config['OEREB2_WORK']['connection_string']
+        pg_connection = config['OEREB_WORK_PG']['connection']
+        ora_connection = config['OEREB2_WORK']['connection']
     elif target == 'team':
-        pg_connectionstring = config['OEREB_TEAM_PG']['connection_string']
-        ora_connectionstring = config['OEREB2_TEAM']['connection_string']
+        pg_connection = config['OEREB_TEAM_PG']['connection']
+        ora_connection = config['OEREB2_TEAM']['connection']
     elif target == 'vek2':
-        pg_connectionstring = config['OEREB_VEK2_PG']['connection_string']
-        ora_connectionstring = config['OEREB2_VEK2']['connection_string']
+        pg_connection = config['OEREB_VEK2_PG']['connection']
+        ora_connection = config['OEREB2_VEK2']['connection']
     elif target == 'vek1':
-        pg_connectionstring = config['OEREB_VEK1_PG']['connection_string']
-        ora_connectionstring = config['OEREB2_VEK1']['connection_string']
+        pg_connection = config['OEREB_VEK1_PG']['connection']
+        ora_connection = config['OEREB2_VEK1']['connection']
     else:
         logger.error("Kein gültiger Instanzname angegeben")
         sys.exit()
 
     logger.info("Alle Office- und AMT-Tabellen in %s werden aktualisiert." % (target))
     bundesthemen = ",".join(config['GENERAL']['bundesthemen'])
-    liefereinheiten_sql = "SELECT liefereinheit.id , LISTAGG(to_char(workflow_schema.SCHEMA), ',') WITHIN GROUP (ORDER BY workflow_schema.SCHEMA) schemas FROM liefereinheit LEFT JOIN workflow_schema ON liefereinheit.WORKFLOW = workflow_schema.WORKFLOW where liefereinheit.id not in (%s,9900,9910,9920) GROUP BY liefereinheit.id" % (bundesthemen)
+    liefereinheiten_sql = "SELECT liefereinheit.id , string_agg(workflow_schema.SCHEMA, ',' ORDER BY workflow_schema.SCHEMA) schemas FROM liefereinheit LEFT JOIN workflow_schema ON liefereinheit.WORKFLOW = workflow_schema.WORKFLOW where liefereinheit.id not in (%s,9900,9910,9920) GROUP BY liefereinheit.id" % (bundesthemen)
     logger.info(liefereinheiten_sql)
-    liefereinheiten_result = oerebLader.helpers.sql_helper.readSQL(config['OEREB2_WORK']['connection_string'], liefereinheiten_sql)
+    liefereinheiten_result = config['OEREB_WORK_PG']['connection'].db_read(liefereinheiten_sql)
     for row in liefereinheiten_result:
         liefereinheit = row[0]
         logger.info("Verarbeite Liefereinheit %s..." % (unicode(liefereinheit)))
@@ -57,7 +56,8 @@ def run_update_office(target):
             flaeche_sql = "UPDATE FLAECHE set AMT_OID=:amt_oid where fla_liefereinheit=:liefereinheit"
             linie_sql = "UPDATE LINIE set AMT_OID=:amt_oid where lin_liefereinheit=:liefereinheit"
             punkt_sql = "UPDATE PUNKT set AMT_OID=:amt_oid where pun_liefereinheit=:liefereinheit"
-            with cx_Oracle.connect(ora_connectionstring) as conn_ora:
+            # Alles in ein und derselben Transaktion, daher nicht mit AGILib
+            with cx_Oracle.connect(ora_connection.username, ora_connection.password, ora_connection.db) as conn_ora:
                 cur_ora = conn_ora.cursor()
                 cur_ora.execute(amt_delete_sql, (liefereinheit,))
                 cur_ora.execute(amt_insert_sql, amt_sql_insert_values)
@@ -82,7 +82,7 @@ def run_update_office(target):
                 reference_definition_sql = "update " + schema + ".reference_definition set office_id=%s where liefereinheit=%s"
                 data_integration_sql = "update " + schema + ".data_integration set office_id=%s where liefereinheit=%s"
 
-                with psycopg2.connect(pg_connectionstring) as conn:
+                with psycopg2.connect(pg_connection.postgres_connection_string) as conn:
                     cur = conn.cursor()
                     cur.execute(office_delete_sql, (liefereinheit,))
                     cur.execute(office_insert_sql, office_sql_insert_values)
@@ -91,4 +91,5 @@ def run_update_office(target):
                     cur.execute(document_sql, office_sql_update_values)
                     cur.execute(reference_definition_sql, office_sql_update_values)
                     cur.execute(data_integration_sql, office_sql_update_values)
+                    conn.commit()
         

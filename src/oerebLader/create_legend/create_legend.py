@@ -6,10 +6,9 @@ import sys
 import urlparse
 import oerebLader.logging
 import oerebLader.config
-import oerebLader.helpers.sql_helper
 import oerebLader.helpers.legend_helper
 
-def get_liefereinheiten(config, bfsnr, connection_string):
+def get_liefereinheiten(config, bfsnr, connection):
     
     liefereinheiten_list = []
     
@@ -21,7 +20,7 @@ def get_liefereinheiten(config, bfsnr, connection_string):
         liefereinheit = unicode(bfsnr) + "01"
         liefereinheiten_sql = "select distinct eib_liefereinheit from EIGENTUMSBESCHRAENKUNG where eib_liefereinheit=" + liefereinheit
         
-    liefereinheiten_result = oerebLader.helpers.sql_helper.readSQL(connection_string, liefereinheiten_sql)
+    liefereinheiten_result = connection.db_read(liefereinheiten_sql)
     
     for row in liefereinheiten_result:
         liefereinheiten_list.append(unicode(row[0]))
@@ -32,8 +31,7 @@ def get_bfsnr(config, liefereinheit):
     bfsnr_sql = "select bfsnr from liefereinheit where id=" + unicode(liefereinheit)
     
     # Sucht immer in WORK, da die LIEFEREINHEIT-Tabelle nur dort existiert.
-    bfsnr_result = oerebLader.helpers.sql_helper.readSQL(config['OEREB2_WORK']['connection_string'], bfsnr_sql)
-    print(liefereinheit)
+    bfsnr_result = config['OEREB_WORK_PG']['connection'].db_read(bfsnr_sql)
     return unicode(bfsnr_result[0][0])
 
 def get_gemname(config, bfsnr):
@@ -41,7 +39,7 @@ def get_gemname(config, bfsnr):
     gemname_sql = "select bfs_name from bfs where bfs_nr=" + bfsnr
     
     # Sucht immer in VEK1, da die BFS-Tabelle nur dort und nicht in WORK nachgeführt wird.
-    gemname_result = oerebLader.helpers.sql_helper.readSQL(config['OEREB2_VEK1']['connection_string'], gemname_sql)
+    gemname_result = config['OEREB2_VEK1']['connection'].db_read(gemname_sql)
     
     return gemname_result[0][0]
 
@@ -54,11 +52,11 @@ def extract_ticket_from_legend_url(legend_url):
     return ticket
     
 
-def get_legend_path(config, liefereinheit, connection_string):
+def get_legend_path(config, liefereinheit, connection):
     
     legend_path_sql = "select distinct EIB_LEGENDESYMBOL_DE from eigentumsbeschraenkung where eib_liefereinheit=" + liefereinheit
     
-    legend_path_sql_result = oerebLader.helpers.sql_helper.readSQL(connection_string, legend_path_sql)
+    legend_path_sql_result = connection.db_read(legend_path_sql)
     
     legend_path = ""
     tickets = []
@@ -82,13 +80,12 @@ def run_create_legend(input_bfsnr, mode):
     logger = oerebLader.logging.init_logging("create_legend", config)
 
     # Je nach Modus wird in anderer DB nach den Bildern gesucht.    
-    connection_string = ""
     if mode == 'oereb':
-        connection_string = config['OEREB2_VEK1']['connection_string']
+        connection = config['OEREB2_VEK1']['connection']
     elif mode == 'oerebpruef':
-        connection_string = config['OEREB2_WORK']['connection_string']
+        connection = config['OEREB2_WORK']['connection']
     
-    liefereinheiten = get_liefereinheiten(config, input_bfsnr, connection_string)
+    liefereinheiten = get_liefereinheiten(config, input_bfsnr, connection)
     
     if len(liefereinheiten) == 0:
         logger.error("Für die gewünschte BFSNR " + unicode(input_bfsnr) + " wurden in VEK1 keine Daten gefunden.")
@@ -98,11 +95,11 @@ def run_create_legend(input_bfsnr, mode):
     for liefereinheit in liefereinheiten:
         bfsnr = get_bfsnr(config, liefereinheit)
         gemname = get_gemname(config, bfsnr)
-        legend_path = get_legend_path(config, liefereinheit, connection_string)
+        legend_path = get_legend_path(config, liefereinheit, connection)
         if not os.path.exists(legend_path):
             os.makedirs(legend_path)
         logger.info("Erstelle Legenden für Liefereinheit " + liefereinheit + "(" + gemname + "/" + bfsnr + ")")
-        oerebLader.helpers.legend_helper.create_legends(legend_path, gemname, bfsnr, liefereinheit, connection_string, config['LEGENDS']['legend_template_dir'])
+        oerebLader.helpers.legend_helper.create_legends(legend_path, gemname, bfsnr, liefereinheit, connection, config['LEGENDS']['legend_template_dir'])
         logger.info("UNC-Pfad für Legenden: " + legend_path)
     
     logger.info("Legenden werden erstellt.")

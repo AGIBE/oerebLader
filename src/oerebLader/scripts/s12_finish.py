@@ -4,7 +4,6 @@ import os
 import logging
 import sys
 import oerebLader.check_bundesthemen.md5
-import oerebLader.helpers.sql_helper
 
 logger = logging.getLogger('oerebLaderLogger')
 
@@ -19,7 +18,7 @@ def run(config):
     logger.info("Ticket-Status wird auf 2 gesetzt!")
     sql_update_ticket_status = "UPDATE ticket SET status=2 WHERE id=" + unicode(config['ticketnr'])
     try:
-        oerebLader.helpers.sql_helper.writeSQL(config['OEREB2_WORK']['connection_string'], sql_update_ticket_status)
+        config['OEREB_WORK_PG']['connection'].db_write(sql_update_ticket_status)
     except Exception as ex:
         logger.error("Fehler beim Updaten des Ticket-Status!")
         logger.error(unicode(ex))
@@ -32,7 +31,7 @@ def run(config):
         logger.info("MD5-Wert wird auf " + md5_new  + " aktualisiert.")
         sql_update_md5 = "UPDATE liefereinheit SET md5='" + md5_new + "' WHERE ID=" + unicode(config['LIEFEREINHEIT']['id'])
         try:
-            oerebLader.helpers.sql_helper.writeSQL(config['OEREB2_WORK']['connection_string'], sql_update_md5)
+            config['OEREB_WORK_PG']['connection'].db_write(sql_update_md5)
         except Exception as ex:
             logger.error("Fehler beim Updaten des Ticket-Status!")
             logger.error(unicode(ex))

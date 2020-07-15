@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 from __future__ import absolute_import, division, print_function, unicode_literals
 import oerebLader.helpers.fme_helper
-import oerebLader.helpers.sql_helper
 import sys
 import logging
 import os
@@ -81,9 +80,9 @@ def run(config):
         logger.info("Tabelle " + tablename)
         darst_c_sql = "update " + tablename + " set darst_c = 'F' || substr(darst_c, 2) where darst_c like 'S%' and bfsnr=" + unicode(bfsnr)
         logger.info("Update Oracle-WORK...")
-        oerebLader.helpers.sql_helper.writeSQL(config['GEODB_WORK']['connection_string'], darst_c_sql)
+        config['GEODB_WORK']['connection'].db_read(darst_c_sql)
         logger.info("Update PostGIS-WORK...")
-        oerebLader.helpers.sql_helper.writePSQL(config['GEODB_WORK_PG']['connection_string'], darst_c_sql)
+        config['GEODB_WORK_PG']['connection'].db_read(darst_c_sql)
         
     logger.info("Script " +  os.path.basename(__file__) + " ist beendet.")
     

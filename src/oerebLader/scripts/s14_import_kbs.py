@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 from __future__ import absolute_import, division, print_function, unicode_literals
-import oerebLader.helpers.sql_helper
+import oerebLader.helpers.fme_helper
 import logging
 import os
 import arcpy
@@ -14,7 +14,7 @@ def run(config):
     gprcode = 'BALISKBS'
     
     table_sql = "select ebecode from gpr where GPRCODE='" + gprcode + "'"
-    ebenen = oerebLader.helpers.sql_helper.readSQL(config['OEREB2_WORK']['connection_string'], table_sql)
+    ebenen = config['OEREB2_WORK']['connection'].db_read(table_sql)
     ebenen_fme = []
     for ebene in ebenen:
         logger.info("Ebene " + ebene[0])
@@ -87,7 +87,7 @@ def run(config):
     for pg_ebene in ebenen_fme:
         grant_sql = "GRANT SELECT ON TABLE " + pg_ebene + " TO geodb_viewer"
         logger.info("Setze PostGIS-Berechtigung für " + pg_ebene)
-        oerebLader.helpers.sql_helper.writePSQL(config['GEODB_WORK_PG']['connection_string'], grant_sql) 
+        config['GEODB_WORK_PG']['connection'].db_write(grant_sql) 
 
             
     logger.info("Script " +  os.path.basename(__file__) + " ist beendet.")

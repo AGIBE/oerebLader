@@ -11,18 +11,6 @@ import oerebLader.logging
 import oerebLader.config
 import oerebLader.helpers.fme_helper
 
-def create_connection_files(username, password, database):
-
-    temp_directory = tempfile.mkdtemp()
-    sde_filename = "vek1.sde"
-    connection_file = os.path.join(temp_directory, sde_filename)
-    arcpy.CreateDatabaseConnection_management(
-        temp_directory, sde_filename, "ORACLE", database, "DATABASE_AUTH",
-        username, password
-    )
-    return connection_file
-
-
 def run_update_municipality(source, target):
 
     config = oerebLader.config.get_config()
@@ -45,10 +33,7 @@ def run_update_municipality(source, target):
     target_keyname = "OEREB_%s_PG" % (target.upper())
     logger.info("Ziel der Aktualisierung: %s" % target)
 
-    source_connectionfile = create_connection_files(
-        config['GEO_VEK1']['username'], config['GEO_VEK1']['password'],
-        config['GEO_VEK1']['database']
-    )
+    source_connectionfile = config['GEO_VEK1']['connection'].create_sde_connection()
     logger.info("VEK1-Connectionfile angelegt in %s" % source_connectionfile)
 
     logo_base_path = config['GENERAL']['files_be_ch_baseurl'] + "/logos/"
@@ -78,5 +63,4 @@ def run_update_municipality(source, target):
         sys.exit()
 
     logger.info("Connection-File wird gelöscht.")
-    if os.path.exists(source_connectionfile):
-        os.remove(source_connectionfile)
+    config['GEO_VEK1']['connection'].delete_all_sde_connections()

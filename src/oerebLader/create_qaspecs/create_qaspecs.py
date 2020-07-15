@@ -6,11 +6,10 @@ import codecs
 import oerebLader.logging
 import logging
 import oerebLader.config
-import oerebLader.helpers.sql_helper
 
 def get_liefereinheiten(config):
     liefereinheiten_sql = "select id from liefereinheit order by id"
-    liefereinheiten_result = oerebLader.helpers.sql_helper.readSQL(config['OEREB2_WORK']['connection_string'], liefereinheiten_sql)
+    liefereinheiten_result = config['OEREB_WORK_PG']['connection'].db_read(liefereinheiten_sql)
     liefereinheiten = []
     for le in liefereinheiten_result:
         liefereinheiten.append(le[0])

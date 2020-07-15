@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 from __future__ import absolute_import, division, print_function, unicode_literals
 import oerebLader.config
-import oerebLader.helpers.sql_helper
 import oerebLader.workflows.w2_kbs
 import oerebLader.workflows.w1_gsk
 import oerebLader.workflows.w3_tba
@@ -19,8 +18,6 @@ import oerebLader.workflows.w14_ggo
 import oerebLader.workflows.w15_gbo
 import oerebLader.workflows.w16_nsg
 import sys
-
-#TODO: Import NPLKSTRA mit THE_ID=20 umsetzen
 
 def run_workflow(ticketnr):
     config = oerebLader.config.get_config()
@@ -44,7 +41,7 @@ def is_valid_ticket(ticketnr, config):
     valid_ticket = False
 
     valid_ticket_sql = "SELECT id, status FROM ticket WHERE id=" + unicode(ticketnr)
-    results = oerebLader.helpers.sql_helper.readSQL(config['OEREB2_WORK']['connection_string'], valid_ticket_sql)
+    results = config['OEREB_WORK_PG']['connection'].db_read(valid_ticket_sql)
 
     if len(results) == 1:
         status = results[0][1]
@@ -56,7 +53,7 @@ def is_valid_ticket(ticketnr, config):
 def get_workflow_for_ticket(ticketnr, config):
     workflow_ticket_sql = "select ticket.id, liefereinheit.WORKFLOW from ticket left join liefereinheit on ticket.LIEFEREINHEIT=liefereinheit.ID where ticket.ID=" + unicode(ticketnr)
 
-    results = oerebLader.helpers.sql_helper.readSQL(config['OEREB2_WORK']['connection_string'], workflow_ticket_sql)
+    results = config['OEREB_WORK_PG']['connection'].db_read(workflow_ticket_sql)
 
     workflow = ""
 
