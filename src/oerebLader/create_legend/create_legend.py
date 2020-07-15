@@ -6,7 +6,7 @@ import sys
 import urlparse
 import oerebLader.logging
 import oerebLader.config
-import oerebLader.helpers.legend_helper
+import oerebLader.create_legend.legend
 
 def get_liefereinheiten(config, bfsnr, connection):
     
@@ -99,7 +99,7 @@ def run_create_legend(input_bfsnr, mode):
         if not os.path.exists(legend_path):
             os.makedirs(legend_path)
         logger.info("Erstelle Legenden für Liefereinheit " + liefereinheit + "(" + gemname + "/" + bfsnr + ")")
-        oerebLader.helpers.legend_helper.create_legends(legend_path, gemname, bfsnr, liefereinheit, connection, config['LEGENDS']['legend_template_dir'])
+        oerebLader.create_legend.legend.create_legends(legend_path, gemname, bfsnr, liefereinheit, connection, config['LEGENDS']['legend_template_dir'])
         logger.info("UNC-Pfad für Legenden: " + legend_path)
     
     logger.info("Legenden werden erstellt.")

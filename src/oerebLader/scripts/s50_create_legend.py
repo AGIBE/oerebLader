@@ -2,7 +2,7 @@
 from __future__ import absolute_import, division, print_function, unicode_literals
 import os
 import logging
-import oerebLader.helpers.legend_helper
+import oerebLader.create_legend.legend
 
 logger = logging.getLogger('oerebLaderLogger')
 
@@ -19,7 +19,7 @@ def run(config):
         os.makedirs(legend_dir)
     logger.info("Die Legenden werden abgelegt in: " + legend_dir)
         
-    oerebLader.helpers.legend_helper.create_legends(legend_dir, gemname, bfsnr, config['LIEFEREINHEIT']['id'], config['OEREB2_WORK']['connection'], config['LEGENDS']['legend_template_dir'])
+    oerebLader.create_legend.legend.create_legends(legend_dir, gemname, bfsnr, config['LIEFEREINHEIT']['id'], config['OEREB2_WORK']['connection'], config['LEGENDS']['legend_template_dir'])
     logger.info("NPL-Legenden (de/fr) und Komplette Gemeinde-Legenden (de/fr) wurden erstellt")
      
     logger.info("Script " +  os.path.basename(__file__) + " ist beendet.")
