@@ -5,7 +5,7 @@ import codecs
 import datetime
 import mappyfile
 import oerebLader.logging
-import oerebLader.helpers.mapfile_helper
+import oerebLader.mapfile
 
 def run_build_mapfile_kantonr():
     mode = "oerebpruef_kanton"
@@ -35,18 +35,18 @@ def run_build_mapfile_kantonr():
     # Sprachunabhängige Parameter manipulieren
     
     # Stufe MAP
-    mf_content = oerebLader.helpers.mapfile_helper.fill_map_metadata(mf_content, mode, config)
+    mf_content = oerebLader.mapfile.fill_map_metadata(mf_content, mode, config)
     
     # Stufe LAYER
-    mf_content = oerebLader.helpers.mapfile_helper.fill_layer_metadata(mf_content, mode, config)
+    mf_content = oerebLader.mapfile.fill_layer_metadata(mf_content, mode, config)
         
     # Sprachabhängige Parameter manipulieren
 
     # Stufe MAP
-    mf_content = oerebLader.helpers.mapfile_helper.fill_map_language_metadata(mf_content, "de", mode, config)
+    mf_content = oerebLader.mapfile.fill_map_language_metadata(mf_content, "de", mode, config)
     
     # Stufe LAYER
-    mf_content = oerebLader.helpers.mapfile_helper.fill_layer_language_metadata(mf_content, "de", config)
+    mf_content = oerebLader.mapfile.fill_layer_language_metadata(mf_content, "de", config)
     
     logger.info("Mapfile des Kantons-Prüfdienst wird geschrieben.")
     with codecs.open(kanton_mapfile_path, "w", encoding="utf-8") as mapfile:

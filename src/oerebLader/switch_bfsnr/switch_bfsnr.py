@@ -6,7 +6,7 @@ import datetime
 import logging
 import mappyfile
 import oerebLader.logging
-import oerebLader.helpers.mapfile_helper
+import oerebLader.mapfile
 
 def run_switch_bfsnr(bfsnr):
     mode = "oerebpruef_gemeinde"
@@ -51,18 +51,18 @@ def run_switch_bfsnr(bfsnr):
     # Sprachunabhängige Parameter manipulieren
     
     # Stufe MAP
-    mf_content = oerebLader.helpers.mapfile_helper.fill_map_metadata(mf_content, mode, config)
+    mf_content = oerebLader.mapfile.fill_map_metadata(mf_content, mode, config)
     
     # Stufe LAYER
-    mf_content = oerebLader.helpers.mapfile_helper.fill_layer_metadata(mf_content, mode, config)
+    mf_content = oerebLader.mapfile.fill_layer_metadata(mf_content, mode, config)
         
     # Sprachabhängige Parameter manipulieren
 
     # Stufe MAP
-    mf_content = oerebLader.helpers.mapfile_helper.fill_map_language_metadata(mf_content, "de", mode, config)
+    mf_content = oerebLader.mapfile.fill_map_language_metadata(mf_content, "de", mode, config)
     
     # Stufe LAYER
-    mf_content = oerebLader.helpers.mapfile_helper.fill_layer_language_metadata(mf_content, "de", config)
+    mf_content = oerebLader.mapfile.fill_layer_language_metadata(mf_content, "de", config)
     
     # Gemeindespezifische Mapfiles includen
     # Damit der Include am Beginn, d.h. vor den kantonalen Symbolen

@@ -8,7 +8,7 @@ import shutil
 import tempfile
 import git
 import oerebLader.logging
-import oerebLader.helpers.mapfile_helper
+import oerebLader.mapfile
 
 def get_gemeinden_directories(directory):
     '''
@@ -211,22 +211,22 @@ def run_build_map(mode, batch_dir):
     # Sprachunabhängige Parameter manipulieren
     
     # Stufe MAP
-    mapfile_content_de = oerebLader.helpers.mapfile_helper.fill_map_metadata(mapfile_content_de, mode, config)
-    mapfile_content_fr = oerebLader.helpers.mapfile_helper.fill_map_metadata(mapfile_content_fr, mode, config)
+    mapfile_content_de = oerebLader.mapfile.fill_map_metadata(mapfile_content_de, mode, config)
+    mapfile_content_fr = oerebLader.mapfile.fill_map_metadata(mapfile_content_fr, mode, config)
     
     # Stufe LAYER
-    mapfile_content_de = oerebLader.helpers.mapfile_helper.fill_layer_metadata(mapfile_content_de, mode, config)
-    mapfile_content_fr = oerebLader.helpers.mapfile_helper.fill_layer_metadata(mapfile_content_fr, mode, config)
+    mapfile_content_de = oerebLader.mapfile.fill_layer_metadata(mapfile_content_de, mode, config)
+    mapfile_content_fr = oerebLader.mapfile.fill_layer_metadata(mapfile_content_fr, mode, config)
         
     # Sprachabhängige Parameter manipulieren
 
     # Stufe MAP
-    mapfile_content_de = oerebLader.helpers.mapfile_helper.fill_map_language_metadata(mapfile_content_de, "de", mode, config)
-    mapfile_content_fr = oerebLader.helpers.mapfile_helper.fill_map_language_metadata(mapfile_content_fr, "fr", mode, config)
+    mapfile_content_de = oerebLader.mapfile.fill_map_language_metadata(mapfile_content_de, "de", mode, config)
+    mapfile_content_fr = oerebLader.mapfile.fill_map_language_metadata(mapfile_content_fr, "fr", mode, config)
     
     # Stufe LAYER
-    mapfile_content_de = oerebLader.helpers.mapfile_helper.fill_layer_language_metadata(mapfile_content_de, "de", config)
-    mapfile_content_fr = oerebLader.helpers.mapfile_helper.fill_layer_language_metadata(mapfile_content_fr, "fr", config)
+    mapfile_content_de = oerebLader.mapfile.fill_layer_language_metadata(mapfile_content_de, "de", config)
+    mapfile_content_fr = oerebLader.mapfile.fill_layer_language_metadata(mapfile_content_fr, "fr", config)
         
     logger.info("Deutsches Mapfile wird geschrieben: " + output_mapfile_de_path)
     with codecs.open(output_mapfile_de_path, "w", encoding="utf-8") as mapfile:
