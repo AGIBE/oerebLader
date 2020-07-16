@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 from __future__ import absolute_import, division, print_function, unicode_literals
-import AGILib
+import AGILib.fme
 import sys
 import logging
 import os
@@ -64,7 +64,7 @@ def run(config):
         'AMT_OID': str(config['LIEFEREINHEIT']['amt_oid'])
     }
 
-    fmerunner = AGILib.FMERunner(fme_workbench=fme_script, fme_workbench_parameters=parameters, fme_logfile=fme_logfile, fme_logfile_archive=True)
+    fmerunner = AGILib.fme.FMERunner(fme_workbench=fme_script, fme_workbench_parameters=parameters, fme_logfile=fme_logfile, fme_logfile_archive=True)
     fmerunner.run()
     if fmerunner.returncode != 0:
         logger.error("FME-Script %s abgebrochen." % (fme_script))
@@ -78,9 +78,9 @@ def run(config):
         logger.info("Tabelle " + tablename)
         darst_c_sql = "update " + tablename + " set darst_c = 'F' || substr(darst_c, 2) where darst_c like 'S%' and bfsnr=" + unicode(bfsnr)
         logger.info("Update Oracle-WORK...")
-        config['GEODB_WORK']['connection'].db_read(darst_c_sql)
+        config['GEODB_WORK']['connection'].db_write(darst_c_sql)
         logger.info("Update PostGIS-WORK...")
-        config['GEODB_WORK_PG']['connection'].db_read(darst_c_sql)
+        config['GEODB_WORK_PG']['connection'].db_write(darst_c_sql)
         
     logger.info("Script " +  os.path.basename(__file__) + " ist beendet.")
     
