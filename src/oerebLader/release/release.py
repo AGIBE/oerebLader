@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from __future__ import absolute_import, division, print_function, unicode_literals
 import AGILib.connection
-import AGILib.fme
+import AGILib
 import oerebLader.config
 import oerebLader.logging
 import os
@@ -365,7 +365,7 @@ def run_release(dailyMode):
             'ART_CLAUSE': str(valid_art)
         }
 
-        fmerunner = AGILib.fme.FMERunner(fme_workbench=fme_script, fme_workbench_parameters=parameters, fme_logfile=fme_logfile, fme_logfile_archive=True)
+        fmerunner = AGILib.FMERunner(fme_workbench=fme_script, fme_workbench_parameters=parameters, fme_logfile=fme_logfile, fme_logfile_archive=True)
         fmerunner.run()
         if fmerunner.returncode != 0:
             logger.error("FME-Script %s abgebrochen." % (fme_script))

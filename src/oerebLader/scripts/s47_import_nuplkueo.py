@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 from __future__ import absolute_import, division, print_function, unicode_literals
-import AGILib.fme
+import AGILib
 import sys
 import logging
 import os
@@ -62,7 +62,7 @@ def run(config):
         'EXCEL_AMT': str(config['GENERAL']['amt_tabelle'])
     }
 
-    fmerunner = AGILib.fme.FMERunner(fme_workbench=fme_script, fme_workbench_parameters=parameters, fme_logfile=fme_logfile, fme_logfile_archive=True)
+    fmerunner = AGILib.FMERunner(fme_workbench=fme_script, fme_workbench_parameters=parameters, fme_logfile=fme_logfile, fme_logfile_archive=True)
     fmerunner.run()
     if fmerunner.returncode != 0:
         logger.error("FME-Script %s abgebrochen." % (fme_script))

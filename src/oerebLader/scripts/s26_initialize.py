@@ -58,7 +58,7 @@ def run(config, ticketnr):
         config['LIEFEREINHEIT']['bfsnr'] = liefereinheit_result[0][1]
         if config['LIEFEREINHEIT']['bfsnr'] > 0:
             gemeinde_name_sql = "SELECT bfs_name FROM bfs WHERE bfs_nr=" + unicode(config['LIEFEREINHEIT']['bfsnr'])
-            gemeinde_name_result = config['OEREB_WORK_PG']['connection'].db_read(gemeinde_name_sql)
+            gemeinde_name_result = config['OEREB2_WORK']['connection'].db_read(gemeinde_name_sql)
             config['LIEFEREINHEIT']['gemeinde_name'] = gemeinde_name_result[0][0]
         else:
             config['LIEFEREINHEIT']['gemeinde_name'] = None

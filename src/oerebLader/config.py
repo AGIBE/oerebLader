@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 from __future__ import absolute_import, division, print_function, unicode_literals
-import AGILib.configuration
-import AGILib.connection
+import AGILib
 import os
 
 def get_general_configfile_from_envvar():
@@ -19,15 +18,15 @@ def get_general_configfile_from_envvar():
 
 def create_connection(config, key):
     if key.endswith("_PG"):
-        connection = AGILib.connection.Connection(db_type="postgres", db=config[key]['database'], username=config[key]['username'], password=config[key]['password'], host=config[key]['host'], port=config[key]['port'])
+        connection = AGILib.Connection(db_type="postgres", db=config[key]['database'], username=config[key]['username'], password=config[key]['password'], host=config[key]['host'], port=config[key]['port'])
     else:
-        connection = AGILib.connection.Connection(db_type="oracle", db=config[key]['database'], username=config[key]['username'], password=config[key]['password'])
+        connection = AGILib.Connection(db_type="oracle", db=config[key]['database'], username=config[key]['username'], password=config[key]['password'])
     
     config[key]['connection'] = connection
 
 
 def get_config():
-    config = AGILib.configuration.Configuration(configfile_path=get_general_configfile_from_envvar()).config
+    config = AGILib.Configuration(configfile_path=get_general_configfile_from_envvar()).config
 
     # Connection-Objekte erstellen
     create_connection(config, 'GEODB_WORK')
