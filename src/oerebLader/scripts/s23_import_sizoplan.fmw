@@ -1,7 +1,7 @@
 #! <?xml version="1.0" encoding="UTF-8" ?>
 #! <WORKSPACE
 #    Command-line to run this workspace:
-#        "C:\Program Files (x86)\FME\fme.exe" D:\Daten\repos\oerebLader\oerebLader\scripts\s23_import_sizoplan.fmw
+#        "C:\Program Files (x86)\FME\fme.exe" E:\Daten\repos\oerebLader\src\oerebLader\scripts\s23_import_sizoplan.fmw
 #              --XTF_FILE ""
 #              --USERNAME ""
 #              --PASSWORD "********"
@@ -10,7 +10,7 @@
 #              --LOGFILE ""
 #              --GEODB_PG_DATABASE ""
 #              --GEODB_PG_USERNAME ""
-#              --GEODB_PG_PASSWORD ""
+#              --GEODB_PG_PASSWORD "********"
 #              --GEODB_PG_HOST ""
 #              --GEODB_PG_PORT ""
 #    
@@ -27,8 +27,8 @@
 #!   END_TCL=""
 #!   EXPLICIT_BOOKMARK_ORDER="false"
 #!   FME_BUILD_NUM="18310"
-#!   FME_DOCUMENT_GUID="49003734-807d-422d-a9c4-4b3bba81b07a"
-#!   FME_DOCUMENT_PRIORGUID="6cc5b3f8-510e-4003-8fe0-7527c2b1c779,6d3b9b6e-fd2b-43b5-836d-4ae6ac4e82e4,a8209f4a-2ad8-4bf6-9cfd-e72755979067,10015e1e-9539-41f8-93d6-904082a35552,3efd6ac6-2b50-4bf5-a5e3-78adfa82caa2,23974208-0743-4569-a367-e5b0b03d5754,5aed8443-76af-45a6-9803-29bd3522a1bc,b34979cc-a9e5-4496-b1dd-04cdd6600d78,b21ad6d8-474c-4885-8d4d-b2499e917766,688ba1d6-43cb-4975-8311-4c505df350a7,63bfd935-297a-4a5e-b66d-665f56b45d5d,b20df3fe-0ff4-4999-b690-6b9a03a38e6e,56fdee3f-e750-4591-a4c2-60810e81c5e7,ea951a1f-82b4-4055-b8d5-360cd33af370"
+#!   FME_DOCUMENT_GUID="a9bf6eda-3634-4d86-be07-3d81e95a2183"
+#!   FME_DOCUMENT_PRIORGUID="6cc5b3f8-510e-4003-8fe0-7527c2b1c779,6d3b9b6e-fd2b-43b5-836d-4ae6ac4e82e4,a8209f4a-2ad8-4bf6-9cfd-e72755979067,10015e1e-9539-41f8-93d6-904082a35552,3efd6ac6-2b50-4bf5-a5e3-78adfa82caa2,23974208-0743-4569-a367-e5b0b03d5754,5aed8443-76af-45a6-9803-29bd3522a1bc,b34979cc-a9e5-4496-b1dd-04cdd6600d78,b21ad6d8-474c-4885-8d4d-b2499e917766,688ba1d6-43cb-4975-8311-4c505df350a7,63bfd935-297a-4a5e-b66d-665f56b45d5d,b20df3fe-0ff4-4999-b690-6b9a03a38e6e,56fdee3f-e750-4591-a4c2-60810e81c5e7,ea951a1f-82b4-4055-b8d5-360cd33af370,49003734-807d-422d-a9c4-4b3bba81b07a"
 #!   FME_GEOMETRY_HANDLING="Enhanced"
 #!   FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
 #!   FME_REPROJECTION_ENGINE="FME"
@@ -37,7 +37,7 @@
 #!   HISTORY=""
 #!   IGNORE_READER_FAILURE="No"
 #!   LAST_SAVE_BUILD="FME(R) 2018.0.1.0 (20180518 - Build 18310 - WIN32)"
-#!   LAST_SAVE_DATE="2019-01-09T12:54:48"
+#!   LAST_SAVE_DATE="2020-07-16T13:14:38"
 #!   LOG_FILE="$(LOGFILE)"
 #!   LOG_MAX_RECORDED_FEATURES="200"
 #!   MARKDOWN_DESCRIPTION=""
@@ -66,7 +66,7 @@
 #!   ROLE="READER"
 #!   FORMAT="ch.ehi.fme.Main"
 #!   DATASET="$(XTF_FILE)"
-#!   KEYWORD="ch.ehi.fme.Main_3"
+#!   KEYWORD="ch.ehi.fme.Main_1"
 #!   MULTI_GEOM_ALLOWED="false"
 #!   ATTR_MAX_LENGTH="0"
 #!   ATTR_CASE="ANY"
@@ -74,7 +74,7 @@
 #!   WRITE_DEFS="true"
 #!   DEFLINE_TEMPLATE=""
 #!   DEFLINE_ATTRS="true"
-#!   EXPOSABLE_ATTRS="fme_sweep_angle xtf_real64 multi_reader_full_id xtf_int32 multi_reader_type xtf_char(50) fme_geometry xtf_char(50) xtf_consistency xtf_char(12) fme_rotation xtf_real64 multi_reader_keyword xtf_char(50) fme_type xtf_char(50) fme_start_angle xtf_real64 fme_text_size xtf_real64 xtf_geomattr xtf_char(255) fme_basename xtf_char(50) fme_secondary_axis xtf_real64 xtf_basket xtf_char(200) xtf_operation xtf_char(6) multi_reader_id xtf_int32 fme_fill_color xtf_char(50) fme_color xtf_char(50) fme_primary_axis xtf_real64 fme_dataset xtf_char(50) fme_text_string xtf_char(50) fme_feature_type xtf_char(50) xtf_class xtf_char(255)"
+#!   EXPOSABLE_ATTRS="xtf_class xtf_char(255) fme_text_size xtf_real64 multi_reader_id xtf_int32 fme_text_string xtf_char(50) fme_primary_axis xtf_real64 xtf_consistency xtf_char(12) fme_feature_type xtf_char(50) fme_dataset xtf_char(50) fme_type xtf_char(50) fme_sweep_angle xtf_real64 fme_start_angle xtf_real64 xtf_operation xtf_char(6) fme_basename xtf_char(50) fme_geometry xtf_char(50) fme_rotation xtf_real64 multi_reader_keyword xtf_char(50) xtf_basket xtf_char(200) multi_reader_full_id xtf_int32 multi_reader_type xtf_char(50) xtf_geomattr xtf_char(255) fme_fill_color xtf_char(50) fme_secondary_axis xtf_real64 fme_color xtf_char(50)"
 #!   DEFLINE_PARMS=""
 #!   ATTR_INDEX_TYPES=""
 #!   ATTR_NAME_INVALID_CHARS=""
@@ -104,7 +104,7 @@
 #!   WRITE_DEFS="true"
 #!   DEFLINE_TEMPLATE="geodb_type {FME_GEN_GEOMETRY} GEODB_UPDATE_KEY_COLUMNS &quot;&quot; GEODB_DROP_TABLE NO GEODB_TRUNCATE_TABLE NO GEODB_OBJECT_ID_NAME OBJECTID GEODB_OBJECT_ID_ALIAS OBJECTID GEODB_SHAPE_NAME SHAPE GEODB_SHAPE_ALIAS SHAPE GEODB_CONFIG_KEYWORD DEFAULTS GEODB_FEATURE_DATASET &quot;&quot; GEODB_GRID{1} &quot;&quot; GEODB_AVG_NUM_POINTS &quot;&quot; GEODB_XORIGIN &quot;&quot; GEODB_YORIGIN &quot;&quot; GEODB_XYSCALE &quot;&quot; GEODB_HAS_Z_VALUES &quot;&quot; GEODB_ZORIGIN &quot;&quot; GEODB_ZSCALE &quot;&quot; GEODB_HAS_MEASURES &quot;&quot; GEODB_MEASURES_ORIGIN &quot;&quot; GEODB_MEASURES_SCALE &quot;&quot; GEODB_ANNO_REFERENCE_SCALE &quot;&quot;"
 #!   DEFLINE_ATTRS="true"
-#!   EXPOSABLE_ATTRS="geodb_text_string_with_format_tags char(254) geodb_font_weight smallint geodb_metadata_string char(254) geodb_dim_using_custom_length boolean geodb_sweep_angle double fme_db_operation char(8) geodb_dim_begin_dimension_x double geodb_text_break_char integer geodb_text_x_offset double geodb_text_y_offset double geodb_text_feat_class_name char(254) geodb_dim_text_y double geodb_text_character_width double fme_secondary_axis double geodb_right_to_left boolean geodb_text_string char(254) geodb_text_y_coord double fme_geometry fme_char(50) fme_rotation double fme_sweep_angle double geodb_font_underline boolean geodb_measures char(254) geodb_symbol_id integer geodb_subtype_name char(254) fme_primary_axis double fme_fill_color char(50) geodb_text_scale boolean geodb_dim_line_display smallint geodb_text_char_spacing double geodb_text_word_spacing double geodb_rotation double geodb_dim_line_x double geodb_text_size double geodb_dim_style_id integer geodb_font_size double fme_start_angle double geodb_linked_feature_id integer geodb_dim_line_y double geodb_dim_type smallint fme_type char(50) fme_text_string char(50) geodb_ancillary_role char(7) geodb_text_color char(254) geodb_text_x_coord double geodb_color char(50) fme_dataset char(50) geodb_feature_dataset char(254) geodb_text_line_spacing double fme_where char(254) geodb_font_strikethrough boolean geodb_dim_custom_length double geodb_allow_symbol_overrides boolean geodb_raster_pyramid_level integer geodb_dim_text_x double geodb_h_align char(50) geodb_dim_begin_dimension_z double fme_text_size double geodb_dim_length double fme_feature_type char(50) geodb_dim_text_z double geodb_raster_compression_type char(100) geodb_font_italic boolean geodb_font_name char(254) geodb_dim_end_dimension_x double geodb_dim_marker_display smallint geodb_start_angle double geodb_dim_extn_line_display smallint geodb_secondary_axis double geodb_v_align char(50) geodb_anno_class_id integer geodb_dim_end_dimension_y double geodb_dim_begin_dimension_y double geodb_text_ref_scale double fme_color char(50) geodb_primary_axis double geodb_raster_pyramid_resample_type char(100) geodb_dim_end_dimension_z double geodb_text_clip boolean geodb_type char(25) geodb_dim_line_z double geodb_font_bold boolean geodb_dim_extn_line_angle double geodb_raster_compression_quality integer geodb_dim_text_angle double geodb_font_charset smallint fme_basename char(50) geodb_text_angle double"
+#!   EXPOSABLE_ATTRS="geodb_text_string_with_format_tags char(254) geodb_rotation double fme_type char(50) geodb_font_italic boolean fme_basename char(50) geodb_metadata_string char(254) fme_start_angle double geodb_linked_feature_id integer geodb_anno_class_id integer fme_feature_type char(50) geodb_text_y_coord double fme_secondary_axis double geodb_raster_compression_quality integer geodb_dim_length double geodb_dim_text_y double geodb_dim_begin_dimension_y double geodb_raster_pyramid_resample_type char(100) geodb_dim_custom_length double geodb_secondary_axis double geodb_dim_line_display smallint fme_fill_color char(50) geodb_feature_dataset char(254) geodb_text_break_char integer geodb_text_x_offset double geodb_text_char_spacing double geodb_text_angle double geodb_text_y_offset double geodb_text_size double geodb_dim_extn_line_angle double geodb_allow_symbol_overrides boolean geodb_text_clip boolean geodb_dim_using_custom_length boolean geodb_text_x_coord double geodb_dim_type smallint fme_text_string char(50) fme_text_size double geodb_v_align char(50) geodb_dim_line_z double fme_sweep_angle double geodb_dim_begin_dimension_x double geodb_h_align char(50) fme_dataset char(50) geodb_dim_text_angle double geodb_sweep_angle double geodb_text_feat_class_name char(254) fme_geometry fme_char(50) geodb_dim_end_dimension_y double geodb_font_bold boolean fme_rotation double geodb_type char(25) geodb_text_color char(254) geodb_dim_text_x double geodb_font_size double geodb_right_to_left boolean geodb_primary_axis double geodb_dim_text_z double geodb_ancillary_role char(7) geodb_font_strikethrough boolean fme_where char(254) geodb_measures char(254) geodb_text_word_spacing double geodb_text_ref_scale double geodb_color char(50) geodb_start_angle double geodb_raster_pyramid_level integer geodb_font_weight smallint geodb_raster_compression_type char(100) fme_color char(50) geodb_symbol_id integer geodb_dim_extn_line_display smallint geodb_font_name char(254) fme_primary_axis double geodb_subtype_name char(254) geodb_dim_begin_dimension_z double geodb_text_string char(254) geodb_font_underline boolean geodb_font_charset smallint geodb_text_scale boolean geodb_dim_style_id integer geodb_text_character_width double geodb_dim_line_y double geodb_dim_marker_display smallint geodb_dim_end_dimension_x double geodb_text_line_spacing double geodb_dim_end_dimension_z double geodb_dim_line_x double fme_db_operation char(8)"
 #!   DEFLINE_PARMS="&quot;GUI CHOICE GEODB_DROP_TABLE YES%NO Drop Table First&quot; NO &quot;GUI CHOICE GEODB_TRUNCATE_TABLE YES%NO Truncate Table First&quot; NO &quot;GUI FORCE_DEFS OPTIONAL WHOLE_LINE ATTRLIST_COMMAS GEODB_UPDATE_KEY_COLUMNS \&quot; \&quot; Update Key Fields&quot; &quot;&quot; &quot;GUI TEXT GEODB_OBJECT_ID_NAME Object ID Field&quot; OBJECTID &quot;GUI TEXT GEODB_OBJECT_ID_ALIAS Object ID Alias&quot; OBJECTID &quot;GUI TEXT GEODB_SHAPE_NAME Shape Field&quot; SHAPE &quot;GUI TEXT GEODB_SHAPE_ALIAS Shape Alias&quot; SHAPE &quot;GUI TEXT GEODB_CONFIG_KEYWORD Configuration Keyword&quot; DEFAULTS &quot;GUI OPTIONAL TEXT GEODB_FEATURE_DATASET Feature Dataset&quot; &quot;&quot; &quot;GUI OPTIONAL FLOAT GEODB_GRID{1} Grid 1&quot; &quot;&quot; &quot;GUI OPTIONAL INTEGER GEODB_AVG_NUM_POINTS Avg Num of Points&quot; &quot;&quot; &quot;GUI OPTIONAL FLOAT GEODB_XORIGIN X Origin&quot; &quot;&quot; &quot;GUI OPTIONAL FLOAT GEODB_YORIGIN Y Origin&quot; &quot;&quot; &quot;GUI OPTIONAL FLOAT GEODB_XYSCALE X,Y Scale&quot; &quot;&quot; &quot;GUI OPTIONAL CHOICE GEODB_HAS_Z_VALUES yes%no Contains Z Values&quot; &quot;&quot; &quot;GUI OPTIONAL FLOAT GEODB_ZORIGIN Z Origin&quot; &quot;&quot; &quot;GUI OPTIONAL FLOAT GEODB_ZSCALE Z Scale&quot; &quot;&quot; &quot;GUI OPTIONAL CHOICE GEODB_HAS_MEASURES yes%no Contains Measures&quot; &quot;&quot; &quot;GUI OPTIONAL FLOAT GEODB_MEASURES_ORIGIN Measure Origin&quot; &quot;&quot; &quot;GUI OPTIONAL FLOAT GEODB_MEASURES_SCALE Measure Scale&quot; &quot;&quot; &quot;GUI OPTIONAL FLOAT GEODB_ANNO_REFERENCE_SCALE Annotation Reference Scale&quot; &quot;&quot; "
 #!   ATTR_INDEX_TYPES=""
 #!   ATTR_NAME_INVALID_CHARS=":. %-#[]&quot;()!?*&apos;&amp;+\/{}|="
@@ -142,7 +142,7 @@
 #!   WRITE_DEFS="true"
 #!   DEFLINE_TEMPLATE="postgis_type postgis_geometry postgis_mode &quot;&quot; postgis_sql_key_columns &quot;&quot; postgis_drop_table &quot;&quot; postgis_truncate_table &quot;&quot; fme_feature_operation INSERT fme_table_handling CREATE_IF_MISSING fme_selection_method MATCH_COLUMNS fme_match_columns &quot;&quot; fme_where_builder_clause &quot;&quot; fme_update_geometry YES postgis_create_with_oids NO postgis_create_gist_index YES postgis_spatial_column_type geometry postgis_spatial_column geom postgis_srid &quot;&quot; postgis_vacuum_analyze no postgis_allow_serial_writing NO"
 #!   DEFLINE_ATTRS="true"
-#!   EXPOSABLE_ATTRS="fme_sweep_angle float8 fme_geometry fme_char(50) postgis_collection_part_id int4 fme_rotation float8 fme_type char(50) fme_start_angle float8 fme_text_size float8 postgis_type char(50) postgis_collection_id int4 fme_basename char(50) fme_secondary_axis float8 fme_fill_color char(50) fme_db_operation char(8) fme_color char(50) fme_primary_axis float8 fme_dataset char(50) fme_text_string char(50) fme_feature_type char(50)"
+#!   EXPOSABLE_ATTRS="fme_text_size float8 postgis_collection_part_id int4 fme_text_string char(50) fme_primary_axis float8 fme_feature_type char(50) fme_dataset char(50) fme_db_operation char(8) fme_type char(50) fme_sweep_angle float8 postgis_type char(50) fme_start_angle float8 fme_basename char(50) fme_geometry fme_char(50) fme_rotation float8 postgis_collection_id int4 fme_fill_color char(50) fme_color char(50) fme_secondary_axis float8"
 #!   DEFLINE_PARMS="&quot;GUI OPTIONAL NAMEDGROUP fme_configuration_group fme_configuration_common_group%fme_spatial_group%fme_advanced_group%oracle_advanced_group Table Settings&quot; &quot;&quot; &quot;GUI OPTIONAL NAMEDGROUP fme_configuration_common_group fme_feature_operation%fme_table_handling%oracle_model%fme_update_geometry%fme_selection_group%fme_table_creation_group General&quot; &quot;&quot; &quot;GUI ACTIVECHOICE_LOOKUP fme_feature_operation Insert,INSERT,fme_update_geometry,fme_selection_group%Update,UPDATE,++fme_table_handling+USE_EXISTING,++fme_selection_group+FME_DISCLOSURE_OPEN%Delete,DELETE,++fme_table_handling+USE_EXISTING,fme_update_geometry,++fme_selection_group+FME_DISCLOSURE_OPEN,fme_spatial_group,fme_advanced_group,oracle_sequenced_cols%&lt;at&gt;Value&lt;openparen&gt;fme_db_operation&lt;closeparen&gt;,MULTIPLE,++fme_table_handling+USE_EXISTING,++fme_selection_group+FME_DISCLOSURE_OPEN Feature Operation&quot; INSERT &quot;GUI ACTIVECHOICE_LOOKUP fme_table_handling Use&lt;space&gt;Existing,USE_EXISTING,fme_table_creation_group%Create&lt;space&gt;If&lt;space&gt;Needed,CREATE_IF_MISSING%Drop&lt;space&gt;and&lt;space&gt;Create,DROP_CREATE%Truncate&lt;space&gt;Existing,TRUNCATE_EXISTING,fme_table_creation_group Table Handling&quot; CREATE_IF_MISSING &quot;GUI WHOLE_LINE LOOKUP_CHOICE fme_update_geometry Yes,YES%No,NO Update Spatial Column(s)&quot; YES &quot;GUI OPTIONAL DISCLOSUREGROUP fme_selection_group fme_selection_method Row Selection&quot; &quot;&quot; &quot;GUI OPTIONAL WHOLE_LINE RADIOPARAMETERGROUP fme_selection_method fme_match_columns,MATCH_COLUMNS%fme_where_builder_clause,BUILDER Row Selection Method&quot; MATCH_COLUMNS &quot;GUI WHOLE_LINE ATTRLIST_COMMAS fme_match_columns \&quot; \&quot; Match Columns&quot; &quot;&quot; &quot;GUI WHOLE_LINE TEXT_EDIT_SQL_CFG_OR_ATTR fme_where_builder_clause MODE,WHERE WHERE Clause&quot; &quot;&quot; &quot;GUI OPTIONAL DISCLOSUREGROUP fme_table_creation_group postgis_create_with_oids%postgis_create_gist_index Table Creation Parameters&quot; &quot;&quot; &quot;GUI CHOICE postgis_create_with_oids YES%NO Create With OIDs&quot; NO &quot;GUI CHOICE postgis_create_gist_index YES%NO Create GiST Index&quot; YES &quot;GUI OPTIONAL NAMEDGROUP fme_spatial_group postgis_spatial_column_type%postgis_spatial_column%postgis_srid Spatial&quot; &quot;&quot; &quot;GUI LOOKUP_CHOICE postgis_spatial_column_type Geometry,geometry%Geography,geography Spatial Type&quot; geometry &quot;GUI OPTIONAL WHOLE_LINE TEXT postgis_spatial_column Spatial Column&quot; shape &quot;GUI OPTIONAL FLOAT postgis_srid Spatial Column SRID&quot; &quot;&quot; &quot;GUI OPTIONAL DISCLOSUREGROUP fme_advanced_group postgis_vacuum_analyze%postgis_allow_serial_writing Advanced&quot; &quot;&quot; &quot;GUI CHOICE postgis_vacuum_analyze YES%NO Vacuum Analyze Table&quot; NO &quot;GUI CHOICE postgis_allow_serial_writing YES%NO Allow Serial Column Writing&quot; NO "
 #!   ATTR_INDEX_TYPES="BTREE RTREE HASH PRIKEY"
 #!   ATTR_NAME_INVALID_CHARS=". %-#[]&quot;()!?*&apos;&amp;+\/"
@@ -252,186 +252,6 @@
 #!   FORMAT_TYPE="xtf_time"
 #!   FME_TYPE="fme_time"
 #!   FORMAT="ch.ehi.fme.Main"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="char(width)"
-#!   FME_TYPE="fme_varchar(width)"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="char(width)"
-#!   FME_TYPE="fme_char(width)"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="char(2048)"
-#!   FME_TYPE="fme_buffer"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="char(2048)"
-#!   FME_TYPE="fme_xml"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="char(2048)"
-#!   FME_TYPE="fme_json"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="blob"
-#!   FME_TYPE="fme_binarybuffer"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="blob"
-#!   FME_TYPE="fme_varbinary(width)"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="blob"
-#!   FME_TYPE="fme_binary(width)"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="guid"
-#!   FME_TYPE="fme_buffer"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="date"
-#!   FME_TYPE="fme_datetime"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="date"
-#!   FME_TYPE="fme_date"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="date"
-#!   FME_TYPE="fme_time"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="integer"
-#!   FME_TYPE="fme_int32"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="integer"
-#!   FME_TYPE="fme_uint16"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="smallint"
-#!   FME_TYPE="fme_int16"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="smallint"
-#!   FME_TYPE="fme_int8"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="smallint"
-#!   FME_TYPE="fme_uint8"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="float"
-#!   FME_TYPE="fme_real32"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="double"
-#!   FME_TYPE="fme_real64"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="double"
-#!   FME_TYPE="fme_uint32"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="char(20)"
-#!   FME_TYPE="fme_int64"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="char(20)"
-#!   FME_TYPE="fme_uint64"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="boolean"
-#!   FME_TYPE="fme_boolean"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="double(width,decimal)"
-#!   FME_TYPE="fme_decimal(width,decimal)"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="subtype(stringset)"
-#!   FME_TYPE="fme_char(width)"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="subtype_codes(stringmap)"
-#!   FME_TYPE="fme_char(width)"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="range_domain(range_domain)"
-#!   FME_TYPE="fme_char(width)"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="coded_domain(coded_domain)"
-#!   FME_TYPE="fme_char(width)"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="char(1)"
-#!   FME_TYPE="fme_char(width)"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="blob"
-#!   FME_TYPE="fme_buffer"
-#!   FORMAT="GEODATABASE_SDE"
 #! />
 #! <DATA_TYPE
 #!   IS_SOURCE="false"
@@ -643,6 +463,186 @@
 #!   FME_TYPE="fme_json"
 #!   FORMAT="POSTGIS"
 #! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_varchar(width)"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_char(width)"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(2048)"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(2048)"
+#!   FME_TYPE="fme_xml"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(2048)"
+#!   FME_TYPE="fme_json"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="blob"
+#!   FME_TYPE="fme_binarybuffer"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="blob"
+#!   FME_TYPE="fme_varbinary(width)"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="blob"
+#!   FME_TYPE="fme_binary(width)"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="guid"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="date"
+#!   FME_TYPE="fme_datetime"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="date"
+#!   FME_TYPE="fme_date"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="date"
+#!   FME_TYPE="fme_time"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="integer"
+#!   FME_TYPE="fme_int32"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="integer"
+#!   FME_TYPE="fme_uint16"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="smallint"
+#!   FME_TYPE="fme_int16"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="smallint"
+#!   FME_TYPE="fme_int8"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="smallint"
+#!   FME_TYPE="fme_uint8"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="float"
+#!   FME_TYPE="fme_real32"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="double"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="double"
+#!   FME_TYPE="fme_uint32"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(20)"
+#!   FME_TYPE="fme_int64"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(20)"
+#!   FME_TYPE="fme_uint64"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="boolean"
+#!   FME_TYPE="fme_boolean"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="double(width,decimal)"
+#!   FME_TYPE="fme_decimal(width,decimal)"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="subtype(stringset)"
+#!   FME_TYPE="fme_char(width)"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="subtype_codes(stringmap)"
+#!   FME_TYPE="fme_char(width)"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="range_domain(range_domain)"
+#!   FME_TYPE="fme_char(width)"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="coded_domain(coded_domain)"
+#!   FME_TYPE="fme_char(width)"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(1)"
+#!   FME_TYPE="fme_char(width)"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="blob"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
 #! </DATA_TYPES>
 #! <GEOM_TYPES>
 #! <GEOM_TYPE
@@ -740,144 +740,6 @@
 #!   FORMAT_TYPE="xtf_none"
 #!   FME_TYPE="fme_feature_table"
 #!   FORMAT="ch.ehi.fme.Main"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="geodb_point"
-#!   FME_TYPE="fme_point"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="geodb_polygon"
-#!   FME_TYPE="fme_area"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="geodb_polygon"
-#!   FME_TYPE="fme_rounded_rectangle"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="geodb_polyline"
-#!   FME_TYPE="fme_line"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="geodb_multipoint"
-#!   FME_TYPE="fme_point"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="geodb_table"
-#!   FME_TYPE="fme_no_geom"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="geodb_table"
-#!   FME_TYPE="fme_collection"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="geodb_polyline"
-#!   FME_TYPE="fme_arc"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="geodb_polygon"
-#!   FME_TYPE="fme_ellipse"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="geodb_polygon"
-#!   FME_TYPE="fme_rectangle"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="geodb_annotation"
-#!   FME_TYPE="fme_text"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="geodb_dimension"
-#!   FME_TYPE="fme_point"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="geodb_simple_junction"
-#!   FME_TYPE="fme_point"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="geodb_simple_edge"
-#!   FME_TYPE="fme_line"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="geodb_complex_junction"
-#!   FME_TYPE="fme_point"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="geodb_complex_edge"
-#!   FME_TYPE="fme_line"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="geodb_attributed_relationship"
-#!   FME_TYPE="fme_no_geom"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="geodb_relationship"
-#!   FME_TYPE="fme_no_geom"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="geodb_metadata"
-#!   FME_TYPE="fme_no_geom"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="geodb_multipatch"
-#!   FME_TYPE="fme_surface"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="geodb_multipatch"
-#!   FME_TYPE="fme_solid"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="geodb_polygon"
-#!   FME_TYPE="fme_raster"
-#!   FORMAT="GEODATABASE_SDE"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="geodb_polygon"
-#!   FME_TYPE="fme_point_cloud"
-#!   FORMAT="GEODATABASE_SDE"
 #! />
 #! <GEOM_TYPE
 #!   IS_SOURCE="false"
@@ -1034,6 +896,144 @@
 #!   FORMAT_TYPE="postgis_none"
 #!   FME_TYPE="fme_feature_table"
 #!   FORMAT="POSTGIS"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geodb_point"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geodb_polygon"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geodb_polygon"
+#!   FME_TYPE="fme_rounded_rectangle"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geodb_polyline"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geodb_multipoint"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geodb_table"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geodb_table"
+#!   FME_TYPE="fme_collection"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geodb_polyline"
+#!   FME_TYPE="fme_arc"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geodb_polygon"
+#!   FME_TYPE="fme_ellipse"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geodb_polygon"
+#!   FME_TYPE="fme_rectangle"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geodb_annotation"
+#!   FME_TYPE="fme_text"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geodb_dimension"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geodb_simple_junction"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geodb_simple_edge"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geodb_complex_junction"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geodb_complex_edge"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geodb_attributed_relationship"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geodb_relationship"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geodb_metadata"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geodb_multipatch"
+#!   FME_TYPE="fme_surface"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geodb_multipatch"
+#!   FME_TYPE="fme_solid"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geodb_polygon"
+#!   FME_TYPE="fme_raster"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geodb_polygon"
+#!   FME_TYPE="fme_point_cloud"
+#!   FORMAT="GEODATABASE_SDE"
 #! />
 #! </GEOM_TYPES>
 #! <FEATURE_TYPES>
@@ -1229,7 +1229,7 @@
 #!   BOUNDING_RECT="-1254.51 619.62790627906281 -1 -1"
 #!   ORDER="500000000000021"
 #!   COLLAPSED="true"
-#!   KEYWORD="ch.ehi.fme.Main_3"
+#!   KEYWORD="ch.ehi.fme.Main_1"
 #!   PARMS_EDITED="true"
 #!   ENABLED="true"
 #!   HIDDEN_USER_ATTRS=""
@@ -1273,7 +1273,7 @@
 #!   BOUNDING_RECT="2644.2148121481223 -1118.1302813028124 -1 -1"
 #!   ORDER="500000000000009"
 #!   COLLAPSED="true"
-#!   KEYWORD="ch.ehi.fme.Main_3"
+#!   KEYWORD="ch.ehi.fme.Main_1"
 #!   PARMS_EDITED="true"
 #!   ENABLED="true"
 #!   HIDDEN_USER_ATTRS=""
@@ -1298,7 +1298,7 @@
 #!   BOUNDING_RECT="-1169.5131251312512 1016.3960939609394 -1 -1"
 #!   ORDER="500000000000016"
 #!   COLLAPSED="true"
-#!   KEYWORD="ch.ehi.fme.Main_3"
+#!   KEYWORD="ch.ehi.fme.Main_1"
 #!   PARMS_EDITED="true"
 #!   ENABLED="true"
 #!   HIDDEN_USER_ATTRS=""
@@ -1330,7 +1330,7 @@
 #!   BOUNDING_RECT="870 -187.62565625656254 -1 -1"
 #!   ORDER="500000000000039"
 #!   COLLAPSED="true"
-#!   KEYWORD="ch.ehi.fme.Main_3"
+#!   KEYWORD="ch.ehi.fme.Main_1"
 #!   PARMS_EDITED="true"
 #!   ENABLED="true"
 #!   HIDDEN_USER_ATTRS=""
@@ -1355,7 +1355,7 @@
 #!   BOUNDING_RECT="-1211.5131251312512 -444 -1 -1"
 #!   ORDER="500000000000000"
 #!   COLLAPSED="true"
-#!   KEYWORD="ch.ehi.fme.Main_3"
+#!   KEYWORD="ch.ehi.fme.Main_1"
 #!   PARMS_EDITED="true"
 #!   ENABLED="true"
 #!   HIDDEN_USER_ATTRS=""
@@ -1391,7 +1391,7 @@
 #!   BOUNDING_RECT="421.88134391343942 -1413.3804688046876 -1 -1"
 #!   ORDER="500000000000034"
 #!   COLLAPSED="true"
-#!   KEYWORD="ch.ehi.fme.Main_3"
+#!   KEYWORD="ch.ehi.fme.Main_1"
 #!   PARMS_EDITED="true"
 #!   ENABLED="true"
 #!   HIDDEN_USER_ATTRS=""
@@ -1460,7 +1460,7 @@
 #!   IS_STAND_ALONE="true"
 #! />
 #! <GLOBAL_PARAMETER
-#!   GUI_LINE="GUI TEXT GEODB_PG_PASSWORD GEODB_PG_PASSWORD:"
+#!   GUI_LINE="GUI PASSWORD GEODB_PG_PASSWORD GEODB_PG_PASSWORD:"
 #!   DEFAULT_VALUE=""
 #!   IS_STAND_ALONE="true"
 #! />
@@ -1677,7 +1677,7 @@
 #!   BOUNDING_RECT="-605 639 2253 251"
 #!   STICKY="true"
 #!   COLOUR="0.12941176470588237,0.92156862745098034,0.70196078431372544"
-#!   CONTENTS="44 39 43 47 41 42 45 "
+#!   CONTENTS="42 43 45 41 44 39 47 "
 #! >
 #! </BOOKMARK>
 #! <BOOKMARK
@@ -1690,7 +1690,7 @@
 #!   BOUNDING_RECT="-551 -357 1173 237"
 #!   STICKY="true"
 #!   COLOUR="0.74901960784313726,0.88235294117647056,0.050980392156862744"
-#!   CONTENTS="99 92 93 "
+#!   CONTENTS="93 99 92 "
 #! >
 #! </BOOKMARK>
 #! <BOOKMARK
@@ -1716,7 +1716,7 @@
 #!   BOUNDING_RECT="1131.6246562465626 -1413.3804688046876 1173 237"
 #!   STICKY="true"
 #!   COLOUR="0.74901960784313726,0.88235294117647056,0.050980392156862744"
-#!   CONTENTS="138 148 140 "
+#!   CONTENTS="148 140 138 "
 #! >
 #! </BOOKMARK>
 #! </BOOKMARKS>
@@ -3635,7 +3635,7 @@
 #! </LOOKUP_TABLES>
 #! </WORKSPACE>
 FME_PYTHON_VERSION 27
-GUI IGNORE SourceDataset_ch.ehi.fme.Main_3,ch.ehi.fme.Main_IN_FME_GROUP_NAMED1_ch.ehi.fme.Main_3,ch.ehi.fme.Main_IN_MODELS_ch.ehi.fme.Main_3,ch.ehi.fme.Main_IN_MODEL_DIR_ch.ehi.fme.Main_3,ch.ehi.fme.Main_IN_TOPICS_FILTER_ch.ehi.fme.Main_3,ch.ehi.fme.Main_IN_CHECK_UNIQUEOID_ch.ehi.fme.Main_3,ch.ehi.fme.Main_IN_CHECK_ATTRTYPE_ch.ehi.fme.Main_3,ch.ehi.fme.Main_IN_CHECK_ATTRMULTIPLICITY_ch.ehi.fme.Main_3,ch.ehi.fme.Main_IN_GEOMETRY_ENCODING_ch.ehi.fme.Main_3,ch.ehi.fme.Main_IN_GEOM_ATTR_MAPPING_ch.ehi.fme.Main_3,ch.ehi.fme.Main_IN_CREATE_LINETABLES_ch.ehi.fme.Main_3,ch.ehi.fme.Main_IN_SKIP_POLYGONBUILDING_ch.ehi.fme.Main_3,ch.ehi.fme.Main_IN_INHERITANCE_MAPPING_ch.ehi.fme.Main_3,ch.ehi.fme.Main_IN_TRIM_VALUES_ch.ehi.fme.Main_3,ch.ehi.fme.Main_IN_ILI1_ADDDEFVAL_ch.ehi.fme.Main_3,ch.ehi.fme.Main_IN_ILI1_RENUMBERTID_ch.ehi.fme.Main_3,ch.ehi.fme.Main_IN_ILI1_CONVERTAREA_ch.ehi.fme.Main_3,ch.ehi.fme.Main_IN_ILI1_CONVERTSURFACE_ch.ehi.fme.Main_3,ch.ehi.fme.Main_IN_ILI1_CHECKCONVERT_ch.ehi.fme.Main_3,ch.ehi.fme.Main_IN_ILI1_ENUMASITFCODE_ch.ehi.fme.Main_3,ch.ehi.fme.Main_IN_CREATEFEATURETYPE4ENUM_ch.ehi.fme.Main_3,ch.ehi.fme.Main_IN_HTTP_PROXYHOST_ch.ehi.fme.Main_3,ch.ehi.fme.Main_IN_HTTP_PROXYPORT_ch.ehi.fme.Main_3,ch.ehi.fme.Main_IN_TRACEMSGS_ch.ehi.fme.Main_3,ch.ehi.fme.Main_IN_NETWORK_AUTHENTICATION_ch.ehi.fme.Main_3,DestDataset_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_SERVER_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_USERID_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_PASSWORD_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_INSTANCE_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_VERSION_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_TRANSACTION_TYPE_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_TEMPLATEFILE_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_TABLE_PARAMETERS_GROUP_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_SIMPLIFY_GEOM_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_ORIGIN_X_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_ORIGIN_Y_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_XY_SCALE_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_HAS_Z_VALUES_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_Z_ORIGIN_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_Z_SCALE_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_GRID_1_GEODATABASE_SDE_1,_GEODBOutDefaultZValue_GEODATABASE_SDE_1,_GEODBOutWriterMode_GEODATABASE_SDE_1,_GEODBOutTransaction_GEODATABASE_SDE_1,_GEODBOutTransactionInterval_GEODATABASE_SDE_1,_GEODBOutIgnoreFailedFeatureEntry_GEODATABASE_SDE_1,_GEODBOutMaxNumberFailedFeatures_GEODATABASE_SDE_1,_GEODBOutDumpFailedFeatures_GEODATABASE_SDE_1,_GEODBOutFFSDumpFile_GEODATABASE_SDE_1,_GEODBOutAnnotationUnits_GEODATABASE_SDE_1,_GEODBOutMeasures_GEODATABASE_SDE_1,_GEODBOutMeasureOrigin_GEODATABASE_SDE_1,_GEODBOutMeasureScale_GEODATABASE_SDE_1,_GEODBOutReconcileAndPost_GEODATABASE_SDE_1,_GEODBOutDeleteChildAfterReconcileAndPost_GEODATABASE_SDE_1,_GEODBOutValidateFeatures_GEODATABASE_SDE_1,_GEODBOutSimplifyNetworkFeatures_GEODATABASE_SDE_1,_GEODBOutPersistentConnection_GEODATABASE_SDE_1,_GEODBOutCommitTransactionsAfterWrite_GEODATABASE_SDE_1,_GEODBOutBeginSql_GEODATABASE_SDE_1,_GEODBOutEndSql_GEODATABASE_SDE_1,DestDataset_POSTGIS_1,POSTGIS_OUT_HOST_POSTGIS_1,POSTGIS_OUT_PORT_POSTGIS_1,POSTGIS_OUT_USER_NAME_POSTGIS_1,POSTGIS_OUT_PASSWORD_POSTGIS_1,POSTGIS_OUT_START_TRANSACTION_POSTGIS_1,POSTGIS_OUT_TRANSACTION_INTERVAL_POSTGIS_1,POSTGIS_OUT_BULK_COPY_POSTGIS_1,POSTGIS_OUT_INSERT_TEXT_GEOMETRY_POSTGIS_1,POSTGIS_OUT_BEGIN_SQL_POSTGIS_1,POSTGIS_OUT_END_SQL_POSTGIS_1
+GUI IGNORE SourceDataset_ch.ehi.fme.Main_1,ch.ehi.fme.Main_IN_FME_GROUP_NAMED1_ch.ehi.fme.Main_1,ch.ehi.fme.Main_IN_MODELS_ch.ehi.fme.Main_1,ch.ehi.fme.Main_IN_MODEL_DIR_ch.ehi.fme.Main_1,ch.ehi.fme.Main_IN_TOPICS_FILTER_ch.ehi.fme.Main_1,ch.ehi.fme.Main_IN_CHECK_UNIQUEOID_ch.ehi.fme.Main_1,ch.ehi.fme.Main_IN_CHECK_ATTRTYPE_ch.ehi.fme.Main_1,ch.ehi.fme.Main_IN_CHECK_ATTRMULTIPLICITY_ch.ehi.fme.Main_1,ch.ehi.fme.Main_IN_GEOMETRY_ENCODING_ch.ehi.fme.Main_1,ch.ehi.fme.Main_IN_GEOM_ATTR_MAPPING_ch.ehi.fme.Main_1,ch.ehi.fme.Main_IN_CREATE_LINETABLES_ch.ehi.fme.Main_1,ch.ehi.fme.Main_IN_SKIP_POLYGONBUILDING_ch.ehi.fme.Main_1,ch.ehi.fme.Main_IN_INHERITANCE_MAPPING_ch.ehi.fme.Main_1,ch.ehi.fme.Main_IN_TRIM_VALUES_ch.ehi.fme.Main_1,ch.ehi.fme.Main_IN_ILI1_ADDDEFVAL_ch.ehi.fme.Main_1,ch.ehi.fme.Main_IN_ILI1_RENUMBERTID_ch.ehi.fme.Main_1,ch.ehi.fme.Main_IN_ILI1_CONVERTAREA_ch.ehi.fme.Main_1,ch.ehi.fme.Main_IN_ILI1_CONVERTSURFACE_ch.ehi.fme.Main_1,ch.ehi.fme.Main_IN_ILI1_CHECKCONVERT_ch.ehi.fme.Main_1,ch.ehi.fme.Main_IN_ILI1_ENUMASITFCODE_ch.ehi.fme.Main_1,ch.ehi.fme.Main_IN_CREATEFEATURETYPE4ENUM_ch.ehi.fme.Main_1,ch.ehi.fme.Main_IN_HTTP_PROXYHOST_ch.ehi.fme.Main_1,ch.ehi.fme.Main_IN_HTTP_PROXYPORT_ch.ehi.fme.Main_1,ch.ehi.fme.Main_IN_TRACEMSGS_ch.ehi.fme.Main_1,ch.ehi.fme.Main_IN_NETWORK_AUTHENTICATION_ch.ehi.fme.Main_1,DestDataset_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_SERVER_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_USERID_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_PASSWORD_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_INSTANCE_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_VERSION_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_TRANSACTION_TYPE_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_TEMPLATEFILE_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_TABLE_PARAMETERS_GROUP_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_SIMPLIFY_GEOM_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_ORIGIN_X_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_ORIGIN_Y_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_XY_SCALE_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_HAS_Z_VALUES_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_Z_ORIGIN_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_Z_SCALE_GEODATABASE_SDE_1,GEODATABASE_SDE_OUT_GRID_1_GEODATABASE_SDE_1,_GEODBOutDefaultZValue_GEODATABASE_SDE_1,_GEODBOutWriterMode_GEODATABASE_SDE_1,_GEODBOutTransaction_GEODATABASE_SDE_1,_GEODBOutTransactionInterval_GEODATABASE_SDE_1,_GEODBOutIgnoreFailedFeatureEntry_GEODATABASE_SDE_1,_GEODBOutMaxNumberFailedFeatures_GEODATABASE_SDE_1,_GEODBOutDumpFailedFeatures_GEODATABASE_SDE_1,_GEODBOutFFSDumpFile_GEODATABASE_SDE_1,_GEODBOutAnnotationUnits_GEODATABASE_SDE_1,_GEODBOutMeasures_GEODATABASE_SDE_1,_GEODBOutMeasureOrigin_GEODATABASE_SDE_1,_GEODBOutMeasureScale_GEODATABASE_SDE_1,_GEODBOutReconcileAndPost_GEODATABASE_SDE_1,_GEODBOutDeleteChildAfterReconcileAndPost_GEODATABASE_SDE_1,_GEODBOutValidateFeatures_GEODATABASE_SDE_1,_GEODBOutSimplifyNetworkFeatures_GEODATABASE_SDE_1,_GEODBOutPersistentConnection_GEODATABASE_SDE_1,_GEODBOutCommitTransactionsAfterWrite_GEODATABASE_SDE_1,_GEODBOutBeginSql_GEODATABASE_SDE_1,_GEODBOutEndSql_GEODATABASE_SDE_1,DestDataset_POSTGIS_1,POSTGIS_OUT_HOST_POSTGIS_1,POSTGIS_OUT_PORT_POSTGIS_1,POSTGIS_OUT_USER_NAME_POSTGIS_1,POSTGIS_OUT_PASSWORD_POSTGIS_1,POSTGIS_OUT_START_TRANSACTION_POSTGIS_1,POSTGIS_OUT_TRANSACTION_INTERVAL_POSTGIS_1,POSTGIS_OUT_BULK_COPY_POSTGIS_1,POSTGIS_OUT_INSERT_TEXT_GEOMETRY_POSTGIS_1,POSTGIS_OUT_BEGIN_SQL_POSTGIS_1,POSTGIS_OUT_END_SQL_POSTGIS_1
 DEFAULT_MACRO XTF_FILE 
 GUI MULTIFILE XTF_FILE INTERLIS_Files(*.xtf;*.xml;*.itf;*.ili)|*.xtf;*.xml;*.itf;*.ili|INTERLIS_2_Files(*.xtf;*.xml)|*.xtf;*.xml|INTERLIS_1_FILES(*.itf)|*.itf|INTERLIS_MODELS(*.ili)|*.ili|All_Files|*.* XTF-File:
 DEFAULT_MACRO USERNAME 
@@ -3653,7 +3653,7 @@ GUI TEXT GEODB_PG_DATABASE GEODB_PG_DATABASE:
 DEFAULT_MACRO GEODB_PG_USERNAME 
 GUI TEXT GEODB_PG_USERNAME GEODB_PG_USERNAME:
 DEFAULT_MACRO GEODB_PG_PASSWORD 
-GUI TEXT GEODB_PG_PASSWORD GEODB_PG_PASSWORD:
+GUI PASSWORD GEODB_PG_PASSWORD GEODB_PG_PASSWORD:
 DEFAULT_MACRO GEODB_PG_HOST 
 GUI TEXT GEODB_PG_HOST GEODB_PG_HOST:
 DEFAULT_MACRO GEODB_PG_PORT 
@@ -3683,7 +3683,7 @@ INCLUDE [ if {{$(GEODB_PG_PORT)} == {}} { puts_real {Parameter 'GEODB_PG_PORT' m
 #! START_WB_HEADER
 READER_TYPE MULTI_READER
 MULTI_READER_TYPE{0} ch.ehi.fme.Main
-MULTI_READER_KEYWORD{0} ch.ehi.fme.Main_3
+MULTI_READER_KEYWORD{0} ch.ehi.fme.Main_1
 MULTI_READER_GEN_DIRECTIVES{0} SKIP_POLYGONBUILDING,No,GEOMETRY_ENCODING,FMEBIN,MODEL_DIR,%XTF_DIR<semicolon>http:<solidus><solidus>models.interlis.ch<solidus><semicolon>C:<backslash>Program<space>Files<space><openparen>x86<closeparen><backslash>FME<solidus>plugins<solidus>interlis2<solidus>ilimodels<semicolon>C:<backslash>Program<space>Files<space><openparen>x86<closeparen><backslash>FME<solidus>plugins<solidus>interlis2<solidus>ili22models,TRIM_VALUES,Yes,INHERITANCE_MAPPING,SubClass,ILI1_ADDDEFVAL,No,HTTP_PROXYPORT,,ILI1_CONVERTSURFACE,,CREATEFEATURETYPE4ENUM,No,GEOM_ATTR_MAPPING,EncodeAsFmeAttribute,CHECK_ATTRMULTIPLICITY,Yes,ILI1_ENUMASITFCODE,No,MODELS,%DATA,CREATE_LINETABLES,No,CHECK_ATTRTYPE,Yes,ILI1_CHECKCONVERT,Yes,ILI1_CONVERTAREA,,HTTP_PROXYHOST,,_MERGE_SCHEMAS,YES,TRACEMSGS,No,ILI1_RENUMBERTID,No,TOPICS_FILTER,,CHECK_UNIQUEOID,No
 
 WRITER_TYPE MULTI_WRITER
@@ -3696,103 +3696,103 @@ MULTI_WRITER_KEYWORD{1} POSTGIS_1
 #! END_WB_HEADER
 
 #! START_WB_HEADER
-MACRO WB_KEYWORD "ch.ehi.fme.Main_3"
+MACRO WB_KEYWORD "ch.ehi.fme.Main_1"
 #! END_WB_HEADER
-#! START_SOURCE_HEADER ch.ehi.fme.Main ch.ehi.fme.Main_3
+#! START_SOURCE_HEADER ch.ehi.fme.Main ch.ehi.fme.Main_1
 # ============================================================================
 # The following GUI line prompts for a file to be used as the
 # source of the input data.
 # The user input is stored in a macro, which is then used to define
 # the dataset to be read.
 # The dataset this mapping file was generated from was:
-GUI FILENAME SourceDataset_ch.ehi.fme.Main_3 INTERLIS_Files(*.xtf;*.xml;*.itf;*.ili)|*.xtf;*.xml;*.itf;*.ili|INTERLIS_2_Files(*.xtf;*.xml)|*.xtf;*.xml|INTERLIS_1_FILES(*.itf)|*.itf|INTERLIS_MODELS(*.ili)|*.ili|All_Files|*.* Original INTERLIS 2 File:
-DEFAULT_MACRO ch.ehi.fme.Main_IN_FME_GROUP_NAMED1_ch.ehi.fme.Main_3 
-GUI OPTIONAL DISCLOSUREGROUP ch.ehi.fme.Main_IN_FME_GROUP_NAMED1_ch.ehi.fme.Main_3 ch.ehi.fme.Main_IN_MODELS_ch.ehi.fme.Main_3%ch.ehi.fme.Main_IN_MODEL_DIR_ch.ehi.fme.Main_3%ch.ehi.fme.Main_IN_TOPICS_FILTER_ch.ehi.fme.Main_3%ch.ehi.fme.Main_IN_CHECK_UNIQUEOID_ch.ehi.fme.Main_3%ch.ehi.fme.Main_IN_CHECK_ATTRTYPE_ch.ehi.fme.Main_3%ch.ehi.fme.Main_IN_CHECK_ATTRMULTIPLICITY_ch.ehi.fme.Main_3%ch.ehi.fme.Main_IN_TRIM_VALUES_ch.ehi.fme.Main_3%ch.ehi.fme.Main_IN_GEOMETRY_ENCODING_ch.ehi.fme.Main_3%ch.ehi.fme.Main_IN_GEOM_ATTR_MAPPING_ch.ehi.fme.Main_3%ch.ehi.fme.Main_IN_CREATE_LINETABLES_ch.ehi.fme.Main_3%ch.ehi.fme.Main_IN_SKIP_POLYGONBUILDING_ch.ehi.fme.Main_3%ch.ehi.fme.Main_IN_INHERITANCE_MAPPING_ch.ehi.fme.Main_3%ch.ehi.fme.Main_IN_ILI1_ADDDEFVAL_ch.ehi.fme.Main_3%ch.ehi.fme.Main_IN_ILI1_RENUMBERTID_ch.ehi.fme.Main_3%ch.ehi.fme.Main_IN_ILI1_CONVERTAREA_ch.ehi.fme.Main_3%ch.ehi.fme.Main_IN_ILI1_CONVERTSURFACE_ch.ehi.fme.Main_3%ch.ehi.fme.Main_IN_ILI1_CHECKCONVERT_ch.ehi.fme.Main_3%ch.ehi.fme.Main_IN_ILI1_ENUMASITFCODE_ch.ehi.fme.Main_3%ch.ehi.fme.Main_IN_CREATEFEATURETYPE4ENUM_ch.ehi.fme.Main_3%ch.ehi.fme.Main_IN_HTTP_PROXYHOST_ch.ehi.fme.Main_3%ch.ehi.fme.Main_IN_HTTP_PROXYPORT_ch.ehi.fme.Main_3%ch.ehi.fme.Main_IN_TRACEMSGS_ch.ehi.fme.Main_3 Parameters
-DEFAULT_MACRO ch.ehi.fme.Main_IN_MODELS_ch.ehi.fme.Main_3 %DATA
-ch.ehi.fme.Main_3_MODELS "$(ch.ehi.fme.Main_IN_MODELS_ch.ehi.fme.Main_3)"
-GUI TEXT ch.ehi.fme.Main_IN_MODELS_ch.ehi.fme.Main_3 Models:
-DEFAULT_MACRO ch.ehi.fme.Main_IN_MODEL_DIR_ch.ehi.fme.Main_3 $(MODELLABLAGE)
-ch.ehi.fme.Main_3_MODEL_DIR "$(ch.ehi.fme.Main_IN_MODEL_DIR_ch.ehi.fme.Main_3)"
-GUI TEXT ch.ehi.fme.Main_IN_MODEL_DIR_ch.ehi.fme.Main_3 Models Directory:
-DEFAULT_MACRO ch.ehi.fme.Main_IN_TOPICS_FILTER_ch.ehi.fme.Main_3 
-ch.ehi.fme.Main_3_TOPICS_FILTER "$(ch.ehi.fme.Main_IN_TOPICS_FILTER_ch.ehi.fme.Main_3)"
-GUI OPTIONAL TEXT ch.ehi.fme.Main_IN_TOPICS_FILTER_ch.ehi.fme.Main_3 Topics filter:
-DEFAULT_MACRO ch.ehi.fme.Main_IN_CHECK_UNIQUEOID_ch.ehi.fme.Main_3 No
-ch.ehi.fme.Main_3_CHECK_UNIQUEOID "$(ch.ehi.fme.Main_IN_CHECK_UNIQUEOID_ch.ehi.fme.Main_3)"
-GUI CHOICE ch.ehi.fme.Main_IN_CHECK_UNIQUEOID_ch.ehi.fme.Main_3 Yes%No Check TID/OID Uniqueness:
-DEFAULT_MACRO ch.ehi.fme.Main_IN_CHECK_ATTRTYPE_ch.ehi.fme.Main_3 Yes
-ch.ehi.fme.Main_3_CHECK_ATTRTYPE "$(ch.ehi.fme.Main_IN_CHECK_ATTRTYPE_ch.ehi.fme.Main_3)"
-GUI CHOICE ch.ehi.fme.Main_IN_CHECK_ATTRTYPE_ch.ehi.fme.Main_3 Yes%No Check Attribute Type:
-DEFAULT_MACRO ch.ehi.fme.Main_IN_CHECK_ATTRMULTIPLICITY_ch.ehi.fme.Main_3 Yes
-ch.ehi.fme.Main_3_CHECK_ATTRMULTIPLICITY "$(ch.ehi.fme.Main_IN_CHECK_ATTRMULTIPLICITY_ch.ehi.fme.Main_3)"
-GUI CHOICE ch.ehi.fme.Main_IN_CHECK_ATTRMULTIPLICITY_ch.ehi.fme.Main_3 Yes%No Check Attribute Multiplicity:
-DEFAULT_MACRO ch.ehi.fme.Main_IN_GEOMETRY_ENCODING_ch.ehi.fme.Main_3 FMEBIN
-ch.ehi.fme.Main_3_GEOMETRY_ENCODING "$(ch.ehi.fme.Main_IN_GEOMETRY_ENCODING_ch.ehi.fme.Main_3)"
-GUI CHOICE ch.ehi.fme.Main_IN_GEOMETRY_ENCODING_ch.ehi.fme.Main_3 FMEXML%FMEBIN%FMEHEXBIN%OGCHEXBIN Geometry Encoding:
-DEFAULT_MACRO ch.ehi.fme.Main_IN_GEOM_ATTR_MAPPING_ch.ehi.fme.Main_3 EncodeAsFmeAttribute
-ch.ehi.fme.Main_3_GEOM_ATTR_MAPPING "$(ch.ehi.fme.Main_IN_GEOM_ATTR_MAPPING_ch.ehi.fme.Main_3)"
-GUI CHOICE ch.ehi.fme.Main_IN_GEOM_ATTR_MAPPING_ch.ehi.fme.Main_3 EncodeAsFmeAttribute%RepeatFeature Mapping of multiple Geometry Attributes:
-DEFAULT_MACRO ch.ehi.fme.Main_IN_CREATE_LINETABLES_ch.ehi.fme.Main_3 No
-ch.ehi.fme.Main_3_CREATE_LINETABLES "$(ch.ehi.fme.Main_IN_CREATE_LINETABLES_ch.ehi.fme.Main_3)"
-GUI CHOICE ch.ehi.fme.Main_IN_CREATE_LINETABLES_ch.ehi.fme.Main_3 Yes%No Create Linetables:
-DEFAULT_MACRO ch.ehi.fme.Main_IN_SKIP_POLYGONBUILDING_ch.ehi.fme.Main_3 No
-ch.ehi.fme.Main_3_SKIP_POLYGONBUILDING "$(ch.ehi.fme.Main_IN_SKIP_POLYGONBUILDING_ch.ehi.fme.Main_3)"
-GUI CHOICE ch.ehi.fme.Main_IN_SKIP_POLYGONBUILDING_ch.ehi.fme.Main_3 Yes%No Skip Polygon Building:
-DEFAULT_MACRO ch.ehi.fme.Main_IN_INHERITANCE_MAPPING_ch.ehi.fme.Main_3 SubClass
-ch.ehi.fme.Main_3_INHERITANCE_MAPPING "$(ch.ehi.fme.Main_IN_INHERITANCE_MAPPING_ch.ehi.fme.Main_3)"
-GUI CHOICE ch.ehi.fme.Main_IN_INHERITANCE_MAPPING_ch.ehi.fme.Main_3 SuperClass%SubClass Inheritance Mapping Strategy:
-DEFAULT_MACRO ch.ehi.fme.Main_IN_TRIM_VALUES_ch.ehi.fme.Main_3 Yes
-ch.ehi.fme.Main_3_TRIM_VALUES "$(ch.ehi.fme.Main_IN_TRIM_VALUES_ch.ehi.fme.Main_3)"
-GUI CHOICE ch.ehi.fme.Main_IN_TRIM_VALUES_ch.ehi.fme.Main_3 Yes%No Trim Values:
-DEFAULT_MACRO ch.ehi.fme.Main_IN_ILI1_ADDDEFVAL_ch.ehi.fme.Main_3 No
-ch.ehi.fme.Main_3_ILI1_ADDDEFVAL "$(ch.ehi.fme.Main_IN_ILI1_ADDDEFVAL_ch.ehi.fme.Main_3)"
-GUI CHOICE ch.ehi.fme.Main_IN_ILI1_ADDDEFVAL_ch.ehi.fme.Main_3 Yes%No ITF Add Default Values:
-DEFAULT_MACRO ch.ehi.fme.Main_IN_ILI1_RENUMBERTID_ch.ehi.fme.Main_3 No
-ch.ehi.fme.Main_3_ILI1_RENUMBERTID "$(ch.ehi.fme.Main_IN_ILI1_RENUMBERTID_ch.ehi.fme.Main_3)"
-GUI CHOICE ch.ehi.fme.Main_IN_ILI1_RENUMBERTID_ch.ehi.fme.Main_3 Yes%No ITF Renumber TIDs:
-DEFAULT_MACRO ch.ehi.fme.Main_IN_ILI1_CONVERTAREA_ch.ehi.fme.Main_3 
-ch.ehi.fme.Main_3_ILI1_CONVERTAREA "$(ch.ehi.fme.Main_IN_ILI1_CONVERTAREA_ch.ehi.fme.Main_3)"
-GUI OPTIONAL FILENAME ch.ehi.fme.Main_IN_ILI1_CONVERTAREA_ch.ehi.fme.Main_3 FME_Mapping_Files(*.fmi)|*.fmi|All_Files|*.* Convert ILI AREA to FME Donut:
-DEFAULT_MACRO ch.ehi.fme.Main_IN_ILI1_CONVERTSURFACE_ch.ehi.fme.Main_3 
-ch.ehi.fme.Main_3_ILI1_CONVERTSURFACE "$(ch.ehi.fme.Main_IN_ILI1_CONVERTSURFACE_ch.ehi.fme.Main_3)"
-GUI OPTIONAL FILENAME ch.ehi.fme.Main_IN_ILI1_CONVERTSURFACE_ch.ehi.fme.Main_3 FME_Mapping_Files(*.fmi)|*.fmi|All_Files|*.* Convert ILI SURFACE to FME Donut:
-DEFAULT_MACRO ch.ehi.fme.Main_IN_ILI1_CHECKCONVERT_ch.ehi.fme.Main_3 Yes
-ch.ehi.fme.Main_3_ILI1_CHECKCONVERT "$(ch.ehi.fme.Main_IN_ILI1_CHECKCONVERT_ch.ehi.fme.Main_3)"
-GUI CHOICE ch.ehi.fme.Main_IN_ILI1_CHECKCONVERT_ch.ehi.fme.Main_3 Yes%No ITF Check Polygon Building:
-DEFAULT_MACRO ch.ehi.fme.Main_IN_ILI1_ENUMASITFCODE_ch.ehi.fme.Main_3 No
-ch.ehi.fme.Main_3_ILI1_ENUMASITFCODE "$(ch.ehi.fme.Main_IN_ILI1_ENUMASITFCODE_ch.ehi.fme.Main_3)"
-GUI CHOICE ch.ehi.fme.Main_IN_ILI1_ENUMASITFCODE_ch.ehi.fme.Main_3 Yes%No ITF Read enum Values as Code:
-DEFAULT_MACRO ch.ehi.fme.Main_IN_CREATEFEATURETYPE4ENUM_ch.ehi.fme.Main_3 No
-ch.ehi.fme.Main_3_CREATEFEATURETYPE4ENUM "$(ch.ehi.fme.Main_IN_CREATEFEATURETYPE4ENUM_ch.ehi.fme.Main_3)"
-GUI CHOICE ch.ehi.fme.Main_IN_CREATEFEATURETYPE4ENUM_ch.ehi.fme.Main_3 No%SingleType%OneTypePerEnumDef Create Feature Types for Enumerations:
-DEFAULT_MACRO ch.ehi.fme.Main_IN_HTTP_PROXYHOST_ch.ehi.fme.Main_3 
-ch.ehi.fme.Main_3_HTTP_PROXYHOST "$(ch.ehi.fme.Main_IN_HTTP_PROXYHOST_ch.ehi.fme.Main_3)"
-GUI OPTIONAL TEXT ch.ehi.fme.Main_IN_HTTP_PROXYHOST_ch.ehi.fme.Main_3 http Proxy Host:
-DEFAULT_MACRO ch.ehi.fme.Main_IN_HTTP_PROXYPORT_ch.ehi.fme.Main_3 
-ch.ehi.fme.Main_3_HTTP_PROXYPORT "$(ch.ehi.fme.Main_IN_HTTP_PROXYPORT_ch.ehi.fme.Main_3)"
-GUI OPTIONAL TEXT ch.ehi.fme.Main_IN_HTTP_PROXYPORT_ch.ehi.fme.Main_3 http Proxy Port:
-DEFAULT_MACRO ch.ehi.fme.Main_IN_TRACEMSGS_ch.ehi.fme.Main_3 No
-ch.ehi.fme.Main_3_TRACEMSGS "$(ch.ehi.fme.Main_IN_TRACEMSGS_ch.ehi.fme.Main_3)"
-GUI CHOICE ch.ehi.fme.Main_IN_TRACEMSGS_ch.ehi.fme.Main_3 Yes%No Enable Trace Messages:
+GUI FILENAME SourceDataset_ch.ehi.fme.Main_1 INTERLIS_Files(*.xtf;*.xml;*.itf;*.ili)|*.xtf;*.xml;*.itf;*.ili|INTERLIS_2_Files(*.xtf;*.xml)|*.xtf;*.xml|INTERLIS_1_FILES(*.itf)|*.itf|INTERLIS_MODELS(*.ili)|*.ili|All_Files|*.* Original INTERLIS 2 File:
+DEFAULT_MACRO ch.ehi.fme.Main_IN_FME_GROUP_NAMED1_ch.ehi.fme.Main_1 
+GUI OPTIONAL DISCLOSUREGROUP ch.ehi.fme.Main_IN_FME_GROUP_NAMED1_ch.ehi.fme.Main_1 ch.ehi.fme.Main_IN_MODELS_ch.ehi.fme.Main_1%ch.ehi.fme.Main_IN_MODEL_DIR_ch.ehi.fme.Main_1%ch.ehi.fme.Main_IN_TOPICS_FILTER_ch.ehi.fme.Main_1%ch.ehi.fme.Main_IN_CHECK_UNIQUEOID_ch.ehi.fme.Main_1%ch.ehi.fme.Main_IN_CHECK_ATTRTYPE_ch.ehi.fme.Main_1%ch.ehi.fme.Main_IN_CHECK_ATTRMULTIPLICITY_ch.ehi.fme.Main_1%ch.ehi.fme.Main_IN_TRIM_VALUES_ch.ehi.fme.Main_1%ch.ehi.fme.Main_IN_GEOMETRY_ENCODING_ch.ehi.fme.Main_1%ch.ehi.fme.Main_IN_GEOM_ATTR_MAPPING_ch.ehi.fme.Main_1%ch.ehi.fme.Main_IN_CREATE_LINETABLES_ch.ehi.fme.Main_1%ch.ehi.fme.Main_IN_SKIP_POLYGONBUILDING_ch.ehi.fme.Main_1%ch.ehi.fme.Main_IN_INHERITANCE_MAPPING_ch.ehi.fme.Main_1%ch.ehi.fme.Main_IN_ILI1_ADDDEFVAL_ch.ehi.fme.Main_1%ch.ehi.fme.Main_IN_ILI1_RENUMBERTID_ch.ehi.fme.Main_1%ch.ehi.fme.Main_IN_ILI1_CONVERTAREA_ch.ehi.fme.Main_1%ch.ehi.fme.Main_IN_ILI1_CONVERTSURFACE_ch.ehi.fme.Main_1%ch.ehi.fme.Main_IN_ILI1_CHECKCONVERT_ch.ehi.fme.Main_1%ch.ehi.fme.Main_IN_ILI1_ENUMASITFCODE_ch.ehi.fme.Main_1%ch.ehi.fme.Main_IN_CREATEFEATURETYPE4ENUM_ch.ehi.fme.Main_1%ch.ehi.fme.Main_IN_HTTP_PROXYHOST_ch.ehi.fme.Main_1%ch.ehi.fme.Main_IN_HTTP_PROXYPORT_ch.ehi.fme.Main_1%ch.ehi.fme.Main_IN_TRACEMSGS_ch.ehi.fme.Main_1 Parameters
+DEFAULT_MACRO ch.ehi.fme.Main_IN_MODELS_ch.ehi.fme.Main_1 %DATA
+ch.ehi.fme.Main_1_MODELS "$(ch.ehi.fme.Main_IN_MODELS_ch.ehi.fme.Main_1)"
+GUI TEXT ch.ehi.fme.Main_IN_MODELS_ch.ehi.fme.Main_1 Models:
+DEFAULT_MACRO ch.ehi.fme.Main_IN_MODEL_DIR_ch.ehi.fme.Main_1 $(MODELLABLAGE)
+ch.ehi.fme.Main_1_MODEL_DIR "$(ch.ehi.fme.Main_IN_MODEL_DIR_ch.ehi.fme.Main_1)"
+GUI TEXT ch.ehi.fme.Main_IN_MODEL_DIR_ch.ehi.fme.Main_1 Models Directory:
+DEFAULT_MACRO ch.ehi.fme.Main_IN_TOPICS_FILTER_ch.ehi.fme.Main_1 
+ch.ehi.fme.Main_1_TOPICS_FILTER "$(ch.ehi.fme.Main_IN_TOPICS_FILTER_ch.ehi.fme.Main_1)"
+GUI OPTIONAL TEXT ch.ehi.fme.Main_IN_TOPICS_FILTER_ch.ehi.fme.Main_1 Topics filter:
+DEFAULT_MACRO ch.ehi.fme.Main_IN_CHECK_UNIQUEOID_ch.ehi.fme.Main_1 No
+ch.ehi.fme.Main_1_CHECK_UNIQUEOID "$(ch.ehi.fme.Main_IN_CHECK_UNIQUEOID_ch.ehi.fme.Main_1)"
+GUI CHOICE ch.ehi.fme.Main_IN_CHECK_UNIQUEOID_ch.ehi.fme.Main_1 Yes%No Check TID/OID Uniqueness:
+DEFAULT_MACRO ch.ehi.fme.Main_IN_CHECK_ATTRTYPE_ch.ehi.fme.Main_1 Yes
+ch.ehi.fme.Main_1_CHECK_ATTRTYPE "$(ch.ehi.fme.Main_IN_CHECK_ATTRTYPE_ch.ehi.fme.Main_1)"
+GUI CHOICE ch.ehi.fme.Main_IN_CHECK_ATTRTYPE_ch.ehi.fme.Main_1 Yes%No Check Attribute Type:
+DEFAULT_MACRO ch.ehi.fme.Main_IN_CHECK_ATTRMULTIPLICITY_ch.ehi.fme.Main_1 Yes
+ch.ehi.fme.Main_1_CHECK_ATTRMULTIPLICITY "$(ch.ehi.fme.Main_IN_CHECK_ATTRMULTIPLICITY_ch.ehi.fme.Main_1)"
+GUI CHOICE ch.ehi.fme.Main_IN_CHECK_ATTRMULTIPLICITY_ch.ehi.fme.Main_1 Yes%No Check Attribute Multiplicity:
+DEFAULT_MACRO ch.ehi.fme.Main_IN_GEOMETRY_ENCODING_ch.ehi.fme.Main_1 FMEBIN
+ch.ehi.fme.Main_1_GEOMETRY_ENCODING "$(ch.ehi.fme.Main_IN_GEOMETRY_ENCODING_ch.ehi.fme.Main_1)"
+GUI CHOICE ch.ehi.fme.Main_IN_GEOMETRY_ENCODING_ch.ehi.fme.Main_1 FMEXML%FMEBIN%FMEHEXBIN%OGCHEXBIN Geometry Encoding:
+DEFAULT_MACRO ch.ehi.fme.Main_IN_GEOM_ATTR_MAPPING_ch.ehi.fme.Main_1 EncodeAsFmeAttribute
+ch.ehi.fme.Main_1_GEOM_ATTR_MAPPING "$(ch.ehi.fme.Main_IN_GEOM_ATTR_MAPPING_ch.ehi.fme.Main_1)"
+GUI CHOICE ch.ehi.fme.Main_IN_GEOM_ATTR_MAPPING_ch.ehi.fme.Main_1 EncodeAsFmeAttribute%RepeatFeature Mapping of multiple Geometry Attributes:
+DEFAULT_MACRO ch.ehi.fme.Main_IN_CREATE_LINETABLES_ch.ehi.fme.Main_1 No
+ch.ehi.fme.Main_1_CREATE_LINETABLES "$(ch.ehi.fme.Main_IN_CREATE_LINETABLES_ch.ehi.fme.Main_1)"
+GUI CHOICE ch.ehi.fme.Main_IN_CREATE_LINETABLES_ch.ehi.fme.Main_1 Yes%No Create Linetables:
+DEFAULT_MACRO ch.ehi.fme.Main_IN_SKIP_POLYGONBUILDING_ch.ehi.fme.Main_1 No
+ch.ehi.fme.Main_1_SKIP_POLYGONBUILDING "$(ch.ehi.fme.Main_IN_SKIP_POLYGONBUILDING_ch.ehi.fme.Main_1)"
+GUI CHOICE ch.ehi.fme.Main_IN_SKIP_POLYGONBUILDING_ch.ehi.fme.Main_1 Yes%No Skip Polygon Building:
+DEFAULT_MACRO ch.ehi.fme.Main_IN_INHERITANCE_MAPPING_ch.ehi.fme.Main_1 SubClass
+ch.ehi.fme.Main_1_INHERITANCE_MAPPING "$(ch.ehi.fme.Main_IN_INHERITANCE_MAPPING_ch.ehi.fme.Main_1)"
+GUI CHOICE ch.ehi.fme.Main_IN_INHERITANCE_MAPPING_ch.ehi.fme.Main_1 SuperClass%SubClass Inheritance Mapping Strategy:
+DEFAULT_MACRO ch.ehi.fme.Main_IN_TRIM_VALUES_ch.ehi.fme.Main_1 Yes
+ch.ehi.fme.Main_1_TRIM_VALUES "$(ch.ehi.fme.Main_IN_TRIM_VALUES_ch.ehi.fme.Main_1)"
+GUI CHOICE ch.ehi.fme.Main_IN_TRIM_VALUES_ch.ehi.fme.Main_1 Yes%No Trim Values:
+DEFAULT_MACRO ch.ehi.fme.Main_IN_ILI1_ADDDEFVAL_ch.ehi.fme.Main_1 No
+ch.ehi.fme.Main_1_ILI1_ADDDEFVAL "$(ch.ehi.fme.Main_IN_ILI1_ADDDEFVAL_ch.ehi.fme.Main_1)"
+GUI CHOICE ch.ehi.fme.Main_IN_ILI1_ADDDEFVAL_ch.ehi.fme.Main_1 Yes%No ITF Add Default Values:
+DEFAULT_MACRO ch.ehi.fme.Main_IN_ILI1_RENUMBERTID_ch.ehi.fme.Main_1 No
+ch.ehi.fme.Main_1_ILI1_RENUMBERTID "$(ch.ehi.fme.Main_IN_ILI1_RENUMBERTID_ch.ehi.fme.Main_1)"
+GUI CHOICE ch.ehi.fme.Main_IN_ILI1_RENUMBERTID_ch.ehi.fme.Main_1 Yes%No ITF Renumber TIDs:
+DEFAULT_MACRO ch.ehi.fme.Main_IN_ILI1_CONVERTAREA_ch.ehi.fme.Main_1 
+ch.ehi.fme.Main_1_ILI1_CONVERTAREA "$(ch.ehi.fme.Main_IN_ILI1_CONVERTAREA_ch.ehi.fme.Main_1)"
+GUI OPTIONAL FILENAME ch.ehi.fme.Main_IN_ILI1_CONVERTAREA_ch.ehi.fme.Main_1 FME_Mapping_Files(*.fmi)|*.fmi|All_Files|*.* Convert ILI AREA to FME Donut:
+DEFAULT_MACRO ch.ehi.fme.Main_IN_ILI1_CONVERTSURFACE_ch.ehi.fme.Main_1 
+ch.ehi.fme.Main_1_ILI1_CONVERTSURFACE "$(ch.ehi.fme.Main_IN_ILI1_CONVERTSURFACE_ch.ehi.fme.Main_1)"
+GUI OPTIONAL FILENAME ch.ehi.fme.Main_IN_ILI1_CONVERTSURFACE_ch.ehi.fme.Main_1 FME_Mapping_Files(*.fmi)|*.fmi|All_Files|*.* Convert ILI SURFACE to FME Donut:
+DEFAULT_MACRO ch.ehi.fme.Main_IN_ILI1_CHECKCONVERT_ch.ehi.fme.Main_1 Yes
+ch.ehi.fme.Main_1_ILI1_CHECKCONVERT "$(ch.ehi.fme.Main_IN_ILI1_CHECKCONVERT_ch.ehi.fme.Main_1)"
+GUI CHOICE ch.ehi.fme.Main_IN_ILI1_CHECKCONVERT_ch.ehi.fme.Main_1 Yes%No ITF Check Polygon Building:
+DEFAULT_MACRO ch.ehi.fme.Main_IN_ILI1_ENUMASITFCODE_ch.ehi.fme.Main_1 No
+ch.ehi.fme.Main_1_ILI1_ENUMASITFCODE "$(ch.ehi.fme.Main_IN_ILI1_ENUMASITFCODE_ch.ehi.fme.Main_1)"
+GUI CHOICE ch.ehi.fme.Main_IN_ILI1_ENUMASITFCODE_ch.ehi.fme.Main_1 Yes%No ITF Read enum Values as Code:
+DEFAULT_MACRO ch.ehi.fme.Main_IN_CREATEFEATURETYPE4ENUM_ch.ehi.fme.Main_1 No
+ch.ehi.fme.Main_1_CREATEFEATURETYPE4ENUM "$(ch.ehi.fme.Main_IN_CREATEFEATURETYPE4ENUM_ch.ehi.fme.Main_1)"
+GUI CHOICE ch.ehi.fme.Main_IN_CREATEFEATURETYPE4ENUM_ch.ehi.fme.Main_1 No%SingleType%OneTypePerEnumDef Create Feature Types for Enumerations:
+DEFAULT_MACRO ch.ehi.fme.Main_IN_HTTP_PROXYHOST_ch.ehi.fme.Main_1 
+ch.ehi.fme.Main_1_HTTP_PROXYHOST "$(ch.ehi.fme.Main_IN_HTTP_PROXYHOST_ch.ehi.fme.Main_1)"
+GUI OPTIONAL TEXT ch.ehi.fme.Main_IN_HTTP_PROXYHOST_ch.ehi.fme.Main_1 http Proxy Host:
+DEFAULT_MACRO ch.ehi.fme.Main_IN_HTTP_PROXYPORT_ch.ehi.fme.Main_1 
+ch.ehi.fme.Main_1_HTTP_PROXYPORT "$(ch.ehi.fme.Main_IN_HTTP_PROXYPORT_ch.ehi.fme.Main_1)"
+GUI OPTIONAL TEXT ch.ehi.fme.Main_IN_HTTP_PROXYPORT_ch.ehi.fme.Main_1 http Proxy Port:
+DEFAULT_MACRO ch.ehi.fme.Main_IN_TRACEMSGS_ch.ehi.fme.Main_1 No
+ch.ehi.fme.Main_1_TRACEMSGS "$(ch.ehi.fme.Main_IN_TRACEMSGS_ch.ehi.fme.Main_1)"
+GUI CHOICE ch.ehi.fme.Main_IN_TRACEMSGS_ch.ehi.fme.Main_1 Yes%No Enable Trace Messages:
 # ===========================================================================
-DEFAULT_MACRO ch.ehi.fme.Main_IN_NETWORK_AUTHENTICATION_ch.ehi.fme.Main_3 
-ch.ehi.fme.Main_3_NETWORK_AUTHENTICATION "$(ch.ehi.fme.Main_IN_NETWORK_AUTHENTICATION_ch.ehi.fme.Main_3)"
-GUI OPTIONAL AUTHENTICATOR ch.ehi.fme.Main_IN_NETWORK_AUTHENTICATION_ch.ehi.fme.Main_3 CONTAINER%GROUP%CONTAINER_TITLE%"Network Authentication"%PROMPT_TYPE%NETWORK Network Authentication
+DEFAULT_MACRO ch.ehi.fme.Main_IN_NETWORK_AUTHENTICATION_ch.ehi.fme.Main_1 
+ch.ehi.fme.Main_1_NETWORK_AUTHENTICATION "$(ch.ehi.fme.Main_IN_NETWORK_AUTHENTICATION_ch.ehi.fme.Main_1)"
+GUI OPTIONAL AUTHENTICATOR ch.ehi.fme.Main_IN_NETWORK_AUTHENTICATION_ch.ehi.fme.Main_1 CONTAINER%GROUP%CONTAINER_TITLE%"Network Authentication"%PROMPT_TYPE%NETWORK Network Authentication
 # ============================================================================ 
-DEFAULT_MACRO ch.ehi.fme.Main_IN_ATTRIBUTE_READING_ch.ehi.fme.Main_3 ALL
-ch.ehi.fme.Main_3_ATTRIBUTE_READING "$(ch.ehi.fme.Main_IN_ATTRIBUTE_READING_ch.ehi.fme.Main_3)"
+DEFAULT_MACRO ch.ehi.fme.Main_IN_ATTRIBUTE_READING_ch.ehi.fme.Main_1 ALL
+ch.ehi.fme.Main_1_ATTRIBUTE_READING "$(ch.ehi.fme.Main_IN_ATTRIBUTE_READING_ch.ehi.fme.Main_1)"
 # ============================================================================ 
-ch.ehi.fme.Main_3_GENERATE_FME_BUILD_NUM 18310
+ch.ehi.fme.Main_1_GENERATE_FME_BUILD_NUM 18310
 #! END_SOURCE_HEADER
 #! START_WB_HEADER
 DEFAULT_MACRO SourceDataset
 INCLUDE [ if {{$(SourceDataset)} != ""} {                        \
- puts {DEFAULT_MACRO SourceDataset_ch.ehi.fme.Main_3 $(SourceDataset)}     \
+ puts {DEFAULT_MACRO SourceDataset_ch.ehi.fme.Main_1 $(SourceDataset)}     \
  } ]
 #! END_WB_HEADER
-#! START_SOURCE_HEADER ch.ehi.fme.Main ch.ehi.fme.Main_3
-DEFAULT_MACRO SourceDataset_ch.ehi.fme.Main_3 $(XTF_FILE)
-ch.ehi.fme.Main_3_DATASET "$(SourceDataset_ch.ehi.fme.Main_3)"
+#! START_SOURCE_HEADER ch.ehi.fme.Main ch.ehi.fme.Main_1
+DEFAULT_MACRO SourceDataset_ch.ehi.fme.Main_1 $(XTF_FILE)
+ch.ehi.fme.Main_1_DATASET "$(SourceDataset_ch.ehi.fme.Main_1)"
 #! END_SOURCE_HEADER
 #! START_WB_HEADER
 MACRO WB_KEYWORD "GEODATABASE_SDE_1"
@@ -4132,13 +4132,13 @@ FME_IMPLICIT_CSMAP_REPROJECTION_MODE Auto
 FME_GEOMETRY_HANDLING Enhanced
 FME_STROKE_MAX_DEVIATION 0
 LOG_FILTER_MASK -1
-DEFAULT_MACRO DATASET_KEYWORD_ch.ehi.fme.Main_3 ch.ehi.fme.Main_3
+DEFAULT_MACRO DATASET_KEYWORD_ch.ehi.fme.Main_1 ch.ehi.fme.Main_1
 DEFAULT_MACRO DATASET_KEYWORD_GEODATABASE_SDE_1 GEODATABASE_SDE_1
 DEFAULT_MACRO DATASET_KEYWORD_POSTGIS_1 POSTGIS_1
-FME_PASSWORD_PARAMETER_LIST PASSWORD
+FME_PASSWORD_PARAMETER_LIST PASSWORD GEODB_PG_PASSWORD
 # -------------------------------------------------------------------------
 
-ch.ehi.fme.Main_3_READER_META_ATTRIBUTES fme_feature_type
+ch.ehi.fme.Main_1_READER_META_ATTRIBUTES fme_feature_type
 
 # -------------------------------------------------------------------------
 
@@ -4151,47 +4151,47 @@ FME_BEGIN_PYTHON_ENC #<space>-*-<space>coding:<space>utf-8<space>-*-<lf>import<s
 MACRO WORKSPACE_NAME s23_import_sizoplan
 MACRO FME_VIEWER_APP fmedatainspector
 # -------------------------------------------------------------------------
-ch.ehi.fme.Main_3_DEF SafetyZonePlan_LV95_V1_2.RelatedDocuments_WithLatestModification.RegulationDocument   xtf_id                       xtf_char(200)   Title                        xtf_buffer   Weblink                      xtf_char(1023)   Language                     xtf_char(255)   Modification{}.xtf_class     xtf_char(84)   Modification{}.ValidFrom     xtf_datetime   Modification{}.ValidUntil    xtf_datetime   Modification{}.LatestModification xtf_datetime   Modification{}.Modifications{}.xtf_class xtf_char(84)   Modification{}.Modifications{}.Reference xtf_char(200)   Description{}.xtf_class      xtf_char(84)   Description{}.LocalisedText{}.xtf_class xtf_char(84)   Description{}.LocalisedText{}.Language xtf_char(255)   Description{}.LocalisedText{}.Text xtf_buffer
+ch.ehi.fme.Main_1_DEF SafetyZonePlan_LV95_V1_2.RelatedDocuments_WithLatestModification.Document   xtf_id                       xtf_char(200)   Title                        xtf_buffer   Weblink                      xtf_char(1023)   Language                     xtf_char(255)   Modification{}.xtf_class     xtf_char(84)   Modification{}.ValidFrom     xtf_datetime   Modification{}.ValidUntil    xtf_datetime   Modification{}.LatestModification xtf_datetime   Modification{}.Modifications{}.xtf_class xtf_char(84)   Modification{}.Modifications{}.Reference xtf_char(200)   Description{}.xtf_class      xtf_char(84)   Description{}.LocalisedText{}.xtf_class xtf_char(84)   Description{}.LocalisedText{}.Language xtf_char(255)   Description{}.LocalisedText{}.Text xtf_buffer
 # -------------------------------------------------------------------------
-ch.ehi.fme.Main_3_DEF SafetyZonePlan_LV95_V1_2.SafetyZones_WithLatestModification.SafetyZonePrescription   xtf_id                       xtf_char(200)   Prescription                 xtf_char(200)   Restriction                  xtf_char(200)
+ch.ehi.fme.Main_1_DEF SafetyZonePlan_LV95_V1_2.SafetyZones_WithLatestModification.SafetyZonePrescription   xtf_id                       xtf_char(200)   Prescription                 xtf_char(200)   Restriction                  xtf_char(200)
 # -------------------------------------------------------------------------
-ch.ehi.fme.Main_3_DEF SafetyZonePlan_LV95_V1_2.RelatedDocuments_WithLatestModification.OriginReference   xtf_id                       xtf_char(200)   Origin                       xtf_char(200)   Reference                    xtf_char(200)
+ch.ehi.fme.Main_1_DEF SafetyZonePlan_LV95_V1_2.SafetyZones_WithLatestModification.SafetyZone   xtf_id                       xtf_char(200)   Identifier                   xtf_char(30)   Name{}.xtf_class             xtf_char(84)   Name{}.LocalisedText{}.xtf_class xtf_char(84)   Name{}.LocalisedText{}.Language xtf_char(255)   Name{}.LocalisedText{}.Text  xtf_buffer   Status{}.xtf_class           xtf_char(84)   Status{}.Reference           xtf_char(200)   Originator                   xtf_buffer   Canton                       xtf_char(255)   Municipality                 xtf_buffer   ApprovalDate                 xtf_datetime   Validity{}.xtf_class         xtf_char(84)   Validity{}.ValidFrom         xtf_datetime   Validity{}.ValidUntil        xtf_datetime   Validity{}.LatestModification xtf_datetime   Validity{}.Modifications{}.xtf_class xtf_char(84)   Validity{}.Modifications{}.Reference xtf_char(200)   Description{}.xtf_class      xtf_char(84)   Description{}.LocalisedText{}.xtf_class xtf_char(84)   Description{}.LocalisedText{}.Language xtf_char(255)   Description{}.LocalisedText{}.Text xtf_buffer
 # -------------------------------------------------------------------------
-ch.ehi.fme.Main_3_DEF SafetyZonePlan_LV95_V1_2.SafetyZones_WithLatestModification.SafetyZone   xtf_id                       xtf_char(200)   Identifier                   xtf_char(30)   Name{}.xtf_class             xtf_char(84)   Name{}.LocalisedText{}.xtf_class xtf_char(84)   Name{}.LocalisedText{}.Language xtf_char(255)   Name{}.LocalisedText{}.Text  xtf_buffer   Status{}.xtf_class           xtf_char(84)   Status{}.Reference           xtf_char(200)   Originator                   xtf_buffer   Canton                       xtf_char(255)   Municipality                 xtf_buffer   ApprovalDate                 xtf_datetime   Validity{}.xtf_class         xtf_char(84)   Validity{}.ValidFrom         xtf_datetime   Validity{}.ValidUntil        xtf_datetime   Validity{}.LatestModification xtf_datetime   Validity{}.Modifications{}.xtf_class xtf_char(84)   Validity{}.Modifications{}.Reference xtf_char(200)   Description{}.xtf_class      xtf_char(84)   Description{}.LocalisedText{}.xtf_class xtf_char(84)   Description{}.LocalisedText{}.Language xtf_char(255)   Description{}.LocalisedText{}.Text xtf_buffer
+ch.ehi.fme.Main_1_DEF SafetyZonePlan_LV95_V1_2.RelatedDocuments_WithLatestModification.OriginReference   xtf_id                       xtf_char(200)   Origin                       xtf_char(200)   Reference                    xtf_char(200)
 # -------------------------------------------------------------------------
-ch.ehi.fme.Main_3_DEF SafetyZonePlan_LV95_V1_2.RelatedDocuments_WithLatestModification.Document   xtf_id                       xtf_char(200)   Title                        xtf_buffer   Weblink                      xtf_char(1023)   Language                     xtf_char(255)   Modification{}.xtf_class     xtf_char(84)   Modification{}.ValidFrom     xtf_datetime   Modification{}.ValidUntil    xtf_datetime   Modification{}.LatestModification xtf_datetime   Modification{}.Modifications{}.xtf_class xtf_char(84)   Modification{}.Modifications{}.Reference xtf_char(200)   Description{}.xtf_class      xtf_char(84)   Description{}.LocalisedText{}.xtf_class xtf_char(84)   Description{}.LocalisedText{}.Language xtf_char(255)   Description{}.LocalisedText{}.Text xtf_buffer
+ch.ehi.fme.Main_1_DEF SafetyZonePlan_LV95_V1_2.SafetyZones_WithLatestModification.Geometry   xtf_id                       xtf_char(200)   Type{}.xtf_class             xtf_char(84)   Type{}.Reference             xtf_char(200)   Modification{}.xtf_class     xtf_char(84)   Modification{}.ValidFrom     xtf_datetime   Modification{}.ValidUntil    xtf_datetime   Modification{}.LatestModification xtf_datetime   Modification{}.Modifications{}.xtf_class xtf_char(84)   Modification{}.Modifications{}.Reference xtf_char(200)   Zone                         xtf_char(200)
 # -------------------------------------------------------------------------
-ch.ehi.fme.Main_3_DEF SafetyZonePlan_LV95_V1_2.SafetyZones_WithLatestModification.Geometry   xtf_id                       xtf_char(200)   Type{}.xtf_class             xtf_char(84)   Type{}.Reference             xtf_char(200)   Modification{}.xtf_class     xtf_char(84)   Modification{}.ValidFrom     xtf_datetime   Modification{}.ValidUntil    xtf_datetime   Modification{}.LatestModification xtf_datetime   Modification{}.Modifications{}.xtf_class xtf_char(84)   Modification{}.Modifications{}.Reference xtf_char(200)   Zone                         xtf_char(200)
-# -------------------------------------------------------------------------
-
-FACTORY_DEF * RoutingFactory   FACTORY_NAME "Router and Unexpected Input Remover"   COMMAND_PARM_EVALUATION SINGLE_PASS   MULTI_READER_KEYWORD $(DATASET_KEYWORD_ch.ehi.fme.Main_3)   INPUT FEATURE_TYPE *    ROUTE ch.ehi.fme.Main ch.ehi.fme.Main_3::SafetyZonePlan_LV95_V1_2.RelatedDocuments_WithLatestModification.RegulationDocument multi_reader_keyword,$(DATASET_KEYWORD_ch.ehi.fme.Main_3) TO FME_GENERIC ::SafetyZonePlan_LV95_V1_2.RelatedDocuments_WithLatestModification.RegulationDocument ALIAS_GEOMETRY    ROUTE ch.ehi.fme.Main ch.ehi.fme.Main_3::SafetyZonePlan_LV95_V1_2.SafetyZones_WithLatestModification.SafetyZonePrescription multi_reader_keyword,$(DATASET_KEYWORD_ch.ehi.fme.Main_3) TO FME_GENERIC ::SafetyZonePlan_LV95_V1_2.SafetyZones_WithLatestModification.SafetyZonePrescription ALIAS_GEOMETRY    ROUTE ch.ehi.fme.Main ch.ehi.fme.Main_3::SafetyZonePlan_LV95_V1_2.RelatedDocuments_WithLatestModification.OriginReference multi_reader_keyword,$(DATASET_KEYWORD_ch.ehi.fme.Main_3) TO FME_GENERIC ::SafetyZonePlan_LV95_V1_2.RelatedDocuments_WithLatestModification.OriginReference ALIAS_GEOMETRY    ROUTE ch.ehi.fme.Main ch.ehi.fme.Main_3::SafetyZonePlan_LV95_V1_2.SafetyZones_WithLatestModification.SafetyZone multi_reader_keyword,$(DATASET_KEYWORD_ch.ehi.fme.Main_3) TO FME_GENERIC ::SafetyZonePlan_LV95_V1_2.SafetyZones_WithLatestModification.SafetyZone ALIAS_GEOMETRY    ROUTE ch.ehi.fme.Main ch.ehi.fme.Main_3::SafetyZonePlan_LV95_V1_2.RelatedDocuments_WithLatestModification.Document multi_reader_keyword,$(DATASET_KEYWORD_ch.ehi.fme.Main_3) TO FME_GENERIC ::SafetyZonePlan_LV95_V1_2.RelatedDocuments_WithLatestModification.Document ALIAS_GEOMETRY    ROUTE ch.ehi.fme.Main ch.ehi.fme.Main_3::SafetyZonePlan_LV95_V1_2.SafetyZones_WithLatestModification.Geometry multi_reader_keyword,$(DATASET_KEYWORD_ch.ehi.fme.Main_3) TO FME_GENERIC ::SafetyZonePlan_LV95_V1_2.SafetyZones_WithLatestModification.Geometry ALIAS_GEOMETRY    MERGE_INPUT Yes   OUTPUT ROUTED FEATURE_TYPE *
-ch.ehi.fme.Main_3_MERGE_DEF ch.ehi.fme.Main_3::SafetyZonePlan_LV95_V1_2.RelatedDocuments_WithLatestModification.RegulationDocument EXACT SafetyZonePlan_LV95_V1_2.RelatedDocuments_WithLatestModification.RegulationDocument
-ch.ehi.fme.Main_3_MERGE_DEF ch.ehi.fme.Main_3::SafetyZonePlan_LV95_V1_2.SafetyZones_WithLatestModification.SafetyZonePrescription EXACT SafetyZonePlan_LV95_V1_2.SafetyZones_WithLatestModification.SafetyZonePrescription
-ch.ehi.fme.Main_3_MERGE_DEF ch.ehi.fme.Main_3::SafetyZonePlan_LV95_V1_2.RelatedDocuments_WithLatestModification.OriginReference EXACT SafetyZonePlan_LV95_V1_2.RelatedDocuments_WithLatestModification.OriginReference
-ch.ehi.fme.Main_3_MERGE_DEF ch.ehi.fme.Main_3::SafetyZonePlan_LV95_V1_2.SafetyZones_WithLatestModification.SafetyZone EXACT SafetyZonePlan_LV95_V1_2.SafetyZones_WithLatestModification.SafetyZone
-ch.ehi.fme.Main_3_MERGE_DEF ch.ehi.fme.Main_3::SafetyZonePlan_LV95_V1_2.RelatedDocuments_WithLatestModification.Document EXACT SafetyZonePlan_LV95_V1_2.RelatedDocuments_WithLatestModification.Document
-ch.ehi.fme.Main_3_MERGE_DEF ch.ehi.fme.Main_3::SafetyZonePlan_LV95_V1_2.SafetyZones_WithLatestModification.Geometry EXACT SafetyZonePlan_LV95_V1_2.SafetyZones_WithLatestModification.Geometry
+ch.ehi.fme.Main_1_DEF SafetyZonePlan_LV95_V1_2.RelatedDocuments_WithLatestModification.RegulationDocument   xtf_id                       xtf_char(200)   Title                        xtf_buffer   Weblink                      xtf_char(1023)   Language                     xtf_char(255)   Modification{}.xtf_class     xtf_char(84)   Modification{}.ValidFrom     xtf_datetime   Modification{}.ValidUntil    xtf_datetime   Modification{}.LatestModification xtf_datetime   Modification{}.Modifications{}.xtf_class xtf_char(84)   Modification{}.Modifications{}.Reference xtf_char(200)   Description{}.xtf_class      xtf_char(84)   Description{}.LocalisedText{}.xtf_class xtf_char(84)   Description{}.LocalisedText{}.Language xtf_char(255)   Description{}.LocalisedText{}.Text xtf_buffer
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * TeeFactory    FACTORY_NAME "SafetyZonePlan_LV95_V1_2.RelatedDocuments_WithLatestModification.OriginReference (ch.ehi.fme.Main_3) Splitter"    INPUT FEATURE_TYPE SafetyZonePlan_LV95_V1_2.RelatedDocuments_WithLatestModification.OriginReference    OUTPUT FEATURE_TYPE SafetyZonePlan_LV95_V1_2.RelatedDocuments_WithLatestModification.OriginReference_ch.ehi.fme.Main_3
+FACTORY_DEF * RoutingFactory   FACTORY_NAME "Router and Unexpected Input Remover"   COMMAND_PARM_EVALUATION SINGLE_PASS   MULTI_READER_KEYWORD $(DATASET_KEYWORD_ch.ehi.fme.Main_1)   INPUT FEATURE_TYPE *    ROUTE ch.ehi.fme.Main ch.ehi.fme.Main_1::SafetyZonePlan_LV95_V1_2.RelatedDocuments_WithLatestModification.Document multi_reader_keyword,$(DATASET_KEYWORD_ch.ehi.fme.Main_1) TO FME_GENERIC ::SafetyZonePlan_LV95_V1_2.RelatedDocuments_WithLatestModification.Document ALIAS_GEOMETRY    ROUTE ch.ehi.fme.Main ch.ehi.fme.Main_1::SafetyZonePlan_LV95_V1_2.SafetyZones_WithLatestModification.SafetyZonePrescription multi_reader_keyword,$(DATASET_KEYWORD_ch.ehi.fme.Main_1) TO FME_GENERIC ::SafetyZonePlan_LV95_V1_2.SafetyZones_WithLatestModification.SafetyZonePrescription ALIAS_GEOMETRY    ROUTE ch.ehi.fme.Main ch.ehi.fme.Main_1::SafetyZonePlan_LV95_V1_2.SafetyZones_WithLatestModification.SafetyZone multi_reader_keyword,$(DATASET_KEYWORD_ch.ehi.fme.Main_1) TO FME_GENERIC ::SafetyZonePlan_LV95_V1_2.SafetyZones_WithLatestModification.SafetyZone ALIAS_GEOMETRY    ROUTE ch.ehi.fme.Main ch.ehi.fme.Main_1::SafetyZonePlan_LV95_V1_2.RelatedDocuments_WithLatestModification.OriginReference multi_reader_keyword,$(DATASET_KEYWORD_ch.ehi.fme.Main_1) TO FME_GENERIC ::SafetyZonePlan_LV95_V1_2.RelatedDocuments_WithLatestModification.OriginReference ALIAS_GEOMETRY    ROUTE ch.ehi.fme.Main ch.ehi.fme.Main_1::SafetyZonePlan_LV95_V1_2.SafetyZones_WithLatestModification.Geometry multi_reader_keyword,$(DATASET_KEYWORD_ch.ehi.fme.Main_1) TO FME_GENERIC ::SafetyZonePlan_LV95_V1_2.SafetyZones_WithLatestModification.Geometry ALIAS_GEOMETRY    ROUTE ch.ehi.fme.Main ch.ehi.fme.Main_1::SafetyZonePlan_LV95_V1_2.RelatedDocuments_WithLatestModification.RegulationDocument multi_reader_keyword,$(DATASET_KEYWORD_ch.ehi.fme.Main_1) TO FME_GENERIC ::SafetyZonePlan_LV95_V1_2.RelatedDocuments_WithLatestModification.RegulationDocument ALIAS_GEOMETRY    MERGE_INPUT Yes   OUTPUT ROUTED FEATURE_TYPE *
+ch.ehi.fme.Main_1_MERGE_DEF ch.ehi.fme.Main_1::SafetyZonePlan_LV95_V1_2.RelatedDocuments_WithLatestModification.Document EXACT SafetyZonePlan_LV95_V1_2.RelatedDocuments_WithLatestModification.Document
+ch.ehi.fme.Main_1_MERGE_DEF ch.ehi.fme.Main_1::SafetyZonePlan_LV95_V1_2.SafetyZones_WithLatestModification.SafetyZonePrescription EXACT SafetyZonePlan_LV95_V1_2.SafetyZones_WithLatestModification.SafetyZonePrescription
+ch.ehi.fme.Main_1_MERGE_DEF ch.ehi.fme.Main_1::SafetyZonePlan_LV95_V1_2.SafetyZones_WithLatestModification.SafetyZone EXACT SafetyZonePlan_LV95_V1_2.SafetyZones_WithLatestModification.SafetyZone
+ch.ehi.fme.Main_1_MERGE_DEF ch.ehi.fme.Main_1::SafetyZonePlan_LV95_V1_2.RelatedDocuments_WithLatestModification.OriginReference EXACT SafetyZonePlan_LV95_V1_2.RelatedDocuments_WithLatestModification.OriginReference
+ch.ehi.fme.Main_1_MERGE_DEF ch.ehi.fme.Main_1::SafetyZonePlan_LV95_V1_2.SafetyZones_WithLatestModification.Geometry EXACT SafetyZonePlan_LV95_V1_2.SafetyZones_WithLatestModification.Geometry
+ch.ehi.fme.Main_1_MERGE_DEF ch.ehi.fme.Main_1::SafetyZonePlan_LV95_V1_2.RelatedDocuments_WithLatestModification.RegulationDocument EXACT SafetyZonePlan_LV95_V1_2.RelatedDocuments_WithLatestModification.RegulationDocument
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * TeeFactory    FACTORY_NAME "SafetyZonePlan_LV95_V1_2.RelatedDocuments_WithLatestModification.RegulationDocument (ch.ehi.fme.Main_3) Splitter"    INPUT FEATURE_TYPE SafetyZonePlan_LV95_V1_2.RelatedDocuments_WithLatestModification.RegulationDocument    OUTPUT FEATURE_TYPE SafetyZonePlan_LV95_V1_2.RelatedDocuments_WithLatestModification.RegulationDocument_ch.ehi.fme.Main_3
+FACTORY_DEF * TeeFactory    FACTORY_NAME "SafetyZonePlan_LV95_V1_2.SafetyZones_WithLatestModification.SafetyZone (ch.ehi.fme.Main_1) Splitter"    INPUT FEATURE_TYPE SafetyZonePlan_LV95_V1_2.SafetyZones_WithLatestModification.SafetyZone    OUTPUT FEATURE_TYPE SafetyZonePlan_LV95_V1_2.SafetyZones_WithLatestModification.SafetyZone_ch.ehi.fme.Main_1
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * TeeFactory    FACTORY_NAME "SafetyZonePlan_LV95_V1_2.SafetyZones_WithLatestModification.Geometry (ch.ehi.fme.Main_3) Splitter"    INPUT FEATURE_TYPE SafetyZonePlan_LV95_V1_2.SafetyZones_WithLatestModification.Geometry    OUTPUT FEATURE_TYPE SafetyZonePlan_LV95_V1_2.SafetyZones_WithLatestModification.Geometry_ch.ehi.fme.Main_3
+FACTORY_DEF * TeeFactory    FACTORY_NAME "SafetyZonePlan_LV95_V1_2.RelatedDocuments_WithLatestModification.OriginReference (ch.ehi.fme.Main_1) Splitter"    INPUT FEATURE_TYPE SafetyZonePlan_LV95_V1_2.RelatedDocuments_WithLatestModification.OriginReference    OUTPUT FEATURE_TYPE SafetyZonePlan_LV95_V1_2.RelatedDocuments_WithLatestModification.OriginReference_ch.ehi.fme.Main_1
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * TeeFactory    FACTORY_NAME "SafetyZonePlan_LV95_V1_2.SafetyZones_WithLatestModification.SafetyZone (ch.ehi.fme.Main_3) Splitter"    INPUT FEATURE_TYPE SafetyZonePlan_LV95_V1_2.SafetyZones_WithLatestModification.SafetyZone    OUTPUT FEATURE_TYPE SafetyZonePlan_LV95_V1_2.SafetyZones_WithLatestModification.SafetyZone_ch.ehi.fme.Main_3
+FACTORY_DEF * TeeFactory    FACTORY_NAME "SafetyZonePlan_LV95_V1_2.SafetyZones_WithLatestModification.Geometry (ch.ehi.fme.Main_1) Splitter"    INPUT FEATURE_TYPE SafetyZonePlan_LV95_V1_2.SafetyZones_WithLatestModification.Geometry    OUTPUT FEATURE_TYPE SafetyZonePlan_LV95_V1_2.SafetyZones_WithLatestModification.Geometry_ch.ehi.fme.Main_1
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * TeeFactory    FACTORY_NAME "SafetyZonePlan_LV95_V1_2.SafetyZones_WithLatestModification.SafetyZonePrescription (ch.ehi.fme.Main_3) Splitter"    INPUT FEATURE_TYPE SafetyZonePlan_LV95_V1_2.SafetyZones_WithLatestModification.SafetyZonePrescription    OUTPUT FEATURE_TYPE SafetyZonePlan_LV95_V1_2.SafetyZones_WithLatestModification.SafetyZonePrescription_ch.ehi.fme.Main_3
+FACTORY_DEF * TeeFactory    FACTORY_NAME "SafetyZonePlan_LV95_V1_2.SafetyZones_WithLatestModification.SafetyZonePrescription (ch.ehi.fme.Main_1) Splitter"    INPUT FEATURE_TYPE SafetyZonePlan_LV95_V1_2.SafetyZones_WithLatestModification.SafetyZonePrescription    OUTPUT FEATURE_TYPE SafetyZonePlan_LV95_V1_2.SafetyZones_WithLatestModification.SafetyZonePrescription_ch.ehi.fme.Main_1
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * TeeFactory    FACTORY_NAME "SafetyZonePlan_LV95_V1_2.RelatedDocuments_WithLatestModification.Document (ch.ehi.fme.Main_3) Splitter"    INPUT FEATURE_TYPE SafetyZonePlan_LV95_V1_2.RelatedDocuments_WithLatestModification.Document    OUTPUT FEATURE_TYPE SafetyZonePlan_LV95_V1_2.RelatedDocuments_WithLatestModification.Document_ch.ehi.fme.Main_3
+FACTORY_DEF * TeeFactory    FACTORY_NAME "SafetyZonePlan_LV95_V1_2.RelatedDocuments_WithLatestModification.RegulationDocument (ch.ehi.fme.Main_1) Splitter"    INPUT FEATURE_TYPE SafetyZonePlan_LV95_V1_2.RelatedDocuments_WithLatestModification.RegulationDocument    OUTPUT FEATURE_TYPE SafetyZonePlan_LV95_V1_2.RelatedDocuments_WithLatestModification.RegulationDocument_ch.ehi.fme.Main_1
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME "SafetyZonePlan_LV95_V1_2.RelatedDocuments_WithLatestModification.Document (ch.ehi.fme.Main_1) Splitter"    INPUT FEATURE_TYPE SafetyZonePlan_LV95_V1_2.RelatedDocuments_WithLatestModification.Document    OUTPUT FEATURE_TYPE SafetyZonePlan_LV95_V1_2.RelatedDocuments_WithLatestModification.Document_ch.ehi.fme.Main_1
 DEFAULT_MACRO WB_CURRENT_CONTEXT
 # -------------------------------------------------------------------------
-FACTORY_DEF * AttrSetFactory FACTORY_NAME AttributeCreator_3 ATTRSET_PROPAGATE_MISSING YES INPUT  FEATURE_TYPE SafetyZonePlan_LV95_V1_2.RelatedDocuments_WithLatestModification.Document_ch.ehi.fme.Main_3 ATTR multilangfields Description    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_3_OUTPUT 
+FACTORY_DEF * AttrSetFactory FACTORY_NAME AttributeCreator_3 ATTRSET_PROPAGATE_MISSING YES INPUT  FEATURE_TYPE SafetyZonePlan_LV95_V1_2.RelatedDocuments_WithLatestModification.Document_ch.ehi.fme.Main_1 ATTR multilangfields Description    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_3_OUTPUT 
 # -------------------------------------------------------------------------
 
 
@@ -4210,7 +4210,7 @@ FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRenamer_3    INPUT  FEATURE_TY
 
 
 # -------------------------------------------------------------------------
-FACTORY_DEF * AttrSetFactory FACTORY_NAME AttributeCreator_4 ATTRSET_PROPAGATE_MISSING YES INPUT  FEATURE_TYPE SafetyZonePlan_LV95_V1_2.RelatedDocuments_WithLatestModification.RegulationDocument_ch.ehi.fme.Main_3 ATTR multilangfields Description    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_4_OUTPUT 
+FACTORY_DEF * AttrSetFactory FACTORY_NAME AttributeCreator_4 ATTRSET_PROPAGATE_MISSING YES INPUT  FEATURE_TYPE SafetyZonePlan_LV95_V1_2.RelatedDocuments_WithLatestModification.RegulationDocument_ch.ehi.fme.Main_1 ATTR multilangfields Description    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_4_OUTPUT 
 # -------------------------------------------------------------------------
 
 
@@ -4231,7 +4231,7 @@ FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRenamer_4    INPUT  FEATURE_TY
 # -------------------------------------------------------------------------
 
 INCLUDE [    set macroLine "MACRO AttributeRemover_7_LIST_EXP ";    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "{\[0-9\]+}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
-FACTORY_DEF {*} TeeFactory    FACTORY_NAME AttributeRemover_7    INPUT  FEATURE_TYPE SafetyZonePlan_LV95_V1_2.SafetyZones_WithLatestModification.SafetyZonePrescription_ch.ehi.fme.Main_3    OUTPUT { FEATURE_TYPE AttributeRemover_7_OUTPUT        @RemoveAttributes(xtf_id)        @RemoveAttributes(fme_regexp_match"$(AttributeRemover_7_LIST_EXP)")         }
+FACTORY_DEF {*} TeeFactory    FACTORY_NAME AttributeRemover_7    INPUT  FEATURE_TYPE SafetyZonePlan_LV95_V1_2.SafetyZones_WithLatestModification.SafetyZonePrescription_ch.ehi.fme.Main_1    OUTPUT { FEATURE_TYPE AttributeRemover_7_OUTPUT        @RemoveAttributes(xtf_id)        @RemoveAttributes(fme_regexp_match"$(AttributeRemover_7_LIST_EXP)")         }
 
 # -------------------------------------------------------------------------
 
@@ -4242,7 +4242,7 @@ FACTORY_DEF {*} ReferenceFactory    FACTORY_NAME FeatureMerger_4    INPUT REFERE
 # -------------------------------------------------------------------------
 Lookup AttributeValueMapper_LOOKUP_TABLE   108-T-01        1   108-T-02        2   108-T-03        3   108-T-04        4   108-T-05        5   ""              ""   ENCODED_SUPPORTUNICODE
 
-FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeValueMapper    INPUT  FEATURE_TYPE SafetyZonePlan_LV95_V1_2.SafetyZones_WithLatestModification.Geometry_ch.ehi.fme.Main_3    OUTPUT FEATURE_TYPE AttributeValueMapper_OUTPUT         @Lookup(AttributeValueMapper_LOOKUP_TABLE,"Type<opencurly>0<closecurly>.Reference",FORWARD|ENCODED_ATTR|REAL_NULL_SUPPORT, ZONENTYP)
+FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeValueMapper    INPUT  FEATURE_TYPE SafetyZonePlan_LV95_V1_2.SafetyZones_WithLatestModification.Geometry_ch.ehi.fme.Main_1    OUTPUT FEATURE_TYPE AttributeValueMapper_OUTPUT         @Lookup(AttributeValueMapper_LOOKUP_TABLE,"Type<opencurly>0<closecurly>.Reference",FORWARD|ENCODED_ATTR|REAL_NULL_SUPPORT, ZONENTYP)
 
 
 # -------------------------------------------------------------------------
@@ -4253,7 +4253,7 @@ FACTORY_DEF {*} TeeFactory    FACTORY_NAME AttributeRemover_2    INPUT  FEATURE_
 # -------------------------------------------------------------------------
 
 INCLUDE [    set macroLine "MACRO AttributeRemover_8_LIST_EXP ";    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "{\[0-9\]+}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
-FACTORY_DEF {*} TeeFactory    FACTORY_NAME AttributeRemover_8    INPUT  FEATURE_TYPE SafetyZonePlan_LV95_V1_2.RelatedDocuments_WithLatestModification.OriginReference_ch.ehi.fme.Main_3    OUTPUT { FEATURE_TYPE AttributeRemover_8_OUTPUT        @RemoveAttributes(xtf_id)        @RemoveAttributes(fme_regexp_match"$(AttributeRemover_8_LIST_EXP)")         }
+FACTORY_DEF {*} TeeFactory    FACTORY_NAME AttributeRemover_8    INPUT  FEATURE_TYPE SafetyZonePlan_LV95_V1_2.RelatedDocuments_WithLatestModification.OriginReference_ch.ehi.fme.Main_1    OUTPUT { FEATURE_TYPE AttributeRemover_8_OUTPUT        @RemoveAttributes(xtf_id)        @RemoveAttributes(fme_regexp_match"$(AttributeRemover_8_LIST_EXP)")         }
 
 # -------------------------------------------------------------------------
 
@@ -4262,7 +4262,7 @@ INCLUDE [if { {ATTRIBUTES} == {ATTRIBUTES} } {                puts "MACRO Featur
 FACTORY_DEF {*} ReferenceFactory    FACTORY_NAME FeatureMerger    INPUT REFERENCER FEATURE_TYPE AttributeRemover_8_OUTPUT    INPUT REFERENCEE FEATURE_TYPE AttributeRenamer_3_OUTPUT    REFERENCE_INFO $(FeatureMerger_REFERENCE_INFO)    REFERENCE_TABLE @EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>Reference<closeparen>,FeatureMerger) @EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>doku_xtf_id<closeparen>,FeatureMerger) AUTO    ATTR_ACCUM_MODE "HANDLE_CONFLICT"    ATTR_CONFLICT_RES "REQUESTOR_IF_CONFLICT"    IGNORE_NULLS "No"    HANDLE_NULL_MISSING_KEYS_LIKE_FME2013 No    LIST_ATTRS_TO_INCLUDE { <Unused> }    LIST_ATTRS_TO_INCLUDE_MODE <Unused>    MERGE_ATTRIBUTES Yes    MANAGE_FME_TYPE Yes    MODE COMPLETE    PROCESS_DUPLICATE_REFERENCEES NO    REFERENCEES_FIRST No    REJECT_INVALID_GEOM YES    CLEANING_TOLERANCE <Unused>    OUTPUT COMPLETE FEATURE_TYPE FeatureMerger_MERGED
 
 # -------------------------------------------------------------------------
-FACTORY_DEF * AttrSetFactory FACTORY_NAME AttributeCreator ATTRSET_PROPAGATE_MISSING YES INPUT  FEATURE_TYPE SafetyZonePlan_LV95_V1_2.SafetyZones_WithLatestModification.SafetyZone_ch.ehi.fme.Main_3 ATTR multilangfields Name    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_OUTPUT 
+FACTORY_DEF * AttrSetFactory FACTORY_NAME AttributeCreator ATTRSET_PROPAGATE_MISSING YES INPUT  FEATURE_TYPE SafetyZonePlan_LV95_V1_2.SafetyZones_WithLatestModification.SafetyZone_ch.ehi.fme.Main_1 ATTR multilangfields Name    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_OUTPUT 
 # -------------------------------------------------------------------------
 
 
@@ -4390,6 +4390,6 @@ GEODATABASE_SDE_1_DEF GEODB.SIZOPLAN_REVO   geodb_type                   geodb_t
 # -------------------------------------------------------------------------
 GEODATABASE_SDE_1_DEF GEODB.SIZOPLAN_SIZOPLAN   geodb_type                   geodb_polygon   GEODB_DROP_TABLE             NO   GEODB_TRUNCATE_TABLE         YES   GEODB_OBJECT_ID_NAME         OBJECTID   GEODB_OBJECT_ID_ALIAS        OBJECTID   GEODB_SHAPE_NAME             SHAPE   GEODB_SHAPE_ALIAS            SHAPE   GEODB_CONFIG_KEYWORD         DEFAULTS   GEODB_FEATURE_DATASET        ""   GEODB_GRID{1}                ""   GEODB_AVG_NUM_POINTS         ""   GEODB_XORIGIN                ""   GEODB_YORIGIN                ""   GEODB_XYSCALE                ""   GEODB_HAS_Z_VALUES           ""   GEODB_ZORIGIN                ""   GEODB_ZSCALE                 ""   GEODB_HAS_MEASURES           ""   GEODB_MEASURES_ORIGIN        ""   GEODB_MEASURES_SCALE         ""   GEODB_ANNO_REFERENCE_SCALE   ""   ZONENID                      char(30)   ZONENTYP                     smallint   ORIGINATOR                   char(255)   KANTON                       char(2)   GEMEINDE                     char(1024)   NAME                         char(255)   STATUS                       smallint   GENEHMIGT                    char(10)   BESCHR_D                     char(1024)   BESCHR_F                     char(1024)
 # -------------------------------------------------------------------------
-POSTGIS_1_DEF geodb.sizoplan_sizoplan   postgis_type                 postgis_geometry   postgis_mode                 ""   postgis_sql_key_columns      ""   postgis_drop_table           ""   postgis_truncate_table       ""   fme_feature_operation        INSERT   fme_table_handling           TRUNCATE_EXISTING   postgis_create_with_oids     NO   postgis_create_gist_index    YES   postgis_spatial_column_type  geometry   postgis_spatial_column       shape   postgis_srid                 ""   postgis_vacuum_analyze       NO   postgis_allow_serial_writing NO   zonenid                      varchar(30)   zonentyp                     int2   originator                   varchar(255)   kanton                       varchar(2)   gemeinde                     varchar(1024)   name                         varchar(255)   status                       int2   genehmigt                    varchar(10)   beschr_d                     varchar(1024)   beschr_f                     varchar(1024)
-# -------------------------------------------------------------------------
 POSTGIS_1_DEF geodb.sizoplan_revo   postgis_type                 postgis_geometry   postgis_mode                 ""   postgis_sql_key_columns      ""   postgis_drop_table           ""   postgis_truncate_table       ""   fme_feature_operation        INSERT   fme_table_handling           TRUNCATE_EXISTING   postgis_create_with_oids     NO   postgis_create_gist_index    YES   postgis_spatial_column_type  geometry   postgis_spatial_column       shape   postgis_srid                 ""   postgis_vacuum_analyze       NO   postgis_allow_serial_writing NO   zonenid                      varchar(30)   titel                        varchar(255)   weblink                      varchar(1024)   beschrieb                    varchar(1024)
+# -------------------------------------------------------------------------
+POSTGIS_1_DEF geodb.sizoplan_sizoplan   postgis_type                 postgis_geometry   postgis_mode                 ""   postgis_sql_key_columns      ""   postgis_drop_table           ""   postgis_truncate_table       ""   fme_feature_operation        INSERT   fme_table_handling           TRUNCATE_EXISTING   postgis_create_with_oids     NO   postgis_create_gist_index    YES   postgis_spatial_column_type  geometry   postgis_spatial_column       shape   postgis_srid                 ""   postgis_vacuum_analyze       NO   postgis_allow_serial_writing NO   zonenid                      varchar(30)   zonentyp                     int2   originator                   varchar(255)   kanton                       varchar(2)   gemeinde                     varchar(1024)   name                         varchar(255)   status                       int2   genehmigt                    varchar(10)   beschr_d                     varchar(1024)   beschr_f                     varchar(1024)

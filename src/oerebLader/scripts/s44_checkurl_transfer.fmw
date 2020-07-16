@@ -1,17 +1,17 @@
 #! <?xml version="1.0" encoding="UTF-8" ?>
 #! <WORKSPACE
 #    Command-line to run this workspace:
-#        "C:\Program Files (x86)\FME\fme.exe" D:\Daten\repos\oerebLader\oerebLader\scripts\s44_checkurl_transfer.fmw
+#        "C:\Program Files (x86)\FME\fme.exe" E:\Daten\repos\oerebLader\src\oerebLader\scripts\s44_checkurl_transfer.fmw
 #              --OEREB2_DATABASE ""
 #              --OEREB2_USERNAME ""
-#              --OEREB2_PASSWORD ""
+#              --OEREB2_PASSWORD "********"
 #              --SCHEMAS ""
 #              --LIEFEREINHEIT ""
 #              --OEREB_PG_HOST ""
 #              --OEREB_PG_PORT ""
 #              --OEREB_PG_DATABASE ""
 #              --OEREB_PG_USERNAME ""
-#              --OEREB_PG_PASSWORD ""
+#              --OEREB_PG_PASSWORD "********"
 #              --LOGFILE ""
 #    
 #!   ATTR_TYPE_ENCODING="SDF"
@@ -27,8 +27,8 @@
 #!   END_TCL=""
 #!   EXPLICIT_BOOKMARK_ORDER="false"
 #!   FME_BUILD_NUM="18310"
-#!   FME_DOCUMENT_GUID="998a3d6e-115e-4eec-943d-62e232458735"
-#!   FME_DOCUMENT_PRIORGUID="5be125f2-590d-4cce-ac22-5f14b8b53049,e0d09a53-58fa-43ba-9aff-87554d375a44,eea87cef-3b06-4716-a302-a60d51863c3e,e85cdbb3-2edd-42e1-9c41-80452481ff23,8215f362-847f-4831-9821-6e60d81e6ae0"
+#!   FME_DOCUMENT_GUID="569a102d-d167-4526-b47d-cf44c36a70b4"
+#!   FME_DOCUMENT_PRIORGUID="5be125f2-590d-4cce-ac22-5f14b8b53049,e0d09a53-58fa-43ba-9aff-87554d375a44,eea87cef-3b06-4716-a302-a60d51863c3e,e85cdbb3-2edd-42e1-9c41-80452481ff23,8215f362-847f-4831-9821-6e60d81e6ae0,998a3d6e-115e-4eec-943d-62e232458735"
 #!   FME_GEOMETRY_HANDLING="Enhanced"
 #!   FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
 #!   FME_REPROJECTION_ENGINE="FME"
@@ -37,7 +37,7 @@
 #!   HISTORY=""
 #!   IGNORE_READER_FAILURE="No"
 #!   LAST_SAVE_BUILD="FME(R) 2018.0.1.0 (20180518 - Build 18310 - WIN32)"
-#!   LAST_SAVE_DATE="2019-11-20T13:07:34"
+#!   LAST_SAVE_DATE="2020-07-16T12:22:36"
 #!   LOG_FILE="$(LOGFILE)"
 #!   LOG_MAX_RECORDED_FEATURES="200"
 #!   MARKDOWN_DESCRIPTION=""
@@ -55,7 +55,7 @@
 #!   TITLE=""
 #!   USAGE=""
 #!   USE_MARKDOWN=""
-#!   VIEW_POSITION="3646.91 9.37509"
+#!   VIEW_POSITION="3646.91 6.25006"
 #!   WARN_INVALID_XFORM_PARAM="Yes"
 #!   WORKSPACE_VERSION="1"
 #!   ZOOM_SCALE="100"
@@ -82,7 +82,7 @@
 #!   IS_STAND_ALONE="true"
 #! />
 #! <GLOBAL_PARAMETER
-#!   GUI_LINE="GUI TEXT OEREB2_PASSWORD OEREB2-Passwort:"
+#!   GUI_LINE="GUI PASSWORD OEREB2_PASSWORD OEREB2-Passwort:"
 #!   DEFAULT_VALUE=""
 #!   IS_STAND_ALONE="true"
 #! />
@@ -117,7 +117,7 @@
 #!   IS_STAND_ALONE="true"
 #! />
 #! <GLOBAL_PARAMETER
-#!   GUI_LINE="GUI TEXT OEREB_PG_PASSWORD OEREB_PG_PASSWORD:"
+#!   GUI_LINE="GUI PASSWORD OEREB_PG_PASSWORD OEREB_PG_PASSWORD:"
 #!   DEFAULT_VALUE=""
 #!   IS_STAND_ALONE="true"
 #! />
@@ -926,11 +926,11 @@
 #! >
 #!     <OUTPUT_FEAT NAME="OUTPUT"/>
 #!     <FEAT_COLLAPSED COLLAPSED="0"/>
-#!     <XFORM_ATTR ATTR_NAME="schemas" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="liefereinheit" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="url_de" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="url_fr" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="schema" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="url_de" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="schemas" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="url_fr" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_PARM PARM_NAME="ATTRCHOICE" PARM_VALUE="All Attributes"/>
 #!     <XFORM_PARM PARM_NAME="ATTRLIST" PARM_VALUE="&lt;Unused&gt;"/>
 #!     <XFORM_PARM PARM_NAME="ATTRS_GROUP" PARM_VALUE=""/>
@@ -1368,7 +1368,7 @@ GUI TEXT OEREB2_DATABASE OEREB2-Database:
 DEFAULT_MACRO OEREB2_USERNAME 
 GUI TEXT OEREB2_USERNAME OEREB2-Username:
 DEFAULT_MACRO OEREB2_PASSWORD 
-GUI TEXT OEREB2_PASSWORD OEREB2-Passwort:
+GUI PASSWORD OEREB2_PASSWORD OEREB2-Passwort:
 DEFAULT_MACRO SCHEMAS 
 GUI TEXT SCHEMAS SCHEMAS:
 DEFAULT_MACRO LIEFEREINHEIT 
@@ -1382,7 +1382,7 @@ GUI TEXT OEREB_PG_DATABASE OEREB_PG_DATABASE:
 DEFAULT_MACRO OEREB_PG_USERNAME 
 GUI TEXT OEREB_PG_USERNAME OEREB_PG_USERNAME:
 DEFAULT_MACRO OEREB_PG_PASSWORD 
-GUI TEXT OEREB_PG_PASSWORD OEREB_PG_PASSWORD:
+GUI PASSWORD OEREB_PG_PASSWORD OEREB_PG_PASSWORD:
 DEFAULT_MACRO LOGFILE 
 GUI TEXT LOGFILE LOGFILE:
 INCLUDE [ if {{$(OEREB2_DATABASE)} == {}} { puts_real {Parameter 'OEREB2_DATABASE' must be given a value.}; exit 1; }; ]
@@ -1419,6 +1419,7 @@ FME_IMPLICIT_CSMAP_REPROJECTION_MODE Auto
 FME_GEOMETRY_HANDLING Enhanced
 FME_STROKE_MAX_DEVIATION 0
 LOG_FILTER_MASK -1
+FME_PASSWORD_PARAMETER_LIST OEREB2_PASSWORD OEREB_PG_PASSWORD
 # -------------------------------------------------------------------------
 
 MULTI_READER_CONTINUE_ON_READER_FAILURE No
@@ -1481,7 +1482,7 @@ DEFAULT_MACRO _WB_BYPASS_TERMINATION No
 FACTORY_DEF * TeeFactory FACTORY_NAME SQLExecutor_6_<Rejected> INPUT FEATURE_TYPE SQLExecutor_6_<REJECTED>  OUTPUT FAILED FEATURE_TYPE * @Abort(ENCODED, SQLExecutor_6<space>output<space>a<space><lt>Rejected<gt><space>feature.<space><space>To<space>continue<space>translation<space>when<space>features<space>are<space>rejected<comma><space>change<space><apos>Workspace<space>Parameters<apos><space><gt><space>Translation<space><gt><space><apos>Rejected<space>Feature<space>Handling<apos><space>to<space><apos>Continue<space>Translation<apos>)
 # -------------------------------------------------------------------------
 
-Tcl2 set AttributeSplitter_c0a02f46_4c4a_4e57_999b_a3bd2679e6fe2_splitDelim [FME_DecodeText {<comma>}];      if { [regexp {^([1-9][0-9]*s)+$} [set AttributeSplitter_c0a02f46_4c4a_4e57_999b_a3bd2679e6fe2_splitDelim]] }      {         set AttributeSplitter_c0a02f46_4c4a_4e57_999b_a3bd2679e6fe2_splitWidths [split [regsub -all {s$} {<comma>} {}] s];         proc AttributeSplitter_doSplit {}         {            global AttributeSplitter_c0a02f46_4c4a_4e57_999b_a3bd2679e6fe2_splitWidths;            set source [FME_GetAttribute [FME_DecodeText {schemas}]];            set attrNum 0;            set listName [FME_DecodeText {schema}];            set attrPos 0;            set keepEmptyParts [string equal {No} {No}];            foreach width [set AttributeSplitter_c0a02f46_4c4a_4e57_999b_a3bd2679e6fe2_splitWidths]            {               set endPos [expr $attrPos + $width - 1];               set bit [string range $source $attrPos $endPos];               set part [string trim $bit];               if { $keepEmptyParts || $part != \"\" } {                  FME_SetAttribute "$listName{$attrNum}" $part;                  incr attrNum;               };               incr attrPos $width;            };         };      }      else      {         proc AttributeSplitter_doSplit {}         {            global AttributeSplitter_c0a02f46_4c4a_4e57_999b_a3bd2679e6fe2_splitDelim;            set delim [set AttributeSplitter_c0a02f46_4c4a_4e57_999b_a3bd2679e6fe2_splitDelim];            set delimLength [string length $delim];            set source [FME_GetAttribute [FME_DecodeText {schemas}]];            set keepEmptyParts [string equal {No} {No}];            set bits {};            set startIndex 0;            set nextIndex [string first $delim $source $startIndex];            while {$nextIndex >= 0} {              lappend bits [string range $source $startIndex [expr $nextIndex-1]];              set startIndex [expr $nextIndex + $delimLength];              set nextIndex [string first $delim $source $startIndex];            };            lappend bits [string range $source $startIndex end];            set listName [FME_DecodeText {schema}];            set attrNum 0;            foreach bit $bits            {               set trimmedPart [string trim $bit];               if { $keepEmptyParts || $trimmedPart != \"\" } {                  FME_SetAttribute "$listName{$attrNum}" $trimmedPart;                  incr attrNum;               };            }          }       }
+Tcl2 set AttributeSplitter_20566b94_0b19_4829_a142_d3ab765810810_splitDelim [FME_DecodeText {<comma>}];      if { [regexp {^([1-9][0-9]*s)+$} [set AttributeSplitter_20566b94_0b19_4829_a142_d3ab765810810_splitDelim]] }      {         set AttributeSplitter_20566b94_0b19_4829_a142_d3ab765810810_splitWidths [split [regsub -all {s$} {<comma>} {}] s];         proc AttributeSplitter_doSplit {}         {            global AttributeSplitter_20566b94_0b19_4829_a142_d3ab765810810_splitWidths;            set source [FME_GetAttribute [FME_DecodeText {schemas}]];            set attrNum 0;            set listName [FME_DecodeText {schema}];            set attrPos 0;            set keepEmptyParts [string equal {No} {No}];            foreach width [set AttributeSplitter_20566b94_0b19_4829_a142_d3ab765810810_splitWidths]            {               set endPos [expr $attrPos + $width - 1];               set bit [string range $source $attrPos $endPos];               set part [string trim $bit];               if { $keepEmptyParts || $part != \"\" } {                  FME_SetAttribute "$listName{$attrNum}" $part;                  incr attrNum;               };               incr attrPos $width;            };         };      }      else      {         proc AttributeSplitter_doSplit {}         {            global AttributeSplitter_20566b94_0b19_4829_a142_d3ab765810810_splitDelim;            set delim [set AttributeSplitter_20566b94_0b19_4829_a142_d3ab765810810_splitDelim];            set delimLength [string length $delim];            set source [FME_GetAttribute [FME_DecodeText {schemas}]];            set keepEmptyParts [string equal {No} {No}];            set bits {};            set startIndex 0;            set nextIndex [string first $delim $source $startIndex];            while {$nextIndex >= 0} {              lappend bits [string range $source $startIndex [expr $nextIndex-1]];              set startIndex [expr $nextIndex + $delimLength];              set nextIndex [string first $delim $source $startIndex];            };            lappend bits [string range $source $startIndex end];            set listName [FME_DecodeText {schema}];            set attrNum 0;            foreach bit $bits            {               set trimmedPart [string trim $bit];               if { $keepEmptyParts || $trimmedPart != \"\" } {                  FME_SetAttribute "$listName{$attrNum}" $trimmedPart;                  incr attrNum;               };            }          }       }
 FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeSplitter    INPUT  FEATURE_TYPE AttributeManager_OUTPUT_0_qkWxPTSviNs=    OUTPUT FEATURE_TYPE AttributeSplitter_OUTPUT         @Tcl2(AttributeSplitter_doSplit)
 
 # -------------------------------------------------------------------------
@@ -1491,9 +1492,9 @@ DEFAULT_MACRO _WB_BYPASS_TERMINATION No
 FACTORY_DEF * TeeFactory FACTORY_NAME ListExploder_<Rejected> INPUT FEATURE_TYPE ListExploder_<REJECTED>  OUTPUT FAILED FEATURE_TYPE * @Abort(ENCODED, ListExploder<space>output<space>a<space><lt>Rejected<gt><space>feature.<space><space>To<space>continue<space>translation<space>when<space>features<space>are<space>rejected<comma><space>change<space><apos>Workspace<space>Parameters<apos><space><gt><space>Translation<space><gt><space><apos>Rejected<space>Feature<space>Handling<apos><space>to<space><apos>Continue<space>Translation<apos>)
 # -------------------------------------------------------------------------
 
-INCLUDE [    set macroLine "MACRO AttributeKeeper_2bf577bf_2e10_4220_9e8a_fd6828e0fde42_LIST_EXP ";    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "\\{\[0-9\]+\\}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
+INCLUDE [    set macroLine "MACRO AttributeKeeper_35c761e1_680a_415d_9b5b_af85ad9dd6330_LIST_EXP ";    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "\\{\[0-9\]+\\}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
 
-FACTORY_DEF {*} TeeFactory    FACTORY_NAME AttributeKeeper    INPUT  FEATURE_TYPE ListExploder_ELEMENTS    OUTPUT { FEATURE_TYPE AttributeKeeper_OUTPUT        @KeepAttributes(fme_encoded,schema,liefereinheit,fme_pcre_match,"^fme_$(AttributeKeeper_2bf577bf_2e10_4220_9e8a_fd6828e0fde42_LIST_EXP)")         }
+FACTORY_DEF {*} TeeFactory    FACTORY_NAME AttributeKeeper    INPUT  FEATURE_TYPE ListExploder_ELEMENTS    OUTPUT { FEATURE_TYPE AttributeKeeper_OUTPUT        @KeepAttributes(fme_encoded,schema,liefereinheit,fme_pcre_match,"^fme_$(AttributeKeeper_35c761e1_680a_415d_9b5b_af85ad9dd6330_LIST_EXP)")         }
 
 FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeKeeper OUTPUT Splitter"   INPUT FEATURE_TYPE AttributeKeeper_OUTPUT   OUTPUT FEATURE_TYPE AttributeKeeper_OUTPUT_0_rpABwRdi1ws=   OUTPUT FEATURE_TYPE AttributeKeeper_OUTPUT_1_ZImEmLS5GM8=   OUTPUT FEATURE_TYPE AttributeKeeper_OUTPUT_2_TmNRcQ2YPyY=
 # -------------------------------------------------------------------------
@@ -1556,7 +1557,7 @@ FACTORY_DEF * HTTPFactory    FACTORY_NAME HTTPCaller       INPUT  FEATURE_TYPE D
 FACTORY_DEF * TestFactory    FACTORY_NAME Tester_2    INPUT  FEATURE_TYPE HTTPCaller_Output    TEST @EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>_http_status_code<closeparen>,Tester_2) = 200 ENCODED    BOOLEAN_OPERATOR OR    OUTPUT FAILED FEATURE_TYPE Tester_2_FAILED
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * TeeFactory    FACTORY_NAME URLs_NotFound_Logger    INPUT  FEATURE_TYPE HTTPCaller_<Rejected>    INPUT  FEATURE_TYPE Tester_2_FAILED    OUTPUT FEATURE_TYPE URLs_NotFound_LOGGED                  @FeatureType("URLs_NotFound")                  @Log(ENCODED, "URLs_NotFound:<space>Ung<u00fc>ltige<space>URL:","20","1000","",ERROR,LOG_ONLY,URLs_NotFound_c363a697_5286_4f5a_a78c_eea5a537a9962)                  @FeatureType(URLs_NotFound_LOGGED) @Value("URLs_NotFound")
+FACTORY_DEF * TeeFactory    FACTORY_NAME URLs_NotFound_Logger    INPUT  FEATURE_TYPE HTTPCaller_<Rejected>    INPUT  FEATURE_TYPE Tester_2_FAILED    OUTPUT FEATURE_TYPE URLs_NotFound_LOGGED                  @FeatureType("URLs_NotFound")                  @Log(ENCODED, "URLs_NotFound:<space>Ung<u00fc>ltige<space>URL:","20","1000","",ERROR,LOG_ONLY,URLs_NotFound_153939ac_d898_47c1_8b68_592c9aaa1fec0)                  @FeatureType(URLs_NotFound_LOGGED) @Value("URLs_NotFound")
 
 # -------------------------------------------------------------------------
 
