@@ -14,7 +14,7 @@ def run(config):
     gprcode = 'BALISKBS'
     
     table_sql = "select ebecode from gpr where GPRCODE='" + gprcode + "'"
-    ebenen = config['OEREB2_WORK']['connection'].db_read(table_sql)
+    ebenen = config['OEREB_WORK_PG']['connection'].db_read(table_sql)
     ebenen_fme = []
     for ebene in ebenen:
         logger.info("Ebene " + ebene[0])
@@ -55,7 +55,7 @@ def run(config):
 
     
     fme_script = os.path.splitext(__file__)[0] + ".fmw"
-    fme_logfile = os.path.join(config['LOGGING']['log_directory'], os.path.splitext(__file__)[0] + ".log") 
+    fme_logfile = os.path.join(config['LOGGING']['log_directory'], os.path.split(fme_script)[1].replace(".fmw",".log")) 
     logger.info("Script " +  fme_script + " wird ausgeführt.")
     logger.info("Das FME-Logfile heisst: " + fme_logfile)
 

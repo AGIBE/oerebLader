@@ -42,7 +42,7 @@ def process_zip(zip_url):
 def run(config):
     logger.info("Script " +  os.path.basename(__file__) + " wird ausgeführt.")
     fme_script = os.path.splitext(__file__)[0] + ".fmw"
-    fme_logfile = os.path.join(config['LOGGING']['log_directory'], os.path.splitext(__file__)[0] + ".log") 
+    fme_logfile = os.path.join(config['LOGGING']['log_directory'], os.path.split(fme_script)[1].replace(".fmw",".log")) 
     logger.info("Script " +  fme_script + " wird ausgeführt.")
     logger.info("Das XTF- und das XML-File werden aus dem Zip-File extrahiert.")
     xtf_files = process_zip(config['LIEFEREINHEIT']['gpr_source'])

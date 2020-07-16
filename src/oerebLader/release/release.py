@@ -350,7 +350,7 @@ def run_release(dailyMode):
         # sowie GeoDB-Taskid in die TICKET-Tabelle zurückschreiben
         #TODO: Workbench so anpassen, dass auch mehrere Geoprodukte pro Ticket korrekt verarbeitet werden. 
         fme_script = os.path.splitext(__file__)[0] + "_geodb.fmw"
-        fme_logfile = os.path.join(config['LOGGING']['log_directory'], os.path.splitext(__file__)[0] + "_geodb.log") 
+        fme_logfile = os.path.join(config['LOGGING']['log_directory'], os.path.split(fme_script)[1].replace(".fmw","_fme.log"))
         logger.info("Script " +  fme_script + " wird ausgeführt.")
         logger.info("Das FME-Logfile heisst: " + fme_logfile)
         # Der FMEWorkspaceRunner akzeptiert keine Unicode-Strings!

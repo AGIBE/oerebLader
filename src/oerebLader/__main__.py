@@ -28,11 +28,6 @@ def get_open_tickets():
     ticket_list = []
     
     for open_ticket in open_tickets:
-        print(open_ticket)
-        print(type(open_ticket[0]))
-        print(type(open_ticket[1]))
-        print(type(open_ticket[2]))
-        print(type(open_ticket[3]))
         ticket_string = "%s (%s) -- %s (%s)" % (unicode(open_ticket[0]), open_ticket[1], open_ticket[3], unicode(open_ticket[2]))
         ticket_list.append(ticket_string)
         

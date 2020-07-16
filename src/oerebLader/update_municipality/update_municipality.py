@@ -19,7 +19,7 @@ def run_update_municipality(source, target):
     logger.info("Municipality-Tabelle wird aktualisiert.")
 
     fme_script = os.path.splitext(__file__)[0] + ".fmw"
-    fme_logfile = os.path.join(config['LOGGING']['log_directory'], os.path.splitext(__file__)[0] + "_fme.log")
+    fme_logfile = os.path.join(config['LOGGING']['log_directory'], os.path.split(fme_script)[1].replace(".fmw","_fme.log"))
     logger.info("Script " + fme_script + " wird ausgeführt.")
     logger.info("Das FME-Logfile heisst: " + fme_logfile)
 

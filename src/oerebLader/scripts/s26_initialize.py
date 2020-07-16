@@ -23,7 +23,7 @@ def run(config, ticketnr):
     # Die Files werden am Schluss durch s12_finish
     # wieder gelöscht.
     config['GEODB_WORK']['connection_file'] = config['GEODB_WORK']['connection'].create_sde_connection()
-    config['GEODB_WORK']['connection_file'] = config['OEREB2_WORK']['connection'].create_sde_connection()
+    config['OEREB2_WORK']['connection_file'] = config['OEREB2_WORK']['connection'].create_sde_connection()
     
     config['LIEFEREINHEIT'] = {}
 
