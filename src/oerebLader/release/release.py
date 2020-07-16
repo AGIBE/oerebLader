@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 from __future__ import absolute_import, division, print_function, unicode_literals
-import AGILib.connection
 import AGILib
 import oerebLader.config
 import oerebLader.logging
