@@ -31,7 +31,7 @@ def get_liefereinheit_info(liefereinheit, config):
 
 def create_ticket(liefereinheit, config):
     name = "Aktualisierung vom " + datetime.datetime.now().strftime("%d.%m.%Y")
-    create_ticket_sql = "INSERT INTO ticket (liefereinheit, status, art, name, nachfuehrung) VALUES (%s, %s, %s, '%s', SYSDATE)" % (liefereinheit, 1, 5, name)
+    create_ticket_sql = "INSERT INTO ticket (liefereinheit, status, art, name, nachfuehrung) VALUES (%s, %s, %s, '%s', CURRENT_DATE)" % (liefereinheit, 1, 5, name)
     logging.info(create_ticket_sql)
     try:
         config['OEREB_WORK_PG']['connection'].db_write(create_ticket_sql)
