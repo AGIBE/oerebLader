@@ -10,7 +10,7 @@ import sys
 
 def get_postgis_schemas(config):
     schemas = []
-    schema_sql = "select distinct schema from oereb2.workflow_schema order by schema"
+    schema_sql = "select distinct schema from workflow_schema order by schema"
     schema_sql_results = config['OEREB_WORK_PG']['connection'].db_read(schema_sql)
     for s in schema_sql_results:
         schemas.append(s[0])
