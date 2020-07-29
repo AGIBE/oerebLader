@@ -205,8 +205,8 @@ def run_build_map(mode, batch_dir):
     
     # Mapfile kopieren
     logger.info("Temporäres Mapfile wird mit mappyfile geparst.")
-    mapfile_content_de = mappyfile.load(template_mapfile_temp_path)
-    mapfile_content_fr = mappyfile.load(template_mapfile_temp_path)
+    mapfile_content_de = mappyfile.open(template_mapfile_temp_path)
+    mapfile_content_fr = mappyfile.open(template_mapfile_temp_path)
 
     # Sprachunabhängige Parameter manipulieren
     
