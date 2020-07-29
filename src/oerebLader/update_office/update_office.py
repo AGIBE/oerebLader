@@ -31,7 +31,7 @@ def run_update_office(target):
 
     logger.info("Alle Office- und AMT-Tabellen in %s werden aktualisiert." % (target))
     bundesthemen = ",".join(config['GENERAL']['bundesthemen'])
-    liefereinheiten_sql = "SELECT liefereinheit.id , string_agg(workflow_schema.SCHEMA, ',' ORDER BY workflow_schema.SCHEMA) schemas FROM liefereinheit LEFT JOIN workflow_schema ON liefereinheit.WORKFLOW = workflow_schema.WORKFLOW where liefereinheit.id not in (%s,9900,9910,9920) GROUP BY liefereinheit.id" % (bundesthemen)
+    liefereinheiten_sql = "SELECT liefereinheit.id , string_agg(workflow_schema.SCHEMA, ',' ORDER BY workflow_schema.SCHEMA) as schemas FROM liefereinheit LEFT JOIN workflow_schema ON liefereinheit.WORKFLOW = workflow_schema.WORKFLOW where liefereinheit.id not in (%s,9900,9910,9920) GROUP BY liefereinheit.id" % (bundesthemen)
     logger.info(liefereinheiten_sql)
     liefereinheiten_result = config['OEREB_WORK_PG']['connection'].db_read(liefereinheiten_sql)
     for row in liefereinheiten_result:
