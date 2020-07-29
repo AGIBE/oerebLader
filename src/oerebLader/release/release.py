@@ -134,7 +134,7 @@ def get_schema_from_liefereinheit(liefereinheit, connection):
 
 def get_pg_tables(connection):
     pg_tables = []
-    table_sql = "select ebecode, filter_field from oereb2.gpr where gprcode='OEREB_PG' order by EBEORDER"
+    table_sql = "select ebecode, filter_field from gpr where gprcode='OEREB_PG' order by EBEORDER"
     table_sql_results = connection.db_read(table_sql)
     for table_sql_result in table_sql_results:
         pg_table = (table_sql_result[0], table_sql_result[1])
