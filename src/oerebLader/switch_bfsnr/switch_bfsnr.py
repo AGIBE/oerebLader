@@ -46,7 +46,7 @@ def run_switch_bfsnr(bfsnr):
         mapfile.write(template_content)
         
     logger.info("Gemeinde-Mapfile wird mit mappyfile geparst: " + mapfile_path)
-    mf_content = mappyfile.load(mapfile_path, expand_includes=True)
+    mf_content = mappyfile.open(mapfile_path, expand_includes=True)
     
     # Sprachunabhängige Parameter manipulieren
     

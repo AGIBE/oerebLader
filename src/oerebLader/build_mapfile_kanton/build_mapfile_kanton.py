@@ -30,7 +30,7 @@ def run_build_mapfile_kantonr():
         kanton_mapfile.write(template_mapfile_content)
 
     logger.info("Mapfile des Kantons-Prüfdienst wird mit mappyfile geparst: " + kanton_mapfile_path)
-    mf_content = mappyfile.load(kanton_mapfile_path)
+    mf_content = mappyfile.open(kanton_mapfile_path)
     
     # Sprachunabhängige Parameter manipulieren
     
