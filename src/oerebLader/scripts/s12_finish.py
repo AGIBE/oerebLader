@@ -16,7 +16,7 @@ def run(config):
     
     # Ticket-Status aktualisieren
     logger.info("Ticket-Status wird auf 2 gesetzt!")
-    sql_update_ticket_status = "UPDATE ticket SET status=2 WHERE id=" + unicode(config['ticketnr'])
+    sql_update_ticket_status = "UPDATE ticket SET import=CURRENT_TIMESTAMP, status=2 WHERE id=" + unicode(config['ticketnr'])
     try:
         config['OEREB_WORK_PG']['connection'].db_write(sql_update_ticket_status)
     except Exception as ex:

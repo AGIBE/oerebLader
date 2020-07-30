@@ -402,7 +402,7 @@ def run_release(dailyMode):
                 logger.warn("Dieses Ticket bzw. dessen Geoprodukt muss über die reguläre Triggerfunktion importiert werden.")
                 
             logger.info("Ticket-Status des Tickets " + unicode(ticket[0]) + " wird auf 4 gesetzt!")
-            sql_update_ticket_status = "UPDATE ticket SET status=4 WHERE id=" + unicode(ticket[0])
+            sql_update_ticket_status = "UPDATE ticket SET release=CURRENT_TIMESTAMP, status=4 WHERE id=" + unicode(ticket[0])
             try:
                 config['OEREB_WORK_PG']['connection'].db_write(sql_update_ticket_status)
             except Exception as ex:
