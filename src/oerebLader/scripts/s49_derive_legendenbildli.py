@@ -184,7 +184,7 @@ def run(config):
         config['OEREB2_WORK']['connection'].db_write(plr_sql)
 
     # legend_entry abfüllen (inkl. TypeCode-Aggregation)
-    logger.info("Transferstruktur PiostGIS wird aktualisiert.")
+    logger.info("Transferstruktur PostGIS wird aktualisiert.")
     logger.info("Tabellen public_law_restriction und legend_entry.")
     for legend_entry in  aggregate_plrs(plrs):
         legend_entry_id = uuid.uuid4()
