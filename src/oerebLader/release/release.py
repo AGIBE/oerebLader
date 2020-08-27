@@ -355,9 +355,11 @@ def run_release(dailyMode):
         # Der FMEWorkspaceRunner akzeptiert keine Unicode-Strings!
         # Daher müssen workspace und parameters umgewandelt werden!
         parameters = {
-            'WORK_DB': str(config['OEREB2_WORK']['database']),
-            'WORK_USERNAME': str(config['OEREB2_WORK']['username']),
-            'WORK_PASSWORD': str(config['OEREB2_WORK']['password']),
+            'WORK_DB': str(config['OEREB_WORK_PG']['database']),
+            'WORK_USERNAME': str(config['OEREB_WORK_PG']['username']),
+            'WORK_PASSWORD': str(config['OEREB_WORK_PG']['password']),
+            'WORK_HOST': str(config['OEREB_WORK_PG']['host']),
+            'WORK_PORT': str(config['OEREB_WORK_PG']['port']),
             'TEAM_DB': str(config['GEODB_DD_TEAM']['database']),
             'TEAM_USERNAME': str(config['GEODB_DD_TEAM']['username']),
             'TEAM_PASSWORD': str(config['GEODB_DD_TEAM']['password']),
