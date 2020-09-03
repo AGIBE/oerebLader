@@ -35,7 +35,7 @@ def process_zip(zip_url):
                 zip_file.extract(name, tempDir)
         zip_file.close()
     
-    files = (xtf_filename, xml_filename)
+    files = (unicode(xtf_filename), unicode(xml_filename))
     
     return files
 
@@ -52,21 +52,19 @@ def run(config):
     logger.info("XML-File: " + xml_file)
     logger.info("Das FME-Logfile heisst: " + fme_logfile)
     
-    # Der FMEWorkspaceRunner akzeptiert keine Unicode-Strings!
-    # Daher müssen workspace und parameters umgewandelt werden!
     parameters = {
-        'DATABASE': str(config['GEODB_WORK']['database']),
-        'USERNAME': str(config['GEODB_WORK']['username']),
-        'PASSWORD': str(config['GEODB_WORK']['password']),
-        'GEODB_PG_DATABASE': str(config['GEODB_WORK_PG']['database']),
-        'GEODB_PG_USERNAME': str(config['GEODB_WORK_PG']['username']),
-        'GEODB_PG_PASSWORD': str(config['GEODB_WORK_PG']['password']),
-        'GEODB_PG_HOST': str(config['GEODB_WORK_PG']['host']),
-        'GEODB_PG_PORT': str(config['GEODB_WORK_PG']['port']),
-        'MODELLABLAGE': str(config['GENERAL']['models']),
-        'XTF_FILE': str(xtf_file),
-        'XML_FILE': str(xml_file),
-        'GPRCODE': str(config['LIEFEREINHEIT']['gprcodes'][0])
+        'DATABASE': config['GEODB_WORK']['database'],
+        'USERNAME': config['GEODB_WORK']['username'],
+        'PASSWORD': config['GEODB_WORK']['password'],
+        'GEODB_PG_DATABASE': config['GEODB_WORK_PG']['database'],
+        'GEODB_PG_USERNAME': config['GEODB_WORK_PG']['username'],
+        'GEODB_PG_PASSWORD': config['GEODB_WORK_PG']['password'],
+        'GEODB_PG_HOST': config['GEODB_WORK_PG']['host'],
+        'GEODB_PG_PORT': unicode(config['GEODB_WORK_PG']['port']),
+        'MODELLABLAGE': config['GENERAL']['models'],
+        'XTF_FILE': xtf_file,
+        'XML_FILE': xml_file,
+        'GPRCODE': config['LIEFEREINHEIT']['gprcodes'][0]
     }
 
     fmerunner = AGILib.FMERunner(fme_workbench=fme_script, fme_workbench_parameters=parameters, fme_logfile=fme_logfile, fme_logfile_archive=True)

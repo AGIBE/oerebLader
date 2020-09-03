@@ -22,25 +22,23 @@ def run(config):
     # Bei den Bundesthemen ist immer nur genau ein Schema betroffen.
     schema = config['LIEFEREINHEIT']['schemas'][0]
 
-    # Der FMEWorkspaceRunner akzeptiert keine Unicode-Strings!
-    # Daher müssen workspace und parameters umgewandelt werden!
     parameters = {
-        'OEREB2_DATABASE': str(config['OEREB2_WORK']['database']),
-        'OEREB2_USERNAME': str(config['OEREB2_WORK']['username']),
-        'OEREB2_PASSWORD': str(config['OEREB2_WORK']['password']),
-        'OEREB2_CONNECTIONFILE': str(config['OEREB2_WORK']['connection_file']),
-        'MODELLABLAGE': str(config['GENERAL']['models']),
-        'XTF_FILE': str(config['LIEFEREINHEIT']['ts_source']),
-        'LEGEND_BASEURL': str(legend_baseurl),
-        'LEGEND_BASEDIR': str(legend_basedir),
-        'LIEFEREINHEIT': str(config['LIEFEREINHEIT']['id']),
-        'OEREB_PG_DATABASE': str(config['OEREB_WORK_PG']['database']),
-        'OEREB_PG_USERNAME': str(config['OEREB_WORK_PG']['username']),
-        'OEREB_PG_PASSWORD': str(config['OEREB_WORK_PG']['password']),
-        'OEREB_PG_HOST': str(config['OEREB_WORK_PG']['host']),
-        'OEREB_PG_PORT': str(config['OEREB_WORK_PG']['port']),
-        'SCHEMA': str(schema),
-        'STROKER': str(config['GENERAL']['fme_stroker_value'])
+        'OEREB2_DATABASE': config['OEREB2_WORK']['database'],
+        'OEREB2_USERNAME': config['OEREB2_WORK']['username'],
+        'OEREB2_PASSWORD': config['OEREB2_WORK']['password'],
+        'OEREB2_CONNECTIONFILE': config['OEREB2_WORK']['connection_file'],
+        'MODELLABLAGE': config['GENERAL']['models'],
+        'XTF_FILE': config['LIEFEREINHEIT']['ts_source'],
+        'LEGEND_BASEURL': legend_baseurl,
+        'LEGEND_BASEDIR': legend_basedir,
+        'LIEFEREINHEIT': unicode(config['LIEFEREINHEIT']['id']),
+        'OEREB_PG_DATABASE': config['OEREB_WORK_PG']['database'],
+        'OEREB_PG_USERNAME': config['OEREB_WORK_PG']['username'],
+        'OEREB_PG_PASSWORD': config['OEREB_WORK_PG']['password'],
+        'OEREB_PG_HOST': config['OEREB_WORK_PG']['host'],
+        'OEREB_PG_PORT': unicode(config['OEREB_WORK_PG']['port']),
+        'SCHEMA': schema,
+        'STROKER': unicode(config['GENERAL']['fme_stroker_value'])
     }
 
     fmerunner = AGILib.FMERunner(fme_workbench=fme_script, fme_workbench_parameters=parameters, fme_logfile=fme_logfile, fme_logfile_archive=True)

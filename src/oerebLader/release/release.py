@@ -352,18 +352,16 @@ def run_release(dailyMode):
         fme_logfile = os.path.join(config['LOGGING']['log_directory'], os.path.split(fme_script)[1].replace(".fmw","_fme.log"))
         logger.info("Script " +  fme_script + " wird ausgeführt.")
         logger.info("Das FME-Logfile heisst: " + fme_logfile)
-        # Der FMEWorkspaceRunner akzeptiert keine Unicode-Strings!
-        # Daher müssen workspace und parameters umgewandelt werden!
         parameters = {
-            'WORK_DB': str(config['OEREB_WORK_PG']['database']),
-            'WORK_USERNAME': str(config['OEREB_WORK_PG']['username']),
-            'WORK_PASSWORD': str(config['OEREB_WORK_PG']['password']),
-            'WORK_HOST': str(config['OEREB_WORK_PG']['host']),
-            'WORK_PORT': str(config['OEREB_WORK_PG']['port']),
-            'TEAM_DB': str(config['GEODB_DD_TEAM']['database']),
-            'TEAM_USERNAME': str(config['GEODB_DD_TEAM']['username']),
-            'TEAM_PASSWORD': str(config['GEODB_DD_TEAM']['password']),
-            'ART_CLAUSE': str(valid_art)
+            'WORK_DB': config['OEREB_WORK_PG']['database'],
+            'WORK_USERNAME': config['OEREB_WORK_PG']['username'],
+            'WORK_PASSWORD': config['OEREB_WORK_PG']['password'],
+            'WORK_HOST': config['OEREB_WORK_PG']['host'],
+            'WORK_PORT': unicode(config['OEREB_WORK_PG']['port']),
+            'TEAM_DB': config['GEODB_DD_TEAM']['database'],
+            'TEAM_USERNAME': config['GEODB_DD_TEAM']['username'],
+            'TEAM_PASSWORD': config['GEODB_DD_TEAM']['password'],
+            'ART_CLAUSE': valid_art
         }
 
         fmerunner = AGILib.FMERunner(fme_workbench=fme_script, fme_workbench_parameters=parameters, fme_logfile=fme_logfile, fme_logfile_archive=True)

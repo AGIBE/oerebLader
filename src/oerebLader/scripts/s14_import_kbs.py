@@ -46,9 +46,9 @@ def run(config):
         
     # Eine Liste der Attribute mit Typ Date erstellen (FME braucht diese Info, damit leere Datumsfelder fuer Postgres richtig gesetzt werden koennen)
     datefields = arcpy.ListFields(source,field_type='Date')
-    dfield = None
+    dfield = "sommedummyfield"
     for datefield in datefields:
-        if dfield is None:
+        if dfield == "sommedummyfield":
             dfield = datefield.name
         else:
             dfield = dfield + ' ' + datefield.name
@@ -59,18 +59,16 @@ def run(config):
     logger.info("Script " +  fme_script + " wird ausgeführt.")
     logger.info("Das FME-Logfile heisst: " + fme_logfile)
 
-    # Der FMEWorkspaceRunner akzeptiert keine Unicode-Strings!
-    # Daher müssen workspace und parameters umgewandelt werden!
     parameters = {
-        'GEODB_WORK': str(config['GEODB_WORK']['connection_file']),
-        'GEODB_PG_DATABASE': str(config['GEODB_WORK_PG']['database']),
-        'GEODB_PG_USERNAME': str(config['GEODB_WORK_PG']['username']),
-        'GEODB_PG_PASSWORD': str(config['GEODB_WORK_PG']['password']),
-        'GEODB_PG_HOST': str(config['GEODB_WORK_PG']['host']),
-        'GEODB_PG_PORT': str(config['GEODB_WORK_PG']['port']),
-        'SCHEMA_NAME': str(config['GEODB_WORK']['username']),
-        'TABELLEN': str(" ".join(ebenen_fme)),
-        'DATEFIELDS': str(dfield)
+        'GEODB_WORK': config['GEODB_WORK']['connection_file'],
+        'GEODB_PG_DATABASE': config['GEODB_WORK_PG']['database'],
+        'GEODB_PG_USERNAME': config['GEODB_WORK_PG']['username'],
+        'GEODB_PG_PASSWORD': config['GEODB_WORK_PG']['password'],
+        'GEODB_PG_HOST': config['GEODB_WORK_PG']['host'],
+        'GEODB_PG_PORT': unicode(config['GEODB_WORK_PG']['port']),
+        'SCHEMA_NAME': config['GEODB_WORK']['username'],
+        'TABELLEN': " ".join(ebenen_fme),
+        'DATEFIELDS': dfield
     }
 
     fmerunner = AGILib.FMERunner(fme_workbench=fme_script, fme_workbench_parameters=parameters, fme_logfile=fme_logfile, fme_logfile_archive=True)

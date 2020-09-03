@@ -35,17 +35,15 @@ def run_update_municipality(source, target):
     logo_base_path = config['GENERAL']['files_be_ch_baseurl'] + "/logos/"
     logger.info("Basispfad Logos %s" % logo_base_path)
 
-    # Der FMEWorkspaceRunner akzeptiert keine Unicode-Strings!
-    # Daher müssen workspace und parameters umgewandelt werden!
     parameters = {
-        'OEREB_PG_DB': str(config[target_keyname]['database']),
-        'OEREB_PG_USERNAME': str(config[target_keyname]['username']),
-        'OEREB_PG_PASSWORD': str(config[target_keyname]['password']),
-        'OEREB_PG_HOST': str(config[target_keyname]['host']),
-        'OEREB_PG_PORT': str(config[target_keyname]['port']),
-        'SOURCETABLE': str(source_tablename),
-        'VEK1_CONNECTIONFILE': str(source_connectionfile),
-        'LOGO_BASE_PATH': str(logo_base_path)
+        'OEREB_PG_DB': config[target_keyname]['database'],
+        'OEREB_PG_USERNAME': config[target_keyname]['username'],
+        'OEREB_PG_PASSWORD': config[target_keyname]['password'],
+        'OEREB_PG_HOST': config[target_keyname]['host'],
+        'OEREB_PG_PORT': unicode(config[target_keyname]['port']),
+        'SOURCETABLE': source_tablename,
+        'VEK1_CONNECTIONFILE': source_connectionfile,
+        'LOGO_BASE_PATH': logo_base_path
     }
     fmerunner = AGILib.FMERunner(fme_workbench=fme_script, fme_workbench_parameters=parameters, fme_logfile=fme_logfile, fme_logfile_archive=True)
     fmerunner.run()

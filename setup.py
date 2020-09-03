@@ -25,7 +25,7 @@ setup(
       package_data={'': ["*.fmw"]},
       package_dir = {"": "src"},
       # Abhängigkeiten
-      install_requires = ["AGILib>=1.1"],
+      install_requires = ["AGILib>=1.2.2"],
       # PyPI metadata
       author = "Peter Schär",
       author_email = "peter.schaer@be.ch",

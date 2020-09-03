@@ -23,21 +23,19 @@ def run(config):
     else:
         output_rv_url = config['GENERAL']['files_be_ch_baseurl'] + "/" + unicode(config['LIEFEREINHEIT']['id']) + "/" + unicode(config['ticketnr']) + "/"
     
-    # Der FMEWorkspaceRunner akzeptiert keine Unicode-Strings!
-    # Daher müssen workspace und parameters umgewandelt werden!
     parameters = {
-        'DATABASE': str(config['GEODB_WORK']['database']),
-        'USERNAME': str(config['GEODB_WORK']['username']),
-        'PASSWORD': str(config['GEODB_WORK']['password']),
-        'GEODB_PG_DATABASE': str(config['GEODB_WORK_PG']['database']),
-        'GEODB_PG_USERNAME': str(config['GEODB_WORK_PG']['username']),
-        'GEODB_PG_PASSWORD': str(config['GEODB_WORK_PG']['password']),
-        'GEODB_PG_HOST': str(config['GEODB_WORK_PG']['host']),
-        'GEODB_PG_PORT': str(config['GEODB_WORK_PG']['port']),
-        'FGDB': str(config['LIEFEREINHEIT']['gpr_source']),
-        'INPUT_RV_DIR': str(input_rv_dir),
-        'OUTPUT_RV_DIR': str(output_rv_dir),
-        'OUTPUT_RV_URL': str(output_rv_url)
+        'DATABASE': config['GEODB_WORK']['database'],
+        'USERNAME': config['GEODB_WORK']['username'],
+        'PASSWORD': config['GEODB_WORK']['password'],
+        'GEODB_PG_DATABASE': config['GEODB_WORK_PG']['database'],
+        'GEODB_PG_USERNAME': config['GEODB_WORK_PG']['username'],
+        'GEODB_PG_PASSWORD': config['GEODB_WORK_PG']['password'],
+        'GEODB_PG_HOST': config['GEODB_WORK_PG']['host'],
+        'GEODB_PG_PORT': unicode(config['GEODB_WORK_PG']['port']),
+        'FGDB': config['LIEFEREINHEIT']['gpr_source'],
+        'INPUT_RV_DIR': input_rv_dir,
+        'OUTPUT_RV_DIR': output_rv_dir,
+        'OUTPUT_RV_URL': output_rv_url
     }
 
     fmerunner = AGILib.FMERunner(fme_workbench=fme_script, fme_workbench_parameters=parameters, fme_logfile=fme_logfile, fme_logfile_archive=True)

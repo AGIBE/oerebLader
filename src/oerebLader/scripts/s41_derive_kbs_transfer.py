@@ -21,26 +21,24 @@ def run(config):
     else:
         legend_baseurl = config['GENERAL']['files_be_ch_baseurl'] + "/legenden/KBS/"
     
-    # Der FMEWorkspaceRunner akzeptiert keine Unicode-Strings!
-    # Daher müssen workspace und parameters umgewandelt werden!
     parameters = {
-        'GEODB_DATABASE': str(config['GEODB_WORK']['database']),
-        'GEODB_USERNAME': str(config['GEODB_WORK']['username']),
-        'GEODB_PASSWORD': str(config['GEODB_WORK']['password']),
-        'OEREB2_DATABASE': str(config['OEREB2_WORK']['database']),
-        'OEREB2_USERNAME': str(config['OEREB2_WORK']['username']),
-        'OEREB2_PASSWORD': str(config['OEREB2_WORK']['password']),
-        'OEREB_PG_DATABASE': str(config['OEREB_WORK_PG']['database']),
-        'OEREB_PG_USERNAME': str(config['OEREB_WORK_PG']['username']),
-        'OEREB_PG_PASSWORD': str(config['OEREB_WORK_PG']['password']),
-        'OEREB_PG_HOST': str(config['OEREB_WORK_PG']['host']),
-        'OEREB_PG_PORT': str(config['OEREB_WORK_PG']['port']),
-        'EXCEL_DARSTELLUNGSDIENST': str(excel_file_darstellungsdienst),
-        'EXCEL_AMT': str(excel_file_amt),
-        'LEGEND_BASEURL': str(legend_baseurl),
-        'LIEFEREINHEIT': str(config['LIEFEREINHEIT']['id']),
-        'RV_BASEURL': str(config['GENERAL']['kbs_call']),
-        'STROKER': str(config['GENERAL']['fme_stroker_value'])
+        'GEODB_DATABASE': config['GEODB_WORK']['database'],
+        'GEODB_USERNAME': config['GEODB_WORK']['username'],
+        'GEODB_PASSWORD': config['GEODB_WORK']['password'],
+        'OEREB2_DATABASE': config['OEREB2_WORK']['database'],
+        'OEREB2_USERNAME': config['OEREB2_WORK']['username'],
+        'OEREB2_PASSWORD': config['OEREB2_WORK']['password'],
+        'OEREB_PG_DATABASE': config['OEREB_WORK_PG']['database'],
+        'OEREB_PG_USERNAME': config['OEREB_WORK_PG']['username'],
+        'OEREB_PG_PASSWORD': config['OEREB_WORK_PG']['password'],
+        'OEREB_PG_HOST': config['OEREB_WORK_PG']['host'],
+        'OEREB_PG_PORT': unicode(config['OEREB_WORK_PG']['port']),
+        'EXCEL_DARSTELLUNGSDIENST': excel_file_darstellungsdienst,
+        'EXCEL_AMT': excel_file_amt,
+        'LEGEND_BASEURL': legend_baseurl,
+        'LIEFEREINHEIT': unicode(config['LIEFEREINHEIT']['id']),
+        'RV_BASEURL': config['GENERAL']['kbs_call'],
+        'STROKER': unicode(config['GENERAL']['fme_stroker_value'])
     }
 
     fmerunner = AGILib.FMERunner(fme_workbench=fme_script, fme_workbench_parameters=parameters, fme_logfile=fme_logfile, fme_logfile_archive=True)
