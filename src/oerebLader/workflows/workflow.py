@@ -17,6 +17,7 @@ import oerebLader.workflows.w13_baulnstr
 import oerebLader.workflows.w14_ggo
 import oerebLader.workflows.w15_gbo
 import oerebLader.workflows.w16_nsg
+import oerebLader.workflows.w17_kbsmil
 import sys
 
 def run_workflow(ticketnr):

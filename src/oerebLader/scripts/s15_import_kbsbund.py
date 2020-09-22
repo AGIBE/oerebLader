@@ -11,7 +11,7 @@ import zipfile
 
 logger = logging.getLogger('oerebLaderLogger')
 
-def process_zip(zip_url):
+def process_zip(zip_url, liefereinheit):
     #~ Temporaeren Dateinamen bilden
     tempDir = tempfile.mkdtemp()
     tempFile = os.path.join(tempDir, "data.zip")
@@ -27,7 +27,7 @@ def process_zip(zip_url):
     if zipfile.is_zipfile(tempFile):
         zip_file = zipfile.ZipFile(tempFile, "r")
         for name in zip_file.namelist():
-            if name.endswith(".xtf") and "lv95" in name:
+            if (name.endswith(".xtf") and "lv95" in name) or (liefereinheit=="1117" and name.endswith(".xtf")):
                 xtf_filename = os.path.join(tempDir, name)
                 zip_file.extract(name, tempDir)
             if name.endswith("1_4.xml"):
@@ -45,7 +45,7 @@ def run(config):
     fme_logfile = os.path.join(config['LOGGING']['log_directory'], os.path.split(fme_script)[1].replace(".fmw",".log")) 
     logger.info("Script " +  fme_script + " wird ausgeführt.")
     logger.info("Das XTF- und das XML-File werden aus dem Zip-File extrahiert.")
-    xtf_files = process_zip(config['LIEFEREINHEIT']['gpr_source'])
+    xtf_files = process_zip(config['LIEFEREINHEIT']['gpr_source'], unicode(config['LIEFEREINHEIT']['id']))
     xtf_file = xtf_files[0]
     xml_file = xtf_files[1]
     logger.info("XTF-File: " + xtf_file)
