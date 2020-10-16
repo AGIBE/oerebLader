@@ -15,6 +15,7 @@ import oerebLader.collect_legends.collect_legends
 import oerebLader.create_legend.create_legend
 import oerebLader.download_tickets.download_tickets
 import oerebLader.update_municipality.update_municipality
+import oerebLader.update_woinfo.update_woinfo
 import oerebLader.repair_geometries.repair_geometries
 import oerebLader.update_office.update_office
 import oerebLader.check_bundesthemen.check_bundesthemen
@@ -139,6 +140,12 @@ def update_municipality(args):
         args.SOURCE, args.TARGET
     )
     print("Update_Municipality SUCCESSFUL!")
+
+def update_woinfo(args):
+    oerebLader.update_woinfo.update_woinfo.run_update_woinfo(
+        args.TARGET, args.create_tables
+    )
+    print("Update_woinfo SUCCESSFUL!")
 
 def repair_geometries(args):
     oerebLader.repair_geometries.repair_geometries.run_repair_geometries(args.TARGET)
@@ -316,6 +323,23 @@ def main():
     )
     update_municipality_parser.set_defaults(func=update_municipality)
 
+    # UPDATE_WOINFO-Befehl
+    update_woinfo_parser = subparsers.add_parser(
+        "update_woinfo",
+        help="Aktualisiert die Tabellen für die Info-Abfrage WebOffice in PostGIS"
+    )
+    update_woinfo_parser.add_argument(
+        "TARGET",
+        choices=['work', 'vek2', 'vek1'],
+        help="In welche Datenbank soll aktualisiert werden?"
+    )
+    update_woinfo_parser.add_argument(
+        "--create_tables",
+        help="Wenn gesetzt, werden die WebOffice-Infotabellen neu erstellt.",
+        action='store_true'
+    )
+    update_woinfo_parser.set_defaults(func=update_woinfo)
+    
     # REPAIR_GEOMETRIES-Befehl
     repair_geometries_parser = subparsers.add_parser("repair_geometries", help="Repariert in allen PostGIS-Schemas die Geometrien mit ST_MAKEVALID().")
     repair_geometries_parser.add_argument("TARGET", choices=['work', 'team', 'vek2', 'vek1'], help="In welcher Datenbank soll repariert werden?")
