@@ -4,7 +4,6 @@ import AGILib.fme
 import sys
 import logging
 import os
-import fmeobjects
 import json
 
 logger = logging.getLogger('oerebLaderLogger')

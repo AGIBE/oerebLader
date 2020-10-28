@@ -7,7 +7,6 @@ import os
 import datetime
 import logging
 import arcpy
-import fmeobjects
 import sys
 import tempfile
 import git

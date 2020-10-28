@@ -4,7 +4,6 @@ import AGILib
 import sys
 import logging
 import os
-import fmeobjects
 import requests
 import tempfile
 import zipfile

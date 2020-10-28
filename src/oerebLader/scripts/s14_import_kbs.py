@@ -4,7 +4,6 @@ import AGILib
 import logging
 import os
 import arcpy
-import fmeobjects
 import sys
 
 logger = logging.getLogger('oerebLaderLogger')

@@ -4,7 +4,6 @@ import AGILib
 import os
 import logging
 import sys
-import fmeobjects
 import arcpy
 import tempfile
 import datetime
