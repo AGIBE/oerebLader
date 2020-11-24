@@ -43,10 +43,10 @@ def run_update_woinfo(target, create_tables):
     yaml_file = urllib2.urlopen(oereb_server_configfile)
     oereb_server_config = yaml.safe_load(yaml_file)
 
-    wo_tables = ['oereb.wo_flaeche', 'oereb.wo_linie', 'oereb.wo_punkt']
+    wo_tables_to_truncate = ['oereb.wo_flaeche', 'oereb.wo_linie', 'oereb.wo_punkt', 'oereb.wo_revo']
 
     logger.info("Leere die WebOffice-Infotabellen.")
-    for table in wo_tables:
+    for table in wo_tables_to_truncate:
         logger.info(table)
         pg_connection.db_write("truncate table %s" % (table))
     logger.info("WebOffice-Infotabellen geleert.")
@@ -105,7 +105,7 @@ def run_update_woinfo(target, create_tables):
                 'schema_name': schema_name,
                 'topic_de_expression': topic_de,
                 'topic_fr_expression': topic_fr            }
-            template_file = config['WEBOFFICE_INFOTABLES']['sql_wo_insert_template']
+            template_file = config['WEBOFFICE_INFOTABLES']['sql_geom_insert_template']
             templateLoader = jinja2.FileSystemLoader(searchpath=os.path.abspath(os.path.dirname(template_file)))
             templateEnv = jinja2.Environment( loader=templateLoader )
             template = templateEnv.get_template(os.path.basename(template_file))
@@ -116,11 +116,28 @@ def run_update_woinfo(target, create_tables):
             logger.info("Führe SQL-Statements aus.")
             pg_connection.db_write(insert_statements)
             logger.info("SQL-Statements ausgeführt.")
+
+        logger.info("Erstelle SQL-Statements für oereb.wo_revo")
+        template_vars = {
+            'table_name': 'oereb.wo_revo',
+            'schema_name': schema_name
+        }
+        template_file = config['WEBOFFICE_INFOTABLES']['sql_revo_insert_template']
+        templateLoader = jinja2.FileSystemLoader(searchpath=os.path.abspath(os.path.dirname(template_file)))
+        templateEnv = jinja2.Environment( loader=templateLoader )
+        template = templateEnv.get_template(os.path.basename(template_file))
+
+        insert_statements = template.render(template_vars)
+        logger.info(insert_statements)
+
+        logger.info("Führe SQL-Statements aus.")
+        pg_connection.db_write(insert_statements)
+        logger.info("SQL-Statements ausgeführt.")
         
         logger.info("%s beendet." % (schema_name))
 
     logger.info("Analysiere die WebOffice-Infotabellen.")
-    for table in wo_tables:
+    for table in wo_tables_to_truncate:
         logger.info(table)
         pg_connection.db_write("vacuum analyze %s" % (table))
     logger.info("WebOffice-Infotabellen analysiert.")
