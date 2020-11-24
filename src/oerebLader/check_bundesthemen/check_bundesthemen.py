@@ -55,7 +55,7 @@ def write_flag(ticketnr, config):
     logger = logging.getLogger("oerebLaderLogger")
     flag_directory = config['GENERAL']['flag_directory']
     flag_filename = ticketnr + ".flag"
-    flag_file = os.path.join(flag_directory, flag_filename)
+    flag_file = os.path.join(flag_directory, "import", flag_filename)
     with codecs.open(flag_file, "w", "utf-8") as flag:
         flag.write(ticketnr)
     logger.info("Flag-File wurde erstellt.")

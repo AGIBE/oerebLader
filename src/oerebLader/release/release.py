@@ -14,6 +14,7 @@ import shutil
 import platform
 import psycopg2
 import tempfile
+import codecs
 
 def clone_master_repo(master_repo_dir):
     tmpdir = tempfile.mkdtemp()
@@ -160,7 +161,6 @@ def append_transferstruktur(source_connection, target_connection, source_sql, fu
             with target_connection.cursor() as target_cursor:
                 target_cursor.copy_from(file=fp, table=full_tablename)
 
-
 def run_release(dailyMode):
     config = oerebLader.config.get_config()
     logger = oerebLader.logging.init_logging("release", config)
@@ -177,7 +177,14 @@ def run_release(dailyMode):
         valid_art = "=5"
     else:
         valid_art = "!=5"
-    
+
+    tickets_per_liefereinheit_sql = "select liefereinheit, count(liefereinheit) AS anzahl from ticket where ticket.STATUS=3 and ticket.ART%s group by liefereinheit HAVING count(liefereinheit) > 1" % (valid_art)
+    tickets_per_liefereinheit_results = config['OEREB_WORK_PG']['connection'].db_read(tickets_per_liefereinheit_sql)
+    if len(tickets_per_liefereinheit_results) > 0:
+        logger.error("Mindestens eine Liefereinheit hat mehr als ein Ticket mit Status=3.")
+        logger.error("Das ist nicht erlaubt. Bitte korrigieren und neustarten.")
+        raise ValueError("Mindestens eine Liefereinheit hat mehr als ein Ticket mit Status=3.")
+
     ticket_sql = "select ticket.ID, liefereinheit.ID, liefereinheit.NAME, liefereinheit.BFSNR, liefereinheit.WORKFLOW, ticket.art from ticket left join liefereinheit on ticket.LIEFEREINHEIT=liefereinheit.id where ticket.STATUS=3 and ticket.ART" + valid_art
     tickets = config['OEREB_WORK_PG']['connection'].db_read(ticket_sql)
     liefereinheiten = []
@@ -413,6 +420,18 @@ def run_release(dailyMode):
         logger.warn("Folgende iLader-Tasks müssen nun importiert werden:")
         for iLader_task in ilader_tasks:
             logger.warn("iLader run " + iLader_task)
+        
+        # Im tagesaktuellen Modus muss noch pro iLader-Import ein Flag geschrieben werden (#7614)
+        if dailyMode:
+            for iLader_task in ilader_tasks:
+                flag_directory = config['GENERAL']['flag_directory']
+                flag_filename = iLader_task + ".flag"
+                flag_file = os.path.join(flag_directory, "release", flag_filename)
+                with codecs.open(flag_file, "w", "utf-8") as flag:
+                    flag.write(iLader_task)
+                logger.info("Flag-File wurde erstellt.")
+                logger.info(flag_file)
+
         
         if oerebsta_updated == True:
             oerebsta_task_sql = "select t.task_objectid from geodb_dd.tb_task t left join geodb_dd.tb_flag_agi f on t.FLAG_OBJECTID=f.FLAG_OBJECTID where f.GPR_BEZEICHNUNG='OEREBSTA' and t.TASK_STATUS=2"
