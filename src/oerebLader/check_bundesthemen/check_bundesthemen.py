@@ -8,9 +8,11 @@ import os
 import logging
 import datetime
 import sys
+import codecs
 
 def get_liefereinheit_info(liefereinheit, config):
-    logging.info("Liefereinheiten-Informationen werden geholt.")
+    logger = logging.getLogger("oerebLaderLogger")
+    logger.info("Liefereinheiten-Informationen werden geholt.")
     liefereinheit_sql = "SELECT name, bfsnr, gpr_source, ts_source, md5 FROM liefereinheit where id=" + unicode(liefereinheit)
     liefereinheit_result = config['OEREB_WORK_PG']['connection'].db_read(liefereinheit_sql)
     
@@ -23,24 +25,41 @@ def get_liefereinheit_info(liefereinheit, config):
         liefereinheit_info['ts_source'] = liefereinheit_result[0][3]
         liefereinheit_info['md5_old'] = liefereinheit_result[0][4]
     else:
-        logging.error("Keine Liefereinheit mit dieser ID gefunden.")
-        logging.error("Import wird abgebrochen!")
+        logger.error("Keine Liefereinheit mit dieser ID gefunden.")
+        logger.error("Import wird abgebrochen!")
         sys.exit()
     
     return liefereinheit_info
 
 def create_ticket(liefereinheit, config):
+    logger = logging.getLogger("oerebLaderLogger")
     name = "Aktualisierung vom " + datetime.datetime.now().strftime("%d.%m.%Y")
     create_ticket_sql = "INSERT INTO ticket (liefereinheit, status, art, name, nachfuehrung) VALUES (%s, %s, %s, '%s', CURRENT_DATE)" % (liefereinheit, 1, 5, name)
-    logging.info(create_ticket_sql)
+    logger.info(create_ticket_sql)
     try:
         config['OEREB_WORK_PG']['connection'].db_write(create_ticket_sql)
     except Exception as ex:
-        logging.error("Fehler beim Einfügen des Tickets!")
-        logging.error(unicode(ex))
-        logging.error("Script wird abgebrochen!")
+        logger.error("Fehler beim Einfügen des Tickets!")
+        logger.error(unicode(ex))
+        logger.error("Script wird abgebrochen!")
         sys.exit()
-    logging.info("Ticket wurde erstellt!")
+    logger.info("Ticket wurde erstellt!")
+    logger.info("Hole Ticket-Nummer.")
+    ticket_sql = "SELECT id FROM ticket WHERE name='%s' and liefereinheit=%s and status=1 and art=5" % (name, liefereinheit)
+    ticket_results = config['OEREB_WORK_PG']['connection'].db_read(ticket_sql)
+    ticketnr = unicode(ticket_results[0][0])
+    logger.info("Ticket-Nummer lautet: %s" % (ticketnr))
+    return ticketnr
+
+def write_flag(ticketnr, config):
+    logger = logging.getLogger("oerebLaderLogger")
+    flag_directory = config['GENERAL']['flag_directory']
+    flag_filename = ticketnr + ".flag"
+    flag_file = os.path.join(flag_directory, flag_filename)
+    with codecs.open(flag_file, "w", "utf-8") as flag:
+        flag.write(ticketnr)
+    logger.info("Flag-File wurde erstellt.")
+    logger.info(flag_file)
 
 def run_check_bundesthemen():
     config = oerebLader.config.get_config()
@@ -63,7 +82,8 @@ def run_check_bundesthemen():
         
         if liefereinheit_info['md5_old'] != liefereinheit_info['md5_new']:
             logger.info("Für die Liefereinheit " + unicode(liefereinheit) + " (" + liefereinheit_info['name'] + ") wird ein neues Ticket angelegt.")
-            create_ticket(liefereinheit, config)
+            ticketnr = create_ticket(liefereinheit, config)
+            write_flag(ticketnr, config)
         else:
             logger.info("Prüfsummen sind identisch. Keine Aktualisierung notwendig!")
         
