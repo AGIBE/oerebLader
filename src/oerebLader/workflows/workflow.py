@@ -36,6 +36,7 @@ def run_workflow(ticketnr):
     else:
         print("Die angegebene Ticket-Nummer ist ungueltig.")
         print("Der Import wird nicht ausgefuehrt.")
+        raise ValueError("Die angegebene Ticket-Nummer ist ungueltig.")
 
 def is_valid_ticket(ticketnr, config):
 
