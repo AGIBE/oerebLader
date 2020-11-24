@@ -29,13 +29,14 @@ def run(config, ticketnr):
 
     # Ticket-Infos holen
     logger.info("Ticket-Information holen und validieren.")
-    ticket_name_sql = "SELECT liefereinheit, name, status FROM ticket WHERE id=" + unicode(ticketnr)
+    ticket_name_sql = "SELECT liefereinheit, name, status, art FROM ticket WHERE id=" + unicode(ticketnr)
     ticket_result = config['OEREB_WORK_PG']['connection'].db_read(ticket_name_sql)
     if len(ticket_result) == 1:
         ticket_status = ticket_result[0][2]
         if ticket_status == 1:
             config['ticketname'] = ticket_result[0][1]
             config['LIEFEREINHEIT']['id'] = ticket_result[0][0]
+            config['ticketart'] = ticket_result[0][3]
         else:
             logger.error("Falscher Ticket-Status (" + unicode(ticket_status) + ")")
             logger.error("Import wird abgebrochen!")
