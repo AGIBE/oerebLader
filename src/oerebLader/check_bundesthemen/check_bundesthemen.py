@@ -8,7 +8,6 @@ import os
 import logging
 import datetime
 import sys
-import codecs
 
 def get_liefereinheit_info(liefereinheit, config):
     logger = logging.getLogger("oerebLaderLogger")
@@ -51,16 +50,6 @@ def create_ticket(liefereinheit, config):
     logger.info("Ticket-Nummer lautet: %s" % (ticketnr))
     return ticketnr
 
-def write_flag(ticketnr, config):
-    logger = logging.getLogger("oerebLaderLogger")
-    flag_directory = config['GENERAL']['flag_directory']
-    flag_filename = ticketnr + ".flag"
-    flag_file = os.path.join(flag_directory, "import", flag_filename)
-    with codecs.open(flag_file, "w", "utf-8") as flag:
-        flag.write(ticketnr)
-    logger.info("Flag-File wurde erstellt.")
-    logger.info(flag_file)
-
 def run_check_bundesthemen():
     config = oerebLader.config.get_config()
     logger = oerebLader.logging.init_logging("check_bundesthemen", config)
@@ -81,9 +70,9 @@ def run_check_bundesthemen():
         logger.info("Vergleiche MD5: " + liefereinheit_info['md5_old'] + " vs. " + liefereinheit_info['md5_new'])
         
         if liefereinheit_info['md5_old'] != liefereinheit_info['md5_new']:
-            logger.info("Für die Liefereinheit " + unicode(liefereinheit) + " (" + liefereinheit_info['name'] + ") wird ein neues Ticket angelegt.")
             ticketnr = create_ticket(liefereinheit, config)
-            write_flag(ticketnr, config)
+            logger.info("Für die Liefereinheit %s (%s) wurde das Ticket %s angelegt." % (unicode(liefereinheit), liefereinheit_info['name'], unicode(ticketnr)))
+            
         else:
             logger.info("Prüfsummen sind identisch. Keine Aktualisierung notwendig!")
         

@@ -15,13 +15,8 @@ def run(config):
     config['OEREB2_WORK']['connection'].delete_all_sde_connections()
     
     # Ticket-Status aktualisieren
-    if config['ticketart'] == 5:
-        logger.info("Tagesaktueller Import.")
-        logger.info("Ticket-Status wird auf 3 gesetzt!")
-        sql_update_ticket_status = "UPDATE ticket SET import=CURRENT_TIMESTAMP, status=3 WHERE id=" + unicode(config['ticketnr'])
-    else:
-        logger.info("Ticket-Status wird auf 2 gesetzt!")
-        sql_update_ticket_status = "UPDATE ticket SET import=CURRENT_TIMESTAMP, status=2 WHERE id=" + unicode(config['ticketnr'])
+    logger.info("Ticket-Status wird auf 2 gesetzt!")
+    sql_update_ticket_status = "UPDATE ticket SET import=CURRENT_TIMESTAMP, status=2 WHERE id=" + unicode(config['ticketnr'])
     try:
         config['OEREB_WORK_PG']['connection'].db_write(sql_update_ticket_status)
     except Exception as ex:

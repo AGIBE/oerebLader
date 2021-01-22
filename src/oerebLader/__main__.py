@@ -19,7 +19,6 @@ import oerebLader.update_woinfo.update_woinfo
 import oerebLader.repair_geometries.repair_geometries
 import oerebLader.update_office.update_office
 import oerebLader.check_bundesthemen.check_bundesthemen
-import oerebLader.finish_tagesaktuell.finish_tagesaktuell
 
 def get_open_tickets():
     config = oerebLader.config.get_config()
@@ -159,10 +158,6 @@ def update_office(args):
 def check_bundesthemen(args):
     oerebLader.check_bundesthemen.check_bundesthemen.run_check_bundesthemen()
     print("Check Bundesthemen SUCCESSFUL!")
-
-def finish_tagesaktuell(args):
-    oerebLader.finish_tagesaktuell.finish_tagesaktuell.run_finish_tagesaktuell(args.TASK_ID_GEODB)
-    print("Finish Tagesaktuell SUCCESSFUL!")
 
 def main():
     version_text = "oerebLader v" + __version__
@@ -358,18 +353,6 @@ def main():
     # CHECK_BUNDESTHEMEN-Befehl
     check_bundesthemen_parser = subparsers.add_parser("check_bundesthemen", help="Prüft für alle Bundesthemen, ob eine Aktualisierung vorliegt.")
     check_bundesthemen_parser.set_defaults(func=check_bundesthemen)
-
-    # FINISH_TAGESAKTUELL-Befehl
-    finish_tagesaktuell_parser = subparsers.add_parser(
-        "finish_tagesaktuell",
-        help="Setzt den Status eines tagesaktuellen Imports auf 5, nachdem der dazugehörige iLader-Import durchgelaufen ist."
-    )
-    finish_tagesaktuell_parser.add_argument(
-        "TASK_ID_GEODB",
-        type=int,
-        help="Nummer des iLader-Imports, der im ÖREB-Kataster abgeschlossen werden soll."
-    )
-    finish_tagesaktuell_parser.set_defaults(func=finish_tagesaktuell)    
 
     args = parser.parse_args()
     args.func(args)

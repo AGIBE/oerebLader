@@ -421,18 +421,6 @@ def run_release(dailyMode):
         for iLader_task in ilader_tasks:
             logger.warn("iLader run " + iLader_task)
         
-        # Im tagesaktuellen Modus muss noch pro iLader-Import ein Flag geschrieben werden (#7614)
-        if dailyMode:
-            for iLader_task in ilader_tasks:
-                flag_directory = config['GENERAL']['flag_directory']
-                flag_filename = iLader_task + ".flag"
-                flag_file = os.path.join(flag_directory, "release", flag_filename)
-                with codecs.open(flag_file, "w", "utf-8") as flag:
-                    flag.write(iLader_task)
-                logger.info("Flag-File wurde erstellt.")
-                logger.info(flag_file)
-
-        
         if oerebsta_updated == True:
             oerebsta_task_sql = "select t.task_objectid from geodb_dd.tb_task t left join geodb_dd.tb_flag_agi f on t.FLAG_OBJECTID=f.FLAG_OBJECTID where f.GPR_BEZEICHNUNG='OEREBSTA' and t.TASK_STATUS=2"
             oerebsta_tasks = config['GEODB_DD_TEAM']['connection'].db_read(oerebsta_task_sql)
